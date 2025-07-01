@@ -18,6 +18,8 @@ import org.apache.poi.xwpf.extractor.XWPFWordExtractor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import com.ruoyi.common.annotation.DataSource;
 import com.ruoyi.common.core.text.Convert;
 import com.ruoyi.common.enums.DataSourceType;
@@ -36,6 +38,8 @@ import com.ruoyi.system.service.IMsdsMainService;
 @Service
 public class MsdsMainServiceImpl implements IMsdsMainService
 {
+    private static final Logger logger = LoggerFactory.getLogger(MsdsMainServiceImpl.class);
+    
     @Autowired
     private MsdsMainMapper msdsMainMapper;
 
@@ -224,18 +228,71 @@ public class MsdsMainServiceImpl implements IMsdsMainService
                 result.put("errorMessages", errorMessages);
                 return result;
             }
+            
+            // 调试：记录提取的内容片段
+            logger.info("文件 {} 提取的内容前500字符：{}", file.getOriginalFilename(), 
+                       content.length() > 500 ? content.substring(0, 500) + "..." : content);
 
             // 解析MSDS信息
             MsdsMain msdsMain = parseMsdsFromContent(content);
-            if (msdsMain == null || StringUtils.isEmpty(msdsMain.getProductName()))
+            if (msdsMain == null)
             {
-                errorMessages.add(file.getOriginalFilename() + ": 无法解析出有效的MSDS信息");
+                errorMessages.add(file.getOriginalFilename() + ": 无法解析文档内容");
                 failureCount++;
                 result.put("successCount", successCount);
                 result.put("failureCount", failureCount);
                 result.put("duplicates", duplicates);
                 result.put("errorMessages", errorMessages);
                 return result;
+            }
+
+            // 验证必要字段 - 放宽验证条件
+            boolean hasValidData = false;
+            StringBuilder missingFields = new StringBuilder();
+            
+            // 检查是否有化学品名称
+            if (StringUtils.isNotEmpty(msdsMain.getProductName())) {
+                hasValidData = true;
+            } else {
+                // 尝试使用文件名作为产品名称
+                String fileName = file.getOriginalFilename();
+                if (StringUtils.isNotEmpty(fileName)) {
+                    // 移除文件扩展名
+                    String productNameFromFile = fileName.replaceAll("\\.(pdf|doc|docx)$", "");
+                    // 简化文件名
+                    productNameFromFile = productNameFromFile.replaceAll("[、，,；;]+.*$", "");
+                    if (productNameFromFile.length() > 3) {
+                        msdsMain.setProductName(productNameFromFile);
+                        hasValidData = true;
+                    }
+                }
+            }
+            
+            // 检查企业名称，如果没有则设置默认值
+            if (StringUtils.isEmpty(msdsMain.getCompanyName())) {
+                msdsMain.setCompanyName("未知企业");
+                missingFields.append("企业名称 ");
+            }
+            
+            // 检查联系电话，如果没有则设置默认值
+            if (StringUtils.isEmpty(msdsMain.getContactPhone())) {
+                msdsMain.setContactPhone("未提供");
+                missingFields.append("联系电话 ");
+            }
+            
+            if (!hasValidData) {
+                errorMessages.add(file.getOriginalFilename() + ": 无法解析出有效的MSDS信息（缺少化学品名称）");
+                failureCount++;
+                result.put("successCount", successCount);
+                result.put("failureCount", failureCount);
+                result.put("duplicates", duplicates);
+                result.put("errorMessages", errorMessages);
+                return result;
+            }
+            
+            // 记录缺失的字段（仅作为警告，不影响导入）
+            if (missingFields.length() > 0) {
+                logger.warn("文件 {} 缺少以下字段：{}", file.getOriginalFilename(), missingFields.toString());
             }
 
             // 检查重复数据
@@ -467,21 +524,30 @@ public class MsdsMainServiceImpl implements IMsdsMainService
      */
     private MsdsMain parseMsdsFromContent(String content)
     {
+        if (StringUtils.isEmpty(content)) {
+            return null;
+        }
+
         MsdsMain msdsMain = new MsdsMain();
         
+        // 清理内容，统一格式
+        String cleanContent = preprocessContent(content);
+        
         // 解析第一部分：化学品及企业标识
-        String productName = extractValue(content, "(?:化学品中文名称?|产品名称)\\s*[：:：]?\\s*([^\\n\\r]+)");
-        String productEnglishName = extractValue(content, "(?:化学品英文名称?|英文名称?)\\s*[：:：]?\\s*([^\\n\\r]+)");
-        String companyName = extractValue(content, "(?:企业名称|公司名称|供应商)\\s*[：:：]?\\s*([^\\n\\r]+)");
-        String companyAddress = extractValue(content, "(?:企业地址|公司地址|地址)\\s*[：:：]?\\s*([^\\n\\r]+)");
-        String contactPhone = extractValue(content, "(?:联系电话|电话|电话号码)\\s*[：:：]?\\s*([^\\n\\r]+)");
-        String email = extractValue(content, "(?:电子邮件|邮箱|电子邮箱)\\s*[：:：]?\\s*([^\\n\\r]+)");
-        String emergencyPhone = extractValue(content, "(?:应急电话|紧急联系电话)\\s*[：:：]?\\s*([^\\n\\r]+)");
-        String version = extractValue(content, "(?:版本号|版本)\\s*[：:：]?\\s*([^\\n\\r]+)");
+        // 化学品名称 - 支持多种格式
+        String productName = extractProductName(cleanContent);
+        String productEnglishName = extractProductEnglishName(cleanContent);
+        String companyName = extractCompanyName(cleanContent);
+        String companyAddress = extractCompanyAddress(cleanContent);
+        String contactPhone = extractContactPhone(cleanContent);
+        String email = extractEmail(cleanContent);
+        String emergencyPhone = extractEmergencyPhone(cleanContent);
+        String version = extractVersion(cleanContent);
         
-        // CAS号可能在别名字段中
-        String casNumber = extractValue(content, "CAS\\s*[号#]?\\s*[：:：]?\\s*([0-9\\-]+)");
+        // CAS号
+        String casNumber = extractCasNumber(cleanContent);
         
+        // 设置解析出的信息
         msdsMain.setProductName(cleanText(productName));
         msdsMain.setProductEnglishName(cleanText(productEnglishName));
         msdsMain.setProductAlias(cleanText(casNumber)); // 临时将CAS号存在别名字段
@@ -493,6 +559,181 @@ public class MsdsMainServiceImpl implements IMsdsMainService
         msdsMain.setVersion(cleanText(version));
         
         return msdsMain;
+    }
+
+    /**
+     * 预处理文档内容
+     * 
+     * @param content 原始内容
+     * @return 清理后的内容
+     */
+    private String preprocessContent(String content) {
+        if (StringUtils.isEmpty(content)) {
+            return "";
+        }
+        
+        // 移除多余的空白字符，统一换行符
+        String cleaned = content.replaceAll("\\r\\n|\\r", "\n");
+        // 移除多余空格
+        cleaned = cleaned.replaceAll("[ \\t]+", " ");
+        // 移除多余的换行
+        cleaned = cleaned.replaceAll("\\n\\s*\\n", "\n");
+        
+        return cleaned;
+    }
+
+    /**
+     * 提取化学品中文名称
+     */
+    private String extractProductName(String content) {
+        String[] patterns = {
+            "(?:化学品中文名称?|产品名称|中文名称|商品名|化学品名称)\\s*[：:：]?\\s*([^\\n\\r]+)",
+            "(?:名称|Name)\\s*[：:：]\\s*([^\\n\\r，,；;]+)",
+            "第一部分[^\\n]*\\n[^\\n]*名称[^：:：]*[：:：]\\s*([^\\n\\r]+)",
+            "1\\s*化学品及企业标识[^\\n]*\\n[^\\n]*名称[^：:：]*[：:：]\\s*([^\\n\\r]+)"
+        };
+        
+        for (String pattern : patterns) {
+            String result = extractValue(content, pattern);
+            if (StringUtils.isNotEmpty(result)) {
+                return result;
+            }
+        }
+        
+        // 尝试从文件名中提取化学品名称
+        return extractFromTitle(content);
+    }
+
+    /**
+     * 提取化学品英文名称
+     */
+    private String extractProductEnglishName(String content) {
+        String[] patterns = {
+            "(?:化学品英文名称?|英文名称?|English\\s*Name)\\s*[：:：]?\\s*([^\\n\\r]+)",
+            "(?:英文名|英文|English)\\s*[：:：]\\s*([^\\n\\r，,；;]+)",
+            "Product\\s*name\\s*[：:：]\\s*([^\\n\\r]+)"
+        };
+        
+        return extractMultiplePatterns(content, patterns);
+    }
+
+    /**
+     * 提取企业名称
+     */
+    private String extractCompanyName(String content) {
+        String[] patterns = {
+            "(?:企业名称|公司名称|供应商|生产企业|制造商|Company)\\s*[：:：]?\\s*([^\\n\\r]+)",
+            "(?:生产厂家|厂家|Manufacturer)\\s*[：:：]\\s*([^\\n\\r]+)",
+            "Supplier\\s*[：:：]\\s*([^\\n\\r]+)"
+        };
+        
+        return extractMultiplePatterns(content, patterns);
+    }
+
+    /**
+     * 提取企业地址
+     */
+    private String extractCompanyAddress(String content) {
+        String[] patterns = {
+            "(?:企业地址|公司地址|地址|Address)\\s*[：:：]?\\s*([^\\n\\r]+)",
+            "(?:生产地址|厂址)\\s*[：:：]\\s*([^\\n\\r]+)"
+        };
+        
+        return extractMultiplePatterns(content, patterns);
+    }
+
+    /**
+     * 提取联系电话
+     */
+    private String extractContactPhone(String content) {
+        String[] patterns = {
+            "(?:联系电话|电话|电话号码|Tel|Phone)\\s*[：:：]?\\s*([^\\n\\r]+)",
+            "(?:电话|Tel)\\s*[：:：]\\s*([\\d\\-\\+\\(\\)\\s]+)",
+            "联系方式\\s*[：:：]\\s*([^\\n\\r]+)"
+        };
+        
+        return extractMultiplePatterns(content, patterns);
+    }
+
+    /**
+     * 提取电子邮件
+     */
+    private String extractEmail(String content) {
+        String[] patterns = {
+            "(?:电子邮件|邮箱|电子邮箱|Email|E-mail)\\s*[：:：]?\\s*([^\\n\\r]+)",
+            "([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,})"
+        };
+        
+        return extractMultiplePatterns(content, patterns);
+    }
+
+    /**
+     * 提取应急电话
+     */
+    private String extractEmergencyPhone(String content) {
+        String[] patterns = {
+            "(?:应急电话|紧急联系电话|Emergency|应急联系电话)\\s*[：:：]?\\s*([^\\n\\r]+)",
+            "(?:急救电话|紧急电话)\\s*[：:：]\\s*([\\d\\-\\+\\(\\)\\s]+)"
+        };
+        
+        return extractMultiplePatterns(content, patterns);
+    }
+
+    /**
+     * 提取版本号
+     */
+    private String extractVersion(String content) {
+        String[] patterns = {
+            "(?:版本号|版本|Version)\\s*[：:：]?\\s*([^\\n\\r]+)",
+            "V\\s*([\\d\\.]+)",
+            "版本\\s*[：:：]\\s*([^\\n\\r]+)"
+        };
+        
+        return extractMultiplePatterns(content, patterns);
+    }
+
+    /**
+     * 提取CAS号
+     */
+    private String extractCasNumber(String content) {
+        String[] patterns = {
+            "CAS\\s*[号#]?\\s*[：:：]?\\s*([0-9\\-]+)",
+            "CAS\\s*No\\.?\\s*[：:：]?\\s*([0-9\\-]+)",
+            "CAS\\s*Registry\\s*Number\\s*[：:：]?\\s*([0-9\\-]+)",
+            "([0-9]{1,7}-[0-9]{2}-[0-9]{1})"  // 标准CAS号格式
+        };
+        
+        return extractMultiplePatterns(content, patterns);
+    }
+
+    /**
+     * 从标题中提取化学品名称
+     */
+    private String extractFromTitle(String content) {
+        // 从内容的前几行提取可能的化学品名称
+        String[] lines = content.split("\\n");
+        for (int i = 0; i < Math.min(5, lines.length); i++) {
+            String line = lines[i].trim();
+            if (line.length() > 3 && line.length() < 200 && 
+                !line.contains("MSDS") && !line.contains("安全技术说明书") && 
+                !line.contains("Material Safety Data Sheet")) {
+                return line;
+            }
+        }
+        return null;
+    }
+
+    /**
+     * 使用多个正则表达式提取值
+     */
+    private String extractMultiplePatterns(String content, String[] patterns) {
+        for (String pattern : patterns) {
+            String result = extractValue(content, pattern);
+            if (StringUtils.isNotEmpty(result)) {
+                return result;
+            }
+        }
+        return null;
     }
 
     /**

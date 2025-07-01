@@ -236,6 +236,40 @@ const ImportModal: React.FC<ImportModalProps> = ({ open, onOpenChange, onSuccess
                   导入失败：{importResult.failureCount} 条
                 </div>
               )}
+              
+              {/* 错误信息详情 */}
+              {importResult.errorMessages && importResult.errorMessages.length > 0 && (
+                <Card size="small" title="错误详情" type="inner">
+                  <List
+                    size="small"
+                    dataSource={importResult.errorMessages}
+                    renderItem={(errorMsg) => (
+                      <List.Item>
+                        <Text type="danger" style={{ fontSize: '12px' }}>
+                          {errorMsg}
+                        </Text>
+                      </List.Item>
+                    )}
+                  />
+                </Card>
+              )}
+              
+              {/* 导入建议 */}
+              {importResult.failureCount > 0 && (
+                <Alert
+                  message="导入建议"
+                  description={
+                    <div>
+                      <p>• 请检查文档格式是否为标准MSDS格式</p>
+                      <p>• 确保文档包含化学品名称、企业名称等基本信息</p>
+                      <p>• 可下载模板参考标准格式</p>
+                    </div>
+                  }
+                  type="info"
+                  showIcon
+                  style={{ marginTop: 8 }}
+                />
+              )}
             </Space>
           </Card>
         )}
