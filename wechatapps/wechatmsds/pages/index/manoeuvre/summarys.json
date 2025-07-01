@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "安全总结详情",
+  "usingComponents": {
+    "u-parse": "/components/uParse/src/wxParse"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "固体废弃物归还详情",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "nullt": "/components/nullt",
+    "step": "/components/lwp-step/lwp-step"
+  }
+}

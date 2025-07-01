@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSDS管理 - 搜索</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .search-result-item:hover {
+            background-color: #f9fafb;
+        }
+        .tag-chip {
+            background: #f3f4f6;
+            color: #374151;
+            padding: 4px 12px;
+            border-radius: 16px;
+            font-size: 12px;
+            display: inline-block;
+        }
+        .tag-chip.active {
+            background: #3b82f6;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- 微信小程序状态栏 -->
+    <div class="bg-black text-white text-xs px-4 py-1 flex justify-between items-center">
+        <span>9:41</span>
+        <div class="flex items-center gap-1">
+            <i class="fas fa-signal text-xs"></i>
+            <i class="fas fa-wifi text-xs"></i>
+            <i class="fas fa-battery-three-quarters text-xs"></i>
+        </div>
+    </div>
+    
+    <!-- 搜索栏 -->
+    <div class="bg-white px-4 py-3 border-b border-gray-100">
+        <div class="flex items-center">
+            <i class="fas fa-arrow-left text-gray-600 mr-4 text-lg"></i>
+            <div class="flex-1 relative">
+                <input type="text" 
+                       placeholder="输入化学品名称、CAS号或关键词" 
+                       class="w-full bg-gray-100 rounded-full px-4 py-2 pl-10 text-sm focus:outline-none focus:bg-white focus:ring-2 focus:ring-blue-500"
+                       value="乙醇">
+                <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm"></i>
+            </div>
+            <button class="ml-3 text-blue-500 text-sm font-medium">搜索</button>
+        </div>
+    </div>
+    
+    <!-- 筛选标签 -->
+    <div class="bg-white px-4 py-3 border-b border-gray-100">
+        <div class="flex items-center gap-2 overflow-x-auto">
+            <span class="tag-chip active">全部</span>
+            <span class="tag-chip">易燃液体</span>
+            <span class="tag-chip">腐蚀性</span>
+            <span class="tag-chip">有毒</span>
+            <span class="tag-chip">氧化性</span>
+            <span class="tag-chip">爆炸性</span>
+        </div>
+    </div>
+    
+    <!-- 搜索结果 -->
+    <div class="px-4 py-4 pb-20">
+        
+        <!-- 搜索统计 -->
+        <div class="flex items-center justify-between mb-4">
+            <span class="text-sm text-gray-600">找到 <span class="font-medium text-gray-800">23</span> 个相关结果</span>
+            <div class="flex items-center gap-2">
+                <span class="text-sm text-gray-500">排序:</span>
+                <select class="text-sm text-gray-700 bg-transparent">
+                    <option>相关度</option>
+                    <option>名称</option>
+                    <option>危险等级</option>
+                </select>
+            </div>
+        </div>
+        
+        <!-- 搜索结果列表 -->
+        <div class="space-y-3">
+            
+            <!-- 搜索结果项1 -->
+            <div class="search-result-item bg-white rounded-xl p-4 shadow-sm">
+                <div class="flex items-start">
+                    <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=60&h=60&fit=crop&crop=center" 
+                         alt="乙醇" class="w-15 h-15 rounded-lg object-cover mr-4">
+                    <!-- 图片来源: https://images.unsplash.com/photo-1532187863486-abf9dbad1b69 -->
+                    <div class="flex-1">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-1">乙醇 (Ethanol)</h3>
+                                <p class="text-sm text-gray-500 mb-2">CAS: 64-17-5 | 分子式: C₂H₆O</p>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="px-2 py-1 bg-orange-100 text-orange-800 text-xs rounded-full">易燃液体</span>
+                                    <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">中等危险</span>
+                                </div>
+                                <p class="text-xs text-gray-600">无色透明液体，具有特殊香味，易挥发...</p>
+                            </div>
+                            <i class="fas fa-heart text-gray-300 ml-2"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 搜索结果项2 -->
+            <div class="search-result-item bg-white rounded-xl p-4 shadow-sm">
+                <div class="flex items-start">
+                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=60&h=60&fit=crop&crop=center" 
+                         alt="乙醇溶液" class="w-15 h-15 rounded-lg object-cover mr-4">
+                    <!-- 图片来源: https://images.unsplash.com/photo-1559757148-5c350d0d3c56 -->
+                    <div class="flex-1">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-1">乙醇溶液 (75%)</h3>
+                                <p class="text-sm text-gray-500 mb-2">CAS: 64-17-5 | 浓度: 75%</p>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="px-2 py-1 bg-orange-100 text-orange-800 text-xs rounded-full">易燃液体</span>
+                                    <span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full">低危险</span>
+                                </div>
+                                <p class="text-xs text-gray-600">75%浓度乙醇水溶液，常用作消毒剂...</p>
+                            </div>
+                            <i class="fas fa-heart text-red-400 ml-2"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 搜索结果项3 -->
+            <div class="search-result-item bg-white rounded-xl p-4 shadow-sm">
+                <div class="flex items-start">
+                    <img src="https://images.unsplash.com/photo-1554475901-4538ddfbccc2?w=60&h=60&fit=crop&crop=center" 
+                         alt="无水乙醇" class="w-15 h-15 rounded-lg object-cover mr-4">
+                    <!-- 图片来源: https://images.unsplash.com/photo-1554475901-4538ddfbccc2 -->
+                    <div class="flex-1">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-1">无水乙醇 (99.5%)</h3>
+                                <p class="text-sm text-gray-500 mb-2">CAS: 64-17-5 | 纯度: ≥99.5%</p>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="px-2 py-1 bg-red-100 text-red-800 text-xs rounded-full">高度易燃</span>
+                                    <span class="px-2 py-1 bg-orange-100 text-orange-800 text-xs rounded-full">中等危险</span>
+                                </div>
+                                <p class="text-xs text-gray-600">高纯度无水乙醇，用于实验室分析...</p>
+                            </div>
+                            <i class="fas fa-heart text-gray-300 ml-2"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 搜索结果项4 -->
+            <div class="search-result-item bg-white rounded-xl p-4 shadow-sm">
+                <div class="flex items-start">
+                    <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?w=60&h=60&fit=crop&crop=center" 
+                         alt="乙醇胺" class="w-15 h-15 rounded-lg object-cover mr-4">
+                    <!-- 图片来源: https://images.unsplash.com/photo-1576086213369-97a306d36557 -->
+                    <div class="flex-1">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-1">乙醇胺 (Ethanolamine)</h3>
+                                <p class="text-sm text-gray-500 mb-2">CAS: 141-43-5 | 分子式: C₂H₇NO</p>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="px-2 py-1 bg-red-100 text-red-800 text-xs rounded-full">腐蚀性</span>
+                                    <span class="px-2 py-1 bg-orange-100 text-orange-800 text-xs rounded-full">中等危险</span>
+                                </div>
+                                <p class="text-xs text-gray-600">无色粘稠液体，具有氨味，强碱性...</p>
+                            </div>
+                            <i class="fas fa-heart text-gray-300 ml-2"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 搜索结果项5 -->
+            <div class="search-result-item bg-white rounded-xl p-4 shadow-sm">
+                <div class="flex items-start">
+                    <img src="https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=60&h=60&fit=crop&crop=center" 
+                         alt="乙醇酸" class="w-15 h-15 rounded-lg object-cover mr-4">
+                    <!-- 图片来源: https://images.unsplash.com/photo-1518152006812-edab29b069ac -->
+                    <div class="flex-1">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-1">乙醇酸 (Glycolic Acid)</h3>
+                                <p class="text-sm text-gray-500 mb-2">CAS: 79-14-1 | 分子式: C₂H₄O₃</p>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="px-2 py-1 bg-red-100 text-red-800 text-xs rounded-full">腐蚀性</span>
+                                    <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">刺激性</span>
+                                </div>
+                                <p class="text-xs text-gray-600">无色结晶或白色粉末，易溶于水...</p>
+                            </div>
+                            <i class="fas fa-heart text-gray-300 ml-2"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- 加载更多 -->
+        <div class="text-center mt-6">
+            <button class="text-blue-500 text-sm font-medium py-2 px-4 border border-blue-500 rounded-full">
+                加载更多结果
+            </button>
+        </div>
+        
+    </div>
+    
+    <!-- 底部导航栏 -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-100 px-4 py-2">
+        <div class="flex justify-around items-center">
+            <div class="text-center">
+                <i class="fas fa-home text-gray-400 text-lg mb-1"></i>
+                <span class="text-xs text-gray-400">首页</span>
+            </div>
+            <div class="text-center">
+                <i class="fas fa-search text-blue-600 text-lg mb-1"></i>
+                <span class="text-xs text-blue-600 font-medium">搜索</span>
+            </div>
+            <div class="text-center">
+                <i class="fas fa-qrcode text-gray-400 text-lg mb-1"></i>
+                <span class="text-xs text-gray-400">扫码</span>
+            </div>
+            <div class="text-center">
+                <i class="fas fa-user text-gray-400 text-lg mb-1"></i>
+                <span class="text-xs text-gray-400">我的</span>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

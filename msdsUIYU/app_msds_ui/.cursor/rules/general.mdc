@@ -1,0 +1,163 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: 项目通用规范和基本信息
+globs: ["*"]
+alwaysApply: true
+---
+
+# 项目通用规范 - MSDS 小程序开发
+在理解用户需求、编写代码和解决问题时，你应始终遵循以下原则：
+
+## 第一步：项目初始化
+- 当用户提出任何需求时，首先浏览项目根目录下的文档，重点关注：
+  - [list.md](mdc:list.md) - 项目进度计划和开发阶段
+  - [docs/PRD.md](mdc:docs/PRD.md) - 产品需求文档
+  - [design/specs/Design_Spec.md](mdc:design/specs/Design_Spec.md) - 设计规范
+  - [RuoYi-Msds-App/](mdc:RuoYi-Msds-App) - 小程序核心代码
+- 如果缺少 README.md 文件，创建一个。在 README.md 中清晰描述项目目标、技术架构、页面功能、API 接口等。
+- 确保文档与代码同步更新，任何功能变更都要反映在相关文档中。
+
+## 第二步：需求分析和开发
+### 理解用户需求时：
+- 充分理解用户需求，站在 MSDS 管理员和查阅用户的角度思考。
+- 作为产品经理，分析需求是否符合 MSDS 管理的业务流程。
+- 优先考虑 MVP 功能：扫码查阅、关键词搜索、文档预览、分享功能。
+- 选择最简单且符合 RuoYi 框架规范的解决方案。
+
+### 开发流程：
+- 遵循 [list.md](mdc:list.md) 中的四阶段开发计划
+- 每完成一个功能模块，及时更新进度状态
+- 使用思维链推理进行代码 debug 和问题排查
+
+## 技术栈
+
+### 前端技术
+- **小程序框架**: UniApp (支持微信小程序、H5、APP)
+- **UI 组件库**: uView UI + ColorUI
+- **状态管理**: Vuex (RuoYi 集成)
+- **HTTP 请求**: RuoYi 封装的网络请求模块
+
+### 后端技术
+- **主框架**: RuoYi (Spring Boot + MyBatis Plus)
+- **数据库**: MySQL
+- **认证方式**: JWT + 微信授权登录
+- **文件存储**: 支持本地存储或云存储
+
+### 开发工具
+- **版本控制**: Git + GitHub
+- **自动化**: GitHub Actions (构建和发布)
+- **开发环境**: HBuilderX 或 VS Code
+
+## 代码风格与规范
+
+### Clean Code 原则
+- **DRY (Don't Repeat Yourself)**: 避免重复代码，提取公共组件
+- **KISS (Keep It Simple, Stupid)**: 保持代码简洁易懂
+- **SOLID**: 遵循单一职责、开闭原则等设计原则
+
+### Vue/UniApp 规范
+- 组件命名使用 PascalCase
+- 页面文件统一放在 [RuoYi-Msds-App/pages/](mdc:RuoYi-Msds-App/pages) 目录
+- 公共组件放在 [RuoYi-Msds-App/components/](mdc:RuoYi-Msds-App/components) 目录
+- API 调用统一放在 [RuoYi-Msds-App/api/](mdc:RuoYi-Msds-App/api) 目录
+- 工具函数放在 [RuoYi-Msds-App/utils/](mdc:RuoYi-Msds-App/utils) 目录
+
+### 代码注释
+- 复杂业务逻辑必须添加注释
+- 组件 props 和方法需要 JSDoc 注释
+- API 接口调用需要说明用途和参数
+
+## 项目结构规范
+
+### 核心目录结构
+```
+RuoYi-Msds-App/
+├── pages/          # 页面文件
+├── components/     # 公共组件
+├── api/           # API 接口
+├── store/         # 状态管理
+├── utils/         # 工具函数
+├── static/        # 静态资源
+└── uni_modules/   # uni-ui 组件
+```
+
+### 模块化原则
+- 相关功能代码集中在同一目录
+- 组件功能单一，可复用性强
+- API 按业务模块分组管理
+- 避免循环依赖
+- 遵循 DRY 原则，避免重复代码
+- 优先使用现有 uni-ui 组件库和工具
+- 考虑代码的可维护性和可扩展性
+
+### 文件命名规范
+- 页面文件：小写字母 + 连字符 (kebab-case)
+- 组件文件：大驼峰命名 (PascalCase)
+- 工具文件：小驼峰命名 (camelCase)
+
+## 开发与维护规范
+
+### 版本管理
+- 功能开发使用 feature 分支
+- 测试通过后合并到 develop 分支
+- 发布前合并到 master 分支
+
+### 进度追踪
+- 任务完成后及时更新 [list.md](mdc:list.md) 状态
+- 重要里程碑达成需记录时间和负责人
+- Bug 修复需要记录问题描述和解决方案
+
+### 测试规范
+- 核心功能需要编写单元测试
+- 新功能上线前必须进行功能测试
+- 支持多端兼容性测试 (微信小程序、H5、APP)
+
+### 整体性思维
+- 每次修改都要考虑相关依赖关系
+- 确保所有涉及的文件都同步修改
+- 不可漏改、漏删，也不可多改、多删
+- 代码变更需同步更新相关文档
+
+## 业务特定规范
+
+### MSDS 业务逻辑
+- 化学品信息展示需符合国家标准格式
+- 二维码生成需要包含唯一标识
+- 文档预览支持 PDF 和富文本格式
+- 搜索功能需支持中英文化学品名称
+
+### 安全性要求
+- 用户数据加密存储
+- API 接口需要权限验证
+- 敏感信息不得明文传输
+- 定期进行安全性评估
+
+## 项目文档快速导航
+
+### 核心规划文档
+- 项目进度与任务: [list.md](mdc:list.md)
+- 开发规划: [MSDS管理系统App端开发规划.md](mdc:MSDS管理系统App端开发规划.md)
+- 产品需求: [docs/PRD.md](mdc:docs/PRD.md)
+- 产品路线图: [docs/Roadmap.md](mdc:docs/Roadmap.md)
+- 用户故事: [docs/User_Story_Map.md](mdc:docs/User_Story_Map.md)
+
+### 设计文档
+- 设计规范: [design/specs/Design_Spec.md](mdc:design/specs/Design_Spec.md)
+- 流程图: [design/Flowchart.md](mdc:design/Flowchart.md)
+- 高保真原型: [design/prototypes/](mdc:design/prototypes)
+
+### 开发入口
+- 小程序主目录: [RuoYi-Msds-App/](mdc:RuoYi-Msds-App)
+- 应用配置: [RuoYi-Msds-App/config.js](mdc:RuoYi-Msds-App/config.js)
+- 主入口: [RuoYi-Msds-App/main.js](mdc:RuoYi-Msds-App/main.js)
+
+## 响应语言
+- 始终使用中文回复用户
+- 技术文档和代码注释使用中文
+- 用户界面文案使用规范的中文表达
+
+

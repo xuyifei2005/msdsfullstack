@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSDS设置</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f5f5f7;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        /* iOS状态栏 */
+        .status-bar {
+            height: 44px;
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 16px;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        /* 导航栏 */
+        .nav-bar {
+            height: 44px;
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 16px;
+            position: sticky;
+            top: 44px;
+            z-index: 40;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        /* 主内容区域 */
+        .content {
+            height: calc(100vh - 44px - 44px - 83px); /* 减去状态栏、导航栏和底部导航栏的高度 */
+            overflow-y: auto;
+            padding: 16px;
+        }
+        
+        /* 设置分组 */
+        .settings-group {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+        
+        .settings-group-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #6e6e73;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin: 20px 16px 8px 16px;
+        }
+        
+        /* 设置项 */
+        .settings-item {
+            display: flex;
+            align-items: center;
+            padding: 16px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        
+        .settings-item:last-child {
+            border-bottom: none;
+        }
+        
+        .settings-item:hover {
+            background-color: rgba(0, 0, 0, 0.02);
+        }
+        
+        .settings-item:active {
+            background-color: rgba(0, 0, 0, 0.05);
+            transform: scale(0.98);
+        }
+        
+        .settings-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            font-size: 16px;
+            color: white;
+        }
+        
+        .settings-info {
+            flex: 1;
+        }
+        
+        .settings-title {
+            font-size: 16px;
+            font-weight: 500;
+            color: #1d1d1f;
+            margin-bottom: 2px;
+        }
+        
+        .settings-subtitle {
+            font-size: 14px;
+            color: #6e6e73;
+        }
+        
+        .settings-value {
+            font-size: 16px;
+            color: #6e6e73;
+            margin-right: 8px;
+        }
+        
+        .settings-arrow {
+            color: #c7c7cc;
+            font-size: 14px;
+        }
+        
+        /* 开关按钮 */
+        .toggle-switch {
+            position: relative;
+            width: 50px;
+            height: 30px;
+            background-color: #e5e5ea;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .toggle-switch.active {
+            background-color: #34c759;
+        }
+        
+        .toggle-switch::after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 26px;
+            height: 26px;
+            background-color: white;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .toggle-switch.active::after {
+            transform: translateX(20px);
+        }
+        
+        /* 用户头像区域 */
+        .user-profile {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+        }
+        
+        .user-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #007AFF, #5856D6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: 600;
+            margin-right: 16px;
+        }
+        
+        .user-info {
+            flex: 1;
+        }
+        
+        .user-name {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 4px;
+        }
+        
+        .user-email {
+            font-size: 14px;
+            color: #6e6e73;
+        }
+        
+        /* 底部导航栏 */
+        .tab-bar {
+            height: 83px; /* 包含安全区域的高度 */
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding-bottom: 20px; /* 安全区域 */
+        }
+        
+        .tab-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #8E8E93;
+            font-size: 10px;
+            padding: 8px 0;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        
+        .tab-item:active {
+            transform: scale(0.9);
+        }
+        
+        .tab-item.active {
+            color: #007AFF;
+        }
+        
+        .tab-icon {
+            font-size: 24px;
+            margin-bottom: 4px;
+        }
+        
+        /* 毛玻璃背景效果 */
+        .glass-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.2;
+            z-index: -1;
+            animation: subtle-move 30s infinite alternate ease-in-out;
+            filter: saturate(1.2) brightness(1.1);
+        }
+        
+        @keyframes subtle-move {
+            0% {
+                background-position: 0% 0%;
+                transform: scale(1.02);
+            }
+            50% {
+                transform: scale(1.0);
+            }
+            100% {
+                background-position: 100% 100%;
+                transform: scale(1.02);
+            }
+        }
+        
+        /* 版本信息 */
+        .version-info {
+            text-align: center;
+            padding: 20px;
+            color: #8e8e93;
+            font-size: 14px;
+        }
+        
+        /* 危险提示 */
+        .danger-item {
+            color: #ff3b30;
+        }
+        
+        .danger-item .settings-icon {
+            background-color: #ff3b30;
+        }
+    </style>
+</head>
+<body>
+    <!-- 毛玻璃背景 -->
+    <div class="glass-bg"></div>
+    
+    <!-- iOS状态栏 -->
+    <div class="status-bar">
+        <div class="time font-semibold">9:41</div>
+        <div class="icons">
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-wifi ml-2"></i>
+            <i class="fas fa-battery-full ml-2"></i>
+        </div>
+    </div>
+    
+    <!-- 导航栏 -->
+    <div class="nav-bar">
+        <div class="text-xl font-bold">设置</div>
+        <button class="text-blue-500">
+            <i class="fas fa-user-edit"></i>
+        </button>
+    </div>
+    
+    <!-- 主内容区域 -->
+    <div class="content">
+        <!-- 用户信息 -->
+        <div class="user-profile">
+            <div class="user-avatar">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="user-info">
+                <div class="user-name">管理员</div>
+                <div class="user-email">admin@msds.com</div>
+            </div>
+            <i class="fas fa-chevron-right settings-arrow"></i>
+        </div>
+        
+        <!-- 通用设置 -->
+        <div class="settings-group-title">通用</div>
+        <div class="settings-group">
+            <div class="settings-item">
+                <div class="settings-icon" style="background-color: #007AFF;">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <div class="settings-info">
+                    <div class="settings-title">通知</div>
+                    <div class="settings-subtitle">推送通知和提醒</div>
+                </div>
+                <div class="toggle-switch active" onclick="toggleSwitch(this)"></div>
+            </div>
+            
+            <div class="settings-item">
+                <div class="settings-icon" style="background-color: #34C759;">
+                    <i class="fas fa-download"></i>
+                </div>
+                <div class="settings-info">
+                    <div class="settings-title">自动下载</div>
+                    <div class="settings-subtitle">WiFi环境下自动下载更新</div>
+                </div>
+                <div class="toggle-switch" onclick="toggleSwitch(this)"></div>
+            </div>
+            
+            <div class="settings-item">
+                <div class="settings-icon" style="background-color: #FF9500;">
+                    <i class="fas fa-language"></i>
+                </div>
+                <div class="settings-info">
+                    <div class="settings-title">语言</div>
+                </div>
+                <div class="settings-value">简体中文</div>
+                <i class="fas fa-chevron-right settings-arrow"></i>
+            </div>
+        </div>
+        
+        <!-- 数据管理 -->
+        <div class="settings-group-title">数据管理</div>
+        <div class="settings-group">
+            <div class="settings-item">
+                <div class="settings-icon" style="background-color: #5856D6;">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <div class="settings-info">
+                    <div class="settings-title">云同步</div>
+                    <div class="settings-subtitle">同步收藏和搜索历史</div>
+                </div>
+                <div class="toggle-switch active" onclick="toggleSwitch(this)"></div>
+            </div>
+            
+            <div class="settings-item">
+                <div class="settings-icon" style="background-color: #32D74B;">
+                    <i class="fas fa-database"></i>
+                </div>
+                <div class="settings-info">
+                    <div class="settings-title">缓存管理</div>
+                    <div class="settings-subtitle">已使用 128MB</div>
+                </div>
+                <i class="fas fa-chevron-right settings-arrow"></i>
+            </div>
+            
+            <div class="settings-item">
+                <div class="settings-icon" style="background-color: #FF6B35;">
+                    <i class="fas fa-file-export"></i>
+                </div>
+                <div class="settings-info">
+                    <div class="settings-title">数据导出</div>
+                    <div class="settings-subtitle">导出收藏和历史记录</div>
+                </div>
+                <i class="fas fa-chevron-right settings-arrow"></i>
+            </div>
+        </div>
+        
+        <!-- 安全设置 -->
+        <div class="settings-group-title">安全</div>
+        <div class="settings-group">
+            <div class="settings-item">
+                <div class="settings-icon" style="background-color: #FF3B30;">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="settings-info">
+                    <div class="settings-title">安全验证</div>
+                    <div class="settings-subtitle">Face ID / Touch ID</div>
+                </div>
+                <div class="toggle-switch" onclick="toggleSwitch(this)"></div>
+            </div>
+            
+            <div class="settings-item">
+                <div class="settings-icon" style="background-color: #8E8E93;">
+                    <i class="fas fa-key"></i>
+                </div>
+                <div class="settings-info">
+                    <div class="settings-title">修改密码</div>
+                </div>
+                <i class="fas fa-chevron-right settings-arrow"></i>
+            </div>
+        </div>
+        
+        <!-- 关于 -->
+        <div class="settings-group-title">关于</div>
+        <div class="settings-group">
+            <div class="settings-item">
+                <div class="settings-icon" style="background-color: #007AFF;">
+                    <i class="fas fa-info-circle"></i>
+                </div>
+                <div class="settings-info">
+                    <div class="settings-title">关于MSDS</div>
+                </div>
+                <i class="fas fa-chevron-right settings-arrow"></i>
+            </div>
+            
+            <div class="settings-item">
+                <div class="settings-icon" style="background-color: #34C759;">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="settings-info">
+                    <div class="settings-title">评价应用</div>
+                </div>
+                <i class="fas fa-chevron-right settings-arrow"></i>
+            </div>
+            
+            <div class="settings-item">
+                <div class="settings-icon" style="background-color: #FF9500;">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <div class="settings-info">
+                    <div class="settings-title">帮助与反馈</div>
+                </div>
+                <i class="fas fa-chevron-right settings-arrow"></i>
+            </div>
+        </div>
+        
+        <!-- 危险操作 -->
+        <div class="settings-group-title">危险操作</div>
+        <div class="settings-group">
+            <div class="settings-item danger-item">
+                <div class="settings-icon">
+                    <i class="fas fa-trash"></i>
+                </div>
+                <div class="settings-info">
+                    <div class="settings-title">清除所有数据</div>
+                    <div class="settings-subtitle">此操作不可恢复</div>
+                </div>
+                <i class="fas fa-chevron-right settings-arrow"></i>
+            </div>
+        </div>
+        
+        <!-- 版本信息 -->
+        <div class="version-info">
+            MSDS文件管理系统 v1.0.0<br>
+            © 2024 All Rights Reserved
+        </div>
+    </div>
+    
+    <!-- 底部导航栏 -->
+    <div class="tab-bar">
+        <a href="search.html" class="tab-item">
+            <i class="fas fa-search tab-icon"></i>
+            <span>搜索</span>
+        </a>
+        <a href="search_results.html" class="tab-item">
+            <i class="fas fa-list-ul tab-icon"></i>
+            <span>列表</span>
+        </a>
+        <a href="favorites.html" class="tab-item">
+            <i class="fas fa-star tab-icon"></i>
+            <span>收藏</span>
+        </a>
+        <a href="settings.html" class="tab-item active">
+            <i class="fas fa-cog tab-icon"></i>
+            <span>设置</span>
+        </a>
+    </div>
+    
+    <script>
+    // 切换开关状态
+    function toggleSwitch(element) {
+        element.classList.toggle('active');
+    }
+    
+    // 设置项点击事件
+    document.querySelectorAll('.settings-item').forEach(item => {
+        if (!item.querySelector('.toggle-switch')) {
+            item.addEventListener('click', function() {
+                const title = this.querySelector('.settings-title').textContent;
+                alert(`点击了: ${title}`);
+            });
+        }
+    });
+    </script>
+</body>
+</html>

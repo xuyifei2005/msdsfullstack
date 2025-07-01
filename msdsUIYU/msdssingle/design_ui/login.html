@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSDS登录</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        /* 毛玻璃背景效果 */
+        .glass-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        
+        /* iOS状态栏 */
+        .status-bar {
+            height: 44px;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 16px;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+        
+        .time {
+            font-weight: 600;
+            font-size: 16px;
+        }
+        
+        .icons {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        /* 主内容区域 */
+        .content {
+            height: calc(100vh - 44px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+            z-index: 10;
+        }
+        
+        /* Logo区域 */
+        .logo-container {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #007AFF, #5856D6);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            box-shadow: 0 10px 30px rgba(0, 122, 255, 0.3);
+        }
+        
+        .logo i {
+            font-size: 36px;
+            color: white;
+        }
+        
+        .app-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 8px;
+        }
+        
+        .app-subtitle {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        /* 登录表单 */
+        .login-form {
+            width: 100%;
+            max-width: 320px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 32px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* 输入框组 */
+        .input-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .input-label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 8px;
+        }
+        
+        .input-field {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            padding: 16px 20px;
+            font-size: 16px;
+            color: white;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        
+        .input-field::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .input-field:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.25);
+            border-color: rgba(255, 255, 255, 0.5);
+            box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        /* 密码输入框 */
+        .password-container {
+            position: relative;
+        }
+        
+        .password-toggle {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: rgba(255, 255, 255, 0.7);
+            cursor: pointer;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        
+        .password-toggle:hover {
+            color: white;
+        }
+        
+        /* 忘记密码链接 */
+        .forgot-password {
+            text-align: right;
+            margin-bottom: 24px;
+        }
+        
+        .forgot-password a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+        
+        .forgot-password a:hover {
+            color: white;
+        }
+        
+        /* 登录按钮 */
+        .login-button {
+            width: 100%;
+            background: linear-gradient(135deg, #007AFF, #5856D6);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 16px;
+            font-size: 17px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 122, 255, 0.3);
+            margin-bottom: 20px;
+        }
+        
+        .login-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 122, 255, 0.4);
+        }
+        
+        .login-button:active {
+            transform: translateY(0);
+        }
+        
+        /* 分割线 */
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 24px 0;
+        }
+        
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        .divider span {
+            padding: 0 16px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+        }
+        
+        /* 社交登录按钮 */
+        .social-login {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        
+        .social-btn {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 12px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+        
+        .social-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        /* 注册链接 */
+        .register-link {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+        }
+        
+        .register-link a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.3s ease;
+        }
+        
+        .register-link a:hover {
+            opacity: 0.8;
+        }
+        
+        /* 动画效果 */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .login-form {
+            animation: fadeInUp 0.6s ease-out;
+        }
+        
+        .logo-container {
+            animation: fadeInUp 0.6s ease-out 0.2s both;
+        }
+    </style>
+</head>
+<body>
+    <!-- 毛玻璃背景 -->
+    <div class="glass-bg"></div>
+    
+    <!-- iOS状态栏 -->
+    <div class="status-bar">
+        <div class="time font-semibold">9:41</div>
+        <div class="icons">
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-wifi ml-2"></i>
+            <i class="fas fa-battery-full ml-2"></i>
+        </div>
+    </div>
+    
+    <!-- 主内容区域 -->
+    <div class="content">
+        <!-- Logo区域 -->
+        <div class="logo-container">
+            <div class="logo">
+                <i class="fas fa-flask"></i>
+            </div>
+            <h1 class="app-title">MSDS Manager</h1>
+            <p class="app-subtitle">危险化学品说明书管理系统</p>
+        </div>
+        
+        <!-- 登录表单 -->
+        <form class="login-form">
+            <!-- 用户名输入 -->
+            <div class="input-group">
+                <label class="input-label">用户名或邮箱</label>
+                <input type="text" class="input-field" placeholder="请输入用户名或邮箱" required>
+            </div>
+            
+            <!-- 密码输入 -->
+            <div class="input-group">
+                <label class="input-label">密码</label>
+                <div class="password-container">
+                    <input type="password" class="input-field" placeholder="请输入密码" id="password" required>
+                    <button type="button" class="password-toggle" onclick="togglePassword()">
+                        <i class="fas fa-eye" id="password-icon"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- 忘记密码 -->
+            <div class="forgot-password">
+                <a href="#">忘记密码？</a>
+            </div>
+            
+            <!-- 登录按钮 -->
+            <button type="submit" class="login-button" onclick="handleLogin(event)">
+                <i class="fas fa-sign-in-alt mr-2"></i>
+                登录
+            </button>
+            
+            <!-- 分割线 -->
+            <div class="divider">
+                <span>或</span>
+            </div>
+            
+            <!-- 社交登录 -->
+            <div class="social-login">
+                <button type="button" class="social-btn">
+                    <i class="fab fa-apple"></i>
+                </button>
+                <button type="button" class="social-btn">
+                    <i class="fab fa-google"></i>
+                </button>
+                <button type="button" class="social-btn">
+                    <i class="fab fa-microsoft"></i>
+                </button>
+            </div>
+            
+            <!-- 注册链接 -->
+            <div class="register-link">
+                还没有账户？<a href="register.html">立即注册</a>
+            </div>
+        </form>
+    </div>
+    
+    <script>
+        // 密码显示/隐藏切换
+        function togglePassword() {
+            const passwordField = document.getElementById('password');
+            const passwordIcon = document.getElementById('password-icon');
+            
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                passwordIcon.className = 'fas fa-eye-slash';
+            } else {
+                passwordField.type = 'password';
+                passwordIcon.className = 'fas fa-eye';
+            }
+        }
+        
+        // 登录处理
+        function handleLogin(event) {
+            event.preventDefault();
+            
+            // 模拟登录过程
+            const button = event.target;
+            const originalText = button.innerHTML;
+            
+            button.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>登录中...';
+            button.disabled = true;
+            
+            setTimeout(() => {
+                // 模拟登录成功，跳转到主页
+                window.parent.location.href = 'search.html';
+            }, 2000);
+        }
+        
+        // 输入框焦点效果
+        document.querySelectorAll('.input-field').forEach(input => {
+            input.addEventListener('focus', function() {
+                this.parentElement.style.transform = 'translateY(-2px)';
+            });
+            
+            input.addEventListener('blur', function() {
+                this.parentElement.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>

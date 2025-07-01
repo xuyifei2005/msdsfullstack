@@ -1,0 +1,132 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# MSDS 小程序开发项目规则
+
+## 项目概述
+
+这是一个基于 UniApp + RuoYi 框架的 MSDS（安全技术说明书）管理小程序项目，采用敏捷开发模式，从 MVP 开始逐步迭代完善。
+
+## 项目结构
+
+## 项目路径：
+D:\msdsfullstack\msdsUIYU\app_msds_ui\RuoYi-Msds-App
+
+### 核心目录
+- **RuoYi-Msds-App/**: 小程序主代码目录，基于 RuoYi-App 框架
+- **design/**: UI/UX 设计文件，包含原型和设计规范
+- **docs/**: 产品需求、路线图、用户故事等核心文档
+
+### 关键文件
+- 项目进度计划: [list.md](mdc:list.md)
+- 开发规划: [MSDS管理系统App端开发规划.md](mdc:MSDS管理系统App端开发规划.md)
+- 产品需求文档: [docs/PRD.md](mdc:docs/PRD.md)
+- 产品路线图: [docs/Roadmap.md](mdc:docs/Roadmap.md)
+- 用户故事地图: [docs/User_Story_Map.md](mdc:docs/User_Story_Map.md)
+- 评估指标框架: [docs/Metrics_Framework.md](mdc:docs/Metrics_Framework.md)
+- 设计规范: [design/specs/Design_Spec.md](mdc:design/specs/Design_Spec.md)
+- 流程图: [design/Flowchart.md](mdc:design/Flowchart.md)
+
+### 小程序核心文件
+- 应用入口: [RuoYi-Msds-App/App.vue](mdc:RuoYi-Msds-App/App.vue)
+- 主入口: [RuoYi-Msds-App/main.js](mdc:RuoYi-Msds-App/main.js)
+- 配置文件: [RuoYi-Msds-App/config.js](mdc:RuoYi-Msds-App/config.js)
+- 首页: [RuoYi-Msds-App/pages/index.vue](mdc:RuoYi-Msds-App/pages/index.vue)
+- 登录页: [RuoYi-Msds-App/pages/login.vue](mdc:RuoYi-Msds-App/pages/login.vue)
+- 个人中心: [RuoYi-Msds-App/pages/mine/index.vue](mdc:RuoYi-Msds-App/pages/mine/index.vue)
+
+## 开发阶段与进度
+
+项目分为四个主要阶段，详细进度请参考 [list.md](mdc:list.md):
+
+### 第一阶段: 项目启动、规划与设计 (T0 ~ T0 + 3周)
+- ✅ 产品规划、UI/UX 设计、技术准备已完成
+- ☐ 团队组建与项目启动会待进行
+
+### 第二阶段: MVP (V1.0) 开发与测试 (T0 + 3周 ~ T0 + 2.5个月)
+- 核心功能：微信授权登录、扫码查阅、关键词搜索、MSDS详情页、分享功能
+- 后台 API 开发、Web 管理端开发、全面测试
+
+### 第三阶段: MVP (V1.0) 发布与迭代 (T0 + 2.5个月 ~ T0 + 4个月)
+- 生产环境部署、正式发布、用户反馈收集、V1.1 迭代
+
+### 第四阶段: V2.0 开发与发布 (T0 + 4个月 ~ T0 + 8个月)
+- 完善的 Web 管理后台、增强小程序功能、权限系统、数据统计
+
+## 技术栈与架构
+
+### 前端技术
+- **小程序端**: UniApp + uView UI 组件库
+- **Web 管理端**: React + Ant Design (基于 RuoYi)
+- **UI 框架**: ColorUI + 自定义样式
+
+### 后端技术
+- **框架**: RuoYi (Spring Boot + MyBatis Plus)
+- **数据库**: MySQL
+- **认证**: JWT + 微信授权
+
+### 开发工具与环境
+- 开发环境已搭建完成
+- 代码仓库: [RuoYi-Msds-App/](mdc:RuoYi-Msds-App)
+
+## 开发规范
+
+### Clean Code 原则
+- **DRY (Don't Repeat Yourself)**: 避免重复代码，提取公共组件和工具函数
+- **KISS (Keep It Simple, Stupid)**: 保持代码简洁易懂
+- **SOLID**: 单一职责、开闭原则、里氏替换、接口隔离、依赖倒置
+
+### 代码结构规范
+- 组件文件统一放在 [RuoYi-Msds-App/components/](mdc:RuoYi-Msds-App/components)
+- API 调用统一放在 [RuoYi-Msds-App/api/](mdc:RuoYi-Msds-App/api)
+- 工具函数统一放在 [RuoYi-Msds-App/utils/](mdc:RuoYi-Msds-App/utils)
+- 状态管理使用 [RuoYi-Msds-App/store/](mdc:RuoYi-Msds-App/store)
+
+### 进度更新规范
+- 每个任务完成后需在 [list.md](mdc:list.md) 中更新状态
+- 重要里程碑达成需记录时间点
+- Bug 修复和特性开发都要有相应的文档更新
+
+## 核心功能模块
+
+### 扫码功能
+- 使用 `uni.scanCode` API
+- 支持二维码识别跳转到 MSDS 详情
+
+### 搜索功能
+- 关键词搜索 MSDS 数据
+- 列表展示与分页加载
+
+### 详情页面
+- MSDS 文档展示（富文本/PDF 预览）
+- 支持分享到微信
+
+### 用户管理
+- 微信一键登录
+- 个人中心、查阅历史、收藏功能
+
+## 风险管理
+
+详细风险评估与应对策略参考 [list.md](mdc:list.md) 第6节：
+- 核心开发人员离职风险
+- 用户反馈不佳风险
+- 技术方案瓶颈风险
+- 需求范围蔓延风险
+- 第三方服务故障风险
+
+## 开发提醒
+
+1. **思维链推理**: 进行代码 debug 时使用系统性思维链方法
+2. **整体审视**: 每处修改都要考虑相关依赖，确保所有涉及的地方同步修改
+3. **进度记录**: 完成特性或修复错误后随时更新 [list.md](mdc:list.md)
+4. **文档同步**: 代码变更需同步更新相关文档
+
+## 快速导航
+
+- 查看当前进度: [list.md](mdc:list.md)
+- 了解产品需求: [docs/PRD.md](mdc:docs/PRD.md)
+- 查看设计稿: [design/prototypes/](mdc:design/prototypes)
+- 开始开发: [RuoYi-Msds-App/](mdc:RuoYi-Msds-App)
+

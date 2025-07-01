@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "出入记录",
+  "usingComponents": {
+    "u-datetime-picker": "/node-modules/uview-ui/components/u-datetime-picker/u-datetime-picker"
+  }
+}

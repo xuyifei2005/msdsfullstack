@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSDS 管理系统 - 文档管理</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="min-h-screen bg-gray-50">
+    <!-- 顶部导航 -->
+    <nav class="bg-white shadow-sm border-b">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <h1 class="text-2xl font-bold text-gray-900">MSDS 文档管理</h1>
+                <div class="flex items-center space-x-3">
+                    <button class="px-4 py-2 text-gray-600 border border-gray-300 rounded-lg hover:bg-gray-50">
+                        <i class="fas fa-file-export mr-2"></i>批量导出
+                    </button>
+                    <button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+                        <i class="fas fa-upload mr-2"></i>上传MSDS
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-6 py-8">
+        <!-- 筛选和操作栏 -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+            <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center space-x-4">
+                    <div class="relative">
+                        <input type="text" 
+                               class="w-80 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                               placeholder="搜索化学品名称、CAS号...">
+                        <i class="fas fa-search absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    </div>
+                    <select class="px-3 py-2 border border-gray-300 rounded-lg">
+                        <option>全部状态</option>
+                        <option>最新版本</option>
+                        <option>需要更新</option>
+                        <option>待审核</option>
+                    </select>
+                    <select class="px-3 py-2 border border-gray-300 rounded-lg">
+                        <option>全部供应商</option>
+                        <option>国药试剂</option>
+                        <option>西格玛-奥德里奇</option>
+                    </select>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span class="text-sm text-gray-600">已选择:</span>
+                    <span class="text-sm font-medium text-blue-600">0</span>
+                    <button class="px-3 py-1 text-sm text-gray-600 border border-gray-300 rounded hover:bg-gray-50">
+                        全选
+                    </button>
+                </div>
+            </div>
+            
+            <!-- 批量操作 -->
+            <div class="flex items-center space-x-3">
+                <button class="px-3 py-2 text-sm text-gray-600 border border-gray-300 rounded hover:bg-gray-50" disabled>
+                    <i class="fas fa-edit mr-1"></i>批量编辑
+                </button>
+                <button class="px-3 py-2 text-sm text-gray-600 border border-gray-300 rounded hover:bg-gray-50" disabled>
+                    <i class="fas fa-download mr-1"></i>批量下载
+                </button>
+                <button class="px-3 py-2 text-sm text-red-600 border border-red-300 rounded hover:bg-red-50" disabled>
+                    <i class="fas fa-trash mr-1"></i>批量删除
+                </button>
+            </div>
+        </div>
+
+        <!-- 文档列表 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <!-- 表头 -->
+            <div class="bg-gray-50 px-6 py-3 border-b border-gray-200">
+                <div class="grid grid-cols-12 gap-4 text-sm font-medium text-gray-600">
+                    <div class="col-span-1">
+                        <input type="checkbox">
+                    </div>
+                    <div class="col-span-3">化学品信息</div>
+                    <div class="col-span-2">供应商/版本</div>
+                    <div class="col-span-2">危险性</div>
+                    <div class="col-span-2">状态/时间</div>
+                    <div class="col-span-2">操作</div>
+                </div>
+            </div>
+
+            <!-- 文档列表项 -->
+            <div class="divide-y divide-gray-200">
+                <!-- 列表项1 -->
+                <div class="px-6 py-4 hover:bg-gray-50">
+                    <div class="grid grid-cols-12 gap-4 items-center">
+                        <div class="col-span-1">
+                            <input type="checkbox">
+                        </div>
+                        <div class="col-span-3">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-file-pdf text-red-500 text-lg"></i>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">丙酮</h4>
+                                    <p class="text-sm text-gray-600">CAS: 67-64-1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-2">
+                            <div class="text-sm">
+                                <p class="font-medium text-gray-900">国药试剂</p>
+                                <p class="text-gray-600">v2.1</p>
+                            </div>
+                        </div>
+                        <div class="col-span-2">
+                            <div class="flex space-x-1">
+                                <span class="text-xs bg-red-100 text-red-800 px-2 py-1 rounded">易燃</span>
+                                <span class="text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">刺激</span>
+                            </div>
+                        </div>
+                        <div class="col-span-2">
+                            <div class="text-sm">
+                                <span class="inline-flex items-center px-2 py-1 rounded-full text-xs bg-green-100 text-green-800">
+                                    <i class="fas fa-circle text-xs mr-1"></i>
+                                    最新版本
+                                </span>
+                                <p class="text-gray-600 mt-1">2024-01-10</p>
+                            </div>
+                        </div>
+                        <div class="col-span-2">
+                            <div class="flex items-center space-x-2">
+                                <button class="p-2 text-gray-600 hover:text-blue-600" title="预览">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="p-2 text-gray-600 hover:text-green-600" title="编辑">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="p-2 text-gray-600 hover:text-orange-600" title="下载">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                                <button class="p-2 text-gray-600 hover:text-red-600" title="删除">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 列表项2 -->
+                <div class="px-6 py-4 hover:bg-gray-50">
+                    <div class="grid grid-cols-12 gap-4 items-center">
+                        <div class="col-span-1">
+                            <input type="checkbox">
+                        </div>
+                        <div class="col-span-3">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-file-pdf text-red-500 text-lg"></i>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">浓硫酸</h4>
+                                    <p class="text-sm text-gray-600">CAS: 7664-93-9</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-2">
+                            <div class="text-sm">
+                                <p class="font-medium text-gray-900">默克试剂</p>
+                                <p class="text-gray-600">v1.8</p>
+                            </div>
+                        </div>
+                        <div class="col-span-2">
+                            <div class="flex space-x-1">
+                                <span class="text-xs bg-red-100 text-red-800 px-2 py-1 rounded">腐蚀</span>
+                                <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">毒性</span>
+                            </div>
+                        </div>
+                        <div class="col-span-2">
+                            <div class="text-sm">
+                                <span class="inline-flex items-center px-2 py-1 rounded-full text-xs bg-orange-100 text-orange-800">
+                                    <i class="fas fa-clock text-xs mr-1"></i>
+                                    需要更新
+                                </span>
+                                <p class="text-gray-600 mt-1">2023-11-15</p>
+                            </div>
+                        </div>
+                        <div class="col-span-2">
+                            <div class="flex items-center space-x-2">
+                                <button class="p-2 text-gray-600 hover:text-blue-600" title="预览">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="p-2 text-gray-600 hover:text-green-600" title="编辑">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button class="p-2 text-gray-600 hover:text-orange-600" title="下载">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                                <button class="p-2 text-gray-600 hover:text-red-600" title="删除">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 列表项3 -->
+                <div class="px-6 py-4 hover:bg-gray-50">
+                    <div class="grid grid-cols-12 gap-4 items-center">
+                        <div class="col-span-1">
+                            <input type="checkbox">
+                        </div>
+                        <div class="col-span-3">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-file-pdf text-red-500 text-lg"></i>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">乙醇</h4>
+                                    <p class="text-sm text-gray-600">CAS: 64-17-5</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-2">
+                            <div class="text-sm">
+                                <p class="font-medium text-gray-900">阿拉丁试剂</p>
+                                <p class="text-gray-600">v3.0</p>
+                            </div>
+                        </div>
+                        <div class="col-span-2">
+                            <div class="flex space-x-1">
+                                <span class="text-xs bg-red-100 text-red-800 px-2 py-1 rounded">易燃</span>
+                            </div>
+                        </div>
+                        <div class="col-span-2">
+                            <div class="text-sm">
+                                <span class="inline-flex items-center px-2 py-1 rounded-full text-xs bg-yellow-100 text-yellow-800">
+                                    <i class="fas fa-clock text-xs mr-1"></i>
+                                    待审核
+                                </span>
+                                <p class="text-gray-600 mt-1">2024-01-12</p>
+                            </div>
+                        </div>
+                        <div class="col-span-2">
+                            <div class="flex items-center space-x-2">
+                                <button class="p-2 text-gray-600 hover:text-blue-600" title="预览">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <button class="p-2 text-gray-600 hover:text-green-600" title="审核">
+                                    <i class="fas fa-check"></i>
+                                </button>
+                                <button class="p-2 text-gray-600 hover:text-orange-600" title="下载">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                                <button class="p-2 text-gray-600 hover:text-red-600" title="删除">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 分页 -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mt-6">
+            <div class="flex items-center justify-between">
+                <div class="text-sm text-gray-600">
+                    显示 1-20 条，共 1,247 条记录
+                </div>
+                <div class="flex items-center space-x-2">
+                    <button class="px-3 py-2 border border-gray-300 rounded text-gray-600 hover:bg-gray-50" disabled>
+                        <i class="fas fa-chevron-left mr-1"></i>上一页
+                    </button>
+                    <button class="px-3 py-2 bg-blue-600 text-white rounded">1</button>
+                    <button class="px-3 py-2 border border-gray-300 rounded text-gray-600 hover:bg-gray-50">2</button>
+                    <button class="px-3 py-2 border border-gray-300 rounded text-gray-600 hover:bg-gray-50">3</button>
+                    <span class="px-3 py-2 text-gray-500">...</span>
+                    <button class="px-3 py-2 border border-gray-300 rounded text-gray-600 hover:bg-gray-50">63</button>
+                    <button class="px-3 py-2 border border-gray-300 rounded text-gray-600 hover:bg-gray-50">
+                        下一页<i class="fas fa-chevron-right ml-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

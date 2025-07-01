@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "查看整改",
+  "usingComponents": {
+    "step": "/components/lwp-step/lwp-step"
+  }
+}

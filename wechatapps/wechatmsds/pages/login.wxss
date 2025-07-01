@@ -1,0 +1,234 @@
+
+page {
+    background: linear-gradient(135deg, #1a73e8, #0d47a1);
+    width: 100%;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* 基础样式 */
+.f10 { font-size: 20rpx; }
+.f12 { font-size: 24rpx; }
+.f14 { font-size: 28rpx; }
+.f15 { font-size: 30rpx; }
+.f16 { font-size: 32rpx; }
+.f18 { font-size: 36rpx; }
+.f20 { font-size: 40rpx; }
+.f22 { font-size: 44rpx; }
+.f24 { font-size: 48rpx; }
+.f26 { font-size: 52rpx; }
+.f28 { font-size: 56rpx; }
+.f30 { font-size: 60rpx; }
+
+/* 布局类 */
+.w100 { width: 100%; }
+.w80 { width: 80%; }
+.w70 { width: 75%; }
+.w60 { width: 120rpx; height: 120rpx; }
+.w50s { width: 50%; }
+.w36 { width: 36rpx; height: 36rpx; }
+.w14 { width: 28rpx; height: 28rpx; }
+.h100 { height: 100%; }
+.h44 { height: 88rpx; }
+.h44s { height: 88rpx; width: 88rpx; }
+.h40s { height: 80rpx; }
+
+/* Flex布局 */
+.flex { display: flex; }
+.flex1 { flex: 1; }
+.sbew { display: flex; justify-content: space-between; }
+.juCen { display: flex; justify-content: center; }
+.flexCenter { display: flex; align-items: center; }
+.flexenters { display: flex; align-items: center; justify-content: space-between; }
+.flexend { display: flex; justify-content: flex-end; }
+
+/* 间距类 - 调整了部分间距 */
+.mt10 { margin-top: 20rpx; }
+.mt15 { margin-top: 30rpx; }
+.mt20 { margin-top: 40rpx; }
+.mt25 { margin-top: 50rpx; }
+.mt35 { margin-top: 50rpx; } /* 减少了间距 */
+.mt80 { margin-top: 80rpx; } /* 减少了登录按钮的上边距 */
+.ml10 { margin-left: 20rpx; }
+.ml24 { padding-left: 48rpx; }
+.p15s { padding: 40rpx 0 20rpx 0; } /* 减少了输入框的上下padding */
+.p30 { padding: 40rpx 30rpx; } /* 减少了整体内容区的padding */
+.pt40 { padding-top: 80rpx; } /* 减少了顶部padding */
+
+/* 颜色类 */
+.colorfff { color: #FFFFFF; }
+.co427FFA { color: #427FFA; }
+.co4086FF { color: #4086FF; }
+
+/* 输入框样式 */
+.borbfffs {
+    border-bottom: 2rpx solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.borbfffs:hover {
+    border-bottom: 2rpx solid rgba(255, 255, 255, 0.8);
+}
+
+input {
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    transform: translateX(5rpx);
+}
+
+/* 按钮样式 */
+.bgfff {
+    background: #FFFFFF;
+    box-shadow: 0 8rpx 16rpx rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.bgfff:active {
+    transform: scale(0.98);
+    box-shadow: 0 4rpx 8rpx rgba(0, 0, 0, 0.1);
+}
+
+.bgffd {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.bgffd:active {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* 图标样式 */
+.icon20s {
+    width: 50rpx;
+    height: 50rpx;
+    transition: all 0.3s ease;
+}
+
+.icon20s:active {
+    transform: rotate(180deg);
+}
+
+/* Logo样式 */
+.w60 {
+    width: 120rpx;
+    height: 120rpx;
+    box-shadow: 0 8rpx 16rpx rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.w60:active {
+    transform: scale(1.05);
+}
+
+/* 透明度效果 */
+.opacitys {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.opacitys:hover {
+    opacity: 1;
+}
+
+/* 圆角类 */
+.bor50 { border-radius: 50%; }
+.bor50s { border-radius: 50px; }
+.bor6 { border-radius: 12rpx; }
+
+/* 弹窗样式 */
+.top0s {
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    z-index: 99 !important;
+}
+
+.topss {
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999 !important;
+}
+
+/* 弹窗内容样式 */
+.bgfff.bor6 {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 16rpx 32rpx rgba(0, 0, 0, 0.1);
+}
+
+/* 分割线 */
+.br1 {
+    border-right: 2rpx solid rgba(239, 242, 247, 0.5);
+}
+
+.bort {
+    border-top: 2rpx solid rgba(239, 242, 247, 0.5);
+}
+
+/* 底部协议样式 - 调整了位置 */
+.bott0 {
+    bottom: 40rpx; /* 调整了与底部的距离 */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent);
+    padding: 20rpx 0;
+}
+
+.radio {
+    transform: scale(0.77);
+    margin-right: 10rpx;
+}
+
+._a {
+    color: #FFFFFF;
+    text-decoration: underline;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+._a:active {
+    opacity: 1;
+}
+
+/* 验证码按钮样式 */
+.bgf {
+    width: 4rpx;
+    height: 28rpx;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 20rpx;
+}
+
+/* 输入框占位符样式 */
+.placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* 动画类 */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20rpx); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.w100 {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.boxs {
+    box-sizing: border-box;
+}
+
+/* 调整内容区域的最大高度 */
+.w100.p30.boxs.pt40 {
+    min-height: calc(100vh - 120rpx); /* 确保内容区域填充整个屏幕高度，留出底部协议的空间 */
+    display: flex;
+    flex-direction: column;
+}
+
+/* 调整按钮组的位置 */
+.button-group {
+    margin-top: auto;
+    margin-bottom: 60rpx; /* 添加底部间距 */
+}

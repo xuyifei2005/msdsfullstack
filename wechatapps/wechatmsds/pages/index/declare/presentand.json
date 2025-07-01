@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "提交整改",
+  "usingComponents": {
+    "u-parse": "/components/uParse/src/wxParse",
+    "step": "/components/lwp-step/lwp-step"
+  }
+}

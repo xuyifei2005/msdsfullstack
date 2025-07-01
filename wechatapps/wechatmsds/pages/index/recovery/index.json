@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "废液归还",
+  "usingComponents": {
+    "nullt": "/components/nullt",
+    "search": "/components/search"
+  }
+}

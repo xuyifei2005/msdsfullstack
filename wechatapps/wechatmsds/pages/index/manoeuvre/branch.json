@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "部门人员选择",
+  "usingComponents": {
+    "tki-tree": "/components/tki-tree/tki-tree"
+  }
+}
