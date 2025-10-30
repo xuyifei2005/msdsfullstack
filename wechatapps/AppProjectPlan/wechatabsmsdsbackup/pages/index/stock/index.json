@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "暂存量查询",
+  "usingComponents": {
+    "nulls": "/components/nulls"
+  }
+}

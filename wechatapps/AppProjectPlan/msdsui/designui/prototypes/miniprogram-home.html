@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSDS管理 - 首页</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-shadow {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .feature-card:hover {
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- 微信小程序状态栏 -->
+    <div class="bg-black text-white text-xs px-4 py-1 flex justify-between items-center">
+        <span>9:41</span>
+        <div class="flex items-center gap-1">
+            <i class="fas fa-signal text-xs"></i>
+            <i class="fas fa-wifi text-xs"></i>
+            <i class="fas fa-battery-three-quarters text-xs"></i>
+        </div>
+    </div>
+    
+    <!-- 小程序导航栏 -->
+    <div class="bg-white px-4 py-3 flex items-center justify-between border-b border-gray-100">
+        <div class="flex items-center">
+            <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center mr-3">
+                <i class="fas fa-flask text-white text-sm"></i>
+            </div>
+            <span class="text-lg font-semibold text-gray-800">MSDS管理</span>
+        </div>
+        <div class="flex items-center gap-3">
+            <i class="fas fa-bell text-gray-400"></i>
+            <div class="w-6 h-6 bg-gray-300 rounded-full"></div>
+        </div>
+    </div>
+    
+    <!-- 主要内容区域 -->
+    <div class="px-4 py-6">
+        
+        <!-- 欢迎横幅 -->
+        <div class="gradient-bg rounded-2xl p-6 mb-6 text-white">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h2 class="text-xl font-bold mb-2">欢迎使用MSDS管理</h2>
+                    <p class="text-blue-100 text-sm">快速查阅化学品安全技术说明书</p>
+                </div>
+                <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                    <i class="fas fa-shield-alt text-2xl"></i>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 快速操作卡片 -->
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <!-- 扫码查阅 -->
+            <div class="feature-card bg-white rounded-xl p-4 card-shadow">
+                <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-3">
+                    <i class="fas fa-qrcode text-green-600 text-xl"></i>
+                </div>
+                <h3 class="font-semibold text-gray-800 mb-1">扫码查阅</h3>
+                <p class="text-xs text-gray-500">扫描二维码快速查看MSDS</p>
+            </div>
+            
+            <!-- 关键词搜索 -->
+            <div class="feature-card bg-white rounded-xl p-4 card-shadow">
+                <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-3">
+                    <i class="fas fa-search text-blue-600 text-xl"></i>
+                </div>
+                <h3 class="font-semibold text-gray-800 mb-1">关键词搜索</h3>
+                <p class="text-xs text-gray-500">输入化学品名称搜索</p>
+            </div>
+        </div>
+        
+        <!-- 最近查看 -->
+        <div class="mb-6">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-semibold text-gray-800">最近查看</h3>
+                <span class="text-sm text-blue-600">查看全部</span>
+            </div>
+            
+            <div class="space-y-3">
+                <!-- 最近查看项目1 -->
+                <div class="bg-white rounded-xl p-4 card-shadow flex items-center">
+                    <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=60&h=60&fit=crop&crop=center" 
+                         alt="化学试剂" class="w-12 h-12 rounded-lg object-cover mr-4">
+                    <!-- 图片来源: https://images.unsplash.com/photo-1532187863486-abf9dbad1b69 -->
+                    <div class="flex-1">
+                        <h4 class="font-medium text-gray-800">乙醇 (Ethanol)</h4>
+                        <p class="text-sm text-gray-500">CAS: 64-17-5</p>
+                        <p class="text-xs text-gray-400">2小时前查看</p>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-300"></i>
+                </div>
+                
+                <!-- 最近查看项目2 -->
+                <div class="bg-white rounded-xl p-4 card-shadow flex items-center">
+                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=60&h=60&fit=crop&crop=center" 
+                         alt="化学试剂" class="w-12 h-12 rounded-lg object-cover mr-4">
+                    <!-- 图片来源: https://images.unsplash.com/photo-1559757148-5c350d0d3c56 -->
+                    <div class="flex-1">
+                        <h4 class="font-medium text-gray-800">丙酮 (Acetone)</h4>
+                        <p class="text-sm text-gray-500">CAS: 67-64-1</p>
+                        <p class="text-xs text-gray-400">1天前查看</p>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-300"></i>
+                </div>
+                
+                <!-- 最近查看项目3 -->
+                <div class="bg-white rounded-xl p-4 card-shadow flex items-center">
+                    <img src="https://images.unsplash.com/photo-1554475901-4538ddfbccc2?w=60&h=60&fit=crop&crop=center" 
+                         alt="化学试剂" class="w-12 h-12 rounded-lg object-cover mr-4">
+                    <!-- 图片来源: https://images.unsplash.com/photo-1554475901-4538ddfbccc2 -->
+                    <div class="flex-1">
+                        <h4 class="font-medium text-gray-800">甲醛 (Formaldehyde)</h4>
+                        <p class="text-sm text-gray-500">CAS: 50-00-0</p>
+                        <p class="text-xs text-gray-400">3天前查看</p>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-300"></i>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 快捷功能 -->
+        <div class="mb-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-4">快捷功能</h3>
+            <div class="grid grid-cols-4 gap-4">
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mx-auto mb-2">
+                        <i class="fas fa-heart text-orange-600"></i>
+                    </div>
+                    <span class="text-xs text-gray-600">我的收藏</span>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mx-auto mb-2">
+                        <i class="fas fa-history text-purple-600"></i>
+                    </div>
+                    <span class="text-xs text-gray-600">查看历史</span>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mx-auto mb-2">
+                        <i class="fas fa-exclamation-triangle text-red-600"></i>
+                    </div>
+                    <span class="text-xs text-gray-600">危险品</span>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-2">
+                        <i class="fas fa-cog text-gray-600"></i>
+                    </div>
+                    <span class="text-xs text-gray-600">设置</span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- 底部导航栏 -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-100 px-4 py-2">
+        <div class="flex justify-around items-center">
+            <div class="text-center">
+                <i class="fas fa-home text-blue-600 text-lg mb-1"></i>
+                <span class="text-xs text-blue-600 font-medium">首页</span>
+            </div>
+            <div class="text-center">
+                <i class="fas fa-search text-gray-400 text-lg mb-1"></i>
+                <span class="text-xs text-gray-400">搜索</span>
+            </div>
+            <div class="text-center">
+                <i class="fas fa-qrcode text-gray-400 text-lg mb-1"></i>
+                <span class="text-xs text-gray-400">扫码</span>
+            </div>
+            <div class="text-center">
+                <i class="fas fa-user text-gray-400 text-lg mb-1"></i>
+                <span class="text-xs text-gray-400">我的</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 底部安全区域 -->
+    <div class="h-20"></div>
+    
+</body>
+</html>

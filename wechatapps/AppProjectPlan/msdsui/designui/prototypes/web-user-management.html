@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSDS管理系统 - 用户管理</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .browser-frame {
+            background: #f3f4f6;
+            border-radius: 8px 8px 0 0;
+            padding: 12px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .browser-buttons {
+            display: flex;
+            gap: 8px;
+        }
+        .browser-button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .browser-button.close { background: #ff5f57; }
+        .browser-button.minimize { background: #ffbd2e; }
+        .browser-button.maximize { background: #28ca42; }
+        .address-bar {
+            background: white;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            padding: 4px 12px;
+            margin-left: 16px;
+            flex: 1;
+            font-size: 14px;
+            color: #6b7280;
+        }
+        .table-row {
+            transition: all 0.2s ease;
+        }
+        .table-row:hover {
+            background-color: #f9fafb;
+        }
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        .status-active {
+            background-color: #dcfce7;
+            color: #166534;
+        }
+        .status-inactive {
+            background-color: #fee2e2;
+            color: #991b1b;
+        }
+        .status-pending {
+            background-color: #fef3c7;
+            color: #92400e;
+        }
+        .role-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        .role-admin {
+            background-color: #fef3c7;
+            color: #92400e;
+        }
+        .role-researcher {
+            background-color: #dbeafe;
+            color: #1e40af;
+        }
+        .role-viewer {
+            background-color: #f3f4f6;
+            color: #374151;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+        .modal.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- 浏览器窗口模拟 -->
+    <div class="max-w-7xl mx-auto mt-8 bg-white rounded-lg shadow-2xl overflow-hidden">
+        <!-- 浏览器标题栏 -->
+        <div class="browser-frame">
+            <div class="flex items-center">
+                <div class="browser-buttons">
+                    <div class="browser-button close"></div>
+                    <div class="browser-button minimize"></div>
+                    <div class="browser-button maximize"></div>
+                </div>
+                <div class="address-bar">
+                    <i class="fas fa-lock text-green-500 mr-2"></i>
+                    https://msds-admin.company.com/user-management
+                </div>
+                <div class="ml-4 flex items-center gap-2">
+                    <i class="fas fa-star text-gray-400"></i>
+                    <i class="fas fa-user-circle text-gray-400"></i>
+                    <i class="fas fa-ellipsis-v text-gray-400"></i>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 主要内容区域 -->
+        <div class="flex h-screen bg-gray-50">
+            
+            <!-- 侧边栏 -->
+            <div class="w-64 bg-white shadow-lg">
+                <!-- Logo -->
+                <div class="p-6 border-b border-gray-200">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center mr-3">
+                            <i class="fas fa-flask text-white text-lg"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-lg font-bold text-gray-800">MSDS管理</h1>
+                            <p class="text-xs text-gray-500">管理后台</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 导航菜单 -->
+                <nav class="mt-6">
+                    <div class="px-4">
+                        <a href="#" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg mb-2">
+                            <i class="fas fa-chart-bar mr-3"></i>
+                            <span>仪表板</span>
+                        </a>
+                        <a href="#" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg mb-2">
+                            <i class="fas fa-file-alt mr-3"></i>
+                            <span>MSDS管理</span>
+                        </a>
+                        <a href="#" class="flex items-center px-4 py-3 text-blue-600 bg-blue-50 rounded-lg mb-2">
+                            <i class="fas fa-users mr-3"></i>
+                            <span class="font-medium">用户管理</span>
+                        </a>
+                        <a href="#" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg mb-2">
+                            <i class="fas fa-qrcode mr-3"></i>
+                            <span>二维码管理</span>
+                        </a>
+                        <a href="#" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg mb-2">
+                            <i class="fas fa-chart-line mr-3"></i>
+                            <span>数据分析</span>
+                        </a>
+                        <a href="#" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg mb-2">
+                            <i class="fas fa-history mr-3"></i>
+                            <span>操作日志</span>
+                        </a>
+                        <a href="#" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg mb-2">
+                            <i class="fas fa-cog mr-3"></i>
+                            <span>系统设置</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            
+            <!-- 主内容区 -->
+            <div class="flex-1 overflow-auto">
+                
+                <!-- 顶部导航栏 -->
+                <div class="bg-white shadow-sm border-b border-gray-200 px-6 py-4">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-800">用户管理</h2>
+                            <p class="text-gray-600 text-sm">管理系统用户和权限</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <!-- 搜索框 -->
+                            <div class="relative">
+                                <input type="text" placeholder="搜索用户名、邮箱..." 
+                                       class="pl-10 pr-4 py-2 w-80 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                            </div>
+                            <!-- 添加用户按钮 -->
+                            <button onclick="openAddUserModal()" class="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                                <i class="fas fa-user-plus mr-2"></i>
+                                添加用户
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 统计卡片 -->
+                <div class="p-6">
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
+                        <div class="bg-white rounded-lg shadow p-6">
+                            <div class="flex items-center">
+                                <div class="p-3 rounded-full bg-blue-100 text-blue-600">
+                                    <i class="fas fa-users text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-sm font-medium text-gray-600">总用户数</p>
+                                    <p class="text-2xl font-bold text-gray-900">156</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg shadow p-6">
+                            <div class="flex items-center">
+                                <div class="p-3 rounded-full bg-green-100 text-green-600">
+                                    <i class="fas fa-user-check text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-sm font-medium text-gray-600">活跃用户</p>
+                                    <p class="text-2xl font-bold text-gray-900">142</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg shadow p-6">
+                            <div class="flex items-center">
+                                <div class="p-3 rounded-full bg-yellow-100 text-yellow-600">
+                                    <i class="fas fa-user-clock text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-sm font-medium text-gray-600">待审核</p>
+                                    <p class="text-2xl font-bold text-gray-900">8</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg shadow p-6">
+                            <div class="flex items-center">
+                                <div class="p-3 rounded-full bg-purple-100 text-purple-600">
+                                    <i class="fas fa-user-shield text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-sm font-medium text-gray-600">管理员</p>
+                                    <p class="text-2xl font-bold text-gray-900">6</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 过滤和操作栏 -->
+                    <div class="bg-white rounded-lg shadow mb-6">
+                        <div class="px-6 py-4 border-b border-gray-200">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-4">
+                                    <!-- 角色筛选 -->
+                                    <select class="border border-gray-300 rounded-lg px-3 py-2 text-sm">
+                                        <option>全部角色</option>
+                                        <option>管理员</option>
+                                        <option>研究员</option>
+                                        <option>查看者</option>
+                                    </select>
+                                    
+                                    <!-- 状态筛选 -->
+                                    <select class="border border-gray-300 rounded-lg px-3 py-2 text-sm">
+                                        <option>全部状态</option>
+                                        <option>活跃</option>
+                                        <option>非活跃</option>
+                                        <option>待审核</option>
+                                    </select>
+                                    
+                                    <!-- 部门筛选 -->
+                                    <select class="border border-gray-300 rounded-lg px-3 py-2 text-sm">
+                                        <option>全部部门</option>
+                                        <option>化学实验室</option>
+                                        <option>生物实验室</option>
+                                        <option>物理实验室</option>
+                                        <option>材料实验室</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="flex items-center gap-2">
+                                    <span class="text-sm text-gray-600">共 156 个用户</span>
+                                    <button class="p-2 text-gray-400 hover:text-gray-600">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                    <button class="p-2 text-gray-400 hover:text-gray-600">
+                                        <i class="fas fa-filter"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 用户列表 -->
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full divide-y divide-gray-200">
+                                <thead class="bg-gray-50">
+                                    <tr>
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                            <input type="checkbox" class="rounded border-gray-300">
+                                        </th>
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                            用户信息
+                                        </th>
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                            角色
+                                        </th>
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                            部门
+                                        </th>
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                            状态
+                                        </th>
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                            最后登录
+                                        </th>
+                                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                            操作
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="bg-white divide-y divide-gray-200">
+                                    
+                                    <!-- 用户记录1 -->
+                                    <tr class="table-row">
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <input type="checkbox" class="rounded border-gray-300">
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <div class="flex items-center">
+                                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop&crop=face" 
+                                                     alt="张伟" class="w-10 h-10 rounded-full object-cover mr-3">
+                                                <!-- 图片来源: https://images.unsplash.com/photo-1472099645785-5658abf4ff4e -->
+                                                <div>
+                                                    <div class="text-sm font-medium text-gray-900">张伟</div>
+                                                    <div class="text-sm text-gray-500">zhang.wei@company.com</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <span class="role-badge role-admin">管理员</span>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                            化学实验室
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <span class="status-badge status-active">活跃</span>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            2024-01-15 14:30
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                            <div class="flex items-center gap-2">
+                                                <button class="text-blue-600 hover:text-blue-900">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                                <button class="text-green-600 hover:text-green-900">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="text-purple-600 hover:text-purple-900">
+                                                    <i class="fas fa-key"></i>
+                                                </button>
+                                                <button class="text-red-600 hover:text-red-900">
+                                                    <i class="fas fa-ban"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                    <!-- 用户记录2 -->
+                                    <tr class="table-row">
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <input type="checkbox" class="rounded border-gray-300">
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <div class="flex items-center">
+                                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=40&h=40&fit=crop&crop=face" 
+                                                     alt="李娜" class="w-10 h-10 rounded-full object-cover mr-3">
+                                                <!-- 图片来源: https://images.unsplash.com/photo-1494790108755-2616b612b786 -->
+                                                <div>
+                                                    <div class="text-sm font-medium text-gray-900">李娜</div>
+                                                    <div class="text-sm text-gray-500">li.na@company.com</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <span class="role-badge role-researcher">研究员</span>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                            生物实验室
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <span class="status-badge status-active">活跃</span>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            2024-01-15 09:15
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                            <div class="flex items-center gap-2">
+                                                <button class="text-blue-600 hover:text-blue-900">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                                <button class="text-green-600 hover:text-green-900">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="text-purple-600 hover:text-purple-900">
+                                                    <i class="fas fa-key"></i>
+                                                </button>
+                                                <button class="text-red-600 hover:text-red-900">
+                                                    <i class="fas fa-ban"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                    <!-- 用户记录3 -->
+                                    <tr class="table-row">
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <input type="checkbox" class="rounded border-gray-300">
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <div class="flex items-center">
+                                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face" 
+                                                     alt="王强" class="w-10 h-10 rounded-full object-cover mr-3">
+                                                <!-- 图片来源: https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d -->
+                                                <div>
+                                                    <div class="text-sm font-medium text-gray-900">王强</div>
+                                                    <div class="text-sm text-gray-500">wang.qiang@company.com</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <span class="role-badge role-researcher">研究员</span>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                            物理实验室
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <span class="status-badge status-pending">待审核</span>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            从未登录
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                            <div class="flex items-center gap-2">
+                                                <button class="text-blue-600 hover:text-blue-900">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                                <button class="text-green-600 hover:text-green-900">
+                                                    <i class="fas fa-check"></i>
+                                                </button>
+                                                <button class="text-red-600 hover:text-red-900">
+                                                    <i class="fas fa-times"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                    <!-- 用户记录4 -->
+                                    <tr class="table-row">
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <input type="checkbox" class="rounded border-gray-300">
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <div class="flex items-center">
+                                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=40&h=40&fit=crop&crop=face" 
+                                                     alt="赵敏" class="w-10 h-10 rounded-full object-cover mr-3">
+                                                <!-- 图片来源: https://images.unsplash.com/photo-1438761681033-6461ffad8d80 -->
+                                                <div>
+                                                    <div class="text-sm font-medium text-gray-900">赵敏</div>
+                                                    <div class="text-sm text-gray-500">zhao.min@company.com</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <span class="role-badge role-viewer">查看者</span>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                            材料实验室
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <span class="status-badge status-active">活跃</span>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            2024-01-14 16:45
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                            <div class="flex items-center gap-2">
+                                                <button class="text-blue-600 hover:text-blue-900">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                                <button class="text-green-600 hover:text-green-900">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="text-purple-600 hover:text-purple-900">
+                                                    <i class="fas fa-key"></i>
+                                                </button>
+                                                <button class="text-red-600 hover:text-red-900">
+                                                    <i class="fas fa-ban"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                    <!-- 用户记录5 -->
+                                    <tr class="table-row">
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <input type="checkbox" class="rounded border-gray-300">
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <div class="flex items-center">
+                                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=40&h=40&fit=crop&crop=face" 
+                                                     alt="刘洋" class="w-10 h-10 rounded-full object-cover mr-3">
+                                                <!-- 图片来源: https://images.unsplash.com/photo-1500648767791-00dcc994a43e -->
+                                                <div>
+                                                    <div class="text-sm font-medium text-gray-900">刘洋</div>
+                                                    <div class="text-sm text-gray-500">liu.yang@company.com</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <span class="role-badge role-admin">管理员</span>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                            化学实验室
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <span class="status-badge status-inactive">非活跃</span>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                            2024-01-10 11:20
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                            <div class="flex items-center gap-2">
+                                                <button class="text-blue-600 hover:text-blue-900">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                                <button class="text-green-600 hover:text-green-900">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="text-purple-600 hover:text-purple-900">
+                                                    <i class="fas fa-key"></i>
+                                                </button>
+                                                <button class="text-orange-600 hover:text-orange-900">
+                                                    <i class="fas fa-user-check"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <!-- 分页 -->
+                        <div class="bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200">
+                            <div class="flex-1 flex justify-between sm:hidden">
+                                <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                                    上一页
+                                </a>
+                                <a href="#" class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                                    下一页
+                                </a>
+                            </div>
+                            <div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
+                                <div>
+                                    <p class="text-sm text-gray-700">
+                                        显示第 <span class="font-medium">1</span> 到 <span class="font-medium">10</span> 条，共 <span class="font-medium">156</span> 条记录
+                                    </p>
+                                </div>
+                                <div>
+                                    <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px">
+                                        <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </a>
+                                        <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                                            1
+                                        </a>
+                                        <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-blue-50 text-sm font-medium text-blue-600">
+                                            2
+                                        </a>
+                                        <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                                            3
+                                        </a>
+                                        <span class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700">
+                                            ...
+                                        </span>
+                                        <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                                            16
+                                        </a>
+                                        <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </a>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <!-- 添加用户模态框 -->
+    <div id="addUserModal" class="modal">
+        <div class="bg-white rounded-lg shadow-xl max-w-2xl w-full mx-4">
+            <div class="px-6 py-4 border-b border-gray-200">
+                <div class="flex items-center justify-between">
+                    <h3 class="text-lg font-medium text-gray-900">添加新用户</h3>
+                    <button onclick="closeAddUserModal()" class="text-gray-400 hover:text-gray-600">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="px-6 py-6">
+                <!-- 用户信息表单 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">姓名 *</label>
+                        <input type="text" placeholder="请输入姓名" 
+                               class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">邮箱 *</label>
+                        <input type="email" placeholder="请输入邮箱" 
+                               class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">用户名 *</label>
+                        <input type="text" placeholder="请输入用户名" 
+                               class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">手机号</label>
+                        <input type="tel" placeholder="请输入手机号" 
+                               class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">角色 *</label>
+                        <select class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <option>请选择角色</option>
+                            <option>管理员</option>
+                            <option>研究员</option>
+                            <option>查看者</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">部门 *</label>
+                        <select class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <option>请选择部门</option>
+                            <option>化学实验室</option>
+                            <option>生物实验室</option>
+                            <option>物理实验室</option>
+                            <option>材料实验室</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- 权限设置 -->
+                <div class="mt-6">
+                    <label class="block text-sm font-medium text-gray-700 mb-3">权限设置</label>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="perm1" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <label for="perm1" class="ml-2 text-sm text-gray-700">查看MSDS文件</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="perm2" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <label for="perm2" class="ml-2 text-sm text-gray-700">上传MSDS文件</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="perm3" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <label for="perm3" class="ml-2 text-sm text-gray-700">编辑MSDS文件</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="perm4" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <label for="perm4" class="ml-2 text-sm text-gray-700">删除MSDS文件</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="perm5" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <label for="perm5" class="ml-2 text-sm text-gray-700">管理用户</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="perm6" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <label for="perm6" class="ml-2 text-sm text-gray-700">系统设置</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 备注 -->
+                <div class="mt-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-2">备注</label>
+                    <textarea rows="3" placeholder="请输入备注信息" 
+                              class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                </div>
+            </div>
+            
+            <div class="px-6 py-4 border-t border-gray-200 flex justify-end gap-3">
+                <button onclick="closeAddUserModal()" class="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors">
+                    取消
+                </button>
+                <button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                    添加用户
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function openAddUserModal() {
+            document.getElementById('addUserModal').classList.add('show');
+        }
+        
+        function closeAddUserModal() {
+            document.getElementById('addUserModal').classList.remove('show');
+        }
+        
+        // 点击模态框外部关闭
+        document.getElementById('addUserModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeAddUserModal();
+            }
+        });
+    </script>
+    
+</body>
+</html>

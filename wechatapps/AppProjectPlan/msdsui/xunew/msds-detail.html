@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSDS管理系统 - MSDS详情</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .miniprogram-container {
+            max-width: 375px;
+            margin: 0 auto;
+            background: #f7f7f7;
+            min-height: 100vh;
+            position: relative;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .status-bar {
+            height: 44px;
+            background: linear-gradient(135deg, #1aad19 0%, #2dc653 100%);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 16px;
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .navigation-bar {
+            height: 44px;
+            background: linear-gradient(135deg, #1aad19 0%, #2dc653 100%);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 16px;
+            color: white;
+            font-size: 17px;
+            font-weight: 600;
+        }
+        
+        .chemical-header {
+            background: linear-gradient(135deg, #1aad19 0%, #2dc653 100%);
+            padding: 20px 16px;
+            color: white;
+        }
+        
+        .chemical-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        
+        .chemical-subtitle {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-bottom: 16px;
+        }
+        
+        .chemical-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255,255,255,0.1);
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+        
+        .meta-item {
+            text-align: center;
+            flex: 1;
+        }
+        
+        .meta-label {
+            font-size: 11px;
+            opacity: 0.8;
+            margin-bottom: 4px;
+        }
+        
+        .meta-value {
+            font-size: 13px;
+            font-weight: 600;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 12px;
+        }
+        
+        .action-btn {
+            flex: 1;
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 14px;
+            transition: all 0.2s ease;
+        }
+        
+        .action-btn:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .action-btn.favorited {
+            background: rgba(255, 71, 87, 0.2);
+            border-color: rgba(255, 71, 87, 0.5);
+        }
+        
+        .content-section {
+            background: white;
+            margin: 12px 16px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        
+        .section-header {
+            padding: 16px 20px;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #fafafa;
+        }
+        
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-icon {
+            width: 24px;
+            height: 24px;
+            background: #1aad19;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+            margin-right: 8px;
+        }
+        
+        .section-content {
+            padding: 20px;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+        
+        .info-item {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .info-label {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 4px;
+            font-weight: 500;
+        }
+        
+        .info-value {
+            font-size: 14px;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .hazard-symbols {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        
+        .hazard-symbol {
+            width: 48px;
+            height: 48px;
+            background: #ff4757;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            position: relative;
+        }
+        
+        .hazard-symbol.warning {
+            background: #ffa502;
+        }
+        
+        .hazard-symbol.danger {
+            background: #ff4757;
+        }
+        
+        .hazard-symbol.health {
+            background: #ff6b6b;
+        }
+        
+        .hazard-symbol.environment {
+            background: #2ed573;
+        }
+        
+        .hazard-label {
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 10px;
+            color: #666;
+            white-space: nowrap;
+        }
+        
+        .safety-measures {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+        
+        .safety-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .safety-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .safety-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 8px;
+            font-size: 13px;
+            color: #555;
+            line-height: 1.4;
+        }
+        
+        .safety-item::before {
+            content: "•";
+            color: #1aad19;
+            font-weight: bold;
+            margin-right: 8px;
+            margin-top: 2px;
+        }
+        
+        .emergency-card {
+            background: linear-gradient(135deg, #ff4757 0%, #ff3742 100%);
+            color: white;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+        
+        .emergency-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .emergency-steps {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+        
+        .emergency-step {
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            padding: 12px;
+            text-align: center;
+        }
+        
+        .step-icon {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        
+        .step-text {
+            font-size: 12px;
+            line-height: 1.3;
+        }
+        
+        .supplier-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+        
+        .supplier-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .supplier-logo {
+            width: 40px;
+            height: 40px;
+            background: #1aad19;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            margin-right: 12px;
+        }
+        
+        .supplier-info {
+            flex: 1;
+        }
+        
+        .supplier-name {
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 2px;
+        }
+        
+        .supplier-contact {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .contact-btn {
+            background: #1aad19;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .version-info {
+            background: #e8f5e8;
+            border-left: 4px solid #1aad19;
+            padding: 12px 16px;
+            margin-bottom: 16px;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .version-text {
+            font-size: 13px;
+            color: #333;
+            margin-bottom: 4px;
+        }
+        
+        .version-date {
+            font-size: 11px;
+            color: #666;
+        }
+        
+        .download-section {
+            padding: 16px 20px;
+            border-top: 1px solid #f0f0f0;
+            background: #fafafa;
+        }
+        
+        .download-btn {
+            width: 100%;
+            background: #1aad19;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .floating-actions {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .floating-btn {
+            width: 48px;
+            height: 48px;
+            background: #1aad19;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            box-shadow: 0 4px 12px rgba(26, 173, 25, 0.3);
+            transition: all 0.2s ease;
+        }
+        
+        .floating-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(26, 173, 25, 0.4);
+        }
+        
+        .floating-btn.secondary {
+            background: white;
+            color: #666;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .expand-btn {
+            background: none;
+            border: none;
+            color: #1aad19;
+            font-size: 12px;
+            padding: 4px 0;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .collapsed {
+            max-height: 100px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .collapsed::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 30px;
+            background: linear-gradient(transparent, white);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="miniprogram-container">
+        <!-- 状态栏 -->
+        <div class="status-bar">
+            <span>9:41</span>
+            <span>MSDS详情</span>
+            <div class="flex items-center space-x-1">
+                <i class="fas fa-signal text-xs"></i>
+                <i class="fas fa-wifi text-xs"></i>
+                <i class="fas fa-battery-three-quarters text-xs"></i>
+            </div>
+        </div>
+        
+        <!-- 导航栏 -->
+        <div class="navigation-bar">
+            <div class="flex items-center">
+                <i class="fas fa-arrow-left mr-3 cursor-pointer"></i>
+                <span>MSDS详情</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <i class="fas fa-share-alt cursor-pointer"></i>
+                <i class="fas fa-ellipsis-v cursor-pointer"></i>
+            </div>
+        </div>
+        
+        <!-- 化学品头部信息 -->
+        <div class="chemical-header">
+            <div class="chemical-title">乙醇 (Ethanol)</div>
+            <div class="chemical-subtitle">CAS号: 64-17-5 • 分子式: C₂H₆O</div>
+            
+            <div class="chemical-meta">
+                <div class="meta-item">
+                    <div class="meta-label">分子量</div>
+                    <div class="meta-value">46.07</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">沸点</div>
+                    <div class="meta-value">78.3°C</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">密度</div>
+                    <div class="meta-value">0.789</div>
+                </div>
+                <div class="meta-item">
+                    <div class="meta-label">闪点</div>
+                    <div class="meta-value">13°C</div>
+                </div>
+            </div>
+            
+            <div class="action-buttons">
+                <button class="action-btn" id="favoriteBtn">
+                    <i class="fas fa-heart mr-2"></i>收藏
+                </button>
+                <button class="action-btn">
+                    <i class="fas fa-share mr-2"></i>分享
+                </button>
+                <button class="action-btn">
+                    <i class="fas fa-qrcode mr-2"></i>二维码
+                </button>
+            </div>
+        </div>
+        
+        <!-- 基本信息 -->
+        <div class="content-section">
+            <div class="section-header">
+                <div class="section-title">
+                    <div class="section-icon">
+                        <i class="fas fa-info"></i>
+                    </div>
+                    基本信息
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">中文名称</div>
+                        <div class="info-value">乙醇</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">英文名称</div>
+                        <div class="info-value">Ethanol</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">别名</div>
+                        <div class="info-value">酒精、乙基醇</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">纯度</div>
+                        <div class="info-value">≥99.7%</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">外观</div>
+                        <div class="info-value">无色透明液体</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">气味</div>
+                        <div class="info-value">特殊香味</div>
+                    </div>
+                </div>
+                
+                <div class="version-info">
+                    <div class="version-text">MSDS版本: v2.1 (最新版本)</div>
+                    <div class="version-date">更新日期: 2024年1月15日</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 危险性识别 -->
+        <div class="content-section">
+            <div class="section-header">
+                <div class="section-title">
+                    <div class="section-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    危险性识别
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="hazard-symbols">
+                    <div class="hazard-symbol warning">
+                        <i class="fas fa-fire"></i>
+                        <div class="hazard-label">易燃</div>
+                    </div>
+                    <div class="hazard-symbol health">
+                        <i class="fas fa-eye"></i>
+                        <div class="hazard-label">眼刺激</div>
+                    </div>
+                </div>
+                
+                <div class="safety-measures">
+                    <div class="safety-title">
+                        <i class="fas fa-shield-alt text-green-600 mr-2"></i>
+                        危险性概述
+                    </div>
+                    <ul class="safety-list">
+                        <li class="safety-item">高度易燃液体和蒸气</li>
+                        <li class="safety-item">造成严重眼刺激</li>
+                        <li class="safety-item">可能造成昏睡或眩晕</li>
+                        <li class="safety-item">长期或反复接触可能对器官造成伤害</li>
+                    </ul>
+                </div>
+                
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">GHS分类</div>
+                        <div class="info-value">易燃液体类别2</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">信号词</div>
+                        <div class="info-value">危险</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 急救措施 -->
+        <div class="content-section">
+            <div class="section-header">
+                <div class="section-title">
+                    <div class="section-icon">
+                        <i class="fas fa-first-aid"></i>
+                    </div>
+                    急救措施
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="emergency-card">
+                    <div class="emergency-title">
+                        <i class="fas fa-ambulance mr-2"></i>
+                        紧急处理步骤
+                    </div>
+                    <div class="emergency-steps">
+                        <div class="emergency-step">
+                            <div class="step-icon">
+                                <i class="fas fa-lungs"></i>
+                            </div>
+                            <div class="step-text">吸入：移至新鲜空气处，保持呼吸道通畅</div>
+                        </div>
+                        <div class="emergency-step">
+                            <div class="step-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <div class="step-text">眼接触：立即用大量清水冲洗15分钟</div>
+                        </div>
+                        <div class="emergency-step">
+                            <div class="step-icon">
+                                <i class="fas fa-hand"></i>
+                            </div>
+                            <div class="step-text">皮肤接触：脱去污染衣物，用水冲洗</div>
+                        </div>
+                        <div class="emergency-step">
+                            <div class="step-icon">
+                                <i class="fas fa-mouth-open"></i>
+                            </div>
+                            <div class="step-text">误食：漱口，不要催吐，立即就医</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="safety-measures">
+                    <div class="safety-title">
+                        <i class="fas fa-user-md text-blue-600 mr-2"></i>
+                        对医生的提示
+                    </div>
+                    <ul class="safety-list">
+                        <li class="safety-item">症状治疗，无特效解毒剂</li>
+                        <li class="safety-item">监测呼吸和循环系统</li>
+                        <li class="safety-item">必要时给予氧气支持</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 防护措施 -->
+        <div class="content-section">
+            <div class="section-header">
+                <div class="section-title">
+                    <div class="section-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    防护措施
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="safety-measures">
+                    <div class="safety-title">
+                        <i class="fas fa-hard-hat text-yellow-600 mr-2"></i>
+                        个人防护设备
+                    </div>
+                    <ul class="safety-list">
+                        <li class="safety-item">佩戴防护眼镜或面罩</li>
+                        <li class="safety-item">穿戴防静电工作服</li>
+                        <li class="safety-item">使用防化学品手套</li>
+                        <li class="safety-item">在通风良好的地方操作</li>
+                    </ul>
+                </div>
+                
+                <div class="safety-measures">
+                    <div class="safety-title">
+                        <i class="fas fa-warehouse text-purple-600 mr-2"></i>
+                        储存要求
+                    </div>
+                    <ul class="safety-list">
+                        <li class="safety-item">储存在阴凉、通风良好的地方</li>
+                        <li class="safety-item">远离热源、火花和明火</li>
+                        <li class="safety-item">容器密闭，防止蒸气泄漏</li>
+                        <li class="safety-item">与氧化剂分开存放</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 供应商信息 -->
+        <div class="content-section">
+            <div class="section-header">
+                <div class="section-title">
+                    <div class="section-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    供应商信息
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="supplier-card">
+                    <div class="supplier-header">
+                        <div class="supplier-logo">国药</div>
+                        <div class="supplier-info">
+                            <div class="supplier-name">国药集团化学试剂有限公司</div>
+                            <div class="supplier-contact">电话: 400-666-7788</div>
+                        </div>
+                        <button class="contact-btn">联系</button>
+                    </div>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <div class="info-label">产品编号</div>
+                            <div class="info-value">10009218</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">包装规格</div>
+                            <div class="info-value">500mL</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">生产日期</div>
+                            <div class="info-value">2024-01-10</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">有效期</div>
+                            <div class="info-value">3年</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="download-section">
+                <button class="download-btn">
+                    <i class="fas fa-download"></i>
+                    下载完整MSDS文档
+                </button>
+            </div>
+        </div>
+        
+        <!-- 相关化学品推荐 -->
+        <div class="content-section">
+            <div class="section-header">
+                <div class="section-title">
+                    <div class="section-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    相关推荐
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="bg-gray-50 rounded-lg p-3 cursor-pointer hover:bg-gray-100 transition-colors">
+                        <div class="font-medium text-sm mb-1">甲醇</div>
+                        <div class="text-xs text-gray-500">CAS: 67-56-1</div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg p-3 cursor-pointer hover:bg-gray-100 transition-colors">
+                        <div class="font-medium text-sm mb-1">丙酮</div>
+                        <div class="text-xs text-gray-500">CAS: 67-64-1</div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg p-3 cursor-pointer hover:bg-gray-100 transition-colors">
+                        <div class="font-medium text-sm mb-1">异丙醇</div>
+                        <div class="text-xs text-gray-500">CAS: 67-63-0</div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg p-3 cursor-pointer hover:bg-gray-100 transition-colors">
+                        <div class="font-medium text-sm mb-1">正丁醇</div>
+                        <div class="text-xs text-gray-500">CAS: 71-36-3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 浮动操作按钮 -->
+        <div class="floating-actions">
+            <button class="floating-btn secondary" title="打印">
+                <i class="fas fa-print"></i>
+            </button>
+            <button class="floating-btn" title="扫码查看">
+                <i class="fas fa-qrcode"></i>
+            </button>
+        </div>
+    </div>
+    
+    <script>
+        // 页面跳转函数
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+
+        // 获取URL参数
+        function getUrlParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // 返回按钮
+        document.querySelector('.fa-arrow-left').addEventListener('click', function() {
+            const source = getUrlParameter('source');
+            
+            // 根据来源页面返回
+            switch(source) {
+                case 'scan':
+                    navigateTo('scan.html');
+                    break;
+                case 'search':
+                    navigateTo('search.html');
+                    break;
+                case 'favorites':
+                    navigateTo('favorites.html');
+                    break;
+                case 'history':
+                    navigateTo('history.html');
+                    break;
+                default:
+                    navigateTo('home.html');
+            }
+        });
+
+        // 收藏功能
+        document.getElementById('favoriteBtn').addEventListener('click', function() {
+            this.classList.toggle('favorited');
+            const icon = this.querySelector('i');
+            const text = this.querySelector('span') || this.childNodes[1];
+            
+            if (this.classList.contains('favorited')) {
+                icon.classList.remove('far');
+                icon.classList.add('fas');
+                if (text) text.textContent = '已收藏';
+                console.log('已添加到收藏');
+            } else {
+                icon.classList.remove('fas');
+                icon.classList.add('far');
+                if (text) text.textContent = '收藏';
+                console.log('已从收藏移除');
+            }
+            
+            // 添加动画效果
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = 'scale(1)';
+            }, 150);
+        });
+        
+        // 分享功能
+        document.querySelector('.fa-share-alt').addEventListener('click', function() {
+            // 模拟分享功能
+            console.log('分享MSDS详情');
+            alert('分享功能：将MSDS信息分享给好友或群聊');
+            
+            // 添加点击效果
+            this.style.transform = 'scale(1.2)';
+            setTimeout(() => {
+                this.style.transform = 'scale(1)';
+            }, 150);
+        });
+        
+        // 下载功能
+        document.querySelector('.download-btn').addEventListener('click', function() {
+            // 模拟下载功能
+            console.log('下载MSDS文档');
+            
+            // 添加加载状态
+            const originalText = this.innerHTML;
+            this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 下载中...';
+            this.disabled = true;
+            
+            setTimeout(() => {
+                this.innerHTML = '<i class="fas fa-check"></i> 下载完成';
+                setTimeout(() => {
+                    this.innerHTML = originalText;
+                    this.disabled = false;
+                }, 2000);
+            }, 2000);
+        });
+        
+        // 联系供应商
+        document.querySelector('.contact-btn').addEventListener('click', function() {
+            console.log('联系供应商');
+            alert('联系供应商：将跳转到供应商联系页面');
+        });
+        
+        // 相关推荐点击
+        document.querySelectorAll('.grid > div').forEach((item, index) => {
+            item.addEventListener('click', function() {
+                const chemicalName = this.querySelector('.font-medium').textContent;
+                console.log('查看相关化学品:', chemicalName);
+                
+                // 模拟相关MSDS的ID
+                const relatedIds = ['methanol', 'acetone', 'isopropanol', 'butanol'];
+                if (relatedIds[index]) {
+                    navigateTo(`msds-detail.html?id=${relatedIds[index]}&source=related`);
+                }
+            });
+        });
+        
+        // 浮动按钮功能
+        document.querySelectorAll('.floating-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                if (icon.classList.contains('fa-print')) {
+                    console.log('打印MSDS');
+                    alert('打印功能：将打印当前MSDS详情');
+                } else if (icon.classList.contains('fa-qrcode')) {
+                    console.log('显示二维码');
+                    alert('二维码功能：显示MSDS二维码供扫描');
+                }
+                
+                // 添加点击效果
+                this.style.transform = 'scale(0.9)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 150);
+            });
+        });
+        
+        // 展开/收起功能
+        document.querySelectorAll('.expand-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const content = this.previousElementSibling;
+                const icon = this.querySelector('i');
+                
+                if (content.classList.contains('collapsed')) {
+                    content.classList.remove('collapsed');
+                    this.innerHTML = '<span>收起</span><i class="fas fa-chevron-up"></i>';
+                } else {
+                    content.classList.add('collapsed');
+                    this.innerHTML = '<span>展开更多</span><i class="fas fa-chevron-down"></i>';
+                }
+            });
+        });
+        
+        // 页面滚动效果
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('.navigation-bar');
+        
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                // 向下滚动，隐藏导航栏
+                navbar.style.transform = 'translateY(-100%)';
+            } else {
+                // 向上滚动，显示导航栏
+                navbar.style.transform = 'translateY(0)';
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+
+        // 页面加载时根据URL参数显示对应的MSDS信息
+        window.addEventListener('load', function() {
+            const msdsId = getUrlParameter('id');
+            const source = getUrlParameter('source');
+            
+            console.log('当前MSDS ID:', msdsId);
+            console.log('来源页面:', source);
+            
+            // 这里可以根据msdsId加载对应的MSDS数据
+            // 目前使用静态数据展示
+        });
+    </script>
+</body>
+</html>

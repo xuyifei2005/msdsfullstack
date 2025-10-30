@@ -1,0 +1,22 @@
+[client]
+default-character-set = utf8mb4
+
+[mysql]
+default-character-set = utf8mb4
+
+[mysqld]
+character-set-server = utf8mb4
+collation-server = utf8mb4_unicode_ci
+init-connect = 'SET NAMES utf8mb4'
+init-connect = 'SET collation_connection = utf8mb4_unicode_ci'
+
+# 确保客户端连接使用正确的字符集
+skip-character-set-client-handshake
+
+# 设置默认字符集相关变量
+character-set-client-handshake = FALSE
+character-set-server = utf8mb4
+collation-server = utf8mb4_unicode_ci
+
+# 确保二进制日志也使用正确的字符集
+binlog_format = ROW

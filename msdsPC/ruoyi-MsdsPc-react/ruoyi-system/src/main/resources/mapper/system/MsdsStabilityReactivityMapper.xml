@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.MsdsStabilityReactivityMapper">
+    
+    <resultMap type="MsdsStabilityReactivity" id="MsdsStabilityReactivityResult">
+        <id     property="id"                           column="id"                           />
+        <result property="msdsId"                       column="msds_id"                      />
+        <result property="stability"                    column="stability"                    />
+        <result property="reactivity"                   column="reactivity"                   />
+        <result property="incompatibleSubstances"       column="incompatible_substances"      />
+        <result property="conditionsToAvoid"            column="conditions_to_avoid"          />
+        <result property="hazardousReactions"           column="hazardous_reactions"          />
+        <result property="polymerizationHazard"         column="polymerization_hazard"        />
+        <result property="polymerizationConditions"     column="polymerization_conditions"    />
+        <result property="decompositionProducts"        column="decomposition_products"       />
+        <result property="decompositionConditions"      column="decomposition_conditions"     />
+        <result property="createTime"                   column="create_time"                  />
+        <result property="updateTime"                   column="update_time"                  />
+        <result property="createBy"                     column="create_by"                    />
+        <result property="updateBy"                     column="update_by"                    />
+    </resultMap>
+    
+    <sql id="selectMsdsStabilityReactivityVo">
+        select id, msds_id, stability, reactivity, incompatible_substances, conditions_to_avoid,
+               hazardous_reactions, polymerization_hazard, polymerization_conditions,
+               decomposition_products, decomposition_conditions, create_time, update_time, create_by, update_by
+        from msds_stability_reactivity
+    </sql>
+    
+    <select id="selectMsdsStabilityReactivityById" parameterType="Long" resultMap="MsdsStabilityReactivityResult">
+        <include refid="selectMsdsStabilityReactivityVo"/>
+        where id = #{id}
+    </select>
+    
+    <select id="selectMsdsStabilityReactivityByMsdsId" parameterType="Long" resultMap="MsdsStabilityReactivityResult">
+        <include refid="selectMsdsStabilityReactivityVo"/>
+        where msds_id = #{msdsId}
+    </select>
+    
+    <select id="selectMsdsStabilityReactivityList" parameterType="MsdsStabilityReactivity" resultMap="MsdsStabilityReactivityResult">
+        <include refid="selectMsdsStabilityReactivityVo"/>
+        <where>
+            <if test="msdsId != null">
+                AND msds_id = #{msdsId}
+            </if>
+            <if test="stability != null and stability != ''">
+                AND stability like concat('%', #{stability}, '%')
+            </if>
+            <if test="reactivity != null and reactivity != ''">
+                AND reactivity like concat('%', #{reactivity}, '%')
+            </if>
+        </where>
+        order by create_time desc
+    </select>
+    
+    <insert id="insertMsdsStabilityReactivity" parameterType="MsdsStabilityReactivity" useGeneratedKeys="true" keyProperty="id">
+        insert into msds_stability_reactivity (
+            msds_id, stability, reactivity, incompatible_substances, conditions_to_avoid,
+            hazardous_reactions, polymerization_hazard, polymerization_conditions,
+            decomposition_products, decomposition_conditions, create_by, create_time
+        )values(
+            #{msdsId}, #{stability}, #{reactivity}, #{incompatibleSubstances}, #{conditionsToAvoid},
+            #{hazardousReactions}, #{polymerizationHazard}, #{polymerizationConditions},
+            #{decompositionProducts}, #{decompositionConditions}, #{createBy}, NOW()
+        )
+    </insert>
+     
+    <update id="updateMsdsStabilityReactivity" parameterType="MsdsStabilityReactivity">
+        update msds_stability_reactivity 
+        <set>
+            <if test="msdsId != null">msds_id = #{msdsId},</if>
+            <if test="stability != null">stability = #{stability},</if>
+            <if test="reactivity != null">reactivity = #{reactivity},</if>
+            <if test="incompatibleSubstances != null">incompatible_substances = #{incompatibleSubstances},</if>
+            <if test="conditionsToAvoid != null">conditions_to_avoid = #{conditionsToAvoid},</if>
+            <if test="hazardousReactions != null">hazardous_reactions = #{hazardousReactions},</if>
+            <if test="polymerizationHazard != null">polymerization_hazard = #{polymerizationHazard},</if>
+            <if test="polymerizationConditions != null">polymerization_conditions = #{polymerizationConditions},</if>
+            <if test="decompositionProducts != null">decomposition_products = #{decompositionProducts},</if>
+            <if test="decompositionConditions != null">decomposition_conditions = #{decompositionConditions},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            update_time = NOW()
+        </set>
+        where id = #{id}
+    </update>
+    
+    <delete id="deleteMsdsStabilityReactivityById" parameterType="Long">
+        delete from msds_stability_reactivity where id = #{id}
+    </delete>
+    
+    <delete id="deleteMsdsStabilityReactivityByIds" parameterType="Long">
+        delete from msds_stability_reactivity where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    
+    <delete id="deleteMsdsStabilityReactivityByMsdsId" parameterType="Long">
+        delete from msds_stability_reactivity where msds_id = #{msdsId}
+    </delete>
+    
+</mapper> 

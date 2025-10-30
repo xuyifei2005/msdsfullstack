@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.MsdsRegulatoryMapper">
+    
+    <resultMap type="MsdsRegulatory" id="MsdsRegulatoryResult">
+        <result property="id"    column="id"    />
+        <result property="msdsId"    column="msds_id"    />
+        <result property="regulatoryInfo"    column="regulatory_info"    />
+        <result property="domesticRegulations"    column="domestic_regulations"    />
+        <result property="internationalRegulations"    column="international_regulations"    />
+        <result property="chinaDangerousChemicals"    column="china_dangerous_chemicals"    />
+        <result property="chinaControlledChemicals"    column="china_controlled_chemicals"    />
+        <result property="reachRegistration"    column="reach_registration"    />
+        <result property="tscaInventory"    column="tsca_inventory"    />
+        <result property="einecsNumber"    column="einecs_number"    />
+        <result property="prohibitedRestricted"    column="prohibited_restricted"    />
+        <result property="specialProvisions"    column="special_provisions"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateTime"    column="update_time"    />
+        <result property="createBy"    column="create_by"    />
+        <result property="updateBy"    column="update_by"    />
+    </resultMap>
+
+    <sql id="selectMsdsRegulatoryVo">
+        select id, msds_id, regulatory_info, domestic_regulations, international_regulations, china_dangerous_chemicals, china_controlled_chemicals, reach_registration, tsca_inventory, einecs_number, prohibited_restricted, special_provisions, create_time, update_time, create_by, update_by from msds_regulatory
+    </sql>
+
+    <select id="selectMsdsRegulatoryList" parameterType="MsdsRegulatory" resultMap="MsdsRegulatoryResult">
+        <include refid="selectMsdsRegulatoryVo"/>
+        <where>  
+            <if test="msdsId != null "> and msds_id = #{msdsId}</if>
+            <if test="regulatoryInfo != null  and regulatoryInfo != ''"> and regulatory_info like concat('%', #{regulatoryInfo}, '%')</if>
+            <if test="domesticRegulations != null  and domesticRegulations != ''"> and domestic_regulations like concat('%', #{domesticRegulations}, '%')</if>
+            <if test="internationalRegulations != null  and internationalRegulations != ''"> and international_regulations like concat('%', #{internationalRegulations}, '%')</if>
+            <if test="chinaDangerousChemicals != null "> and china_dangerous_chemicals = #{chinaDangerousChemicals}</if>
+            <if test="chinaControlledChemicals != null "> and china_controlled_chemicals = #{chinaControlledChemicals}</if>
+            <if test="reachRegistration != null  and reachRegistration != ''"> and reach_registration like concat('%', #{reachRegistration}, '%')</if>
+            <if test="tscaInventory != null "> and tsca_inventory = #{tscaInventory}</if>
+            <if test="einecsNumber != null  and einecsNumber != ''"> and einecs_number like concat('%', #{einecsNumber}, '%')</if>
+            <if test="prohibitedRestricted != null  and prohibitedRestricted != ''"> and prohibited_restricted like concat('%', #{prohibitedRestricted}, '%')</if>
+            <if test="specialProvisions != null  and specialProvisions != ''"> and special_provisions like concat('%', #{specialProvisions}, '%')</if>
+        </where>
+    </select>
+    
+    <select id="selectMsdsRegulatoryById" parameterType="Long" resultMap="MsdsRegulatoryResult">
+        <include refid="selectMsdsRegulatoryVo"/>
+        where id = #{id}
+    </select>
+
+    <select id="selectMsdsRegulatoryByMsdsId" parameterType="Long" resultMap="MsdsRegulatoryResult">
+        <include refid="selectMsdsRegulatoryVo"/>
+        where msds_id = #{msdsId}
+    </select>
+        
+    <insert id="insertMsdsRegulatory" parameterType="MsdsRegulatory" useGeneratedKeys="true" keyProperty="id">
+        insert into msds_regulatory
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="msdsId != null">msds_id,</if>
+            <if test="regulatoryInfo != null">regulatory_info,</if>
+            <if test="domesticRegulations != null">domestic_regulations,</if>
+            <if test="internationalRegulations != null">international_regulations,</if>
+            <if test="chinaDangerousChemicals != null">china_dangerous_chemicals,</if>
+            <if test="chinaControlledChemicals != null">china_controlled_chemicals,</if>
+            <if test="reachRegistration != null">reach_registration,</if>
+            <if test="tscaInventory != null">tsca_inventory,</if>
+            <if test="einecsNumber != null">einecs_number,</if>
+            <if test="prohibitedRestricted != null">prohibited_restricted,</if>
+            <if test="specialProvisions != null">special_provisions,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateTime != null">update_time,</if>
+            <if test="createBy != null">create_by,</if>
+            <if test="updateBy != null">update_by,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="msdsId != null">#{msdsId},</if>
+            <if test="regulatoryInfo != null">#{regulatoryInfo},</if>
+            <if test="domesticRegulations != null">#{domesticRegulations},</if>
+            <if test="internationalRegulations != null">#{internationalRegulations},</if>
+            <if test="chinaDangerousChemicals != null">#{chinaDangerousChemicals},</if>
+            <if test="chinaControlledChemicals != null">#{chinaControlledChemicals},</if>
+            <if test="reachRegistration != null">#{reachRegistration},</if>
+            <if test="tscaInventory != null">#{tscaInventory},</if>
+            <if test="einecsNumber != null">#{einecsNumber},</if>
+            <if test="prohibitedRestricted != null">#{prohibitedRestricted},</if>
+            <if test="specialProvisions != null">#{specialProvisions},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+            <if test="createBy != null">#{createBy},</if>
+            <if test="updateBy != null">#{updateBy},</if>
+         </trim>
+    </insert>
+
+    <update id="updateMsdsRegulatory" parameterType="MsdsRegulatory">
+        update msds_regulatory
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="msdsId != null">msds_id = #{msdsId},</if>
+            <if test="regulatoryInfo != null">regulatory_info = #{regulatoryInfo},</if>
+            <if test="domesticRegulations != null">domestic_regulations = #{domesticRegulations},</if>
+            <if test="internationalRegulations != null">international_regulations = #{internationalRegulations},</if>
+            <if test="chinaDangerousChemicals != null">china_dangerous_chemicals = #{chinaDangerousChemicals},</if>
+            <if test="chinaControlledChemicals != null">china_controlled_chemicals = #{chinaControlledChemicals},</if>
+            <if test="reachRegistration != null">reach_registration = #{reachRegistration},</if>
+            <if test="tscaInventory != null">tsca_inventory = #{tscaInventory},</if>
+            <if test="einecsNumber != null">einecs_number = #{einecsNumber},</if>
+            <if test="prohibitedRestricted != null">prohibited_restricted = #{prohibitedRestricted},</if>
+            <if test="specialProvisions != null">special_provisions = #{specialProvisions},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteMsdsRegulatoryById" parameterType="Long">
+        delete from msds_regulatory where id = #{id}
+    </delete>
+
+    <delete id="deleteMsdsRegulatoryByIds" parameterType="String">
+        delete from msds_regulatory where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <delete id="deleteMsdsRegulatoryByMsdsId" parameterType="Long">
+        delete from msds_regulatory where msds_id = #{msdsId}
+    </delete>
+</mapper>

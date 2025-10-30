@@ -1,0 +1,114 @@
+package com.ruoyi.web.controller.system;
+
+import java.util.List;
+import jakarta.servlet.http.HttpServletResponse;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import com.ruoyi.common.annotation.Log;
+import com.ruoyi.common.core.controller.BaseController;
+import com.ruoyi.common.core.domain.AjaxResult;
+import com.ruoyi.common.enums.BusinessType;
+import com.ruoyi.system.domain.MsdsOtherInfo;
+import com.ruoyi.system.service.IMsdsOtherInfoService;
+import com.ruoyi.common.utils.poi.ExcelUtil;
+import com.ruoyi.common.core.page.TableDataInfo;
+
+/**
+ * 其他信息Controller
+ * 
+ * @author ruoyi
+ * @date 2024-02-18
+ */
+@RestController
+@RequestMapping("/system/msds/otherInfo")
+public class MsdsOtherInfoController extends BaseController
+{
+    @Autowired
+    private IMsdsOtherInfoService msdsOtherInfoService;
+
+    /**
+     * 查询其他信息列表
+     */
+    @PreAuthorize("@ss.hasPermi('system:otherInfo:list')")
+    @GetMapping("/list")
+    public TableDataInfo list(MsdsOtherInfo msdsOtherInfo)
+    {
+        startPage();
+        List<MsdsOtherInfo> list = msdsOtherInfoService.selectMsdsOtherInfoList(msdsOtherInfo);
+        return getDataTable(list);
+    }
+
+    /**
+     * 导出其他信息列表
+     */
+    @PreAuthorize("@ss.hasPermi('system:otherInfo:export')")
+    @Log(title = "其他信息", businessType = BusinessType.EXPORT)
+    @PostMapping("/export")
+    public void export(HttpServletResponse response, MsdsOtherInfo msdsOtherInfo)
+    {
+        List<MsdsOtherInfo> list = msdsOtherInfoService.selectMsdsOtherInfoList(msdsOtherInfo);
+        ExcelUtil<MsdsOtherInfo> util = new ExcelUtil<MsdsOtherInfo>(MsdsOtherInfo.class);
+        util.exportExcel(response, list, "其他信息数据");
+    }
+
+    /**
+     * 获取其他信息详细信息
+     */
+    @PreAuthorize("@ss.hasPermi('system:otherInfo:query')")
+    @GetMapping(value = "/{id}")
+    public AjaxResult getInfo(@PathVariable("id") Long id)
+    {
+        return success(msdsOtherInfoService.selectMsdsOtherInfoById(id));
+    }
+
+    /**
+     * 根据MSDS主表ID获取其他信息详细信息
+     */
+    @PreAuthorize("@ss.hasPermi('system:otherInfo:query')")
+    @GetMapping(value = "/msds/{msdsId}")
+    public AjaxResult getInfoByMsdsId(@PathVariable("msdsId") Long msdsId)
+    {
+        return success(msdsOtherInfoService.selectMsdsOtherInfoByMsdsId(msdsId));
+    }
+
+    /**
+     * 新增其他信息
+     */
+    @PreAuthorize("@ss.hasPermi('system:otherInfo:add')")
+    @Log(title = "其他信息", businessType = BusinessType.INSERT)
+    @PostMapping
+    public AjaxResult add(@RequestBody MsdsOtherInfo msdsOtherInfo)
+    {
+        return toAjax(msdsOtherInfoService.insertMsdsOtherInfo(msdsOtherInfo));
+    }
+
+    /**
+     * 修改其他信息
+     */
+    @PreAuthorize("@ss.hasPermi('system:otherInfo:edit')")
+    @Log(title = "其他信息", businessType = BusinessType.UPDATE)
+    @PutMapping
+    public AjaxResult edit(@RequestBody MsdsOtherInfo msdsOtherInfo)
+    {
+        return toAjax(msdsOtherInfoService.updateMsdsOtherInfo(msdsOtherInfo));
+    }
+
+    /**
+     * 删除其他信息
+     */
+    @PreAuthorize("@ss.hasPermi('system:otherInfo:remove')")
+    @Log(title = "其他信息", businessType = BusinessType.DELETE)
+	@DeleteMapping("/{ids}")
+    public AjaxResult remove(@PathVariable Long[] ids)
+    {
+        return toAjax(msdsOtherInfoService.deleteMsdsOtherInfoByIds(ids));
+    }
+}

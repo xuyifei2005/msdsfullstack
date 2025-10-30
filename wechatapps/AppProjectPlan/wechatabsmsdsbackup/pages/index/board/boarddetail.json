@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "通知详情",
+  "usingComponents": {
+    "u-parse": "/components/uParse/src/wxParse"
+  }
+}

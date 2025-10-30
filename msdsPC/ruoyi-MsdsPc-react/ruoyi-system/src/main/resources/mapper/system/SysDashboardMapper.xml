@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.SysDashboardMapper">
+
+    <!-- 统计文档总数 -->
+    <select id="countTotalDocuments" resultType="int">
+        select count(1) from msds_main
+    </select>
+
+    <!-- 统计有效文档数 -->
+    <select id="countValidDocuments" resultType="int">
+        select count(1) from msds_main where is_active = 1
+    </select>
+
+    <!-- 统计待审核文档数 -->
+    <select id="countPendingDocuments" resultType="int">
+        select count(1) from msds_main where is_active = 0
+    </select>
+
+    <!-- 统计过期文档数 -->
+    <select id="countExpiredDocuments" resultType="int">
+        select count(1) from msds_main where expiry_date is not null and expiry_date &lt; now()
+    </select>
+
+    <!-- 统计今日访问数 -->
+    <select id="countTodayViews" resultType="int">
+        select count(1) from sys_oper_log 
+        where date(oper_time) = curdate()
+    </select>
+
+    <!-- 统计本月访问数 -->
+    <select id="countMonthViews" resultType="int">
+        select count(1) from sys_oper_log 
+        where year(oper_time) = year(now()) and month(oper_time) = month(now())
+    </select>
+
+    <!-- 统计总访问数 -->
+    <select id="countTotalViews" resultType="int">
+        select count(1) from sys_oper_log
+    </select>
+
+    <!-- 统计活跃用户数 -->
+    <select id="countActiveUsers" resultType="int">
+        select count(distinct oper_name) from sys_oper_log 
+        where oper_time >= date_sub(now(), interval 7 day)
+    </select>
+
+    <!-- 统计今日下载数 -->
+    <select id="countTodayDownloads" resultType="int">
+        select count(1) from sys_oper_log 
+        where date(oper_time) = curdate() and oper_name like '%下载%'
+    </select>
+
+    <!-- 统计本月下载数 -->
+    <select id="countMonthDownloads" resultType="int">
+        select count(1) from sys_oper_log 
+        where year(oper_time) = year(now()) and month(oper_time) = month(now()) and oper_name like '%下载%'
+    </select>
+
+    <!-- 统计总下载数 -->
+    <select id="countTotalDownloads" resultType="int">
+        select count(1) from sys_oper_log where oper_name like '%下载%'
+    </select>
+
+    <!-- 统计化学品总数 -->
+    <select id="countTotalChemicals" resultType="int">
+        select count(1) from msds_main
+    </select>
+
+    <!-- 统计危险化学品数 -->
+    <select id="countDangerousChemicals" resultType="int">
+        select count(1) from msds_main where is_active = 1
+    </select>
+
+    <!-- 统计CAS号数量 -->
+    <select id="countCasNumbers" resultType="int">
+        select count(distinct cas_number) from msds_main where cas_number is not null and cas_number != ''
+    </select>
+
+    <!-- 统计供应商数量 -->
+    <select id="countSuppliers" resultType="int">
+        select count(distinct company_name) from msds_main where company_name is not null and company_name != ''
+    </select>
+
+    <!-- 获取访问趋势数据 -->
+    <select id="getAccessTrendData" resultType="map">
+        select 
+            date(oper_time) as date,
+            <choose>
+                <when test="metricType == 'visits'">
+                    count(1) as visits,
+                    0 as uniqueVisitors,
+                    0 as pageViews
+                </when>
+                <when test="metricType == 'uniqueVisitors'">
+                    0 as visits,
+                    count(distinct oper_name) as uniqueVisitors,
+                    0 as pageViews
+                </when>
+                <when test="metricType == 'pageViews'">
+                    0 as visits,
+                    0 as uniqueVisitors,
+                    count(1) as pageViews
+                </when>
+                <otherwise>
+                    count(1) as visits,
+                    count(distinct oper_name) as uniqueVisitors,
+                    count(1) as pageViews
+                </otherwise>
+            </choose>
+        from sys_oper_log
+        where date(oper_time) between #{startDate} and #{endDate}
+        group by date(oper_time)
+        order by date(oper_time)
+    </select>
+
+    <!-- 获取用户活动数据 -->
+    <select id="getUserActivityData" resultType="map">
+        select 
+            date(oper_time) as date,
+            hour(oper_time) as hour,
+            count(1) as count,
+            '访问' as type
+        from sys_oper_log
+        where oper_time >= date_sub(now(), interval 7 day)
+        group by date(oper_time), hour(oper_time)
+        
+        union all
+        
+        select 
+            date(oper_time) as date,
+            hour(oper_time) as hour,
+            count(1) as count,
+            '下载' as type
+        from sys_oper_log
+        where oper_time >= date_sub(now(), interval 7 day) and oper_name like '%下载%'
+        group by date(oper_time), hour(oper_time)
+        
+        order by date, hour
+    </select>
+
+    <!-- 获取下载分析数据 -->
+    <select id="getDownloadAnalyticsData" resultType="map">
+        select 
+            date(oper_time) as date,
+            count(1) as downloads,
+            'PDF' as fileType,
+            oper_id as documentId,
+            oper_name as documentName
+        from sys_oper_log
+        where oper_time >= 
+            <choose>
+                <when test="timeRange == '7d'">date_sub(now(), interval 7 day)</when>
+                <when test="timeRange == '30d'">date_sub(now(), interval 30 day)</when>
+                <otherwise>date_sub(now(), interval 90 day)</otherwise>
+            </choose>
+        and oper_name like '%下载%'
+        group by date(oper_time), oper_id, oper_name
+        order by date(oper_time) desc, downloads desc
+    </select>
+
+    <!-- 获取热门文档数据 -->
+    <select id="getHotDocumentsData" resultType="map">
+        select 
+            m.msds_id as id,
+            m.product_name as name,
+            '化学品' as category,
+            coalesce(av.views, 0) as views,
+            coalesce(dv.downloads, 0) as downloads,
+            date_format(m.update_time, '%Y-%m-%d') as updateTime,
+            '中危' as dangerLevel,
+            m.cas_number as casNumber
+        from msds_main m
+        left join (
+            select oper_id, count(1) as views
+            from sys_oper_log
+            where oper_name like '%查询%' or oper_name like '%访问%'
+            group by oper_id
+        ) av on m.msds_id = av.oper_id
+        left join (
+            select oper_id, count(1) as downloads
+            from sys_oper_log
+            where oper_name like '%下载%'
+            group by oper_id
+        ) dv on m.msds_id = dv.oper_id
+        where m.is_active = 1
+        order by 
+            <choose>
+                <when test="sortBy == 'downloads'">coalesce(dv.downloads, 0) desc</when>
+                <otherwise>coalesce(av.views, 0) desc</otherwise>
+            </choose>
+        limit 10
+    </select>
+
+</mapper> 

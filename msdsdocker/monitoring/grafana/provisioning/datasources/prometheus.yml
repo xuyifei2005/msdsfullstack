@@ -1,0 +1,59 @@
+# MSDS实验室管理系统 - Grafana数据源配置
+# 版本: v1.0
+# 更新日期: 2025-01-27
+
+apiVersion: 1
+
+datasources:
+  # Prometheus数据源
+  - name: Prometheus
+    type: prometheus
+    access: proxy
+    url: http://prometheus:9090
+    isDefault: true
+    editable: true
+    jsonData:
+      httpMethod: POST
+      manageAlerts: true
+      prometheusType: Prometheus
+      prometheusVersion: 2.40.0
+      cacheLevel: 'High'
+      disableRecordingRules: false
+      incrementalQueryOverlapWindow: 10m
+      queryTimeout: 60s
+      timeInterval: 30s
+    secureJsonData: {}
+
+  # Loki日志数据源（如果使用）
+  - name: Loki
+    type: loki
+    access: proxy
+    url: http://loki:3100
+    editable: true
+    jsonData:
+      maxLines: 1000
+      timeout: 60s
+      derivedFields:
+        - datasourceUid: prometheus
+          matcherRegex: "traceID=(\\w+)"
+          name: TraceID
+          url: "$${__value.raw}"
+
+  # MySQL数据源（用于业务数据分析）
+  - name: MySQL
+    type: mysql
+    url: msdsmysql:3306
+    database: msds_dev
+    user: msds_user
+    editable: true
+    jsonData:
+      maxOpenConns: 100
+      maxIdleConns: 100
+      maxIdleConnsAuto: true
+      connMaxLifetime: 14400
+      timezone: "Asia/Shanghai"
+      tlsAuth: false
+      tlsAuthWithCACert: false
+      tlsSkipVerify: true
+    secureJsonData:
+      password: msds_dev_password

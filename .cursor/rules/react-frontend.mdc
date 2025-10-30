@@ -1,0 +1,309 @@
+---
+globs: *.ts,*.tsx,*.js,*.jsx
+---
+
+# React前端开发规范
+
+## 开发环境说明
+
+### 运行环境要求
+- **容器环境**: React前端代码必须在Docker容器内编译和运行
+- **宿主系统**: Windows 11 + WSL2 + Docker Desktop
+- **构建工具**: Node.js + npm/yarn（在Docker容器内）
+
+### 开发流程
+1. **代码编辑**: 在Windows主机的IDE（如Cursor、VSCode）中编写React代码
+2. **开发服务器**:
+   - 通过Docker Compose启动前端开发服务器
+   - 容器内运行`npm run dev`或`npm start`
+   - 支持热重载（HMR）
+3. **生产构建**:
+   - 在容器内执行：`npm run build`
+   - 构建产物部署到Nginx容器
+4. **API连接**:
+   - 开发环境：通过代理连接后端容器（如：`/api` → `http://backend:8080`）
+   - 生产环境：Nginx反向代理到后端服务
+
+### 常用容器命令
+```bash
+# 进入前端容器（如果有独立的前端开发容器）
+docker-compose exec frontend bash
+
+# 安装依赖
+npm install
+
+# 启动开发服务器
+npm run dev
+
+# 生产构建
+npm run build
+
+# 查看前端日志
+docker-compose logs -f nginx
+```
+
+### Nginx部署配置
+前端构建后的静态文件部署在Nginx容器中，配置文件位于 `msdsdocker/nginx/nginx.conf`
+
+## 技术栈规范
+- **React 18+** + **TypeScript**
+- **Ant Design** 作为UI组件库
+- **Umi** 作为前端框架
+- **ahooks** 用于React Hooks增强
+
+## 组件开发规范
+
+### 1. 组件定义和导出
+```tsx
+// 函数组件优先，使用TypeScript接口定义Props
+interface MsdsTableProps {
+  dataSource: MsdsItem[];
+  loading?: boolean;
+  onEdit?: (record: MsdsItem) => void;
+  onDelete?: (id: string) => void;
+}
+
+const MsdsTable: React.FC<MsdsTableProps> = ({ 
+  dataSource, 
+  loading = false, 
+  onEdit, 
+  onDelete 
+}) => {
+  // 组件逻辑
+};
+
+export default MsdsTable;
+```
+
+### 2. Hooks使用规范
+```tsx
+// 自定义Hooks命名以use开头
+const useMsdsData = (params: SearchParams) => {
+  const [data, setData] = useState<MsdsItem[]>([]);
+  const [loading, setLoading] = useState(false);
+  
+  // 使用ahooks优化
+  const { run: fetchData } = useRequest(getMsdsList, {
+    manual: true,
+    onSuccess: (result) => setData(result.rows),
+    onFinally: () => setLoading(false)
+  });
+  
+  return { data, loading, fetchData };
+};
+```
+
+### 3. 状态管理
+```tsx
+// 使用useReducer管理复杂状态
+interface MsdsState {
+  list: MsdsItem[];
+  total: number;
+  loading: boolean;
+  searchForm: SearchForm;
+}
+
+const msdsReducer = (state: MsdsState, action: MsdsAction): MsdsState => {
+  switch (action.type) {
+    case 'SET_LOADING':
+      return { ...state, loading: action.payload };
+    case 'SET_LIST':
+      return { ...state, list: action.payload, loading: false };
+    default:
+      return state;
+  }
+};
+```
+
+### 4. 表单处理规范
+```tsx
+// 使用Ant Design Form + 自定义验证
+const MsdsForm: React.FC<MsdsFormProps> = ({ initialValues, onSubmit }) => {
+  const [form] = Form.useForm();
+  
+  const handleSubmit = async (values: MsdsFormData) => {
+    try {
+      // 数据预处理
+      const processedValues = {
+        ...values,
+        aliases: values.aliases?.filter(Boolean).join(','),
+        createTime: moment().format('YYYY-MM-DD HH:mm:ss')
+      };
+      
+      await onSubmit(processedValues);
+      message.success('保存成功');
+      form.resetFields();
+    } catch (error) {
+      message.error(`保存失败：${error.message}`);
+    }
+  };
+
+  return (
+    <Form
+      form={form}
+      initialValues={initialValues}
+      onFinish={handleSubmit}
+      labelCol={{ span: 6 }}
+      wrapperCol={{ span: 18 }}
+    >
+      {/* 表单项 */}
+    </Form>
+  );
+};
+```
+
+### 5. 数据获取和API调用
+```tsx
+// API服务层封装
+export const msdsApi = {
+  // 获取MSDS列表
+  getList: (params: MsdsQueryParams): Promise<ApiResponse<MsdsItem[]>> => {
+    return request.get('/system/msds/list', { params });
+  },
+  
+  // 上传MSDS文件
+  uploadFile: (file: File, onProgress?: (percent: number) => void): Promise<UploadResponse> => {
+    const formData = new FormData();
+    formData.append('file', file);
+    
+    return request.post('/system/msds/upload', formData, {
+      headers: { 'Content-Type': 'multipart/form-data' },
+      onUploadProgress: (progressEvent) => {
+        const percent = Math.round((progressEvent.loaded * 100) / progressEvent.total);
+        onProgress?.(percent);
+      }
+    });
+  }
+};
+
+// 在组件中使用
+const { data, loading, error } = useRequest(msdsApi.getList, {
+  defaultParams: [{ pageNum: 1, pageSize: 20 }],
+  refreshDeps: [searchParams]
+});
+```
+
+### 6. 错误处理和加载状态
+```tsx
+// 统一错误边界
+const ErrorBoundary: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  return (
+    <ErrorBoundaryComponent
+      fallback={<Result status="error" title="页面出错了" subTitle="请刷新页面重试" />}
+    >
+      {children}
+    </ErrorBoundaryComponent>
+  );
+};
+
+// 加载状态统一处理
+const LoadingWrapper: React.FC<{ loading: boolean; children: React.ReactNode }> = ({ 
+  loading, 
+  children 
+}) => (
+  <Spin spinning={loading} tip="数据加载中...">
+    {children}
+  </Spin>
+);
+```
+
+### 7. 性能优化规范
+```tsx
+// 使用React.memo避免不必要的重渲染
+const MsdsTableRow = React.memo<MsdsTableRowProps>(({ record, onEdit, onDelete }) => {
+  // 行组件逻辑
+});
+
+// 使用useMemo缓存计算结果
+const filteredData = useMemo(() => {
+  return dataSource.filter(item => 
+    item.chemicalName.toLowerCase().includes(searchText.toLowerCase())
+  );
+}, [dataSource, searchText]);
+
+// 使用useCallback缓存回调函数
+const handleEdit = useCallback((record: MsdsItem) => {
+  setEditingRecord(record);
+  setModalVisible(true);
+}, []);
+```
+
+### 8. TypeScript类型定义
+```tsx
+// 统一的类型定义文件
+export interface MsdsItem {
+  id: string;
+  chemicalName: string;
+  casNumber?: string;
+  aliases?: string;
+  supplier: string;
+  createTime: string;
+  status: 'active' | 'inactive';
+}
+
+export interface MsdsQueryParams extends PageParams {
+  chemicalName?: string;
+  casNumber?: string;
+  supplier?: string;
+  dateRange?: [string, string];
+}
+
+export interface ApiResponse<T> {
+  code: number;
+  msg: string;
+  rows?: T;
+  total?: number;
+}
+```
+
+### 9. 文件上传组件规范
+```tsx
+const MsdsUpload: React.FC<MsdsUploadProps> = ({ onSuccess, maxSize = 10 }) => {
+  const [uploading, setUploading] = useState(false);
+  
+  const beforeUpload = (file: File) => {
+    const isValidType = ['application/pdf', 'application/msword'].includes(file.type);
+    if (!isValidType) {
+      message.error('只能上传PDF、Word格式的文件！');
+      return false;
+    }
+    
+    const isValidSize = file.size / 1024 / 1024 < maxSize;
+    if (!isValidSize) {
+      message.error(`文件大小不能超过${maxSize}MB！`);
+      return false;
+    }
+    
+    return true;
+  };
+
+  const handleUpload = async (options: UploadRequestOption) => {
+    setUploading(true);
+    try {
+      const response = await msdsApi.uploadFile(options.file as File, (percent) => {
+        options.onProgress?.({ percent } as UploadProgressEvent);
+      });
+      
+      onSuccess?.(response.data);
+      options.onSuccess?.(response);
+    } catch (error) {
+      options.onError?.(error);
+      message.error('文件上传失败');
+    } finally {
+      setUploading(false);
+    }
+  };
+
+  return (
+    <Upload
+      beforeUpload={beforeUpload}
+      customRequest={handleUpload}
+      showUploadList={{ showRemoveIcon: true }}
+    >
+      <Button icon={<UploadOutlined />} loading={uploading}>
+        选择文件
+      </Button>
+    </Upload>
+  );
+};
+```

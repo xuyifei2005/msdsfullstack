@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.MsdsFireFightingMapper">
+    
+    <resultMap type="MsdsFireFighting" id="MsdsFireFightingResult">
+        <id     property="id"                           column="id"                           />
+        <result property="msdsId"                       column="msds_id"                      />
+        <result property="hazardCharacteristics"        column="hazard_characteristics"       />
+        <result property="harmfulCombustionProducts"    column="harmful_combustion_products"  />
+        <result property="suitableExtinguishingMedia"   column="suitable_extinguishing_media" />
+        <result property="unsuitableExtinguishingMedia" column="unsuitable_extinguishing_media" />
+        <result property="fireFightingEquipment"        column="fire_fighting_equipment"      />
+        <result property="fireFightingProcedures"       column="fire_fighting_procedures"     />
+        <result property="flashPoint"                   column="flash_point"                  />
+        <result property="autoignitionTemperature"      column="autoignition_temperature"     />
+        <result property="flammabilityLimits"           column="flammability_limits"          />
+        <result property="fireRiskClassification"       column="fire_risk_classification"     />
+        <result property="createTime"                   column="create_time"                  />
+        <result property="updateTime"                   column="update_time"                  />
+        <result property="createBy"                     column="create_by"                    />
+        <result property="updateBy"                     column="update_by"                    />
+    </resultMap>
+    
+    <sql id="selectMsdsFireFightingVo">
+        select id, msds_id, hazard_characteristics, harmful_combustion_products,
+               suitable_extinguishing_media, unsuitable_extinguishing_media,
+               fire_fighting_equipment, fire_fighting_procedures, flash_point,
+               autoignition_temperature, flammability_limits, fire_risk_classification,
+               create_time, update_time, create_by, update_by
+        from msds_fire_fighting
+    </sql>
+    
+    <select id="selectMsdsFireFightingById" parameterType="Long" resultMap="MsdsFireFightingResult">
+        <include refid="selectMsdsFireFightingVo"/>
+        where id = #{id}
+    </select>
+    
+    <select id="selectMsdsFireFightingByMsdsId" parameterType="Long" resultMap="MsdsFireFightingResult">
+        <include refid="selectMsdsFireFightingVo"/>
+        where msds_id = #{msdsId}
+    </select>
+    
+    <select id="selectMsdsFireFightingList" parameterType="MsdsFireFighting" resultMap="MsdsFireFightingResult">
+        <include refid="selectMsdsFireFightingVo"/>
+        <where>
+            <if test="msdsId != null">
+                AND msds_id = #{msdsId}
+            </if>
+            <if test="hazardCharacteristics != null and hazardCharacteristics != ''">
+                AND hazard_characteristics like concat('%', #{hazardCharacteristics}, '%')
+            </if>
+            <if test="suitableExtinguishingMedia != null and suitableExtinguishingMedia != ''">
+                AND suitable_extinguishing_media like concat('%', #{suitableExtinguishingMedia}, '%')
+            </if>
+            <if test="flashPoint != null and flashPoint != ''">
+                AND flash_point like concat('%', #{flashPoint}, '%')
+            </if>
+        </where>
+        order by create_time desc
+    </select>
+    
+    <insert id="insertMsdsFireFighting" parameterType="MsdsFireFighting" useGeneratedKeys="true" keyProperty="id">
+        insert into msds_fire_fighting (
+            msds_id, hazard_characteristics, harmful_combustion_products,
+            suitable_extinguishing_media, unsuitable_extinguishing_media,
+            fire_fighting_equipment, fire_fighting_procedures, flash_point,
+            autoignition_temperature, flammability_limits, fire_risk_classification,
+            create_by, create_time
+        )values(
+            #{msdsId}, #{hazardCharacteristics}, #{harmfulCombustionProducts},
+            #{suitableExtinguishingMedia}, #{unsuitableExtinguishingMedia},
+            #{fireFightingEquipment}, #{fireFightingProcedures}, #{flashPoint},
+            #{autoignitionTemperature}, #{flammabilityLimits}, #{fireRiskClassification},
+            #{createBy}, NOW()
+        )
+    </insert>
+     
+    <update id="updateMsdsFireFighting" parameterType="MsdsFireFighting">
+        update msds_fire_fighting 
+        <set>
+            <if test="msdsId != null">msds_id = #{msdsId},</if>
+            <if test="hazardCharacteristics != null">hazard_characteristics = #{hazardCharacteristics},</if>
+            <if test="harmfulCombustionProducts != null">harmful_combustion_products = #{harmfulCombustionProducts},</if>
+            <if test="suitableExtinguishingMedia != null">suitable_extinguishing_media = #{suitableExtinguishingMedia},</if>
+            <if test="unsuitableExtinguishingMedia != null">unsuitable_extinguishing_media = #{unsuitableExtinguishingMedia},</if>
+            <if test="fireFightingEquipment != null">fire_fighting_equipment = #{fireFightingEquipment},</if>
+            <if test="fireFightingProcedures != null">fire_fighting_procedures = #{fireFightingProcedures},</if>
+            <if test="flashPoint != null">flash_point = #{flashPoint},</if>
+            <if test="autoignitionTemperature != null">autoignition_temperature = #{autoignitionTemperature},</if>
+            <if test="flammabilityLimits != null">flammability_limits = #{flammabilityLimits},</if>
+            <if test="fireRiskClassification != null">fire_risk_classification = #{fireRiskClassification},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            update_time = NOW()
+        </set>
+        where id = #{id}
+    </update>
+    
+    <delete id="deleteMsdsFireFightingById" parameterType="Long">
+        delete from msds_fire_fighting where id = #{id}
+    </delete>
+    
+    <delete id="deleteMsdsFireFightingByIds" parameterType="Long">
+        delete from msds_fire_fighting where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    
+    <delete id="deleteMsdsFireFightingByMsdsId" parameterType="Long">
+        delete from msds_fire_fighting where msds_id = #{msdsId}
+    </delete>
+    
+</mapper> 

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "整改通知列表",
+  "usingComponents": {
+    "nulls": "/components/nulls"
+  }
+}

@@ -1,0 +1,202 @@
+# MSDS实验室管理系统 - 监控服务配置
+# 版本: v1.0
+# 更新日期: 2025-01-27
+
+version: '3.8'
+
+services:
+  # ==================== Prometheus监控 ====================
+  prometheus:
+    image: prom/prometheus:v2.40.7
+    container_name: msds-prometheus
+    hostname: prometheus
+    restart: unless-stopped
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./monitoring/prometheus/rules:/etc/prometheus/rules:ro
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--storage.tsdb.retention.time=30d'
+      - '--storage.tsdb.retention.size=10GB'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--web.enable-lifecycle'
+      - '--web.enable-admin-api'
+      - '--log.level=info'
+    networks:
+      - msds_network
+    depends_on:
+      - node-exporter
+      - cadvisor
+
+  # ==================== Grafana可视化 ====================
+  grafana:
+    image: grafana/grafana:9.3.2
+    container_name: msds-grafana
+    hostname: grafana
+    restart: unless-stopped
+    ports:
+      - "3001:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./monitoring/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./monitoring/grafana/dashboards:/etc/grafana/provisioning/dashboards/json:ro
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=msds_grafana_2025
+      - GF_USERS_ALLOW_SIGN_UP=false
+      - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource,grafana-piechart-panel
+      - GF_SERVER_DOMAIN=localhost
+      - GF_SERVER_ROOT_URL=http://localhost:3001
+      - GF_SMTP_ENABLED=false
+      - GF_ALERTING_ENABLED=true
+      - GF_UNIFIED_ALERTING_ENABLED=true
+    networks:
+      - msds_network
+    depends_on:
+      - prometheus
+
+  # ==================== Node Exporter系统监控 ====================
+  node-exporter:
+    image: quay.io/prometheus/node-exporter:latest
+    container_name: msds-node-exporter
+    hostname: node-exporter
+    restart: unless-stopped
+    ports:
+      - "9100:9100"
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/rootfs:ro
+    command:
+      - '--path.procfs=/host/proc'
+      - '--path.rootfs=/rootfs'
+      - '--path.sysfs=/host/sys'
+      - '--collector.filesystem.mount-points-exclude=^/(sys|proc|dev|host|etc)($$|/)'
+      - '--collector.systemd'
+      - '--collector.processes'
+    networks:
+      - msds_network
+
+  # ==================== cAdvisor容器监控 ====================
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:v0.46.0
+    container_name: msds-cadvisor
+    hostname: cadvisor
+    restart: unless-stopped
+    ports:
+      - "8081:8080"
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+      - /dev/disk/:/dev/disk:ro
+    privileged: true
+    devices:
+      - /dev/kmsg
+    networks:
+      - msds_network
+
+  # ==================== MySQL Exporter ====================
+  mysql-exporter:
+    image: prom/mysqld-exporter:v0.14.0
+    container_name: msds-mysql-exporter
+    hostname: mysql-exporter
+    restart: unless-stopped
+    ports:
+      - "9104:9104"
+    environment:
+      - DATA_SOURCE_NAME=msds_user:msds_dev_password@(msdsmysql:3306)/msds_dev
+    networks:
+      - msds_network
+
+  # ==================== Redis Exporter ====================
+  redis-exporter:
+    image: oliver006/redis_exporter:latest
+    container_name: msds-redis-exporter
+    environment:
+      - REDIS_ADDR=redis://msdsredis:6379
+    ports:
+      - "9121:9121"
+    networks:
+      - msds_network
+    restart: unless-stopped
+
+  # ==================== Nginx Exporter ====================
+  nginx-exporter:
+    image: nginx/nginx-prometheus-exporter:0.10.0
+    container_name: msds-nginx-exporter
+    hostname: nginx-exporter
+    restart: unless-stopped
+    ports:
+      - "9113:9113"
+    command:
+      - '-nginx.scrape-uri=http://msdsnginx:80/nginx_status'
+    networks:
+      - msds_network
+
+  # ==================== Blackbox Exporter健康检查 ====================
+  blackbox-exporter:
+    image: prom/blackbox-exporter:v0.22.0
+    container_name: msds-blackbox-exporter
+    hostname: blackbox-exporter
+    restart: unless-stopped
+    ports:
+      - "9115:9115"
+    volumes:
+      - ./monitoring/blackbox/blackbox.yml:/etc/blackbox_exporter/config.yml:ro
+    networks:
+      - msds_network
+
+  # ==================== AlertManager告警管理 ====================
+  alertmanager:
+    image: prom/alertmanager:v0.25.0
+    container_name: msds-alertmanager
+    hostname: alertmanager
+    restart: unless-stopped
+    ports:
+      - "9093:9093"
+    volumes:
+      - ./monitoring/alertmanager/alertmanager.yml:/etc/alertmanager/alertmanager.yml:ro
+      - alertmanager_data:/alertmanager
+    command:
+      - '--config.file=/etc/alertmanager/alertmanager.yml'
+      - '--storage.path=/alertmanager'
+      - '--web.external-url=http://localhost:9093'
+      - '--cluster.advertise-address=0.0.0.0:9093'
+    networks:
+      - msds_network
+
+# ==================== 网络配置 ====================
+networks:
+  msds_network:
+    external: true
+    name: msdsdocker_msds_network
+
+# ==================== 数据卷配置 ====================
+volumes:
+  prometheus_data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./data/prometheus
+  
+  grafana_data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./data/grafana
+  
+  alertmanager_data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./data/alertmanager

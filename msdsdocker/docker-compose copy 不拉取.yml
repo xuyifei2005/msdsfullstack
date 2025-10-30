@@ -1,0 +1,177 @@
+### 用本地的这个文件进行容器构建！
+# docker load -i dockerbackupok/msds_backup_20250727_153146/msds_mysql_image.tar
+# docker load -i dockerbackupok/msds_backup_20250727_153146/msds_redis_image.tar
+# docker load -i dockerbackupok/msds_backup_20250727_153146/msds_backend_image.tar
+# docker load -i dockerbackupok/msds_backup_20250727_153146/msds_frontend_image.tar
+
+# 加载镜像后重新打标签的示例
+# docker tag msds_exported_mysql msds_mysql:latest
+# docker tag msds_exported_redis msds_redis:latest
+# docker tag msds_exported_backend msds_backend:latest
+# docker tag msds_exported_frontend msds_frontend:latest
+
+
+
+
+
+
+networks:
+  msds_network:
+    driver: bridge
+
+services:
+  # 后端服务
+  backend:
+    networks:
+      - msds_network
+    image: msds_backend
+    container_name: msds_backend
+    restart: always
+    pull_policy: never
+    volumes:
+      - ../msdsPC/ruoyi-MsdsPc-react:/app
+      - ../msdsPC/ruoyi-MsdsPc-react/uploadPath:/app/uploadPath
+
+      # Maven本地仓库持久化///这个是创建了一个共享卷！！！ 命名卷环境隔离
+      - msdsmaven_repository:/root/.m2/repository
+      
+    working_dir: /app
+    command: |
+
+      # 下面这些都已经在拉取的时候基于打包好的镜像不用安装这些了！
+      # sh -c "echo 'Starting development environment setup...' && 
+      # apt-get update && apt-get install -y openssh-server bash file dos2unix curl wget git && 
+      # echo 'Installing Node.js 18...' && 
+      # curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && 
+      # apt-get install -y nodejs && 
+      # echo 'Installing Maven...' && 
+      # apt-get install -y maven && 
+      # echo 'Verifying installations...' && 
+      # java -version && 
+      # node -v && 
+      # npm -v && 
+      # mvn -version && 
+      # mkdir -p /run/sshd && 
+      # ssh-keygen -A && 
+      # sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config && 
+      # sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config && 
+      # echo 'root:msds_dev_password' | chpasswd && 
+      /usr/sbin/sshd && 
+      echo 'SSH service started successfully' && 
+      echo 'Development environment ready!' && 
+
+      # 启动后端项目
+      cd /app && 
+      mvn clean package -DskipTests && 
+      java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -jar ruoyi-admin/target/ruoyi-admin.jar &&
+
+      tail -f /dev/null"
+    ports:
+      - "8080:8080"
+      - "5005:5005"
+      - "2222:22"
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/msds_dev?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      - SPRING_DATASOURCE_USERNAME=msds_user
+      - SPRING_DATASOURCE_PASSWORD=msds_dev_password
+    depends_on:
+      - mysql
+      - redis
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/actuator/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # 前端服务
+  frontend:
+    networks:
+      - msds_network
+    image: msds_frontend
+    container_name: msds_frontend
+    restart: always
+    pull_policy: never
+    volumes:
+      - ../msdsPC/ruoyi-MsdsPc-react/react-ui:/app
+      - ../msdsPC/ruoyi-MsdsPc-react/react-ui/uploadPath:/app/uploadPath
+      
+      # 这种方式可能导致跨平台兼容性问题，建议使用命名卷来管理node_modules
+      # 使用命名卷可以避免本地环境和容器环境的依赖冲突
+      - msdsnode_modules:/app/node_modules
+      # - ../msdsPC/ruoyi-MsdsPc-react/react-ui/node_modules:/app/node_modules
+
+    working_dir: /app
+    # 执行 npm start 命令启动前端应用，并指定监听所有可用网络接口
+    # command: npm start -- --host 0.0.0.0
+    command: |
+    
+      # 前端在拉取初始才需要这些
+      # sh -c "
+      # echo 'Setting up frontend development environment...' &&
+      # apt-get update &&
+      # apt-get install -y openssh-server curl wget git &&
+      # echo 'Installing additional development tools...' &&
+      # apt-get install -y build-essential &&
+      # mkdir -p /run/sshd &&
+      # echo 'root:msds_dev_password' | chpasswd &&
+      # sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config &&
+      # sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config &&
+      # ssh-keygen -A &&
+      /usr/sbin/sshd &&
+      echo 'Frontend development environment ready!' &&
+
+      # 启动前端项目，这样启动时间是不是很长！！！
+      npm install &&
+      npm start
+
+      tail -f /dev/null"
+    ports:
+      - "3000:3000"
+      - "2223:22"
+    environment:
+      - REACT_APP_API_URL=http://backend:8080
+    depends_on:
+      - backend
+
+  # MySQL数据库
+  mysql:
+    networks:
+      - msds_network
+    image: msds_mysql
+    container_name: msds_mysql
+    restart: always
+    pull_policy: never
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_DATABASE: msds_dev
+      MYSQL_USER: msds_user
+      MYSQL_PASSWORD: msds_dev_password
+      MYSQL_ROOT_PASSWORD: root_password
+    ports:
+      - "3306:3306"
+    volumes:
+      # 数据本次持久化
+      - ../docker/msdsfullstatckcompose/msdsdata/mysql:/var/lib/mysql
+      # 初始化数据库
+      - ../docker/msdsfullstatckcompose/msdsdatabaseinitdb:/docker-entrypoint-initdb.d
+
+  # Redis缓存
+  redis:
+    networks:
+      - msds_network
+    image: msds_redis
+    container_name: msds_redis
+    restart: always
+    pull_policy: never
+    ports:
+      - "1379:6379"
+    volumes:
+      - msdsredis_data:/data
+
+volumes:
+  msdsredis_data:
+  msdsnode_modules:
+  msdsmaven_repository:
+
+

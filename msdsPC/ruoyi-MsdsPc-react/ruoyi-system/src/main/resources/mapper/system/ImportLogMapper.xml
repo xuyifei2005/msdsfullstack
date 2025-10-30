@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.ImportLogMapper">
+    
+    <resultMap type="ImportLog" id="ImportLogResult">
+        <result property="logId"             column="log_id"               />
+        <result property="batchNo"           column="batch_no"             />
+        <result property="fileName"          column="file_name"            />
+        <result property="fileSize"          column="file_size"            />
+        <result property="fileType"          column="file_type"            />
+        <result property="importType"        column="import_type"          />
+        <result property="status"            column="status"               />
+        <result property="totalRows"         column="total_rows"           />
+        <result property="successRows"       column="success_rows"         />
+        <result property="failedRows"        column="failed_rows"          />
+        <result property="warningRows"       column="warning_rows"         />
+        <result property="skippedRows"       column="skipped_rows"         />
+        <result property="startTime"         column="start_time"           />
+        <result property="endTime"           column="end_time"             />
+        <result property="processingTime"    column="processing_time"      />
+        <result property="errorMessage"      column="error_message"        />
+        <result property="errorCode"         column="error_code"           />
+        <result property="errorDetails"      column="error_details"        />
+        <result property="validationResult" column="validation_result"    />
+        <result property="importConfig"      column="import_config"        />
+        <result property="userId"            column="user_id"              />
+        <result property="userName"          column="user_name"            />
+        <result property="clientIp"          column="client_ip"            />
+        <result property="userAgent"         column="user_agent"           />
+        <result property="remarks"           column="remarks"              />
+        <result property="delFlag"           column="del_flag"             />
+        <result property="createBy"          column="create_by"            />
+        <result property="createTime"        column="create_time"          />
+        <result property="updateBy"          column="update_by"            />
+        <result property="updateTime"        column="update_time"          />
+    </resultMap>
+
+    <sql id="selectImportLogVo">
+        select log_id, batch_no, file_name, file_size, file_type, import_type, status, 
+               total_rows, success_rows, failed_rows, warning_rows, skipped_rows, 
+               start_time, end_time, processing_time, error_message, error_code, 
+               error_details, validation_result, import_config, user_id, user_name, 
+               client_ip, user_agent, remarks, del_flag, create_by, create_time, 
+               update_by, update_time 
+        from sys_import_log
+    </sql>
+
+    <select id="selectImportLogList" parameterType="ImportLog" resultMap="ImportLogResult">
+        <include refid="selectImportLogVo"/>
+        <where>  
+            <if test="batchNo != null  and batchNo != ''"> and batch_no like concat('%', #{batchNo}, '%')</if>
+            <if test="fileName != null  and fileName != ''"> and file_name like concat('%', #{fileName}, '%')</if>
+            <if test="fileType != null  and fileType != ''"> and file_type = #{fileType}</if>
+            <if test="importType != null  and importType != ''"> and import_type = #{importType}</if>
+            <if test="status != null  and status != ''"> and status = #{status}</if>
+            <if test="userId != null "> and user_id = #{userId}</if>
+            <if test="userName != null  and userName != ''"> and user_name like concat('%', #{userName}, '%')</if>
+            <if test="params.beginTime != null and params.beginTime != ''"><!-- 开始时间检索 -->
+                and date_format(create_time,'%y%m%d') &gt;= date_format(#{params.beginTime},'%y%m%d')
+            </if>
+            <if test="params.endTime != null and params.endTime != ''"><!-- 结束时间检索 -->
+                and date_format(create_time,'%y%m%d') &lt;= date_format(#{params.endTime},'%y%m%d')
+            </if>
+            and del_flag = '0'
+        </where>
+        order by create_time desc
+    </select>
+    
+    <select id="selectImportLogByLogId" parameterType="Long" resultMap="ImportLogResult">
+        <include refid="selectImportLogVo"/>
+        where log_id = #{logId} and del_flag = '0'
+    </select>
+    
+    <select id="selectImportLogByBatchNo" parameterType="String" resultMap="ImportLogResult">
+        <include refid="selectImportLogVo"/>
+        where batch_no = #{batchNo} and del_flag = '0'
+    </select>
+        
+    <insert id="insertImportLog" parameterType="ImportLog" useGeneratedKeys="true" keyProperty="logId">
+        insert into sys_import_log
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="batchNo != null and batchNo != ''">batch_no,</if>
+            <if test="fileName != null and fileName != ''">file_name,</if>
+            <if test="fileSize != null">file_size,</if>
+            <if test="fileType != null and fileType != ''">file_type,</if>
+            <if test="importType != null and importType != ''">import_type,</if>
+            <if test="status != null and status != ''">status,</if>
+            <if test="totalRows != null">total_rows,</if>
+            <if test="successRows != null">success_rows,</if>
+            <if test="failedRows != null">failed_rows,</if>
+            <if test="warningRows != null">warning_rows,</if>
+            <if test="skippedRows != null">skipped_rows,</if>
+            <if test="startTime != null">start_time,</if>
+            <if test="endTime != null">end_time,</if>
+            <if test="processingTime != null">processing_time,</if>
+            <if test="errorMessage != null">error_message,</if>
+            <if test="errorCode != null and errorCode != ''">error_code,</if>
+            <if test="errorDetails != null">error_details,</if>
+            <if test="validationResult != null">validation_result,</if>
+            <if test="importConfig != null">import_config,</if>
+            <if test="userId != null">user_id,</if>
+            <if test="userName != null and userName != ''">user_name,</if>
+            <if test="clientIp != null and clientIp != ''">client_ip,</if>
+            <if test="userAgent != null and userAgent != ''">user_agent,</if>
+            <if test="remarks != null">remarks,</if>
+            <if test="delFlag != null and delFlag != ''">del_flag,</if>
+            <if test="createBy != null and createBy != ''">create_by,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateBy != null and updateBy != ''">update_by,</if>
+            <if test="updateTime != null">update_time,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="batchNo != null and batchNo != ''">#{batchNo},</if>
+            <if test="fileName != null and fileName != ''">#{fileName},</if>
+            <if test="fileSize != null">#{fileSize},</if>
+            <if test="fileType != null and fileType != ''">#{fileType},</if>
+            <if test="importType != null and importType != ''">#{importType},</if>
+            <if test="status != null and status != ''">#{status},</if>
+            <if test="totalRows != null">#{totalRows},</if>
+            <if test="successRows != null">#{successRows},</if>
+            <if test="failedRows != null">#{failedRows},</if>
+            <if test="warningRows != null">#{warningRows},</if>
+            <if test="skippedRows != null">#{skippedRows},</if>
+            <if test="startTime != null">#{startTime},</if>
+            <if test="endTime != null">#{endTime},</if>
+            <if test="processingTime != null">#{processingTime},</if>
+            <if test="errorMessage != null">#{errorMessage},</if>
+            <if test="errorCode != null and errorCode != ''">#{errorCode},</if>
+            <if test="errorDetails != null">#{errorDetails},</if>
+            <if test="validationResult != null">#{validationResult},</if>
+            <if test="importConfig != null">#{importConfig},</if>
+            <if test="userId != null">#{userId},</if>
+            <if test="userName != null and userName != ''">#{userName},</if>
+            <if test="clientIp != null and clientIp != ''">#{clientIp},</if>
+            <if test="userAgent != null and userAgent != ''">#{userAgent},</if>
+            <if test="remarks != null">#{remarks},</if>
+            <if test="delFlag != null and delFlag != ''">#{delFlag},</if>
+            <if test="createBy != null and createBy != ''">#{createBy},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateBy != null and updateBy != ''">#{updateBy},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+         </trim>
+    </insert>
+
+    <update id="updateImportLog" parameterType="ImportLog">
+        update sys_import_log
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="batchNo != null and batchNo != ''">batch_no = #{batchNo},</if>
+            <if test="fileName != null and fileName != ''">file_name = #{fileName},</if>
+            <if test="fileSize != null">file_size = #{fileSize},</if>
+            <if test="fileType != null and fileType != ''">file_type = #{fileType},</if>
+            <if test="importType != null and importType != ''">import_type = #{importType},</if>
+            <if test="status != null and status != ''">status = #{status},</if>
+            <if test="totalRows != null">total_rows = #{totalRows},</if>
+            <if test="successRows != null">success_rows = #{successRows},</if>
+            <if test="failedRows != null">failed_rows = #{failedRows},</if>
+            <if test="warningRows != null">warning_rows = #{warningRows},</if>
+            <if test="skippedRows != null">skipped_rows = #{skippedRows},</if>
+            <if test="startTime != null">start_time = #{startTime},</if>
+            <if test="endTime != null">end_time = #{endTime},</if>
+            <if test="processingTime != null">processing_time = #{processingTime},</if>
+            <if test="errorMessage != null">error_message = #{errorMessage},</if>
+            <if test="errorCode != null and errorCode != ''">error_code = #{errorCode},</if>
+            <if test="errorDetails != null">error_details = #{errorDetails},</if>
+            <if test="validationResult != null">validation_result = #{validationResult},</if>
+            <if test="importConfig != null">import_config = #{importConfig},</if>
+            <if test="userId != null">user_id = #{userId},</if>
+            <if test="userName != null and userName != ''">user_name = #{userName},</if>
+            <if test="clientIp != null and clientIp != ''">client_ip = #{clientIp},</if>
+            <if test="userAgent != null and userAgent != ''">user_agent = #{userAgent},</if>
+            <if test="remarks != null">remarks = #{remarks},</if>
+            <if test="delFlag != null and delFlag != ''">del_flag = #{delFlag},</if>
+            <if test="updateBy != null and updateBy != ''">update_by = #{updateBy},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+        </trim>
+        where log_id = #{logId}
+    </update>
+    
+    <update id="updateImportLogByBatchNo" parameterType="ImportLog">
+        update sys_import_log
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="fileName != null and fileName != ''">file_name = #{fileName},</if>
+            <if test="fileSize != null">file_size = #{fileSize},</if>
+            <if test="fileType != null and fileType != ''">file_type = #{fileType},</if>
+            <if test="importType != null and importType != ''">import_type = #{importType},</if>
+            <if test="status != null and status != ''">status = #{status},</if>
+            <if test="totalRows != null">total_rows = #{totalRows},</if>
+            <if test="successRows != null">success_rows = #{successRows},</if>
+            <if test="failedRows != null">failed_rows = #{failedRows},</if>
+            <if test="warningRows != null">warning_rows = #{warningRows},</if>
+            <if test="skippedRows != null">skipped_rows = #{skippedRows},</if>
+            <if test="startTime != null">start_time = #{startTime},</if>
+            <if test="endTime != null">end_time = #{endTime},</if>
+            <if test="processingTime != null">processing_time = #{processingTime},</if>
+            <if test="errorMessage != null">error_message = #{errorMessage},</if>
+            <if test="errorCode != null and errorCode != ''">error_code = #{errorCode},</if>
+            <if test="errorDetails != null">error_details = #{errorDetails},</if>
+            <if test="validationResult != null">validation_result = #{validationResult},</if>
+            <if test="importConfig != null">import_config = #{importConfig},</if>
+            <if test="userId != null">user_id = #{userId},</if>
+            <if test="userName != null and userName != ''">user_name = #{userName},</if>
+            <if test="clientIp != null and clientIp != ''">client_ip = #{clientIp},</if>
+            <if test="userAgent != null and userAgent != ''">user_agent = #{userAgent},</if>
+            <if test="remarks != null">remarks = #{remarks},</if>
+            <if test="delFlag != null and delFlag != ''">del_flag = #{delFlag},</if>
+            <if test="updateBy != null and updateBy != ''">update_by = #{updateBy},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+        </trim>
+        where batch_no = #{batchNo} and del_flag = '0'
+    </update>
+
+    <delete id="deleteImportLogByLogId" parameterType="Long">
+        update sys_import_log set del_flag = '2' where log_id = #{logId}
+    </delete>
+
+    <delete id="deleteImportLogByLogIds" parameterType="String">
+        update sys_import_log set del_flag = '2' where log_id in 
+        <foreach item="logId" collection="array" open="(" separator="," close=")">
+            #{logId}
+        </foreach>
+    </delete>
+    
+    <delete id="deleteExpiredLogs" parameterType="Date">
+        delete from sys_import_log where create_time &lt; #{expiredDate}
+    </delete>
+    
+    <!-- 获取导入统计信息 -->
+    <select id="getImportStatistics" resultType="map">
+        select 
+            count(*) as total_imports,
+            sum(case when status = 'SUCCESS' then 1 else 0 end) as success_count,
+            sum(case when status = 'FAILED' then 1 else 0 end) as failed_count,
+            sum(case when status = 'PARTIAL_SUCCESS' then 1 else 0 end) as partial_success_count,
+            sum(case when status = 'PROCESSING' then 1 else 0 end) as processing_count,
+            sum(total_rows) as total_rows_processed,
+            sum(success_rows) as total_success_rows,
+            sum(failed_rows) as total_failed_rows,
+            avg(processing_time) as avg_processing_time,
+            max(processing_time) as max_processing_time,
+            min(processing_time) as min_processing_time
+        from sys_import_log 
+        where del_flag = '0'
+        <if test="startDate != null and startDate != ''">
+            and date_format(create_time,'%Y-%m-%d') &gt;= #{startDate}
+        </if>
+        <if test="endDate != null and endDate != ''">
+            and date_format(create_time,'%Y-%m-%d') &lt;= #{endDate}
+        </if>
+    </select>
+    
+    <!-- 获取用户导入历史 -->
+    <select id="getUserImportHistory" resultMap="ImportLogResult">
+        <include refid="selectImportLogVo"/>
+        where user_id = #{userId} and del_flag = '0'
+        order by create_time desc
+        <if test="limit != null">
+            limit #{limit}
+        </if>
+    </select>
+    
+    <!-- 获取导入错误统计 -->
+    <select id="getImportErrorStatistics" resultType="map">
+        select 
+            error_code,
+            count(*) as error_count
+        from sys_import_log 
+        where del_flag = '0' and status = 'FAILED' and error_code is not null
+        <if test="startDate != null and startDate != ''">
+            and date_format(create_time,'%Y-%m-%d') &gt;= #{startDate}
+        </if>
+        <if test="endDate != null and endDate != ''">
+            and date_format(create_time,'%Y-%m-%d') &lt;= #{endDate}
+        </if>
+        group by error_code
+        order by error_count desc
+    </select>
+    
+    <!-- 获取导入性能统计 -->
+    <select id="getImportPerformanceStatistics" resultType="map">
+        select 
+            import_type,
+            count(*) as import_count,
+            avg(processing_time) as avg_processing_time,
+            avg(total_rows) as avg_total_rows,
+            avg(file_size) as avg_file_size,
+            sum(case when status = 'SUCCESS' then 1 else 0 end) / count(*) * 100 as success_rate
+        from sys_import_log 
+        where del_flag = '0' and processing_time is not null
+        <if test="startDate != null and startDate != ''">
+            and date_format(create_time,'%Y-%m-%d') &gt;= #{startDate}
+        </if>
+        <if test="endDate != null and endDate != ''">
+            and date_format(create_time,'%Y-%m-%d') &lt;= #{endDate}
+        </if>
+        group by import_type
+        order by import_count desc
+    </select>
+    
+    <!-- 获取热门导入类型 -->
+    <select id="getPopularImportTypes" resultType="map">
+        select 
+            import_type,
+            count(*) as import_count,
+            sum(case when status = 'SUCCESS' then 1 else 0 end) as success_count,
+            sum(case when status = 'FAILED' then 1 else 0 end) as failed_count
+        from sys_import_log 
+        where del_flag = '0'
+        group by import_type
+        order by import_count desc
+        <if test="limit != null">
+            limit #{limit}
+        </if>
+    </select>
+    
+    <!-- 获取导入趋势数据 -->
+    <select id="getImportTrendData" resultType="map">
+        select 
+            date_format(create_time, '%Y-%m-%d') as import_date,
+            count(*) as import_count,
+            sum(case when status = 'SUCCESS' then 1 else 0 end) as success_count,
+            sum(case when status = 'FAILED' then 1 else 0 end) as failed_count,
+            sum(total_rows) as total_rows
+        from sys_import_log 
+        where del_flag = '0' and create_time &gt;= date_sub(curdate(), interval #{days} day)
+        group by date_format(create_time, '%Y-%m-%d')
+        order by import_date desc
+    </select>
+    
+</mapper>

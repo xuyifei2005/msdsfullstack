@@ -1,0 +1,97 @@
+-- 测试数据初始化脚本
+-- 插入MSDS测试数据
+
+-- 插入测试MSDS主表数据
+INSERT INTO msds_main (
+    msds_number, product_name, product_english_name, product_alias, cas_number,
+    company_name, company_address, company_phone, company_fax, company_email,
+    emergency_phone, msds_version, revision_date, file_name, file_path,
+    file_size, file_type, content_text, parse_status, create_by
+) VALUES 
+(
+    'MSDS-001-2024', '丙酮', 'Acetone', '二甲基甲酮', '67-64-1',
+    '测试化工有限公司', '北京市朝阳区测试路123号', '010-12345678', '010-87654321', 'test@chemical.com',
+    '400-123-4567', 'V2.1', '2024-01-15', 'acetone_msds.txt', '/test/files/acetone_msds.txt',
+    2048, 'TXT', '丙酮安全数据表...', 'SUCCESS', 'test'
+),
+(
+    'MSDS-002-2024', '乙醇', 'Ethanol', '酒精', '64-17-5',
+    '测试化工有限公司', '北京市朝阳区测试路123号', '010-12345678', '010-87654321', 'test@chemical.com',
+    '400-123-4567', 'V1.8', '2024-02-10', 'ethanol_msds.docx', '/test/files/ethanol_msds.docx',
+    4096, 'DOCX', '乙醇安全数据表...', 'SUCCESS', 'test'
+),
+(
+    'MSDS-003-2024', '甲苯', 'Toluene', '甲基苯', '108-88-3',
+    '测试化工有限公司', '北京市朝阳区测试路123号', '010-12345678', '010-87654321', 'test@chemical.com',
+    '400-123-4567', 'V3.0', '2024-03-05', 'toluene_msds.doc', '/test/files/toluene_msds.doc',
+    3072, 'DOC', '甲苯安全数据表...', 'PARTIAL', 'test'
+),
+(
+    'MSDS-004-2024', '苯', 'Benzene', '苯', '71-43-2',
+    '测试化工有限公司', '北京市朝阳区测试路123号', '010-12345678', '010-87654321', 'test@chemical.com',
+    '400-123-4567', 'V2.5', '2024-04-01', 'benzene_msds.pdf', '/test/files/benzene_msds.pdf',
+    5120, 'PDF', '苯安全数据表...', 'FAILED', 'test'
+),
+(
+    'MSDS-005-2024', '氯化钠', 'Sodium Chloride', '食盐', '7647-14-5',
+    '测试化工有限公司', '北京市朝阳区测试路123号', '010-12345678', '010-87654321', 'test@chemical.com',
+    '400-123-4567', 'V1.2', '2024-05-15', 'nacl_msds.txt', '/test/files/nacl_msds.txt',
+    1536, 'TXT', '氯化钠安全数据表...', 'SUCCESS', 'test'
+);
+
+-- 插入MSDS详细信息测试数据
+INSERT INTO msds_detail (msds_main_id, section_number, section_title, section_content, create_by) VALUES 
+(1, 1, '化学品及企业标识', '产品名称：丙酮\n化学名称：2-丙酮\nCAS号：67-64-1\n分子式：C3H6O', 'test'),
+(1, 2, '危险性概述', '易燃液体，蒸气能与空气形成爆炸性混合物。', 'test'),
+(1, 3, '成分/组成信息', '主要成分：丙酮 99.5%\n杂质：水 0.5%', 'test'),
+(1, 4, '急救措施', '皮肤接触：脱去污染的衣着，用肥皂水和清水彻底冲洗皮肤。', 'test'),
+(1, 5, '消防措施', '灭火剂：抗溶性泡沫、二氧化碳、干粉、砂土。', 'test'),
+(2, 1, '化学品及企业标识', '产品名称：乙醇\n化学名称：乙醇\nCAS号：64-17-5\n分子式：C2H6O', 'test'),
+(2, 2, '危险性概述', '易燃液体，对眼睛、皮肤、粘膜和上呼吸道有刺激作用。', 'test'),
+(3, 1, '化学品及企业标识', '产品名称：甲苯\n化学名称：甲苯\nCAS号：108-88-3\n分子式：C7H8', 'test'),
+(3, 2, '危险性概述', '易燃，其蒸气与空气可形成爆炸性混合物。', 'test');
+
+-- 插入MSDS成分信息测试数据
+INSERT INTO msds_component (msds_main_id, component_name, component_cas, component_percentage, component_classification, hazard_statement, create_by) VALUES 
+(1, '丙酮', '67-64-1', '99.5%', '易燃液体类别2', 'H225: 高度易燃液体和蒸气', 'test'),
+(1, '水', '7732-18-5', '0.5%', '无危险', '无', 'test'),
+(2, '乙醇', '64-17-5', '95.0%', '易燃液体类别2', 'H225: 高度易燃液体和蒸气', 'test'),
+(2, '水', '7732-18-5', '5.0%', '无危险', '无', 'test'),
+(3, '甲苯', '108-88-3', '99.8%', '易燃液体类别2', 'H225: 高度易燃液体和蒸气\nH361d: 怀疑对胎儿造成伤害', 'test'),
+(5, '氯化钠', '7647-14-5', '99.9%', '无危险', '无', 'test');
+
+-- 插入MSDS危险性信息测试数据
+INSERT INTO msds_hazard (msds_main_id, hazard_category, hazard_level, hazard_description, precautionary_statement, signal_word, pictogram, create_by) VALUES 
+(1, '易燃液体', 'HIGH', '类别2易燃液体', 'P210: 远离热源、热表面、火花、明火和其他点火源。禁止吸烟。', '危险', 'GHS02', 'test'),
+(1, '眼刺激', 'MEDIUM', '类别2眼刺激', 'P305+P351+P338: 如进入眼睛：用水缓慢温和地冲洗数分钟。如戴隐形眼镜并可方便地取出，取出隐形眼镜。继续冲洗。', '警告', 'GHS07', 'test'),
+(2, '易燃液体', 'HIGH', '类别2易燃液体', 'P210: 远离热源、热表面、火花、明火和其他点火源。禁止吸烟。', '危险', 'GHS02', 'test'),
+(3, '易燃液体', 'HIGH', '类别2易燃液体', 'P210: 远离热源、热表面、火花、明火和其他点火源。禁止吸烟。', '危险', 'GHS02', 'test'),
+(3, '生殖毒性', 'MEDIUM', '类别2生殖毒性', 'P201: 使用前获取特别指示。', '警告', 'GHS08', 'test'),
+(5, '无危险', 'LOW', '无特殊危险', '无特殊预防措施', '无', '无', 'test');
+
+-- 插入MSDS物理化学性质测试数据
+INSERT INTO msds_physical_property (msds_main_id, property_name, property_value, property_unit, test_method, test_condition, create_by) VALUES 
+(1, '外观', '无色透明液体', '', '目视观察', '常温常压', 'test'),
+(1, '气味', '特殊气味', '', '嗅觉检测', '常温常压', 'test'),
+(1, '沸点', '56.2', '℃', 'ASTM D86', '101.3 kPa', 'test'),
+(1, '熔点', '-94.9', '℃', 'ASTM D5950', '101.3 kPa', 'test'),
+(1, '密度', '0.791', 'g/cm³', 'ASTM D4052', '20℃', 'test'),
+(1, '闪点', '-17', '℃', 'ASTM D93', '闭杯法', 'test'),
+(1, '自燃温度', '465', '℃', 'ASTM E659', '常压', 'test'),
+(1, '爆炸极限下限', '2.5', '%', 'ASTM E681', '常温常压', 'test'),
+(1, '爆炸极限上限', '12.8', '%', 'ASTM E681', '常温常压', 'test'),
+(2, '外观', '无色透明液体', '', '目视观察', '常温常压', 'test'),
+(2, '沸点', '78.3', '℃', 'ASTM D86', '101.3 kPa', 'test'),
+(2, '密度', '0.789', 'g/cm³', 'ASTM D4052', '20℃', 'test'),
+(2, '闪点', '13', '℃', 'ASTM D93', '闭杯法', 'test'),
+(3, '外观', '无色透明液体', '', '目视观察', '常温常压', 'test'),
+(3, '沸点', '110.6', '℃', 'ASTM D86', '101.3 kPa', 'test'),
+(3, '密度', '0.867', 'g/cm³', 'ASTM D4052', '20℃', 'test'),
+(3, '闪点', '4', '℃', 'ASTM D93', '闭杯法', 'test'),
+(5, '外观', '白色结晶或结晶性粉末', '', '目视观察', '常温常压', 'test'),
+(5, '熔点', '801', '℃', 'ASTM D5950', '101.3 kPa', 'test'),
+(5, '密度', '2.165', 'g/cm³', 'ASTM D4052', '20℃', 'test'),
+(5, '溶解性', '易溶于水', '', '溶解性测试', '20℃', 'test');
+
+-- 提交事务
+COMMIT;

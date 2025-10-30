@@ -1,0 +1,158 @@
+
+<view class="w100">
+  <!-- 主要内容区域 -->
+  <view class="w100 p30 boxs pt40">
+    <!-- 顶部Logo和设置区域 -->
+    <view class="w100 sbew">
+      <image class="w60 bor50" src="{{contents.logoUrl}}" mode></image>
+      <image class="icon20s" src="../static/img/setting.png" mode data-event-opts="{{[['tap',[['setting',['$event']]]]]}}" bindtap="__e"></image>
+    </view>
+    
+    <!-- 标题 -->
+    <view class="f16 bold colorfff mt20 opacitys">{{contents.title}}</view>
+
+    <!-- 账号密码登录 -->
+    <block wx:if="{{type==1}}">
+      <view class="w100 mt35">
+        <!-- 用户名输入框 -->
+        <view class="w100 borbfffs p15s boxs input-container">
+          <view class="100 flexCenter">
+            <image class="w14" src="../static/img/mobile.png" mode></image>
+            <view class="f14 colorfff ml10 opacitys">用户名</view>
+          </view>
+          <input class="f16 colorfff mt19 ml24 boxs" type="text" placeholder="请输入用户名" 
+                 placeholder-class="f16 colorfff placeholder" 
+                 data-event-opts="{{[['input',[['__set_model',['','username','$event',[]]]]]]}}" 
+                 value="{{username}}" bindinput="__e"/>
+        </view>
+
+        <!-- 密码输入框 -->
+        <view class="w100 borbfffs p15s boxs input-container">
+          <view class="100 flexCenter">
+            <image class="w14" src="../static/img/password.png" mode></image>
+            <view class="f14 colorfff ml10 opacitys">密码</view>
+          </view>
+          <view class="w100 flexenters">
+            <input class="f16 colorfff mt19 ml24 boxs" password="{{flag}}" type="text" 
+                   placeholder="请输入密码" placeholder-class="f16 colorfff placeholder" 
+                   data-event-opts="{{[['input',[['__set_model',['','password','$event',[]]]]]]}}" 
+                   value="{{password}}" bindinput="__e"/>
+            <image class="w36 mt19" src="{{flag?'../static/img/hiddens.png':'../static/img/according.png'}}" 
+                   mode data-event-opts="{{[['tap',[['e0',['$event']]]]]}}" bindtap="__e"></image>
+          </view>
+        </view>
+      </view>
+    </block>
+
+    <!-- 手机验证码登录 -->
+    <block wx:else>
+      <view class="w100 mt35">
+        <!-- 手机号输入框 -->
+        <view class="w100 borbfffs p15s boxs input-container">
+          <view class="100 flexCenter">
+            <image class="w14" src="../static/img/mobile.png" mode></image>
+            <view class="f14 colorfff ml10 opacitys">手机号</view>
+          </view>
+          <input class="f16 colorfff mt19 ml24 boxs" type="text" placeholder="请输入手机号" 
+                 placeholder-class="f16 colorfff placeholder" 
+                 data-event-opts="{{[['input',[['__set_model',['','username','$event',[]]]]]]}}" 
+                 value="{{username}}" bindinput="__e"/>
+        </view>
+
+        <!-- 验证码输入框 -->
+        <view class="w100 borbfffs p15s boxs input-container">
+          <view class="100 flexCenter">
+            <image class="w14" src="../static/img/security.png" mode></image>
+            <view class="f14 colorfff ml10 opacitys">验证码</view>
+          </view>
+          <view class="w100 f16 mt19 ml24 boxs flexenters">
+            <input class="colorfff" type="text" placeholder="请输入验证码" 
+                   placeholder-class="f16 colorfff placeholder" 
+                   data-event-opts="{{[['input',[['__set_model',['','verificationCode','$event',[]]]]]]}}" 
+                   value="{{verificationCode}}" bindinput="__e"/>
+            <view class="flexCenter">
+              <view class="bgf"></view>
+              <block wx:if="{{changess==false}}">
+                <view data-event-opts="{{[['tap',[['sendmsgs',['$event']]]]]}}" 
+                      class="f14 colorfff opacitys pl10 boxs verify-code-btn" bindtap="__e">获取验证码</view>
+              </block>
+              <block wx:else>
+                <view class="f14 colorfff opacitys pl10 boxs">{{second+"秒后获取"}}</view>
+              </block>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+
+    <!-- 切换登录方式区域 -->
+    <block wx:if="{{type==1}}">
+      <view class="w100 mt15 f14 colorfff flexenters">
+        <view data-event-opts="{{[['tap',[['slippassword',['$event']]]]]}}" 
+              class="opacitys hover-scale" bindtap="__e">忘记密码？</view>
+        <view data-event-opts="{{[['tap',[['auth',['$event']]]]]}}" 
+              class="opacitys hover-scale" bindtap="__e">验证码登录</view>
+      </view>
+    </block>
+    <block wx:else>
+      <view class="w100 mt15 f14 colorfff flexend">
+        <view data-event-opts="{{[['tap',[['auth',['$event']]]]]}}" 
+              class="opacitys hover-scale" bindtap="__e">密码登录</view>
+      </view>
+    </block>
+
+    <!-- 登录注册按钮区域 -->
+    <view class="w100 button-group">
+      <view data-event-opts="{{[['tap',[['enter',['$event']]]]]}}" 
+            class="w70 bgfff f14 co427FFA bold juCen flexCenter bor50s h44 login-btn" bindtap="__e">登录</view>
+      <view data-event-opts="{{[['tap',[['register',['$event']]]]]}}" 
+            class="f14 opacitys colorfff h44s bor50 bgffd flexCenter juCen register-btn" bindtap="__e">注册</view>
+    </view>
+  </view>
+
+  <!-- 服务器设置弹窗 -->
+  <block wx:if="{{shows}}">
+    <view class="pof top0s w100 h100"></view>
+    <view class="pof topss w100 flexCenter juCen">
+      <view class="w100 juCen">
+        <view class="w80 bgfff bor6 modal-content">
+          <view class="w100 pt20 pl15 pr15 boxs">
+            <view class="w100 juCen f14 fonts">服务器地址</view>
+            <view class="w100 pt10 pb10 pl15 pr15 boxs bgEFF2F7 bor6 mt15">
+              <input class="f12 co29354D" type="text" placeholder="请输入服务器地址" 
+                     placeholder-class="f12 co848FAA" 
+                     data-event-opts="{{[['input',[['__set_model',['','baseUrl','$event',[]]]]]]}}" 
+                     value="{{baseUrl}}" bindinput="__e"/>
+            </view>
+          </view>
+          <view class="w100 flexenters mt25 bort modal-footer">
+            <view data-event-opts="{{[['tap',[['setting',['$event']]]]]}}" 
+                  class="w50s co29354D br1 juCen flexCenter h40s hover-scale" bindtap="__e">取消</view>
+            <view data-event-opts="{{[['tap',[['bput',['$event']]]]]}}" 
+                  class="w50s co4086FF juCen flexCenter h40s hover-scale" bindtap="__e">确定</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+
+  <!-- 底部协议区域 -->
+  <block wx:if="{{dividet}}">
+    <view class="pof bott0 w100 juCen f12">
+      <view class="w100 juCen pb10 boxs colorfff agreement-container">
+        <radio-group class="item-right radio-group flexCenter">
+          <radio class="radio" style="transform:scale(0.77);" checked="{{changeSexs}}" 
+                 data-event-opts="{{[['tap',[['changeSex',['$event']]]]]}}" bindtap="__e"></radio>
+          <view>已阅读并同意
+            <label class="borts ml3 mr3 _span">
+              <navigator href="http://sxkeyi.3322.org:9080/msds/xieyi.html" class="_a hover-scale">《软件许可及服务协议》</navigator>
+            </label>和
+            <label class="borts ml3 _span">
+              <navigator href="http://sxkeyi.3322.org:9080/msds/aaa.html" class="_a hover-scale">《隐私协议》</navigator>
+            </label>
+          </view>
+        </radio-group>
+      </view>
+    </view>
+  </block>
+</view>

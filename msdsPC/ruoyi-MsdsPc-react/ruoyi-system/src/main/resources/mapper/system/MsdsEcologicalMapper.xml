@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.MsdsEcologicalMapper">
+    
+    <resultMap type="MsdsEcological" id="MsdsEcologicalResult">
+        <id     property="id"                         column="id"                         />
+        <result property="msdsId"                     column="msds_id"                    />
+        <result property="ecologicalToxicity"         column="ecological_toxicity"        />
+        <result property="fishToxicity"               column="fish_toxicity"              />
+        <result property="invertebrateToxicity"       column="invertebrate_toxicity"      />
+        <result property="algaeToxicity"              column="algae_toxicity"             />
+        <result property="bacteriaToxicity"           column="bacteria_toxicity"          />
+        <result property="biodegradability"           column="biodegradability"           />
+        <result property="biodegradationRate"         column="biodegradation_rate"        />
+        <result property="nonBiodegradability"        column="non_biodegradability"       />
+        <result property="photodegradation"           column="photodegradation"           />
+        <result property="hydrolysis"                 column="hydrolysis"                 />
+        <result property="bioaccumulation"            column="bioaccumulation"            />
+        <result property="bioconcentrationFactor"     column="bioconcentration_factor"    />
+        <result property="mobilityInSoil"             column="mobility_in_soil"           />
+        <result property="otherEnvironmentalEffects"  column="other_environmental_effects"/>
+        <result property="ozoneDepletionPotential"    column="ozone_depletion_potential"  />
+        <result property="globalWarmingPotential"     column="global_warming_potential"   />
+        <result property="createTime"                 column="create_time"                />
+        <result property="updateTime"                 column="update_time"                />
+        <result property="createBy"                   column="create_by"                  />
+        <result property="updateBy"                   column="update_by"                  />
+    </resultMap>
+    
+    <sql id="selectMsdsEcologicalVo">
+        select id, msds_id, ecological_toxicity, fish_toxicity, invertebrate_toxicity,
+               algae_toxicity, bacteria_toxicity, biodegradability, biodegradation_rate,
+               non_biodegradability, photodegradation, hydrolysis, bioaccumulation,
+               bioconcentration_factor, mobility_in_soil, other_environmental_effects,
+               ozone_depletion_potential, global_warming_potential,
+               create_time, update_time, create_by, update_by
+        from msds_ecological
+    </sql>
+    
+    <select id="selectMsdsEcologicalById" parameterType="Long" resultMap="MsdsEcologicalResult">
+        <include refid="selectMsdsEcologicalVo"/>
+        where id = #{id}
+    </select>
+    
+    <select id="selectMsdsEcologicalByMsdsId" parameterType="Long" resultMap="MsdsEcologicalResult">
+        <include refid="selectMsdsEcologicalVo"/>
+        where msds_id = #{msdsId}
+    </select>
+    
+    <select id="selectMsdsEcologicalList" parameterType="MsdsEcological" resultMap="MsdsEcologicalResult">
+        <include refid="selectMsdsEcologicalVo"/>
+        <where>
+            <if test="msdsId != null">
+                AND msds_id = #{msdsId}
+            </if>
+            <if test="ecologicalToxicity != null and ecologicalToxicity != ''">
+                AND ecological_toxicity like concat('%', #{ecologicalToxicity}, '%')
+            </if>
+            <if test="fishToxicity != null and fishToxicity != ''">
+                AND fish_toxicity like concat('%', #{fishToxicity}, '%')
+            </if>
+            <if test="biodegradability != null and biodegradability != ''">
+                AND biodegradability like concat('%', #{biodegradability}, '%')
+            </if>
+        </where>
+        order by create_time desc
+    </select>
+    
+    <insert id="insertMsdsEcological" parameterType="MsdsEcological" useGeneratedKeys="true" keyProperty="id">
+        insert into msds_ecological (
+            msds_id, ecological_toxicity, fish_toxicity, invertebrate_toxicity,
+            algae_toxicity, bacteria_toxicity, biodegradability, biodegradation_rate,
+            non_biodegradability, photodegradation, hydrolysis, bioaccumulation,
+            bioconcentration_factor, mobility_in_soil, other_environmental_effects,
+            ozone_depletion_potential, global_warming_potential,
+            create_by, create_time
+        )values(
+            #{msdsId}, #{ecologicalToxicity}, #{fishToxicity}, #{invertebrateToxicity},
+            #{algaeToxicity}, #{bacteriaToxicity}, #{biodegradability}, #{biodegradationRate},
+            #{nonBiodegradability}, #{photodegradation}, #{hydrolysis}, #{bioaccumulation},
+            #{bioconcentrationFactor}, #{mobilityInSoil}, #{otherEnvironmentalEffects},
+            #{ozoneDepletionPotential}, #{globalWarmingPotential},
+            #{createBy}, NOW()
+        )
+    </insert>
+     
+    <update id="updateMsdsEcological" parameterType="MsdsEcological">
+        update msds_ecological 
+        <set>
+            <if test="msdsId != null">msds_id = #{msdsId},</if>
+            <if test="ecologicalToxicity != null">ecological_toxicity = #{ecologicalToxicity},</if>
+            <if test="fishToxicity != null">fish_toxicity = #{fishToxicity},</if>
+            <if test="invertebrateToxicity != null">invertebrate_toxicity = #{invertebrateToxicity},</if>
+            <if test="algaeToxicity != null">algae_toxicity = #{algaeToxicity},</if>
+            <if test="bacteriaToxicity != null">bacteria_toxicity = #{bacteriaToxicity},</if>
+            <if test="biodegradability != null">biodegradability = #{biodegradability},</if>
+            <if test="biodegradationRate != null">biodegradation_rate = #{biodegradationRate},</if>
+            <if test="nonBiodegradability != null">non_biodegradability = #{nonBiodegradability},</if>
+            <if test="photodegradation != null">photodegradation = #{photodegradation},</if>
+            <if test="hydrolysis != null">hydrolysis = #{hydrolysis},</if>
+            <if test="bioaccumulation != null">bioaccumulation = #{bioaccumulation},</if>
+            <if test="bioconcentrationFactor != null">bioconcentration_factor = #{bioconcentrationFactor},</if>
+            <if test="mobilityInSoil != null">mobility_in_soil = #{mobilityInSoil},</if>
+            <if test="otherEnvironmentalEffects != null">other_environmental_effects = #{otherEnvironmentalEffects},</if>
+            <if test="ozoneDepletionPotential != null">ozone_depletion_potential = #{ozoneDepletionPotential},</if>
+            <if test="globalWarmingPotential != null">global_warming_potential = #{globalWarmingPotential},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            update_time = NOW()
+        </set>
+        where id = #{id}
+    </update>
+    
+    <delete id="deleteMsdsEcologicalById" parameterType="Long">
+        delete from msds_ecological where id = #{id}
+    </delete>
+    
+    <delete id="deleteMsdsEcologicalByIds" parameterType="Long">
+        delete from msds_ecological where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    
+    <delete id="deleteMsdsEcologicalByMsdsId" parameterType="Long">
+        delete from msds_ecological where msds_id = #{msdsId}
+    </delete>
+    
+</mapper> 

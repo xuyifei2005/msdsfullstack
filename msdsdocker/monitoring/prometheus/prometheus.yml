@@ -1,0 +1,97 @@
+# MSDS实验室管理系统 - Prometheus监控配置
+# 版本: v1.0
+# 更新日期: 2025-01-27
+
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    cluster: 'msds-production'
+    environment: 'prod'
+
+# 规则文件
+rule_files:
+  - "rules/*.yml"
+
+# 告警管理器配置
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          - alertmanager:9093
+
+# 抓取配置
+scrape_configs:
+  # Prometheus自身监控
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+    scrape_interval: 5s
+    metrics_path: /metrics
+
+  # MSDS后端应用监控
+  - job_name: 'msds-backend'
+    static_configs:
+      - targets: ['msdsbackend:8080']
+    scrape_interval: 10s
+    metrics_path: /actuator/prometheus
+    scrape_timeout: 5s
+    honor_labels: true
+    params:
+      format: ['prometheus']
+
+  # MySQL数据库监控
+  - job_name: 'mysql'
+    static_configs:
+      - targets: ['mysql-exporter:9104']
+    scrape_interval: 30s
+
+  # Redis监控
+  - job_name: 'redis'
+    static_configs:
+      - targets: ['redis-exporter:9121']
+    scrape_interval: 30s
+
+  # Nginx监控
+  - job_name: 'nginx'
+    static_configs:
+      - targets: ['nginx-exporter:9113']
+    scrape_interval: 30s
+
+  # Node Exporter (系统监控)
+  - job_name: 'node'
+    static_configs:
+      - targets: ['node-exporter:9100']
+    scrape_interval: 30s
+
+  # cAdvisor (容器监控)
+  - job_name: 'cadvisor'
+    static_configs:
+      - targets: ['cadvisor:8080']
+    scrape_interval: 30s
+    metrics_path: /metrics
+
+  # 黑盒监控 (健康检查)
+  - job_name: 'blackbox'
+    metrics_path: /probe
+    params:
+      module: [http_2xx]
+    static_configs:
+      - targets:
+        - http://msdsnginx/health
+        - http://msdsbackend:8080/actuator/health
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: __param_target
+      - source_labels: [__param_target]
+        target_label: instance
+      - target_label: __address__
+        replacement: blackbox-exporter:9115
+
+# 远程写入配置（可选，用于长期存储）
+# remote_write:
+#   - url: "http://your-remote-storage/api/v1/write"
+#     queue_config:
+#       max_samples_per_send: 1000
+#       max_shards: 200
+#       capacity: 2500

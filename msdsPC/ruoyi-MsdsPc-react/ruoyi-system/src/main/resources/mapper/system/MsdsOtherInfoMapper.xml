@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.MsdsOtherInfoMapper">
+    
+    <resultMap type="MsdsOtherInfo" id="MsdsOtherInfoResult">
+        <result property="id"    column="id"    />
+        <result property="msdsId"    column="msds_id"    />
+        <result property="references"    column="references"    />
+        <result property="dataSources"    column="data_sources"    />
+        <result property="formFillTime"    column="form_fill_time"    />
+        <result property="formFillDepartment"    column="form_fill_department"    />
+        <result property="formFillPerson"    column="form_fill_person"    />
+        <result property="dataAuditUnit"    column="data_audit_unit"    />
+        <result property="dataAuditPerson"    column="data_audit_person"    />
+        <result property="technicalReviewPerson"    column="technical_review_person"    />
+        <result property="modificationNotes"    column="modification_notes"    />
+        <result property="trainingRequirements"    column="training_requirements"    />
+        <result property="additionalInformation"    column="additional_information"    />
+        <result property="disclaimer"    column="disclaimer"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateTime"    column="update_time"    />
+        <result property="createBy"    column="create_by"    />
+        <result property="updateBy"    column="update_by"    />
+    </resultMap>
+
+    <sql id="selectMsdsOtherInfoVo">
+        select id, msds_id, references, data_sources, form_fill_time, form_fill_department, form_fill_person, data_audit_unit, data_audit_person, technical_review_person, modification_notes, training_requirements, additional_information, disclaimer, create_time, update_time, create_by, update_by from msds_other_info
+    </sql>
+
+    <select id="selectMsdsOtherInfoList" parameterType="MsdsOtherInfo" resultMap="MsdsOtherInfoResult">
+        <include refid="selectMsdsOtherInfoVo"/>
+        <where>  
+            <if test="msdsId != null "> and msds_id = #{msdsId}</if>
+            <if test="references != null  and references != ''"> and references like concat('%', #{references}, '%')</if>
+            <if test="dataSources != null  and dataSources != ''"> and data_sources like concat('%', #{dataSources}, '%')</if>
+            <if test="formFillTime != null "> and form_fill_time = #{formFillTime}</if>
+            <if test="formFillDepartment != null  and formFillDepartment != ''"> and form_fill_department like concat('%', #{formFillDepartment}, '%')</if>
+            <if test="formFillPerson != null  and formFillPerson != ''"> and form_fill_person like concat('%', #{formFillPerson}, '%')</if>
+            <if test="dataAuditUnit != null  and dataAuditUnit != ''"> and data_audit_unit like concat('%', #{dataAuditUnit}, '%')</if>
+            <if test="dataAuditPerson != null  and dataAuditPerson != ''"> and data_audit_person like concat('%', #{dataAuditPerson}, '%')</if>
+            <if test="technicalReviewPerson != null  and technicalReviewPerson != ''"> and technical_review_person like concat('%', #{technicalReviewPerson}, '%')</if>
+        </where>
+    </select>
+    
+    <select id="selectMsdsOtherInfoById" parameterType="Long" resultMap="MsdsOtherInfoResult">
+        <include refid="selectMsdsOtherInfoVo"/>
+        where id = #{id}
+    </select>
+
+    <select id="selectMsdsOtherInfoByMsdsId" parameterType="Long" resultMap="MsdsOtherInfoResult">
+        <include refid="selectMsdsOtherInfoVo"/>
+        where msds_id = #{msdsId}
+    </select>
+        
+    <insert id="insertMsdsOtherInfo" parameterType="MsdsOtherInfo" useGeneratedKeys="true" keyProperty="id">
+        insert into msds_other_info
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="msdsId != null">msds_id,</if>
+            <if test="references != null">references,</if>
+            <if test="dataSources != null">data_sources,</if>
+            <if test="formFillTime != null">form_fill_time,</if>
+            <if test="formFillDepartment != null">form_fill_department,</if>
+            <if test="formFillPerson != null">form_fill_person,</if>
+            <if test="dataAuditUnit != null">data_audit_unit,</if>
+            <if test="dataAuditPerson != null">data_audit_person,</if>
+            <if test="technicalReviewPerson != null">technical_review_person,</if>
+            <if test="modificationNotes != null">modification_notes,</if>
+            <if test="trainingRequirements != null">training_requirements,</if>
+            <if test="additionalInformation != null">additional_information,</if>
+            <if test="disclaimer != null">disclaimer,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateTime != null">update_time,</if>
+            <if test="createBy != null">create_by,</if>
+            <if test="updateBy != null">update_by,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="msdsId != null">#{msdsId},</if>
+            <if test="references != null">#{references},</if>
+            <if test="dataSources != null">#{dataSources},</if>
+            <if test="formFillTime != null">#{formFillTime},</if>
+            <if test="formFillDepartment != null">#{formFillDepartment},</if>
+            <if test="formFillPerson != null">#{formFillPerson},</if>
+            <if test="dataAuditUnit != null">#{dataAuditUnit},</if>
+            <if test="dataAuditPerson != null">#{dataAuditPerson},</if>
+            <if test="technicalReviewPerson != null">#{technicalReviewPerson},</if>
+            <if test="modificationNotes != null">#{modificationNotes},</if>
+            <if test="trainingRequirements != null">#{trainingRequirements},</if>
+            <if test="additionalInformation != null">#{additionalInformation},</if>
+            <if test="disclaimer != null">#{disclaimer},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+            <if test="createBy != null">#{createBy},</if>
+            <if test="updateBy != null">#{updateBy},</if>
+         </trim>
+    </insert>
+
+    <update id="updateMsdsOtherInfo" parameterType="MsdsOtherInfo">
+        update msds_other_info
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="msdsId != null">msds_id = #{msdsId},</if>
+            <if test="references != null">references = #{references},</if>
+            <if test="dataSources != null">data_sources = #{dataSources},</if>
+            <if test="formFillTime != null">form_fill_time = #{formFillTime},</if>
+            <if test="formFillDepartment != null">form_fill_department = #{formFillDepartment},</if>
+            <if test="formFillPerson != null">form_fill_person = #{formFillPerson},</if>
+            <if test="dataAuditUnit != null">data_audit_unit = #{dataAuditUnit},</if>
+            <if test="dataAuditPerson != null">data_audit_person = #{dataAuditPerson},</if>
+            <if test="technicalReviewPerson != null">technical_review_person = #{technicalReviewPerson},</if>
+            <if test="modificationNotes != null">modification_notes = #{modificationNotes},</if>
+            <if test="trainingRequirements != null">training_requirements = #{trainingRequirements},</if>
+            <if test="additionalInformation != null">additional_information = #{additionalInformation},</if>
+            <if test="disclaimer != null">disclaimer = #{disclaimer},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteMsdsOtherInfoById" parameterType="Long">
+        delete from msds_other_info where id = #{id}
+    </delete>
+
+    <delete id="deleteMsdsOtherInfoByIds" parameterType="String">
+        delete from msds_other_info where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <delete id="deleteMsdsOtherInfoByMsdsId" parameterType="Long">
+        delete from msds_other_info where msds_id = #{msdsId}
+    </delete>
+</mapper>

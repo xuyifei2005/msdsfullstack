@@ -1,0 +1,258 @@
+---
+globs: *.java
+---
+
+# Java后端开发规范
+
+## 开发环境说明
+
+### 运行环境要求
+- **容器环境**: 所有Java后端代码必须在Docker容器内编译和运行
+- **宿主系统**: Windows 11 + WSL2 + Docker Desktop
+- **数据库**: MySQL 8.0（运行在Docker容器中）
+
+### 开发流程
+1. **代码编辑**: 在Windows主机的IDE（如Cursor、IntelliJ IDEA）中编写Java代码
+2. **代码编译**: 
+   - 不在Windows主机上直接运行Maven命令
+   - 通过Docker构建或进入容器内编译：`docker-compose exec backend bash`
+   - 在容器内执行：`mvn clean package`
+3. **服务运行**: 后端服务在Docker容器内运行，通过`docker-compose up backend`启动
+4. **数据库连接**: 
+   - 使用容器名称连接：`jdbc:mysql://mysql:3306/ry_msds`
+   - 不要使用localhost，应使用Docker网络中的服务名
+
+### 常用容器内命令
+```bash
+# 进入后端容器
+docker-compose exec backend bash
+
+# 在容器内编译项目
+mvn clean package -DskipTests
+
+# 查看后端日志
+docker-compose logs -f backend
+
+# 重启后端服务
+docker-compose restart backend
+```
+
+### 配置文件注意事项
+- **数据库连接**: 配置文件中的数据库host使用`mysql`而非`localhost`
+- **端口映射**: 容器内端口8080映射到主机8080
+- **文件上传**: 上传目录应挂载到Docker卷以持久化
+
+## RuoYi框架特定规范
+
+**重要提示**: 本项目基于开源RuoYi框架进行二次开发，需要遵循RuoYi的架构模式和开发规范。
+
+### RuoYi框架官方资源
+- **官方文档**: https://doc.ruoyi.vip/
+- **代码仓库**: https://gitee.com/y_project/RuoYi-Vue
+- **在线演示**: http://vue.ruoyi.vip/
+
+### 1. RuoYi标准目录结构
+```
+ruoyi-MsdsPc-react/
+├── ruoyi-admin/        # 管理后台模块（Web服务入口）
+├── ruoyi-framework/    # 框架核心（配置、安全、拦截器）
+├── ruoyi-system/       # 系统管理模块（用户、角色、菜单、字典）
+├── ruoyi-common/       # 公共模块（工具类、常量、异常）
+├── ruoyi-generator/    # 代码生成器
+└── ruoyi-msds/         # MSDS业务模块（扩展）
+```
+
+### 2. 分层架构遵循
+- **Controller层**: 处理HTTP请求，继承`BaseController`，仅做参数验证和调用Service
+- **Service层**: 业务逻辑实现，使用`I{模块}Service`接口 + `{模块}ServiceImpl`实现类
+- **Mapper层**: 数据访问层，继承`BaseMapper<T>`，使用MyBatis Plus
+- **Domain/Entity**: 实体类，遵循JavaBean规范，使用RuoYi的BaseEntity
+
+### 3. RuoYi命名约定和规范
+
+#### Controller层规范
+```java
+// 必须继承BaseController，获取RuoYi提供的基础功能
+@RestController
+@RequestMapping("/system/msds")
+public class MsdsController extends BaseController {
+    
+    @Autowired
+    private IMsdsService msdsService;
+    
+    // 列表查询方法统一命名为list
+    @PreAuthorize("@ss.hasPermi('system:msds:list')")
+    @GetMapping("/list")
+    public TableDataInfo list(Msds msds) {
+        startPage();  // RuoYi分页
+        List<Msds> list = msdsService.selectMsdsList(msds);
+        return getDataTable(list);  // RuoYi封装的分页返回
+    }
+}
+```
+
+#### Service层规范
+```java
+// Service接口以I开头
+public interface IMsdsService {
+    // 查询方法命名：select{实体}List
+    List<Msds> selectMsdsList(Msds msds);
+    
+    // 详情查询：select{实体}By{主键}
+    Msds selectMsdsById(Long msdsId);
+    
+    // 新增方法：insert{实体}
+    int insertMsds(Msds msds);
+    
+    // 修改方法：update{实体}
+    int updateMsds(Msds msds);
+    
+    // 删除方法：delete{实体}By{主键}
+    int deleteMsdsByIds(Long[] msdsIds);
+}
+
+// Service实现类
+@Service
+public class MsdsServiceImpl implements IMsdsService {
+    
+    @Autowired
+    private MsdsMapper msdsMapper;
+    
+    @Override
+    public List<Msds> selectMsdsList(Msds msds) {
+        return msdsMapper.selectMsdsList(msds);
+    }
+}
+```
+
+#### Mapper层规范
+```java
+// Mapper接口继承BaseMapper
+public interface MsdsMapper extends BaseMapper<Msds> {
+    // 自定义查询方法
+    List<Msds> selectMsdsList(Msds msds);
+}
+```
+
+#### Entity实体类规范
+```java
+// 实体类继承BaseEntity，自动获取创建时间、更新时间等字段
+public class Msds extends BaseEntity {
+    
+    private static final long serialVersionUID = 1L;
+    
+    /** MSDS主键 */
+    private Long msdsId;
+    
+    /** 化学品名称 */
+    @Excel(name = "化学品名称")  // RuoYi的Excel导出注解
+    private String chemicalName;
+    
+    /** CAS号 */
+    @Excel(name = "CAS号")
+    private String casNumber;
+    
+    // Getter/Setter...
+}
+```
+
+### 3. 注解规范使用
+
+#### 权限控制
+```java
+@PreAuthorize("@ss.hasPermi('system:msds:list')")
+@GetMapping("/list")
+public TableDataInfo list(Msds msds)
+```
+
+#### 事务管理
+```java
+@Transactional(rollbackFor = Exception.class)
+public int insertMsds(Msds msds)
+```
+
+#### 数据验证
+```java
+@NotNull(message = "化学品名称不能为空")
+@Size(max = 100, message = "化学品名称长度不能超过100个字符")
+private String chemicalName;
+```
+
+### 4. 异常处理规范
+```java
+// 统一异常处理
+throw new ServiceException("MSDS文件解析失败：" + e.getMessage());
+
+// 业务异常
+if (StringUtils.isEmpty(chemicalName)) {
+    throw new ServiceException("化学品名称不能为空");
+}
+```
+
+### 5. 代码质量要求
+
+#### 方法设计原则
+- 单一职责：一个方法只做一件事
+- 参数控制：方法参数不超过5个，超过使用DTO对象
+- 返回值明确：使用泛型和明确的返回类型
+
+#### 常量定义
+```java
+public class MsdsConstants {
+    /** MSDS文件上传路径 */
+    public static final String MSDS_UPLOAD_PATH = "/msds/upload";
+    
+    /** 支持的文件格式 */
+    public static final String[] ALLOWED_EXTENSIONS = {".pdf", ".doc", ".docx", ".xls", ".xlsx"};
+}
+```
+
+#### 日志规范
+```java
+private static final Logger log = LoggerFactory.getLogger(MsdsServiceImpl.class);
+
+// 记录关键操作
+log.info("开始解析MSDS文件：{}", fileName);
+log.error("MSDS数据导入失败", e);
+log.debug("化学品别名提取结果：{}", aliases);
+```
+
+### 6. MSDS业务特定规范
+
+#### 文件处理
+```java
+// 文件类型验证
+public boolean validateFileType(String fileName) {
+    String extension = FileUtils.getFileExtension(fileName).toLowerCase();
+    return Arrays.asList(ALLOWED_EXTENSIONS).contains(extension);
+}
+
+// 批量导入处理
+@Transactional(rollbackFor = Exception.class)
+public ImportResult batchImportMsds(List<MsdsImportVO> importList) {
+    // 数据验证 -> 去重处理 -> 批量插入 -> 结果统计
+}
+```
+
+#### 数据提取和验证
+```java
+// 化学品别名提取
+public List<String> extractChemicalAliases(String content) {
+    // 使用正则表达式提取中英文别名
+    // 去重和格式化处理
+    return distinctAliases;
+}
+
+// 企业信息验证
+public boolean validateEnterpriseInfo(EnterpriseInfo info) {
+    return StringUtils.isNotEmpty(info.getName()) 
+           && StringUtils.isNotEmpty(info.getPhone())
+           && PatternUtils.isValidPhone(info.getPhone());
+}
+```
+
+### 7. 性能优化要求
+- 大数据量查询使用分页：PageHelper.startPage()
+- 批量操作使用MyBatis批量插入
+- 缓存热点数据：@Cacheable注解
+- 异步处理：@Async注解用于耗时操作

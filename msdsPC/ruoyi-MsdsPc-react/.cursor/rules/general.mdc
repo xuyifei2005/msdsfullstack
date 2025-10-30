@@ -1,0 +1,123 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: MSDS管理系统项目通用规范和基本信息
+globs: ["*"]
+alwaysApply: true
+---
+
+# MSDS管理系统项目通用规范
+
+在理解用户需求、编写代码和解决问题时，你应始终遵循以下原则：
+1.编码调试中de项目前后端都是启动起来的，你在自动执行的时候请勿再给我启动项目;
+2.我现在的开发环境是windows11操作系统；
+3.仅安装缺失、有问题的依赖即可，没有我的同意不允许删除整个依赖,实在解决不了的给我提建议看我的想法；
+
+## 项目背景与定位
+这是一个基于RuoYi框架的MSDS（化学品安全技术说明书）管理系统项目，采用前后端分离架构，为实验室科研机构提供专业的MSDS文档管理、用户权限管理、数据统计分析等功能。
+
+## 第一步：项目初始化
+- 当用户提出任何需求时，首先浏览项目根目录下的README.md文件和docs目录下的文档，理解项目目标、架构和实现方式。
+- 重点关注以下核心文档：
+  - [PRD.md](mdc:docs/PRD.md) - 产品需求文档
+  - [Roadmap.md](mdc:docs/Roadmap.md) - 产品路线图
+  - [backend-task-list.md](mdc:docs/backend-task-list.md) - 后端开发任务清单
+  - [list.md](mdc:list.md) - 项目进度管理
+- 在README.md中清晰描述所有功能模块的用途、架构设计、技术选型等，确保团队可以轻松理解系统的结构和设计思路。
+
+## 第二步：需求分析和开发
+### 理解用户需求时：
+- 充分理解用户需求，站在实验室管理员和科研人员角度思考。
+- 作为高级系统架构师，分析需求是否存在缺漏，与用户讨论并完善需求。
+- 选择最简单且符合Clean Code原则的解决方案来满足用户需求。
+- 每处修改需要从整体架构上审视相关依赖，确保所有涉及的地方都要同步修改。
+
+## 技术架构
+
+### 后端技术栈
+- **核心框架**: Spring Boot 3.3.0 + Spring Security + JWT认证
+- **数据库**: MySQL 8.2.0 + MyBatis 3.0.3 + Druid 1.2.23连接池
+- **Java版本**: JDK 17 (必须要求)
+- **缓存**: Redis (分布式缓存)
+- **文档处理**: Apache POI 4.1.2 (Excel处理)
+- **API文档**: SpringDoc OpenAPI 2.5.0 (Swagger)
+- **代码生成**: Velocity 2.3模板引擎
+- **定时任务**: Quartz调度框架
+
+### 前端技术栈
+- **核心框架**: React 18 + TypeScript 5 + Ant Design Pro 6
+- **UI组件**: Ant Design 5.21.1 + Pro Components 2.7.19
+- **构建工具**: UmiJS Max 4.4.11
+- **状态管理**: UmiJS内置状态管理
+- **图表库**: Ant Design Charts (@ant-design/plots)
+- **Node.js**: v18.18.0 (推荐版本)
+
+### 项目结构
+- **ruoyi-admin/**: 主应用模块，Web服务入口
+- **ruoyi-framework/**: 框架核心，安全配置、缓存等基础设施
+- **ruoyi-system/**: 系统管理模块，用户、角色、权限等基础功能
+- **ruoyi-common/**: 通用工具模块，公共组件和工具类
+- **ruoyi-generator/**: 代码生成器，快速生成CRUD代码
+- **ruoyi-quartz/**: 定时任务模块，数据同步、清理等
+- **react-ui/**: React前端项目，基于Ant Design Pro
+
+## 核心业务模块
+- **MSDS文档管理**: 文档上传、版本控制、分类管理、审核流程
+- **化学品数据管理**: CAS号管理、分类标准、危险特性标识
+- **用户权限管理**: 多层级权限、数据权限、操作日志
+- **数据统计分析**: 查阅统计、下载记录、使用趋势分析
+- **系统集成接口**: 与小程序端API接口、第三方系统集成
+
+## 代码风格与设计原则
+- **Clean Code原则**: 遵循DRY、KISS、SOLID原则
+- **DRY (Don't Repeat Yourself)**: 避免重复代码，抽象公共组件和工具类
+- **KISS (Keep It Simple, Stupid)**: 保持代码简洁易懂，避免过度设计
+- **SOLID原则**: 单一职责、开闭原则、里氏替换、接口隔离、依赖倒置
+- 使用有意义的变量和函数名
+- 添加适当的注释解释复杂业务逻辑
+- 遵循Java和TypeScript官方编码规范
+
+## 命名规范
+- **数据库表名**: msds_前缀，下划线分隔，如`msds_document`、`msds_chemical`
+- **Java类名**: 驼峰命名，如`MsdsDocumentController`、`ChemicalService`
+- **接口路径**: RESTful风格，如`/api/msds/documents`、`/api/chemicals/{id}`
+- **前端组件**: 大驼峰命名，如`MsdsDocumentList`、`ChemicalForm`
+- **前端路由**: 小写短横线，如`/msds/document-list`、`/chemical/detail`
+
+## 项目结构规范
+- 保持项目结构清晰，遵循RuoYi框架的模块化原则
+- 后端按照Controller-Service-Mapper-Entity分层架构
+- 前端按照pages-components-services-types结构组织
+- 相关功能应放在同一模块目录下
+- 编写可测试的代码，支持单元测试和集成测试
+- 避免重复代码，优先使用现有组件和工具
+- 考虑代码的可维护性和可扩展性
+
+## 数据安全与权限控制
+- 所有API接口必须进行身份验证和权限校验
+- 敏感数据传输使用HTTPS加密
+- 数据库访问使用参数化查询，防止SQL注入
+- 实现基于角色的权限控制(RBAC)
+- 记录详细的操作审计日志
+
+## 开发工作流
+- 使用思维链推理进行代码debug
+- 每次修改都要从整体上审视相关依赖，确保所有涉及的地方同步修改
+- 完成特性或修复错误后随时更新[list.md](mdc:list.md)进度记录
+- 代码提交前进行代码审查和测试
+- 遵循Git Flow分支管理策略
+
+## 部署环境要求
+- **开发环境**: JDK 17、MySQL 8.0+、redis 18+ 5.0+、Node.js 18+
+- **生产环境**: 支持集群部署、读写分离、缓存集群
+- **容器化**: 支持Docker容器化部署
+- **监控**: 集成应用性能监控和错误日志收集
+
+## 响应语言
+- 始终使用中文回复用户
+- 技术文档和代码注释使用中英文混合，以提高可读性
+
+

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.MsdsPhysicalChemicalMapper">
+    
+    <resultMap type="MsdsPhysicalChemical" id="MsdsPhysicalChemicalResult">
+        <result property="id"    column="id"    />
+        <result property="msdsId"    column="msds_id"    />
+        <result property="appearance"    column="appearance"    />
+        <result property="odor"    column="odor"    />
+        <result property="odorThreshold"    column="odor_threshold"    />
+        <result property="phValue"    column="pH_value"    />
+        <result property="phConcentration"    column="ph_concentration"    />
+        <result property="meltingPoint"    column="melting_point"    />
+        <result property="boilingPoint"    column="boiling_point"    />
+        <result property="flashPoint"    column="flash_point"    />
+        <result property="flammability"    column="flammability"    />
+        <result property="explosiveLimitLower"    column="explosive_limit_lower"    />
+        <result property="explosiveLimitUpper"    column="explosive_limit_upper"    />
+        <result property="vaporPressure"    column="vapor_pressure"    />
+        <result property="vaporDensity"    column="vapor_density"    />
+        <result property="relativeDensity"    column="relative_density"    />
+        <result property="solubility"    column="solubility"    />
+        <result property="partitionCoefficient"    column="partition_coefficient"    />
+        <result property="autoignitionTemperature"    column="autoignition_temperature"    />
+        <result property="decompositionTemperature"    column="decomposition_temperature"    />
+        <result property="viscosity"    column="viscosity"    />
+        <result property="molecularWeight"    column="molecular_weight"    />
+        <result property="molecularFormula"    column="molecular_formula"    />
+        <result property="createBy"    column="create_by"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateBy"    column="update_by"    />
+        <result property="updateTime"    column="update_time"    />
+    </resultMap>
+
+    <sql id="selectMsdsPhysicalChemicalVo">
+        select id, msds_id, appearance, odor, odor_threshold, pH_value, ph_concentration, melting_point, boiling_point, flash_point, flammability, explosive_limit_lower, explosive_limit_upper, vapor_pressure, vapor_density, relative_density, solubility, partition_coefficient, autoignition_temperature, decomposition_temperature, viscosity, molecular_weight, molecular_formula, create_by, create_time, update_by, update_time from msds_physical_chemical
+    </sql>
+
+    <select id="selectMsdsPhysicalChemicalList" parameterType="MsdsPhysicalChemical" resultMap="MsdsPhysicalChemicalResult">
+        <include refid="selectMsdsPhysicalChemicalVo"/>
+        <where>  
+            <if test="msdsId != null "> and msds_id = #{msdsId}</if>
+            <if test="appearance != null  and appearance != ''"> and appearance like concat('%', #{appearance}, '%')</if>
+            <if test="odor != null  and odor != ''"> and odor like concat('%', #{odor}, '%')</if>
+            <if test="odorThreshold != null  and odorThreshold != ''"> and odor_threshold like concat('%', #{odorThreshold}, '%')</if>
+            <if test="phValue != null  and phValue != ''"> and pH_value like concat('%', #{phValue}, '%')</if>
+            <if test="phConcentration != null  and phConcentration != ''"> and ph_concentration like concat('%', #{phConcentration}, '%')</if>
+            <if test="meltingPoint != null  and meltingPoint != ''"> and melting_point like concat('%', #{meltingPoint}, '%')</if>
+            <if test="boilingPoint != null  and boilingPoint != ''"> and boiling_point like concat('%', #{boilingPoint}, '%')</if>
+            <if test="flashPoint != null  and flashPoint != ''"> and flash_point like concat('%', #{flashPoint}, '%')</if>
+            <if test="flammability != null  and flammability != ''"> and flammability like concat('%', #{flammability}, '%')</if>
+            <if test="explosiveLimitLower != null  and explosiveLimitLower != ''"> and explosive_limit_lower like concat('%', #{explosiveLimitLower}, '%')</if>
+            <if test="explosiveLimitUpper != null  and explosiveLimitUpper != ''"> and explosive_limit_upper like concat('%', #{explosiveLimitUpper}, '%')</if>
+            <if test="vaporPressure != null  and vaporPressure != ''"> and vapor_pressure like concat('%', #{vaporPressure}, '%')</if>
+            <if test="vaporDensity != null  and vaporDensity != ''"> and vapor_density like concat('%', #{vaporDensity}, '%')</if>
+            <if test="relativeDensity != null  and relativeDensity != ''"> and relative_density like concat('%', #{relativeDensity}, '%')</if>
+            <if test="solubility != null  and solubility != ''"> and solubility like concat('%', #{solubility}, '%')</if>
+            <if test="partitionCoefficient != null  and partitionCoefficient != ''"> and partition_coefficient like concat('%', #{partitionCoefficient}, '%')</if>
+            <if test="autoignitionTemperature != null  and autoignitionTemperature != ''"> and autoignition_temperature like concat('%', #{autoignitionTemperature}, '%')</if>
+            <if test="decompositionTemperature != null  and decompositionTemperature != ''"> and decomposition_temperature like concat('%', #{decompositionTemperature}, '%')</if>
+            <if test="viscosity != null  and viscosity != ''"> and viscosity like concat('%', #{viscosity}, '%')</if>
+            <if test="molecularWeight != null  and molecularWeight != ''"> and molecular_weight like concat('%', #{molecularWeight}, '%')</if>
+            <if test="molecularFormula != null  and molecularFormula != ''"> and molecular_formula like concat('%', #{molecularFormula}, '%')</if>
+        </where>
+    </select>
+    
+    <select id="selectMsdsPhysicalChemicalById" parameterType="Long" resultMap="MsdsPhysicalChemicalResult">
+        <include refid="selectMsdsPhysicalChemicalVo"/>
+        where id = #{id}
+    </select>
+
+    <select id="selectMsdsPhysicalChemicalByMsdsId" parameterType="Long" resultMap="MsdsPhysicalChemicalResult">
+        <include refid="selectMsdsPhysicalChemicalVo"/>
+        where msds_id = #{msdsId}
+    </select>
+        
+    <insert id="insertMsdsPhysicalChemical" parameterType="MsdsPhysicalChemical" useGeneratedKeys="true" keyProperty="id">
+        insert into msds_physical_chemical
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="msdsId != null">msds_id,</if>
+            <if test="appearance != null">appearance,</if>
+            <if test="odor != null">odor,</if>
+            <if test="odorThreshold != null">odor_threshold,</if>
+            <if test="phValue != null">pH_value,</if>
+            <if test="phConcentration != null">ph_concentration,</if>
+            <if test="meltingPoint != null">melting_point,</if>
+            <if test="boilingPoint != null">boiling_point,</if>
+            <if test="flashPoint != null">flash_point,</if>
+            <if test="flammability != null">flammability,</if>
+            <if test="explosiveLimitLower != null">explosive_limit_lower,</if>
+            <if test="explosiveLimitUpper != null">explosive_limit_upper,</if>
+            <if test="vaporPressure != null">vapor_pressure,</if>
+            <if test="vaporDensity != null">vapor_density,</if>
+            <if test="relativeDensity != null">relative_density,</if>
+            <if test="solubility != null">solubility,</if>
+            <if test="partitionCoefficient != null">partition_coefficient,</if>
+            <if test="autoignitionTemperature != null">autoignition_temperature,</if>
+            <if test="decompositionTemperature != null">decomposition_temperature,</if>
+            <if test="viscosity != null">viscosity,</if>
+            <if test="molecularWeight != null">molecular_weight,</if>
+            <if test="molecularFormula != null">molecular_formula,</if>
+            <if test="createBy != null">create_by,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateBy != null">update_by,</if>
+            <if test="updateTime != null">update_time,</if>
+            <if test="remark != null">remark,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="msdsId != null">#{msdsId},</if>
+            <if test="appearance != null">#{appearance},</if>
+            <if test="odor != null">#{odor},</if>
+            <if test="odorThreshold != null">#{odorThreshold},</if>
+            <if test="phValue != null">#{phValue},</if>
+            <if test="phConcentration != null">#{phConcentration},</if>
+            <if test="meltingPoint != null">#{meltingPoint},</if>
+            <if test="boilingPoint != null">#{boilingPoint},</if>
+            <if test="flashPoint != null">#{flashPoint},</if>
+            <if test="flammability != null">#{flammability},</if>
+            <if test="explosiveLimitLower != null">#{explosiveLimitLower},</if>
+            <if test="explosiveLimitUpper != null">#{explosiveLimitUpper},</if>
+            <if test="vaporPressure != null">#{vaporPressure},</if>
+            <if test="vaporDensity != null">#{vaporDensity},</if>
+            <if test="relativeDensity != null">#{relativeDensity},</if>
+            <if test="solubility != null">#{solubility},</if>
+            <if test="partitionCoefficient != null">#{partitionCoefficient},</if>
+            <if test="autoignitionTemperature != null">#{autoignitionTemperature},</if>
+            <if test="decompositionTemperature != null">#{decompositionTemperature},</if>
+            <if test="viscosity != null">#{viscosity},</if>
+            <if test="molecularWeight != null">#{molecularWeight},</if>
+            <if test="molecularFormula != null">#{molecularFormula},</if>
+            <if test="createBy != null">#{createBy},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateBy != null">#{updateBy},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+            <if test="remark != null">#{remark},</if>
+         </trim>
+    </insert>
+
+    <update id="updateMsdsPhysicalChemical" parameterType="MsdsPhysicalChemical">
+        update msds_physical_chemical
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="msdsId != null">msds_id = #{msdsId},</if>
+            <if test="appearance != null">appearance = #{appearance},</if>
+            <if test="odor != null">odor = #{odor},</if>
+            <if test="odorThreshold != null">odor_threshold = #{odorThreshold},</if>
+            <if test="phValue != null">pH_value = #{phValue},</if>
+            <if test="phConcentration != null">ph_concentration = #{phConcentration},</if>
+            <if test="meltingPoint != null">melting_point = #{meltingPoint},</if>
+            <if test="boilingPoint != null">boiling_point = #{boilingPoint},</if>
+            <if test="flashPoint != null">flash_point = #{flashPoint},</if>
+            <if test="flammability != null">flammability = #{flammability},</if>
+            <if test="explosiveLimitLower != null">explosive_limit_lower = #{explosiveLimitLower},</if>
+            <if test="explosiveLimitUpper != null">explosive_limit_upper = #{explosiveLimitUpper},</if>
+            <if test="vaporPressure != null">vapor_pressure = #{vaporPressure},</if>
+            <if test="vaporDensity != null">vapor_density = #{vaporDensity},</if>
+            <if test="relativeDensity != null">relative_density = #{relativeDensity},</if>
+            <if test="solubility != null">solubility = #{solubility},</if>
+            <if test="partitionCoefficient != null">partition_coefficient = #{partitionCoefficient},</if>
+            <if test="autoignitionTemperature != null">autoignition_temperature = #{autoignitionTemperature},</if>
+            <if test="decompositionTemperature != null">decomposition_temperature = #{decompositionTemperature},</if>
+            <if test="viscosity != null">viscosity = #{viscosity},</if>
+            <if test="molecularWeight != null">molecular_weight = #{molecularWeight},</if>
+            <if test="molecularFormula != null">molecular_formula = #{molecularFormula},</if>
+            <if test="createBy != null">create_by = #{createBy},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+            <if test="remark != null">remark = #{remark},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteMsdsPhysicalChemicalById" parameterType="Long">
+        delete from msds_physical_chemical where id = #{id}
+    </delete>
+
+    <delete id="deleteMsdsPhysicalChemicalByIds" parameterType="String">
+        delete from msds_physical_chemical where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <delete id="deleteMsdsPhysicalChemicalByMsdsId" parameterType="Long">
+        delete from msds_physical_chemical where msds_id = #{msdsId}
+    </delete>
+</mapper>

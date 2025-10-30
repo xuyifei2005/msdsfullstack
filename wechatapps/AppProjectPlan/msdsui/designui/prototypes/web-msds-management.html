@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSDS管理系统 - MSDS管理</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .browser-frame {
+            background: #f3f4f6;
+            border-radius: 8px 8px 0 0;
+            padding: 12px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .browser-buttons {
+            display: flex;
+            gap: 8px;
+        }
+        .browser-button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .browser-button.close { background: #ff5f57; }
+        .browser-button.minimize { background: #ffbd2e; }
+        .browser-button.maximize { background: #28ca42; }
+        .address-bar {
+            background: white;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            padding: 4px 12px;
+            margin-left: 16px;
+            flex: 1;
+            font-size: 14px;
+            color: #6b7280;
+        }
+        .table-row {
+            transition: all 0.2s ease;
+        }
+        .table-row:hover {
+            background-color: #f9fafb;
+        }
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        .status-active {
+            background-color: #dcfce7;
+            color: #166534;
+        }
+        .status-pending {
+            background-color: #fef3c7;
+            color: #92400e;
+        }
+        .status-expired {
+            background-color: #fee2e2;
+            color: #991b1b;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+        .modal.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .upload-area {
+            border: 2px dashed #d1d5db;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.2s ease;
+        }
+        .upload-area:hover {
+            border-color: #3b82f6;
+            background-color: #f8fafc;
+        }
+        .upload-area.dragover {
+            border-color: #3b82f6;
+            background-color: #eff6ff;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- 浏览器窗口模拟 -->
+    <div class="max-w-7xl mx-auto mt-8 bg-white rounded-lg shadow-2xl overflow-hidden">
+        <!-- 浏览器标题栏 -->
+        <div class="browser-frame">
+            <div class="flex items-center">
+                <div class="browser-buttons">
+                    <div class="browser-button close"></div>
+                    <div class="browser-button minimize"></div>
+                    <div class="browser-button maximize"></div>
+                </div>
+                <div class="address-bar">
+                    <i class="fas fa-lock text-green-500 mr-2"></i>
+                    https://msds-admin.company.com/msds-management
+                </div>
+                <div class="ml-4 flex items-center gap-2">
+                    <i class="fas fa-star text-gray-400"></i>
+                    <i class="fas fa-user-circle text-gray-400"></i>
+                    <i class="fas fa-ellipsis-v text-gray-400"></i>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 主要内容区域 -->
+        <div class="flex h-screen bg-gray-50">
+            
+            <!-- 侧边栏 -->
+            <div class="w-64 bg-white shadow-lg">
+                <!-- Logo -->
+                <div class="p-6 border-b border-gray-200">
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center mr-3">
+                            <i class="fas fa-flask text-white text-lg"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-lg font-bold text-gray-800">MSDS管理</h1>
+                            <p class="text-xs text-gray-500">管理后台</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 导航菜单 -->
+                <nav class="mt-6">
+                    <div class="px-4">
+                        <a href="#" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg mb-2">
+                            <i class="fas fa-chart-bar mr-3"></i>
+                            <span>仪表板</span>
+                        </a>
+                        <a href="#" class="flex items-center px-4 py-3 text-blue-600 bg-blue-50 rounded-lg mb-2">
+                            <i class="fas fa-file-alt mr-3"></i>
+                            <span class="font-medium">MSDS管理</span>
+                        </a>
+                        <a href="#" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg mb-2">
+                            <i class="fas fa-users mr-3"></i>
+                            <span>用户管理</span>
+                        </a>
+                        <a href="#" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg mb-2">
+                            <i class="fas fa-qrcode mr-3"></i>
+                            <span>二维码管理</span>
+                        </a>
+                        <a href="#" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg mb-2">
+                            <i class="fas fa-chart-line mr-3"></i>
+                            <span>数据分析</span>
+                        </a>
+                        <a href="#" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg mb-2">
+                            <i class="fas fa-history mr-3"></i>
+                            <span>操作日志</span>
+                        </a>
+                        <a href="#" class="flex items-center px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg mb-2">
+                            <i class="fas fa-cog mr-3"></i>
+                            <span>系统设置</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            
+            <!-- 主内容区 -->
+            <div class="flex-1 overflow-auto">
+                
+                <!-- 顶部导航栏 -->
+                <div class="bg-white shadow-sm border-b border-gray-200 px-6 py-4">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-800">MSDS管理</h2>
+                            <p class="text-gray-600 text-sm">化学品安全技术说明书管理</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <!-- 搜索框 -->
+                            <div class="relative">
+                                <input type="text" placeholder="搜索化学品名称、CAS号..." 
+                                       class="pl-10 pr-4 py-2 w-80 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                            </div>
+                            <!-- 上传按钮 -->
+                            <button onclick="openUploadModal()" class="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                                <i class="fas fa-upload mr-2"></i>
+                                上传MSDS
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 过滤和操作栏 -->
+                <div class="bg-white border-b border-gray-200 px-6 py-4">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-4">
+                            <!-- 分类筛选 -->
+                            <select class="border border-gray-300 rounded-lg px-3 py-2 text-sm">
+                                <option>全部分类</option>
+                                <option>有机溶剂</option>
+                                <option>无机酸碱</option>
+                                <option>生物试剂</option>
+                                <option>标准品</option>
+                            </select>
+                            
+                            <!-- 状态筛选 -->
+                            <select class="border border-gray-300 rounded-lg px-3 py-2 text-sm">
+                                <option>全部状态</option>
+                                <option>有效</option>
+                                <option>待审核</option>
+                                <option>已过期</option>
+                            </select>
+                            
+                            <!-- 危险等级筛选 -->
+                            <select class="border border-gray-300 rounded-lg px-3 py-2 text-sm">
+                                <option>全部危险等级</option>
+                                <option>高危险</option>
+                                <option>中等危险</option>
+                                <option>低危险</option>
+                            </select>
+                        </div>
+                        
+                        <div class="flex items-center gap-2">
+                            <span class="text-sm text-gray-600">共 247 条记录</span>
+                            <button class="p-2 text-gray-400 hover:text-gray-600">
+                                <i class="fas fa-download"></i>
+                            </button>
+                            <button class="p-2 text-gray-400 hover:text-gray-600">
+                                <i class="fas fa-filter"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- MSDS列表 -->
+                <div class="p-6">
+                    <div class="bg-white rounded-lg shadow overflow-hidden">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        <input type="checkbox" class="rounded border-gray-300">
+                                    </th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        化学品信息
+                                    </th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        CAS号
+                                    </th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        危险等级
+                                    </th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        状态
+                                    </th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        更新时间
+                                    </th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        操作
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                
+                                <!-- MSDS记录1 -->
+                                <tr class="table-row">
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <input type="checkbox" class="rounded border-gray-300">
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                            <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=40&h=40&fit=crop&crop=center" 
+                                                 alt="乙醇" class="w-10 h-10 rounded-lg object-cover mr-3">
+                                            <!-- 图片来源: https://images.unsplash.com/photo-1532187863486-abf9dbad1b69 -->
+                                            <div>
+                                                <div class="text-sm font-medium text-gray-900">乙醇 (Ethanol)</div>
+                                                <div class="text-sm text-gray-500">分子式: C₂H₆O</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        64-17-5
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="px-2 py-1 bg-orange-100 text-orange-800 text-xs rounded-full">中等危险</span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="status-badge status-active">有效</span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                        2024-01-15
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                        <div class="flex items-center gap-2">
+                                            <button class="text-blue-600 hover:text-blue-900">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="text-green-600 hover:text-green-900">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                            <button class="text-purple-600 hover:text-purple-900">
+                                                <i class="fas fa-qrcode"></i>
+                                            </button>
+                                            <button class="text-red-600 hover:text-red-900">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <!-- MSDS记录2 -->
+                                <tr class="table-row">
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <input type="checkbox" class="rounded border-gray-300">
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                            <img src="https://images.unsplash.com/photo-1554475901-4538ddfbccc2?w=40&h=40&fit=crop&crop=center" 
+                                                 alt="丙酮" class="w-10 h-10 rounded-lg object-cover mr-3">
+                                            <!-- 图片来源: https://images.unsplash.com/photo-1554475901-4538ddfbccc2 -->
+                                            <div>
+                                                <div class="text-sm font-medium text-gray-900">丙酮 (Acetone)</div>
+                                                <div class="text-sm text-gray-500">分子式: C₃H₆O</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        67-64-1
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="px-2 py-1 bg-red-100 text-red-800 text-xs rounded-full">高危险</span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="status-badge status-pending">待审核</span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                        2024-01-14
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                        <div class="flex items-center gap-2">
+                                            <button class="text-blue-600 hover:text-blue-900">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="text-green-600 hover:text-green-900">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                            <button class="text-purple-600 hover:text-purple-900">
+                                                <i class="fas fa-qrcode"></i>
+                                            </button>
+                                            <button class="text-red-600 hover:text-red-900">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <!-- MSDS记录3 -->
+                                <tr class="table-row">
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <input type="checkbox" class="rounded border-gray-300">
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=40&h=40&fit=crop&crop=center" 
+                                                 alt="甲醇" class="w-10 h-10 rounded-lg object-cover mr-3">
+                                            <!-- 图片来源: https://images.unsplash.com/photo-1559757148-5c350d0d3c56 -->
+                                            <div>
+                                                <div class="text-sm font-medium text-gray-900">甲醇 (Methanol)</div>
+                                                <div class="text-sm text-gray-500">分子式: CH₄O</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        67-56-1
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="px-2 py-1 bg-red-100 text-red-800 text-xs rounded-full">高危险</span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="status-badge status-expired">已过期</span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                        2023-12-20
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                        <div class="flex items-center gap-2">
+                                            <button class="text-blue-600 hover:text-blue-900">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="text-green-600 hover:text-green-900">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                            <button class="text-purple-600 hover:text-purple-900">
+                                                <i class="fas fa-qrcode"></i>
+                                            </button>
+                                            <button class="text-red-600 hover:text-red-900">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <!-- MSDS记录4 -->
+                                <tr class="table-row">
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <input type="checkbox" class="rounded border-gray-300">
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                            <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=40&h=40&fit=crop&crop=center" 
+                                                 alt="盐酸" class="w-10 h-10 rounded-lg object-cover mr-3">
+                                            <!-- 图片来源: https://images.unsplash.com/photo-1582719471384-894fbb16e074 -->
+                                            <div>
+                                                <div class="text-sm font-medium text-gray-900">盐酸 (Hydrochloric Acid)</div>
+                                                <div class="text-sm text-gray-500">分子式: HCl</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        7647-01-0
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="px-2 py-1 bg-red-100 text-red-800 text-xs rounded-full">高危险</span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="status-badge status-active">有效</span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                        2024-01-10
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                        <div class="flex items-center gap-2">
+                                            <button class="text-blue-600 hover:text-blue-900">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="text-green-600 hover:text-green-900">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                            <button class="text-purple-600 hover:text-purple-900">
+                                                <i class="fas fa-qrcode"></i>
+                                            </button>
+                                            <button class="text-red-600 hover:text-red-900">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <!-- MSDS记录5 -->
+                                <tr class="table-row">
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <input type="checkbox" class="rounded border-gray-300">
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                            <img src="https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=40&h=40&fit=crop&crop=center" 
+                                                 alt="氢氧化钠" class="w-10 h-10 rounded-lg object-cover mr-3">
+                                            <!-- 图片来源: https://images.unsplash.com/photo-1518152006812-edab29b069ac -->
+                                            <div>
+                                                <div class="text-sm font-medium text-gray-900">氢氧化钠 (Sodium Hydroxide)</div>
+                                                <div class="text-sm text-gray-500">分子式: NaOH</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        1310-73-2
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">低危险</span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="status-badge status-active">有效</span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                        2024-01-08
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                        <div class="flex items-center gap-2">
+                                            <button class="text-blue-600 hover:text-blue-900">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="text-green-600 hover:text-green-900">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                            <button class="text-purple-600 hover:text-purple-900">
+                                                <i class="fas fa-qrcode"></i>
+                                            </button>
+                                            <button class="text-red-600 hover:text-red-900">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                        
+                        <!-- 分页 -->
+                        <div class="bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200">
+                            <div class="flex-1 flex justify-between sm:hidden">
+                                <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                                    上一页
+                                </a>
+                                <a href="#" class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                                    下一页
+                                </a>
+                            </div>
+                            <div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
+                                <div>
+                                    <p class="text-sm text-gray-700">
+                                        显示第 <span class="font-medium">1</span> 到 <span class="font-medium">10</span> 条，共 <span class="font-medium">247</span> 条记录
+                                    </p>
+                                </div>
+                                <div>
+                                    <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px">
+                                        <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </a>
+                                        <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                                            1
+                                        </a>
+                                        <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-blue-50 text-sm font-medium text-blue-600">
+                                            2
+                                        </a>
+                                        <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                                            3
+                                        </a>
+                                        <span class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700">
+                                            ...
+                                        </span>
+                                        <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                                            25
+                                        </a>
+                                        <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </a>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <!-- 上传MSDS模态框 -->
+    <div id="uploadModal" class="modal">
+        <div class="bg-white rounded-lg shadow-xl max-w-2xl w-full mx-4">
+            <div class="px-6 py-4 border-b border-gray-200">
+                <div class="flex items-center justify-between">
+                    <h3 class="text-lg font-medium text-gray-900">上传MSDS文件</h3>
+                    <button onclick="closeUploadModal()" class="text-gray-400 hover:text-gray-600">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="px-6 py-6">
+                <!-- 文件上传区域 -->
+                <div class="upload-area mb-6">
+                    <div class="text-center">
+                        <i class="fas fa-cloud-upload-alt text-4xl text-gray-400 mb-4"></i>
+                        <p class="text-lg font-medium text-gray-700 mb-2">拖拽文件到此处或点击上传</p>
+                        <p class="text-sm text-gray-500 mb-4">支持 PDF、DOC、DOCX 格式，单个文件不超过 10MB</p>
+                        <button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                            选择文件
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- 基本信息表单 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">化学品名称 *</label>
+                        <input type="text" placeholder="请输入化学品名称" 
+                               class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">CAS号 *</label>
+                        <input type="text" placeholder="请输入CAS号" 
+                               class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">分子式</label>
+                        <input type="text" placeholder="请输入分子式" 
+                               class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">供应商</label>
+                        <input type="text" placeholder="请输入供应商" 
+                               class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">分类</label>
+                        <select class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <option>请选择分类</option>
+                            <option>有机溶剂</option>
+                            <option>无机酸碱</option>
+                            <option>生物试剂</option>
+                            <option>标准品</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">危险等级</label>
+                        <select class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <option>请选择危险等级</option>
+                            <option>高危险</option>
+                            <option>中等危险</option>
+                            <option>低危险</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- 标签 -->
+                <div class="mt-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-2">标签</label>
+                    <input type="text" placeholder="请输入标签，用逗号分隔" 
+                           class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                </div>
+                
+                <!-- 备注 -->
+                <div class="mt-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-2">备注</label>
+                    <textarea rows="3" placeholder="请输入备注信息" 
+                              class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                </div>
+            </div>
+            
+            <div class="px-6 py-4 border-t border-gray-200 flex justify-end gap-3">
+                <button onclick="closeUploadModal()" class="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors">
+                    取消
+                </button>
+                <button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                    上传并保存
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function openUploadModal() {
+            document.getElementById('uploadModal').classList.add('show');
+        }
+        
+        function closeUploadModal() {
+            document.getElementById('uploadModal').classList.remove('show');
+        }
+        
+        // 点击模态框外部关闭
+        document.getElementById('uploadModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeUploadModal();
+            }
+        });
+    </script>
+    
+</body>
+</html>

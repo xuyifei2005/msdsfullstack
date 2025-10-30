@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.MsdsAuditLogMapper">
+    
+    <resultMap type="MsdsAuditLog" id="MsdsAuditLogResult">
+        <result property="logId"           column="log_id"            />
+        <result property="msdsId"          column="msds_id"           />
+        <result property="operationType"   column="operation_type"    />
+        <result property="operationDesc"   column="operation_desc"    />
+        <result property="beforeData"      column="before_data"       />
+        <result property="afterData"       column="after_data"        />
+        <result property="operator"        column="operator"           />
+        <result property="operatorId"      column="operator_id"       />
+        <result property="operationTime"   column="operation_time"    />
+        <result property="ipAddress"       column="ip_address"        />
+        <result property="userAgent"       column="user_agent"        />
+        <result property="operationResult" column="operation_result"  />
+        <result property="errorMessage"    column="error_message"     />
+    </resultMap>
+
+    <sql id="selectMsdsAuditLogVo">
+        select log_id, msds_id, operation_type, operation_desc, before_data, after_data, 
+               operator, operator_id, operation_time, ip_address, user_agent, 
+               operation_result, error_message 
+        from msds_audit_log
+    </sql>
+
+    <select id="selectMsdsAuditLogList" parameterType="MsdsAuditLog" resultMap="MsdsAuditLogResult">
+        <include refid="selectMsdsAuditLogVo"/>
+        <where>  
+            <if test="msdsId != null "> and msds_id = #{msdsId}</if>
+            <if test="operationType != null  and operationType != ''"> and operation_type = #{operationType}</if>
+            <if test="operationDesc != null  and operationDesc != ''"> and operation_desc like concat('%', #{operationDesc}, '%')</if>
+            <if test="operator != null  and operator != ''"> and operator like concat('%', #{operator}, '%')</if>
+            <if test="operatorId != null "> and operator_id = #{operatorId}</if>
+            <if test="operationResult != null  and operationResult != ''"> and operation_result = #{operationResult}</if>
+            <if test="params.beginTime != null and params.beginTime != ''"><!-- 开始时间检索 -->
+                and date_format(operation_time,'%y%m%d') &gt;= date_format(#{params.beginTime},'%y%m%d')
+            </if>
+            <if test="params.endTime != null and params.endTime != ''"><!-- 结束时间检索 -->
+                and date_format(operation_time,'%y%m%d') &lt;= date_format(#{params.endTime},'%y%m%d')
+            </if>
+        </where>
+        order by operation_time desc
+    </select>
+    
+    <select id="selectMsdsAuditLogByLogId" parameterType="Long" resultMap="MsdsAuditLogResult">
+        <include refid="selectMsdsAuditLogVo"/>
+        where log_id = #{logId}
+    </select>
+        
+    <insert id="insertMsdsAuditLog" parameterType="MsdsAuditLog" useGeneratedKeys="true" keyProperty="logId">
+        insert into msds_audit_log
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="msdsId != null">msds_id,</if>
+            <if test="operationType != null and operationType != ''">operation_type,</if>
+            <if test="operationDesc != null and operationDesc != ''">operation_desc,</if>
+            <if test="beforeData != null">before_data,</if>
+            <if test="afterData != null">after_data,</if>
+            <if test="operator != null and operator != ''">operator,</if>
+            <if test="operatorId != null">operator_id,</if>
+            <if test="operationTime != null">operation_time,</if>
+            <if test="ipAddress != null and ipAddress != ''">ip_address,</if>
+            <if test="userAgent != null and userAgent != ''">user_agent,</if>
+            <if test="operationResult != null and operationResult != ''">operation_result,</if>
+            <if test="errorMessage != null">error_message,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="msdsId != null">#{msdsId},</if>
+            <if test="operationType != null and operationType != ''">#{operationType},</if>
+            <if test="operationDesc != null and operationDesc != ''">#{operationDesc},</if>
+            <if test="beforeData != null">#{beforeData},</if>
+            <if test="afterData != null">#{afterData},</if>
+            <if test="operator != null and operator != ''">#{operator},</if>
+            <if test="operatorId != null">#{operatorId},</if>
+            <if test="operationTime != null">#{operationTime},</if>
+            <if test="ipAddress != null and ipAddress != ''">#{ipAddress},</if>
+            <if test="userAgent != null and userAgent != ''">#{userAgent},</if>
+            <if test="operationResult != null and operationResult != ''">#{operationResult},</if>
+            <if test="errorMessage != null">#{errorMessage},</if>
+         </trim>
+    </insert>
+
+    <update id="updateMsdsAuditLog" parameterType="MsdsAuditLog">
+        update msds_audit_log
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="msdsId != null">msds_id = #{msdsId},</if>
+            <if test="operationType != null and operationType != ''">operation_type = #{operationType},</if>
+            <if test="operationDesc != null and operationDesc != ''">operation_desc = #{operationDesc},</if>
+            <if test="beforeData != null">before_data = #{beforeData},</if>
+            <if test="afterData != null">after_data = #{afterData},</if>
+            <if test="operator != null and operator != ''">operator = #{operator},</if>
+            <if test="operatorId != null">operator_id = #{operatorId},</if>
+            <if test="operationTime != null">operation_time = #{operationTime},</if>
+            <if test="ipAddress != null and ipAddress != ''">ip_address = #{ipAddress},</if>
+            <if test="userAgent != null and userAgent != ''">user_agent = #{userAgent},</if>
+            <if test="operationResult != null and operationResult != ''">operation_result = #{operationResult},</if>
+            <if test="errorMessage != null">error_message = #{errorMessage},</if>
+        </trim>
+        where log_id = #{logId}
+    </update>
+
+    <delete id="deleteMsdsAuditLogByLogId" parameterType="Long">
+        delete from msds_audit_log where log_id = #{logId}
+    </delete>
+
+    <delete id="deleteMsdsAuditLogByLogIds" parameterType="String">
+        delete from msds_audit_log where log_id in 
+        <foreach item="logId" collection="array" open="(" separator="," close=")">
+            #{logId}
+        </foreach>
+    </delete>
+
+    <select id="selectMsdsAuditLogByMsdsId" parameterType="Long" resultMap="MsdsAuditLogResult">
+        <include refid="selectMsdsAuditLogVo"/>
+        where msds_id = #{msdsId}
+        order by operation_time desc
+    </select>
+
+    <select id="selectMsdsAuditLogByDateRange" resultMap="MsdsAuditLogResult">
+        <include refid="selectMsdsAuditLogVo"/>
+        where operation_time between #{startDate} and #{endDate}
+        order by operation_time desc
+    </select>
+
+    <select id="getOperationTypeStatistics" resultType="map">
+        select operation_type as operationType, count(*) as count
+        from msds_audit_log
+        where operation_type is not null and operation_type != ''
+        group by operation_type
+        order by count desc
+    </select>
+
+    <select id="getOperatorStatistics" parameterType="int" resultType="map">
+        select operator, count(*) as operationCount
+        from msds_audit_log
+        where operator is not null and operator != ''
+        and operation_time >= date_sub(now(), interval #{days} day)
+        group by operator
+        order by operationCount desc
+    </select>
+
+</mapper>

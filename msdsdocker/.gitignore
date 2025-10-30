@@ -1,0 +1,22 @@
+# Docker backup files
+msds_backup_*/
+*.tar
+
+# Database files
+msdsdata/mysql/
+
+# Docker compose backups
+*.yml.bak
+*.7z
+
+# Temporary files
+*.tmp
+
+# Log files
+*.log
+
+# Other large files
+*.iso
+*.gz
+*.zip
+*.rar

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.MsdsHandlingStorageMapper">
+    
+    <resultMap type="MsdsHandlingStorage" id="MsdsHandlingStorageResult">
+        <id     property="id"                           column="id"                           />
+        <result property="msdsId"                       column="msds_id"                      />
+        <result property="handlingPrecautions"          column="handling_precautions"         />
+        <result property="storagePrecautions"           column="storage_precautions"          />
+        <result property="optimalTemperature"           column="optimal_temperature"          />
+        <result property="temperatureRange"             column="temperature_range"            />
+        <result property="humidityRequirements"         column="humidity_requirements"        />
+        <result property="storageContainer"             column="storage_container"            />
+        <result property="incompatibleMaterials"        column="incompatible_materials"       />
+        <result property="storageAreaRequirements"      column="storage_area_requirements"    />
+        <result property="shelfLife"                    column="shelf_life"                   />
+        <result property="createTime"                   column="create_time"                  />
+        <result property="updateTime"                   column="update_time"                  />
+        <result property="createBy"                     column="create_by"                    />
+        <result property="updateBy"                     column="update_by"                    />
+    </resultMap>
+    
+    <sql id="selectMsdsHandlingStorageVo">
+        select id, msds_id, handling_precautions, storage_precautions, optimal_temperature,
+               temperature_range, humidity_requirements, storage_container, incompatible_materials,
+               storage_area_requirements, shelf_life, create_time, update_time, create_by, update_by
+        from msds_handling_storage
+    </sql>
+    
+    <select id="selectMsdsHandlingStorageById" parameterType="Long" resultMap="MsdsHandlingStorageResult">
+        <include refid="selectMsdsHandlingStorageVo"/>
+        where id = #{id}
+    </select>
+    
+    <select id="selectMsdsHandlingStorageByMsdsId" parameterType="Long" resultMap="MsdsHandlingStorageResult">
+        <include refid="selectMsdsHandlingStorageVo"/>
+        where msds_id = #{msdsId}
+    </select>
+    
+    <select id="selectMsdsHandlingStorageList" parameterType="MsdsHandlingStorage" resultMap="MsdsHandlingStorageResult">
+        <include refid="selectMsdsHandlingStorageVo"/>
+        <where>
+            <if test="msdsId != null">
+                AND msds_id = #{msdsId}
+            </if>
+            <if test="handlingPrecautions != null and handlingPrecautions != ''">
+                AND handling_precautions like concat('%', #{handlingPrecautions}, '%')
+            </if>
+            <if test="storagePrecautions != null and storagePrecautions != ''">
+                AND storage_precautions like concat('%', #{storagePrecautions}, '%')
+            </if>
+        </where>
+        order by create_time desc
+    </select>
+    
+    <insert id="insertMsdsHandlingStorage" parameterType="MsdsHandlingStorage" useGeneratedKeys="true" keyProperty="id">
+        insert into msds_handling_storage (
+            msds_id, handling_precautions, storage_precautions, optimal_temperature,
+            temperature_range, humidity_requirements, storage_container, incompatible_materials,
+            storage_area_requirements, shelf_life, create_by, create_time
+        )values(
+            #{msdsId}, #{handlingPrecautions}, #{storagePrecautions}, #{optimalTemperature},
+            #{temperatureRange}, #{humidityRequirements}, #{storageContainer}, #{incompatibleMaterials},
+            #{storageAreaRequirements}, #{shelfLife}, #{createBy}, NOW()
+        )
+    </insert>
+     
+    <update id="updateMsdsHandlingStorage" parameterType="MsdsHandlingStorage">
+        update msds_handling_storage 
+        <set>
+            <if test="msdsId != null">msds_id = #{msdsId},</if>
+            <if test="handlingPrecautions != null">handling_precautions = #{handlingPrecautions},</if>
+            <if test="storagePrecautions != null">storage_precautions = #{storagePrecautions},</if>
+            <if test="optimalTemperature != null">optimal_temperature = #{optimalTemperature},</if>
+            <if test="temperatureRange != null">temperature_range = #{temperatureRange},</if>
+            <if test="humidityRequirements != null">humidity_requirements = #{humidityRequirements},</if>
+            <if test="storageContainer != null">storage_container = #{storageContainer},</if>
+            <if test="incompatibleMaterials != null">incompatible_materials = #{incompatibleMaterials},</if>
+            <if test="storageAreaRequirements != null">storage_area_requirements = #{storageAreaRequirements},</if>
+            <if test="shelfLife != null">shelf_life = #{shelfLife},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            update_time = NOW()
+        </set>
+        where id = #{id}
+    </update>
+    
+    <delete id="deleteMsdsHandlingStorageById" parameterType="Long">
+        delete from msds_handling_storage where id = #{id}
+    </delete>
+    
+    <delete id="deleteMsdsHandlingStorageByIds" parameterType="Long">
+        delete from msds_handling_storage where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    
+    <delete id="deleteMsdsHandlingStorageByMsdsId" parameterType="Long">
+        delete from msds_handling_storage where msds_id = #{msdsId}
+    </delete>
+    
+</mapper> 

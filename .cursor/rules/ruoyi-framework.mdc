@@ -1,0 +1,392 @@
+---
+description: RuoYi框架二次开发规范和最佳实践
+alwaysApply: true
+---
+
+# RuoYi框架二次开发规范
+
+## 框架概述
+
+本项目基于开源**RuoYi框架**进行二次开发，RuoYi是一套全部开源的快速开发平台，包含：
+- **RuoYi-Vue**: 后端Spring Boot + 前端Vue框架
+- **RuoYi-React**: 后端Spring Boot + 前端React框架
+- **RuoYi-App**: UniApp移动端框架
+
+## RuoYi官方资源
+
+- **官方文档**: https://doc.ruoyi.vip/
+- **代码仓库**: https://gitee.com/y_project/RuoYi-Vue
+- **在线演示**: http://vue.ruoyi.vip/
+- **视频教程**: https://space.bilibili.com/490747061
+
+## 二次开发基本原则
+
+### 1. 复用优先原则
+- ✅ **优先使用RuoYi现有功能**: 用户管理、权限控制、日志记录等
+- ✅ **复用RuoYi组件**: BaseController、BaseEntity、TableDataInfo等
+- ✅ **使用RuoYi工具类**: StringUtils、DateUtils、SecurityUtils等
+- ⛔ **避免重复造轮子**: 不要实现RuoYi已有的功能
+
+### 2. 扩展而非修改原则
+- ✅ **新建业务模块**: 创建独立的MSDS业务模块
+- ✅ **继承RuoYi基类**: 继承BaseController、BaseEntity、BaseMapper
+- ⛔ **不修改RuoYi核心代码**: 保持框架代码的可升级性
+- ⛔ **不修改RuoYi配置**: 除非必要，否则不改动框架配置
+
+### 3. 遵循RuoYi规范原则
+- ✅ **目录结构**: 遵循RuoYi的模块化目录结构
+- ✅ **命名约定**: 使用RuoYi的命名规范（Controller、Service、Mapper）
+- ✅ **返回格式**: 使用RuoYi的AjaxResult统一返回格式
+- ✅ **权限注解**: 使用@PreAuthorize和RuoYi的权限标识符
+
+## RuoYi后端开发规范
+
+### 1. 模块结构
+```
+ruoyi-msds/  (MSDS业务模块)
+├── controller/
+│   └── MsdsController.java
+├── service/
+│   ├── IMsdsService.java
+│   └── impl/
+│       └── MsdsServiceImpl.java
+├── mapper/
+│   └── MsdsMapper.java
+└── domain/
+    └── Msds.java
+```
+
+### 2. Controller层规范
+```java
+@RestController
+@RequestMapping("/system/msds")
+public class MsdsController extends BaseController {
+    
+    @Autowired
+    private IMsdsService msdsService;
+    
+    // 列表查询 - 使用RuoYi的分页和返回格式
+    @PreAuthorize("@ss.hasPermi('system:msds:list')")
+    @GetMapping("/list")
+    public TableDataInfo list(Msds msds) {
+        startPage();  // RuoYi分页助手
+        List<Msds> list = msdsService.selectMsdsList(msds);
+        return getDataTable(list);  // RuoYi封装的返回格式
+    }
+    
+    // 详情查询
+    @PreAuthorize("@ss.hasPermi('system:msds:query')")
+    @GetMapping(value = "/{msdsId}")
+    public AjaxResult getInfo(@PathVariable("msdsId") Long msdsId) {
+        return success(msdsService.selectMsdsById(msdsId));
+    }
+    
+    // 新增
+    @PreAuthorize("@ss.hasPermi('system:msds:add')")
+    @Log(title = "MSDS管理", businessType = BusinessType.INSERT)
+    @PostMapping
+    public AjaxResult add(@RequestBody Msds msds) {
+        return toAjax(msdsService.insertMsds(msds));
+    }
+}
+```
+
+### 3. Service层规范
+```java
+// Service接口
+public interface IMsdsService {
+    List<Msds> selectMsdsList(Msds msds);
+    Msds selectMsdsById(Long msdsId);
+    int insertMsds(Msds msds);
+    int updateMsds(Msds msds);
+    int deleteMsdsByIds(Long[] msdsIds);
+}
+
+// Service实现
+@Service
+public class MsdsServiceImpl implements IMsdsService {
+    @Autowired
+    private MsdsMapper msdsMapper;
+    
+    @Override
+    public List<Msds> selectMsdsList(Msds msds) {
+        return msdsMapper.selectMsdsList(msds);
+    }
+    
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public int insertMsds(Msds msds) {
+        msds.setCreateBy(SecurityUtils.getUsername());
+        msds.setCreateTime(DateUtils.getNowDate());
+        return msdsMapper.insertMsds(msds);
+    }
+}
+```
+
+### 4. Entity实体类规范
+```java
+// 继承BaseEntity获取审计字段
+public class Msds extends BaseEntity {
+    
+    private static final long serialVersionUID = 1L;
+    
+    private Long msdsId;
+    
+    @Excel(name = "化学品名称")  // RuoYi Excel导出
+    private String chemicalName;
+    
+    @Excel(name = "CAS号")
+    private String casNumber;
+    
+    // getter/setter...
+}
+```
+
+### 5. Mapper层规范
+```java
+// Mapper接口
+public interface MsdsMapper extends BaseMapper<Msds> {
+    List<Msds> selectMsdsList(Msds msds);
+}
+```
+
+```xml
+<!-- Mapper XML -->
+<select id="selectMsdsList" parameterType="Msds" resultMap="MsdsResult">
+    <include refid="selectMsdsVo"/>
+    <where>  
+        <if test="chemicalName != null and chemicalName != ''">
+            AND chemical_name like concat('%', #{chemicalName}, '%')
+        </if>
+        <if test="casNumber != null and casNumber != ''">
+            AND cas_number = #{casNumber}
+        </if>
+    </where>
+</select>
+```
+
+## RuoYi前端开发规范
+
+### 1. React前端（Web管理后台）
+
+#### API调用规范
+```typescript
+// api/system/msds.ts
+import request from '@/utils/request';
+
+// 查询MSDS列表
+export function listMsds(query: MsdsQuery) {
+  return request({
+    url: '/system/msds/list',
+    method: 'get',
+    params: query
+  });
+}
+
+// 获取MSDS详情
+export function getMsds(msdsId: number) {
+  return request({
+    url: '/system/msds/' + msdsId,
+    method: 'get'
+  });
+}
+```
+
+#### 组件开发规范
+```typescript
+// 使用RuoYi的ProTable组件
+import ProTable from '@ant-design/pro-table';
+
+const MsdsList: React.FC = () => {
+  const actionRef = useRef<ActionType>();
+  
+  // 使用RuoYi的请求封装
+  const columns: ProColumns<MsdsType>[] = [
+    {
+      title: '化学品名称',
+      dataIndex: 'chemicalName',
+      key: 'chemicalName'
+    }
+  ];
+  
+  return (
+    <ProTable
+      actionRef={actionRef}
+      request={async (params) => {
+        const res = await listMsds(params);
+        return {
+          data: res.rows,
+          total: res.total,
+          success: res.code === 200
+        };
+      }}
+      columns={columns}
+    />
+  );
+};
+```
+
+### 2. UniApp前端（微信小程序）
+
+#### 使用RuoYi-App的request模块
+```javascript
+// api/msds.js
+import request from '@/utils/request'
+
+export function listMsds(params) {
+  return request({
+    url: '/system/msds/list',
+    method: 'GET',
+    params
+  })
+}
+
+// 组件中使用
+methods: {
+  async loadData() {
+    const res = await listMsds({
+      pageNum: this.pageNum,
+      pageSize: this.pageSize
+    });
+    
+    // RuoYi统一返回格式
+    if (res.code === 200) {
+      this.msdsList = res.rows;
+      this.total = res.total;
+    }
+  }
+}
+```
+
+#### 使用RuoYi的权限验证
+```javascript
+import { hasPermi } from '@/utils/permission'
+
+// 在组件中判断权限
+if (hasPermi('system:msds:add')) {
+  // 有权限才显示新增按钮
+}
+```
+
+## RuoYi数据库规范
+
+### 1. 表命名规范
+- **RuoYi系统表**: `sys_` 前缀（不可修改）
+- **MSDS业务表**: `msds_` 前缀
+- 表名使用小写字母和下划线
+
+### 2. 字段规范
+- 所有业务表继承BaseEntity的审计字段：
+  - `create_by`: 创建者
+  - `create_time`: 创建时间
+  - `update_by`: 更新者
+  - `update_time`: 更新时间
+  - `remark`: 备注
+
+### 3. 主键规范
+- 使用自增BIGINT作为主键
+- 主键字段命名：`{表名单数}_id`
+
+## RuoYi代码生成器使用
+
+### 1. 使用代码生成器快速创建CRUD
+```
+1. 访问：系统工具 → 代码生成
+2. 导入数据表（如msds_chemical）
+3. 编辑生成配置：
+   - 生成模块名：system
+   - 业务名：msds
+   - 功能名：化学品管理
+4. 生成代码
+5. 下载代码包，导入到项目中
+```
+
+### 2. 代码生成器输出
+- Controller: 自动生成CRUD接口
+- Service: 自动生成业务逻辑层
+- Mapper: 自动生成数据访问层
+- 前端页面: 自动生成列表、表单、详情页
+
+## 常见RuoYi工具类
+
+### 后端工具类
+```java
+// 字符串工具
+StringUtils.isEmpty(str)
+StringUtils.isNotEmpty(str)
+
+// 日期工具
+DateUtils.getNowDate()
+DateUtils.parseDate(dateStr)
+
+// 安全工具
+SecurityUtils.getUsername()
+SecurityUtils.getUserId()
+SecurityUtils.getLoginUser()
+
+// 字典工具
+DictUtils.getDictLabel(type, value)
+DictUtils.getDictValue(type, label)
+```
+
+### 前端工具类（小程序）
+```javascript
+// Token管理
+import { getToken, setToken, removeToken } from '@/utils/auth'
+
+// 权限验证
+import { hasPermi } from '@/utils/permission'
+
+// 字典获取
+this.$dict.getDictLabel('sys_status', '0')
+```
+
+## RuoYi权限系统使用
+
+### 1. 后端权限标识符格式
+```
+{模块}:{业务}:{操作}
+
+示例:
+system:msds:list      # MSDS列表查询权限
+system:msds:query     # MSDS详情查询权限
+system:msds:add       # MSDS新增权限
+system:msds:edit      # MSDS修改权限
+system:msds:remove    # MSDS删除权限
+system:msds:export    # MSDS导出权限
+```
+
+### 2. 在菜单管理中配置权限
+```
+系统管理 → 菜单管理 → 新增菜单
+- 菜单名称: MSDS管理
+- 权限标识: system:msds:list
+```
+
+### 3. 在代码中使用权限
+```java
+// 后端
+@PreAuthorize("@ss.hasPermi('system:msds:add')")
+
+// 前端（小程序）
+if (hasPermi('system:msds:add')) {
+  // 显示新增按钮
+}
+```
+
+## RuoYi升级和维护
+
+### 框架升级建议
+- ⚠️ 谨慎升级RuoYi框架版本
+- ✅ 升级前做好数据备份
+- ✅ 在测试环境先验证
+- ✅ 查阅RuoYi官方升级文档
+
+### 问题排查
+- 📖 优先查阅RuoYi官方文档
+- 💬 RuoYi社区论坛求助
+- 🔍 GitHub Issues搜索相关问题
+
+---
+
+**重要提醒**: 开发过程中遇到RuoYi框架相关问题，务必先查阅官方文档，避免走弯路！

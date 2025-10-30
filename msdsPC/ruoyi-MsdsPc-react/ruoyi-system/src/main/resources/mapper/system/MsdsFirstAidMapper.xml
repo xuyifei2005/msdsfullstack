@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.MsdsFirstAidMapper">
+    
+    <resultMap type="MsdsFirstAid" id="MsdsFirstAidResult">
+        <result property="id"    column="id"    />
+        <result property="msdsId"    column="msds_id"    />
+        <result property="skinContact"    column="skin_contact"    />
+        <result property="eyeContact"    column="eye_contact"    />
+        <result property="inhalation"    column="inhalation"    />
+        <result property="ingestion"    column="ingestion"    />
+        <result property="generalNotes"    column="general_notes"    />
+        <result property="symptomsEffects"    column="symptoms_effects"    />
+        <result property="immediateMedicalAttention"    column="immediate_medical_attention"    />
+        <result property="antidoteTreatment"    column="antidote_treatment"    />
+        <result property="createBy"    column="create_by"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateBy"    column="update_by"    />
+        <result property="updateTime"    column="update_time"    />
+    </resultMap>
+
+    <sql id="selectMsdsFirstAidVo">
+        select id, msds_id, skin_contact, eye_contact, inhalation, ingestion, general_notes, symptoms_effects, immediate_medical_attention, antidote_treatment, create_by, create_time, update_by, update_time from msds_first_aid
+    </sql>
+
+    <select id="selectMsdsFirstAidList" parameterType="MsdsFirstAid" resultMap="MsdsFirstAidResult">
+        <include refid="selectMsdsFirstAidVo"/>
+        <where>  
+            <if test="msdsId != null "> and msds_id = #{msdsId}</if>
+        </where>
+    </select>
+    
+    <select id="selectMsdsFirstAidById" parameterType="Long" resultMap="MsdsFirstAidResult">
+        <include refid="selectMsdsFirstAidVo"/>
+        where id = #{id}
+    </select>
+
+    <select id="selectMsdsFirstAidByMsdsId" parameterType="Long" resultMap="MsdsFirstAidResult">
+        <include refid="selectMsdsFirstAidVo"/>
+        where msds_id = #{msdsId}
+        limit 1
+    </select>
+        
+    <insert id="insertMsdsFirstAid" parameterType="MsdsFirstAid" useGeneratedKeys="true" keyProperty="id">
+        insert into msds_first_aid
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="msdsId != null">msds_id,</if>
+            <if test="skinContact != null and skinContact != ''">skin_contact,</if>
+            <if test="eyeContact != null and eyeContact != ''">eye_contact,</if>
+            <if test="inhalation != null and inhalation != ''">inhalation,</if>
+            <if test="ingestion != null and ingestion != ''">ingestion,</if>
+            <if test="generalNotes != null and generalNotes != ''">general_notes,</if>
+            <if test="symptomsEffects != null and symptomsEffects != ''">symptoms_effects,</if>
+            <if test="immediateMedicalAttention != null and immediateMedicalAttention != ''">immediate_medical_attention,</if>
+            <if test="antidoteTreatment != null and antidoteTreatment != ''">antidote_treatment,</if>
+            <if test="createBy != null">create_by,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateBy != null">update_by,</if>
+            <if test="updateTime != null">update_time,</if>
+            <if test="remark != null">remark,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="msdsId != null">#{msdsId},</if>
+            <if test="skinContact != null and skinContact != ''">#{skinContact},</if>
+            <if test="eyeContact != null and eyeContact != ''">#{eyeContact},</if>
+            <if test="inhalation != null and inhalation != ''">#{inhalation},</if>
+            <if test="ingestion != null and ingestion != ''">#{ingestion},</if>
+            <if test="generalNotes != null and generalNotes != ''">#{generalNotes},</if>
+            <if test="symptomsEffects != null and symptomsEffects != ''">#{symptomsEffects},</if>
+            <if test="immediateMedicalAttention != null and immediateMedicalAttention != ''">#{immediateMedicalAttention},</if>
+            <if test="antidoteTreatment != null and antidoteTreatment != ''">#{antidoteTreatment},</if>
+            <if test="createBy != null">#{createBy},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateBy != null">#{updateBy},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+            <if test="remark != null">#{remark},</if>
+         </trim>
+    </insert>
+
+    <update id="updateMsdsFirstAid" parameterType="MsdsFirstAid">
+        update msds_first_aid
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="msdsId != null">msds_id = #{msdsId},</if>
+            <if test="skinContact != null and skinContact != ''">skin_contact = #{skinContact},</if>
+            <if test="eyeContact != null and eyeContact != ''">eye_contact = #{eyeContact},</if>
+            <if test="inhalation != null and inhalation != ''">inhalation = #{inhalation},</if>
+            <if test="ingestion != null and ingestion != ''">ingestion = #{ingestion},</if>
+            <if test="generalNotes != null and generalNotes != ''">general_notes = #{generalNotes},</if>
+            <if test="symptomsEffects != null and symptomsEffects != ''">symptoms_effects = #{symptomsEffects},</if>
+            <if test="immediateMedicalAttention != null and immediateMedicalAttention != ''">immediate_medical_attention = #{immediateMedicalAttention},</if>
+            <if test="antidoteTreatment != null and antidoteTreatment != ''">antidote_treatment = #{antidoteTreatment},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+            <if test="remark != null">remark = #{remark},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteMsdsFirstAidById" parameterType="Long">
+        delete from msds_first_aid where id = #{id}
+    </delete>
+
+    <delete id="deleteMsdsFirstAidByIds" parameterType="String">
+        delete from msds_first_aid where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <delete id="deleteMsdsFirstAidByMsdsId" parameterType="Long">
+        delete from msds_first_aid where msds_id = #{msdsId}
+    </delete>
+</mapper>

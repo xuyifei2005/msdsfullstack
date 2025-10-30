@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.MsdsMetadataMapper">
+
+    <!-- 获取表基本信息 -->
+    <select id="getTableInfo" parameterType="String" resultType="map">
+        SELECT 
+            table_name,
+            table_comment,
+            engine,
+            table_collation,
+            create_time,
+            update_time,
+            table_rows,
+            data_length,
+            index_length
+        FROM information_schema.tables 
+        WHERE table_schema = (SELECT DATABASE()) 
+        AND table_name = #{tableName}
+    </select>
+    
+    <!-- 获取表的列信息 -->
+    <select id="getTableColumns" parameterType="String" resultType="map">
+        SELECT 
+            column_name,
+            column_comment,
+            column_type,
+            data_type,
+            is_nullable,
+            column_default,
+            extra,
+            ordinal_position,
+            character_maximum_length,
+            numeric_precision,
+            numeric_scale,
+            datetime_precision,
+            column_key,
+            (CASE WHEN column_key = 'PRI' THEN '1' ELSE '0' END) as is_pk,
+            (CASE WHEN extra = 'auto_increment' THEN '1' ELSE '0' END) as is_increment,
+            (CASE WHEN is_nullable = 'NO' AND column_key != 'PRI' THEN '1' ELSE '0' END) as is_required
+        FROM information_schema.columns 
+        WHERE table_schema = (SELECT DATABASE()) 
+        AND table_name = #{tableName}
+        ORDER BY ordinal_position
+    </select>
+    
+    <!-- 获取表的约束信息 -->
+    <select id="getTableConstraints" parameterType="String" resultType="map">
+        SELECT 
+            constraint_name,
+            constraint_type,
+            column_name,
+            referenced_table_name,
+            referenced_column_name
+        FROM information_schema.table_constraints tc
+        LEFT JOIN information_schema.key_column_usage kcu 
+            ON tc.constraint_name = kcu.constraint_name 
+            AND tc.table_schema = kcu.table_schema
+            AND tc.table_name = kcu.table_name
+        LEFT JOIN information_schema.referential_constraints rc
+            ON tc.constraint_name = rc.constraint_name
+            AND tc.table_schema = rc.constraint_schema
+        WHERE tc.table_schema = (SELECT DATABASE()) 
+        AND tc.table_name = #{tableName}
+        ORDER BY tc.constraint_type, kcu.ordinal_position
+    </select>
+    
+    <!-- 获取表的索引信息 -->
+    <select id="getTableIndexes" parameterType="String" resultType="map">
+        SELECT 
+            index_name,
+            column_name,
+            seq_in_index,
+            non_unique,
+            index_type,
+            comment
+        FROM information_schema.statistics 
+        WHERE table_schema = (SELECT DATABASE()) 
+        AND table_name = #{tableName}
+        ORDER BY index_name, seq_in_index
+    </select>
+    
+    <!-- 获取表的外键信息 -->
+    <select id="getTableForeignKeys" parameterType="String" resultType="map">
+        SELECT 
+            kcu.constraint_name,
+            kcu.column_name,
+            kcu.referenced_table_name,
+            kcu.referenced_column_name,
+            rc.update_rule,
+            rc.delete_rule
+        FROM information_schema.key_column_usage kcu
+        JOIN information_schema.referential_constraints rc
+            ON kcu.constraint_name = rc.constraint_name
+            AND kcu.constraint_schema = rc.constraint_schema
+        WHERE kcu.table_schema = (SELECT DATABASE()) 
+        AND kcu.table_name = #{tableName}
+        AND kcu.referenced_table_name IS NOT NULL
+        ORDER BY kcu.constraint_name, kcu.ordinal_position
+    </select>
+    
+    <!-- 检查表是否存在 -->
+    <select id="tableExists" parameterType="String" resultType="boolean">
+        SELECT COUNT(*) > 0
+        FROM information_schema.tables 
+        WHERE table_schema = (SELECT DATABASE()) 
+        AND table_name = #{tableName}
+    </select>
+    
+    <!-- 获取数据库中所有表名 -->
+    <select id="getAllTableNames" resultType="String">
+        SELECT table_name
+        FROM information_schema.tables 
+        WHERE table_schema = (SELECT DATABASE())
+        AND table_type = 'BASE TABLE'
+        ORDER BY table_name
+    </select>
+    
+    <!-- 获取表的主键列信息 -->
+    <select id="getTablePrimaryKeys" parameterType="String" resultType="map">
+        SELECT 
+            kcu.column_name,
+            kcu.ordinal_position,
+            c.data_type,
+            c.column_type
+        FROM information_schema.key_column_usage kcu
+        JOIN information_schema.columns c
+            ON kcu.table_schema = c.table_schema
+            AND kcu.table_name = c.table_name
+            AND kcu.column_name = c.column_name
+        WHERE kcu.table_schema = (SELECT DATABASE()) 
+        AND kcu.table_name = #{tableName}
+        AND kcu.constraint_name = 'PRIMARY'
+        ORDER BY kcu.ordinal_position
+    </select>
+    
+    <!-- 获取表的唯一约束信息 -->
+    <select id="getTableUniqueConstraints" parameterType="String" resultType="map">
+        SELECT 
+            tc.constraint_name,
+            kcu.column_name,
+            kcu.ordinal_position
+        FROM information_schema.table_constraints tc
+        JOIN information_schema.key_column_usage kcu
+            ON tc.constraint_name = kcu.constraint_name
+            AND tc.table_schema = kcu.table_schema
+            AND tc.table_name = kcu.table_name
+        WHERE tc.table_schema = (SELECT DATABASE()) 
+        AND tc.table_name = #{tableName}
+        AND tc.constraint_type = 'UNIQUE'
+        ORDER BY tc.constraint_name, kcu.ordinal_position
+    </select>
+    
+    <!-- 获取表的检查约束信息 -->
+    <select id="getTableCheckConstraints" parameterType="String" resultType="map">
+        SELECT 
+            constraint_name,
+            check_clause
+        FROM information_schema.check_constraints
+        WHERE constraint_schema = (SELECT DATABASE())
+        AND constraint_name IN (
+            SELECT constraint_name
+            FROM information_schema.table_constraints
+            WHERE table_schema = (SELECT DATABASE())
+            AND table_name = #{tableName}
+            AND constraint_type = 'CHECK'
+        )
+    </select>
+    
+</mapper>

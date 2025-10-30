@@ -1,0 +1,200 @@
+### 用本地的这个文件进行容器构建！
+# docker load -i msdsmysql_image.tar
+# docker load -i msdsredis_image.tar
+# docker load -i msdsbackend_image.tar
+# docker load -i msdsfrontend_image.tar
+
+
+
+# 加载镜像后重新打标签的示例
+# docker tag msds_exported_mysql msdsmysql:latest
+# docker tag msds_exported_redis msdsredis:latest
+# docker tag msds_exported_backend msdsbackend:latest
+# docker tag msds_exported_frontend msdsfrontend:latest
+
+# 定义Docker网络配置
+networks:
+  msds_network:
+    # Docker网络驱动类型有以下几种:
+    # - bridge: 默认驱动,创建独立的网络命名空间,容器间通过虚拟网桥通信
+    # - host: 容器直接使用宿主机网络,性能好但缺乏隔离
+    # - none: 容器没有网络功能
+    # - overlay: 用于Docker Swarm集群中跨主机容器通信
+    # - macvlan: 允许容器直接连接物理网络
+    driver: bridge
+
+services:
+
+  # Nginx服务
+  msdsnginx:
+    networks:
+      - msds_network
+    image: nginx:latest
+    container_name: msdsnginx
+    hostname: msdsnginx
+    restart: always
+    ports:
+      - "180:80"
+      - "11443:443"
+    volumes:
+      # Nginx配置文件
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      # SSL证书
+      - ./nginx/ssl:/etc/nginx/ssl
+      # 静态资源
+      - ./nginx/html:/usr/share/nginx/html
+      # 日志
+      - ./nginx/logs:/var/log/nginx
+    depends_on:
+      - msdsbackend
+      # - msdsfrontend 不用依赖前端！
+
+  # 后端服务
+  msdsbackend:
+    networks:
+      - msds_network
+    image: msdsbackend
+    container_name: msdsbackend
+    hostname: msdsbackend
+    restart: always
+    pull_policy: never
+    volumes:
+      - ../msdsPC/ruoyi-MsdsPc-react:/app
+      - ../msdsPC/ruoyi-MsdsPc-react/uploadPath:/app/uploadPath
+
+      # Maven本地仓库持久化///这个是创建了一个共享卷！！！ 命名卷环境隔离
+      - msdsmaven_repository:/root/.m2/repository
+      
+    working_dir: /app
+    command: |
+      sh -c "echo 'Starting development environment setup...' && 
+      /usr/sbin/sshd && 
+      echo 'SSH service started successfully' && 
+      echo '*msdsbackend* Development environment ready!' && 
+      cd /app && 
+      echo 'Starting Maven build...' && 
+      mvn clean package -DskipTests && 
+      echo 'Maven build completed, starting application...' && 
+      java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -jar ruoyi-admin/target/ruoyi-admin.jar && 
+      tail -f /dev/null" 
+
+    ports:
+      - "18080:8080"
+      - "5005:5005"
+      - "2222:22"
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+      - SPRING_DATASOURCE_URL=jdbc:mysql://msdsmysql:3306/msds_dev?useUnicode=true&characterEncoding=utf8mb4&connectionCollation=utf8mb4_unicode_ci&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      - SPRING_DATASOURCE_USERNAME=msds_user
+      - SPRING_DATASOURCE_PASSWORD=msds_dev_password
+      - MAVEN_OPTS=-Xmx2048m -Xms512m -XX:+UseG1GC
+    depends_on:
+      - msdsmysql
+      - msdsredis
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8080/ || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 600s
+
+  # 前端服务
+  msdsfrontend:
+    networks:
+      - msds_network
+    image: msdsfrontend
+    container_name: msdsfrontend
+    hostname: msdsfrontend
+    restart: always
+    pull_policy: never
+    volumes:
+      - ../msdsPC/ruoyi-MsdsPc-react/react-ui:/app
+      - ../msdsPC/ruoyi-MsdsPc-react/react-ui/uploadPath:/app/uploadPath
+      
+      # 这种方式可能导致跨平台兼容性问题，建议使用命名卷来管理node_modules
+      # 使用命名卷可以避免本地环境和容器环境的依赖冲突
+      - msdsnode_modules:/app/node_modules
+      # - ../msdsPC/ruoyi-MsdsPc-react/react-ui/node_modules:/app/node_modules
+
+    working_dir: /app
+    # 执行 npm start 命令启动前端应用，并指定监听所有可用网络接口
+    # command: npm start -- --host 0.0.0.0
+    command: |
+      sh -c "
+      echo 'Setting up frontend development environment...' &&
+      # apt-get update &&
+      # apt-get install -y openssh-server curl wget git &&
+      # echo 'Installing additional development tools...' &&
+      # apt-get install -y build-essential &&
+      # mkdir -p /run/sshd &&
+      # echo 'root:msds_dev_password' | chpasswd &&
+      # sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config &&
+      # sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config &&
+      # ssh-keygen -A &&
+      /usr/sbin/sshd &&
+      
+      # 启动前端项目
+      npm install &&
+      echo '*msdsfrontend* Frontend development environment ready!' &&
+      npm run start:no-mock -- --host 0.0.0.0"
+    ports:
+      - "3000:8000"
+      - "8000:8000"
+      - "8001:8001"
+      - "2223:22"
+    environment:
+      - REACT_APP_API_URL=http://msdsbackend:8080
+    depends_on:
+      - msdsbackend
+
+  # MySQL数据库
+  msdsmysql:
+    networks:
+      - msds_network
+    image: msdsmysql
+    container_name: msdsmysql
+    hostname: msdsmysql
+    restart: always
+    pull_policy: never
+    command: --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --init-connect='SET NAMES utf8mb4' --init-connect='SET collation_connection = utf8mb4_unicode_ci' --skip-character-set-client-handshake
+    environment:
+      MYSQL_DATABASE: msds_dev
+      MYSQL_USER: msds_user
+      MYSQL_PASSWORD: msds_dev_password
+      MYSQL_ROOT_PASSWORD: root_password
+    ports:
+      - "3306:3306"
+    volumes:
+
+      # # 数据本次持久化----、//这个在linux下可能会在造成共享文件IO冲突问题！！！！
+      # - ../msdsdocker/msdsfullstatckcompose/msdsdata/mysql:/var/lib/mysql
+
+
+      # 使用命名卷避免VMware共享文件夹权限问题
+      - msdsmysql_data:/var/lib/mysql
+      # 初始化数据库
+      - ../msdsdocker/msdsfullstatckcompose/msdsdatabaseinitdb:/docker-entrypoint-initdb.d
+      # MySQL配置文件
+      - ./mysql/conf.d:/etc/mysql/conf.d
+
+  # Redis缓存
+  msdsredis:
+    networks:
+      - msds_network
+    image: msdsredis
+    container_name: msdsredis
+    hostname: msdsredis
+    restart: always
+    pull_policy: never
+    ports:
+      - "16379:6379"
+    volumes:
+      - msdsredis_data:/data
+
+volumes:
+  msdsredis_data:
+  msdsnode_modules:
+  msdsmaven_repository:
+  msdsmysql_data:
+
+

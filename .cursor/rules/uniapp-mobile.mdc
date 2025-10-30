@@ -1,0 +1,603 @@
+---
+globs: *.vue,pages/**/*.js,components/**/*.js,utils/**/*.js
+---
+
+# UniApp移动端开发规范
+
+## 开发环境配置
+
+### 开发工具要求
+- **主开发工具**: HBuilderX（官方推荐IDE）
+- **调试工具**: 微信开发者工具
+- **运行环境**: 不在Docker容器中，直接在Windows主机上运行
+
+### 开发流程
+
+1. **代码编写**
+   - 在HBuilderX中打开项目 [wechatapps/RuoYi-Msds-App](mdc:wechatapps/RuoYi-Msds-App)
+   - 编写Vue组件、API接口、工具函数等
+   - 实时预览和语法检查
+
+2. **编译运行**
+   - 在HBuilderX中选择"运行 → 运行到小程序模拟器 → 微信开发者工具"
+   - HBuilderX会自动编译UniApp代码为微信小程序代码
+   - 编译产物自动同步到微信开发者工具
+
+3. **调试预览**
+   - 在微信开发者工具中查看运行效果
+   - 使用微信开发者工具的调试功能（Console、Network、Storage等）
+   - 真机预览通过微信开发者工具扫码
+
+4. **后端连接**
+   - API配置需指向Docker容器中的后端服务
+   - 开发环境使用WSL2的局域网IP（如：`http://192.168.x.x:8080`）
+   - 生产环境使用域名（如：`https://api.flymsds.cn`）
+
+### 环境变量配置
+```javascript
+// config/env.js
+const env = {
+  development: {
+    baseURL: 'http://192.168.1.100:8080',  // WSL2局域网IP
+    timeout: 10000
+  },
+  production: {
+    baseURL: 'https://api.flymsds.cn',
+    timeout: 10000
+  }
+}
+
+export default env[process.env.NODE_ENV || 'development']
+```
+
+### 注意事项
+- **不要在Docker容器中开发移动端**: UniApp和HBuilderX需要在Windows主机上运行
+- **网络连接**: 确保移动端能访问到Docker容器的后端服务（同一局域网或端口映射）
+- **热更新**: HBuilderX支持保存即时编译，微信开发者工具会自动刷新
+- **真机调试**: 手机需与开发主机在同一局域网，并确保能访问到后端API
+
+## 项目结构规范
+
+**重要提示**: 本项目基于开源RuoYi-App移动端框架进行二次开发。
+
+### RuoYi-App框架说明
+- **框架基础**: RuoYi官方的UniApp移动端解决方案
+- **认证方式**: 集成了RuoYi的JWT认证和微信授权登录
+- **网络请求**: 封装了统一的request模块，自动处理token
+- **权限验证**: 支持与后端RuoYi权限系统对接
+
+基于 [wechatapps/RuoYi-Msds-App](mdc:wechatapps/RuoYi-Msds-App) 的UniApp架构：
+
+```
+RuoYi-Msds-App/
+├── pages/          # 页面目录
+│   ├── index/      # 首页（搜索、扫码）
+│   ├── login/      # 登录页（微信授权）
+│   ├── mine/       # 个人中心
+│   └── msds/       # MSDS相关页面
+├── components/     # 组件目录（复用RuoYi组件）
+├── static/         # 静态资源
+├── utils/          # 工具函数（继承RuoYi工具类）
+│   ├── request.js  # RuoYi网络请求封装
+│   └── auth.js     # RuoYi认证工具
+├── api/            # API接口（遵循RuoYi API规范）
+├── store/          # Vuex状态管理（集成RuoYi用户状态）
+├── config.js       # 配置文件（API地址等）
+└── uni_modules/    # uni_modules插件
+```
+
+### RuoYi-App核心功能复用
+- **登录认证**: 使用RuoYi的`login()`和`logout()`方法
+- **Token管理**: 使用RuoYi的`getToken()`和`setToken()`
+- **用户信息**: 使用RuoYi的用户状态管理
+- **权限验证**: 使用RuoYi的`hasPermi()`权限判断方法
+- **字典数据**: 使用RuoYi的字典数据缓存机制
+
+## Vue组件开发规范
+
+### 1. 单文件组件结构
+```vue
+<template>
+  <view class="msds-list">
+    <u-search 
+      placeholder="请输入化学品名称" 
+      v-model="searchText"
+      @search="handleSearch"
+      @clear="handleClear"
+    />
+    
+    <view class="list-container">
+      <u-list @scrolltolower="loadMore" :show-scrollbar="false">
+        <u-list-item v-for="item in msdsList" :key="item.id">
+          <msds-card 
+            :data="item" 
+            @click="handleItemClick"
+            @edit="handleEdit"
+          />
+        </u-list-item>
+      </u-list>
+    </view>
+    
+    <u-loadmore 
+      :status="loadStatus" 
+      :load-text="loadText"
+    />
+  </view>
+</template>
+
+<script>
+export default {
+  name: 'MsdsList',
+  components: {
+    MsdsCard: () => import('@/components/MsdsCard.vue')
+  },
+  
+  data() {
+    return {
+      searchText: '',
+      msdsList: [],
+      pageNum: 1,
+      pageSize: 20,
+      total: 0,
+      loading: false,
+      loadStatus: 'loadmore'
+    }
+  },
+  
+  computed: {
+    loadText() {
+      const textMap = {
+        'loadmore': { loadmore: '点击加载更多' },
+        'loading': { loading: '正在加载...' },
+        'nomore': { nomore: '没有更多了' }
+      };
+      return textMap[this.loadStatus] || textMap.loadmore;
+    }
+  },
+  
+  onLoad() {
+    this.loadData();
+  },
+  
+  onPullDownRefresh() {
+    this.refreshData();
+  },
+  
+  methods: {
+    // 数据加载方法
+    async loadData() {
+      if (this.loading) return;
+      
+      this.loading = true;
+      try {
+        const res = await this.$api.msds.getList({
+          pageNum: this.pageNum,
+          pageSize: this.pageSize,
+          chemicalName: this.searchText
+        });
+        
+        if (res.code === 200) {
+          const newList = res.rows || [];
+          this.msdsList = this.pageNum === 1 ? newList : [...this.msdsList, ...newList];
+          this.total = res.total;
+          
+          // 更新加载状态
+          this.loadStatus = newList.length < this.pageSize ? 'nomore' : 'loadmore';
+        }
+      } catch (error) {
+        this.$u.toast('数据加载失败');
+        console.error('MSDS数据加载失败:', error);
+      } finally {
+        this.loading = false;
+        uni.stopPullDownRefresh();
+      }
+    }
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+.msds-list {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  
+  .list-container {
+    padding: 20rpx;
+  }
+}
+</style>
+```
+
+### 2. API接口封装（基于RuoYi-App）
+
+#### 使用RuoYi的request模块
+```javascript
+// api/msds.js
+import request from '@/utils/request'  // RuoYi封装的request模块
+
+export default {
+  // 获取MSDS列表（遵循RuoYi分页规范）
+  getList(params) {
+    return request({
+      url: '/system/msds/list',
+      method: 'GET',
+      params  // pageNum, pageSize, chemicalName等参数
+    })
+  },
+  
+  // 获取MSDS详情
+  getDetail(id) {
+    return request({
+      url: `/system/msds/${id}`,
+      method: 'GET'
+    })
+  },
+  
+  // 新增MSDS（使用RuoYi的AjaxResult返回格式）
+  add(data) {
+    return request({
+      url: '/system/msds',
+      method: 'POST',
+      data
+    })
+  },
+  
+  // 修改MSDS
+  update(data) {
+    return request({
+      url: '/system/msds',
+      method: 'PUT',
+      data
+    })
+  },
+  
+  // 删除MSDS
+  delete(ids) {
+    return request({
+      url: `/system/msds/${ids}`,
+      method: 'DELETE'
+    })
+  },
+  
+  // 上传MSDS文件（RuoYi文件上传方式）
+  uploadFile(filePath, formData = {}) {
+    const uploadUrl = request.baseURL + '/system/msds/upload'
+    const token = uni.getStorageSync('token')
+    
+    return new Promise((resolve, reject) => {
+      uni.uploadFile({
+        url: uploadUrl,
+        filePath,
+        name: 'file',
+        formData,
+        header: {
+          'Authorization': 'Bearer ' + token
+        },
+        success: (res) => {
+          const data = JSON.parse(res.data);
+          // RuoYi标准返回格式：{code: 200, msg: 'success', data: {...}}
+          if (data.code === 200) {
+            resolve(data);
+          } else {
+            uni.showToast({
+              title: data.msg || '上传失败',
+              icon: 'none'
+            });
+            reject(data);
+          }
+        },
+        fail: (err) => {
+          uni.showToast({
+            title: '网络错误',
+            icon: 'none'
+          });
+          reject(err);
+        }
+      });
+    });
+  }
+}
+```
+
+#### RuoYi的统一返回格式处理
+```javascript
+// utils/request.js 中的响应拦截器（RuoYi已封装）
+// RuoYi后端统一返回格式
+{
+  code: 200,        // 200成功，其他失败
+  msg: '操作成功',   // 提示信息
+  rows: [],         // 列表数据（分页）
+  total: 100,       // 总记录数（分页）
+  data: {}          // 详情数据
+}
+
+// 在组件中使用
+async loadData() {
+  const res = await this.$api.msds.getList({
+    pageNum: this.pageNum,
+    pageSize: this.pageSize
+  });
+  
+  if (res.code === 200) {
+    this.msdsList = res.rows;
+    this.total = res.total;
+  }
+}
+```
+
+### 3. 状态管理 (Vuex)
+```javascript
+// store/modules/msds.js
+export default {
+  namespaced: true,
+  
+  state: {
+    currentMsds: null,
+    searchHistory: [],
+    favoriteList: []
+  },
+  
+  getters: {
+    // 获取当前MSDS的化学品别名数组
+    currentAliases: state => {
+      return state.currentMsds?.aliases?.split(',').filter(Boolean) || [];
+    }
+  },
+  
+  mutations: {
+    SET_CURRENT_MSDS(state, msds) {
+      state.currentMsds = msds;
+    },
+    
+    ADD_SEARCH_HISTORY(state, keyword) {
+      if (!keyword || state.searchHistory.includes(keyword)) return;
+      
+      state.searchHistory.unshift(keyword);
+      // 限制搜索历史最多10条
+      if (state.searchHistory.length > 10) {
+        state.searchHistory.pop();
+      }
+    },
+    
+    CLEAR_SEARCH_HISTORY(state) {
+      state.searchHistory = [];
+    }
+  },
+  
+  actions: {
+    // 设置当前MSDS
+    setCurrentMsds({ commit }, msds) {
+      commit('SET_CURRENT_MSDS', msds);
+    },
+    
+    // 添加搜索历史
+    addSearchHistory({ commit }, keyword) {
+      commit('ADD_SEARCH_HISTORY', keyword);
+    }
+  }
+}
+```
+
+### 4. 工具函数封装
+```javascript
+// utils/validate.js
+export default {
+  // 验证CAS号格式
+  isValidCasNumber(cas) {
+    const casRegex = /^\d{2,7}-\d{2}-\d$/;
+    return casRegex.test(cas);
+  },
+  
+  // 验证手机号格式
+  isValidPhone(phone) {
+    const phoneRegex = /^1[3-9]\d{9}$/;
+    return phoneRegex.test(phone);
+  },
+  
+  // 验证邮箱格式
+  isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+}
+
+// utils/format.js
+export default {
+  // 格式化文件大小
+  formatFileSize(bytes) {
+    if (bytes === 0) return '0 Bytes';
+    const k = 1024;
+    const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+    const i = Math.floor(Math.log(bytes) / Math.log(k));
+    return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+  },
+  
+  // 格式化日期时间
+  formatDateTime(dateString) {
+    if (!dateString) return '';
+    const date = new Date(dateString);
+    const Y = date.getFullYear();
+    const M = (date.getMonth() + 1).toString().padStart(2, '0');
+    const D = date.getDate().toString().padStart(2, '0');
+    const h = date.getHours().toString().padStart(2, '0');
+    const m = date.getMinutes().toString().padStart(2, '0');
+    return `${Y}-${M}-${D} ${h}:${m}`;
+  }
+}
+```
+
+### 5. 文件上传组件
+```vue
+<template>
+  <view class="upload-container">
+    <u-upload
+      :file-list="fileList"
+      @afterRead="handleAfterRead"
+      @delete="handleDelete"
+      :max-count="maxCount"
+      :accept="accept"
+      :max-size="maxSize * 1024 * 1024"
+      @oversize="handleOversize"
+    >
+      <view class="upload-btn" slot="addBtn">
+        <u-icon name="plus" size="40" color="#c0c4cc" />
+        <text class="upload-text">选择文件</text>
+      </view>
+    </u-upload>
+  </view>
+</template>
+
+<script>
+export default {
+  name: 'MsdsUpload',
+  
+  props: {
+    maxCount: {
+      type: Number,
+      default: 1
+    },
+    maxSize: {
+      type: Number,
+      default: 10 // MB
+    },
+    accept: {
+      type: String,
+      default: 'pdf,doc,docx'
+    }
+  },
+  
+  data() {
+    return {
+      fileList: []
+    }
+  },
+  
+  methods: {
+    async handleAfterRead(event) {
+      const { file } = event;
+      
+      // 文件类型验证
+      if (!this.validateFileType(file.name)) {
+        this.$u.toast('文件格式不支持');
+        return;
+      }
+      
+      // 添加到文件列表并显示上传状态
+      const fileItem = {
+        ...file,
+        status: 'uploading',
+        message: '上传中...'
+      };
+      
+      this.fileList.push(fileItem);
+      
+      try {
+        // 调用上传API
+        const res = await this.$api.msds.uploadFile(file.url);
+        
+        // 更新文件状态
+        fileItem.status = 'success';
+        fileItem.message = '上传成功';
+        fileItem.response = res.data;
+        
+        // 通知父组件上传成功
+        this.$emit('success', res.data);
+      } catch (error) {
+        // 更新文件状态
+        fileItem.status = 'error';
+        fileItem.message = '上传失败';
+        
+        this.$u.toast('文件上传失败');
+        console.error('文件上传失败:', error);
+      }
+    },
+    
+    validateFileType(fileName) {
+      const extension = fileName.split('.').pop().toLowerCase();
+      return this.accept.split(',').includes(extension);
+    },
+    
+    handleDelete(event) {
+      const { index } = event;
+      this.fileList.splice(index, 1);
+    },
+    
+    handleOversize() {
+      this.$u.toast(`文件大小不能超过${this.maxSize}MB`);
+    }
+  }
+}
+</script>
+```
+
+### 6. 性能优化规范
+
+#### 图片懒加载
+```vue
+<template>
+  <image
+    :src="imageSrc"
+    :lazy-load="true"
+    mode="aspectFit"
+    @error="handleImageError"
+    @load="handleImageLoad"
+  />
+</template>
+```
+
+#### 长列表优化
+```vue
+<template>
+  <!-- 使用virtual-list组件优化长列表 -->
+  <recycle-list
+    :list-data="msdsList"
+    :template-key="'msdsItem'"
+    :item-height="120"
+  >
+    <template v-slot:msdsItem="{ item }">
+      <msds-card :data="item" />
+    </template>
+  </recycle-list>
+</template>
+```
+
+### 7. 错误处理和用户反馈
+```javascript
+// utils/errorHandler.js
+export default {
+  // 统一错误处理
+  handleError(error, context = '') {
+    console.error(`${context}错误:`, error);
+    
+    let message = '操作失败，请稍后重试';
+    
+    if (error.response) {
+      // HTTP错误
+      const { status, data } = error.response;
+      switch (status) {
+        case 401:
+          message = '登录已过期，请重新登录';
+          // 跳转到登录页
+          uni.reLaunch({ url: '/pages/login/login' });
+          break;
+        case 403:
+          message = '没有权限执行此操作';
+          break;
+        case 500:
+          message = data?.msg || '服务器内部错误';
+          break;
+        default:
+          message = data?.msg || `网络错误(${status})`;
+      }
+    } else if (error.message) {
+      message = error.message;
+    }
+    
+    uni.showToast({
+      title: message,
+      icon: 'none',
+      duration: 2000
+    });
+  }
+}
+```

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.MsdsToxicologicalMapper">
+    
+    <resultMap type="MsdsToxicological" id="MsdsToxicologicalResult">
+        <id     property="id"                           column="id"                           />
+        <result property="msdsId"                       column="msds_id"                      />
+        <result property="acuteToxicity"                column="acute_toxicity"               />
+        <result property="ld50Oral"                     column="ld50_oral"                    />
+        <result property="ld50Dermal"                   column="ld50_dermal"                  />
+        <result property="lc50Inhalation"               column="lc50_inhalation"              />
+        <result property="subacuteChronic"              column="subacute_chronic"             />
+        <result property="skinIrritation"               column="skin_irritation"              />
+        <result property="eyeIrritation"                column="eye_irritation"               />
+        <result property="respiratoryIrritation"        column="respiratory_irritation"       />
+        <result property="sensitization"                column="sensitization"                />
+        <result property="mutagenicity"                 column="mutagenicity"                 />
+        <result property="teratogenicity"               column="teratogenicity"               />
+        <result property="reproductiveToxicity"         column="reproductive_toxicity"        />
+        <result property="carcinogenicity"              column="carcinogenicity"              />
+        <result property="carcinogenClassification"     column="carcinogen_classification"    />
+        <result property="specificTargetOrgan"          column="specific_target_organ"        />
+        <result property="aspirationHazard"             column="aspiration_hazard"            />
+        <result property="otherToxicity"                column="other_toxicity"               />
+        <result property="rtecs"                        column="rtecs"                        />
+        <result property="createBy"                     column="create_by"                    />
+        <result property="createTime"                   column="create_time"                  />
+        <result property="updateBy"                     column="update_by"                    />
+        <result property="updateTime"                   column="update_time"                  />
+    </resultMap>
+    
+    <sql id="selectMsdsToxicologicalVo">
+        select id, msds_id, acute_toxicity, ld50_oral, ld50_dermal, lc50_inhalation,
+               subacute_chronic, skin_irritation, eye_irritation, respiratory_irritation,
+               sensitization, mutagenicity, teratogenicity, reproductive_toxicity,
+               carcinogenicity, carcinogen_classification, specific_target_organ,
+               aspiration_hazard, other_toxicity, rtecs, create_by, create_time, update_by, update_time
+        from msds_toxicological
+    </sql>
+    
+    <select id="selectMsdsToxicologicalById" parameterType="Long" resultMap="MsdsToxicologicalResult">
+        <include refid="selectMsdsToxicologicalVo"/>
+        where id = #{id}
+    </select>
+    
+    <select id="selectMsdsToxicologicalByMsdsId" parameterType="Long" resultMap="MsdsToxicologicalResult">
+        <include refid="selectMsdsToxicologicalVo"/>
+        where msds_id = #{msdsId}
+    </select>
+    
+    <select id="selectMsdsToxicologicalList" parameterType="MsdsToxicological" resultMap="MsdsToxicologicalResult">
+        <include refid="selectMsdsToxicologicalVo"/>
+        <where>
+            <if test="msdsId != null">
+                AND msds_id = #{msdsId}
+            </if>
+            <if test="acuteToxicity != null and acuteToxicity != ''">
+                AND acute_toxicity like concat('%', #{acuteToxicity}, '%')
+            </if>
+            <if test="carcinogenicity != null and carcinogenicity != ''">
+                AND carcinogenicity like concat('%', #{carcinogenicity}, '%')
+            </if>
+        </where>
+        order by create_time desc
+    </select>
+    
+    <insert id="insertMsdsToxicological" parameterType="MsdsToxicological" useGeneratedKeys="true" keyProperty="id">
+        insert into msds_toxicological (
+            msds_id, acute_toxicity, ld50_oral, ld50_dermal, lc50_inhalation,
+            subacute_chronic, skin_irritation, eye_irritation, respiratory_irritation,
+            sensitization, mutagenicity, teratogenicity, reproductive_toxicity,
+            carcinogenicity, carcinogen_classification, specific_target_organ,
+            aspiration_hazard, other_toxicity, rtecs
+        )values(
+            #{msdsId}, #{acuteToxicity}, #{ld50Oral}, #{ld50Dermal}, #{lc50Inhalation},
+            #{subacuteChronic}, #{skinIrritation}, #{eyeIrritation}, #{respiratoryIrritation},
+            #{sensitization}, #{mutagenicity}, #{teratogenicity}, #{reproductiveToxicity},
+            #{carcinogenicity}, #{carcinogenClassification}, #{specificTargetOrgan},
+            #{aspirationHazard}, #{otherToxicity}, #{rtecs}
+        )
+    </insert>
+     
+    <update id="updateMsdsToxicological" parameterType="MsdsToxicological">
+        update msds_toxicological 
+        <set>
+            <if test="msdsId != null">msds_id = #{msdsId},</if>
+            <if test="acuteToxicity != null">acute_toxicity = #{acuteToxicity},</if>
+            <if test="ld50Oral != null">ld50_oral = #{ld50Oral},</if>
+            <if test="ld50Dermal != null">ld50_dermal = #{ld50Dermal},</if>
+            <if test="lc50Inhalation != null">lc50_inhalation = #{lc50Inhalation},</if>
+            <if test="subacuteChronic != null">subacute_chronic = #{subacuteChronic},</if>
+            <if test="skinIrritation != null">skin_irritation = #{skinIrritation},</if>
+            <if test="eyeIrritation != null">eye_irritation = #{eyeIrritation},</if>
+            <if test="respiratoryIrritation != null">respiratory_irritation = #{respiratoryIrritation},</if>
+            <if test="sensitization != null">sensitization = #{sensitization},</if>
+            <if test="mutagenicity != null">mutagenicity = #{mutagenicity},</if>
+            <if test="teratogenicity != null">teratogenicity = #{teratogenicity},</if>
+            <if test="reproductiveToxicity != null">reproductive_toxicity = #{reproductiveToxicity},</if>
+            <if test="carcinogenicity != null">carcinogenicity = #{carcinogenicity},</if>
+            <if test="carcinogenClassification != null">carcinogen_classification = #{carcinogenClassification},</if>
+            <if test="specificTargetOrgan != null">specific_target_organ = #{specificTargetOrgan},</if>
+            <if test="aspirationHazard != null">aspiration_hazard = #{aspirationHazard},</if>
+            <if test="otherToxicity != null">other_toxicity = #{otherToxicity},</if>
+            <if test="rtecs != null">rtecs = #{rtecs},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            update_time = NOW()
+        </set>
+        where id = #{id}
+    </update>
+    
+    <delete id="deleteMsdsToxicologicalById" parameterType="Long">
+        delete from msds_toxicological where id = #{id}
+    </delete>
+    
+    <delete id="deleteMsdsToxicologicalByIds" parameterType="Long">
+        delete from msds_toxicological where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    
+    <delete id="deleteMsdsToxicologicalByMsdsId" parameterType="Long">
+        delete from msds_toxicological where msds_id = #{msdsId}
+    </delete>
+    
+</mapper> 

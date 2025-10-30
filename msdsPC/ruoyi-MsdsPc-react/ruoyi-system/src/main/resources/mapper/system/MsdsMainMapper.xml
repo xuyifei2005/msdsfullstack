@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.MsdsMainMapper">
+    
+    <resultMap type="MsdsMain" id="MsdsMainResult">
+        <id     property="id"                   column="id"                   />
+        <result property="casNumber"            column="cas_number"            />
+        <result property="msdsCode"             column="msds_code"             />
+        <result property="productName"          column="product_name"          />
+        <result property="productAlias"         column="product_alias"         />
+        <result property="productEnglishName"   column="product_english_name"   />
+        <result property="categoryId"           column="category_id"           />
+        <result property="companyName"          column="company_name"          />
+        <result property="companyAddress"       column="company_address"       />
+        <result property="zipCode"              column="zip_code"              />
+        <result property="faxNumber"            column="fax_number"            />
+        <result property="contactPhone"         column="contact_phone"         />
+        <result property="email"                column="email"                />
+        <result property="emergencyPhone"       column="emergency_phone"       />
+        <result property="recommendedUsage"     column="recommended_usage"     />
+        <result property="restrictedUsage"      column="restricted_usage"      />
+        <result property="version"              column="version"              />
+        <result property="revisionDate"         column="revision_date"         />
+        <result property="effectiveDate"        column="effective_date"        />
+        <result property="status"               column="status"               />
+        <result property="approver"             column="approver"             />
+        <result property="approvalDate"         column="approval_date"         />
+        <result property="isActive"             column="is_active"             />
+        <result property="createTime"           column="create_time"           />
+        <result property="updateTime"           column="update_time"           />
+        <result property="remark"               column="remark"               />
+    </resultMap>
+    
+        <sql id="selectMsdsMainVo">
+        select id, cas_number, msds_code, product_name, product_alias, product_english_name,
+            category_id, company_name, company_address, zip_code, fax_number, contact_phone,
+            email, emergency_phone, recommended_usage, restricted_usage, version,
+            revision_date, effective_date, status, approver, approval_date,
+            is_active, create_time, update_time, remark
+        from msds_main
+    </sql>
+    
+    <select id="selectMsdsMainById" parameterType="Long" resultMap="MsdsMainResult">
+        <include refid="selectMsdsMainVo"/>
+        where id = #{id}
+    </select>
+    
+    <select id="selectMsdsMainList" parameterType="MsdsMain" resultMap="MsdsMainResult">
+        <include refid="selectMsdsMainVo"/>
+        <where>
+            <if test="productName != null and productName != ''">
+                AND product_name like concat('%', #{productName}, '%')
+            </if>
+            <if test="companyName != null and companyName != ''">
+                AND company_name like concat('%', #{companyName}, '%')
+            </if>
+            <if test="casNumber != null and casNumber != ''">
+                AND cas_number like concat('%', #{casNumber}, '%')
+            </if>
+            <if test="status != null and status != ''">
+                AND status = #{status}
+            </if>
+            <if test="isActive != null">
+                AND is_active = #{isActive}
+            </if>
+        </where>
+        order by create_time desc
+    </select>
+    
+    <select id="selectMsdsMainByProductName" parameterType="String" resultMap="MsdsMainResult">
+        <include refid="selectMsdsMainVo"/>
+        where product_name = #{productName} and is_active = 1 limit 1
+    </select>
+    
+    <select id="selectMsdsMainByCasNumber" parameterType="String" resultMap="MsdsMainResult">
+        <include refid="selectMsdsMainVo"/>
+        where cas_number = #{casNumber} and is_active = 1 limit 1
+    </select>
+    
+    <select id="checkProductNameUnique" parameterType="String" resultMap="MsdsMainResult">
+        <include refid="selectMsdsMainVo"/>
+        where product_name = #{productName} limit 1
+    </select>
+    
+    <select id="selectMsdsMainByCompany" parameterType="String" resultMap="MsdsMainResult">
+        <include refid="selectMsdsMainVo"/>
+        where company_name like concat('%', #{companyName}, '%') and is_active = 1
+        order by create_time desc
+    </select>
+    
+    <select id="countActiveMsds" resultType="int">
+        select count(*) from msds_main where is_active = 1
+    </select>
+    
+    <select id="selectMsdsMainByIds" parameterType="Long" resultMap="MsdsMainResult">
+        <include refid="selectMsdsMainVo"/>
+        where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+        order by create_time desc
+    </select>
+    
+    <insert id="insertMsdsMain" parameterType="MsdsMain" useGeneratedKeys="true" keyProperty="id">
+        insert into msds_main (
+            cas_number, msds_code, product_name, product_alias, product_english_name, 
+            category_id, company_name, company_address, zip_code, fax_number, 
+            contact_phone, email, emergency_phone, recommended_usage, restricted_usage, 
+            version, revision_date, effective_date, status, approver, approval_date,
+            is_active, remark
+        )values(
+            #{casNumber}, #{msdsCode}, #{productName}, #{productAlias}, #{productEnglishName},
+            #{categoryId}, #{companyName}, #{companyAddress}, #{zipCode}, #{faxNumber},
+            #{contactPhone}, #{email}, #{emergencyPhone}, #{recommendedUsage}, #{restrictedUsage},
+            #{version}, #{revisionDate}, #{effectiveDate}, #{status}, #{approver}, #{approvalDate},
+            #{isActive}, #{remark}
+        )
+    </insert>
+     
+    <update id="updateMsdsMain" parameterType="MsdsMain">
+        update msds_main 
+        <set>
+            <if test="casNumber != null and casNumber != ''">cas_number = #{casNumber},</if>
+            <if test="msdsCode != null and msdsCode != ''">msds_code = #{msdsCode},</if>
+            <if test="productName != null and productName != ''">product_name = #{productName},</if>
+            <if test="productAlias != null">product_alias = #{productAlias},</if>
+            <if test="productEnglishName != null">product_english_name = #{productEnglishName},</if>
+            <if test="categoryId != null">category_id = #{categoryId},</if>
+            <if test="companyName != null and companyName != ''">company_name = #{companyName},</if>
+            <if test="companyAddress != null">company_address = #{companyAddress},</if>
+            <if test="zipCode != null">zip_code = #{zipCode},</if>
+            <if test="faxNumber != null">fax_number = #{faxNumber},</if>
+            <if test="contactPhone != null and contactPhone != ''">contact_phone = #{contactPhone},</if>
+            <if test="email != null">email = #{email},</if>
+            <if test="emergencyPhone != null">emergency_phone = #{emergencyPhone},</if>
+            <if test="recommendedUsage != null">recommended_usage = #{recommendedUsage},</if>
+            <if test="restrictedUsage != null">restricted_usage = #{restrictedUsage},</if>
+            <if test="version != null">version = #{version},</if>
+            <if test="revisionDate != null">revision_date = #{revisionDate},</if>
+            <if test="effectiveDate != null">effective_date = #{effectiveDate},</if>
+            <if test="status != null">status = #{status},</if>
+            <if test="approver != null">approver = #{approver},</if>
+            <if test="approvalDate != null">approval_date = #{approvalDate},</if>
+            <if test="isActive != null">is_active = #{isActive},</if>
+            update_time = NOW()
+        </set>
+        where id = #{id}
+    </update>
+    
+    <delete id="deleteMsdsMainById" parameterType="Long">
+        delete from msds_main where id = #{id}
+    </delete>
+    
+    <delete id="deleteMsdsMainByIds" parameterType="Long">
+        delete from msds_main where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    
+</mapper>

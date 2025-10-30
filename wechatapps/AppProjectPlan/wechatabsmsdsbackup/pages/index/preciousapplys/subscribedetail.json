@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "审批",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "step": "/components/lwp-step/lwp-step"
+  }
+}

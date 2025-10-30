@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.MsdsDisposalMapper">
+    
+    <resultMap type="MsdsDisposal" id="MsdsDisposalResult">
+        <result property="id"    column="id"    />
+        <result property="msdsId"    column="msds_id"    />
+        <result property="wasteProperties"    column="waste_properties"    />
+        <result property="disposalMethod"    column="disposal_method"    />
+        <result property="disposalPrecautions"    column="disposal_precautions"    />
+        <result property="disposalRegulations"    column="disposal_regulations"    />
+        <result property="containerDisposal"    column="container_disposal"    />
+        <result property="recommendedDisposal"    column="recommended_disposal"    />
+        <result property="prohibitedDisposal"    column="prohibited_disposal"    />
+        <result property="neutralizationMethod"    column="neutralization_method"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateTime"    column="update_time"    />
+        <result property="createBy"    column="create_by"    />
+        <result property="updateBy"    column="update_by"    />
+    </resultMap>
+
+    <sql id="selectMsdsDisposalVo">
+        select id, msds_id, waste_properties, disposal_method, disposal_precautions, disposal_regulations, container_disposal, recommended_disposal, prohibited_disposal, neutralization_method, create_time, update_time, create_by, update_by from msds_disposal
+    </sql>
+
+    <select id="selectMsdsDisposalList" parameterType="MsdsDisposal" resultMap="MsdsDisposalResult">
+        <include refid="selectMsdsDisposalVo"/>
+        <where>  
+            <if test="msdsId != null "> and msds_id = #{msdsId}</if>
+            <if test="wasteProperties != null  and wasteProperties != ''"> and waste_properties like concat('%', #{wasteProperties}, '%')</if>
+            <if test="disposalMethod != null  and disposalMethod != ''"> and disposal_method like concat('%', #{disposalMethod}, '%')</if>
+            <if test="disposalPrecautions != null  and disposalPrecautions != ''"> and disposal_precautions like concat('%', #{disposalPrecautions}, '%')</if>
+            <if test="disposalRegulations != null  and disposalRegulations != ''"> and disposal_regulations like concat('%', #{disposalRegulations}, '%')</if>
+            <if test="containerDisposal != null  and containerDisposal != ''"> and container_disposal like concat('%', #{containerDisposal}, '%')</if>
+            <if test="recommendedDisposal != null  and recommendedDisposal != ''"> and recommended_disposal like concat('%', #{recommendedDisposal}, '%')</if>
+            <if test="prohibitedDisposal != null  and prohibitedDisposal != ''"> and prohibited_disposal like concat('%', #{prohibitedDisposal}, '%')</if>
+            <if test="neutralizationMethod != null  and neutralizationMethod != ''"> and neutralization_method like concat('%', #{neutralizationMethod}, '%')</if>
+        </where>
+        order by create_time desc
+    </select>
+    
+    <select id="selectMsdsDisposalById" parameterType="Long" resultMap="MsdsDisposalResult">
+        <include refid="selectMsdsDisposalVo"/>
+        where id = #{id}
+    </select>
+
+    <select id="selectMsdsDisposalByMsdsId" parameterType="Long" resultMap="MsdsDisposalResult">
+        <include refid="selectMsdsDisposalVo"/>
+        where msds_id = #{msdsId}
+    </select>
+        
+    <insert id="insertMsdsDisposal" parameterType="MsdsDisposal" useGeneratedKeys="true" keyProperty="id">
+        insert into msds_disposal
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="msdsId != null">msds_id,</if>
+            <if test="wasteProperties != null and wasteProperties != ''">waste_properties,</if>
+            <if test="disposalMethod != null and disposalMethod != ''">disposal_method,</if>
+            <if test="disposalPrecautions != null and disposalPrecautions != ''">disposal_precautions,</if>
+            <if test="disposalRegulations != null and disposalRegulations != ''">disposal_regulations,</if>
+            <if test="containerDisposal != null and containerDisposal != ''">container_disposal,</if>
+            <if test="recommendedDisposal != null and recommendedDisposal != ''">recommended_disposal,</if>
+            <if test="prohibitedDisposal != null and prohibitedDisposal != ''">prohibited_disposal,</if>
+            <if test="neutralizationMethod != null and neutralizationMethod != ''">neutralization_method,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateTime != null">update_time,</if>
+            <if test="createBy != null and createBy != ''">create_by,</if>
+            <if test="updateBy != null and updateBy != ''">update_by,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="msdsId != null">#{msdsId},</if>
+            <if test="wasteProperties != null and wasteProperties != ''">#{wasteProperties},</if>
+            <if test="disposalMethod != null and disposalMethod != ''">#{disposalMethod},</if>
+            <if test="disposalPrecautions != null and disposalPrecautions != ''">#{disposalPrecautions},</if>
+            <if test="disposalRegulations != null and disposalRegulations != ''">#{disposalRegulations},</if>
+            <if test="containerDisposal != null and containerDisposal != ''">#{containerDisposal},</if>
+            <if test="recommendedDisposal != null and recommendedDisposal != ''">#{recommendedDisposal},</if>
+            <if test="prohibitedDisposal != null and prohibitedDisposal != ''">#{prohibitedDisposal},</if>
+            <if test="neutralizationMethod != null and neutralizationMethod != ''">#{neutralizationMethod},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+            <if test="createBy != null and createBy != ''">#{createBy},</if>
+            <if test="updateBy != null and updateBy != ''">#{updateBy},</if>
+         </trim>
+    </insert>
+
+    <update id="updateMsdsDisposal" parameterType="MsdsDisposal">
+        update msds_disposal
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="msdsId != null">msds_id = #{msdsId},</if>
+            <if test="wasteProperties != null and wasteProperties != ''">waste_properties = #{wasteProperties},</if>
+            <if test="disposalMethod != null and disposalMethod != ''">disposal_method = #{disposalMethod},</if>
+            <if test="disposalPrecautions != null and disposalPrecautions != ''">disposal_precautions = #{disposalPrecautions},</if>
+            <if test="disposalRegulations != null and disposalRegulations != ''">disposal_regulations = #{disposalRegulations},</if>
+            <if test="containerDisposal != null and containerDisposal != ''">container_disposal = #{containerDisposal},</if>
+            <if test="recommendedDisposal != null and recommendedDisposal != ''">recommended_disposal = #{recommendedDisposal},</if>
+            <if test="prohibitedDisposal != null and prohibitedDisposal != ''">prohibited_disposal = #{prohibitedDisposal},</if>
+            <if test="neutralizationMethod != null and neutralizationMethod != ''">neutralization_method = #{neutralizationMethod},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+            <if test="updateBy != null and updateBy != ''">update_by = #{updateBy},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteMsdsDisposalById" parameterType="Long">
+        delete from msds_disposal where id = #{id}
+    </delete>
+
+    <delete id="deleteMsdsDisposalByIds" parameterType="String">
+        delete from msds_disposal where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <delete id="deleteMsdsDisposalByMsdsId" parameterType="Long">
+        delete from msds_disposal where msds_id = #{msdsId}
+    </delete>
+</mapper>

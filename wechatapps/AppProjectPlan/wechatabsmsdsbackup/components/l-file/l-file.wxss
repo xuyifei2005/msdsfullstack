@@ -1,0 +1,26 @@
+
+.t-toptips.data-v-376a91a4 {
+	width: 100%;
+	padding: 18rpx 30rpx;
+	box-sizing: border-box;
+	position: fixed;
+	z-index: 90;
+	color: #fff;
+	font-size: 30rpx;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	word-break: break-all;
+	opacity: 0;
+	-webkit-transform: translateZ(0) translateY(-100%);
+	        transform: translateZ(0) translateY(-100%);
+	transition: all 0.3s ease-in-out;
+}
+.t-top-show.data-v-376a91a4 {
+	-webkit-transform: translateZ(0) translateY(0);
+	        transform: translateZ(0) translateY(0);
+	opacity: 1;
+}
+
+

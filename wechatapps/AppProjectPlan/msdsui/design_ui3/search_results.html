@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSDS搜索结果</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f5f5f7;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        /* iOS状态栏 */
+        .status-bar {
+            height: 44px;
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 16px;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        /* 导航栏 */
+        .nav-bar {
+            height: 44px;
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            position: sticky;
+            top: 44px;
+            z-index: 40;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        /* 搜索框 */
+        .search-box {
+            flex: 1;
+            background-color: rgba(142, 142, 147, 0.12);
+            border-radius: 10px;
+            padding: 8px 12px;
+            margin: 0 8px;
+            font-size: 16px;
+            border: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        .search-box input {
+            background: transparent;
+            border: none;
+            width: 100%;
+            margin-left: 8px;
+            font-size: 16px;
+        }
+        
+        .search-box input:focus {
+            outline: none;
+        }
+        
+        /* 主内容区域 */
+        .content {
+            height: calc(100vh - 44px - 44px - 83px); /* 减去状态栏、导航栏和底部导航栏的高度 */
+            overflow-y: auto;
+            padding: 16px;
+        }
+        
+        /* 结果项 */
+        .result-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: all 0.2s ease;
+        }
+        
+        .result-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .result-item:active {
+            transform: scale(0.98);
+            background-color: rgba(240, 240, 245, 0.9);
+        }
+        
+        .result-title {
+            font-weight: 600;
+            font-size: 18px;
+            color: #1d1d1f;
+            margin-bottom: 4px;
+        }
+        
+        .result-subtitle {
+            font-size: 14px;
+            color: #6e6e73;
+            margin-bottom: 8px;
+        }
+        
+        .result-meta {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            color: #86868b;
+        }
+        
+        .result-tag {
+            background-color: rgba(0, 122, 255, 0.1);
+            color: #007AFF;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+            margin-right: 8px;
+        }
+        
+        .danger-level {
+            display: flex;
+            align-items: center;
+            margin-top: 8px;
+        }
+        
+        .danger-level-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+        
+        .danger-high {
+            background-color: #FF3B30;
+        }
+        
+        .danger-medium {
+            background-color: #FF9500;
+        }
+        
+        .danger-low {
+            background-color: #34C759;
+        }
+        
+        /* 底部导航栏 */
+        .tab-bar {
+            height: 83px; /* 包含安全区域的高度 */
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding-bottom: 20px; /* 安全区域 */
+        }
+        
+        .tab-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #8E8E93;
+            font-size: 10px;
+            padding: 8px 0;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        
+        .tab-item:active {
+            transform: scale(0.9);
+        }
+        
+        .tab-item.active {
+            color: #007AFF;
+        }
+        
+        .tab-icon {
+            font-size: 24px;
+            margin-bottom: 4px;
+        }
+        
+        /* 毛玻璃背景效果 */
+        .glass-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.2; /* 稍微提高透明度 */
+            z-index: -1;
+            animation: subtle-move 30s infinite alternate ease-in-out;
+            filter: saturate(1.2) brightness(1.1); /* 增加饱和度和亮度 */
+        }
+        
+        @keyframes subtle-move {
+            0% {
+                background-position: 0% 0%;
+                transform: scale(1.02);
+            }
+            50% {
+                transform: scale(1.0);
+            }
+            100% {
+                background-position: 100% 100%;
+                transform: scale(1.02);
+            }
+        }
+        
+        /* 改进搜索框效果 */
+        .search-box {
+            flex: 1;
+            background-color: rgba(142, 142, 147, 0.12);
+            border-radius: 10px;
+            padding: 8px 12px;
+            margin: 0 8px;
+            font-size: 16px;
+            border: none;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        
+        .search-box:hover {
+            background-color: rgba(142, 142, 147, 0.18);
+        }
+        
+        .search-box input {
+            background: transparent;
+            border: none;
+            width: 100%;
+            margin-left: 8px;
+            font-size: 16px;
+            transition: all 0.2s ease;
+        }
+        
+        .search-box input:focus {
+            outline: none;
+        }
+        
+        /* 改进结果项效果 */
+        .result-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .result-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        }
+        
+        .result-item:active {
+            transform: scale(0.98);
+            background-color: rgba(240, 240, 245, 0.9);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        
+        .result-item:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 5px;
+            height: 5px;
+            background: rgba(0, 122, 255, 0.2);
+            opacity: 0;
+            border-radius: 100%;
+            transform: scale(1, 1) translate(-50%);
+            transform-origin: 50% 50%;
+        }
+        
+        .result-item:active:after {
+            animation: ripple 0.6s ease-out;
+        }
+        
+        @keyframes ripple {
+            0% {
+                transform: scale(0, 0);
+                opacity: 0.5;
+            }
+            100% {
+                transform: scale(20, 20);
+                opacity: 0;
+            }
+        }
+        
+        /* 改进标签效果 */
+        .result-tag {
+            background-color: rgba(0, 122, 255, 0.1);
+            color: #007AFF;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+            margin-right: 8px;
+            transition: all 0.2s ease;
+        }
+        
+        .result-item:hover .result-tag {
+            background-color: rgba(0, 122, 255, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <!-- 毛玻璃背景 -->
+    <div class="glass-bg"></div>
+    
+    <!-- iOS状态栏 -->
+    <div class="status-bar">
+        <div class="time font-semibold">9:41</div>
+        <div class="icons">
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-wifi ml-2"></i>
+            <i class="fas fa-battery-full ml-2"></i>
+        </div>
+    </div>
+    
+    <!-- 导航栏 -->
+    <div class="nav-bar">
+        <a href="search.html" class="text-blue-500">
+            <i class="fas fa-chevron-left"></i>
+            <span class="ml-1">返回</span>
+        </a>
+        <div class="search-box">
+            <i class="fas fa-search text-gray-500"></i>
+            <input type="text" value="甲醇" placeholder="搜索化学品...">
+            <i class="fas fa-times-circle text-gray-500"></i>
+        </div>
+    </div>
+    
+    <!-- 主内容区域 -->
+    <div class="content">
+        <div class="mb-4">
+            <p class="text-gray-600">找到 <span class="font-semibold">15</span> 条结果</p>
+        </div>
+        
+        <div class="result-item">
+            <div class="result-title">甲醇 (Methanol)</div>
+            <div class="result-subtitle">CAS号: 67-56-1</div>
+            <div class="flex items-center">
+                <span class="result-tag">易燃液体</span>
+                <span class="result-tag">毒性物质</span>
+            </div>
+            <div class="danger-level">
+                <div class="danger-level-dot danger-high"></div>
+                <span class="text-xs text-gray-600">高危险性</span>
+            </div>
+        </div>
+        
+        <div class="result-item">
+            <div class="result-title">甲醇溶液 (Methanol Solution)</div>
+            <div class="result-subtitle">CAS号: 67-56-1 (混合物)</div>
+            <div class="flex items-center">
+                <span class="result-tag">易燃液体</span>
+            </div>
+            <div class="danger-level">
+                <div class="danger-level-dot danger-medium"></div>
+                <span class="text-xs text-gray-600">中等危险性</span>
+            </div>
+        </div>
+        
+        <div class="result-item">
+            <div class="result-title">甲醇钠 (Sodium Methoxide)</div>
+            <div class="result-subtitle">CAS号: 124-41-4</div>
+            <div class="flex items-center">
+                <span class="result-tag">易燃固体</span>
+                <span class="result-tag">腐蚀性</span>
+            </div>
+            <div class="danger-level">
+                <div class="danger-level-dot danger-high"></div>
+                <span class="text-xs text-gray-600">高危险性</span>
+            </div>
+        </div>
+        
+        <div class="result-item">
+            <div class="result-title">甲醇钾 (Potassium Methoxide)</div>
+            <div class="result-subtitle">CAS号: 865-33-8</div>
+            <div class="flex items-center">
+                <span class="result-tag">易燃固体</span>
+                <span class="result-tag">腐蚀性</span>
+            </div>
+            <div class="danger-level">
+                <div class="danger-level-dot danger-high"></div>
+                <span class="text-xs text-gray-600">高危险性</span>
+            </div>
+        </div>
+        
+        <div class="result-item">
+            <div class="result-title">甲醇锂 (Lithium Methoxide)</div>
+            <div class="result-subtitle">CAS号: 865-34-9</div>
+            <div class="flex items-center">
+                <span class="result-tag">易燃固体</span>
+            </div>
+            <div class="danger-level">
+                <div class="danger-level-dot danger-medium"></div>
+                <span class="text-xs text-gray-600">中等危险性</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 底部导航栏 -->
+    <div class="tab-bar">
+        <a href="search.html" class="tab-item">
+            <i class="fas fa-search tab-icon"></i>
+            <span>搜索</span>
+        </a>
+        <a href="search_results.html" class="tab-item active">
+            <i class="fas fa-list-ul tab-icon"></i>
+            <span>列表</span>
+        </a>
+        <a href="favorites.html" class="tab-item">
+            <i class="fas fa-star tab-icon"></i>
+            <span>收藏</span>
+        </a>
+        <a href="settings.html" class="tab-item">
+            <i class="fas fa-cog tab-icon"></i>
+            <span>设置</span>
+        </a>
+    </div>
+    
+    <script>
+    // 搜索结果项点击事件
+    document.querySelectorAll('.result-item').forEach(item => {
+        item.addEventListener('click', function() {
+            window.location.href = 'chemical_detail.html';
+        });
+    });
+    </script>
+</body>
+</html>

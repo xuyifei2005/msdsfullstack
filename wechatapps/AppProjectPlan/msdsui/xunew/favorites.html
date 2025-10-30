@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSDS管理系统 - 我的收藏</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .miniprogram-container {
+            max-width: 375px;
+            margin: 0 auto;
+            background: #f7f7f7;
+            min-height: 100vh;
+            position: relative;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .status-bar {
+            height: 44px;
+            background: linear-gradient(135deg, #1aad19 0%, #2dc653 100%);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 16px;
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .navigation-bar {
+            height: 44px;
+            background: linear-gradient(135deg, #1aad19 0%, #2dc653 100%);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 16px;
+            color: white;
+            font-size: 17px;
+            font-weight: 600;
+        }
+        
+        .search-section {
+            background: linear-gradient(135deg, #1aad19 0%, #2dc653 100%);
+            padding: 16px;
+            border-radius: 0 0 20px 20px;
+        }
+        
+        .search-box {
+            background: white;
+            border-radius: 25px;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .search-box.focused {
+            box-shadow: 0 4px 16px rgba(26, 173, 25, 0.2);
+        }
+        
+        .stats-section {
+            background: white;
+            margin: 16px;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 16px 8px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            transition: all 0.2s ease;
+        }
+        
+        .stat-item:hover {
+            background: #e8f5e8;
+            transform: translateY(-2px);
+        }
+        
+        .stat-number {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1aad19;
+            margin-bottom: 4px;
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            color: #666;
+            font-weight: 500;
+        }
+        
+        .category-tabs {
+            display: flex;
+            background: white;
+            margin: 0 16px 16px;
+            border-radius: 12px;
+            padding: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            overflow-x: auto;
+        }
+        
+        .category-tab {
+            flex: 1;
+            padding: 12px 16px;
+            text-align: center;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #666;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+            min-width: 80px;
+        }
+        
+        .category-tab.active {
+            background: #1aad19;
+            color: white;
+            box-shadow: 0 2px 8px rgba(26, 173, 25, 0.3);
+        }
+        
+        .favorites-list {
+            margin: 0 16px;
+        }
+        
+        .favorite-card {
+            background: white;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: all 0.2s ease;
+            position: relative;
+        }
+        
+        .favorite-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+        }
+        
+        .favorite-card.selected {
+            border: 2px solid #1aad19;
+            background: #f8fff8;
+        }
+        
+        .card-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+        
+        .chemical-info {
+            flex: 1;
+        }
+        
+        .chemical-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 4px;
+        }
+        
+        .chemical-meta {
+            font-size: 12px;
+            color: #999;
+            margin-bottom: 8px;
+        }
+        
+        .chemical-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 12px;
+        }
+        
+        .tag {
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+        
+        .tag-danger {
+            background: #ffe6e6;
+            color: #ff4757;
+        }
+        
+        .tag-warning {
+            background: #fff3cd;
+            color: #856404;
+        }
+        
+        .tag-info {
+            background: #e8f5e8;
+            color: #1aad19;
+        }
+        
+        .card-actions {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .favorite-time {
+            font-size: 12px;
+            color: #999;
+        }
+        
+        .action-icons {
+            display: flex;
+            gap: 16px;
+        }
+        
+        .action-icon {
+            color: #999;
+            font-size: 16px;
+            transition: color 0.2s ease;
+            cursor: pointer;
+        }
+        
+        .action-icon:hover {
+            color: #1aad19;
+        }
+        
+        .action-icon.favorited {
+            color: #ff4757;
+        }
+        
+        .select-checkbox {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            background: white;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        
+        .select-checkbox.checked {
+            background: #1aad19;
+            border-color: #1aad19;
+            color: white;
+        }
+        
+        .edit-mode .select-checkbox {
+            display: flex;
+        }
+        
+        .edit-mode .action-icons {
+            display: none;
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #999;
+        }
+        
+        .empty-state i {
+            font-size: 48px;
+            margin-bottom: 16px;
+            color: #ddd;
+        }
+        
+        .empty-state h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #666;
+        }
+        
+        .empty-state p {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        
+        .empty-action-btn {
+            background: #1aad19;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .bottom-toolbar {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 375px;
+            background: white;
+            border-top: 1px solid #f0f0f0;
+            padding: 16px;
+            display: none;
+            box-shadow: 0 -4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .toolbar-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .selected-count {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .toolbar-actions {
+            display: flex;
+            gap: 12px;
+        }
+        
+        .toolbar-btn {
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            border: none;
+            transition: all 0.2s ease;
+        }
+        
+        .toolbar-btn.secondary {
+            background: #f5f5f5;
+            color: #666;
+        }
+        
+        .toolbar-btn.danger {
+            background: #ff4757;
+            color: white;
+        }
+        
+        .toolbar-btn.primary {
+            background: #1aad19;
+            color: white;
+        }
+        
+        .floating-add {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: #1aad19;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            box-shadow: 0 4px 12px rgba(26, 173, 25, 0.3);
+            transition: all 0.2s ease;
+        }
+        
+        .floating-add:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(26, 173, 25, 0.4);
+        }
+        
+        .sort-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .sort-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .sort-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            padding: 8px 0;
+            min-width: 120px;
+            z-index: 1000;
+            display: none;
+        }
+        
+        .sort-option {
+            padding: 12px 16px;
+            font-size: 14px;
+            color: #333;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+        
+        .sort-option:hover {
+            background: #f5f5f5;
+        }
+        
+        .sort-option.active {
+            color: #1aad19;
+            background: #f8fff8;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="miniprogram-container">
+        <!-- 状态栏 -->
+        <div class="status-bar">
+            <span>9:41</span>
+            <span>我的收藏</span>
+            <div class="flex items-center space-x-1">
+                <i class="fas fa-signal text-xs"></i>
+                <i class="fas fa-wifi text-xs"></i>
+                <i class="fas fa-battery-three-quarters text-xs"></i>
+            </div>
+        </div>
+        
+        <!-- 导航栏 -->
+        <div class="navigation-bar">
+            <div class="flex items-center">
+                <i class="fas fa-arrow-left mr-3 cursor-pointer"></i>
+                <span>我的收藏</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="sort-dropdown">
+                    <button class="sort-btn" id="sortBtn">
+                        <span>时间</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="sort-menu" id="sortMenu">
+                        <div class="sort-option active" data-sort="time">收藏时间</div>
+                        <div class="sort-option" data-sort="name">名称排序</div>
+                        <div class="sort-option" data-sort="category">分类排序</div>
+                    </div>
+                </div>
+                <i class="fas fa-edit cursor-pointer" id="editBtn"></i>
+            </div>
+        </div>
+        
+        <!-- 搜索区域 -->
+        <div class="search-section">
+            <div class="search-box" id="searchBox">
+                <i class="fas fa-search text-gray-400 mr-3"></i>
+                <input type="text" placeholder="搜索收藏的化学品..." class="flex-1 outline-none text-gray-700" id="searchInput">
+                <i class="fas fa-times text-gray-400 ml-3 cursor-pointer" id="clearBtn" style="display: none;"></i>
+            </div>
+        </div>
+        
+        <!-- 统计信息 -->
+        <div class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">24</div>
+                    <div class="stat-label">总收藏</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">本周新增</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">分类数</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 分类标签 -->
+        <div class="category-tabs">
+            <div class="category-tab active" data-category="all">全部</div>
+            <div class="category-tab" data-category="organic">有机物</div>
+            <div class="category-tab" data-category="inorganic">无机物</div>
+            <div class="category-tab" data-category="dangerous">危险品</div>
+            <div class="category-tab" data-category="common">常用</div>
+        </div>
+        
+        <!-- 收藏列表 -->
+        <div class="favorites-list" id="favoritesList">
+            <div class="favorite-card" data-category="organic">
+                <div class="select-checkbox">
+                    <i class="fas fa-check" style="display: none;"></i>
+                </div>
+                <div class="card-header">
+                    <div class="chemical-info">
+                        <div class="chemical-name">乙醇 (Ethanol)</div>
+                        <div class="chemical-meta">CAS: 64-17-5 • 分子式: C₂H₆O</div>
+                        <div class="chemical-tags">
+                            <span class="tag tag-warning">易燃</span>
+                            <span class="tag tag-info">低毒</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <div class="favorite-time">收藏于 2024-01-15</div>
+                    <div class="action-icons">
+                        <i class="fas fa-heart action-icon favorited" data-action="unfavorite"></i>
+                        <i class="fas fa-share action-icon" data-action="share"></i>
+                        <i class="fas fa-eye action-icon" data-action="view"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="favorite-card" data-category="organic">
+                <div class="select-checkbox">
+                    <i class="fas fa-check" style="display: none;"></i>
+                </div>
+                <div class="card-header">
+                    <div class="chemical-info">
+                        <div class="chemical-name">丙酮 (Acetone)</div>
+                        <div class="chemical-meta">CAS: 67-64-1 • 分子式: C₃H₆O</div>
+                        <div class="chemical-tags">
+                            <span class="tag tag-warning">易燃</span>
+                            <span class="tag tag-warning">易挥发</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <div class="favorite-time">收藏于 2024-01-12</div>
+                    <div class="action-icons">
+                        <i class="fas fa-heart action-icon favorited" data-action="unfavorite"></i>
+                        <i class="fas fa-share action-icon" data-action="share"></i>
+                        <i class="fas fa-eye action-icon" data-action="view"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="favorite-card" data-category="inorganic">
+                <div class="select-checkbox">
+                    <i class="fas fa-check" style="display: none;"></i>
+                </div>
+                <div class="card-header">
+                    <div class="chemical-info">
+                        <div class="chemical-name">硫酸 (Sulfuric Acid)</div>
+                        <div class="chemical-meta">CAS: 7664-93-9 • 分子式: H₂SO₄</div>
+                        <div class="chemical-tags">
+                            <span class="tag tag-danger">强腐蚀性</span>
+                            <span class="tag tag-danger">高危险</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <div class="favorite-time">收藏于 2024-01-10</div>
+                    <div class="action-icons">
+                        <i class="fas fa-heart action-icon favorited" data-action="unfavorite"></i>
+                        <i class="fas fa-share action-icon" data-action="share"></i>
+                        <i class="fas fa-eye action-icon" data-action="view"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="favorite-card" data-category="organic">
+                <div class="select-checkbox">
+                    <i class="fas fa-check" style="display: none;"></i>
+                </div>
+                <div class="card-header">
+                    <div class="chemical-info">
+                        <div class="chemical-name">甲醇 (Methanol)</div>
+                        <div class="chemical-meta">CAS: 67-56-1 • 分子式: CH₄O</div>
+                        <div class="chemical-tags">
+                            <span class="tag tag-danger">有毒</span>
+                            <span class="tag tag-warning">易燃</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <div class="favorite-time">收藏于 2024-01-08</div>
+                    <div class="action-icons">
+                        <i class="fas fa-heart action-icon favorited" data-action="unfavorite"></i>
+                        <i class="fas fa-share action-icon" data-action="share"></i>
+                        <i class="fas fa-eye action-icon" data-action="view"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="favorite-card" data-category="inorganic">
+                <div class="select-checkbox">
+                    <i class="fas fa-check" style="display: none;"></i>
+                </div>
+                <div class="card-header">
+                    <div class="chemical-info">
+                        <div class="chemical-name">氢氧化钠 (Sodium Hydroxide)</div>
+                        <div class="chemical-meta">CAS: 1310-73-2 • 分子式: NaOH</div>
+                        <div class="chemical-tags">
+                            <span class="tag tag-danger">强碱性</span>
+                            <span class="tag tag-warning">腐蚀性</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <div class="favorite-time">收藏于 2024-01-05</div>
+                    <div class="action-icons">
+                        <i class="fas fa-heart action-icon favorited" data-action="unfavorite"></i>
+                        <i class="fas fa-share action-icon" data-action="share"></i>
+                        <i class="fas fa-eye action-icon" data-action="view"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 空状态 -->
+        <div class="empty-state" id="emptyState" style="display: none;">
+            <i class="fas fa-heart"></i>
+            <h3>暂无收藏</h3>
+            <p>您还没有收藏任何化学品<br>快去搜索并收藏您需要的MSDS吧</p>
+            <button class="empty-action-btn">去搜索</button>
+        </div>
+        
+        <!-- 底部工具栏 -->
+        <div class="bottom-toolbar" id="bottomToolbar">
+            <div class="toolbar-content">
+                <div class="selected-count">已选择 <span id="selectedCount">0</span> 项</div>
+                <div class="toolbar-actions">
+                    <button class="toolbar-btn secondary" id="selectAllBtn">全选</button>
+                    <button class="toolbar-btn primary" id="exportBtn">导出</button>
+                    <button class="toolbar-btn danger" id="deleteBtn">删除</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 浮动添加按钮 -->
+        <button class="floating-add" id="addBtn">
+            <i class="fas fa-plus"></i>
+        </button>
+    </div>
+    
+    <script>
+        // 全局变量
+        let isEditMode = false;
+        let selectedItems = new Set();
+        let currentCategory = 'all';
+        let currentSort = 'time';
+        
+        // DOM 元素
+        const editBtn = document.getElementById('editBtn');
+        const bottomToolbar = document.getElementById('bottomToolbar');
+        const favoritesList = document.getElementById('favoritesList');
+        const emptyState = document.getElementById('emptyState');
+        const searchInput = document.getElementById('searchInput');
+        const searchBox = document.getElementById('searchBox');
+        const clearBtn = document.getElementById('clearBtn');
+        const sortBtn = document.getElementById('sortBtn');
+        const sortMenu = document.getElementById('sortMenu');
+        
+        // 编辑模式切换
+        editBtn.addEventListener('click', function() {
+            isEditMode = !isEditMode;
+            
+            if (isEditMode) {
+                favoritesList.classList.add('edit-mode');
+                bottomToolbar.style.display = 'block';
+                this.innerHTML = '<i class="fas fa-times"></i>';
+                document.body.style.paddingBottom = '80px';
+            } else {
+                favoritesList.classList.remove('edit-mode');
+                bottomToolbar.style.display = 'none';
+                this.innerHTML = '<i class="fas fa-edit"></i>';
+                document.body.style.paddingBottom = '0';
+                selectedItems.clear();
+                updateSelectedCount();
+                updateSelectAllButton();
+            }
+        });
+        
+        // 搜索功能
+        searchInput.addEventListener('focus', function() {
+            searchBox.classList.add('focused');
+        });
+        
+        searchInput.addEventListener('blur', function() {
+            searchBox.classList.remove('focused');
+        });
+        
+        searchInput.addEventListener('input', function() {
+            const value = this.value.trim();
+            if (value) {
+                clearBtn.style.display = 'block';
+                filterFavorites();
+            } else {
+                clearBtn.style.display = 'none';
+                filterFavorites();
+            }
+        });
+        
+        clearBtn.addEventListener('click', function() {
+            searchInput.value = '';
+            this.style.display = 'none';
+            filterFavorites();
+        });
+        
+        // 分类筛选
+        document.querySelectorAll('.category-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                currentCategory = this.dataset.category;
+                filterFavorites();
+            });
+        });
+        
+        // 排序功能
+        sortBtn.addEventListener('click', function() {
+            sortMenu.style.display = sortMenu.style.display === 'block' ? 'none' : 'block';
+        });
+        
+        document.querySelectorAll('.sort-option').forEach(option => {
+            option.addEventListener('click', function() {
+                document.querySelectorAll('.sort-option').forEach(o => o.classList.remove('active'));
+                this.classList.add('active');
+                currentSort = this.dataset.sort;
+                sortBtn.querySelector('span').textContent = this.textContent;
+                sortMenu.style.display = 'none';
+                sortFavorites();
+            });
+        });
+        
+        // 点击其他地方关闭排序菜单
+        document.addEventListener('click', function(e) {
+            if (!sortBtn.contains(e.target) && !sortMenu.contains(e.target)) {
+                sortMenu.style.display = 'none';
+            }
+        });
+        
+        // 选择框功能
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('select-checkbox') || e.target.closest('.select-checkbox')) {
+                const checkbox = e.target.classList.contains('select-checkbox') ? e.target : e.target.closest('.select-checkbox');
+                const card = checkbox.closest('.favorite-card');
+                const cardId = Array.from(favoritesList.children).indexOf(card);
+                
+                if (selectedItems.has(cardId)) {
+                    selectedItems.delete(cardId);
+                    checkbox.classList.remove('checked');
+                    checkbox.querySelector('i').style.display = 'none';
+                    card.classList.remove('selected');
+                } else {
+                    selectedItems.add(cardId);
+                    checkbox.classList.add('checked');
+                    checkbox.querySelector('i').style.display = 'block';
+                    card.classList.add('selected');
+                }
+                
+                updateSelectedCount();
+                updateSelectAllButton();
+            }
+        });
+        
+        // 工具栏按钮功能
+        document.getElementById('selectAllBtn').addEventListener('click', function() {
+            const visibleCards = Array.from(favoritesList.children).filter(card => 
+                card.style.display !== 'none'
+            );
+            
+            if (selectedItems.size === visibleCards.length) {
+                // 取消全选
+                selectedItems.clear();
+                visibleCards.forEach(card => {
+                    const checkbox = card.querySelector('.select-checkbox');
+                    checkbox.classList.remove('checked');
+                    checkbox.querySelector('i').style.display = 'none';
+                    card.classList.remove('selected');
+                });
+            } else {
+                // 全选
+                visibleCards.forEach((card, index) => {
+                    const cardId = Array.from(favoritesList.children).indexOf(card);
+                    selectedItems.add(cardId);
+                    const checkbox = card.querySelector('.select-checkbox');
+                    checkbox.classList.add('checked');
+                    checkbox.querySelector('i').style.display = 'block';
+                    card.classList.add('selected');
+                });
+            }
+            
+            updateSelectedCount();
+            updateSelectAllButton();
+        });
+        
+        document.getElementById('exportBtn').addEventListener('click', function() {
+            if (selectedItems.size === 0) return;
+            
+            console.log('导出选中的收藏项:', Array.from(selectedItems));
+            
+            // 模拟导出过程
+            this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 导出中...';
+            this.disabled = true;
+            
+            setTimeout(() => {
+                this.innerHTML = '导出';
+                this.disabled = false;
+                alert('导出成功！');
+            }, 2000);
+        });
+        
+        document.getElementById('deleteBtn').addEventListener('click', function() {
+            if (selectedItems.size === 0) return;
+            
+            if (confirm(`确定要删除选中的 ${selectedItems.size} 个收藏项吗？`)) {
+                // 删除选中的卡片
+                Array.from(selectedItems).sort((a, b) => b - a).forEach(index => {
+                    favoritesList.children[index].remove();
+                });
+                
+                selectedItems.clear();
+                updateSelectedCount();
+                updateSelectAllButton();
+                updateStats();
+                
+                // 检查是否为空
+                if (favoritesList.children.length === 0) {
+                    showEmptyState();
+                }
+            }
+        });
+        
+        // 卡片操作
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('action-icon')) {
+                const action = e.target.dataset.action;
+                const card = e.target.closest('.favorite-card');
+                
+                if (action === 'unfavorite') {
+                    if (confirm('确定要取消收藏吗？')) {
+                        card.remove();
+                        updateStats();
+                        
+                        if (favoritesList.children.length === 0) {
+                            showEmptyState();
+                        }
+                    }
+                } else if (action === 'share') {
+                    console.log('分享化学品');
+                } else if (action === 'view') {
+                    console.log('查看MSDS详情');
+                }
+                
+                // 添加点击效果
+                e.target.style.transform = 'scale(1.2)';
+                setTimeout(() => {
+                    e.target.style.transform = 'scale(1)';
+                }, 150);
+            }
+        });
+        
+        // 卡片点击（非编辑模式）
+        document.addEventListener('click', function(e) {
+            if (!isEditMode && e.target.closest('.favorite-card') && 
+                !e.target.classList.contains('action-icon') && 
+                !e.target.closest('.action-icons')) {
+                const card = e.target.closest('.favorite-card');
+                const cardIndex = Array.from(favoritesList.children).indexOf(card);
+                
+                // 模拟MSDS ID映射
+                const msdsIds = ['ethanol', 'acetone', 'sulfuric-acid', 'methanol', 'sodium-hydroxide'];
+                if (msdsIds[cardIndex]) {
+                    navigateTo(`msds-detail.html?id=${msdsIds[cardIndex]}&source=favorites`);
+                }
+            }
+        });
+        
+        // 浮动添加按钮
+        document.getElementById('addBtn').addEventListener('click', function() {
+            navigateTo('search.html');
+        });
+        
+        // 空状态按钮
+        document.querySelector('.empty-action-btn')?.addEventListener('click', function() {
+            navigateTo('search.html');
+        });
+        
+        // 页面跳转函数
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+
+        // 返回按钮
+        document.querySelector('.fa-arrow-left').addEventListener('click', function() {
+            navigateTo('home.html');
+        });
+        
+        // 辅助函数
+        function updateSelectedCount() {
+            document.getElementById('selectedCount').textContent = selectedItems.size;
+        }
+        
+        function updateSelectAllButton() {
+            const selectAllBtn = document.getElementById('selectAllBtn');
+            const visibleCards = Array.from(favoritesList.children).filter(card => 
+                card.style.display !== 'none'
+            );
+            
+            if (selectedItems.size === visibleCards.length && visibleCards.length > 0) {
+                selectAllBtn.textContent = '取消全选';
+            } else {
+                selectAllBtn.textContent = '全选';
+            }
+        }
+        
+        function filterFavorites() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const cards = favoritesList.children;
+            let visibleCount = 0;
+            
+            Array.from(cards).forEach(card => {
+                const name = card.querySelector('.chemical-name').textContent.toLowerCase();
+                const meta = card.querySelector('.chemical-meta').textContent.toLowerCase();
+                const category = card.dataset.category;
+                
+                const matchesSearch = !searchTerm || name.includes(searchTerm) || meta.includes(searchTerm);
+                const matchesCategory = currentCategory === 'all' || category === currentCategory;
+                
+                if (matchesSearch && matchesCategory) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            if (visibleCount === 0) {
+                showEmptyState();
+            } else {
+                hideEmptyState();
+            }
+        }
+        
+        function sortFavorites() {
+            const cards = Array.from(favoritesList.children);
+            
+            cards.sort((a, b) => {
+                if (currentSort === 'name') {
+                    const nameA = a.querySelector('.chemical-name').textContent;
+                    const nameB = b.querySelector('.chemical-name').textContent;
+                    return nameA.localeCompare(nameB);
+                } else if (currentSort === 'time') {
+                    const timeA = a.querySelector('.favorite-time').textContent;
+                    const timeB = b.querySelector('.favorite-time').textContent;
+                    return timeB.localeCompare(timeA);
+                } else if (currentSort === 'category') {
+                    const catA = a.dataset.category;
+                    const catB = b.dataset.category;
+                    return catA.localeCompare(catB);
+                }
+                return 0;
+            });
+            
+            cards.forEach(card => favoritesList.appendChild(card));
+        }
+        
+        function showEmptyState() {
+            favoritesList.style.display = 'none';
+            emptyState.style.display = 'block';
+        }
+        
+        function hideEmptyState() {
+            favoritesList.style.display = 'block';
+            emptyState.style.display = 'none';
+        }
+        
+        function updateStats() {
+            const totalCount = favoritesList.children.length;
+            document.querySelector('.stat-number').textContent = totalCount;
+        }
+        
+        // 初始化
+        hideEmptyState();
+    </script>
+</body>
+</html>

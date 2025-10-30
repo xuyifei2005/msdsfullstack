@@ -1,0 +1,371 @@
+####################################
+# 项目文档和备份（保留在版本控制中）
+####################################
+aboutproject/ 
+
+
+####################################
+# Java / Maven / Spring Boot
+####################################
+# Maven编译产物
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Java编译文件
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+
+# Maven Wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Spring Boot
+spring-boot-devtools.properties
+
+####################################
+# Node.js / React / 前端
+####################################
+# 依赖目录
+node_modules/
+jspm_packages/
+
+# 构建产物
+dist/
+build/
+.next/
+.nuxt/
+.umi/
+
+# 生产环境构建
+msdsPC/ruoyi-MsdsPc-react/react-ui/dist/
+msdsPC/ruoyi-MsdsPc-react/react-ui/build/
+
+# 包管理器锁文件（可选择性保留）
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# 缓存目录
+.cache/
+.npm/
+.yarn/
+.pnp/
+.pnp.js
+.eslintcache
+.stylelintcache
+
+# 测试覆盖率
+coverage/
+*.lcov
+.nyc_output
+
+####################################
+# UniApp / 微信小程序
+####################################
+# UniApp编译产物
+wechatapps/RuoYi-Msds-App/unpackage/
+wechatapps/RuoYi-Msds-App/node_modules/
+
+# 微信开发者工具
+wechatapps/**/project.private.config.json
+
+####################################
+# Docker相关
+####################################
+# Docker备份和镜像文件
+msdsdocker/msds_backup_*/
+msdsdocker/*.tar
+msdsdocker/*.tar.gz
+msdsdocker/*.7z
+msdsdocker/*.zip
+
+# Docker配置备份
+msdsdocker/*.yml.bak
+msdsdocker/*.yaml.bak
+
+# Docker数据目录
+msdsdocker/msdsfullstatckcompose/msdsdata/
+msdsdocker/mysql/data/
+msdsdocker/nginx/logs/
+msdsdocker/redis/data/
+
+# Docker容器日志
+msdsdocker/*.txt
+msdsdocker/backend_logs*.txt
+msdsdocker/frontend_logs*.txt
+
+####################################
+# 数据库相关
+####################################
+# 数据库备份文件
+*.sql.bak
+*.sql.gz
+*.dump
+*.sqlite
+*.db
+
+# 数据库数据目录（保留初始化脚本）
+mysql/data/
+postgresql/data/
+redis/data/
+
+####################################
+# Python相关（PDF2XML等）
+####################################
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 虚拟环境
+venv/
+env/
+ENV/
+.venv/
+
+# PDF2XML输出和临时文件
+pdf2xml/output/
+pdf2xml/logs/
+pdf2xml/test_output/
+pdf2xml/temp/
+pdf2xml/*.log
+pdf2xml/*.txt
+pdf2xml/*.json
+pdf2xml/*.xml
+pdf2xml/*.pdf
+
+####################################
+# 日志文件
+####################################
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
+
+####################################
+# 临时文件和缓存
+####################################
+temp/
+tmp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+####################################
+# 上传和输出文件
+####################################
+# 用户上传的文件（需要根据实际情况调整）
+output/
+uploads/
+templates/*.xlsx
+templates/*.xls
+templates/*.docx
+templates/*.pdf
+
+# 下载的模板测试文件
+msdsdocker/*.xlsx
+msdsdocker/*.xls
+msdsdocker/*_template*.xlsx
+
+####################################
+# 环境配置文件
+####################################
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+*.env
+
+# 但保留示例配置
+!.env.example
+!env.prod.example
+
+####################################
+# IDE和编辑器
+####################################
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains系列
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+####################################
+# 操作系统文件
+####################################
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+
+####################################
+# 压缩包和二进制文件
+####################################
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.iso
+*.dmg
+*.gz
+*.bz2
+*.xz
+
+####################################
+# 备份文件
+####################################
+*.bak
+*.backup
+*.old
+*.orig
+*.save
+
+####################################
+# 项目工具脚本（临时）
+####################################
+cleanup_git_tracked_files.ps1
+
+####################################
+# 证书和密钥（安全）
+####################################
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+
+# 但保留示例证书
+!msdsdocker/nginx/*.pem
+!msdsdocker/nginx/*.key
+
+####################################
+# 其他大文件
+####################################
+# 大型测试数据
+**/test_data/*.csv
+**/test_data/*.xlsx
+**/test_data/*.json
+
+# 导出的报表
+**/exports/
+**/reports/*.pdf
+**/reports/*.xlsx
+
+####################################
+# 项目特定大文件忽略
+####################################
+# PDF文档和测试文件（保留在aboutproject但不提交）
+aboutproject/doc/*.pdf
+aboutproject/ProgressPlan/**/*.png
+aboutproject/ProgressPlan/**/*.jpg
+aboutproject/ProgressPlan/**/*.jpeg
+aboutproject/ProgressPlan/**/*.gif
+aboutproject/ProgressPlan/**/*.bmp
+
+# Docker镜像和备份文件
+aboutproject/dockerbackupok/
+aboutproject/**/msds_backup_*/
+aboutproject/**/*.tar
+aboutproject/**/*.tar.gz
+
+# Node.js大文件
+**/node_modules/**/*.node
+**/node_modules/**/tsserver.js
+**/node_modules/**/tsserverlibrary.js
+**/node_modules/**/typescriptServices.js
+**/node_modules/**/typescript.js
+
+# 数据库文件
+**/mysql/*.ibd
+**/mysql/undo_*
+**/mysql/ibdata*
+msdsdocker/msdsfullstatckcompose/msdsdata/
+
+# 大型二进制文件
+*.exe
+*.dll
+*.so
+*.dylib
+
+# 测试和临时文件
+test_msds_files/
+**/temp/
+**/tmp/
+
+####################################
+# 微信小程序项目计划（大文件较多）
+####################################
+wechatapps\AppProjectPlan
+
+####################################
+# 项目文档目录 - 完全忽略
+####################################
+aboutproject/
+
+####################################
+# PDF转换工具目录 - 完全忽略
+####################################
+pdf2xml/

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.MsdsComponentMapper">
+    
+    <resultMap type="MsdsComponent" id="MsdsComponentResult">
+        <result property="id"    column="id"    />
+        <result property="msdsId"    column="msds_id"    />
+        <result property="componentName"    column="component_name"    />
+        <result property="componentEnglishName"    column="component_english_name"    />
+        <result property="componentContent"    column="component_content"    />
+        <result property="contentMin"    column="content_min"    />
+        <result property="contentMax"    column="content_max"    />
+        <result property="casNumber"    column="cas_number"    />
+        <result property="ecNumber"    column="ec_number"    />
+        <result property="molecularFormula"    column="molecular_formula"    />
+        <result property="molecularWeight"    column="molecular_weight"    />
+        <result property="isHazardous"    column="is_hazardous"    />
+        <result property="hazardLevel"    column="hazard_level"    />
+        <result property="componentFunction"    column="component_function"    />
+        <result property="createBy"    column="create_by"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateBy"    column="update_by"    />
+        <result property="updateTime"    column="update_time"    />
+    </resultMap>
+
+    <sql id="selectMsdsComponentVo">
+        select id, msds_id, component_name, component_english_name, component_content, content_min, content_max, cas_number, ec_number, molecular_formula, molecular_weight, is_hazardous, hazard_level, component_function, create_by, create_time, update_by, update_time from msds_component
+    </sql>
+
+    <select id="selectMsdsComponentList" parameterType="MsdsComponent" resultMap="MsdsComponentResult">
+        <include refid="selectMsdsComponentVo"/>
+        <where>  
+            <if test="msdsId != null "> and msds_id = #{msdsId}</if>
+            <if test="componentName != null  and componentName != ''"> and component_name like concat('%', #{componentName}, '%')</if>
+            <if test="componentEnglishName != null  and componentEnglishName != ''"> and component_english_name like concat('%', #{componentEnglishName}, '%')</if>
+            <if test="casNumber != null  and casNumber != ''"> and cas_number like concat('%', #{casNumber}, '%')</if>
+            <if test="isHazardous != null "> and is_hazardous = #{isHazardous}</if>
+            <if test="hazardLevel != null  and hazardLevel != ''"> and hazard_level = #{hazardLevel}</if>
+        </where>
+        order by id desc
+    </select>
+    
+    <select id="selectMsdsComponentById" parameterType="Long" resultMap="MsdsComponentResult">
+        <include refid="selectMsdsComponentVo"/>
+        where id = #{id}
+    </select>
+
+    <select id="selectMsdsComponentByMsdsId" parameterType="Long" resultMap="MsdsComponentResult">
+        <include refid="selectMsdsComponentVo"/>
+        where msds_id = #{msdsId}
+        order by id asc
+    </select>
+        
+    <insert id="insertMsdsComponent" parameterType="MsdsComponent" useGeneratedKeys="true" keyProperty="id">
+        insert into msds_component
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="msdsId != null">msds_id,</if>
+            <if test="componentName != null and componentName != ''">component_name,</if>
+            <if test="componentEnglishName != null and componentEnglishName != ''">component_english_name,</if>
+            <if test="componentContent != null and componentContent != ''">component_content,</if>
+            <if test="contentMin != null">content_min,</if>
+            <if test="contentMax != null">content_max,</if>
+            <if test="casNumber != null and casNumber != ''">cas_number,</if>
+            <if test="ecNumber != null and ecNumber != ''">ec_number,</if>
+            <if test="molecularFormula != null and molecularFormula != ''">molecular_formula,</if>
+            <if test="molecularWeight != null">molecular_weight,</if>
+            <if test="isHazardous != null">is_hazardous,</if>
+            <if test="hazardLevel != null and hazardLevel != ''">hazard_level,</if>
+            <if test="componentFunction != null and componentFunction != ''">component_function,</if>
+            <if test="createBy != null">create_by,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateBy != null">update_by,</if>
+            <if test="updateTime != null">update_time,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="msdsId != null">#{msdsId},</if>
+            <if test="componentName != null and componentName != ''">#{componentName},</if>
+            <if test="componentEnglishName != null and componentEnglishName != ''">#{componentEnglishName},</if>
+            <if test="componentContent != null and componentContent != ''">#{componentContent},</if>
+            <if test="contentMin != null">#{contentMin},</if>
+            <if test="contentMax != null">#{contentMax},</if>
+            <if test="casNumber != null and casNumber != ''">#{casNumber},</if>
+            <if test="ecNumber != null and ecNumber != ''">#{ecNumber},</if>
+            <if test="molecularFormula != null and molecularFormula != ''">#{molecularFormula},</if>
+            <if test="molecularWeight != null">#{molecularWeight},</if>
+            <if test="isHazardous != null">#{isHazardous},</if>
+            <if test="hazardLevel != null and hazardLevel != ''">#{hazardLevel},</if>
+            <if test="componentFunction != null and componentFunction != ''">#{componentFunction},</if>
+            <if test="createBy != null">#{createBy},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateBy != null">#{updateBy},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+         </trim>
+    </insert>
+
+    <update id="updateMsdsComponent" parameterType="MsdsComponent">
+        update msds_component
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="msdsId != null">msds_id = #{msdsId},</if>
+            <if test="componentName != null and componentName != ''">component_name = #{componentName},</if>
+            <if test="componentEnglishName != null and componentEnglishName != ''">component_english_name = #{componentEnglishName},</if>
+            <if test="componentContent != null and componentContent != ''">component_content = #{componentContent},</if>
+            <if test="contentMin != null">content_min = #{contentMin},</if>
+            <if test="contentMax != null">content_max = #{contentMax},</if>
+            <if test="casNumber != null and casNumber != ''">cas_number = #{casNumber},</if>
+            <if test="ecNumber != null and ecNumber != ''">ec_number = #{ecNumber},</if>
+            <if test="molecularFormula != null and molecularFormula != ''">molecular_formula = #{molecularFormula},</if>
+            <if test="molecularWeight != null">molecular_weight = #{molecularWeight},</if>
+            <if test="isHazardous != null">is_hazardous = #{isHazardous},</if>
+            <if test="hazardLevel != null and hazardLevel != ''">hazard_level = #{hazardLevel},</if>
+            <if test="componentFunction != null and componentFunction != ''">component_function = #{componentFunction},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteMsdsComponentById" parameterType="Long">
+        delete from msds_component where id = #{id}
+    </delete>
+
+    <delete id="deleteMsdsComponentByIds" parameterType="String">
+        delete from msds_component where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <delete id="deleteMsdsComponentByMsdsId" parameterType="Long">
+        delete from msds_component where msds_id = #{msdsId}
+    </delete>
+</mapper>

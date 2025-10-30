@@ -1,0 +1,69 @@
+# MySQL Performance Optimization Configuration
+# 适用于MSDS实验室管理系统
+
+[mysqld]
+# 连接优化
+max_connections = 200
+max_connect_errors = 100000
+wait_timeout = 28800
+interactive_timeout = 28800
+
+# 缓冲区优化
+innodb_buffer_pool_size = 512M
+innodb_log_file_size = 128M
+innodb_log_buffer_size = 16M
+innodb_flush_log_at_trx_commit = 2
+
+# 查询缓存
+query_cache_type = 1
+query_cache_size = 64M
+query_cache_limit = 2M
+
+# 临时表优化
+tmp_table_size = 64M
+max_heap_table_size = 64M
+
+# 排序优化
+sort_buffer_size = 2M
+read_buffer_size = 1M
+read_rnd_buffer_size = 2M
+
+# 索引优化
+key_buffer_size = 32M
+
+# 字符集设置
+character-set-server = utf8mb4
+collation-server = utf8mb4_unicode_ci
+
+# 时区设置
+default-time-zone = '+08:00'
+
+# 慢查询日志
+slow_query_log = 1
+slow_query_log_file = /var/log/mysql/slow.log
+long_query_time = 2
+
+# 二进制日志优化
+binlog_cache_size = 1M
+max_binlog_cache_size = 2M
+max_binlog_size = 100M
+
+# 表缓存
+table_open_cache = 2000
+table_definition_cache = 1400
+
+# 线程缓存
+thread_cache_size = 50
+
+# 网络优化
+max_allowed_packet = 64M
+net_buffer_length = 32K
+
+# InnoDB优化
+innodb_file_per_table = 1
+innodb_flush_method = O_DIRECT
+innodb_lock_wait_timeout = 50
+innodb_rollback_on_timeout = 1
+innodb_thread_concurrency = 0
+innodb_read_io_threads = 4
+innodb_write_io_threads = 4

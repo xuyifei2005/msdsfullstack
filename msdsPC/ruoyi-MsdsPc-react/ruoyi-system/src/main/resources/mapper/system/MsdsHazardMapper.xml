@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.MsdsHazardMapper">
+    
+    <resultMap type="MsdsHazard" id="MsdsHazardResult">
+        <result property="id"    column="id"    />
+        <result property="msdsId"    column="msds_id"    />
+        <result property="emergencyOverview"    column="emergency_overview"    />
+        <result property="physicalState"    column="physical_state"    />
+        <result property="odor"    column="odor"    />
+        <result property="color"    column="color"    />
+        <result property="warningWord"    column="warning_word"    />
+        <result property="hazardCategory"    column="hazard_category"    />
+        <result property="exposureRoutes"    column="exposure_routes"    />
+        <result property="healthHazards"    column="health_hazards"    />
+        <result property="environmentalHazards"    column="environmental_hazards"    />
+        <result property="fireExplosionHazards"    column="fire_explosion_hazards"    />
+        <result property="hazardDescription"    column="hazard_description"    />
+        <result property="preventionMeasures"    column="prevention_measures"    />
+        <result property="responseMeasures"    column="response_measures"    />
+        <result property="storageMeasures"    column="storage_measures"    />
+        <result property="disposalMeasures"    column="disposal_measures"    />
+        <result property="createBy"    column="create_by"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateBy"    column="update_by"    />
+        <result property="updateTime"    column="update_time"    />
+    </resultMap>
+
+    <sql id="selectMsdsHazardVo">
+        select id, msds_id, emergency_overview, physical_state, odor, color, warning_word, hazard_category, exposure_routes, health_hazards, environmental_hazards, fire_explosion_hazards, hazard_description, prevention_measures, response_measures, storage_measures, disposal_measures, create_by, create_time, update_by, update_time from msds_hazard
+    </sql>
+
+    <select id="selectMsdsHazardList" parameterType="MsdsHazard" resultMap="MsdsHazardResult">
+        <include refid="selectMsdsHazardVo"/>
+        <where>  
+            <if test="msdsId != null "> and msds_id = #{msdsId}</if>
+            <if test="physicalState != null  and physicalState != ''"> and physical_state like concat('%', #{physicalState}, '%')</if>
+            <if test="odor != null  and odor != ''"> and odor like concat('%', #{odor}, '%')</if>
+            <if test="color != null  and color != ''"> and color like concat('%', #{color}, '%')</if>
+            <if test="warningWord != null  and warningWord != ''"> and warning_word like concat('%', #{warningWord}, '%')</if>
+            <if test="hazardCategory != null  and hazardCategory != ''"> and hazard_category like concat('%', #{hazardCategory}, '%')</if>
+            <if test="exposureRoutes != null  and exposureRoutes != ''"> and exposure_routes like concat('%', #{exposureRoutes}, '%')</if>
+            <if test="healthHazards != null  and healthHazards != ''"> and health_hazards like concat('%', #{healthHazards}, '%')</if>
+            <if test="environmentalHazards != null  and environmentalHazards != ''"> and environmental_hazards like concat('%', #{environmentalHazards}, '%')</if>
+            <if test="fireExplosionHazards != null  and fireExplosionHazards != ''"> and fire_explosion_hazards like concat('%', #{fireExplosionHazards}, '%')</if>
+        </where>
+    </select>
+    
+    <select id="selectMsdsHazardById" parameterType="Long" resultMap="MsdsHazardResult">
+        <include refid="selectMsdsHazardVo"/>
+        where id = #{id}
+    </select>
+
+    <select id="selectMsdsHazardByMsdsId" parameterType="Long" resultMap="MsdsHazardResult">
+        <include refid="selectMsdsHazardVo"/>
+        where msds_id = #{msdsId}
+    </select>
+        
+    <insert id="insertMsdsHazard" parameterType="MsdsHazard" useGeneratedKeys="true" keyProperty="id">
+        insert into msds_hazard
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="msdsId != null">msds_id,</if>
+            <if test="emergencyOverview != null">emergency_overview,</if>
+            <if test="physicalState != null">physical_state,</if>
+            <if test="odor != null">odor,</if>
+            <if test="color != null">color,</if>
+            <if test="warningWord != null">warning_word,</if>
+            <if test="hazardCategory != null">hazard_category,</if>
+            <if test="exposureRoutes != null">exposure_routes,</if>
+            <if test="healthHazards != null">health_hazards,</if>
+            <if test="environmentalHazards != null">environmental_hazards,</if>
+            <if test="fireExplosionHazards != null">fire_explosion_hazards,</if>
+            <if test="hazardDescription != null">hazard_description,</if>
+            <if test="preventionMeasures != null">prevention_measures,</if>
+            <if test="responseMeasures != null">response_measures,</if>
+            <if test="storageMeasures != null">storage_measures,</if>
+            <if test="disposalMeasures != null">disposal_measures,</if>
+            <if test="createBy != null">create_by,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateBy != null">update_by,</if>
+            <if test="updateTime != null">update_time,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="msdsId != null">#{msdsId},</if>
+            <if test="emergencyOverview != null">#{emergencyOverview},</if>
+            <if test="physicalState != null">#{physicalState},</if>
+            <if test="odor != null">#{odor},</if>
+            <if test="color != null">#{color},</if>
+            <if test="warningWord != null">#{warningWord},</if>
+            <if test="hazardCategory != null">#{hazardCategory},</if>
+            <if test="exposureRoutes != null">#{exposureRoutes},</if>
+            <if test="healthHazards != null">#{healthHazards},</if>
+            <if test="environmentalHazards != null">#{environmentalHazards},</if>
+            <if test="fireExplosionHazards != null">#{fireExplosionHazards},</if>
+            <if test="hazardDescription != null">#{hazardDescription},</if>
+            <if test="preventionMeasures != null">#{preventionMeasures},</if>
+            <if test="responseMeasures != null">#{responseMeasures},</if>
+            <if test="storageMeasures != null">#{storageMeasures},</if>
+            <if test="disposalMeasures != null">#{disposalMeasures},</if>
+            <if test="createBy != null">#{createBy},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateBy != null">#{updateBy},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+         </trim>
+    </insert>
+
+    <update id="updateMsdsHazard" parameterType="MsdsHazard">
+        update msds_hazard
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="msdsId != null">msds_id = #{msdsId},</if>
+            <if test="emergencyOverview != null">emergency_overview = #{emergencyOverview},</if>
+            <if test="physicalState != null">physical_state = #{physicalState},</if>
+            <if test="odor != null">odor = #{odor},</if>
+            <if test="color != null">color = #{color},</if>
+            <if test="warningWord != null">warning_word = #{warningWord},</if>
+            <if test="hazardCategory != null">hazard_category = #{hazardCategory},</if>
+            <if test="exposureRoutes != null">exposure_routes = #{exposureRoutes},</if>
+            <if test="healthHazards != null">health_hazards = #{healthHazards},</if>
+            <if test="environmentalHazards != null">environmental_hazards = #{environmentalHazards},</if>
+            <if test="fireExplosionHazards != null">fire_explosion_hazards = #{fireExplosionHazards},</if>
+            <if test="hazardDescription != null">hazard_description = #{hazardDescription},</if>
+            <if test="preventionMeasures != null">prevention_measures = #{preventionMeasures},</if>
+            <if test="responseMeasures != null">response_measures = #{responseMeasures},</if>
+            <if test="storageMeasures != null">storage_measures = #{storageMeasures},</if>
+            <if test="disposalMeasures != null">disposal_measures = #{disposalMeasures},</if>
+            <if test="createBy != null">create_by = #{createBy},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteMsdsHazardById" parameterType="Long">
+        delete from msds_hazard where id = #{id}
+    </delete>
+
+    <delete id="deleteMsdsHazardByIds" parameterType="String">
+        delete from msds_hazard where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <delete id="deleteMsdsHazardByMsdsId" parameterType="Long">
+        delete from msds_hazard where msds_id = #{msdsId}
+    </delete>
+</mapper>

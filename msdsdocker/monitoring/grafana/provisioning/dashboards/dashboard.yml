@@ -1,0 +1,28 @@
+# MSDS实验室管理系统 - Grafana仪表板配置
+# 版本: v1.0
+# 更新日期: 2025-01-27
+
+apiVersion: 1
+
+providers:
+  # MSDS系统仪表板
+  - name: 'msds-dashboards'
+    orgId: 1
+    folder: 'MSDS System'
+    type: file
+    disableDeletion: false
+    updateIntervalSeconds: 10
+    allowUiUpdates: true
+    options:
+      path: /etc/grafana/provisioning/dashboards/json
+
+  # 基础设施仪表板
+  - name: 'infrastructure-dashboards'
+    orgId: 1
+    folder: 'Infrastructure'
+    type: file
+    disableDeletion: false
+    updateIntervalSeconds: 10
+    allowUiUpdates: true
+    options:
+      path: /etc/grafana/provisioning/dashboards/infrastructure

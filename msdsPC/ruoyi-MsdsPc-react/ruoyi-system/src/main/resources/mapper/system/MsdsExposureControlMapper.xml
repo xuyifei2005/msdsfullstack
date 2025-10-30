@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.MsdsExposureControlMapper">
+    
+    <resultMap type="MsdsExposureControl" id="MsdsExposureControlResult">
+        <id     property="id"                           column="id"                           />
+        <result property="msdsId"                       column="msds_id"                      />
+        <result property="occupationalExposureLimit"    column="occupational_exposure_limit"  />
+        <result property="chinaMac"                     column="china_mac"                    />
+        <result property="usaTlvTwa"                    column="usa_tlv_twa"                  />
+        <result property="usaTlvStel"                   column="usa_tlv_stel"                 />
+        <result property="formerSovietMac"              column="former_soviet_mac"            />
+        <result property="tlvTn"                        column="tlv_tn"                       />
+        <result property="tlvWn"                        column="tlv_wn"                       />
+        <result property="monitoringMethod"             column="monitoring_method"            />
+        <result property="engineeringControls"          column="engineering_controls"         />
+        <result property="respiratoryProtection"        column="respiratory_protection"       />
+        <result property="eyeProtection"                column="eye_protection"               />
+        <result property="bodyProtection"               column="body_protection"              />
+        <result property="handProtection"               column="hand_protection"              />
+        <result property="otherProtection"              column="other_protection"             />
+        <result property="hygieneMeasures"              column="hygiene_measures"             />
+        <result property="createTime"                   column="create_time"                  />
+        <result property="updateTime"                   column="update_time"                  />
+        <result property="createBy"                     column="create_by"                    />
+        <result property="updateBy"                     column="update_by"                    />
+    </resultMap>
+    
+    <sql id="selectMsdsExposureControlVo">
+        select id, msds_id, occupational_exposure_limit, china_mac, usa_tlv_twa, usa_tlv_stel,
+               former_soviet_mac, tlv_tn, tlv_wn, monitoring_method, engineering_controls,
+               respiratory_protection, eye_protection, body_protection, hand_protection,
+               other_protection, hygiene_measures, create_time, update_time, create_by, update_by
+        from msds_exposure_control
+    </sql>
+    
+    <select id="selectMsdsExposureControlById" parameterType="Long" resultMap="MsdsExposureControlResult">
+        <include refid="selectMsdsExposureControlVo"/>
+        where id = #{id}
+    </select>
+    
+    <select id="selectMsdsExposureControlByMsdsId" parameterType="Long" resultMap="MsdsExposureControlResult">
+        <include refid="selectMsdsExposureControlVo"/>
+        where msds_id = #{msdsId}
+    </select>
+    
+    <select id="selectMsdsExposureControlList" parameterType="MsdsExposureControl" resultMap="MsdsExposureControlResult">
+        <include refid="selectMsdsExposureControlVo"/>
+        <where>
+            <if test="msdsId != null">
+                AND msds_id = #{msdsId}
+            </if>
+            <if test="occupationalExposureLimit != null and occupationalExposureLimit != ''">
+                AND occupational_exposure_limit like concat('%', #{occupationalExposureLimit}, '%')
+            </if>
+            <if test="chinaMac != null and chinaMac != ''">
+                AND china_mac like concat('%', #{chinaMac}, '%')
+            </if>
+        </where>
+        order by create_time desc
+    </select>
+    
+    <insert id="insertMsdsExposureControl" parameterType="MsdsExposureControl" useGeneratedKeys="true" keyProperty="id">
+        insert into msds_exposure_control (
+            msds_id, occupational_exposure_limit, china_mac, usa_tlv_twa, usa_tlv_stel,
+            former_soviet_mac, tlv_tn, tlv_wn, monitoring_method, engineering_controls,
+            respiratory_protection, eye_protection, body_protection, hand_protection,
+            other_protection, hygiene_measures, create_by, create_time
+        )values(
+            #{msdsId}, #{occupationalExposureLimit}, #{chinaMac}, #{usaTlvTwa}, #{usaTlvStel},
+            #{formerSovietMac}, #{tlvTn}, #{tlvWn}, #{monitoringMethod}, #{engineeringControls},
+            #{respiratoryProtection}, #{eyeProtection}, #{bodyProtection}, #{handProtection},
+            #{otherProtection}, #{hygieneMeasures}, #{createBy}, NOW()
+        )
+    </insert>
+     
+    <update id="updateMsdsExposureControl" parameterType="MsdsExposureControl">
+        update msds_exposure_control 
+        <set>
+            <if test="msdsId != null">msds_id = #{msdsId},</if>
+            <if test="occupationalExposureLimit != null">occupational_exposure_limit = #{occupationalExposureLimit},</if>
+            <if test="chinaMac != null">china_mac = #{chinaMac},</if>
+            <if test="usaTlvTwa != null">usa_tlv_twa = #{usaTlvTwa},</if>
+            <if test="usaTlvStel != null">usa_tlv_stel = #{usaTlvStel},</if>
+            <if test="formerSovietMac != null">former_soviet_mac = #{formerSovietMac},</if>
+            <if test="tlvTn != null">tlv_tn = #{tlvTn},</if>
+            <if test="tlvWn != null">tlv_wn = #{tlvWn},</if>
+            <if test="monitoringMethod != null">monitoring_method = #{monitoringMethod},</if>
+            <if test="engineeringControls != null">engineering_controls = #{engineeringControls},</if>
+            <if test="respiratoryProtection != null">respiratory_protection = #{respiratoryProtection},</if>
+            <if test="eyeProtection != null">eye_protection = #{eyeProtection},</if>
+            <if test="bodyProtection != null">body_protection = #{bodyProtection},</if>
+            <if test="handProtection != null">hand_protection = #{handProtection},</if>
+            <if test="otherProtection != null">other_protection = #{otherProtection},</if>
+            <if test="hygieneMeasures != null">hygiene_measures = #{hygieneMeasures},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            update_time = NOW()
+        </set>
+        where id = #{id}
+    </update>
+    
+    <delete id="deleteMsdsExposureControlById" parameterType="Long">
+        delete from msds_exposure_control where id = #{id}
+    </delete>
+    
+    <delete id="deleteMsdsExposureControlByIds" parameterType="Long">
+        delete from msds_exposure_control where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    
+    <delete id="deleteMsdsExposureControlByMsdsId" parameterType="Long">
+        delete from msds_exposure_control where msds_id = #{msdsId}
+    </delete>
+    
+</mapper> 

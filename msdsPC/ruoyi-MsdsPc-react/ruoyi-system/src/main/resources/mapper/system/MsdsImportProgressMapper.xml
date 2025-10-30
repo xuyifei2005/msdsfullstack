@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.MsdsImportProgressMapper">
+    
+    <resultMap type="MsdsImportProgress" id="MsdsImportProgressResult">
+        <result property="progressId"       column="progress_id"       />
+        <result property="taskId"           column="task_id"           />
+        <result property="userId"           column="user_id"           />
+        <result property="userName"         column="user_name"         />
+        <result property="fileName"         column="file_name"         />
+        <result property="fileSize"         column="file_size"         />
+        <result property="status"           column="status"            />
+        <result property="totalRecords"     column="total_records"     />
+        <result property="processedRecords" column="processed_records" />
+        <result property="successRecords"   column="success_records"   />
+        <result property="failedRecords"    column="failed_records"    />
+        <result property="progressPercent"  column="progress_percent"  />
+        <result property="startTime"        column="start_time"        />
+        <result property="endTime"          column="end_time"          />
+        <result property="errorMessage"     column="error_message"     />
+        <result property="processDetails"   column="process_details"   />
+        <result property="ipAddress"        column="ip_address"        />
+        <result property="userAgent"        column="user_agent"        />
+        <result property="createTime"       column="create_time"       />
+        <result property="updateTime"       column="update_time"       />
+        <result property="remark"           column="remark"            />
+    </resultMap>
+
+    <sql id="selectMsdsImportProgressVo">
+        select progress_id, task_id, user_id, user_name, file_name, file_size, status, 
+               total_records, processed_records, success_records, failed_records, progress_percent, 
+               start_time, end_time, error_message, process_details, ip_address, user_agent, 
+               create_time, update_time, remark 
+        from msds_import_progress
+    </sql>
+
+    <select id="selectMsdsImportProgressList" parameterType="MsdsImportProgress" resultMap="MsdsImportProgressResult">
+        <include refid="selectMsdsImportProgressVo"/>
+        <where>  
+            <if test="taskId != null  and taskId != ''"> and task_id = #{taskId}</if>
+            <if test="userId != null "> and user_id = #{userId}</if>
+            <if test="userName != null  and userName != ''"> and user_name like concat('%', #{userName}, '%')</if>
+            <if test="fileName != null  and fileName != ''"> and file_name like concat('%', #{fileName}, '%')</if>
+            <if test="status != null "> and status = #{status}</if>
+            <if test="params.beginTime != null and params.beginTime != ''"><!-- 开始时间检索 -->
+                and date_format(start_time,'%y%m%d') &gt;= date_format(#{params.beginTime},'%y%m%d')
+            </if>
+            <if test="params.endTime != null and params.endTime != ''"><!-- 结束时间检索 -->
+                and date_format(start_time,'%y%m%d') &lt;= date_format(#{params.endTime},'%y%m%d')
+            </if>
+        </where>
+        order by create_time desc
+    </select>
+    
+    <select id="selectMsdsImportProgressByProgressId" parameterType="Long" resultMap="MsdsImportProgressResult">
+        <include refid="selectMsdsImportProgressVo"/>
+        where progress_id = #{progressId}
+    </select>
+    
+    <select id="selectMsdsImportProgressByTaskId" parameterType="String" resultMap="MsdsImportProgressResult">
+        <include refid="selectMsdsImportProgressVo"/>
+        where task_id = #{taskId}
+    </select>
+    
+    <select id="selectMsdsImportProgressByUserId" parameterType="Long" resultMap="MsdsImportProgressResult">
+        <include refid="selectMsdsImportProgressVo"/>
+        where user_id = #{userId}
+        order by create_time desc
+    </select>
+    
+    <select id="selectProcessingTasks" resultMap="MsdsImportProgressResult">
+        <include refid="selectMsdsImportProgressVo"/>
+        where status in (0, 1)
+        order by create_time asc
+    </select>
+    
+    <select id="selectTimeoutTasks" parameterType="Integer" resultMap="MsdsImportProgressResult">
+        <include refid="selectMsdsImportProgressVo"/>
+        where status = 1 
+        and start_time &lt; date_sub(now(), interval #{timeoutMinutes} minute)
+        order by start_time asc
+    </select>
+    
+    <insert id="insertMsdsImportProgress" parameterType="MsdsImportProgress" useGeneratedKeys="true" keyProperty="progressId">
+        insert into msds_import_progress
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="taskId != null and taskId != ''">task_id,</if>
+            <if test="userId != null">user_id,</if>
+            <if test="userName != null and userName != ''">user_name,</if>
+            <if test="fileName != null and fileName != ''">file_name,</if>
+            <if test="fileSize != null">file_size,</if>
+            <if test="status != null">status,</if>
+            <if test="totalRecords != null">total_records,</if>
+            <if test="processedRecords != null">processed_records,</if>
+            <if test="successRecords != null">success_records,</if>
+            <if test="failedRecords != null">failed_records,</if>
+            <if test="progressPercent != null">progress_percent,</if>
+            <if test="startTime != null">start_time,</if>
+            <if test="endTime != null">end_time,</if>
+            <if test="errorMessage != null">error_message,</if>
+            <if test="processDetails != null">process_details,</if>
+            <if test="ipAddress != null and ipAddress != ''">ip_address,</if>
+            <if test="userAgent != null and userAgent != ''">user_agent,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateTime != null">update_time,</if>
+            <if test="remark != null">remark,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="taskId != null and taskId != ''">#{taskId},</if>
+            <if test="userId != null">#{userId},</if>
+            <if test="userName != null and userName != ''">#{userName},</if>
+            <if test="fileName != null and fileName != ''">#{fileName},</if>
+            <if test="fileSize != null">#{fileSize},</if>
+            <if test="status != null">#{status},</if>
+            <if test="totalRecords != null">#{totalRecords},</if>
+            <if test="processedRecords != null">#{processedRecords},</if>
+            <if test="successRecords != null">#{successRecords},</if>
+            <if test="failedRecords != null">#{failedRecords},</if>
+            <if test="progressPercent != null">#{progressPercent},</if>
+            <if test="startTime != null">#{startTime},</if>
+            <if test="endTime != null">#{endTime},</if>
+            <if test="errorMessage != null">#{errorMessage},</if>
+            <if test="processDetails != null">#{processDetails},</if>
+            <if test="ipAddress != null and ipAddress != ''">#{ipAddress},</if>
+            <if test="userAgent != null and userAgent != ''">#{userAgent},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+            <if test="remark != null">#{remark},</if>
+         </trim>
+    </insert>
+
+    <update id="updateMsdsImportProgress" parameterType="MsdsImportProgress">
+        update msds_import_progress
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="taskId != null and taskId != ''">task_id = #{taskId},</if>
+            <if test="userId != null">user_id = #{userId},</if>
+            <if test="userName != null and userName != ''">user_name = #{userName},</if>
+            <if test="fileName != null and fileName != ''">file_name = #{fileName},</if>
+            <if test="fileSize != null">file_size = #{fileSize},</if>
+            <if test="status != null">status = #{status},</if>
+            <if test="totalRecords != null">total_records = #{totalRecords},</if>
+            <if test="processedRecords != null">processed_records = #{processedRecords},</if>
+            <if test="successRecords != null">success_records = #{successRecords},</if>
+            <if test="failedRecords != null">failed_records = #{failedRecords},</if>
+            <if test="progressPercent != null">progress_percent = #{progressPercent},</if>
+            <if test="startTime != null">start_time = #{startTime},</if>
+            <if test="endTime != null">end_time = #{endTime},</if>
+            <if test="errorMessage != null">error_message = #{errorMessage},</if>
+            <if test="processDetails != null">process_details = #{processDetails},</if>
+            <if test="ipAddress != null and ipAddress != ''">ip_address = #{ipAddress},</if>
+            <if test="userAgent != null and userAgent != ''">user_agent = #{userAgent},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+            <if test="remark != null">remark = #{remark},</if>
+        </trim>
+        where progress_id = #{progressId}
+    </update>
+    
+    <update id="updateTaskProgress">
+        update msds_import_progress
+        set processed_records = #{processedRecords},
+            success_records = #{successRecords},
+            failed_records = #{failedRecords},
+            progress_percent = #{progressPercent},
+            update_time = now()
+        where task_id = #{taskId}
+    </update>
+    
+    <update id="updateTaskStatus">
+        update msds_import_progress
+        set status = #{status},
+            <if test="errorMessage != null">error_message = #{errorMessage},</if>
+            update_time = now()
+        where task_id = #{taskId}
+    </update>
+    
+    <update id="completeTask">
+        update msds_import_progress
+        set status = #{status},
+            end_time = now(),
+            <if test="errorMessage != null">error_message = #{errorMessage},</if>
+            update_time = now()
+        where task_id = #{taskId}
+    </update>
+
+    <delete id="deleteMsdsImportProgressByProgressId" parameterType="Long">
+        delete from msds_import_progress where progress_id = #{progressId}
+    </delete>
+
+    <delete id="deleteMsdsImportProgressByProgressIds" parameterType="String">
+        delete from msds_import_progress where progress_id in 
+        <foreach item="progressId" collection="array" open="(" separator="," close=")">
+            #{progressId}
+        </foreach>
+    </delete>
+    
+    <delete id="deleteMsdsImportProgressByTaskId" parameterType="String">
+        delete from msds_import_progress where task_id = #{taskId}
+    </delete>
+    
+    <delete id="cleanExpiredProgress" parameterType="Integer">
+        delete from msds_import_progress 
+        where create_time &lt; date_sub(now(), interval #{days} day)
+        and status in (2, 3, 4)
+    </delete>
+    
+    <select id="countUserTasks" resultType="int">
+        select count(*) from msds_import_progress 
+        where user_id = #{userId}
+        <if test="status != null">and status = #{status}</if>
+    </select>
+    
+    <select id="countSystemTasks" resultType="int">
+        select count(*) from msds_import_progress 
+        <if test="status != null">where status = #{status}</if>
+    </select>
+    
+</mapper>

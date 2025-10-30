@@ -1,0 +1,21 @@
+{
+  "name": "MSDS 远程开发容器",
+  "dockerComposeFile": ["../docker/compose/docker-compose.yml"],
+  "service": "backend",
+  "workspaceFolder": "/app",
+  "extensions": [
+    "vscjava.vscode-java-pack",
+    "pivotal.vscode-spring-boot",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode"
+  ],
+  "settings": {
+    "java.home": "/opt/java/openjdk",
+    "maven.executable.path": "/usr/local/bin/mvn",
+    "files.watcherExclude": {
+      "**/node_modules/**": true,
+      "**/.git/**": true
+    }
+  },
+  "remoteUser": "root"
+}

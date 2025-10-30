@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.MsdsTransportationMapper">
+    
+    <resultMap type="MsdsTransportation" id="MsdsTransportationResult">
+        <id     property="id"                           column="id"                           />
+        <result property="msdsId"                       column="msds_id"                      />
+        <result property="dangerousGoodsNumber"         column="dangerous_goods_number"       />
+        <result property="unNumber"                     column="un_number"                    />
+        <result property="properShippingName"           column="proper_shipping_name"         />
+        <result property="transportHazardClass"         column="transport_hazard_class"       />
+        <result property="packingGroup"                 column="packing_group"                />
+        <result property="packagingMarks"               column="packaging_marks"              />
+        <result property="packagingMethod"              column="packaging_method"             />
+        <result property="marinePollutant"              column="marine_pollutant"             />
+        <result property="transportInBulk"              column="transport_in_bulk"            />
+        <result property="transportationPrecautions"    column="transportation_precautions"   />
+        <result property="emergencyResponseGuide"       column="emergency_response_guide"     />
+        <result property="imdgRulePage"                 column="imdg_rule_page"               />
+        <result property="createTime"                   column="create_time"                  />
+        <result property="updateTime"                   column="update_time"                  />
+        <result property="createBy"                     column="create_by"                    />
+        <result property="updateBy"                     column="update_by"                    />
+    </resultMap>
+    
+    <sql id="selectMsdsTransportationVo">
+        select id, msds_id, dangerous_goods_number, un_number, proper_shipping_name,
+               transport_hazard_class, packing_group, packaging_marks, packaging_method,
+               marine_pollutant, transport_in_bulk, transportation_precautions,
+               emergency_response_guide, imdg_rule_page, create_time, update_time, create_by, update_by
+        from msds_transportation
+    </sql>
+    
+    <select id="selectMsdsTransportationById" parameterType="Long" resultMap="MsdsTransportationResult">
+        <include refid="selectMsdsTransportationVo"/>
+        where id = #{id}
+    </select>
+    
+    <select id="selectMsdsTransportationByMsdsId" parameterType="Long" resultMap="MsdsTransportationResult">
+        <include refid="selectMsdsTransportationVo"/>
+        where msds_id = #{msdsId}
+    </select>
+    
+    <select id="selectMsdsTransportationList" parameterType="MsdsTransportation" resultMap="MsdsTransportationResult">
+        <include refid="selectMsdsTransportationVo"/>
+        <where>
+            <if test="msdsId != null">
+                AND msds_id = #{msdsId}
+            </if>
+            <if test="dangerousGoodsNumber != null and dangerousGoodsNumber != ''">
+                AND dangerous_goods_number like concat('%', #{dangerousGoodsNumber}, '%')
+            </if>
+            <if test="unNumber != null and unNumber != ''">
+                AND un_number like concat('%', #{unNumber}, '%')
+            </if>
+            <if test="properShippingName != null and properShippingName != ''">
+                AND proper_shipping_name like concat('%', #{properShippingName}, '%')
+            </if>
+        </where>
+        order by create_time desc
+    </select>
+    
+    <insert id="insertMsdsTransportation" parameterType="MsdsTransportation" useGeneratedKeys="true" keyProperty="id">
+        insert into msds_transportation (
+            msds_id, dangerous_goods_number, un_number, proper_shipping_name,
+            transport_hazard_class, packing_group, packaging_marks, packaging_method,
+            marine_pollutant, transport_in_bulk, transportation_precautions,
+            emergency_response_guide, imdg_rule_page, create_by, create_time
+        )values(
+            #{msdsId}, #{dangerousGoodsNumber}, #{unNumber}, #{properShippingName},
+            #{transportHazardClass}, #{packingGroup}, #{packagingMarks}, #{packagingMethod},
+            #{marinePollutant}, #{transportInBulk}, #{transportationPrecautions},
+            #{emergencyResponseGuide}, #{imdgRulePage}, #{createBy}, NOW()
+        )
+    </insert>
+     
+    <update id="updateMsdsTransportation" parameterType="MsdsTransportation">
+        update msds_transportation 
+        <set>
+            <if test="msdsId != null">msds_id = #{msdsId},</if>
+            <if test="dangerousGoodsNumber != null">dangerous_goods_number = #{dangerousGoodsNumber},</if>
+            <if test="unNumber != null">un_number = #{unNumber},</if>
+            <if test="properShippingName != null">proper_shipping_name = #{properShippingName},</if>
+            <if test="transportHazardClass != null">transport_hazard_class = #{transportHazardClass},</if>
+            <if test="packingGroup != null">packing_group = #{packingGroup},</if>
+            <if test="packagingMarks != null">packaging_marks = #{packagingMarks},</if>
+            <if test="packagingMethod != null">packaging_method = #{packagingMethod},</if>
+            <if test="marinePollutant != null">marine_pollutant = #{marinePollutant},</if>
+            <if test="transportInBulk != null">transport_in_bulk = #{transportInBulk},</if>
+            <if test="transportationPrecautions != null">transportation_precautions = #{transportationPrecautions},</if>
+            <if test="emergencyResponseGuide != null">emergency_response_guide = #{emergencyResponseGuide},</if>
+            <if test="imdgRulePage != null">imdg_rule_page = #{imdgRulePage},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            update_time = NOW()
+        </set>
+        where id = #{id}
+    </update>
+    
+    <delete id="deleteMsdsTransportationById" parameterType="Long">
+        delete from msds_transportation where id = #{id}
+    </delete>
+    
+    <delete id="deleteMsdsTransportationByIds" parameterType="Long">
+        delete from msds_transportation where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    
+    <delete id="deleteMsdsTransportationByMsdsId" parameterType="Long">
+        delete from msds_transportation where msds_id = #{msdsId}
+    </delete>
+    
+</mapper> 

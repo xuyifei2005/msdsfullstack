@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.MsdsLeakResponseMapper">
+    
+    <resultMap type="MsdsLeakResponse" id="MsdsLeakResponseResult">
+        <id     property="id"                        column="id"                        />
+        <result property="msdsId"                    column="msds_id"                   />
+        <result property="personalPrecautions"       column="personal_precautions"      />
+        <result property="environmentalPrecautions"  column="environmental_precautions" />
+        <result property="containmentCleanup"        column="containment_cleanup"       />
+        <result property="emergencyProcedures"       column="emergency_procedures"      />
+        <result property="eliminationMethods"        column="elimination_methods"       />
+        <result property="equipmentMaterials"        column="equipment_materials"       />
+        <result property="preventSecondaryHazards"   column="prevent_secondary_hazards" />
+        <result property="createTime"                column="create_time"               />
+        <result property="updateTime"                column="update_time"               />
+        <result property="createBy"                  column="create_by"                 />
+        <result property="updateBy"                  column="update_by"                 />
+    </resultMap>
+    
+    <sql id="selectMsdsLeakResponseVo">
+        select id, msds_id, personal_precautions, environmental_precautions,
+               containment_cleanup, emergency_procedures, elimination_methods,
+               equipment_materials, prevent_secondary_hazards,
+               create_time, update_time, create_by, update_by
+        from msds_leak_response
+    </sql>
+    
+    <select id="selectMsdsLeakResponseById" parameterType="Long" resultMap="MsdsLeakResponseResult">
+        <include refid="selectMsdsLeakResponseVo"/>
+        where id = #{id}
+    </select>
+    
+    <select id="selectMsdsLeakResponseByMsdsId" parameterType="Long" resultMap="MsdsLeakResponseResult">
+        <include refid="selectMsdsLeakResponseVo"/>
+        where msds_id = #{msdsId}
+    </select>
+    
+    <select id="selectMsdsLeakResponseList" parameterType="MsdsLeakResponse" resultMap="MsdsLeakResponseResult">
+        <include refid="selectMsdsLeakResponseVo"/>
+        <where>
+            <if test="msdsId != null">
+                AND msds_id = #{msdsId}
+            </if>
+            <if test="personalPrecautions != null and personalPrecautions != ''">
+                AND personal_precautions like concat('%', #{personalPrecautions}, '%')
+            </if>
+            <if test="environmentalPrecautions != null and environmentalPrecautions != ''">
+                AND environmental_precautions like concat('%', #{environmentalPrecautions}, '%')
+            </if>
+            <if test="emergencyProcedures != null and emergencyProcedures != ''">
+                AND emergency_procedures like concat('%', #{emergencyProcedures}, '%')
+            </if>
+        </where>
+        order by create_time desc
+    </select>
+    
+    <insert id="insertMsdsLeakResponse" parameterType="MsdsLeakResponse" useGeneratedKeys="true" keyProperty="id">
+        insert into msds_leak_response (
+            msds_id, personal_precautions, environmental_precautions,
+            containment_cleanup, emergency_procedures, elimination_methods,
+            equipment_materials, prevent_secondary_hazards,
+            create_by, create_time
+        )values(
+            #{msdsId}, #{personalPrecautions}, #{environmentalPrecautions},
+            #{containmentCleanup}, #{emergencyProcedures}, #{eliminationMethods},
+            #{equipmentMaterials}, #{preventSecondaryHazards},
+            #{createBy}, NOW()
+        )
+    </insert>
+     
+    <update id="updateMsdsLeakResponse" parameterType="MsdsLeakResponse">
+        update msds_leak_response 
+        <set>
+            <if test="msdsId != null">msds_id = #{msdsId},</if>
+            <if test="personalPrecautions != null">personal_precautions = #{personalPrecautions},</if>
+            <if test="environmentalPrecautions != null">environmental_precautions = #{environmentalPrecautions},</if>
+            <if test="containmentCleanup != null">containment_cleanup = #{containmentCleanup},</if>
+            <if test="emergencyProcedures != null">emergency_procedures = #{emergencyProcedures},</if>
+            <if test="eliminationMethods != null">elimination_methods = #{eliminationMethods},</if>
+            <if test="equipmentMaterials != null">equipment_materials = #{equipmentMaterials},</if>
+            <if test="preventSecondaryHazards != null">prevent_secondary_hazards = #{preventSecondaryHazards},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            update_time = NOW()
+        </set>
+        where id = #{id}
+    </update>
+    
+    <delete id="deleteMsdsLeakResponseById" parameterType="Long">
+        delete from msds_leak_response where id = #{id}
+    </delete>
+    
+    <delete id="deleteMsdsLeakResponseByIds" parameterType="Long">
+        delete from msds_leak_response where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    
+    <delete id="deleteMsdsLeakResponseByMsdsId" parameterType="Long">
+        delete from msds_leak_response where msds_id = #{msdsId}
+    </delete>
+    
+</mapper> 

@@ -1,0 +1,64 @@
+### 本地编译生产环境包的Docker Compose配置
+# 用于在本地容器中编译打包后台程序，连接生产环境数据库
+# 使用方法: docker-compose -f docker-compose.build-prod.yml up msdsbackend
+
+networks:
+  msds_network:
+    driver: bridge
+
+services:
+  # 后端服务 - 本地编译连接生产环境数据库
+  msdsbackend:
+    networks:
+      - msds_network
+    image: msdsbackend
+    container_name: msdsbackend
+    hostname: msdsbackend
+    restart: "no"  # 编译完成后不自动重启
+    pull_policy: never
+    volumes:
+      - ../msdsPC/ruoyi-MsdsPc-react:/app
+      - ../msdsPC/ruoyi-MsdsPc-react/uploadPath:/app/uploadPath
+      # Maven本地仓库持久化
+      - msdsmaven_repository:/root/.m2/repository
+      
+    working_dir: /app
+    command: |
+      sh -c "echo 'Starting production build environment setup...' && 
+      /usr/sbin/sshd && 
+      echo 'SSH service started successfully' && 
+      echo '*msdsbackend* Production build environment ready!' && 
+      cd /app && 
+      echo 'Starting Maven build for production...' && 
+      mvn clean package -DskipTests && 
+      echo 'Maven build completed successfully!' && 
+      echo 'JAR file location: /app/ruoyi-admin/target/ruoyi-admin.jar' &&
+      echo 'Build completed. Container will remain running for file access.' &&
+      tail -f /dev/null" 
+
+    ports:
+      - "18080:8080"
+      - "5005:5005"
+      - "2222:22"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      # 连接生产环境数据库
+      - SPRING_DATASOURCE_URL=jdbc:mysql://msdsmysql:3306/msds_prod?useUnicode=true&characterEncoding=utf8mb4&connectionCollation=utf8mb4_unicode_ci&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+      - SPRING_DATASOURCE_USERNAME=msds_prod_user
+      - SPRING_DATASOURCE_PASSWORD=FlyMsds2025Prod!@#
+      # 连接生产环境Redis
+      - SPRING_REDIS_HOST=msdsredis
+      - SPRING_REDIS_PORT=6379
+      - SPRING_REDIS_PASSWORD=FlyMsds2025Redis!@#
+      - MAVEN_OPTS=-Xmx2048m -Xms512m -XX:+UseG1GC
+      - TZ=Asia/Shanghai
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8080/ || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 600s
+
+volumes:
+  msdsmaven_repository:
+    driver: local

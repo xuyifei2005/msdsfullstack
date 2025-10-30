@@ -1,0 +1,123 @@
+---
+alwaysApply: true
+---
+
+# MSDS全栈项目开发规范
+
+## 项目架构概览
+这是一个MSDS（Material Safety Data Sheet）管理系统，**基于开源RuoYi框架进行二次开发**，采用全栈架构：
+
+- **后端**: Java Spring Boot + RuoYi框架 ([msdsPC/ruoyi-MsdsPc-react](mdc:msdsPC/ruoyi-MsdsPc-react))
+  - 基于RuoYi-Vue多租户版进行二次开发
+  - 保留RuoYi的权限管理、代码生成、系统监控等核心功能
+  - 在此基础上扩展MSDS业务模块
+  
+- **前端**: React + TypeScript ([msdsPC/ruoyi-MsdsPc-react/ruoyi-ui](mdc:msdsPC/ruoyi-MsdsPc-react/ruoyi-ui))
+  - 基于RuoYi-React前端框架
+  - 使用Ant Design Pro组件库
+  - 复用RuoYi的布局、菜单、权限组件
+  
+- **移动端**: UniApp ([wechatapps/RuoYi-Msds-App](mdc:wechatapps/RuoYi-Msds-App))
+  - 基于RuoYi-App移动端框架
+  - 集成RuoYi的登录认证、权限验证
+  - 扩展MSDS查阅相关功能
+  
+- **数据库**: MySQL ([msdsdocker/msdsdatabaseinitdb](mdc:msdsdocker/msdsdatabaseinitdb))
+  - 使用RuoYi标准的数据库表结构
+  - 扩展MSDS相关业务表
+  
+- **部署**: Docker Compose ([msdsdocker/docker-compose.yml](mdc:msdsdocker/docker-compose.yml))
+
+**重要**: 本项目是RuoYi框架的二次开发项目，所有开发必须遵循RuoYi的架构规范和代码风格，充分利用RuoYi提供的基础功能模块。
+
+## 开发环境配置
+
+### 运行环境要求
+- **操作系统**: Windows 11
+- **容器环境**: WSL2 + Docker Desktop
+- **数据库**: MySQL 8.0（运行在Docker容器中）
+
+### 开发环境说明
+
+#### 后端和前端开发
+- **运行位置**: 所有后端和前端代码必须在Docker容器内编译和运行
+- **开发流程**: 
+  1. 代码在Windows主机上编辑（通过VSCode/Cursor）
+  2. 通过Docker卷挂载到WSL2的Docker容器中
+  3. 在容器内进行编译、运行和调试
+- **注意事项**: 
+  - 不要在Windows主机上直接运行Java或Node.js编译命令
+  - 使用`docker-compose exec`进入容器执行命令
+  - 文件路径注意WSL2和Windows的路径转换
+
+#### 移动端开发
+- **开发工具**: HBuilderX
+- **编译运行**: 
+  1. 在HBuilderX中编写和编译UniApp代码
+  2. 编译后运行到微信开发者工具
+  3. 在微信开发者工具中进行调试和预览
+- **后端连接**: 移动端通过配置的API地址连接Docker容器中的后端服务
+
+#### 数据库访问
+- **数据库类型**: MySQL 8.0
+- **运行环境**: Docker容器中
+- **访问方式**: 
+  - 容器内服务通过容器名称访问（如：`mysql:3306`）
+  - 主机访问通过localhost映射端口（如：`localhost:3306`）
+  - 移动端通过局域网IP访问（如：`192.168.x.x:3306`）
+
+## RuoYi框架二次开发规范
+
+### 基于RuoYi框架的开发原则
+- **复用优先**: 优先使用RuoYi框架提供的基础功能（用户管理、权限控制、字典管理、参数配置等）
+- **遵循规范**: 严格遵循RuoYi的代码规范、目录结构、命名约定
+- **扩展而非修改**: 通过扩展模块实现业务功能，尽量不修改RuoYi核心代码
+- **参考官方文档**: 开发前查阅RuoYi官方文档（https://doc.ruoyi.vip/）
+
+### RuoYi框架核心模块说明
+- **ruoyi-admin**: 后台管理模块，Web服务入口
+- **ruoyi-framework**: 框架核心模块，包含配置、安全、工具类
+- **ruoyi-system**: 系统管理模块，用户、角色、菜单、字典等
+- **ruoyi-common**: 公共模块，工具类、常量、异常等
+- **ruoyi-generator**: 代码生成模块
+
+### MSDS业务模块扩展
+- 在`ruoyi-system`或新建`ruoyi-msds`模块中实现MSDS业务逻辑
+- Controller层继承`BaseController`
+- Service层使用`@Service`注解，实现接口模式
+- Mapper层继承`BaseMapper`，使用MyBatis Plus
+
+## 开发基本原则
+
+### 1. 代码质量要求
+- **DRY (Don't Repeat Yourself)**: 避免重复代码，提取公共组件和工具类
+- **KISS (Keep It Simple, Stupid)**: 保持代码简单清晰，优先选择简单方案
+- **SOLID原则**: 遵循面向对象设计的五大原则
+- **RuoYi规范**: 遵循RuoYi框架的开发规范和最佳实践
+
+### 2. 调试与问题解决
+- **思维链推理**: 从现象→原因→解决方案的逻辑链条思考
+- **全局依赖考虑**: 每次修改都要审视相关依赖，确保同步更新
+- **增量验证**: 每个功能完成后立即测试验证
+
+### 3. 开发协作规范
+- **中文优先**: 代码注释、文档、commit信息使用中文
+- **进度追踪**: 及时更新TODO和进度记录
+- **文档同步**: 代码变更时同步更新相关文档
+
+## 项目特定注意事项
+
+### MSDS数据处理
+- 化学品名称和别名提取逻辑位于测试文件中，需要特别关注正则表达式的准确性
+- 企业信息提取和验证机制要保证数据完整性
+- 支持多种文件格式（Excel、Word、PDF、TXT）的解析
+
+### 安全性要求
+- 用户权限管理严格按照RuoYi框架的RBAC模式
+- 文件上传需要严格的格式和大小限制
+- 数据库操作必须使用预处理语句防止SQL注入
+
+### 性能优化
+- 大文件处理采用流式处理避免内存溢出
+- 数据库查询使用适当的索引和分页
+- 前端组件懒加载和虚拟滚动处理大数据量展示

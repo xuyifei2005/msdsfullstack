@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSDS 管理文件系统 - 高保真原型展示</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .prototype-frame {
+            border: 2px solid #374151;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .prototype-title {
+            background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px 6px 0 0;
+            font-weight: 600;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- 顶部标题栏 -->
+    <header class="bg-white shadow-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-flask text-blue-600 text-2xl"></i>
+                    <h1 class="text-2xl font-bold text-gray-900">MSDS 管理文件系统</h1>
+                </div>
+                <div class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                    高保真原型预览
+                </div>
+            </div>
+            <p class="text-gray-600 mt-2">专为实验室科研机构设计的化学品安全技术说明书电子化管理系统 - PC端Web版本</p>
+        </div>
+    </header>
+
+    <!-- 主要内容区域 -->
+    <main class="max-w-7xl mx-auto px-6 py-8">
+        <!-- 技术说明 -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+            <h2 class="text-lg font-semibold text-gray-900 mb-3">
+                <i class="fas fa-info-circle text-blue-500 mr-2"></i>
+                原型说明
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6 text-sm">
+                <div>
+                    <h3 class="font-medium text-gray-900 mb-2">技术栈</h3>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• HTML5 + Tailwind CSS</li>
+                        <li>• FontAwesome 图标库</li>
+                        <li>• 响应式设计</li>
+                        <li>• 暗黑主题优先</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-medium text-gray-900 mb-2">设计原则</h3>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• 专为PC端桌面应用设计</li>
+                        <li>• 现代、专业、精致的界面</li>
+                        <li>• 符合实验室工作流程</li>
+                        <li>• 注重安全性和合规性</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 原型界面展示区域 -->
+        <div class="space-y-12">
+            <!-- 登录界面 -->
+            <section>
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">
+                    <i class="fas fa-sign-in-alt text-green-500 mr-2"></i>
+                    用户登录界面
+                </h2>
+                <div class="prototype-frame">
+                    <div class="prototype-title">Login.html - 用户登录</div>
+                    <iframe src="login.html" class="w-full h-96 bg-white"></iframe>
+                </div>
+            </section>
+
+            <!-- 主界面/仪表板 -->
+            <section>
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">
+                    <i class="fas fa-tachometer-alt text-blue-500 mr-2"></i>
+                    主界面/仪表板
+                </h2>
+                <div class="prototype-frame">
+                    <div class="prototype-title">Dashboard.html - 主界面仪表板</div>
+                    <iframe src="dashboard.html" class="w-full h-96 bg-white"></iframe>
+                </div>
+            </section>
+
+            <!-- MSDS搜索界面 -->
+            <section>
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">
+                    <i class="fas fa-search text-purple-500 mr-2"></i>
+                    MSDS搜索界面
+                </h2>
+                <div class="prototype-frame">
+                    <div class="prototype-title">Search.html - MSDS搜索与检索</div>
+                    <iframe src="search.html" class="w-full h-96 bg-white"></iframe>
+                </div>
+            </section>
+
+            <!-- MSDS详情预览界面 -->
+            <section>
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">
+                    <i class="fas fa-file-alt text-orange-500 mr-2"></i>
+                    MSDS详情预览界面
+                </h2>
+                <div class="prototype-frame">
+                    <div class="prototype-title">MsdsDetail.html - MSDS详情预览</div>
+                    <iframe src="msds-detail.html" class="w-full h-96 bg-white"></iframe>
+                </div>
+            </section>
+
+            <!-- MSDS管理界面 -->
+            <section>
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">
+                    <i class="fas fa-cogs text-red-500 mr-2"></i>
+                    MSDS管理界面
+                </h2>
+                <div class="prototype-frame">
+                    <div class="prototype-title">MsdsManagement.html - MSDS文档管理</div>
+                    <iframe src="msds-management.html" class="w-full h-96 bg-white"></iframe>
+                </div>
+            </section>
+
+            <!-- 用户管理界面 -->
+            <section>
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">
+                    <i class="fas fa-users text-indigo-500 mr-2"></i>
+                    用户管理界面
+                </h2>
+                <div class="prototype-frame">
+                    <div class="prototype-title">UserManagement.html - 用户与权限管理</div>
+                    <iframe src="user-management.html" class="w-full h-96 bg-white"></iframe>
+                </div>
+            </section>
+
+            <!-- 系统设置界面 -->
+            <section>
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">
+                    <i class="fas fa-sliders-h text-gray-500 mr-2"></i>
+                    系统设置界面
+                </h2>
+                <div class="prototype-frame">
+                    <div class="prototype-title">Settings.html - 系统配置与设置</div>
+                    <iframe src="settings.html" class="w-full h-96 bg-white"></iframe>
+                </div>
+            </section>
+        </div>
+
+        <!-- 页脚信息 -->
+        <footer class="mt-16 py-8 border-t border-gray-200">
+            <div class="text-center text-gray-500 text-sm">
+                <p>MSDS 管理文件系统 - 高保真HTML原型</p>
+                <p class="mt-1">基于产品需求文档 (PRD) 和用户故事地图设计</p>
+                <p class="mt-1">设计师：高级UI/UX设计师 | 设计时间：2024年</p>
+            </div>
+        </footer>
+    </main>
+</body>
+</html> 

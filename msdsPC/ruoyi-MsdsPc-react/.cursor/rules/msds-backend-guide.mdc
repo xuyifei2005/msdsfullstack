@@ -1,0 +1,349 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# MSDS 后台管理系统开发项目规则
+
+## 项目概述
+
+这是一个基于 RuoYi React 框架的 MSDS（安全技术说明书）后台管理系统项目，采用前后端分离架构，为实验室科研机构提供专业的MSDS文档管理、用户权限管理、数据统计分析等功能。
+
+## 项目结构
+
+### 后台项目路径
+D:\msdsfullstack\msdsPC\ruoyi-MsdsPc-react
+
+### 核心模块
+- **ruoyi-admin/**: Spring Boot 主应用模块，提供Web服务入口
+- **ruoyi-framework/**: 框架核心模块，包含安全、配置、缓存等基础设施
+- **ruoyi-system/**: 系统管理模块，用户、角色、权限、字典等基础功能
+- **ruoyi-common/**: 通用工具模块，公共组件和工具类
+- **ruoyi-generator/**: 代码生成器模块，快速生成CRUD代码
+- **ruoyi-quartz/**: 定时任务模块，处理数据同步、清理等任务
+- **react-ui/**: React前端项目，基于Ant Design Pro
+
+### 关键配置文件
+- 主配置: [ruoyi-admin/src/main/resources/application.yml](mdc:ruoyi-admin/src/main/resources/application.yml)
+- 数据库配置: [ruoyi-admin/src/main/resources/application-druid.yml](mdc:ruoyi-admin/src/main/resources/application-druid.yml)
+- 前端配置: [react-ui/config/config.ts](mdc:react-ui/config/config.ts)
+- 前端设置: [react-ui/config/defaultSettings.ts](mdc:react-ui/config/defaultSettings.ts)
+- Maven主配置: [pom.xml](mdc:pom.xml)
+
+### 数据库脚本
+- 系统基础数据: [sql/ry_react.sql](mdc:sql/ry_react.sql)
+- 定时任务数据: [sql/quartz.sql](mdc:sql/quartz.sql)
+
+### 核心业务模块（待开发）
+- **MSDS文档管理**: 文档上传、版本控制、分类管理、审核流程
+- **化学品数据管理**: CAS号管理、分类标准、危险特性标识
+- **用户权限管理**: 多层级权限、数据权限、操作日志
+- **数据统计分析**: 查阅统计、下载记录、使用趋势分析
+- **系统集成接口**: 与小程序端API接口、第三方系统集成
+
+## 技术架构
+
+### 后端技术栈
+- **核心框架**: Spring Boot 3.3.0 + Spring Security + JWT
+- **数据库**: MySQL 8.2.0 + MyBatis 3.0.3 + Druid 1.2.23
+- **Java版本**: JDK 17
+- **文档处理**: Apache POI 4.1.2 (Excel), PDF处理库
+- **搜索引擎**: 计划集成Elasticsearch (全文搜索)
+- **缓存**: Redis (分布式缓存)
+- **文件存储**: 本地存储 + OSS云存储 (可选)
+- **API文档**: SpringDoc OpenAPI 2.5.0
+
+### 前端技术栈
+- **核心框架**: React 18 + TypeScript 5 + Ant Design Pro 6
+- **UI组件**: Ant Design 5.21.1 + Pro Components 2.7.19
+- **状态管理**: UmiJS 内置状态管理
+- **构建工具**: UmiJS Max 4.4.11
+- **图表库**: Ant Design Charts (@ant-design/plots)
+
+### 开发环境要求
+- **Java**: JDK 17或以上
+- **Node.js**: v16或以上 (当前使用v18.18.0)
+- **数据库**: MySQL 8.0+
+- **Redis**: 5.0+
+- **IDE**: IntelliJ IDEA (推荐) / VSCode
+
+## 开发规范
+
+### Clean Code 原则
+- **DRY (Don't Repeat Yourself)**: 避免重复代码，抽象公共组件和工具类
+- **KISS (Keep It Simple, Stupid)**: 保持代码简洁易懂，避免过度设计
+- **SOLID**: 
+  - 单一职责原则：每个类只负责一个功能
+  - 开闭原则：对扩展开放，对修改关闭
+  - 里氏替换原则：子类能替换父类
+  - 接口隔离原则：接口细化，避免冗余
+  - 依赖倒置原则：依赖抽象而非具体实现
+
+### 代码结构规范
+
+#### 后端结构
+- **Controller层**: [ruoyi-admin/src/main/java/com/ruoyi/web/controller/](mdc:ruoyi-admin/src/main/java/com/ruoyi/web/controller)
+- **Service层**: [ruoyi-system/src/main/java/com/ruoyi/system/service/](mdc:ruoyi-system/src/main/java/com/ruoyi/system/service)
+- **Mapper层**: [ruoyi-system/src/main/java/com/ruoyi/system/mapper/](mdc:ruoyi-system/src/main/java/com/ruoyi/system/mapper)
+- **Entity层**: [ruoyi-system/src/main/java/com/ruoyi/system/domain/](mdc:ruoyi-system/src/main/java/com/ruoyi/system/domain)
+- **MyBatis XML**: [ruoyi-system/src/main/resources/mapper/system/](mdc:ruoyi-system/src/main/resources/mapper/system)
+
+#### 前端结构
+- **页面组件**: [react-ui/src/pages/](mdc:react-ui/src/pages)
+- **公共组件**: [react-ui/src/components/](mdc:react-ui/src/components)
+- **API服务**: [react-ui/src/services/](mdc:react-ui/src/services)
+- **类型定义**: [react-ui/src/types/](mdc:react-ui/src/types)
+- **工具函数**: [react-ui/src/utils/](mdc:react-ui/src/utils)
+- **国际化**: [react-ui/src/locales/](mdc:react-ui/src/locales)
+
+### 命名规范
+- **数据库表名**: msds_前缀，下划线分隔，如 `msds_document`, `msds_chemical`
+- **Java类名**: 驼峰命名，如 `MsdsDocumentController`, `ChemicalService`
+- **接口路径**: RESTful风格，如 `/api/msds/documents`, `/api/chemicals/{id}`
+- **前端组件**: 大驼峰命名，如 `MsdsDocumentList`, `ChemicalForm`
+- **前端路由**: 小写短横线，如 `/msds/document-list`, `/chemical/detail`
+
+### 数据库设计规范
+- 所有表必须有 `id`(主键)、`create_time`、`update_time` 字段
+- 软删除使用 `del_flag` 字段 (0正常 1删除)
+- 状态字段统一使用 `status` (0正常 1停用)
+- 外键关联使用业务主键，避免物理外键约束
+- 敏感数据加密存储，如用户密码使用BCrypt
+
+### API设计规范
+- 统一返回格式：`{code: number, msg: string, data: any}`
+- 分页查询统一使用 `{pageNum: number, pageSize: number}` 参数
+- 批量操作支持数组形式参数
+- 文件上传统一返回文件路径和访问URL
+- 错误码统一管理，使用业务含义明确的错误码
+
+## 核心功能模块
+
+### 1. MSDS文档管理模块
+- **文档上传**: 支持PDF、Word、Excel等格式批量上传
+- **版本控制**: 自动版本管理，历史版本保留和对比
+- **分类管理**: 按化学品类别、供应商、实验室等维度分类
+- **审核流程**: 多级审核，审核记录和状态跟踪
+- **权限控制**: 基于角色的文档访问权限
+
+### 2. 化学品数据管理模块
+- **化学品档案**: CAS号、中英文名称、分子式、物理化学性质
+- **危险特性**: GHS分类、象形图、警示词、危险说明
+- **安全信息**: 急救措施、防护要求、储存条件、处置方法
+- **供应商管理**: 供应商信息、采购记录、MSDS来源跟踪
+
+### 3. 用户权限管理模块
+- **多层级权限**: 系统管理员、实验室管理员、普通用户
+- **数据权限**: 按实验室、部门、项目组划分数据访问范围
+- **操作日志**: 详细记录用户操作，支持审计和溯源
+- **登录安全**: 支持多种认证方式，密码策略，登录限制
+
+### 4. 统计分析模块
+- **查阅统计**: 文档查阅次数、热门化学品、用户活跃度
+- **下载记录**: 文档下载记录、导出功能、使用趋势
+- **安全报告**: 定期生成安全管理报告、合规性检查
+- **数据看板**: 实时数据大屏，关键指标监控
+
+### 5. 系统集成模块
+- **小程序API**: 为微信小程序提供数据接口
+- **第三方集成**: 与LIMS、采购系统、库存管理系统集成
+- **数据同步**: 定时同步外部数据源，保持数据一致性
+- **消息推送**: 支持邮件、短信、微信等多种通知方式
+
+## 开发流程
+
+### 1. 需求分析阶段
+- 详细分析业务需求，编写需求文档
+- 设计数据库表结构和接口规范
+- 制定开发计划和里程碑
+
+### 2. 设计阶段
+- 系统架构设计，模块划分
+- 数据库设计，表结构定义
+- API接口设计，前后端联调规范
+- UI/UX设计，页面原型制作
+
+### 3. 开发阶段
+- 后端开发：从数据库到接口的完整实现
+- 前端开发：基于Ant Design Pro的页面开发
+- 单元测试：保证代码质量和功能正确性
+- 集成测试：前后端联调和系统集成测试
+
+### 4. 测试阶段
+- 功能测试：验证所有功能需求
+- 性能测试：压力测试和性能优化
+- 安全测试：权限验证和安全漏洞检测
+- 用户验收测试：实际用户场景验证
+
+### 5. 部署上线
+- 生产环境搭建和配置
+- 数据迁移和初始化
+- 监控告警配置
+- 用户培训和文档编写
+
+## 质量保证
+
+### 代码质量
+- 每次提交前进行代码审查
+- 使用SonarQube进行代码质量检测
+- 覆盖率要求：单元测试覆盖率≥80%
+- 使用CheckStyle保证代码风格一致性
+
+### 性能要求
+- 页面加载时间≤3秒
+- API响应时间≤500ms
+- 支持1000+并发用户
+- 数据库查询优化，避免N+1问题
+
+### 安全要求
+- 所有API接口进行身份验证
+- 敏感数据传输使用HTTPS加密
+- SQL注入防护，使用参数化查询
+- XSS防护，输入输出过滤
+- CSRF防护，使用Token验证
+
+### 可维护性
+- 代码注释覆盖率≥60%
+- API文档自动生成和同步
+- 数据库变更使用Flyway管理
+- 配置外部化，支持多环境部署
+
+## 部署架构
+
+### 开发环境
+- 本地开发：IDEA + MySQL + Redis
+- 前端调试：VSCode + npm run dev
+- 数据库：Docker容器化部署
+
+### 测试环境
+- 应用服务器：Tomcat/内嵌Tomcat
+- 数据库：MySQL主从配置
+- 缓存：Redis集群
+- 负载均衡：Nginx
+
+### 生产环境
+- 应用集群：多实例部署，支持水平扩展
+- 数据库：MySQL主从+读写分离
+- 缓存：Redis哨兵模式
+- 文件存储：OSS对象存储
+- 监控：Prometheus + Grafana
+- 日志：ELK栈
+
+## 运维监控
+
+### 应用监控
+- 健康检查：Spring Boot Actuator
+- 性能监控：Micrometer + Prometheus
+- 错误监控：Sentry异常收集
+- 链路追踪：SkyWalking
+
+### 数据库监控
+- 慢查询监控和优化
+- 连接池状态监控
+- 磁盘空间和备份策略
+- 性能指标监控
+
+### 系统监控
+- 服务器资源监控：CPU、内存、磁盘、网络
+- 应用日志监控和告警
+- 业务指标监控：用户量、访问量、错误率
+- 自动化运维：CI/CD流水线
+
+## 安全策略
+
+### 身份认证
+- JWT Token认证机制
+- Token刷新和过期策略
+- 多设备登录管理
+- 单点登录(SSO)支持
+
+### 权限控制
+- RBAC角色权限模型
+- 细粒度权限控制
+- 数据权限隔离
+- API权限拦截
+
+### 数据安全
+- 敏感数据加密存储
+- 数据传输加密(HTTPS)
+- 数据备份和恢复
+- 数据访问审计
+
+### 系统安全
+- 防火墙和网络隔离
+- 定期安全漏洞扫描
+- 安全补丁及时更新
+- 入侵检测和防护
+
+## 项目管理
+
+### 版本管理
+- Git分支策略：GitFlow
+- 代码合并：Pull Request + Code Review
+- 版本发布：语义化版本控制
+- 变更管理：Change Log维护
+
+### 文档管理
+- 需求文档：业务需求和功能规格
+- 设计文档：架构设计和接口文档
+- 开发文档：代码注释和开发指南
+- 用户文档：使用手册和操作指南
+
+### 进度管理
+- 里程碑规划：按功能模块划分
+- 任务分解：详细的开发任务清单
+- 进度跟踪：每日站会和周报机制
+- 风险管理：风险识别和应对策略
+
+## 快速开始
+
+### 开发环境搭建
+1. **安装JDK 17**: 确保Java版本满足要求
+2. **安装MySQL**: 创建数据库并导入初始化脚本
+3. **安装Redis**: 配置缓存服务
+4. **安装Node.js**: 前端开发环境
+5. **克隆项目**: 获取最新代码
+6. **配置文件**: 修改数据库连接等配置
+7. **启动服务**: 后端Spring Boot + 前端React
+
+### 项目运行
+```bash
+# 后端启动
+cd ruoyi-admin
+mvn spring-boot:run
+
+# 前端启动
+cd react-ui
+npm install
+npm run dev
+```
+
+### 开发规范检查
+- 代码提交前运行单元测试
+- 使用代码格式化工具
+- 遵循命名规范和注释规范
+- 及时更新文档和变更记录
+
+## 相关资源
+
+### 技术文档
+- [Spring Boot官方文档](mdc:https:/spring.io/projects/spring-boot)
+- [React官方文档](mdc:https:/react.dev)
+- [Ant Design Pro文档](mdc:https:/pro.ant.design)
+- [MyBatis官方文档](mdc:https:/mybatis.org/mybatis-3)
+
+### 项目相关
+- 小程序端规则: [msds-project-guide.mdc](mdc:msds-project-guide.mdc)
+- 产品需求文档: [docs/PRD.md](mdc:docs/PRD.md)
+- 项目路线图: [docs/Roadmap.md](mdc:docs/Roadmap.md)
+- 用户故事地图: [docs/User_Story_Map.md](mdc:docs/User_Story_Map.md)
+
+### 开发提醒
+1. **思维链推理**: 进行代码debug时使用系统性思维链方法
+2. **整体审视**: 每处修改都要考虑相关依赖，确保所有涉及的地方同步修改
+3. **进度记录**: 完成特性或修复错误后随时更新任务清单
+4. **文档同步**: 代码变更需同步更新相关文档
+5. **安全第一**: 所有功能开发都要考虑安全性和权限控制
+6. **性能优化**: 关注数据库查询性能和前端渲染性能
+7. **用户体验**: 从实际用户场景出发，设计直观易用的功能界面
+
