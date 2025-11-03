@@ -12,7 +12,7 @@ on:
 env:
   # 阿里云容器镜像仓库配置
   REGISTRY: registry.cn-beijing.aliyuncs.com
-  NAMESPACE: msds
+  NAMESPACE: jfkjmsds  # 修改为实际创建的命名空间
   BACKEND_IMAGE: backend
   FRONTEND_IMAGE: frontend
 
