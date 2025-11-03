@@ -17,7 +17,7 @@ yarn-error.log
 /coverage
 .idea
 yarn.lock
-package-lock.json
+# package-lock.json  # 需要提交到Git以确保CI/CD依赖缓存正常工作
 *bak
 .vscode
 
