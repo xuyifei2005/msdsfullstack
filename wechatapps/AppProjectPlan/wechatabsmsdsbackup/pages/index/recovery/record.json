@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "归还记录",
-  "usingComponents": {
-    "nullt": "/components/nullt",
-    "search": "/components/search"
-  }
-}

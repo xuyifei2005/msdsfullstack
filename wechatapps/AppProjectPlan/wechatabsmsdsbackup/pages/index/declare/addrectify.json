@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "指派",
-  "usingComponents": {
-    "tki-tree": "/components/tki-tree/tki-tree",
-    "tki-trees": "/components/tki-trees/tki-trees"
-  }
-}

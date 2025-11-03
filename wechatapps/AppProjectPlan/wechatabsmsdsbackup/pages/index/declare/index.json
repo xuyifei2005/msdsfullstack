@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "隐患申报",
-  "usingComponents": {
-    "nulls": "/components/nulls",
-    "search": "/components/search"
-  }
-}

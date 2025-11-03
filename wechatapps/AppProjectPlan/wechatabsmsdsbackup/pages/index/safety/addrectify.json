@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "新建整改通知单",
-  "usingComponents": {
-    "tki-tree": "/components/tki-tree/tki-tree",
-    "tki-trees": "/components/tki-trees/tki-trees"
-  }
-}

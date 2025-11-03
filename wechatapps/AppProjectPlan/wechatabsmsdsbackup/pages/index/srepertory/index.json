@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "实验室在库库存",
-  "usingComponents": {
-    "uni-datetime-picker": "/uni_modules/uni-datetime-picker/components/uni-datetime-picker/uni-datetime-picker",
-    "nulls": "/components/nulls"
-  }
-}

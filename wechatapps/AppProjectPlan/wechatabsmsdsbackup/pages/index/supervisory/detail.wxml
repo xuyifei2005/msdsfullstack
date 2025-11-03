@@ -1,1 +1,0 @@
-<view style="{{'width:'+('100%')+';'+('height:'+('100%')+';')}}" id="view"><video style="width:100%;" id="preview" autoplay="autoplay" src="{{urls}}"></video></view>

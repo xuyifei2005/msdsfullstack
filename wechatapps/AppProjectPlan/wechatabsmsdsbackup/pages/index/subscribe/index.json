@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "申购",
-  "usingComponents": {
-    "l-file": "/components/l-file/l-file",
-    "search": "/components/search"
-  }
-}

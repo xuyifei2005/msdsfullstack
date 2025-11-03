@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "安全总结",
-  "usingComponents": {
-    "l-file": "/components/l-file/l-file",
-    "tki-tree": "/components/tki-tree/tki-tree",
-    "jin-edit": "/components/jin-edit/jin-edit"
-  }
-}

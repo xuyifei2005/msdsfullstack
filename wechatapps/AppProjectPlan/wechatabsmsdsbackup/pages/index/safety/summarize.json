@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "整改总结",
-  "usingComponents": {
-    "l-file": "/components/l-file/l-file",
-    "jin-edit": "/components/jin-edit/jin-edit",
-    "u-parse": "/components/uParse/src/wxParse"
-  }
-}

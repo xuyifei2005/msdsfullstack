@@ -1,1 +1,0 @@
-<view class="content"><tki-tree class="vue-ref" vue-id="a884537a-1" selectParent="{{selectParent}}" multiple="{{multiple}}" range="{{list}}" foldAll="{{flod}}" rangeKey="label" data-ref="tkitree" data-event-opts="{{[['^confirm',[['treeConfirm']]],['^cancel',[['treeCancel']]]]}}" bind:confirm="__e" bind:cancel="__e" bind:__l="__l"></tki-tree></view>

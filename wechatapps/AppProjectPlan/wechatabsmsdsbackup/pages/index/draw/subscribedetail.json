@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "领用申请审批",
-  "navigationBarBackgroundColor": "#FFFFFF",
-  "navigationBarTextStyle": "black",
-  "usingComponents": {
-    "step": "/components/lwp-step/lwp-step"
-  }
-}

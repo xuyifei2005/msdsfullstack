@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "领用申请",
-  "usingComponents": {
-    "search": "/components/search"
-  }
-}

@@ -147,7 +147,12 @@ env/
 ENV/
 .venv/
 
+
+
+
+
 # PDF2XML输出和临时文件
+
 pdf2xml/output/
 pdf2xml/logs/
 pdf2xml/test_output/
@@ -157,6 +162,11 @@ pdf2xml/*.txt
 pdf2xml/*.json
 pdf2xml/*.xml
 pdf2xml/*.pdf
+
+
+
+
+
 
 ####################################
 # 日志文件
@@ -354,6 +364,8 @@ msdsdocker/msdsfullstatckcompose/msdsdata/
 test_msds_files/
 **/temp/
 **/tmp/
+
+
 
 ####################################
 # 微信小程序项目计划（大文件较多）

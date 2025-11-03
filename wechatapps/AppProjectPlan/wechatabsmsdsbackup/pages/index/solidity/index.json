@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "固体废弃物归还",
-  "usingComponents": {
-    "nullt": "/components/nullt",
-    "search": "/components/search",
-    "l-file": "/components/l-file/l-file"
-  }
-}
