@@ -41,8 +41,9 @@ alwaysApply: true
 
 #### 后端和前端开发
 - **运行位置**: 所有后端和前端代码必须在Docker容器内编译和运行
+- **开发工具**: Cursor IDE（主要）、IntelliJ IDEA（可选）
 - **开发流程**: 
-  1. 代码在Windows主机上编辑（通过VSCode/Cursor）
+  1. 代码在Windows主机上编辑（通过Cursor IDE）
   2. 通过Docker卷挂载到WSL2的Docker容器中
   3. 在容器内进行编译、运行和调试
 - **注意事项**: 

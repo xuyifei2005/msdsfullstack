@@ -57,9 +57,10 @@
 
 ### 🐳 Docker部署规则 (docker-deployment.mdc)
 - **应用范围**: Docker相关文件 (`**/docker-compose*.yml`, `**/Dockerfile*`, `**/*.sh`)
-- **内容**: WSL2 + Docker Desktop环境配置、MySQL数据库配置、容器化最佳实践、部署脚本规范、监控配置
+- **内容**: WSL2 + Docker Desktop环境配置、MySQL数据库配置、容器化最佳实践、部署脚本规范、监控配置、**CI/CD自动化部署**
 - **目的**: 标准化部署流程，提升系统稳定性和可维护性
 - **环境说明**: 所有容器运行在Windows 11的WSL2环境中，使用Docker Desktop管理
+- **CI/CD**: 使用GitHub Actions进行自动化构建和部署，集成阿里云容器镜像服务
 
 ## 如何使用这些规则
 

@@ -555,3 +555,185 @@ while true; do
     sleep 300  # 5分钟检查一次
 done
 ```
+
+## CI/CD自动化部署
+
+### GitHub Actions工作流配置
+
+本项目使用GitHub Actions进行自动化构建和部署，配置文件位于 `.github/workflows/deploy.yml`。
+
+#### 工作流触发条件
+```yaml
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
+```
+
+#### 关键步骤
+
+1. **前端构建**
+   - 在Docker容器中编译React应用
+   - 缓存npm依赖以提升构建速度
+   - 生成生产环境静态文件
+
+2. **后端构建**
+   - 在Docker容器中编译Spring Boot应用
+   - 使用Maven缓存依赖
+   - 打包为可执行JAR文件
+
+3. **Docker镜像构建与推送**
+   - 构建前端和后端Docker镜像
+   - 推送到阿里云容器镜像仓库
+   - 使用Git SHA作为镜像标签
+
+#### 重要配置项
+
+**必需的GitHub Secrets**：
+```bash
+ALIYUN_REGISTRY_USERNAME    # 阿里云容器镜像服务用户名
+ALIYUN_REGISTRY_PASSWORD    # 阿里云容器镜像服务固定密码
+```
+
+**环境变量**：
+```yaml
+env:
+  REGISTRY: registry.cn-beijing.aliyuncs.com  # 阿里云镜像仓库地址
+  NAMESPACE: jfkjmsds                          # 命名空间
+  BACKEND_IMAGE: backend                       # 后端镜像名
+  FRONTEND_IMAGE: frontend                     # 前端镜像名
+```
+
+### 阿里云容器镜像服务配置
+
+#### 服务信息
+- **服务类型**: 个人实例版（免费）
+- **区域**: 华北2（北京）`registry.cn-beijing.aliyuncs.com`
+- **命名空间**: `jfkjmsds`
+- **镜像仓库**: 
+  - `backend` - Java Spring Boot后端服务
+  - `frontend` - React前端应用
+
+#### 配置步骤
+
+1. **获取访问凭证**
+   - 登录 https://cr.console.aliyun.com/
+   - 点击右上角"访问凭证"
+   - 设置固定密码（用于Docker登录）
+
+2. **配置GitHub Secrets**
+   - 访问 GitHub仓库 → Settings → Secrets and variables → Actions
+   - 添加 `ALIYUN_REGISTRY_USERNAME`（阿里云账号或用户名）
+   - 添加 `ALIYUN_REGISTRY_PASSWORD`（固定密码）
+
+3. **本地测试登录**
+   ```bash
+   # 测试阿里云镜像仓库登录
+   docker login registry.cn-beijing.aliyuncs.com
+   # 输入用户名和固定密码
+   ```
+
+#### 镜像命名规范
+```
+registry.cn-beijing.aliyuncs.com/jfkjmsds/backend:v1.0.0
+registry.cn-beijing.aliyuncs.com/jfkjmsds/frontend:v1.0.0
+```
+
+### CI/CD最佳实践
+
+#### 1. 构建优化
+- ✅ 使用多阶段构建减小镜像体积
+- ✅ 缓存依赖层提升构建速度
+- ✅ 只在main/develop分支推送镜像
+
+#### 2. 安全管理
+- ⚠️ **永远不要在代码中硬编码凭证**
+- ✅ 使用GitHub Secrets管理敏感信息
+- ✅ 定期轮换访问密码
+- ✅ 镜像仓库设置为私有
+
+#### 3. 版本管理
+- 使用Git SHA作为镜像标签确保可追溯
+- 重要版本使用语义化版本号（v1.0.0）
+- 保留最近N个镜像版本，定期清理旧版本
+
+#### 4. 监控与日志
+- 关注GitHub Actions构建日志
+- 监控Docker镜像推送状态
+- 设置构建失败告警通知
+
+### 常见问题排查
+
+#### 问题1：package-lock.json未找到
+**错误**: `Some specified paths were not resolved, unable to cache dependencies`
+
+**解决方案**: 确保`package-lock.json`已提交到Git仓库，不要在`.gitignore`中排除它。
+
+#### 问题2：Docker登录失败 (403 Forbidden)
+**错误**: `login attempt to https://registry.cn-beijing.aliyuncs.com/v2/ failed with status: 403 Forbidden`
+
+**解决方案**: 
+- 检查GitHub Secrets中的用户名和密码是否正确
+- 确认使用的是"固定密码"而非阿里云登录密码
+- 验证用户名格式（可能是邮箱、账号ID或其他格式）
+
+#### 问题3：unauthorized错误
+**错误**: `unauthorized: authentication required`
+
+**解决方案**:
+- GitHub Secrets未配置或配置错误
+- 重新从阿里云"访问凭证"页面获取正确的用户名
+- 确认固定密码已设置并使用正确
+
+#### 问题4：命名空间不存在
+**错误**: 推送镜像时提示命名空间不存在
+
+**解决方案**:
+- 在阿里云容器镜像服务中创建命名空间
+- 确保工作流中的`NAMESPACE`环境变量与实际创建的一致
+
+### 部署流程图
+
+```
+开发 → 提交代码 → Push到GitHub
+  ↓
+GitHub Actions触发
+  ↓
+1. 检出代码
+2. 设置Node.js/Java环境
+3. 构建前端/后端应用
+  ↓
+4. 构建Docker镜像
+  ↓
+5. 登录阿里云容器镜像仓库
+  ↓
+6. 推送镜像
+  ↓
+7. 部署到生产环境（可选）
+```
+
+### 手动部署命令
+
+如果需要手动构建和推送镜像：
+
+```bash
+# 1. 登录阿里云镜像仓库
+docker login registry.cn-beijing.aliyuncs.com
+
+# 2. 构建镜像
+docker build -t registry.cn-beijing.aliyuncs.com/jfkjmsds/backend:latest ./msdsPC/ruoyi-MsdsPc-react
+docker build -t registry.cn-beijing.aliyuncs.com/jfkjmsds/frontend:latest ./msdsPC/ruoyi-MsdsPc-react/react-ui
+
+# 3. 推送镜像
+docker push registry.cn-beijing.aliyuncs.com/jfkjmsds/backend:latest
+docker push registry.cn-beijing.aliyuncs.com/jfkjmsds/frontend:latest
+
+# 4. 在服务器上拉取并运行
+docker pull registry.cn-beijing.aliyuncs.com/jfkjmsds/backend:latest
+docker-compose up -d
+```

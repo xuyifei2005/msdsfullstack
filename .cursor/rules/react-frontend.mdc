@@ -12,7 +12,7 @@ globs: *.ts,*.tsx,*.js,*.jsx
 - **构建工具**: Node.js + npm/yarn（在Docker容器内）
 
 ### 开发流程
-1. **代码编辑**: 在Windows主机的IDE（如Cursor、VSCode）中编写React代码
+1. **代码编辑**: 在Windows主机的Cursor IDE中编写React代码
 2. **开发服务器**:
    - 通过Docker Compose启动前端开发服务器
    - 容器内运行`npm run dev`或`npm start`
