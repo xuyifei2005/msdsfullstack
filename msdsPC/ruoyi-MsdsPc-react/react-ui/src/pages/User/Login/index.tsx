@@ -349,14 +349,14 @@ const Login: React.FC = () => {
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '16px' }}>
                     <ExperimentOutlined style={{ fontSize: '48px', marginRight: '16px' }} />
                     <h1 style={{ fontSize: '36px', fontWeight: 'bold', margin: 0, color: 'white' }}>
-                      MSDS管理系统
+                      {intl.formatMessage({ id: 'pages.login.title', defaultMessage: 'MSDS管理系统' })}
                     </h1>
                   </div>
                   <p style={{ fontSize: '20px', color: 'rgba(255, 255, 255, 0.9)', marginBottom: '8px' }}>
-                    专业的化学品安全数据表管理平台
+                    {intl.formatMessage({ id: 'pages.login.subtitle', defaultMessage: '专业的化学品安全数据表管理平台' })}
                   </p>
                   <p style={{ fontSize: '16px', color: 'rgba(255, 255, 255, 0.75)' }}>
-                    为科研机构和实验室提供安全、高效的MSDS数据管理解决方案
+                    {intl.formatMessage({ id: 'pages.login.description', defaultMessage: '为科研机构和实验室提供安全、高效的MSDS数据管理解决方案' })}
                   </p>
                 </div>
 
@@ -365,29 +365,29 @@ const Login: React.FC = () => {
                   <Col span={12} style={{ display: 'flex' }}>
                     <FeatureCard
                       icon={<SearchOutlined />}
-                      title="智能搜索"
-                      description="支持多维度搜索，快速定位所需的MSDS文档"
+                      title={intl.formatMessage({ id: 'pages.login.feature.search.title', defaultMessage: '智能搜索' })}
+                      description={intl.formatMessage({ id: 'pages.login.feature.search.description', defaultMessage: '支持多维度搜索，快速定位所需的MSDS文档' })}
                     />
                   </Col>
                   <Col span={12} style={{ display: 'flex' }}>
                     <FeatureCard
                       icon={<SafetyOutlined />}
-                      title="安全合规"
-                      description="符合国际安全标准，确保数据安全和合规性"
+                      title={intl.formatMessage({ id: 'pages.login.feature.safety.title', defaultMessage: '安全合规' })}
+                      description={intl.formatMessage({ id: 'pages.login.feature.safety.description', defaultMessage: '符合国际安全标准，确保数据安全和合规性' })}
                     />
                   </Col>
                   <Col span={12} style={{ display: 'flex' }}>
                     <FeatureCard
                       icon={<TeamOutlined />}
-                      title="团队协作"
-                      description="支持多用户协作，提高团队工作效率"
+                      title={intl.formatMessage({ id: 'pages.login.feature.team.title', defaultMessage: '团队协作' })}
+                      description={intl.formatMessage({ id: 'pages.login.feature.team.description', defaultMessage: '支持多用户协作，提高团队工作效率' })}
                     />
                   </Col>
                   <Col span={12} style={{ display: 'flex' }}>
                     <FeatureCard
                       icon={<BarChartOutlined />}
-                      title="数据分析"
-                      description="可视化数据分析，洞察使用趋势和风险分布"
+                      title={intl.formatMessage({ id: 'pages.login.feature.analysis.title', defaultMessage: '数据分析' })}
+                      description={intl.formatMessage({ id: 'pages.login.feature.analysis.description', defaultMessage: '可视化数据分析，洞察使用趋势和风险分布' })}
                     />
                   </Col>
                 </Row>
@@ -396,15 +396,21 @@ const Login: React.FC = () => {
                 <Row gutter={16} style={{ textAlign: 'center' }}>
                   <Col span={8}>
                     <div style={{ fontSize: '32px', fontWeight: 'bold' }}>10,000+</div>
-                    <div style={{ fontSize: '14px', color: 'rgba(255, 255, 255, 0.75)' }}>MSDS文档</div>
+                    <div style={{ fontSize: '14px', color: 'rgba(255, 255, 255, 0.75)' }}>
+                      {intl.formatMessage({ id: 'pages.login.stats.documents', defaultMessage: 'MSDS文档' })}
+                    </div>
                   </Col>
                   <Col span={8}>
                     <div style={{ fontSize: '32px', fontWeight: 'bold' }}>500+</div>
-                    <div style={{ fontSize: '14px', color: 'rgba(255, 255, 255, 0.75)' }}>活跃用户</div>
+                    <div style={{ fontSize: '14px', color: 'rgba(255, 255, 255, 0.75)' }}>
+                      {intl.formatMessage({ id: 'pages.login.stats.users', defaultMessage: '活跃用户' })}
+                    </div>
                   </Col>
                   <Col span={8}>
                     <div style={{ fontSize: '32px', fontWeight: 'bold' }}>99.9%</div>
-                    <div style={{ fontSize: '14px', color: 'rgba(255, 255, 255, 0.75)' }}>系统可用性</div>
+                    <div style={{ fontSize: '14px', color: 'rgba(255, 255, 255, 0.75)' }}>
+                      {intl.formatMessage({ id: 'pages.login.stats.availability', defaultMessage: '系统可用性' })}
+                    </div>
                   </Col>
                 </Row>
               </div>
@@ -415,9 +421,11 @@ const Login: React.FC = () => {
               <div className={loginCardClassName}>
                 <div style={{ textAlign: 'center', marginBottom: '32px' }}>
                   <h2 style={{ fontSize: '24px', fontWeight: 'bold', color: '#262626', marginBottom: '8px' }}>
-                    欢迎登录
+                    {intl.formatMessage({ id: 'pages.login.welcome', defaultMessage: '欢迎登录' })}
                   </h2>
-                  <p style={{ color: '#8c8c8c' }}>请输入您的账户信息</p>
+                  <p style={{ color: '#8c8c8c' }}>
+                    {intl.formatMessage({ id: 'pages.login.welcomeDescription', defaultMessage: '请输入您的账户信息' })}
+                  </p>
                 </div>
                 {code !== 200 && (
                   <Alert
@@ -448,7 +456,7 @@ const Login: React.FC = () => {
                     rules={[
                       {
                         required: true,
-                        message: '请输入用户名！',
+                        message: intl.formatMessage({ id: 'pages.login.username.required', defaultMessage: '请输入用户名！' }),
                       },
                     ]}
                   >
@@ -456,7 +464,7 @@ const Login: React.FC = () => {
                       fieldProps={{
                         size: 'large',
                         prefix: <UserOutlined style={{ color: '#8c8c8c' }} />,
-                        placeholder: '请输入用户名或邮箱',
+                        placeholder: intl.formatMessage({ id: 'pages.login.usernamePlaceholder', defaultMessage: '请输入用户名或邮箱' }),
                       }}
                     />
                   </Form.Item>
@@ -467,7 +475,7 @@ const Login: React.FC = () => {
                     rules={[
                       {
                         required: true,
-                        message: '请输入密码！',
+                        message: intl.formatMessage({ id: 'pages.login.password.required', defaultMessage: '请输入密码！' }),
                       },
                     ]}
                   >
@@ -475,7 +483,7 @@ const Login: React.FC = () => {
                       fieldProps={{
                         size: 'large',
                         prefix: <LockOutlined style={{ color: '#8c8c8c' }} />,
-                        placeholder: '请输入密码',
+                        placeholder: intl.formatMessage({ id: 'pages.login.passwordPlaceholder', defaultMessage: '请输入密码' }),
                       }}
                     />
                   </Form.Item>
@@ -487,7 +495,7 @@ const Login: React.FC = () => {
                         rules={[
                           {
                             required: true,
-                            message: '请输入验证码！',
+                            message: intl.formatMessage({ id: 'pages.login.captcha.required', defaultMessage: '请输入验证码！' }),
                           },
                         ]}
                       >
@@ -495,7 +503,7 @@ const Login: React.FC = () => {
                           fieldProps={{
                             size: 'large',
                             prefix: <SafetyOutlined style={{ color: '#8c8c8c' }} />,
-                            placeholder: '请输入验证码',
+                            placeholder: intl.formatMessage({ id: 'pages.login.captchaPlaceholder', defaultMessage: '请输入验证码' }),
                           }}
                         />
                       </Form.Item>
@@ -506,7 +514,7 @@ const Login: React.FC = () => {
                           <img
                             key={uuid || 'captcha'}
                             src={captchaCode}
-                            alt="验证码"
+                            alt={intl.formatMessage({ id: 'pages.login.captcha', defaultMessage: '验证码' })}
                             style={{
                               width: '120px',
                               height: '40px',
@@ -538,7 +546,7 @@ const Login: React.FC = () => {
                             }}
                             onClick={() => getCaptchaCode()}
                           >
-                            点击获取
+                            {intl.formatMessage({ id: 'pages.login.captchaGet', defaultMessage: '点击获取' })}
                           </div>
                         )}
                       </div>
@@ -551,13 +559,15 @@ const Login: React.FC = () => {
                       <Col>
                         <Form.Item name="autoLogin" valuePropName="checked" noStyle>
                           <ProFormCheckbox>
-                            <span style={{ color: '#595959' }}>记住登录状态</span>
+                            <span style={{ color: '#595959' }}>
+                              {intl.formatMessage({ id: 'pages.login.rememberStatus', defaultMessage: '记住登录状态' })}
+                            </span>
                           </ProFormCheckbox>
                         </Form.Item>
                       </Col>
                       <Col>
                         <a style={{ color: '#1890ff' }}>
-                          忘记密码？
+                          {intl.formatMessage({ id: 'pages.login.forgotPassword', defaultMessage: '忘记密码？' })}
                         </a>
                       </Col>
                     </Row>
@@ -574,7 +584,10 @@ const Login: React.FC = () => {
                       icon={!loading && <LoginOutlined />}
                       className={loginButtonClassName}
                     >
-                      {loading ? '登录中...' : '登录系统'}
+                      {loading 
+                        ? intl.formatMessage({ id: 'pages.login.loginButtonLoading', defaultMessage: '登录中...' })
+                        : intl.formatMessage({ id: 'pages.login.loginButton', defaultMessage: '登录系统' })
+                      }
                     </Button>
                   </Form.Item>
                 </Form>
@@ -599,11 +612,11 @@ const Login: React.FC = () => {
                             marginRight: '8px',
                           }}
                         />
-                        <span>系统运行正常</span>
+                        <span>{intl.formatMessage({ id: 'pages.login.systemStatus', defaultMessage: '系统运行正常' })}</span>
                       </div>
                     </Col>
                     <Col>
-                      <span>版本 v2.1.0</span>
+                      <span>{intl.formatMessage({ id: 'pages.login.version', defaultMessage: '版本 v2.1.0' })}</span>
                     </Col>
                   </Row>
                 </div>
