@@ -58,6 +58,10 @@ const FeatureCard: React.FC<{
       border: '1px solid rgba(255, 255, 255, 0.2)',
       borderRadius: '12px',
       padding: '20px',
+      height: '100%',
+      minHeight: '120px',
+      display: 'flex',
+      flexDirection: 'column',
       transition: 'all 0.3s ease',
       '&:hover': {
         background: 'rgba(255, 255, 255, 0.15)',
@@ -72,7 +76,7 @@ const FeatureCard: React.FC<{
         <span style={{ fontSize: '24px', marginRight: '12px' }}>{icon}</span>
         <h3 style={{ margin: 0, fontSize: '16px', fontWeight: 600 }}>{title}</h3>
       </div>
-      <p style={{ margin: 0, fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)' }}>
+      <p style={{ margin: 0, fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)', lineHeight: '1.6' }}>
         {description}
       </p>
     </div>
@@ -357,29 +361,29 @@ const Login: React.FC = () => {
                 </div>
 
                 {/* 功能特点 */}
-                <Row gutter={[16, 16]} style={{ marginBottom: '48px' }}>
-                  <Col span={12}>
+                <Row gutter={[16, 16]} style={{ marginBottom: '48px' }} align="stretch">
+                  <Col span={12} style={{ display: 'flex' }}>
                     <FeatureCard
                       icon={<SearchOutlined />}
                       title="智能搜索"
                       description="支持多维度搜索，快速定位所需的MSDS文档"
                     />
                   </Col>
-                  <Col span={12}>
+                  <Col span={12} style={{ display: 'flex' }}>
                     <FeatureCard
                       icon={<SafetyOutlined />}
                       title="安全合规"
                       description="符合国际安全标准，确保数据安全和合规性"
                     />
                   </Col>
-                  <Col span={12}>
+                  <Col span={12} style={{ display: 'flex' }}>
                     <FeatureCard
                       icon={<TeamOutlined />}
                       title="团队协作"
                       description="支持多用户协作，提高团队工作效率"
                     />
                   </Col>
-                  <Col span={12}>
+                  <Col span={12} style={{ display: 'flex' }}>
                     <FeatureCard
                       icon={<BarChartOutlined />}
                       title="数据分析"
