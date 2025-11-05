@@ -99,6 +99,11 @@ export default [
     path: '/tool',
     routes: [
       {
+        name: '代码生成',
+        path: '/tool/gen',
+        component: './Tool/Gen/index',
+      },
+      {
         name: '导入表',
         path: '/tool/gen/import',
         component: './Tool/Gen/import',
