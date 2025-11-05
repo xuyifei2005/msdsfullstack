@@ -1,0 +1,535 @@
+.msds-detail-page {
+  min-height: 100vh;
+  background: #f5f5f5;
+
+  // 头部区域
+  .detail-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 48px 0 64px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+      opacity: 0.3;
+    }
+
+    .header-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .breadcrumb {
+      margin-bottom: 32px;
+
+      :global {
+        .ant-breadcrumb-link,
+        .ant-breadcrumb-separator {
+          color: rgba(255, 255, 255, 0.85);
+          cursor: pointer;
+
+          &:hover {
+            color: rgba(255, 255, 255, 1);
+          }
+        }
+      }
+    }
+
+    .header-main {
+      .basic-info-section {
+        display: flex;
+        gap: 32px;
+
+        .molecular-structure {
+          width: 140px;
+          height: 140px;
+          background: linear-gradient(45deg, #f0f9ff 25%, transparent 25%),
+            linear-gradient(-45deg, #f0f9ff 25%, transparent 25%),
+            linear-gradient(45deg, transparent 75%, #f0f9ff 75%),
+            linear-gradient(-45deg, transparent 75%, #f0f9ff 75%);
+          background-size: 20px 20px;
+          background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+          border-radius: 12px;
+          border: 2px solid white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: white;
+          flex-shrink: 0;
+
+          .molecular-content {
+            text-align: center;
+
+            .formula {
+              font-size: 32px;
+              font-weight: bold;
+              color: #262626;
+            }
+
+            .formula-label {
+              font-size: 14px;
+              color: #595959;
+              margin-top: 4px;
+            }
+          }
+        }
+
+        .chemical-info {
+          flex: 1;
+          color: white;
+
+          .chemical-name {
+            color: white !important;
+            margin-bottom: 8px !important;
+            font-size: 48px !important;
+          }
+
+          .chemical-name-en {
+            color: rgba(255, 255, 255, 0.85) !important;
+            margin-bottom: 24px !important;
+            font-weight: normal !important;
+          }
+
+          .key-info {
+            margin-bottom: 24px;
+
+            .label {
+              color: rgba(255, 255, 255, 0.65);
+            }
+
+            .value {
+              color: white;
+              font-weight: 500;
+            }
+          }
+
+          .hazard-badge {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-top: 32px;
+
+            .hazard-symbol {
+              width: 80px;
+              height: 80px;
+              background: #ff4d4f;
+              border: 3px solid white;
+              border-radius: 12px;
+              position: relative;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+                width: 40px;
+                height: 40px;
+                background: white;
+              }
+
+              .hazard-icon {
+                position: relative;
+                z-index: 1;
+                font-size: 32px;
+                color: #ff4d4f;
+              }
+            }
+
+            .hazard-text {
+              .hazard-title {
+                font-size: 18px;
+                font-weight: 600;
+              }
+
+              .hazard-code {
+                font-size: 14px;
+                color: rgba(255, 255, 255, 0.75);
+                margin-top: 4px;
+              }
+            }
+          }
+        }
+      }
+
+      .quick-actions-card {
+        background: rgba(255, 255, 255, 0.1) !important;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        border-radius: 16px !important;
+
+        :global {
+          .ant-card-body {
+            padding: 24px;
+          }
+        }
+
+        .action-btn {
+          &.primary {
+            background: white;
+            color: #667eea;
+            border: none;
+
+            &:hover {
+              background: #f0f9ff;
+            }
+          }
+
+          &.secondary {
+            background: #667eea;
+            color: white;
+            border: none;
+
+            &:hover {
+              background: #5a6fd8;
+            }
+          }
+
+          &.outline {
+            background: transparent;
+            color: white;
+            border: 1px solid white;
+
+            &:hover {
+              background: white;
+              color: #667eea;
+            }
+          }
+        }
+
+        .qr-section {
+          margin-top: 24px;
+          text-align: center;
+
+          .qr-code {
+            width: 96px;
+            height: 96px;
+            margin: 12px auto 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23000"/><rect x="10" y="10" width="10" height="10" fill="%23fff"/><rect x="30" y="10" width="10" height="10" fill="%23fff"/><rect x="50" y="10" width="10" height="10" fill="%23fff"/><rect x="70" y="10" width="10" height="10" fill="%23fff"/><rect x="10" y="30" width="10" height="10" fill="%23fff"/><rect x="50" y="30" width="10" height="10" fill="%23fff"/><rect x="70" y="30" width="10" height="10" fill="%23fff"/><rect x="10" y="50" width="10" height="10" fill="%23fff"/><rect x="30" y="50" width="10" height="10" fill="%23fff"/><rect x="70" y="50" width="10" height="10" fill="%23fff"/><rect x="10" y="70" width="10" height="10" fill="%23fff"/><rect x="30" y="70" width="10" height="10" fill="%23fff"/><rect x="50" y="70" width="10" height="10" fill="%23fff"/><rect x="70" y="70" width="10" height="10" fill="%23fff"/></svg>')
+              center/cover;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  // 粘性导航
+  .sticky-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+    :global {
+      .ant-tabs {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 24px;
+
+        .ant-tabs-nav {
+          margin-bottom: 0;
+        }
+
+        .ant-tabs-tab {
+          padding: 16px 8px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  // 内容区域
+  .detail-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 32px 24px;
+
+    .content-section {
+      animation: fadeInUp 0.6s ease;
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+
+    .info-card {
+      margin-bottom: 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+
+      &:hover {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+      }
+
+      :global {
+        .ant-card-head-title {
+          font-size: 18px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    // 危险性分类
+    .hazard-classification {
+      margin-bottom: 24px;
+
+      .hazard-item {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 16px;
+        background: #fff1f0;
+        border-radius: 8px;
+
+        &.danger {
+          background: #fff1f0;
+        }
+
+        .hazard-icon-large {
+          font-size: 32px;
+          color: #ff4d4f;
+        }
+
+        .hazard-title {
+          font-size: 16px;
+          font-weight: 600;
+          color: #262626;
+        }
+
+        .hazard-category {
+          font-size: 14px;
+          color: #595959;
+        }
+      }
+    }
+
+    // 标签要素
+    .label-elements {
+      margin-bottom: 24px;
+
+      .element-box {
+        padding: 12px;
+        background: #fafafa;
+        border-radius: 8px;
+        text-align: center;
+      }
+    }
+
+    // 健康危害
+    .health-hazard {
+      .warning-box {
+        padding: 16px;
+        background: #fffbe6;
+        border-left: 4px solid #faad14;
+        border-radius: 0 8px 8px 0;
+      }
+    }
+
+    // 急救措施
+    .first-aid-item {
+      padding: 16px;
+      background: #fafafa;
+      border-radius: 8px;
+      margin-bottom: 16px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    // 爆炸特性
+    .explosion-limits {
+      margin-top: 24px;
+
+      .explosion-stats {
+        padding: 24px;
+        background: #fff1f0;
+        border-radius: 8px;
+
+        :global {
+          .ant-statistic-title {
+            font-size: 14px;
+            color: #595959;
+          }
+
+          .ant-statistic-content {
+            font-size: 32px;
+          }
+        }
+      }
+    }
+
+    // 版本历史
+    .version-item {
+      .version-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 8px;
+
+        h5 {
+          margin: 0;
+        }
+      }
+    }
+
+    // 侧边栏
+    .sidebar-sticky {
+      position: sticky;
+      top: 80px;
+
+      .info-sidebar {
+        :global {
+          .ant-descriptions-item-label {
+            color: #8c8c8c;
+            width: 80px;
+          }
+
+          .ant-descriptions-item-content {
+            color: #262626;
+            font-weight: 500;
+          }
+        }
+
+        .stats-section {
+          margin-top: 24px;
+          padding-top: 16px;
+          border-top: 1px solid #f0f0f0;
+
+          h5 {
+            margin-bottom: 16px;
+          }
+
+          .stat-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 0;
+            font-size: 14px;
+            color: #595959;
+
+            &:not(:last-child) {
+              border-bottom: 1px solid #f0f0f0;
+            }
+          }
+        }
+
+        .related-docs {
+          margin-top: 24px;
+          padding-top: 16px;
+          border-top: 1px solid #f0f0f0;
+
+          h5 {
+            margin-bottom: 16px;
+          }
+
+          .related-doc-item {
+            padding: 12px;
+            background: #fafafa;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+              background: #e6f7ff;
+            }
+
+            .doc-name {
+              display: block;
+              font-size: 14px;
+              font-weight: 500;
+              color: #1890ff;
+              margin-bottom: 4px;
+            }
+
+            .doc-cas {
+              display: block;
+              font-size: 12px;
+              color: #8c8c8c;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // 打印隐藏
+  @media print {
+    .print-hidden {
+      display: none !important;
+    }
+
+    .detail-header {
+      background: #667eea !important;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+  }
+
+  // 响应式
+  @media (max-width: 768px) {
+    .detail-header {
+      .header-main {
+        .basic-info-section {
+          flex-direction: column;
+
+          .molecular-structure {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+          }
+
+          .chemical-info {
+            text-align: center;
+
+            .chemical-name {
+              font-size: 32px !important;
+            }
+
+            .hazard-badge {
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+
+    .sticky-nav {
+      :global {
+        .ant-tabs-nav {
+          overflow-x: auto;
+        }
+      }
+    }
+
+    .detail-content {
+      .sidebar-sticky {
+        position: static;
+      }
+    }
+  }
+}
+

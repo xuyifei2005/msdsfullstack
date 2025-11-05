@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.MsdsSearchMapper">
+    
+    <resultMap type="MsdsMain" id="MsdsMainResult">
+        <id     property="id"                   column="id"                   />
+        <result property="casNumber"            column="cas_number"            />
+        <result property="msdsCode"             column="msds_code"             />
+        <result property="productName"          column="product_name"          />
+        <result property="productAlias"         column="product_alias"         />
+        <result property="productEnglishName"   column="product_english_name"   />
+        <result property="categoryId"           column="category_id"           />
+        <result property="companyName"          column="company_name"          />
+        <result property="companyAddress"       column="company_address"       />
+        <result property="zipCode"              column="zip_code"              />
+        <result property="faxNumber"            column="fax_number"            />
+        <result property="contactPhone"         column="contact_phone"         />
+        <result property="email"                column="email"                />
+        <result property="emergencyPhone"       column="emergency_phone"       />
+        <result property="recommendedUsage"     column="recommended_usage"     />
+        <result property="restrictedUsage"      column="restricted_usage"      />
+        <result property="version"              column="version"              />
+        <result property="revisionDate"         column="revision_date"         />
+        <result property="effectiveDate"        column="effective_date"        />
+        <result property="status"               column="status"               />
+        <result property="approver"             column="approver"             />
+        <result property="approvalDate"         column="approval_date"         />
+        <result property="isActive"             column="is_active"             />
+        <result property="createTime"           column="create_time"           />
+        <result property="updateTime"           column="update_time"           />
+        <result property="remark"               column="remark"               />
+    </resultMap>
+    
+    <sql id="selectMsdsMainVo">
+        select m.id, m.cas_number, m.msds_code, m.product_name, m.product_alias, m.product_english_name,
+            m.category_id, m.company_name, m.company_address, m.zip_code, m.fax_number, m.contact_phone,
+            m.email, m.emergency_phone, m.recommended_usage, m.restricted_usage, m.version,
+            m.revision_date, m.effective_date, m.status, m.approver, m.approval_date,
+            m.is_active, m.create_time, m.update_time, m.remark
+        from msds_main m
+        left join msds_document_statistics s on m.id = s.msds_id
+    </sql>
+    
+    <select id="intelligentSearch" resultMap="MsdsMainResult">
+        <include refid="selectMsdsMainVo"/>
+        <where>
+            m.is_active = 1
+            <if test="keyword != null and keyword != ''">
+                AND (
+                    m.product_name like concat('%', #{keyword}, '%')
+                    OR m.product_alias like concat('%', #{keyword}, '%')
+                    OR m.product_english_name like concat('%', #{keyword}, '%')
+                    OR m.cas_number like concat('%', #{keyword}, '%')
+                    OR m.company_name like concat('%', #{keyword}, '%')
+                )
+            </if>
+            <if test="filters != null">
+                <if test="filters.documentType != null and filters.documentType != ''">
+                    AND m.status = #{filters.documentType}
+                </if>
+                <if test="filters.categoryId != null">
+                    AND m.category_id = #{filters.categoryId}
+                </if>
+                <if test="filters.supplier != null and filters.supplier != ''">
+                    AND m.company_name like concat('%', #{filters.supplier}, '%')
+                </if>
+                <if test="filters.updateTimeFrom != null">
+                    AND m.update_time &gt;= #{filters.updateTimeFrom}
+                </if>
+                <if test="filters.updateTimeTo != null">
+                    AND m.update_time &lt;= #{filters.updateTimeTo}
+                </if>
+            </if>
+        </where>
+        <choose>
+            <when test="filters != null and filters.sortBy != null and filters.sortBy == 'updated'">
+                order by m.update_time desc
+            </when>
+            <when test="filters != null and filters.sortBy != null and filters.sortBy == 'name'">
+                order by m.product_name asc
+            </when>
+            <when test="filters != null and filters.sortBy != null and filters.sortBy == 'views'">
+                order by s.view_count desc
+            </when>
+            <otherwise>
+                order by m.create_time desc
+            </otherwise>
+        </choose>
+    </select>
+    
+    <select id="searchByCasNumber" resultMap="MsdsMainResult">
+        <include refid="selectMsdsMainVo"/>
+        where m.is_active = 1 and m.cas_number like concat('%', #{casNumber}, '%')
+        order by m.create_time desc
+    </select>
+    
+    <select id="searchByFormula" resultMap="MsdsMainResult">
+        <include refid="selectMsdsMainVo"/>
+        where m.is_active = 1
+        order by m.create_time desc
+    </select>
+    
+    <select id="searchByChemicalName" resultMap="MsdsMainResult">
+        <include refid="selectMsdsMainVo"/>
+        where m.is_active = 1 
+        and (m.product_name like concat('%', #{name}, '%')
+            or m.product_alias like concat('%', #{name}, '%')
+            or m.product_english_name like concat('%', #{name}, '%'))
+        order by m.create_time desc
+    </select>
+    
+    <select id="searchBySupplier" resultMap="MsdsMainResult">
+        <include refid="selectMsdsMainVo"/>
+        where m.is_active = 1 and m.company_name like concat('%', #{supplier}, '%')
+        order by m.create_time desc
+    </select>
+    
+    <select id="advancedSearch" resultMap="MsdsMainResult">
+        <include refid="selectMsdsMainVo"/>
+        <where>
+            m.is_active = 1
+            <if test="filters.productName != null and filters.productName != ''">
+                AND m.product_name like concat('%', #{filters.productName}, '%')
+            </if>
+            <if test="filters.casNumber != null and filters.casNumber != ''">
+                AND m.cas_number like concat('%', #{filters.casNumber}, '%')
+            </if>
+            <if test="filters.companyName != null and filters.companyName != ''">
+                AND m.company_name like concat('%', #{filters.companyName}, '%')
+            </if>
+            <if test="filters.categoryId != null">
+                AND m.category_id = #{filters.categoryId}
+            </if>
+            <if test="filters.status != null and filters.status != ''">
+                AND m.status = #{filters.status}
+            </if>
+        </where>
+        order by m.create_time desc
+    </select>
+    
+    <select id="getSearchSuggestions" resultType="java.util.Map">
+        SELECT DISTINCT
+            m.product_name as name,
+            m.cas_number as casNumber,
+            m.product_english_name as englishName
+        FROM msds_main m
+        WHERE m.is_active = 1
+        AND (
+            m.product_name like concat('%', #{keyword}, '%')
+            OR m.product_alias like concat('%', #{keyword}, '%')
+            OR m.product_english_name like concat('%', #{keyword}, '%')
+            OR m.cas_number like concat('%', #{keyword}, '%')
+        )
+        LIMIT #{limit}
+    </select>
+    
+    <select id="getRelatedDocuments" resultMap="MsdsMainResult">
+        SELECT m.*, s.view_count
+        FROM msds_main m
+        LEFT JOIN msds_document_statistics s ON m.id = s.msds_id
+        WHERE m.is_active = 1
+        AND m.id != #{msdsId}
+        AND (
+            m.category_id = (SELECT category_id FROM msds_main WHERE id = #{msdsId})
+            OR m.company_name = (SELECT company_name FROM msds_main WHERE id = #{msdsId})
+        )
+        ORDER BY s.view_count DESC
+        LIMIT #{limit}
+    </select>
+</mapper>
+

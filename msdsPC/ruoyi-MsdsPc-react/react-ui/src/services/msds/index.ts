@@ -17,6 +17,7 @@ export * from './disposal';
 export * from './transport';
 export * from './regulatory';
 export * from './otherInfo';
+export * from './search';
 
 // 统一对外导出的 MSDS 预览相关类型，供前端模块间复用
 export interface MsdsPreviewItem {

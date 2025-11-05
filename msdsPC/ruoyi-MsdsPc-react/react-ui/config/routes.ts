@@ -130,6 +130,20 @@ export default [
         path: '/msds/preview',
         component: './Msds/Preview',
       },
+      // 新增：智能搜索页面路由
+      {
+        name: '智能搜索',
+        path: '/msds/search',
+        component: './Msds/IntelligentSearch',
+        icon: 'search',
+      },
+      // MSDS详情页面路由
+      {
+        name: 'MSDS详情',
+        path: '/msds/detail/:id',
+        component: './Msds/Detail',
+        hideInMenu: true,
+      },
     ]
   },
 ];

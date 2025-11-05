@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.MsdsSearchHistoryMapper">
+    
+    <resultMap type="MsdsSearchHistory" id="MsdsSearchHistoryResult">
+        <id     property="searchId"         column="search_id"          />
+        <result property="userId"           column="user_id"            />
+        <result property="userName"         column="user_name"          />
+        <result property="searchKeyword"    column="search_keyword"     />
+        <result property="searchType"       column="search_type"        />
+        <result property="filterParams"     column="filter_params"      />
+        <result property="resultCount"      column="result_count"       />
+        <result property="searchTime"       column="search_time"        />
+        <result property="ipAddress"        column="ip_address"         />
+        <result property="userAgent"        column="user_agent"         />
+        <result property="createBy"         column="create_by"          />
+        <result property="createTime"       column="create_time"        />
+        <result property="updateBy"         column="update_by"          />
+        <result property="updateTime"       column="update_time"        />
+        <result property="remark"           column="remark"             />
+    </resultMap>
+    
+    <sql id="selectMsdsSearchHistoryVo">
+        select search_id, user_id, user_name, search_keyword, search_type, filter_params,
+               result_count, search_time, ip_address, user_agent, create_by, create_time,
+               update_by, update_time, remark
+        from msds_search_history
+    </sql>
+    
+    <select id="selectMsdsSearchHistoryBySearchId" parameterType="Long" resultMap="MsdsSearchHistoryResult">
+        <include refid="selectMsdsSearchHistoryVo"/>
+        where search_id = #{searchId}
+    </select>
+    
+    <select id="selectMsdsSearchHistoryList" parameterType="MsdsSearchHistory" resultMap="MsdsSearchHistoryResult">
+        <include refid="selectMsdsSearchHistoryVo"/>
+        <where>
+            <if test="userId != null">
+                AND user_id = #{userId}
+            </if>
+            <if test="searchKeyword != null and searchKeyword != ''">
+                AND search_keyword like concat('%', #{searchKeyword}, '%')
+            </if>
+            <if test="searchType != null and searchType != ''">
+                AND search_type = #{searchType}
+            </if>
+            <if test="params.beginTime != null and params.beginTime != ''">
+                AND date_format(search_time,'%y%m%d') &gt;= date_format(#{params.beginTime},'%y%m%d')
+            </if>
+            <if test="params.endTime != null and params.endTime != ''">
+                AND date_format(search_time,'%y%m%d') &lt;= date_format(#{params.endTime},'%y%m%d')
+            </if>
+        </where>
+        order by search_time desc
+    </select>
+    
+    <select id="selectRecentSearchHistory" resultMap="MsdsSearchHistoryResult">
+        <include refid="selectMsdsSearchHistoryVo"/>
+        where user_id = #{userId}
+        order by search_time desc
+        limit #{limit}
+    </select>
+    
+    <insert id="insertMsdsSearchHistory" parameterType="MsdsSearchHistory" useGeneratedKeys="true" keyProperty="searchId">
+        insert into msds_search_history
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">user_id,</if>
+            <if test="userName != null and userName != ''">user_name,</if>
+            <if test="searchKeyword != null and searchKeyword != ''">search_keyword,</if>
+            <if test="searchType != null and searchType != ''">search_type,</if>
+            <if test="filterParams != null">filter_params,</if>
+            <if test="resultCount != null">result_count,</if>
+            <if test="searchTime != null">search_time,</if>
+            <if test="ipAddress != null and ipAddress != ''">ip_address,</if>
+            <if test="userAgent != null and userAgent != ''">user_agent,</if>
+            <if test="createBy != null and createBy != ''">create_by,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="remark != null and remark != ''">remark,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userId != null">#{userId},</if>
+            <if test="userName != null and userName != ''">#{userName},</if>
+            <if test="searchKeyword != null and searchKeyword != ''">#{searchKeyword},</if>
+            <if test="searchType != null and searchType != ''">#{searchType},</if>
+            <if test="filterParams != null">#{filterParams},</if>
+            <if test="resultCount != null">#{resultCount},</if>
+            <if test="searchTime != null">#{searchTime},</if>
+            <if test="ipAddress != null and ipAddress != ''">#{ipAddress},</if>
+            <if test="userAgent != null and userAgent != ''">#{userAgent},</if>
+            <if test="createBy != null and createBy != ''">#{createBy},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="remark != null and remark != ''">#{remark},</if>
+        </trim>
+    </insert>
+    
+    <delete id="deleteMsdsSearchHistoryBySearchIds" parameterType="String">
+        delete from msds_search_history where search_id in 
+        <foreach item="searchId" collection="array" open="(" separator="," close=")">
+            #{searchId}
+        </foreach>
+    </delete>
+    
+    <delete id="deleteMsdsSearchHistoryByUserId" parameterType="Long">
+        delete from msds_search_history where user_id = #{userId}
+    </delete>
+    
+    <select id="selectHotSearchKeywords" resultType="String">
+        select search_keyword
+        from msds_search_history
+        where search_time >= date_sub(now(), interval 7 day)
+        group by search_keyword
+        order by count(*) desc
+        limit #{limit}
+    </select>
+</mapper>
+

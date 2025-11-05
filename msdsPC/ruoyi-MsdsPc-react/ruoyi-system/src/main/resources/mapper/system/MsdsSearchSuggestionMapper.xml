@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.MsdsSearchSuggestionMapper">
+    
+    <resultMap type="MsdsSearchSuggestion" id="MsdsSearchSuggestionResult">
+        <id     property="suggestionId"     column="suggestion_id"      />
+        <result property="keyword"          column="keyword"            />
+        <result property="keywordType"      column="keyword_type"       />
+        <result property="relatedCas"       column="related_cas"        />
+        <result property="relatedMsdsId"    column="related_msds_id"    />
+        <result property="searchCount"      column="search_count"       />
+        <result property="clickCount"       column="click_count"        />
+        <result property="sortOrder"        column="sort_order"         />
+        <result property="isActive"         column="is_active"          />
+        <result property="startTime"        column="start_time"         />
+        <result property="endTime"          column="end_time"           />
+        <result property="createBy"         column="create_by"          />
+        <result property="createTime"       column="create_time"        />
+        <result property="updateBy"         column="update_by"          />
+        <result property="updateTime"       column="update_time"        />
+        <result property="remark"           column="remark"             />
+    </resultMap>
+    
+    <sql id="selectMsdsSearchSuggestionVo">
+        select suggestion_id, keyword, keyword_type, related_cas, related_msds_id, search_count,
+               click_count, sort_order, is_active, start_time, end_time, create_by, create_time,
+               update_by, update_time, remark
+        from msds_search_suggestion
+    </sql>
+    
+    <select id="selectMsdsSearchSuggestionBySuggestionId" parameterType="Long" resultMap="MsdsSearchSuggestionResult">
+        <include refid="selectMsdsSearchSuggestionVo"/>
+        where suggestion_id = #{suggestionId}
+    </select>
+    
+    <select id="selectMsdsSearchSuggestionList" parameterType="MsdsSearchSuggestion" resultMap="MsdsSearchSuggestionResult">
+        <include refid="selectMsdsSearchSuggestionVo"/>
+        <where>
+            <if test="keyword != null and keyword != ''">
+                AND keyword like concat('%', #{keyword}, '%')
+            </if>
+            <if test="keywordType != null and keywordType != ''">
+                AND keyword_type = #{keywordType}
+            </if>
+            <if test="isActive != null">
+                AND is_active = #{isActive}
+            </if>
+        </where>
+        order by sort_order asc, search_count desc
+    </select>
+    
+    <select id="selectActiveByType" resultMap="MsdsSearchSuggestionResult">
+        <include refid="selectMsdsSearchSuggestionVo"/>
+        where is_active = 1
+        and keyword_type = #{keywordType}
+        and (start_time is null or start_time &lt;= now())
+        and (end_time is null or end_time &gt;= now())
+        order by sort_order asc, search_count desc
+        limit #{limit}
+    </select>
+    
+    <insert id="insertMsdsSearchSuggestion" parameterType="MsdsSearchSuggestion" useGeneratedKeys="true" keyProperty="suggestionId">
+        insert into msds_search_suggestion
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="keyword != null and keyword != ''">keyword,</if>
+            <if test="keywordType != null and keywordType != ''">keyword_type,</if>
+            <if test="relatedCas != null">related_cas,</if>
+            <if test="relatedMsdsId != null">related_msds_id,</if>
+            <if test="searchCount != null">search_count,</if>
+            <if test="clickCount != null">click_count,</if>
+            <if test="sortOrder != null">sort_order,</if>
+            <if test="isActive != null">is_active,</if>
+            <if test="startTime != null">start_time,</if>
+            <if test="endTime != null">end_time,</if>
+            <if test="createBy != null and createBy != ''">create_by,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="remark != null and remark != ''">remark,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="keyword != null and keyword != ''">#{keyword},</if>
+            <if test="keywordType != null and keywordType != ''">#{keywordType},</if>
+            <if test="relatedCas != null">#{relatedCas},</if>
+            <if test="relatedMsdsId != null">#{relatedMsdsId},</if>
+            <if test="searchCount != null">#{searchCount},</if>
+            <if test="clickCount != null">#{clickCount},</if>
+            <if test="sortOrder != null">#{sortOrder},</if>
+            <if test="isActive != null">#{isActive},</if>
+            <if test="startTime != null">#{startTime},</if>
+            <if test="endTime != null">#{endTime},</if>
+            <if test="createBy != null and createBy != ''">#{createBy},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="remark != null and remark != ''">#{remark},</if>
+        </trim>
+    </insert>
+    
+    <update id="updateMsdsSearchSuggestion" parameterType="MsdsSearchSuggestion">
+        update msds_search_suggestion
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="keyword != null and keyword != ''">keyword = #{keyword},</if>
+            <if test="keywordType != null and keywordType != ''">keyword_type = #{keywordType},</if>
+            <if test="relatedCas != null">related_cas = #{relatedCas},</if>
+            <if test="relatedMsdsId != null">related_msds_id = #{relatedMsdsId},</if>
+            <if test="searchCount != null">search_count = #{searchCount},</if>
+            <if test="clickCount != null">click_count = #{clickCount},</if>
+            <if test="sortOrder != null">sort_order = #{sortOrder},</if>
+            <if test="isActive != null">is_active = #{isActive},</if>
+            <if test="startTime != null">start_time = #{startTime},</if>
+            <if test="endTime != null">end_time = #{endTime},</if>
+            <if test="updateBy != null and updateBy != ''">update_by = #{updateBy},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+            <if test="remark != null">remark = #{remark},</if>
+        </trim>
+        where suggestion_id = #{suggestionId}
+    </update>
+    
+    <update id="incrementSearchCount">
+        update msds_search_suggestion
+        set search_count = search_count + 1,
+            update_time = now()
+        where suggestion_id = #{suggestionId}
+    </update>
+    
+    <update id="incrementClickCount">
+        update msds_search_suggestion
+        set click_count = click_count + 1,
+            update_time = now()
+        where suggestion_id = #{suggestionId}
+    </update>
+    
+    <delete id="deleteMsdsSearchSuggestionBySuggestionIds" parameterType="String">
+        delete from msds_search_suggestion where suggestion_id in 
+        <foreach item="suggestionId" collection="array" open="(" separator="," close=")">
+            #{suggestionId}
+        </foreach>
+    </delete>
+</mapper>
+
