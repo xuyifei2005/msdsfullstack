@@ -8,7 +8,10 @@ import {
   UserOutlined,
   SafetyCertificateOutlined,
   AlertOutlined,
+  ArrowUpOutlined,
+  ArrowDownOutlined,
 } from '@ant-design/icons';
+import { useEmotionCss } from '@ant-design/use-emotion-css';
 import { useModel, history } from '@umijs/max';
 import DocumentStatsCard from './components/DocumentStatsCard';
 import AccessTrendChart from './components/AccessTrendChart';
@@ -53,6 +56,173 @@ interface DashboardOverview {
     supplierCount: number;
   };
 }
+
+// 美化的统计卡片组件
+const StatCard: React.FC<{
+  title: string;
+  value: number;
+  trend?: { value: number; label: string };
+  icon: React.ReactNode;
+  color: 'blue' | 'green' | 'orange' | 'red' | 'purple';
+  index?: number;
+}> = ({ title, value, trend, icon, color, index = 0 }) => {
+  const [displayValue, setDisplayValue] = useState(0);
+  const [mounted, setMounted] = useState(false);
+
+  const colorMap = {
+    blue: { from: '#1890ff', to: '#40a9ff', light: '#bae7ff' },
+    green: { from: '#52c41a', to: '#73d13d', light: '#d9f7be' },
+    orange: { from: '#faad14', to: '#ffc53d', light: '#ffe58f' },
+    red: { from: '#ff4d4f', to: '#ff7875', light: '#ffccc7' },
+    purple: { from: '#722ed1', to: '#9254de', light: '#efdbff' },
+  };
+
+  // 入场动画
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setMounted(true);
+    }, index * 100);
+    return () => clearTimeout(timer);
+  }, [index]);
+
+  // 数字滚动动画
+  useEffect(() => {
+    if (!mounted) return;
+    
+    const duration = 1500; // 动画时长
+    const steps = 60; // 动画步数
+    const increment = value / steps;
+    let currentStep = 0;
+
+    const timer = setInterval(() => {
+      currentStep++;
+      if (currentStep <= steps) {
+        setDisplayValue(Math.min(Math.floor(increment * currentStep), value));
+      } else {
+        setDisplayValue(value);
+        clearInterval(timer);
+      }
+    }, duration / steps);
+
+    return () => clearInterval(timer);
+  }, [mounted, value]);
+
+  const cardClassName = useEmotionCss(() => {
+    const colors = colorMap[color];
+    return {
+      background: `linear-gradient(135deg, ${colors.from} 0%, ${colors.to} 100%)`,
+      borderRadius: '12px',
+      padding: '24px',
+      color: 'white',
+      transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+      border: 'none',
+      boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
+      cursor: 'pointer',
+      height: '100%',
+      minHeight: '140px',
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      opacity: mounted ? 1 : 0,
+      transform: mounted ? 'translateY(0) scale(1)' : 'translateY(20px) scale(0.95)',
+      '&:hover': {
+        boxShadow: '0 8px 24px rgba(0, 0, 0, 0.15)',
+        transform: 'translateY(-4px) scale(1.02)',
+      },
+      '&:active': {
+        transform: 'translateY(-2px) scale(1)',
+      },
+    };
+  });
+
+  const iconClassName = useEmotionCss(() => {
+    return {
+      fontSize: '56px',
+      opacity: 0.25,
+      transition: 'all 0.3s ease',
+      filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1))',
+      '.ant-card:hover &': {
+        opacity: 0.35,
+        transform: 'scale(1.1) rotate(5deg)',
+      },
+    };
+  });
+
+  const cardWrapperStyle = useEmotionCss(() => {
+    return {
+      width: '100%',
+      height: '100%',
+      '.ant-card': {
+        height: '100%',
+      },
+      '.ant-card-body': {
+        height: '100%',
+        padding: 0,
+      },
+    };
+  });
+
+  return (
+    <div className={cardWrapperStyle}>
+      <Card className={cardClassName} bordered={false}>
+        <div style={{ 
+          display: 'flex', 
+          alignItems: 'center', 
+          justifyContent: 'space-between',
+          height: '100%',
+        }}>
+          <div style={{ flex: 1 }}>
+            <div style={{ 
+              fontSize: '14px', 
+              opacity: 0.95, 
+              marginBottom: '12px',
+              fontWeight: 500,
+              letterSpacing: '0.5px',
+            }}>
+              {title}
+            </div>
+            <div style={{ 
+              fontSize: '36px', 
+              fontWeight: 'bold', 
+              marginBottom: '8px',
+              lineHeight: '1.2',
+              textShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+            }}>
+              {displayValue.toLocaleString()}
+            </div>
+            {trend && (
+              <div style={{ 
+                fontSize: '13px', 
+                opacity: 0.9, 
+                display: 'flex', 
+                alignItems: 'center',
+                marginTop: '4px',
+              }}>
+                <span style={{ 
+                  display: 'inline-flex', 
+                  alignItems: 'center',
+                  backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                  padding: '4px 10px',
+                  borderRadius: '12px',
+                }}>
+                  {trend.value >= 0 ? (
+                    <ArrowUpOutlined style={{ marginRight: '4px', fontSize: '12px' }} />
+                  ) : (
+                    <ArrowDownOutlined style={{ marginRight: '4px', fontSize: '12px' }} />
+                  )}
+                  {trend.label}
+                </span>
+              </div>
+            )}
+          </div>
+          <div className={iconClassName}>
+            {icon}
+          </div>
+        </div>
+      </Card>
+    </div>
+  );
+};
 
 const Dashboard: React.FC = () => {
   const [loading, setLoading] = useState(true);
@@ -190,47 +360,59 @@ const Dashboard: React.FC = () => {
         </Space>
       }
     >
-      {/* 顶部统计卡片区域 */}
-      <Row gutter={[16, 16]} style={{ marginBottom: 24 }}>
-        <Col xs={24} sm={12} lg={6}>
-          <Card>
-            <Statistic
-              title="文档总数"
-              value={overview.documentStats.total}
-              prefix={<FileTextOutlined />}
-              valueStyle={{ color: '#1890ff' }}
-            />
-          </Card>
+      {/* 顶部统计卡片区域 - 美化版 */}
+      <Row gutter={[16, 16]} style={{ marginBottom: 24 }} align="stretch">
+        <Col xs={24} sm={12} lg={6} style={{ display: 'flex' }}>
+          <StatCard
+            title="文档总数"
+            value={overview.documentStats.total}
+            trend={{
+              value: 12,
+              label: '较上月增长 12%'
+            }}
+            icon={<FileTextOutlined />}
+            color="blue"
+            index={0}
+          />
         </Col>
-        <Col xs={24} sm={12} lg={6}>
-          <Card>
-            <Statistic
-              title="今日访问"
-              value={overview.accessStats.todayViews}
-              prefix={<EyeOutlined />}
-              valueStyle={{ color: '#52c41a' }}
-            />
-          </Card>
+        <Col xs={24} sm={12} lg={6} style={{ display: 'flex' }}>
+          <StatCard
+            title="今日访问"
+            value={overview.accessStats.todayViews}
+            trend={{
+              value: 3,
+              label: '较昨日增长'
+            }}
+            icon={<EyeOutlined />}
+            color="green"
+            index={1}
+          />
         </Col>
-        <Col xs={24} sm={12} lg={6}>
-          <Card>
-            <Statistic
-              title="今日下载"
-              value={overview.downloadStats.todayDownloads}
-              prefix={<DownloadOutlined />}
-              valueStyle={{ color: '#722ed1' }}
-            />
-          </Card>
+        <Col xs={24} sm={12} lg={6} style={{ display: 'flex' }}>
+          <StatCard
+            title="今日下载"
+            value={overview.downloadStats.todayDownloads}
+            trend={{
+              value: 0,
+              label: '今日下载量'
+            }}
+            icon={<DownloadOutlined />}
+            color="orange"
+            index={2}
+          />
         </Col>
-        <Col xs={24} sm={12} lg={6}>
-          <Card>
-            <Statistic
-              title="在线用户"
-              value={overview.systemStats.onlineUsers}
-              prefix={<UserOutlined />}
-              valueStyle={{ color: '#eb2f96' }}
-            />
-          </Card>
+        <Col xs={24} sm={12} lg={6} style={{ display: 'flex' }}>
+          <StatCard
+            title="在线用户"
+            value={overview.systemStats.onlineUsers}
+            trend={{
+              value: 2,
+              label: '当前在线'
+            }}
+            icon={<UserOutlined />}
+            color="purple"
+            index={3}
+          />
         </Col>
       </Row>
 
