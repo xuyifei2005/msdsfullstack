@@ -33,7 +33,7 @@ import {
   HomeOutlined,
   SearchOutlined,
 } from '@ant-design/icons';
-import { getMsdsDetail } from '@/services/msds/api';
+import { getMsdsDetail } from '@/services/msds';
 import './index.less';
 
 const { Title, Text, Paragraph } = Typography;

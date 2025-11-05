@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 import {
   Card,
   Input,
@@ -13,10 +13,7 @@ import {
   Empty,
   Spin,
   message,
-  Tooltip,
   Badge,
-  Dropdown,
-  Menu,
   AutoComplete,
 } from 'antd';
 import {
@@ -34,8 +31,7 @@ import {
   SyncOutlined,
 } from '@ant-design/icons';
 import { PageContainer } from '@ant-design/pro-components';
-import { useRequest } from '@umijs/max';
-import { history } from '@umijs/max';
+import { useRequest, history } from '@umijs/max';
 import type { SearchSuggestion, HotSearch, IntelligentSearchParams } from '@/services/msds/search';
 import {
   intelligentSearch,
@@ -49,8 +45,6 @@ import styles from './index.less';
 
 const { Search } = Input;
 const { Option } = Select;
-const { CheckboxGroup } = Checkbox;
-const { Group: RadioGroup } = Radio;
 
 // 快速筛选标签配置
 const QUICK_FILTERS = [
@@ -314,7 +308,7 @@ const IntelligentSearch: React.FC = () => {
             {/* 文档类型 */}
             <div className={styles.filterSection}>
               <h4>文档类型</h4>
-              <CheckboxGroup
+              <Checkbox.Group
                 value={filters.documentType}
                 onChange={(values) =>
                   setFilters({ ...filters, documentType: values as string[] })
@@ -325,13 +319,13 @@ const IntelligentSearch: React.FC = () => {
                   <Checkbox value="simplified">简化MSDS <Badge count={456} /></Checkbox>
                   <Checkbox value="custom">企业自制 <Badge count={78} /></Checkbox>
                 </Space>
-              </CheckboxGroup>
+              </Checkbox.Group>
             </div>
 
             {/* 危险性分类 */}
             <div className={styles.filterSection}>
               <h4>危险性分类</h4>
-              <CheckboxGroup
+              <Checkbox.Group
                 value={filters.hazardCategory}
                 onChange={(values) =>
                   setFilters({ ...filters, hazardCategory: values as string[] })
@@ -343,13 +337,13 @@ const IntelligentSearch: React.FC = () => {
                   <Checkbox value="toxic">有毒 <Badge count={567} /></Checkbox>
                   <Checkbox value="oxidizing">氧化性 <Badge count={123} /></Checkbox>
                 </Space>
-              </CheckboxGroup>
+              </Checkbox.Group>
             </div>
 
             {/* 更新时间 */}
             <div className={styles.filterSection}>
               <h4>更新时间</h4>
-              <RadioGroup
+              <Radio.Group
                 value={filters.updateTime}
                 onChange={(e) => setFilters({ ...filters, updateTime: e.target.value })}
               >
@@ -359,7 +353,7 @@ const IntelligentSearch: React.FC = () => {
                   <Radio value="month">最近一月</Radio>
                   <Radio value="year">最近一年</Radio>
                 </Space>
-              </RadioGroup>
+              </Radio.Group>
             </div>
 
             {/* 供应商 */}

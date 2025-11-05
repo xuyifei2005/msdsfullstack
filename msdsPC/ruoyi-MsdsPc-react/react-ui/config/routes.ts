@@ -22,6 +22,22 @@ export default [
     icon: 'dashboard',
   },
   {
+    name: 'intelligent-search',
+    path: '/intelligent-search',
+    component: './Msds/IntelligentSearch',
+    icon: 'search',
+    routes: [
+      {
+        path: '/intelligent-search',
+        redirect: '/intelligent-search/index',
+      },
+      {
+        path: '/intelligent-search/index',
+        component: './Msds/IntelligentSearch',
+      },
+    ],
+  },
+  {
     path: '*',
     layout: false,
     component: './404',
