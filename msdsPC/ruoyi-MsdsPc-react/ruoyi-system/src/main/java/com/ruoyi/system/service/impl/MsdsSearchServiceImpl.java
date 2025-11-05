@@ -50,6 +50,8 @@ public class MsdsSearchServiceImpl implements IMsdsSearchService
     @Transactional(rollbackFor = Exception.class)
     public List<MsdsMain> intelligentSearch(String keyword, String searchType, Map<String, Object> filters, Long userId) 
     {
+        log.info("智能搜索开始 - keyword: {}, searchType: {}, filters: {}, userId: {}", keyword, searchType, filters, userId);
+        
         // 执行搜索
         List<MsdsMain> results;
         
@@ -57,19 +59,32 @@ public class MsdsSearchServiceImpl implements IMsdsSearchService
             searchType = "general";
         }
         
+        log.debug("使用搜索类型: {}", searchType);
+        
         switch (searchType.toLowerCase()) {
             case "cas":
+                log.debug("执行CAS号搜索: {}", keyword);
                 results = searchMapper.searchByCasNumber(keyword);
                 break;
             case "formula":
+                log.debug("执行分子式搜索: {}", keyword);
                 results = searchMapper.searchByFormula(keyword);
                 break;
             case "semantic":
                 // 语义搜索，当前使用通用搜索实现
+                log.debug("执行语义搜索: {}", keyword);
                 results = searchMapper.intelligentSearch(keyword, searchType, filters);
                 break;
             default:
+                log.debug("执行通用搜索: {}", keyword);
                 results = searchMapper.intelligentSearch(keyword, searchType, filters);
+        }
+        
+        log.info("搜索完成 - 找到 {} 条记录", results != null ? results.size() : 0);
+        
+        if (results != null && !results.isEmpty()) {
+            log.debug("搜索结果示例: 第一条记录ID={}, 名称={}", 
+                     results.get(0).getId(), results.get(0).getProductName());
         }
         
         // 记录搜索历史
@@ -82,6 +97,7 @@ public class MsdsSearchServiceImpl implements IMsdsSearchService
                 history.setResultCount(results != null ? results.size() : 0);
                 history.setSearchTime(new Date());
                 recordSearchHistory(history);
+                log.debug("搜索历史已记录");
             } catch (Exception e) {
                 log.error("记录搜索历史失败", e);
             }

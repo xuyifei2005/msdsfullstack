@@ -54,6 +54,9 @@ public class MsdsSearchController extends BaseController
             @RequestParam(value = "sortBy", required = false, defaultValue = "relevance") String sortBy,
             HttpServletRequest request)
     {
+        logger.info("收到智能搜索请求 - keyword: {}, searchType: {}, documentType: {}, categoryId: {}, supplier: {}, sortBy: {}",
+                   keyword, searchType, documentType, categoryId, supplier, sortBy);
+        
         // 构建筛选条件
         Map<String, Object> filters = new HashMap<>();
         if (StringUtils.isNotEmpty(documentType)) {
@@ -71,6 +74,7 @@ public class MsdsSearchController extends BaseController
         Long userId = null;
         try {
             userId = SecurityUtils.getUserId();
+            logger.debug("当前用户ID: {}", userId);
         } catch (Exception e) {
             logger.debug("获取用户ID失败，使用匿名搜索", e);
         }
@@ -78,7 +82,11 @@ public class MsdsSearchController extends BaseController
         // 执行搜索
         startPage();
         List<MsdsMain> list = searchService.intelligentSearch(keyword, searchType, filters, userId);
-        return getDataTable(list);
+        
+        TableDataInfo dataTable = getDataTable(list);
+        logger.info("智能搜索完成 - 返回 {} 条记录，总数: {}", list.size(), dataTable.getTotal());
+        
+        return dataTable;
     }
 
     /**
