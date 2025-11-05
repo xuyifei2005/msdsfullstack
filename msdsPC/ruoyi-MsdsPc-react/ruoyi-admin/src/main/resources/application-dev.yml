@@ -1,5 +1,0 @@
-# 开发环境profile，包含druid数据源配置
-# 已废弃：不要在 profile 特定文件中使用 spring.profiles.include，改由 application.yml 的 spring.profiles.group 管理
-# spring:
-#   profiles:
-#     include: druiddx

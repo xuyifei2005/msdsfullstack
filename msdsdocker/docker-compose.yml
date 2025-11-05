@@ -26,28 +26,28 @@ networks:
 services:
 
   # Nginx服务
-  msdsnginx:
-    networks:
-      - msds_network
-    image: nginx:latest
-    container_name: msdsnginx
-    hostname: msdsnginx
-    restart: always
-    ports:
-      - "180:80"
-      - "11443:443"
-    volumes:
-      # Nginx配置文件
-      - ./nginx/conf.d:/etc/nginx/conf.d
-      # SSL证书
-      - ./nginx/ssl:/etc/nginx/ssl
-      # 静态资源
-      - ./nginx/html:/usr/share/nginx/html
-      # 日志
-      - ./nginx/logs:/var/log/nginx
-    depends_on:
-      - msdsbackend
-      # - msdsfrontend 不用依赖前端！
+  # msdsnginx:
+  #   networks:
+  #     - msds_network
+  #   image: nginx:latest
+  #   container_name: msdsnginx
+  #   hostname: msdsnginx
+  #   restart: always
+  #   ports:
+  #     - "180:80"
+  #     - "11443:443"
+  #   volumes:
+  #     # Nginx配置文件
+  #     - ./nginx/conf.d:/etc/nginx/conf.d
+  #     # SSL证书
+  #     - ./nginx/ssl:/etc/nginx/ssl
+  #     # 静态资源
+  #     - ./nginx/html:/usr/share/nginx/html
+  #     # 日志
+  #     - ./nginx/logs:/var/log/nginx
+  #   depends_on:
+  #     - msdsbackend
+  #     # - msdsfrontend 不用依赖前端！
 
   # 后端服务
   msdsbackend:
@@ -122,21 +122,14 @@ services:
     command: |
       sh -c "
       echo 'Setting up frontend development environment...' &&
-      # apt-get update &&
-      # apt-get install -y openssh-server curl wget git &&
-      # echo 'Installing additional development tools...' &&
-      # apt-get install -y build-essential &&
-      # mkdir -p /run/sshd &&
-      # echo 'root:msds_dev_password' | chpasswd &&
-      # sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config &&
-      # sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config &&
-      # ssh-keygen -A &&
       /usr/sbin/sshd &&
       
-      # 启动前端项目
-      npm install &&
-      echo '*msdsfrontend* Frontend development environment ready!' &&
-      npm run start:no-mock -- --host 0.0.0.0"
+      echo '*msdsfrontend* Container started successfully!' &&
+      echo 'To install dependencies, run: docker-compose exec msdsfrontend npm ci' &&
+      echo 'To start dev server, run: docker-compose exec msdsfrontend npm run start:no-mock -- --host 0.0.0.0' &&
+      
+      # 保持容器运行
+      tail -f /dev/null"
     ports:
       - "3000:8000"
       - "8000:8000"
