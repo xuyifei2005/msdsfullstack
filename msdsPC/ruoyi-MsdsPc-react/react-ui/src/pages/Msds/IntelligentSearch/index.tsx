@@ -101,16 +101,41 @@ const IntelligentSearch: React.FC = () => {
     loading: searching,
     run: performSearch,
   } = useRequest(
-    (params: IntelligentSearchParams) => intelligentSearch(params),
+    (params: IntelligentSearchParams) => {
+      console.log('[useRequest] 开始调用intelligentSearch, params:', params);
+      return intelligentSearch(params);
+    },
     {
       manual: true,
       onSuccess: (res) => {
-        if (res?.code === 200) {
-          message.success(`找到 ${res.total} 个相关文档`);
+        console.log('[useRequest] onSuccess 回调');
+        console.log('[useRequest] 搜索响应完整数据:', JSON.stringify(res, null, 2));
+        console.log('[useRequest] res.code:', res?.code);
+        console.log('[useRequest] res.total:', res?.total);
+        console.log('[useRequest] res.rows:', res?.rows);
+        
+        // 兼容RuoYi框架返回格式：code可能是数字200或字符串"200"
+        const code = Number(res?.code);
+        if (code === 200 || code === 0) {
+          const totalCount = res?.total || 0;
+          message.success(`找到 ${totalCount} 个相关文档`);
+          if (res.rows && res.rows.length > 0) {
+            console.log('[useRequest] 搜索结果示例:', res.rows[0]);
+          }
+        } else {
+          console.warn('[useRequest] 响应码异常:', code, res?.msg);
+          message.warning(res?.msg || '搜索失败');
         }
       },
       onError: (error) => {
-        message.error('搜索失败：' + error.message);
+        console.error('[useRequest] onError 回调');
+        console.error('[useRequest] 搜索错误:', error);
+        console.error('[useRequest] 错误详情:', {
+          name: error.name,
+          message: error.message,
+          stack: error.stack,
+        });
+        message.error('搜索失败：' + (error.message || '未知错误'));
       },
     }
   );
@@ -141,6 +166,12 @@ const IntelligentSearch: React.FC = () => {
       return;
     }
 
+    // 添加调试信息
+    console.log('=== 智能搜索参数 ===');
+    console.log('关键词:', value);
+    console.log('搜索类型:', searchType);
+    console.log('筛选条件:', filters);
+
     const searchParams: IntelligentSearchParams = {
       keyword: value,
       searchType,
@@ -155,6 +186,8 @@ const IntelligentSearch: React.FC = () => {
       searchParams.supplier = filters.supplier;
     }
 
+    console.log('发送给后端的参数:', searchParams);
+    
     performSearch(searchParams);
     setShowSuggestions(false);
   }, [searchType, filters, performSearch]);

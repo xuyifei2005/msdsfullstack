@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.MsdsAnalyticsMapper">
+    
+    <!-- 获取基础统计数据 -->
+    <select id="getSummaryStatistics" resultType="java.util.Map">
+        SELECT 
+            (SELECT COUNT(*) FROM msds_main WHERE is_active = 1) as totalMsds,
+            (SELECT COUNT(DISTINCT m.id) FROM msds_main m 
+             LEFT JOIN msds_hazard h ON m.id = h.msds_id 
+             WHERE m.is_active = 1 AND (h.warning_word = 'danger' OR h.hazard_category LIKE '%毒害%')) as highHazardCount,
+            (SELECT COUNT(*) FROM msds_document_access_log 
+             WHERE DATE_FORMAT(access_time, '%Y-%m') = DATE_FORMAT(NOW(), '%Y-%m')) as monthlyVisits,
+            (SELECT COUNT(DISTINCT user_id) FROM msds_document_access_log 
+             WHERE access_time >= DATE_SUB(NOW(), INTERVAL 30 DAY)) as activeUsers
+    </select>
+    
+    <!-- 获取访问趋势数据 -->
+    <select id="getAccessTrend" resultType="java.util.Map">
+        SELECT 
+            DATE(access_time) as date,
+            COUNT(*) as visits,
+            COUNT(DISTINCT user_id) as uniqueUsers,
+            SUM(CASE WHEN access_type = 'view' THEN 1 ELSE 0 END) as viewCount,
+            SUM(CASE WHEN access_type = 'download' THEN 1 ELSE 0 END) as downloadCount
+        FROM msds_document_access_log
+        WHERE access_time >= DATE_SUB(NOW(), INTERVAL #{days} DAY)
+        GROUP BY DATE(access_time)
+        ORDER BY date ASC
+    </select>
+    
+    <!-- 获取化学品分类分布 -->
+    <select id="getCategoryDistribution" resultType="java.util.Map">
+        SELECT 
+            c.category_code as code,
+            c.category_name as name,
+            COUNT(m.id) as value,
+            COUNT(m.id) as count,
+            ROUND(COUNT(m.id) * 100.0 / (SELECT COUNT(*) FROM msds_main WHERE is_active=1), 2) as percentage
+        FROM msds_main m
+        LEFT JOIN chemical_category c ON m.category_id = c.id
+        WHERE m.is_active = 1
+        GROUP BY c.id, c.category_code, c.category_name
+        ORDER BY count DESC
+    </select>
+    
+    <!-- 获取危险等级分布 -->
+    <select id="getHazardDistribution" resultType="java.util.Map">
+        SELECT 
+            CASE 
+                WHEN h.warning_word = 'danger' OR h.hazard_category LIKE '%毒害%' THEN '高危'
+                WHEN h.warning_word = 'warning' OR h.hazard_category LIKE '%腐蚀%' OR h.hazard_category LIKE '%易燃%' THEN '中等'
+                ELSE '低危'
+            END as level,
+            COUNT(DISTINCT m.id) as count,
+            COUNT(DISTINCT m.id) as value
+        FROM msds_main m
+        LEFT JOIN msds_hazard h ON m.id = h.msds_id
+        WHERE m.is_active = 1
+        GROUP BY level
+        ORDER BY FIELD(level, '高危', '中等', '低危')
+    </select>
+    
+    <!-- 获取热门MSDS排行榜 -->
+    <select id="getTopMsdsRanking" resultType="java.util.Map">
+        SELECT 
+            m.id,
+            m.product_name as productName,
+            m.product_english_name as englishName,
+            m.cas_number as casNumber,
+            CASE 
+                WHEN h.warning_word = 'danger' OR h.hazard_category LIKE '%毒害%' THEN 'high'
+                WHEN h.warning_word = 'warning' OR h.hazard_category LIKE '%腐蚀%' OR h.hazard_category LIKE '%易燃%' THEN 'medium'
+                ELSE 'low'
+            END as hazardLevel,
+            CASE 
+                WHEN h.warning_word = 'danger' OR h.hazard_category LIKE '%毒害%' THEN '高危'
+                WHEN h.warning_word = 'warning' OR h.hazard_category LIKE '%腐蚀%' OR h.hazard_category LIKE '%易燃%' THEN '中等'
+                ELSE '低危'
+            END as hazardLevelText,
+            s.view_count as viewCount,
+            s.download_count as downloadCount,
+            s.favorite_count as favoriteCount,
+            0 as growthRate
+        FROM msds_main m
+        LEFT JOIN msds_document_statistics s ON m.id = s.msds_id
+        LEFT JOIN msds_hazard h ON m.id = h.msds_id
+        WHERE m.is_active = 1
+        ORDER BY s.view_count DESC, s.download_count DESC
+        LIMIT #{limit}
+    </select>
+    
+    <!-- 获取月度新增MSDS统计 -->
+    <select id="getMonthlyNewMsds" resultType="java.util.Map">
+        SELECT 
+            DATE_FORMAT(create_time, '%Y-%m') as month,
+            DATE_FORMAT(create_time, '%m月') as monthLabel,
+            COUNT(*) as count,
+            COUNT(*) as value
+        FROM msds_main
+        WHERE is_active = 1
+            AND create_time >= DATE_SUB(NOW(), INTERVAL #{months} MONTH)
+        GROUP BY month, monthLabel
+        ORDER BY month ASC
+    </select>
+    
+    <!-- 获取用户活跃度统计 -->
+    <select id="getUserActivityStats" resultType="java.util.Map">
+        SELECT 
+            (SELECT COUNT(DISTINCT user_id) FROM msds_document_access_log 
+             WHERE DATE(access_time) = CURDATE()) as dailyActiveUsers,
+            (SELECT COUNT(DISTINCT user_id) FROM msds_document_access_log 
+             WHERE access_time >= DATE_SUB(NOW(), INTERVAL 7 DAY)) as weeklyActiveUsers,
+            (SELECT COUNT(DISTINCT user_id) FROM msds_document_access_log 
+             WHERE access_time >= DATE_SUB(NOW(), INTERVAL 30 DAY)) as monthlyActiveUsers,
+            (SELECT COUNT(*) FROM sys_user WHERE del_flag = '0') as totalUsers
+    </select>
+    
+</mapper>
+
+

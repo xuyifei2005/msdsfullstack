@@ -140,6 +140,13 @@ export default [
         path: '/msds/main',
         component: './Msds/index',
       },
+      // 新增：数据分析报告
+      {
+        name: '数据分析',
+        path: '/msds/analytics',
+        component: './Analytics/DataReport',
+        icon: 'barChart',
+      },
       // 新增：MSDS 预览页面路由
       {
         name: 'MSDS预览',

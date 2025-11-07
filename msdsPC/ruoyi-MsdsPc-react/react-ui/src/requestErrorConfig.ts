@@ -99,11 +99,26 @@ export const errorConfig: RequestConfig = {
   // 响应拦截器
   responseInterceptors: [
     (response) => {
+      // 兼容RuoYi框架的响应格式：{code, msg, data/rows, total}
       // 仅在明确的 success === false 时提示；否则将交由全局响应处理
-      const { data } = response as unknown as ResponseStructure;
-      if (typeof data?.success !== 'undefined' && data?.success === false) {
+      const { data } = response as unknown as any;
+      
+      // 调试输出
+      console.log('[responseInterceptor] 响应数据:', data);
+      
+      // 检查RuoYi格式的响应
+      if (data && typeof data.code !== 'undefined') {
+        // RuoYi格式：code, msg, rows/data, total
+        if (data.code !== 200 && data.code !== 0) {
+          console.warn('[responseInterceptor] RuoYi格式响应码异常:', data.code, data.msg);
+          // 不在这里显示错误，交给业务层处理
+        }
+      } else if (typeof data?.success !== 'undefined' && data?.success === false) {
+        // 标准格式：success, data, errorCode, errorMessage
+        console.warn('[responseInterceptor] 标准格式响应失败');
         message.error('请求失败！');
       }
+      
       return response;
     },
   ],

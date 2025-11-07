@@ -57,9 +57,11 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
                 )
             </if>
             <if test="filters != null">
-                <if test="filters.documentType != null and filters.documentType != ''">
+                <!-- documentType筛选暂不实现，因为msds_main表没有document_type字段 -->
+                <!-- 如需实现，可以映射到其他字段或创建新字段 -->
+                <!-- <if test="filters.documentType != null and filters.documentType != ''">
                     AND m.status = #{filters.documentType}
-                </if>
+                </if> -->
                 <if test="filters.categoryId != null">
                     AND m.category_id = #{filters.categoryId}
                 </if>
