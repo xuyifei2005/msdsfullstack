@@ -188,4 +188,91 @@ declare namespace API {
     filter?: string;
     sorter?: string;
   };
+
+  namespace Workflow {
+    export interface WorkflowTask {
+      taskId?: number;
+      taskTitle?: string;
+      taskDescription?: string;
+      taskType?: string;
+      status?: 'pending' | 'reviewing' | 'approved' | 'rejected';
+      priority?: 'urgent' | 'normal' | 'low';
+      assigneeId?: number;
+      assigneeName?: string;
+      creatorId?: number;
+      creatorName?: string;
+      msdsId?: number;
+      msdsName?: string;
+      dueDate?: string;
+      progress?: number;
+      attachmentCount?: number;
+      commentCount?: number;
+      reviewerIds?: string;
+      reviewerNames?: string;
+      rejectionReason?: string;
+      createBy?: string;
+      createTime?: string;
+      updateBy?: string;
+      updateTime?: string;
+      remark?: string;
+    }
+
+    export interface WorkflowTaskQuery {
+      taskTitle?: string;
+      status?: string;
+      priority?: string;
+      assigneeId?: number;
+      creatorId?: number;
+      msdsId?: number;
+      taskType?: string;
+      pageNum?: number;
+      pageSize?: number;
+    }
+
+    export interface WorkflowComment {
+      commentId?: number;
+      taskId?: number;
+      userId?: number;
+      userName?: string;
+      content?: string;
+      parentId?: number;
+      createBy?: string;
+      createTime?: string;
+      updateBy?: string;
+      updateTime?: string;
+    }
+
+    export interface WorkflowActivity {
+      activityId?: number;
+      taskId?: number;
+      userId?: number;
+      userName?: string;
+      actionType?: string;
+      actionDescription?: string;
+      oldValue?: string;
+      newValue?: string;
+      createTime?: string;
+    }
+
+    export interface WorkflowStatistics {
+      pending?: number;
+      reviewing?: number;
+      approved?: number;
+      rejected?: number;
+    }
+
+    export interface WorkflowTaskDetail {
+      task?: WorkflowTask;
+      comments?: WorkflowComment[];
+      activities?: WorkflowActivity[];
+    }
+
+    export interface TableListResponse<T> {
+      code?: number;
+      msg?: string;
+      rows?: T[];
+      total?: number;
+      data?: T[];
+    }
+  }
 }

@@ -100,6 +100,18 @@ export default [
     ]
   },
   {
+    name: 'workflow',
+    path: '/workflow',
+    icon: 'team',
+    routes: [
+      {
+        name: '工作流看板',
+        path: '/workflow/board',
+        component: './Workflow/index',
+      },
+    ]
+  },
+  {
     name: 'monitor',
     path: '/monitor',
     routes: [

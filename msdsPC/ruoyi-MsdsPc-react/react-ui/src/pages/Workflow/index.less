@@ -1,0 +1,560 @@
+.pageContainer {
+  :global(.ant-pro-page-container-children-content) {
+    margin: 0;
+    padding: 0;
+    background: #f5f7fb;
+  }
+}
+
+.workflowWrapper {
+  padding: 24px 32px 80px;
+  min-height: calc(100vh - 64px);
+  background: #f5f7fb;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.topNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 24px 32px;
+  border-radius: 20px;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.05);
+}
+
+.topNavLeft {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logoBox {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #355cff, #1890ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+}
+
+.topNavTitle h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.topNavTitle p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.onlineInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 16px;
+}
+
+.onlineBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #e6fffb;
+  color: #13c2c2;
+  font-size: 12px;
+}
+
+.onlineDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #13c2c2;
+}
+
+.onlineCount {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.topNavActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.iconButton {
+  box-shadow: none;
+}
+
+.layout {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.sidebar {
+  width: 280px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.05);
+  position: sticky;
+  top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sidebarSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sidebarSection + .sidebarSection {
+  border-top: 1px solid #f0f2f5;
+  padding-top: 24px;
+  margin-top: 8px;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.overviewGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.overviewCard {
+  text-align: center;
+  padding: 16px;
+  border-radius: 14px;
+  background: #f8fafc;
+}
+
+.overviewpending {
+  background: #e6f4ff;
+}
+
+.overviewreviewing {
+  background: #fff7e6;
+}
+
+.overviewapproved {
+  background: #f6ffed;
+}
+
+.overviewrejected {
+  background: #fff1f0;
+}
+
+.overviewValue {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.overviewLabel {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.teamList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.teamItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.teamAvatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #4f8aff, #2d6cff);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teamInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.teamName {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.teamRole {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.statusDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.timelineItem {
+  position: relative;
+  padding-left: 24px;
+}
+
+.timelineItem::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #1890ff;
+  box-shadow: 0 0 0 2px #e6f0ff;
+}
+
+.timelineItem::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 16px;
+  width: 2px;
+  height: calc(100% + 10px);
+  background: #e5e7eb;
+}
+
+.timelineItem:last-child::after {
+  display: none;
+}
+
+.completed::before {
+  background: #52c41a;
+  box-shadow: 0 0 0 2px #d9f7be;
+}
+
+.current::before {
+  background: #faad14;
+  box-shadow: 0 0 0 2px #ffe7ba;
+}
+
+.timelineContent {
+  font-size: 13px;
+  color: #4b5563;
+}
+
+.timelineUser {
+  font-weight: 600;
+  color: #1f2937;
+  margin-right: 4px;
+}
+
+.timelineAction {
+  margin-right: 4px;
+}
+
+.timelineTarget {
+  color: #2563eb;
+}
+
+.timelineTime {
+  font-size: 12px;
+  color: #9ca3af;
+  margin-top: 4px;
+}
+
+.mainArea {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.statusSummary {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.summaryCard {
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 16px 30px rgba(37, 99, 235, 0.08);
+}
+
+.summaryTitle {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 6px;
+}
+
+.summaryValue {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.kanbanBoard {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.kanbanColumn {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 25px 40px rgba(15, 23, 42, 0.06);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 420px;
+}
+
+.kanbanHeader {
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.kanbanHeaderCount {
+  padding: 2px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.kanbanBody {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+  background: #f8fafc;
+}
+
+.emptyState {
+  text-align: center;
+  color: #9ca3af;
+  padding: 40px 0;
+  font-size: 14px;
+}
+
+.taskWrapper {
+  position: relative;
+}
+
+.taskCard {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  padding: 18px;
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.taskCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(37, 99, 235, 0.12);
+}
+
+.cardUrgent {
+  border-left: 4px solid #ff4d4f;
+}
+
+.cardNormal {
+  border-left: 4px solid #faad14;
+}
+
+.cardLow {
+  border-left: 4px solid #52c41a;
+}
+
+.priorityBadge {
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.badgeUrgent {
+  background: rgba(255, 77, 79, 0.12);
+  color: #ff4d4f;
+}
+
+.badgeNormal {
+  background: rgba(250, 173, 20, 0.1);
+  color: #faad14;
+}
+
+.badgeLow {
+  background: rgba(82, 196, 26, 0.1);
+  color: #52c41a;
+}
+
+.taskHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.taskTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.taskDescription {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.taskAssignee {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  font-size: 12px;
+  color: #4b5563;
+}
+
+.taskTime {
+  margin-left: auto;
+  color: #9ca3af;
+}
+
+.taskProgress {
+  margin-top: 12px;
+}
+
+.taskProgressText {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.taskMeta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 14px;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.taskMeta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.taskMore {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: #64748b;
+}
+
+.chatWidget {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 320px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 25px 35px rgba(15, 23, 42, 0.12);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.chatHeader {
+  background: linear-gradient(135deg, #2f54eb, #1890ff);
+  color: #ffffff;
+  padding: 14px 18px;
+  font-weight: 600;
+}
+
+.chatBody {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.chatMessage {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mine {
+  align-self: flex-end;
+  text-align: right;
+}
+
+.chatBubble {
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: #f5f7ff;
+  color: #1f2937;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.mine .chatBubble {
+  background: linear-gradient(135deg, #2f54eb, #4c6ef5);
+  color: #ffffff;
+}
+
+.chatTime {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+.chatFooter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  border-top: 1px solid #f0f2f5;
+  background: #fafbff;
+}
+

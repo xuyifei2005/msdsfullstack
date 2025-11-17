@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>简单Component API测试</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <h1>简单Component API测试</h1>
+    <button onclick="testComponentAPI()">测试Component API</button>
+    <div id="result"></div>
+
+    <script>
+        async function testComponentAPI() {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = '正在测试...';
+            
+            try {
+                console.log('开始测试Component API...');
+                
+                const response = await axios.get('/api/system/msds/component/msds/157', {
+                    headers: {
+                        'Authorization': 'Bearer ' + (localStorage.getItem('access_token') || ''),
+                        'Content-Type': 'application/json'
+                    }
+                });
+                
+                console.log('API响应:', response);
+                console.log('响应数据:', response.data);
+                
+                resultDiv.innerHTML = `
+                    <h3>✅ API调用成功</h3>
+                    <p><strong>状态码:</strong> ${response.status}</p>
+                    <p><strong>响应数据:</strong></p>
+                    <pre>${JSON.stringify(response.data, null, 2)}</pre>
+                `;
+                
+            } catch (error) {
+                console.error('API调用失败:', error);
+                resultDiv.innerHTML = `
+                    <h3>❌ API调用失败</h3>
+                    <p><strong>错误类型:</strong> ${error.name}</p>
+                    <p><strong>错误信息:</strong> ${error.message}</p>
+                    <p><strong>状态码:</strong> ${error.response?.status || 'Unknown'}</p>
+                    <p><strong>响应数据:</strong></p>
+                    <pre>${JSON.stringify(error.response?.data || {}, null, 2)}</pre>
+                `;
+            }
+        }
+        
+        // 页面加载时显示当前token状态
+        window.onload = function() {
+            const token = localStorage.getItem('access_token');
+            console.log('当前Token:', token ? '存在' : '不存在');
+            if (!token) {
+                document.getElementById('result').innerHTML = '<p style="color: red;">⚠️ 未找到访问令牌，请先登录</p>';
+            }
+        };
+    </script>
+</body>
+</html>

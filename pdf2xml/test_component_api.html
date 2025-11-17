@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成分数据API测试</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .result {
+            background-color: #f5f5f5;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 3px;
+            white-space: pre-wrap;
+        }
+        .error {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+        .success {
+            background-color: #e8f5e8;
+            color: #2e7d32;
+        }
+        button {
+            background-color: #1976d2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #1565c0;
+        }
+    </style>
+</head>
+<body>
+    <h1>MSDS成分数据API测试</h1>
+    
+    <div class="test-section">
+        <h2>测试1: 根据MSDS ID获取成分数据</h2>
+        <p>测试API: GET /api/system/msds/component/msds/157</p>
+        <button onclick="testComponentByMsdsId()">测试获取成分数据</button>
+        <div id="result1" class="result"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>测试2: 获取成分列表</h2>
+        <p>测试API: GET /api/system/msds/component/list</p>
+        <button onclick="testComponentList()">测试成分列表</button>
+        <div id="result2" class="result"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>测试3: 获取单个成分详情</h2>
+        <p>测试API: GET /api/system/msds/component/57</p>
+        <button onclick="testComponentDetail()">测试成分详情</button>
+        <div id="result3" class="result"></div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:8080';
+        
+        async function testComponentByMsdsId() {
+            const resultDiv = document.getElementById('result1');
+            resultDiv.textContent = '正在测试...';
+            
+            try {
+                const response = await fetch(`${API_BASE}/api/system/msds/component/msds/157`);
+                const data = await response.json();
+                
+                if (response.ok) {
+                    resultDiv.className = 'result success';
+                    resultDiv.textContent = `✅ 成功获取成分数据:\n${JSON.stringify(data, null, 2)}`;
+                } else {
+                    resultDiv.className = 'result error';
+                    resultDiv.textContent = `❌ 请求失败: ${response.status} ${response.statusText}\n${JSON.stringify(data, null, 2)}`;
+                }
+            } catch (error) {
+                resultDiv.className = 'result error';
+                resultDiv.textContent = `❌ 网络错误: ${error.message}`;
+            }
+        }
+        
+        async function testComponentList() {
+            const resultDiv = document.getElementById('result2');
+            resultDiv.textContent = '正在测试...';
+            
+            try {
+                const response = await fetch(`${API_BASE}/api/system/msds/component/list`);
+                const data = await response.json();
+                
+                if (response.ok) {
+                    resultDiv.className = 'result success';
+                    resultDiv.textContent = `✅ 成功获取成分列表:\n${JSON.stringify(data, null, 2)}`;
+                } else {
+                    resultDiv.className = 'result error';
+                    resultDiv.textContent = `❌ 请求失败: ${response.status} ${response.statusText}\n${JSON.stringify(data, null, 2)}`;
+                }
+            } catch (error) {
+                resultDiv.className = 'result error';
+                resultDiv.textContent = `❌ 网络错误: ${error.message}`;
+            }
+        }
+        
+        async function testComponentDetail() {
+            const resultDiv = document.getElementById('result3');
+            resultDiv.textContent = '正在测试...';
+            
+            try {
+                const response = await fetch(`${API_BASE}/api/system/msds/component/57`);
+                const data = await response.json();
+                
+                if (response.ok) {
+                    resultDiv.className = 'result success';
+                    resultDiv.textContent = `✅ 成功获取成分详情:\n${JSON.stringify(data, null, 2)}`;
+                } else {
+                    resultDiv.className = 'result error';
+                    resultDiv.textContent = `❌ 请求失败: ${response.status} ${response.statusText}\n${JSON.stringify(data, null, 2)}`;
+                }
+            } catch (error) {
+                resultDiv.className = 'result error';
+                resultDiv.textContent = `❌ 网络错误: ${error.message}`;
+            }
+        }
+    </script>
+</body>
+</html>

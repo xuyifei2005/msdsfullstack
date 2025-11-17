@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.WorkflowActivityMapper">
+    
+    <resultMap type="WorkflowActivity" id="WorkflowActivityResult">
+        <id     property="activityId"         column="activity_id"         />
+        <result property="taskId"             column="task_id"             />
+        <result property="userId"             column="user_id"             />
+        <result property="userName"           column="user_name"           />
+        <result property="actionType"         column="action_type"         />
+        <result property="actionDescription"  column="action_description"  />
+        <result property="oldValue"           column="old_value"           />
+        <result property="newValue"           column="new_value"           />
+        <result property="createTime"         column="create_time"         />
+    </resultMap>
+    
+    <sql id="selectWorkflowActivityVo">
+        select activity_id, task_id, user_id, user_name, action_type, action_description,
+            old_value, new_value, create_time
+        from workflow_activity
+    </sql>
+    
+    <select id="selectWorkflowActivityById" parameterType="Long" resultMap="WorkflowActivityResult">
+        <include refid="selectWorkflowActivityVo"/>
+        where activity_id = #{activityId}
+    </select>
+    
+    <select id="selectWorkflowActivityList" parameterType="WorkflowActivity" resultMap="WorkflowActivityResult">
+        <include refid="selectWorkflowActivityVo"/>
+        <where>
+            <if test="taskId != null">
+                AND task_id = #{taskId}
+            </if>
+            <if test="userId != null">
+                AND user_id = #{userId}
+            </if>
+            <if test="actionType != null and actionType != ''">
+                AND action_type = #{actionType}
+            </if>
+        </where>
+        order by create_time desc
+    </select>
+    
+    <select id="selectWorkflowActivityListByTaskId" parameterType="Long" resultMap="WorkflowActivityResult">
+        <include refid="selectWorkflowActivityVo"/>
+        where task_id = #{taskId}
+        order by create_time desc
+    </select>
+    
+    <insert id="insertWorkflowActivity" parameterType="WorkflowActivity" useGeneratedKeys="true" keyProperty="activityId">
+        insert into workflow_activity
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="taskId != null">task_id,</if>
+            <if test="userId != null">user_id,</if>
+            <if test="userName != null and userName != ''">user_name,</if>
+            <if test="actionType != null and actionType != ''">action_type,</if>
+            <if test="actionDescription != null">action_description,</if>
+            <if test="oldValue != null">old_value,</if>
+            <if test="newValue != null">new_value,</if>
+            <if test="createTime != null">create_time,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="taskId != null">#{taskId},</if>
+            <if test="userId != null">#{userId},</if>
+            <if test="userName != null and userName != ''">#{userName},</if>
+            <if test="actionType != null and actionType != ''">#{actionType},</if>
+            <if test="actionDescription != null">#{actionDescription},</if>
+            <if test="oldValue != null">#{oldValue},</if>
+            <if test="newValue != null">#{newValue},</if>
+            <if test="createTime != null">#{createTime},</if>
+        </trim>
+    </insert>
+    
+    <update id="updateWorkflowActivity" parameterType="WorkflowActivity">
+        update workflow_activity
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="actionDescription != null">action_description = #{actionDescription},</if>
+        </trim>
+        where activity_id = #{activityId}
+    </update>
+    
+    <delete id="deleteWorkflowActivityById" parameterType="Long">
+        delete from workflow_activity where activity_id = #{activityId}
+    </delete>
+    
+    <delete id="deleteWorkflowActivityByIds" parameterType="String">
+        delete from workflow_activity where activity_id in 
+        <foreach item="activityId" collection="array" open="(" separator="," close=")">
+            #{activityId}
+        </foreach>
+    </delete>
+</mapper>
+

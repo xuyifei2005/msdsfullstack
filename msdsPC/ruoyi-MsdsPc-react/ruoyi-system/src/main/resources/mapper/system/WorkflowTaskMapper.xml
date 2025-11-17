@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.WorkflowTaskMapper">
+    
+    <resultMap type="WorkflowTask" id="WorkflowTaskResult">
+        <id     property="taskId"              column="task_id"              />
+        <result property="taskTitle"           column="task_title"            />
+        <result property="taskDescription"    column="task_description"      />
+        <result property="taskType"           column="task_type"             />
+        <result property="status"              column="status"                />
+        <result property="priority"           column="priority"              />
+        <result property="assigneeId"         column="assignee_id"            />
+        <result property="assigneeName"       column="assignee_name"          />
+        <result property="creatorId"          column="creator_id"             />
+        <result property="creatorName"        column="creator_name"          />
+        <result property="msdsId"             column="msds_id"                />
+        <result property="msdsName"          column="msds_name"             />
+        <result property="dueDate"            column="due_date"               />
+        <result property="progress"           column="progress"               />
+        <result property="attachmentCount"    column="attachment_count"       />
+        <result property="commentCount"      column="comment_count"          />
+        <result property="reviewerIds"       column="reviewer_ids"          />
+        <result property="reviewerNames"     column="reviewer_names"         />
+        <result property="rejectionReason"   column="rejection_reason"      />
+        <result property="createBy"          column="create_by"              />
+        <result property="createTime"        column="create_time"            />
+        <result property="updateBy"          column="update_by"              />
+        <result property="updateTime"        column="update_time"           />
+        <result property="remark"            column="remark"                 />
+    </resultMap>
+    
+    <sql id="selectWorkflowTaskVo">
+        select task_id, task_title, task_description, task_type, status, priority,
+            assignee_id, assignee_name, creator_id, creator_name, msds_id, msds_name,
+            due_date, progress, attachment_count, comment_count, reviewer_ids, reviewer_names,
+            rejection_reason, create_by, create_time, update_by, update_time, remark
+        from workflow_task
+    </sql>
+    
+    <select id="selectWorkflowTaskById" parameterType="Long" resultMap="WorkflowTaskResult">
+        <include refid="selectWorkflowTaskVo"/>
+        where task_id = #{taskId}
+    </select>
+    
+    <select id="selectWorkflowTaskList" parameterType="WorkflowTask" resultMap="WorkflowTaskResult">
+        <include refid="selectWorkflowTaskVo"/>
+        <where>
+            <if test="taskTitle != null and taskTitle != ''">
+                AND task_title like concat('%', #{taskTitle}, '%')
+            </if>
+            <if test="status != null and status != ''">
+                AND status = #{status}
+            </if>
+            <if test="priority != null and priority != ''">
+                AND priority = #{priority}
+            </if>
+            <if test="assigneeId != null">
+                AND assignee_id = #{assigneeId}
+            </if>
+            <if test="creatorId != null">
+                AND creator_id = #{creatorId}
+            </if>
+            <if test="msdsId != null">
+                AND msds_id = #{msdsId}
+            </if>
+            <if test="taskType != null and taskType != ''">
+                AND task_type = #{taskType}
+            </if>
+        </where>
+        order by create_time desc
+    </select>
+    
+    <select id="countByStatus" parameterType="String" resultType="int">
+        select count(*) from workflow_task where status = #{status}
+    </select>
+    
+    <insert id="insertWorkflowTask" parameterType="WorkflowTask" useGeneratedKeys="true" keyProperty="taskId">
+        insert into workflow_task
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="taskTitle != null and taskTitle != ''">task_title,</if>
+            <if test="taskDescription != null">task_description,</if>
+            <if test="taskType != null">task_type,</if>
+            <if test="status != null">status,</if>
+            <if test="priority != null">priority,</if>
+            <if test="assigneeId != null">assignee_id,</if>
+            <if test="assigneeName != null">assignee_name,</if>
+            <if test="creatorId != null">creator_id,</if>
+            <if test="creatorName != null">creator_name,</if>
+            <if test="msdsId != null">msds_id,</if>
+            <if test="msdsName != null">msds_name,</if>
+            <if test="dueDate != null">due_date,</if>
+            <if test="progress != null">progress,</if>
+            <if test="attachmentCount != null">attachment_count,</if>
+            <if test="commentCount != null">comment_count,</if>
+            <if test="reviewerIds != null">reviewer_ids,</if>
+            <if test="reviewerNames != null">reviewer_names,</if>
+            <if test="rejectionReason != null">rejection_reason,</if>
+            <if test="createBy != null">create_by,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateBy != null">update_by,</if>
+            <if test="updateTime != null">update_time,</if>
+            <if test="remark != null">remark,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="taskTitle != null and taskTitle != ''">#{taskTitle},</if>
+            <if test="taskDescription != null">#{taskDescription},</if>
+            <if test="taskType != null">#{taskType},</if>
+            <if test="status != null">#{status},</if>
+            <if test="priority != null">#{priority},</if>
+            <if test="assigneeId != null">#{assigneeId},</if>
+            <if test="assigneeName != null">#{assigneeName},</if>
+            <if test="creatorId != null">#{creatorId},</if>
+            <if test="creatorName != null">#{creatorName},</if>
+            <if test="msdsId != null">#{msdsId},</if>
+            <if test="msdsName != null">#{msdsName},</if>
+            <if test="dueDate != null">#{dueDate},</if>
+            <if test="progress != null">#{progress},</if>
+            <if test="attachmentCount != null">#{attachmentCount},</if>
+            <if test="commentCount != null">#{commentCount},</if>
+            <if test="reviewerIds != null">#{reviewerIds},</if>
+            <if test="reviewerNames != null">#{reviewerNames},</if>
+            <if test="rejectionReason != null">#{rejectionReason},</if>
+            <if test="createBy != null">#{createBy},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateBy != null">#{updateBy},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+            <if test="remark != null">#{remark},</if>
+        </trim>
+    </insert>
+    
+    <update id="updateWorkflowTask" parameterType="WorkflowTask">
+        update workflow_task
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="taskTitle != null and taskTitle != ''">task_title = #{taskTitle},</if>
+            <if test="taskDescription != null">task_description = #{taskDescription},</if>
+            <if test="taskType != null">task_type = #{taskType},</if>
+            <if test="status != null">status = #{status},</if>
+            <if test="priority != null">priority = #{priority},</if>
+            <if test="assigneeId != null">assignee_id = #{assigneeId},</if>
+            <if test="assigneeName != null">assignee_name = #{assigneeName},</if>
+            <if test="msdsId != null">msds_id = #{msdsId},</if>
+            <if test="msdsName != null">msds_name = #{msdsName},</if>
+            <if test="dueDate != null">due_date = #{dueDate},</if>
+            <if test="progress != null">progress = #{progress},</if>
+            <if test="attachmentCount != null">attachment_count = #{attachmentCount},</if>
+            <if test="commentCount != null">comment_count = #{commentCount},</if>
+            <if test="reviewerIds != null">reviewer_ids = #{reviewerIds},</if>
+            <if test="reviewerNames != null">reviewer_names = #{reviewerNames},</if>
+            <if test="rejectionReason != null">rejection_reason = #{rejectionReason},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+            <if test="remark != null">remark = #{remark},</if>
+        </trim>
+        where task_id = #{taskId}
+    </update>
+    
+    <delete id="deleteWorkflowTaskById" parameterType="Long">
+        delete from workflow_task where task_id = #{taskId}
+    </delete>
+    
+    <delete id="deleteWorkflowTaskByIds" parameterType="String">
+        delete from workflow_task where task_id in 
+        <foreach item="taskId" collection="array" open="(" separator="," close=")">
+            #{taskId}
+        </foreach>
+    </delete>
+</mapper>
+

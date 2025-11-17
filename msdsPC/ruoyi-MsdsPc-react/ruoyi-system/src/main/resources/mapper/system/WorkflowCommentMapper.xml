@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.WorkflowCommentMapper">
+    
+    <resultMap type="WorkflowComment" id="WorkflowCommentResult">
+        <id     property="commentId"      column="comment_id"      />
+        <result property="taskId"         column="task_id"         />
+        <result property="userId"         column="user_id"         />
+        <result property="userName"       column="user_name"       />
+        <result property="content"        column="content"          />
+        <result property="parentId"       column="parent_id"       />
+        <result property="createBy"       column="create_by"       />
+        <result property="createTime"     column="create_time"      />
+        <result property="updateBy"       column="update_by"       />
+        <result property="updateTime"     column="update_time"      />
+    </resultMap>
+    
+    <sql id="selectWorkflowCommentVo">
+        select comment_id, task_id, user_id, user_name, content, parent_id,
+            create_by, create_time, update_by, update_time
+        from workflow_comment
+    </sql>
+    
+    <select id="selectWorkflowCommentById" parameterType="Long" resultMap="WorkflowCommentResult">
+        <include refid="selectWorkflowCommentVo"/>
+        where comment_id = #{commentId}
+    </select>
+    
+    <select id="selectWorkflowCommentList" parameterType="WorkflowComment" resultMap="WorkflowCommentResult">
+        <include refid="selectWorkflowCommentVo"/>
+        <where>
+            <if test="taskId != null">
+                AND task_id = #{taskId}
+            </if>
+            <if test="userId != null">
+                AND user_id = #{userId}
+            </if>
+            <if test="parentId != null">
+                AND parent_id = #{parentId}
+            </if>
+        </where>
+        order by create_time asc
+    </select>
+    
+    <select id="selectWorkflowCommentListByTaskId" parameterType="Long" resultMap="WorkflowCommentResult">
+        <include refid="selectWorkflowCommentVo"/>
+        where task_id = #{taskId}
+        order by create_time asc
+    </select>
+    
+    <insert id="insertWorkflowComment" parameterType="WorkflowComment" useGeneratedKeys="true" keyProperty="commentId">
+        insert into workflow_comment
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="taskId != null">task_id,</if>
+            <if test="userId != null">user_id,</if>
+            <if test="userName != null and userName != ''">user_name,</if>
+            <if test="content != null and content != ''">content,</if>
+            <if test="parentId != null">parent_id,</if>
+            <if test="createBy != null">create_by,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateBy != null">update_by,</if>
+            <if test="updateTime != null">update_time,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="taskId != null">#{taskId},</if>
+            <if test="userId != null">#{userId},</if>
+            <if test="userName != null and userName != ''">#{userName},</if>
+            <if test="content != null and content != ''">#{content},</if>
+            <if test="parentId != null">#{parentId},</if>
+            <if test="createBy != null">#{createBy},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateBy != null">#{updateBy},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+        </trim>
+    </insert>
+    
+    <update id="updateWorkflowComment" parameterType="WorkflowComment">
+        update workflow_comment
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="content != null and content != ''">content = #{content},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+        </trim>
+        where comment_id = #{commentId}
+    </update>
+    
+    <delete id="deleteWorkflowCommentById" parameterType="Long">
+        delete from workflow_comment where comment_id = #{commentId}
+    </delete>
+    
+    <delete id="deleteWorkflowCommentByIds" parameterType="String">
+        delete from workflow_comment where comment_id in 
+        <foreach item="commentId" collection="array" open="(" separator="," close=")">
+            #{commentId}
+        </foreach>
+    </delete>
+    
+    <delete id="deleteWorkflowCommentByTaskId" parameterType="Long">
+        delete from workflow_comment where task_id = #{taskId}
+    </delete>
+</mapper>
+
