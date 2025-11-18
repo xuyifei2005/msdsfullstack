@@ -133,7 +133,8 @@ function Copy-RemoteFile {
         [string]$Destination,
         [string]$Server,
         [string]$User,
-        [SecureString]$Password = $null
+        [SecureString]$Password = $null,
+        [switch]$UploadContentsOnly
     )
     
     if ($Password) {
@@ -152,6 +153,11 @@ function Copy-RemoteFile {
             
             if ($isDirectory) {
                 $scpArgs += "-r"
+            }
+            
+            # If UploadContentsOnly is set, append /* to upload directory contents
+            if ($UploadContentsOnly -and $isDirectory) {
+                $Source = Join-Path $Source "*"
             }
             
             $scpArgs += $Source, "$User@$Server`:$Destination"
@@ -176,6 +182,13 @@ function Copy-RemoteFile {
         
         if ($isDirectory) {
             $scpArgs += "-r"
+        }
+        
+        # If UploadContentsOnly is set, use dist/. pattern for scp to upload contents only
+        if ($UploadContentsOnly -and $isDirectory) {
+            # For scp, use dist/. to upload directory contents (not the directory itself)
+            # Convert Windows path separators to forward slashes for scp
+            $Source = $Source -replace '\\', '/' -replace '/$', '' + "/."
         }
         
         $scpArgs += $Source, "$User@$Server`:$Destination"
@@ -297,13 +310,15 @@ foreach ($file in $filesToCheck) {
     Write-ColorOutput "  Uploading $($file.Type)..." "INFO"
     
     if ($file.Type -eq "Frontend") {
-        # Frontend: Clear target directory first, then upload
+        # Frontend: Clear target directory first, then upload dist contents (not dist folder itself)
         Write-ColorOutput "    Clearing server frontend directory..." "INFO"
         $clearCmd = "rm -rf $($file.ServerPath)/*"
         Invoke-RemoteCommand -Server $ServerIP -User $ServerUser -Command $clearCmd -Password $ServerPassword | Out-Null
         
         Write-ColorOutput "    Uploading frontend files..." "INFO"
-        $uploadResult = Copy-RemoteFile -Source $file.Path -Destination $file.ServerPath -Server $ServerIP -User $ServerUser -Password $ServerPassword
+        # Upload dist directory contents (not the dist folder itself)
+        # This ensures files go directly to html/ without creating a dist/ subdirectory
+        $uploadResult = Copy-RemoteFile -Source $file.Path -Destination $file.ServerPath -Server $ServerIP -User $ServerUser -Password $ServerPassword -UploadContentsOnly
         
         if ($uploadResult) {
             Write-ColorOutput "    Frontend files uploaded successfully" "SUCCESS"
