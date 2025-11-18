@@ -3,150 +3,211 @@
 # 服务器IP: 39.107.211.72
 # 用于生产环境部署
 
+### 用本地的这个文件进行容器构建！
+# docker load -i msdsmysql_image.tar
+# docker load -i msdsredis_image.tar
+# docker load -i msdsbackend_image.tar
+# docker load -i msdsfrontend_image.tar
+
+
+
+# 加载镜像后重新打标签的示例
+# docker tag msds_exported_mysql msdsmysql:latest
+# docker tag msds_exported_redis msdsredis:latest
+# docker tag msds_exported_backend msdsbackend:latest
+# docker tag msds_exported_frontend msdsfrontend:latest
+
+version: '3.8'
+
+# 定义Docker网络配置
 networks:
   msds_network:
+    # Docker网络驱动类型有以下几种:
+    # - bridge: 默认驱动,创建独立的网络命名空间,容器间通过虚拟网桥通信
+    # - host: 容器直接使用宿主机网络,性能好但缺乏隔离
+    # - none: 容器没有网络功能
+    # - overlay: 用于Docker Swarm集群中跨主机容器通信
+    # - macvlan: 允许容器直接连接物理网络
     driver: bridge
-    ipam:
-      config:
-        - subnet: 172.21.0.0/16
 
 services:
-  # MySQL数据库 - 生产环境
-  msdsmysql:
+
+  # Nginx服务（前端反向代理）
+  msdsnginx:
     networks:
       - msds_network
-    image: mysql:8.0
-    container_name: msdsmysql-prod
-    hostname: msdsmysql
+    image: msdsnginx:latest
+    container_name: msdsnginx
+    hostname: msdsnginx
     restart: always
-    command: --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --init-connect='SET NAMES utf8mb4' --init-connect='SET collation_connection = utf8mb4_unicode_ci' --skip-character-set-client-handshake
-    environment:
-      MYSQL_DATABASE: msds_prod
-      MYSQL_USER: msds_prod_user
-      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-FlyMsds2025Prod!@#}
-      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-FlyMsds2025Root!@#}
-      TZ: Asia/Shanghai
+    pull_policy: never
     ports:
-      - "3306:3306"
+      - "80:80"
+      - "443:443"
     volumes:
-      # 使用命名卷持久化数据，避免数据丢失
-      - msdsmysql_data_prod:/var/lib/mysql
-      # 数据库初始化脚本
-      - ./msdsfullstatckcompose/msdsdatabaseinitdb:/docker-entrypoint-initdb.d:ro
-      # MySQL配置文件
-      - ./mysql/conf.d:/etc/mysql/conf.d:ro
-    healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${MYSQL_ROOT_PASSWORD:-msds_root_password_2024}"]
-      interval: 30s
-      timeout: 10s
-      retries: 5
-      start_period: 60s
+      # Nginx配置文件
+      - ./nginx/conf.d:/etc/nginx/conf.d:ro
+      # SSL证书
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+      # 静态资源
+      - ./nginx/html:/usr/share/nginx/html:ro
+      # 日志
+      - ./nginx/logs:/var/log/nginx
+    depends_on:
+      msdsbackend:
+        condition: service_healthy
+    command: ["nginx", "-g", "daemon off;"]
 
-  # Redis缓存 - 生产环境
-  msdsredis:
-    networks:
-      - msds_network
-    image: redis:7-alpine
-    container_name: msdsredis-prod
-    hostname: msdsredis
-    restart: always
-    command: redis-server --requirepass ${REDIS_PASSWORD:-FlyMsds2025Redis!@#} --appendonly yes
-    ports:
-      - "6379:6379"
-    volumes:
-      - msdsredis_data_prod:/data
-    healthcheck:
-      test: ["CMD", "redis-cli", "--raw", "incr", "ping"]
-      interval: 30s
-      timeout: 10s
-      retries: 5
 
-  # 后端服务 - 生产环境
+  # 后端服务（Spring Boot应用）
   msdsbackend:
     networks:
       - msds_network
-    # 使用镜像仓库（CI/CD自动构建推送）
-    image: ${REGISTRY:-registry.cn-beijing.aliyuncs.com}/msds/backend:${BACKEND_TAG:-latest}
-    # 本地开发时可以取消注释下面的build配置
-    # build:
-    #   context: ../msdsPC/ruoyi-MsdsPc-react
-    #   dockerfile: Dockerfile.prod
-    #   args:
-    #     - SPRING_PROFILE=prod
-    pull_policy: always
-    container_name: msdsbackend-prod
+    image: msdsbackend
+    container_name: msdsbackend
     hostname: msdsbackend
     restart: always
+    pull_policy: never
+    volumes:
+      # 应用代码目录（生产环境通常只需要日志和上传目录）
+      - backend_logs:/app/logs
+      - backend_upload:/app/uploadPath
+      # Maven本地仓库持久化（如果需要重新编译）
+      - msdsmaven_repository:/root/.m2/repository
+    working_dir: /app
+    # 生产环境启动命令：直接运行已编译的JAR文件
+    command: |
+      sh -c "
+      echo '========================================' &&
+      echo 'Starting MSDS Backend Service (Production)...' &&
+      echo '========================================' &&
+      # 检查JAR文件是否存在
+      if [ -f 'ruoyi-admin/target/ruoyi-admin.jar' ]; then
+        echo 'Found JAR file, starting application...' &&
+        java -Xms512m -Xmx2048m -XX:+UseG1GC -XX:+PrintGCDetails \
+             -Djava.security.egd=file:/dev/./urandom \
+             -Dspring.profiles.active=prod \
+             -jar ruoyi-admin/target/ruoyi-admin.jar
+      elif [ -f '/app/ruoyi-admin.jar' ]; then
+        echo 'Found JAR file in /app, starting application...' &&
+        java -Xms512m -Xmx2048m -XX:+UseG1GC -XX:+PrintGCDetails \
+             -Djava.security.egd=file:/dev/./urandom \
+             -Dspring.profiles.active=prod \
+             -jar /app/ruoyi-admin.jar
+      else
+        echo 'ERROR: JAR file not found! Please ensure the application is built.' &&
+        echo 'Attempting to build from source...' &&
+        cd /app &&
+        mvn clean package -DskipTests &&
+        java -Xms512m -Xmx2048m -XX:+UseG1GC -XX:+PrintGCDetails \
+             -Djava.security.egd=file:/dev/./urandom \
+             -Dspring.profiles.active=prod \
+             -jar ruoyi-admin/target/ruoyi-admin.jar
+      fi
+      "
+    ports:
+      - "18080:8080"
+    environment:
+      # 生产环境配置
+      - SPRING_PROFILES_ACTIVE=prod
+      # 数据库配置
+      - SPRING_DATASOURCE_URL=jdbc:mysql://msdsmysql:3306/msds_prod?useUnicode=true&characterEncoding=utf8mb4&connectionCollation=utf8mb4_unicode_ci&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+      - SPRING_DATASOURCE_USERNAME=msds_user
+      - SPRING_DATASOURCE_PASSWORD=${SPRING_DATASOURCE_PASSWORD:-msds_prod_password}
+      # Redis配置
+      - SPRING_REDIS_HOST=msdsredis
+      - SPRING_REDIS_PORT=6379
+      - SPRING_REDIS_DATABASE=0
+      - SPRING_REDIS_PASSWORD=${REDIS_PASSWORD:-msds_redis_password_prod}
+      # 时区配置
+      - TZ=Asia/Shanghai
+      # JVM参数
+      - JAVA_OPTS=-Xms512m -Xmx2048m -XX:+UseG1GC -XX:+PrintGCDetails
     depends_on:
       msdsmysql:
         condition: service_healthy
       msdsredis:
-        condition: service_healthy
-    environment:
-      - SPRING_PROFILES_ACTIVE=prod
-      - SPRING_DATASOURCE_URL=jdbc:mysql://msdsmysql:3306/msds_prod?useUnicode=true&characterEncoding=utf8mb4&connectionCollation=utf8mb4_unicode_ci&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
-      - SPRING_DATASOURCE_USERNAME=msds_prod_user
-      - SPRING_DATASOURCE_PASSWORD=${MYSQL_PASSWORD:-FlyMsds2025Prod!@#}
-      - SPRING_REDIS_HOST=msdsredis
-      - SPRING_REDIS_PORT=6379
-      - SPRING_REDIS_PASSWORD=${REDIS_PASSWORD:-FlyMsds2025Redis!@#}
-      - JAVA_OPTS=-Xms1024m -Xmx2048m -XX:+UseG1GC -XX:MaxGCPauseMillis=200
-      - TZ=Asia/Shanghai
-    ports:
-      - "8080:8080"
-    volumes:
-      # 文件上传目录持久化
-      - msds_upload_prod:/app/uploadPath
-      # 日志持久化
-      - msds_logs_prod:/app/logs
+        condition: service_started
     healthcheck:
-      test: ["CMD-SHELL", "curl -f http://localhost:8080/actuator/health || exit 1"]
+      test: ["CMD-SHELL", "curl -f http://localhost:8080/actuator/health || curl -f http://localhost:8080/ || exit 1"]
       interval: 30s
       timeout: 10s
       retries: 5
       start_period: 120s
 
-  # Nginx服务 - 生产环境（前端）
-  msdsnginx:
+  
+
+  # MySQL数据库
+  msdsmysql:
     networks:
       - msds_network
-    # 使用镜像仓库（CI/CD自动构建推送）
-    image: ${REGISTRY:-registry.cn-beijing.aliyuncs.com}/msds/frontend:${FRONTEND_TAG:-latest}
-    # 本地开发时使用nginx官方镜像+本地挂载
-    # image: nginx:alpine
-    pull_policy: always
-    container_name: msdsnginx-prod
-    hostname: msdsnginx
+    image: msdsmysql
+    container_name: msdsmysql
+    hostname: msdsmysql
     restart: always
-    depends_on:
-      msdsbackend:
-        condition: service_healthy
+    pull_policy: never
+    command: --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --init-connect='SET NAMES utf8mb4' --init-connect='SET collation_connection = utf8mb4_unicode_ci' --skip-character-set-client-handshake
+    environment:
+      # 生产环境数据库配置
+      MYSQL_DATABASE: msds_prod
+      MYSQL_USER: msds_user
+      MYSQL_PASSWORD: msds_prod_password
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-msds_root_password_prod}
+      TZ: Asia/Shanghai
     ports:
-      - "80:80"
-      - "443:443"
+      - "3306:3306"
     volumes:
-      # Nginx配置文件（可选，镜像内已包含）
-      # - ./nginx/nginx.prod.conf:/etc/nginx/nginx.conf:ro
-      # - ./nginx/conf.d/msds.prod.conf:/etc/nginx/conf.d/default.conf:ro
-      # SSL证书 - 如需HTTPS支持
-      - ./nginx/ssl:/etc/nginx/ssl:ro
-      # 前端静态文件（使用镜像内置，无需挂载）
-      # - ./nginx/html:/usr/share/nginx/html:ro
-      # 日志持久化
-      - ./nginx/logs:/var/log/nginx
+      # 使用命名卷避免共享文件夹权限问题
+      - msdsmysql_data:/var/lib/mysql
+      # 初始化数据库脚本（仅在首次启动时执行）
+      - ../msdsdocker/msdsfullstatckcompose/msdsdatabaseinitdb:/docker-entrypoint-initdb.d:ro
+      # MySQL配置文件
+      - ./mysql/conf.d:/etc/mysql/conf.d:ro
     healthcheck:
-      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${MYSQL_ROOT_PASSWORD:-msds_root_password_prod}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  # Redis缓存
+  msdsredis:
+    networks:
+      - msds_network
+    image: msdsredis
+    container_name: msdsredis
+    hostname: msdsredis
+    restart: always
+    pull_policy: never
+    ports:
+      - "16379:6379"
+    volumes:
+      - msdsredis_data:/data
+    command: redis-server --appendonly yes --requirepass ${REDIS_PASSWORD:-msds_redis_password_prod}
+    environment:
+      - REDIS_PASSWORD=${REDIS_PASSWORD:-msds_redis_password_prod}
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli -a ${REDIS_PASSWORD:-msds_redis_password_prod} ping | grep PONG || exit 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 10s
 
 volumes:
-  msdsmysql_data_prod:
+  # 数据持久化卷
+  msdsredis_data:
     driver: local
-  msdsredis_data_prod:
+  msdsmysql_data:
     driver: local
-  msds_upload_prod:
+  # 应用数据卷
+  backend_logs:
     driver: local
-  msds_logs_prod:
+  backend_upload:
     driver: local
+  # 开发工具卷
+  msdsmaven_repository:
+    driver: local
+  msdsnode_modules:
+    driver: local
+
 
