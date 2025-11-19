@@ -143,6 +143,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import 'uview-ui/theme.scss';
+
 .page-container {
   padding: 15px;
   background-color: #f4f4f5;
@@ -203,7 +205,7 @@ export default {
   }
   .see-all {
     font-size: 14px;
-    color: $u-type-primary;
+    color: $u-primary;
   }
 }
 

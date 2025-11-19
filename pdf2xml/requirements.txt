@@ -1,0 +1,27 @@
+# PDF处理库
+pdfplumber==0.10.3
+PyPDF2==3.0.1
+pdfminer.six==20221105
+
+# XML处理
+lxml==5.1.0
+
+# 文本处理
+regex==2023.12.25
+
+# 进度条
+tqdm==4.66.1
+
+# 日志
+colorlog==6.8.0
+
+# 并发处理
+concurrent-futures==3.1.1
+
+# 字符编码检测
+chardet==5.2.0
+
+# 数据库连接
+mysql-connector-python==8.2.0
+
+

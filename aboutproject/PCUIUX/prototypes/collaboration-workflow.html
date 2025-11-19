@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSDS管理系统 - 协作工作流</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1890ff;
+            --primary-light: #40a9ff;
+            --primary-dark: #096dd9;
+            --success-color: #52c41a;
+            --warning-color: #faad14;
+            --error-color: #ff4d4f;
+            --text-primary: #262626;
+            --text-secondary: #595959;
+            --text-tertiary: #8c8c8c;
+            --bg-primary: #ffffff;
+            --bg-secondary: #fafafa;
+            --border-primary: #d9d9d9;
+            --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-secondary);
+        }
+
+        .workflow-card {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-primary);
+            transition: all 0.3s ease;
+        }
+
+        .workflow-card:hover {
+            box-shadow: var(--shadow-card);
+            border-color: var(--primary-light);
+        }
+
+        .task-card {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-primary);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .task-card:hover {
+            box-shadow: var(--shadow-card);
+            transform: translateY(-2px);
+        }
+
+        .task-card.urgent {
+            border-left: 4px solid var(--error-color);
+        }
+
+        .task-card.normal {
+            border-left: 4px solid var(--warning-color);
+        }
+
+        .task-card.low {
+            border-left: 4px solid var(--success-color);
+        }
+
+        .kanban-column {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            min-height: 600px;
+        }
+
+        .kanban-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            color: white;
+        }
+
+        .kanban-header.review {
+            background: linear-gradient(135deg, var(--warning-color), #ffd666);
+        }
+
+        .kanban-header.approved {
+            background: linear-gradient(135deg, var(--success-color), #73d13d);
+        }
+
+        .kanban-header.rejected {
+            background: linear-gradient(135deg, var(--error-color), #ff7875);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0.5rem;
+            top: 0.5rem;
+            width: 0.75rem;
+            height: 0.75rem;
+            background: var(--primary-color);
+            border-radius: 50%;
+            border: 2px solid white;
+            box-shadow: 0 0 0 2px var(--primary-color);
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 0.875rem;
+            top: 1.25rem;
+            width: 2px;
+            height: calc(100% - 1rem);
+            background: #e2e8f0;
+        }
+
+        .timeline-item:last-child::after {
+            display: none;
+        }
+
+        .timeline-item.completed::before {
+            background: var(--success-color);
+            box-shadow: 0 0 0 2px var(--success-color);
+        }
+
+        .timeline-item.current::before {
+            background: var(--warning-color);
+            box-shadow: 0 0 0 2px var(--warning-color);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .user-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .priority-badge {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.375rem;
+            font-weight: 500;
+        }
+
+        .priority-urgent {
+            background-color: #fee2e2;
+            color: #991b1b;
+        }
+
+        .priority-normal {
+            background-color: #fef3c7;
+            color: #92400e;
+        }
+
+        .priority-low {
+            background-color: #d1fae5;
+            color: #065f46;
+        }
+
+        .status-badge {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.375rem;
+            font-weight: 500;
+        }
+
+        .status-pending {
+            background-color: #e0e7ff;
+            color: #3730a3;
+        }
+
+        .status-review {
+            background-color: #fef3c7;
+            color: #92400e;
+        }
+
+        .status-approved {
+            background-color: #d1fae5;
+            color: #065f46;
+        }
+
+        .status-rejected {
+            background-color: #fee2e2;
+            color: #991b1b;
+        }
+
+        .comment-bubble {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 1rem;
+            position: relative;
+        }
+
+        .comment-bubble::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 12px;
+            width: 0;
+            height: 0;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-right: 8px solid #e2e8f0;
+        }
+
+        .comment-bubble::after {
+            content: '';
+            position: absolute;
+            left: -7px;
+            top: 12px;
+            width: 0;
+            height: 0;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-right: 8px solid #f8fafc;
+        }
+
+        .notification-dot {
+            position: absolute;
+            top: -4px;
+            right: -4px;
+            width: 8px;
+            height: 8px;
+            background: var(--error-color);
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        .drag-over {
+            background: rgba(24, 144, 255, 0.1);
+            border-color: var(--primary-color);
+        }
+
+        .floating-chat {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+        }
+
+        .chat-window {
+            width: 350px;
+            height: 400px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            display: none;
+            flex-direction: column;
+        }
+
+        .chat-window.show {
+            display: flex;
+        }
+
+        .chat-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            color: white;
+            padding: 1rem;
+            border-radius: 12px 12px 0 0;
+        }
+
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 1rem;
+        }
+
+        .chat-input {
+            padding: 1rem;
+            border-top: 1px solid #e2e8f0;
+            border-radius: 0 0 12px 12px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 主容器 -->
+    <div class="min-h-screen bg-gray-50">
+        <!-- 顶部导航 -->
+        <div class="bg-white border-b border-gray-200 px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-users text-white"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-xl font-semibold text-gray-800">协作工作流</h1>
+                            <p class="text-sm text-gray-500">MSDS Collaboration Workflow</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full">
+                            <i class="fas fa-circle text-xs mr-1"></i>团队在线
+                        </span>
+                        <span class="text-sm text-gray-500">8 人在线</span>
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-3">
+                    <button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors" onclick="createNewTask()">
+                        <i class="fas fa-plus mr-2"></i>新建任务
+                    </button>
+                    <button class="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors">
+                        <i class="fas fa-filter mr-2"></i>筛选
+                    </button>
+                    <div class="relative">
+                        <button class="p-2 text-gray-600 hover:text-gray-800 relative">
+                            <i class="fas fa-bell"></i>
+                            <span class="notification-dot"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 主内容区域 -->
+        <div class="flex">
+            <!-- 左侧面板 -->
+            <div class="w-80 bg-white border-r border-gray-200 h-screen overflow-y-auto">
+                <!-- 工作流概览 -->
+                <div class="p-6 border-b border-gray-200">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">工作流概览</h3>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="text-center p-3 bg-blue-50 rounded-lg">
+                            <div class="text-2xl font-bold text-blue-600">23</div>
+                            <div class="text-xs text-gray-600">待处理</div>
+                        </div>
+                        <div class="text-center p-3 bg-yellow-50 rounded-lg">
+                            <div class="text-2xl font-bold text-yellow-600">8</div>
+                            <div class="text-xs text-gray-600">审核中</div>
+                        </div>
+                        <div class="text-center p-3 bg-green-50 rounded-lg">
+                            <div class="text-2xl font-bold text-green-600">156</div>
+                            <div class="text-xs text-gray-600">已完成</div>
+                        </div>
+                        <div class="text-center p-3 bg-red-50 rounded-lg">
+                            <div class="text-2xl font-bold text-red-600">3</div>
+                            <div class="text-xs text-gray-600">已拒绝</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 团队成员 -->
+                <div class="p-6 border-b border-gray-200">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">团队成员</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="user-avatar">张三</div>
+                            <div class="flex-1">
+                                <div class="text-sm font-medium text-gray-900">张三</div>
+                                <div class="text-xs text-gray-500">化学品安全专家</div>
+                            </div>
+                            <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="user-avatar">李四</div>
+                            <div class="flex-1">
+                                <div class="text-sm font-medium text-gray-900">李四</div>
+                                <div class="text-xs text-gray-500">质量审核员</div>
+                            </div>
+                            <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="user-avatar">王五</div>
+                            <div class="flex-1">
+                                <div class="text-sm font-medium text-gray-900">王五</div>
+                                <div class="text-xs text-gray-500">技术主管</div>
+                            </div>
+                            <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="user-avatar">赵六</div>
+                            <div class="flex-1">
+                                <div class="text-sm font-medium text-gray-900">赵六</div>
+                                <div class="text-xs text-gray-500">数据分析师</div>
+                            </div>
+                            <div class="w-2 h-2 bg-gray-400 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 最近活动 -->
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">最近活动</h3>
+                    <div class="space-y-4">
+                        <div class="timeline-item completed">
+                            <div class="text-sm">
+                                <span class="font-medium text-gray-900">张三</span>
+                                <span class="text-gray-600">完成了</span>
+                                <span class="font-medium text-blue-600">乙醇MSDS审核</span>
+                            </div>
+                            <div class="text-xs text-gray-500 mt-1">5分钟前</div>
+                        </div>
+                        <div class="timeline-item current">
+                            <div class="text-sm">
+                                <span class="font-medium text-gray-900">李四</span>
+                                <span class="text-gray-600">正在审核</span>
+                                <span class="font-medium text-yellow-600">甲醇MSDS文档</span>
+                            </div>
+                            <div class="text-xs text-gray-500 mt-1">15分钟前</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="text-sm">
+                                <span class="font-medium text-gray-900">王五</span>
+                                <span class="text-gray-600">创建了新任务</span>
+                                <span class="font-medium text-blue-600">丙酮MSDS更新</span>
+                            </div>
+                            <div class="text-xs text-gray-500 mt-1">1小时前</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="text-sm">
+                                <span class="font-medium text-gray-900">赵六</span>
+                                <span class="text-gray-600">上传了</span>
+                                <span class="font-medium text-blue-600">批量MSDS文档</span>
+                            </div>
+                            <div class="text-xs text-gray-500 mt-1">2小时前</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右侧看板区域 -->
+            <div class="flex-1 p-6">
+                <div class="grid grid-cols-4 gap-6 h-full">
+                    <!-- 待处理列 -->
+                    <div class="kanban-column rounded-lg overflow-hidden">
+                        <div class="kanban-header p-4">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-semibold">待处理</h3>
+                                <span class="bg-white bg-opacity-20 px-2 py-1 rounded-full text-sm">23</span>
+                            </div>
+                        </div>
+                        <div class="p-4 space-y-4" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <!-- 任务卡片 1 -->
+                            <div class="task-card urgent rounded-lg p-4" draggable="true" ondragstart="drag(event)" data-task-id="task1">
+                                <div class="flex items-start justify-between mb-3">
+                                    <div class="flex-1">
+                                        <h4 class="font-medium text-gray-900 mb-1">乙醇MSDS文档审核</h4>
+                                        <p class="text-sm text-gray-600">需要对新上传的乙醇MSDS文档进行安全性审核</p>
+                                    </div>
+                                    <span class="priority-badge priority-urgent">紧急</span>
+                                </div>
+                                <div class="flex items-center justify-between text-sm">
+                                    <div class="flex items-center space-x-2">
+                                        <div class="user-avatar" style="width: 24px; height: 24px; font-size: 0.6rem;">张三</div>
+                                        <span class="text-gray-600">张三</span>
+                                    </div>
+                                    <span class="text-gray-500">今天 14:30</span>
+                                </div>
+                                <div class="mt-3 flex items-center space-x-2">
+                                    <i class="fas fa-paperclip text-gray-400"></i>
+                                    <span class="text-xs text-gray-500">3个附件</span>
+                                    <i class="fas fa-comment text-gray-400 ml-2"></i>
+                                    <span class="text-xs text-gray-500">2条评论</span>
+                                </div>
+                            </div>
+
+                            <!-- 任务卡片 2 -->
+                            <div class="task-card normal rounded-lg p-4" draggable="true" ondragstart="drag(event)" data-task-id="task2">
+                                <div class="flex items-start justify-between mb-3">
+                                    <div class="flex-1">
+                                        <h4 class="font-medium text-gray-900 mb-1">甲醇MSDS信息更新</h4>
+                                        <p class="text-sm text-gray-600">更新甲醇的物理化学性质和安全防护措施</p>
+                                    </div>
+                                    <span class="priority-badge priority-normal">普通</span>
+                                </div>
+                                <div class="flex items-center justify-between text-sm">
+                                    <div class="flex items-center space-x-2">
+                                        <div class="user-avatar" style="width: 24px; height: 24px; font-size: 0.6rem;">李四</div>
+                                        <span class="text-gray-600">李四</span>
+                                    </div>
+                                    <span class="text-gray-500">明天 10:00</span>
+                                </div>
+                                <div class="mt-3 flex items-center space-x-2">
+                                    <i class="fas fa-paperclip text-gray-400"></i>
+                                    <span class="text-xs text-gray-500">1个附件</span>
+                                </div>
+                            </div>
+
+                            <!-- 任务卡片 3 -->
+                            <div class="task-card low rounded-lg p-4" draggable="true" ondragstart="drag(event)" data-task-id="task3">
+                                <div class="flex items-start justify-between mb-3">
+                                    <div class="flex-1">
+                                        <h4 class="font-medium text-gray-900 mb-1">丙酮MSDS格式规范</h4>
+                                        <p class="text-sm text-gray-600">检查并规范丙酮MSDS文档的格式</p>
+                                    </div>
+                                    <span class="priority-badge priority-low">低</span>
+                                </div>
+                                <div class="flex items-center justify-between text-sm">
+                                    <div class="flex items-center space-x-2">
+                                        <div class="user-avatar" style="width: 24px; height: 24px; font-size: 0.6rem;">王五</div>
+                                        <span class="text-gray-600">王五</span>
+                                    </div>
+                                    <span class="text-gray-500">本周五</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 审核中列 -->
+                    <div class="kanban-column rounded-lg overflow-hidden">
+                        <div class="kanban-header review p-4">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-semibold">审核中</h3>
+                                <span class="bg-white bg-opacity-20 px-2 py-1 rounded-full text-sm">8</span>
+                            </div>
+                        </div>
+                        <div class="p-4 space-y-4" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <!-- 审核任务 1 -->
+                            <div class="task-card normal rounded-lg p-4" draggable="true" ondragstart="drag(event)" data-task-id="task4">
+                                <div class="flex items-start justify-between mb-3">
+                                    <div class="flex-1">
+                                        <h4 class="font-medium text-gray-900 mb-1">异丙醇MSDS技术审核</h4>
+                                        <p class="text-sm text-gray-600">技术专家正在审核异丙醇的安全数据</p>
+                                    </div>
+                                    <span class="status-badge status-review">审核中</span>
+                                </div>
+                                <div class="flex items-center justify-between text-sm">
+                                    <div class="flex items-center space-x-2">
+                                        <div class="user-avatar" style="width: 24px; height: 24px; font-size: 0.6rem;">张三</div>
+                                        <span class="text-gray-600">张三</span>
+                                    </div>
+                                    <span class="text-gray-500">进行中</span>
+                                </div>
+                                <div class="mt-3">
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-yellow-500 h-2 rounded-full" style="width: 60%"></div>
+                                    </div>
+                                    <div class="text-xs text-gray-500 mt-1">审核进度 60%</div>
+                                </div>
+                            </div>
+
+                            <!-- 审核任务 2 -->
+                            <div class="task-card urgent rounded-lg p-4" draggable="true" ondragstart="drag(event)" data-task-id="task5">
+                                <div class="flex items-start justify-between mb-3">
+                                    <div class="flex-1">
+                                        <h4 class="font-medium text-gray-900 mb-1">苯MSDS安全评估</h4>
+                                        <p class="text-sm text-gray-600">高危化学品安全评估，需要多人审核</p>
+                                    </div>
+                                    <span class="priority-badge priority-urgent">紧急</span>
+                                </div>
+                                <div class="flex items-center justify-between text-sm">
+                                    <div class="flex items-center space-x-2">
+                                        <div class="user-avatar" style="width: 24px; height: 24px; font-size: 0.6rem;">李四</div>
+                                        <span class="text-gray-600">李四</span>
+                                    </div>
+                                    <span class="text-gray-500">今天截止</span>
+                                </div>
+                                <div class="mt-3 flex items-center space-x-2">
+                                    <i class="fas fa-users text-gray-400"></i>
+                                    <span class="text-xs text-gray-500">多人协作</span>
+                                    <i class="fas fa-exclamation-triangle text-red-500 ml-2"></i>
+                                    <span class="text-xs text-red-500">高危</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 已通过列 -->
+                    <div class="kanban-column rounded-lg overflow-hidden">
+                        <div class="kanban-header approved p-4">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-semibold">已通过</h3>
+                                <span class="bg-white bg-opacity-20 px-2 py-1 rounded-full text-sm">156</span>
+                            </div>
+                        </div>
+                        <div class="p-4 space-y-4" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <!-- 已通过任务 1 -->
+                            <div class="task-card rounded-lg p-4" draggable="true" ondragstart="drag(event)" data-task-id="task6">
+                                <div class="flex items-start justify-between mb-3">
+                                    <div class="flex-1">
+                                        <h4 class="font-medium text-gray-900 mb-1">氯化钠MSDS审核</h4>
+                                        <p class="text-sm text-gray-600">已通过安全审核，可以发布使用</p>
+                                    </div>
+                                    <span class="status-badge status-approved">已通过</span>
+                                </div>
+                                <div class="flex items-center justify-between text-sm">
+                                    <div class="flex items-center space-x-2">
+                                        <div class="user-avatar" style="width: 24px; height: 24px; font-size: 0.6rem;">王五</div>
+                                        <span class="text-gray-600">王五</span>
+                                    </div>
+                                    <span class="text-gray-500">昨天 16:30</span>
+                                </div>
+                                <div class="mt-3 flex items-center space-x-2">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span class="text-xs text-green-600">审核通过</span>
+                                    <i class="fas fa-eye text-gray-400 ml-2"></i>
+                                    <span class="text-xs text-gray-500">已发布</span>
+                                </div>
+                            </div>
+
+                            <!-- 已通过任务 2 -->
+                            <div class="task-card rounded-lg p-4" draggable="true" ondragstart="drag(event)" data-task-id="task7">
+                                <div class="flex items-start justify-between mb-3">
+                                    <div class="flex-1">
+                                        <h4 class="font-medium text-gray-900 mb-1">硫酸MSDS更新</h4>
+                                        <p class="text-sm text-gray-600">更新版本已通过审核</p>
+                                    </div>
+                                    <span class="status-badge status-approved">已通过</span>
+                                </div>
+                                <div class="flex items-center justify-between text-sm">
+                                    <div class="flex items-center space-x-2">
+                                        <div class="user-avatar" style="width: 24px; height: 24px; font-size: 0.6rem;">赵六</div>
+                                        <span class="text-gray-600">赵六</span>
+                                    </div>
+                                    <span class="text-gray-500">前天 14:20</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 已拒绝列 -->
+                    <div class="kanban-column rounded-lg overflow-hidden">
+                        <div class="kanban-header rejected p-4">
+                            <div class="flex items-center justify-between">
+                                <h3 class="font-semibold">已拒绝</h3>
+                                <span class="bg-white bg-opacity-20 px-2 py-1 rounded-full text-sm">3</span>
+                            </div>
+                        </div>
+                        <div class="p-4 space-y-4" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <!-- 已拒绝任务 1 -->
+                            <div class="task-card rounded-lg p-4" draggable="true" ondragstart="drag(event)" data-task-id="task8">
+                                <div class="flex items-start justify-between mb-3">
+                                    <div class="flex-1">
+                                        <h4 class="font-medium text-gray-900 mb-1">汞MSDS文档</h4>
+                                        <p class="text-sm text-gray-600">安全信息不完整，需要重新编写</p>
+                                    </div>
+                                    <span class="status-badge status-rejected">已拒绝</span>
+                                </div>
+                                <div class="flex items-center justify-between text-sm">
+                                    <div class="flex items-center space-x-2">
+                                        <div class="user-avatar" style="width: 24px; height: 24px; font-size: 0.6rem;">张三</div>
+                                        <span class="text-gray-600">张三</span>
+                                    </div>
+                                    <span class="text-gray-500">3天前</span>
+                                </div>
+                                <div class="mt-3">
+                                    <div class="comment-bubble p-3">
+                                        <div class="text-xs text-gray-700">
+                                            <strong>审核意见：</strong>急性毒性数据缺失，应急处理措施不够详细
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 浮动聊天 -->
+    <div class="floating-chat">
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-comments"></i>
+                        <span class="font-medium">团队协作</span>
+                    </div>
+                    <button onclick="toggleChat()" class="text-white hover:text-gray-200">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="chat-messages">
+                <div class="space-y-3">
+                    <div class="flex items-start space-x-2">
+                        <div class="user-avatar" style="width: 28px; height: 28px; font-size: 0.7rem;">张三</div>
+                        <div class="flex-1">
+                            <div class="bg-gray-100 rounded-lg p-2">
+                                <div class="text-sm">乙醇MSDS审核已完成，可以发布了</div>
+                            </div>
+                            <div class="text-xs text-gray-500 mt-1">5分钟前</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-2 justify-end">
+                        <div class="flex-1 text-right">
+                            <div class="bg-blue-500 text-white rounded-lg p-2 inline-block">
+                                <div class="text-sm">好的，我来处理发布流程</div>
+                            </div>
+                            <div class="text-xs text-gray-500 mt-1">3分钟前</div>
+                        </div>
+                        <div class="user-avatar" style="width: 28px; height: 28px; font-size: 0.7rem;">我</div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <div class="flex items-center space-x-2">
+                    <input type="text" placeholder="输入消息..." class="flex-1 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    <button class="p-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <button onclick="toggleChat()" class="w-14 h-14 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 hover:scale-110 relative">
+            <i class="fas fa-comments"></i>
+            <span class="notification-dot"></span>
+        </button>
+    </div>
+
+    <script>
+        // 拖拽功能
+        function allowDrop(ev) {
+            ev.preventDefault();
+            ev.currentTarget.classList.add('drag-over');
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.getAttribute('data-task-id'));
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            ev.currentTarget.classList.remove('drag-over');
+            var data = ev.dataTransfer.getData("text");
+            var draggedElement = document.querySelector(`[data-task-id="${data}"]`);
+            
+            if (draggedElement && ev.currentTarget.classList.contains('space-y-4')) {
+                ev.currentTarget.appendChild(draggedElement);
+                
+                // 添加动画效果
+                draggedElement.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    draggedElement.style.transform = 'scale(1)';
+                }, 150);
+                
+                // 模拟状态更新
+                updateTaskStatus(draggedElement, ev.currentTarget);
+            }
+        }
+
+        // 移除拖拽样式
+        document.addEventListener('dragleave', function(e) {
+            if (e.target.classList.contains('space-y-4')) {
+                e.target.classList.remove('drag-over');
+            }
+        });
+
+        function updateTaskStatus(taskElement, newColumn) {
+            const statusBadge = taskElement.querySelector('.status-badge');
+            const columnHeader = newColumn.previousElementSibling;
+            
+            if (columnHeader.textContent.includes('待处理')) {
+                if (statusBadge) statusBadge.textContent = '待处理';
+            } else if (columnHeader.textContent.includes('审核中')) {
+                if (statusBadge) {
+                    statusBadge.textContent = '审核中';
+                    statusBadge.className = 'status-badge status-review';
+                }
+            } else if (columnHeader.textContent.includes('已通过')) {
+                if (statusBadge) {
+                    statusBadge.textContent = '已通过';
+                    statusBadge.className = 'status-badge status-approved';
+                }
+            } else if (columnHeader.textContent.includes('已拒绝')) {
+                if (statusBadge) {
+                    statusBadge.textContent = '已拒绝';
+                    statusBadge.className = 'status-badge status-rejected';
+                }
+            }
+        }
+
+        // 聊天功能
+        function toggleChat() {
+            const chatWindow = document.getElementById('chatWindow');
+            chatWindow.classList.toggle('show');
+        }
+
+        // 创建新任务
+        function createNewTask() {
+            alert('打开新任务创建对话框');
+        }
+
+        // 任务卡片点击事件
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('.task-card')) {
+                const taskCard = e.target.closest('.task-card');
+                const taskTitle = taskCard.querySelector('h4').textContent;
+                
+                // 模拟打开任务详情
+                if (confirm(`是否查看任务详情：${taskTitle}？`)) {
+                    // 这里可以打开任务详情模态框
+                    console.log('打开任务详情:', taskTitle);
+                }
+            }
+        });
+
+        // 页面加载动画
+        document.addEventListener('DOMContentLoaded', function() {
+            const taskCards = document.querySelectorAll('.task-card');
+            taskCards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    card.style.transition = 'all 0.6s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+        });
+
+        // 实时更新功能
+        function updateRealTimeData() {
+            // 模拟实时数据更新
+            const onlineCount = Math.floor(Math.random() * 3) + 6;
+            document.querySelector('.text-sm.text-gray-500').textContent = `${onlineCount} 人在线`;
+        }
+
+        // 每30秒更新一次在线人数
+        setInterval(updateRealTimeData, 30000);
+
+        // 键盘快捷键
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey) {
+                switch(e.key) {
+                    case 'n':
+                        e.preventDefault();
+                        createNewTask();
+                        break;
+                    case 'm':
+                        e.preventDefault();
+                        toggleChat();
+                        break;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

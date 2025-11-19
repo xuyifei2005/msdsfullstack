@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSDS管理系统 - 智能搜索</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1890ff;
+            --primary-light: #40a9ff;
+            --primary-dark: #096dd9;
+            --success-color: #52c41a;
+            --warning-color: #faad14;
+            --error-color: #ff4d4f;
+            --text-primary: #262626;
+            --text-secondary: #595959;
+            --text-tertiary: #8c8c8c;
+            --bg-primary: #ffffff;
+            --bg-secondary: #fafafa;
+            --border-primary: #d9d9d9;
+            --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-secondary);
+        }
+
+        .search-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .search-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .search-container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .search-container:focus-within {
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .search-suggestion {
+            transition: all 0.2s ease;
+        }
+
+        .search-suggestion:hover {
+            background-color: #f0f9ff;
+            border-left: 3px solid var(--primary-color);
+        }
+
+        .filter-chip {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-primary);
+            transition: all 0.3s ease;
+        }
+
+        .filter-chip.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        .filter-chip:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .result-card {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-primary);
+            transition: all 0.3s ease;
+        }
+
+        .result-card:hover {
+            box-shadow: var(--shadow-card);
+            border-color: var(--primary-light);
+            transform: translateY(-2px);
+        }
+
+        .highlight {
+            background-color: #fff2e6;
+            color: var(--warning-color);
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        .ai-suggestion {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 12px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ai-suggestion::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"><animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite"/></circle><circle cx="80" cy="40" r="1.5" fill="rgba(255,255,255,0.1)"><animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite" begin="1s"/></circle><circle cx="40" cy="80" r="1" fill="rgba(255,255,255,0.1)"><animate attributeName="opacity" values="0;1;0" dur="4s" repeatCount="indefinite" begin="2s"/></circle></svg>');
+        }
+
+        .loading-skeleton {
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: loading 1.5s infinite;
+        }
+
+        @keyframes loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        .search-history-item {
+            transition: all 0.2s ease;
+        }
+
+        .search-history-item:hover {
+            background-color: #f8fafc;
+            padding-left: 16px;
+        }
+
+        .floating-element {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <!-- 搜索英雄区域 -->
+    <div class="search-hero relative z-10 py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center text-white mb-8">
+                <h1 class="text-4xl font-bold mb-4">
+                    <i class="fas fa-brain mr-3"></i>
+                    AI智能搜索
+                </h1>
+                <p class="text-xl text-blue-100 mb-2">
+                    基于人工智能的MSDS文档智能检索系统
+                </p>
+                <p class="text-blue-200">
+                    支持自然语言查询、语义搜索、多维度筛选
+                </p>
+            </div>
+
+            <!-- 主搜索框 -->
+            <div class="max-w-4xl mx-auto">
+                <div class="search-container rounded-2xl p-6 mb-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="flex-1 relative">
+                            <i class="fas fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 text-lg"></i>
+                            <input 
+                                type="text" 
+                                id="mainSearch"
+                                class="w-full pl-12 pr-4 py-4 text-lg border-0 outline-none bg-transparent"
+                                placeholder="输入化学品名称、CAS号、分子式，或描述您要查找的内容..."
+                                autocomplete="off"
+                            >
+                        </div>
+                        <button class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-8 py-4 rounded-xl hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl">
+                            <i class="fas fa-search mr-2"></i>
+                            搜索
+                        </button>
+                    </div>
+
+                    <!-- 搜索建议下拉 -->
+                    <div id="searchSuggestions" class="hidden mt-4 border-t pt-4">
+                        <div class="text-sm text-gray-600 mb-2">搜索建议：</div>
+                        <div class="space-y-2">
+                            <div class="search-suggestion p-3 rounded-lg cursor-pointer">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <span class="font-medium">乙醇</span>
+                                        <span class="text-gray-500 ml-2">CAS: 64-17-5</span>
+                                    </div>
+                                    <i class="fas fa-arrow-up-right text-gray-400"></i>
+                                </div>
+                            </div>
+                            <div class="search-suggestion p-3 rounded-lg cursor-pointer">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <span class="font-medium">甲醇</span>
+                                        <span class="text-gray-500 ml-2">CAS: 67-56-1</span>
+                                    </div>
+                                    <i class="fas fa-arrow-up-right text-gray-400"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 快速搜索选项 -->
+                <div class="flex flex-wrap gap-3 justify-center">
+                    <button class="filter-chip px-4 py-2 rounded-full text-sm font-medium">
+                        <i class="fas fa-fire mr-2"></i>易燃物质
+                    </button>
+                    <button class="filter-chip px-4 py-2 rounded-full text-sm font-medium">
+                        <i class="fas fa-skull-crossbones mr-2"></i>有毒物质
+                    </button>
+                    <button class="filter-chip px-4 py-2 rounded-full text-sm font-medium">
+                        <i class="fas fa-exclamation-triangle mr-2"></i>腐蚀性物质
+                    </button>
+                    <button class="filter-chip px-4 py-2 rounded-full text-sm font-medium">
+                        <i class="fas fa-atom mr-2"></i>有机溶剂
+                    </button>
+                    <button class="filter-chip px-4 py-2 rounded-full text-sm font-medium">
+                        <i class="fas fa-flask mr-2"></i>实验室常用
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 浮动装饰元素 -->
+        <div class="absolute top-20 left-20 floating-element">
+            <div class="w-16 h-16 bg-white bg-opacity-10 rounded-full"></div>
+        </div>
+        <div class="absolute top-32 right-32 floating-element" style="animation-delay: -2s;">
+            <div class="w-12 h-12 bg-white bg-opacity-5 rounded-full"></div>
+        </div>
+        <div class="absolute bottom-20 left-1/4 floating-element" style="animation-delay: -4s;">
+            <div class="w-20 h-20 bg-white bg-opacity-5 rounded-full"></div>
+        </div>
+    </div>
+
+    <!-- 主内容区域 -->
+    <div class="container mx-auto px-6 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            <!-- 左侧筛选器 -->
+            <div class="lg:col-span-1">
+                <div class="bg-white rounded-lg shadow-sm p-6 sticky top-8">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">
+                        <i class="fas fa-filter mr-2"></i>
+                        高级筛选
+                    </h3>
+
+                    <!-- 文档类型 -->
+                    <div class="mb-6">
+                        <h4 class="font-medium text-gray-700 mb-3">文档类型</h4>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded border-gray-300 text-blue-600" checked>
+                                <span class="ml-2 text-sm">标准MSDS</span>
+                                <span class="ml-auto text-xs text-gray-500">1,234</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded border-gray-300 text-blue-600">
+                                <span class="ml-2 text-sm">简化MSDS</span>
+                                <span class="ml-auto text-xs text-gray-500">456</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded border-gray-300 text-blue-600">
+                                <span class="ml-2 text-sm">企业自制</span>
+                                <span class="ml-auto text-xs text-gray-500">78</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- 危险性分类 -->
+                    <div class="mb-6">
+                        <h4 class="font-medium text-gray-700 mb-3">危险性分类</h4>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded border-gray-300 text-red-600">
+                                <span class="ml-2 text-sm">易燃液体</span>
+                                <span class="ml-auto text-xs text-gray-500">345</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded border-gray-300 text-orange-600">
+                                <span class="ml-2 text-sm">腐蚀性</span>
+                                <span class="ml-auto text-xs text-gray-500">234</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded border-gray-300 text-purple-600">
+                                <span class="ml-2 text-sm">有毒</span>
+                                <span class="ml-auto text-xs text-gray-500">567</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded border-gray-300 text-yellow-600">
+                                <span class="ml-2 text-sm">氧化性</span>
+                                <span class="ml-auto text-xs text-gray-500">123</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- 更新时间 -->
+                    <div class="mb-6">
+                        <h4 class="font-medium text-gray-700 mb-3">更新时间</h4>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="radio" name="updateTime" class="text-blue-600" checked>
+                                <span class="ml-2 text-sm">全部</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="updateTime" class="text-blue-600">
+                                <span class="ml-2 text-sm">最近一周</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="updateTime" class="text-blue-600">
+                                <span class="ml-2 text-sm">最近一月</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="updateTime" class="text-blue-600">
+                                <span class="ml-2 text-sm">最近一年</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- 供应商 -->
+                    <div class="mb-6">
+                        <h4 class="font-medium text-gray-700 mb-3">供应商</h4>
+                        <div class="relative">
+                            <input type="text" placeholder="搜索供应商..." 
+                                   class="w-full px-3 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <i class="fas fa-search absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                        </div>
+                        <div class="mt-2 space-y-1 max-h-32 overflow-y-auto">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded border-gray-300 text-blue-600">
+                                <span class="ml-2 text-sm">Sigma-Aldrich</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded border-gray-300 text-blue-600">
+                                <span class="ml-2 text-sm">Merck</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded border-gray-300 text-blue-600">
+                                <span class="ml-2 text-sm">Fisher Scientific</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- 重置和应用按钮 -->
+                    <div class="flex space-x-2">
+                        <button class="flex-1 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors">
+                            重置
+                        </button>
+                        <button class="flex-1 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                            应用
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右侧搜索结果 -->
+            <div class="lg:col-span-3">
+                <!-- AI建议卡片 -->
+                <div class="ai-suggestion p-6 mb-6 relative">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                            <i class="fas fa-robot text-2xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold mb-2">AI智能建议</h3>
+                            <p class="text-blue-100 mb-4">
+                                基于您的搜索历史和偏好，我们为您推荐以下相关内容：
+                            </p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                <div class="bg-white bg-opacity-10 rounded-lg p-3 hover:bg-opacity-20 transition-colors cursor-pointer">
+                                    <div class="font-medium">相似化学品</div>
+                                    <div class="text-sm text-blue-100">异丙醇、正丁醇</div>
+                                </div>
+                                <div class="bg-white bg-opacity-10 rounded-lg p-3 hover:bg-opacity-20 transition-colors cursor-pointer">
+                                    <div class="font-medium">安全替代品</div>
+                                    <div class="text-sm text-blue-100">低毒性溶剂推荐</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 搜索结果头部 -->
+                <div class="flex items-center justify-between mb-6">
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-800">搜索结果</h2>
+                        <p class="text-gray-600">找到 <span class="font-medium text-blue-600">1,234</span> 个相关MSDS文档</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-sm text-gray-600">排序：</span>
+                            <select class="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option>相关性</option>
+                                <option>更新时间</option>
+                                <option>名称A-Z</option>
+                                <option>查看次数</option>
+                            </select>
+                        </div>
+                        <div class="flex border border-gray-300 rounded-lg">
+                            <button class="px-3 py-2 bg-blue-50 text-blue-600 border-r border-gray-300">
+                                <i class="fas fa-list"></i>
+                            </button>
+                            <button class="px-3 py-2 text-gray-600 hover:bg-gray-50">
+                                <i class="fas fa-th-large"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 搜索结果列表 -->
+                <div class="space-y-4">
+                    <!-- 结果项 1 -->
+                    <div class="result-card rounded-lg p-6">
+                        <div class="flex items-start justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <h3 class="text-lg font-semibold text-gray-800">
+                                        <span class="highlight">乙醇</span> (Ethanol)
+                                    </h3>
+                                    <span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full">有效</span>
+                                    <span class="px-2 py-1 bg-red-100 text-red-800 text-xs rounded-full">易燃</span>
+                                </div>
+                                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-gray-600 mb-3">
+                                    <div>
+                                        <span class="font-medium">CAS号：</span>
+                                        <span class="highlight">64-17-5</span>
+                                    </div>
+                                    <div>
+                                        <span class="font-medium">分子式：</span>
+                                        C₂H₆O
+                                    </div>
+                                    <div>
+                                        <span class="font-medium">供应商：</span>
+                                        Sigma-Aldrich
+                                    </div>
+                                    <div>
+                                        <span class="font-medium">更新时间：</span>
+                                        2024-01-10
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 mb-3">
+                                    无色透明液体，具有特殊香味，易挥发，能与水以任意比例互溶，能与氯仿、乙醚、甲醇、丙酮和其他多数有机溶剂混溶...
+                                </p>
+                                <div class="flex items-center space-x-4 text-sm text-gray-500">
+                                    <span><i class="fas fa-eye mr-1"></i>查看 156 次</span>
+                                    <span><i class="fas fa-download mr-1"></i>下载 23 次</span>
+                                    <span><i class="fas fa-star mr-1"></i>收藏 12 次</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col space-y-2 ml-4">
+                                <button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                                    <i class="fas fa-eye mr-2"></i>查看详情
+                                </button>
+                                <button class="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors">
+                                    <i class="fas fa-download mr-2"></i>下载
+                                </button>
+                                <button class="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors">
+                                    <i class="fas fa-star mr-2"></i>收藏
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 结果项 2 -->
+                    <div class="result-card rounded-lg p-6">
+                        <div class="flex items-start justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <h3 class="text-lg font-semibold text-gray-800">
+                                        甲醇 (Methanol)
+                                    </h3>
+                                    <span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full">有效</span>
+                                    <span class="px-2 py-1 bg-red-100 text-red-800 text-xs rounded-full">易燃</span>
+                                    <span class="px-2 py-1 bg-purple-100 text-purple-800 text-xs rounded-full">有毒</span>
+                                </div>
+                                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-gray-600 mb-3">
+                                    <div>
+                                        <span class="font-medium">CAS号：</span>
+                                        67-56-1
+                                    </div>
+                                    <div>
+                                        <span class="font-medium">分子式：</span>
+                                        CH₄O
+                                    </div>
+                                    <div>
+                                        <span class="font-medium">供应商：</span>
+                                        Merck
+                                    </div>
+                                    <div>
+                                        <span class="font-medium">更新时间：</span>
+                                        2024-01-08
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 mb-3">
+                                    无色澄清液体，有刺激性气味。主要用于制造甲醛和农药等，并常用作有机物的萃取剂和酒精的变性剂...
+                                </p>
+                                <div class="flex items-center space-x-4 text-sm text-gray-500">
+                                    <span><i class="fas fa-eye mr-1"></i>查看 142 次</span>
+                                    <span><i class="fas fa-download mr-1"></i>下载 18 次</span>
+                                    <span><i class="fas fa-star mr-1"></i>收藏 8 次</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col space-y-2 ml-4">
+                                <button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                                    <i class="fas fa-eye mr-2"></i>查看详情
+                                </button>
+                                <button class="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors">
+                                    <i class="fas fa-download mr-2"></i>下载
+                                </button>
+                                <button class="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors">
+                                    <i class="fas fa-star mr-2"></i>收藏
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 结果项 3 -->
+                    <div class="result-card rounded-lg p-6">
+                        <div class="flex items-start justify-between">
+                            <div class="flex-1">
+                                <div class="flex items-center space-x-3 mb-2">
+                                    <h3 class="text-lg font-semibold text-gray-800">
+                                        丙酮 (Acetone)
+                                    </h3>
+                                    <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">待更新</span>
+                                    <span class="px-2 py-1 bg-red-100 text-red-800 text-xs rounded-full">易燃</span>
+                                </div>
+                                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-gray-600 mb-3">
+                                    <div>
+                                        <span class="font-medium">CAS号：</span>
+                                        67-64-1
+                                    </div>
+                                    <div>
+                                        <span class="font-medium">分子式：</span>
+                                        C₃H₆O
+                                    </div>
+                                    <div>
+                                        <span class="font-medium">供应商：</span>
+                                        Fisher Scientific
+                                    </div>
+                                    <div>
+                                        <span class="font-medium">更新时间：</span>
+                                        2023-12-15
+                                    </div>
+                                </div>
+                                <p class="text-gray-700 mb-3">
+                                    无色透明易流动液体，有芳香气味，极易挥发。与水混溶，可混溶于乙醇、乙醚、氯仿、油类、烃类等多数有机溶剂...
+                                </p>
+                                <div class="flex items-center space-x-4 text-sm text-gray-500">
+                                    <span><i class="fas fa-eye mr-1"></i>查看 128 次</span>
+                                    <span><i class="fas fa-download mr-1"></i>下载 15 次</span>
+                                    <span><i class="fas fa-star mr-1"></i>收藏 6 次</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col space-y-2 ml-4">
+                                <button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                                    <i class="fas fa-eye mr-2"></i>查看详情
+                                </button>
+                                <button class="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors">
+                                    <i class="fas fa-download mr-2"></i>下载
+                                </button>
+                                <button class="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors">
+                                    <i class="fas fa-star mr-2"></i>收藏
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 分页 -->
+                <div class="flex items-center justify-between mt-8">
+                    <div class="text-sm text-gray-600">
+                        显示 1-10 条，共 1,234 条结果
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <button class="px-3 py-2 border border-gray-300 text-gray-500 rounded-lg hover:bg-gray-50" disabled>
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="px-3 py-2 bg-blue-600 text-white rounded-lg">1</button>
+                        <button class="px-3 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50">2</button>
+                        <button class="px-3 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50">3</button>
+                        <span class="px-2 text-gray-500">...</span>
+                        <button class="px-3 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50">124</button>
+                        <button class="px-3 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 搜索建议功能
+        const mainSearch = document.getElementById('mainSearch');
+        const searchSuggestions = document.getElementById('searchSuggestions');
+
+        mainSearch.addEventListener('input', function() {
+            if (this.value.length > 0) {
+                searchSuggestions.classList.remove('hidden');
+            } else {
+                searchSuggestions.classList.add('hidden');
+            }
+        });
+
+        mainSearch.addEventListener('focus', function() {
+            if (this.value.length > 0) {
+                searchSuggestions.classList.remove('hidden');
+            }
+        });
+
+        document.addEventListener('click', function(e) {
+            if (!mainSearch.contains(e.target) && !searchSuggestions.contains(e.target)) {
+                searchSuggestions.classList.add('hidden');
+            }
+        });
+
+        // 筛选器芯片点击效果
+        document.querySelectorAll('.filter-chip').forEach(chip => {
+            chip.addEventListener('click', function() {
+                this.classList.toggle('active');
+            });
+        });
+
+        // 搜索建议点击
+        document.querySelectorAll('.search-suggestion').forEach(suggestion => {
+            suggestion.addEventListener('click', function() {
+                const text = this.querySelector('.font-medium').textContent;
+                mainSearch.value = text;
+                searchSuggestions.classList.add('hidden');
+            });
+        });
+
+        // 模拟搜索加载
+        function performSearch() {
+            const resultCards = document.querySelectorAll('.result-card');
+            resultCards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    card.style.transition = 'all 0.6s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+        }
+
+        // 页面加载完成后执行搜索动画
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(performSearch, 500);
+        });
+
+        // 收藏功能
+        document.querySelectorAll('button').forEach(button => {
+            if (button.innerHTML.includes('收藏')) {
+                button.addEventListener('click', function() {
+                    const icon = this.querySelector('i');
+                    if (icon.classList.contains('fas')) {
+                        icon.classList.remove('fas');
+                        icon.classList.add('far');
+                        this.classList.remove('border-gray-300', 'text-gray-700');
+                        this.classList.add('border-yellow-300', 'text-yellow-600', 'bg-yellow-50');
+                    } else {
+                        icon.classList.remove('far');
+                        icon.classList.add('fas');
+                        this.classList.remove('border-yellow-300', 'text-yellow-600', 'bg-yellow-50');
+                        this.classList.add('border-gray-300', 'text-gray-700');
+                    }
+                });
+            }
+        });
+
+        // 键盘快捷键
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.key === 'k') {
+                e.preventDefault();
+                mainSearch.focus();
+            }
+        });
+    </script>
+</body>
+</html>

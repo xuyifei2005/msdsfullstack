@@ -13,12 +13,16 @@
 #    docker load -i msdsredis_image.tar
 #    docker load -i msdsbackend_image.tar
 #    docker load -i msdsfrontend_image.tar
+#    docker load -i msdsnginx_image.tar
+
 #
 # 4. 加载镜像后重新打标签（如果需要）：
 #    docker tag msds_exported_mysql msdsmysql:latest
 #    docker tag msds_exported_redis msdsredis:latest
 #    docker tag msds_exported_backend msdsbackend:latest
 #    docker tag msds_exported_frontend msdsnginx:latest
+#    docker tag labsys_exported_nginx msdsnginx:latest
+
 #
 # 5. 启动服务：
 #    docker-compose -f docker-compose.prod.yml up -d
@@ -52,7 +56,8 @@ services:
     container_name: msdsnginx
     hostname: msdsnginx
     restart: always
-    pull_policy: never
+    # 镜像拉取策略：如果本地没有镜像则拉取，有则优先使用本地
+    pull_policy: if_not_present
     ports:
       - "80:80"
       - "443:443"

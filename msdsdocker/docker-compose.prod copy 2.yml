@@ -1,0 +1,200 @@
+### 生产环境Docker Compose配置
+# 域名: flymsds.cn
+# 服务器IP: 39.107.211.72
+# 用于生产环境部署
+
+### 部署前准备
+# 1. 确保已编译的前端文件存在：
+#    ../msdsPC/ruoyi-MsdsPc-react/react-ui/dist
+# 2. 确保已编译的后端JAR文件存在：
+#    ../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/target/ruoyi-admin.jar
+# 3. 确保Docker镜像已加载：
+#    docker load -i msdsmysql_image.tar
+#    docker load -i msdsredis_image.tar
+#    docker load -i msdsbackend_image.tar
+#    docker load -i msdsfrontend_image.tar
+#
+# 4. 加载镜像后重新打标签（如果需要）：
+#    docker tag msds_exported_mysql msdsmysql:latest
+#    docker tag msds_exported_redis msdsredis:latest
+#    docker tag msds_exported_backend msdsbackend:latest
+#    docker tag msds_exported_frontend msdsnginx:latest
+#
+# 5. 启动服务：
+#    docker-compose -f docker-compose.prod.yml up -d
+#
+# 6. 查看服务状态：
+#    docker-compose -f docker-compose.prod.yml ps
+#
+# 7. 查看日志：
+#    docker-compose -f docker-compose.prod.yml logs -f msdsbackend
+
+version: '3.8'
+
+# 定义Docker网络配置
+networks:
+  msds_network:
+    # Docker网络驱动类型有以下几种:
+    # - bridge: 默认驱动,创建独立的网络命名空间,容器间通过虚拟网桥通信
+    # - host: 容器直接使用宿主机网络,性能好但缺乏隔离
+    # - none: 容器没有网络功能
+    # - overlay: 用于Docker Swarm集群中跨主机容器通信
+    # - macvlan: 允许容器直接连接物理网络
+    driver: bridge
+
+services:
+
+  # Nginx服务（前端反向代理）
+  msdsnginx:
+    networks:
+      - msds_network
+    image: msdsnginx:latest
+    container_name: msdsnginx
+    hostname: msdsnginx
+    restart: always
+    pull_policy: never
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      # Nginx配置文件
+      - ./nginx/conf.d:/etc/nginx/conf.d:ro
+      # SSL证书
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+      # 静态资源 - 直接挂载前端编译后的dist目录
+      - ../msdsPC/ruoyi-MsdsPc-react/react-ui/dist:/usr/share/nginx/html:ro
+      # 日志
+      - ./nginx/logs:/var/log/nginx
+    depends_on:
+      msdsbackend:
+        condition: service_healthy
+    command: ["nginx", "-g", "daemon off;"]
+
+
+  # 后端服务（Spring Boot应用）
+  msdsbackend:
+    networks:
+      - msds_network
+    image: msdsbackend
+    container_name: msdsbackend
+    hostname: msdsbackend
+    restart: always
+    pull_policy: never
+    volumes:
+      # 应用日志和上传目录
+      - backend_logs:/app/logs
+      - backend_upload:/app/uploadPath
+      # 直接挂载已编译的JAR文件到容器
+      - ../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/target/ruoyi-admin.jar:/app/ruoyi-admin.jar:ro
+      # Maven本地仓库持久化（如果需要重新编译）
+      - msdsmaven_repository:/root/.m2/repository
+    working_dir: /app
+    # 生产环境启动命令：直接运行已编译的JAR文件
+    # 使用单行命令避免YAML多行字符串解析问题
+    command: ["/bin/sh", "-c", "if [ -f '/app/ruoyi-admin.jar' ]; then echo 'Starting MSDS Backend Service...' && exec java -Xms512m -Xmx2048m -XX:+UseG1GC -XX:+PrintGCDetails -Djava.security.egd=file:/dev/./urandom -jar /app/ruoyi-admin.jar; else echo 'ERROR: JAR file not found!' && exit 1; fi"]
+    ports:
+      - "18080:8080"
+    environment:
+      # 使用dev profile以使用正确的数据库配置（与开发环境一致）
+      - SPRING_PROFILES_ACTIVE=dev
+      # 数据库配置（与开发环境一致）
+      # 注意：characterEncoding应该使用UTF-8（Java编码），而不是utf8mb4（MySQL字符集）
+      - SPRING_DATASOURCE_URL=jdbc:mysql://msdsmysql:3306/msds_dev?useUnicode=true&characterEncoding=UTF-8&connectionCollation=utf8mb4_unicode_ci&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      - SPRING_DATASOURCE_USERNAME=msds_user
+      - SPRING_DATASOURCE_PASSWORD=msds_dev_password
+      # Redis配置（与开发环境一致，无密码）
+      - SPRING_REDIS_HOST=msdsredis
+      - SPRING_REDIS_PORT=6379
+      - SPRING_REDIS_DATABASE=0
+      # 时区配置
+      - TZ=Asia/Shanghai
+      # JVM参数
+      - JAVA_OPTS=-Xms512m -Xmx2048m -XX:+UseG1GC -XX:+PrintGCDetails
+    depends_on:
+      msdsmysql:
+        condition: service_healthy
+      msdsredis:
+        condition: service_started
+    healthcheck:
+      # 检查应用根路径是否响应（即使返回401/302/404也说明服务在运行）
+      # 使用 -f 会要求HTTP状态码为200，这里改用 -s 只检查连接是否成功
+      test: ["CMD-SHELL", "curl -s http://localhost:8080/ > /dev/null || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 120s
+
+  
+
+  # MySQL数据库
+  msdsmysql:
+    networks:
+      - msds_network
+    image: msdsmysql
+    container_name: msdsmysql
+    hostname: msdsmysql
+    restart: always
+    pull_policy: never
+    command: --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --init-connect='SET NAMES utf8mb4' --init-connect='SET collation_connection = utf8mb4_unicode_ci' --skip-character-set-client-handshake
+    environment:
+      # 数据库配置（与开发环境一致）
+      MYSQL_DATABASE: msds_dev
+      MYSQL_USER: msds_user
+      MYSQL_PASSWORD: msds_dev_password
+      MYSQL_ROOT_PASSWORD: root_password
+      TZ: Asia/Shanghai
+    ports:
+      - "3306:3306"
+    volumes:
+      # 使用命名卷避免共享文件夹权限问题
+      - msdsmysql_data:/var/lib/mysql
+      # 初始化数据库脚本（仅在首次启动时执行）
+      - ./msdsfullstatckcompose/msdsdatabaseinitdb:/docker-entrypoint-initdb.d:ro
+      # MySQL配置文件
+      - ./mysql/conf.d:/etc/mysql/conf.d:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-proot_password"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  # Redis缓存
+  msdsredis:
+    networks:
+      - msds_network
+    image: msdsredis
+    container_name: msdsredis
+    hostname: msdsredis
+    restart: always
+    pull_policy: never
+    ports:
+      - "16379:6379"
+    volumes:
+      - msdsredis_data:/data
+    # Redis配置（与开发环境一致，无密码）
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli ping | grep PONG || exit 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 10s
+
+volumes:
+  # 数据持久化卷
+  msdsredis_data:
+    driver: local
+  msdsmysql_data:
+    driver: local
+  # 应用数据卷
+  backend_logs:
+    driver: local
+  backend_upload:
+    driver: local
+  # 开发工具卷
+  msdsmaven_repository:
+    driver: local
+  msdsnode_modules:
+    driver: local
+
+

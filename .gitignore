@@ -1,8 +1,6 @@
 ####################################
 # 项目文档和备份（保留在版本控制中）
 ####################################
-aboutproject/ 
-
 
 ####################################
 # Java / Maven / Spring Boot
@@ -146,23 +144,6 @@ venv/
 env/
 ENV/
 .venv/
-
-
-
-
-
-# PDF2XML输出和临时文件
-
-pdf2xml/output/
-pdf2xml/logs/
-pdf2xml/test_output/
-pdf2xml/temp/
-pdf2xml/*.log
-pdf2xml/*.txt
-pdf2xml/*.json
-pdf2xml/*.xml
-pdf2xml/*.pdf
-
 
 
 
@@ -367,10 +348,6 @@ test_msds_files/
 
 
 
-# ####################################
-# # 微信小程序项目计划（大文件较多）
-# ####################################
-# wechatapps\AppProjectPlan
 
 # ####################################
 # # 项目文档目录 - 完全忽略

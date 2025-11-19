@@ -184,11 +184,19 @@ function Copy-RemoteFile {
             $scpArgs += "-r"
         }
         
-        # If UploadContentsOnly is set, use dist/. pattern for scp to upload contents only
+        # If UploadContentsOnly is set, upload directory contents directly to destination
         if ($UploadContentsOnly -and $isDirectory) {
-            # For scp, use dist/. to upload directory contents (not the directory itself)
+            # For scp, we need to upload contents directly to the destination directory
+            # Method: Use dist/* pattern, but this requires the destination to exist and end with /
             # Convert Windows path separators to forward slashes for scp
-            $Source = $Source -replace '\\', '/' -replace '/$', '' + "/."
+            $SourceUnix = ($Source -replace '\\', '/').TrimEnd('/')
+            # Use dist/* to upload all contents (scp will expand this on the remote side if needed)
+            # Ensure destination ends with / to indicate it's a directory
+            if (-not $Destination.EndsWith('/')) {
+                $Destination = $Destination + "/"
+            }
+            # Use dist/* pattern - scp will upload all files from dist to destination
+            $Source = $SourceUnix + "/*"
         }
         
         $scpArgs += $Source, "$User@$Server`:$Destination"
@@ -214,9 +222,14 @@ $ProjectRoot = Split-Path -Parent $ScriptDir
 $FrontendDistPath = Join-Path $ProjectRoot "msdsPC\ruoyi-MsdsPc-react\react-ui\dist"
 $BackendJarPath = Join-Path $ProjectRoot "msdsPC\ruoyi-MsdsPc-react\ruoyi-admin\target\ruoyi-admin.jar"
 
-# Server target paths
-$ServerFrontendPath = "/opt/msds/msdsfullstack/msdsdocker/nginx/html"
-$ServerBackendPath = "/opt/msds/msdsfullstack/msdsdocker/ruoyi-admin.jar"
+# Server target paths (must match docker-compose.prod.yml volume mounts)
+# docker-compose.prod.yml expects (relative to msdsdocker directory):
+# - Frontend: ../msdsPC/ruoyi-MsdsPc-react/react-ui/dist -> /usr/share/nginx/html
+# - Backend: ../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/target/ruoyi-admin.jar -> /app/ruoyi-admin.jar
+# If docker-compose.prod.yml is at /opt/msds/msdsfullstack/msdsdocker/, then:
+$ServerBasePath = "/opt/msds/msdsfullstack"
+$ServerFrontendPath = "$ServerBasePath/msdsPC/ruoyi-MsdsPc-react/react-ui/dist"
+$ServerBackendPath = "$ServerBasePath/msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/target/ruoyi-admin.jar"
 
 Write-ColorOutput "Server Information:" "INFO"
 Write-ColorOutput "  IP Address: $ServerIP" "INFO"
@@ -288,9 +301,11 @@ Write-Host ""
 # Step 3: Prepare server directories
 Write-ColorOutput "[3/4] Preparing server directories..." "STEP"
 
+# Ensure all paths use Unix format (forward slashes) for server commands
+$backendTargetDir = (Split-Path $ServerBackendPath -Parent) -replace '\\', '/'
 $commands = @(
-    "mkdir -p /opt/msds/msdsfullstack/msdsdocker/nginx/html",
-    "mkdir -p /opt/msds/msdsfullstack/msdsdocker"
+    "mkdir -p $ServerFrontendPath",
+    "mkdir -p $backendTargetDir"
 )
 
 foreach ($cmd in $commands) {
@@ -312,35 +327,98 @@ foreach ($file in $filesToCheck) {
     if ($file.Type -eq "Frontend") {
         # Frontend: Clear target directory first, then upload dist contents (not dist folder itself)
         Write-ColorOutput "    Clearing server frontend directory..." "INFO"
-        $clearCmd = "rm -rf $($file.ServerPath)/*"
+        # Ensure target path uses Unix format
+        $targetPath = $file.ServerPath -replace '\\', '/'
+        $clearCmd = "rm -rf $targetPath/*"
         Invoke-RemoteCommand -Server $ServerIP -User $ServerUser -Command $clearCmd -Password $ServerPassword | Out-Null
         
         Write-ColorOutput "    Uploading frontend files..." "INFO"
-        # Upload dist directory contents (not the dist folder itself)
-        # This ensures files go directly to html/ without creating a dist/ subdirectory
-        $uploadResult = Copy-RemoteFile -Source $file.Path -Destination $file.ServerPath -Server $ServerIP -User $ServerUser -Password $ServerPassword -UploadContentsOnly
+        # Upload dist directory contents directly to the dist directory
+        # Method: Get all files from dist directory and upload them individually
+        # This ensures files go directly to the target dist directory
+        $distFiles = Get-ChildItem -Path $file.Path -Recurse -File
+        $totalFiles = $distFiles.Count
+        $uploadedFiles = 0
         
-        if ($uploadResult) {
-            Write-ColorOutput "    Frontend files uploaded successfully" "SUCCESS"
+        Write-ColorOutput "    Found $totalFiles files to upload" "INFO"
+        
+        foreach ($distFile in $distFiles) {
+            # Calculate relative path from dist directory
+            $relativePath = $distFile.FullName.Substring($file.Path.Length + 1)
+            $relativePath = $relativePath -replace '\\', '/'
+            $serverFilePath = "$targetPath/$relativePath"
+            $serverFileDir = (Split-Path $serverFilePath -Parent) -replace '\\', '/'
+            
+            # Ensure subdirectory exists on server
+            if ($serverFileDir -ne $targetPath) {
+                $mkdirCmd = "mkdir -p $serverFileDir"
+                Invoke-RemoteCommand -Server $ServerIP -User $ServerUser -Command $mkdirCmd -Password $ServerPassword | Out-Null
+            }
+            
+            # Upload individual file
+            $fileUploadResult = Copy-RemoteFile -Source $distFile.FullName -Destination $serverFilePath -Server $ServerIP -User $ServerUser -Password $ServerPassword
+            
+            if ($fileUploadResult) {
+                $uploadedFiles++
+            }
+            else {
+                Write-ColorOutput "    Failed to upload: $relativePath" "WARNING"
+            }
+        }
+        
+        if ($uploadedFiles -eq $totalFiles) {
+            Write-ColorOutput "    Frontend files uploaded successfully ($uploadedFiles/$totalFiles files)" "SUCCESS"
         }
         else {
-            Write-ColorOutput "    Frontend files upload failed" "ERROR"
-            exit 1
+            Write-ColorOutput "    Frontend files upload completed with warnings ($uploadedFiles/$totalFiles files)" "WARNING"
+            if ($uploadedFiles -eq 0) {
+                Write-ColorOutput "    No files were uploaded, upload failed" "ERROR"
+                exit 1
+            }
         }
     }
     else {
         # Backend: Upload JAR file directly
         Write-ColorOutput "    Uploading backend JAR package..." "INFO"
         
-        # Backup old file first (if exists)
+        # Ensure target directory exists (create all parent directories)
         $serverPath = $file.ServerPath
+        # Extract parent directory path (e.g., /opt/msds/msdsfullstack/msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/target)
+        # Split-Path may return Windows format on Windows, so convert to Unix format
+        $targetDir = (Split-Path $serverPath -Parent) -replace '\\', '/'
+        Write-ColorOutput "    Creating target directory: $targetDir" "INFO"
+        
+        # Create directory (mkdir -p creates all parent directories and doesn't fail if directory exists)
+        $mkdirCmd = "mkdir -p $targetDir"
+        $mkdirResult = Invoke-RemoteCommand -Server $ServerIP -User $ServerUser -Command $mkdirCmd -Password $ServerPassword
+        
+        if (-not $mkdirResult) {
+            Write-ColorOutput "    Failed to create target directory: $targetDir" "ERROR"
+            Write-ColorOutput "    Please check server permissions and path" "WARNING"
+            exit 1
+        }
+        
+        # Verify directory was created
+        $verifyCmd = "test -d $targetDir"
+        $verifyResult = Invoke-RemoteCommand -Server $ServerIP -User $ServerUser -Command $verifyCmd -Password $ServerPassword
+        
+        if (-not $verifyResult) {
+            Write-ColorOutput "    Target directory verification failed: $targetDir" "ERROR"
+            Write-ColorOutput "    Directory may not have been created properly" "WARNING"
+            exit 1
+        }
+        
+        Write-ColorOutput "    Target directory ready: $targetDir" "SUCCESS"
+        
+        # Backup old file first (if exists)
         $backupSuffix = ".backup.`$(date +%Y%m%d_%H%M%S)"
         $backupTarget = "$serverPath$backupSuffix"
         $quote = [char]34
         $backupCmd = "if [ -f " + $quote + $serverPath + $quote + " ]; then mv " + $quote + $serverPath + $quote + " " + $quote + $backupTarget + $quote + "; fi"
         Invoke-RemoteCommand -Server $ServerIP -User $ServerUser -Command $backupCmd -Password $ServerPassword | Out-Null
         
-        $uploadResult = Copy-RemoteFile -Source $file.Path -Destination $file.ServerPath -Server $ServerIP -User $ServerUser -Password $ServerPassword
+        Write-ColorOutput "    Uploading JAR file to: $serverPath" "INFO"
+        $uploadResult = Copy-RemoteFile -Source $file.Path -Destination $serverPath -Server $ServerIP -User $ServerUser -Password $ServerPassword
         
         if ($uploadResult) {
             Write-ColorOutput "    Backend JAR package uploaded successfully" "SUCCESS"
