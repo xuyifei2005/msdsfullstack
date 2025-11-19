@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msds_list>
+  <msds>
+    <!-- 第一部分：化学品及企业标识 -->
+    <basic_info>
+      <cas_number>519-44-8</cas_number>
+      <msds_code>MSDS#11</msds_code>
+      <product_name>二硝基间苯二酚</product_name>
+      <product_alias>无资料</product_alias>
+      <product_english_name>dinitroresorcinol</product_english_name>
+      <company_name></company_name>
+      <company_address></company_address>
+      <contact_phone></contact_phone>
+      <emergency_phone></emergency_phone>
+      <email></email>
+      <fax_number></fax_number>
+    </basic_info>
+    <!-- 第二部分：危险性概述 -->
+    <hazard_info>
+      <hazard_category>第1类 爆炸品</hazard_category>
+      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
+      <health_hazards>本品有毒。对眼睛、皮肤、粘膜和上呼吸道有刺激作用。</health_hazards>
+      <environmental_hazards>无资料</environmental_hazards>
+      <fire_explosion_hazards>本品属爆炸品，易燃，有毒，具刺激性。</fire_explosion_hazards>
+    </hazard_info>
+    <!-- 第三部分：成分/组成信息 -->
+    <component_info>
+      <components>
+        <component>
+          <component_name>2,4-二硝基间苯二酚</component_name>
+          <component_content>100%</component_content>
+          <cas_number>519-44-8</cas_number>
+        </component>
+      </components>
+    </component_info>
+    <!-- 第四部分：急救措施 -->
+    <first_aid>
+      <skin_contact>脱去污染的衣着，用肥皂水和清水彻底冲洗皮肤。</skin_contact>
+      <eye_contact>提起眼睑，用流动清水或生理盐水冲洗。就医。</eye_contact>
+      <inhalation>脱离现场至空气新鲜处。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸。就医。</inhalation>
+      <ingestion>用水漱口，给饮牛奶或蛋清。就医。</ingestion>
+    </first_aid>
+    <!-- 第五部分：消防措施 -->
+    <fire_fighting>
+      <hazard_characteristics>属盐, 增加敏感度。与氧化剂混合能形成爆炸性混合物。</hazard_characteristics>
+      <fire_risk_classification>爆炸品</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物。 遇大火，消防人员须在有防护掩蔽处操作。灭火剂：雾状水、泡沫、二氧化碳。禁止用砂土压</harmful_combustion_products>
+      <suitable_extinguishing_media>盖。</suitable_extinguishing_media>
+    </fire_fighting>
+    <!-- 第六部分：泄漏应急处理 -->
+    <leak_response>
+      <emergency_procedures>隔离泄漏污染区，限制出入。切断火源。建议应急处理人员戴防尘面具（全面罩），穿防毒服。 不要直接接触泄漏物。避免震动、撞击和摩擦。小量泄漏：使用无火花工具收集于干燥、洁净、 有盖的容器中。运至空旷处引爆。也可以用大量水冲洗，洗水稀释后放入废水系统。大量泄漏： 用水润湿，然后收集回收或运至废物处理场所处置。</emergency_procedures>
+    </leak_response>
+    <!-- 第七部分：操作处置与储存 -->
+    <handling_storage>
+      <handling_precautions>远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免产生粉尘。避免与</handling_precautions>
+      <storage_precautions>人员佩戴自吸过滤式防尘口罩，戴化学安全防护眼镜，穿紧袖工作服，长筒胶鞋，戴橡胶手套。 氧化剂、活性金属粉末接触。禁止震动、撞击和摩擦。配备相应品种和数量的消防器材及泄漏 应急处理设备。 储存于阴凉、干燥、通风的专用爆炸品库房。远离火种、热源。储存时用水作钝化稳定剂，不 能少于规定要求。应与氧化剂、活性金属粉末分开存放，切忌混储。采用防爆型照明、通风设 施。禁止使用易产生火花的机械设备和工具。储区应备有合适的材料收容泄漏物。禁止震动、 撞击和摩擦。</storage_precautions>
+    </handling_storage>
+    <!-- 第八部分：接触控制/个体防护 -->
+    <exposure_control>
+      <china_mac>未制定标准</china_mac>
+      <former_soviet_mac>未制定标准</former_soviet_mac>
+      <tlvtn>未制定标准</tlvtn>
+      <tlvvn>未制定标准</tlvvn>
+      <contact_limits>美国TLV-TWA：未制订标准美国TLV-STEL：未制订标准</contact_limits>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>严加密闭，提供充分的局部排风。</engineering_controls>
+      <respiratory_protection></respiratory_protection>
+      <eye_protection>戴化学安全防护眼镜。</eye_protection>
+      <body_protection>穿紧袖工作服，长筒胶鞋。</body_protection>
+      <hand_protection>戴橡胶手套。</hand_protection>
+      <other_protection></other_protection>
+    </exposure_control>
+    <!-- 第九部分：理化特性 -->
+    <physical_chemical>
+      <pH>无资料</pH>
+      <melting_point>146～148</melting_point>
+      <boiling_point>升华和爆炸</boiling_point>
+      <flash_point>无意义</flash_point>
+      <relative_density>6.79</relative_density>
+      <relative_vapor_density>无资料</relative_vapor_density>
+      <solubility></solubility>
+      <molecular_formula>C6H4N2O6</molecular_formula>
+      <molecular_weight>200.1</molecular_weight>
+      <main_components>无资料</main_components>
+      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
+      <log_kow>无资料</log_kow>
+      <critical_temperature>无资料</critical_temperature>
+      <ignition_temperature>无资料</ignition_temperature>
+      <autoignition_temperature>无资料</autoignition_temperature>
+      <flammability></flammability>
+      <appearance>黄色结晶。</appearance>
+      <main_uses>用于制造引爆剂, 染料和分析试剂。</main_uses>
+      <other_properties>无资料</other_properties>
+      <heat_of_combustion>无资料</heat_of_combustion>
+      <critical_pressure>无资料</critical_pressure>
+      <explosive_upper_limit>无资料</explosive_upper_limit>
+      <explosive_lower_limit>无资料</explosive_lower_limit>
+    </physical_chemical>
+    <!-- 第十部分：稳定性和反应活性 -->
+    <stability_reactivity>
+      <stability>稳定</stability>
+      <incompatible_substances>强氧化剂、活性金属粉末。</incompatible_substances>
+      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <polymerization_hazard>不能出现</polymerization_hazard>
+      <decomposition_products>无资料</decomposition_products>
+    </stability_reactivity>
+    <!-- 第十一部分：毒理学信息 -->
+    <toxicological>
+      <acute_toxicity>LC50：无资料</acute_toxicity>
+      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <rtecs>无资料</rtecs>
+      <irritation>无资料</irritation>
+      <sensitization>无资料</sensitization>
+      <mutagenicity>无资料</mutagenicity>
+      <teratogenicity>无资料</teratogenicity>
+      <carcinogenicity>无资料</carcinogenicity>
+    </toxicological>
+    <!-- 第十二部分：生态学资料 -->
+    <ecological>
+      <ecological_toxicity>无资料</ecological_toxicity>
+      <biodegradability>无资料</biodegradability>
+      <non_biodegradability>无资料</non_biodegradability>
+      <bioaccumulation>无资料</bioaccumulation>
+      <other_harmful_effects>该物质对环境可能有危害，对水体应给予特别注意。</other_harmful_effects>
+    </ecological>
+    <!-- 第十三部分：废弃处置 -->
+    <disposal>
+      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
+      <disposal_method></disposal_method>
+      <disposal_precautions>无资料</disposal_precautions>
+    </disposal>
+    <!-- 第十四部分：运输信息 -->
+    <transportation>
+      <dangerous_goods_number>11053</dangerous_goods_number>
+      <un_number>0078</un_number>
+      <imdg_page>1109</imdg_page>
+      <packaging_mark>1</packaging_mark>
+      <packing_group>Z01</packing_group>
+      <packaging_method></packaging_method>
+      <transportation_precautions></transportation_precautions>
+    </transportation>
+    <!-- 第十五部分：法规信息 -->
+    <regulatory>
+      <regulatory_info></regulatory_info>
+    </regulatory>
+  </msds>
+</msds_list>

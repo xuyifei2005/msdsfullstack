@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msds_list>
+  <msds>
+    <!-- 第一部分：化学品及企业标识 -->
+    <basic_info>
+      <cas_number>1314-41-6</cas_number>
+      <msds_code>MSDS#839</msds_code>
+      <product_name>四氧化三铅</product_name>
+      <product_alias>红丹；铅丹；铅橙</product_alias>
+      <product_english_name>lead tetroxide</product_english_name>
+      <company_name></company_name>
+      <company_address></company_address>
+      <contact_phone></contact_phone>
+      <emergency_phone></emergency_phone>
+      <email></email>
+      <fax_number></fax_number>
+    </basic_info>
+    <!-- 第二部分：危险性概述 -->
+    <hazard_info>
+      <hazard_category>第6.1类 毒害品</hazard_category>
+      <exposure_routes>吸入 食入
+铅及其化合物损害造血、神经、消化系统及肾脏。职业中毒主要为慢性。神经系统主要表
+现为神经衰弱综合征、周围神经病(以运动功能受累较明显)，重者出现铅中毒性脑病。消</exposure_routes>
+      <health_hazards></health_hazards>
+      <environmental_hazards>无资料</environmental_hazards>
+      <fire_explosion_hazards>本品不燃，有毒。</fire_explosion_hazards>
+    </hazard_info>
+    <!-- 第三部分：成分/组成信息 -->
+    <component_info>
+      <components>
+        <component>
+          <component_name>四氧化三铅</component_name>
+          <component_content>100%</component_content>
+          <cas_number>1314-41-6</cas_number>
+        </component>
+      </components>
+    </component_info>
+    <!-- 第四部分：急救措施 -->
+    <first_aid>
+      <skin_contact></skin_contact>
+      <eye_contact></eye_contact>
+      <inhalation></inhalation>
+      <ingestion></ingestion>
+    </first_aid>
+    <!-- 第五部分：消防措施 -->
+    <fire_fighting>
+      <hazard_characteristics>受高热分解放出有毒的气体。</hazard_characteristics>
+      <fire_risk_classification>无资料</fire_risk_classification>
+      <harmful_combustion_products>氧化铅。</harmful_combustion_products>
+      <suitable_extinguishing_media>采用水、砂土灭火。</suitable_extinguishing_media>
+    </fire_fighting>
+    <!-- 第六部分：泄漏应急处理 -->
+    <leak_response>
+      <emergency_procedures>隔离泄漏污染区，限制出入。建议应急处理人员戴防尘面具（全面罩），穿防毒服。不要 直接接触泄漏物。小量泄漏：避免扬尘，用洁净的铲子收集于干燥、洁净、有盖的容器中。 大量泄漏：用塑料布、帆布覆盖。然后收集回收或运至废物处理场所处置。</emergency_procedures>
+    </leak_response>
+    <!-- 第七部分：操作处置与储存 -->
+    <handling_storage>
+      <handling_precautions></handling_precautions>
+      <storage_precautions>戴自吸过滤式防尘口罩，戴安全防护眼镜，穿透气型防毒服，戴防化学品手套。避免产生 粉尘。避免与还原剂接触。搬运时要轻装轻卸，防止包装及容器损坏。配备泄漏应急处理 设备。倒空的容器可能残留有害物。 储存于阴凉、通风的库房。远离火种、热源。库温不超过30℃，相对湿度不超过80％。应 与还原剂、食用化学品分开存放，切忌混储。储区应备有合适的材料收容泄漏物。</storage_precautions>
+    </handling_storage>
+    <!-- 第八部分：接触控制/个体防护 -->
+    <exposure_control>
+      <china_mac>0.03[烟]，0.05[尘]</china_mac>
+      <former_soviet_mac>未制定标准</former_soviet_mac>
+      <tlvtn>OSHA 0.05mg[Pb]/m3; ACGIH 0.15mg[Pb]/m3</tlvtn>
+      <tlvvn>未制定标准</tlvvn>
+      <contact_limits>美国TWA：OSHA 0.05mg[Pb]／m3；ACGIH 0.15mg[Pb]／m3美国STEL：未制定标准</contact_limits>
+      <monitoring_method>双硫腙比色法；火焰原子吸收光谱法；石墨炉原子吸收光谱法</monitoring_method>
+      <engineering_controls>密闭操作，局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection></respiratory_protection>
+      <eye_protection>一般不需特殊防护。必要时，戴安全防护眼镜。</eye_protection>
+      <body_protection>穿透气型防毒服。</body_protection>
+      <hand_protection>戴防化学品手套。</hand_protection>
+      <other_protection></other_protection>
+    </exposure_control>
+    <!-- 第九部分：理化特性 -->
+    <physical_chemical>
+      <pH>无资料</pH>
+      <melting_point>无资料</melting_point>
+      <boiling_point>500(分解)</boiling_point>
+      <flash_point>无意义</flash_point>
+      <relative_density>9.1</relative_density>
+      <relative_vapor_density>无资料</relative_vapor_density>
+      <solubility></solubility>
+      <molecular_formula>P</molecular_formula>
+      <molecular_weight>685.60</molecular_weight>
+      <main_components>纯品</main_components>
+      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
+      <log_kow>无资料</log_kow>
+      <critical_temperature>分解温度(℃)：500</critical_temperature>
+      <ignition_temperature>无意义</ignition_temperature>
+      <autoignition_temperature>无意义</autoignition_temperature>
+      <flammability>助燃</flammability>
+      <appearance>鲜桔红色粉末或块状固体。</appearance>
+      <main_uses>用作防锈颜料，有机合成的氧化剂，蓄电池制粉。</main_uses>
+      <other_properties>500</other_properties>
+      <heat_of_combustion>无意义</heat_of_combustion>
+      <critical_pressure>无资料</critical_pressure>
+      <explosive_upper_limit>无意义</explosive_upper_limit>
+      <explosive_lower_limit>无意义</explosive_lower_limit>
+    </physical_chemical>
+    <!-- 第十部分：稳定性和反应活性 -->
+    <stability_reactivity>
+      <stability>稳定</stability>
+      <incompatible_substances>强还原剂。</incompatible_substances>
+      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <polymerization_hazard>不能出现</polymerization_hazard>
+      <decomposition_products>无资料</decomposition_products>
+    </stability_reactivity>
+    <!-- 第十一部分：毒理学信息 -->
+    <toxicological>
+      <acute_toxicity>LD50：630mg／kg(大鼠腔膜内)；220mg／kg(豚鼠腹腔)LC50：</acute_toxicity>
+      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <rtecs>OG5425000</rtecs>
+      <irritation>无资料</irritation>
+      <sensitization>无资料</sensitization>
+      <mutagenicity>无资料</mutagenicity>
+      <teratogenicity>无资料</teratogenicity>
+      <carcinogenicity>无资料</carcinogenicity>
+    </toxicological>
+    <!-- 第十二部分：生态学资料 -->
+    <ecological>
+      <ecological_toxicity>无资料</ecological_toxicity>
+      <biodegradability>无资料</biodegradability>
+      <non_biodegradability>无资料</non_biodegradability>
+      <bioaccumulation></bioaccumulation>
+      <other_harmful_effects>好的卫生习惯</other_harmful_effects>
+    </ecological>
+    <!-- 第十三部分：废弃处置 -->
+    <disposal>
+      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
+      <disposal_method></disposal_method>
+      <disposal_precautions>无资料</disposal_precautions>
+    </disposal>
+    <!-- 第十四部分：运输信息 -->
+    <transportation>
+      <dangerous_goods_number>61507</dangerous_goods_number>
+      <un_number>无资料</un_number>
+      <imdg_page>无资料</imdg_page>
+      <packaging_mark>15</packaging_mark>
+      <packing_group>O52</packing_group>
+      <packaging_method></packaging_method>
+      <transportation_precautions></transportation_precautions>
+    </transportation>
+    <!-- 第十五部分：法规信息 -->
+    <regulatory>
+      <regulatory_info></regulatory_info>
+    </regulatory>
+  </msds>
+</msds_list>

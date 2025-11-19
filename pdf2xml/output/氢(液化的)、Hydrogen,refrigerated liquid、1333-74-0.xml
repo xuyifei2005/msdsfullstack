@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msds_list>
+  <msds>
+    <!-- 第一部分：化学品及企业标识 -->
+    <basic_info>
+      <cas_number>1333-74-0</cas_number>
+      <msds_code>MSDS#2652</msds_code>
+      <product_name>氢(液化的)</product_name>
+      <product_alias>液化氢,液氢</product_alias>
+      <product_english_name>Hydrogen,refrigerated liquid</product_english_name>
+      <company_name></company_name>
+      <company_address></company_address>
+      <contact_phone></contact_phone>
+      <emergency_phone></emergency_phone>
+      <email></email>
+      <fax_number></fax_number>
+    </basic_info>
+    <!-- 第二部分：危险性概述 -->
+    <hazard_info>
+      <hazard_category>第2.1类 易燃气体</hazard_category>
+      <exposure_routes>无资料</exposure_routes>
+      <health_hazards>应使患者移到通风地方,安置休息并保暖.如发生冻伤,须就医诊治.</health_hazards>
+      <environmental_hazards>无资料</environmental_hazards>
+      <fire_explosion_hazards>本品易燃</fire_explosion_hazards>
+    </hazard_info>
+    <!-- 第三部分：成分/组成信息 -->
+    <component_info>
+      <components>
+        <component>
+          <component_name>氢(液化的)(液化氢,液氢)</component_name>
+          <component_content>100%</component_content>
+          <cas_number>1333-74-0</cas_number>
+        </component>
+      </components>
+    </component_info>
+    <!-- 第四部分：急救措施 -->
+    <first_aid>
+      <skin_contact>无资料</skin_contact>
+      <eye_contact>无资料 迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进</eye_contact>
+      <inhalation>行人工呼吸。就医。</inhalation>
+      <ingestion>无资料</ingestion>
+    </first_aid>
+    <!-- 第五部分：消防措施 -->
+    <fire_fighting>
+      <hazard_characteristics>与氟、氯、溴等卤素会剧烈反应。但高浓度时则有窒息作用。</hazard_characteristics>
+      <fire_risk_classification>无资料</fire_risk_classification>
+      <harmful_combustion_products>燃烧时生成蓝色火焰 由于氢有复燃危险，在氢气源未切断前，可扑灭气源周围火势，防止扩大。但不得灭掉气 源渗漏处的火。用水冷却容器，以防受热爆裂，并用水保护进行关阀或堵漏的人员。如泄 漏物未被点燃，可用雾状水直接射至易燃蒸气和空气的混合物，以使其远离火源。如需使</harmful_combustion_products>
+      <suitable_extinguishing_media>泄漏物蒸发加快，须在蒸气蒸发能控制的情况下，用雾状水加快其蒸发速度。禁止向液氢 使用水枪施救。如有必要扑灭少量氢气的火种时，可用水、干粉、二氧化碳、卤素灭火剂 灭火。如有可能应迅速将钢瓶转移至安全地带。</suitable_extinguishing_media>
+    </fire_fighting>
+    <!-- 第六部分：泄漏应急处理 -->
+    <leak_response>
+      <emergency_procedures>迅速撤离泄漏污染区人员至上风处，并进行隔离，严格限制出入。切断火源。建议应急处 理人员戴自给正压式呼吸器，穿防静电工作服。尽可能切断泄漏源。合理通风，加速扩散。</emergency_procedures>
+    </leak_response>
+    <!-- 第七部分：操作处置与储存 -->
+    <handling_storage>
+      <handling_precautions>无资料</handling_precautions>
+      <storage_precautions>液氢通常在大气压、温度稍高于沸点的情况下低温储运。压缩氢气常温下储存于不燃结构 的、通风良好的、阴凉的专用库房内，严禁曝晒。远离热源、火源和可燃物。钢瓶装压缩 氢，平时用肥皂水检查钢瓶是否漏气。搬运是要戴好钢瓶的安全帽及防震橡皮圈，避免滚 动和撞击，防止容器破损。</storage_precautions>
+    </handling_storage>
+    <!-- 第八部分：接触控制/个体防护 -->
+    <exposure_control>
+      <china_mac>无资料</china_mac>
+      <former_soviet_mac>无资料</former_soviet_mac>
+      <tlvtn>无资料</tlvtn>
+      <tlvvn>无资料</tlvvn>
+      <contact_limits>美国</contact_limits>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>无资料</engineering_controls>
+      <respiratory_protection>无资料</respiratory_protection>
+      <eye_protection>无资料</eye_protection>
+      <body_protection>无资料</body_protection>
+      <hand_protection>无资料</hand_protection>
+      <other_protection>无资料</other_protection>
+    </exposure_control>
+    <!-- 第九部分：理化特性 -->
+    <physical_chemical>
+      <pH>无资料</pH>
+      <melting_point>-259.2</melting_point>
+      <boiling_point>-252.8</boiling_point>
+      <flash_point>无资料</flash_point>
+      <relative_density>0.0899</relative_density>
+      <relative_vapor_density>0</relative_vapor_density>
+      <solubility></solubility>
+      <molecular_formula>H2</molecular_formula>
+      <molecular_weight>2.0</molecular_weight>
+      <main_components>无资料</main_components>
+      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
+      <log_kow>无资料</log_kow>
+      <critical_temperature>-239.9</critical_temperature>
+      <ignition_temperature>无资料</ignition_temperature>
+      <autoignition_temperature>550</autoignition_temperature>
+      <flammability></flammability>
+      <appearance>无色无臭很轻的液体
+工业用气体燃料，氨、盐酸、甲醇等合成，金属焊接和切割，气球充填气，冷却剂，氢
+氧焰熔化玻璃。</appearance>
+      <main_uses>液氢和氧或氟一起作为火箭燃料和核动力火箭推进剂、核加速器的高能粒子研究等。</main_uses>
+      <other_properties>无资料</other_properties>
+      <heat_of_combustion>无资料</heat_of_combustion>
+      <critical_pressure>1297kPa</critical_pressure>
+      <explosive_upper_limit>75.6%</explosive_upper_limit>
+      <explosive_lower_limit>4.0%</explosive_lower_limit>
+    </physical_chemical>
+    <!-- 第十部分：稳定性和反应活性 -->
+    <stability_reactivity>
+      <stability>无资料</stability>
+      <incompatible_substances>无资料</incompatible_substances>
+      <conditions_to_avoid>与其他化学品，特别是氧化性气体，如氯、溴、碘等隔离储运。</conditions_to_avoid>
+      <polymerization_hazard>无资料</polymerization_hazard>
+      <decomposition_products>无资料</decomposition_products>
+    </stability_reactivity>
+    <!-- 第十一部分：毒理学信息 -->
+    <toxicological>
+      <acute_toxicity>无毒</acute_toxicity>
+      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <rtecs>无资料</rtecs>
+      <irritation>无资料</irritation>
+      <sensitization>无资料</sensitization>
+      <mutagenicity>无资料</mutagenicity>
+      <teratogenicity>无资料</teratogenicity>
+      <carcinogenicity>无资料</carcinogenicity>
+    </toxicological>
+    <!-- 第十二部分：生态学资料 -->
+    <ecological>
+      <ecological_toxicity>无资料</ecological_toxicity>
+      <biodegradability>无资料</biodegradability>
+      <non_biodegradability>无资料</non_biodegradability>
+      <bioaccumulation>无资料</bioaccumulation>
+      <other_harmful_effects>无资料</other_harmful_effects>
+    </ecological>
+    <!-- 第十三部分：废弃处置 -->
+    <disposal>
+      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
+      <disposal_method>无资料</disposal_method>
+      <disposal_precautions>无资料</disposal_precautions>
+    </disposal>
+    <!-- 第十四部分：运输信息 -->
+    <transportation>
+      <dangerous_goods_number>21002</dangerous_goods_number>
+      <un_number>1966</un_number>
+      <imdg_page>2148</imdg_page>
+      <packaging_mark>4</packaging_mark>
+      <packing_group>无资料</packing_group>
+      <packaging_method>无资料</packaging_method>
+      <transportation_precautions>无资料</transportation_precautions>
+    </transportation>
+    <!-- 第十五部分：法规信息 -->
+    <regulatory>
+      <regulatory_info>无资料</regulatory_info>
+    </regulatory>
+  </msds>
+</msds_list>

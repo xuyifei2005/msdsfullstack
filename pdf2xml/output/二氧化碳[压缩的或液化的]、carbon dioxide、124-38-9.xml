@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msds_list>
+  <msds>
+    <!-- 第一部分：化学品及企业标识 -->
+    <basic_info>
+      <cas_number>124-38-9</cas_number>
+      <msds_code>MSDS#42</msds_code>
+      <product_name>二氧化碳[压缩的或液化的]</product_name>
+      <product_alias>碳酸酐</product_alias>
+      <product_english_name>carbon dioxide</product_english_name>
+      <company_name></company_name>
+      <company_address></company_address>
+      <contact_phone></contact_phone>
+      <emergency_phone></emergency_phone>
+      <email></email>
+      <fax_number></fax_number>
+    </basic_info>
+    <!-- 第二部分：危险性概述 -->
+    <hazard_info>
+      <hazard_category>第2.2类 不燃气体</hazard_category>
+      <exposure_routes>吸入
+在低浓度时，对呼吸中枢呈兴奋作用, 高浓度时则产生抑制甚至麻痹作用。中毒机制中还兼有
+缺氧的因素。急性中毒：人进入高浓度二氧化碳环境，在几秒钟内迅速昏迷倒下，反射消失、
+瞳孔扩大或缩小、大小便失禁、呕吐等，更严重者出现呼吸停止及休克，甚至死亡。固态(干</exposure_routes>
+      <health_hazards>冰)和液态二氧化碳在常压下迅速汽化，能造成-80～-43℃低温，引起皮肤和眼睛严重的冻伤。
+慢性影响: 经常接触较高浓度的二氧化碳者，可有头晕、头痛、失眠、易兴奋、无力等神经功
+能紊乱等。但在生产中是否存在慢性中毒国内外均未见病例报道。</health_hazards>
+      <environmental_hazards>无资料</environmental_hazards>
+      <fire_explosion_hazards>本品不燃。</fire_explosion_hazards>
+    </hazard_info>
+    <!-- 第三部分：成分/组成信息 -->
+    <component_info>
+      <components>
+        <component>
+          <component_name>二氧化碳</component_name>
+          <component_content>100%</component_content>
+          <cas_number>124-38-9</cas_number>
+        </component>
+      </components>
+    </component_info>
+    <!-- 第四部分：急救措施 -->
+    <first_aid>
+      <skin_contact>若有冻伤，就医治疗。</skin_contact>
+      <eye_contact>若有冻伤，就医治疗。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人</eye_contact>
+      <inhalation>工呼吸。就医。</inhalation>
+      <ingestion>无资料</ingestion>
+    </first_aid>
+    <!-- 第五部分：消防措施 -->
+    <fire_fighting>
+      <hazard_characteristics>若遇高热，容器内压增大，有开裂和爆炸的危险。</hazard_characteristics>
+      <fire_risk_classification>戊</fire_risk_classification>
+      <harmful_combustion_products>无资料</harmful_combustion_products>
+      <suitable_extinguishing_media>本品不燃。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。</suitable_extinguishing_media>
+    </fire_fighting>
+    <!-- 第六部分：泄漏应急处理 -->
+    <leak_response>
+      <emergency_procedures>迅速撤离泄漏污染区人员至上风处，并进行隔离，严格限制出入。建议应急处理人员戴自给正 应急处理： 压式呼吸器，穿一般作业工作服。尽可能切断泄漏源。合理通风，加速扩散。漏气容器要妥善</emergency_procedures>
+    </leak_response>
+    <!-- 第七部分：操作处置与储存 -->
+    <handling_storage>
+      <handling_precautions>规程。防止气体泄漏到工作场所空气中。远离易燃、可燃物。搬运时轻装轻卸，防止钢瓶及附</handling_precautions>
+      <storage_precautions>件破损。配备泄漏应急处理设备。 储存于阴凉、通风的库房。远离火种、热源。库温不宜超过30℃。应与易（可）燃物分开存放， 切忌混储。储区应备有泄漏应急处理设备。</storage_precautions>
+    </handling_storage>
+    <!-- 第八部分：接触控制/个体防护 -->
+    <exposure_control>
+      <china_mac>18000</china_mac>
+      <former_soviet_mac>未制定标准</former_soviet_mac>
+      <tlvtn>OSHA 5000ppm,9000mg/m3; ACGIH 5000ppm,9000mg/m3</tlvtn>
+      <tlvvn>ACGIH 30000ppm,54000mg/m3</tlvvn>
+      <contact_limits></contact_limits>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>密闭操作。提供良好的自然通风条件。</engineering_controls>
+      <respiratory_protection>一般不需要特殊防护，高浓度接触时可佩戴空气呼吸器。</respiratory_protection>
+      <eye_protection>一般不需特殊防护。</eye_protection>
+      <body_protection>穿一般作业工作服。</body_protection>
+      <hand_protection>戴一般作业防护手套。</hand_protection>
+      <other_protection>避免高浓度吸入。进入罐、限制性空间或其它高浓度区作业，须有人监护。</other_protection>
+    </exposure_control>
+    <!-- 第九部分：理化特性 -->
+    <physical_chemical>
+      <pH>无资料</pH>
+      <melting_point>-56.6(527kPa)</melting_point>
+      <boiling_point>-78.5(升华)</boiling_point>
+      <flash_point>无意义</flash_point>
+      <relative_density>1.56(-79℃)</relative_density>
+      <relative_vapor_density>1.53</relative_vapor_density>
+      <solubility></solubility>
+      <molecular_formula>CO2</molecular_formula>
+      <molecular_weight>44.01</molecular_weight>
+      <main_components>纯品</main_components>
+      <saturated_vapor_pressure>1013.25(-39℃)</saturated_vapor_pressure>
+      <log_kow>无资料</log_kow>
+      <critical_temperature>31</critical_temperature>
+      <ignition_temperature>无意义</ignition_temperature>
+      <autoignition_temperature>无意义</autoignition_temperature>
+      <flammability></flammability>
+      <appearance>无色无臭气体。</appearance>
+      <main_uses>用于制糖工业、制碱工业、制铅白等，也用于冷饮、灭火及有机合成。</main_uses>
+      <other_properties>无资料</other_properties>
+      <heat_of_combustion>无意义</heat_of_combustion>
+      <critical_pressure>7.39</critical_pressure>
+      <explosive_upper_limit>无意义</explosive_upper_limit>
+      <explosive_lower_limit>无意义</explosive_lower_limit>
+    </physical_chemical>
+    <!-- 第十部分：稳定性和反应活性 -->
+    <stability_reactivity>
+      <stability>稳定</stability>
+      <incompatible_substances>无资料</incompatible_substances>
+      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <polymerization_hazard>不能出现</polymerization_hazard>
+      <decomposition_products>无资料</decomposition_products>
+    </stability_reactivity>
+    <!-- 第十一部分：毒理学信息 -->
+    <toxicological>
+      <acute_toxicity>LC50：无资料</acute_toxicity>
+      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <rtecs>FF6400000</rtecs>
+      <irritation>无资料</irritation>
+      <sensitization>无资料</sensitization>
+      <mutagenicity>无资料</mutagenicity>
+      <teratogenicity>无资料</teratogenicity>
+      <carcinogenicity>无资料</carcinogenicity>
+    </toxicological>
+    <!-- 第十二部分：生态学资料 -->
+    <ecological>
+      <ecological_toxicity>无资料</ecological_toxicity>
+      <biodegradability>无资料</biodegradability>
+      <non_biodegradability>无资料</non_biodegradability>
+      <bioaccumulation>无资料</bioaccumulation>
+      <other_harmful_effects>避免高浓度吸入。进入罐或其它高浓度区作业，须有人监护。</other_harmful_effects>
+    </ecological>
+    <!-- 第十三部分：废弃处置 -->
+    <disposal>
+      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
+      <disposal_method></disposal_method>
+      <disposal_precautions>无资料</disposal_precautions>
+    </disposal>
+    <!-- 第十四部分：运输信息 -->
+    <transportation>
+      <dangerous_goods_number>22019</dangerous_goods_number>
+      <un_number>1013</un_number>
+      <imdg_page>2111</imdg_page>
+      <packaging_mark>5</packaging_mark>
+      <packing_group>O53</packing_group>
+      <packaging_method></packaging_method>
+      <transportation_precautions></transportation_precautions>
+    </transportation>
+    <!-- 第十五部分：法规信息 -->
+    <regulatory>
+      <regulatory_info></regulatory_info>
+    </regulatory>
+  </msds>
+</msds_list>

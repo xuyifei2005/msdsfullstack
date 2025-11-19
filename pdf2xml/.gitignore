@@ -8,9 +8,6 @@ venv/
 env/
 ENV/
 
-# 输出文件
-output/
-*.xml
 
 # 日志文件
 logs/

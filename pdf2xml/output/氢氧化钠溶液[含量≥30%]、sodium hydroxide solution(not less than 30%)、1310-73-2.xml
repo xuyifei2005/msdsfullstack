@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msds_list>
+  <msds>
+    <!-- 第一部分：化学品及企业标识 -->
+    <basic_info>
+      <cas_number>1310-73-2</cas_number>
+      <msds_code>无资料</msds_code>
+      <product_name>氢氧化钠溶液[含量≥30%]</product_name>
+      <product_alias>无资料</product_alias>
+      <product_english_name>sodium hydroxide solution(not less than 30%)</product_english_name>
+      <company_name></company_name>
+      <company_address></company_address>
+      <contact_phone></contact_phone>
+      <emergency_phone></emergency_phone>
+      <email></email>
+      <fax_number></fax_number>
+    </basic_info>
+    <!-- 第二部分：危险性概述 -->
+    <hazard_info>
+      <hazard_category>下：皮肤腐蚀/刺激 ， 类别 1A；眼损伤/眼刺激 ，类别 1。</hazard_category>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触
+腐蚀物能引起呼吸道刺激，伴有咳嗽、呼吸道阻塞和粘膜损伤。吸入该物质可能会引起对
+健康有害的影响或呼吸 道不适。意外食入</exposure_routes>
+      <health_hazards></health_hazards>
+      <environmental_hazards>无资料</environmental_hazards>
+      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+    </hazard_info>
+    <!-- 第三部分：成分/组成信息 -->
+    <component_info>
+      <components>
+        <component>
+          <component_name>氢氧化钠</component_name>
+          <component_content>≥30.0%</component_content>
+          <cas_number>1310-73-2</cas_number>
+        </component>
+      </components>
+    </component_info>
+    <!-- 第四部分：急救措施 -->
+    <first_aid>
+      <skin_contact></skin_contact>
+      <eye_contact></eye_contact>
+      <inhalation></inhalation>
+      <ingestion></ingestion>
+    </first_aid>
+    <!-- 第五部分：消防措施 -->
+    <fire_fighting>
+      <hazard_characteristics>能会通过压力安全阀泄漏 出内容物。受热或接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
+      <fire_risk_classification>无资料</fire_risk_classification>
+      <harmful_combustion_products>无资料</harmful_combustion_products>
+      <suitable_extinguishing_media>用水、砂土扑救，但须防止物品遇水产生飞溅，造成灼伤。</suitable_extinguishing_media>
+    </fire_fighting>
+    <!-- 第六部分：泄漏应急处理 -->
+    <leak_response>
+      <emergency_procedures>隔离泄漏污染区，限制出入。建议应急处理人员戴防尘面具（全面罩），穿防酸碱工作服。不 要直接接触泄漏物。小量泄漏：避免扬尘，用洁净的铲子收集于干燥、洁净、有盖的容器中。 也可以用大量水冲洗，洗水稀释后放入废水系统。大量泄漏：收集回收或运至废物处理场所处</emergency_procedures>
+    </leak_response>
+    <!-- 第七部分：操作处置与储存 -->
+    <handling_storage>
+      <handling_precautions></handling_precautions>
+      <storage_precautions>火花、明火和热表面。 采取措施防止静电积累。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。</storage_precautions>
+    </handling_storage>
+    <!-- 第八部分：接触控制/个体防护 -->
+    <exposure_control>
+      <china_mac>无资料</china_mac>
+      <former_soviet_mac>无资料</former_soviet_mac>
+      <tlvtn>无资料</tlvtn>
+      <tlvvn>无资料</tlvvn>
+      <contact_limits>无资料</contact_limits>
+      <monitoring_method></monitoring_method>
+      <engineering_controls></engineering_controls>
+      <respiratory_protection></respiratory_protection>
+      <eye_protection>佩戴化学护目镜（符合欧盟 EN 166 或美国 NIOSH 标准）。</eye_protection>
+      <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
+      <hand_protection></hand_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
+    </exposure_control>
+    <!-- 第九部分：理化特性 -->
+    <physical_chemical>
+      <pH>12.7（5%溶液）</pH>
+      <melting_point>318</melting_point>
+      <boiling_point>1388</boiling_point>
+      <flash_point>无资料</flash_point>
+      <relative_density>2.12（20℃）</relative_density>
+      <relative_vapor_density>无资料</relative_vapor_density>
+      <solubility></solubility>
+      <molecular_formula></molecular_formula>
+      <molecular_weight></molecular_weight>
+      <main_components>无资料</main_components>
+      <saturated_vapor_pressure>＜2（20℃）</saturated_vapor_pressure>
+      <log_kow>无资料</log_kow>
+      <critical_temperature>无资料</critical_temperature>
+      <ignition_temperature>无资料</ignition_temperature>
+      <autoignition_temperature>无资料</autoignition_temperature>
+      <flammability></flammability>
+      <appearance></appearance>
+      <main_uses></main_uses>
+      <other_properties>无资料</other_properties>
+      <heat_of_combustion>无资料</heat_of_combustion>
+      <critical_pressure>无资料</critical_pressure>
+      <explosive_upper_limit>无资料</explosive_upper_limit>
+      <explosive_lower_limit>无资料</explosive_lower_limit>
+    </physical_chemical>
+    <!-- 第十部分：稳定性和反应活性 -->
+    <stability_reactivity>
+      <stability>在正确的使用和存储条件下是稳定的。</stability>
+      <incompatible_substances>酸类、酚类、醇类和硝基取代烃。</incompatible_substances>
+      <conditions_to_avoid>不相容物质，热、火焰和火花。</conditions_to_avoid>
+      <polymerization_hazard>与酸类、酚类、醇类接触可发生剧烈反应。</polymerization_hazard>
+      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。</decomposition_products>
+    </stability_reactivity>
+    <!-- 第十一部分：毒理学信息 -->
+    <toxicological>
+      <acute_toxicity>无资料</acute_toxicity>
+      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <rtecs>无资料</rtecs>
+      <irritation>造成严重皮肤灼伤和眼损伤、造成严重眼损伤</irritation>
+      <sensitization>无资料</sensitization>
+      <mutagenicity>无资料</mutagenicity>
+      <teratogenicity>无资料</teratogenicity>
+      <carcinogenicity>无资料</carcinogenicity>
+    </toxicological>
+    <!-- 第十二部分：生态学资料 -->
+    <ecological>
+      <ecological_toxicity>氢氧化钠：鱼类、LC50：196mg/L (96h)(鱼)；甲壳纲动物、EC50：40.4mg/L (48h)</ecological_toxicity>
+      <biodegradability>无资料</biodegradability>
+      <non_biodegradability>无资料</non_biodegradability>
+      <bioaccumulation>无资料</bioaccumulation>
+      <other_harmful_effects>无资料</other_harmful_effects>
+    </ecological>
+    <!-- 第十三部分：废弃处置 -->
+    <disposal>
+      <waste_properties>无资料</waste_properties>
+      <disposal_method></disposal_method>
+      <disposal_precautions>无资料</disposal_precautions>
+    </disposal>
+    <!-- 第十四部分：运输信息 -->
+    <transportation>
+      <dangerous_goods_number>1824</dangerous_goods_number>
+      <un_number>无资料</un_number>
+      <imdg_page>无资料</imdg_page>
+      <packaging_mark>无资料</packaging_mark>
+      <packing_group></packing_group>
+      <packaging_method></packaging_method>
+      <transportation_precautions></transportation_precautions>
+    </transportation>
+    <!-- 第十五部分：法规信息 -->
+    <regulatory>
+      <regulatory_info></regulatory_info>
+    </regulatory>
+  </msds>
+</msds_list>

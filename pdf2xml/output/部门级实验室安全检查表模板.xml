@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msds_list>
+  <msds>
+    <!-- 第一部分：化学品及企业标识 -->
+    <basic_info>
+      <product_name>部门级实验室安全检查表模板</product_name>
+      <product_english_name></product_english_name>
+      <company_name></company_name>
+      <company_address></company_address>
+      <contact_phone></contact_phone>
+      <emergency_phone></emergency_phone>
+      <email></email>
+      <fax_number></fax_number>
+    </basic_info>
+    <!-- 第二部分：危险性概述 -->
+    <hazard_info>
+      <hazard_category></hazard_category>
+      <exposure_routes></exposure_routes>
+      <health_hazards></health_hazards>
+      <environmental_hazards></environmental_hazards>
+      <fire_explosion_hazards></fire_explosion_hazards>
+    </hazard_info>
+    <!-- 第三部分：成分/组成信息 -->
+    <component_info>
+      <components></components>
+    </component_info>
+    <!-- 第四部分：急救措施 -->
+    <first_aid>
+      <skin_contact></skin_contact>
+      <eye_contact></eye_contact>
+      <inhalation></inhalation>
+      <ingestion></ingestion>
+    </first_aid>
+    <!-- 第五部分：消防措施 -->
+    <fire_fighting>
+      <hazard_characteristics></hazard_characteristics>
+      <harmful_combustion_products></harmful_combustion_products>
+      <suitable_extinguishing_media></suitable_extinguishing_media>
+    </fire_fighting>
+    <!-- 第六部分：泄漏应急处理 -->
+    <leak_response>
+      <emergency_procedures></emergency_procedures>
+    </leak_response>
+    <!-- 第七部分：操作处置与储存 -->
+    <handling_storage>
+      <handling_precautions></handling_precautions>
+      <storage_precautions></storage_precautions>
+    </handling_storage>
+    <!-- 第八部分：接触控制/个体防护 -->
+    <exposure_control>
+      <china_mac></china_mac>
+      <engineering_controls></engineering_controls>
+      <respiratory_protection></respiratory_protection>
+      <eye_protection></eye_protection>
+      <body_protection></body_protection>
+      <hand_protection></hand_protection>
+    </exposure_control>
+    <!-- 第九部分：理化特性 -->
+    <physical_chemical>
+      <melting_point></melting_point>
+      <boiling_point></boiling_point>
+      <flash_point></flash_point>
+      <relative_density></relative_density>
+      <solubility></solubility>
+      <molecular_formula></molecular_formula>
+      <molecular_weight></molecular_weight>
+    </physical_chemical>
+    <!-- 第十部分：稳定性和反应活性 -->
+    <stability_reactivity>
+      <stability></stability>
+      <incompatible_substances></incompatible_substances>
+      <conditions_to_avoid></conditions_to_avoid>
+      <polymerization_hazard></polymerization_hazard>
+      <decomposition_products></decomposition_products>
+    </stability_reactivity>
+    <!-- 第十一部分：毒理学信息 -->
+    <toxicological>
+      <acute_toxicity></acute_toxicity>
+    </toxicological>
+    <!-- 第十二部分：生态学资料 -->
+    <ecological>
+      <ecological_toxicity></ecological_toxicity>
+    </ecological>
+    <!-- 第十三部分：废弃处置 -->
+    <disposal>
+      <waste_properties></waste_properties>
+      <disposal_method></disposal_method>
+    </disposal>
+    <!-- 第十四部分：运输信息 -->
+    <transportation>
+      <dangerous_goods_number></dangerous_goods_number>
+      <un_number></un_number>
+      <packing_group></packing_group>
+      <packaging_method></packaging_method>
+      <transportation_precautions></transportation_precautions>
+    </transportation>
+    <!-- 第十五部分：法规信息 -->
+    <regulatory>
+      <regulatory_info></regulatory_info>
+    </regulatory>
+  </msds>
+</msds_list>

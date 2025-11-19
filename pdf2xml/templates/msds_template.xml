@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msds_list>
+  <msds>
+    <!-- 第一部分：化学品及企业标识 -->
+    <basic_info>
+      <cas_number>115-29-7</cas_number>
+      <msds_code>MSDSA1597</msds_code>
+      <product_name>(1,4,5,6,7,7-六氯-8,9,10-三降冰片-5-烯-2,3-亚基双亚甲基)亚硫酸酯</product_name>
+      <product_alias>1,2,3,4,7,7-六氯双环[2,2,1]庚烯-(2)-双羟甲基-5,6-亚硫酸酯；硫丹</product_alias>
+      <product_english_name>1,2,3,4,7,7-hexachloro-8,9,10-trinorborn-2-en-5,6-ylenedimethyl ether</product_english_name>
+      <company_name></company_name>
+      <company_address></company_address>
+      <contact_phone></contact_phone>
+      <emergency_phone></emergency_phone>
+      <email></email>
+      <fax_number></fax_number>
+    </basic_info>
+
+    <!-- 第二部分：危险性概述 -->
+    <hazard_info>
+      <hazard_category>第6.1类 毒害品</hazard_category>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>吸入、摄入或经皮肤吸收后会中毒。为高毒的有机氯杀虫剂。对人有致突变作用。对中枢神经系统有损害。可引起惊厥。一般表现为头痛、痉挛、口吐泡沫。本品受热分解放出氯和氧化硫烟雾。</health_hazards>
+      <environmental_hazards>无资料</environmental_hazards>
+      <fire_explosion_hazards>本品可燃、高毒</fire_explosion_hazards>
+    </hazard_info>
+
+    <!-- 第三部分：成分/组成信息 -->
+    <component_info>
+      <components>
+        <component>
+          <component_name>硫丹; (1,4,5,6,7,7-六氯-8,9,10-三降冰片-5-烯-2,3-亚基双亚甲基)亚硫酸酯</component_name>
+          <component_content>100%</component_content>
+          <cas_number>115-29-7</cas_number>
+        </component>
+      </components>
+    </component_info>
+
+    <!-- 第四部分：急救措施 -->
+    <first_aid>
+      <skin_contact>用肥皂水及清水彻底冲洗。就医。</skin_contact>
+      <eye_contact>拉开眼睑，用流动清水冲洗15分钟。就医。</eye_contact>
+      <inhalation>脱离现场至空气新鲜处。密切观察。就医。</inhalation>
+      <ingestion>误服者，饮适量温水，催吐。就医。</ingestion>
+    </first_aid>
+
+    <!-- 第五部分：消防措施 -->
+    <fire_fighting>
+      <hazard_characteristics>不易燃烧。受高热分解，放出有毒的烟气。</hazard_characteristics>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氯化氢、氧化硫。</harmful_combustion_products>
+      <suitable_extinguishing_media>泡沫、干粉、砂土。</suitable_extinguishing_media>
+    </fire_fighting>
+
+    <!-- 第六部分：泄漏应急处理 -->
+    <leak_response>
+      <emergency_procedures>隔离泄漏污染区，周围设警告标志，建议应急处理人员戴自给式呼吸器，穿化学防护服。不要直接接触泄漏物，小心扫起，避免扬尘，收集于干燥净洁有盖的容器中，转移到安全场所。用水刷洗泄漏污染区，经稀释的污水放入废水系统。如大量泄漏，收集回收或无害处理后废弃。</emergency_procedures>
+    </leak_response>
+
+    <!-- 第七部分：操作处置与储存 -->
+    <handling_storage>
+      <handling_precautions>无资料</handling_precautions>
+      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。专人保管。保持容器密封。防止受潮和雨淋。防止阳光曝晒。应与氧化剂、酸类、碱类分开存放。不能与粮食、食物、种子、饲料、各种日用品混装、混运。操作现场不得吸烟、饮水、进食。搬运时要轻装轻卸，防止包装及容器损坏。分装和搬运作业要注意个人防护。</storage_precautions>
+    </handling_storage>
+
+    <!-- 第八部分：接触控制/个体防护 -->
+    <exposure_control>
+      <china_mac>未制订标准</china_mac>
+      <engineering_controls>严加密闭，提供充分的局部排风。尽可能机械化、自动化。</engineering_controls>
+      <respiratory_protection>生产操作或农业使用时，应该佩戴防毒口罩。紧急事态抢救或逃生时，建议佩戴自给式呼吸器。</respiratory_protection>
+      <eye_protection>戴化学安全防护眼镜。</eye_protection>
+      <body_protection>穿化学防护服。</body_protection>
+      <hand_protection>戴防化学品手套。</hand_protection>
+    </exposure_control>
+
+    <!-- 第九部分：理化特性 -->
+    <physical_chemical>
+      <melting_point>70～100</melting_point>
+      <boiling_point>无资料</boiling_point>
+      <flash_point>无资料</flash_point>
+      <relative_density>1.745(20℃)</relative_density>
+      <solubility>不溶于水，溶于多数有机溶剂。</solubility>
+      <molecular_formula>C9H6Cl6O3S</molecular_formula>
+      <molecular_weight>406.91</molecular_weight>
+    </physical_chemical>
+
+    <!-- 第十部分：稳定性和反应活性 -->
+    <stability_reactivity>
+      <stability>稳定</stability>
+      <incompatible_substances>强氧化剂、强酸、强碱、潮湿空气。</incompatible_substances>
+      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <polymerization_hazard>不能出现</polymerization_hazard>
+      <decomposition_products>无资料</decomposition_products>
+    </stability_reactivity>
+
+    <!-- 第十一部分：毒理学信息 -->
+    <toxicological>
+      <acute_toxicity>LD50：18mg／kg(大鼠经口)；7.36mg／kg(小鼠经口)；34mg／kg(大鼠经皮) LC50：RTECS：RB9275000</acute_toxicity>
+    </toxicological>
+
+    <!-- 第十二部分：生态学信息 -->
+    <ecological>
+      <ecological_toxicity>无资料</ecological_toxicity>
+    </ecological>
+
+    <!-- 第十三部分：废弃处置 -->
+    <disposal>
+      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
+      <disposal_method>无资料</disposal_method>
+    </disposal>
+
+    <!-- 第十四部分：运输信息 -->
+    <transportation>
+      <dangerous_goods_number>61127</dangerous_goods_number>
+      <un_number>2761</un_number>
+      <packing_group>Ⅱ</packing_group>
+      <packaging_method>无资料</packaging_method>
+      <transportation_precautions>无资料</transportation_precautions>
+    </transportation>
+
+    <!-- 第十五部分：法规信息 -->
+    <regulatory>
+      <regulatory_info>无资料</regulatory_info>
+    </regulatory>
+  </msds>
+</msds_list>

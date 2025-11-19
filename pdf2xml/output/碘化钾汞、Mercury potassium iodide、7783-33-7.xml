@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msds_list>
+  <msds>
+    <!-- 第一部分：化学品及企业标识 -->
+    <basic_info>
+      <cas_number>7783-33-7</cas_number>
+      <msds_code>MSDS#1801</msds_code>
+      <product_name>碘化钾汞</product_name>
+      <product_alias>碘化汞钾</product_alias>
+      <product_english_name>Mercury potassium iodide</product_english_name>
+      <company_name></company_name>
+      <company_address></company_address>
+      <contact_phone></contact_phone>
+      <emergency_phone></emergency_phone>
+      <email></email>
+      <fax_number></fax_number>
+    </basic_info>
+    <!-- 第二部分：危险性概述 -->
+    <hazard_info>
+      <hazard_category>第6.1类 毒害品</hazard_category>
+      <exposure_routes>吸入 食入 经皮吸收
+高毒。吸入、摄入或经皮肤吸收后会中毒。吸入时，神经系统最早受损；误服，首先出现</exposure_routes>
+      <health_hazards></health_hazards>
+      <environmental_hazards>无资料</environmental_hazards>
+      <fire_explosion_hazards>本品不燃、高毒</fire_explosion_hazards>
+    </hazard_info>
+    <!-- 第三部分：成分/组成信息 -->
+    <component_info>
+      <components>
+        <component>
+          <component_name>碘化钾汞；碘化汞钾</component_name>
+          <component_content>100%</component_content>
+          <cas_number>7783-33-7</cas_number>
+        </component>
+      </components>
+    </component_info>
+    <!-- 第四部分：急救措施 -->
+    <first_aid>
+      <skin_contact>用肥皂水及清水彻底冲洗。就医。</skin_contact>
+      <eye_contact>拉开眼睑，用流动清水冲洗15分钟。就医。</eye_contact>
+      <inhalation>立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给于吸氧。如患者食入或吸 入本物质，不得进行口对口人工呼吸。如果呼吸停止。立即进行心肺复苏术。立即就医。</inhalation>
+      <ingestion>误服者，口服牛奶、豆浆或蛋清，就医。</ingestion>
+    </first_aid>
+    <!-- 第五部分：消防措施 -->
+    <fire_fighting>
+      <hazard_characteristics>受高热分解，放出高毒的烟气。</hazard_characteristics>
+      <fire_risk_classification>无资料</fire_risk_classification>
+      <harmful_combustion_products>氧化钾、汞、碘化氢。 合适的灭火介质: 干粉、二氧化碳或耐醇泡沫。</harmful_combustion_products>
+      <suitable_extinguishing_media>不合适的灭火介质: 避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</suitable_extinguishing_media>
+    </fire_fighting>
+    <!-- 第六部分：泄漏应急处理 -->
+    <leak_response>
+      <emergency_procedures>隔离泄漏污染区，周围设警告标志，建议应急处理人员戴自给式呼吸器，穿化学防护服。 不要直接接触泄漏物，小心扫起，避免扬尘，用洁净的铲子收集于干燥净洁有盖的容器中， 运至废物处理场所。用水刷洗泄漏污染区，对污染地带进行通风。如大量泄漏，收集回收 或无害处理后废弃。</emergency_procedures>
+    </leak_response>
+    <!-- 第七部分：操作处置与储存 -->
+    <handling_storage>
+      <handling_precautions>无资料</handling_precautions>
+      <storage_precautions>储存于阴凉、干燥、通风良好的库房。包装密封。避光保存。防止受潮。专人保管。应与 氧化剂、酸类分开存放。不能与粮食、食物、种子、饲料、各种日用品混装、混运。操作 现场不得吸烟、饮水、进食。搬运时轻装轻卸，保持包装完整，防止洒漏。分装和搬运作 业要注意个人防护。</storage_precautions>
+    </handling_storage>
+    <!-- 第八部分：接触控制/个体防护 -->
+    <exposure_control>
+      <china_mac>未制订标准</china_mac>
+      <former_soviet_mac>0.2／0.05(Hg，)(皮)</former_soviet_mac>
+      <tlvtn>无资料</tlvtn>
+      <tlvvn>无资料</tlvvn>
+      <contact_limits>美国TLV-TWA：0.1mg(Hg)／m3(皮)美国TLV-STEL：未制订标准</contact_limits>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>密闭操作，局部排风。</engineering_controls>
+      <respiratory_protection>作业工人应该佩戴防毒口罩。紧急事态抢救或逃生时，佩戴自给式呼吸器。</respiratory_protection>
+      <eye_protection>戴化学安全防护眼镜。</eye_protection>
+      <body_protection>穿相应的防护服。</body_protection>
+      <hand_protection>戴防化学品手套。</hand_protection>
+      <other_protection>无资料</other_protection>
+    </exposure_control>
+    <!-- 第九部分：理化特性 -->
+    <physical_chemical>
+      <pH>无资料</pH>
+      <melting_point>无资料</melting_point>
+      <boiling_point>无资料</boiling_point>
+      <flash_point>无资料</flash_point>
+      <relative_density>4.29</relative_density>
+      <relative_vapor_density>无资料</relative_vapor_density>
+      <solubility></solubility>
+      <molecular_formula>H</molecular_formula>
+      <molecular_weight>786.39</molecular_weight>
+      <main_components>无资料</main_components>
+      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
+      <log_kow>无资料</log_kow>
+      <critical_temperature>无资料</critical_temperature>
+      <ignition_temperature>无资料</ignition_temperature>
+      <autoignition_temperature>无资料</autoignition_temperature>
+      <flammability></flammability>
+      <appearance>黄色至亮桔红色重质结晶或粉末。</appearance>
+      <main_uses>用作杀菌剂及配制选矿液。</main_uses>
+      <other_properties>无资料</other_properties>
+      <heat_of_combustion>无资料</heat_of_combustion>
+      <critical_pressure>无资料</critical_pressure>
+      <explosive_upper_limit>无资料</explosive_upper_limit>
+      <explosive_lower_limit>无资料</explosive_lower_limit>
+    </physical_chemical>
+    <!-- 第十部分：稳定性和反应活性 -->
+    <stability_reactivity>
+      <stability>稳定</stability>
+      <incompatible_substances>强氧化剂、强还原剂、强酸。</incompatible_substances>
+      <conditions_to_avoid>光照。</conditions_to_avoid>
+      <polymerization_hazard>不能出现</polymerization_hazard>
+      <decomposition_products>无资料</decomposition_products>
+    </stability_reactivity>
+    <!-- 第十一部分：毒理学信息 -->
+    <toxicological>
+      <acute_toxicity>无资料</acute_toxicity>
+      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <rtecs>OU9670000</rtecs>
+      <irritation>无资料</irritation>
+      <sensitization>无资料</sensitization>
+      <mutagenicity>无资料</mutagenicity>
+      <teratogenicity>无资料</teratogenicity>
+      <carcinogenicity>无资料</carcinogenicity>
+    </toxicological>
+    <!-- 第十二部分：生态学资料 -->
+    <ecological>
+      <ecological_toxicity>无资料</ecological_toxicity>
+      <biodegradability>无资料</biodegradability>
+      <non_biodegradability>无资料</non_biodegradability>
+      <bioaccumulation></bioaccumulation>
+      <other_harmful_effects>再用。注意个人清洁卫生。实行就业前和定期的体检。</other_harmful_effects>
+    </ecological>
+    <!-- 第十三部分：废弃处置 -->
+    <disposal>
+      <waste_properties></waste_properties>
+      <disposal_method></disposal_method>
+    </disposal>
+    <!-- 第十四部分：运输信息 -->
+    <transportation>
+      <dangerous_goods_number>61509</dangerous_goods_number>
+      <un_number>1643</un_number>
+      <imdg_page>6185</imdg_page>
+      <packaging_mark>14</packaging_mark>
+      <packing_group>Ⅱ</packing_group>
+      <packaging_method>无资料</packaging_method>
+      <transportation_precautions>无资料</transportation_precautions>
+    </transportation>
+    <!-- 第十五部分：法规信息 -->
+    <regulatory>
+      <regulatory_info>无资料</regulatory_info>
+    </regulatory>
+  </msds>
+</msds_list>

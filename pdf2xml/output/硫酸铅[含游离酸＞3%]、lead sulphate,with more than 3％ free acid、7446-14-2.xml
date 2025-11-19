@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msds_list>
+  <msds>
+    <!-- 第一部分：化学品及企业标识 -->
+    <basic_info>
+      <cas_number>7446-14-2</cas_number>
+      <msds_code>MSDS#2342</msds_code>
+      <product_name>硫酸铅[含游离酸＞3%]</product_name>
+      <product_alias>无资料</product_alias>
+      <product_english_name>lead sulphate</product_english_name>
+      <company_name></company_name>
+      <company_address></company_address>
+      <contact_phone></contact_phone>
+      <emergency_phone></emergency_phone>
+      <email></email>
+      <fax_number></fax_number>
+    </basic_info>
+    <!-- 第二部分：危险性概述 -->
+    <hazard_info>
+      <hazard_category>第8.1类 酸性腐蚀品</hazard_category>
+      <exposure_routes>吸入 食入
+损害造血、神经、消化系统及肾脏。职业中毒主要为慢性。神经系统主要表现为神经衰
+弱综合征，周围神经病(以运动功能受累较明显)，重者出现铅中毒性脑病，消化系统表
+现有齿龈铅线、食欲不振、恶心、腹胀、腹泻或便秘；腹绞痛见于中等及较重病例。造</exposure_routes>
+      <health_hazards></health_hazards>
+      <environmental_hazards>无资料</environmental_hazards>
+      <fire_explosion_hazards>本品不燃、有毒、具有强腐蚀性、可致人体灼伤</fire_explosion_hazards>
+    </hazard_info>
+    <!-- 第三部分：成分/组成信息 -->
+    <component_info>
+      <components>
+        <component>
+          <component_name>硫酸铅</component_name>
+          <component_content>含游离酸＞3%</component_content>
+          <cas_number>7446-14-2</cas_number>
+        </component>
+      </components>
+    </component_info>
+    <!-- 第四部分：急救措施 -->
+    <first_aid>
+      <skin_contact>脱去污染的衣着，用肥皂水及清水彻底冲洗。</skin_contact>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧；呼吸停止时，立即进</eye_contact>
+      <inhalation>行人工呼吸。就医。</inhalation>
+      <ingestion>误服者嗽口，给饮牛奶或蛋清，就医。</ingestion>
+    </first_aid>
+    <!-- 第五部分：消防措施 -->
+    <fire_fighting>
+      <hazard_characteristics>受高热分解产生有毒的硫化物烟气。</hazard_characteristics>
+      <fire_risk_classification>无资料</fire_risk_classification>
+      <harmful_combustion_products>氧化铅、氧化硫。</harmful_combustion_products>
+      <suitable_extinguishing_media>不燃。火场周围可用的灭火介质。</suitable_extinguishing_media>
+    </fire_fighting>
+    <!-- 第六部分：泄漏应急处理 -->
+    <leak_response>
+      <emergency_procedures>隔离泄漏污染区，周围设警告标志，应急处理人员戴好防毒面具，穿化学防护服。不要 直接接触泄漏物，用洁净的铲子收集于干燥净洁有盖的容器中，用水泥、沥青或适当的 热塑性材料固化处理再废弃。如大量泄漏，收集回收或无害处理后废弃。</emergency_procedures>
+    </leak_response>
+    <!-- 第七部分：操作处置与储存 -->
+    <handling_storage>
+      <handling_precautions>无资料</handling_precautions>
+      <storage_precautions>储存于阴凉、通风仓间内。应与碱类、氰化物、食用化工原料等分开存放。搬运时轻装轻 卸，保持包装完整，防止洒漏。</storage_precautions>
+    </handling_storage>
+    <!-- 第八部分：接触控制/个体防护 -->
+    <exposure_control>
+      <china_mac>0.05</china_mac>
+      <former_soviet_mac>0.01mg／0.007mg[班平均]／m3(按Pb计)</former_soviet_mac>
+      <tlvtn>无资料</tlvtn>
+      <tlvvn>无资料</tlvvn>
+      <contact_limits>美国TLV-TWA：ACGIH 0.15mg[Pb]／m3美国TLV-STEL：未制订标准</contact_limits>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>密闭操作，局部排风。</engineering_controls>
+      <respiratory_protection>作业工人应该佩戴防尘口罩。必要时佩戴防毒面具。</respiratory_protection>
+      <eye_protection>必要时戴化学安全防护眼镜。</eye_protection>
+      <body_protection>穿防酸碱工作服。</body_protection>
+      <hand_protection>必要时戴防护手套。</hand_protection>
+      <other_protection>无资料</other_protection>
+    </exposure_control>
+    <!-- 第九部分：理化特性 -->
+    <physical_chemical>
+      <pH>无资料</pH>
+      <melting_point>1000(分解)</melting_point>
+      <boiling_point>无资料</boiling_point>
+      <flash_point>无意义</flash_point>
+      <relative_density>6.2</relative_density>
+      <relative_vapor_density>无资料</relative_vapor_density>
+      <solubility></solubility>
+      <molecular_formula>P</molecular_formula>
+      <molecular_weight>303.25</molecular_weight>
+      <main_components>无资料</main_components>
+      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
+      <log_kow>无资料</log_kow>
+      <critical_temperature>无资料</critical_temperature>
+      <ignition_temperature>无资料</ignition_temperature>
+      <autoignition_temperature>引燃温度(℃)：无意义</autoignition_temperature>
+      <flammability></flammability>
+      <appearance>白色单斜方晶体，味甜。</appearance>
+      <main_uses>用作草酸的触媒，用于制白色颜料、电池及快干漆等。</main_uses>
+      <other_properties>无资料</other_properties>
+      <heat_of_combustion>无资料</heat_of_combustion>
+      <critical_pressure>无资料</critical_pressure>
+      <explosive_upper_limit>无意义</explosive_upper_limit>
+      <explosive_lower_limit>无意义</explosive_lower_limit>
+    </physical_chemical>
+    <!-- 第十部分：稳定性和反应活性 -->
+    <stability_reactivity>
+      <stability>稳定</stability>
+      <incompatible_substances>强碱。</incompatible_substances>
+      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <polymerization_hazard>不能出现</polymerization_hazard>
+      <decomposition_products>无资料</decomposition_products>
+    </stability_reactivity>
+    <!-- 第十一部分：毒理学信息 -->
+    <toxicological>
+      <acute_toxicity>无资料</acute_toxicity>
+      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <rtecs>OG4375000</rtecs>
+      <irritation>无资料</irritation>
+      <sensitization>无资料</sensitization>
+      <mutagenicity>无资料</mutagenicity>
+      <teratogenicity>无资料</teratogenicity>
+      <carcinogenicity>无资料</carcinogenicity>
+    </toxicological>
+    <!-- 第十二部分：生态学资料 -->
+    <ecological>
+      <ecological_toxicity>无资料</ecological_toxicity>
+      <biodegradability>无资料</biodegradability>
+      <non_biodegradability>无资料</non_biodegradability>
+      <bioaccumulation></bioaccumulation>
+      <other_harmful_effects>好的卫生习惯。</other_harmful_effects>
+    </ecological>
+    <!-- 第十三部分：废弃处置 -->
+    <disposal>
+      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
+      <disposal_method>无资料</disposal_method>
+      <disposal_precautions>无资料</disposal_precautions>
+    </disposal>
+    <!-- 第十四部分：运输信息 -->
+    <transportation>
+      <dangerous_goods_number>81062</dangerous_goods_number>
+      <un_number>1794</un_number>
+      <imdg_page>8189</imdg_page>
+      <packaging_mark>20</packaging_mark>
+      <packing_group>Ⅱ</packing_group>
+      <packaging_method>无资料</packaging_method>
+      <transportation_precautions>无资料</transportation_precautions>
+    </transportation>
+    <!-- 第十五部分：法规信息 -->
+    <regulatory>
+      <regulatory_info>无资料</regulatory_info>
+    </regulatory>
+  </msds>
+</msds_list>

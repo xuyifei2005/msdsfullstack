@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msds_list>
+  <msds>
+    <!-- 第一部分：化学品及企业标识 -->
+    <basic_info>
+      <cas_number>98-82-8</cas_number>
+      <msds_code>MSDS#408</msds_code>
+      <product_name>异丙基苯</product_name>
+      <product_alias>枯烯；异丙苯</product_alias>
+      <product_english_name>isopropylbenzene</product_english_name>
+      <company_name></company_name>
+      <company_address></company_address>
+      <contact_phone></contact_phone>
+      <emergency_phone></emergency_phone>
+      <email></email>
+      <fax_number></fax_number>
+    </basic_info>
+    <!-- 第二部分：危险性概述 -->
+    <hazard_info>
+      <hazard_category>第3.3类，高闪点易燃液体</hazard_category>
+      <exposure_routes>吸入食入经皮吸收
+急性中毒表现与苯、甲苯相似，但麻醉作用出现较慢而持久。表现有粘膜刺激症状以及</exposure_routes>
+      <health_hazards>头晕、头痛、恶心、呕吐、步态蹒跚等。严重中毒可发生昏迷、抽搐等。本品对造血系统
+影响不明显。</health_hazards>
+      <environmental_hazards>无资料</environmental_hazards>
+      <fire_explosion_hazards>本品易燃。</fire_explosion_hazards>
+    </hazard_info>
+    <!-- 第三部分：成分/组成信息 -->
+    <component_info>
+      <components>
+        <component>
+          <component_name>异丙苯</component_name>
+          <component_content>100%</component_content>
+          <cas_number>98-82-8</cas_number>
+        </component>
+      </components>
+    </component_info>
+    <!-- 第四部分：急救措施 -->
+    <first_aid>
+      <skin_contact>脱去污染的衣着，用肥皂水和清水彻底冲洗皮肤。</skin_contact>
+      <eye_contact>提起眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即</eye_contact>
+      <inhalation>进行人工呼吸。就医。</inhalation>
+      <ingestion>饮足量温水，催吐。就医。</ingestion>
+    </first_aid>
+    <!-- 第五部分：消防措施 -->
+    <fire_fighting>
+      <hazard_characteristics>易燃，遇明火、高热或与氧化剂接触，有引起燃烧爆炸的危险。</hazard_characteristics>
+      <fire_risk_classification>乙</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳。 喷水冷却容器，可能的话将容器从火场移至空旷处。灭火剂：泡沫、二氧化碳、干粉、砂</harmful_combustion_products>
+      <suitable_extinguishing_media>土。</suitable_extinguishing_media>
+    </fire_fighting>
+    <!-- 第六部分：泄漏应急处理 -->
+    <leak_response>
+      <emergency_procedures>迅速撤离泄漏污染区人员至安全区，并进行隔离，严格限制出入。切断火源。建议应急处 理人员戴自给正压式呼吸器，穿防毒服。尽可能切断泄漏源。防止流入下水道、排洪沟等 应急处理： 限制性空间。小量泄漏：用砂土或其它不燃材料吸附或吸收。也可以用不燃性分散剂制成 的乳液刷洗，洗液稀释后放入废水系统。大量泄漏：构筑围堤或挖坑收容。用泡沫覆盖， 降低蒸气灾害。用防爆泵转移至槽车或专用收集器内，回收或运至废物处理场所处置。</emergency_procedures>
+    </leak_response>
+    <!-- 第七部分：操作处置与储存 -->
+    <handling_storage>
+      <handling_precautions></handling_precautions>
+      <storage_precautions>戴过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶耐油 手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄 漏到工作场所空气中。避免与氧化剂接触。灌装时应控制流速，且有接地装置，防止静电 积聚。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏 应急处理设备。倒空的容器可能残留有害物。 储存于阴凉、通风的库房。远离火种、热源。库温不宜超过30℃。保持容器密封。应与氧 化剂分开存放，切忌混储。采用防爆型照明、通风设施。禁止使用易产生火花的机械设备 和工具。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
+    </handling_storage>
+    <!-- 第八部分：接触控制/个体防护 -->
+    <exposure_control>
+      <china_mac>未制定标准</china_mac>
+      <former_soviet_mac>50</former_soviet_mac>
+      <tlvtn>OSHA50ppm,246mg/m3[皮];ACGIH50ppm,246mg/m3[皮]</tlvtn>
+      <tlvvn>未制定标准</tlvvn>
+      <contact_limits></contact_limits>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>生产过程密闭，加强通风。</engineering_controls>
+      <respiratory_protection></respiratory_protection>
+      <eye_protection>戴化学安全防护眼镜。</eye_protection>
+      <body_protection>穿防毒物渗透工作服。</body_protection>
+      <hand_protection>戴橡胶耐油手套。</hand_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
+    </exposure_control>
+    <!-- 第九部分：理化特性 -->
+    <physical_chemical>
+      <pH>无资料</pH>
+      <melting_point>-96.0</melting_point>
+      <boiling_point>152.4</boiling_point>
+      <flash_point>31</flash_point>
+      <relative_density>0.86</relative_density>
+      <relative_vapor_density>4.1</relative_vapor_density>
+      <solubility></solubility>
+      <molecular_formula>C9H12</molecular_formula>
+      <molecular_weight>120.19</molecular_weight>
+      <main_components>纯品</main_components>
+      <saturated_vapor_pressure>2.48(50℃)</saturated_vapor_pressure>
+      <log_kow>3.66</log_kow>
+      <critical_temperature>362.7</critical_temperature>
+      <ignition_temperature>420</ignition_temperature>
+      <autoignition_temperature>420</autoignition_temperature>
+      <flammability>易燃</flammability>
+      <appearance>无色液体，有特殊芳香气味。</appearance>
+      <main_uses>用于有机合成和用作溶剂。</main_uses>
+      <other_properties>无资料</other_properties>
+      <heat_of_combustion>4951.8</heat_of_combustion>
+      <critical_pressure>3.21</critical_pressure>
+      <explosive_upper_limit>6.0</explosive_upper_limit>
+      <explosive_lower_limit>0.8</explosive_lower_limit>
+    </physical_chemical>
+    <!-- 第十部分：稳定性和反应活性 -->
+    <stability_reactivity>
+      <stability>稳定</stability>
+      <incompatible_substances>强氧化剂。</incompatible_substances>
+      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <polymerization_hazard>不能出现</polymerization_hazard>
+      <decomposition_products>无资料</decomposition_products>
+    </stability_reactivity>
+    <!-- 第十一部分：毒理学信息 -->
+    <toxicological>
+      <acute_toxicity>LC50：24700mg/m3，2小时(小鼠吸入)</acute_toxicity>
+      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <rtecs>GR8575000</rtecs>
+      <irritation></irritation>
+      <sensitization>无资料</sensitization>
+      <mutagenicity>无资料</mutagenicity>
+      <teratogenicity>无资料</teratogenicity>
+      <carcinogenicity>无资料</carcinogenicity>
+    </toxicological>
+    <!-- 第十二部分：生态学资料 -->
+    <ecological>
+      <ecological_toxicity>无资料</ecological_toxicity>
+      <biodegradability>无资料</biodegradability>
+      <non_biodegradability>无资料</non_biodegradability>
+      <bioaccumulation></bioaccumulation>
+      <other_harmful_effects>蓄积作用。</other_harmful_effects>
+    </ecological>
+    <!-- 第十三部分：废弃处置 -->
+    <disposal>
+      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
+      <disposal_method></disposal_method>
+      <disposal_precautions>无资料</disposal_precautions>
+    </disposal>
+    <!-- 第十四部分：运输信息 -->
+    <transportation>
+      <dangerous_goods_number>33538</dangerous_goods_number>
+      <un_number>1918</un_number>
+      <imdg_page>3357</imdg_page>
+      <packaging_mark>7</packaging_mark>
+      <packing_group>O53</packing_group>
+      <packaging_method></packaging_method>
+      <transportation_precautions></transportation_precautions>
+    </transportation>
+    <!-- 第十五部分：法规信息 -->
+    <regulatory>
+      <regulatory_info></regulatory_info>
+    </regulatory>
+  </msds>
+</msds_list>

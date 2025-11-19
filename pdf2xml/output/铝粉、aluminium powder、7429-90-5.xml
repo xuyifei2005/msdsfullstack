@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msds_list>
+  <msds>
+    <!-- 第一部分：化学品及企业标识 -->
+    <basic_info>
+      <cas_number>7429-90-5</cas_number>
+      <msds_code>MSDS#486</msds_code>
+      <product_name>铝粉</product_name>
+      <product_alias>无资料</product_alias>
+      <product_english_name>aluminiumpowder</product_english_name>
+      <company_name></company_name>
+      <company_address></company_address>
+      <contact_phone></contact_phone>
+      <emergency_phone></emergency_phone>
+      <email></email>
+      <fax_number></fax_number>
+    </basic_info>
+    <!-- 第二部分：危险性概述 -->
+    <hazard_info>
+      <hazard_category>第4.3类遇湿易燃物品</hazard_category>
+      <exposure_routes>吸入食入
+长期吸入可致铝尘肺。表现为消瘦、极易疲劳、呼吸困难、咳嗽、咳痰等。溅入眼内，</exposure_routes>
+      <health_hazards>可发生局灶性坏死，角膜色素沉着，晶体膜改变及玻璃体混浊。对鼻、口、性器官粘膜
+有刺激性，甚至发生溃疡。可引起痤疮、湿疹、皮炎。</health_hazards>
+      <environmental_hazards>无资料</environmental_hazards>
+      <fire_explosion_hazards>本品遇湿易燃，具刺激性。</fire_explosion_hazards>
+    </hazard_info>
+    <!-- 第三部分：成分/组成信息 -->
+    <component_info>
+      <components>
+        <component>
+          <component_name>铝粉</component_name>
+          <component_content>100%</component_content>
+          <cas_number>7429-90-5</cas_number>
+        </component>
+      </components>
+    </component_info>
+    <!-- 第四部分：急救措施 -->
+    <first_aid>
+      <skin_contact>脱去污染的衣着，用肥皂水和清水彻底冲洗皮肤。</skin_contact>
+      <eye_contact>立即提起眼睑，用大量流动清水或生理盐水彻底冲洗至少15分钟。就医。</eye_contact>
+      <inhalation>脱离现场至空气新鲜处。</inhalation>
+      <ingestion>饮足量温水，催吐。就医。</ingestion>
+    </first_aid>
+    <!-- 第五部分：消防措施 -->
+    <fire_fighting>
+      <hazard_characteristics>发生剧烈的化学反应。与酸类或与强碱接触也能产生氢气，引起燃烧爆炸。粉体与空气可 形成爆炸性混合物,当达到一定浓度时,遇火星会发生爆炸。</hazard_characteristics>
+      <fire_risk_classification>乙</fire_risk_classification>
+      <harmful_combustion_products>氧化铝。</harmful_combustion_products>
+      <suitable_extinguishing_media>严禁用水、泡沫、二氧化碳扑救。可用适当的干砂、石粉将火闷熄。</suitable_extinguishing_media>
+    </fire_fighting>
+    <!-- 第六部分：泄漏应急处理 -->
+    <leak_response>
+      <emergency_procedures>隔离泄漏污染区，限制出入。切断火源。建议应急处理人员戴自给正压式呼吸器，穿防 静电工作服。不要直接接触泄漏物。小量泄漏：避免扬尘，用洁净的铲子收集于干燥、 洁净、有盖的容器中。转移回收。大量泄漏：用塑料布、帆布覆盖。使用无火花工具转 移回收。</emergency_procedures>
+    </leak_response>
+    <!-- 第七部分：操作处置与储存 -->
+    <handling_storage>
+      <handling_precautions></handling_precautions>
+      <storage_precautions>规程。建议操作人员佩戴自吸过滤式防尘口罩，戴化学安全防护眼镜，穿防静电工作服。 远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免产生粉尘。避 免与氧化剂、酸类、卤素接触。尤其要注意避免与水接触。在氮气中操作处置。搬运时要 轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。 倒空的容器可能残留有害物。 储存于阴凉、干燥、通风良好的库房。远离火种、热源。包装密封。应与氧化剂、酸类、 卤素等分开存放，切忌混储。采用防爆型照明、通风设施。禁止使用易产生火花的机械 设备和工具。储区应备有合适的材料收容泄漏物。</storage_precautions>
+    </handling_storage>
+    <!-- 第八部分：接触控制/个体防护 -->
+    <exposure_control>
+      <china_mac>未制定标准</china_mac>
+      <former_soviet_mac>2[Al]</former_soviet_mac>
+      <tlvtn>ACGIH10mg/m3[粉尘],5mg/m3[焊接烟雾]</tlvtn>
+      <tlvvn>未制定标准</tlvvn>
+      <contact_limits>美国TWA：ACGIH10mg／m3[粉尘]美国STEL：未制定标准</contact_limits>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>密闭操作，局部排风。最好采用湿式操作。</engineering_controls>
+      <respiratory_protection>空气中粉尘浓度超标时，应该佩戴自吸过滤式防尘口罩。必要时，建议佩戴空气呼吸器。</respiratory_protection>
+      <eye_protection>戴化学安全防护眼镜。</eye_protection>
+      <body_protection>穿防静电工作服。</body_protection>
+      <hand_protection>戴一般作业防护手套。</hand_protection>
+      <other_protection>实行就业前和定期的体检。防止尘肺。</other_protection>
+    </exposure_control>
+    <!-- 第九部分：理化特性 -->
+    <physical_chemical>
+      <pH>无资料</pH>
+      <melting_point>660</melting_point>
+      <boiling_point>2056</boiling_point>
+      <flash_point>无意义</flash_point>
+      <relative_density>2.70</relative_density>
+      <relative_vapor_density>无资料</relative_vapor_density>
+      <solubility></solubility>
+      <molecular_formula>A</molecular_formula>
+      <molecular_weight>26.97</molecular_weight>
+      <main_components>纯品</main_components>
+      <saturated_vapor_pressure>0.13(1284℃)</saturated_vapor_pressure>
+      <log_kow>无资料</log_kow>
+      <critical_temperature>无资料</critical_temperature>
+      <ignition_temperature>645</ignition_temperature>
+      <autoignition_temperature>645</autoignition_temperature>
+      <flammability></flammability>
+      <appearance>银白色粉末。</appearance>
+      <main_uses>用作颜料、油漆、烟花等，也用于冶金工业。</main_uses>
+      <other_properties>无资料</other_properties>
+      <heat_of_combustion>822.9</heat_of_combustion>
+      <critical_pressure>无资料</critical_pressure>
+      <explosive_upper_limit>无资料</explosive_upper_limit>
+      <explosive_lower_limit>37～50mg/m3</explosive_lower_limit>
+    </physical_chemical>
+    <!-- 第十部分：稳定性和反应活性 -->
+    <stability_reactivity>
+      <stability>稳定</stability>
+      <incompatible_substances>酸类、酰基氯、强氧化剂、卤素、氧。</incompatible_substances>
+      <conditions_to_avoid>潮湿空气。</conditions_to_avoid>
+      <polymerization_hazard>不能出现</polymerization_hazard>
+      <decomposition_products>无资料</decomposition_products>
+    </stability_reactivity>
+    <!-- 第十一部分：毒理学信息 -->
+    <toxicological>
+      <acute_toxicity>属微毒类</acute_toxicity>
+      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <rtecs>BD0330000</rtecs>
+      <irritation>无资料</irritation>
+      <sensitization>无资料</sensitization>
+      <mutagenicity>无资料</mutagenicity>
+      <teratogenicity>无资料</teratogenicity>
+      <carcinogenicity>无资料</carcinogenicity>
+    </toxicological>
+    <!-- 第十二部分：生态学资料 -->
+    <ecological>
+      <ecological_toxicity>无资料</ecological_toxicity>
+      <biodegradability>无资料</biodegradability>
+      <non_biodegradability>无资料</non_biodegradability>
+      <bioaccumulation>无资料</bioaccumulation>
+      <other_harmful_effects>进行就业前和定期的体检。防止尘肺。</other_harmful_effects>
+    </ecological>
+    <!-- 第十三部分：废弃处置 -->
+    <disposal>
+      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
+      <disposal_method></disposal_method>
+      <disposal_precautions>无资料</disposal_precautions>
+    </disposal>
+    <!-- 第十四部分：运输信息 -->
+    <transportation>
+      <dangerous_goods_number>43013</dangerous_goods_number>
+      <un_number>1396</un_number>
+      <imdg_page>4330</imdg_page>
+      <packaging_mark>10</packaging_mark>
+      <packing_group>O52</packing_group>
+      <packaging_method></packaging_method>
+      <transportation_precautions></transportation_precautions>
+    </transportation>
+    <!-- 第十五部分：法规信息 -->
+    <regulatory>
+      <regulatory_info></regulatory_info>
+    </regulatory>
+  </msds>
+</msds_list>

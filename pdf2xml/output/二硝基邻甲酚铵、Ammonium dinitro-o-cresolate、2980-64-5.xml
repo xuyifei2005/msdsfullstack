@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msds_list>
+  <msds>
+    <!-- 第一部分：化学品及企业标识 -->
+    <basic_info>
+      <cas_number>2980-64-5</cas_number>
+      <msds_code>MSDS#2023</msds_code>
+      <product_name>二硝基邻甲酚铵</product_name>
+      <product_alias>无资料</product_alias>
+      <product_english_name>Ammoniumdinitro-o-cresolate</product_english_name>
+      <company_name></company_name>
+      <company_address></company_address>
+      <contact_phone></contact_phone>
+      <emergency_phone></emergency_phone>
+      <email></email>
+      <fax_number></fax_number>
+    </basic_info>
+    <!-- 第二部分：危险性概述 -->
+    <hazard_info>
+      <hazard_category>第6.1类毒害品</hazard_category>
+      <exposure_routes>吸入食入经皮吸收</exposure_routes>
+      <health_hazards>有毒。吸入、摄入或经皮肤吸收会中毒。本品受热分解会放出有毒的Nox和氨烟雾。</health_hazards>
+      <environmental_hazards>无资料</environmental_hazards>
+      <fire_explosion_hazards>本品可燃、有毒</fire_explosion_hazards>
+    </hazard_info>
+    <!-- 第三部分：成分/组成信息 -->
+    <component_info>
+      <components>
+        <component>
+          <component_name>二硝基邻甲酚铵</component_name>
+          <component_content>100%</component_content>
+          <cas_number>2980-64-5</cas_number>
+        </component>
+      </components>
+    </component_info>
+    <!-- 第四部分：急救措施 -->
+    <first_aid>
+      <skin_contact>用肥皂水及清水彻底冲洗。就医。</skin_contact>
+      <eye_contact>拉开眼睑，用流动清水冲洗15分钟。就医。</eye_contact>
+      <inhalation>脱离现场至空气新鲜处。呼吸困难时给输氧。就医。</inhalation>
+      <ingestion>误服者，饮适量温水，催吐。就医。</ingestion>
+    </first_aid>
+    <!-- 第五部分：消防措施 -->
+    <fire_fighting>
+      <hazard_characteristics>敏感性极强的爆炸性物质。受高热分解放出有毒的气体。</hazard_characteristics>
+      <fire_risk_classification>无资料</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物、氨。</harmful_combustion_products>
+      <suitable_extinguishing_media>雾状水、泡沫、二氧化碳、干粉。</suitable_extinguishing_media>
+    </fire_fighting>
+    <!-- 第六部分：泄漏应急处理 -->
+    <leak_response>
+      <emergency_procedures>疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，建议应急处理人员戴自给式呼 吸器，穿化学防护服。用砂土、蛭石或其它惰性材料吸收，收集运至废物处理场所。被污 染地面用肥皂或洗涤剂刷洗，对污染地带进行通风。如大量泄漏，利用围堤收容，然后收 集、转移、回收或无害处理后废弃。</emergency_procedures>
+    </leak_response>
+    <!-- 第七部分：操作处置与储存 -->
+    <handling_storage>
+      <handling_precautions>无资料</handling_precautions>
+      <storage_precautions>储存于阴凉、干燥、通风良好的不燃库房。专人保管。远离火种、热源。保持容器密封。 应与易燃物、可燃物、还原剂、重金属(特别是铅)及其化合物、食用化工原料等分开存放。 搬运时要轻装轻卸，防止包装及容器损坏。操作现场不得吸烟、饮水、进食。分装和搬运 作业要注意个人防护。</storage_precautions>
+    </handling_storage>
+    <!-- 第八部分：接触控制/个体防护 -->
+    <exposure_control>
+      <china_mac>无资料</china_mac>
+      <former_soviet_mac>无资料</former_soviet_mac>
+      <tlvtn>无资料</tlvtn>
+      <tlvvn>无资料</tlvvn>
+      <contact_limits>美国TLV-TWA：未制订标准美国TLV-STEL：未制订标准</contact_limits>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>严加密闭，提供充分的局部排风或全面排风。</engineering_controls>
+      <respiratory_protection>可能接触其蒸气时，佩戴防毒口罩。空气中浓度较高时，应该佩戴自给式呼吸器。</respiratory_protection>
+      <eye_protection>戴化学安全防护眼镜。</eye_protection>
+      <body_protection>穿相应的防护服。</body_protection>
+      <hand_protection>戴防护手套。</hand_protection>
+      <other_protection>无资料</other_protection>
+    </exposure_control>
+    <!-- 第九部分：理化特性 -->
+    <physical_chemical>
+      <melting_point></melting_point>
+      <boiling_point></boiling_point>
+      <flash_point></flash_point>
+      <relative_density></relative_density>
+      <solubility></solubility>
+      <molecular_formula></molecular_formula>
+      <molecular_weight></molecular_weight>
+    </physical_chemical>
+    <!-- 第十部分：稳定性和反应活性 -->
+    <stability_reactivity>
+      <stability>稳定</stability>
+      <incompatible_substances>还原剂。</incompatible_substances>
+      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <polymerization_hazard>不能出现</polymerization_hazard>
+      <decomposition_products>无资料</decomposition_products>
+    </stability_reactivity>
+    <!-- 第十一部分：毒理学信息 -->
+    <toxicological>
+      <acute_toxicity>LD50：27.5mg／kg(大鼠皮下)LC50：</acute_toxicity>
+      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <rtecs>无资料</rtecs>
+      <irritation>无资料</irritation>
+      <sensitization>无资料</sensitization>
+      <mutagenicity>无资料</mutagenicity>
+      <teratogenicity>无资料</teratogenicity>
+      <carcinogenicity>无资料</carcinogenicity>
+    </toxicological>
+    <!-- 第十二部分：生态学资料 -->
+    <ecological>
+      <ecological_toxicity>无资料</ecological_toxicity>
+      <biodegradability>无资料</biodegradability>
+      <non_biodegradability>无资料</non_biodegradability>
+      <bioaccumulation>无资料</bioaccumulation>
+      <other_harmful_effects>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。保持良好的卫生习惯。</other_harmful_effects>
+    </ecological>
+    <!-- 第十三部分：废弃处置 -->
+    <disposal>
+      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
+      <disposal_method>无资料</disposal_method>
+      <disposal_precautions>无资料</disposal_precautions>
+    </disposal>
+    <!-- 第十四部分：运输信息 -->
+    <transportation>
+      <dangerous_goods_number>61076</dangerous_goods_number>
+      <un_number>1843</un_number>
+      <imdg_page>6064</imdg_page>
+      <packaging_mark>14，38</packaging_mark>
+      <packing_group>Ⅱ</packing_group>
+      <packaging_method>无资料</packaging_method>
+      <transportation_precautions>无资料</transportation_precautions>
+    </transportation>
+    <!-- 第十五部分：法规信息 -->
+    <regulatory>
+      <regulatory_info>无资料</regulatory_info>
+    </regulatory>
+  </msds>
+</msds_list>

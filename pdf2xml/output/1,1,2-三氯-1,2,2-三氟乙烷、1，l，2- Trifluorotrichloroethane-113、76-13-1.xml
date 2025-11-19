@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msds_list>
+  <msds>
+    <!-- 第一部分：化学品及企业标识 -->
+    <basic_info>
+      <cas_number>76-13-1</cas_number>
+      <msds_code>MSDS#1035</msds_code>
+      <product_name>1,1,2-三氯-1,2,2-三氟乙烷</product_name>
+      <product_alias>R113；1,2,2-三氯三氟乙烷</product_alias>
+      <product_english_name>1</product_english_name>
+      <company_name></company_name>
+      <company_address></company_address>
+      <contact_phone></contact_phone>
+      <emergency_phone></emergency_phone>
+      <email></email>
+      <fax_number></fax_number>
+    </basic_info>
+    <!-- 第二部分：危险性概述 -->
+    <hazard_info>
+      <hazard_category>第6.1类 毒害品</hazard_category>
+      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
+      <health_hazards>长时间接触有麻醉作用。对眼和皮肤有刺激性。动物实验表明，本品对心血管系统有毒性作用。</health_hazards>
+      <environmental_hazards>无资料</environmental_hazards>
+      <fire_explosion_hazards>本品有毒</fire_explosion_hazards>
+    </hazard_info>
+    <!-- 第三部分：成分/组成信息 -->
+    <component_info>
+      <components>
+        <component>
+          <component_name>1，1，2-三氯三氟乙烷；氟利昂113</component_name>
+          <component_content>100%</component_content>
+          <cas_number>76-13-1</cas_number>
+        </component>
+      </components>
+    </component_info>
+    <!-- 第四部分：急救措施 -->
+    <first_aid>
+      <skin_contact>脱去污染的衣着，用流动清水冲洗。</skin_contact>
+      <eye_contact>立即提起眼睑，用大量流动清水彻底冲洗。</eye_contact>
+      <inhalation>脱离现场至空气新鲜处。必要时进行人工呼吸。就医。</inhalation>
+      <ingestion>误服者给饮大量温水，催吐，就医。</ingestion>
+    </first_aid>
+    <!-- 第五部分：消防措施 -->
+    <fire_fighting>
+      <hazard_characteristics>反应，引起分解。</hazard_characteristics>
+      <fire_risk_classification>无资料</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氯化氢、氟化氢。</harmful_combustion_products>
+      <suitable_extinguishing_media>不燃。</suitable_extinguishing_media>
+    </fire_fighting>
+    <!-- 第六部分：泄漏应急处理 -->
+    <leak_response>
+      <emergency_procedures>疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，建议应急处理人员戴自给式呼吸器， 穿化学防护服。不要直接接触泄漏物，在确保安全情况下堵漏。用沙土、蛭石或其它惰性材料 吸收，然后收集运至废物处理场所处置。也可以用不燃性分散剂制成的乳液刷洗，经稀释的洗</emergency_procedures>
+    </leak_response>
+    <!-- 第七部分：操作处置与储存 -->
+    <handling_storage>
+      <handling_precautions>无资料</handling_precautions>
+      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。避光保存。保持容器密封。应与氧化剂、食用化 工原料分开存放。搬运时要轻装轻卸，防止包装及容器损坏。分装和搬运作业要注意个人防护。</storage_precautions>
+    </handling_storage>
+    <!-- 第八部分：接触控制/个体防护 -->
+    <exposure_control>
+      <china_mac>未制定标准</china_mac>
+      <former_soviet_mac>无资料</former_soviet_mac>
+      <tlvtn>无资料</tlvtn>
+      <tlvvn>无资料</tlvvn>
+      <contact_limits>美国STEL：ACGIH 1250ppm，9590mg／m3</contact_limits>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>生产过程密闭，加强通风。</engineering_controls>
+      <respiratory_protection>空气中浓度较高时，应该佩带防毒面具。紧急事态抢救或逃生时，佩带自给式呼吸器。</respiratory_protection>
+      <eye_protection>戴安全防护眼镜。</eye_protection>
+      <body_protection>穿相应的防护服。</body_protection>
+      <hand_protection>戴防护手套。</hand_protection>
+      <other_protection>无资料</other_protection>
+    </exposure_control>
+    <!-- 第九部分：理化特性 -->
+    <physical_chemical>
+      <pH>无资料</pH>
+      <melting_point>-35</melting_point>
+      <boiling_point>47.6</boiling_point>
+      <flash_point>无意义</flash_point>
+      <relative_density>1.58</relative_density>
+      <relative_vapor_density>6.5</relative_vapor_density>
+      <solubility></solubility>
+      <molecular_formula>C2C</molecular_formula>
+      <molecular_weight>187.39</molecular_weight>
+      <main_components>无资料</main_components>
+      <saturated_vapor_pressure>37.86／20℃</saturated_vapor_pressure>
+      <log_kow>无资料</log_kow>
+      <critical_temperature>214.1</critical_temperature>
+      <ignition_temperature>无资料</ignition_temperature>
+      <autoignition_temperature>无意义</autoignition_temperature>
+      <flammability></flammability>
+      <appearance>无色无味易挥发的透明液体。</appearance>
+      <main_uses>用作聚三氟氯乙烯单体，也用作致冷剂、清洗剂、干洗剂、发泡剂、灭火剂和溶剂等。</main_uses>
+      <other_properties>无资料</other_properties>
+      <heat_of_combustion>无资料</heat_of_combustion>
+      <critical_pressure>3.41</critical_pressure>
+      <explosive_upper_limit>无意义</explosive_upper_limit>
+      <explosive_lower_limit>无意义</explosive_lower_limit>
+    </physical_chemical>
+    <!-- 第十部分：稳定性和反应活性 -->
+    <stability_reactivity>
+      <stability>稳定</stability>
+      <incompatible_substances>活性金属粉末、铝、镁、锌、钾、钠。</incompatible_substances>
+      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <polymerization_hazard>不能出现</polymerization_hazard>
+      <decomposition_products>无资料</decomposition_products>
+    </stability_reactivity>
+    <!-- 第十一部分：毒理学信息 -->
+    <toxicological>
+      <acute_toxicity>LD50：43000mg／kg(大鼠经口)LC50：</acute_toxicity>
+      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <rtecs>KJ4000000</rtecs>
+      <irritation>无资料</irritation>
+      <sensitization>无资料</sensitization>
+      <mutagenicity>无资料</mutagenicity>
+      <teratogenicity>无资料</teratogenicity>
+      <carcinogenicity>无资料</carcinogenicity>
+    </toxicological>
+    <!-- 第十二部分：生态学资料 -->
+    <ecological>
+      <ecological_toxicity>无资料</ecological_toxicity>
+      <biodegradability>无资料</biodegradability>
+      <non_biodegradability>无资料</non_biodegradability>
+      <bioaccumulation></bioaccumulation>
+      <other_harmful_effects>注意个人清洁卫生。</other_harmful_effects>
+    </ecological>
+    <!-- 第十三部分：废弃处置 -->
+    <disposal>
+      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
+      <disposal_method>无资料</disposal_method>
+      <disposal_precautions>无资料</disposal_precautions>
+    </disposal>
+    <!-- 第十四部分：运输信息 -->
+    <transportation>
+      <dangerous_goods_number>61573</dangerous_goods_number>
+      <un_number>无资料</un_number>
+      <imdg_page>无资料</imdg_page>
+      <packaging_mark>15</packaging_mark>
+      <packing_group>Ⅲ</packing_group>
+      <packaging_method>无资料</packaging_method>
+      <transportation_precautions>无资料</transportation_precautions>
+    </transportation>
+    <!-- 第十五部分：法规信息 -->
+    <regulatory>
+      <regulatory_info>无资料</regulatory_info>
+    </regulatory>
+  </msds>
+</msds_list>

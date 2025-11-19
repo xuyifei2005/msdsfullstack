@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msds_list>
+  <msds>
+    <!-- 第一部分：化学品及企业标识 -->
+    <basic_info>
+      <cas_number>100-42-5</cas_number>
+      <msds_code>MSDS#101</msds_code>
+      <product_name>苯乙烯[稳定的]</product_name>
+      <product_alias>乙烯苯</product_alias>
+      <product_english_name>styrene,stabilized</product_english_name>
+      <company_name></company_name>
+      <company_address></company_address>
+      <contact_phone></contact_phone>
+      <emergency_phone></emergency_phone>
+      <email></email>
+      <fax_number></fax_number>
+    </basic_info>
+    <!-- 第二部分：危险性概述 -->
+    <hazard_info>
+      <hazard_category>第3.3类 高闪点易燃液体</hazard_category>
+      <exposure_routes>吸入 食入 经皮吸收
+对眼和上呼吸道粘膜有刺激和麻醉作用。急性中毒：高浓度时，立即引起眼及上呼吸道粘
+膜的刺激，出现眼痛、流泪、流涕、喷嚏、咽痛、咳嗽等，继之头痛、头晕、恶心、呕吐、</exposure_routes>
+      <health_hazards>全身乏力等；严重者可有眩晕、步态蹒跚。眼部受苯乙烯液体污染时，可致灼伤。慢性影
+响：常见神经衰弱综合征，有头痛、乏力、恶心、食欲减退、腹胀、忧郁、健忘、指颤等。
+对呼吸道有刺激作用，长期接触有时引起阻塞性肺部病变。皮肤粗糙、皲裂和增厚。</health_hazards>
+      <environmental_hazards></environmental_hazards>
+      <fire_explosion_hazards>本品易燃，为可疑致癌物，具刺激性。</fire_explosion_hazards>
+    </hazard_info>
+    <!-- 第三部分：成分/组成信息 -->
+    <component_info>
+      <components>
+        <component>
+          <component_name>苯乙烯</component_name>
+          <component_content>≥99.5％</component_content>
+          <cas_number>100-42-5</cas_number>
+        </component>
+      </components>
+    </component_info>
+    <!-- 第四部分：急救措施 -->
+    <first_aid>
+      <skin_contact></skin_contact>
+      <eye_contact></eye_contact>
+      <inhalation></inhalation>
+      <ingestion></ingestion>
+    </first_aid>
+    <!-- 第五部分：消防措施 -->
+    <fire_fighting>
+      <hazard_characteristics>猛烈聚合，放出大量热量。其蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会 着火回燃。</hazard_characteristics>
+      <fire_risk_classification>乙</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳。 尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。灭火剂：泡沫、</harmful_combustion_products>
+      <suitable_extinguishing_media>干粉、二氧化碳、砂土。用水灭火无效。遇大火，消防人员须在有防护掩蔽处操作。</suitable_extinguishing_media>
+    </fire_fighting>
+    <!-- 第六部分：泄漏应急处理 -->
+    <leak_response>
+      <emergency_procedures>迅速撤离泄漏污染区人员至安全区，并进行隔离，严格限制出入。切断火源。建议应急处 理人员戴自给正压式呼吸器，穿防毒服。尽可能切断泄漏源。防止流入下水道、排洪沟等 应急处理： 限制性空间。小量泄漏：用活性炭或其它惰性材料吸收。也可以用不燃性分散剂制成的乳 液刷洗，洗液稀释后放入废水系统。大量泄漏：构筑围堤或挖坑收容。用泡沫覆盖，降低 蒸气灾害。用防爆泵转移至槽车或专用收集器内，回收或运至废物处理场所处置。</emergency_procedures>
+    </leak_response>
+    <!-- 第七部分：操作处置与储存 -->
+    <handling_storage>
+      <handling_precautions></handling_precautions>
+      <storage_precautions>戴过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶耐油 手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄 漏到工作场所空气中。避免与氧化剂、酸类接触。灌装时应控制流速，且有接地装置，防 止静电积聚。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材 及泄漏应急处理设备。倒空的容器可能残留有害物。 通常商品加有阻聚剂。储存于阴凉、通风的库房。远离火种、热源。库温不宜超过30℃。 包装要求密封，不可与空气接触。应与氧化剂、酸类分开存放，切忌混储。不宜大量储 存或久存。采用防爆型照明、通风设施。禁止使用易产生火花的机械设备和工具。储区 应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
+    </handling_storage>
+    <!-- 第八部分：接触控制/个体防护 -->
+    <exposure_control>
+      <china_mac>40</china_mac>
+      <former_soviet_mac>5</former_soviet_mac>
+      <tlvtn>OSHA 100ppm; ACGIH 50ppm,213mg/m3[皮]</tlvtn>
+      <tlvvn>ACGIH 100ppm,426mg/m3[皮]</tlvvn>
+      <contact_limits>m3</contact_limits>
+      <monitoring_method>气相色谱法</monitoring_method>
+      <engineering_controls>生产过程密闭，加强通风。</engineering_controls>
+      <respiratory_protection></respiratory_protection>
+      <eye_protection>一般不需要特殊防护，高浓度接触时可戴化学安全防护眼镜。</eye_protection>
+      <body_protection>穿防毒物渗透工作服。</body_protection>
+      <hand_protection>戴橡胶耐油手套。</hand_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
+    </exposure_control>
+    <!-- 第九部分：理化特性 -->
+    <physical_chemical>
+      <pH>无资料</pH>
+      <melting_point>-30.6</melting_point>
+      <boiling_point>146</boiling_point>
+      <flash_point>34.4</flash_point>
+      <relative_density>0.91</relative_density>
+      <relative_vapor_density>3.6</relative_vapor_density>
+      <solubility></solubility>
+      <molecular_formula>C8H8</molecular_formula>
+      <molecular_weight>104.14</molecular_weight>
+      <main_components></main_components>
+      <saturated_vapor_pressure></saturated_vapor_pressure>
+      <log_kow>3.2</log_kow>
+      <critical_temperature>369</critical_temperature>
+      <ignition_temperature>490</ignition_temperature>
+      <autoignition_temperature>490</autoignition_temperature>
+      <flammability>易燃</flammability>
+      <appearance>无色透明油状液体。</appearance>
+      <main_uses>用于制聚苯乙烯、合成橡胶、离子交换树脂等。</main_uses>
+      <other_properties>无资料</other_properties>
+      <heat_of_combustion>4376.9</heat_of_combustion>
+      <critical_pressure>3.81</critical_pressure>
+      <explosive_upper_limit>6.1</explosive_upper_limit>
+      <explosive_lower_limit>1.1</explosive_lower_limit>
+    </physical_chemical>
+    <!-- 第十部分：稳定性和反应活性 -->
+    <stability_reactivity>
+      <stability>稳定</stability>
+      <incompatible_substances>强氧化剂、酸类。</incompatible_substances>
+      <conditions_to_avoid>光照、空气。</conditions_to_avoid>
+      <polymerization_hazard>能发生</polymerization_hazard>
+      <decomposition_products>无资料</decomposition_products>
+    </stability_reactivity>
+    <!-- 第十一部分：毒理学信息 -->
+    <toxicological>
+      <acute_toxicity>LC50：24000mg/m3，4小时(大鼠吸入)</acute_toxicity>
+      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <rtecs>WL3675000</rtecs>
+      <irritation></irritation>
+      <sensitization>无资料</sensitization>
+      <mutagenicity>无资料</mutagenicity>
+      <teratogenicity>无资料</teratogenicity>
+      <carcinogenicity>无资料</carcinogenicity>
+    </toxicological>
+    <!-- 第十二部分：生态学资料 -->
+    <ecological>
+      <ecological_toxicity>无资料</ecological_toxicity>
+      <biodegradability>无资料</biodegradability>
+      <non_biodegradability>无资料</non_biodegradability>
+      <bioaccumulation></bioaccumulation>
+      <other_harmful_effects>物应给予特别注意。由于其挥发性强，在大气中易被光解，也可被生物降解和化学降解，</other_harmful_effects>
+    </ecological>
+    <!-- 第十三部分：废弃处置 -->
+    <disposal>
+      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
+      <disposal_method></disposal_method>
+      <disposal_precautions>无资料</disposal_precautions>
+    </disposal>
+    <!-- 第十四部分：运输信息 -->
+    <transportation>
+      <dangerous_goods_number>33541</dangerous_goods_number>
+      <un_number>2055</un_number>
+      <imdg_page>3381</imdg_page>
+      <packaging_mark>7</packaging_mark>
+      <packing_group>O53</packing_group>
+      <packaging_method></packaging_method>
+      <transportation_precautions></transportation_precautions>
+    </transportation>
+    <!-- 第十五部分：法规信息 -->
+    <regulatory>
+      <regulatory_info></regulatory_info>
+    </regulatory>
+  </msds>
+</msds_list>

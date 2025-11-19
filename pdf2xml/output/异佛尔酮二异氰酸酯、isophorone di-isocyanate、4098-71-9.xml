@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msds_list>
+  <msds>
+    <!-- 第一部分：化学品及企业标识 -->
+    <basic_info>
+      <cas_number>4098-71-9</cas_number>
+      <msds_code>MSDS#2846</msds_code>
+      <product_name>异佛尔酮二异氰酸酯</product_name>
+      <product_alias>无资料</product_alias>
+      <product_english_name>isophorone di-isocyanate</product_english_name>
+      <company_name></company_name>
+      <company_address></company_address>
+      <contact_phone></contact_phone>
+      <emergency_phone></emergency_phone>
+      <email></email>
+      <fax_number></fax_number>
+    </basic_info>
+    <!-- 第二部分：危险性概述 -->
+    <hazard_info>
+      <hazard_category>第6.1类 毒害品</hazard_category>
+      <exposure_routes>吸入 食入 经皮吸收
+吸入、摄入或经皮肤吸收后对身体有害。蒸气或烟雾对眼睛、粘膜和上呼吸道有强烈刺激</exposure_routes>
+      <health_hazards>作用。</health_hazards>
+      <environmental_hazards>无资料</environmental_hazards>
+      <fire_explosion_hazards>本品可燃、具有强刺激性</fire_explosion_hazards>
+    </hazard_info>
+    <!-- 第三部分：成分/组成信息 -->
+    <component_info>
+      <components>
+        <component>
+          <component_name>异佛尔酮二异氰酸酯</component_name>
+          <component_content>100%</component_content>
+          <cas_number>4098-71-9</cas_number>
+        </component>
+      </components>
+    </component_info>
+    <!-- 第四部分：急救措施 -->
+    <first_aid>
+      <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。就医。</skin_contact>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行</eye_contact>
+      <inhalation>人工呼吸。就医。</inhalation>
+      <ingestion>误服者立即漱口，给饮牛奶或蛋清。就医。</ingestion>
+    </first_aid>
+    <!-- 第五部分：消防措施 -->
+    <fire_fighting>
+      <hazard_characteristics>遇明火、高热可燃。遇水、潮气、触媒和高热易发生聚合。受高热分解，放出有毒的烟气。</hazard_characteristics>
+      <fire_risk_classification>丙</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物、氰化氢。 合适的灭火介质:干粉、二氧化碳或耐醇泡沫。 不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
+      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安 全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+    </fire_fighting>
+    <!-- 第六部分：泄漏应急处理 -->
+    <leak_response>
+      <emergency_procedures>疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，建议应急处理人员戴自给式 呼吸器，穿化学防护服。不要直接接触泄漏物，用砂土、干燥石灰或苏打灰混合，收集 于一个密闭的容器中，运至废物处理场所。用水刷洗泄漏污染区，对污染地带进行通风。 如大量泄漏，利用围堤收容，然后收集、转移、回收或无害处理后废弃。</emergency_procedures>
+    </leak_response>
+    <!-- 第七部分：操作处置与储存 -->
+    <handling_storage>
+      <handling_precautions></handling_precautions>
+      <storage_precautions>火花、明火和热表面。采取措施防止静电积累。 储存于阴凉、干燥、通风良好的不燃库房。远离火种、热源。专人保管。保持容器密封。 防止受潮和雨淋。应与碱类、醇类、胺类、潮湿物品、氧化剂、食用化工原料等分开存 放。操作现场不得吸烟、饮水、进食。搬运时要轻装轻卸，防止包装及容器损坏。雨天 不宜运输。分装和搬运作业要注意个人防护。</storage_precautions>
+    </handling_storage>
+    <!-- 第八部分：接触控制/个体防护 -->
+    <exposure_control>
+      <china_mac>未制订标准</china_mac>
+      <former_soviet_mac>未制订标准</former_soviet_mac>
+      <tlvtn>无资料</tlvtn>
+      <tlvvn>无资料</tlvvn>
+      <contact_limits>美国TLV-TWA：0.005×(10-6)(皮)美国TLV-STEL：未制订标准</contact_limits>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>密闭操作，局部排风。</engineering_controls>
+      <respiratory_protection>作业工人佩戴防毒口罩。紧急事态抢救或逃生时，应该佩戴自给式呼吸器。</respiratory_protection>
+      <eye_protection>戴化学安全防护眼镜。</eye_protection>
+      <body_protection>穿相应的防护服。</body_protection>
+      <hand_protection>戴防化学品手套。</hand_protection>
+      <other_protection>无资料</other_protection>
+    </exposure_control>
+    <!-- 第九部分：理化特性 -->
+    <physical_chemical>
+      <pH>无资料</pH>
+      <melting_point>-60</melting_point>
+      <boiling_point>158／1.33kPa</boiling_point>
+      <flash_point>162</flash_point>
+      <relative_density>1.0615</relative_density>
+      <relative_vapor_density>无资料</relative_vapor_density>
+      <solubility></solubility>
+      <molecular_formula>C12H18N2O2</molecular_formula>
+      <molecular_weight>222.29</molecular_weight>
+      <main_components>无资料</main_components>
+      <saturated_vapor_pressure>0.00004／20℃</saturated_vapor_pressure>
+      <log_kow>无资料</log_kow>
+      <critical_temperature>无资料</critical_temperature>
+      <ignition_temperature>无资料</ignition_temperature>
+      <autoignition_temperature>无资料</autoignition_temperature>
+      <flammability></flammability>
+      <appearance>无色至微黄色液体。</appearance>
+      <main_uses>用于生产油漆涂料、弹性体、特种纤维、粘合剂等，也用于有机合成。</main_uses>
+      <other_properties>无资料</other_properties>
+      <heat_of_combustion>无资料</heat_of_combustion>
+      <critical_pressure>无资料</critical_pressure>
+      <explosive_upper_limit>无资料</explosive_upper_limit>
+      <explosive_lower_limit>无资料</explosive_lower_limit>
+    </physical_chemical>
+    <!-- 第十部分：稳定性和反应活性 -->
+    <stability_reactivity>
+      <stability>稳定</stability>
+      <incompatible_substances>强氧化剂、碱类、醇类、胺类、水。</incompatible_substances>
+      <conditions_to_avoid>接触潮湿空气。</conditions_to_avoid>
+      <polymerization_hazard>能发生</polymerization_hazard>
+      <decomposition_products>无资料</decomposition_products>
+    </stability_reactivity>
+    <!-- 第十一部分：毒理学信息 -->
+    <toxicological>
+      <acute_toxicity>LD50：1060mg／kg(大鼠经皮)LC50：123mg／m3(大鼠吸入)4h</acute_toxicity>
+      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <rtecs>NQ9370000</rtecs>
+      <irritation>无资料</irritation>
+      <sensitization>无资料</sensitization>
+      <mutagenicity>无资料</mutagenicity>
+      <teratogenicity>无资料</teratogenicity>
+      <carcinogenicity>无资料</carcinogenicity>
+    </toxicological>
+    <!-- 第十二部分：生态学资料 -->
+    <ecological>
+      <ecological_toxicity>无资料</ecological_toxicity>
+      <biodegradability>无资料</biodegradability>
+      <non_biodegradability>无资料</non_biodegradability>
+      <bioaccumulation>无资料</bioaccumulation>
+      <other_harmful_effects>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。保持良好的卫生习惯。</other_harmful_effects>
+    </ecological>
+    <!-- 第十三部分：废弃处置 -->
+    <disposal>
+      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
+      <disposal_method>无资料</disposal_method>
+      <disposal_precautions>无资料</disposal_precautions>
+    </disposal>
+    <!-- 第十四部分：运输信息 -->
+    <transportation>
+      <dangerous_goods_number>61654</dangerous_goods_number>
+      <un_number>2290</un_number>
+      <imdg_page>6168</imdg_page>
+      <packaging_mark>15</packaging_mark>
+      <packing_group>Ⅲ</packing_group>
+      <packaging_method>无资料</packaging_method>
+      <transportation_precautions>无资料</transportation_precautions>
+    </transportation>
+    <!-- 第十五部分：法规信息 -->
+    <regulatory>
+      <regulatory_info>无资料</regulatory_info>
+    </regulatory>
+  </msds>
+</msds_list>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msds_list>
+  <msds>
+    <!-- 第一部分：化学品及企业标识 -->
+    <basic_info>
+      <cas_number>75-04-7</cas_number>
+      <msds_code>MSDS#109</msds_code>
+      <product_name>乙胺</product_name>
+      <product_alias>氨基乙烷</product_alias>
+      <product_english_name>ethylamine</product_english_name>
+      <company_name></company_name>
+      <company_address></company_address>
+      <contact_phone></contact_phone>
+      <emergency_phone></emergency_phone>
+      <email></email>
+      <fax_number></fax_number>
+    </basic_info>
+    <!-- 第二部分：危险性概述 -->
+    <hazard_info>
+      <hazard_category>第2.1类易燃气体</hazard_category>
+      <exposure_routes>吸入食入经皮吸收
+接触乙胺蒸气可产生眼部刺激、角膜损伤和上呼吸道刺激。液体溅入眼内，可致严重灼伤；</exposure_routes>
+      <health_hazards>皮肤接触可致灼伤。</health_hazards>
+      <environmental_hazards>无资料</environmental_hazards>
+      <fire_explosion_hazards>本品易燃，具刺激性。</fire_explosion_hazards>
+    </hazard_info>
+    <!-- 第三部分：成分/组成信息 -->
+    <component_info>
+      <components>
+        <component>
+          <component_name>乙胺</component_name>
+          <component_content>100%</component_content>
+          <cas_number>75-04-7</cas_number>
+        </component>
+      </components>
+    </component_info>
+    <!-- 第四部分：急救措施 -->
+    <first_aid>
+      <skin_contact>立即脱去污染的衣着，用大量流动清水冲洗至少15分钟。就医。</skin_contact>
+      <eye_contact>立即提起眼睑，用大量流动清水或生理盐水彻底冲洗至少15分钟。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即</eye_contact>
+      <inhalation>进行人工呼吸。就医。</inhalation>
+      <ingestion>用水漱口，给饮牛奶或蛋清。就医。</ingestion>
+    </first_aid>
+    <!-- 第五部分：消防措施 -->
+    <fire_fighting>
+      <hazard_characteristics>反应。其蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。</hazard_characteristics>
+      <fire_risk_classification>甲</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氧化氮。 切断气源。若不能切断气源，则不允许熄灭泄漏处的火焰。喷水冷却容器，可能的话将容</harmful_combustion_products>
+      <suitable_extinguishing_media>器从火场移至空旷处。灭火剂：雾状水、抗溶性泡沫、干粉、二氧化碳。</suitable_extinguishing_media>
+    </fire_fighting>
+    <!-- 第六部分：泄漏应急处理 -->
+    <leak_response>
+      <emergency_procedures>迅速撤离泄漏污染区人员至上风处，并进行隔离，严格限制出入。切断火源。建议应急处 理人员戴自给正压式呼吸器，穿防毒服。尽可能切断泄漏源。若是气体，用工业覆盖层或 吸附/吸收剂盖住泄漏点附近的下水道等地方，防止气体进入。合理通风，加速扩散。喷雾 状水稀释、溶解。构筑围堤或挖坑收容产生的大量废水。如有可能，将残余气或漏出气用 是液体，用砂土、蛭石或其它惰性材料吸收。若大量泄漏，构筑围堤或挖坑收容。用泡沫 覆盖，降低蒸气灾害。用防爆泵转移至槽车或专用收集器内，回收或运至废物处理场所处</emergency_procedures>
+    </leak_response>
+    <!-- 第七部分：操作处置与储存 -->
+    <handling_storage>
+      <handling_precautions></handling_precautions>
+      <storage_precautions>戴过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿胶布防毒衣，戴橡胶手套。远离 火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止气体或蒸气泄漏到 工作场所空气中。避免与氧化剂、酸类接触。在传送过程中，钢瓶和容器必须接地和跨接， 防止产生静电。搬运时轻装轻卸，防止钢瓶及附件破损。配备相应品种和数量的消防器材 及泄漏应急处理设备。 储存于阴凉、通风的库房。远离火种、热源。库温不超过30℃，相对湿度不超过80％。保 持容器密封。应与氧化剂、酸类分开存放，切忌混储。采用防爆型照明、通风设施。禁止 使用易产生火花的机械设备和工具。储区应备有泄漏应急处理设备。</storage_precautions>
+    </handling_storage>
+    <!-- 第八部分：接触控制/个体防护 -->
+    <exposure_control>
+      <china_mac>18</china_mac>
+      <former_soviet_mac>未制定标准</former_soviet_mac>
+      <tlvtn>OSHA10ppm,18mg/m3;ACGIH5ppm,9.2mg/m3[皮]</tlvtn>
+      <tlvvn>ACGIH15ppm,27.6mg/m3[皮]</tlvvn>
+      <contact_limits>美国TWA：OSHA10ppm，18mg／m3；ACGIH10ppm，18mg／m3；美国STEL：末制定标准</contact_limits>
+      <monitoring_method>溶剂解吸－气相色谱法；重氮盐比色法</monitoring_method>
+      <engineering_controls>生产过程密闭，加强通风。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection></respiratory_protection>
+      <eye_protection>戴化学安全防护眼镜。</eye_protection>
+      <body_protection>穿胶布防毒衣。</body_protection>
+      <hand_protection>戴橡胶手套。</hand_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。</other_protection>
+    </exposure_control>
+    <!-- 第九部分：理化特性 -->
+    <physical_chemical>
+      <pH>无资料</pH>
+      <melting_point>-80.9</melting_point>
+      <boiling_point>16.6</boiling_point>
+      <flash_point>&lt;-17.8</flash_point>
+      <relative_density>0.70</relative_density>
+      <relative_vapor_density>1.56</relative_vapor_density>
+      <solubility></solubility>
+      <molecular_formula>C2H7N</molecular_formula>
+      <molecular_weight>45.08</molecular_weight>
+      <main_components>纯品</main_components>
+      <saturated_vapor_pressure>53.32(20℃)</saturated_vapor_pressure>
+      <log_kow>&lt;-0.08</log_kow>
+      <critical_temperature>183</critical_temperature>
+      <ignition_temperature>385</ignition_temperature>
+      <autoignition_temperature>385</autoignition_temperature>
+      <flammability></flammability>
+      <appearance>无色、有强烈氨味的液体或气体。</appearance>
+      <main_uses>用于染料合成及作萃取剂、乳化剂、医药原料、试剂等。</main_uses>
+      <other_properties>无资料</other_properties>
+      <heat_of_combustion>1711.7</heat_of_combustion>
+      <critical_pressure>5.62</critical_pressure>
+      <explosive_upper_limit>14.0</explosive_upper_limit>
+      <explosive_lower_limit>3.5</explosive_lower_limit>
+    </physical_chemical>
+    <!-- 第十部分：稳定性和反应活性 -->
+    <stability_reactivity>
+      <stability>稳定</stability>
+      <incompatible_substances>强氧化剂、强酸。</incompatible_substances>
+      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <polymerization_hazard>不能出现</polymerization_hazard>
+      <decomposition_products>无资料</decomposition_products>
+    </stability_reactivity>
+    <!-- 第十一部分：毒理学信息 -->
+    <toxicological>
+      <acute_toxicity>LD50：400mg／kg(大鼠经口)；390mg／kg(兔经皮)LC50：</acute_toxicity>
+      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <rtecs>KH2100000</rtecs>
+      <irritation></irritation>
+      <sensitization>无资料</sensitization>
+      <mutagenicity>无资料</mutagenicity>
+      <teratogenicity>无资料</teratogenicity>
+      <carcinogenicity>无资料</carcinogenicity>
+    </toxicological>
+    <!-- 第十二部分：生态学资料 -->
+    <ecological>
+      <ecological_toxicity></ecological_toxicity>
+    </ecological>
+    <!-- 第十三部分：废弃处置 -->
+    <disposal>
+      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
+      <disposal_method></disposal_method>
+      <disposal_precautions>无资料</disposal_precautions>
+    </disposal>
+    <!-- 第十四部分：运输信息 -->
+    <transportation>
+      <dangerous_goods_number>21046</dangerous_goods_number>
+      <un_number>1036</un_number>
+      <imdg_page>2136</imdg_page>
+      <packaging_mark>4；40</packaging_mark>
+      <packing_group>O52</packing_group>
+      <packaging_method></packaging_method>
+      <transportation_precautions></transportation_precautions>
+    </transportation>
+    <!-- 第十五部分：法规信息 -->
+    <regulatory>
+      <regulatory_info></regulatory_info>
+    </regulatory>
+  </msds>
+</msds_list>

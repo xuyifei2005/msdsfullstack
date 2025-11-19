@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msds_list>
+  <msds>
+    <!-- 第一部分：化学品及企业标识 -->
+    <basic_info>
+      <cas_number>19287-45-7</cas_number>
+      <msds_code>MSDS#110</msds_code>
+      <product_name>乙硼烷</product_name>
+      <product_alias>二硼烷</product_alias>
+      <product_english_name>diborane</product_english_name>
+      <company_name></company_name>
+      <company_address></company_address>
+      <contact_phone></contact_phone>
+      <emergency_phone></emergency_phone>
+      <email></email>
+      <fax_number></fax_number>
+    </basic_info>
+    <!-- 第二部分：危险性概述 -->
+    <hazard_info>
+      <hazard_category>第2.1类易燃气体</hazard_category>
+      <exposure_routes>吸入经皮吸收
+吸入高浓度乙硼烷出现胸闷、气短、干咳、心前区不适；可出现恶心、头痛、发热等症</exposure_routes>
+      <health_hazards></health_hazards>
+      <environmental_hazards>无资料</environmental_hazards>
+      <fire_explosion_hazards>本品易燃，剧毒。</fire_explosion_hazards>
+    </hazard_info>
+    <!-- 第三部分：成分/组成信息 -->
+    <component_info>
+      <components>
+        <component>
+          <component_name>乙硼烷</component_name>
+          <component_content>100%</component_content>
+          <cas_number>19287-45-7</cas_number>
+        </component>
+      </components>
+    </component_info>
+    <!-- 第四部分：急救措施 -->
+    <first_aid>
+      <skin_contact>立即用3％氨水擦洗，至少5分钟。再用肥皂水及清水彻底冲洗。就医。</skin_contact>
+      <eye_contact>立即提起眼睑，立即用流动清水彻底冲洗。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即</eye_contact>
+      <inhalation>进行人工呼吸。就医。</inhalation>
+      <ingestion>严加密闭，提供充分的局部排风和全面排风。</ingestion>
+    </first_aid>
+    <!-- 第五部分：消防措施 -->
+    <fire_fighting>
+      <hazard_characteristics>潮湿空气能自燃。与氟、氯、溴等卤素会剧烈反应并能与氟氯烷灭火剂猛烈反应。</hazard_characteristics>
+      <fire_risk_classification>甲</fire_risk_classification>
+      <harmful_combustion_products>氧化硼。 切断气源。若不能切断气源，则不允许熄灭泄漏处的火焰。喷水冷却容器，可能的话将容</harmful_combustion_products>
+      <suitable_extinguishing_media>器从火场移至空旷处。灭火剂：二氧化碳。禁止用水和泡沫灭火。</suitable_extinguishing_media>
+    </fire_fighting>
+    <!-- 第六部分：泄漏应急处理 -->
+    <leak_response>
+      <emergency_procedures>迅速撤离泄漏污染区人员至上风处，并立即进行隔离，小泄漏时隔离300m，大泄漏时隔离 上风处进入现场。尽可能切断泄漏源。合理通风，加速扩散。漏气容器要妥善处理，修复、</emergency_procedures>
+    </leak_response>
+    <!-- 第七部分：操作处置与储存 -->
+    <handling_storage>
+      <handling_precautions></handling_precautions>
+      <storage_precautions>规程。建议操作人员佩戴导管式防毒面具，穿连衣式胶布防毒衣，戴橡胶手套。远离火种、 热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止气体泄漏到工作场所空气 中。避免与氧化剂、碱类、卤素接触。尤其要注意避免与水接触。在传送过程中，钢瓶和 容器必须接地和跨接，防止产生静电。搬运时要轻装轻卸，防止包装及容器损坏。配备相 应品种和数量的消防器材及泄漏应急处理设备。 储存于阴凉、通风的库房。远离火种、热源。库温不超过25℃，相对湿度不超过75％。应 与氧化剂、碱类、卤素、食用化学品分开存放，切忌混储。采用防爆型照明、通风设施。 禁止使用易产生火花的机械设备和工具。储区应备有泄漏应急处理设备。应严格执行极毒 物品“五双”管理制度。</storage_precautions>
+    </handling_storage>
+    <!-- 第八部分：接触控制/个体防护 -->
+    <exposure_control>
+      <china_mac>未制定标准</china_mac>
+      <former_soviet_mac>0.1</former_soviet_mac>
+      <tlvtn>无资料</tlvtn>
+      <tlvvn>无资料</tlvvn>
+      <contact_limits>美国TWA：ACGIH0.1ppm，0.1mg／m3美国STEL：未制定标准</contact_limits>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>严加密闭，提供充分的局部排风和全面排风。</engineering_controls>
+      <respiratory_protection></respiratory_protection>
+      <eye_protection>戴化学安全防护眼镜。</eye_protection>
+      <body_protection>穿防护服(府绸制作的较好)。</body_protection>
+      <hand_protection>戴橡皮手套。</hand_protection>
+      <other_protection>无资料</other_protection>
+    </exposure_control>
+    <!-- 第九部分：理化特性 -->
+    <physical_chemical>
+      <pH>无资料</pH>
+      <melting_point>-165.5</melting_point>
+      <boiling_point>-92.6</boiling_point>
+      <flash_point>-90</flash_point>
+      <relative_density>0.45／-112℃</relative_density>
+      <relative_vapor_density>0.95</relative_vapor_density>
+      <solubility></solubility>
+      <molecular_formula>B2H6</molecular_formula>
+      <molecular_weight>27.67</molecular_weight>
+      <main_components>无资料</main_components>
+      <saturated_vapor_pressure>29.86／-112℃</saturated_vapor_pressure>
+      <log_kow>无资料</log_kow>
+      <critical_temperature>16.7</critical_temperature>
+      <ignition_temperature>无资料</ignition_temperature>
+      <autoignition_temperature>38～52</autoignition_temperature>
+      <flammability></flammability>
+      <appearance>无色气体，有特臭。</appearance>
+      <main_uses>用作火箭和导弹的高能燃料，也用于有机合成。</main_uses>
+      <other_properties>无资料</other_properties>
+      <heat_of_combustion>无资料</heat_of_combustion>
+      <critical_pressure>4.00</critical_pressure>
+      <explosive_upper_limit>9.8</explosive_upper_limit>
+      <explosive_lower_limit>0.8</explosive_lower_limit>
+    </physical_chemical>
+    <!-- 第十部分：稳定性和反应活性 -->
+    <stability_reactivity>
+      <stability>稳定</stability>
+      <incompatible_substances>强氧化剂、碱、卤素、水、四氯化碳。</incompatible_substances>
+      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <polymerization_hazard>不能出现</polymerization_hazard>
+      <decomposition_products>无资料</decomposition_products>
+    </stability_reactivity>
+    <!-- 第十一部分：毒理学信息 -->
+    <toxicological>
+      <acute_toxicity>毒性：属高毒类LD50：LC50：40ppm4小时(大鼠吸入)；29ppm4小时(小鼠吸入)</acute_toxicity>
+      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <rtecs>HQ9275000</rtecs>
+      <irritation>无资料</irritation>
+      <sensitization>无资料</sensitization>
+      <mutagenicity>无资料</mutagenicity>
+      <teratogenicity>无资料</teratogenicity>
+      <carcinogenicity>无资料</carcinogenicity>
+    </toxicological>
+    <!-- 第十二部分：生态学资料 -->
+    <ecological>
+      <ecological_toxicity>无资料</ecological_toxicity>
+      <biodegradability>无资料</biodegradability>
+      <non_biodegradability>无资料</non_biodegradability>
+      <bioaccumulation></bioaccumulation>
+      <other_harmful_effects>或其它高浓度区作业，须有人监护。</other_harmful_effects>
+    </ecological>
+    <!-- 第十三部分：废弃处置 -->
+    <disposal>
+      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
+      <disposal_method>无资料</disposal_method>
+      <disposal_precautions>无资料</disposal_precautions>
+    </disposal>
+    <!-- 第十四部分：运输信息 -->
+    <transportation>
+      <dangerous_goods_number>21049</dangerous_goods_number>
+      <un_number>1911</un_number>
+      <imdg_page>2128</imdg_page>
+      <packaging_mark>4；40</packaging_mark>
+      <packing_group>无资料</packing_group>
+      <packaging_method>无资料</packaging_method>
+      <transportation_precautions>无资料</transportation_precautions>
+    </transportation>
+    <!-- 第十五部分：法规信息 -->
+    <regulatory>
+      <regulatory_info>无资料</regulatory_info>
+    </regulatory>
+  </msds>
+</msds_list>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msds_list>
+  <msds>
+    <!-- 第一部分：化学品及企业标识 -->
+    <basic_info>
+      <cas_number>8050-88-2</cas_number>
+      <msds_code>MSDS#1502</msds_code>
+      <product_name>硝化纤维塑料</product_name>
+      <product_alias>赛璐珞</product_alias>
+      <product_english_name>Celluloid</product_english_name>
+      <company_name></company_name>
+      <company_address></company_address>
+      <contact_phone></contact_phone>
+      <emergency_phone></emergency_phone>
+      <email></email>
+      <fax_number></fax_number>
+    </basic_info>
+    <!-- 第二部分：危险性概述 -->
+    <hazard_info>
+      <hazard_category>第4.1类 易燃固体</hazard_category>
+      <exposure_routes>吸入</exposure_routes>
+      <health_hazards>无资料。</health_hazards>
+      <environmental_hazards>无资料</environmental_hazards>
+      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+    </hazard_info>
+    <!-- 第三部分：成分/组成信息 -->
+    <component_info>
+      <components>
+        <component>
+          <component_name>赛璐珞；硝化纤维塑料</component_name>
+          <component_content>100%</component_content>
+          <cas_number>8050-88-2</cas_number>
+        </component>
+      </components>
+    </component_info>
+    <!-- 第四部分：急救措施 -->
+    <first_aid>
+      <skin_contact>用流动清水冲洗。</skin_contact>
+      <eye_contact>用流动清水冲洗。</eye_contact>
+      <inhalation>脱离现场至空气新鲜处。</inhalation>
+      <ingestion>无资料</ingestion>
+    </first_aid>
+    <!-- 第五部分：消防措施 -->
+    <fire_fighting>
+      <hazard_characteristics>遇明火、高热极易燃烧。燃速很快。与氧化剂接触发生强烈反应，甚至引起燃烧。久储会 逐渐发热，若积热不散会引起自燃。其粉体化学活性很高，在空气中能自燃。</hazard_characteristics>
+      <fire_risk_classification>甲</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物。</harmful_combustion_products>
+      <suitable_extinguishing_media>雾状水、二氧化碳、泡沫、干粉、砂土。</suitable_extinguishing_media>
+    </fire_fighting>
+    <!-- 第六部分：泄漏应急处理 -->
+    <leak_response>
+      <emergency_procedures>应急处理： 隔离泄漏污染区，周围设警告标志，切断火源。小心扫起，置于袋中转移至安全场所。如 大量泄漏，收集回收或无害处理后废弃。</emergency_procedures>
+    </leak_response>
+    <!-- 第七部分：操作处置与储存 -->
+    <handling_storage>
+      <handling_precautions>无资料</handling_precautions>
+      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。仓温不宜超过30℃。防止阳光直射。包装必 须密封，切勿受潮。不宜大量或久存。应与氧化剂分开存放。平时需勤检查，查仓温，查 混储。搬运时要轻装轻卸，防止包装及容器损坏。</storage_precautions>
+    </handling_storage>
+    <!-- 第八部分：接触控制/个体防护 -->
+    <exposure_control>
+      <china_mac>未制定标准</china_mac>
+      <former_soviet_mac>未制定标准</former_soviet_mac>
+      <tlvtn>无资料</tlvtn>
+      <tlvvn>无资料</tlvvn>
+      <contact_limits>美国TWA：未制定标准美国STEL：未制定标准</contact_limits>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>密闭操作，局部排风。</engineering_controls>
+      <respiratory_protection>一般不需特殊防护，但建议特殊情况下，佩带防毒口罩。</respiratory_protection>
+      <eye_protection>可采用安全面罩。</eye_protection>
+      <body_protection>穿工作服。</body_protection>
+      <hand_protection>必要时戴防护手套。</hand_protection>
+      <other_protection>无资料</other_protection>
+    </exposure_control>
+    <!-- 第九部分：理化特性 -->
+    <physical_chemical>
+      <pH>无资料</pH>
+      <melting_point>无资料</melting_point>
+      <boiling_point>无资料</boiling_point>
+      <flash_point>无资料</flash_point>
+      <relative_density>1.35～1.60</relative_density>
+      <relative_vapor_density>无资料</relative_vapor_density>
+      <solubility></solubility>
+      <molecular_formula></molecular_formula>
+      <molecular_weight>0</molecular_weight>
+      <main_components>无资料</main_components>
+      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
+      <log_kow>无资料</log_kow>
+      <critical_temperature>无资料</critical_temperature>
+      <ignition_temperature></ignition_temperature>
+      <autoignition_temperature>180</autoignition_temperature>
+      <flammability>点(℃)：&lt;-30</flammability>
+      <appearance>有色及无色透明或不透明的片状物，性软，富有弹性。</appearance>
+      <main_uses>主要用于制造乒乓球、眼镜架、玩具、钢笔杆、装璜品等。</main_uses>
+      <other_properties>无资料</other_properties>
+      <heat_of_combustion>无资料</heat_of_combustion>
+      <critical_pressure>无资料</critical_pressure>
+      <explosive_upper_limit>无资料</explosive_upper_limit>
+      <explosive_lower_limit>无资料</explosive_lower_limit>
+    </physical_chemical>
+    <!-- 第十部分：稳定性和反应活性 -->
+    <stability_reactivity>
+      <stability>稳定</stability>
+      <incompatible_substances>强氧化剂。</incompatible_substances>
+      <conditions_to_avoid>受热、接触潮湿空气。</conditions_to_avoid>
+      <polymerization_hazard>不能出现</polymerization_hazard>
+      <decomposition_products>无资料</decomposition_products>
+    </stability_reactivity>
+    <!-- 第十一部分：毒理学信息 -->
+    <toxicological>
+      <acute_toxicity>无资料</acute_toxicity>
+      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <rtecs>无资料</rtecs>
+      <irritation>无资料</irritation>
+      <sensitization>无资料</sensitization>
+      <mutagenicity>无资料</mutagenicity>
+      <teratogenicity>无资料</teratogenicity>
+      <carcinogenicity>无资料</carcinogenicity>
+    </toxicological>
+    <!-- 第十二部分：生态学资料 -->
+    <ecological>
+      <ecological_toxicity>无资料</ecological_toxicity>
+      <biodegradability>无资料</biodegradability>
+      <non_biodegradability>无资料</non_biodegradability>
+      <bioaccumulation>无资料</bioaccumulation>
+      <other_harmful_effects>工作现场禁止吸烟、进食和饮水。</other_harmful_effects>
+    </ecological>
+    <!-- 第十三部分：废弃处置 -->
+    <disposal>
+      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
+      <disposal_method>无资料</disposal_method>
+      <disposal_precautions>无资料</disposal_precautions>
+    </disposal>
+    <!-- 第十四部分：运输信息 -->
+    <transportation>
+      <dangerous_goods_number>41547</dangerous_goods_number>
+      <un_number>2000</un_number>
+      <imdg_page>4133</imdg_page>
+      <packaging_mark>8</packaging_mark>
+      <packing_group>Ⅲ</packing_group>
+      <packaging_method>无资料</packaging_method>
+      <transportation_precautions>无资料</transportation_precautions>
+    </transportation>
+    <!-- 第十五部分：法规信息 -->
+    <regulatory>
+      <regulatory_info>无资料</regulatory_info>
+    </regulatory>
+  </msds>
+</msds_list>

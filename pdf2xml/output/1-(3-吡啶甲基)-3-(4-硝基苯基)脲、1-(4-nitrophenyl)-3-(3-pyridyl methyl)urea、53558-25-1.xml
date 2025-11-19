@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msds_list>
+  <msds>
+    <!-- 第一部分：化学品及企业标识 -->
+    <basic_info>
+      <cas_number>53558-25-1</cas_number>
+      <msds_code>无资料</msds_code>
+      <product_name>1-(3-吡啶甲基)-3-(4-硝基苯基)脲</product_name>
+      <product_alias>脲 甲基)脲；灭鼠优</product_alias>
+      <product_english_name>1-(4-nitrophenyl)-3-(3-pyridyl methyl)urea</product_english_name>
+      <company_name></company_name>
+      <company_address></company_address>
+      <contact_phone></contact_phone>
+      <emergency_phone></emergency_phone>
+      <email></email>
+      <fax_number></fax_number>
+    </basic_info>
+    <!-- 第二部分：危险性概述 -->
+    <hazard_info>
+      <hazard_category>第6.1类毒害品</hazard_category>
+      <exposure_routes>皮肤及眼睛接触、吸入
+产生糖尿病，影响中枢神经系统，胰岛素含量降低，症状有恶心、呕吐、腹痛、寒战、神</exposure_routes>
+      <health_hazards>经错乱、缺乏食欲、瞳孔扩大、脱水、胸痛、闭尿、心跳无规律、肌肉虚弱；暴露影响视
+力、压抑、中枢神经颤抖、心血管虚脱、呼吸衰竭可导致死亡。</health_hazards>
+      <environmental_hazards>无资料</environmental_hazards>
+      <fire_explosion_hazards>本品有毒</fire_explosion_hazards>
+    </hazard_info>
+    <!-- 第三部分：成分/组成信息 -->
+    <component_info>
+      <components>
+        <component>
+          <component_name>无资料</component_name>
+          <component_content>无资料</component_content>
+          <cas_number>53558-25-1</cas_number>
+        </component>
+      </components>
+    </component_info>
+    <!-- 第四部分：急救措施 -->
+    <first_aid>
+      <skin_contact>立即脱去污染的衣物。用大量肥皂水和清水冲洗皮肤。如有不适，就医。</skin_contact>
+      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。 立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给于吸氧。如患者食入或吸入</eye_contact>
+      <inhalation>本物质，不得进行口对口人工呼吸。如果呼吸停止。立即进行心肺复苏术。立即就医。</inhalation>
+      <ingestion>禁止催吐，切勿给失去知觉者从嘴里喂食任何东西。立即呼叫医生或中毒控制中心。</ingestion>
+    </first_aid>
+    <!-- 第五部分：消防措施 -->
+    <fire_fighting>
+      <hazard_characteristics>无资料</hazard_characteristics>
+      <fire_risk_classification>无资料</fire_risk_classification>
+      <harmful_combustion_products>无资料 合适的灭火介质:干粉、二氧化碳或水。</harmful_combustion_products>
+      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安 全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+    </fire_fighting>
+    <!-- 第六部分：泄漏应急处理 -->
+    <leak_response>
+      <emergency_procedures>隔离现场，确保安全前提下尽量堵漏；处理工作应于高处和上风处进行；保持现场通风；移 开并隔离被污染衣物，严禁触摸泄漏物；喷水减少泄漏物挥发量；用砂或其他不燃物质吸附 少量液体泄漏物并收集于容器内待处理；对固体泄漏物用干净铲子铲入干燥、清洁容器内， 移离现场；大量液体泄漏时，围堤处理。</emergency_procedures>
+    </leak_response>
+    <!-- 第七部分：操作处置与储存 -->
+    <handling_storage>
+      <handling_precautions>无资料</handling_precautions>
+      <storage_precautions>保持容器密封。储存于阴凉、干燥和通风处。远离火源、热源。存储区远离不相容物品及食 用性化学品。</storage_precautions>
+    </handling_storage>
+    <!-- 第八部分：接触控制/个体防护 -->
+    <exposure_control>
+      <china_mac>无资料</china_mac>
+      <former_soviet_mac>无资料</former_soviet_mac>
+      <tlvtn>无资料</tlvtn>
+      <tlvvn>无资料</tlvvn>
+      <contact_limits>无资料</contact_limits>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>无资料</engineering_controls>
+      <respiratory_protection>情况紧急时，戴压气式、自吸式、全面罩自携式和自吸式送风呼吸器</respiratory_protection>
+      <eye_protection>无资料</eye_protection>
+      <body_protection>穿全遮式防化服</body_protection>
+      <hand_protection>无资料</hand_protection>
+      <other_protection>无资料</other_protection>
+    </exposure_control>
+    <!-- 第九部分：理化特性 -->
+    <physical_chemical>
+      <pH>无资料</pH>
+      <melting_point>223分解</melting_point>
+      <boiling_point>无资料</boiling_point>
+      <flash_point>无资料</flash_point>
+      <relative_density>无资料</relative_density>
+      <relative_vapor_density>无资料</relative_vapor_density>
+      <solubility></solubility>
+      <molecular_formula>C</molecular_formula>
+      <molecular_weight></molecular_weight>
+      <main_components>无资料</main_components>
+      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
+      <log_kow>无资料</log_kow>
+      <critical_temperature>无资料</critical_temperature>
+      <ignition_temperature>无资料</ignition_temperature>
+      <autoignition_temperature>无资料</autoignition_temperature>
+      <flammability></flammability>
+      <appearance></appearance>
+      <main_uses></main_uses>
+      <other_properties>无资料</other_properties>
+      <heat_of_combustion>无资料</heat_of_combustion>
+      <critical_pressure>无资料</critical_pressure>
+      <explosive_upper_limit>无资料</explosive_upper_limit>
+      <explosive_lower_limit>无资料</explosive_lower_limit>
+    </physical_chemical>
+    <!-- 第十部分：稳定性和反应活性 -->
+    <stability_reactivity>
+      <stability>无资料</stability>
+      <incompatible_substances>无资料</incompatible_substances>
+      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <polymerization_hazard>无资料</polymerization_hazard>
+      <decomposition_products>无资料</decomposition_products>
+    </stability_reactivity>
+    <!-- 第十一部分：毒理学信息 -->
+    <toxicological>
+      <acute_toxicity>LC50：</acute_toxicity>
+      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <rtecs>无资料</rtecs>
+      <irritation>无资料</irritation>
+      <sensitization>无资料</sensitization>
+      <mutagenicity>无资料</mutagenicity>
+      <teratogenicity>无资料</teratogenicity>
+      <carcinogenicity>无资料</carcinogenicity>
+    </toxicological>
+    <!-- 第十二部分：生态学资料 -->
+    <ecological>
+      <ecological_toxicity>无资料</ecological_toxicity>
+      <biodegradability>无资料</biodegradability>
+      <non_biodegradability>无资料</non_biodegradability>
+      <bioaccumulation>无资料</bioaccumulation>
+      <other_harmful_effects>无资料</other_harmful_effects>
+    </ecological>
+    <!-- 第十三部分：废弃处置 -->
+    <disposal>
+      <waste_properties>无资料</waste_properties>
+      <disposal_method>无资料</disposal_method>
+      <disposal_precautions>无资料</disposal_precautions>
+    </disposal>
+    <!-- 第十四部分：运输信息 -->
+    <transportation>
+      <dangerous_goods_number>无资料</dangerous_goods_number>
+      <un_number>无资料</un_number>
+      <imdg_page>无资料</imdg_page>
+      <packaging_mark>无资料</packaging_mark>
+      <packing_group>无资料</packing_group>
+      <packaging_method>无资料</packaging_method>
+      <transportation_precautions>须贴“毒品标签，航空、铁路限量运输</transportation_precautions>
+    </transportation>
+    <!-- 第十五部分：法规信息 -->
+    <regulatory>
+      <regulatory_info>无资料</regulatory_info>
+    </regulatory>
+  </msds>
+</msds_list>
