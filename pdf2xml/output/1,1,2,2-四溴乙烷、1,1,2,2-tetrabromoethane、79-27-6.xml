@@ -18,10 +18,9 @@
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类毒害品</hazard_category>
-      <exposure_routes>吸入食入经皮吸收
-对中枢神经系统有抑制作用，对呼吸道有刺激作用，可引起肝、肾损害及单核细胞增多，</exposure_routes>
-      <health_hazards>可引起皮炎。</health_hazards>
-      <environmental_hazards></environmental_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>对中枢神经系统有抑制作用，对呼吸道有刺激，可引起肝、肾损害及单核细胞增多，长期接触可致皮炎。</health_hazards>
+      <environmental_hazards>对水生生物具有危害性，在地下水中易蓄积，应避免进入水体和土壤。</environmental_hazards>
       <fire_explosion_hazards>本品不燃，有毒，具刺激性。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -54,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>戴自吸过滤式防毒面具（半面罩），穿透气型防毒服，戴防化学品手套。防止蒸气泄漏到 工作场所空气中。避免与氧化剂、碱类接触。搬运时要轻装轻卸，防止包装及容器损坏。 配备泄漏应急处理设备。倒空的容器可能残留有害物。 储存于阴凉、通风的库房。远离火种、热源。保持容器密封。应与氧化剂、碱类、食用化 学品分开存放，切忌混储。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
+      <handling_precautions>操作人员须经过培训，严格遵守操作规程。密闭操作并配置局部排风。避免吸入蒸气或雾滴，防止与皮肤、眼睛接触。搬运时轻装轻卸，防止容器破损，配备泄漏应急设备。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风、干燥的库房，远离火种、热源。容器保持密封，避光。与氧化剂、强碱、活性金属粉末和食用化学品分开存放。储区应备有泄漏应急装置和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -70,7 +69,7 @@
       <eye_protection>一般不需要特殊防护，高浓度接触时可戴安全防护眼镜。</eye_protection>
       <body_protection>穿透气型防毒服。</body_protection>
       <hand_protection>戴防化学品手套。</hand_protection>
-      <other_protection></other_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水，操作完毕淋浴更衣。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
@@ -79,9 +78,9 @@
       <boiling_point>243.5</boiling_point>
       <flash_point>无意义</flash_point>
       <relative_density>2.96</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C2H2B</molecular_formula>
+      <relative_vapor_density>11.9（空气=1）</relative_vapor_density>
+      <solubility>微溶于水，溶于乙醇、乙醚、氯仿</solubility>
+      <molecular_formula>C2H2Br4</molecular_formula>
       <molecular_weight>345.65</molecular_weight>
       <main_components>纯品</main_components>
       <saturated_vapor_pressure>2.00(119℃)</saturated_vapor_pressure>
@@ -104,7 +103,7 @@
       <incompatible_substances>强氧化剂、强碱、镁。</incompatible_substances>
       <conditions_to_avoid>光照。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受热分解产生溴化氢、溴及一氧化碳、二氧化碳等。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
@@ -119,31 +118,31 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>对水生生物有害，应避免进入水体和土壤。</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
+      <bioaccumulation>有潜在生物富集性。</bioaccumulation>
       <other_harmful_effects>该物质对环境有危害，在地下水中有蓄积作用。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>收集后交由有资质单位焚烧或化学分解，焚烧尾气需洗涤以除去溴化氢。</disposal_method>
+      <disposal_precautions>处置区域应保持通风，操作人员佩戴自给式呼吸器和防化服，禁止排入环境。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>61566</dangerous_goods_number>
       <un_number>2504</un_number>
       <imdg_page>6263</imdg_page>
-      <packaging_mark>15</packaging_mark>
-      <packing_group>O53</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_mark>第6.1类毒害品标志</packaging_mark>
+      <packing_group>III（包装类别III，低危险性）</packing_group>
+      <packaging_method>内层玻璃瓶、塑料瓶或马口铁罐，外层钢桶或木箱；或小开口钢桶。</packaging_method>
+      <transportation_precautions>装运前检查包装密封性，防止跌落、碰撞和曝晒，严禁与氧化剂、碱类、食用化学品等混装混运。车辆应配备泄漏应急处理装置。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>适用《危险化学品安全管理条例》《危险化学品目录（2015版）》《危险货物品名表》（GB 12268-2012）及《危险货物道路运输规则》（JT/T 617）。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

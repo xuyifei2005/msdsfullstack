@@ -18,14 +18,9 @@
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第3.2类中闪点易燃液体</hazard_category>
-      <exposure_routes>吸入食入经皮吸收
-对中枢神经系统有麻醉作用；对视神经和视网膜有特殊选择作用，引起病变；可致代射
-性酸中毒。急性中毒：短时大量吸入出现轻度眼上呼吸道刺激症状（口服有胃肠道刺激
-症状）；经一段时间潜伏期后出现头痛、头晕、乏力、眩晕、酒醉感、意识朦胧、谵妄，</exposure_routes>
-      <health_hazards>甚至昏迷。视神经及视网膜病变，可有视物模糊、复视等，重者失明。代谢性酸中毒时
-出现二氧化碳结合力下降、呼吸加速等。慢性影响：神经衰弱综合征，植物神经功能失
-调，粘膜刺激，视力减退等。皮肤出现脱脂、皮炎等。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <exposure_routes>吸入食入经皮吸收</exposure_routes>
+      <health_hazards>吸入、食入或经皮肤吸收后对身体有害。对中枢神经系统有麻醉作用；对视神经和视网膜有特殊选择作用，引起病变；可致代谢性酸中毒。急性中毒：短时大量吸入出现轻度眼上呼吸道刺激症状（口服有胃肠道刺激症状）；经一段时间潜伏期后出现头痛、头晕、乏力、眩晕、酒醉感、意识朦胧、谵妄，甚至昏迷。视神经及视网膜病变，可有视物模糊、复视等，重者失明。代谢性酸中毒时出现二氧化碳结合力下降、呼吸加速等。慢性影响：神经衰弱综合征，植物神经功能失调，粘膜刺激，视力减退等。皮肤出现脱脂、皮炎等。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。本品可通过皮肤吸收。</health_hazards>
+      <environmental_hazards>甲醇对水生生物可能有害。应避免进入水体、土壤和地下水。该物质对环境可能有危害，对水体应给予特别注意。挥发后可参与形成光化学烟雾。</environmental_hazards>
       <fire_explosion_hazards>本品易燃，具刺激性。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -84,16 +79,16 @@
       <flash_point>11</flash_point>
       <relative_density>0.79</relative_density>
       <relative_vapor_density>1.11</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>易溶于水，溶于乙醇、乙醚、丙酮、苯等有机溶剂</solubility>
       <molecular_formula>CH4O</molecular_formula>
       <molecular_weight>32.04</molecular_weight>
-      <main_components>纯品</main_components>
+      <main_components>甲醇（木醇、木精）含量100%</main_components>
       <saturated_vapor_pressure>13.33(21.2℃)</saturated_vapor_pressure>
       <log_kow>-0.82/-0.66</log_kow>
       <critical_temperature>240</critical_temperature>
       <ignition_temperature>385</ignition_temperature>
       <autoignition_temperature>385</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>易燃，中闪点液体</flammability>
       <appearance>无色澄清液体，有刺激性气味。</appearance>
       <main_uses>主要用于制甲醛、香精、染料、医药、火药、防冻剂等。</main_uses>
       <other_properties>无资料</other_properties>
@@ -108,14 +103,14 @@
       <incompatible_substances>酸类、酸酐、强氧化剂、碱金属。</incompatible_substances>
       <conditions_to_avoid>无资料</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受高热分解放出有毒的气体（一氧化碳、二氧化碳）。与酸类、酸酐、强氧化剂、碱金属接触可发生反应。在火场中，受热的容器有爆炸危险。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>LC50：83776mg/m3，4小时(大鼠吸入)</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>PC1400000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对中枢神经系统有麻醉作用；对视神经和视网膜有特殊选择作用，引起病变；可致代谢性酸中毒。急性中毒：短时大量吸入出现轻度眼上呼吸道刺激症状（口服有胃肠道刺激症状）；经一段时间潜伏期后出现头痛、头晕、乏力、眩晕、酒醉感、意识朦胧、谵妄，甚至昏迷。视神经及视网膜病变，可有视物模糊、复视等，重者失明。代谢性酸中毒时出现二氧化碳结合力下降、呼吸加速等。慢性影响：神经衰弱综合征，植物神经功能失调，粘膜刺激，视力减退等。皮肤出现脱脂、皮炎等。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -123,17 +118,17 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
+      <ecological_toxicity>甲醇对水生生物有毒性。对鱼类LC50（96h）：1000-10000mg/L；对甲壳类LC50（48h）：100-1000mg/L；对藻类EC50（72h）：1000-10000mg/L。对鸟类、哺乳动物等陆生生物也有毒性作用。对水生生物可能有害，应避免进入水体、土壤和地下水。对水体应给予特别注意。挥发后可参与形成光化学烟雾。</ecological_toxicity>
+      <biodegradability>在环境中可生物降解，在好氧条件下可快速生物降解，半衰期约数天至数周。挥发到大气中的醇类可在光化条件下降解。</biodegradability>
+      <non_biodegradability>在厌氧条件下可缓慢生物降解，半衰期约数周。</non_biodegradability>
+      <bioaccumulation>在水生生物和陆生生物中具有较低的生物富集性，生物富集系数（BCF）较低。在水生生物中生物蓄积性较低。</bioaccumulation>
       <other_harmful_effects>该物质对环境可能有危害，对水体应给予特别注意。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>集中收集后交由有资质的危险废物处置单位进行安全处置。应采用高温焚烧法处置，焚烧温度需≥1100℃，停留时间≥2秒，确保完全燃烧。尾气需经碱洗、活性炭吸附等处理，确保达标排放。也可采用化学处理法，在碱性条件下处理后，按危险废物进行处置。禁止将未经处理的废物直接排入环境。</disposal_method>
+      <disposal_precautions>处置区保持通风，远离火源，操作人员佩戴空气呼吸器和防化服。禁止将未经处理的废物直接排入环境。处置前应参阅国家和地方有关法规，遵守《危险废物污染环境防治法》。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -141,13 +136,13 @@
       <un_number>1230</un_number>
       <imdg_page>3251</imdg_page>
       <packaging_mark>7；40</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packing_group>II（包装类别II，中等危险性）</packing_group>
+      <packaging_method>采用防静电包装，避免与氧化剂、酸类、碱金属混装。包装应密封、防潮、防破损。</packaging_method>
+      <transportation_precautions>运输前检查密封，防止跌落和碰撞。严禁与氧化剂、酸类、碱金属、食用化学品混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.2类中闪点易燃液体，应按照相关法规进行生产、储存、运输和使用。本品易燃，具刺激性，需严格控制接触。在火场中，受热的容器有爆炸危险。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

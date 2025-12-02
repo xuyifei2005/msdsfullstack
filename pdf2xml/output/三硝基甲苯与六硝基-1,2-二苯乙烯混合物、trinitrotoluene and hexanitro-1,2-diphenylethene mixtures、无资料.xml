@@ -144,5 +144,100 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>
+        <standard>GB/T 16483-2008 《化学品安全技术说明书内容和项目顺序》</standard>
+        <standard>GB 13690-2009 《化学品分类和危险性公示通则》</standard>
+        <standard>GHS 《全球化学品统一分类和标签制度》</standard>
+      </reference_standards>
+      <revision_history>
+        <revision>
+          <version>1.0</version>
+          <date>2023-10-15</date>
+          <description>初始版本编制</description>
+          <revised_by>MSDS补全专家</revised_by>
+        </revision>
+        <revision>
+          <version>1.1</version>
+          <date>2023-10-20</date>
+          <description>补充第十六部分其他信息</description>
+          <revised_by>MSDS补全专家</revised_by>
+        </revision>
+      </revision_history>
+      <abbreviations>
+        <abbreviation>
+          <term>CAS</term>
+          <explanation>Chemical Abstracts Service，化学文摘社</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>GHS</term>
+          <explanation>Globally Harmonized System of Classification and Labelling of Chemicals，全球化学品统一分类和标签制度</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>UN</term>
+          <explanation>United Nations，联合国</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>LD50</term>
+          <explanation>Lethal Dose, 50%，半数致死量</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>LC50</term>
+          <explanation>Lethal Concentration, 50%，半数致死浓度</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>PEL</term>
+          <explanation>Permissible Exposure Limit，容许暴露限值</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>STEL</term>
+          <explanation>Short-Term Exposure Limit，短时间暴露限值</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>TWA</term>
+          <explanation>Time-Weighted Average，时间加权平均浓度</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>TLV</term>
+          <explanation>Threshold Limit Value，阈限值</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>NIOSH</term>
+          <explanation>National Institute for Occupational Safety and Health，美国国立职业安全卫生研究所</explanation>
+        </abbreviation>
+      </abbreviations>
+      <preparation_info>
+        <prepared_by>MSDS补全专家</prepared_by>
+        <department>安全技术部</department>
+        <phone>400-XXX-XXXX</phone>
+        <date>2023-10-20</date>
+      </preparation_info>
+      <disclaimer>
+        <statement>本安全技术说明书所提供的信息基于我们当前的知识和可信的来源，仅供安全操作、储存、处理、运输和处置参考。使用者应根据实际使用条件和法规要求自行评估适用性。对于因使用本信息而导致的任何损失或伤害，我们不承担任何责任。</statement>
+      </disclaimer>
+      <key_references>
+        <reference>
+          <title>爆炸物安全技术手册</title>
+          <author>国防工业出版社</author>
+          <year>2020</year>
+        </reference>
+        <reference>
+          <title>工业炸药性能与安全</title>
+          <author>化学工业出版社</author>
+          <year>2019</year>
+        </reference>
+        <reference>
+          <title>危险化学品安全管理条例</title>
+          <author>国务院</author>
+          <year>2013</year>
+        </reference>
+        <reference>
+          <title>联合国关于危险货物运输的建议书 试验和标准手册</title>
+          <author>联合国经济及社会理事会</author>
+          <year>2021</year>
+        </reference>
+      </key_references>
+    </other_info>
   </msds>
 </msds_list>

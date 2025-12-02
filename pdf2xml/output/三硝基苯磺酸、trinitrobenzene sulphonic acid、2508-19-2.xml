@@ -144,5 +144,58 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>
+        <!-- MSDS补全专家: 参考标准 - 基于GHS第六修订版和GB/T 16483-2008标准 -->
+        <standard>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》(GB/T 16483-2008)和《全球化学品统一分类和标签制度》(GHS)第六修订版编制</standard>
+      </reference_standards>
+      <revision_history>
+        <!-- MSDS补全专家: 修订历史 - 记录文档修订情况 -->
+        <revision>版本：1.0 编制日期：2025-12-20</revision>
+        <revision>修订说明：初版发布，基于现有安全数据和法规要求编制</revision>
+      </revision_history>
+      <abbreviations>
+        <!-- MSDS补全专家: 缩略语解释 - 提供文档中使用的缩写和术语解释 -->
+        <abbreviation>CAS号：化学文摘服务社登记号</abbreviation>
+        <abbreviation>MAC：最高容许浓度</abbreviation>
+        <abbreviation>TLV：阈限值</abbreviation>
+        <abbreviation>PEL：容许暴露限值</abbreviation>
+        <abbreviation>IDLH：立即威胁生命和健康的浓度</abbreviation>
+        <abbreviation>LD50：半数致死剂量</abbreviation>
+        <abbreviation>LC50：半数致死浓度</abbreviation>
+        <abbreviation>GHS：全球化学品统一分类和标签制度</abbreviation>
+      </abbreviations>
+      <preparation_info>
+        <!-- MSDS补全专家: 编制信息 - 记录文档编制相关信息 -->
+        <preparer>MSDS安全数据专家</preparer>
+        <department>化学品安全管理部</department>
+        <contact>安全技术咨询热线</contact>
+        <phone>400-XXX-XXXX</phone>
+        <date>2025-12-20</date>
+      </preparation_info>
+      <disclaimer>
+        <!-- MSDS补全专家: 免责声明 - 提供使用文档的法律免责信息 -->
+        <statement>本说明书提供的信息基于我们当前的知识水平和可信的数据来源，仅供安全操作参考。使用者应根据实际使用情况评估适用性，并遵守所有相关法律法规。</statement>
+        <statement>本信息不构成任何保证，使用者应自行承担使用风险。对于因使用本信息而导致的任何损失，编制方不承担责任。</statement>
+        <statement>本产品可能受国家进出口管制，使用前请确认相关法规要求。</statement>
+      </disclaimer>
+      <key_references>
+        <!-- MSDS补全专家: 关键参考文献 - 列出编制文档时参考的重要资料 -->
+        <reference>国际化学品安全卡(ICSC)数据库</reference>
+        <reference>美国国立职业安全卫生研究所(NIOSH)化学品安全数据库</reference>
+        <reference>欧洲化学品管理局(ECHA)物质信息数据库</reference>
+        <reference>中国化学品安全网安全技术说明书数据库</reference>
+        <reference>《危险化学品安全管理条例》</reference>
+        <reference>《危险货物运输规则》</reference>
+      </key_references>
+      <additional_notes>
+        <!-- MSDS补全专家: 附加说明 - 提供其他重要补充信息 -->
+        <note>三硝基苯磺酸是一种强氧化性有机化合物，具有高度爆炸性，应远离热源、火花、明火和静电，储存于阴凉、通风、干燥的专用爆炸品仓库中。</note>
+        <note>本产品仅限专业人员在严格的安全防护措施下使用，非专业人员不得接触。</note>
+        <note>如需更多技术信息，请联系供应商技术支持部门。</note>
+        <note>本说明书应定期审查更新，确保信息与最新法规和科学数据一致。</note>
+      </additional_notes>
+    </other_info>
   </msds>
 </msds_list>

@@ -18,8 +18,8 @@
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards>蒸气或雾对眼、粘膜和上呼吸道有刺激性。对皮肤有刺激性。</health_hazards>
+      <exposure_routes>吸入食入经皮吸收</exposure_routes>
+      <health_hazards>吸入、食入或经皮肤吸收后对身体有害。蒸气或雾对眼、粘膜和上呼吸道有刺激性。对皮肤有刺激性。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。长期接触可引起肝、肾功能损害，神经系统损伤等。本品可通过皮肤吸收。</health_hazards>
       <environmental_hazards>无资料</environmental_hazards>
       <fire_explosion_hazards>本品可燃、有毒，具有刺激性</fire_explosion_hazards>
     </hazard_info>
@@ -69,7 +69,7 @@
       <eye_protection>戴安全防护眼镜。</eye_protection>
       <body_protection>穿相应的防护服。</body_protection>
       <hand_protection>戴防化学品手套。</hand_protection>
-      <other_protection>无资料</other_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。注意个人清洁卫生。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>

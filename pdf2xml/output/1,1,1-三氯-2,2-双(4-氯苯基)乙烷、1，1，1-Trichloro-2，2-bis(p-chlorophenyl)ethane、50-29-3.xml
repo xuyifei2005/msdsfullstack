@@ -5,9 +5,9 @@
     <basic_info>
       <cas_number>50-29-3</cas_number>
       <msds_code>MSDS#1627</msds_code>
-      <product_name>1,1,1-三氯-2,2-双(4-氯苯基)乙</product_name>
-      <product_alias>滴滴涕</product_alias>
-      <product_english_name>1</product_english_name>
+      <product_name>1,1,1-三氯-2,2-双(4-氯苯基)乙烷</product_name>
+      <product_alias>滴滴涕；DDT</product_alias>
+      <product_english_name>1,1,1-Trichloro-2,2-bis(p-chlorophenyl)ethane</product_english_name>
       <company_name></company_name>
       <company_address></company_address>
       <contact_phone></contact_phone>
@@ -22,7 +22,7 @@
 急性中毒症状有：疲倦感，头痛、眩晕、恶心、呕吐、四肢感异常，共济失调；严重病例，
 体温升高、心搏过速、呼吸困难、昏迷；特别严重者，1～2小时后即可死亡。对皮肤有刺</exposure_routes>
       <health_hazards>激作用。本品可通过胎盘影响胎儿。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <environmental_hazards>DDT为持久性有机污染物（POPs），在环境中极难降解，半衰期可达数十年。对水生生物和陆生生物具有高毒性，具有极强的生物富集性和生物放大作用。已被列入《斯德哥尔摩公约》禁用名单。应避免进入水体、土壤和地下水。</environmental_hazards>
       <fire_explosion_hazards>本品可燃、有毒、具有刺激性</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -81,10 +81,10 @@
       <flash_point>72～77</flash_point>
       <relative_density>1.55(25℃)</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C14H9C</molecular_formula>
+      <solubility>几乎不溶于水（0.001-0.002 mg/L），易溶于大多数有机溶剂如丙酮、苯、二甲苯、氯仿、乙醚等</solubility>
+      <molecular_formula>C14H9Cl5</molecular_formula>
       <molecular_weight>354.48</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>DDT（p,p'-DDT为主，含少量o,p'-DDT）</main_components>
       <saturated_vapor_pressure>2.53×(10-8)／20℃</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
@@ -112,25 +112,25 @@
       <acute_toxicity>LD50：87mg／kg(大鼠经口)；300mg／kg(大鼠经皮)LC50：</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>KJ3325000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对皮肤有刺激作用，接触后可引起皮肤红肿、疼痛、皮炎。对眼睛有刺激作用。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <carcinogenicity>IARC将其列为2A类（可能对人类致癌）。动物实验表明DDT具有致癌性，可能增加肝癌、乳腺癌等癌症风险。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
+      <ecological_toxicity>对水生生物和陆生生物具有高毒性，对鸟类、鱼类、哺乳动物有害。LC50（96小时，鱼类）：0.01-0.1 mg/L。对鸟类影响尤其严重，可导致蛋壳变薄、繁殖失败。</ecological_toxicity>
+      <biodegradability>极难生物降解，在环境中持久存在。</biodegradability>
+      <non_biodegradability>在土壤中半衰期可达数十年，在水中半衰期可达数年。在厌氧条件下可缓慢降解为DDE和DDD。</non_biodegradability>
+      <bioaccumulation>具有极强的生物富集性，在食物链中可发生显著的生物放大作用，生物富集系数（BCF）可达数万至数十万。</bioaccumulation>
       <other_harmful_effects>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。工作服不要带到非作业场所，单独</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>集中收集后交由有资质的危险废物处置单位进行高温焚烧或化学处理。焚烧时需确保完全燃烧（>1100℃），尾气需经碱洗和活性炭吸附处理。也可采用化学降解方法，在强碱或金属催化剂条件下脱氯。</disposal_method>
+      <disposal_precautions>处置区保持通风，操作人员佩戴空气呼吸器和防化服。禁止将未经处理的废物直接排入环境。处置前应参阅国家和地方有关法规，遵守《危险废物污染环境防治法》。DDT为POPs物质，处置需特别谨慎。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -139,12 +139,12 @@
       <imdg_page>6221</imdg_page>
       <packaging_mark>14</packaging_mark>
       <packing_group>Ⅲ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>内层玻璃或金属容器，外覆钢桶/木箱，并配吸附材料防泄漏。包装应密封、防潮、防破损。</packaging_method>
+      <transportation_precautions>运输前检查密封，防止跌落和碰撞。严禁与氧化剂、碱类、食用化学品混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。DDT为禁用物质，运输需遵守特殊规定。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>列入《危险化学品目录（2015版）》《危险货物品名表》（GB 12268-2012）及《危险化学品安全管理条例》。DDT已被列入《斯德哥尔摩公约》持久性有机污染物（POPs）禁用名单，我国已禁止生产、使用和进出口。需遵守《农药管理条例》《危险废物污染环境防治法》《持久性有机污染物管理办法》等相关法规。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

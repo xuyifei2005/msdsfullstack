@@ -18,10 +18,9 @@
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第3.2类中闪点易燃液体。</hazard_category>
-      <exposure_routes>吸入食入经皮吸收
-接触高浓度蒸气出现头痛、倦睡、共济失调以及眼、鼻、喉刺激症状。口服可致恶心、呕</exposure_routes>
-      <health_hazards>吐、腹痛、腹泻、倦睡、昏迷甚至死亡。长期皮肤接触可致皮肤干燥、皲裂。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <exposure_routes>吸入食入经皮吸收</exposure_routes>
+      <health_hazards>吸入、食入或经皮肤吸收后对身体有害。接触高浓度蒸气出现头痛、倦睡、共济失调以及眼、鼻、喉刺激症状。口服可致恶心、呕吐、腹痛、腹泻、倦睡、昏迷甚至死亡。长期皮肤接触可致皮肤干燥、皲裂。本品可通过皮肤吸收。</health_hazards>
+      <environmental_hazards>1-丙醇对水生生物有毒性，对鱼类、甲壳类、藻类等水生生物有毒性作用。该物质在环境中可快速生物降解，但在高浓度时仍可能对水体造成污染。应避免进入水体、土壤和地下水。该物质对环境可能有危害，对水体应给予特别注意。</environmental_hazards>
       <fire_explosion_hazards>本品易燃，具刺激性。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -63,14 +62,14 @@
       <former_soviet_mac>10</former_soviet_mac>
       <tlvtn>OSHA200ppm,492mg/m3;ACGIH200,492mg/m3[皮]</tlvtn>
       <tlvvn>ACGIH250ppm,614mg/m3[皮]</tlvvn>
-      <contact_limits></contact_limits>
+      <contact_limits>美国TWA：OSHA200ppm，492mg／m3；ACGIH200ppm，492mg／m3[皮]美国STEL：ACGIH250ppm，614mg／m3[皮]</contact_limits>
       <monitoring_method>无资料</monitoring_method>
       <engineering_controls>生产过程密闭，全面通风。提供安全淋浴和洗眼设备。</engineering_controls>
       <respiratory_protection>空气中浓度超标时，应该佩戴过滤式防毒面具（半面罩）。</respiratory_protection>
       <eye_protection>一般不需要特殊防护，高浓度接触时可戴安全防护眼镜。</eye_protection>
       <body_protection>穿防静电工作服。</body_protection>
       <hand_protection>戴乳胶手套。</hand_protection>
-      <other_protection>工作现场严禁吸烟。保持良好的卫生习惯。</other_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
@@ -80,7 +79,7 @@
       <flash_point>15</flash_point>
       <relative_density>0.80</relative_density>
       <relative_vapor_density>2.07</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>与水混溶，可混溶于乙醇、乙醚等多数有机溶剂</solubility>
       <molecular_formula>C3H8O</molecular_formula>
       <molecular_weight>60.10</molecular_weight>
       <main_components>纯品</main_components>
@@ -111,25 +110,25 @@
       <acute_toxicity>LD50：1870mg/kg(大鼠经口)；5040mg/kg(兔经皮)LC50：48000mg/m3(小鼠吸入)</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>UH8225000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
+      <irritation>其蒸气或雾对眼睛、皮肤、粘膜和上呼吸道有刺激作用，具刺激性。接触高浓度蒸气出现头痛、倦睡、共济失调以及眼、鼻、喉刺激症状。长期皮肤接触可致皮肤干燥、皲裂。</irritation>
+      <sensitization>长期接触可能引起皮肤过敏反应。</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
       <carcinogenicity>无资料</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>该物质对环境可能有危害，对水体应给予特别注意。</other_harmful_effects>
+      <ecological_toxicity>1-丙醇对水生生物有毒性。对鱼类LC50（96h）：1000-10000mg/L；对甲壳类LC50（48h）：100-1000mg/L；对藻类EC50（72h）：1000-10000mg/L。应避免进入水体、土壤和地下水。</ecological_toxicity>
+      <biodegradability>在环境中可快速生物降解，在好氧条件下可迅速生物降解，半衰期约数小时至数天。</biodegradability>
+      <non_biodegradability>在厌氧条件下也可生物降解，半衰期约数天至数周。</non_biodegradability>
+      <bioaccumulation>在水生生物中具有极弱的生物富集性，生物富集系数（BCF）很低，一般不会在生物体内富集。</bioaccumulation>
+      <other_harmful_effects>该物质对环境可能有危害，对水体应给予特别注意。工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。注意个人清洁卫生。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>集中收集后交由有资质的危险废物处置单位进行安全处置。应采用高温焚烧法处置，焚烧温度需≥1100℃，停留时间≥2秒，确保完全燃烧。尾气需经碱洗、活性炭吸附等处理。也可采用化学处理法，在碱性条件下处理后，按危险废物进行处置。禁止将未经处理的废物直接排入环境。</disposal_method>
+      <disposal_precautions>处置区保持通风，远离火源，操作人员佩戴空气呼吸器和防化服。禁止将未经处理的废物直接排入环境。处置前应参阅国家和地方有关法规，遵守《危险废物污染环境防治法》。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -138,12 +137,12 @@
       <imdg_page>3272</imdg_page>
       <packaging_mark>7</packaging_mark>
       <packing_group>O52</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_method>内层玻璃或金属容器，外覆钢桶/木箱，并配吸附材料防泄漏。包装应密封、防潮、防破损。</packaging_method>
+      <transportation_precautions>运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、酸类、卤素等混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.2类中闪点易燃液体，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

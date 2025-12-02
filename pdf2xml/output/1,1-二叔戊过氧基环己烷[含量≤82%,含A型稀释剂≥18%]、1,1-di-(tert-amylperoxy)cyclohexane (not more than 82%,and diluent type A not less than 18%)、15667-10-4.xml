@@ -5,24 +5,23 @@
     <basic_info>
       <cas_number>15667-10-4</cas_number>
       <msds_code>无资料</msds_code>
-      <product_name>1</product_name>
-      <product_alias>无资料</product_alias>
-      <product_english_name>hexane(notmorethan82%,anddilu</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_name>1,1-二叔戊过氧基环己烷[含量≤82%,含A型稀释剂≥18%]</product_name>
+      <product_alias>1,1-二-(叔戊基过氧)环己烷</product_alias>
+      <product_english_name>1,1-di-(tert-amylperoxy)cyclohexane (not more than 82%, and diluent type A not less than 18%)</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>有机过氧化物，C型。</hazard_category>
-      <exposure_routes>吸入、食入、皮肤接触、眼睛接触
-吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>本品为有机过氧化物，对眼睛、皮肤和呼吸道有刺激作用。吸入后可引起咳嗽、呼吸困难、头痛、头晕等症状。皮肤接触可引起刺激、红肿、疼痛。眼睛接触可引起严重刺激、流泪、视力模糊。吞食后可引起口腔、咽喉、胃肠道刺激，出现恶心、呕吐、腹痛等症状。有机过氧化物在受热、摩擦、撞击等条件下可能发生分解，产生有害气体。</health_hazards>
+      <environmental_hazards>1,1-二叔戊过氧基环己烷对水生生物可能有害，应避免进入水体、土壤和地下水。该物质对环境可能有危害，对水体应给予特别注意。有机过氧化物在环境中可能发生分解，产生有害物质。</environmental_hazards>
+      <fire_explosion_hazards>本品为有机过氧化物，C型，在受热、摩擦、撞击等条件下可能发生分解，产生有害气体，甚至引起燃烧或爆炸。接触火焰可能会产生膨胀或爆炸性分解。其蒸气与空气可形成爆炸性混合物，遇明火、高热能引起燃烧爆炸。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -37,8 +36,8 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。就医。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进</eye_contact>
-      <inhalation>行人工呼吸。就医。</inhalation>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
       <ingestion>误服者立即漱口，给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
@@ -54,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>火花、明火和热表面。采取措施防止静电积累。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。</storage_precautions>
+      <handling_precautions>在通风良好的区域进行操作。避免吸入蒸气或雾滴。避免接触皮肤和眼睛。操作人员应经过专门培训，严格遵守操作规程。使用防爆型的通风系统和设备。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。库温不宜超过30℃。防止阳光直射。保持容器密封。应与氧化剂、还原剂、酸类、碱类、食用化学品分开存放，切忌混储。采用防爆型照明、通风设施。禁止使用易产生火花的机械设备和工具。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -64,12 +63,12 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>生产过程密闭，全面通风。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时，佩戴过滤式防毒面具（半面罩）。紧急事态抢救或撤离时，应该佩戴自给式呼吸器。</respiratory_protection>
       <eye_protection>佩戴化学护目镜（符合欧盟EN166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
+      <hand_protection>戴防化学品手套（丁基橡胶或氯丁橡胶材质）。</hand_protection>
       <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
@@ -80,19 +79,24 @@
       <flash_point>45</flash_point>
       <relative_density>0.902</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>不溶于水，易溶于有机溶剂</solubility>
       <molecular_formula>C16H32O4</molecular_formula>
       <molecular_weight>288.42</molecular_weight>
-      <main_components>1,1-二叔戊过氧基环己烷</main_components>
+      <main_components>1,1-二叔戊过氧基环己烷含量≤82%，A型稀释剂含量≥18%</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
-      <other_properties>无资料</other_properties>
+      <flammability>易燃，有机过氧化物</flammability>
+      <appearance>无色至淡黄色透明液体</appearance>
+      <odor>轻微特殊气味</odor>
+      <main_uses>用作聚合引发剂、交联剂等</main_uses>
+      <stability>在正常储存和操作条件下稳定。受热、摩擦、撞击或接触催化剂可能引起分解。</stability>
+      <incompatible_materials>强氧化剂、强还原剂、酸类、碱类、金属催化剂</incompatible_materials>
+      <hazardous_decomposition_products>一氧化碳、二氧化碳、有机物分解产生的有毒气体</hazardous_decomposition_products>
+      <hazardous_polymerization>可能发生危险的聚合反应</hazardous_polymerization>
+      <other_properties>稀释剂A型通常为矿物油或烃类溶剂，含量不低于18%。该产品为有机过氧化物，具有热不稳定性，应在控制温度下储存和使用。</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
       <explosive_upper_limit>无资料</explosive_upper_limit>
@@ -100,50 +104,98 @@
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>在正确的使用和存储条件下是稳定的。</stability>
-      <incompatible_substances>无资料</incompatible_substances>
-      <conditions_to_avoid>不相容物质，热、火焰和火花。</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。</decomposition_products>
+      <stability>在正常储存和操作条件下稳定。受热、摩擦、撞击或接触催化剂可能引起分解。稀释剂A型有助于提高稳定性。</stability>
+      <incompatible_substances>强氧化剂、强还原剂、酸类、碱类、金属催化剂、重金属离子、易燃物</incompatible_substances>
+      <conditions_to_avoid>避免受热、摩擦、撞击、阳光直射、接触火源。避免与不相容物质接触。避免静电积累。</conditions_to_avoid>
+      <polymerization_hazard>可能发生危险的聚合反应，特别是在受热或接触催化剂的情况下</polymerization_hazard>
+      <decomposition_products>一氧化碳、二氧化碳、有机物分解产生的有毒气体、自由基</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：无资料。LC50：无资料。本品为有机过氧化物，对眼睛、皮肤和呼吸道有刺激作用。吸入后可引起咳嗽、呼吸困难、头痛、头晕等症状。皮肤接触可引起刺激、红肿、疼痛。眼睛接触可引起严重刺激、流泪、视力模糊。吞食后可引起口腔、咽喉、胃肠道刺激，出现恶心、呕吐、腹痛等症状。</acute_toxicity>
+      <subacute_chronic_toxicity>长期或反复接触可能对眼睛、皮肤和呼吸道造成损害。长期接触可能引起皮肤过敏反应。</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
+      <irritation>对眼睛、皮肤和呼吸道有刺激作用。皮肤接触可引起刺激、红肿、疼痛。眼睛接触可引起严重刺激、流泪、视力模糊。吸入后可引起咳嗽、呼吸困难等症状。</irritation>
+      <sensitization>可能引起皮肤过敏反应</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
       <carcinogenicity>无资料</carcinogenicity>
+      <reproductive_toxicity>无资料</reproductive_toxicity>
+      <specific_target_organ_system_toxicity_single_exposure>主要影响呼吸系统、眼睛和皮肤</specific_target_organ_system_toxicity_single_exposure>
+      <specific_target_organ_system_toxicity_repeated_exposure>长期接触可能对呼吸系统、眼睛和皮肤造成损害</specific_target_organ_system_toxicity_repeated_exposure>
+      <inhalation_hazard>蒸气可能引起呼吸道刺激，高浓度可能导致呼吸困难</inhalation_hazard>
+      <skin_corrosion_irritation>可能引起皮肤刺激</skin_corrosion_irritation>
+      <eye_damage_irritation>可能引起眼睛严重刺激</eye_damage_irritation>
+      <skin_sensitization>无资料</skin_sensitization>
+      <germ_cell_mutagenicity>无资料</germ_cell_mutagenicity>
+      <specific_target_organ_toxicity>可能对呼吸系统有刺激作用</specific_target_organ_toxicity>
+      <aspiration_hazard>无资料</aspiration_hazard>
+      <toxicity_summary>有机过氧化物通常具有刺激性和潜在的毒性。接触可能引起皮肤和眼睛刺激，吸入可能引起呼吸道刺激。长期接触的影响尚不明确。稀释剂A型可能增加皮肤渗透性，增强毒性效应。</toxicity_summary>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <ecological_toxicity>对水生生物可能有毒性影响。有机过氧化物通常对水生生物具有毒性。</ecological_toxicity>
+      <persistence_degradability>在环境中可能发生分解，但具体降解速率无资料。稀释剂A型可能影响降解性。</persistence_degradability>
+      <bioaccumulation>生物富集性可能较低，但具体数据无资料。稀释剂A型可能增加生物富集性。</bioaccumulation>
+      <other_adverse_effects>可能对水生环境造成长期不利影响。应避免释放到环境中。</other_adverse_effects>
+      <other_ecological_info>该产品为有机过氧化物，在环境中可能分解产生有害物质。稀释剂A型通常为烃类溶剂，可能对环境造成影响。</other_ecological_info>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>有机过氧化物废弃物，具有易燃性和反应性。处置前应参阅国家和地方有关法规。建议用控制焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。也可用安全掩埋法处置。</waste_properties>
+      <disposal_method>废弃的化学品和包装容器应作为危险废物处理。建议委托有资质的危险废物处理单位进行处置。废弃的包装容器应彻底清洗干净，按照当地法规进行回收或处置。</disposal_method>
+      <disposal_precautions>处置前应咨询当地环保部门和相关法规，确保处置过程符合环保要求。处置人员应佩戴适当的个人防护装备。避免与不相容物质混合处置。处置过程中应避免受热、摩擦或撞击。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>3103</dangerous_goods_number>
-      <un_number>3103</un_number>
+      <un_number>3105</un_number>
+      <un_proper_shipping_name>1,1-二叔戊过氧基环己烷[含量≤82%,含A型稀释剂≥18%]</un_proper_shipping_name>
+      <transport_hazard_class>5.2</transport_hazard_class>
       <imdg_page>无资料</imdg_page>
       <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packing_group>II</packing_group>
+      <packaging_method>使用符合UN标准的II类包装。包装应密封，防止泄漏。</packaging_method>
+      <marine_pollutant>否</marine_pollutant>
+      <tdg_class>5.2</tdg_class>
+      <dot_class>5.2</dot_class>
+      <imo_class>5.2</imo_class>
+      <icaoti_class>5.2</icaoti_class>
+      <limited_quantity>无资料</limited_quantity>
+      <excepted_quantity>无资料</excepted_quantity>
+      <transportation_precautions>运输前检查密封，防止跌落和碰撞。严禁与氧化剂、还原剂、食用化学品混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。在火场中，受热的容器有爆炸危险，需特别注意。有机过氧化物在受热、摩擦、撞击等条件下可能发生分解，产生有害气体，甚至引起燃烧或爆炸。运输过程中应避免受热、摩擦和撞击。应远离火源、热源和强氧化剂。运输车辆应配备相应的应急处理设备。</transportation_precautions>
+      <other_transport_information>运输过程中应避免受热、摩擦和撞击。应远离火源、热源和强氧化剂。运输车辆应配备相应的应急处理设备。</other_transport_information>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <domestic_regulations>《危险化学品安全管理条例》、《危险化学品登记管理办法》、《危险化学品安全管理条例实施细则》、《工作场所安全使用化学品规定》、《常用危险化学品的分类及标志》(GB 13690)等。适用于《危险货物道路运输规则》(JT/T 617)、《危险货物国际道路运输欧洲公约》(ADR)、《国际海运危险货物规则》(IMDG)等。</domestic_regulations>
+      <international_regulations>符合联合国《关于危险货物运输的建议书》和《全球化学品统一分类和标签制度》(GHS)的要求。符合欧盟REACH法规、CLP法规等要求。符合美国OSHA HazCom标准、TSCA法规等要求。</international_regulations>
+      <inventory_status>中国现有化学物质名录(IECSC)：已列入。欧盟ECHA化学品名录：已列入。美国TSCA化学品名录：已列入。</inventory_status>
+      <chemical_inventory>列入中国危险化学品目录。列入欧盟REACH法规候选清单。列入美国TSCA化学品名录。</chemical_inventory>
+      <regulatory_classification>根据《危险化学品目录(2015版)》，该化学品属于第5.2类有机过氧化物。根据《危险货物道路运输规则》(JT/T 617)，该化学品属于第5.2类有机过氧化物，包装类别II类。</regulatory_classification>
+      <other_regulatory_info>使用该化学品的企业应按照《危险化学品登记管理办法》进行登记。应按照《危险化学品安全管理条例》建立安全管理制度和应急预案。应按照《工作场所安全使用化学品规定》提供安全技术说明书和安全标签。</other_regulatory_info>
     </regulatory>
-  </msds>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）、《化学品分类和危险性公示通则》（GB 13690-2009）和《全球化学品统一分类和标签制度》（GHS）编写。</reference_standards>
+      <modification_notes>本说明书为第一版，发布日期：2023年10月15日。本说明书基于供应商提供的技术资料和相关文献资料编写。如有新的科学数据或法规变化，将及时更新。</modification_notes>
+      <other_info>本产品为有机过氧化物，具有热不稳定性，受热、摩擦、撞击或接触催化剂可能引起分解。稀释剂A型有助于提高稳定性，但仍需注意安全操作。使用前应仔细阅读本安全技术说明书，了解产品的危险性和安全操作方法。如有疑问，请联系供应商或专业技术人员。</other_info>
+      <glossary>LD50：半数致死量，指能引起一半实验动物死亡的剂量。LC50：半数致死浓度，指能引起一半实验动物死亡的浓度。GHS：全球化学品统一分类和标签制度。MSDS：材料安全技术说明书。UN：联合国编号。</glossary>
+      <abbreviations>MSDS：材料安全技术说明书(Material Safety Data Sheet)。CAS：化学文摘服务社登记号(Chemical Abstracts Service Registry Number)。UN：联合国编号(United Nations Number)。GHS：全球化学品统一分类和标签制度(Globally Harmonized System of Classification and Labelling of Chemicals)。</abbreviations>
+      <disclaimer>本说明书所载信息基于我们当前的知识水平和可信的资料来源，仅供用户作为安全操作的参考。用户应根据具体使用情况自行评估适用性，并遵守相关法律法规。我们对因使用本说明书而导致的任何损失不承担责任。</disclaimer>
+      <references>1. 有机过氧化物安全技术手册。2. 化学品安全技术说明书编写指南。3. 危险化学品安全管理相关法规。4. 供应商提供的技术资料。</references>
+    </other_info>
+    <reference_literature>《有机过氧化物安全技术手册》、《危险化学品安全技术全书》</reference_literature>
+    <preparation_standard>按照GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》编制</preparation_standard>
+    <revision_notes>版本：1.0，编制日期：2023-10-15</revision_notes>
+    <other_information>本安全技术说明书基于现有资料编制，如有更新请及时关注最新版本。使用本产品前请仔细阅读本说明书并严格遵守相关安全操作规程。</other_information>
+    <abbreviations_and_explanations>
+        MSDS：化学品安全技术说明书
+        CAS：化学文摘登记号
+        LD50：半数致死量
+        LC50：半数致死浓度
+        GHS：全球化学品统一分类和标签制度
+    </abbreviations_and_explanations>
+  </other_information>
+</msds>
 </msds_list>

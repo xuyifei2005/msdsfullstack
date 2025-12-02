@@ -3,94 +3,102 @@
   <msds>
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
-      <msds_code>无资料 无资料</msds_code>
+      <!-- MSDS补全专家: 来源: 基于搜索结果补全, 2025-12-01 -->
+      <msds_code>无资料</msds_code>
       <product_name>镍催化剂[干燥的]</product_name>
-      <product_alias>无资料</product_alias>
-      <product_english_name>nicke</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_alias>7440-02-0</product_alias>
+      <product_english_name>nickel catalyst,dry</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
+      <!-- MSDS补全专家: 来源: 基于搜索结果补全, 2025-12-01 -->
       <hazard_category>发火固体，类别1；致癌性，类别2。</hazard_category>
-      <exposure_routes>吸入、食入、皮肤接触、眼睛接触
-吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触。吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入本品可能对个体健康有害。</exposure_routes>
+      <health_hazards>长期接触可能导致职业性镍中毒。对皮肤、眼睛和呼吸道有刺激性。有致癌性。</health_hazards>
+      <environmental_hazards>对水生生物可能有害，建议避免排放到环境中。</environmental_hazards>
+      <fire_explosion_hazards>干燥状态下易自燃，与空气接触可能自燃。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
+      <!-- MSDS补全专家: 来源: 基于搜索结果补全, 2025-12-01 -->
       <components>
         <component>
           <component_name>镍催化剂</component_name>
           <component_content>≥99.0%</component_content>
-          <cas_number></cas_number>
+          <cas_number>7440-02-0</cas_number>
         </component>
       </components>
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。就医。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行</eye_contact>
-      <inhalation>人工呼吸。就医。</inhalation>
+      <!-- MSDS补全专家: 来源: 基于搜索结果补全, 2025-12-01 -->
+      <skin_contact>脱去污染的衣着，用肥皂水和大量流动清水彻底冲洗。就医。</skin_contact>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
       <ingestion>误服者立即漱口，给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>可能爆炸。暴露于火中的容器可能会通过压力安全阀泄漏出内容物。受热或接触火焰可能 会产生膨胀或爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>无资料 合适的灭火介质:干粉、干砂、二氧化碳或耐醇泡沫。 不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安 全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <!-- MSDS补全专家: 来源: 基于搜索结果补全, 2025-12-01 -->
+      <hazard_characteristics>干燥状态下易自燃，可能爆炸。暴露于火中的容器可能会通过压力安全阀泄漏出内容物。受热或接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
+      <fire_risk_classification>自燃物品</fire_risk_classification>
+      <harmful_combustion_products>氧化镍、镍的氧化物</harmful_combustion_products>
+      <suitable_extinguishing_media>合适的灭火介质:干粉、干砂、二氧化碳或耐醇泡沫。不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。灭火时，应佩戴呼吸面具（符合MSHA/NIOSH要求的或相当的）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上风 应急处理： 措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或惰性吸 附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中， 并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防暴设备。</emergency_procedures>
+      <!-- MSDS补全专家: 来源: 基于搜索结果补全, 2025-12-01 -->
+      <emergency_procedures>保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上风处。措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或惰性吸附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中，并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防暴设备。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>良好处进行操作。穿戴合适的个人防护用具。避免接触皮肤和进入眼睛。远离热源、火花、</handling_precautions>
-      <storage_precautions>明火和热表面。采取措施防止静电积累。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。</storage_precautions>
+      <!-- MSDS补全专家: 来源: 基于搜索结果补全, 2025-12-01 -->
+      <handling_precautions>在良好通风处进行操作。穿戴合适的个人防护用具。避免接触皮肤和进入眼睛。远离热源、火花、明火和热表面。采取措施防止静电积累。</handling_precautions>
+      <storage_precautions>保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远离不相容材料和食品容器的地方。保持干燥，避免与空气长时间接触。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
+      <!-- MSDS补全专家: 来源: 基于搜索结果补全, 2025-12-01 -->
       <china_mac>无资料</china_mac>
       <former_soviet_mac>无资料</former_soviet_mac>
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <monitoring_method>定期监测工作场所空气中镍粉尘浓度</monitoring_method>
+      <engineering_controls>使用局部排风装置，确保工作场所通风良好</engineering_controls>
+      <respiratory_protection>当空气中镍粉尘浓度超过限值时，应佩戴防尘口罩</respiratory_protection>
       <eye_protection>佩戴化学护目镜（符合欧盟EN166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
+      <hand_protection>戴防化学品手套</hand_protection>
       <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
+      <!-- MSDS补全专家: 来源: 基于搜索结果补全, 2025-12-01 -->
       <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
-      <boiling_point>&gt;35</boiling_point>
+      <melting_point>1453</melting_point>
+      <boiling_point>2730</boiling_point>
       <flash_point>无资料</flash_point>
-      <relative_density>无资料</relative_density>
+      <relative_density>8.90</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula></molecular_formula>
-      <molecular_weight></molecular_weight>
+      <solubility>不溶于水</solubility>
+      <molecular_formula>Ni</molecular_formula>
+      <molecular_weight>58.70</molecular_weight>
       <main_components>镍催化剂</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <flammability>干燥状态下易自燃</flammability>
+      <appearance>银白色坚硬金属</appearance>
+      <main_uses>用于催化加氢、脱氢、重整等化学反应</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -99,50 +107,56 @@
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
+      <!-- MSDS补全专家: 来源: 基于搜索结果补全, 2025-12-01 -->
       <stability>在正确的使用和存储条件下是稳定的。</stability>
-      <incompatible_substances>无资料</incompatible_substances>
-      <conditions_to_avoid>不相容物质，热、火焰和火花。</conditions_to_avoid>
+      <incompatible_substances>强氧化剂、强酸、卤素</incompatible_substances>
+      <conditions_to_avoid>不相容物质，热、火焰和火花。避免与空气长时间接触。</conditions_to_avoid>
       <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。</decomposition_products>
+      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。高温下可能产生镍氧化物。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
+      <!-- MSDS补全专家: 来源: 基于搜索结果补全, 2025-12-01 -->
       <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <subacute_chronic_toxicity>长期接触可能导致职业性镍中毒，表现为皮炎、呼吸道炎症等</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
+      <irritation>对皮肤、眼睛和呼吸道有刺激性</irritation>
+      <sensitization>可能导致皮肤过敏</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <carcinogenicity>被IARC列为2A类致癌物（可能对人类致癌）</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <!-- MSDS补全专家: 来源: 基于搜索结果补全, 2025-12-01 -->
+      <ecological_toxicity>对水生生物可能有毒</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
+      <bioaccumulation>可能在生物体内积累</bioaccumulation>
       <other_harmful_effects>无资料</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <!-- MSDS补全专家: 来源: 基于搜索结果补全, 2025-12-01 -->
+      <waste_properties>危险废物，含镍催化剂</waste_properties>
+      <disposal_method>应交由有资质的危险废物处理单位处理，不得随意排放</disposal_method>
+      <disposal_precautions>处置前应保持湿润，防止自燃。处置时需遵守当地环保法规</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>2881</dangerous_goods_number>
+      <!-- MSDS补全专家: 来源: 基于搜索结果补全, 2025-12-01 -->
+      <dangerous_goods_number>42004</dangerous_goods_number>
       <un_number>2881</un_number>
       <imdg_page>无资料</imdg_page>
       <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packing_group>III</packing_group>
+      <packaging_method>密封包装，防止与空气接触</packaging_method>
+      <transportation_precautions>运输过程中应保持湿润，防止自燃。远离火源、热源</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <!-- MSDS补全专家: 来源: 基于搜索结果补全, 2025-12-01 -->
+      <regulatory_info>危险化学品目录：镍催化剂（干燥的）列入危险化学品目录。职业接触限值：需遵守国家相关职业卫生标准。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

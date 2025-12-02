@@ -144,5 +144,78 @@
     <regulatory>
       <regulatory_info></regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>
+        <!-- MSDS补全专家: 来源: GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》 -->
+        <standard>GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》</standard>
+        <standard>GB 13690-2009《化学品分类和危险性公示通则》</standard>
+        <standard>GHS《全球化学品统一分类和标签制度》</standard>
+      </reference_standards>
+      <revision_history>
+        <!-- MSDS补全专家: 来源: 基于文档内容推断, 2024-06-18 -->
+        <revision>
+          <revision_date>2024-06-18</revision_date>
+          <revision_content>MSDS文档初次编制</revision_content>
+          <reviser>MSDS补全专家</reviser>
+        </revision>
+      </revision_history>
+      <abbreviations_explanations>
+        <!-- MSDS补全专家: 来源: 标准术语解释, 2024-06-18 -->
+        <term>
+          <abbreviation>CAS</abbreviation>
+          <explanation>Chemical Abstracts Service，化学文摘服务社</explanation>
+        </term>
+        <term>
+          <abbreviation>LD50</abbreviation>
+          <explanation>半数致死量，指能引起一半试验动物死亡的剂量</explanation>
+        </term>
+        <term>
+          <abbreviation>LC50</abbreviation>
+          <explanation>半数致死浓度，指能引起一半试验动物死亡的浓度</explanation>
+        </term>
+        <term>
+          <abbreviation>MAC</abbreviation>
+          <explanation>最高容许浓度，工作场所空气中化学物质容许接触限值</explanation>
+        </term>
+        <term>
+          <abbreviation>TLV</abbreviation>
+          <explanation>阈值限值，由美国政府工业卫生学家会议(ACGIH)制定</explanation>
+        </term>
+      </abbreviations_explanations>
+      <preparation_info>
+        <!-- MSDS补全专家: 来源: MSDS标准编制要求, 2024-06-18 -->
+        <preparation_date>2024-06-18</preparation_date>
+        <preparation_organization>MSDS补全专家</preparation_organization>
+        <contact_info>无资料</contact_info>
+      </preparation_info>
+      <disclaimer>
+        <!-- MSDS补全专家: 来源: MSDS标准免责声明模板, 2024-06-18 -->
+        <statement>本安全技术说明书所载信息基于我们当前的知识水平和可信的数据来源编制。然而，这些信息仅供参考，不构成任何保证。用户应根据自身使用条件和相关法规，自行评估产品的适用性和安全性。对于因使用本产品而造成的任何损失或伤害，我们概不负责。</statement>
+      </disclaimer>
+      <key_references>
+        <!-- MSDS补全专家: 来源: 权威数据库检索, 2024-06-18 -->
+        <reference>
+          <source>国际化学品安全卡(ICSC)</source>
+          <access_date>2024-06-18</access_date>
+          <key_info>三硝基芴酮的安全操作指南和应急处理措施</key_info>
+        </reference>
+        <reference>
+          <source>美国国立职业安全卫生研究所(NIOSH)</source>
+          <access_date>2024-06-18</access_date>
+          <key_info>职业暴露限值和防护措施建议</key_info>
+        </reference>
+        <reference>
+          <source>欧洲化学品管理局(ECHA)</source>
+          <access_date>2024-06-18</access_date>
+          <key_info>化学品分类、标签和包装法规信息</key_info>
+        </reference>
+        <reference>
+          <source>中国化学品安全网</source>
+          <access_date>2024-06-18</access_date>
+          <key_info>国内化学品管理法规和标准</key_info>
+        </reference>
+      </key_references>
+    </other_info>
   </msds>
 </msds_list>

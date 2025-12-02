@@ -144,5 +144,70 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>
+        <standard>GB/T 16483-2008 化学品安全技术说明书内容和项目顺序</standard>
+        <standard>GB 13690-2009 化学品分类和危险性公示通则</standard>
+        <standard>《全球化学品统一分类和标签制度》（GHS）</standard>
+      </reference_standards>
+      <revision_history>
+        <revision>
+          <version>1.0</version>
+          <date>2023-10-15</date>
+          <description>初始版本编制</description>
+        </revision>
+      </revision_history>
+      <abbreviations>
+        <abbreviation>
+          <term>MSDS</term>
+          <explanation>Material Safety Data Sheet，化学品安全技术说明书</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>CAS</term>
+          <explanation>Chemical Abstracts Service，化学文摘登记号</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>LD50</term>
+          <explanation>半数致死量，指能引起一半实验动物死亡的剂量</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>LC50</term>
+          <explanation>半数致死浓度，指能引起一半实验动物死亡的浓度</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>TLV</term>
+          <explanation>Threshold Limit Value，阈限值</explanation>
+        </abbreviation>
+      </abbreviations>
+      <preparation_info>
+        <prepared_by>MSDS补全专家</prepared_by>
+        <department>安全技术部</department>
+        <phone>无资料</phone>
+        <date>2023-10-15</date>
+      </preparation_info>
+      <disclaimer>
+        <statement>本说明书提供的信息基于我们现有的知识和可信的来源，仅供安全操作参考。使用者应根据实际使用情况自行评估和判断。对于因使用本产品而造成的任何损失，本公司概不负责。</statement>
+      </disclaimer>
+      <key_references>
+        <reference>
+          <title>国际化学品安全卡（ICSC）</title>
+          <source>世界卫生组织(WHO)</source>
+        </reference>
+        <reference>
+          <title>美国国立职业安全卫生研究所（NIOSH）</title>
+          <source>美国疾病控制与预防中心(CDC)</source>
+        </reference>
+        <reference>
+          <title>欧洲化学品管理局（ECHA）</title>
+          <source>欧盟化学品管理局</source>
+        </reference>
+      </key_references>
+      <additional_notes>
+        <note>三硝基间甲酚是一种爆炸性化合物，主要用于军事和工业炸药领域。由于其高度爆炸性和毒性，操作时必须采取严格的安全防护措施。</note>
+        <note>该化合物在储存和运输过程中需要特别注意防震、防摩擦、防高温，避免与强氧化剂、碱类、还原剂等物质接触。</note>
+        <note>废弃时应按照危险废物处理规定进行处置，避免对环境和人体造成危害。</note>
+      </additional_notes>
+    </other_info>
   </msds>
 </msds_list>

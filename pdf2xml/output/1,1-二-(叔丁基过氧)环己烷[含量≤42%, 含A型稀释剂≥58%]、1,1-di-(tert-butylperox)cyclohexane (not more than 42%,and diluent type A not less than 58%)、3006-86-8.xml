@@ -5,9 +5,9 @@
     <basic_info>
       <cas_number>3006-86-8</cas_number>
       <msds_code>无资料</msds_code>
-      <product_name>1,1-二-(叔丁基过氧)环己烷[含</product_name>
-      <product_alias>无资料</product_alias>
-      <product_english_name>1,1-di-(tert-butylperox)cyclo</product_english_name>
+      <product_name>1,1-二-(叔丁基过氧)环己烷[含量≤42%, 含A型稀释剂≥58%]</product_name>
+      <product_alias>过氧化双(叔丁基)环己烷；1,1-双(叔丁基过氧)环己烷</product_alias>
+      <product_english_name>1,1-di-(tert-butylperoxy)cyclohexane (not more than 42%,and diluent type A not less than 58%)</product_english_name>
       <company_name></company_name>
       <company_address></company_address>
       <contact_phone></contact_phone>
@@ -20,9 +20,9 @@
       <hazard_category>有机过氧化物，F型。</hazard_category>
       <exposure_routes>吸入、食入、皮肤接触、眼睛接触
 吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <health_hazards>吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入可能引起胃肠道刺激症状。对眼睛、皮肤有刺激作用。有机过氧化物可能引起皮肤过敏反应。</health_hazards>
+      <environmental_hazards>对水生生物可能有害。应避免进入水体、土壤和地下水。该物质对环境可能有危害，对水体应给予特别注意。</environmental_hazards>
+      <fire_explosion_hazards>本品为有机过氧化物（F型），受热、接触火焰或受到摩擦、震动、撞击时可能发生爆炸性分解。与还原剂、促进剂、强酸、强碱等接触可能发生剧烈反应。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -54,7 +54,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与还原剂、促进剂、强酸、强碱接触。搬运时要轻装轻卸，防止包装及容器损坏，避免摩擦、震动、撞击。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>火花、明火和热表面。采取措施防止静电积累。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -64,12 +64,12 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>密闭操作，局部排风。提供安全淋浴和洗眼设备。使用防爆型通风系统和设备。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时，佩戴自吸过滤式防毒面具（半面罩）。紧急事态抢救或撤离时，应该佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>佩戴化学护目镜（符合欧盟EN166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
+      <hand_protection>戴橡胶耐油手套。</hand_protection>
       <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
@@ -80,18 +80,18 @@
       <flash_point>70</flash_point>
       <relative_density>0.995</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>易溶于大多数有机溶剂</solubility>
       <molecular_formula>C14H28O4</molecular_formula>
       <molecular_weight>260.37</molecular_weight>
-      <main_components>1,1-二-(叔丁基过氧)环己烷</main_components>
+      <main_components>1,1-二-(叔丁基过氧)环己烷含量≤42%，含A型稀释剂≥58%</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <flammability>易燃，有机过氧化物</flammability>
+      <appearance>无色至淡黄色液体</appearance>
+      <main_uses>用作聚合反应引发剂、交联剂</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -101,17 +101,17 @@
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>在正确的使用和存储条件下是稳定的。</stability>
-      <incompatible_substances>无资料</incompatible_substances>
-      <conditions_to_avoid>不相容物质，热、火焰和火花。</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。</decomposition_products>
+      <incompatible_substances>还原剂、促进剂、强酸、强碱、金属粉末、胺类、硫化物等。</incompatible_substances>
+      <conditions_to_avoid>避免接触明火、高热、摩擦、震动、撞击。避免与还原剂、促进剂、强酸、强碱接触。避免受热分解。</conditions_to_avoid>
+      <polymerization_hazard>不能出现</polymerization_hazard>
+      <decomposition_products>受热分解产生一氧化碳、二氧化碳、有机过氧化物分解产物等。可能发生爆炸性分解。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>无资料</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤有刺激作用。接触后可能引起眼部不适和皮肤刺激症状。可能引起皮肤过敏反应。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -119,31 +119,64 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <ecological_toxicity>对水生生物可能有害，应避免进入水体、土壤和地下水。</ecological_toxicity>
+      <biodegradability>可生物降解，但速度较慢。</biodegradability>
+      <non_biodegradability>在好氧条件下可缓慢生物降解，半衰期约数周至数月。</non_biodegradability>
+      <bioaccumulation>生物富集性较低。</bioaccumulation>
+      <other_harmful_effects>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>集中收集后交由有资质的危险废物处置单位进行安全处置。有机过氧化物应小心处理，避免受热、摩擦、震动。可采用化学还原法或稀释后焚烧法处置。处置前应参阅国家和地方有关法规。</disposal_method>
+      <disposal_precautions>处置区保持通风，远离火源，操作人员佩戴空气呼吸器和防化服。禁止将未经处理的废物直接排入环境。处置前应参阅国家和地方有关法规，遵守《危险废物污染环境防治法》。避免受热、摩擦、震动。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>3109</dangerous_goods_number>
       <un_number>3109</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <imdg_page>5.2</imdg_page>
+      <packaging_mark>第5.2类有机过氧化物标志</packaging_mark>
+      <packing_group>II（包装类别II）</packing_group>
+      <packaging_method>采用防震、防静电包装，避免与还原剂、促进剂、强酸、强碱混装。包装应密封、防潮、防破损。</packaging_method>
+      <transportation_precautions>运输前检查密封，防止跌落、碰撞、摩擦和震动。严禁与还原剂、促进剂、强酸、强碱、金属粉末等混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。有机过氧化物运输需特别谨慎。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第5.2类有机过氧化物（F型），应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>《化学品安全技术说明书内容和项目顺序》GB/T 16483-2008</reference>
+        <reference>《化学品分类和危险性公示通则》GB 13690-2009</reference>
+        <reference>《全球化学品统一分类和标签制度》（GHS）</reference>
+        <reference>《有机过氧化物安全技术规范》</reference>
+      </references>
+      <usage_notes>
+        <note>1. 本产品为有机过氧化物（F型），具有爆炸性分解的危险，操作时必须严格遵守安全规程。</note>
+        <note>2. 储存温度不得超过30℃，应远离热源、火源和不相容物质。</note>
+        <note>3. 使用时应佩戴适当的个人防护装备，包括防化服、护目镜和防静电手套。</note>
+        <note>4. 操作区域应保持良好通风，并配备防爆设备和应急处理设施。</note>
+        <note>5. 本产品不得与还原剂、促进剂、强酸、强碱等不相容物质混合储存或运输。</note>
+      </usage_notes>
+      <revision_history>
+        <revision>
+          <date>2024-06-18</date>
+          <version>1.0</version>
+          <description>初版发布</description>
+          <author>MSDS补全专家</author>
+        </revision>
+      </revision_history>
+      <abbreviations>
+        <abbr term="CAS">化学文摘登记号（Chemical Abstracts Service Registry Number）</abbr>
+        <abbr term="TLV">阈值限值（Threshold Limit Value）</abbr>
+        <abbr term="MAC">最高容许浓度（Maximum Allowable Concentration）</abbr>
+        <abbr term="UN">联合国编号（United Nations Number）</abbr>
+        <abbr term="GHS">全球化学品统一分类和标签制度（Globally Harmonized System）</abbr>
+        <abbr term="有机过氧化物F型">根据《有机过氧化物分类标准》分类的F型有机过氧化物，指在实验室试验中，在封闭条件下加热时发生爆燃，或显示中等效应的有机过氧化物</abbr>
+        <abbr term="A型稀释剂">根据《有机过氧化物安全技术规范》定义的A型稀释剂，指能够降低有机过氧化物敏感度的惰性有机液体</abbr>
+      </abbreviations>
+    </other_info>
   </msds>
 </msds_list>

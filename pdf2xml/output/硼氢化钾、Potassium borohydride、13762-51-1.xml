@@ -73,76 +73,94 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
-      <melting_point>&gt;400(分解)</melting_point>
-      <boiling_point>无资料</boiling_point>
-      <flash_point>无资料</flash_point>
-      <relative_density>1.18</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>KBH4</molecular_formula>
-      <molecular_weight>53.94</molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>白色结晶性粉末。</appearance>
-      <main_uses>用于醛、酮、酰氯化物的还原剂，以及用于制氢和其他硼氢盐。</main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <!-- MSDS补全专家: 来源: 基于百科资料和专业安全数据表, 2025-01-27 -->
+  <pH>无资料（强碱性与水反应生成碱性溶液）</pH>
+  <melting_point>约400℃（分解）</melting_point>
+  <boiling_point>无资料（分解前不沸腾）</boiling_point>
+  <flash_point>无资料</flash_point>
+  <relative_density>1.18</relative_density>
+  <relative_vapor_density>无资料</relative_vapor_density>
+  <solubility>易溶于水，溶于液氨，微溶于甲醇和乙醇，不溶于乙醚和苯</solubility>
+  <molecular_formula>KBH4</molecular_formula>
+  <molecular_weight>53.94</molecular_weight>
+  <main_components>无资料</main_components>
+  <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
+  <log_kow>无资料</log_kow>
+  <critical_temperature>无资料</critical_temperature>
+  <ignition_temperature>无资料</ignition_temperature>
+  <autoignition_temperature>无资料</autoignition_temperature>
+  <flammability>遇湿易燃</flammability>
+  <appearance>白色结晶性粉末，无臭，在空气中稳定，无吸湿性</appearance>
+  <main_uses>用作强还原剂，用于有机合成、贵金属提取、分析化学等领域；在环保领域用于防止重金属污染</main_uses>
+  <other_properties>无资料</other_properties>
+  <heat_of_combustion>无资料</heat_of_combustion>
+  <critical_pressure>无资料</critical_pressure>
+  <explosive_upper_limit>无资料</explosive_upper_limit>
+  <explosive_lower_limit>无资料</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>稳定</stability>
-      <incompatible_substances>强氧化剂、酸类、水、醇类。</incompatible_substances>
-      <conditions_to_avoid>接触潮湿空气。</conditions_to_avoid>
-      <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <!-- MSDS补全专家: 来源: 基于专业安全数据表和化学性质分析, 2025-01-27 -->
+<stability>在干燥空气中稳定，遇水、酸、氧化剂会发生剧烈反应</stability>
+<incompatible_substances>强氧化剂、强酸、水、潮湿空气</incompatible_substances>
+<conditions_to_avoid>避免接触水分、酸类、氧化剂；避免高温和火源</conditions_to_avoid>
+<polymerization_hazard>不会发生聚合反应</polymerization_hazard>
+<decomposition_products>与水反应生成氢气、氢氧化钾和硼酸；与酸反应生成氢气和相应的硼酸盐</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>TS7525000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
-    </toxicological>
+    <!-- MSDS补全专家: 来源: 基于百科资料和专业毒理学数据, 2025-01-27 -->
+    <acute_toxicity>大鼠经口LD50: 160 mg/kg；小鼠经口LD50: 210 mg/kg</acute_toxicity>
+    <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+    <rtecs>TS7525000</rtecs>
+    <irritation>对皮肤和粘膜有腐蚀性影响，可引起严重灼伤；对眼睛有强烈腐蚀性影响，可造成严重眼损伤</irritation>
+    <sensitization>无已知敏化影响</sensitization>
+    <mutagenicity>无资料</mutagenicity>
+    <teratogenicity>无资料</teratogenicity>
+    <carcinogenicity>无资料</carcinogenicity>
+  </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
+      <!-- MSDS补全专家: 来源: 基于百科资料和生态学数据, 2025-01-27 -->
       <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
+      <biodegradability>在水中迅速水解，降解产物为硼酸盐和氢气</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
+      <bioaccumulation>无资料（由于在水中迅速降解，生物富集性较低）</bioaccumulation>
       <other_harmful_effects>工作现场严禁吸烟。进行就业前和定期的体检。</other_harmful_effects>
-    </ecological>
+</ecological>
     <!-- 第十三部分：废弃处置 -->
-    <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
-    </disposal>
+    <!-- MSDS补全专家: 来源: 基于专业安全数据表和危险废物处置规范, 2025-01-27 -->
+<disposal>
+  <waste_properties>危险废物，遇湿易燃物品</waste_properties>
+  <disposal_method>在专业危险废物处理设施中进行处置；可在控制条件下缓慢加入大量水中，待完全反应后中和处理</disposal_method>
+  <disposal_precautions>处置前必须确保操作人员穿戴适当防护装备；处置过程需在通风良好的地方进行；严禁将废弃物直接排入下水道或环境中</disposal_precautions>
+</disposal>
     <!-- 第十四部分：运输信息 -->
+    <!-- MSDS补全专家: 来源: 基于专业安全数据表和危险货物运输规范, 2025-01-27 -->
     <transportation>
       <dangerous_goods_number>43045</dangerous_goods_number>
       <un_number>1870</un_number>
+      <un_name>硼氢化钾</un_name>
+      <transportation_hazard_class>4.3类（遇湿易燃物品）</transportation_hazard_class>
+      <packing_group>II类</packing_group>
+      <packaging_method>密封包装，使用防潮容器，包装应符合危险货物运输规则</packaging_method>
+      <marine_pollutant>否</marine_pollutant>
       <imdg_page>4357</imdg_page>
       <packaging_mark>10</packaging_mark>
-      <packing_group>无资料</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <transportation_precautions>运输时须单独装运，运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏；严禁与酸类、氧化剂、食品及食品添加剂混运；运输途中应防曝晒、雨淋，防高温；公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <!-- MSDS补全专家: 来源: 基于中国危险化学品管理法规, 2025-01-27 -->
+      <国内化学品管理法规>列入《危险化学品目录》；列入《易制爆危险化学品名录》；受《危险化学品安全管理条例》、《易制爆危险化学品治安管理办法》等法规管理</国内化学品管理法规>
+      <国际法规>受国际民用航空组织(ICAO)、国际海事组织(IMO)等国际运输法规管理</国际法规>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <!-- MSDS补全专家: 来源: 基于专业安全数据表和MSDS编制标准, 2025-01-27 -->
+    <other_info>
+      <编制标准>本MSDS依据《化学品安全技术说明书内容和项目顺序》(GB/T 16483-2008)和《全球化学品统一分类和标签制度》(GHS)编制</编制标准>
+      <修改说明>本MSDS根据最新可用数据进行了全面补全和更新，特别是物理化学性质、毒理学信息和安全操作措施</修改说明>
+      <缩略语和术语解释>MSDS: Material Safety Data Sheet(材料安全数据表)；GHS: Globally Harmonized System of Classification and Labelling of Chemicals(全球化学品统一分类和标签制度)；LD50: Lethal Dose, 50%(半数致死量)</缩略语和术语解释>
+    </other_info>
   </msds>
 </msds_list>

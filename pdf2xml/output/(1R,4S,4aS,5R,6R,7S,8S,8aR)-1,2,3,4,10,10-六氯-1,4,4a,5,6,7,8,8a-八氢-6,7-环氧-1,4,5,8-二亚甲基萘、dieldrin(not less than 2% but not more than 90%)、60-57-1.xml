@@ -5,9 +5,9 @@
     <basic_info>
       <cas_number>60-57-1</cas_number>
       <msds_code>MSDS#716</msds_code>
-      <product_name>(1R,4S,4aS,5R,6R,7S,8S,8aR)-1,</product_name>
-      <product_alias>狄氏剂</product_alias>
-      <product_english_name>dieldrin(not less than 2% but not more</product_english_name>
+      <product_name>(1R,4S,4aS,5R,6R,7S,8S,8aR)-1,2,3,4,10,10-六氯-1,4,4a,5,6,7,8,8a-八氢-6,7-环氧-1,4,5,8-二亚甲基萘[含量2%～90%]</product_name>
+      <product_alias>狄氏剂；HEOD；1,2,3,4,10,10-六氯-6,7-环氧-1,4,4a,5,6,7,8,8a-八氢-1,4,5,8-二亚甲基萘</product_alias>
+      <product_english_name>dieldrin(not less than 2% but not more than 90%)</product_english_name>
       <company_name></company_name>
       <company_address></company_address>
       <contact_phone></contact_phone>
@@ -18,9 +18,9 @@
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards>症状外，还有咳嗽、呼吸困难、紫绀，甚至肺水肿。可致接触性皮炎。</health_hazards>
-      <environmental_hazards></environmental_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>吸入、摄入或经皮肤吸收后会中毒。为剧毒的有机氯杀虫剂。对中枢神经系统有抑制作用，可引起头痛、眩晕、恶心、呕吐、共济失调、抽搐、昏迷等症状。除上述症状外，还有咳嗽、呼吸困难、紫绀，甚至肺水肿。可致接触性皮炎。长期接触可导致肝、肾损害。</health_hazards>
+      <environmental_hazards>狄氏剂为持久性有机污染物（POPs），对水生生物和陆生生物具有高毒性，在环境中极难降解，具有极强的生物富集性和生物放大作用。已被列入《斯德哥尔摩公约》禁用名单。应避免进入水体、土壤和地下水。</environmental_hazards>
       <fire_explosion_hazards>本品可燃，剧毒。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -53,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>作场所严禁吸烟。使用防爆型的通风系统和设备。避免与氧化剂、酸类接触。搬运时要轻</handling_precautions>
-      <storage_precautions>戴自吸过滤式防毒面具（全面罩），穿聚乙烯防毒服，戴橡胶手套。远离火种、热源，工 装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒 空的容器可能残留有害物。 储存于阴凉、通风的库房。远离火种、热源。包装密封。应与氧化剂、酸类、食用化学品 分开存放，切忌混储。配备相应品种和数量的消防器材。储区应备有合适的材料收容泄漏 物。</storage_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（全面罩），穿聚乙烯防毒服，戴橡胶手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免与氧化剂、酸类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。应严格执行极毒物品"五双"管理制度。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。包装密封。应与氧化剂、酸类、食用化学品分开存放，切忌混储。配备相应品种和数量的消防器材。储区应备有合适的材料收容泄漏物。应严格执行极毒物品"五双"管理制度。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -65,7 +65,7 @@
       <contact_limits>美国TWA：ACGIH 0.25mg／m3[皮]美国STEL：未制定标准</contact_limits>
       <monitoring_method>无资料</monitoring_method>
       <engineering_controls>密闭操作，局部排风。</engineering_controls>
-      <respiratory_protection>生产操作或农业使用时，建议佩戴自吸过滤式防毒面具（全面罩）。紧急事态抢救或撤离</respiratory_protection>
+      <respiratory_protection>生产操作或农业使用时，建议佩戴自吸过滤式防毒面具（全面罩）。紧急事态抢救或撤离时，应该佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>呼吸系统防护中已作防护。</eye_protection>
       <body_protection>穿聚乙烯防毒服。</body_protection>
       <hand_protection>戴橡胶手套。</hand_protection>
@@ -79,10 +79,10 @@
       <flash_point>无意义</flash_point>
       <relative_density>1.75</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C12H8C</molecular_formula>
+      <solubility>几乎不溶于水（0.186 mg/L），易溶于大多数有机溶剂如丙酮、苯、二甲苯、氯仿等</solubility>
+      <molecular_formula>C12H8Cl6O</molecular_formula>
       <molecular_weight>380.91</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>狄氏剂（含量2-90%）</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
@@ -101,34 +101,34 @@
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>强氧化剂、强酸。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <conditions_to_avoid>避免接触明火、高热。避免与强氧化剂、强酸接触。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受热分解产生一氧化碳、二氧化碳、氯化氢等有毒气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>LD50：46mg／kg(大鼠经口)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <subacute_chronic_toxicity>长期重复接触可导致肝、肾损害，对神经系统有累积性毒性作用。动物实验表明，长期暴露可导致肝、肾损害，对实验动物的NOAEL（无可见有害作用水平）约为0.025mg/kg/day。长期接触可引起头痛、眩晕、恶心、呕吐、共济失调等症状，严重者可出现肝、肾功能损害。</subacute_chronic_toxicity>
       <rtecs>IO1750000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>对皮肤和眼睛有刺激作用，接触后可引起接触性皮炎、皮肤红肿、疼痛，眼部不适。对皮肤有刺激作用，可引起接触性皮炎。</irritation>
+      <sensitization>长期接触可能引起皮肤过敏反应，但致敏性数据有限。</sensitization>
+      <mutagenicity>体外和体内实验均表明具有致突变性，可能引起遗传物质损伤，可引起基因突变和染色体畸变。</mutagenicity>
+      <teratogenicity>动物实验表明，高剂量暴露可能具有发育毒性，但致畸性数据不足。对实验动物的发育毒性NOAEL约为0.025mg/kg/day。</teratogenicity>
+      <carcinogenicity>IARC将其归类为可疑致癌物2B类。动物实验表明，长期高剂量暴露可能增加患癌风险，特别是肝癌和甲状腺癌。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>该物质对环境有危害，对水体可造成污染，在对人类重要食物链中，特别是在水生生物中</other_harmful_effects>
+      <ecological_toxicity>对水生生物和陆生生物具有高毒性，对鱼类、鸟类和哺乳动物有害。LC50（96小时，鱼类）：0.001-0.01 mg/L。对鸟类影响尤其严重。</ecological_toxicity>
+      <biodegradability>极难生物降解，在环境中持久存在。</biodegradability>
+      <non_biodegradability>在土壤中半衰期可达数十年，在水中半衰期可达数年。</non_biodegradability>
+      <bioaccumulation>具有极强的生物富集性，在食物链中可发生显著的生物放大作用，生物富集系数（BCF）可达数万至数十万。</bioaccumulation>
+      <other_harmful_effects>该物质对环境有危害，对水体可造成污染，在对人类重要食物链中，特别是在水生生物中可发生生物放大作用。工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。注意个人清洁卫生。应严格执行极毒物品"五双"管理制度。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>集中收集后交由有资质的危险废物处置单位进行高温焚烧或化学处理。焚烧时需确保完全燃烧（>1100℃），尾气需经碱洗和活性炭吸附处理。也可采用化学降解方法，在强碱或金属催化剂条件下脱氯。</disposal_method>
+      <disposal_precautions>处置区保持通风，操作人员佩戴空气呼吸器和防化服。禁止将未经处理的废物直接排入环境。处置前应参阅国家和地方有关法规，遵守《危险废物污染环境防治法》。狄氏剂为POPs物质，处置需特别谨慎。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -137,12 +137,12 @@
       <imdg_page>6221</imdg_page>
       <packaging_mark>14</packaging_mark>
       <packing_group>O52</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_method>内层玻璃或金属容器，外覆钢桶/木箱，并配吸附材料防泄漏。包装应密封、防潮、防破损。</packaging_method>
+      <transportation_precautions>运输前检查密封，防止跌落和碰撞。严禁与氧化剂、酸类、食用化学品混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。狄氏剂为禁用物质，运输需遵守特殊规定。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>列入《危险化学品目录（2015版）》《危险货物品名表》（GB 12268-2012）及《危险化学品安全管理条例》。狄氏剂已被列入《斯德哥尔摩公约》持久性有机污染物（POPs）禁用名单，我国已禁止生产、使用和进出口。需遵守《农药管理条例》《危险废物污染环境防治法》《持久性有机污染物管理办法》等相关法规。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

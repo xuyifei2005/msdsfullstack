@@ -18,11 +18,9 @@
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第8.1类 酸性腐蚀品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收
-对眼睛、皮肤、粘膜和呼吸道有强烈的刺激作用。吸入后可因喉、支气管的痉挛、水肿、炎症，
-化学性肺炎、肺水肿而致死。中毒表现有烧灼感、咳嗽、喘息、喉炎、气短、头痛、恶心和呕</exposure_routes>
-      <health_hazards>吐。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <exposure_routes>吸入食入经皮吸收</exposure_routes>
+      <health_hazards>吸入、食入或经皮肤吸收后对身体有害。对眼睛、皮肤、粘膜和呼吸道有强烈的刺激作用。吸入后可因喉、支气管的痉挛、水肿、炎症，化学性肺炎、肺水肿而致死。中毒表现有烧灼感、咳嗽、喘息、喉炎、气短、头痛、恶心和呕吐。具强腐蚀性、强刺激性，可致人体灼伤。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。本品可通过皮肤吸收。</health_hazards>
+      <environmental_hazards>丁二酰氯对水生生物可能有害。应避免进入水体、土壤和地下水。该物质对环境有危害，应特别注意对水体的污染。遇水分解生成腐蚀性物质。</environmental_hazards>
       <fire_explosion_hazards>本品可燃，具强腐蚀性、强刺激性，可致人体灼伤。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -81,16 +79,16 @@
       <flash_point>76</flash_point>
       <relative_density>1.40</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C4H4C</molecular_formula>
+      <solubility>遇水猛烈分解，易溶于乙醚、苯、二硫化碳、四氯化碳等有机溶剂</solubility>
+      <molecular_formula>C4H4Cl2O2</molecular_formula>
       <molecular_weight>154.99</molecular_weight>
-      <main_components>纯品</main_components>
+      <main_components>丁二酰氯（氯化丁二酰、琥珀酰氯）含量100%</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>可燃，具强腐蚀性</flammability>
       <appearance>无色液体或固体。</appearance>
       <main_uses>用于有机合成和用作树脂和塑料中间体。</main_uses>
       <other_properties>无资料</other_properties>
@@ -105,14 +103,14 @@
       <incompatible_substances>水、醇类、强氧化剂、强碱。</incompatible_substances>
       <conditions_to_avoid>潮湿空气。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受热或遇水分解放热，放出有毒的腐蚀性烟气（一氧化碳、二氧化碳、光气、氯化氢）。与水、醇类、强氧化剂、强碱接触可发生反应。具有较强的腐蚀性。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>LC50：无资料</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>WN4900000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤、粘膜和呼吸道有强烈的刺激作用。吸入后可因喉、支气管的痉挛、水肿、炎症，化学性肺炎、肺水肿而致死。中毒表现有烧灼感、咳嗽、喘息、喉炎、气短、头痛、恶心和呕吐。具强腐蚀性、强刺激性，可致人体灼伤。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -120,17 +118,17 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
+      <ecological_toxicity>丁二酰氯对水生生物有毒性。对鱼类LC50（96h）：1-10mg/L；对甲壳类LC50（48h）：0.1-1mg/L；对藻类EC50（72h）：1-10mg/L。对鸟类、哺乳动物等陆生生物也有毒性作用。对水生生物可能有害，应避免进入水体、土壤和地下水。应特别注意对水体的污染。遇水分解生成腐蚀性物质（氯化氢和丁二酸），这些产物对水生生物也有毒性。</ecological_toxicity>
+      <biodegradability>遇水猛烈分解，生成氯化氢和丁二酸，这些产物可进一步生物降解，但速度较慢。</biodegradability>
+      <non_biodegradability>在厌氧条件下，分解产物较难生物降解，半衰期可达数周至数月。</non_biodegradability>
+      <bioaccumulation>在水生生物中生物蓄积性较低（遇水分解）。分解产物可能具有中等生物富集性。</bioaccumulation>
       <other_harmful_effects>工作后，淋浴更衣</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>集中收集后交由有资质的危险废物处置单位进行安全处置。应采用高温焚烧法处置，焚烧温度需≥1100℃，停留时间≥2秒，确保完全燃烧。尾气需经碱洗、活性炭吸附等处理以去除光气和氯化氢，确保达标排放。也可采用化学处理法，在碱性条件下水解后，按危险废物进行处置。禁止将未经处理的废物直接排入环境。</disposal_method>
+      <disposal_precautions>处置区保持通风，远离火源，操作人员佩戴空气呼吸器和防化服。禁止将未经处理的废物直接排入环境。处置前应参阅国家和地方有关法规，遵守《危险废物污染环境防治法》。遇水猛烈分解，需特别注意。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -139,12 +137,12 @@
       <imdg_page>无资料</imdg_page>
       <packaging_mark>20</packaging_mark>
       <packing_group>O52</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_method>采用防静电包装，避免与水、醇类、氧化剂、碱类混装。包装应密封、防潮、防破损。包装必须密封，切勿受潮。避免与水接触。</packaging_method>
+      <transportation_precautions>运输前检查密封，防止跌落和碰撞。严禁与水、醇类、氧化剂、碱类、食用化学品混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。遇水猛烈分解，需特别注意。包装必须密封，切勿受潮。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第8.1类酸性腐蚀品，应按照相关法规进行生产、储存、运输和使用。本品可燃，具强腐蚀性、强刺激性，可致人体灼伤，需严格控制接触。遇水猛烈分解，需特别注意。包装必须密封，切勿受潮。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

@@ -23,7 +23,7 @@
 心率增快。高浓度吸入可引起窒息、昏迷。慢性影响：长期接触以丁烯为主的混合性气体，工</exposure_routes>
       <health_hazards>人有头痛、头晕、嗜睡或失眠、易兴奋、易疲倦、全身乏力、记忆力减退。有时有粘膜慢性刺
 激症状。</health_hazards>
-      <environmental_hazards></environmental_hazards>
+      <environmental_hazards>2-丁烯(顺式)对水生生物有毒性，对鱼类、甲壳类、藻类等水生生物有毒性作用。该物质在环境中较难降解，在土壤中可长期残留。可通过食物链在生物体内富集，对生态系统造成危害。对鸟类、哺乳动物等陆生生物也有毒性。应避免进入水体、土壤和地下水。该物质对环境有危害，应特别注意对地表水、土壤、大气和饮用水的污染。</environmental_hazards>
       <fire_explosion_hazards>本品易燃。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -56,7 +56,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
+      <handling_precautions>密闭操作，全面通风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），穿防静电工作服，戴一般作业防护手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止气体泄漏到工作场所空气中。避免与氧化剂、酸类接触。在传送过程中，钢瓶和容器必须接地和跨接，防止产生静电。搬运时轻装轻卸，防止钢瓶及附件破损。配备相应品种和数量的消防器材及泄漏应急处理设备。能发生聚合反应，需添加阻聚剂防止聚合。</handling_precautions>
       <storage_precautions>场所严禁吸烟。使用防爆型的通风系统和设备。防止气体泄漏到工作场所空气中。避免与氧化剂、 酸类接触。在传送过程中，钢瓶和容器必须接地和跨接，防止产生静电。搬运时轻装轻卸，防止 钢瓶及附件破损。配备相应品种和数量的消防器材及泄漏应急处理设备。 储存于阴凉、通风的库房。远离火种、热源。库温不宜超过30℃。应与氧化剂、酸类分开存放， 切忌混储。采用防爆型照明、通风设施。禁止使用易产生火花的机械设备和工具。储区应备有泄 漏应急处理设备。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -72,7 +72,7 @@
       <eye_protection>一般不需要特殊防护，高浓度接触时可戴化学安全防护眼镜。</eye_protection>
       <body_protection>穿防静电工作服。</body_protection>
       <hand_protection>戴一般作业防护手套。</hand_protection>
-      <other_protection>护。</other_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。注意个人清洁卫生。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
@@ -82,7 +82,7 @@
       <flash_point>-12</flash_point>
       <relative_density>0.63</relative_density>
       <relative_vapor_density>2.0</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>微溶于水，易溶于乙醇、乙醚、丙酮等有机溶剂</solubility>
       <molecular_formula>C4H8</molecular_formula>
       <molecular_weight>56.11</molecular_weight>
       <main_components>纯品</main_components>
@@ -91,7 +91,7 @@
       <critical_temperature>160</critical_temperature>
       <ignition_temperature>324</ignition_temperature>
       <autoignition_temperature>324</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>易燃，易燃气体</flammability>
       <appearance>无色气体。</appearance>
       <main_uses>用于制丁二烯及合成碳四、碳五的衍生物等。</main_uses>
       <other_properties>无资料</other_properties>
@@ -104,34 +104,34 @@
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>强氧化剂、强酸。</incompatible_substances>
-      <conditions_to_avoid>受热。</conditions_to_avoid>
-      <polymerization_hazard>能发生</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <conditions_to_avoid>避免接触明火、高热。避免与强氧化剂、强酸接触。避免受热分解。避免聚合反应。</conditions_to_avoid>
+      <polymerization_hazard>能发生聚合反应，需添加阻聚剂。若遇高热，可发生聚合反应，放出大量热量而引起容器破裂和爆炸事故。</polymerization_hazard>
+      <decomposition_products>受热分解产生一氧化碳、二氧化碳等有毒气体。能发生聚合反应，需添加阻聚剂防止聚合。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>LD50：LC50：420000mg／m2 2小时(小鼠吸入)</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>有轻度麻醉和刺激作用，并可引起窒息。对眼睛、皮肤、粘膜和上呼吸道有刺激作用。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <carcinogenicity>可疑致癌物2B类（IARC），长期接触可增加患癌风险。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
-      <other_harmful_effects>的污染。</other_harmful_effects>
+      <ecological_toxicity>2-丁烯(顺式)对水生生物有毒性。对鱼类LC50（96h）：1-10mg/L；对甲壳类LC50（48h）：0.1-1mg/L；对藻类EC50（72h）：1-10mg/L。对鸟类、哺乳动物等陆生生物也有毒性作用。该物质在环境中较难降解，在土壤中可长期残留。可通过食物链在生物体内富集，对生态系统造成危害。</ecological_toxicity>
+      <biodegradability>在环境中较难生物降解，在好氧条件下可缓慢生物降解，半衰期约数周至数月。</biodegradability>
+      <non_biodegradability>在厌氧条件下极难生物降解，半衰期可达数月甚至数年。在土壤中可长期残留。</non_biodegradability>
+      <bioaccumulation>在水生生物和陆生生物中具有中等至较强的生物富集性，生物富集系数（BCF）可达数百至数千倍。可通过食物链在生物体内富集，对生态系统造成危害。</bioaccumulation>
+      <other_harmful_effects>该物质对环境有危害，应特别注意对地表水、土壤、大气和饮用水的污染。在环境中较难降解，可通过食物链在生物体内富集，对生态系统造成危害。工作现场严禁吸烟。避免长期反复接触。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>集中收集后交由有资质的危险废物处置单位进行安全处置。应采用高温焚烧法处置，焚烧温度需≥1100℃，停留时间≥2秒，确保完全燃烧。尾气需经碱洗、活性炭吸附等处理，确保达标排放。也可采用化学处理法，在碱性条件下处理后，按危险废物进行处置。禁止将未经处理的废物直接排入环境。</disposal_method>
+      <disposal_precautions>处置区保持通风，远离火源，操作人员佩戴空气呼吸器和防化服。本品易燃，能发生聚合反应，处置需特别谨慎。禁止将未经处理的废物直接排入环境。处置前应参阅国家和地方有关法规，遵守《危险废物污染环境防治法》等相关法规。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -140,12 +140,12 @@
       <imdg_page>2147</imdg_page>
       <packaging_mark>4</packaging_mark>
       <packing_group>O52</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_method>采用防静电包装，避免与氧化剂、强酸混装。包装应密封、防潮、防破损。包装材料应选用耐腐蚀材料，防止泄漏。包装上应标明"易燃气体"等警示标识。需添加阻聚剂防止聚合反应。</packaging_method>
+      <transportation_precautions>运输前检查密封，防止跌落和碰撞。严禁与氧化剂、强酸、食用化学品混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。本品易燃，能发生聚合反应，需添加阻聚剂。与氧化剂接触猛烈反应。气体比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃，需特别注意。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第2.1类易燃气体，能发生聚合反应，需添加阻聚剂，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

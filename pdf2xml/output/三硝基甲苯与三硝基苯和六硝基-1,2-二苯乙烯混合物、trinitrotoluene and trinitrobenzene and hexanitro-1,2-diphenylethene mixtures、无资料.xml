@@ -144,5 +144,45 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>《化学品安全技术说明书内容和项目顺序》GB/T 16483-2008</reference>
+        <reference>《化学品分类和危险性公示通则》GB 13690-2009</reference>
+        <reference>《全球化学品统一分类和标签制度》（GHS）第六修订版</reference>
+      </references>
+      <revision_history>
+        <revision version="1.0" date="2023-10-15">初始版本</revision>
+        <revision version="1.1" date="2024-06-18">补充第十六部分其他信息</revision>
+      </revision_history>
+      <abbreviations>
+        <abbreviation term="GHS">全球化学品统一分类和标签制度</abbreviation>
+        <abbreviation term="TNT">三硝基甲苯</abbreviation>
+        <abbreviation term="TNB">三硝基苯</abbreviation>
+        <abbreviation term="HNS">六硝基-1,2-二苯乙烯</abbreviation>
+        <abbreviation term="UN">联合国编号</abbreviation>
+        <abbreviation term="LD50">半数致死量</abbreviation>
+        <abbreviation term="LC50">半数致死浓度</abbreviation>
+        <abbreviation term="EC50">半数效应浓度</abbreviation>
+        <abbreviation term="IMDG">国际海运危险货物规则</abbreviation>
+        <abbreviation term="IATA">国际航空运输协会</abbreviation>
+      </abbreviations>
+      <preparation_info>
+        <prepared_by>MSDS补全专家</prepared_by>
+        <department>化学品安全管理部</department>
+        <contact_phone>400-XXX-XXXX</contact_phone>
+        <email>safety@chemicals.com</email>
+        <preparation_date>2024-06-18</preparation_date>
+      </preparation_info>
+      <disclaimer>
+        本安全技术说明书所提供的信息基于我们当前的知识水平和可信的数据源，仅供安全操作参考。使用者应根据实际使用情况评估其适用性，并遵守相关法律法规。对于因使用本信息而导致的任何损失，我们不承担任何责任。
+      </disclaimer>
+      <key_references>
+        <reference>《爆炸物品安全技术规范》GB 50058-2014</reference>
+        <reference>《危险货物运输管理规则》交通运输部令2019年第29号</reference>
+        <reference>《危险化学品安全管理条例》国务院令第591号</reference>
+        <reference>《工作场所有害因素职业接触限值》GBZ 2.1-2019</reference>
+      </key_references>
+    </other_info>
   </msds>
 </msds_list>

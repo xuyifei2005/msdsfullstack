@@ -5,9 +5,9 @@
     <basic_info>
       <cas_number>300-76-5</cas_number>
       <msds_code>MSDS#744</msds_code>
-      <product_name>O,O-二甲基-O-(1,2-二溴-2,2-二</product_name>
-      <product_alias>二溴磷</product_alias>
-      <product_english_name>1,2-dibromo-2,2-dichloroethyl</product_english_name>
+      <product_name>O,O-二甲基-O-(1,2-二溴-2,2-二氯乙基)磷酸酯</product_name>
+      <product_alias>二溴磷；1,2-二溴-2,2-二氯乙基二甲基磷酸酯</product_alias>
+      <product_english_name>O,O-dimethyl O-(1,2-dibromo-2,2-dichloroethyl) phosphate</product_english_name>
       <company_name></company_name>
       <company_address></company_address>
       <contact_phone></contact_phone>
@@ -21,7 +21,7 @@
       <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
       <health_hazards>抑制胆碱酯酶，引起神经生理功能紊乱。中毒症状有头晕、无力、视物模糊、恶心、呕吐、
 瞳孔缩小、肌纤颤等。严重者出现肺水肿、大小便失禁、昏迷等。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <environmental_hazards>二溴磷对水生生物高毒，应避免进入水体、土壤和地下水。该物质对环境有严重危害，应特别注意对水体的污染。有机磷化合物在环境中可能发生水解和生物降解，但降解速度较慢。在水生生物中可能发生生物蓄积。</environmental_hazards>
       <fire_explosion_hazards>本品可燃，有毒。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -80,10 +80,10 @@
       <flash_point>无资料</flash_point>
       <relative_density>1.96</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C4H7B</molecular_formula>
+      <solubility>微溶于水，易溶于乙醇、乙醚、丙酮、苯等有机溶剂</solubility>
+      <molecular_formula>C4H7Br2Cl2O4P</molecular_formula>
       <molecular_weight>380.80</molecular_weight>
-      <main_components></main_components>
+      <main_components>二溴磷含量93%</main_components>
       <saturated_vapor_pressure>0.066(110℃)</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
@@ -102,16 +102,16 @@
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>还原剂、潮湿空气、碱类。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
-      <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <conditions_to_avoid>受热、光照、与还原剂、碱类接触。</conditions_to_avoid>
+      <polymerization_hazard>不能发生</polymerization_hazard>
+      <decomposition_products>受高热分解放出有毒的气体（氯化氢、溴化氢、氧化磷、一氧化碳、二氧化碳）。与还原剂、碱类接触可发生剧烈反应。在火场中，受热的容器有爆炸危险。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>中等毒类LD50：430mg／kg(大鼠经口)；1100mg／kg(兔经皮)LC50：</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation></irritation>
+      <irritation>抑制胆碱酯酶，引起神经生理功能紊乱。对眼睛、皮肤和呼吸道有刺激作用。皮肤接触可引起刺激、红肿、疼痛。眼睛接触可引起严重刺激、流泪、视力模糊。吸入后可引起咳嗽、呼吸困难等症状。中毒症状有头晕、无力、视物模糊、恶心、呕吐、瞳孔缩小、肌纤颤等。严重者出现肺水肿、大小便失禁、昏迷等。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -119,17 +119,17 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>皮肤防护也可采用塑料薄膜和涂皂棉布相结合的办法。工作后，淋浴更衣。注意个人清洁</other_harmful_effects>
+      <ecological_toxicity>二溴磷对水生生物高毒，应避免进入水体、土壤和地下水。该物质对环境有严重危害，应特别注意对水体的污染。在水生生物中可能发生生物蓄积。</ecological_toxicity>
+      <biodegradability>有机磷化合物在环境中可能发生水解和生物降解，但降解速度较慢。</biodegradability>
+      <non_biodegradability>在好氧条件下可缓慢生物降解，半衰期约数周至数月。</non_biodegradability>
+      <bioaccumulation>在水生生物中生物蓄积性中等至较高。</bioaccumulation>
+      <other_harmful_effects>该物质对环境有严重危害，应特别注意对水体的污染。有机磷化合物在环境中可能发生水解和生物降解，但降解速度较慢。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>集中收集后交由有资质的危险废物处置单位进行安全处置。可采用高温焚烧法处置，焚烧时需确保完全燃烧（>1100℃），尾气需经碱洗和活性炭吸附处理。也可采用化学处理法，在碱性条件下处理后，按危险废物进行处置。处置前应参阅国家和地方有关法规。</disposal_method>
+      <disposal_precautions>处置区保持通风，远离火源，操作人员佩戴空气呼吸器和防化服。禁止将未经处理的废物直接排入环境。处置前应参阅国家和地方有关法规，遵守《危险废物污染环境防治法》。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -138,12 +138,12 @@
       <imdg_page>3270</imdg_page>
       <packaging_mark>14</packaging_mark>
       <packing_group>O52</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_method>采用防静电包装，避免与还原剂、碱类混装。包装应密封、防潮、防破损。灌装时应控制流速，且有接地装置，防止静电积聚。包装容器应标明"毒害品"和"有机磷杀虫剂"标识。</packaging_method>
+      <transportation_precautions>运输前检查密封，防止跌落和碰撞。严禁与还原剂、碱类、食用化学品混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。在火场中，受热的容器有爆炸危险，需特别注意。本品为有机磷杀虫剂，抑制胆碱酯酶，需严格控制接触。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）、《农药管理条例》。本品属于第6.1类毒害品，UN号2783，应按照相关法规进行生产、储存、运输和使用。本品为有机磷杀虫剂，中等毒类，抑制胆碱酯酶，引起神经生理功能紊乱，需严格控制接触。在火场中，受热的容器有爆炸危险。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

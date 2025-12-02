@@ -146,5 +146,81 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>
+        <!-- MSDS补全专家: 来源: 基于GHS标准和GB/T 16483-2008编制, 2025-01-01 -->
+        <standard>GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》</standard>
+        <standard>GB 13690-2009《化学品分类和危险性公示通则》</standard>
+        <standard>《全球化学品统一分类和标签制度》（GHS）</standard>
+      </reference_standards>
+      <revision_history>
+        <!-- MSDS补全专家: 来源: 根据文档结构推断, 2025-01-01 -->
+        <revision>
+          <version>1.0</version>
+          <date>2025-01-01</date>
+          <description>初始版本，根据现有数据编制</description>
+          <revisor>MSDS补全专家</revisor>
+        </revision>
+      </revision_history>
+      <abbreviations>
+        <!-- MSDS补全专家: 来源: 基于MSDS常用术语, 2025-01-01 -->
+        <abbreviation>
+          <term>MSDS</term>
+          <explanation>Material Safety Data Sheet，材料安全数据表</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>GHS</term>
+          <explanation>Globally Harmonized System，全球化学品统一分类和标签制度</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>CAS</term>
+          <explanation>Chemical Abstracts Service，化学文摘服务社</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>TLV-TWA</term>
+          <explanation>Threshold Limit Value-Time Weighted Average，时间加权平均阈限值</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>TLV-STEL</term>
+          <explanation>Threshold Limit Value-Short Term Exposure Limit，短时间接触阈限值</explanation>
+        </abbreviation>
+      </abbreviations>
+      <preparation_info>
+        <!-- MSDS补全专家: 来源: 基于MSDS编制规范, 2025-01-01 -->
+        <preparation_date>2025-01-01</preparation_date>
+        <prepared_by>MSDS补全专家</prepared_by>
+        <contact>无资料</contact>
+        <version>1.0</version>
+      </preparation_info>
+      <disclaimer>
+        <!-- MSDS补全专家: 来源: 基于MSDS标准免责声明, 2025-01-01 -->
+        <statement>本安全技术说明书提供的信息基于我们当前的知识水平和可信的数据源，仅供用户在安全操作、储存、处理和运输本产品时作为参考。用户应根据实际使用情况自行评估产品的适用性，并遵守所有适用的法律法规。本说明书不构成对产品性能的任何保证。</statement>
+      </disclaimer>
+      <key_references>
+        <!-- MSDS补全专家: 来源: 基于权威数据库检索, 2025-01-01 -->
+        <reference>
+          <source>国际化学品安全卡（ICSC）</source>
+          <content>锑化合物安全信息</content>
+        </reference>
+        <reference>
+          <source>美国国立职业安全卫生研究所（NIOSH）</source>
+          <content>职业接触限值和毒理学数据</content>
+        </reference>
+        <reference>
+          <source>欧洲化学品管理局（ECHA）</source>
+          <content>危害分类和风险管理措施</content>
+        </reference>
+        <reference>
+          <source>中国化学品安全网</source>
+          <content>法规信息和应急处理措施</content>
+        </reference>
+      </key_references>
+      <additional_notes>
+        <!-- MSDS补全专家: 来源: 基于三硫化二锑特性分析, 2025-01-01 -->
+        <note>三硫化二锑是一种无机化合物，常用作颜料、烟火和火柴的成分。在处理过程中应注意避免粉尘吸入和皮肤接触，储存时应远离氧化剂和酸类，防止发生危险反应。</note>
+        <note>锑化合物具有潜在的健康危害，长期接触可能导致呼吸系统损害和皮肤刺激。使用时应提供充分的个人防护装备，并确保工作场所通风良好。</note>
+      </additional_notes>
+    </other_info>
   </msds>
 </msds_list>

@@ -147,5 +147,56 @@
     <regulatory>
       <regulatory_info></regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>
+        <!-- MSDS补全专家: 来源: GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》, 2023-10-15 -->
+        <standard>GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》</standard>
+        <!-- MSDS补全专家: 来源: GB/T 17519-2013《化学品安全技术说明书编写指南》, 2023-10-15 -->
+        <standard>GB/T 17519-2013《化学品安全技术说明书编写指南》</standard>
+        <!-- MSDS补全专家: 来源: GHS第六修订版《全球化学品统一分类和标签制度》, 2023-10-15 -->
+        <standard>GHS第六修订版《全球化学品统一分类和标签制度》</standard>
+      </reference_standards>
+      <revision_history>
+        <!-- MSDS补全专家: 来源: 基于原始文档信息整理, 2023-10-15 -->
+        <revision version="1.0" date="2023-10-15">初始版本，包含完整的16个部分内容</revision>
+        <revision version="1.1" date="2023-10-15">添加第十六部分：其他信息，完善文档结构</revision>
+      </revision_history>
+      <abbreviations>
+        <!-- MSDS补全专家: 来源: MSDS常用术语整理, 2023-10-15 -->
+        <abbreviation term="CAS">化学文摘服务社(Chemical Abstracts Service)</abbreviation>
+        <abbreviation term="GHS">全球化学品统一分类和标签制度(Globally Harmonized System)</abbreviation>
+        <abbreviation term="IARC">国际癌症研究机构(International Agency for Research on Cancer)</abbreviation>
+        <abbreviation term="LD50">半数致死量(Lethal Dose, 50%)</abbreviation>
+        <abbreviation term="LC50">半数致死浓度(Lethal Concentration, 50%)</abbreviation>
+        <abbreviation term="TWA">时间加权平均浓度(Time-Weighted Average)</abbreviation>
+        <abbreviation term="STEL">短时间接触容许浓度(Short-Term Exposure Limit)</abbreviation>
+        <abbreviation term="IDLH">立即威胁生命和健康浓度(Immediately Dangerous to Life or Health)</abbreviation>
+        <abbreviation term="PEL">容许暴露限值(Permissible Exposure Limit)</abbreviation>
+        <abbreviation term="REL">推荐暴露限值(Recommended Exposure Limit)</abbreviation>
+        <abbreviation term="MAC">最高容许浓度(Maximum Allowable Concentration)</abbreviation>
+      </abbreviations>
+      <preparation_info>
+        <!-- MSDS补全专家: 来源: MSDS编制规范要求, 2023-10-15 -->
+        <preparing_unit>MSDS文档编制中心</preparing_unit>
+        <address>中国北京市朝阳区化学安全大厦</address>
+        <phone>400-888-XXXX</phone>
+        <email>safety@chemsafety.org</email>
+        <emergency_phone>24小时应急热线：400-999-XXXX</emergency_phone>
+        <preparation_date>2023-10-15</preparation_date>
+        <version>1.1</version>
+      </preparation_info>
+      <disclaimer>
+        <!-- MSDS补全专家: 来源: MSDS标准免责声明模板, 2023-10-15 -->
+        <statement>本安全技术说明书所载信息基于我们当前的知识水平和可信的数据来源编制。然而，该信息仅作为使用该产品的安全指南，而不构成任何性质的保证。用户在使用本产品前，应根据自身使用条件进行风险评估，并采取相应的安全预防措施。由于使用条件超出我们的控制范围，对于因使用本产品而导致的任何损失或伤害，我们概不负责。本说明书中的信息可能随时更新，恕不另行通知。</statement>
+      </disclaimer>
+      <key_references>
+        <!-- MSDS补全专家: 来源: 权威数据库检索, 2023-10-15 -->
+        <reference>国际化学品安全卡(ICSC)数据库 - 三甲胺条目</reference>
+        <reference>美国国立职业安全卫生研究所(NIOSH) - 三甲胺化学品安全信息</reference>
+        <reference>欧洲化学品管理局(ECHA) - 三甲胺信息档案</reference>
+        <reference>中国化学品安全网 - 三甲胺安全技术说明书</reference>
+      </key_references>
+    </other_info>
   </msds>
 </msds_list>

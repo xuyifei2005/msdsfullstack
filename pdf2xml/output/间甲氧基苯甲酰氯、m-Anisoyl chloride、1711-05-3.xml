@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>1711-05-3</cas_number>
-      <msds_code>MSDS#1188</msds_code>
+      <msds_code>危险化学品目录（2015版）</msds_code>
       <product_name>间甲氧基苯甲酰氯</product_name>
-      <product_alias>3-甲氧基苯甲酰氯</product_alias>
+      <product_alias>3-甲氧基苯甲酰氯;间茴香酰氯;3-Methoxybenzoyl chloride;m-anisoyl chloride</product_alias>
       <product_english_name>m-Anisoyl chloride</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -77,14 +77,14 @@
     <physical_chemical>
       <pH>无资料</pH>
       <melting_point>无资料</melting_point>
-      <boiling_point>124／2.00kPa</boiling_point>
+      <boiling_point>123-125°C(15mmHg)</boiling_point>
       <flash_point>92</flash_point>
-      <relative_density>1.21</relative_density>
+      <relative_density>1.214g/mL(25°C)</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C8H7C</molecular_formula>
-      <molecular_weight>170.6</molecular_weight>
-      <main_components>无资料</main_components>
+      <solubility>无资料</solubility>
+      <molecular_formula>C8H7ClO2</molecular_formula>
+      <molecular_weight>170.593</molecular_weight>
+      <main_components>间甲氧基苯甲酰氯</main_components>
       <saturated_vapor_pressure>2.00／124℃</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
@@ -98,6 +98,7 @@
       <critical_pressure>无资料</critical_pressure>
       <explosive_upper_limit>无资料</explosive_upper_limit>
       <explosive_lower_limit>无资料</explosive_lower_limit>
+      <refractive_index>n20/D1.558</refractive_index>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -144,7 +145,9 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品目录（2015版）</regulatory_info>
+      <domestic_regulations>无资料</domestic_regulations>
+      <international_regulations>无资料</international_regulations>
     </regulatory>
   </msds>
 </msds_list>

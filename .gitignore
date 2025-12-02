@@ -175,7 +175,7 @@ tmp/
 # 上传和输出文件
 ####################################
 # 用户上传的文件（需要根据实际情况调整）
-output/
+# output/
 # 但保留 pdf2xml/output 目录（PDF转换输出文件需要提交）
 !pdf2xml/output/
 uploads/
@@ -350,4 +350,5 @@ test_msds_files/
 
 
 
-
+# 忽略提交超大的数据库结构升级备份文件！
+aboutproject/msdsdatabases/JFKJmsds/20250703准备升级数据库结构前备份/rlc_gissxxacaq.sql

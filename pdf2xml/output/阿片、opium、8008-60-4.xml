@@ -4,23 +4,23 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>8008-60-4</cas_number>
-      <msds_code>无资料</msds_code>
+      <msds_code>危险化学品目录（2015版）</msds_code>
       <product_name>阿片</product_name>
-      <product_alias>鸦片</product_alias>
+      <product_alias>鸦片；罂粟膏；大烟；Opium；Poppy extract</product_alias>
       <product_english_name>opium</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>第6.1类毒害品</hazard_category>
-      <exposure_routes>吸入、食入</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <hazard_category>特异性靶器官毒性-反复接触,类别2</hazard_category>
+      <exposure_routes>吸入、食入、皮肤接触</exposure_routes>
+      <health_hazards>长期或反复接触可能对器官造成损害，具有成瘾性</health_hazards>
+      <environmental_hazards>对水生生物有害并具有长期持续影响</environmental_hazards>
       <fire_explosion_hazards>无资料</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -79,18 +79,18 @@
       <flash_point>无资料</flash_point>
       <relative_density>不适用</relative_density>
       <relative_vapor_density>不适用</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula></molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>无资料</main_components>
+      <solubility>微溶于水，溶于乙醇、乙醚</solubility>
+      <molecular_formula>C16H24O7</molecular_formula>
+      <molecular_weight>104.14</molecular_weight>
+      <main_components>阿片；含有20多种生物碱，包括吗啡（约10%）、可待因、罂粟碱等</main_components>
       <saturated_vapor_pressure>不适用</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <flammability>可燃</flammability>
+      <appearance>棕色或黑色粘稠状固体，有特殊气味</appearance>
+      <main_uses>用于医药领域，提取吗啡、可待因等生物碱；用于制聚苯乙烯、合成橡胶等工业领域</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>不适用</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -142,7 +142,9 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品目录（2015版）</regulatory_info>
+      <domestic_regulations>无资料</domestic_regulations>
+      <international_regulations>无资料</international_regulations>
     </regulatory>
   </msds>
 </msds_list>

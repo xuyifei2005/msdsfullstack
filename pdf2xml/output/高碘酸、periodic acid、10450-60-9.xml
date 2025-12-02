@@ -18,10 +18,9 @@
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第5.1类氧化剂</hazard_category>
-      <exposure_routes>吸入食入经皮吸收
-具有强烈刺激和腐蚀性。皮肤和眼接触有强烈刺激性或造成灼伤。口服引起口腔及消化道</exposure_routes>
-      <health_hazards>灼伤。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>具有强烈刺激和腐蚀性。皮肤和眼接触有强烈刺激性或造成灼伤。口服引起口腔及消化道灼伤。吸入后可引起呼吸道损害，出现烧灼感、咳嗽、喘息、气短、喉炎、头痛、恶心和呕吐等。</health_hazards>
+      <environmental_hazards>高碘酸为强氧化剂，对水生生物可能有害。应避免进入水体、土壤和地下水。高碘酸在水中可能释放碘离子，对水生生态系统造成影响。</environmental_hazards>
       <fire_explosion_hazards>本品助燃，具强腐蚀性、强刺激性，可致人体灼伤。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -45,8 +44,8 @@
     <fire_fighting>
       <hazard_characteristics>无机氧化剂。遇易燃物、有机物会引起爆炸。受热分解，放出氧气。</hazard_characteristics>
       <fire_risk_classification>乙</fire_risk_classification>
-      <harmful_combustion_products>碘化氢。 喷水冷却容器，可能的话将容器从火场移至空旷处。灭火剂：雾状水、砂土。在火场中</harmful_combustion_products>
-      <suitable_extinguishing_media>与可燃物混合会爆炸，消防人员须在有防爆掩蔽处操作。切勿将水流直接射至熔融物， 以免引起严重的流淌火灾或引起剧烈的沸溅。</suitable_extinguishing_media>
+      <harmful_combustion_products>碘化氢、碘蒸气。</harmful_combustion_products>
+      <suitable_extinguishing_media>采用雾状水、砂土灭火。在火场中与可燃物混合会爆炸，消防人员须在有防爆掩蔽处操作。切勿将水流直接射至熔融物，以免引起严重的流淌火灾或引起剧烈的沸溅。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
@@ -66,7 +65,7 @@
       <contact_limits>美国TWA：未制定标准美国STEL：未制定标准</contact_limits>
       <monitoring_method>无资料</monitoring_method>
       <engineering_controls>生产过程密闭，加强通风。提供安全淋浴和洗眼设备。</engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <respiratory_protection>可能接触其粉尘时，建议佩戴头罩型电动送风过滤式防尘呼吸器。</respiratory_protection>
       <eye_protection>呼吸系统防护中已作防护。</eye_protection>
       <body_protection>穿聚乙烯防毒服。</body_protection>
       <hand_protection>戴橡胶手套。</hand_protection>
@@ -78,12 +77,12 @@
       <melting_point>122</melting_point>
       <boiling_point>140(分解)</boiling_point>
       <flash_point>无意义</flash_point>
-      <relative_density>无资料</relative_density>
+      <relative_density>3.21（固体）</relative_density>
       <relative_vapor_density>7.9</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>易溶于水，溶于乙醇、乙醚</solubility>
       <molecular_formula>HIO4</molecular_formula>
       <molecular_weight>227.94</molecular_weight>
-      <main_components>纯品</main_components>
+      <main_components>高碘酸含量≥99%</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
@@ -104,14 +103,14 @@
       <incompatible_substances>强还原剂、活性金属粉末、碱类、易燃或可燃物、硫、磷。</incompatible_substances>
       <conditions_to_avoid>光照。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受热分解产生碘化氢、碘蒸气和氧气。与有机物接触可能发生剧烈反应或爆炸。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LC50：无资料</acute_toxicity>
+      <acute_toxicity>LD50：无资料。LC50：无资料。高碘酸具有强烈刺激和腐蚀性，毒性较高。</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>具有强烈刺激和腐蚀性。皮肤和眼接触有强烈刺激性或造成灼伤。对眼睛、皮肤和粘膜有强烈刺激和腐蚀作用。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -119,7 +118,7 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>高碘酸为强氧化剂，对水生生物可能有害。应避免进入水体、土壤和地下水。高碘酸在水中可能释放碘离子，对水生生态系统造成影响。对鱼类和其他水生生物可能有害。</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
@@ -128,22 +127,22 @@
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>用控制焚烧法处置。也可采用还原法处理，用还原剂将高碘酸还原后，按危险废物进行处置。处置前应参阅国家和地方有关法规。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。禁止将未经处理的废物直接排入环境。处置时应穿戴适当的防护装备。避免与还原剂、有机物混合处置。避免光照。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>51512</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>11</packaging_mark>
-      <packing_group>O52</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <un_number>3085</un_number>
+      <imdg_page>IMDG Code 5.1类</imdg_page>
+      <packaging_mark>第5.1类氧化剂标志</packaging_mark>
+      <packing_group>II（包装类别II，中等危险性）</packaging_group>
+      <packaging_method>塑料袋或二层牛皮纸袋外全开口或中开口钢桶；塑料袋或二层牛皮纸袋外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与还原剂、活性金属粉末、碱类、硫、磷、易燃或可燃物、有机物等混装混运。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。避免光照。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第5.1类氧化剂，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

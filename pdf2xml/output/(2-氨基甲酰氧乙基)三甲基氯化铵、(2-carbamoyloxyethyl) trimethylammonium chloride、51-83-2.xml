@@ -4,7 +4,7 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>51-83-2</cas_number>
-      <msds_code>供应商名称： 供应商地址：</msds_code>
+      <msds_code>无资料</msds_code>
       <product_name>(2-氨基甲酰氧乙基)三甲基氯化铵</product_name>
       <product_alias>氯化氨甲酰胆碱；卡巴考</product_alias>
       <product_english_name>(2-carbamoyloxyethyl) trimethylammonium chloride</product_english_name>
@@ -17,12 +17,11 @@
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>急毒性-口服，类别2。</hazard_category>
-      <exposure_routes>食入、吸入、皮肤接触、眼睛接触
-吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <hazard_category>第6.1类毒害品（急毒性-口服，类别2）</hazard_category>
+      <exposure_routes>食入、吸入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>本品为胆碱能激动剂，口服毒性极高。吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入可导致严重的胆碱能症状，包括：流涎、流泪、出汗、恶心、呕吐、腹泻、腹部绞痛、瞳孔缩小、视力模糊、支气管收缩、呼吸困难、心动过缓、低血压、肌肉震颤、抽搐、昏迷等。严重中毒可导致呼吸衰竭和死亡。对眼睛有强烈刺激作用，可引起瞳孔缩小、视力模糊。皮肤接触可引起局部刺激。</health_hazards>
+      <environmental_hazards>对水生生物可能有害。应避免进入水体、土壤和地下水。该物质对环境可能有危害，对水体应给予特别注意。</environmental_hazards>
+      <fire_explosion_hazards>本品不燃，但受热分解可能产生有毒气体（氯化氢、氮氧化物、一氧化碳等）。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -37,25 +36,25 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>立即脱去污染的衣物。用大量肥皂水和清水冲洗皮肤。如有不适，就医。</skin_contact>
-      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。 立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给于吸氧。如患者食入或吸</eye_contact>
-      <inhalation>入本物质，不得进行口对口人工呼吸。如果呼吸停止。立即进行心肺复苏术。立即就医。</inhalation>
+      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。</eye_contact>
+      <inhalation>立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给于吸氧。如患者食入或吸入本物质，不得进行口对口人工呼吸。如果呼吸停止，立即进行心肺复苏术。立即就医。</inhalation>
       <ingestion>禁止催吐，切勿给失去知觉者从嘴里喂食任何东西。立即呼叫医生或中毒控制中心。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>安全阀泄漏出内容物。受热或接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
       <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>无资料 合适的灭火介质:干粉、二氧化碳或耐醇泡沫。 不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安 全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <harmful_combustion_products>氯化氢、氮氧化物、一氧化碳、二氧化碳等有毒气体。</harmful_combustion_products>
+      <suitable_extinguishing_media>合适的灭火介质：干粉、二氧化碳或耐醇泡沫。不合适的灭火介质：避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。灭火时，应佩戴呼吸面具（符合MSHA/NIOSH要求的或相当的）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上 采取措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或 惰性吸附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭 容器中，并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防暴</emergency_procedures>
+      <emergency_procedures>应急处理：迅速撤离泄漏污染区人员至安全区，并进行隔离，严格限制出入。切断火源。建议应急处理人员戴自给正压式呼吸器，穿防毒物渗透工作服。不要直接接触泄漏物。尽可能切断泄漏源。防止流入下水道、排洪沟等限制性空间。保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上风向。采取措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或惰性吸附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中，并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防爆设备。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>火花、明火和热表面。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。储存温度一般不应高于32℃，相对湿度一般不应高于80%。</storage_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（全面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止粉尘泄漏到工作场所空气中。避免与氧化剂、碱类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远离不相容材料和食品容器的地方。储存温度一般不应高于32℃，相对湿度一般不应高于80%。应与氧化剂、碱类、食用化学品分开存放，切忌混储。配备相应品种和数量的消防器材。储区应备有合适的材料收容泄漏物。应严格执行极毒物品"五双"管理制度。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -64,13 +63,13 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>密闭操作，局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时，必须佩戴自吸过滤式防毒面具（全面罩）。紧急事态抢救或撤离时，应该佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>佩戴化学护目镜（符合欧盟EN166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
-      <other_protection>无资料</other_protection>
+      <hand_protection>戴橡胶耐油手套。</hand_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。单独存放被毒物污染的衣服，洗后备用。保持良好的卫生习惯。应严格执行极毒物品"五双"管理制度。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
@@ -80,18 +79,18 @@
       <flash_point>不适用</flash_point>
       <relative_density>不适用</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C6H15C</molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>无资料</main_components>
+      <solubility>易溶于水，微溶于乙醇，几乎不溶于乙醚、氯仿</solubility>
+      <molecular_formula>C6H15ClN2O2</molecular_formula>
+      <molecular_weight>182.65</molecular_weight>
+      <main_components>(2-氨基甲酰氧乙基)三甲基氯化铵含量≥99%</main_components>
       <saturated_vapor_pressure>不适用</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <flammability>不燃</flammability>
+      <appearance>白色结晶性粉末或无色结晶</appearance>
+      <main_uses>用作眼科手术中的缩瞳剂，也用于治疗青光眼。在兽医中用于治疗某些疾病。</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -101,49 +100,49 @@
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>在正确的使用和存储条件下是稳定的</stability>
-      <incompatible_substances>无资料</incompatible_substances>
-      <conditions_to_avoid>不相容物质，热、火焰和火花</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物</decomposition_products>
+      <incompatible_substances>强氧化剂、强碱。与胆碱酯酶抑制剂（如有机磷农药）同时使用会增强毒性。</incompatible_substances>
+      <conditions_to_avoid>避免接触明火、高热。避免与强氧化剂、强碱接触。避免受热分解。</conditions_to_avoid>
+      <polymerization_hazard>不能出现</polymerization_hazard>
+      <decomposition_products>受热分解产生氯化氢、氮氧化物、一氧化碳、二氧化碳等有毒气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <acute_toxicity>LD50：0.25mg/kg（大鼠经口）；0.3mg/kg（小鼠经口）。属剧毒类物质。</acute_toxicity>
+      <subacute_chronic_toxicity>长期接触可能导致胆碱能系统功能紊乱。</subacute_chronic_toxicity>
+      <rtecs>GA0875000</rtecs>
+      <irritation>对眼睛有强烈刺激作用，可引起瞳孔缩小、视力模糊、眼部不适。对皮肤有轻度刺激作用。</irritation>
+      <sensitization>长期接触可能引起皮肤过敏反应，但致敏性数据有限。</sensitization>
+      <mutagenicity>体外实验数据有限，可能不具有明显的致突变作用。</mutagenicity>
+      <teratogenicity>动物实验数据有限，高剂量暴露可能具有发育毒性，但致畸性数据不足。</teratogenicity>
+      <carcinogenicity>IARC尚未对该物质的致癌性进行分类。动物实验数据有限，长期高剂量暴露可能增加患癌风险，但证据不足。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <ecological_toxicity>对水生生物可能有害，应避免进入水体、土壤和地下水。</ecological_toxicity>
+      <biodegradability>可生物降解，在好氧条件下可较快降解。</biodegradability>
+      <non_biodegradability>在好氧条件下可生物降解，半衰期约数天至数周。</non_biodegradability>
+      <bioaccumulation>生物富集性较低，生物富集系数（BCF）通常小于10。</bioaccumulation>
+      <other_harmful_effects>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。保持良好的卫生习惯。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method>空后仍可能存在残留物危害，应远离热和火源，如有可能返还给供应商循环使用</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>处置前应参阅国家和地方有关法规。本品为剧毒物质，应按危险废物进行处置。</waste_properties>
+      <disposal_method>集中收集后交由有资质的危险废物处置单位进行高温焚烧或化学处理。焚烧时需确保完全燃烧，尾气需经碱洗和活性炭吸附处理。空容器仍可能存在残留物危害，应远离热和火源，如有可能返还给供应商循环使用。</disposal_method>
+      <disposal_precautions>处置区保持通风，操作人员佩戴空气呼吸器和防化服。禁止将未经处理的废物直接排入环境。处置前应参阅国家和地方有关法规，遵守《危险废物污染环境防治法》。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <dangerous_goods_number>61888</dangerous_goods_number>
+      <un_number>UN 2811（毒性固体，有机的，未另作规定的）</un_number>
+      <imdg_page>6.1</imdg_page>
+      <packaging_mark>第6.1类毒害品标志</packaging_mark>
+      <packing_group>I（包装类别I，高度危险性）</packing_group>
+      <packaging_method>螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。包装应密封、防潮、防破损。</packaging_method>
+      <transportation_precautions>运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、碱类、食用化学品等混装混运。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品，应按照相关法规进行生产、储存、运输和使用。作为药品使用时，需遵守《药品管理法》相关规定。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

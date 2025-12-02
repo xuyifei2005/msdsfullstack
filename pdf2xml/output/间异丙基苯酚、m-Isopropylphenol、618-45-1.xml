@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>618-45-1</cas_number>
-      <msds_code>MSDS#2179</msds_code>
+      <msds_code>危险化学品目录（2015版）</msds_code>
       <product_name>间异丙基苯酚</product_name>
-      <product_alias>无资料</product_alias>
+      <product_alias>3-异丙基苯酚;间异丙酚;间羟基枯烯;m-Cumenol;3-(1-methylethyl)-Phenol;META-ISOPROPYLPHENOL</product_alias>
       <product_english_name>m-Isopropylphenol</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -77,20 +77,20 @@
       <melting_point>25.9</melting_point>
       <boiling_point>228.6</boiling_point>
       <flash_point>97</flash_point>
-      <relative_density>无资料</relative_density>
+      <relative_density>0.994</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>无资料</solubility>
       <molecular_formula>C9H12O</molecular_formula>
-      <molecular_weight>136.2</molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
+      <molecular_weight>136.19</molecular_weight>
+      <main_components>间异丙基苯酚</main_components>
+      <saturated_vapor_pressure>0.0499mmHg at 25°C</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>引燃温度(℃)：无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>白色结晶。</appearance>
-      <main_uses>用作增塑剂等。</main_uses>
+      <autoignition_temperature>无资料</autoignition_temperature>
+      <flammability>可燃</flammability>
+      <appearance>白色至淡黄色结晶</appearance>
+      <main_uses>用作增塑剂、抗氧化剂等</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -107,10 +107,10 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：1630mg／kg(小鼠经口)LC50：</acute_toxicity>
+      <acute_toxicity>LD50：1630mg/kg(小鼠经口)</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>SL5800000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤、粘膜有刺激性</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -133,7 +133,7 @@
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>83507</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <un_number>UN3145</un_number>
       <imdg_page>无资料</imdg_page>
       <packaging_mark>20</packaging_mark>
       <packing_group>Ⅲ</packing_group>
@@ -142,7 +142,9 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品目录（2015版）</regulatory_info>
+      <chinese_regulations>危险化学品目录（2015版）</chinese_regulations>
+      <international_regulations>无资料</international_regulations>
     </regulatory>
   </msds>
 </msds_list>

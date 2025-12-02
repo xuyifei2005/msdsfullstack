@@ -18,9 +18,9 @@
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第5.1类 氧化剂</hazard_category>
-      <exposure_routes>吸入 食入</exposure_routes>
-      <health_hazards>胃肠炎症状。严重时可引起脱水和休克。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>吸入后可引起呼吸道损害，出现烧灼感、咳嗽、喘息、喉炎、气短、头痛、恶心和呕吐等。对眼睛、皮肤和粘膜有刺激作用。口服可引起胃肠炎症状，严重时可引起脱水和休克。锌化合物可能引起金属烟热。</health_hazards>
+      <environmental_hazards>高锰酸锌为强氧化剂，对水生生物可能有害。应避免进入水体、土壤和地下水。高锰酸锌在水中会分解产生二氧化锰沉淀，可能对水生生态系统造成影响。锌离子对水生生物具有毒性。</environmental_hazards>
       <fire_explosion_hazards>本品助燃、有毒、具有刺激性</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -53,7 +53,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免与还原剂、活性金属粉末、硫、磷、易燃或可燃物、硫酸、铵盐、乙醇、甘油、过氧化氢接触。搬运时要轻装轻卸，防止包装及容器损坏。禁止震动、撞击和摩擦。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>储存于阴凉、干燥、通风良好的不燃库房。远离火种、热源。保持容器密封。防止受潮和 雨淋。应与酸类、还原剂、易燃物、可燃物、铵盐等分开存放。操作现场不得吸烟、饮水、 进食。搬运时要轻装轻卸，防止包装及容器损坏。禁止震动、撞击和摩擦。分装和搬运作 业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -69,7 +69,7 @@
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
       <body_protection>穿相应的防护服。</body_protection>
       <hand_protection>戴防化学品手套。</hand_protection>
-      <other_protection>无资料</other_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。单独存放被毒物污染的衣服，洗后再用。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
@@ -78,11 +78,11 @@
       <boiling_point>无资料</boiling_point>
       <flash_point>无资料</flash_point>
       <relative_density>2.47</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>Z</molecular_formula>
+      <relative_vapor_density>无意义（固体）</relative_vapor_density>
+      <solubility>易溶于水，易潮解</solubility>
+      <molecular_formula>Zn(MnO4)2</molecular_formula>
       <molecular_weight>303.25</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>高锰酸锌含量≥99%</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
@@ -101,16 +101,16 @@
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>强还原剂、易燃或可燃物、硫酸、铵盐、乙醇、甘油、过氧化氢。</incompatible_substances>
-      <conditions_to_avoid>光照、接触空气。</conditions_to_avoid>
+      <conditions_to_avoid>避免与还原剂、活性金属粉末、硫、磷、易燃或可燃物、硫酸、铵盐、乙醇、甘油、过氧化氢接触。避免受热、摩擦、撞击。避免接触有机物。避免光照、接触空气。防止受潮。严禁震动、撞击和摩擦。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受热分解产生氧化锌和二氧化锰。与有机物、硫酸、铵盐、乙醇、甘油、过氧化氢接触可能发生剧烈反应或爆炸。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
+      <acute_toxicity>LD50：无资料。LC50：无资料。高锰酸锌毒性参考高锰酸钾，为中等毒性物质。锌化合物可能引起金属烟热。</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤和粘膜有强烈刺激和腐蚀作用。浓溶液或结晶对皮肤有腐蚀性，可引起灼伤。溅落眼睛内，刺激结膜，重者致灼伤。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -118,30 +118,31 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>高锰酸锌为强氧化剂，对水生生物可能有害。应避免进入水体、土壤和地下水。高锰酸锌在水中会分解产生二氧化锰沉淀，可能对水生生态系统造成影响。锌离子对水生生物具有毒性。对鱼类和其他水生生物可能有害。</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
+      <bioaccumulation>锌离子可能在生物体内积累，对生态系统造成长期影响。</bioaccumulation>
       <other_harmful_effects>存放被毒物污染的衣服，洗后再用。保持良好的卫生习惯。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties></waste_properties>
-      <disposal_method></disposal_method>
+      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
+      <disposal_method>用控制焚烧法处置。也可采用还原法处理，用亚硫酸氢钠、硫酸亚铁等还原剂将高锰酸锌还原为二氧化锰和硫酸锌后，按危险废物进行处置。处置前应参阅国家和地方有关法规。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。禁止将未经处理的废物直接排入环境。处置时应穿戴适当的防护装备。避免与还原剂、有机物、硫酸、铵盐、乙醇、甘油、过氧化氢混合处置。严禁震动、撞击和摩擦。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>51051</dangerous_goods_number>
       <un_number>1515</un_number>
       <imdg_page>5193</imdg_page>
-      <packaging_mark>11</packaging_mark>
-      <packing_group>Ⅱ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_mark>第5.1类氧化剂标志</packaging_mark>
+      <packing_group>II（包装类别II，中等危险性）</packaging_group>
+      <packaging_method>塑料袋或二层牛皮纸袋外全开口或中开口钢桶；塑料袋或二层牛皮纸袋外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与还原剂、活性金属粉末、易燃或可燃物、有机物、硫酸、铵盐、乙醇、甘油、过氧化氢等混装混运。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。禁止震动、撞击和摩擦。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第5.1类氧化剂，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

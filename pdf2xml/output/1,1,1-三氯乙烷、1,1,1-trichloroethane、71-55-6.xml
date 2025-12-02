@@ -18,10 +18,9 @@
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类毒害品</hazard_category>
-      <exposure_routes>吸入食入经皮吸收
-急性中毒主要损害中枢神经系统。轻者表现为头痛、眩晕、步态蹒跚、共济失调、嗜睡等；</exposure_routes>
-      <health_hazards>重者可出现抽搐，甚至昏迷。可引起心律不齐。对皮肤有轻度脱脂和刺激作用。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>急性中毒主要损害中枢神经系统。轻者表现为头痛、眩晕、步态蹒跚、共济失调、嗜睡等；重者可出现抽搐，甚至昏迷。可引起心律不齐。对皮肤有轻度脱脂和刺激作用。</health_hazards>
+      <environmental_hazards>1,1,1-三氯乙烷对水生生物可能有害。应避免进入水体、土壤和地下水。该物质对环境可能有危害，对水体应给予特别注意。在水生生物中可能发生生物蓄积。</environmental_hazards>
       <fire_explosion_hazards>本品可燃，有毒，具刺激性。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -54,7 +53,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴直接式防毒面具（半面罩），戴安全防护眼镜，穿防毒物渗透工作服，戴防化学品手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、碱类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>规程。建议操作人员佩戴直接式防毒面具（半面罩），戴安全防护眼镜，穿防毒物渗透工 作服，戴防化学品手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和 设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、碱类接触。搬运时要轻装轻卸， 防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器 可能残留有害物。 储存于阴凉、通风的库房。远离火种、热源。保持容器密封。应与氧化剂、碱类、食用化 学品分开存放，切忌混储。配备相应品种和数量的消防器材。储区应备有泄漏应急处理设 备和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -66,11 +65,11 @@
       <contact_limits></contact_limits>
       <monitoring_method>气相色谱法</monitoring_method>
       <engineering_controls>严加密闭，提供充分的局部排风和全面通风。</engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <respiratory_protection>空气中浓度超标时，佩戴直接式防毒面具（半面罩）。紧急事态抢救或撤离时，应该佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>戴安全防护眼镜。</eye_protection>
       <body_protection>穿防毒物渗透工作服。</body_protection>
       <hand_protection>戴防化学品手套。</hand_protection>
-      <other_protection></other_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
@@ -80,10 +79,10 @@
       <flash_point>无资料</flash_point>
       <relative_density>1.35</relative_density>
       <relative_vapor_density>4.6</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C2H3C</molecular_formula>
+      <solubility>微溶于水，溶于乙醇、乙醚、丙酮、苯、氯仿</solubility>
+      <molecular_formula>C2H3Cl3</molecular_formula>
       <molecular_weight>133.42</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>1,1,1-三氯乙烷含量≥95.0%</main_components>
       <saturated_vapor_pressure>13.33(20℃)</saturated_vapor_pressure>
       <log_kow>2.17</log_kow>
       <critical_temperature>311.5</critical_temperature>
@@ -104,14 +103,14 @@
       <incompatible_substances>强氧化剂、铝及其合金、强碱。</incompatible_substances>
       <conditions_to_avoid>光照。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受热分解产生一氧化碳、二氧化碳、氯化氢、光气。在潮湿空气中，特别在日光照射下，可能释放出腐蚀性很强的氯化氢烟雾。与活性金属粉末（如镁、铝等）能发生反应，引起分解。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>LC50：97920mg/m3，4小时(大鼠吸入)</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>KJ2975000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对皮肤有轻度脱脂和刺激作用。接触后可能引起眼部不适和皮肤刺激症状。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -119,7 +118,7 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>1,1,1-三氯乙烷对水生生物可能有害。应避免进入水体、土壤和地下水。该物质对环境可能有危害，对水体应给予特别注意。在水生生物中可能发生生物蓄积。对鱼类和其他水生生物可能有害。</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation></bioaccumulation>
@@ -128,8 +127,8 @@
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>用控制焚烧法处置。焚烧炉排出的氯化氢和光气通过洗涤器除去。也可采用化学处理法，在碱性条件下水解后，按危险废物进行处置。处置前应参阅国家和地方有关法规。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。禁止将未经处理的废物直接排入环境。处置时应穿戴适当的防护装备。避免与氧化剂、碱类混合处置。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -137,13 +136,13 @@
       <un_number>2831</un_number>
       <imdg_page>6272</imdg_page>
       <packaging_mark>15</packaging_mark>
-      <packing_group>O53</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packing_group>III（包装类别III，低危险性）</packing_group>
+      <packaging_method>小开口钢桶；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、碱类、食用化学品等混装混运。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品，应按照相关法规进行生产、储存、运输和使用。注意：1,1,1-三氯乙烷已被《蒙特利尔议定书》列为受控物质，其生产和使用受到限制。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

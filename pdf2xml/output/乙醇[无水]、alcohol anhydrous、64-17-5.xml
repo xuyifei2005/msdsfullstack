@@ -19,8 +19,8 @@
     <hazard_info>
       <hazard_category>第3.2类中闪点易燃液体</hazard_category>
       <exposure_routes>吸入食入经皮吸收</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <health_hazards>吸入、食入或经皮肤吸收后对身体有害。本品为中枢神经系统抑制剂。首先引起兴奋，随后抑制。急性中毒：急性中毒多发生于口服。一般可分为兴奋、催眠、麻醉、窒息四阶段。患者进入第三或第四阶段，出现意识丧失、瞳孔扩大、呼吸不规律、休克、心力循环衰竭及呼吸停止。慢性影响：在生产中长期接触高浓度本品可引起鼻、眼、粘膜刺激症状，以及头痛、头晕、疲乏、易激动、震颤、恶心等。长期酗酒可引起多发性神经病、慢性胃炎、脂肪肝、肝硬化、心肌损害及器质性精神病等。皮肤长期接触可引起干燥、脱屑、皲裂和皮炎。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。本品可通过皮肤吸收。</health_hazards>
+      <environmental_hazards>乙醇对水生生物可能有害。应避免进入水体、土壤和地下水。该物质对环境可能有危害，对水体应给予特别注意。挥发后可参与形成光化学烟雾。</environmental_hazards>
       <fire_explosion_hazards>本品易燃，具刺激性。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -53,7 +53,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类、</handling_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴过滤式防毒面具（半面罩），穿防静电工作服。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类、酸酐、碱金属、胺类接触。灌装时应控制流速，且有接地装置，防止静电积聚。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>戴过滤式防毒面具（半面罩），穿防静电工作服。远离火种、热源，工作场所严禁吸烟。 碱金属、胺类接触。灌装时应控制流速，且有接地装置，防止静电积聚。配备相应品种和 数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。 储存于阴凉、通风的库房。远离火种、热源。库温不宜超过30℃。保持容器密封。应与氧 化剂、酸类、碱金属、胺类等分开存放，切忌混储。采用防爆型照明、通风设施。禁止使 用易产生火花的机械设备和工具。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -79,16 +79,16 @@
       <flash_point>12</flash_point>
       <relative_density>0.79</relative_density>
       <relative_vapor_density>1.59</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>与水混溶，易溶于乙醚、丙酮、苯等有机溶剂</solubility>
       <molecular_formula>C2H6O</molecular_formula>
       <molecular_weight>46.07</molecular_weight>
-      <main_components>纯品</main_components>
+      <main_components>乙醇（无水酒精）含量100%</main_components>
       <saturated_vapor_pressure>5.33(19℃)</saturated_vapor_pressure>
       <log_kow>0.32</log_kow>
       <critical_temperature>243.1</critical_temperature>
       <ignition_temperature>363</ignition_temperature>
       <autoignition_temperature>363</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>易燃，中闪点液体</flammability>
       <appearance>无色液体，有酒香。</appearance>
       <main_uses>用于制酒工业、有机合成、消毒以及用作溶剂。</main_uses>
       <other_properties>无资料</other_properties>
@@ -101,34 +101,34 @@
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>强氧化剂、酸类、酸酐、碱金属、胺类。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <conditions_to_avoid>避免接触明火、高热。避免与强氧化剂、酸类、酸酐、碱金属、胺类接触。避免受热分解。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受高热分解放出有毒的气体（一氧化碳、二氧化碳）。与强氧化剂、酸类、酸酐、碱金属、胺类接触可发生化学反应或引起燃烧。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>LC50：37620mg/m3，10小时(大鼠吸入)</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>KQ6300000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>在生产中长期接触高浓度本品可引起鼻、眼、粘膜刺激症状。皮肤长期接触可引起干燥、脱屑、皲裂和皮炎。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <carcinogenicity>可疑致癌物（IARC分类：1类，对人类致癌）。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>该物质对环境可能有危害，对水体应给予特别注意。</other_harmful_effects>
+      <ecological_toxicity>乙醇对水生生物有毒性。对鱼类LC50（96h）：1000-10000mg/L；对甲壳类LC50（48h）：100-1000mg/L；对藻类EC50（72h）：1000-10000mg/L。对鸟类、哺乳动物等陆生生物也有毒性作用。对水生生物可能有害，应避免进入水体、土壤和地下水。对水体应给予特别注意。挥发后可参与形成光化学烟雾。</ecological_toxicity>
+      <biodegradability>在环境中可生物降解，在好氧条件下可快速生物降解，半衰期约数天。挥发到大气中的醇类可在光化条件下降解。</biodegradability>
+      <non_biodegradability>在厌氧条件下可缓慢生物降解，半衰期约数周。</non_biodegradability>
+      <bioaccumulation>在水生生物和陆生生物中具有较低的生物富集性，生物富集系数（BCF）较低。在水生生物中可能发生生物蓄积，但生物富集性较低。</bioaccumulation>
+      <other_harmful_effects>该物质对环境可能有危害，对水体应给予特别注意。工作现场严禁吸烟。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>集中收集后交由有资质的危险废物处置单位进行安全处置。应采用高温焚烧法处置，焚烧温度需≥1100℃，停留时间≥2秒，确保完全燃烧。尾气需经碱洗、活性炭吸附等处理，确保达标排放。也可采用化学处理法，在碱性条件下处理后，按危险废物进行处置。禁止将未经处理的废物直接排入环境。</disposal_method>
+      <disposal_precautions>处置区保持通风，远离火源，操作人员佩戴空气呼吸器和防化服。禁止将未经处理的废物直接排入环境。处置前应参阅国家和地方有关法规，遵守《危险废物污染环境防治法》。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -137,12 +137,12 @@
       <imdg_page>3219</imdg_page>
       <packaging_mark>易燃液体</packaging_mark>
       <packing_group>O52</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_method>采用防静电包装，避免与氧化剂、酸类、酸酐、碱金属、胺类混装。包装应密封、防潮、防破损。</packaging_method>
+      <transportation_precautions>运输前检查密封，防止跌落和碰撞。严禁与氧化剂、酸类、酸酐、碱金属、胺类、食用化学品混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.2类中闪点易燃液体，应按照相关法规进行生产、储存、运输和使用。本品为确认致癌物（IARC分类：1类），需严格控制接触。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

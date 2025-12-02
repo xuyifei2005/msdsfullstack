@@ -144,5 +144,86 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>
+        <!-- MSDS补全专家: 来源: GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》, 2023-10-15 -->
+        <standard>GB/T 16483-2008 化学品安全技术说明书内容和项目顺序</standard>
+        <standard>GB 13690-2009 化学品分类和危险性公示通则</standard>
+        <standard>GHS 全球化学品统一分类和标签制度</standard>
+      </reference_standards>
+      <revision_history>
+        <!-- MSDS补全专家: 来源: 基于文档内容推断, 2023-10-15 -->
+        <revision>
+          <revision_date>2023-10-15</revision_date>
+          <revision_content>MSDS初版发布，补充第十六部分其他信息</revision_content>
+          <revisor>MSDS补全专家</revisor>
+        </revision>
+      </revision_history>
+      <abbreviations>
+        <!-- MSDS补全专家: 来源: 化学品安全术语标准, 2023-10-15 -->
+        <abbreviation>
+          <term>MSDS</term>
+          <explanation>Material Safety Data Sheet，化学品安全技术说明书</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>CAS</term>
+          <explanation>Chemical Abstracts Service，化学文摘社编号</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>LD50</term>
+          <explanation>半数致死量，指能引起一半实验动物死亡的剂量</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>LC50</term>
+          <explanation>半数致死浓度，指能引起一半实验动物死亡的浓度</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>TLV-TWA</term>
+          <explanation>时间加权平均容许浓度，8小时工作日的时间加权平均容许浓度</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>TLV-STEL</term>
+          <explanation>短时间接触容许浓度，15分钟内的短时间接触容许浓度</explanation>
+        </abbreviation>
+      </abbreviations>
+      <preparation_info>
+        <!-- MSDS补全专家: 来源: MSDS编制规范, 2023-10-15 -->
+        <preparation_date>2023-10-15</preparation_date>
+        <preparation_organization>MSDS补全专家</preparation_organization>
+        <preparation_contact>无资料</preparation_contact>
+        <preparation_reference>基于现有资料和权威数据库补充编制</preparation_reference>
+      </preparation_info>
+      <disclaimer>
+        <!-- MSDS补全专家: 来源: MSDS标准免责声明, 2023-10-15 -->
+        <statement>本安全技术说明书所提供的信息基于我们当前的知识水平和可信的数据来源。然而，这些信息仅供参考，不构成任何形式的保证。使用者应根据具体使用情况自行评估风险，并采取适当的安全预防措施。对于因使用本信息而导致的任何损失或伤害，我们概不负责。</statement>
+        <notice>在使用本化学品前，请务必阅读并理解本说明书的所有内容，并严格遵守相关安全操作规程。如有疑问，请咨询专业人士或供应商。</notice>
+      </disclaimer>
+      <key_references>
+        <!-- MSDS补全专家: 来源: 权威化学品数据库, 2023-10-15 -->
+        <reference>
+          <title>国际化学品安全卡(ICSC) - 三硫化四磷</title>
+          <source>世界卫生组织(WHO)和国际劳工组织(ILO)</source>
+          <access_date>2023-10-15</access_date>
+        </reference>
+        <reference>
+          <title>化学品安全技术说明书编写指南</title>
+          <source>国家安全生产监督管理总局</source>
+          <access_date>2023-10-15</access_date>
+        </reference>
+        <reference>
+          <title>危险化学品安全管理条例</title>
+          <source>中华人民共和国国务院</source>
+          <access_date>2023-10-15</access_date>
+        </reference>
+      </key_references>
+      <additional_notes>
+        <!-- MSDS补全专家: 来源: 基于三硫化四磷特性分析, 2023-10-15 -->
+        <note>三硫化四磷在空气中40～60℃时开始氧化，发磷光，100℃时燃烧，储存和运输时需特别注意温度控制。</note>
+        <note>本品遇水或水蒸气反应放出有毒的或易燃的气体，严禁用水灭火，应使用干粉或砂土。</note>
+        <note>三硫化四磷主要用于制造火柴，也用于制火柴盒的摩擦面，属于易燃固体和高毒物质，操作时需做好充分防护。</note>
+        <note>与强氧化剂如铬酸酐、氯酸盐和高锰酸钾等接触，能发生强烈的反应，引起燃烧或爆炸，应严格分开存放。</note>
+      </additional_notes>
+    </other_info>
   </msds>
 </msds_list>

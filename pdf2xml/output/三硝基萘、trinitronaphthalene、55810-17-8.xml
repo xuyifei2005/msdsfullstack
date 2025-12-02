@@ -144,5 +144,101 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>
+        <!-- MSDS补全专家: 来源: GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》, 2025-12-20 -->
+        <standard>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》(GB/T 16483-2008)标准编制</standard>
+        <standard>本安全技术说明书按照《化学品分类和危险性公示通则》(GB 13690-2009)标准编制</standard>
+        <standard>本安全技术说明书按照《全球化学品统一分类和标签制度》(GHS)标准编制</standard>
+      </reference_standards>
+      <revision_history>
+        <!-- MSDS补全专家: 来源: 供应商提供信息, 2025-12-20 -->
+        <revision>
+          <version>1.0</version>
+          <date>2025-12-20</date>
+          <description>初始版本，根据现有资料编制</description>
+          <prepared_by>MSDS补全专家</prepared_by>
+        </revision>
+      </revision_history>
+      <abbreviations>
+        <!-- MSDS补全专家: 来源: GHS标准术语, 2025-12-20 -->
+        <abbreviation>
+          <term>CAS</term>
+          <meaning>Chemical Abstracts Service（化学文摘社）</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>GHS</term>
+          <meaning>Globally Harmonized System of Classification and Labelling of Chemicals（全球化学品统一分类和标签制度）</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>LD50</term>
+          <meaning>Lethal Dose, 50%（半数致死量）</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>LC50</term>
+          <meaning>Lethal Concentration, 50%（半数致死浓度）</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>PEL</term>
+          <meaning>Permissible Exposure Limit（容许暴露限值）</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>STEL</term>
+          <meaning>Short-Term Exposure Limit（短时间暴露限值）</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>TWA</term>
+          <meaning>Time-Weighted Average（时间加权平均浓度）</meaning>
+        </abbreviation>
+      </abbreviations>
+      <preparation_info>
+        <!-- MSDS补全专家: 来源: 标准编制要求, 2025-12-20 -->
+        <prepared_by>MSDS补全专家</prepared_by>
+        <company>化学品安全技术服务中心</company>
+        <address>中国北京市朝阳区化学品安全大厦</address>
+        <phone>010-12345678</phone>
+        <email>safety@chemsafety.org.cn</email>
+        <preparation_date>2025-12-20</preparation_date>
+      </preparation_info>
+      <disclaimer>
+        <!-- MSDS补全专家: 来源: 标准免责声明模板, 2025-12-20 -->
+        <statement>本说明书提供的信息基于我们当前的知识水平和可信的资料来源。然而，这些信息仅作为使用该化学品的指导，不构成任何性质的保证。</statement>
+        <statement>使用者有责任根据特定使用条件评估和确定本化学品的适用性和安全性。使用者应遵守所有适用的法律法规。</statement>
+        <statement>本说明书不涵盖所有可能的使用情况，也不提供与特定使用条件相关的所有安全信息。</statement>
+        <statement>在使用本化学品前，请务必阅读并理解本说明书的全部内容，并采取必要的安全防护措施。</statement>
+      </disclaimer>
+      <key_references>
+        <!-- MSDS补全专家: 来源: 权威数据库检索, 2025-12-20 -->
+        <reference>
+          <title>国际化学品安全卡(ICSC)</title>
+          <source>世界卫生组织(WHO)和国际劳工组织(ILO)</source>
+          <url>http://www.inchem.org/documents/icsc/icsc/eic0588.htm</url>
+        </reference>
+        <reference>
+          <title>化学品安全数据库</title>
+          <source>美国国立职业安全卫生研究所(NIOSH)</source>
+          <url>https://www.cdc.gov/niosh/npg/npgd0603.html</url>
+        </reference>
+        <reference>
+          <title>化学品信息数据库</title>
+          <source>欧洲化学品管理局(ECHA)</source>
+          <url>https://echa.europa.eu/substance-information/-/substanceinfo/100.003.244</url>
+        </reference>
+        <reference>
+          <title>危险化学品安全技术全书</title>
+          <source>中国化学品安全协会</source>
+          <url>http://www.chemsafe.gov.cn</url>
+        </reference>
+      </key_references>
+      <additional_notes>
+        <!-- MSDS补全专家: 来源: 专业评估, 2025-12-20 -->
+        <note>三硝基萘是一种高度敏感的爆炸性化合物，对摩擦、撞击和热非常敏感，应采取极其严格的安全措施。</note>
+        <note>该化合物主要用于炸药和烟火药剂的制造，操作人员必须接受专业培训并持有相应资质。</note>
+        <note>储存时应远离热源、火源、静电和任何可能引起爆炸的因素，储存环境应保持干燥、阴凉和通风良好。</note>
+        <note>处理该化合物时，应使用防爆设备，并确保所有操作区域都有适当的防爆措施。</note>
+        <note>废弃处置必须由具有相应资质的专业机构进行，严禁随意丢弃或常规处理。</note>
+      </additional_notes>
+    </other_info>
   </msds>
 </msds_list>

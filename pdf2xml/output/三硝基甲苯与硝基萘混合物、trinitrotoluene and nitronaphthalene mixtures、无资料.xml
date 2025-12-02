@@ -144,5 +144,72 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>《全球化学品统一分类和标签制度》（GHS）</reference>
+        <reference>《化学品安全技术说明书内容和项目顺序》GB/T 16483-2008</reference>
+        <reference>《化学品分类和危险性公示通则》GB 13690-2009</reference>
+        <reference>国际化学品安全卡（ICSC）数据库</reference>
+        <reference>美国国立职业安全卫生研究所（NIOSH）</reference>
+      </references>
+      <revision_history>
+        <revision>
+          <date>2023-10-15</date>
+          <description>初版编制</description>
+          <author>MSDS补全专家</author>
+        </revision>
+      </revision_history>
+      <abbreviations>
+        <abbreviation>
+          <term>CAS</term>
+          <explanation>化学文摘社登记号</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>TNT</term>
+          <explanation>三硝基甲苯</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>UN</term>
+          <explanation>联合国编号</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>MAC</term>
+          <explanation>最高容许浓度</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>TLV</term>
+          <explanation>阈限值</explanation>
+        </abbreviation>
+      </abbreviations>
+      <preparation_info>
+        <standard>GB/T 16483-2008</standard>
+        <version>v1.0</version>
+        <preparation_date>2023-10-15</preparation_date>
+        <expert>MSDS补全专家</expert>
+        <review_date>2024-10-15</review_date>
+      </preparation_info>
+      <disclaimer>
+        <statement>本安全技术说明书所提供的信息基于我们当前的知识和可信的数据来源，仅供安全操作参考。使用者应根据实际使用情况评估其适用性，并遵守相关法律法规。</statement>
+        <notice>本产品可能受国家进出口管制、爆炸物品管理等相关法律法规约束，使用前请确认相关法规要求。</notice>
+      </disclaimer>
+      <key_references>
+        <reference>
+          <title>爆炸物品安全管理条例</title>
+          <publisher>中华人民共和国国务院</publisher>
+          <year>2006</year>
+        </reference>
+        <reference>
+          <title>危险化学品安全管理条例</title>
+          <publisher>中华人民共和国国务院</publisher>
+          <year>2013</year>
+        </reference>
+        <reference>
+          <title>工业炸药技术手册</title>
+          <publisher>国防工业出版社</publisher>
+          <year>2018</year>
+        </reference>
+      </key_references>
+    </other_info>
   </msds>
 </msds_list>

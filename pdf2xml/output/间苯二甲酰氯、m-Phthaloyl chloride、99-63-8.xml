@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>99-63-8</cas_number>
-      <msds_code>MSDS#2152</msds_code>
+      <msds_code>危险化学品目录（2015版）</msds_code>
       <product_name>间苯二甲酰氯</product_name>
-      <product_alias>二氯化间苯二甲酰</product_alias>
+      <product_alias>二氯化间苯二甲酰；异苯二甲酰氯；间苯二酰氯；间苯二酰二氯；異酞醯二氯；Isophthaloyl dichloride；Isophthaloyl chloride</product_alias>
       <product_english_name>m-Phthaloyl chloride</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -74,23 +74,23 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>41</melting_point>
-      <boiling_point>276</boiling_point>
-      <flash_point>180</flash_point>
-      <relative_density>1.387(46.9℃)</relative_density>
+      <melting_point>43-44</melting_point>
+      <boiling_point>276.7±13.0°C at 760 mmHg</boiling_point>
+      <flash_point>131.9±15.4°C</flash_point>
+      <relative_density>1.4±0.1 g/cm³</relative_density>
       <relative_vapor_density>6.9</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C8H4C</molecular_formula>
-      <molecular_weight>203.02</molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>3.9*(l0-3)／25℃</saturated_vapor_pressure>
+      <solubility>遇水分解</solubility>
+      <molecular_formula>C8H4Cl2O2</molecular_formula>
+      <molecular_weight>203.022</molecular_weight>
+      <main_components>间苯二甲酰氯</main_components>
+      <saturated_vapor_pressure>0.00473mmHg at 25°C</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>白色或浅黄色结晶固体。</appearance>
-      <main_uses>用于有机合成。</main_uses>
+      <flammability>可燃</flammability>
+      <appearance>无色或浅黄色结晶固体，有刺激性气味</appearance>
+      <main_uses>用作芳香类纤维类的原料，可用于合成芳纶、聚酰胺、聚酯、聚芳酯、聚芳酰胺、液晶高分子等</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -142,7 +142,9 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品目录（2015版）</regulatory_info>
+      <domestic_regulations>无资料</domestic_regulations>
+      <international_regulations>无资料</international_regulations>
     </regulatory>
   </msds>
 </msds_list>

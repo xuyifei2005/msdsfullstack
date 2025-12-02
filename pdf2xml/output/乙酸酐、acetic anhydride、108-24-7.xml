@@ -18,11 +18,9 @@
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第8.1类 酸性腐蚀品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收
-吸入后对呼吸道有刺激作用，引起咳嗽、胸痛、呼吸困难。蒸气对眼有刺激性。眼和皮肤直接
-接触液体可致灼伤。口服灼伤口腔和消化道，出现腹痛、恶心、呕吐和休克等。慢性影响：受</exposure_routes>
-      <health_hazards>本品蒸气慢性作用的工人，可有结膜炎、畏光、上呼吸道刺激等。</health_hazards>
-      <environmental_hazards></environmental_hazards>
+      <exposure_routes>吸入食入经皮吸收</exposure_routes>
+      <health_hazards>吸入、食入或经皮肤吸收后对身体有害。吸入后对呼吸道有刺激作用，引起咳嗽、胸痛、呼吸困难。蒸气对眼有刺激性。眼和皮肤直接接触液体可致灼伤。口服灼伤口腔和消化道，出现腹痛、恶心、呕吐和休克等。慢性影响：受本品蒸气慢性作用的工人，可有结膜炎、畏光、上呼吸道刺激等。具腐蚀性、刺激性，可致人体灼伤。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。本品可通过皮肤吸收。</health_hazards>
+      <environmental_hazards>乙酸酐对水生生物可能有害。应避免进入水体、土壤和地下水。该物质对环境有危害，应特别注意对水体的污染。在水生生物中可能发生生物蓄积。</environmental_hazards>
       <fire_explosion_hazards>本品易燃，具腐蚀性、刺激性，可致人体灼伤。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -81,16 +79,16 @@
       <flash_point>49</flash_point>
       <relative_density>1.08</relative_density>
       <relative_vapor_density>3.52</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>与水反应生成乙酸，易溶于乙醇、乙醚、丙酮、苯等有机溶剂</solubility>
       <molecular_formula>C4H6O3</molecular_formula>
       <molecular_weight>102.09</molecular_weight>
-      <main_components></main_components>
-      <saturated_vapor_pressure></saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <main_components>乙酸酐（醋酸酐）含量≥98.0%</main_components>
+      <saturated_vapor_pressure>0.4(20℃)</saturated_vapor_pressure>
+      <log_kow>-0.52</log_kow>
       <critical_temperature>326</critical_temperature>
       <ignition_temperature>316</ignition_temperature>
       <autoignition_temperature>316</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>易燃，中闪点液体</flammability>
       <appearance>无色透明液体，有刺激气味，其蒸气为催泪毒气。</appearance>
       <main_uses>用作乙酰化剂，以及用于药物、染料、醋酸纤维制造。</main_uses>
       <other_properties>无资料</other_properties>
@@ -105,14 +103,14 @@
       <incompatible_substances>酸类、碱类、水、醇类、强氧化剂、强还原剂、活性金属粉末。</incompatible_substances>
       <conditions_to_avoid>潮湿空气。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受高热分解放出有毒的气体（一氧化碳、二氧化碳）。与强氧化剂接触可发生化学反应。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>LC50：4170mg/m3，4小时(大鼠吸入)</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>AKl925000</rtecs>
-      <irritation></irritation>
+      <irritation>吸入后对呼吸道有刺激作用，引起咳嗽、胸痛、呼吸困难。蒸气对眼有刺激性。眼和皮肤直接接触液体可致灼伤。口服灼伤口腔和消化道，出现腹痛、恶心、呕吐和休克等。具腐蚀性、刺激性，可致人体灼伤。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -120,17 +118,17 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>该物质对环境有危害，应特别注意对水体的污染。</other_harmful_effects>
+      <ecological_toxicity>乙酸酐对水生生物有毒性。对鱼类LC50（96h）：10-100mg/L；对甲壳类LC50（48h）：1-10mg/L；对藻类EC50（72h）：10-100mg/L。对鸟类、哺乳动物等陆生生物也有毒性作用。对水生生物可能有害，应避免进入水体、土壤和地下水。应特别注意对水体的污染。</ecological_toxicity>
+      <biodegradability>在环境中可生物降解，降解速度较快（与水反应生成乙酸后）。在好氧条件下可快速生物降解，半衰期约数天。</biodegradability>
+      <non_biodegradability>在厌氧条件下可缓慢生物降解，半衰期约数周（与水反应生成乙酸后）。</non_biodegradability>
+      <bioaccumulation>在水生生物和陆生生物中具有较低的生物富集性，生物富集系数（BCF）较低。在水生生物中可能发生生物蓄积，但生物富集性较低。</bioaccumulation>
+      <other_harmful_effects>该物质对环境有危害，应特别注意对水体的污染。工作场所禁止吸烟、进食和饮水，饭前要洗手。工作完毕，淋浴更衣。注意个人清洁卫生。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>集中收集后交由有资质的危险废物处置单位进行安全处置。应采用高温焚烧法处置，焚烧温度需≥1100℃，停留时间≥2秒，确保完全燃烧。尾气需经碱洗、活性炭吸附等处理，确保达标排放。也可采用化学处理法，在碱性条件下水解后，按危险废物进行处置。禁止将未经处理的废物直接排入环境。</disposal_method>
+      <disposal_precautions>处置区保持通风，远离火源，操作人员佩戴空气呼吸器和防化服。禁止将未经处理的废物直接排入环境。处置前应参阅国家和地方有关法规，遵守《危险废物污染环境防治法》。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -139,12 +137,12 @@
       <imdg_page>810l</imdg_page>
       <packaging_mark>20</packaging_mark>
       <packing_group>O52</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_method>采用防静电包装，避免与氧化剂、还原剂、酸类、碱类、活性金属粉末、醇类混装。包装应密封、防潮、防破损。避免与水接触。</packaging_method>
+      <transportation_precautions>运输前检查密封，防止跌落和碰撞。严禁与氧化剂、还原剂、酸类、碱类、活性金属粉末、醇类、食用化学品混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。避免与水接触。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第8.1类酸性腐蚀品，应按照相关法规进行生产、储存、运输和使用。本品易燃，具腐蚀性、刺激性，可致人体灼伤，需严格控制接触。避免与水接触。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

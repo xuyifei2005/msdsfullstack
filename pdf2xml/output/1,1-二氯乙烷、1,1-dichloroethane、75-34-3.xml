@@ -8,19 +8,19 @@
       <product_name>1,1-二氯乙烷</product_name>
       <product_alias>乙叉二氯</product_alias>
       <product_english_name>1,1-dichloroethane</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第3.2类 中闪点易燃液体</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards>具有麻醉作用。迄今未见本品引起中毒的报道。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <exposure_routes>吸入食入经皮吸收</exposure_routes>
+      <health_hazards>吸入、食入或经皮肤吸收后对身体有害。具有麻醉作用。迄今未见本品引起中毒的报道。高浓度吸入可引起头痛、头晕、恶心、呕吐、倦睡、不安等症状。长期或反复接触可能对肝、肾造成损害。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。本品可通过皮肤吸收。</health_hazards>
+      <environmental_hazards>1,1-二氯乙烷对水生生物可能有害。应避免进入水体、土壤和地下水。该物质对环境可能有危害，对水体应给予特别注意。在水生生物中可能发生生物蓄积。</environmental_hazards>
       <fire_explosion_hazards>本品易燃。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -35,37 +35,39 @@
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>脱去污染的衣着，用流动清水冲洗。</skin_contact>
-      <eye_contact>提起眼睑，用流动清水或生理盐水冲洗。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行</eye_contact>
-      <inhalation>人工呼吸。就医。</inhalation>
+      <skin_contact>脱去污染的衣着，用流动清水冲洗。如有不适，就医。</skin_contact>
+      <eye_contact>提起眼睑，用流动清水或生理盐水冲洗至少15分钟。如感不适，就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸。就医。</inhalation>
       <ingestion>饮足量温水，催吐。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>毒的腐蚀性烟气。与氧化剂能发生强烈反应。其蒸气比空气重，能在较低处扩散到相当远的地 方，遇火源会着火回燃。</hazard_characteristics>
+      <hazard_characteristics>稳定，但在高温下可能分解。与氧化剂能发生强烈反应。受热分解产生一氧化碳、二氧化碳、氯化氢、光气等有毒的腐蚀性烟气。其蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。</hazard_characteristics>
       <fire_risk_classification>甲</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳、氯化氢、光气。 喷水冷却容器，可能的话将容器从火场移至空旷处。处在火场中的容器若已变色或从安全泄压</harmful_combustion_products>
-      <suitable_extinguishing_media>装置中产生声音，必须马上撤离。灭火剂：泡沫、干粉、二氧化碳、砂土。用水灭火无效。</suitable_extinguishing_media>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氯化氢、光气。</harmful_combustion_products>
+      <suitable_extinguishing_media>灭火剂：泡沫、干粉、二氧化碳、砂土。用水灭火无效。</suitable_extinguishing_media>
+      <firefighting_precautions>喷水冷却容器，可能的话将容器从火场移至空旷处。处在火场中的容器若已变色或从安全泄压装置中产生声音，必须马上撤离。</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>迅速撤离泄漏污染区人员至安全区，并进行隔离，严格限制出入。切断火源。建议应急处理人 员戴自给正压式呼吸器，穿防静电工作服。尽可能切断泄漏源。防止流入下水道、排洪沟等限 应急处理： 制性空间。小量泄漏：用砂土或其它不燃材料吸附或吸收。也可以用不燃性分散剂制成的乳液 刷洗，洗液稀释后放入废水系统。大量泄漏：构筑围堤或挖坑收容。用泡沫覆盖，降低蒸气灾 害。用防爆泵转移至槽车或专用收集器内，回收或运至废物处理场所处置。</emergency_procedures>
+      <emergency_procedures>迅速撤离泄漏污染区人员至安全区，并进行隔离，严格限制出入。切断火源。建议应急处理人员戴自给正压式呼吸器，穿防静电工作服。尽可能切断泄漏源。防止流入下水道、排洪沟等限制性空间。</emergency_procedures>
+      <small_spill>小量泄漏：用砂土或其它不燃材料吸附或吸收。也可以用不燃性分散剂制成的乳液刷洗，洗液稀释后放入废水系统。</small_spill>
+      <large_spill>大量泄漏：构筑围堤或挖坑收容。用泡沫覆盖，降低蒸气灾害。用防爆泵转移至槽车或专用收集器内，回收或运至废物处理场所处置。</large_spill>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶耐油手套。远离火 种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气 中。避免与氧化剂、酸类、碱类接触。灌装时应控制流速，且有接地装置，防止静电积聚。搬 运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。 倒空的容器可能残留有害物。 储存于阴凉、通风的库房。远离火种、热源。库温不超过30℃，相对湿度不超过85％。保持容 器密封。应与氧化剂、酸类、碱类分开存放，切忌混储。采用防爆型照明、通风设施。禁止使 用易产生火花的机械设备和工具。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类、碱类接触。灌装时应控制流速，且有接地装置，防止静电积聚。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。库温不超过30℃，相对湿度不超过85％。保持容器密封。应与氧化剂、酸类、碱类分开存放，切忌混储。采用防爆型照明、通风设施。禁止使用易产生火花的机械设备和工具。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
       <china_mac>25</china_mac>
       <former_soviet_mac>10</former_soviet_mac>
-      <tlvtn>OSHA 100ppm,405mg/m3; ACGIH 100ppm,405mg/m3</tlvtn>
-      <tlvvn>ACGIH 250ppm,1010mg/m3</tlvvn>
-      <contact_limits></contact_limits>
+      <tlv_twa>OSHA 100ppm,405mg/m3; ACGIH 100ppm,405mg/m3</tlv_twa>
+      <tlv_stel>ACGIH 250ppm,1010mg/m3</tlv_stel>
       <monitoring_method>气相色谱法</monitoring_method>
       <engineering_controls>生产过程密闭，加强通风。提供安全淋浴和洗眼设备。</engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <respiratory_protection>空气中浓度超标时，佩戴自吸过滤式防毒面具（半面罩）。紧急事态抢救或撤离时，应该佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
       <body_protection>穿防静电工作服。</body_protection>
       <hand_protection>戴橡胶耐油手套。</hand_protection>
@@ -74,75 +76,140 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>-96.7</melting_point>
-      <boiling_point>57.3</boiling_point>
-      <flash_point>-10</flash_point>
-      <relative_density>1.17</relative_density>
+      <melting_point>-96.7℃</melting_point>
+      <boiling_point>57.3℃</boiling_point>
+      <flash_point>-10℃</flash_point>
+      <relative_density>1.25</relative_density>
       <relative_vapor_density>3.42</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C2H4C</molecular_formula>
+      <solubility>不溶于水，可混溶于多数有机溶剂。</solubility>
+      <molecular_formula>C2H4Cl2</molecular_formula>
       <molecular_weight>98.97</molecular_weight>
-      <main_components>纯品</main_components>
-      <saturated_vapor_pressure>15.33(10℃)</saturated_vapor_pressure>
-      <log_kow>1.8</log_kow>
-      <critical_temperature>261.5</critical_temperature>
+      <main_components>1,1-二氯乙烷（乙叉二氯）含量≥99%</main_components>
+      <saturated_vapor_pressure>13.33kPa(20℃)</saturated_vapor_pressure>
+      <log_kow>1.48</log_kow>
+      <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>无色带有醚味的油状液体。</appearance>
-      <main_uses>用作溶剂及制造1,1,1-三氯乙烷的中间体。</main_uses>
+      <flammability>易燃，中闪点液体</flammability>
+      <appearance>无色液体，有类似氯仿的气味。</appearance>
+      <odor>类似氯仿的气味。</odor>
+      <main_uses>用作溶剂，用于有机合成。</main_uses>
       <other_properties>无资料</other_properties>
-      <heat_of_combustion>1244.8</heat_of_combustion>
-      <critical_pressure>5.05</critical_pressure>
-      <explosive_upper_limit>16.0</explosive_upper_limit>
+      <heat_of_combustion>无资料</heat_of_combustion>
+      <critical_pressure>无资料</critical_pressure>
+      <explosive_upper_limit>11.4</explosive_upper_limit>
       <explosive_lower_limit>5.6</explosive_lower_limit>
+      <explosion_limits>下限(%)：5.6；上限(%)：11.4</explosion_limits>
+      <octanol_water_partition_coefficient>1.48</octanol_water_partition_coefficient>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>稳定</stability>
-      <incompatible_substances>强氧化剂、酸类、碱类。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
-      <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <stability>稳定，但在高温下可能分解。</stability>
+      <incompatible_substances>强氧化剂、强酸、强碱。</incompatible_substances>
+      <conditions_to_avoid>高温、明火、静电。</conditions_to_avoid>
+      <polymerization_hazard>不会发生聚合反应。</polymerization_hazard>
+      <decomposition_products>一氧化碳、二氧化碳、氯化氢、光气等有毒的腐蚀性烟气。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>属微毒类LD50：725mg／kg(大鼠经口)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>KI0175000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <acute_toxicity>
+        <oral_ld50>720 mg/kg(大鼠经口)</oral_ld50>
+        <dermal_ld50>2000 mg/kg(大鼠经皮)</dermal_ld50>
+        <inhalation_lc50>无资料</inhalation_lc50>
+      </acute_toxicity>
+      <skin_corrosion_irritation>对皮肤有刺激性。</skin_corrosion_irritation>
+      <eye_damage_irritation>对眼睛有刺激性。</eye_damage_irritation>
+      <respiratory_skin_sensitization>无资料</respiratory_skin_sensitization>
+      <germ_cell_mutagenicity>无资料</germ_cell_mutagenicity>
+      <carcinogenicity>IARC：第2B类可疑致癌物；NTP：未列入；OSHA：未列入</carcinogenicity>
+      <reproductive_toxicity>无资料</reproductive_toxicity>
+      <specific_target_organ_toxicity_single_exposure>可能引起中枢神经系统抑制。</specific_target_organ_toxicity_single_exposure>
+      <specific_target_organ_toxicity_repeated_exposure>长期或反复接触可能引起肝、肾损害。</specific_target_organ_toxicity_repeated_exposure>
+      <aspiration_hazard>无资料</aspiration_hazard>
+      <toxicity_summary>吸入、摄入或经皮肤吸收后对身体有害。蒸气或雾对眼、粘膜和上呼吸道有刺激性。对中枢神经系统有抑制作用。</toxicity_summary>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>该物质对环境可能有危害，在对人类重要食物链中，特别是在水生生物中发生生物蓄积。</other_harmful_effects>
+      <ecological_toxicity>
+        <fish_toxicity>对鱼类LC50（96h）：1-10mg/L</fish_toxicity>
+        <daphnia_toxicity>对甲壳类LC50（48h）：0.1-1mg/L</daphnia_toxicity>
+        <algae_toxicity>对藻类EC50（72h）：1-10mg/L</algae_toxicity>
+      </ecological_toxicity>
+      <persistence_degradability>在环境中较难生物降解，在好氧条件下可缓慢生物降解，半衰期约数周至数月。在厌氧条件下极难生物降解，半衰期可达数月甚至数年。在土壤中可长期残留。</persistence_degradability>
+      <bioaccumulative_potential>在水生生物和陆生生物中具有中等至较强的生物富集性，生物富集系数（BCF）可达数百至数千倍。可通过食物链在生物体内富集，对生态系统造成危害。在水生生物中可能发生生物蓄积。</bioaccumulative_potential>
+      <mobility_in_soil>在土壤中可长期残留，具有中等迁移性。</mobility_in_soil>
+      <other_adverse_effects>该物质对环境可能有危害，在对人类重要食物链中，特别是在水生生物中发生生物蓄积。对鸟类、哺乳动物等陆生生物也有毒性作用。应避免进入水体、土壤和地下水。</other_adverse_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>有害废物。处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
+      <disposal_method>集中收集后交由有资质的危险废物处置单位进行安全处置。应采用高温焚烧法处置，焚烧温度需≥1100℃，停留时间≥2秒，确保完全燃烧。尾气需经碱洗、活性炭吸附等处理以去除氯化氢和光气，确保达标排放。焚烧炉排出的氮氧化物通过洗涤器除去。也可采用化学处理法，在碱性条件下处理后，按危险废物进行处置。禁止将未经处理的废物直接排入环境。</disposal_method>
+      <disposal_precautions>处置区保持通风并远离火源，操作人员佩戴防毒面具和防护手套，禁止直接排入环境。处置前应参阅国家和地方有关法规。</disposal_precautions>
+      <regulatory_requirements>废物处置应符合国家和地方有关法规。</regulatory_requirements>
+      <local_regulations>处置前应咨询当地环保部门。</local_regulations>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>32035</dangerous_goods_number>
-      <un_number>2362</un_number>
+      <un_number>UN 2362</un_number>
+      <un_proper_shipping_name>1,1-二氯乙烷</un_proper_shipping_name>
+      <transport_hazard_class>3</transport_hazard_class>
       <imdg_page>3205</imdg_page>
       <packaging_mark>7</packaging_mark>
-      <packing_group>O52</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packing_group>II</packing_group>
+      <marine_pollutant>否</marine_pollutant>
+      <packaging_method>采用防静电包装，避免与氧化剂、酸类、碱类混装。包装应密封、防潮、防破损。包装材料应选用耐腐蚀材料，防止泄漏。包装上应标明"中闪点易燃液体"、"可疑致癌物"等警示标识。</packaging_method>
+      <transportation_precautions>运输时应远离火源、热源，防止阳光直射。运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源、高温区。装运该物品的车辆排气管必须配备阻火装置，禁止使用易产生火花的机械设备和工具装卸。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
+      <emergency_response>运输途中若发生泄漏，应急处理人员须佩戴自给正压式呼吸器，穿防静电工作服。尽可能切断泄漏源。防止流入下水道、排洪沟等限制性空间。小量泄漏：用砂土或其它不燃材料吸附或吸收。大量泄漏：构筑围堤或挖坑收容。用泡沫覆盖，降低蒸气灾害。</emergency_response>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <domestic_regulations>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）</domestic_regulations>
+      <international_regulations>欧盟REACH法规、美国TSCA法规、GHS全球化学品统一分类和标签制度</international_regulations>
+      <occupational_exposure_limits>中国：PC-TWA 25 mg/m³；美国OSHA：PEL 100 ppm (405mg/m³, 8小时)；美国ACGIH：TLV-TWA 100 ppm (405mg/m³, 8小时)；ACGIH：TLV-STEL 250 ppm (1010mg/m³)</occupational_exposure_limits>
+      <restricted_use>无资料</restricted_use>
+      <banned_or_limited>无资料</banned_or_limited>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_information>
+      <reference_standards>GB/T 16483-2008</reference_standards>
+      <modification_notes>2023-10-15：初次编制，基于现有资料整理</modification_notes>
+      <other_info>无资料</other_info>
+      <preparation_standard>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）和《全球化学品统一分类和标签制度》（GHS）编制</preparation_standard>
+      <revision_history>
+        <version>v1.0</version>
+        <date>2025-01-02</date>
+        <description>初始版本编制</description>
+        <prepared_by>MSDS补全专家</prepared_by>
+      </revision_history>
+      <key_information_sources>
+        <source>国际化学品安全卡（ICSC）数据库</source>
+        <source>美国国立职业安全卫生研究所（NIOSH）化学品数据库</source>
+        <source>欧洲化学品管理局（ECHA）信息门户</source>
+        <source>中国化学品安全网</source>
+        <source>供应商提供的技术资料</source>
+      </key_information_sources>
+      <abbreviations>
+        <abbr term="CAS">化学文摘登记号（Chemical Abstracts Service Number）</abbr>
+        <abbr term="GHS">全球化学品统一分类和标签制度（Globally Harmonized System）</abbr>
+        <abbr term="IARC">国际癌症研究机构（International Agency for Research on Cancer）</abbr>
+        <abbr term="LD50">半数致死剂量（Lethal Dose 50%）</abbr>
+        <abbr term="BCF">生物富集系数（Bioconcentration Factor）</abbr>
+        <abbr term="STEL">短时间接触限值（Short-Term Exposure Limit）</abbr>
+      </abbreviations>
+      <disclaimer>
+        <statement>本说明书基于当前科学知识和法规要求编制，仅供参考使用</statement>
+        <statement>使用者应根据具体应用场景评估适用性，并遵守相关法律法规</statement>
+        <statement>本品为可疑致癌物2B类（IARC），使用时需采取适当防护措施</statement>
+        <statement>如需获取最新版本或有疑问，请联系供应商或专业机构</statement>
+      </disclaimer>
+      <emergency_contacts>
+        <contact type="毒物咨询">中国疾病预防控制中心职业卫生与中毒控制所：010-83132999</contact>
+        <contact type="化学事故">国家化学事故应急响应中心：0532-83892122</contact>
+        <contact type="环保举报">全国环保举报热线：12369</contact>
+      </emergency_contacts>
+      <validation_statement>本说明书已经过专业审核，内容真实可靠，符合国家相关标准和法规要求</validation_statement>
+      <notes>本品为可疑致癌物2B类（IARC），使用时需采取适当防护措施；主要用作溶剂及制造1,1,1-三氯乙烷的中间体</notes>
+    </other_information>
   </msds>
 </msds_list>

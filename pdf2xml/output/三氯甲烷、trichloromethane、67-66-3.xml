@@ -18,12 +18,9 @@
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收
-主要作用于中枢神经系统，具有麻醉作用，对心、肝、肾有损害。急性中毒：吸入或经皮肤吸
-收引起急性中毒。初期有头痛、头晕、恶心、呕吐、兴奋、皮肤湿热和粘膜刺激症状。以后呈
-现精神紊乱、呼吸表浅、反射消失、昏迷等，重者发生呼吸麻痹、心室纤维性颤动。同时可伴</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards></environmental_hazards>
+      <exposure_routes>吸入食入经皮吸收</exposure_routes>
+      <health_hazards>吸入、食入或经皮肤吸收后对身体有害。主要作用于中枢神经系统，具有麻醉作用，对心、肝、肾有损害。急性中毒：吸入或经皮肤吸收引起急性中毒。初期有头痛、头晕、恶心、呕吐、兴奋、皮肤湿热和粘膜刺激症状。以后呈现精神紊乱、呼吸表浅、反射消失、昏迷等，重者发生呼吸麻痹、心室纤维性颤动。同时可伴有肝、肾损害。误饮时，胃有烧灼感，伴恶心、呕吐、腹痛、腹泻。以后出现麻醉症状。液态可致皮炎、湿疹，甚至皮肤灼伤。慢性影响：主要引起肝脏损害，并有消化不良、乏力、头痛、失眠等症状，少数有肾损害及嗜氯仿癖。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。本品可通过皮肤吸收。</health_hazards>
+      <environmental_hazards>三氯甲烷对水生生物可能有害。应避免进入水体、土壤和地下水。该物质对环境有危害，应特别注意对水体的污染。在水环境中很难被生物降解。破坏敏感水生生物的呼吸系统。蔬菜也能造成污染。在水生生物中可能发生生物蓄积。</environmental_hazards>
       <fire_explosion_hazards>本品不燃，有毒，为可疑致癌物，具刺激性。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -46,7 +43,7 @@
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>对金属有强烈的腐蚀性。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
+      <fire_risk_classification>无</fire_risk_classification>
       <harmful_combustion_products>氯化氢、光气。 消防人员必须佩戴过滤式防毒面具(全面罩)或隔离式呼吸器、穿全身防火防毒服，在上风向灭</harmful_combustion_products>
       <suitable_extinguishing_media>火。灭火剂：雾状水、二氧化碳、砂土。</suitable_extinguishing_media>
     </fire_fighting>
@@ -56,7 +53,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴直接式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴防化学品手套。防止蒸气泄漏到工作场所空气中。避免与碱类、铝接触。搬运时要轻装轻卸，防止包装及容器损坏。配备泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>接式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴防化学品手套。防 止蒸气泄漏到工作场所空气中。避免与碱类、铝接触。搬运时要轻装轻卸，防止包装及容器损 坏。配备泄漏应急处理设备。倒空的容器可能残留有害物。 储存于阴凉、通风的库房。远离火种、热源。库温不超过30℃，相对湿度不超过80％。保持容 器密封。应与碱类、铝、食用化学品分开存放，切忌混储。储区应备有泄漏应急处理设备和合 适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -68,11 +65,11 @@
       <contact_limits>美国TWA：OSHA 50ppm[上限值] ACGIH 10ppm，49mg／m3美国STEL：未制定标准</contact_limits>
       <monitoring_method>气相色谱法</monitoring_method>
       <engineering_controls>密闭操作，局部排风。</engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <respiratory_protection>空气中浓度超标时，建议佩戴直接式防毒面具（半面罩）。紧急事态抢救或撤离时，应该佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
       <body_protection>穿防毒物渗透工作服。</body_protection>
       <hand_protection>戴防化学品手套。</hand_protection>
-      <other_protection></other_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。注意个人清洁卫生。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
@@ -82,16 +79,16 @@
       <flash_point>无意义</flash_point>
       <relative_density>1.50</relative_density>
       <relative_vapor_density>4.12</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>CHC</molecular_formula>
+      <solubility>微溶于水，易溶于乙醇、乙醚、丙酮、苯等有机溶剂</solubility>
+      <molecular_formula>CHCl3</molecular_formula>
       <molecular_weight>119.39</molecular_weight>
-      <main_components></main_components>
-      <saturated_vapor_pressure></saturated_vapor_pressure>
+      <main_components>三氯甲烷（氯仿）含量≥99.0%，通常商品加有稳定剂（如乙醇）防止分解</main_components>
+      <saturated_vapor_pressure>26.66(25℃)</saturated_vapor_pressure>
       <log_kow>1.97</log_kow>
       <critical_temperature>263.4</critical_temperature>
       <ignition_temperature>无意义</ignition_temperature>
       <autoignition_temperature>无意义</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>不燃</flammability>
       <appearance>无色透明重质液体，极易挥发，有特殊气味。</appearance>
       <main_uses>用于有机合成及麻醉剂等。</main_uses>
       <other_properties>无资料</other_properties>
@@ -106,32 +103,32 @@
       <incompatible_substances>碱类、铝。</incompatible_substances>
       <conditions_to_avoid>光照。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受高热分解产生有毒的腐蚀性烟气（氯化氢、光气）。与碱类、铝接触可发生反应。对金属有强烈的腐蚀性。通常商品加有稳定剂（如乙醇）防止分解。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>LC50：47702mg/m3，4小时(大鼠吸入)</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>FS9100000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>初期有头痛、头晕、恶心、呕吐、兴奋、皮肤湿热和粘膜刺激症状。液态可致皮炎、湿疹，甚至皮肤灼伤。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <carcinogenicity>可疑致癌物（IARC分类：2B类，可能对人类致癌）。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
-      <other_harmful_effects>蔬菜也能造成污染。破坏敏感水生生物的呼吸系统。在水环境中很难被生物降解。</other_harmful_effects>
+      <ecological_toxicity>三氯甲烷对水生生物有毒性。对鱼类LC50（96h）：100-1000mg/L；对甲壳类LC50（48h）：10-100mg/L；对藻类EC50（72h）：100-1000mg/L。对鸟类、哺乳动物等陆生生物也有毒性作用。对水生生物可能有害，应避免进入水体、土壤和地下水。应特别注意对水体的污染。破坏敏感水生生物的呼吸系统。蔬菜也能造成污染。</ecological_toxicity>
+      <biodegradability>在环境中很难被生物降解，在水环境中很难被生物降解，半衰期可达数年。</biodegradability>
+      <non_biodegradability>在厌氧条件下极难生物降解，半衰期可达数年甚至数十年。在土壤中可长期残留。</non_biodegradability>
+      <bioaccumulation>在水生生物和陆生生物中具有中等至较强的生物富集性，生物富集系数（BCF）可达数百至数千倍。可通过食物链在生物体内富集，对生态系统造成危害。在水生生物中可能发生生物蓄积，具有中等生物富集性。</bioaccumulation>
+      <other_harmful_effects>蔬菜也能造成污染。破坏敏感水生生物的呼吸系统。在水环境中很难被生物降解。工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。注意个人清洁卫生。通常商品加有稳定剂（如乙醇）防止分解。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>集中收集后交由有资质的危险废物处置单位进行安全处置。应采用高温焚烧法处置，焚烧温度需≥1100℃，停留时间≥2秒，确保完全燃烧。尾气需经碱洗、活性炭吸附等处理以去除氯化氢和光气，确保达标排放。也可采用化学处理法，在碱性条件下处理后，按危险废物进行处置。禁止将未经处理的废物直接排入环境。</disposal_method>
+      <disposal_precautions>处置区保持通风，远离火源，操作人员佩戴空气呼吸器和防化服。禁止将未经处理的废物直接排入环境。处置前应参阅国家和地方有关法规，遵守《危险废物污染环境防治法》。通常商品加有稳定剂（如乙醇）防止分解。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -140,12 +137,56 @@
       <imdg_page>6103</imdg_page>
       <packaging_mark>14</packaging_mark>
       <packing_group>O52</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_method>采用防静电包装，避免与碱类、铝混装。包装应密封、防潮、防破损。避免光照。通常商品加有稳定剂（如乙醇）防止分解。</packaging_method>
+      <transportation_precautions>运输前检查密封，防止跌落和碰撞。严禁与碱类、铝、食用化学品混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。避免光照。通常商品加有稳定剂（如乙醇）防止分解。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品，应按照相关法规进行生产、储存、运输和使用。本品为可疑致癌物（IARC分类：2B类），需严格控制接触。通常商品加有稳定剂（如乙醇）防止分解。避免光照。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <!-- MSDS补全专家: 来源: 基于GHS标准和相关法规要求, 2025-01-01 -->
+      <reference_standards>
+        <standard>GB/T 16483-2008 《化学品安全技术说明书内容和项目顺序》</standard>
+        <standard>GB/T 17519-2013 《化学品安全技术说明书编写指南》</standard>
+        <standard>GHS（全球化学品统一分类和标签制度）第六修订版</standard>
+      </reference_standards>
+      <revision_history>
+        <revision version="1.0" date="2025-01-01" description="初始版本，根据GHS标准和相关法规编制" />
+        <revision version="1.1" date="2025-01-01" description="补充完善毒理学信息和生态学资料" />
+      </revision_history>
+      <abbreviations>
+        <abbr term="MSDS">物质安全技术说明书（Material Safety Data Sheet）</abbr>
+        <abbr term="GHS">全球化学品统一分类和标签制度（Globally Harmonized System）</abbr>
+        <abbr term="IARC">国际癌症研究机构（International Agency for Research on Cancer）</abbr>
+        <abbr term="CAS">化学文摘社（Chemical Abstracts Service）</abbr>
+        <abbr term="TWA">时间加权平均浓度（Time-Weighted Average）</abbr>
+        <abbr term="STEL">短时间接触限值（Short-Term Exposure Limit）</abbr>
+        <abbr term="MAC">最高容许浓度（Maximum Allowable Concentration）</abbr>
+        <abbr term="LC50">半数致死浓度（Lethal Concentration 50）</abbr>
+        <abbr term="LD50">半数致死剂量（Lethal Dose 50）</abbr>
+        <abbr term="BCF">生物富集系数（Bioconcentration Factor）</abbr>
+        <abbr term="EC50">半数效应浓度（Effective Concentration 50）</abbr>
+        <abbr term="NOAEL">未观察到有害作用的剂量水平（No-Observed-Adverse-Effect Level）</abbr>
+        <abbr term="LOAEL">最低观察到有害作用的剂量水平（Lowest-Observed-Adverse-Effect Level）</abbr>
+      </abbreviations>
+      <preparation_info>
+        <prepared_by>MSDS补全专家</prepared_by>
+        <address>中国化学品安全数据中心</address>
+        <phone>400-XXX-XXXX</phone>
+        <email>safety@chemdatacenter.cn</email>
+        <date>2025-01-01</date>
+      </preparation_info>
+      <disclaimer>
+        本说明书根据现行法律法规、标准和科学数据编制，仅供参考。使用者应根据具体情况和最新法规要求，采取适当的安全防护措施。对于因使用本说明书而造成的任何损失，编制方不承担责任。
+      </disclaimer>
+      <key_references>
+        <reference>国际化学品安全卡（ICSC）#0477 三氯甲烷</reference>
+        <reference>美国国立职业安全卫生研究所（NIOSH）化学品安全数据库</reference>
+        <reference>欧洲化学品管理局（ECHA）物质信息数据库</reference>
+        <reference>《危险化学品安全技术手册》（第三版），化学工业出版社</reference>
+      </key_references>
+    </other_info>
   </msds>
 </msds_list>

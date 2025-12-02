@@ -8,20 +8,20 @@
       <product_name>马来酸二甲酯</product_name>
       <product_alias>无资料</product_alias>
       <product_english_name>Dimethyl maleate</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>无资料</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <hazard_category>第6.1类 毒害品</hazard_category>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>吸入、摄入或经皮肤吸收后对身体有害。对眼睛、皮肤、粘膜有刺激作用。接触后可能引起烧灼感、咳嗽、喘息、喉炎、气短、头痛、恶心和呕吐等症状。</health_hazards>
+      <environmental_hazards>马来酸二甲酯对水生生物可能有害。应避免进入水体、土壤和地下水。该物质对环境可能有危害，对水体应给予特别注意。</environmental_hazards>
+      <fire_explosion_hazards>本品可燃，具刺激性。其蒸气与空气可形成爆炸性混合物，当达到一定的浓度时，遇火星会发生爆炸。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -42,19 +42,23 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>的危险。</hazard_characteristics>
+      <hazard_characteristics>可燃液体，遇明火、高热可燃。受热分解产生有毒气体。</hazard_characteristics>
       <fire_risk_classification>丙</fire_risk_classification>
       <harmful_combustion_products>一氧化碳、二氧化碳。</harmful_combustion_products>
-      <suitable_extinguishing_media>抗溶性泡沫、二：氧化碳、干粉、砂土。</suitable_extinguishing_media>
+      <suitable_extinguishing_media>抗溶性泡沫、二氧化碳、干粉、砂土。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>切断火源。戴自给式呼吸器，穿一般消防防护服。在确保安全情况下堵漏。用不燃性分散剂 应急处理： 制成的乳液刷洗。经稀释的洗液放入废水系统。如大量泄漏，利用围堤收容，然后收集、转 移、回收或无害处理后废弃。</emergency_procedures>
+      <emergency_procedures>迅速撤离泄漏污染区人员至安全区，并进行隔离，严格限制出入。切断火源。建议应急处理人员戴自给正压式呼吸器，穿防毒服。尽可能切断泄漏源。防止流入下水道、排洪沟等限制性空间。</emergency_procedures>
+      <containment_methods>用砂土或其它不燃材料吸收。也可以用不燃性分散剂制成的乳液刷洗。</containment_methods>
+      <cleanup_methods>小量泄漏：用砂土或其它不燃材料吸收。大量泄漏：构筑围堤或挖坑收容。用泡沫覆盖，降低蒸气灾害。用防爆泵转移至槽车或专用收集器内，回收或运至废物处理场所处置。</cleanup_methods>
+      <environmental_precautions>防止进入下水道、地表水和地下水。</environmental_precautions>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。保持容器密封。应与氧化剂、酸类、碱类分开存 放。搬运时要轻装轻卸，防止包装及容器损坏。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。防止蒸气泄漏到工作场所空气中。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免与氧化剂、酸类、碱类、还原剂接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_conditions>储存于阴凉、通风的库房。远离火种、热源。保持容器密封。应与氧化剂、酸类、碱类、还原剂分开存放，切忌混储。配备相应品种和数量的消防器材。储区应备有泄漏应急处理设备和合适的收容材料。</storage_conditions>
+      <packaging_precautions>包装要求密封，不可与空气接触。搬运时轻装轻卸，防止包装容器损坏。</packaging_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -69,7 +73,7 @@
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
       <body_protection>穿工作服。</body_protection>
       <hand_protection>必要时戴防护手套。</hand_protection>
-      <other_protection>无资料</other_protection>
+      <other_protection>工作现场严禁吸烟。工作后，淋浴更衣。特别注意眼和呼吸道的防护。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
@@ -78,19 +82,19 @@
       <boiling_point>204～205</boiling_point>
       <flash_point>91</flash_point>
       <relative_density>1.15</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <relative_vapor_density>4.97（空气=1）</relative_vapor_density>
+      <solubility>微溶于水，溶于乙醇、乙醚、丙酮</solubility>
       <molecular_formula>C6H8O4</molecular_formula>
       <molecular_weight>144.12</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>马来酸二甲酯含量≥99%</main_components>
       <saturated_vapor_pressure>1.33(84℃)</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>无色液体。</appearance>
-      <main_uses>用作增塑剂、脂肪油类的防腐剂及有机合成的原料。</main_uses>
+      <flammability>易燃</flammability>
+      <appearance>无色液体</appearance>
+      <main_uses>用作增塑剂、脂肪油类的防腐剂及有机合成的原料</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -101,48 +105,59 @@
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>酸类、碱类、氧化剂、还原剂。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <conditions_to_avoid>避免与氧化剂、酸类、碱类、还原剂接触。避免受热。避免形成爆炸性混合物。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受热分解产生一氧化碳、二氧化碳。与氧化剂接触可能发生剧烈反应。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
-    <toxicological>
-      <acute_toxicity>LD50：1410mg／kg(大鼠经口)；530mg／kg(大鼠经皮)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>EM6300000</rtecs>
-      <irritation>无资料</irritation>
+    <toxicological_info>
+      <acute_toxicity>
+        <oral_toxicity>LD50：1410mg/kg(大鼠经口)</oral_toxicity>
+        <dermal_toxicity>LD50：530mg/kg(大鼠经皮)</dermal_toxicity>
+        <inhalation_toxicity>无资料</inhalation_toxicity>
+      </acute_toxicity>
+      <skin_irritation>对皮肤有刺激性</skin_irritation>
+      <eye_irritation>对眼睛有刺激性</eye_irritation>
+      <respiratory_irritation>对呼吸道有刺激性</respiratory_irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
       <carcinogenicity>无资料</carcinogenicity>
-    </toxicological>
+      <reproductive_toxicity>无资料</reproductive_toxicity>
+      <rtecs>EM6300000</rtecs>
+    </toxicological_info>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
       <ecological_toxicity>无资料</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作现场严禁吸烟。工作后，淋浴更衣。特别注意眼和呼吸道的防护。</other_harmful_effects>
+      <other_harmful_effects>避免污染水体和土壤。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>用控制焚烧法处置。也可采用化学处理法，用碱中和后，按危险废物进行处置。处置前应参阅国家和地方有关法规。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。禁止将未经处理的废物直接排入环境。处置时应穿戴适当的防护装备。避免与氧化剂、酸类、碱类混合处置。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
+      <dangerous_goods_number>61623</dangerous_goods_number>
       <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group>无资料</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <imdg_page>IMDG Code 6.1类</imdg_page>
+      <packaging_mark>第6.1类毒害品标志</packaging_mark>
+      <packing_group>III（包装类别III，低危险性）</packaging_group>
+      <packaging_method>螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、酸类、碱类、还原剂等混装混运。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <domestic_regulations>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）等。</domestic_regulations>
+      <international_regulations>无资料</international_regulations>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_information>
+      <references>《危险化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）</references>
+      <notes>无资料</notes>
+    </other_information>
   </msds>
 </msds_list>

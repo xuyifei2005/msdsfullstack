@@ -4,22 +4,22 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>7440-55-3</cas_number>
-      <msds_code>供应商名称： 供应商地址：</msds_code>
+      <msds_code>危险化学品目录序号：1013</msds_code>
       <product_name>镓</product_name>
-      <product_alias>金属镓</product_alias>
+      <product_alias>金属镓、镓锭</product_alias>
       <product_english_name>Gallium</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>侵入途径：</hazard_category>
-      <exposure_routes></exposure_routes>
-      <health_hazards></health_hazards>
+      <exposure_routes>吸入、皮肤接触、食入</exposure_routes>
+      <health_hazards>正常情况下适量接触无害，长期或过量暴露可能产生负面影响；高浓度或通过吸入/皮肤接触可能危害健康</health_hazards>
       <environmental_hazards></environmental_hazards>
       <fire_explosion_hazards></fire_explosion_hazards>
     </hazard_info>
@@ -27,8 +27,8 @@
     <component_info>
       <components>
         <component>
-          <component_name>4-己烯-1-炔-3-醇</component_name>
-          <component_content>&gt;= 99%</component_content>
+          <component_name>镓</component_name>
+          <component_content>&gt;= 99.9%</component_content>
           <cas_number>7440-55-3</cas_number>
         </component>
       </components>
@@ -75,13 +75,13 @@
     <physical_chemical>
       <pH>无资料</pH>
       <melting_point>29.77</melting_point>
-      <boiling_point>2205</boiling_point>
+      <boiling_point>2403</boiling_point>
       <flash_point></flash_point>
-      <relative_density>5.9</relative_density>
+      <relative_density>5.904</relative_density>
       <relative_vapor_density>不适用</relative_vapor_density>
       <solubility></solubility>
-      <molecular_formula>G</molecular_formula>
-      <molecular_weight></molecular_weight>
+      <molecular_formula>Ga</molecular_formula>
+      <molecular_weight>69.723</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>不适用</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
@@ -89,7 +89,7 @@
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
       <flammability></flammability>
-      <appearance></appearance>
+      <appearance>银色液体或铅灰色固体</appearance>
       <main_uses></main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
@@ -99,11 +99,11 @@
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>在正确的使用和存储条件下是稳定的</stability>
+      <stability>稳定</stability>
       <incompatible_substances>无资料</incompatible_substances>
-      <conditions_to_avoid>不相容物质，热、火焰和火花</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物</decomposition_products>
+      <conditions_to_avoid>潮湿空气（会迅速氧化）</conditions_to_avoid>
+      <polymerization_hazard>不聚合</polymerization_hazard>
+      <decomposition_products>氧化镓（在潮湿空气中）</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
@@ -112,7 +112,7 @@
       <rtecs>无资料</rtecs>
       <irritation>无资料</irritation>
       <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
+      <mutagenicity>细胞突变性（体外试验-人-淋巴细胞DNA抑制）</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
       <carcinogenicity>无资料</carcinogenicity>
     </toxicological>
@@ -133,16 +133,29 @@
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <un_number>2803</un_number>
+      <un_proper_shipping_name>镓</un_proper_shipping_name>
+      <transport_hazard_class>8</transport_hazard_class>
+      <packing_group>III</packing_group>
+      <marine_pollutant>无</marine_pollutant>
+      <limited_quantity>5kg</limited_quantity>
+      <excepted_quantity>E0</excepted_quantity>
       <imdg_page>无资料</imdg_page>
       <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
+      <packaging_method>无资料</packaging_method>
       <transportation_precautions></transportation_precautions>
+      <ems_no>无资料</ems_no>
+      <mfag_no>无资料</mfag_no>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>
+        <domestic_regulations>
+          <regulation_name>危险化学品目录</regulation_name>
+          <regulation_number>1013</regulation_number>
+        </domestic_regulations>
+        <international_regulations>无资料</international_regulations>
+      </regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

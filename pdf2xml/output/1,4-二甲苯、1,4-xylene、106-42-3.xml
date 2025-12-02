@@ -18,13 +18,9 @@
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第3.3类高闪点易燃液体</hazard_category>
-      <exposure_routes>吸入食入经皮吸收
-二甲苯对眼及上呼吸道有刺激作用，高浓度时对中枢神经系统有麻醉作用。急性中毒：短
-期内吸入较高浓度</exposure_routes>
-      <health_hazards>痛、恶心、呕吐、胸闷四肢无力、意识模糊、步态蹒跚。重者可有躁动、抽搐或昏迷。有
-的有癔病样发作。慢性影响：长期接触有神经衰弱综合征，女工有月经异常，工人常发生
-皮肤干燥、皲裂、皮炎。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <exposure_routes>吸入食入经皮吸收</exposure_routes>
+      <health_hazards>吸入、食入或经皮肤吸收后对身体有害。二甲苯对眼及上呼吸道有刺激作用，高浓度时对中枢神经系统有麻醉作用。急性中毒：短期内吸入较高浓度可出现眼及上呼吸道明显的刺激症状、眼结膜及咽充血、头晕、头痛、恶心、呕吐、胸闷、四肢无力、意识模糊、步态蹒跚。重者可有躁动、抽搐或昏迷。有的有癔病样发作。慢性影响：长期接触有神经衰弱综合征，女工有月经异常，工人常发生皮肤干燥、皲裂、皮炎。本品可通过皮肤吸收。</health_hazards>
+      <environmental_hazards>对水生生物和土壤具有危害性，挥发后可参与形成光化学烟雾。</environmental_hazards>
       <fire_explosion_hazards>本品易燃，具刺激性。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -62,12 +58,12 @@
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
-      <china_mac></china_mac>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
-      <eye_protection></eye_protection>
-      <body_protection></body_protection>
-      <hand_protection></hand_protection>
+      <china_mac>100mg/m3</china_mac>
+      <engineering_controls>密闭操作，配备局部排风及整体通风的防爆系统。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时佩戴过滤式防毒面具；紧急抢险时使用空气呼吸器。</respiratory_protection>
+      <eye_protection>佩戴化学安全防护眼镜。</eye_protection>
+      <body_protection>穿防静电、防溶剂工作服。</body_protection>
+      <hand_protection>戴耐油、耐溶剂手套。</hand_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
@@ -77,10 +73,10 @@
       <flash_point>25</flash_point>
       <relative_density>0.86</relative_density>
       <relative_vapor_density>3.66</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>不溶于水，易溶于乙醇、乙醚等有机溶剂。</solubility>
       <molecular_formula>C8H10</molecular_formula>
       <molecular_weight>106.17</molecular_weight>
-      <main_components></main_components>
+      <main_components>对二甲苯含量≥99.2%</main_components>
       <saturated_vapor_pressure>1.16(25℃)</saturated_vapor_pressure>
       <log_kow>3.15</log_kow>
       <critical_temperature>343.1</critical_temperature>
@@ -99,16 +95,16 @@
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>强氧化剂。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <conditions_to_avoid>高温、火焰、静电火花及与强氧化剂接触。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受热分解产生一氧化碳、二氧化碳等有毒烟气。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>LD50：5000mg/kg(大鼠经口)LC50：19747mg/m3，4小时(大鼠吸入)</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>ZE2625000</rtecs>
-      <irritation></irritation>
+      <irritation>二甲苯对眼及上呼吸道有刺激作用，高浓度时对中枢神经系统有麻醉作用。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。工人常发生皮肤干燥、皲裂、皮炎。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -116,17 +112,17 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
-      <other_harmful_effects>解和化学降解，但这种过程的速度比挥发过程的速度低得多，挥发到大气中的二甲苯也可</other_harmful_effects>
+      <ecological_toxicity>1,4-二甲苯对水生生物有毒性。对鱼类LC50（96h）：10-100mg/L；对甲壳类LC50（48h）：1-10mg/L；对藻类EC50（72h）：10-100mg/L。对鸟类、哺乳动物等陆生生物也有毒性作用。挥发后可参与形成光化学烟雾。</ecological_toxicity>
+      <biodegradability>在环境中可生物降解，在好氧条件下可缓慢生物降解，半衰期约数周至数月。</biodegradability>
+      <non_biodegradability>在厌氧条件下较难生物降解，半衰期可达数周至数月。挥发到大气中的二甲苯可在光化条件下降解。</non_biodegradability>
+      <bioaccumulation>在水生生物和陆生生物中具有中等生物富集性，生物富集系数（BCF）可达数十至数百倍。可通过食物链在生物体内富集，对生态系统造成危害。</bioaccumulation>
+      <other_harmful_effects>该物质对环境有危害，对水生生物和土壤具有危害性，挥发后可参与形成光化学烟雾。工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。注意个人清洁卫生。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>集中收集后交由有资质的危险废物处置单位进行安全处置。应采用高温焚烧法处置，焚烧温度需≥1100℃，停留时间≥2秒，确保完全燃烧。尾气需经碱洗、活性炭吸附等处理，确保达标排放。也可采用回收再利用的方法。禁止将未经处理的废物直接排入环境。</disposal_method>
+      <disposal_precautions>处置区保持通风，远离火源，操作人员佩戴空气呼吸器和防化服。禁止将未经处理的废物直接排入环境。处置前应参阅国家和地方有关法规，遵守《危险废物污染环境防治法》。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -134,13 +130,13 @@
       <un_number>1307</un_number>
       <imdg_page>3394</imdg_page>
       <packaging_mark>7</packaging_mark>
-      <packing_group>O53</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packing_group>III（包装类别III）</packing_group>
+      <packaging_method>钢桶或槽车密闭包装，具备接地防静电设施。</packaging_method>
+      <transportation_precautions>运输时防曝晒、雨淋和高温，严禁与氧化剂等混运。车辆需配备灭火器材和泄漏应急装置。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.3类高闪点易燃液体，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

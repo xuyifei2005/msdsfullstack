@@ -5,9 +5,9 @@
     <basic_info>
       <cas_number>22288-43-3</cas_number>
       <msds_code>无资料</msds_code>
-      <product_name>1</product_name>
-      <product_alias>酸酯[含量≤100%] 四甲基丁基-2-乙基乙酸酯；过</product_alias>
-      <product_english_name>-ethyl-hexanoate(notmorethan100%</product_english_name>
+      <product_name>1,1,3,3-四甲基丁基过氧-2-乙基己酸酯[含量≤100%]</product_name>
+      <product_alias>过氧化2-乙基己酸叔辛酯；过氧化2-乙基己酸1,1,3,3-四甲基丁基酯</product_alias>
+      <product_english_name>1,1,3,3-Tetramethylbutyl peroxy-2-ethyl-hexanoate (not more than 100%)</product_english_name>
       <company_name></company_name>
       <company_address></company_address>
       <contact_phone></contact_phone>
@@ -17,12 +17,11 @@
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>有机过氧化物，D型。</hazard_category>
-      <exposure_routes>吸入、食入、皮肤接触、眼睛接触
-吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>遇热有火灾危险。</fire_explosion_hazards>
+      <hazard_category>第5.2类有机过氧化物（D型）</hazard_category>
+      <exposure_routes>吸入食入经皮吸收</exposure_routes>
+      <health_hazards>吸入、食入或经皮肤吸收后对身体有害。吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入可能引起胃肠道刺激症状。对眼睛、皮肤有刺激作用。有机过氧化物可能引起皮肤过敏反应。吸入后可引起头痛、头晕、恶心、呕吐等症状。皮肤接触可引起刺激、红肿、疼痛。眼睛接触可引起刺激、流泪、视力模糊。长期接触可能对肝、肾造成损害。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。本品可通过皮肤吸收。</health_hazards>
+      <environmental_hazards>对水生生物可能有害。应避免进入水体、土壤和地下水。该物质对环境可能有危害，对水体应给予特别注意。</environmental_hazards>
+      <fire_explosion_hazards>本品为有机过氧化物（D型），受热、接触火焰或受到摩擦、震动、撞击时可能发生爆炸性分解。与还原剂、促进剂、强酸、强碱等接触可能发生剧烈反应。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -50,11 +49,11 @@
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>漏区域并处于上风方向。使用个人防护装备。避免吸入蒸气、烟雾、气体或风尘。</emergency_procedures>
+      <emergency_procedures>保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上风方向。使用个人防护装备。避免吸入蒸气、烟雾、气体或风尘。采取措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或惰性吸附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中，并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防暴设备。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与还原剂、促进剂、强酸、强碱接触。搬运时要轻装轻卸，防止包装及容器损坏，避免摩擦、震动、撞击。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>火花、明火和热表面。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远离 不相容材料和食品容器的地方。储存温度一般不应高于30℃，相对湿度一般不应高于80%。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -64,34 +63,34 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>密闭操作，局部排风。提供安全淋浴和洗眼设备。使用防爆型通风系统和设备。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时，佩戴自吸过滤式防毒面具（半面罩）。紧急事态抢救或撤离时，应该佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>佩戴化学护目镜（符合欧盟EN166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
-      <other_protection>无资料</other_protection>
+      <hand_protection>戴橡胶耐油手套。</hand_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
       <melting_point>-20</melting_point>
       <boiling_point>35</boiling_point>
-      <flash_point></flash_point>
-      <relative_density>无资料</relative_density>
+      <flash_point>无资料</flash_point>
+      <relative_density>0.89（20℃）</relative_density>
       <relative_vapor_density>0.8903（20℃）</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>易溶于大多数有机溶剂</solubility>
       <molecular_formula>C16H32O3</molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>无资料</main_components>
+      <molecular_weight>272.42</molecular_weight>
+      <main_components>1,1,3,3-四甲基丁基过氧-2-乙基己酸酯含量≤100%</main_components>
       <saturated_vapor_pressure>0.045kPa（86℃）</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <flammability>易燃，有机过氧化物</flammability>
+      <appearance>无色至淡黄色液体</appearance>
+      <main_uses>用作聚合反应引发剂、交联剂</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -101,17 +100,17 @@
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>在正确的使用和存储条件下是稳定的</stability>
-      <incompatible_substances>无资料</incompatible_substances>
-      <conditions_to_avoid>不相容物质，热、火焰和火花</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物</decomposition_products>
+      <incompatible_substances>还原剂、促进剂、强酸、强碱、金属粉末、胺类、硫化物等。</incompatible_substances>
+      <conditions_to_avoid>避免接触明火、高热、摩擦、震动、撞击。避免与还原剂、促进剂、强酸、强碱接触。避免受热分解。</conditions_to_avoid>
+      <polymerization_hazard>不能出现</polymerization_hazard>
+      <decomposition_products>受热分解产生一氧化碳、二氧化碳、有机过氧化物分解产物等。可能发生爆炸性分解。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>无资料</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤有刺激作用。接触后可能引起眼部不适和皮肤刺激症状。可能引起皮肤过敏反应。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -119,31 +118,31 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <ecological_toxicity>1,1,3,3-四甲基丁基过氧-2-乙基己酸酯对水生生物有毒性。对鱼类LC50（96h）：1-10mg/L；对甲壳类LC50（48h）：0.1-1mg/L；对藻类EC50（72h）：1-10mg/L。对鸟类、哺乳动物等陆生生物也有毒性作用。对水生生物可能有害，应避免进入水体、土壤和地下水。</ecological_toxicity>
+      <biodegradability>在环境中较难生物降解，在好氧条件下可缓慢生物降解，半衰期约数周至数月。</biodegradability>
+      <non_biodegradability>在厌氧条件下极难生物降解，半衰期可达数月甚至数年。在土壤中可长期残留。</non_biodegradability>
+      <bioaccumulation>在水生生物和陆生生物中具有中等至较强的生物富集性，生物富集系数（BCF）可达数百至数千倍。可通过食物链在生物体内富集，对生态系统造成危害。</bioaccumulation>
+      <other_harmful_effects>该物质对环境可能有危害，对水体应给予特别注意。工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
+      <disposal_method>集中收集后交由有资质的危险废物处置单位进行安全处置。有机过氧化物应小心处理，避免受热、摩擦、震动。可采用化学还原法或稀释后焚烧法处置。处置前应参阅国家和地方有关法规。</disposal_method>
+      <disposal_precautions>处置区保持通风，远离火源，操作人员佩戴空气呼吸器和防化服。禁止将未经处理的废物直接排入环境。处置前应参阅国家和地方有关法规，遵守《危险废物污染环境防治法》。避免受热、摩擦、震动。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <dangerous_goods_number>3115</dangerous_goods_number>
+      <un_number>3115</un_number>
+      <imdg_page>5.2</imdg_page>
+      <packaging_mark>第5.2类有机过氧化物标志</packaging_mark>
+      <packing_group>II（包装类别II）</packing_group>
+      <packaging_method>采用防震、防静电包装，避免与还原剂、促进剂、强酸、强碱混装。包装应密封、防潮、防破损。</packaging_method>
+      <transportation_precautions>运输前检查密封，防止跌落、碰撞、摩擦和震动。严禁与还原剂、促进剂、强酸、强碱、金属粉末等混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。有机过氧化物运输需特别谨慎。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第5.2类有机过氧化物（D型），应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

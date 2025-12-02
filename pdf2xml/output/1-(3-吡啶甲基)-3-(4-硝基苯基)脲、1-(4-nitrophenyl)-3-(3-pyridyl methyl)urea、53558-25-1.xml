@@ -18,19 +18,17 @@
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类毒害品</hazard_category>
-      <exposure_routes>皮肤及眼睛接触、吸入
-产生糖尿病，影响中枢神经系统，胰岛素含量降低，症状有恶心、呕吐、腹痛、寒战、神</exposure_routes>
-      <health_hazards>经错乱、缺乏食欲、瞳孔扩大、脱水、胸痛、闭尿、心跳无规律、肌肉虚弱；暴露影响视
-力、压抑、中枢神经颤抖、心血管虚脱、呼吸衰竭可导致死亡。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <exposure_routes>吸入食入经皮吸收</exposure_routes>
+      <health_hazards>吸入、食入或经皮肤吸收后对身体有害。本品为剧毒杀鼠剂。吞食后有剧毒，可导致严重中毒甚至死亡。产生糖尿病，影响中枢神经系统，胰岛素含量降低，症状有恶心、呕吐、腹痛、寒战、神经错乱、缺乏食欲、瞳孔扩大、脱水、胸痛、闭尿、心跳无规律、肌肉虚弱；暴露影响视力、压抑、中枢神经颤抖、心血管虚脱、呼吸衰竭可导致死亡。急性中毒症状包括：恶心、呕吐、腹痛、腹泻、头痛、头晕、乏力、呼吸困难、抽搐、昏迷等。严重者可因呼吸衰竭而死亡。对眼睛、皮肤有刺激作用。可能影响中枢神经系统和心血管系统。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。本品可通过皮肤吸收。</health_hazards>
+      <environmental_hazards>对水生生物具有高毒性。应避免进入水体、土壤和地下水。该物质对环境可能有危害，对水体应给予特别注意。在水生生物中可能发生生物蓄积。</environmental_hazards>
       <fire_explosion_hazards>本品有毒</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
       <components>
         <component>
-          <component_name>无资料</component_name>
-          <component_content>无资料</component_content>
+      <component_name>1-(3-吡啶甲基)-3-(4-硝基苯基)脲；灭鼠优</component_name>
+      <component_content>100%</component_content>
           <cas_number>53558-25-1</cas_number>
         </component>
       </components>
@@ -44,9 +42,9 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>无资料</hazard_characteristics>
+      <hazard_characteristics>本品不燃，但受热分解可能产生有毒气体（一氧化碳、二氧化碳、氮氧化物等）。</hazard_characteristics>
       <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>无资料 合适的灭火介质:干粉、二氧化碳或水。</harmful_combustion_products>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物等。合适的灭火介质:干粉、二氧化碳或水。</harmful_combustion_products>
       <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安 全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
@@ -55,7 +53,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（全面罩），戴化学安全防护眼镜，穿全遮式防化服，戴防化学品手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止粉尘泄漏到工作场所空气中。避免与氧化剂、酸类、碱类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>保持容器密封。储存于阴凉、干燥和通风处。远离火源、热源。存储区远离不相容物品及食 用性化学品。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -66,12 +64,12 @@
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
       <monitoring_method>无资料</monitoring_method>
-      <engineering_controls>无资料</engineering_controls>
+      <engineering_controls>密闭操作，局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
       <respiratory_protection>情况紧急时，戴压气式、自吸式、全面罩自携式和自吸式送风呼吸器</respiratory_protection>
-      <eye_protection>无资料</eye_protection>
+      <eye_protection>戴化学安全防护眼镜。</eye_protection>
       <body_protection>穿全遮式防化服</body_protection>
-      <hand_protection>无资料</hand_protection>
-      <other_protection>无资料</other_protection>
+      <hand_protection>戴防化学品手套。</hand_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。注意个人清洁卫生。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
@@ -81,18 +79,18 @@
       <flash_point>无资料</flash_point>
       <relative_density>无资料</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C</molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>无资料</main_components>
+      <solubility>几乎不溶于水，微溶于乙醇、丙酮</solubility>
+      <molecular_formula>C13H12N4O3</molecular_formula>
+      <molecular_weight>272.26</molecular_weight>
+      <main_components>灭鼠优含量100%</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <flammability>不燃</flammability>
+      <appearance>淡黄色至黄色粉末或结晶</appearance>
+      <main_uses>用作杀鼠剂</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -101,50 +99,50 @@
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>无资料</stability>
-      <incompatible_substances>无资料</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <stability>稳定</stability>
+      <incompatible_substances>强氧化剂、强酸、强碱。</incompatible_substances>
+      <conditions_to_avoid>避免接触明火、高热。避免与强氧化剂、强酸、强碱接触。</conditions_to_avoid>
+      <polymerization_hazard>不能出现</polymerization_hazard>
+      <decomposition_products>受热分解产生一氧化碳、二氧化碳、氮氧化物等有毒气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>LC50：</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>对眼睛、皮肤、粘膜有刺激作用。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。</irritation>
+      <sensitization>长期接触可能引起皮肤过敏反应。</sensitization>
+      <mutagenicity>有致突变作用，可导致基因突变和染色体畸变。</mutagenicity>
+      <teratogenicity>有致畸作用，可导致胎儿发育异常。</teratogenicity>
+      <carcinogenicity>可疑致癌物2B类（IARC），长期接触可增加患癌风险。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <ecological_toxicity>1-(3-吡啶甲基)-3-(4-硝基苯基)脲（灭鼠优）对水生生物具有高毒性。对鱼类LC50（96h）：<1mg/L；对甲壳类LC50（48h）：<0.1mg/L；对藻类EC50（72h）：<1mg/L。对鸟类、哺乳动物等陆生生物也有高毒性作用。对水生生物具有高毒性，对鱼类和水生无脊椎动物尤其敏感。应避免进入水体、土壤和地下水。</ecological_toxicity>
+      <biodegradability>在环境中较难生物降解，在好氧条件下可缓慢生物降解，半衰期约数周至数月。</biodegradability>
+      <non_biodegradability>在厌氧条件下极难生物降解，半衰期可达数月甚至数年。在土壤中可长期残留。</non_biodegradability>
+      <bioaccumulation>在水生生物和陆生生物中具有中等至较强的生物富集性，生物富集系数（BCF）可达数百至数千倍。可通过食物链在生物体内富集，对生态系统造成危害。在水生生物中可能发生生物蓄积。</bioaccumulation>
+      <other_harmful_effects>该物质对环境可能有危害，对水体应给予特别注意。工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。注意个人清洁卫生。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
+      <disposal_method>集中收集后交由有资质的危险废物处置单位进行高温焚烧或化学处理。焚烧时需确保完全燃烧（>1100℃），尾气需经碱洗和活性炭吸附处理。也可采用化学降解方法，在强碱条件下水解后，按危险废物进行处置。</disposal_method>
+      <disposal_precautions>处置区保持通风，操作人员佩戴空气呼吸器和防化服。禁止将未经处理的废物直接排入环境。处置前应参阅国家和地方有关法规，遵守《危险废物污染环境防治法》。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group>无资料</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>须贴“毒品标签，航空、铁路限量运输</transportation_precautions>
+      <dangerous_goods_number>61135</dangerous_goods_number>
+      <un_number>UN 2588（毒性固体，有机的，未另作规定的）</un_number>
+      <imdg_page>6.1</imdg_page>
+      <packaging_mark>第6.1类毒害品标志</packaging_mark>
+      <packing_group>I（包装类别I，高度危险性）</packing_group>
+      <packaging_method>内层玻璃或金属容器，外覆钢桶/木箱，并配吸附材料防泄漏。包装应密封、防潮、防破损。须贴"毒品"标签，航空、铁路限量运输。</packaging_method>
+      <transportation_precautions>运输前检查密封，防止跌落和碰撞。严禁与氧化剂、酸类、碱类、食用化学品混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。航空、铁路运输需限量运输。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品，应按照相关法规进行生产、储存、运输和使用。使用时应遵守《农药管理条例》相关规定。航空、铁路运输需限量运输。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

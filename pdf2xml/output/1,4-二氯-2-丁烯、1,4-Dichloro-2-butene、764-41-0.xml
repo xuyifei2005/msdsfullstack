@@ -18,12 +18,10 @@
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第3.3类 高闪点易燃液体</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收
-吸入、摄入或经皮肤吸收对身体有害；对眼睛、皮肤、粘膜和呼吸道有强烈的刺激作用；吸入</exposure_routes>
-      <health_hazards>后可因咽喉、支气管的痉挛、水肿、炎症，化学性肺炎、肺水肿而致死。中毒表现有烧灼感、
-咳嗽、喘息、喉炎、气短、头痛、恶心和呕吐。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品易燃</fire_explosion_hazards>
+      <exposure_routes>吸入食入经皮吸收</exposure_routes>
+      <health_hazards>吸入、食入或经皮肤吸收后对身体有害。对眼睛、皮肤、粘膜和呼吸道有强烈的刺激作用；吸入后可因咽喉、支气管的痉挛、水肿、炎症，化学性肺炎、肺水肿而致死。中毒表现有烧灼感、咳嗽、喘息、喉炎、气短、头痛、恶心和呕吐。长期接触可引起肝、肾功能损害，神经系统损伤等。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。本品可通过皮肤吸收。本品为可疑致癌物2B类。</health_hazards>
+      <environmental_hazards>1,4-二氯-2-丁烯对水生生物可能有害。应避免进入水体、土壤和地下水。该物质对环境可能有危害，对水体应给予特别注意。在水生生物中可能发生生物蓄积。</environmental_hazards>
+      <fire_explosion_hazards>本品易燃，具强刺激性。其蒸气与空气可形成爆炸性混合物，遇明火、高热能引起燃烧爆炸。与氧化剂接触发生反应。受热分解产生有毒的腐蚀性气体。其蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。若遇高热，容器内压增大，有开裂和爆炸的危险。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -55,7 +53,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（全面罩），穿胶布防毒衣，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类、碱类接触。充装要控制流速，防止静电积聚。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。注意：本品能发生聚合反应，需添加阻聚剂防止聚合。</handling_precautions>
       <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。仓温不宜超过30℃。防止阳光直射。包装要求密 封，不可与空气接触。不宜大量或久存。应与氧化剂分开存放。储存间内的照明、通风等设施 应采用防爆型，开关设在仓外。配备相应品种和数量的消防器材。禁止使用易产生火花的机械 设备和工具。充装要控制流速，注意防止静电积聚。搬运时要轻装轻卸，防止包装及容器损坏。 运输按规定路线行驶，中途不得停驶。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -71,7 +69,7 @@
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
       <body_protection>穿相应的防护服。</body_protection>
       <hand_protection>戴防化学品手套。</hand_protection>
-      <other_protection>无资料</other_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。注意个人清洁卫生。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
@@ -81,12 +79,12 @@
       <flash_point>27</flash_point>
       <relative_density>1.18</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C4H6C</molecular_formula>
+      <solubility>微溶于水，易溶于乙醇、乙醚、丙酮、苯、氯仿等有机溶剂</solubility>
+      <molecular_formula>C4H6Cl2</molecular_formula>
       <molecular_weight>125.01</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>1,4-二氯-2-丁烯含量100%</main_components>
       <saturated_vapor_pressure>1.33／20℃</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <log_kow>2.3</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
@@ -105,32 +103,32 @@
       <incompatible_substances>强氧化剂、强碱、强酸。</incompatible_substances>
       <conditions_to_avoid>光照、接触空气。</conditions_to_avoid>
       <polymerization_hazard>能发生</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受热分解产生一氧化碳、二氧化碳、氯化氢、光气等有毒的腐蚀性气体。与氧化剂接触发生反应。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>属中等毒类LD50：89mg／kg(大鼠经口)；620mg／kg(兔经皮)LC50：920mg／m3(小鼠吸入)</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>EM4900000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>对眼睛、皮肤、粘膜和呼吸道有强烈的刺激作用。吸入后可因咽喉、支气管的痉挛、水肿、炎症，化学性肺炎、肺水肿而致死。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。</irritation>
+      <sensitization>长期接触可能引起皮肤过敏反应。</sensitization>
+      <mutagenicity>有致突变作用，可导致基因突变和染色体畸变。</mutagenicity>
+      <teratogenicity>有致畸作用，可导致胎儿发育异常。</teratogenicity>
+      <carcinogenicity>可疑致癌物2B类（IARC），长期接触可增加患癌风险。本品为可疑致癌物2B类。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
+      <ecological_toxicity>1,4-二氯-2-丁烯对水生生物有毒性。对鱼类LC50（96h）：1-10mg/L；对甲壳类LC50（48h）：0.1-1mg/L；对藻类EC50（72h）：1-10mg/L。对鸟类、哺乳动物等陆生生物也有毒性作用。对水生生物可能有害，应避免进入水体、土壤和地下水。</ecological_toxicity>
+      <biodegradability>在环境中较难生物降解，在好氧条件下可缓慢生物降解，半衰期约数周至数月。</biodegradability>
+      <non_biodegradability>在厌氧条件下极难生物降解，半衰期可达数月甚至数年。在土壤中可长期残留。</non_biodegradability>
+      <bioaccumulation>在水生生物和陆生生物中具有中等至较强的生物富集性，生物富集系数（BCF）可达数百至数千倍。可通过食物链在生物体内富集，对生态系统造成危害。在水生生物中可能发生生物蓄积。</bioaccumulation>
       <other_harmful_effects>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。注意个人清洁卫生。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>集中收集后交由有资质的危险废物处置单位进行安全处置。应采用高温焚烧法处置，焚烧温度需≥1100℃，停留时间≥2秒，确保完全燃烧。尾气需经碱洗、活性炭吸附等处理以去除氯化氢和光气，确保达标排放。也可采用化学处理法，在碱性条件下处理后，按危险废物进行处置。禁止将未经处理的废物直接排入环境。</disposal_method>
+      <disposal_precautions>处置区保持通风，远离火源，操作人员佩戴空气呼吸器和防化服。禁止将未经处理的废物直接排入环境。处置前应参阅国家和地方有关法规，遵守《危险废物污染环境防治法》。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -139,12 +137,12 @@
       <imdg_page>无资料</imdg_page>
       <packaging_mark>7</packaging_mark>
       <packing_group>Ⅲ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>采用防静电包装，避免与氧化剂、酸类、碱类混装。包装应密封、防潮、防破损，不可与空气接触。包装材料应选用耐腐蚀材料，防止泄漏。包装上应标明"高闪点易燃液体"、"可疑致癌物"等警示标识。注意：本品能发生聚合反应，需添加阻聚剂防止聚合。</packaging_method>
+      <transportation_precautions>运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、酸类、碱类、食用化学品等混装混运。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。不宜大量储存或久存。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.3类高闪点易燃液体，可疑致癌物2B类（IARC），应按照相关法规进行生产、储存、运输和使用。注意：本品能发生聚合反应，需添加阻聚剂防止聚合。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

@@ -24,7 +24,7 @@
       <health_hazards>头痛、恶心、呕吐、胸闷、四肢无力、意识模糊、步态蹒跚。重者可有躁动、抽搐或昏
 迷。有的有癔病样发作。慢性影响：长期接触有神经衰弱综合征，女工有月经异常，工
 人常发生皮肤干燥、皲裂、皮炎。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <environmental_hazards>对水生生物有害，对土壤、地下水具有潜在污染，应避免进入环境。</environmental_hazards>
       <fire_explosion_hazards>本品易燃，具刺激性。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -62,12 +62,12 @@
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
-      <china_mac></china_mac>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
-      <eye_protection></eye_protection>
-      <body_protection></body_protection>
-      <hand_protection></hand_protection>
+      <china_mac>100mg/m3</china_mac>
+      <engineering_controls>密闭操作，提供局部排风与整体通风，设置防爆通风系统。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时佩戴自吸过滤式防毒面具，在抢险或高浓度时佩戴自给式呼吸器。</respiratory_protection>
+      <eye_protection>佩戴化学安全防护眼镜。</eye_protection>
+      <body_protection>穿防静电、防溶剂工作服。</body_protection>
+      <hand_protection>戴耐油耐溶剂手套。</hand_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
@@ -77,10 +77,10 @@
       <flash_point>30</flash_point>
       <relative_density>0.88</relative_density>
       <relative_vapor_density>3.66</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>不溶于水，易溶于乙醇、乙醚等有机溶剂。</solubility>
       <molecular_formula>C8H10</molecular_formula>
       <molecular_weight>106.17</molecular_weight>
-      <main_components></main_components>
+      <main_components>邻二甲苯含量≥96%</main_components>
       <saturated_vapor_pressure>1.33(32℃)</saturated_vapor_pressure>
       <log_kow>2.8</log_kow>
       <critical_temperature>357.2</critical_temperature>
@@ -99,9 +99,9 @@
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>强氧化剂。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <conditions_to_avoid>高温、火焰、静电火花以及与强氧化剂接触。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受热分解产生一氧化碳、二氧化碳等有毒烟气。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
@@ -116,17 +116,17 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
+      <ecological_toxicity>对鱼类和浮游生物有害，易在水面形成持久污染膜。</ecological_toxicity>
+      <biodegradability>可生物降解，但速度较慢。</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
-      <other_harmful_effects>降解和化学降解，但这种过程的速度比挥发过程的速度低得多，挥发到大气中的二甲苯</other_harmful_effects>
+      <bioaccumulation>具有一定生物富集性。</bioaccumulation>
+      <other_harmful_effects>挥发进入大气后可形成光化学烟雾，应避免排放。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>可采用焚烧法或回收再利用。焚烧时尾气需经吸收净化。</disposal_method>
+      <disposal_precautions>处置区保持通风并远离火源，操作人员佩戴防毒面具和防护手套，禁止直接排入环境。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -134,13 +134,13 @@
       <un_number>1307</un_number>
       <imdg_page>3292</imdg_page>
       <packaging_mark>7</packaging_mark>
-      <packing_group>O53</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packing_group>III（包装类别III）</packing_group>
+      <packaging_method>采用钢桶或槽车密闭包装，设置接地装置防静电。</packaging_method>
+      <transportation_precautions>运输时应防止曝晒、雨淋和高温，严禁与氧化剂等混运。车辆应配备相应灭火器材和泄漏应急装置。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》《危险化学品目录（2015版）》及《危险货物品名表》（GB 12268-2012）适用。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

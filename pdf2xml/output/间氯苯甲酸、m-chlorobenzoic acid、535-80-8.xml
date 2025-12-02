@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>535-80-8</cas_number>
-      <msds_code>MSDS#975</msds_code>
+      <msds_code>危险化学品目录（2015版）</msds_code>
       <product_name>间氯苯甲酸</product_name>
-      <product_alias>3-氯苯甲酸</product_alias>
+      <product_alias>3-氯苯甲酸;3-Chlorobenzoic Acid;MFCD00002491;UNII-02UOJ7064K;m-chlorobenzoic acid</product_alias>
       <product_english_name>m-chlorobenzoic acid</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -74,23 +74,23 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>157</melting_point>
-      <boiling_point>无资料</boiling_point>
-      <flash_point>无资料</flash_point>
+      <melting_point>154-157</melting_point>
+      <boiling_point>281.3</boiling_point>
+      <flash_point>123.9</flash_point>
       <relative_density>1.50(25℃)</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility>不溶于水，溶于甲醇、乙醚。</solubility>
-      <molecular_formula>C7H5C</molecular_formula>
+      <solubility>不溶于水，溶于甲醇、乙醚。19.5℃时溶解度小于0.1 g/100 mL。</solubility>
+      <molecular_formula>C7H5ClO2</molecular_formula>
       <molecular_weight>156.57</molecular_weight>
-      <main_components>纯品</main_components>
+      <main_components>间氯苯甲酸</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>引燃温度(℃)：无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>白色粉末。</appearance>
-      <main_uses>用于有机合成和用作染料中间体。</main_uses>
+      <autoignition_temperature>无资料</autoignition_temperature>
+      <flammability>可燃</flammability>
+      <appearance>白色粉末</appearance>
+      <main_uses>用作医药、染料中间体；用于有机合成</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -107,10 +107,10 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：＞500mg／kg(兔经皮)LC50：</acute_toxicity>
+      <acute_toxicity>LD50：＞500mg/kg(兔经皮)</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>DG4975990</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤、粘膜和上呼吸道有刺激作用</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -133,7 +133,7 @@
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <un_number>UN2811</un_number>
       <imdg_page>无资料</imdg_page>
       <packaging_mark>无资料</packaging_mark>
       <packing_group>Z01</packing_group>
@@ -142,7 +142,7 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>危险化学品目录（2015版）</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

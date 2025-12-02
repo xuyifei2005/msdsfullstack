@@ -5,9 +5,9 @@
     <basic_info>
       <cas_number>115-29-7</cas_number>
       <msds_code>MSDS#1597</msds_code>
-      <product_name>(1</product_name>
-      <product_alias>酸酯；硫丹</product_alias>
-      <product_english_name>1,2,3,4,7,7-hexachloro-8,9,10</product_english_name>
+      <product_name>(1,4,5,6,7,7-六氯-8,9,10-三降冰片-5-烯-2,3-亚基双亚甲基)亚硫酸酯</product_name>
+      <product_alias>硫丹；硫丹酸酯；1,2,3,4,7,7-六氯-8,9,10-三降冰片-5-烯-2,3-亚基双亚甲基亚硫酸酯</product_alias>
+      <product_english_name>1,2,3,4,7,7-hexachloro-8,9,10-trinorborn-2-en-5,6-ylenedimethyl sulfite; Endosulfan</product_english_name>
       <company_name></company_name>
       <company_address></company_address>
       <contact_phone></contact_phone>
@@ -18,10 +18,9 @@
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收
-吸入、摄入或经皮肤吸收后会中毒。为高毒的有机氯杀虫剂。对人有致突变作用。对中枢</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>吸入、摄入或经皮肤吸收后会中毒。为高毒的有机氯杀虫剂。对人有致突变作用。对中枢神经系统有抑制作用，可引起头痛、眩晕、恶心、呕吐、共济失调、抽搐、昏迷等症状。长期接触可导致肝、肾损害，对皮肤有刺激作用。</health_hazards>
+      <environmental_hazards>硫丹为持久性有机污染物（POPs），对水生生物和陆生生物具有高毒性，在环境中难以降解，具有生物富集性。应避免进入水体、土壤和地下水。已被列入《斯德哥尔摩公约》禁用名单。</environmental_hazards>
       <fire_explosion_hazards>本品可燃、高毒</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -54,17 +53,23 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（全面罩），穿连衣式胶布防毒衣，戴橡胶手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类、碱类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。操作现场不得吸烟、饮水、进食。</handling_precautions>
       <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。专人保管。保持容器密封。防止受潮和雨淋。 防止阳光曝晒。应与氧化剂、酸类、碱类分开存放。不能与粮食、食物、种子、饲料、各 种日用品混装、混运。操作现场不得吸烟、饮水、进食。搬运时要轻装轻卸，防止包装及 容器损坏。分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
-      <china_mac></china_mac>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
-      <eye_protection></eye_protection>
-      <body_protection></body_protection>
-      <hand_protection></hand_protection>
+      <china_mac>未制订标准</china_mac>
+      <former_soviet_mac>未制订标准</former_soviet_mac>
+      <tlvtn>无资料</tlvtn>
+      <tlvvn>无资料</tlvvn>
+      <contact_limits>美国TLV-TWA：0.1mg/m3（皮肤）美国TLV-STEL：未制订标准</contact_limits>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>生产过程密闭，全面通风。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时，应该佩戴防毒面具。紧急事态抢救或逃生时，建议佩戴自给式呼吸器。</respiratory_protection>
+      <eye_protection>戴化学安全防护眼镜。</eye_protection>
+      <body_protection>穿相应的防护服。</body_protection>
+      <hand_protection>戴防化学品手套。</hand_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。单独存放被毒物污染的衣服，洗后备用。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
@@ -74,16 +79,16 @@
       <flash_point>无资料</flash_point>
       <relative_density>1.745(20℃)</relative_density>
       <relative_vapor_density>14.0</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C9H6C</molecular_formula>
+      <solubility>几乎不溶于水，溶于大多数有机溶剂如丙酮、苯、二甲苯、氯仿等</solubility>
+      <molecular_formula>C9H6Cl6O3S</molecular_formula>
       <molecular_weight>406.91</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>硫丹（α-硫丹和β-硫丹的混合物）</main_components>
       <saturated_vapor_pressure>0.133*(10-5)／25℃</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>可燃，但不易燃烧</flammability>
       <appearance>二种异构体的混合物，是棕色结晶。</appearance>
       <main_uses>用作农用杀虫剂。</main_uses>
       <other_properties>无资料</other_properties>
@@ -96,34 +101,34 @@
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>强氧化剂、强酸、强碱、潮湿空气。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <conditions_to_avoid>避免接触强氧化剂、强酸、强碱、潮湿空气。避免受热分解。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受热分解产生一氧化碳、二氧化碳、氯化氢、氧化硫等有毒气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>LD50：18mg／kg(大鼠经口)；7.36mg／kg(小鼠经口)；34mg／kg(大鼠经皮)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <subacute_chronic_toxicity>长期接触可导致肝、肾损害，对神经系统有累积性毒性作用。动物实验表明，长期暴露可导致肝、肾损害，对实验动物的NOAEL（无可见有害作用水平）约为0.5mg/kg/day。长期接触可引起头痛、眩晕、恶心、呕吐、共济失调等症状，严重者可出现肝、肾功能损害。</subacute_chronic_toxicity>
       <rtecs>RB9275000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>对皮肤和眼睛有刺激作用，接触后可引起皮肤红肿、疼痛，眼部不适。对皮肤有刺激作用，可引起接触性皮炎。</irritation>
+      <sensitization>长期接触可能引起皮肤过敏反应，但致敏性数据有限。</sensitization>
+      <mutagenicity>对人有致突变作用，可能引起遗传物质损伤。体外和体内实验均表明具有致突变性，可引起基因突变和染色体畸变。</mutagenicity>
+      <teratogenicity>动物实验表明，高剂量暴露可能具有发育毒性，但致畸性数据不足。对实验动物的发育毒性NOAEL约为0.5mg/kg/day。</teratogenicity>
+      <carcinogenicity>IARC将其归类为可疑致癌物2B类。动物实验表明，长期高剂量暴露可能增加患癌风险，特别是肝癌和甲状腺癌。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
+      <ecological_toxicity>对水生生物和陆生生物具有高毒性，对鱼类、鸟类和哺乳动物有害。LC50（96小时，鱼类）：0.002-0.01 mg/L。</ecological_toxicity>
+      <biodegradability>难生物降解，在环境中持久存在。</biodegradability>
+      <non_biodegradability>在土壤中半衰期可达数年，在水中半衰期可达数月。</non_biodegradability>
+      <bioaccumulation>具有高生物富集性，在食物链中可发生生物放大作用，生物富集系数（BCF）可达数千。</bioaccumulation>
       <other_harmful_effects>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。注意个人清洁卫生。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>集中收集后交由有资质的危险废物处置单位进行高温焚烧或化学处理。焚烧时需确保完全燃烧，尾气需经碱洗和活性炭吸附处理。也可采用化学降解方法，在强碱条件下水解。</disposal_method>
+      <disposal_precautions>处置区保持通风，操作人员佩戴空气呼吸器和防化服。禁止将未经处理的废物直接排入环境。处置前应参阅国家和地方有关法规，遵守《危险废物污染环境防治法》。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -132,12 +137,12 @@
       <imdg_page>6221</imdg_page>
       <packaging_mark>14</packaging_mark>
       <packing_group>Ⅱ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>内层玻璃或金属容器，外覆钢桶/木箱，并配吸附材料防泄漏。包装应密封、防潮、防破损。</packaging_method>
+      <transportation_precautions>运输前检查密封，防止跌落和碰撞。严禁与氧化剂、酸类、碱类、食用化学品混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>列入《危险化学品目录（2015版）》《危险货物品名表》（GB 12268-2012）及《危险化学品安全管理条例》。硫丹已被列入《斯德哥尔摩公约》持久性有机污染物（POPs）禁用名单，我国已禁止生产、使用和进出口。需遵守《农药管理条例》《危险废物污染环境防治法》等相关法规。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

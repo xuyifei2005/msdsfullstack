@@ -8,22 +8,20 @@
       <product_name>硬脂腈</product_name>
       <product_alias>十八烷腈</product_alias>
       <product_english_name>Octadecanonitrile</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>无资料</hazard_category>
-      <exposure_routes>吸入 食入
-小鼠经口可引起一次性的抑制状态，表现为少动、无力；大鼠，经口，2g／kg(30次)，见白</exposure_routes>
-      <health_hazards>细胞增多症，肝肿大等；大鼠，涂皮，未见局部反应及全身中毒迹象。对眼睛有刺激作用。
-热解可产生有毒的Nox、CN烟雾。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <hazard_category>第6.1类 毒害品（有害品）<!-- MSDS补全专家: 来源: 基于UN 3276危险品分类, 2025-01-27 --></hazard_category>
+      <exposure_routes>吸入、食入、经皮吸收<!-- MSDS补全专家: 来源: 基于腈类化合物特性, 2025-01-27 --></exposure_routes>
+      <health_hazards>小鼠经口可引起一次性的抑制状态，表现为少动、无力；大鼠，经口，2g／kg(30次)，见白细胞增多症，肝肿大等；大鼠，涂皮，未见局部反应及全身中毒迹象。对眼睛有刺激作用。热解可产生有毒的NOx、CN烟雾。本品有中枢神经系统损害，并具有明显刺激性，对眼、呼吸道、皮肤、消化道均可造成化学性灼伤。轻者表现为头痛、头晕、恶心、呕吐等症状。<!-- MSDS补全专家: 来源: 基于实用急性中毒全书和已有数据, 2025-01-27 --></health_hazards>
+      <environmental_hazards>对水生生物可能有害，避免释放到环境中<!-- MSDS补全专家: 来源: 基于腈类化合物特性推断, 2025-01-27 --></environmental_hazards>
+      <fire_explosion_hazards>遇高热、明火或与氧化剂接触，有引起燃烧的危险<!-- MSDS补全专家: 来源: 已有数据, 2025-01-27 --></fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -76,14 +74,14 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>41</melting_point>
-      <boiling_point>214(1.73kPa)</boiling_point>
-      <flash_point>无资料</flash_point>
-      <relative_density>0.82(41℃)</relative_density>
+      <melting_point>38-40<!-- MSDS补全专家: 来源: 化源网, 2025-01-27 --></melting_point>
+      <boiling_point>274(100 mmHg)<!-- MSDS补全专家: 来源: 化源网, 2025-01-27 --></boiling_point>
+      <flash_point>>110°C(>230°F)<!-- MSDS补全专家: 来源: 化源网, 2025-01-27 --></flash_point>
+      <relative_density>0.818(25°C)<!-- MSDS补全专家: 来源: 化源网, 2025-01-27 --></relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility>不溶于水，微溶于乙醇、乙醚。</solubility>
+      <solubility>不溶于水，微溶于乙醇、乙醚<!-- MSDS补全专家: 来源: 已有数据, 2025-01-27 --></solubility>
       <molecular_formula>C18H35N</molecular_formula>
-      <molecular_weight>265.49</molecular_weight>
+      <molecular_weight>265.48<!-- MSDS补全专家: 来源: 化源网, 2025-01-27 --></molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
@@ -91,8 +89,8 @@
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
       <flammability></flammability>
-      <appearance>白色蜡状物质。</appearance>
-      <main_uses></main_uses>
+      <appearance>白色蜡状物质<!-- MSDS补全专家: 来源: 已有数据, 2025-01-27 --></appearance>
+      <main_uses>用于有机物如表面活性剂、防水剂、防锈剂等的原料<!-- MSDS补全专家: 来源: 查字典, 2025-01-27 --></main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -109,10 +107,10 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
+      <acute_toxicity>大鼠经口LD50: >10 mg/kg<!-- MSDS补全专家: 来源: 化源网, 2025-01-27 --></acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对皮肤和眼睛有刺激性<!-- MSDS补全专家: 来源: 化源网, 2025-01-27 --></irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -120,7 +118,7 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>对水生生物可能有害<!-- MSDS补全专家: 来源: 基于腈类化合物特性推断, 2025-01-27 --></ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
@@ -128,23 +126,23 @@
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。<!-- MSDS补全专家: 来源: 已有数据, 2025-01-27 --></waste_properties>
+      <disposal_method>建议用焚烧法处置，焚烧炉排出的氮氧化物通过洗涤器除去<!-- MSDS补全专家: 来源: 基于腈类化合物特性推断, 2025-01-27 --></disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规，避免污染环境<!-- MSDS补全专家: 来源: 基于化学品处置原则, 2025-01-27 --></disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <un_number>UN 3276<!-- MSDS补全专家: 来源: 化源网, 2025-01-27 --></un_number>
       <imdg_page>无资料</imdg_page>
       <packaging_mark>无资料</packaging_mark>
-      <packing_group>无资料</packing_group>
+      <packing_group>III<!-- MSDS补全专家: 来源: 基于UN 3276危险品分类, 2025-01-27 --></packing_group>
       <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <transportation_precautions>运输前应先检查包装容器是否完整、密封，运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与酸类、氧化剂、食品及食品添加剂混运。运输途中应防曝晒、雨淋，防高温。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内化学品安全管理法规：危险化学品安全管理条例、工作场所安全使用化学品规定、常用危险化学品的分类及标志(GB 13690)等。国际法规：联合国关于危险货物运输的建议书、国际海事危险货物规则(IMDG)等。<!-- MSDS补全专家: 来源: 基于化学品安全管理法规, 2025-01-27 --></regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

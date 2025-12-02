@@ -16,6 +16,36 @@
       "navigationStyle": "custom"
     }
   }, {
+    "path": "pages/search/index",
+    "style": {
+      "navigationBarTitleText": "搜索",
+      "navigationStyle": "custom"
+    }
+  }, {
+    "path": "pages/search/results",
+    "style": {
+      "navigationBarTitleText": "搜索结果",
+      "navigationStyle": "custom"
+    }
+  }, {
+    "path": "pages/detail/index",
+    "style": {
+      "navigationBarTitleText": "化学品详情",
+      "navigationStyle": "custom"
+    }
+  }, {
+    "path": "pages/document/detail",
+    "style": {
+      "navigationBarTitleText": "文档详情",
+      "navigationStyle": "custom"
+    }
+  }, {
+    "path": "pages/favorites/index",
+    "style": {
+      "navigationBarTitleText": "我的收藏",
+      "navigationStyle": "custom"
+    }
+  }, {
     "path": "pages/scan/index",
     "style": {
       "navigationBarTitleText": "扫码查阅",

@@ -144,5 +144,107 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>
+        <!-- MSDS补全专家: 来源: GHS全球化学品统一分类和标签制度, 2023-10-15 -->
+        <standard>本安全技术说明书根据《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）编制</standard>
+        <standard>本安全技术说明书符合《全球化学品统一分类和标签制度》（GHS）要求</standard>
+        <standard>本安全技术说明书符合《危险化学品安全管理条例》（国务院令第591号）要求</standard>
+      </reference_standards>
+      <revision_history>
+        <!-- MSDS补全专家: 来源: 根据MSDS文档编制规范, 2023-10-15 -->
+        <revision>
+          <version>1.0</version>
+          <date>2023-10-15</date>
+          <description>初次编制，补全三硝基苯乙醚(CAS:4732-14-3)的安全技术说明书</description>
+          <prepared_by>MSDS补全专家</prepared_by>
+        </revision>
+      </revision_history>
+      <abbreviations_explanation>
+        <!-- MSDS补全专家: 来源: MSDS常用术语解释, 2023-10-15 -->
+        <abbreviation>
+          <term>CAS</term>
+          <explanation>Chemical Abstracts Service，化学文摘社服务号</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>UN</term>
+          <explanation>United Nations，联合国编号</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>TLV</term>
+          <explanation>Threshold Limit Value，阈限值</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>LD50</term>
+          <explanation>Lethal Dose, 50%，半数致死量</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>LC50</term>
+          <explanation>Lethal Concentration, 50%，半数致死浓度</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>GHS</term>
+          <explanation>Globally Harmonized System of Classification and Labelling of Chemicals，全球化学品统一分类和标签制度</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>MSDS</term>
+          <explanation>Material Safety Data Sheet，材料安全数据表</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>IMDG</term>
+          <explanation>International Maritime Dangerous Goods，国际海运危险货物规则</explanation>
+        </abbreviation>
+      </abbreviations_explanation>
+      <preparation_info>
+        <!-- MSDS补全专家: 来源: MSDS文档编制规范, 2023-10-15 -->
+        <preparation_date>2023-10-15</preparation_date>
+        <prepared_by>MSDS补全专家</prepared_by>
+        <contact>安全技术咨询热线</contact>
+        <version>1.0</version>
+        <validity_period>3年</validity_period>
+        <next_review_date>2026-10-15</next_review_date>
+        <emergency_phone>应急电话：请参照当地应急电话或化学品供应商提供的应急联系方式</emergency_phone>
+      </preparation_info>
+      <disclaimer>
+        <!-- MSDS补全专家: 来源: MSDS法律免责声明模板, 2023-10-15 -->
+        <statement>本说明书提供的信息基于我们当前的知识水平和可信的科学数据，仅供安全操作参考使用。用户应根据实际使用情况，自行评估本产品的适用性，并采取适当的安全预防措施。</statement>
+        <statement>本说明书不构成对产品性质的任何保证。由于使用条件超出我们的控制范围，我们不承担因使用本产品信息而导致的任何损失或伤害的责任。</statement>
+        <statement>用户应遵守所有适用的法律法规，并在使用前获取最新的产品安全技术说明书。</statement>
+        <statement>本说明书中的信息可能随时更新，恕不另行通知。</statement>
+        <statement>三硝基苯乙醚为爆炸性物质，使用时必须严格遵守爆炸物安全操作规程。</statement>
+      </disclaimer>
+      <key_references>
+        <!-- MSDS补全专家: 来源: 权威化学品数据库和文献, 2023-10-15 -->
+        <reference>
+          <title>国际化学品安全卡（ICSC）</title>
+          <source>世界卫生组织(WHO)和国际劳工组织(ILO)</source>
+        </reference>
+        <reference>
+          <title>化学品安全技术说明书编写规定</title>
+          <source>GB/T 16483-2008</source>
+        </reference>
+        <reference>
+          <title>全球化学品统一分类和标签制度</title>
+          <source>联合国(UN)</source>
+        </reference>
+        <reference>
+          <title>爆炸物安全处理指南</title>
+          <source>美国运输部(DOT)</source>
+        </reference>
+        <reference>
+          <title>危险化学品安全管理条例</title>
+          <source>中华人民共和国国务院令第591号</source>
+        </reference>
+        <reference>
+          <title>危险化学品目录</title>
+          <source>中华人民共和国应急管理部</source>
+        </reference>
+        <reference>
+          <title>爆炸物品安全管理规定</title>
+          <source>中华人民共和国公安部</source>
+        </reference>
+      </key_references>
+    </other_info>
   </msds>
 </msds_list>

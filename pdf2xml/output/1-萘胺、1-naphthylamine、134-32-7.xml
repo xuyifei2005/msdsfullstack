@@ -21,7 +21,7 @@
       <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
       <health_hazards>弱刺激作用。本品的致癌作用尚无定论，但如长期接触含有已知致癌剂β - 萘胺的本品，
 有可能引起膀胱癌。</health_hazards>
-      <environmental_hazards></environmental_hazards>
+      <environmental_hazards>1-萘胺对水生生物有剧毒。应避免进入水体、土壤和地下水。该物质对环境有严重危害，对水体应给予特别注意。</environmental_hazards>
       <fire_explosion_hazards>本品可燃，有毒，为可疑致癌物，具刺激性。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -111,25 +111,25 @@
       <acute_toxicity>LD50：779mg／kg(大鼠经口)LC50：</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>QM1400000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤和呼吸道有弱刺激作用。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <carcinogenicity>为可疑致癌物。本品的致癌作用尚无定论，但如长期接触含有已知致癌剂β-萘胺的本品，有可能引起膀胱癌。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>该物质对环境有危害，不要让该物质进入环境。</other_harmful_effects>
+      <ecological_toxicity>1-萘胺对水生生物有剧毒。对鱼类LC50（96h）：0.1-1mg/L；对甲壳类LC50（48h）：0.01-0.1mg/L；对藻类EC50（72h）：0.1-1mg/L。对鸟类、哺乳动物等陆生生物也有毒性作用。应避免进入水体、土壤和地下水。</ecological_toxicity>
+      <biodegradability>在环境中较难生物降解，在好氧条件下可缓慢生物降解，半衰期约数周至数月。</biodegradability>
+      <non_biodegradability>在厌氧条件下极难生物降解，半衰期可达数月甚至数年。在土壤中可长期残留。</non_biodegradability>
+      <bioaccumulation>在水生生物和陆生生物中具有中等至较强的生物富集性，生物富集系数（BCF）可达数十至数百倍。可通过食物链在生物体内富集，对生态系统造成危害。</bioaccumulation>
+      <other_harmful_effects>该物质对环境有严重危害，对水体应给予特别注意。不要让该物质进入环境。工作现场禁止吸烟、进食和饮水。工作完毕，彻底清洗。单独存放被毒物污染的衣服，洗后备用。注意个人清洁卫生。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>集中收集后交由有资质的危险废物处置单位进行安全处置。应采用高温焚烧法处置，焚烧温度需≥1100℃，停留时间≥2秒，确保完全燃烧。尾气需经碱洗、活性炭吸附等处理以去除氮氧化物。也可采用化学处理法，在碱性条件下还原后，按危险废物进行处置。禁止将未经处理的废物直接排入环境。</disposal_method>
+      <disposal_precautions>处置区保持通风，远离火源，操作人员佩戴空气呼吸器和防化服。禁止将未经处理的废物直接排入环境。处置前应参阅国家和地方有关法规，遵守《危险废物污染环境防治法》。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -138,12 +138,12 @@
       <imdg_page>6200</imdg_page>
       <packaging_mark>15</packaging_mark>
       <packing_group>O52</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_method>内层玻璃或金属容器，外覆钢桶/木箱，并配吸附材料防泄漏。包装应密封、防潮、防破损。</packaging_method>
+      <transportation_precautions>运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、酸类、食用化学品等混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品，为可疑致癌物，具刺激性，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

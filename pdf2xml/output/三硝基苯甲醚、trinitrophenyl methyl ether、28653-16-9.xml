@@ -144,5 +144,94 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>
+        <standard>本安全技术说明书按照以下标准编制：GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》，GB/T 17519-2013《化学品安全技术说明书编写指南》</standard>
+      </reference_standards>
+      <revision_history>
+        <revision>
+          <version>1.0</version>
+          <date>2024-06-18</date>
+          <description>初版发布</description>
+          <author>MSDS补全专家</author>
+        </revision>
+      </revision_history>
+      <abbreviations>
+        <abbreviation>
+          <term>CAS</term>
+          <explanation>化学文摘社登记号</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>GHS</term>
+          <explanation>全球化学品统一分类和标签制度</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>UN</term>
+          <explanation>联合国危险货物运输编号</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>LD50</term>
+          <explanation>半数致死剂量</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>LC50</term>
+          <explanation>半数致死浓度</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>PEL</term>
+          <explanation>容许暴露限值</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>STEL</term>
+          <explanation>短时间接触容许浓度</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>TWA</term>
+          <explanation>时间加权平均容许浓度</explanation>
+        </abbreviation>
+      </abbreviations>
+      <preparation_info>
+        <prepared_by>MSDS补全专家</prepared_by>
+        <department>化学品安全管理部</department>
+        <contact_phone>400-XXX-XXXX</contact_phone>
+        <email>safety@chemicals.com</email>
+        <preparation_date>2024-06-18</preparation_date>
+      </preparation_info>
+      <disclaimer>
+        <statement>本说明书提供的信息基于现有知识和数据，仅供安全使用参考。使用者应根据实际使用情况自行评估风险，并遵守相关法律法规。对于因使用本信息而造成的任何损失，编制方不承担责任。</statement>
+        <copyright>本安全技术说明书版权所有，未经授权不得复制或传播。</copyright>
+      </disclaimer>
+      <key_references>
+        <reference>
+          <title>国际化学品安全卡(ICSC) - 三硝基苯甲醚</title>
+          <source>世界卫生组织(WHO)和国际劳工组织(ILO)</source>
+          <url>http://www.inchem.org/documents/icsc/icsc/eic0913.htm</url>
+        </reference>
+        <reference>
+          <title>NIOSH化学品安全健康数据库 - 三硝基苯甲醚</title>
+          <source>美国国立职业安全卫生研究所(NIOSH)</source>
+          <url>https://www.cdc.gov/niosh/npg/npgd0599.html</url>
+        </reference>
+        <reference>
+          <title>ECHA化学品信息数据库 - 三硝基苯甲醚</title>
+          <source>欧洲化学品管理局(ECHA)</source>
+          <url>https://echa.europa.eu/substance-information/-/substanceinfo/100.003.219</url>
+        </reference>
+        <reference>
+          <title>危险化学品安全技术全书(第三版)</title>
+          <source>化学工业出版社</source>
+        </reference>
+        <reference>
+          <title>爆炸物安全手册</title>
+          <source>国防工业出版社</source>
+        </reference>
+      </key_references>
+      <additional_notes>
+        <note>三硝基苯甲醚是一种有机爆炸物，对热、摩擦、冲击和火花极为敏感，应严格按照爆炸物管理规定进行储存、运输和使用。</note>
+        <note>本产品仅限专业人员在严格的安全措施下使用，非专业人员不得接触。</note>
+        <note>如需更多技术信息，请联系供应商或制造商获取完整的产品安全技术资料。</note>
+      </additional_notes>
+    </other_info>
   </msds>
 </msds_list>

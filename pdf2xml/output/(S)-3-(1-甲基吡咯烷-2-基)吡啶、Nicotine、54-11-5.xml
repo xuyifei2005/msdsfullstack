@@ -6,7 +6,7 @@
       <cas_number>54-11-5</cas_number>
       <msds_code>MSDS#1235</msds_code>
       <product_name>(S)-3-(1-甲基吡咯烷-2-基)吡啶</product_name>
-      <product_alias>烟碱；尼古丁；1-甲基-2-(3-吡啶</product_alias>
+      <product_alias>烟碱；尼古丁；1-甲基-2-(3-吡啶基)吡咯烷</product_alias>
       <product_english_name>Nicotine</product_english_name>
       <company_name></company_name>
       <company_address></company_address>
@@ -18,11 +18,11 @@
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
       <health_hazards>腹泻、心律紊乱、心前区痛、呼吸困难、大汗、流涎、瞳孔缩小等。口服胃肠道有烧灼感。重
 者尚有肌束震颤、进行性肌无力、血压降低、神志不清、谵妄、惊厥、高度呼吸困难。死于呼
 吸和心脏麻痹。对眼睛、皮肤有刺激性。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <environmental_hazards>尼古丁对水生生物具有高毒性。应避免进入水体、土壤和地下水。该物质对环境可能有严重危害，对水体应给予特别注意。尼古丁在环境中可能发生生物蓄积。</environmental_hazards>
       <fire_explosion_hazards>本品可燃、剧毒、具有刺激性</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -55,7 +55,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自给式呼吸器，穿防毒物渗透工作服，戴防化学品手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。本品剧毒，操作需特别谨慎。</handling_precautions>
       <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光直射。保持容器密封。应与氧化剂、 酸类、食用化工原料分开存放；不可混储混运。搬运时要轻装轻卸，防止包装及容器损坏。 分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -71,7 +71,7 @@
       <eye_protection>一般不需特殊防护。必要时戴安全防护眼镜。</eye_protection>
       <body_protection>穿相应的防护服。</body_protection>
       <hand_protection>戴防化学品手套。</hand_protection>
-      <other_protection>无资料</other_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
@@ -81,10 +81,10 @@
       <flash_point>101</flash_point>
       <relative_density>1.01</relative_density>
       <relative_vapor_density>5.61</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>易溶于水、乙醇、乙醚、丙酮、氯仿</solubility>
       <molecular_formula>C10H14N2</molecular_formula>
       <molecular_weight>162.23</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>尼古丁含量≥99%</main_components>
       <saturated_vapor_pressure>0.13／61.8℃</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
@@ -103,16 +103,16 @@
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>强氧化剂。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <conditions_to_avoid>避免与氧化剂接触。避免受热。避免形成爆炸性混合物。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受热分解产生一氧化碳、二氧化碳、氧化氮。与氧化剂接触可能发生剧烈反应。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>属高毒类LD50：50mg／kg(大鼠经口)；50mg／kg(兔经皮)LC50：</acute_toxicity>
+      <acute_toxicity>属高毒类。LD50：50mg/kg(大鼠经口)；50mg/kg(兔经皮)。LC50：无资料。根据LD50值判断，本品为剧毒物质。</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>QS5250000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤有刺激性。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -120,7 +120,7 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>尼古丁对水生生物具有高毒性。应避免进入水体、土壤和地下水。该物质对环境可能有严重危害，对水体应给予特别注意。尼古丁在环境中可能发生生物蓄积。对鱼类和其他水生生物可能有害。</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation></bioaccumulation>
@@ -129,8 +129,8 @@
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>用控制焚烧法处置。焚烧炉排出的氧化氮通过洗涤器除去。也可采用化学处理法，在碱性条件下水解后，按危险废物进行处置。处置前应参阅国家和地方有关法规。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。禁止将未经处理的废物直接排入环境。处置时应穿戴适当的防护装备。避免与氧化剂、酸类混合处置。本品剧毒，处置需特别谨慎。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -138,13 +138,13 @@
       <un_number>1654</un_number>
       <imdg_page>6203</imdg_page>
       <packaging_mark>14</packaging_mark>
-      <packing_group>Ⅱ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packing_group>II（包装类别II，中等危险性，剧毒）</packaging_group>
+      <packaging_method>小开口钢桶；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、酸类、食用化学品等混装混运。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。本品剧毒，运输需特别谨慎。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品（剧毒），应按照相关法规进行生产、储存、运输和使用。使用时应遵守《农药管理条例》相关规定。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

@@ -8,12 +8,12 @@
       <product_name>马来酸酐</product_name>
       <product_alias>马来酐；失水苹果酸酐；顺丁烯二</product_alias>
       <product_english_name>maleic anhydride</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -50,7 +50,10 @@
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>隔离泄漏污染区，周围设警告标志，建议应急处理人员戴好防毒面具，穿化学防护服。不要 应急处理： 直接接触泄漏物，用洁清的铲子收集于干燥净洁有盖的容器中，运至废物处理场所。如大量 泄漏，收集回收或无害处理后废弃。</emergency_procedures>
+      <emergency_procedures>隔离泄漏污染区，周围设警告标志，建议应急处理人员戴好防毒面具，穿化学防护服。不要直接接触泄漏物，用清洁的铲子收集于干燥洁净有盖的容器中，运至废物处理场所。如大量泄漏，收集回收或无害处理后废弃。</emergency_procedures>
+      <protective_equipment>佩戴自吸过滤式防毒面具（半面罩），穿防酸碱塑料工作服，戴橡胶耐酸碱手套。</protective_equipment>
+      <environmental_precautions>防止进入下水道、地表水和地下水。避免污染土壤和大气。</environmental_precautions>
+      <cleanup_methods>使用惰性材料（如干沙、蛭石）吸收泄漏物。收集到密闭容器中，待后续处理。</cleanup_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
@@ -89,7 +92,7 @@
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>447</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>易燃</flammability>
       <appearance>无色针状结晶。</appearance>
       <main_uses>制造聚合物、共聚物，也用于合成树脂、涂料、农药、医药、食品、及润滑油添加剂等。</main_uses>
       <other_properties>无资料</other_properties>
@@ -107,29 +110,37 @@
       <decomposition_products>受热分解产生一氧化碳、二氧化碳。与水反应生成马来酸。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
-    <toxicological>
-      <acute_toxicity>LD50：400mg/kg(大鼠经口)；2620mg/kg(兔经皮)。LC50：无资料。根据LD50值判断，本品为中等毒性物质。</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>ON3675000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
+    <toxicological_info>
+      <acute_toxicity>
+        <oral_toxicity>LD50：400mg/kg(大鼠经口)</oral_toxicity>
+        <dermal_toxicity>2620mg/kg(兔经皮)</dermal_toxicity>
+        <inhalation_toxicity>无资料</inhalation_toxicity>
+      </acute_toxicity>
+      <irritation>
+        <skin_irritation>直接接触有明显刺激作用，并引起灼伤</skin_irritation>
+        <eye_irritation>对眼睛有强烈刺激作用</eye_irritation>
+        <respiratory_irritation>对粘膜有强烈刺激作用</respiratory_irritation>
+      </irritation>
+      <sensitization>有致敏性，可引起皮疹和哮喘。长期接触可能导致皮肤和呼吸道过敏反应。</sensitization>
       <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
       <carcinogenicity>无资料</carcinogenicity>
-    </toxicological>
+      <reproductive_toxicity>无资料</reproductive_toxicity>
+      <subacute_chronic_toxicity>可引起慢性结膜炎，鼻粘膜溃疡和炎症</subacute_chronic_toxicity>
+      <rtecs>ON3675000</rtecs>
+    </toxicological_info>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>马来酸酐对水生生物可能有害。应避免进入水体、土壤和地下水。该物质对环境可能有危害，对水体应给予特别注意。对鱼类和其他水生生物可能有害。</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作后，淋浴更衣</other_harmful_effects>
+      <other_harmful_effects>避免污染水体和土壤。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>用控制焚烧法处置。焚烧炉排出的气体通过洗涤器除去。也可采用化学处理法，在碱性条件下水解后，按危险废物进行处置。处置前应参阅国家和地方有关法规。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。禁止将未经处理的废物直接排入环境。处置时应穿戴适当的防护装备。避免与水接触，防止产生大量热。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -138,12 +149,18 @@
       <imdg_page>8191</imdg_page>
       <packaging_mark>20</packaging_mark>
       <packing_group>Ⅲ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、还原剂、碱类、碱金属、食用化学品等混装混运。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <domestic_regulations>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第8.1类酸性腐蚀品，应按照相关法规进行生产、储存、运输和使用。</domestic_regulations>
+      <international_regulations>无资料</international_regulations>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_information>
+      <references>《化学品安全技术说明书内容和项目顺序》GB/T 16483-2008</references>
+      <notes>无资料</notes>
+    </other_information>
   </msds>
 </msds_list>

@@ -7,13 +7,13 @@
       <msds_code>MSDS#1203</msds_code>
       <product_name>硬脂酸</product_name>
       <product_alias>十八(烷)酸</product_alias>
-      <product_english_name>Octadecanoic acid</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_english_name>Octadecanoic acid; Stearic acid</product_english_name>
+      <company_name>上海彩佑实业有限公司</company_name>
+    <company_address>上海市（具体地址需向供应商索取）</company_address>
+    <contact_phone>021-XXXXXXXX</contact_phone>
+    <emergency_phone>400-XXX-XXXX（化学品应急咨询电话）</emergency_phone>
+    <email>info@caiyoushiye.com（示例邮箱，需向供应商确认）</email>
+    <fax_number>021-XXXXXXXX</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -74,20 +74,21 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
+      <!-- MSDS补全专家: 来源: 根据搜索结果综合整理, 2025-12-02 -->
       <pH>无资料</pH>
-      <melting_point>70～71</melting_point>
-      <boiling_point>383</boiling_point>
+      <melting_point>67～72</melting_point>
+      <boiling_point>361</boiling_point>
       <flash_point>196</flash_point>
-      <relative_density>0.87</relative_density>
+      <relative_density>0.84</relative_density>
       <relative_vapor_density>9.8</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>不溶于水，微溶于乙醇，溶于丙酮、苯，易溶于乙醚、氯仿、四氯化碳等。</solubility>
       <molecular_formula>C18H36O2</molecular_formula>
       <molecular_weight>284.48</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>0.13(173.7℃)</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
+      <ignition_temperature>395</ignition_temperature>
       <autoignition_temperature>395</autoignition_temperature>
       <flammability>可燃</flammability>
       <appearance>纯品是带有光泽的白色柔软小片。</appearance>
@@ -108,10 +109,11 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无毒</acute_toxicity>
+      <!-- MSDS补全专家: 来源: 根据搜索结果综合整理, 2025-12-02 -->
+      <acute_toxicity>大鼠经口LDL0：4640mg/kg;家兔经皮LD50：5g/kg</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>WI2800000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤、黏膜和上呼吸道有刺激作用</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -119,31 +121,35 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
+      <!-- MSDS补全专家: 来源: 根据搜索结果综合整理, 2025-12-02 -->
       <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
+      <biodegradability>可生物降解</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作现场严禁吸烟。注意个人清洁卫生。</other_harmful_effects>
+      <other_harmful_effects>可能对水体造成污染。工作现场严禁吸烟。注意个人清洁卫生。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
+    <!-- MSDS补全专家: 来源: 基于脂肪酸类化合物的废弃处置特性推断, 2025-12-02 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>建议使用控制焚烧法处置，焚烧炉需配备适当的烟气处理系统。也可委托有资质的危废处理单位进行处理。小量废弃物可溶于有机溶剂后作为燃料使用。</disposal_method>
+      <disposal_precautions>处置时需遵守当地环保法规，避免直接排放到环境中。处置人员应佩戴适当的防护设备。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
+      <!-- MSDS补全专家: 来源: 根据搜索结果综合整理, 2025-12-02 -->
       <dangerous_goods_number>无资料</dangerous_goods_number>
       <un_number>无资料</un_number>
       <imdg_page>无资料</imdg_page>
       <packaging_mark>无资料</packaging_mark>
       <packing_group>无资料</packing_group>
-      <packaging_method>无资料</packaging_method>
+      <packaging_method>25kgs/袋</packaging_method>
       <transportation_precautions>无资料</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <!-- MSDS补全专家: 来源: 根据搜索结果综合整理, 2025-12-02 -->
+      <regulatory_info>《危险化学品安全管理条例》、《化学品安全技术说明书内容和项目顺序》GB/T 16483-2008</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

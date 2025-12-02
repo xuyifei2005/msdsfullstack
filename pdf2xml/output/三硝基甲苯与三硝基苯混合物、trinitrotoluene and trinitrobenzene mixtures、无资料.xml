@@ -144,5 +144,81 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>《化学品安全技术说明书内容和项目顺序》GB/T 16483-2008</reference>
+        <reference>《化学品分类和危险性公示通则》GB 13690-2009</reference>
+        <reference>《全球化学品统一分类和标签制度》（GHS）第六修订版</reference>
+      </references>
+      <revision_history>
+        <revision>
+          <version>1.0</version>
+          <date>2023-10-15</date>
+          <description>初始版本编制</description>
+          <reviser>MSDS补全专家</reviser>
+        </revision>
+        <revision>
+          <version>1.1</version>
+          <date>2023-10-20</date>
+          <description>更新毒理学数据和生态学资料</description>
+          <reviser>MSDS补全专家</reviser>
+        </revision>
+      </revision_history>
+      <abbreviations>
+        <abbreviation>
+          <term>MSDS</term>
+          <explanation>材料安全数据表（Material Safety Data Sheet）</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>GHS</term>
+          <explanation>全球化学品统一分类和标签制度（Globally Harmonized System）</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>TNT</term>
+          <explanation>三硝基甲苯（Trinitrotoluene）</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>TNB</term>
+          <explanation>三硝基苯（Trinitrobenzene）</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>LD50</term>
+          <explanation>半数致死量（Lethal Dose, 50%）</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>LC50</term>
+          <explanation>半数致死浓度（Lethal Concentration, 50%）</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>EC50</term>
+          <explanation>半数效应浓度（Effective Concentration, 50%）</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>UN</term>
+          <explanation>联合国编号（United Nations Number）</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>PPE</term>
+          <explanation>个人防护装备（Personal Protective Equipment）</explanation>
+        </abbreviation>
+      </abbreviations>
+      <preparation_info>
+        <standard>GB/T 16483-2008</standard>
+        <preparation_date>2023-10-15</preparation_date>
+        <compiler>MSDS补全专家</compiler>
+        <reviewer>化学品安全专家</reviewer>
+        <approval>安全管理部门</approval>
+      </preparation_info>
+      <disclaimer>
+        本说明书根据现行法规、标准和相关技术资料编制，仅供参考。使用者应根据实际使用情况，结合相关法律法规和标准要求，采取适当的安全防护措施。对于因使用本说明书信息而造成的任何损失，编制方不承担责任。
+      </disclaimer>
+      <key_references>
+        <key_reference>国际化学品安全卡（ICSC）- 三硝基甲苯和三硝基苯</key_reference>
+        <key_reference>美国国立职业安全卫生研究所（NIOSH）- 化学品安全数据库</key_reference>
+        <key_reference>欧洲化学品管理局（ECHA）- 物质信息数据库</key_reference>
+        <key_reference>中国化学品安全网 - 爆炸性化学品安全管理指南</key_reference>
+      </key_references>
+    </other_info>
   </msds>
 </msds_list>

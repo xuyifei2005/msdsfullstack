@@ -7,21 +7,20 @@
       <product_name>高氯酸醋酐溶液</product_name>
       <product_alias>过氯酸醋酐溶液</product_alias>
       <product_english_name>perchloricacid(inaceticanhydr</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>氧化性液体，类别3；皮肤腐蚀/刺激，类别1；眼损伤/眼刺激，类别1。</hazard_category>
-      <exposure_routes>吸入、食入、皮肤接触、眼睛接触
-吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入可能引起口腔、咽喉和消化道腐蚀和灼伤。皮肤接触可引起灼伤。眼睛接触可引起严重眼损伤。高氯酸和醋酐的混合物具有极高的爆炸性。</health_hazards>
+      <environmental_hazards>高氯酸醋酐溶液为强氧化剂和强酸，对水生生物具有高毒性。应避免进入水体、土壤和地下水。该混合物对环境可能有严重危害。</environmental_hazards>
+      <fire_explosion_hazards>本品具有极高的爆炸性。高氯酸和醋酐的混合物在受热、摩擦、撞击或接触有机物时可能发生剧烈爆炸。具有强腐蚀性。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -36,16 +35,16 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。就医。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行</eye_contact>
-      <inhalation>人工呼吸。就医。</inhalation>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗至少15分钟。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
       <ingestion>误服者立即漱口，给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>强并让火焰自身维持。灭火行动对已发生的火灾可能无效。遇火会产生刺激性、毒性或腐 蚀性的气体。加热时，容器可能爆炸。暴露于火中的容器可能会通过压力安全阀泄漏出内 容物。受热或接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
       <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>无资料</harmful_combustion_products>
-      <suitable_extinguishing_media>合适的灭火介质:水。不合适的灭火介质:干粉、二氧化碳或泡沫。</suitable_extinguishing_media>
+      <harmful_combustion_products>受热分解可能产生氯化氢、氯气、醋酸等有毒气体。</harmful_combustion_products>
+      <suitable_extinguishing_media>雾状水。不合适的灭火介质：干粉、二氧化碳或泡沫。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
@@ -53,7 +52,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（全面罩），穿橡胶耐酸碱服，戴橡胶耐酸碱手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免与有机物、还原剂、非金属单质、纤维类物质、水接触。搬运时要轻装轻卸，防止包装及容器损坏。严禁震动、撞击和摩擦。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。本品具有极高的爆炸性，操作需特别谨慎。</handling_precautions>
       <storage_precautions>火花、明火和热表面。采取措施防止静电积累。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -65,10 +64,10 @@
       <contact_limits>无资料</contact_limits>
       <monitoring_method></monitoring_method>
       <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <respiratory_protection>可能接触其蒸气时，必须佩戴自吸过滤式防毒面具（全面罩）。紧急事态抢救或撤离时，应该佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>佩戴化学护目镜（符合欧盟EN166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
+      <hand_protection>戴橡胶耐酸碱手套。</hand_protection>
       <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
@@ -79,18 +78,18 @@
       <flash_point>无资料</flash_point>
       <relative_density>无资料</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula></molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>无资料</main_components>
+      <solubility>高氯酸和醋酐的混合物</solubility>
+      <molecular_formula>HClO4 + (CH3CO)2O</molecular_formula>
+      <molecular_weight>混合物</molecular_weight>
+      <main_components>高氯酸和醋酐的混合物</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
       <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <appearance>无色或淡黄色液体。</appearance>
+      <main_uses>用作分析试剂、氧化剂。</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -100,17 +99,17 @@
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>在正确的使用和存储条件下是稳定的。</stability>
-      <incompatible_substances>无资料</incompatible_substances>
+      <incompatible_substances>强还原剂、有机物、非金属单质、纤维类物质、水、醇类、胺类。</incompatible_substances>
       <conditions_to_avoid>不相容物质，热、火焰和火花。</conditions_to_avoid>
       <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。</decomposition_products>
+      <decomposition_products>受热分解产生氯气、氧气、氯化氢和醋酸。在受热、摩擦、撞击或接触有机物时可能发生剧烈爆炸。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
+      <acute_toxicity>LD50：无资料。LC50：无资料。高氯酸醋酐溶液具有强腐蚀性，皮肤粘膜接触、误服或吸入后，引起强烈刺激症状。本品具有极高的爆炸性。</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>造成严重眼损伤</irritation>
+      <irritation>造成严重皮肤灼伤和眼损伤。皮肤粘膜接触、误服或吸入后，引起强烈刺激症状。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -118,7 +117,7 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>高氯酸醋酐溶液为强氧化剂和强酸，对水生生物具有高毒性。应避免进入水体、土壤和地下水。该混合物对环境可能有严重危害。对鱼类和其他水生生物可能有害。</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
@@ -126,23 +125,23 @@
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
+      <disposal_method>用控制焚烧法处置。也可采用中和法处理，用碱中和后，按危险废物进行处置。处置前应参阅国家和地方有关法规。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。禁止将未经处理的废物直接排入环境。处置时应穿戴适当的防护装备。避免与还原剂、有机物混合处置。严禁震动、撞击和摩擦。本品具有极高的爆炸性，处置需特别谨慎。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>3098</dangerous_goods_number>
       <un_number>3098</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <imdg_page>IMDG Code 5.1类</imdg_page>
+      <packaging_mark>第5.1类氧化剂标志、第8类腐蚀品标志</packaging_mark>
+      <packing_group>I（包装类别I，高危险性，爆炸性）</packaging_group>
+      <packaging_method>螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与有机物、还原剂、非金属单质、纤维类物质、水、醇类、胺类等混装混运。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。严禁震动、撞击和摩擦。本品具有极高的爆炸性，运输需特别谨慎。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第5.1类氧化剂和第8类腐蚀品，应按照相关法规进行生产、储存、运输和使用。本品具有极高的爆炸性，需特别管理。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

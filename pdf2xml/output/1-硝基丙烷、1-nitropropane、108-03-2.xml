@@ -21,7 +21,7 @@
       <exposure_routes>吸入食入经皮吸收</exposure_routes>
       <health_hazards>可致轻度高铁血红蛋白血症。本品对皮肤无刺激性。动物实验认为有轻度麻醉作用，出现
 软弱和流涎等症状。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <environmental_hazards>本品对水生生物有毒性，可能对水体环境产生长期不良影响。硝基烷烃类物质在环境中可被生物降解，但降解速度较慢。泄漏到水体中可能造成污染。</environmental_hazards>
       <fire_explosion_hazards>本品易燃，具刺激性。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -80,7 +80,7 @@
       <flash_point>36</flash_point>
       <relative_density>1.00</relative_density>
       <relative_vapor_density>3.06</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>微溶于水，溶于乙醇、乙醚、丙酮等有机溶剂。</solubility>
       <molecular_formula>C3H7NO2</molecular_formula>
       <molecular_weight>89.09</molecular_weight>
       <main_components>纯品</main_components>
@@ -119,17 +119,17 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
+      <ecological_toxicity>对水生生物有毒性。LC50（鱼类）：>100mg/L（96小时）。对水生环境可能产生长期不良影响。</ecological_toxicity>
+      <biodegradability>在环境中可被生物降解，但降解速度较慢。在好氧条件下，生物降解半衰期约为数周至数月。</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作现场严禁吸烟。注意个人清洁卫生。</other_harmful_effects>
+      <bioaccumulation>生物富集性较低，log Kow约为0.3，表明在生物体内富集的可能性较小。</bioaccumulation>
+      <other_harmful_effects>工作现场严禁吸烟。注意个人清洁卫生。避免泄漏到水体、土壤和大气中。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>用焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。也可采用化学方法处理，如用碱液中和后排放。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。避免与强氧化剂、强酸、强碱接触。处置人员应穿戴适当的防护设备。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -138,12 +138,12 @@
       <imdg_page>3370</imdg_page>
       <packaging_mark>7</packaging_mark>
       <packing_group>O53</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_method>小开口钢桶；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与氧化剂、酸类、碱类、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源、高温区。装运该物品的车辆排气管必须配备阻火装置，禁止使用易产生火花的机械设备和工具装卸。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。严禁用木船、水泥船散装运输。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.3类高闪点易燃液体，危险货物编号：33522，UN编号：2608。运输时应遵守相关危险货物运输法规。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>
