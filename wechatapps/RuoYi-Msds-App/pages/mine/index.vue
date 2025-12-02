@@ -51,6 +51,16 @@
           </view>
           <uni-icons type="arrowright" size="16" color="#c7c7cc"></uni-icons>
         </view>
+
+        <view class="settings-item" @click="handleToSettings">
+          <view class="settings-icon" style="background-color: #32D74B;">
+            <uni-icons type="gear-filled" size="18" color="#ffffff"></uni-icons>
+          </view>
+          <view class="settings-info">
+            <view class="settings-title">系统设置</view>
+          </view>
+          <uni-icons type="arrowright" size="16" color="#c7c7cc"></uni-icons>
+        </view>
       </view>
 
       <!-- 功能分组 2 -->
@@ -62,6 +72,16 @@
           </view>
           <view class="settings-info">
             <view class="settings-title">常见问题</view>
+          </view>
+          <uni-icons type="arrowright" size="16" color="#c7c7cc"></uni-icons>
+        </view>
+
+        <view class="settings-item" @click="handleFeedback">
+          <view class="settings-icon" style="background-color: #FF9500;">
+            <uni-icons type="chat-filled" size="18" color="#ffffff"></uni-icons>
+          </view>
+          <view class="settings-info">
+            <view class="settings-title">意见反馈</view>
           </view>
           <uni-icons type="arrowright" size="16" color="#c7c7cc"></uni-icons>
         </view>
@@ -148,8 +168,14 @@ export default {
       }
       this.$tab.navigateTo('/pages/mine/pwd/index');
     },
+    handleToSettings() {
+      this.$tab.navigateTo('/pages/mine/setting/index');
+    },
     handleHelp() {
       this.$tab.navigateTo('/pages/mine/help/index');
+    },
+    handleFeedback() {
+      this.$tab.navigateTo('/pages/mine/feedback/index');
     },
     handleAbout() {
       this.$tab.navigateTo('/pages/mine/about/index');

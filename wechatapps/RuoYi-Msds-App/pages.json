@@ -106,6 +106,12 @@
       "navigationStyle": "custom"
     }
   }, {
+    "path": "pages/mine/feedback/index",
+    "style": {
+      "navigationBarTitleText": "意见反馈",
+      "navigationStyle": "custom"
+    }
+  }, {
     "path": "pages/common/webview/index",
     "style": {
       "navigationBarTitleText": "浏览网页"

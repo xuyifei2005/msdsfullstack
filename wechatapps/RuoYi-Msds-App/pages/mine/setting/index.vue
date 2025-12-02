@@ -4,9 +4,12 @@
     
     <!-- 导航栏 -->
     <view class="nav-bar">
+      <view class="nav-left" @click="handleBack">
+        <uni-icons type="left" color="#007AFF" size="24"></uni-icons>
+      </view>
       <view class="nav-title">设置</view>
-      <view class="nav-action">
-        <!-- <uni-icons type="compose" color="#007AFF" size="20"></uni-icons> -->
+      <view class="nav-right" @click="handleUserProfile">
+        <uni-icons type="compose" color="#007AFF" size="24"></uni-icons>
       </view>
     </view>
 
@@ -48,7 +51,7 @@
           <u-switch v-model="settings.autoDownload" active-color="#34c759" size="20"></u-switch>
         </view>
         
-        <view class="settings-item">
+        <view class="settings-item" @click="handleLanguage">
           <view class="settings-icon" style="background-color: #FF9500;">
             <uni-icons type="more-filled" color="#ffffff" size="18"></uni-icons> <!-- language icon substitute -->
           </view>
@@ -84,13 +87,49 @@
           </view>
           <uni-icons type="right" color="#c7c7cc" size="14"></uni-icons>
         </view>
+
+        <view class="settings-item" @click="handleDataExport">
+          <view class="settings-icon" style="background-color: #FF6B35;">
+            <uni-icons type="upload-filled" color="#ffffff" size="18"></uni-icons>
+          </view>
+          <view class="settings-info">
+            <view class="settings-title">数据导出</view>
+            <view class="settings-subtitle">导出收藏和历史记录</view>
+          </view>
+          <uni-icons type="right" color="#c7c7cc" size="14"></uni-icons>
+        </view>
       </view>
 
-      <!-- 关于与退出 -->
-      <view class="settings-group-title">其他</view>
+      <!-- 安全设置 -->
+      <view class="settings-group-title">安全</view>
+      <view class="settings-group">
+        <view class="settings-item">
+          <view class="settings-icon" style="background-color: #FF3B30;">
+            <uni-icons type="locked-filled" color="#ffffff" size="18"></uni-icons>
+          </view>
+          <view class="settings-info">
+            <view class="settings-title">安全验证</view>
+            <view class="settings-subtitle">Face ID / Touch ID</view>
+          </view>
+          <u-switch v-model="settings.securityVerification" active-color="#34c759" size="20"></u-switch>
+        </view>
+        
+        <view class="settings-item" @click="handleToPwd">
+          <view class="settings-icon" style="background-color: #8E8E93;">
+            <uni-icons type="auth-filled" color="#ffffff" size="18"></uni-icons>
+          </view>
+          <view class="settings-info">
+            <view class="settings-title">修改密码</view>
+          </view>
+          <uni-icons type="right" color="#c7c7cc" size="14"></uni-icons>
+        </view>
+      </view>
+
+      <!-- 关于 -->
+      <view class="settings-group-title">关于</view>
       <view class="settings-group">
         <view class="settings-item" @click="handleToUpgrade">
-          <view class="settings-icon" style="background-color: #8E8E93;">
+          <view class="settings-icon" style="background-color: #007AFF;">
             <uni-icons type="info-filled" color="#ffffff" size="18"></uni-icons>
           </view>
           <view class="settings-info">
@@ -100,6 +139,44 @@
           <uni-icons type="right" color="#c7c7cc" size="14"></uni-icons>
         </view>
 
+        <view class="settings-item" @click="handleRateApp">
+          <view class="settings-icon" style="background-color: #34C759;">
+            <uni-icons type="star-filled" color="#ffffff" size="18"></uni-icons>
+          </view>
+          <view class="settings-info">
+            <view class="settings-title">评价应用</view>
+          </view>
+          <uni-icons type="right" color="#c7c7cc" size="14"></uni-icons>
+        </view>
+
+        <view class="settings-item" @click="handleHelpFeedback">
+          <view class="settings-icon" style="background-color: #FF9500;">
+            <uni-icons type="help-filled" color="#ffffff" size="18"></uni-icons>
+          </view>
+          <view class="settings-info">
+            <view class="settings-title">帮助与反馈</view>
+          </view>
+          <uni-icons type="right" color="#c7c7cc" size="14"></uni-icons>
+        </view>
+      </view>
+
+      <!-- 危险操作 -->
+      <view class="settings-group-title">危险操作</view>
+      <view class="settings-group">
+        <view class="settings-item danger-item" @click="handleClearAllData">
+          <view class="settings-icon" style="background-color: #FF3B30;">
+            <uni-icons type="trash-filled" color="#ffffff" size="18"></uni-icons>
+          </view>
+          <view class="settings-info">
+            <view class="settings-title" style="color: #FF3B30;">清除所有数据</view>
+            <view class="settings-subtitle">此操作不可恢复</view>
+          </view>
+          <uni-icons type="right" color="#c7c7cc" size="14"></uni-icons>
+        </view>
+      </view>
+
+      <!-- 退出登录 -->
+      <view class="settings-group">
         <view class="settings-item" @click="handleLogout">
           <view class="settings-icon" style="background-color: #FF3B30;">
             <uni-icons type="minus-filled" color="#ffffff" size="18"></uni-icons>
@@ -129,13 +206,20 @@
         settings: {
           notification: true,
           autoDownload: false,
-          cloudSync: true
+          cloudSync: true,
+          securityVerification: false
         }
       }
     },
     methods: {
       handleUserProfile() {
         this.$tab.navigateTo('/pages/mine/info/index')
+      },
+      handleBack() {
+        this.$tab.navigateBack()
+      },
+      handleLanguage() {
+        this.$modal.showToast('暂只支持简体中文')
       },
       handleToPwd() {
         this.$tab.navigateTo('/pages/mine/pwd/index')
@@ -146,6 +230,32 @@
       handleCleanTmp() {
         this.$modal.confirm('确定清理缓存吗？').then(() => {
           this.$modal.msgSuccess('清理成功')
+        })
+      },
+      handleDataExport() {
+        this.$modal.confirm('确定要导出所有收藏和历史记录吗？').then(() => {
+          // 模拟导出过程
+          this.$modal.loading("正在导出...")
+          setTimeout(() => {
+            this.$modal.closeLoading()
+            this.$modal.msgSuccess('导出成功，文件已保存至手机存储')
+          }, 1500)
+        })
+      },
+      handleRateApp() {
+        this.$modal.showToast('感谢您的支持！')
+      },
+      handleHelpFeedback() {
+        this.$tab.navigateTo('/pages/mine/help/index')
+      },
+      handleClearAllData() {
+        this.$modal.confirm('此操作将清除所有本地数据且不可恢复，确定继续吗？').then(() => {
+           this.$modal.loading("正在清除...")
+           setTimeout(() => {
+             this.$modal.closeLoading()
+             this.$modal.msgSuccess('所有数据已清除')
+             // 可以选择重置设置或退出登录
+           }, 1500)
         })
       },
       handleLogout() {
@@ -214,18 +324,35 @@
     padding-top: var(--status-bar-height);
     box-sizing: content-box;
   }
+  
+  .nav-left, .nav-right {
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-left {
+    justify-content: flex-start;
+  }
+  
+  .nav-right {
+    justify-content: flex-end;
+  }
 
   .nav-title {
     font-size: 18px;
     font-weight: bold;
     color: #000;
+    flex: 1;
+    text-align: center;
   }
 
   .content {
     padding: 16px;
     position: relative;
     z-index: 1;
-    padding-bottom: 40px;
+    padding-bottom: calc(40px + env(safe-area-inset-bottom));
   }
 
   .user-profile {

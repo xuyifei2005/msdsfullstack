@@ -18,6 +18,15 @@
       <view class="info-card glass-card">
         <u-cell-group :border="false">
           <u-cell
+            title="头像"
+            :isLink="true"
+            url="/pages/mine/avatar/index"
+          >
+            <template #value>
+              <u-avatar :src="user.avatar" size="40" shape="circle"></u-avatar>
+            </template>
+          </u-cell>
+          <u-cell
             title="昵称"
             :value="user.nickName"
             :isLink="true"
