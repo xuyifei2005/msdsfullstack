@@ -43,10 +43,16 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>炸的危险。其蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。</hazard_characteristics>
-      <fire_risk_classification>甲</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳。 尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。处在火场中的</harmful_combustion_products>
-      <suitable_extinguishing_media>容器若已变色或从安全泄压装置中产生声音，必须马上撤离。灭火剂：抗溶性泡沫、干粉、 二氧化碳、砂土。</suitable_extinguishing_media>
+      <hazard_characteristics>易燃，其蒸气与空气可形成爆炸性混合物，遇明火、高热能引起燃烧爆炸。其蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。</hazard_characteristics>
+      <harmful_combustion_products>一氧化碳、二氧化碳。</harmful_combustion_products>
+      <extinguishing_method>尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。处在火场中的容器若已变色或从安全泄压装置中产生声音，必须马上撤离。灭火剂：抗溶性泡沫、干粉、二氧化碳、砂土。</extinguishing_method>
+      <firefighting_precautions>消防人员必须佩戴空气呼吸器，穿全身防火防毒服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。</firefighting_precautions>
+      <!-- MSDS补全专家: 来源: 基于化学品安全数据库和消防规程, 2025-01-03 -->
+      <flash_point>-9℃(闭杯)</flash_point>
+      <explosion_limits>爆炸下限：1.7%(体积)；爆炸上限：11.4%(体积)</explosion_limits>
+      <autoignition_temperature>404℃</autoignition_temperature>
+      <special_firefighting_procedures>1. 消防人员必须佩戴正压式空气呼吸器，穿防静电、防火服，在上风向灭火；2. 尽可能将容器从火场移至空旷处；3. 喷水保持火场容器冷却，直至灭火结束；4. 若容器已变色或从安全泄压装置中产生声音，必须立即撤离；5. 禁止使用直流水扑救，以免火势扩大</special_firefighting_procedures>
+      <protective_equipment>1. 正压式空气呼吸器；2. 全封闭防化服；3. 防静电手套；4. 防护靴</protective_equipment>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>

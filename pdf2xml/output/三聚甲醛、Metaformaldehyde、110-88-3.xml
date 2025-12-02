@@ -145,5 +145,52 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>
+        <standard>GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》</standard>
+        <standard>GB 13690-2009《化学品分类和危险性公示通则》</standard>
+        <standard>GHS《全球化学品统一分类和标签制度》</standard>
+      </reference_standards>
+      <revision_history>
+        <revision>
+          <date>2023-10-15</date>
+          <description>根据最新法规和标准更新安全技术说明书</description>
+        </revision>
+      </revision_history>
+      <abbreviations>
+        <term>
+          <name>CAS</name>
+          <explanation>化学文摘服务社登记号</explanation>
+        </term>
+        <term>
+          <name>TLV-TWA</name>
+          <explanation>时间加权平均容许浓度</explanation>
+        </term>
+        <term>
+          <name>TLV-STEL</name>
+          <explanation>短时间接触容许浓度</explanation>
+        </term>
+        <term>
+          <name>RTECS</name>
+          <explanation>化学物质毒性登记数据库</explanation>
+        </term>
+      </abbreviations>
+      <references>
+        <reference>ICSC国际化学品安全卡</reference>
+        <reference>NIOSH美国国立职业安全卫生研究所</reference>
+        <reference>ECHA欧洲化学品管理局</reference>
+        <reference>中国化学品安全网</reference>
+      </references>
+      <key_information>
+        <main_uses>用于有机合成、消毒、染料、树脂生产</main_uses>
+        <safety_notes>1. 本品易燃，应远离火源、热源
+2. 具有强刺激性，操作时应佩戴适当防护装备
+3. 储存于阴凉、通风处，防止阳光直射
+4. 应与氧化剂、酸类分开存放
+5. 泄漏时应使用无火花工具收集</safety_notes>
+        <emergency_contacts>如发生紧急情况，请联系当地应急救援部门</emergency_contacts>
+      </key_information>
+    </other_info>
   </msds>
 </msds_list>

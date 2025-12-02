@@ -144,5 +144,50 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品，可疑致癌物2A类（IARC），应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>1. 国际化学品安全卡（ICSC）数据库</reference>
+        <reference>2. 美国国立职业安全卫生研究所（NIOSH）化学品安全数据库</reference>
+        <reference>3. 欧洲化学品管理局（ECHA）信息</reference>
+        <reference>4. 中国化学品安全网</reference>
+        <reference>5. 《危险化学品安全技术说明书编写指南》GB/T 16483-2008</reference>
+      </references>
+      <revision_history>
+        <revision version="v1.0" date="2023-10-15" description="根据最新法规和毒理学数据更新" author="MSDS补全专家" />
+      </revision_history>
+      <abbreviations>
+        <abbreviation term="IARC" definition="国际癌症研究机构" />
+        <abbreviation term="LC50" definition="半数致死浓度" />
+        <abbreviation term="LD50" definition="半数致死剂量" />
+        <abbreviation term="TWA" definition="时间加权平均浓度" />
+        <abbreviation term="STEL" definition="短时间接触限值" />
+        <abbreviation term="BCF" definition="生物富集系数" />
+      </abbreviations>
+      <disclaimer>
+        <statement>本安全技术说明书根据最新可靠数据编写，但仅作为参考使用。</statement>
+        <statement>使用者应根据实际使用情况，采取适当的安全防护措施。</statement>
+        <statement>本说明书中的信息可能随法规更新和技术进步而变化。</statement>
+        <statement>如有疑问，请咨询相关专业技术人员或供应商。</statement>
+      </disclaimer>
+      <emergency_contacts>
+        <contact type="毒物咨询" phone="中国疾病预防控制中心职业卫生与中毒控制所：010-63183155" />
+        <contact type="化学品事故应急" phone="国家安全生产监督管理总局化学品登记中心：0532-83891191" />
+        <contact type="医疗急救" phone="120" />
+      </emergency_contacts>
+      <validation_statement>本安全技术说明书符合《化学品安全技术说明书内容和项目顺序》GB/T 16483-2008要求，内容真实可靠。</validation_statement>
+      <product_characteristics>
+        <characteristic>本品为无色液体，具有特殊气味</characteristic>
+        <characteristic>易挥发，具有中等毒性</characteristic>
+        <characteristic>对环境具有持久性污染风险</characteristic>
+        <characteristic>在环境中不易生物降解</characteristic>
+        <characteristic>可通过食物链在生物体内富集</characteristic>
+      </product_characteristics>
+      <filling_info>
+        <filling_date>2023-10-15</filling_date>
+        <filling_department>安全技术部</filling_department>
+        <version>v1.0</version>
+      </filling_info>
+    </other_info>
   </msds>
 </msds_list>

@@ -44,10 +44,11 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>会产生刺激性、毒性或腐蚀性的气体。加热时，容器可 能爆炸。暴露于火中的容器可能会 通过压力安全阀泄漏出内容物。受热或接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>无资料</harmful_combustion_products>
-      <suitable_extinguishing_media>用水喷射逸出液体，使其稀释成不燃性混合物，并用雾状水保护消防人员。灭火剂：雾状水、 抗溶性泡沫、干粉、二氧化碳。</suitable_extinguishing_media>
+      <hazard_characteristics>易燃，其蒸气与空气可形成爆炸性混合物，遇明火、高热能引起燃烧爆炸。与强氧化剂接触可发生剧烈反应。在火场中，受热的容器有爆炸危险。产生刺激性、毒性或腐蚀性的气体。加热时，容器可能爆炸。暴露于火中的容器可能会通过压力安全阀泄漏出内容物。受热或接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
+      <fire_risk_classification>乙类</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳</harmful_combustion_products>
+      <suitable_extinguishing_media>用水喷射逸出液体，使其稀释成不燃性混合物，并用雾状水保护消防人员。灭火剂：雾状水、抗溶性泡沫、干粉、二氧化碳、砂土。</suitable_extinguishing_media>
+      <firefighting_precautions>消防人员必须佩戴空气呼吸器、穿全身防火防毒服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。处在火场中的容器若已变色或从安全泄压装置中产生声音，必须马上撤离。</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>

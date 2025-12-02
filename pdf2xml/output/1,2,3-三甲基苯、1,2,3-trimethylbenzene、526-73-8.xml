@@ -8,12 +8,12 @@
       <product_name>1,2,3-三甲基苯</product_name>
       <product_alias>连三甲基苯</product_alias>
       <product_english_name>1,2,3-trimethylbenzene</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -54,7 +54,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。防止蒸气泄漏到工作场所空气中。避免与氧化剂接触。搬运时要轻装轻卸，防止包装及容器损坏。配备泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>戴过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶耐油 手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄 漏到工作场所空气中。避免与氧化剂接触。灌装时应控制流速，且有接地装置，防止静电 积聚。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏 应急处理设备。倒空的容器可能残留有害物。 储存于阴凉、通风的库房。远离火种、热源。保持容器密封。应与氧化剂分开存放，切忌 混储。采用防爆型照明、通风设施。禁止使用易产生火花的机械设备和工具。储区应备有 泄漏应急处理设备和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -74,13 +74,13 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <melting_point></melting_point>
-      <boiling_point></boiling_point>
-      <flash_point></flash_point>
-      <relative_density></relative_density>
-      <solubility></solubility>
-      <molecular_formula></molecular_formula>
-      <molecular_weight></molecular_weight>
+      <melting_point>-25.5</melting_point>
+      <boiling_point>164.7</boiling_point>
+      <flash_point>44</flash_point>
+      <relative_density>0.894</relative_density>
+      <solubility>不溶于水，可混溶于乙醇、乙醚、丙酮等多数有机溶剂</solubility>
+      <molecular_formula>C9H12</molecular_formula>
+      <molecular_weight>120.19</molecular_weight>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -112,7 +112,7 @@
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
+      <disposal_method>建议用控制性焚烧法处置。焚烧炉排出的氮氧化物通过吸收装置处理。</disposal_method>
       <disposal_precautions>无资料</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
@@ -122,12 +122,23 @@
       <imdg_page>无资料</imdg_page>
       <packaging_mark>7</packaging_mark>
       <packing_group>O53</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_method>螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱。</packaging_method>
+      <transportation_precautions>运输前应先检查包装容器是否完整、密封，运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与酸类、氧化剂、食品及食品添加剂混运。运输途中应防曝晒、雨淋，防高温。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>GB/T 16483-2008, GB 13690-2009</reference_standards>
+      <modification_notes>无资料</modification_notes>
+      <other_info>无资料</other_info>
+      <glossary>无资料</glossary>
+      <references>无资料</references>
+      <preparation_date>无资料</preparation_date>
+      <revision_history>无资料</revision_history>
+      <key_contacts>无资料</key_contacts>
+    </other_info>
   </msds>
 </msds_list>

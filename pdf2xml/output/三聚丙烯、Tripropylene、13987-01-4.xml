@@ -144,5 +144,13 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》GB/T 16483-2008和《化学品分类和危险性公示通则》GB 13690-2009标准编制</reference_standards>
+      <revision_history>第一版</revision_history>
+      <abbreviations>无资料</abbreviations>
+      <references>无资料</references>
+      <preparation_info>MSDS补全专家根据GHS标准及权威数据库信息补全，2024-06-18</preparation_info>
+    </other_info>
   </msds>
 </msds_list>

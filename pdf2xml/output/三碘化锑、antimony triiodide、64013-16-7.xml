@@ -144,5 +144,25 @@
     <regulatory>
       <regulatory_info></regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standard>《化学品安全技术说明书内容和项目顺序》GB/T 16483-2008</reference_standard>
+      <revision_history>第一版</revision_history>
+      <other_notes>无资料</other_notes>
+      <abbreviations>
+        <abbr>
+          <term>MSDS</term>
+          <explanation>Material Safety Data Sheet，化学品安全技术说明书</explanation>
+        </abbr>
+        <abbr>
+          <term>CAS</term>
+          <explanation>Chemical Abstracts Service，化学文摘社登记号</explanation>
+        </abbr>
+        <abbr>
+          <term>TLV-TWA</term>
+          <explanation>时间加权平均阈限值</explanation>
+        </abbr>
+      </abbreviations>
+    </other_info>
   </msds>
 </msds_list>

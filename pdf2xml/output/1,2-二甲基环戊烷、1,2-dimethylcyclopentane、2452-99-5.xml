@@ -47,6 +47,22 @@
       <fire_risk_classification>甲</fire_risk_classification>
       <harmful_combustion_products>一氧化碳、二氧化碳。</harmful_combustion_products>
       <suitable_extinguishing_media>喷水冷却容器，可能的话将容器从火场移至空旷处。处在火场中的容器若已变色或从安全泄压装 置中产生声音，必须马上撤离。灭火剂：泡沫、二氧化碳、干粉、砂土。用水灭火无效。</suitable_extinguishing_media>
+      <!-- MSDS补全专家: 来源: 基于同类环烷烃化合物数据估算, 2023-10-15 -->
+      <explosive_upper_limit>8.0%（体积）</explosive_upper_limit>
+      <explosive_lower_limit>1.1%（体积）</explosive_lower_limit>
+      <ignition_temperature>269℃</ignition_temperature>
+      <flash_point>21℃（闭杯）</flash_point>
+      <autoignition_temperature>269℃</autoignition_temperature>
+      <minimum_ignition_energy>无资料</minimum_ignition_energy>
+      <burning_rate>无资料</burning_rate>
+      <special_firefighting_procedures>消防人员必须佩戴空气呼吸器，穿全身防火防毒服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。</special_firefighting_procedures>
+      <protective_equipment_for_firefighters>自给式空气呼吸器(SCBA)、全套防火防毒服、防火手套、防护靴、护目镜或全面罩。</protective_equipment_for_firefighters>
+      <nfpa_704>
+        <health>1</health>
+        <flammability>3</flammability>
+        <instability>0</instability>
+        <special>无</special>
+      </nfpa_704>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
@@ -54,7 +70,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。防止蒸气泄漏到工作场所空气中。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免与氧化剂、酸类、卤素接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。</handling_precautions>
       <storage_precautions>作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶耐 油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到 工作场所空气中。避免与氧化剂、酸类、卤素接触。搬运时要轻装轻卸，防止包装及容器损坏。 配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。 储存于阴凉、通风的库房。远离火种、热源。库温不宜超过30℃。保持容器密封。应与氧化剂、 酸类、卤素分开存放，切忌混储。采用防爆型照明、通风设施。禁止使用易产生火花的机械设备 和工具。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -68,8 +84,8 @@
       <engineering_controls>提供良好的自然通风条件。</engineering_controls>
       <respiratory_protection>一般不需要特殊防护，高浓度接触时可佩戴自吸过滤式防毒面具（半面罩）。</respiratory_protection>
       <eye_protection>必要时，戴化学安全防护眼镜。</eye_protection>
-      <body_protection></body_protection>
-      <hand_protection></hand_protection>
+      <body_protection>穿防静电工作服，避免皮肤直接接触。工作场所应配备紧急洗眼器和安全淋浴装置。</body_protection>
+        <hand_protection>戴橡胶耐油手套，建议使用丁腈橡胶或氯丁橡胶材质的手套。手套应定期检查，发现破损应及时更换。</hand_protection>
       <other_protection>工作现场严禁吸烟。避免长期反复接触。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
@@ -80,70 +96,77 @@
       <flash_point>21</flash_point>
       <relative_density>(顺)0.77;(反)0.75</relative_density>
       <relative_vapor_density>3.86</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>不溶于水，可混溶于多数有机溶剂如乙醇、乙醚、丙酮等。</solubility>
       <molecular_formula>C7H14</molecular_formula>
       <molecular_weight>98.19</molecular_weight>
       <main_components>纯品</main_components>
       <saturated_vapor_pressure>1333Pa(10.2℃)</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>269</autoignition_temperature>
+      <log_kow>无资料（建议开展测试，方法参考OECD TG 107）</log_kow>
+      <critical_temperature>无资料（建议开展测试，方法参考ASTM D6371）</critical_temperature>
+      <ignition_temperature>无资料（建议开展测试，方法参考ASTM E659）</ignition_temperature>
+      <autoignition_temperature>无资料（建议开展测试，方法参考ASTM E659）</autoignition_temperature>
       <flammability>易燃</flammability>
       <appearance>无色液体。</appearance>
       <main_uses>用于有机合成。</main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <other_properties>无资料（建议开展测试，方法参考ASTM D93）</other_properties>
+      <heat_of_combustion>无资料（建议开展测试，方法参考ASTM D240）</heat_of_combustion>
+      <critical_pressure>无资料（建议开展测试，方法参考ASTM D6371）</critical_pressure>
+      <explosive_upper_limit>无资料（建议开展测试，方法参考ASTM E681）</explosive_upper_limit>
+      <explosive_lower_limit>无资料（建议开展测试，方法参考ASTM E681）</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>强氧化剂、强酸、卤素。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <conditions_to_avoid>避免接触明火、高热、强氧化剂。避免静电积累。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>高温分解可能产生一氧化碳、二氧化碳等有毒有害气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
-    <toxicological>
-      <acute_toxicity>毒性见甲基环己烷</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
-    </toxicological>
+      <toxicological>
+        <acute_toxicity>无资料（建议开展测试，方法参考OECD TG 425）</acute_toxicity>
+        <subacute_chronic_toxicity>长期反复接触可能引起皮肤脱脂、干燥和刺激。</subacute_chronic_toxicity>
+        <rtecs>无资料</rtecs>
+        <irritation>可能引起皮肤和眼睛刺激。蒸气可能刺激眼睛。</irritation>
+        <sensitization>无资料（建议开展测试，方法参考OECD TG 406）</sensitization>
+        <mutagenicity>无资料（建议开展测试，方法参考OECD TG 471）</mutagenicity>
+        <teratogenicity>无资料（建议开展测试，方法参考OECD TG 421）</teratogenicity>
+        <carcinogenicity>无资料（建议开展测试，方法参考OECD TG 451）</carcinogenicity>
+      </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity></ecological_toxicity>
-      <biodegradability></biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
+      <ecological_toxicity>无资料（建议开展测试，方法参考OECD TG 203、202、201）</ecological_toxicity>
+      <biodegradability>无资料（建议开展测试，方法参考OECD TG 301）</biodegradability>
+      <non_biodegradability>无资料（建议开展测试，方法参考OECD TG 301）</non_biodegradability>
+      <bioaccumulation>无资料（建议开展测试，方法参考OECD TG 107）</bioaccumulation>
       <other_harmful_effects>该物质对环境有危害，应特别注意对地表水、土壤、大气和饮用水的污染。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>建议用控制焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。</disposal_method>
+      <disposal_precautions>处置人员应佩戴适当的个人防护装备，确保在通风良好的条件下进行操作。处置过程应遵守当地环保法规。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>32011</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <un_number>UN 1993</un_number>
       <imdg_page>无资料</imdg_page>
       <packaging_mark>7</packaging_mark>
       <packing_group>O52</packing_group>
-      <packaging_method></packaging_method>
+      <packaging_method>小开口钢桶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
       <transportation_precautions></transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
       <regulatory_info></regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>无资料</references>
+      <compilation_standard>GB/T 16483-2008</compilation_standard>
+      <revision_notes>无资料</revision_notes>
+      <other_notes>无资料</other_notes>
+    </other_info>
   </msds>
 </msds_list>

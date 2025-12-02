@@ -106,43 +106,82 @@
       <decomposition_products>受热分解产生氯化物和氧化钠，放出氧气。急剧加热时可发生爆炸。与有机物接触可能发生剧烈反应或爆炸。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
+    <!-- MSDS补全专家: 来源: 基于高氯酸盐类化合物特性及权威数据库检索, 2025-06-18 -->
     <toxicological>
       <acute_toxicity>LD50：2100mg/kg(大鼠经口)。LC50：无资料。根据LD50值判断，本品为低毒性物质。长期接触可能引起甲状腺功能减退。</acute_toxicity>
+      <acute_toxicity_oral>LD50: 2100 mg/kg (大鼠经口) - 低毒性</acute_toxicity_oral>
+      <acute_toxicity_dermal>无资料（建议开展经皮急性毒性测试，方法参考OECD TG 402）</acute_toxicity_dermal>
+      <acute_toxicity_inhalation>无资料（建议开展吸入急性毒性测试，方法参考OECD TG 403）</acute_toxicity_inhalation>
+      <skin_corrosion_irritation>对皮肤有强烈刺激性（基于高氯酸盐类化合物特性）</skin_corrosion_irritation>
+      <eye_damage_irritation>对眼睛有强烈刺激性（基于高氯酸盐类化合物特性）</eye_damage_irritation>
+      <skin_sensitization>无资料（建议开展皮肤致敏性测试，方法参考OECD TG 406）</skin_sensitization>
+      <respiratory_sensitization>无资料（建议开展呼吸道致敏性评估）</respiratory_sensitization>
+      <germ_cell_mutagenicity>无资料（建议开展细菌反向突变试验，方法参考OECD TG 471）</germ_cell_mutagenicity>
+      <carcinogenicity>无资料（基于现有数据，无致癌性证据）</carcinogenicity>
+      <reproductive_toxicity>无资料（高氯酸盐可能影响甲状腺功能，间接影响生殖系统）</reproductive_toxicity>
+      <specific_target_organ_toxicity_single>无资料（高氯酸盐主要影响甲状腺功能）</specific_target_organ_toxicity_single>
+      <specific_target_organ_toxicity_repeated>长期接触可能导致甲状腺功能减退（基于高氯酸盐类化合物特性）</specific_target_organ_toxicity_repeated>
+      <aspiration_hazard>无资料（固体形态，吸入风险较低）</aspiration_hazard>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>SC9800000</rtecs>
       <irritation>对皮肤粘膜有强烈刺激性。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
+    <!-- MSDS补全专家: 来源: 基于高氯酸盐类化合物特性及权威数据库检索, 2025-06-18 -->
     <ecological>
       <ecological_toxicity>高氯酸钠为强氧化剂，对水生生物可能有害。应避免进入水体、土壤和地下水。高氯酸钠在水中可能释放氯离子，对水生生态系统造成影响。对鱼类和其他水生生物可能有害。</ecological_toxicity>
+      <aquatic_toxicity_fish>无资料（建议开展鱼类急性毒性测试，方法参考OECD TG 203）</aquatic_toxicity_fish>
+      <aquatic_toxicity_daphnia>无资料（建议开展水蚤急性活动抑制测试，方法参考OECD TG 202）</aquatic_toxicity_daphnia>
+      <aquatic_toxicity_algae>无资料（建议开展藻类生长抑制测试，方法参考OECD TG 201）</aquatic_toxicity_algae>
+      <microbial_toxicity>无资料（高氯酸盐可能对微生物群落有影响）</microbial_toxicity>
+      <persistence_degradability>在环境中相对稳定，不易自然降解（基于高氯酸盐类化合物特性）</persistence_degradability>
+      <bioaccumulative_potential>低生物富集性（高水溶性，低辛醇/水分配系数）</bioaccumulative_potential>
+      <mobility_in_soil>在土壤中具有高迁移性（高水溶性）</mobility_in_soil>
+      <other_adverse_effects>可能影响水生生态系统平衡，改变水体氧化还原条件</other_adverse_effects>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
       <other_harmful_effects>工作后，淋浴更衣。注意个人清洁卫生。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
+    <!-- MSDS补全专家: 来源: 基于高氯酸盐类化合物特性及权威数据库检索, 2025-06-18 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>用控制焚烧法处置。也可采用还原法处理，用还原剂将高氯酸钠还原后，按危险废物进行处置。处置前应参阅国家和地方有关法规。</disposal_method>
+      <waste_disposal_methods>用控制焚烧法处置。也可采用还原法处理，用还原剂将高氯酸钠还原后，按危险废物进行处置。处置前应参阅国家和地方有关法规。</waste_disposal_methods>
+      <contaminated_packaging>污染的包装应作为危险废物处理，按照相关法规进行处置</contaminated_packaging>
+      <disposal_considerations>处置前应进行危险特性鉴别，按照《国家危险废物名录》进行分类处置</disposal_considerations>
+      <special_precautions>处置时应穿戴适当的防护装备。避免与还原剂、有机物混合处置。严禁震动、撞击和摩擦。避免急剧加热。</special_precautions>
       <disposal_precautions>处置前应参阅国家和地方有关法规。禁止将未经处理的废物直接排入环境。处置时应穿戴适当的防护装备。避免与还原剂、有机物混合处置。严禁震动、撞击和摩擦。避免急剧加热。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
+    <!-- MSDS补全专家: 来源: 基于高氯酸盐类化合物特性及权威数据库检索, 2025-06-18 -->
     <transportation>
       <dangerous_goods_number>51018</dangerous_goods_number>
       <un_number>1502</un_number>
       <imdg_page>5182</imdg_page>
       <packaging_mark>第5.1类氧化剂标志</packaging_mark>
-      <packing_group>II（包装类别II，中等危险性）</packaging_group>
+      <packing_group>II（包装类别II，中等危险性）</packing_group>
       <packaging_method>塑料袋或二层牛皮纸袋外全开口或中开口钢桶；塑料袋或二层牛皮纸袋外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transport_regulations>国际运输参考《国际海运危险货物规则》(IMDG Code)和《国际空运危险货物规则》(IATA DGR)</transport_regulations>
+      <limited_quantities>有限数量运输按照《危险货物运输有限数量和例外数量规定》执行</limited_quantities>
+      <excepted_quantities>例外数量运输按照《危险货物运输有限数量和例外数量规定》执行</excepted_quantities>
+      <emergency_response>运输过程中发生泄漏应按照《危险货物运输应急响应指南》处理</emergency_response>
+      <special_transport_precautions>运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与还原剂、活性金属粉末、强酸、醇类、易燃或可燃物、有机物等混装混运。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。禁止震动、撞击和摩擦。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。</special_transport_precautions>
       <transportation_precautions>运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与还原剂、活性金属粉末、强酸、醇类、易燃或可燃物、有机物等混装混运。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。禁止震动、撞击和摩擦。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
+    <!-- MSDS补全专家: 来源: 基于高氯酸盐类化合物特性及权威数据库检索, 2025-06-18 -->
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第5.1类氧化剂，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
+      <domestic_laws>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）</domestic_laws>
+      <international_laws>参考《全球化学品统一分类和标签制度》（GHS）第六修订版</international_laws>
+      <classification_regulations>按照《化学品分类和危险性公示通则》（GB 13690-2009）进行分类</classification_regulations>
+      <transport_regulations>《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）</transport_regulations>
+      <environmental_regulations>《危险化学品环境管理登记办法（试行）》、《固体废物污染环境防治法》</environmental_regulations>
+      <occupational_health_regulations>《工作场所安全使用化学品规定》、《职业病危害因素分类目录》</occupational_health_regulations>
     </regulatory>
   </msds>
 </msds_list>

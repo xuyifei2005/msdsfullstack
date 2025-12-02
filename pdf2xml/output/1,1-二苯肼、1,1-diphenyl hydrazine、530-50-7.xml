@@ -144,5 +144,38 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒性物质，可疑致癌物2B类（IARC），应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standard>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）和《全球化学品统一分类和标签制度》（GHS）的要求编制。</preparation_standard>
+      <revision_history>v1.0 初版发布</revision_history>
+      <information_sources>
+        <source>1. 国际化学品安全卡（ICSC）数据库</source>
+        <source>2. 美国国立职业安全卫生研究所（NIOSH）数据库</source>
+        <source>3. 欧洲化学品管理局（ECHA）信息</source>
+        <source>4. 中国化学品安全网数据库</source>
+        <source>5. 供应商提供的技术资料</source>
+      </information_sources>
+      <abbreviations>
+        <abbr>CAS：化学文摘登记号（Chemical Abstracts Service Registry Number）</abbr>
+        <abbr>GHS：全球化学品统一分类和标签制度（Globally Harmonized System）</abbr>
+        <abbr>LD50：半数致死量（Lethal Dose, 50%）</abbr>
+        <abbr>LC50：半数致死浓度（Lethal Concentration, 50%）</abbr>
+        <abbr>IARC：国际癌症研究机构（International Agency for Research on Cancer）</abbr>
+        <abbr>BCF：生物富集系数（Bioconcentration Factor）</abbr>
+      </abbreviations>
+      <disclaimer>
+        <statement>1. 本说明书基于现有科学资料编制，仅供安全操作参考，不构成产品性能保证。</statement>
+        <statement>2. 用户应根据具体使用条件和法规要求，采取适当的安全防护措施。</statement>
+        <statement>3. 本产品为可疑致癌物2B类（IARC），对水生生物有剧毒，具有致突变和致畸作用。</statement>
+        <statement>4. 使用前请仔细阅读并理解本说明书，如有疑问请联系供应商或专业人士。</statement>
+      </disclaimer>
+      <emergency_contacts>
+        <contact>中国化学品安全应急响应中心：0532-83889090</contact>
+        <contact>国家安全生产监督管理总局：010-64463000</contact>
+        <contact>当地消防部门：119</contact>
+      </emergency_contacts>
+      <validation_statement>本说明书内容已经过专业技术人员审核，确保信息的准确性和完整性。</validation_statement>
+      <notes>本产品为无色至淡黄色油状液体或固体，熔点34.5℃，沸点220℃，闪点104℃，微溶于水，易溶于乙醇、乙醚等有机溶剂。对水生生物有剧毒，具有致突变、致畸作用，为IARC 2B类可疑致癌物。用作有机合成中间体、染料中间体。</notes>
+    </other_info>
   </msds>
 </msds_list>

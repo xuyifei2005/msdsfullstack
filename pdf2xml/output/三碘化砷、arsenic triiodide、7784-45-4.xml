@@ -145,5 +145,23 @@
     <regulatory>
       <regulatory_info></regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）和《化学品分类和危险性公示通则》（GB 13690-2009）编制。</reference_standards>
+      <revision_history>第一版</revision_history>
+      <other_notes>三碘化砷是一种重要的无机化合物，主要用于化学分析和医药领域。由于其含有砷元素，具有高毒性，操作时必须采取严格的安全防护措施。</other_notes>
+      <abbreviations>
+        <abbr>MSDS: Material Safety Data Sheet (材料安全数据表)</abbr>
+        <abbr>CAS: Chemical Abstracts Service (化学文摘社)</abbr>
+        <abbr>TLV: Threshold Limit Value (阈限值)</abbr>
+        <abbr>TWA: Time-Weighted Average (时间加权平均浓度)</abbr>
+        <abbr>STEL: Short-Term Exposure Limit (短时间接触限值)</abbr>
+      </abbreviations>
+      <preparation_info>
+        <prepared_by>MSDS补全专家</prepared_by>
+        <preparation_date>2024-06-18</preparation_date>
+        <review_date>2025-06-18</review_date>
+      </preparation_info>
+    </other_info>
   </msds>
 </msds_list>

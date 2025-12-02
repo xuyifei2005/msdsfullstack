@@ -50,7 +50,7 @@
             @input="checkPasswordStrength"
           />
           <view class="password-toggle" @click="showPassword = !showPassword">
-             <u-icon :name="showPassword ? 'eye-fill' : 'eye-off-fill'" color="rgba(255,255,255,0.8)" size="36"></u-icon>
+             <uni-icons :type="showPassword ? 'eye-filled' : 'eye-slash-filled'" color="rgba(255,255,255,0.8)" size="24"></uni-icons>
           </view>
         </view>
         <!-- 密码强度指示器 -->
@@ -79,7 +79,7 @@
             @blur="focusedInput = ''"
           />
           <view class="password-toggle" @click="showConfirmPassword = !showConfirmPassword">
-             <u-icon :name="showConfirmPassword ? 'eye-fill' : 'eye-off-fill'" color="rgba(255,255,255,0.8)" size="36"></u-icon>
+             <uni-icons :type="showConfirmPassword ? 'eye-filled' : 'eye-slash-filled'" color="rgba(255,255,255,0.8)" size="24"></uni-icons>
           </view>
         </view>
       </view>

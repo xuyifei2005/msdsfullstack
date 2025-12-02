@@ -49,7 +49,7 @@
             @blur="focusedInput = ''"
           />
           <view class="password-toggle" @click="showPassword = !showPassword">
-             <u-icon :name="showPassword ? 'eye-fill' : 'eye-off-fill'" color="rgba(255,255,255,0.8)" size="36"></u-icon>
+             <uni-icons :type="showPassword ? 'eye-filled' : 'eye-slash-filled'" color="rgba(255,255,255,0.8)" size="24"></uni-icons>
           </view>
         </view>
       </view>
@@ -93,10 +93,10 @@
         </view>
         <view class="social-icons">
           <view class="social-icon" hover-class="icon-hover" @click="handleSocialLogin('wechat')">
-            <u-icon name="weixin-fill" color="#fff" size="44"></u-icon>
+            <uni-icons type="weixin" color="#fff" size="30"></uni-icons>
           </view>
           <view class="social-icon" hover-class="icon-hover" @click="handleSocialLogin('apple')">
-            <u-icon name="apple-fill" color="#fff" size="44"></u-icon>
+            <uni-icons type="info-filled" color="#fff" size="30"></uni-icons>
           </view>
         </view>
       </view>

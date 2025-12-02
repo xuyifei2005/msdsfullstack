@@ -20,7 +20,7 @@
           <text class="banner-subtitle">安全数据 · 快速查阅 · 风险管控</text>
         </view>
         <view class="banner-icon-box">
-          <u-icon name="shield-fill" color="rgba(255,255,255,0.9)" size="48"></u-icon>
+          <uni-icons type="vip-filled" color="rgba(255,255,255,0.9)" size="48"></uni-icons>
         </view>
       </view>
 
@@ -32,7 +32,7 @@
       <view class="quick-actions-grid">
         <view class="glass-card action-card" @click="handleScan">
           <view class="icon-circle green-gradient">
-            <u-icon name="scan" color="#ffffff" size="28"></u-icon>
+            <uni-icons type="scan" color="#ffffff" size="28"></uni-icons>
           </view>
           <view class="action-text">
             <text class="card-title">扫码查阅</text>
@@ -41,7 +41,7 @@
         </view>
         <view class="glass-card action-card" @click="handleSearch">
           <view class="icon-circle blue-gradient">
-            <u-icon name="search" color="#ffffff" size="28"></u-icon>
+            <uni-icons type="search" color="#ffffff" size="28"></uni-icons>
           </view>
           <view class="action-text">
             <text class="card-title">关键词搜索</text>
@@ -56,7 +56,7 @@
           <u-grid-item v-for="(feature, index) in features" :key="index" @click="handleFeatureClick(feature)" :custom-style="{padding: '15px 0'}">
             <view class="feature-item">
               <view class="feature-icon-wrapper" :style="{ backgroundColor: feature.bgColor }">
-                <u-icon :name="feature.icon" :color="feature.color" size="24"></u-icon>
+                <uni-icons :type="feature.icon" :color="feature.color" size="24"></uni-icons>
               </view>
               <text class="feature-name">{{ feature.name }}</text>
             </view>
@@ -70,7 +70,7 @@
           <text class="section-title">最近查看</text>
           <view class="see-all-btn" @click="viewAllRecent">
             <text>查看全部</text>
-            <u-icon name="arrow-right" color="#007aff" size="12" style="margin-left: 2px;"></u-icon>
+            <uni-icons type="arrowright" color="#007aff" size="12" style="margin-left: 2px;"></uni-icons>
           </view>
         </view>
         
@@ -84,7 +84,7 @@
               <text class="item-cas">CAS: {{ item.cas }}</text>
               <text class="item-time">{{ item.time }}</text>
             </view>
-            <u-icon name="arrow-right" color="#c7c7cc" size="16"></u-icon>
+            <uni-icons type="arrowright" color="#c7c7cc" size="16"></uni-icons>
           </view>
         </view>
       </view>
@@ -121,28 +121,28 @@ export default {
       features: [
         {
           name: '我的收藏',
-          icon: 'star-fill',
+          icon: 'star-filled',
           color: '#fa3534',
           bgColor: 'rgba(250, 53, 52, 0.1)',
           path: '/pages/favorites/index'
         },
         {
           name: '浏览历史',
-          icon: 'clock-fill',
+          icon: 'calendar-filled',
           color: '#606266',
           bgColor: 'rgba(96, 98, 102, 0.1)',
           path: '/pages/mine/history'
         },
         {
           name: '危险品',
-          icon: 'error-circle-fill',
+          icon: 'info-filled',
           color: '#ff9900',
           bgColor: 'rgba(255, 153, 0, 0.1)',
           path: '/pages/features/dangerous'
         },
         {
           name: '设置',
-          icon: 'setting-fill',
+          icon: 'settings-filled',
           color: '#909399',
           bgColor: 'rgba(144, 147, 153, 0.1)',
           path: '/pages/mine/settings'

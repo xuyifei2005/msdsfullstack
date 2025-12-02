@@ -9,7 +9,7 @@
     <!-- 导航栏 (自定义返回按钮) -->
     <view class="nav-bar">
       <view class="nav-back" @click="goBack">
-        <u-icon name="arrow-left" color="#333" size="20"></u-icon>
+        <uni-icons type="arrow-left" color="#333" size="20"></uni-icons>
       </view>
       <text class="nav-title">搜索</text>
       <view class="nav-right"></view> <!-- 占位 -->
@@ -37,7 +37,7 @@
       <view class="recent-searches" v-if="recentList.length > 0">
         <view class="recent-header">
           <text class="section-title">最近搜索</text>
-          <u-icon name="trash" color="#909399" size="18" @click="clearHistory"></u-icon>
+          <uni-icons type="trash" color="#909399" size="18" @click="clearHistory"></uni-icons>
         </view>
         
         <view class="recent-list">
@@ -47,7 +47,7 @@
             :key="index" 
             @click="clickHistory(item)"
           >
-            <u-icon name="clock" color="#909399" size="16" class="item-icon"></u-icon>
+            <uni-icons type="calendar" color="#909399" size="16" class="item-icon"></uni-icons>
             <text class="item-text">{{ item }}</text>
           </view>
         </view>

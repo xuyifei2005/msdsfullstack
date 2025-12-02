@@ -1,5 +1,13 @@
 <template>
 	<view class="container">
+    <u-navbar
+      title="修改头像"
+      :autoBack="true"
+      placeholder
+      bgColor="#000"
+      leftIconColor="#fff"
+      titleStyle="color: #fff; font-weight: 600;"
+    ></u-navbar>
 		<view class="page-body uni-content-info">
 			<view class='cropper-content'>
 				<view v-if="isShowImg" class="uni-corpper" :style="'width:'+cropperInitW+'px;height:'+cropperInitH+'px;background:#000'">
@@ -28,8 +36,8 @@
 				</view>
 			</view>
 			<view class='cropper-config'>
-				<button type="primary reverse" @click="getImage" style='margin-top: 30rpx;'> 选择头像 </button>
-				<button type="warn" @click="getImageInfo" style='margin-top: 30rpx;'> 提交 </button>
+        <u-button type="primary" :plain="true" text="选择头像" @click="getImage" customStyle="margin-top: 30rpx;"></u-button>
+        <u-button type="error" text="提交" @click="getImageInfo" customStyle="margin-top: 30rpx;"></u-button>
 			</view>
 			<canvas canvas-id="myCanvas" :style="'position:absolute;border: 1px solid red; width:'+imageW+'px;height:'+imageH+'px;top:-9999px;left:-9999px;'"></canvas>
 		</view>

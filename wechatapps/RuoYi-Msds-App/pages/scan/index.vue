@@ -25,20 +25,20 @@
 
       <view class="actions">
         <view class="action-item" @click="chooseImage">
-          <u-icon name="photo" color="#9CA3AF" size="28"></u-icon>
+          <uni-icons type="image" color="#9CA3AF" size="28"></uni-icons>
           <text class="action-text">相册</text>
         </view>
         <view class="action-item" @click="toggleFlash">
-          <u-icon :name="flashOn ? 'flash-fill' : 'flash'" :color="flashOn ? '#FBBF24' : '#9CA3AF'" size="28"></u-icon>
+          <uni-icons :type="flashOn ? 'star-filled' : 'star'" :color="flashOn ? '#FBBF24' : '#9CA3AF'" size="28"></uni-icons>
           <text class="action-text">闪光灯</text>
         </view>
       </view>
     </view>
 
     <view class="bottom-tip">
-      <u-icon name="info-circle" color="#60A5FA" size="18"></u-icon>
-      <text class="bottom-tip-text">确保光线充足，保持设备稳定</text>
-    </view>
+        <uni-icons type="info" color="#60A5FA" size="18"></uni-icons>
+        <text class="bottom-tip-text">确保光线充足，保持设备稳定</text>
+      </view>
   </view>
 </template>
 

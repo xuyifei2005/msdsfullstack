@@ -7,11 +7,11 @@
     <view class="nav-bar" :style="{ paddingTop: statusBarHeight + 'px' }">
       <view class="nav-content">
         <view class="nav-left" @click="onBack">
-          <u-icon name="arrow-left" color="#007AFF" size="20"></u-icon>
+          <uni-icons type="arrow-left" color="#007AFF" size="20"></uni-icons>
         </view>
         <view class="nav-title">化学品详情</view>
         <view class="nav-right">
-          <u-icon name="share" color="#007AFF" size="20"></u-icon>
+          <uni-icons type="redo" color="#007AFF" size="20"></uni-icons>
         </view>
       </view>
     </view>
@@ -33,11 +33,11 @@
       <!-- 操作按钮 -->
       <view class="action-buttons">
         <button class="action-btn btn-primary" @click="onFavorite">
-          <u-icon name="star" color="#fff" size="18" style="margin-right: 4px;"></u-icon>
+          <uni-icons type="star" color="#fff" size="18" style="margin-right: 4px;"></uni-icons>
           <text>收藏</text>
         </button>
         <button class="action-btn btn-secondary" @click="onDownload">
-          <u-icon name="download" color="#333" size="18" style="margin-right: 4px;"></u-icon>
+          <uni-icons type="download" color="#333" size="18" style="margin-right: 4px;"></uni-icons>
           <text>下载MSDS</text>
         </button>
       </view>
@@ -45,7 +45,7 @@
       <!-- 基本信息 -->
       <view class="info-card">
         <view class="card-header header-basic">
-          <u-icon name="info-circle" color="#fff" size="20" style="margin-right: 8px;"></u-icon>
+          <uni-icons type="info" color="#fff" size="20" style="margin-right: 8px;"></uni-icons>
           <text>基本信息</text>
         </view>
         <view class="card-content">
@@ -59,7 +59,7 @@
       <!-- 危险性信息 -->
       <view class="info-card">
         <view class="card-header header-danger">
-          <u-icon name="error-circle" color="#fff" size="20" style="margin-right: 8px;"></u-icon>
+          <uni-icons type="info-filled" color="#fff" size="20" style="margin-right: 8px;"></uni-icons>
           <text>危险性信息</text>
         </view>
         <view class="card-content">
@@ -69,7 +69,7 @@
           </view>
           <view class="hazard-tags">
             <view class="hazard-tag" v-for="(tag, index) in chemical.tags" :key="index">
-              <u-icon name="warning-fill" color="#fff" size="12" style="margin-right: 4px;"></u-icon>
+              <uni-icons type="info-filled" color="#fff" size="12" style="margin-right: 4px;"></uni-icons>
               <text>{{ tag }}</text>
             </view>
           </view>
@@ -79,13 +79,13 @@
       <!-- 健康危害 -->
       <view class="info-card">
         <view class="card-header header-health">
-          <u-icon name="heart" color="#fff" size="20" style="margin-right: 8px;"></u-icon>
+          <uni-icons type="heart" color="#fff" size="20" style="margin-right: 8px;"></uni-icons>
           <text>健康危害</text>
         </view>
         <view class="card-content">
           <view class="safety-item" v-for="(item, index) in healthHazards" :key="index">
             <view class="safety-icon">
-              <u-icon :name="item.icon" color="#fff" size="18"></u-icon>
+              <uni-icons :type="item.icon" color="#fff" size="18"></uni-icons>
             </view>
             <view class="safety-text">
               <text style="font-weight: bold;">{{ item.type }}：</text>
@@ -98,13 +98,13 @@
       <!-- 急救措施 -->
       <view class="info-card">
         <view class="card-header header-firstaid">
-          <u-icon name="plus-circle" color="#fff" size="20" style="margin-right: 8px;"></u-icon>
+          <uni-icons type="plus-filled" color="#fff" size="20" style="margin-right: 8px;"></uni-icons>
           <text>急救措施</text>
         </view>
         <view class="card-content">
           <view class="safety-item" v-for="(item, index) in firstAid" :key="index">
             <view class="safety-icon">
-              <u-icon :name="item.icon" color="#fff" size="18"></u-icon>
+              <uni-icons :type="item.icon" color="#fff" size="18"></uni-icons>
             </view>
             <view class="safety-text">
               <text style="font-weight: bold;">{{ item.type }}：</text>
@@ -117,7 +117,7 @@
       <!-- 储存运输 -->
       <view class="info-card">
         <view class="card-header header-storage">
-          <u-icon name="car" color="#fff" size="20" style="margin-right: 8px;"></u-icon>
+          <uni-icons type="paperplane-filled" color="#fff" size="20" style="margin-right: 8px;"></uni-icons>
           <text>储存运输</text>
         </view>
         <view class="card-content">
@@ -161,16 +161,16 @@ export default {
         { label: '自燃温度', value: '464°C' }
       ],
       healthHazards: [
-        { type: '吸入', desc: '可引起头痛、眩晕、恶心、呕吐，严重时可导致昏迷甚至死亡。', icon: 'arrow-up' }, // lungs -> arrow-up as proxy
+        { type: '吸入', desc: '可引起头痛、眩晕、恶心、呕吐，严重时可导致昏迷甚至死亡。', icon: 'arrowup' }, // lungs -> arrow-up as proxy
         { type: '皮肤接触', desc: '可引起皮肤干燥、脱脂，长期接触可导致皮炎。', icon: 'minus' }, // hand-paper -> minus proxy
         { type: '眼睛接触', desc: '可引起眼睛刺激、疼痛、流泪，严重时可导致角膜损伤。', icon: 'eye' },
-        { type: '误食', desc: '可引起恶心、呕吐、腹痛，严重时可导致失明或死亡。', icon: 'close' } // tint -> close proxy
+        { type: '误食', desc: '可引起恶心、呕吐、腹痛，严重时可导致失明或死亡。', icon: 'closeempty' } // tint -> close proxy
       ],
       firstAid: [
-        { type: '吸入', desc: '迅速脱离现场至空气新鲜处，保持呼吸道通畅，必要时进行人工呼吸。', icon: 'arrow-right' },
+        { type: '吸入', desc: '迅速脱离现场至空气新鲜处，保持呼吸道通畅，必要时进行人工呼吸。', icon: 'arrowright' },
         { type: '皮肤接触', desc: '立即脱去污染的衣着，用大量清水冲洗皮肤至少15分钟。', icon: 'trash' }, // shower -> trash proxy (cleaning)
-        { type: '眼睛接触', desc: '立即提起眼睑，用大量清水或生理盐水彻底冲洗至少15分钟。', icon: 'eye-fill' },
-        { type: '误食', desc: '用水漱口，给饮牛奶或蛋清。不要催吐，立即就医。', icon: 'minus-circle' }
+        { type: '眼睛接触', desc: '立即提起眼睑，用大量清水或生理盐水彻底冲洗至少15分钟。', icon: 'eye-filled' },
+        { type: '误食', desc: '用水漱口，给饮牛奶或蛋清。不要催吐，立即就医。', icon: 'minus-filled' }
       ],
       storageInfo: [
         { label: '储存条件', value: '阴凉、通风、干燥处' },

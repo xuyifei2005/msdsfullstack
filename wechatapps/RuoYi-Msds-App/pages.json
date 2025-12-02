@@ -54,47 +54,56 @@
   }, {
     "path": "pages/work/index",
     "style": {
-      "navigationBarTitleText": "工作台"
+      "navigationBarTitleText": "工作台",
+      "navigationStyle": "custom"
     }
   }, {
     "path": "pages/mine/index",
     "style": {
-      "navigationBarTitleText": "我的"
+      "navigationBarTitleText": "我的",
+      "navigationStyle": "custom"
     }
   }, {
     "path": "pages/mine/avatar/index",
     "style": {
-      "navigationBarTitleText": "修改头像"
+      "navigationBarTitleText": "修改头像",
+      "navigationStyle": "custom"
     }
   }, {
     "path": "pages/mine/info/index",
     "style": {
-      "navigationBarTitleText": "个人信息"
+      "navigationBarTitleText": "个人信息",
+      "navigationStyle": "custom"
     }
   }, {
     "path": "pages/mine/info/edit",
     "style": {
-      "navigationBarTitleText": "编辑资料"
+      "navigationBarTitleText": "编辑资料",
+      "navigationStyle": "custom"
     }
   }, {
     "path": "pages/mine/pwd/index",
     "style": {
-      "navigationBarTitleText": "修改密码"
+      "navigationBarTitleText": "修改密码",
+      "navigationStyle": "custom"
     }
   }, {
     "path": "pages/mine/setting/index",
     "style": {
-      "navigationBarTitleText": "应用设置"
+      "navigationBarTitleText": "应用设置",
+      "navigationStyle": "custom"
     }
   }, {
     "path": "pages/mine/help/index",
     "style": {
-      "navigationBarTitleText": "常见问题"
+      "navigationBarTitleText": "常见问题",
+      "navigationStyle": "custom"
     }
   }, {
     "path": "pages/mine/about/index",
     "style": {
-      "navigationBarTitleText": "关于我们"
+      "navigationBarTitleText": "关于我们",
+      "navigationStyle": "custom"
     }
   }, {
     "path": "pages/common/webview/index",

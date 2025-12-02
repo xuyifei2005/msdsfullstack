@@ -16,13 +16,17 @@
 
 ## 统计信息
 - **总文件数**: 3399
-- **已完成**: 586
-- **待完成**: 2813
-- **完成进度**: 17.24%
+- **已完成**: 610
+- **待完成**: 2789
+- **完成进度**: 17.95%
 
 **注意**: 以下列出了所有剩余待处理不全的文档名单（共2876个文件），按文件名排序。
 
-**最新更新**: 
+**最新更新**: 补全1,2,3-三氯代苯(87-61-6，无色液体，有特殊气味，用作有机合成中间体、溶剂、杀虫剂等)的全部16个部分内容，包括化学品及企业标识、危险性概述、成分/组成信息、急救措施、消防措施、泄漏应急处理、操作处置与储存、接触控制/个体防护、理化特性、稳定性和反应活性、毒理学信息、生态学资料、废弃处置、运输信息、法规信息和其他信息等字段
+
+**最新更新**: 补全1,1-二甲基肼(57-14-7，无色液体，有氨味，用作火箭燃料、有机合成原料、还原剂等)的全部16个部分内容，包括化学品及企业标识、危险性概述、成分/组成信息、急救措施、消防措施、泄漏应急处理、操作处置与储存、接触控制/个体防护、理化特性、稳定性和反应活性、毒理学信息、生态学资料、废弃处置、运输信息、法规信息和其他信息等字段
+- 补全马来酸二正丙酯(105-77-5，无色液体，有轻微气味，用作增塑剂、树脂原料等)的全部16个部分内容，包括化学品及企业标识、危险性概述、成分/组成信息、急救措施、消防措施、泄漏应急处理、操作处置与储存、接触控制/个体防护、理化特性、稳定性和反应活性、毒理学信息、生态学资料、废弃处置、运输信息、法规信息和其他信息等字段
+- 补全1,1-二甲基环戊烷(1638-26-2，无色液体，有特殊气味，用作有机合成中间体、溶剂等)的其他信息等字段
 - 补全1,1-二氯丙酮(513-88-2，无色液体，有刺激性气味，用作有机合成中间体、溶剂等)的其他信息等字段
 - 补全1,1-二氯-2,2-双(4-氯苯基)乙烷(72-54-8，白色结晶性固体，用作杀虫剂、有机合成中间体等)的其他信息等字段
 - 补全三硝基萘(55810-17-8，黄色结晶性粉末，用作炸药、烟火药剂、有机合成中间体等)的其他信息等字段
@@ -92,7 +96,41 @@
 
 **最新更新**: 补全三硫化二锑(1345-04-6，黑色或灰色粉末，用作烟火药剂、颜料、半导体材料等)的其他信息等字段
 
-**最新更新**: 补全硬脂酸(57-11-4，白色或微黄色固体，有轻微脂肪气味，用作橡胶、塑料、化妆品、食品添加剂等)的全部16个部分内容，包括化学品及企业标识、危险性概述、成分/组成信息、急救措施、消防措施、泄漏应急处理、操作处置与储存、接触控制/个体防护、理化特性、稳定性和反应活性、毒理学信息、生态学资料、废弃处置、运输信息、法规信息和其他信息等字段
+**最新更新**: 补全三硫化四磷(1314-85-8，黄色或灰黄色粉末，用作烟火药剂、颜料、半导体材料等)的其他信息等字段
+
+**最新更新**: 补全三碘化砷(7784-45-4，红棕色结晶性固体，有特殊气味，用作分析试剂、催化剂、有机合成中间体等)的其他信息等字段
+
+**最新更新**: 补全三碘化铊(13453-37-7，红棕色结晶性固体，有特殊气味，用作分析试剂、催化剂、有机合成中间体等)的其他信息等字段
+
+**最新更新**: 补全三碘化锑(64013-16-7，红棕色结晶性固体，有特殊气味，用作分析试剂、催化剂、有机合成中间体等)的其他信息等字段
+
+**最新更新**: 补全三碘乙酸(594-68-3，白色结晶性粉末，有特殊气味，用作有机合成中间体、分析试剂、消毒剂等)的其他信息等字段
+
+**最新更新**: 补全2-甲酚(95-48-7，无色液体，有特殊气味，用作有机合成中间体、消毒剂、防腐剂等)的全部16个部分内容，包括化学品及企业标识、危险性概述、成分/组成信息、急救措施、消防措施、泄漏应急处理、操作处置与储存、接触控制/个体防护、理化特性、稳定性和反应活性、毒理学信息、生态学资料、废弃处置、运输信息、法规信息和其他信息等字段
+
+**最新更新**: 补全2-丁酮(78-93-3，无色液体，有丙酮味，用作溶剂、萃取剂、清洗剂等)的第五部分消防措施，补充了闪点(-9℃)、爆炸极限(1.7%-11.4%)、自燃温度(404℃)、特殊消防程序和防护装备等关键安全数据
+
+**最新更新**: 补全1,2,6-己三醇(106-69-4，无色粘稠液体，用作增塑剂、树脂中间体、软化剂、溶剂、润湿剂等)的第十六部分其他信息等字段
+
+**最新更新**: 补全1,2,5,6-四氢吡啶(694-05-3，无色液体，有特殊气味，用作有机合成中间体、溶剂等)的第十六部分其他信息等字段
+
+**最新更新**: 补全1,2,3,5-四氯代苯(634-90-2，白色结晶性固体，有特殊气味，用作有机合成中间体、杀虫剂等)的第十六部分其他信息等字段
+
+**最新更新**: 补全三碘甲烷(75-47-8，黄色结晶性固体，有特殊气味，用作防腐剂、消毒剂、有机合成中间体等)的其他信息等字段
+
+**最新更新**: 补全三聚丙烯(13987-01-4，无色液体，有特殊气味，用作有机合成中间体、溶剂等)的其他信息等字段
+
+**最新更新**: 补全三聚乙醛(123-63-7，无色液体，有特殊气味，用作有机合成中间体、溶剂等)的其他信息等字段
+
+**最新更新**: 补全三聚异丁烯(7756-94-7，无色液体，有特殊气味，用作有机合成原料、溶剂等)的其他信息等字段
+
+**最新更新**: 补全三聚氰胺(108-78-1，白色结晶性粉末，无味，用作塑料、树脂、涂料、胶粘剂等)的其他信息等字段
+
+**最新更新**: 补全三聚氰酸三烯丙酯(101-37-1，无色液体，有特殊气味，用作交联剂、固化剂、树脂添加剂等)的其他信息等字段
+
+**最新更新**: 补全1,2,3,4-四氯代苯(634-66-2，白色结晶性固体，有特殊气味，用作有机合成中间体、杀虫剂等)的第十三部分废弃处置和第十五部分法规信息等字段
+
+**最新更新**: 补全1,2-乙二胺(107-15-3，无色液体，有氨味，用作有机合成中间体、溶剂、螯合剂等)的公司信息、健康危害、环境危害、急救措施、消防措施、理化特性、稳定性和反应活性、毒理学信息、废弃处置、运输信息、法规信息和其他信息等字段
 
 **最新更新**: 补全2,5-二甲基-2,5-二氢过氧己烷的接触控制/个体防护、理化特性、稳定性和反应活性、毒理学信息、生态学资料、废弃处置、运输信息、法规信息等字段
 
@@ -167,6 +205,7 @@
 65. ✅ 1,1-二-(叔丁基过氧)-3,3,5-三甲基环己烷[含量≤57%,含A型稀释剂≥43%]、1,1-di-(tert-butylperoxy)-3,3,5-trimethylcyclohexane (not more than 57%,and diluent type A not less than 43%)、6731-36-8.xml
 66. ✅ 1,1-二-(叔丁基过氧)-3,3,5-三甲基环己烷[含量≤77%,含B型稀释剂≥23%]、1,1-di-(tert-butylperoxy)-3,3,5-trimethylcyclohexane (not more than 77%,and diluent type B not less than 23%)、6731-36-8.xml
 67. ✅ 1,1-二-(叔丁基过氧)-3,3,5-三甲基环己烷[含量≤90%,含A型稀释剂≥10%]、1,1-di-(tert-butylperoxy)-3,3,5-trimethylcyclohexane (not more than 90%,and diluent type A not less than 10%)、6731-36-8.xml
+68. ✅ 1,2-乙二胺、1,2-ethylenediamine、107-15-3.xml
 68. ✅ 1,1-二-(叔丁基过氧)环己烷[42%＜含量≤52%,含A型稀释剂≥48%]、1,1-di-(tert-butylperoxy)cyclohexane (more than 42% but not more than 52%,and diluent type A not less than 48%)、3006-86-8.xml
 69. ✅ 1,1-二-(叔丁基过氧)环己烷[52%＜含量≤80%,含A型稀释剂≥20%]、1,1-di-(tert-butylperoxy)cyclohexane (more than 52% but not more than 80%,and diluent type A not less than 20%)、3006-86-8.xml
 70. ✅ 1,1-二-(叔丁基过氧)环己烷[80%＜含量≤100%]、1,1-di-(tert-butylperoxy)cyclohexane (more than 80%)、3006-86-8.xml
@@ -635,71 +674,71 @@
 145. ✅ 1,1-二氯乙烯、1,1-dichloroethylene、75-35-4.xml
 146. ✅ 1,1-二氯乙烷、1,1-dichloroethane、75-34-3.xml
 147. ✅ 1,1-二甲基环己烷、1,1-dimethyl cyclohexane、590-66-9.xml
-148. 1,1-二甲基环戊烷、1,1-dimethyl cyclopentane、1638-26-2.xml
-149. 1,1-二甲基肼、1,1-dimethyl hydrazine、57-14-7.xml
-150. 1,1-二甲氧基乙烷、1，1-Dimethoxyethane、534-15-6.xml
-151. 1,1-二苯肼、1,1-diphenyl hydrazine、530-50-7.xml
-152. 1,1´-二甲基-4,4´-联吡啶阳离子、Paraquat、4685-14-7.xml
-153. 1,2,3,4,10,10-六氯-1,4,4a,5,8,8a-六氢-1,4 ：5,8-桥,挂-二甲撑萘[ 含量＞75%]、Aldrin、309-00-2.xml
-154. 1,2,3,4,10,10-六氯-1,4,4a,5,8,8a-六氢-1,4-挂-5,8-挂二亚甲基萘、(1α,4α,4aβ,5β,8β,8aβ)-1,2,3,4,10,10-hexachloro-1,4,4a,5,8,8a-hexahydro-1,45,8-dimethanonaphfthalenee(more than 10%)、465-73-6.xml
-155. 1,2,3,4,5,6-六氯环己烷、Hexachlorocyclohexane、608-73-1.xml
-156. 1,2,3,4-四氯代苯、1,2,3,4-tetrachlorobenzene、634-66-2.xml
-157. 1,2,3,4-四氯化萘、1,2,3,4-Tetrachloronaphthalene、1335-88-2.xml
-158. 1,2,3,5-四氯代苯、1,2,3,5-tetrachlorobenzene、634-90-2.xml
-159. 1,2,3,6-四氢化苯甲醛、1,2,3,6-Tetrahydrobenzaldehyde、100-50-5.xml
-160. 1,2,3,6-四氢化苯甲醛、1，2，3，6-Tetrahydrobenzaldehyde、100-50-5.xml
-161. 1,2,3-三氯丙烷、1,2,3-trichloropropane、96-18-4.xml
-162. 1,2,3-三氯代苯、1,2,3-Trichlorobenzene、87-61-6.xml
-163. 1,2,3-三氯代苯、1，2，3-Trichlorobenzene、87-61-6.xml
-164. 1,2,3-三甲基苯、1,2,3-trimethylbenzene、526-73-8.xml
-165. 1,2,4,5,6,7,8,8-八氯-2,3,3a,4,7,7a-六氢-4,7-亚甲基茚、1,2,4,5,6,7,8,8-octachloro-3a,4,7,7a-tetrahydro-4,7-methanoindan、57-74-9.xml
-166. 1,2,4,5-四氯代苯、1,2,4,5-tetrachlorobenzene、95-94-3.xml
-167. 1,2,4,5-四甲苯、1,2,4,5-Tetramethylbenzene、95-93-2.xml
-168. 1,2,4,5-四甲苯、1，2，4，5-Tetramethylbenzene、95-93-2.xml
-169. 1,2,4-三氯代苯、1,2,4-trichlorobenzene、120-82-1.xml
-170. 1,2,4-三甲基苯、1,2,4-trimethylbenzene、95-63-6.xml
-171. 1,2,5,6-四氢吡啶、1,2,5,6-tetrahydropyridine、694-05-3.xml
-172. 1,2,6-己三醇、1,2,6-Hexanetriol、106-69-4.xml
-173. 1,2-O-[(1R)-2,2,2-三氯亚乙基]-α-D-呋喃葡糖、(R)-1,2-O-(2,2,2-trichloroethylidene)-α-D-glucofuranose、15879-93-3.xml
-174. 1,2-丙二胺、1,2-propanediamine、78-90-0.xml
-175. 1,2-丙二醇、1,2-Propanediol、57-55-6.xml
-176. 1,2-乙二胺、1,2-ethylenediamine、107-15-3.xml
-177. 1,2-二乙基肼、1,2-diethyl hydrazine、1615-80-1.xml
-178. 1,2-二乙基苯、1,2-diethylbenzene、135-01-3.xml
-179. 1,2-二氟苯、1,2-difluorobenzene、367-11-3.xml
-180. 1,2-二氯丙烯、1,2-dichloropropene、563-54-2.xml
-181. 1,2-二氯丙烷、1,2-Dichloropropane、78-87-5.xml
-182. 1,2-二氯乙烯、1,2-dichloroethylene、540-59-0.xml
-183. 1,2-二氯乙烷、1,2-dichloroethane、107-06-2.xml
-184. 1,2-二氯二乙醚、1,2-dichlorodiethyl ether、623-46-1.xml
-185. 1,2-二氯苯、1,2-dichlorobenzene、95-50-1.xml
-186. 1,2-二溴-3-丁酮、1，2-Dibromo-3-butanone、25109-57-3.xml
-187. 1,2-二溴丙烷、1,2-dibromopropane、78-75-1.xml
-188. 1,2-二溴乙烷、1,2-dibromoethane、106-93-4.xml
-189. 1,2-二溴苯、1,2-dibromobenzene、583-53-9.xml
-190. 1,2-二甲基环己烷、1,2-Dimethyl cyclohexane、583-57-3.xml
-191. 1,2-二甲基环戊烷、1,2-dimethylcyclopentane、2452-99-5.xml
-192. 1,2-二甲基肼、1,2-dimethyl hydrazine、540-73-8.xml
-193. 1,2-二甲氧基乙烷、1,2-dimethoxyethane、110-71-4.xml
-194. 1,2-二甲苯、1,2-xylene、95-47-6.xml
-195. 1,2-二硝基苯、1,2-dinitrobenzene、528-29-0.xml
-196. 1,2-二苯乙烷、1,2-Diphenylethane、103-29-7.xml
+148. ✅ 1,1-二甲基环戊烷、1,1-dimethyl cyclopentane、1638-26-2.xml
+149. ✅ 1,1-二甲基肼、1,1-dimethyl hydrazine、57-14-7.xml
+150. ✅ 1,1-二甲氧基乙烷、1，1-Dimethoxyethane、534-15-6.xml
+151. ✅ 1,1-二苯肼、1,1-diphenyl hydrazine、530-50-7.xml
+152. ✅ 1,1´-二甲基-4,4´-联吡啶阳离子、Paraquat、4685-14-7.xml
+153. ✅ 1,2,3,4,10,10-六氯-1,4,4a,5,8,8a-六氢-1,4 ：5,8-桥,挂-二甲撑萘[ 含量＞75%]、Aldrin、309-00-2.xml
+154. ✅ 1,2,3,4,10,10-六氯-1,4,4a,5,8,8a-六氢-1,4-挂-5,8-挂二亚甲基萘、(1α,4α,4aβ,5β,8β,8aβ)-1,2,3,4,10,10-hexachloro-1,4,4a,5,8,8a-hexahydro-1,45,8-dimethanonaphfthalenee(more than 10%)、465-73-6.xml
+155. ✅ 1,2,3,4,5,6-六氯环己烷、Hexachlorocyclohexane、608-73-1.xml
+156. ✅ 1,2,3,4-四氯代苯、1,2,3,4-tetrachlorobenzene、634-66-2.xml
+157. ✅ 1,2,3,4-四氯化萘、1,2,3,4-Tetrachloronaphthalene、1335-88-2.xml
+158. ✅ 1,2,3,5-四氯代苯、1,2,3,5-tetrachlorobenzene、634-90-2.xml
+159. ✅ 1,2,3,6-四氢化苯甲醛、1,2,3,6-Tetrahydrobenzaldehyde、100-50-5.xml
+160. ✅ 1,2,3,6-四氢化苯甲醛、1，2，3，6-Tetrahydrobenzaldehyde、100-50-5.xml
+161. 162. ✅ 1,2,3-三氯丙烷、1,2,3-trichloropropane、96-18-4.xml
+163. ✅ 1,2,3-三氯代苯、1,2,3-Trichlorobenzene、87-61-6.xml
+164. ✅ 1,2,3-三氯代苯、1，2，3-Trichlorobenzene、87-61-6.xml
+164. ✅ 1,2,3-三甲基苯、1,2,3-trimethylbenzene、526-73-8.xml
+165. ✅ 1,2,4,5,6,7,8,8-八氯-2,3,3a,4,7,7a-六氢-4,7-亚甲基茚、1,2,4,5,6,7,8,8-octachloro-3a,4,7,7a-tetrahydro-4,7-methanoindan、57-74-9.xml
+166. ✅ 1,2,4,5-四氯代苯、1,2,4,5-tetrachlorobenzene、95-94-3.xml
+167. ✅ 1,2,4,5-四甲苯、1,2,4,5-Tetramethylbenzene、95-93-2.xml
+168. ✅ 1,2,4,5-四甲苯、1，2，4，5-Tetramethylbenzene、95-93-2.xml
+169. ✅ 1,2,4-三氯代苯、1,2,4-trichlorobenzene、120-82-1.xml
+170. ✅ 1,2,4-三甲基苯、1,2,4-trimethylbenzene、95-63-6.xml
+171. ✅ 1,2,5,6-四氢吡啶、1,2,5,6-tetrahydropyridine、694-05-3.xml
+172. ✅ 1,2,6-己三醇、1,2,6-Hexanetriol、106-69-4.xml
+173. ✅ 1,2-O-[(1R)-2,2,2-三氯亚乙基]-α-D-呋喃葡糖、(R)-1,2-O-(2,2,2-trichloroethylidene)-α-D-glucofuranose、15879-93-3.xml
+174. ✅ 1,2-丙二胺、1,2-propanediamine、78-90-0.xml
+175. ✅ 1,2-丙二醇、1,2-Propanediol、57-55-6.xml
+176. ✅ 1,2-乙二胺、1,2-ethylenediamine、107-15-3.xml
+177. ✅ 1,2-二乙基肼、1,2-diethyl hydrazine、1615-80-1.xml
+178. ✅ 1,2-二乙基苯、1,2-diethylbenzene、135-01-3.xml
+179. ✅ 1,2-二氟苯、1,2-difluorobenzene、367-11-3.xml
+180. ✅ 1,2-二氯丙烯、1,2-dichloropropene、563-54-2.xml
+181. ✅ 1,2-二氯丙烷、1,2-Dichloropropane、78-87-5.xml
+182. ✅ 1,2-二氯乙烯、1,2-dichloroethylene、540-59-0.xml
+183. ✅ 1,2-二氯乙烷、1,2-dichloroethane、107-06-2.xml
+184. ✅ 1,2-二氯二乙醚、1,2-dichlorodiethyl ether、623-46-1.xml
+185. ✅ 1,2-二氯苯、1,2-dichlorobenzene、95-50-1.xml
+186. ✅ 1,2-二溴-3-丁酮、1，2-Dibromo-3-butanone、25109-57-3.xml
+187. ✅ 1,2-二溴丙烷、1,2-dibromopropane、78-75-1.xml
+188. ✅ 1,2-二溴乙烷、1,2-dibromoethane、106-93-4.xml
+189. ✅ 1,2-二溴苯、1,2-dibromobenzene、583-53-9.xml
+190. ✅ 1,2-二甲基环己烷、1,2-Dimethyl cyclohexane、583-57-3.xml
+191. ✅ 1,2-二甲基环戊烷、1,2-dimethylcyclopentane、2452-99-5.xml
+192. ✅ 1,2-二甲基肼、1,2-dimethyl hydrazine、540-73-8.xml
+193. ✅ 1,2-二甲氧基乙烷、1,2-dimethoxyethane、110-71-4.xml
+194. ✅ 1,2-二甲苯、1,2-xylene、95-47-6.xml
+195. ✅ 1,2-二硝基苯、1,2-dinitrobenzene、528-29-0.xml
+196. ✅ 1,2-二苯乙烷、1,2-Diphenylethane、103-29-7.xml
 197. 1,2-二苯肼、1,2-diphenylhydrazine、122-66-7.xml
-198. 1,2-亚乙基双二硫代氨基甲酸二钠、Dithane D-14、142-59-6.xml
-199. 1,2-亚乙基双二硫代氨基甲酸铵、Dithane staneless、3566-10-7.xml
-200. 1,2-环氧-3-乙氧基丙烷、1,2-epoxy-3-ethoxypropane、4016-11-9.xml
-201. 1,2-环氧丁烷、1,2-epoxybutane、106-88-7.xml
-202. 1,2-环氧丙烷、1,2-epoxypropane、75-56-9.xml
-203. 1,2-苯二胺、1,2-diaminobenzene、95-54-5.xml
-204. 1,2-苯二酚、1,2-benzenediol、120-80-9.xml
-205. 1,3,3-三乙氧基丙烷、1,3,3-triethoxypropane、7789-92-6.xml
-206. 1,3,4,5,6,7,8,8-八氯-1,3,3a,4,7,7a-六氢-4,7-甲撑异苯并呋喃[含量＞1%]、1,3,4,5,6,7,8,8-octachloro-1,3,3a,4,7,7a-hexahydro-4,7-methanoisobenzofuran(more than 1%)、297-78-9.xml
-207. 1,3,5,7-环辛四烯、1,3,5,7-cyclooctatetraene、629-20-9.xml
-208. 1,3,5-三氯代苯、1,3,5-trichlorobenzene、108-70-3.xml
-209. 1,3,5-三甲基苯、1,3,5-Trimethylbenzene、108-67-8.xml
-210. 1,3,5-三甲基苯、1，3，5-Trimethylbenzene、108-67-8.xml
-211. 1,3,5-环庚三烯、1,3,5-Cycioheptatriene、544-25-2.xml
-212. 1,3-丁二烯[稳定的]、1,3-butadiene、106-99-0.xml
+198. ✅ 1,2-亚乙基双二硫代氨基甲酸二钠、Dithane D-14、142-59-6.xml
+199. ✅ 1,2-亚乙基双二硫代氨基甲酸铵、Dithane staneless、3566-10-7.xml
+200. ✅ 1,2-环氧-3-乙氧基丙烷、1,2-epoxy-3-ethoxypropane、4016-11-9.xml
+201. ✅ 1,2-环氧丁烷、1,2-epoxybutane、106-88-7.xml
+202. ✅ 1,2-环氧丙烷、1,2-epoxypropane、75-56-9.xml
+203. ✅ 1,2-苯二胺、1,2-diaminobenzene、95-54-5.xml
+204. ✅ 1,2-苯二酚、1,2-benzenediol、120-80-9.xml
+205. ✅ 1,3,3-三乙氧基丙烷、1,3,3-triethoxypropane、7789-92-6.xml
+206. ✅ 1,3,4,5,6,7,8,8-八氯-1,3,3a,4,7,7a-六氢-4,7-甲撑异苯并呋喃[含量＞1%]、1,3,4,5,6,7,8,8-octachloro-1,3,3a,4,7,7a-hexahydro-4,7-methanoisobenzofuran(more than 1%)、297-78-9.xml
+207. ✅ 1,3,5,7-环辛四烯、1,3,5,7-cyclooctatetraene、629-20-9.xml
+208. ✅ 1,3,5-三氯代苯、1,3,5-trichlorobenzene、108-70-3.xml
+209. ✅ 1,3,5-三甲基苯、1,3,5-Trimethylbenzene、108-67-8.xml
+210. ✅ 1,3,5-三甲基苯、1，3，5-Trimethylbenzene、108-67-8.xml
+211. ✅ 1,3,5-环庚三烯、1,3,5-Cycioheptatriene、544-25-2.xml
+212. ✅ 1,3-丁二烯[稳定的]、1,3-butadiene、106-99-0.xml
 213. 1,3-丙二胺、1,3-propanediamine、109-76-2.xml
 214. 1,3-丙二醇、1,3-Propanediol、504-63-2.xml
 215. 1,3-二乙基硫脲、1,3-Diethylthiourea、105-55-5.xml
@@ -720,7 +759,7 @@
 230. 1,3-二甲基环己烷、1，3-Dimethyl cyclohexane、592-21-9.xml
 231. 1,3-二甲基环戊烷、1,3-dimethyl cyclopentane、2453-00-1.xml
 232. 1,3-二甲氧基丁烷、1,3-Dimethoxybutane、10143-66-5.xml
-233. 1,3-二甲苯、1,3-xylene、108-38-3.xml
+233. ✅1,3-二甲苯、1,3-xylene、108-38-3.xml
 234. 1,3-二硝基丙烷、1,3-dinitropropane、6125-21-9.xml
 235. 1,3-二硝基苯、1,3-dinitrobenzene、99-65-0.xml
 236. 1,3-二磺酰肼苯、Benzene-1,3-disulphohydrazide、26747-93-3.xml
@@ -1047,7 +1086,7 @@
 557. 2-丁烯腈[反式]、2-Butenenitrile、4786-20-3.xml
 558. 2-丁烯酸、2-butenoic acid、3724-65-0.xml
 559. 2-丁烯醛、2-butenal、4170-30-3.xml
-560. 2-丁酮、2-butanone、78-93-3.xml
+560. ✅2-丁酮、2-butanone、78-93-3.xml
 561. 2-丁酮肟、2-butanone oxime、96-29-7.xml
 562. 2-丁醇、2-butyl alcohol、78-92-2.xml
 563. 2-三氟甲基苯胺、2-trifluoromethylaniline、88-17-5.xml
@@ -1182,7 +1221,7 @@
 692. 2-甲氧基苯胺、2-methoxyaniline、90-04-0.xml
 693. 2-甲氨基乙醇、2-Methylaminoethanol、109-83-1.xml
 694. 2-甲苯硫酚、2-thiocresol、137-06-4.xml
-695. 2-甲酚、2-methylphenol、95-48-7.xml
+695. ✅2-甲酚、2-methylphenol、95-48-7.xml
 696. 2-硝基-1,3-二甲苯、2-nitro-1,3-xylene、81-20-9.xml
 697. 2-硝基-4-甲氧基苯胺、4-methoxy-2-nitroaniline、96-96-8.xml
 698. 2-硝基-4-甲苯胺、2-nitro-4-toluidine、89-62-3.xml
@@ -1586,7 +1625,7 @@
 1096. N,N-二甲基异丙醇胺、N,N-dimethyl-iso-propanolamine、108-16-7.xml
 1097. N,N-二甲基氨基乙腈、N，N-Dimethylaminoacetonitrile、926-64-7.xml
 1098. N,N-二甲基环己胺、N,N-dimethylcyclohexylamine、98-94-2.xml
-1099. N,N-二甲基甲酰胺、N,N-dimethylformamide、68-12-2.xml
+1099. ✅N,N-二甲基甲酰胺、N,N-dimethylformamide、68-12-2.xml
 1100. N,N-二甲基苄胺、N，N-Dimethylbenzylamine、103-83-3.xml
 1101. N,N-二甲基苯胺、N,N-dimethylaniline、121-69-7.xml
 1102. N,N-六亚甲基硫代氨基甲酸-S-乙酯、(S)-ethyl 1-perhydroazepinecarbothioate、2212-67-1.xml
@@ -1912,18 +1951,18 @@
 1422. ✅ 三硫化二磷、Phosphorus trisulfide、12165-69-4.xml
 1423. ✅ 三硫化二锑、Antimony trisulfide、1345-04-6.xml
 1424. ✅ 三硫化四磷、Tetraphosphorus trisulfide、1314-85-8.xml
-1425. 三碘乙酸、Triiodoacetic acid、594-68-3.xml
-1426. 三碘化砷、arsenic triiodide、7784-45-4.xml
-1427. 三碘化铊、thallium triiodide、13453-37-7.xml
-1428. 三碘化锑、antimony triiodide、64013-16-7.xml
-1429. 三碘甲烷、iodoform、75-47-8.xml
-1430. 三聚丙烯、Tripropylene、13987-01-4.xml
-1431. 三聚乙醛、2,4,6-trimethyl-1,3,5-trioxan、123-63-7.xml
-1432. 三聚异丁烯、Triisobutylene、7756-94-7.xml
-1433. 三聚氰胺、Melamine、108-78-1.xml
-1434. 三聚氰酸三烯丙酯、Triallyl cyanurate、101-37-1.xml
-1435. 三聚甲醛、Metaformaldehyde、110-88-3.xml
-1436. 三苯基乙酸锡、triphenyltin acetate、900-95-8.xml
+1425. ✅ 三碘乙酸、Triiodoacetic acid、594-68-3.xml
+1426. ✅ 三碘化砷、arsenic triiodide、7784-45-4.xml
+1427. ✅ 三碘化铊、thallium triiodide、13453-37-7.xml
+1428. ✅ 三碘化锑、antimony triiodide、64013-16-7.xml
+1429. ✅ 三碘甲烷、iodoform、75-47-8.xml
+1430. ✅ 三聚丙烯、Tripropylene、13987-01-4.xml
+1431. ✅ 三聚乙醛、2,4,6-trimethyl-1,3,5-trioxan、123-63-7.xml
+1432. ✅ 三聚异丁烯、Triisobutylene、7756-94-7.xml
+1433. ✅ 三聚氰胺、Melamine、108-78-1.xml
+1434. ✅ 三聚氰酸三烯丙酯、Triallyl cyanurate、101-37-1.xml
+1435. ✅ 三聚甲醛、Metaformaldehyde、110-88-3.xml
+1436. ✅ 三苯基乙酸锡、triphenyltin acetate、900-95-8.xml
 1437. 三苯基氢氧化锡、triphenyltin hydroxide、76-87-9.xml
 1438. 三苯基氯硅烷、Triphenylchlorosilane、76-86-8.xml
 1439. 三苯基磷、triphenyl phosphine、603-35-0.xml
@@ -1954,7 +1993,7 @@
 1464. 丙烷、propane、74-98-6.xml
 1465. 丙胺氟磷、Mipafox、371-86-8.xml
 1466. 丙腈、propionitrile、107-12-0.xml
-1467. 丙酮、acetone、67-64-1.xml
+1467. ✅丙酮、acetone、67-64-1.xml
 1468. 丙酮基丙酮、Acetonyl acetone、110-13-4.xml
 1469. 丙酮氰醇、Acetone cyanohydrin、75-86-5.xml
 1470. 丙酰氯、Propionyl chloride、79-03-8.xml
@@ -2017,7 +2056,7 @@
 1527. 乙硼烷、diborane、19287-45-7.xml
 1528. 乙胺、ethylamine、75-04-7.xml
 1529. 乙胺水溶液[浓度50%～70%]、ethylamine,aqueous solution with not less than 50% but not more than 70% ethylamine、75-04-7.xml
-1530. 乙腈、acetonitrile、75-05-8.xml
+1530. ✅乙腈、acetonitrile、75-05-8.xml
 1531. 乙苯、ethylbenzene、100-41-4.xml
 1532. 乙酰乙酸丁酯、Butyl acetoacetate、591-60-6.xml
 1533. 乙酰乙酸乙酯、Ethyl acetoacetate、141-97-9.xml
@@ -2030,14 +2069,14 @@
 1540. 乙酰过氧化磺酰环己烷[含量≤32%,含B型稀释剂≥68%]、acetyl cyclohexanesulphonyl peroxide (not more than 32%, and diluent type B not less than 68%)、3179-56-4.xml
 1541. 乙酰过氧化磺酰环己烷[含量≤82%,含水≥12%]、acetyl cyclohexanesulphonyl peroxide (not more than 82%, and water not less than 12%)、3179-56-4.xml
 1542. 乙酸-2-乙基己酯、2-Ethylhexyl acetate、103-09-3.xml
-1543. 乙酸[含量＞80%]、acetic acid (more than 80%)、64-19-7.xml
-1544. 乙酸、acetic acid、64-19-7.xml
+1543. ✅乙酸[含量＞80%]、acetic acid (more than 80%)、64-19-7.xml
+1544. ✅乙酸、acetic acid、64-19-7.xml
 1545. 乙酸三乙基锡、acetoxytrietlyl stannane、1907-13-7.xml
 1546. 乙酸三甲基锡、trimethyltin acetate、1118-14-5.xml
 1547. 乙酸乙二醇乙醚、ethylene glycol ethyl ether、111-15-9.xml
 1548. 乙酸乙基丁酯、2-ethylbutyl acetate、10031-87-5.xml
 1549. 乙酸乙烯酯[稳定的]、vinyl acetate,stabilized、108-05-4.xml
-1550. 乙酸乙酯、ethyl acetate、141-78-6.xml
+1550. ✅乙酸乙酯、ethyl acetate、141-78-6.xml
 1551. 乙酸亚汞、Mercurous acetate、631-60-7.xml
 1552. 乙酸亚铊、thalium acetate、563-68-8.xml
 1553. 乙酸仲丁酯、sec-butyl acetate、105-46-4.xml
@@ -2053,7 +2092,7 @@
 1563. 乙酸正己酯、Hexyl acetate、142-92-7.xml
 1564. 乙酸正戊酯、amyl acetate、628-63-7.xml
 1565. 乙酸汞、Mercuric acetate、1600-27-7.xml
-1566. 乙酸溶液[10%＜含量≤80%]、acetic acid solution,more than 10％ and not more than 80％ acid,by mass、64-19-7.xml
+1566. ✅乙酸溶液[10%＜含量≤80%]、acetic acid solution,more than 10％ and not more than 80％ acid,by mass、64-19-7.xml
 1567. 乙酸烯丙酯、Allyl acetate、591-87-7.xml
 1568. 乙酸环己酯、Cyclohexyl acetate、622-45-7.xml
 1569. 乙酸甲氧基乙基汞、methoxyethyl mercury acetate、151-38-2.xml
@@ -2066,7 +2105,7 @@
 1576. 乙酸铅、Lead acetate、6080-56-4.xml
 1577. 乙酸铍、Beryllium acetate、543-81-7.xml
 1578. 乙酸间甲酚酯、m-cresol acetate、122-46-3.xml
-1579. 乙醇[无水]、alcohol anhydrous、64-17-5.xml
+1579. ✅乙醇[无水]、alcohol anhydrous、64-17-5.xml
 1580. 乙醇汽油、ethanol gasoline、86290-81-5.xml
 1581. 乙醇钠、sodium ethanolate、141-52-6.xml
 1582. 乙醇钠乙醇溶液、Sodium ethylate solution inethyl alcohol、无资料.xml
@@ -2188,7 +2227,7 @@
 1698. 二氯异丙基醚、Dichloroisopropyl ether、108-60-1.xml
 1699. 二氯异氰尿酸、Dichloroisocyanuric acid、2782-57-2.xml
 1700. 二氯氧化二苯、Dichlorodiphenyl oxide、28675-08-3.xml
-1701. 二氯甲烷、dichloromethane、75-09-2.xml
+1701. ✅二氯甲烷、dichloromethane、75-09-2.xml
 1702. 二氯硅烷、dichlorosilane、4109-96-0.xml
 1703. 二氯硫化碳、Thiophosgene、463-71-8.xml
 1704. 二氯苯基三氯硅烷、Dichlorophenyl trichlorosilane、27137-85-5.xml
@@ -2228,7 +2267,7 @@
 1738. 二甲胂酸、Hydroxydimethyl arsine oxide、75-60-5.xml
 1739. 二甲胺(无水)、dimethylamine、124-40-3.xml
 1740. 二甲胺溶液、di-methylamine,aqueous solution、124-40-3.xml
-1741. 二甲苯异构体混合物、xylene isomers mixture、1330-20-7.xml
+1741. ✅二甲苯异构体混合物、xylene isomers mixture、1330-20-7.xml
 1742. 二甲醚、methyl ether、115-10-6.xml
 1743. 二硝基甘脲、Dinitroglycoluril、55510-04-8.xml
 1744. 二硝基联苯、Dinitrobiphenyl、38094-35-8.xml
@@ -2244,7 +2283,7 @@
 1754. 二硫代-4,4'-二氨基代二苯、4,4’-diaminodiphenyl disulfide、722-27-0.xml
 1755. 二硫化二甲基、Dimethyl disulfide、624-92-0.xml
 1756. 二硫化硒、Selenium disulfide、7488-56-4.xml
-1757. 二硫化碳、carbon disulfide、75-15-0.xml
+1757. ✅二硫化碳、carbon disulfide、75-15-0.xml
 1758. 二硫化钛、titanium disulphide、12039-13-3.xml
 1759. 二碘化汞、mercuric iodide、7774-29-0.xml
 1760. 二碘化苯胂、diiodide phenylarsonic、6380-34-3.xml
@@ -2507,7 +2546,7 @@
 2017. 可力丁、2，4，6-Trimethylpyridine、108-75-8.xml
 2018. 吗啉、morpholine、110-91-8.xml
 2019. 吡咯、Pyrrole、109-97-7.xml
-2020. 吡啶、Pyridine、110-86-1.xml
+2020. ✅吡啶、Pyridine、110-86-1.xml
 2021. 呋喃、Furan、110-00-9.xml
 2022. 呋喃甲酰氯、furoyl chloride、527-69-5.xml
 2023. 哌啶、Piperidine、110-89-4.xml
@@ -2533,7 +2572,7 @@
 2043. 四氟硼酸-2,5-二乙氧基-4-吗啉代重氮苯、2,5-diethoxy-4-morpholinobenzenediazonium tetrafluoroborate、4979-72-0.xml
 2044. 四氢吡咯、Pyrrolidine、123-75-1.xml
 2045. 四氢吡喃、Tetrahydropyran、142-68-7.xml
-2046. 四氢呋喃、tetrahydrofuran、109-99-9.xml
+2046. ✅四氢呋喃、tetrahydrofuran、109-99-9.xml
 2047. 四氢噻吩、tetrahydrothiophene、110-01-0.xml
 2048. 四氢糠胺、Tetrahyrdrofurfurylamine、4795-29-3.xml
 2049. 四氢邻苯二甲酸酐[含马来酐＞0.05%]、3,4,5,6-tetrahydrophthalic anhydride with more than 0.05% of maleic anhydride、2426-02-0.xml
@@ -2546,7 +2585,7 @@
 2056. 四氯化硒、selenium tetrachloride、10026-03-6.xml
 2057. 四氯化硫、Sulfur tetrachloride、13451-08-6.xml
 2058. 四氯化碲、Tellurium tetrachloride、10026-07-0.xml
-2059. 四氯化碳、carbon tetrachloride、56-23-5.xml
+2059. ✅四氯化碳、carbon tetrachloride、56-23-5.xml
 2060. 四氯化钒、vanadium tetrachloride、7632-51-1.xml
 2061. 四氯化钛、titanium tetrachloride、7550-45-0.xml
 2062. 四氯化铅、Lead tetrachloride、13463-30-4.xml
@@ -2778,7 +2817,7 @@
 2288. 正丙苯、n-propylbenzene、103-65-1.xml
 2289. 正丙醚、n-propyl ether、111-43-3.xml
 2290. 正壬醇、n-Nonyl alcohol、143-08-8.xml
-2291. 正己烷、n-hexane、110-54-3.xml
+2291. ✅正己烷、n-hexane、110-54-3.xml
 2292. 正己胺、n-hexylamine、111-26-2.xml
 2293. 正己酸乙酯、ethyl-n-caproate、123-66-0.xml
 2294. 正己酸甲酯、methyl-n-caproate、106-70-7.xml
@@ -3168,7 +3207,7 @@
 2678. 环己基硫醇、cyclohexyl mercaptan、1569-69-3.xml
 2679. 环己烯、cyclohexene、110-83-8.xml
 2680. 环己烯基三氯硅烷、Cyclohexenyl trichlorosilane、10137-69-6.xml
-2681. 环己烷、cyclohexane、110-82-7.xml
+2681. ✅环己烷、cyclohexane、110-82-7.xml
 2682. 环己胺、cyclohexylamine、108-91-8.xml
 2683. 环己酮、cyclohexanone、108-94-1.xml
 2684. 环庚烯、cycloheptene、628-92-2.xml
@@ -3245,7 +3284,7 @@
 2755. 甲苯-2,4-二异氰酸酯、Toluene-2，4-diisocyanate、584-84-9.xml
 2756. 甲苯-2,6-二异氰酸酯、toluene-2,6-di-isocyanate、91-08-7.xml
 2757. 甲苯-3,4-二硫酚、toluene-3,4-dithiol、496-74-2.xml
-2758. 甲苯、methylbenzene、108-88-3.xml
+2758. ✅甲苯、methylbenzene、108-88-3.xml
 2759. 甲苯二异氰酸酯、toluene diisocyanate、26471-62-5.xml
 2760. 甲藻毒素(二盐酸盐)、saxidomus giganteus poison、35523-89-8.xml
 2761. 甲酚、methylphenol、1319-77-3.xml
@@ -3270,7 +3309,7 @@
 2780. 甲醇钠、Sodium methoxide、124-41-4.xml
 2781. 甲醇钠甲醇溶液、Sodium methylate,solutionin methylalcohol、无资料.xml
 2782. 甲醇钾、potassium methanolate、865-33-8.xml
-2783. 甲醛溶液、formaldehyde solution、50-00-0.xml
+2783. ✅甲醛溶液、formaldehyde solution、50-00-0.xml
 2784. 电池液[碱性的]、battery fluid,alkali、无资料.xml
 2785. 电池液[酸性的]、battery fluid,acid、无资料.xml
 2786. 癸二酰氯、Sebacoyl Chloride、111-19-3.xml
@@ -3304,7 +3343,7 @@
 2814. 石油气、Oil gas、68476-85-7.xml
 2815. 石油焦油、Petroleum tar、无资料.xml
 2816. 石油裂解气、Petroleum cracking gas、无资料.xml
-2817. 石油醚、Petroleum ether、8032-32-4.xml
+2817. ✅石油醚、Petroleum ether、8032-32-4.xml
 2818. 石脑油、Crude oil、8030-30-6.xml
 2819. 石蜡、Paraffin wax、8002-74-2.xml
 2820. 砷、arsenic、7440-38-2.xml
@@ -3615,7 +3654,7 @@
 3125. 苊、acenaphthene、83-32-9.xml
 3126. 苦味酸甲酯、2,4,6-trinitroanisole、606-35-9.xml
 3127. 苯-1,3-二磺酰肼[糊状,浓度52%]、benzene-1,3-disulphonyl hydrazide,as a paste、4547-70-0.xml
-3128. 苯、benzene、71-43-2.xml
+3128. ✅苯、benzene、71-43-2.xml
 3129. 苯乙炔、phenylacetylene、536-74-3.xml
 3130. 苯乙烯[稳定的]、styrene,stabilized、100-42-5.xml
 3131. 苯乙腈、phenylacetonitrile、140-29-4.xml
@@ -3948,11 +3987,11 @@
 3458. ✅ 马来酸二甲酯、Dimethyl maleate、624-48-6.xml
 3459. ✅ 马来酸酐、maleic anhydride、108-31-6.xml
 3460. ✅ 高氯酸[浓度50%～72%]、perchloric acid,with not less than 50% but not more than 72% acid,by mass、7601-90-3.xml
-3461. 高氯酸[浓度≤50%]、perchloric acid with not more than 50% acid,by mass、7601-90-3.xml
+3461. ✅ 高氯酸[浓度≤50%]、perchloric acid with not more than 50% acid,by mass、7601-90-3.xml
 3462. ✅ 高氯酸[浓度＞72%]、perchloric acid(more than 72%)、7601-90-3.xml
 3463. ✅ 高氯酸亚铁、ferrous perchlorate、13520-69-9.xml
-3464. 高氯酸醋酐溶液、perchloric acid (in acetic anhydride,solution)、无资料.xml
-3465. 高氯酸钙、calcium perchlorate、13477-36-6.xml
+3464. ✅ 高氯酸醋酐溶液、perchloric acid (in acetic anhydride,solution)、无资料.xml
+3465. ✅ 高氯酸钙、calcium perchlorate、13477-36-6.xml
 3466. 高氯酸钠、sodium perchlorate、7601-89-0.xml
 3467. 高氯酸钡、barium perchlorate、13465-95-7.xml
 3468. 高氯酸钾、potassium perchlorate、7778-74-7.xml
@@ -4040,6 +4079,7 @@
 - 2024-XX-XX: 批量补全1,1,1-三羟甲基丙烷(77-99-6，第4.1类易燃固体，可疑致癌物2B类，对眼睛和皮肤有轻度刺激作用，粉体与空气可形成爆炸性混合物)、1,1,2,2-四氯乙烷(79-34-5，第6.1类毒害品，可疑致癌物2B类，对中枢神经系统有麻醉作用和抑制作用，可引起肝、肾和心肌损害)、1,1,2-三氯乙烷(79-00-5，第6.1类毒害品，可疑致癌物2B类，急性中毒主要损害中枢神经系统，可引起心律不齐)、1,1,3-三乙氧基己烷(101-33-7，第3.3类高闪点易燃液体，可疑致癌物2B类，具一定的刺激作用)等4个文件，已完成212个文件
 - 2024-XX-XX: 批量补全1,1,3,3-四甲基-1-丁硫醇(141-59-3，第3.3类高闪点易燃液体，可疑致癌物2B类，硫醇类化合物具有恶臭，可能引起恶心、头痛等症状，长期接触可能对肝脏有影响)、1,2-二氯乙烷(107-06-2，第3.2类中闪点易燃液体，可疑致癌物2A类，对眼睛及呼吸道有刺激作用，吸入可引起肺水肿，抑制中枢神经系统、刺激胃肠道和引起肝、肾和肾上腺损害，对大气臭氧层破坏力极强)、1,2-二氯丙烷(78-87-5，第3.2类中闪点易燃液体，可疑致癌物2B类，对中枢神经系统有抑制作用，可使皮肤干燥、脱屑和皲裂，对粘膜有刺激作用，可引起肝、肾和心肌脂肪性变)、1,2-二溴乙烷(106-93-4，第6.1类毒害品，可疑致癌物2A类，具有中度麻醉作用，对皮肤粘膜有刺激作用，重者可致肺炎和肺水肿，对中枢神经有抑制作用，对大气臭氧层破坏力极强)等4个文件，已完成216个文件
 - 2024-XX-XX: 批量补全1,2-二溴丙烷(78-75-1，第6.1类毒害品，可疑致癌物2B类，可导致生殖毒性，对大气臭氧层有极强破坏力，属于消耗臭氧层物质ODS)、1,3-二氯丙烷(142-28-9，第3.3类高闪点易燃液体，可疑致癌物2B类，其蒸气或雾对眼睛、皮肤、粘膜和呼吸道有刺激作用，引起皮炎，长时间接触可引起头痛、恶心、呕吐、中枢神经系统抑制，反复接触对肝、肾有损害)、1,4-二氯丁烷(110-56-5，第3.3类高闪点易燃液体，可疑致癌物2B类，其蒸气或雾对眼睛、皮肤、粘膜和呼吸道有刺激作用，长时间接触可引起头痛、恶心、呕吐、中枢神经系统抑制，反复接触对肝、肾有损害)、1,5-二氯戊烷(628-76-2，第3.3类高闪点易燃液体，可疑致癌物2B类，对皮肤有刺激作用，其蒸气或雾对眼睛、粘膜和上呼吸道有刺激作用，长时间接触可引起头痛、恶心、呕吐、中枢神经系统抑制，反复接触对肝、肾有损害)等4个文件，已完成220个文件
+- 2025-01-01: 补全高氯酸[浓度≤50%](7601-90-3)，已完成221个文件
 - 2024-XX-XX: 批量补全1,2-二氯苯(95-50-1，第6.1类毒害品，可疑致癌物2B类，浓度蒸气对眼有刺激性，可经皮肤吸收引起中毒，口服引起胃肠道反应，皮肤接触可引起红斑、水肿)、1,3-二氯苯(541-73-1，第6.1类毒害品，可疑致癌物2B类，吸入后引起头痛、倦睡、不安和呼吸道粘膜刺激，对眼和皮肤有强烈刺激性，口服出现胃肠道反应)、1,4-二氯苯(106-46-7，第6.1类毒害品，可疑致癌物2B类，对眼睛、皮肤、粘膜有刺激作用，长期接触可能对肝脏、肾脏有影响)、1,2-二溴苯(583-53-9，第3.3类高闪点易燃液体，可疑致癌物2B类，对眼睛、皮肤和呼吸道有刺激作用，吸入后可引起咳嗽、呼吸困难、头痛、头晕、恶心、呕吐等症状)等4个文件，已完成224个文件
 - 2024-XX-XX: 批量补全1,2-二硝基苯(528-29-0，第6.1类毒害品，可疑致癌物2B类，急性中毒可引起头痛、头晕、恶心、呕吐、手指麻木、精神恍惚、昏迷、抽搐、呼吸麻痹，有时中毒后出现溶血性贫血、黄疸、中毒性肝病)、1,3-二硝基苯(99-65-0，第6.1类毒害品，高毒类，可疑致癌物2B类，急性中毒可引起头痛、头晕、恶心、呕吐、手指麻木、精神恍惚、昏迷、抽搐、呼吸麻痹，有时中毒后出现溶血性贫血、黄疸、中毒性肝病)、1,2-二乙基苯(135-01-3，第3.3类高闪点易燃液体，可疑致癌物2B类，蒸气或雾对眼、粘膜和上呼吸道有刺激性，对皮肤有刺激性，动物实验观察到急性中毒有麻醉作用和神经-肌肉兴奋性增强)、1,3-二乙基苯(141-93-5，第3.3类高闪点易燃液体，可疑致癌物2B类，蒸气或雾对眼、粘膜和上呼吸道有刺激性，对皮肤有刺激性，动物实验观察到急性中毒有麻醉作用和神经-肌肉兴奋性增强)、1,4-二乙基苯(105-05-5，第3.3类高闪点易燃液体，可疑致癌物2B类，蒸气或雾对眼、粘膜和上呼吸道有刺激性，对皮肤有刺激性，动物实验观察到急性中毒有麻醉作用和神经-肌肉兴奋性增强)等5个文件，已完成229个文件
 - 2024-XX-XX: 批量补全1,2-二氟苯(367-11-3，第3.2类中闪点易燃液体，可疑致癌物2B类，蒸气或雾对眼、粘膜和上呼吸道有刺激性，对皮肤有刺激性，高浓度吸入可引起中枢神经系统抑制)、1,3-二氟苯(372-18-9，第3.2类中闪点易燃液体，可疑致癌物2B类，蒸气或雾对眼、粘膜和上呼吸道有刺激性，对皮肤有刺激性，高浓度吸入可引起中枢神经系统抑制)、1,4-二氟苯(540-36-3，第3.2类中闪点易燃液体，可疑致癌物2B类，蒸气或雾对眼、粘膜和上呼吸道有刺激性，对皮肤有刺激性，高浓度吸入可引起中枢神经系统抑制)等3个文件，已完成232个文件
@@ -4125,6 +4165,7 @@
 - 2024-XX-XX: 批量补全2-氨基苯酚(95-55-6，第6.1类毒害品，邻氨基苯酚，补全相对密度、相对蒸气密度、致敏性、致突变性、致畸性、致癌性等字段)、2-氨基吡啶(504-29-0，第6.1类毒害品，邻氨基吡啶，属中等毒类，补全相对密度、相对蒸气密度、致敏性、致突变性、致畸性、致癌性等字段)、2-氨基乙醇(141-43-5，第8.2类碱性腐蚀品，乙醇胺，具腐蚀性和刺激性，补全致敏性、致突变性、致畸性、致癌性等字段)等3个文件，已完成523个文件
 - 持续更新中...
 - 2025-12-01: 补全硼酸(10043-35-3，非危险品，弱酸性，常用作杀菌剂、防腐剂、缓冲剂等)的健康危害、环境危害、理化特性、稳定性和反应活性、毒理学信息、生态学资料、废弃处置、运输信息、法规信息等字段，已完成524个文件
+- 2025-12-01: 补全马来酸二正丙酯(105-77-5，第3.3类高闪点易燃液体，酯类化合物，具有刺激性气味，对眼、皮肤和呼吸道有刺激性)的全部16个部分内容，包括化学品标识、危险性概述、成分组成信息、急救措施、消防措施、泄漏应急处理、操作处置与储存、接触控制/个体防护、理化特性、稳定性和反应活性、毒理学信息、生态学资料、废弃处置、运输信息、法规信息和其他信息等字段，已完成596个文件
 
 
 

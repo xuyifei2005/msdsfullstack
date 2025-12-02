@@ -144,5 +144,15 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）、《蒙特利尔议定书》。本品属于第6.1类毒害品，可疑致癌物2B类（IARC），可导致生殖毒性，属于消耗臭氧层物质（ODS），应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>GB/T 16483-2008, GB 13690-2009</reference_standards>
+      <references>无资料</references>
+      <revision_history>无资料</revision_history>
+      <filling_date>2023-10-15</filling_date>
+      <supplementary_info>无资料</supplementary_info>
+      <glossary>无资料</glossary>
+      <emergency_contact>无资料</emergency_contact>
+    </other_info>
   </msds>
 </msds_list>

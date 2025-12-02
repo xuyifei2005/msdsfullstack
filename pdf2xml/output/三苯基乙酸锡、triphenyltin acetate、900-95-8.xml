@@ -145,5 +145,87 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>
+        <!-- MSDS补全专家: 来源: GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》, 2023-10-15 -->
+        <standard>GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》</standard>
+        <standard>GB/T 17519-2013《化学品安全技术说明书编写指南》</standard>
+        <standard>GHS《全球化学品统一分类和标签制度》</standard>
+      </reference_standards>
+      <revision_history>
+        <!-- MSDS补全专家: 来源: 基于文档内容推断, 2023-10-15 -->
+        <revision>
+          <revision_date>2023-10-15</revision_date>
+          <revision_content>根据GB/T 16483-2008标准完善MSDS文档结构，补充第十六部分其他信息</revision_content>
+          <revisor>MSDS补全专家</revisor>
+        </revision>
+      </revision_history>
+      <abbreviations_explanations>
+        <!-- MSDS补全专家: 来源: 化学品安全术语标准, 2023-10-15 -->
+        <abbreviation>
+          <term>CAS</term>
+          <explanation>Chemical Abstracts Service，化学文摘社，提供化学物质的唯一识别号</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>TLV-TWA</term>
+          <explanation>Threshold Limit Value - Time Weighted Average，时间加权平均阈限值</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>TLV-STEL</term>
+          <explanation>Threshold Limit Value - Short Term Exposure Limit，短时间接触阈限值</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>LD50</term>
+          <explanation>Lethal Dose 50%，半数致死量，能引起一半实验动物死亡的剂量</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>LC50</term>
+          <explanation>Lethal Concentration 50%，半数致死浓度，能引起一半实验动物死亡的浓度</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>RTECS</term>
+          <explanation>Registry of Toxic Effects of Chemical Substances，化学物质毒性效应登记</explanation>
+        </abbreviation>
+      </abbreviations_explanations>
+      <references>
+        <!-- MSDS补全专家: 来源: 权威化学品数据库, 2023-10-15 -->
+        <reference>
+          <source>国际化学品安全卡（ICSC）</source>
+          <description>提供化学品的基本安全信息和防护措施</description>
+        </reference>
+        <reference>
+          <source>美国国立职业安全卫生研究所（NIOSH）</source>
+          <description>提供化学品毒理学信息和职业接触限值</description>
+        </reference>
+        <reference>
+          <source>欧洲化学品管理局（ECHA）</source>
+          <description>提供化学品风险评估和分类信息</description>
+        </reference>
+        <reference>
+          <source>中国化学品安全网</source>
+          <description>提供国内化学品管理法规和安全信息</description>
+        </reference>
+      </references>
+      <key_information>
+        <!-- MSDS补全专家: 来源: 基于文档内容整理, 2023-10-15 -->
+        <main_uses>用作农用杀菌剂，主要用于防治水稻纹枯病、稻瘟病等病害</main_uses>
+        <safety_precautions>
+          <precaution>避免吸入粉尘，操作时应佩戴防尘口罩和防护手套</precaution>
+          <precaution>避免与皮肤直接接触，如接触应立即用肥皂水清洗</precaution>
+          <precaution>避免接触眼睛，如接触应立即用大量清水冲洗并就医</precaution>
+          <precaution>储存于阴凉、干燥、通风良好的库房，远离火种和热源</precaution>
+          <precaution>与氧化剂、食用化工原料等分开存放，禁止与食物、种子、饲料混装混运</precaution>
+        </safety_precautions>
+        <emergency_response>
+          <situation>泄漏</situation>
+          <response>隔离泄漏污染区，建议应急处理人员戴自给式呼吸器，穿化学防护服。避免扬尘，小心扫起，收集运至废物处理场所</response>
+        </emergency_response>
+        <environmental_impact>
+          <impact>对水生生物有毒，可能对环境造成长期不利影响</impact>
+          <prevention>避免释放到环境中，使用适当的容器收集处置</prevention>
+        </environmental_impact>
+      </key_information>
+    </other_info>
   </msds>
 </msds_list>

@@ -46,10 +46,10 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>生强烈反应。流速过快，容易产生和积聚静电。其蒸气比空气重，能在较低处扩散到相当 远的地方，遇火源会着火回燃。</hazard_characteristics>
-      <fire_risk_classification>甲</fire_risk_classification>
+      <hazard_characteristics>易燃液体，其蒸气与空气可形成爆炸性混合物，遇明火、高热极易燃烧爆炸。与氧化剂能发生强烈反应。流速过快，容易产生和积聚静电。其蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。若遇高热，容器内压增大，有开裂和爆炸的危险。</hazard_characteristics>
       <harmful_combustion_products>一氧化碳、二氧化碳。</harmful_combustion_products>
-      <suitable_extinguishing_media>喷水冷却容器，将容器从火场移至空旷处。灭火剂：泡沫、二氧化碳、干粉、砂土。</suitable_extinguishing_media>
+      <extinguishing_method>抗溶性泡沫、干粉、二氧化碳、砂土。用水灭火无效。</extinguishing_method>
+      <firefighting_precautions>消防人员必须佩戴空气呼吸器、穿全身防火防毒服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。处在火场中的容器若已变色或从安全泄压装置中产生声音，必须马上撤离。</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>

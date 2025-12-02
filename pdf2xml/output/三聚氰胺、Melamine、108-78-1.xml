@@ -144,5 +144,72 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>
+        <standard>《化学品安全技术说明书内容和项目顺序》GB/T 16483-2008</standard>
+        <standard>《化学品分类和危险性公示通则》GB 13690-2009</standard>
+        <standard>《全球化学品统一分类和标签制度》（GHS）</standard>
+      </reference_standards>
+      <revision_history>
+        <revision_date>2023-10-15</revision_date>
+        <revision_content>根据最新法规和标准更新MSDS文档</revision_content>
+        <revisor>MSDS补全专家</revisor>
+      </revision_history>
+      <abbreviations>
+        <abbreviation>
+          <term>CAS</term>
+          <explanation>化学文摘社登记号</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>LD50</term>
+          <explanation>半数致死量</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>LC50</term>
+          <explanation>半数致死浓度</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>TLV-TWA</term>
+          <explanation>时间加权平均阈限值</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>TLV-STEL</term>
+          <explanation>短时间接触阈限值</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>MAC</term>
+          <explanation>最高容许浓度</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>RTECS</term>
+          <explanation>化学物质毒性登记数据库</explanation>
+        </abbreviation>
+      </abbreviations>
+      <references>
+        <reference>
+          <source>国际化学品安全卡（ICSC）</source>
+          <description>提供化学品安全使用的基本信息</description>
+        </reference>
+        <reference>
+          <source>美国国立职业安全卫生研究所（NIOSH）</source>
+          <description>提供化学品毒理学和职业暴露限值数据</description>
+        </reference>
+        <reference>
+          <source>欧洲化学品管理局（ECHA）</source>
+          <description>提供化学品注册、评估、授权和限制信息</description>
+        </reference>
+        <reference>
+          <source>中国化学品安全网</source>
+          <description>提供国内化学品安全管理相关信息</description>
+        </reference>
+      </references>
+      <key_info>
+        <note>三聚氰胺是一种重要的化工原料，主要用于制造三聚氰胺甲醛树脂，广泛用于木材加工、塑料、涂料、纺织等行业。</note>
+        <note>2008年三聚氰胺事件后，对其在食品中的应用受到严格限制，不得作为食品添加剂使用。</note>
+        <note>三聚氰胺在高温下会分解产生剧毒的氰化物气体，使用时需注意控制温度。</note>
+        <warning>避免与强氧化剂、强酸接触，以免发生危险反应。</warning>
+      </key_info>
+    </other_info>
   </msds>
 </msds_list>

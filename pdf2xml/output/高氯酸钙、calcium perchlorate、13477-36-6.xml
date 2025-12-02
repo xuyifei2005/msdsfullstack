@@ -115,6 +115,22 @@
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
       <carcinogenicity>无资料</carcinogenicity>
+      <!-- MSDS补全专家: 来源: 基于高氯酸盐类化合物的毒理学特性, 2025-01-27 -->
+      <acute_toxicity_oral>无资料（建议开展急性经口毒性测试，方法参考OECD TG 425）</acute_toxicity_oral>
+      <acute_toxicity_dermal>无资料（建议开展急性经皮毒性测试，方法参考OECD TG 402）</acute_toxicity_dermal>
+      <acute_toxicity_inhalation>无资料（建议开展急性吸入毒性测试，方法参考OECD TG 403）</acute_toxicity_inhalation>
+      <skin_corrosion_irritation>对皮肤有刺激性（基于高氯酸盐类化合物特性）</skin_corrosion_irritation>
+      <eye_damage_irritation>对眼睛有刺激性（基于高氯酸盐类化合物特性）</eye_damage_irritation>
+      <respiratory_sensitization>无资料</respiratory_sensitization>
+      <skin_sensitization>无资料</skin_sensitization>
+      <germ_cell_mutagenicity>无资料</germ_cell_mutagenicity>
+      <carcinogenicity_iarc>无资料</carcinogenicity_iarc>
+      <carcinogenicity_ntp>无资料</carcinogenicity_ntp>
+      <carcinogenicity_osha>无资料</carcinogenicity_osha>
+      <reproductive_toxicity>无资料</reproductive_toxicity>
+      <specific_target_organ_toxicity_single_exposure>无资料</specific_target_organ_toxicity_single_exposure>
+      <specific_target_organ_toxicity_repeated_exposure>长期接触可能引起甲状腺功能减退（基于高氯酸盐类化合物特性）</specific_target_organ_toxicity_repeated_exposure>
+      <aspiration_hazard>无资料</aspiration_hazard>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
@@ -123,12 +139,26 @@
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
       <other_harmful_effects>工作后，淋浴更衣</other_harmful_effects>
+      <!-- MSDS补全专家: 来源: 基于高氯酸盐类化合物的生态学特性, 2025-01-27 -->
+      <aquatic_toxicity_fish>无资料（建议开展鱼类急性毒性测试，方法参考OECD TG 203）</aquatic_toxicity_fish>
+      <aquatic_toxicity_daphnia>无资料（建议开展水蚤急性活动抑制测试，方法参考OECD TG 202）</aquatic_toxicity_daphnia>
+      <aquatic_toxicity_algae>无资料（建议开展藻类生长抑制测试，方法参考OECD TG 201）</aquatic_toxicity_algae>
+      <microbial_toxicity>无资料</microbial_toxicity>
+      <persistence_degradability>在水中可能持久存在，不易降解（基于高氯酸盐类化合物特性）</persistence_degradability>
+      <bioaccumulative_potential>低生物富集潜力（基于高氯酸盐类化合物特性）</bioaccumulative_potential>
+      <mobility_in_soil>在土壤中可能具有中等迁移性（基于高氯酸盐类化合物特性）</mobility_in_soil>
+      <other_adverse_effects>可能对水生环境造成长期不利影响（基于高氯酸盐类化合物特性）</other_adverse_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
       <disposal_method>用控制焚烧法处置。也可采用还原法处理，用还原剂将高氯酸钙还原后，按危险废物进行处置。处置前应参阅国家和地方有关法规。</disposal_method>
       <disposal_precautions>处置前应参阅国家和地方有关法规。禁止将未经处理的废物直接排入环境。处置时应穿戴适当的防护装备。避免与还原剂、有机物混合处置。严禁震动、撞击和摩擦。避免急剧加热。</disposal_precautions>
+      <!-- MSDS补全专家: 来源: 基于高氯酸盐类化合物的废弃处置特性, 2025-01-27 -->
+      <waste_disposal_methods>控制焚烧法处置，或采用还原法处理后按危险废物处置（基于高氯酸盐类化合物特性）</waste_disposal_methods>
+      <contaminated_packaging>未使用的容器应按照危险废物处理，不可重复使用。污染的包装应彻底清洗或作为危险废物处置。</contaminated_packaging>
+      <disposal_considerations>处置前应咨询专业机构或当地环保部门。处置过程应严格遵守《危险废物经营许可证管理办法》和《国家危险废物名录》相关规定。</disposal_considerations>
+      <special_precautions>处置过程中应避免与还原剂、有机物、易燃物接触。处置人员应穿戴适当的防护装备，包括防腐蚀手套、防护眼镜和防护服。</special_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -136,13 +166,26 @@
       <un_number>1455</un_number>
       <imdg_page>5139</imdg_page>
       <packaging_mark>第5.1类氧化剂标志</packaging_mark>
-      <packing_group>II（包装类别II，中等危险性）</packaging_group>
+      <packing_group>II（包装类别II，中等危险性）</packing_group>
       <packaging_method>塑料袋或二层牛皮纸袋外全开口或中开口钢桶；塑料袋或二层牛皮纸袋外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
       <transportation_precautions>运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与还原剂、硫、磷、活性金属粉末、易燃或可燃物、有机物等混装混运。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。禁止震动、撞击和摩擦。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。</transportation_precautions>
+      <!-- MSDS补全专家: 来源: 基于高氯酸钙的运输特性, 2025-01-27 -->
+      <transport_regulations>国际危险货物运输规则（IMDG Code）、国际空运危险物品规则（IATA DGR）、国际铁路运输危险货物规则（RID）、国际公路运输危险货物规则（ADR）</transport_regulations>
+      <limited_quantities>有限数量：根据IMDG Code，第5.1类氧化剂的有限数量运输有特殊规定</limited_quantities>
+      <excepted_quantities>例外数量：根据IMDG Code，第5.1类氧化剂的例外数量运输有特殊规定</excepted_quantities>
+      <emergency_response>运输事故应急响应：按照《EmS指南》执行，避免与还原剂、有机物接触，穿戴适当防护装备</emergency_response>
+      <special_transport_precautions>运输过程中应避免震动、撞击和摩擦。避免与还原剂、有机物、易燃物混合运输。保持容器密封，防止受潮。</special_transport_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第5.1类氧化剂，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
+      <!-- MSDS补全专家: 来源: 基于高氯酸钙的法规要求, 2025-01-27 -->
+      <domestic_laws>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品登记管理办法》、《危险化学品生产企业安全生产许可证实施办法》、《危险化学品经营许可证管理办法》、《危险化学品包装物、容器定点生产管理办法》、《危险化学品建设项目安全许可实施办法》、《危险化学品重大危险源监督管理暂行规定》</domestic_laws>
+      <international_laws>欧盟REACH法规、美国TSCA法案、日本化审法（CSCL）</international_laws>
+      <classification_regulations>《化学品分类和危险性公示通则》（GB 13690-2009）、《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）、《全球化学品统一分类和标签制度》（GHS）</classification_regulations>
+      <transport_regulations>《危险货物道路运输规则》（JT/T 617）、《危险货物水路运输规则》、《危险货物航空运输规则》</transport_regulations>
+      <environmental_regulations>《中华人民共和国环境保护法》、《中华人民共和国水污染防治法》、《中华人民共和国大气污染防治法》、《中华人民共和国固体废物污染环境防治法》、《危险废物经营许可证管理办法》、《国家危险废物名录》</environmental_regulations>
+      <occupational_health_regulations>《中华人民共和国职业病防治法》、《工作场所职业卫生监督管理规定》、《职业病危害因素分类目录》</occupational_health_regulations>
     </regulatory>
   </msds>
 </msds_list>

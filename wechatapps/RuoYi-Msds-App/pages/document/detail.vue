@@ -7,12 +7,12 @@
     <view class="nav-bar" :style="{ paddingTop: statusBarHeight + 'px' }">
       <view class="nav-content">
         <view class="nav-left" @click="onBack">
-          <u-icon name="arrow-left" color="#007AFF" size="20"></u-icon>
+          <uni-icons type="arrow-left" color="#007AFF" size="20"></uni-icons>
           <text class="back-text">返回</text>
         </view>
         <view class="nav-right">
-          <u-icon name="star" :color="isFavorited ? '#ff9900' : '#666'" size="20" style="margin-right: 15px;" @click="toggleFavorite"></u-icon>
-          <u-icon name="share" color="#666" size="20"></u-icon>
+          <uni-icons :type="isFavorited ? 'star-filled' : 'star'" :color="isFavorited ? '#ff9900' : '#666'" size="20" style="margin-right: 15px;" @click="toggleFavorite"></uni-icons>
+          <uni-icons type="redo" color="#666" size="20"></uni-icons>
         </view>
       </view>
     </view>
@@ -32,7 +32,7 @@
           </view>
         </view>
         <view class="danger-indicator">
-          <u-icon name="info-circle-fill" color="#FF3B30" size="24" style="margin-right: 8px;"></u-icon>
+          <uni-icons type="info-filled" color="#FF3B30" size="24" style="margin-right: 8px;"></uni-icons>
           <view>
             <view class="danger-title">高危险性物质</view>
             <view class="danger-desc">处理时需要特殊防护措施</view>
@@ -43,7 +43,7 @@
       <!-- 危险特性 -->
       <view class="document-section">
         <view class="section-title">
-          <u-icon name="warning-fill" color="#007AFF" size="18" style="margin-right: 8px;"></u-icon>
+          <uni-icons type="info-filled" color="#007AFF" size="18" style="margin-right: 8px;"></uni-icons>
           <text>危险特性</text>
         </view>
         <view class="property-row" v-for="(item, index) in dangerProps" :key="index">
@@ -55,7 +55,7 @@
       <!-- 物理化学性质 -->
       <view class="document-section">
         <view class="section-title">
-          <u-icon name="hourglass" color="#007AFF" size="18" style="margin-right: 8px;"></u-icon>
+          <uni-icons type="info" color="#007AFF" size="18" style="margin-right: 8px;"></uni-icons>
           <text>物理化学性质</text>
         </view>
         <view class="property-row" v-for="(item, index) in physicalProps" :key="index">
@@ -67,7 +67,7 @@
       <!-- 安全措施 -->
       <view class="document-section">
         <view class="section-title">
-          <u-icon name="checkmark-circle-fill" color="#007AFF" size="18" style="margin-right: 8px;"></u-icon>
+          <uni-icons type="checkbox-filled" color="#007AFF" size="18" style="margin-right: 8px;"></uni-icons>
           <text>安全措施</text>
         </view>
         <view class="property-row" v-for="(item, index) in safetyProps" :key="index">
@@ -79,7 +79,7 @@
       <!-- 急救措施 -->
       <view class="document-section">
         <view class="section-title">
-          <u-icon name="plus-circle-fill" color="#007AFF" size="18" style="margin-right: 8px;"></u-icon>
+          <uni-icons type="plus-filled" color="#007AFF" size="18" style="margin-right: 8px;"></uni-icons>
           <text>急救措施</text>
         </view>
         <view class="property-row" v-for="(item, index) in firstAidProps" :key="index">
@@ -91,11 +91,11 @@
       <!-- 操作按钮 -->
       <view class="action-buttons">
         <button class="action-button primary-button" @click="downloadPdf">
-          <u-icon name="download" color="#fff" size="18" style="margin-right: 8px;"></u-icon>
+          <uni-icons type="download" color="#fff" size="18" style="margin-right: 8px;"></uni-icons>
           <text>下载PDF</text>
         </button>
         <button class="action-button secondary-button" @click="printDoc">
-          <u-icon name="printer" color="#1d1d1f" size="18" style="margin-right: 8px;"></u-icon>
+          <uni-icons type="image" color="#1d1d1f" size="18" style="margin-right: 8px;"></uni-icons>
           <text>打印</text>
         </button>
       </view>
@@ -195,6 +195,18 @@ export default {
   z-index: 0;
   filter: saturate(1.2) brightness(1.1);
   pointer-events: none;
+  animation: subtle-move 30s infinite alternate ease-in-out;
+}
+
+@keyframes subtle-move {
+  0% {
+    background-position: 0% 0%;
+    transform: scale(1.0);
+  }
+  100% {
+    background-position: 100% 100%;
+    transform: scale(1.1);
+  }
 }
 
 .nav-bar {
@@ -365,9 +377,36 @@ export default {
   font-weight: 600;
   font-size: 14px;
   border: none;
+  position: relative;
+  overflow: hidden;
   
   &::after {
-    border: none;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+  }
+  
+  &:active::after {
+    animation: ripple 0.6s ease-out;
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(40, 40);
+    opacity: 0;
   }
 }
 

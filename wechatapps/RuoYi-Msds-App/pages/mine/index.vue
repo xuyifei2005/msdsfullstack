@@ -10,7 +10,7 @@
     <view class="nav-bar" :style="{ top: statusBarHeight + 'px' }">
       <text class="nav-title">我的</text>
       <view class="nav-action" @click="handleToInfo">
-        <u-icon name="edit-pen" size="24" color="#007AFF"></u-icon>
+        <uni-icons type="compose" size="24" color="#007AFF"></uni-icons>
       </view>
     </view>
 
@@ -20,13 +20,13 @@
       <view class="user-profile" @click="handleToInfo">
         <view class="user-avatar">
           <image v-if="avatar" :src="avatar" class="avatar-img" mode="aspectFill"></image>
-          <u-icon v-else name="account-fill" size="32" color="#ffffff"></u-icon>
+          <uni-icons v-else type="person-filled" size="32" color="#ffffff"></uni-icons>
         </view>
         <view class="user-info">
           <view class="user-name">{{ name || '点击登录' }}</view>
           <view class="user-email">{{ name ? '已登录用户' : '请先登录以同步数据' }}</view>
         </view>
-        <u-icon name="arrow-right" size="16" color="#c7c7cc"></u-icon>
+        <uni-icons type="arrowright" size="16" color="#c7c7cc"></uni-icons>
       </view>
 
       <!-- 功能分组 1 -->
@@ -34,22 +34,22 @@
       <view class="settings-group">
         <view class="settings-item" @click="handleToFavorites">
           <view class="settings-icon" style="background-color: #FF9500;">
-            <u-icon name="star-fill" size="18" color="#ffffff"></u-icon>
+            <uni-icons type="star-filled" size="18" color="#ffffff"></uni-icons>
           </view>
           <view class="settings-info">
             <view class="settings-title">我的收藏</view>
           </view>
-          <u-icon name="arrow-right" size="16" color="#c7c7cc"></u-icon>
+          <uni-icons type="arrowright" size="16" color="#c7c7cc"></uni-icons>
         </view>
 
         <view class="settings-item" @click="handleToPwd">
           <view class="settings-icon" style="background-color: #007AFF;">
-            <u-icon name="lock-fill" size="18" color="#ffffff"></u-icon>
+            <uni-icons type="auth-filled" size="18" color="#ffffff"></uni-icons>
           </view>
           <view class="settings-info">
             <view class="settings-title">修改密码</view>
           </view>
-          <u-icon name="arrow-right" size="16" color="#c7c7cc"></u-icon>
+          <uni-icons type="arrowright" size="16" color="#c7c7cc"></uni-icons>
         </view>
       </view>
 
@@ -58,22 +58,22 @@
       <view class="settings-group">
         <view class="settings-item" @click="handleHelp">
           <view class="settings-icon" style="background-color: #34C759;">
-            <u-icon name="question-circle-fill" size="18" color="#ffffff"></u-icon>
+            <uni-icons type="help-filled" size="18" color="#ffffff"></uni-icons>
           </view>
           <view class="settings-info">
             <view class="settings-title">常见问题</view>
           </view>
-          <u-icon name="arrow-right" size="16" color="#c7c7cc"></u-icon>
+          <uni-icons type="arrowright" size="16" color="#c7c7cc"></uni-icons>
         </view>
 
         <view class="settings-item" @click="handleAbout">
           <view class="settings-icon" style="background-color: #5856D6;">
-            <u-icon name="info-circle-fill" size="18" color="#ffffff"></u-icon>
+            <uni-icons type="info-filled" size="18" color="#ffffff"></uni-icons>
           </view>
           <view class="settings-info">
             <view class="settings-title">关于我们</view>
           </view>
-          <u-icon name="arrow-right" size="16" color="#c7c7cc"></u-icon>
+          <uni-icons type="arrowright" size="16" color="#c7c7cc"></uni-icons>
         </view>
       </view>
 
@@ -82,23 +82,23 @@
       <view class="settings-group" v-if="name">
         <view class="settings-item" @click="handleCleanTmp">
           <view class="settings-icon" style="background-color: #8E8E93;">
-            <u-icon name="trash-fill" size="18" color="#ffffff"></u-icon>
+            <uni-icons type="trash-filled" size="18" color="#ffffff"></uni-icons>
           </view>
           <view class="settings-info">
             <view class="settings-title">清理缓存</view>
             <view class="settings-subtitle">已使用 12.5MB</view>
           </view>
-          <u-icon name="arrow-right" size="16" color="#c7c7cc"></u-icon>
+          <uni-icons type="arrowright" size="16" color="#c7c7cc"></uni-icons>
         </view>
 
         <view class="settings-item danger-item" @click="handleLogout">
           <view class="settings-icon" style="background-color: #FF3B30;">
-            <u-icon name="close-circle-fill" size="18" color="#ffffff"></u-icon>
+            <uni-icons type="clear" size="18" color="#ffffff"></uni-icons>
           </view>
           <view class="settings-info">
             <view class="settings-title" style="color: #FF3B30;">退出登录</view>
           </view>
-          <u-icon name="arrow-right" size="16" color="#c7c7cc"></u-icon>
+          <uni-icons type="arrowright" size="16" color="#c7c7cc"></uni-icons>
         </view>
       </view>
 

@@ -42,10 +42,10 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>易燃，其蒸气与空气可形成爆炸性混合物，遇明火、高热能引起燃烧爆炸。与铬酸、过氧化钠、 硝酸或其它氧化剂接触，有爆炸危险。具有腐蚀性。</hazard_characteristics>
-      <fire_risk_classification>乙</fire_risk_classification>
+      <hazard_characteristics>易燃液体，其蒸气与空气可形成爆炸性混合物，遇明火、高热能引起燃烧爆炸。与铬酸、过氧化钠、硝酸或其它氧化剂接触，有爆炸危险。蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。具有腐蚀性。</hazard_characteristics>
       <harmful_combustion_products>一氧化碳、二氧化碳。</harmful_combustion_products>
-      <suitable_extinguishing_media>用水喷射逸出液体，使其稀释成不燃性混合物，并用雾状水保护消防人员。灭火剂：雾状水、 抗溶性泡沫、干粉、二氧化碳。</suitable_extinguishing_media>
+      <extinguishing_method>抗溶性泡沫、干粉、二氧化碳、砂土。用水灭火无效，但可用水喷射逸出液体，使其稀释成不燃性混合物，并用雾状水保护消防人员。</extinguishing_method>
+      <firefighting_precautions>消防人员必须佩戴空气呼吸器，穿全身消防防毒服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。处在火场中的容器若已变色或从安全泄压装置中产生声音，必须马上撤离。</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>

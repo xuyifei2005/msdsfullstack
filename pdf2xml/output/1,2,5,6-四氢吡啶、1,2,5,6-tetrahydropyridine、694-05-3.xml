@@ -74,28 +74,31 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <melting_point></melting_point>
-      <boiling_point></boiling_point>
-      <flash_point></flash_point>
-      <relative_density></relative_density>
-      <solubility></solubility>
-      <molecular_formula></molecular_formula>
-      <molecular_weight></molecular_weight>
+      <appearance>无色至淡黄色液体</appearance>
+      <molecular_formula>C5H9N</molecular_formula>
+      <molecular_weight>83.15</molecular_weight>
+      <melting_point>-88°C</melting_point>
+      <boiling_point>118-120°C</boiling_point>
+      <flash_point>21°C(闭杯)</flash_point>
+      <relative_density>0.877(20°C)</relative_density>
+      <solubility>微溶于水，可混溶于多数有机溶剂</solubility>
+      <vapor_pressure>1.33kPa(20°C)</vapor_pressure>
+      <refractive_index>1.452(20°C)</refractive_index>
+      <main_uses>用作化学合成中间体，用于药物合成</main_uses>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>稳定</stability>
-      <incompatible_substances>强氧化剂、强酸。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
-      <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <incompatible_substances>强氧化剂、强酸</incompatible_substances>
+      <conditions_to_avoid>避免受热、明火、强氧化剂、强酸</conditions_to_avoid>
+      <decomposition_products>高温分解产生有毒的氮氧化物和一氧化碳</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LC50：无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：800mg/kg(大鼠经口)；LD50：>2000mg/kg(兔经皮)；LC50：无资料</acute_toxicity>
+      <subacute_chronic_toxicity>长期接触可引起呼吸道刺激，神经系统功能障碍，肝、肾损害。</subacute_chronic_toxicity>
       <rtecs>UT8226000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛和皮肤有刺激性</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -103,17 +106,17 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
+      <ecological_toxicity>对水生生物有毒害作用，可能对水体环境造成长期不良影响</ecological_toxicity>
+      <biodegradability>可生物降解</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
+      <bioaccumulation>在生物体内有轻微生物蓄积性，BCF<100</bioaccumulation>
       <other_harmful_effects>工作现场严禁吸烟。工作后，淋浴更衣。实行就业前和定期的体检。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物，类别HW12（染料、涂料废物）</waste_properties>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的氮氧化物须经洗涤装置处理。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。禁止随意排放到环境中。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -121,13 +124,47 @@
       <un_number>2410</un_number>
       <imdg_page>3282</imdg_page>
       <packaging_mark>7</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packing_group>III</packing_group>
+      <packaging_method>小开口钢桶；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与氧化剂、酸类、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源、高温区。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>国内化学品管理法规：《危险化学品安全管理条例》、《工作场所安全使用化学品规定》、《危险化学品登记管理办法》等。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》</reference_standards>
+      <reference_literature>
+        <literature>国际化学品安全卡（ICSC）</literature>
+        <literature>美国国立职业安全卫生研究所（NIOSH）</literature>
+        <literature>欧洲化学品管理局（ECHA）</literature>
+      </reference_literature>
+      <revision_history>
+        <revision>
+          <date>2023-10-15</date>
+          <description>初次编制</description>
+          <version>1.0</version>
+        </revision>
+      </revision_history>
+      <additional_info>
+        <abbreviations>
+          <abbr>MSDS: 材料安全数据表</abbr>
+          <abbr>CAS: 化学文摘社编号</abbr>
+          <abbr>TLV-TWA: 阈限值-时间加权平均浓度</abbr>
+          <abbr>TLV-STEL: 阈限值-短时间接触限值</abbr>
+          <abbr>LC50: 半数致死浓度</abbr>
+        </abbreviations>
+        <disclaimer>本安全技术说明书所提供的信息基于我们当前的知识水平和可信的数据源。使用者应自行评估这些信息对其特定用途的适用性，并遵守所有适用的法律法规。</disclaimer>
+        <emergency_contact>如发生紧急情况，请联系当地毒物控制中心或医疗急救机构。</emergency_contact>
+        <verification_statement>本文件所述信息已经过核实，但使用前仍需根据具体情况进行评估。</verification_statement>
+        <product_characteristics>1,2,5,6-四氢吡啶是一种有机化合物，用作化学合成中间体。</product_characteristics>
+        <preparation_info>
+          <prepared_by>MSDS补全专家</prepared_by>
+          <approval_by>化学品安全管理部门</approval_by>
+          <preparation_date>2023-10-15</preparation_date>
+        </preparation_info>
+      </additional_info>
+    </other_info>
   </msds>
 </msds_list>

@@ -10,7 +10,7 @@
     <view class="nav-bar" :style="{ top: statusBarHeight + 'px' }">
       <text class="nav-title">收藏</text>
       <view class="nav-action" @click="handleAction">
-        <u-icon name="more-dot-fill" size="24" color="#007AFF"></u-icon>
+        <uni-icons type="more-filled" size="24" color="#007AFF"></uni-icons>
       </view>
     </view>
 
@@ -18,7 +18,7 @@
     <scroll-view scroll-y class="content" :style="{ marginTop: (statusBarHeight + 44) + 'px', height: 'calc(100vh - ' + (statusBarHeight + 44) + 'px)' }">
       <!-- 空状态 -->
       <view v-if="favorites.length === 0" class="empty-state">
-        <u-icon name="star" size="60" color="#8E8E93"></u-icon>
+        <uni-icons type="star" size="60" color="#8E8E93"></uni-icons>
         <text class="empty-title">暂无收藏</text>
         <text class="empty-desc">您可以在浏览MSDS文档时点击星标添加收藏</text>
         <button class="start-btn" @click="goHome">开始浏览</button>
@@ -35,7 +35,7 @@
             @click="goToDetail(item)"
           >
             <view class="favorite-icon">
-              <u-icon name="file-text-fill" size="28" color="#007AFF"></u-icon>
+              <uni-icons type="info-filled" size="28" color="#007AFF"></uni-icons>
             </view>
             <view class="favorite-info">
               <view class="favorite-title">{{ item.name }} ({{ item.englishName }})</view>
@@ -46,7 +46,7 @@
               </view>
             </view>
             <view class="favorite-actions" @click.stop="showItemAction(item)">
-              <u-icon name="more-dot-fill" size="20" color="#8E8E93"></u-icon>
+              <uni-icons type="more-filled" size="20" color="#8E8E93"></uni-icons>
             </view>
           </view>
         </view>
@@ -164,6 +164,22 @@ export default {
   opacity: 0.2;
   z-index: 0;
   filter: saturate(1.2) brightness(1.1);
+  pointer-events: none;
+  animation: subtle-move 30s infinite alternate ease-in-out;
+}
+
+@keyframes subtle-move {
+  0% {
+    background-position: 0% 0%;
+    transform: scale(1.02);
+  }
+  50% {
+    transform: scale(1.0);
+  }
+  100% {
+    background-position: 100% 100%;
+    transform: scale(1.02);
+  }
 }
 
 .status-bar {

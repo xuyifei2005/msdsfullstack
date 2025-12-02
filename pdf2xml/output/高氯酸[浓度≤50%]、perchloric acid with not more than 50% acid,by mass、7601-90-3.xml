@@ -6,7 +6,7 @@
       <cas_number>7601-90-3</cas_number>
       <msds_code>无资料</msds_code>
       <product_name>高氯酸[浓度≤50%]</product_name>
-      <product_alias>无资料</product_alias>
+      <product_alias>过氯酸</product_alias>
       <product_english_name>perchloric acid with not more than 50% acid</product_english_name>
       <company_name>无资料</company_name>
       <company_address>无资料</company_address>
@@ -68,7 +68,7 @@
       <contact_limits>无资料</contact_limits>
       <monitoring_method>无资料</monitoring_method>
       <engineering_controls>使用防爆型的通风系统和设备。确保工作场所通风良好。</engineering_controls>
-      <respiratory_protection>如果蒸气浓度超过职业接触限值或发生刺激等症状时，请使用全面罩式多功能防毒面具</respiratory_protection>
+      <respiratory_protection>如果蒸气浓度超过职业接触限值或发生刺激等症状时，请使用全面罩式多功能防毒面具。</respiratory_protection>
       <eye_protection>佩戴化学护目镜（符合欧盟EN166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
       <hand_protection>戴橡胶耐酸碱手套。</hand_protection>
@@ -76,7 +76,7 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>强酸性（约0.3，取决于浓度）</pH>
       <melting_point>-112</melting_point>
       <boiling_point>19（分解）</boiling_point>
       <flash_point>无资料</flash_point>
@@ -86,7 +86,7 @@
       <molecular_formula>HClO4</molecular_formula>
       <molecular_weight>100.46</molecular_weight>
       <main_components>高氯酸含量≤50%</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
+      <saturated_vapor_pressure>2.00kPa（14℃）</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
@@ -116,11 +116,11 @@
         <inhalation_toxicity>无资料</inhalation_toxicity>
       </acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>无资料</rtecs>
+      <rtecs>SC7500000</rtecs>
       <irritation>
         <skin_irritation>造成严重皮肤灼伤</skin_irritation>
         <eye_irritation>造成严重眼损伤</eye_irritation>
-        <respiratory_irritation>无资料</respiratory_irritation>
+        <respiratory_irritation>对呼吸道有强烈刺激性</respiratory_irritation>
       </irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
@@ -133,7 +133,7 @@
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>避免污染水体和土壤。</other_harmful_effects>
+      <other_harmful_effects>对水生环境有危害，可能对水体环境造成长期不良影响。避免污染水体和土壤。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>

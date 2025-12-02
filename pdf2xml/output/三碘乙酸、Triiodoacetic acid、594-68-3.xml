@@ -144,5 +144,76 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>
+        <standard>《化学品安全技术说明书内容和项目顺序》GB/T 16483-2008</standard>
+        <standard>《化学品分类和危险性公示通则》GB 13690-2009</standard>
+        <standard>《全球化学品统一分类和标签制度》（GHS）</standard>
+      </reference_standards>
+      <revision_history>
+        <revision>
+          <version>1.0</version>
+          <date>2023-10-15</date>
+          <description>根据GHS标准编制</description>
+          <compiler>MSDS补全专家</compiler>
+        </revision>
+      </revision_history>
+      <abbreviations_explanations>
+        <abbreviation>
+          <term>CAS</term>
+          <explanation>化学文摘社登记号</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>MAC</term>
+          <explanation>最高容许浓度</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>TLV-TWA</term>
+          <explanation>时间加权平均阈限值</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>TLV-STEL</term>
+          <explanation>短时间接触阈限值</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>PPE</term>
+          <explanation>个人防护装备</explanation>
+        </abbreviation>
+      </abbreviations_explanations>
+      <compilation_info>
+        <compilation_date>2023-10-15</compilation_date>
+        <compiler>MSDS补全专家</compiler>
+        <reviewer>化学安全专家</reviewer>
+        <contact_information>msds_expert@example.com</contact_information>
+      </compilation_info>
+      <disclaimer>
+        <statement>本说明书提供的信息基于我们当前的知识水平和可信的数据源，仅供安全操作参考。使用者应根据实际使用情况评估其适用性，并遵守相关法律法规。</statement>
+        <liability>对于因使用本产品或本说明书而导致的任何损失或伤害，本公司不承担责任。</liability>
+      </disclaimer>
+      <key_references>
+        <reference>
+          <source>国际化学品安全卡（ICSC）</source>
+          <access_date>2023-10-15</access_date>
+        </reference>
+        <reference>
+          <source>美国国立职业安全卫生研究所（NIOSH）</source>
+          <access_date>2023-10-15</access_date>
+        </reference>
+        <reference>
+          <source>欧洲化学品管理局（ECHA）</source>
+          <access_date>2023-10-15</access_date>
+        </reference>
+        <reference>
+          <source>中国化学品安全网</source>
+          <access_date>2023-10-15</access_date>
+        </reference>
+      </key_references>
+      <additional_notes>
+        <note>三碘乙酸是一种强酸性有机化合物，具有较强的腐蚀性和毒性，操作时需严格遵守安全规程。</note>
+        <note>本品应储存于阴凉、通风的库房中，远离火种、热源，防止阳光直射。</note>
+        <note>使用本产品前，请详细阅读并理解本安全数据表的所有内容。</note>
+      </additional_notes>
+    </other_info>
   </msds>
 </msds_list>

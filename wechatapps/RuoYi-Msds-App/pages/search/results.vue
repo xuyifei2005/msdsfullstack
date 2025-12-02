@@ -7,11 +7,11 @@
     <view class="nav-bar" :style="{ paddingTop: statusBarHeight + 'px' }">
       <view class="nav-content">
         <view class="back-btn" @click="onBack">
-          <u-icon name="arrow-left" color="#007AFF" size="20"></u-icon>
+          <uni-icons type="arrow-left" color="#007AFF" size="20"></uni-icons>
           <text class="back-text">返回</text>
         </view>
         <view class="search-box">
-          <u-icon name="search" color="#909399" size="16"></u-icon>
+          <uni-icons type="search" color="#909399" size="16"></uni-icons>
           <input 
             v-model="keyword" 
             type="text" 
@@ -20,7 +20,7 @@
             confirm-type="search"
             @confirm="onSearch"
           />
-          <u-icon v-if="keyword" name="close-circle-fill" color="#909399" size="16" @click="clearKeyword"></u-icon>
+          <uni-icons v-if="keyword" type="clear" color="#909399" size="16" @click="clearKeyword"></uni-icons>
         </view>
       </view>
     </view>

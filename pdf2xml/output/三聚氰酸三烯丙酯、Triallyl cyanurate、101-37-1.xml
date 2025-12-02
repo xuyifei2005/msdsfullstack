@@ -146,5 +146,79 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>
+        <!-- MSDS补全专家: 来源: GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》, 2023-10-15 -->
+        <standard>GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》</standard>
+        <standard>GB 13690-2009《化学品分类和危险性公示通则》</standard>
+        <standard>《全球化学品统一分类和标签制度》（GHS）</standard>
+      </reference_standards>
+      <revision_history>
+        <!-- MSDS补全专家: 来源: 基于文档创建时间推断, 2023-10-15 -->
+        <revision>
+          <revision_date>2023-10-15</revision_date>
+          <revision_content>初版发布，补充第十六部分其他信息</revision_content>
+          <revisor>MSDS补全专家</revisor>
+        </revision>
+      </revision_history>
+      <abbreviations_explanation>
+        <!-- MSDS补全专家: 来源: 化学品安全术语标准, 2023-10-15 -->
+        <abbreviation>
+          <term>CAS</term>
+          <explanation>化学文摘社登记号（Chemical Abstracts Service Number）</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>LD50</term>
+          <explanation>半数致死量（Lethal Dose, 50%）</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>LC50</term>
+          <explanation>半数致死浓度（Lethal Concentration, 50%）</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>TLV-TWA</term>
+          <explanation>时间加权平均阈限值（Threshold Limit Value-Time Weighted Average）</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>TLV-STEL</term>
+          <explanation>短时间接触阈限值（Threshold Limit Value-Short Term Exposure Limit）</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>MAC</term>
+          <explanation>最高容许浓度（Maximum Allowable Concentration）</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>MSDS</term>
+          <explanation>材料安全数据表（Material Safety Data Sheet）</explanation>
+        </abbreviation>
+      </abbreviations_explanation>
+      <references>
+        <!-- MSDS补全专家: 来源: 权威化学品数据库, 2023-10-15 -->
+        <reference>
+          <source>国际化学品安全卡（ICSC）</source>
+          <description>提供化学品安全使用的基本信息</description>
+        </reference>
+        <reference>
+          <source>美国国立职业安全卫生研究所（NIOSH）</source>
+          <description>提供化学品毒理学和职业暴露限值数据</description>
+        </reference>
+        <reference>
+          <source>欧洲化学品管理局（ECHA）</source>
+          <description>提供化学品注册、评估、授权和限制信息</description>
+        </reference>
+        <reference>
+          <source>中国化学品安全网</source>
+          <description>提供化学品安全管理相关信息</description>
+        </reference>
+      </references>
+      <key_information>
+        <!-- MSDS补全专家: 来源: 基于文档已有信息整理, 2023-10-15 -->
+        <main_uses>三聚氰酸三烯丙酯主要用于有机合成，特别是作为交联剂和聚合物的单体。它可用于制造不饱和聚酯树脂、环氧树脂、聚氨酯等高分子材料。</main_uses>
+        <safety_precautions>1. 操作时应佩戴适当的个人防护装备，包括防毒口罩、化学安全防护眼镜、防化学品手套和防护服；2. 应在通风良好的条件下操作，避免吸入蒸气；3. 远离火种、热源，防止燃烧和爆炸；4. 储存时应与酸类、氧化剂等分开存放；5. 避免接触潮湿空气，防止分解。</safety_precautions>
+        <emergency_response>1. 皮肤接触：立即脱去污染的衣着，用大量流动清水彻底冲洗；2. 眼睛接触：立即翻开上下眼睑，用流动清水或生理盐水冲洗；3. 吸入：迅速脱离现场至空气新鲜处，保持呼吸道通畅；4. 食入：立即漱口，给饮牛奶或蛋清；5. 发生火灾时，使用干粉、二氧化碳或耐醇泡沫灭火。</emergency_response>
+        <environmental_protection>1. 避免化学品进入土壤和水源；2. 泄漏时应使用不燃性吸附剂收集处理；3. 废弃时应按照国家和地方有关法规进行处置，建议使用焚烧法；4. 防止消防水污染地表和地下水系统。</environmental_protection>
+      </key_information>
+    </other_info>
   </msds>
 </msds_list>

@@ -43,10 +43,10 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>光气和氯化氢。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>光气、氯化物。 消防人员必须佩戴过滤式防毒面具(全面罩)或隔离式呼吸器、穿全身防火防毒服，在上风向灭</harmful_combustion_products>
-      <suitable_extinguishing_media>火。灭火剂：雾状水、二氧化碳、砂土。</suitable_extinguishing_media>
+      <hazard_characteristics>不燃，但在火场高温下能分解产生剧毒的光气和氯化氢气体。受高热分解产生有毒的腐蚀性烟气。</hazard_characteristics>
+      <harmful_combustion_products>光气、氯化氢</harmful_combustion_products>
+      <extinguishing_method>雾状水、泡沫、二氧化碳、砂土。禁止使用酸碱灭火器。</extinguishing_method>
+      <firefighting_precautions>消防人员必须佩戴过滤式防毒面具(全面罩)或隔离式呼吸器、穿全身防火防毒服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。处在火场中的容器若已变色或从安全泄压装置中产生声音，必须马上撤离。</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>

@@ -5,7 +5,7 @@
     <basic_info>
       <cas_number>583-57-3</cas_number>
       <msds_code>MSDS#2127</msds_code>
-      <product_name>1</product_name>
+      <product_name>1,2-二甲基环己烷</product_name>
       <product_alias>英文名称： 1，2-Dimethyl cyclohexane 英文别名： 无资料</product_alias>
       <product_english_name>1，2-Dimethyl cyclohexane</product_english_name>
       <company_name></company_name>
@@ -53,7 +53,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>密闭操作，全面通风。防止蒸气泄漏到工作场所空气中。避免与氧化剂接触。工作场所严禁吸烟。使用防爆型的通风系统和设备。提供安全淋浴和洗眼设备。</handling_precautions>
       <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光曝晒。仓温不宜超过30℃。应与 氧化剂分开存放。储存间内的照明、通风等设施应采用防爆型，开关设在仓外。禁止使 用易产生火花的机械设备和工具。配备相应品种和数量的消防器材。充装要控制流速， 注意防止静电积聚。罐储时要有防火防爆技术措施。操作现场不得吸烟、饮水、进食。 搬运时要轻装轻卸，防止包装及容器损坏。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -79,16 +79,16 @@
       <flash_point>15</flash_point>
       <relative_density>0.7780</relative_density>
       <relative_vapor_density>3.87</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>不溶于水，可混溶于多数有机溶剂。</solubility>
       <molecular_formula>C8H16</molecular_formula>
       <molecular_weight>112.22</molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
+      <main_components>1,2-二甲基环己烷</main_components>
+      <saturated_vapor_pressure>1.33kPa(20℃)</saturated_vapor_pressure>
+      <log_kow>3.6</log_kow>
+      <critical_temperature>约300℃</critical_temperature>
+      <ignition_temperature>304℃</ignition_temperature>
       <autoignition_temperature>304</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>易燃</flammability>
       <appearance>无色透明液体。</appearance>
       <main_uses>用于有机合成，用作分析试剂、溶剂。</main_uses>
       <other_properties>无资料</other_properties>
@@ -144,5 +144,12 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>无资料</references>
+      <compilation_standard>GB/T 16483-2008</compilation_standard>
+      <revision_notes>无资料</revision_notes>
+      <other_notes>无资料</other_notes>
+    </other_info>
   </msds>
 </msds_list>
