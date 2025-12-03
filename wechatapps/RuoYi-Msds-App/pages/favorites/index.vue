@@ -60,65 +60,30 @@ export default {
   data() {
     return {
       statusBarHeight: 20,
-      favorites: [
-        {
-          title: '常用收藏',
-          items: [
-            {
-              id: 1,
-              name: '甲醇',
-              englishName: 'Methanol',
-              cas: '67-56-1',
-              tags: ['易燃液体', '毒性物质'],
-              updateTime: '2023-05-15'
-            },
-            {
-              id: 2,
-              name: '硫酸',
-              englishName: 'Sulfuric acid',
-              cas: '7664-93-9',
-              tags: ['腐蚀性', '氧化剂'],
-              updateTime: '2023-04-20'
-            }
-          ]
-        },
-        {
-          title: '最近添加',
-          items: [
-            {
-              id: 3,
-              name: '氢氧化钠',
-              englishName: 'Sodium hydroxide',
-              cas: '1310-73-2',
-              tags: ['腐蚀性'],
-              updateTime: '2023-06-02'
-            },
-            {
-              id: 4,
-              name: '乙醇',
-              englishName: 'Ethanol',
-              cas: '64-17-5',
-              tags: ['易燃液体'],
-              updateTime: '2023-05-28'
-            },
-            {
-              id: 5,
-              name: '丙酮',
-              englishName: 'Acetone',
-              cas: '67-64-1',
-              tags: ['易燃液体'],
-              updateTime: '2023-05-25'
-            }
-          ]
-        }
-      ]
+      favorites: []
     };
   },
   onLoad() {
     const systemInfo = uni.getSystemInfoSync();
     this.statusBarHeight = systemInfo.statusBarHeight;
   },
+  onShow() {
+    this.loadFavorites();
+  },
   methods: {
+    loadFavorites() {
+      const list = uni.getStorageSync('MSDS_FAVORITES') || [];
+      if (list.length > 0) {
+        this.favorites = [
+          {
+            title: '我的收藏',
+            items: list
+          }
+        ];
+      } else {
+        this.favorites = [];
+      }
+    },
     handleAction() {
       uni.showToast({ title: '操作菜单', icon: 'none' });
     },
@@ -127,7 +92,7 @@ export default {
     },
     goToDetail(item) {
       uni.navigateTo({
-        url: `/pages/document/detail?id=${item.id}&name=${item.name}`
+        url: `/pages/document/detail?id=${item.id}`
       });
     },
     showItemAction(item) {
@@ -135,10 +100,19 @@ export default {
         itemList: ['取消收藏', '分享'],
         success: (res) => {
           if (res.tapIndex === 0) {
-            uni.showToast({ title: '已取消收藏', icon: 'none' });
+            this.removeFavorite(item);
+          } else if (res.tapIndex === 1) {
+             uni.showToast({ title: '分享功能开发中', icon: 'none' });
           }
         }
       });
+    },
+    removeFavorite(item) {
+      let list = uni.getStorageSync('MSDS_FAVORITES') || [];
+      list = list.filter(i => i.id !== item.id);
+      uni.setStorageSync('MSDS_FAVORITES', list);
+      this.loadFavorites();
+      uni.showToast({ title: '已取消收藏', icon: 'none' });
     }
   }
 };

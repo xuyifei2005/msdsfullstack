@@ -63,48 +63,14 @@
 </template>
 
 <script>
+import { listMsds } from "@/api/msds/msds";
+
 export default {
   data() {
     return {
       statusBarHeight: 20, // 默认值，会在onLoad中更新
       keyword: '',
-      resultList: [
-        {
-          id: 1,
-          name: '甲醇 (Methanol)',
-          cas: '67-56-1',
-          tags: ['易燃液体', '毒性物质'],
-          dangerLevel: 'high'
-        },
-        {
-          id: 2,
-          name: '甲醇溶液 (Methanol Solution)',
-          cas: '67-56-1 (混合物)',
-          tags: ['易燃液体'],
-          dangerLevel: 'medium'
-        },
-        {
-          id: 3,
-          name: '甲醇钠 (Sodium Methoxide)',
-          cas: '124-41-4',
-          tags: ['易燃固体', '腐蚀性'],
-          dangerLevel: 'high'
-        },
-        {
-          id: 4,
-          name: '甲醇钾 (Potassium Methoxide)',
-          cas: '865-33-8',
-          tags: ['易燃固体', '腐蚀性'],
-          dangerLevel: 'high'
-        },
-        {
-          id: 5,
-          name: '甲醇锂 (Lithium Methoxide)',
-          cas: '865-34-9',
-          tags: ['易燃固体'],
-          dangerLevel: 'medium'
-        }
-      ]
+      resultList: []
     };
   },
   onLoad(options) {
@@ -114,6 +80,7 @@ export default {
 
     if (options.keyword) {
       this.keyword = decodeURIComponent(options.keyword);
+      this.doSearch();
     }
   },
   methods: {
@@ -121,20 +88,34 @@ export default {
       uni.navigateBack();
     },
     onSearch() {
-      // 这里应该调用API重新搜索
-      console.log('Searching for:', this.keyword);
-      uni.showToast({
-        title: '搜索中...',
-        icon: 'loading'
+      this.doSearch();
+    },
+    doSearch() {
+      if (!this.keyword) return;
+      
+      uni.showLoading({ title: '搜索中...' });
+      // 尝试使用 productName 进行搜索
+      listMsds({ productName: this.keyword }).then(response => {
+        uni.hideLoading();
+        this.resultList = response.rows.map(item => ({
+          id: item.id,
+          name: `${item.productName} ${item.productEnglishName ? '(' + item.productEnglishName + ')' : ''}`,
+          cas: item.casNumber,
+          tags: item.dangerousGoodsNumber ? ['危险货物'] : [],
+          dangerLevel: item.dangerousGoodsNumber ? 'high' : 'low' // 简单逻辑
+        }));
+      }).catch(() => {
+        uni.hideLoading();
       });
     },
     clearKeyword() {
       this.keyword = '';
+      this.resultList = [];
     },
     onItemClick(item) {
       // 跳转到详情页
       uni.navigateTo({
-        url: `/pages/detail/index?id=${item.id}&name=${encodeURIComponent(item.name)}&cas=${item.cas}`
+        url: `/pages/document/detail?id=${item.id}`
       });
     },
     getDangerText(level) {

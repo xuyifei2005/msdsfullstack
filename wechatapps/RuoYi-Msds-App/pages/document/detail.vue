@@ -107,56 +107,103 @@
 </template>
 
 <script>
+import { getMsds } from '@/api/msds/msds'
+
 export default {
   data() {
     return {
       statusBarHeight: 20,
       isFavorited: false,
       document: {
-        title: '甲醇 (Methanol)',
-        cas: '67-56-1',
-        tags: ['易燃液体', '毒性物质', '类别2']
+        title: '',
+        cas: '',
+        tags: []
       },
-      dangerProps: [
-        { label: '燃点', value: '11°C' },
-        { label: '爆炸极限', value: '5.5% ~ 44%' },
-        { label: '毒性等级', value: '中毒' }
-      ],
-      physicalProps: [
-        { label: '分子式', value: 'CH₃OH' },
-        { label: '分子量', value: '32.04 g/mol' },
-        { label: '沸点', value: '64.7°C' },
-        { label: '熔点', value: '-97.6°C' },
-        { label: '密度', value: '0.792 g/cm³' },
-        { label: '外观', value: '无色透明液体' }
-      ],
-      safetyProps: [
-        { label: '个人防护', value: '防护服、防毒面具、护目镜、橡胶手套' },
-        { label: '储存条件', value: '阴凉、通风、干燥处，远离火源、热源' },
-        { label: '灭火方法', value: '抗溶性泡沫、干粉、二氧化碳、砂土' }
-      ],
-      firstAidProps: [
-        { label: '皮肤接触', value: '脱去污染的衣着，用肥皂水和清水彻底冲洗皮肤' },
-        { label: '眼睛接触', value: '提起眼睑，用流动清水或生理盐水冲洗，就医' },
-        { label: '吸入', value: '迅速脱离现场至空气新鲜处，保持呼吸道通畅，如呼吸困难，给输氧，就医' },
-        { label: '食入', value: '饮足量温水，催吐，就医' }
-      ]
+      dangerProps: [],
+      physicalProps: [],
+      safetyProps: [],
+      firstAidProps: []
     }
   },
-  onLoad() {
+  onLoad(options) {
     const systemInfo = uni.getSystemInfoSync();
     this.statusBarHeight = systemInfo.statusBarHeight;
+    
+    if (options.id) {
+      this.getDetail(options.id);
+    } else if (options.code) {
+       // Handle scan code logic if needed, assume code is ID for now or implement lookup
+       // For now, let's assume code is ID or implement a search by code later
+       this.getDetail(options.code);
+    }
   },
   methods: {
+    getDetail(id) {
+      getMsds(id).then(response => {
+        const data = response.data;
+        if (data) {
+          this.document = {
+            id: data.id,
+            title: `${data.productName} (${data.productEnglishName || ''})`,
+            cas: data.casNumber,
+            tags: data.dangerousGoodsNumber ? ['危险货物'] : [] // Simple tag logic
+          };
+          
+          this.checkFavoriteStatus();
+
+          this.physicalProps = [
+            { label: '分子式', value: data.molecularFormula || '-' },
+            { label: '分子量', value: data.molecularWeight || '-' },
+            { label: '外观', value: '-' } // Not in MsdsMain
+          ];
+          
+          // Since other props are in other tables not yet fetched, keep them empty or basic
+          this.dangerProps = [
+             { label: 'UN编号', value: data.unNumber || '-' },
+             { label: '危险货物编号', value: data.dangerousGoodsNumber || '-' }
+          ];
+          
+          this.safetyProps = [
+             { label: '推荐用途', value: data.recommendedUsage || '-' },
+             { label: '限制用途', value: data.restrictedUsage || '-' }
+          ];
+          
+           this.firstAidProps = [
+             { label: '急救电话', value: data.emergencyPhone || '-' }
+           ];
+        }
+      });
+    },
+    checkFavoriteStatus() {
+      const favorites = uni.getStorageSync('MSDS_FAVORITES') || [];
+      if (this.document.id) {
+        this.isFavorited = favorites.some(item => item.id === this.document.id);
+      }
+    },
     onBack() {
       uni.navigateBack();
     },
     toggleFavorite() {
-      this.isFavorited = !this.isFavorited;
-      uni.showToast({
-        title: this.isFavorited ? '已添加到收藏' : '已从收藏中移除',
-        icon: 'none'
-      });
+      let favorites = uni.getStorageSync('MSDS_FAVORITES') || [];
+      if (this.isFavorited) {
+        // Remove
+        favorites = favorites.filter(item => item.id !== this.document.id);
+        this.isFavorited = false;
+        uni.showToast({ title: '已取消收藏', icon: 'none' });
+      } else {
+        // Add
+        favorites.unshift({
+          id: this.document.id,
+          name: this.document.title.split(' (')[0], 
+          englishName: this.document.title.split('(')[1]?.replace(')', '') || '',
+          cas: this.document.cas,
+          tags: this.document.tags,
+          updateTime: new Date().toISOString().split('T')[0]
+        });
+        this.isFavorited = true;
+        uni.showToast({ title: '已添加到收藏', icon: 'success' });
+      }
+      uni.setStorageSync('MSDS_FAVORITES', favorites);
     },
     downloadPdf() {
       uni.showToast({

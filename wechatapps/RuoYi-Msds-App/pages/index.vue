@@ -36,7 +36,7 @@
           </view>
           <view class="action-text">
             <text class="card-title">扫码查阅</text>
-            <text class="card-desc">扫描二维码</text>
+            <text class="card-desc">扫描化学品二维码</text>
           </view>
         </view>
         <view class="glass-card action-card" @click="handleSearch">
@@ -45,15 +45,35 @@
           </view>
           <view class="action-text">
             <text class="card-title">关键词搜索</text>
-            <text class="card-desc">查询化学品</text>
+            <text class="card-desc">查询MSDS/安全信息</text>
           </view>
         </view>
       </view>
 
-      <!-- 更多快捷功能 -->
+      <!-- 学习中心 (新增) -->
       <view class="glass-card features-card">
+        <view class="card-header">
+          <text class="card-header-title">学习中心</text>
+        </view>
         <u-grid :col="4" :border="false" hover-class="none">
-          <u-grid-item v-for="(feature, index) in features" :key="index" @click="handleFeatureClick(feature)" :custom-style="{padding: '15px 0'}">
+          <u-grid-item v-for="(item, index) in eduFeatures" :key="index" @click="handleGridClick(item)" :custom-style="{padding: '15px 0'}">
+            <view class="feature-item">
+              <view class="feature-icon-wrapper" :style="{ backgroundColor: item.bgColor }">
+                <uni-icons :type="item.icon" :color="item.color" size="24"></uni-icons>
+              </view>
+              <text class="feature-name">{{ item.name }}</text>
+            </view>
+          </u-grid-item>
+        </u-grid>
+      </view>
+
+      <!-- 更多服务 -->
+      <view class="glass-card features-card">
+        <view class="card-header">
+          <text class="card-header-title">更多服务</text>
+        </view>
+        <u-grid :col="4" :border="false" hover-class="none">
+          <u-grid-item v-for="(feature, index) in features" :key="index" @click="handleGridClick(feature)" :custom-style="{padding: '15px 0'}">
             <view class="feature-item">
               <view class="feature-icon-wrapper" :style="{ backgroundColor: feature.bgColor }">
                 <uni-icons :type="feature.icon" :color="feature.color" size="24"></uni-icons>
@@ -74,18 +94,21 @@
           </view>
         </view>
         
-        <view class="recent-list">
-          <view class="glass-card recent-item" v-for="(item, index) in recentList" :key="index">
+        <view class="recent-list" v-if="recentList.length > 0">
+          <view class="glass-card recent-item" v-for="(item, index) in recentList" :key="index" @click="handleRecentClick(item)">
             <view class="chem-icon-placeholder">
               <text class="chem-char">{{ item.name.charAt(0) }}</text>
             </view>
             <view class="item-info">
               <text class="item-title">{{ item.name }}</text>
-              <text class="item-cas">CAS: {{ item.cas }}</text>
+              <text class="item-cas" v-if="item.cas">CAS: {{ item.cas }}</text>
               <text class="item-time">{{ item.time }}</text>
             </view>
             <uni-icons type="arrowright" color="#c7c7cc" size="16"></uni-icons>
           </view>
+        </view>
+        <view class="empty-state" v-else>
+          <text>暂无查看记录</text>
         </view>
       </view>
 
@@ -94,28 +117,50 @@
 </template>
 
 <script>
+import { getToken } from '@/utils/auth'
+import { listNotice } from '@/api/system/notice'
+import { listMsds } from '@/api/msds/msds'
+
 export default {
   data() {
     return {
       statusBarHeight: 20,
-      recentList: [
+      bannerList: [],
+      // 默认Banner图，当公告没有图片时使用
+      defaultBannerImages: [
+        '/static/images/banner/banner01.jpg',
+        '/static/images/banner/banner02.jpg',
+        '/static/images/banner/banner03.jpg'
+      ],
+      recentList: [], 
+      eduFeatures: [
         {
-          name: '乙醇 (Ethanol)',
-          cas: '64-17-5',
-          time: '2小时前查看',
-          image: '/static/images/sample/ethanol.png'
+          name: '我的课程',
+          icon: 'book-filled', // 假设有此图标，否则使用 standard
+          color: '#007AFF',
+          bgColor: 'rgba(0, 122, 255, 0.1)',
+          path: '/pages/education/course/my'
         },
         {
-          name: '丙酮 (Acetone)',
-          cas: '67-64-1',
-          time: '1天前查看',
-          image: '/static/images/sample/acetone.png'
+          name: '在线考试',
+          icon: 'paperplane-filled',
+          color: '#5856D6',
+          bgColor: 'rgba(88, 86, 214, 0.1)',
+          path: '/pages/education/exam/list'
         },
         {
-          name: '甲醛 (Formaldehyde)',
-          cas: '50-00-0',
-          time: '3天前查看',
-          image: '/static/images/sample/formaldehyde.png'
+          name: '我的证书',
+          icon: 'vip-filled',
+          color: '#FF9500',
+          bgColor: 'rgba(255, 149, 0, 0.1)',
+          path: '/pages/education/certificate/my'
+        },
+        {
+          name: '培训记录',
+          icon: 'calendar-filled',
+          color: '#34C759',
+          bgColor: 'rgba(52, 199, 89, 0.1)',
+          path: '/pages/education/training/history'
         }
       ],
       features: [
@@ -128,24 +173,24 @@ export default {
         },
         {
           name: '浏览历史',
-          icon: 'calendar-filled',
+          icon: 'refresh-filled',
           color: '#606266',
           bgColor: 'rgba(96, 98, 102, 0.1)',
           path: '/pages/mine/history'
         },
         {
-          name: '危险品',
+          name: '危险品库',
           icon: 'info-filled',
           color: '#ff9900',
           bgColor: 'rgba(255, 153, 0, 0.1)',
           path: '/pages/features/dangerous'
         },
         {
-          name: '设置',
-          icon: 'settings-filled',
+          name: '个人中心',
+          icon: 'person-filled',
           color: '#909399',
           bgColor: 'rgba(144, 147, 153, 0.1)',
-          path: '/pages/mine/settings'
+          path: '/pages/mine/index'
         }
       ]
     };
@@ -154,17 +199,71 @@ export default {
     const systemInfo = uni.getSystemInfoSync();
     this.statusBarHeight = systemInfo.statusBarHeight || 20;
   },
+  onShow() {
+    // 检查登录状态
+    if (!getToken()) {
+      uni.reLaunch({ url: '/pages/login' });
+      return;
+    }
+    // 获取数据
+    this.getBannerList();
+    this.getRecentList();
+  },
   methods: {
+    // 获取公告作为Banner
+    getBannerList() {
+      listNotice({ pageNum: 1, pageSize: 5 }).then(response => {
+        if (response.rows && response.rows.length > 0) {
+          this.bannerList = response.rows.map((item, index) => {
+            return {
+              image: this.defaultBannerImages[index % this.defaultBannerImages.length],
+              title: item.noticeTitle,
+              id: item.noticeId
+            };
+          });
+        } else {
+          // 如果没有公告，显示默认Banner
+          this.bannerList = [
+            { image: '/static/images/banner/banner01.jpg', title: '实验室安全规范' },
+            { image: '/static/images/banner/banner02.jpg', title: '危化品管理' },
+            { image: '/static/images/banner/banner03.jpg', title: '最新公告' }
+          ];
+        }
+      });
+    },
+    handleBannerClick(index) {
+      const item = this.bannerList[index];
+      if (item && item.id) {
+        // 跳转到公告详情
+        uni.navigateTo({
+           url: `/pages/common/notice/detail?noticeId=${item.id}`,
+           fail: () => {
+             uni.showToast({ title: '公告详情页开发中', icon: 'none' });
+           }
+        });
+      }
+    },
     handleScan() {
       uni.scanCode({
         success: function (res) {
           console.log('条码类型：' + res.scanType);
           console.log('条码内容：' + res.result);
-          // 实际逻辑：跳转到详情页或解析条码
-          uni.showToast({
-            title: '扫描成功: ' + res.result,
-            icon: 'none'
-          });
+          // 假设扫描结果是 CAS 号或 ID，跳转到详情页
+          // 实际开发中可能需要解析 URL 或特定格式
+          uni.showLoading({ title: '解析中...' });
+          setTimeout(() => {
+             uni.hideLoading();
+             uni.navigateTo({
+               url: `/pages/document/detail?code=${res.result}`,
+               fail: () => {
+                 uni.showToast({ title: '无法识别的二维码', icon: 'none' });
+               }
+             });
+          }, 500);
+        },
+        fail: function(err) {
+            // 仅提示错误
+            console.log(err);
         }
       });
     },
@@ -174,10 +273,32 @@ export default {
     viewAllRecent() {
       uni.navigateTo({ url: '/pages/mine/history' });
     },
-    handleFeatureClick(feature) {
-      if (feature.path) {
-        uni.navigateTo({ url: feature.path });
+    handleGridClick(item) {
+      if (item.path) {
+        uni.navigateTo({ 
+          url: item.path,
+          fail: () => {
+             uni.showToast({ title: '功能开发中', icon: 'none' });
+           }
+        });
       }
+    },
+    handleRecentClick(item) {
+        // 跳转到详情
+        uni.navigateTo({ url: '/pages/document/detail?id=' + item.id });
+    },
+    getRecentList() {
+        // 获取最新的MSDS数据
+        listMsds({ pageNum: 1, pageSize: 5 }).then(response => {
+            if (response.rows) {
+                this.recentList = response.rows.map(item => ({
+                    id: item.id,
+                    name: item.productName,
+                    cas: item.casNumber,
+                    time: item.createTime
+                }));
+            }
+        });
     }
   }
 };
@@ -242,7 +363,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 24px;
-  margin-bottom: 24px;
+    margin-bottom: 24px;
   color: white;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border-radius: 20px;
@@ -379,6 +500,15 @@ export default {
   margin-bottom: 24px;
   padding: 5px 0;
   
+  .card-header {
+      padding: 12px 16px 4px;
+      .card-header-title {
+          font-size: 15px;
+          font-weight: 600;
+          color: #333;
+      }
+  }
+  
   .feature-item {
     display: flex;
     flex-direction: column;
@@ -445,16 +575,10 @@ export default {
         margin-bottom: 4px;
       }
       
-      .item-tags {
-        display: flex;
+      .item-cas {
+        font-size: 12px;
+        color: #666;
         margin-bottom: 2px;
-        .tag-cas {
-          font-size: 11px;
-          color: #007aff;
-          background: rgba(0, 122, 255, 0.1);
-          padding: 2px 6px;
-          border-radius: 4px;
-        }
       }
       
       .item-time {
@@ -463,5 +587,12 @@ export default {
       }
     }
   }
+}
+
+.empty-state {
+    padding: 30px;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
 }
 </style>
