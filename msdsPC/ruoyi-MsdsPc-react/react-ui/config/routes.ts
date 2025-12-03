@@ -96,6 +96,21 @@ export default [
         name: 'MSDS审计统计',
         path: '/system/audit-statistics',
         component: './System/AuditStatistics',
+      },
+      {
+        name: '常见问题管理',
+        path: '/system/faq',
+        component: './Msds/Faq',
+      },
+      {
+        name: '意见反馈管理',
+        path: '/system/feedback',
+        component: './Msds/Feedback',
+      },
+      {
+        name: '关于我们管理',
+        path: '/system/about',
+        component: './Msds/About',
       }
     ]
   },

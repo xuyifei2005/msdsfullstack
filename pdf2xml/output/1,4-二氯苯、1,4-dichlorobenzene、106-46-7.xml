@@ -42,10 +42,11 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>其蒸气与空气可形成爆炸性混合物，遇明火、高热能引起燃烧爆炸。与强氧化剂、铝接触可发生反应，引起分解。受高热分解产生有毒的腐蚀性烟气。在火场中，受热的容器有爆炸危险。</hazard_characteristics>
-      <fire_risk_classification>丙</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳、氯化氢。</harmful_combustion_products>
-      <suitable_extinguishing_media>雾状水、泡沫、二氧化碳、砂土、干粉。</suitable_extinguishing_media>
+      <hazard_characteristics>其蒸气与空气可形成爆炸性混合物，遇明火、高热能引起燃烧爆炸。与强氧化剂、铝接触可发生反应，引起分解。受高热分解产生有毒的腐蚀性烟气。在火场中，受热的容器有爆炸危险。蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。</hazard_characteristics>
+      <fire_risk_classification>丙类</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氯化氢、光气等有毒气体。</harmful_combustion_products>
+      <suitable_extinguishing_media>雾状水、泡沫、二氧化碳、干粉、砂土。</suitable_extinguishing_media>
+      <firefighting_precautions>消防人员必须佩戴空气呼吸器、全身防化服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。处在火场中的容器若已变色或从安全泄压装置中产生声音，必须马上撤离。禁止用水直接喷射泄漏物，以免产生飞溅和扩大污染范围。</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>

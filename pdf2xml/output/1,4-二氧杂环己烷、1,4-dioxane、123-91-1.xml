@@ -43,9 +43,10 @@
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>易燃，其蒸气与空气可形成爆炸性混合物，遇明火、高热或与氧化剂接触，有引起燃烧爆 炸的危险。与氧化剂能发生强烈反应。接触空气或在光照条件下可生成具有潜在爆炸危险 性的过氧化物。其蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。</hazard_characteristics>
-      <fire_risk_classification>甲</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳。 尽可能将容器从火场移至空旷处。处在火场中的容器若已变色或从安全泄压装置中产生声</harmful_combustion_products>
-      <suitable_extinguishing_media>音，必须马上撤离。灭火剂：抗溶性泡沫、1211灭火剂、干粉、砂土。用水灭火无效。</suitable_extinguishing_media>
+      <fire_risk_classification>甲类</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳</harmful_combustion_products>
+      <suitable_extinguishing_media>抗溶性泡沫、1211灭火剂、干粉、砂土。用水灭火无效。</suitable_extinguishing_media>
+      <firefighting_precautions>消防人员必须佩戴空气呼吸器，穿全身防火防毒服，在上风向灭火。尽可能将容器从火场移至空旷处。处在火场中的容器若已变色或从安全泄压装置中产生声音，必须马上撤离。灭火剂：抗溶性泡沫、1211灭火剂、干粉、砂土。用水灭火无效。</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>

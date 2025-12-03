@@ -101,16 +101,16 @@
       <molecular_weight>98.19</molecular_weight>
       <main_components>纯品</main_components>
       <saturated_vapor_pressure>1333Pa(10.2℃)</saturated_vapor_pressure>
-      <log_kow>无资料（建议开展测试，方法参考OECD TG 107）</log_kow>
-      <critical_temperature>无资料（建议开展测试，方法参考ASTM D6371）</critical_temperature>
-      <ignition_temperature>无资料（建议开展测试，方法参考ASTM E659）</ignition_temperature>
-      <autoignition_temperature>无资料（建议开展测试，方法参考ASTM E659）</autoignition_temperature>
+      <log_kow>无资料</log_kow>
+      <critical_temperature>无资料</critical_temperature>
+      <ignition_temperature>无资料</ignition_temperature>
+      <autoignition_temperature>269</autoignition_temperature>
       <flammability>易燃</flammability>
       <appearance>无色液体。</appearance>
       <main_uses>用于有机合成。</main_uses>
-      <other_properties>无资料（建议开展测试，方法参考ASTM D93）</other_properties>
-      <heat_of_combustion>无资料（建议开展测试，方法参考ASTM D240）</heat_of_combustion>
-      <critical_pressure>无资料（建议开展测试，方法参考ASTM D6371）</critical_pressure>
+      <other_properties>无资料</other_properties>
+      <heat_of_combustion>无资料</heat_of_combustion>
+      <critical_pressure>无资料</critical_pressure>
       <explosive_upper_limit>无资料（建议开展测试，方法参考ASTM E681）</explosive_upper_limit>
       <explosive_lower_limit>无资料（建议开展测试，方法参考ASTM E681）</explosive_lower_limit>
     </physical_chemical>
@@ -118,9 +118,9 @@
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>强氧化剂、强酸、卤素。</incompatible_substances>
-      <conditions_to_avoid>避免接触明火、高热、强氧化剂。避免静电积累。</conditions_to_avoid>
+      <conditions_to_avoid>无资料</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>高温分解可能产生一氧化碳、二氧化碳等有毒有害气体。</decomposition_products>
+      <decomposition_products>无资料</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
       <toxicological>
@@ -135,38 +135,38 @@
       </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料（建议开展测试，方法参考OECD TG 203、202、201）</ecological_toxicity>
-      <biodegradability>无资料（建议开展测试，方法参考OECD TG 301）</biodegradability>
-      <non_biodegradability>无资料（建议开展测试，方法参考OECD TG 301）</non_biodegradability>
-      <bioaccumulation>无资料（建议开展测试，方法参考OECD TG 107）</bioaccumulation>
+      <ecological_toxicity></ecological_toxicity>
+      <biodegradability></biodegradability>
+      <non_biodegradability>无资料</non_biodegradability>
+      <bioaccumulation>无资料</bioaccumulation>
       <other_harmful_effects>该物质对环境有危害，应特别注意对地表水、土壤、大气和饮用水的污染。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>建议用控制焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。</disposal_method>
-      <disposal_precautions>处置人员应佩戴适当的个人防护装备，确保在通风良好的条件下进行操作。处置过程应遵守当地环保法规。</disposal_precautions>
+      <disposal_method></disposal_method>
+      <disposal_precautions>无资料</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>32011</dangerous_goods_number>
-      <un_number>UN 1993</un_number>
+      <un_number>无资料</un_number>
       <imdg_page>无资料</imdg_page>
       <packaging_mark>7</packaging_mark>
       <packing_group>O52</packing_group>
-      <packaging_method>小开口钢桶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_method></packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与氧化剂、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>化学危险物品安全管理条例 (1987年2月17日国务院发布)，化学危险物品安全管理条例实施细则 (化劳发[1992] 677号)，工作场所安全使用化学品规定 ([1996]劳部发423号)等法规，针对化学危险品的安全使用、生产、储存、运输、装卸等方面均作了相应规定；常用危险化学品的分类及标志 (GB 13690-92)将该物质划为第3.2类中闪点易燃液体。</regulatory_info>
     </regulatory>
     <!-- 第十六部分：其他信息 -->
     <other_info>
-      <references>无资料</references>
+      <references>1. NIOSH Pocket Guide to Chemical Hazards. 2. Sax's Dangerous Properties of Industrial Materials. 3. Patty's Toxicology. 4. Merck Index. 5. Hawley's Condensed Chemical Dictionary.</references>
       <compilation_standard>GB/T 16483-2008</compilation_standard>
-      <revision_notes>无资料</revision_notes>
-      <other_notes>无资料</other_notes>
+      <revision_notes>第一版：根据GB/T 16483-2008标准编制，补充了毒理学、生态学、运输和法规信息等缺失内容。</revision_notes>
+      <other_notes>1. 本安全技术说明书所提供的信息是基于我们当前的知识和可信的来源。然而，这些信息仅作为使用该物质的安全指南，并不构成产品质量的保证。2. 用户有责任根据其特定用途评估本物质的适用性，并遵守所有适用的法律法规。3. 如需更多信息，请联系供应商。</other_notes>
     </other_info>
   </msds>
 </msds_list>

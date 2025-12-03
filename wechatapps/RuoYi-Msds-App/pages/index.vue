@@ -6,7 +6,7 @@
     <!-- 自定义导航栏 -->
     <view class="custom-navbar" :style="{ paddingTop: statusBarHeight + 'px' }">
       <view class="navbar-content">
-        <text class="app-title">MSDS管理</text>
+        <text class="app-title">MSDS安全智库网</text>
       </view>
     </view>
 

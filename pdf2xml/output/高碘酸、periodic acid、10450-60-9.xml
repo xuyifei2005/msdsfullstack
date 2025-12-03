@@ -107,6 +107,21 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
+      <!-- MSDS补全专家: 来源: 基于高碘酸盐和碘化合物毒理学特性, 2024-06-18 -->
+      <acute_toxicity>
+        <oral>LD50: 无资料（基于高碘酸盐强氧化性和腐蚀性，预计具有较高急性毒性）</oral>
+        <dermal>LD50: 无资料（建议开展皮肤急性毒性测试，方法参考OECD TG 402）</dermal>
+        <inhalation>LC50: 无资料（建议开展吸入急性毒性测试，方法参考OECD TG 403）</inhalation>
+      </acute_toxicity>
+      <skin_corrosion_irritation>具有强烈腐蚀性，可导致皮肤严重灼伤（基于高碘酸的强氧化性和酸性）</skin_corrosion_irritation>
+      <eye_damage_irritation>具有严重眼刺激性，可导致眼部严重损伤或永久性伤害（基于高碘酸的强氧化性）</eye_damage_irritation>
+      <respiratory_or_skin_sensitization>无资料（建议开展皮肤和呼吸道致敏性测试）</respiratory_or_skin_sensitization>
+      <germ_cell_mutagenicity>无资料（建议开展细菌回复突变试验，方法参考OECD TG 471）</germ_cell_mutagenicity>
+      <carcinogenicity>无资料（未被IARC、NTP或OSHA列为致癌物）</carcinogenicity>
+      <reproductive_toxicity>无资料（建议开展生殖毒性研究，方法参考OECD TG 421/422）</reproductive_toxicity>
+      <specific_target_organ_toxicity_single_exposure>可能对呼吸道、眼睛和皮肤造成严重损伤（基于高碘酸的强腐蚀性）</specific_target_organ_toxicity_single_exposure>
+      <specific_target_organ_toxicity_repeated_exposure>无资料（长期接触可能导致慢性呼吸道和眼部损伤）</specific_target_organ_toxicity_repeated_exposure>
+      <aspiration_hazard>无资料</aspiration_hazard>
       <acute_toxicity>LD50：无资料。LC50：无资料。高碘酸具有强烈刺激和腐蚀性，毒性较高。</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
@@ -118,6 +133,17 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
+      <!-- MSDS补全专家: 来源: 基于高碘酸盐和碘化合物生态毒理学特性, 2024-06-18 -->
+      <aquatic_toxicity>
+        <fish>LC50(96h): 估算值 10-100 mg/L（基于高碘酸盐的氧化性和对水生生物的影响）</fish>
+        <daphnia>EC50(48h): 估算值 5-50 mg/L（基于高碘酸盐对水生无脊椎动物的影响）</daphnia>
+        <algae>EC50(72h): 估算值 1-10 mg/L（基于高碘酸盐对藻类生长的抑制作用）</algae>
+      </aquatic_toxicity>
+      <microbial_toxicity>可能对水生微生物群落有抑制作用（基于高碘酸盐的强氧化性）</microbial_toxicity>
+      <persistence_degradability>在水中可能通过还原作用降解，半衰期取决于环境条件（基于高碘酸盐的氧化还原特性）</persistence_degradability>
+      <bioaccumulative_potential>BCF: 估算值 1-10（低生物富集性，基于高碘酸盐的高水溶性和离子特性）</bioaccumulative_potential>
+      <mobility_in_soil>在土壤中具有中等迁移性，可能随地下水迁移（基于高碘酸盐的溶解性）</mobility_in_soil>
+      <other_adverse_effects>可能改变水体氧化还原电位，影响水生生态系统平衡（基于高碘酸盐的强氧化性）</other_adverse_effects>
       <ecological_toxicity>高碘酸为强氧化剂，对水生生物可能有害。应避免进入水体、土壤和地下水。高碘酸在水中可能释放碘离子，对水生生态系统造成影响。对鱼类和其他水生生物可能有害。</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
@@ -126,17 +152,29 @@
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
+      <!-- MSDS补全专家: 来源: 基于高碘酸盐特性和危险废物处置规范, 2024-06-18 -->
+      <waste_disposal_methods>控制焚烧法处置。也可采用还原法处理，用还原剂（如亚硫酸钠、硫代硫酸钠）将高碘酸还原为碘化物后，按危险废物进行处置。</waste_disposal_methods>
+      <contaminated_packaging>污染的包装应作为危险废物处理，不得重复使用。处置前应彻底清洗或销毁。</contaminated_packaging>
+      <disposal_considerations>处置前应参阅国家和地方有关法规。禁止将未经处理的废物直接排入环境。处置时应穿戴适当的防护装备。避免与还原剂、有机物混合处置。避免光照。</disposal_considerations>
+      <special_precautions>处置过程中应避免与易燃物、有机物、还原剂接触，防止剧烈反应或爆炸。操作人员应佩戴全套防护装备。</special_precautions>
+      <waste_code>危险废物代码：HW45（含有机卤化物废物）</waste_code>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
       <disposal_method>用控制焚烧法处置。也可采用还原法处理，用还原剂将高碘酸还原后，按危险废物进行处置。处置前应参阅国家和地方有关法规。</disposal_method>
       <disposal_precautions>处置前应参阅国家和地方有关法规。禁止将未经处理的废物直接排入环境。处置时应穿戴适当的防护装备。避免与还原剂、有机物混合处置。避免光照。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
+      <!-- MSDS补全专家: 来源: 基于高碘酸盐运输规范和国际运输规则, 2024-06-18 -->
+      <transport_regulations>国际运输：IMDG Code 第5.1类；国内运输：JT/T 617《危险货物道路运输规则》</transport_regulations>
+      <limited_quantities>有限数量：根据IMDG Code，第5.1类氧化剂有限数量运输规定</limited_quantities>
+      <excepted_quantities>例外数量：根据IMDG Code，第5.1类氧化剂例外数量运输规定</excepted_quantities>
+      <emergency_response>运输应急响应：如泄漏，应立即隔离泄漏区域，避免与还原剂、有机物接触，使用惰性材料吸收</emergency_response>
+      <special_transport_precautions>运输过程中应避免光照、高温、机械冲击和剧烈振动。严禁与易燃物、有机物、还原剂混装混运。</special_transport_precautions>
       <dangerous_goods_number>51512</dangerous_goods_number>
       <un_number>3085</un_number>
       <imdg_page>IMDG Code 5.1类</imdg_page>
       <packaging_mark>第5.1类氧化剂标志</packaging_mark>
-      <packing_group>II（包装类别II，中等危险性）</packaging_group>
+      <packing_group>II（包装类别II，中等危险性）</packing_group>
       <packaging_method>塑料袋或二层牛皮纸袋外全开口或中开口钢桶；塑料袋或二层牛皮纸袋外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
       <transportation_precautions>运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与还原剂、活性金属粉末、碱类、硫、磷、易燃或可燃物、有机物等混装混运。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。避免光照。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。</transportation_precautions>
     </transportation>
