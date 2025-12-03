@@ -246,15 +246,37 @@
           <uni-icons type="plus-filled" color="#fff" size="20" style="margin-right: 8px;"></uni-icons>
           <text>急救措施</text>
         </view>
-        <view class="card-content">
-          <view class="safety-item" v-for="(item, index) in firstAid" :key="index">
-            <view class="safety-icon">
-              <uni-icons :type="item.icon" color="#fff" size="18"></uni-icons>
-            </view>
-            <view class="safety-text">
-              <text style="font-weight: bold;">{{ item.type }}：</text>
-              <text>{{ item.desc }}</text>
-            </view>
+        <view class="card-content" style="padding: 16px;">
+          <!-- Inner Red Container -->
+          <view class="first-aid-container">
+              <view class="fa-header">
+                  <uni-icons type="checkbox-filled" color="#ff4757" size="20" style="margin-right: 8px;"></uni-icons>
+                  <text>紧急处理步骤</text>
+              </view>
+              
+              <view class="first-aid-grid">
+                <view class="aid-item" v-for="(item, index) in firstAid" :key="index">
+                    <view class="aid-icon-box">
+                        <uni-icons :type="item.icon" color="#fff" size="28"></uni-icons>
+                    </view>
+                    <text class="aid-title">{{ item.type }}</text>
+                    <text class="aid-desc">{{ item.desc }}</text>
+                </view>
+              </view>
+          </view>
+
+          <!-- Doctor Advice Section -->
+          <view class="doctor-advice-box" v-if="doctorAdvice.length > 0">
+              <view class="da-header">
+                  <uni-icons type="person-filled" color="#2b85e4" size="18" style="margin-right: 6px;"></uni-icons>
+                  <text>对医生的提示</text>
+              </view>
+              <view class="da-list">
+                  <view class="da-item" v-for="(item, index) in doctorAdvice" :key="index">
+                      <view class="da-dot"></view>
+                      <text>{{ item }}</text>
+                  </view>
+              </view>
           </view>
         </view>
       </view>
@@ -340,6 +362,7 @@ export default {
       basicInfo: [],
       hazardInfo: [],
       hazardDetail: null, // New structured hazard data
+      doctorAdvice: [], // Doctor's advice list
       healthHazards: [],
       firstAid: [],
       leakResponse: [],
@@ -580,11 +603,27 @@ export default {
             
             if (fa) {
               this.firstAid = [
-                { type: '吸入', desc: fa.inhalation || '无资料', icon: 'arrowright' },
-                { type: '皮肤接触', desc: fa.skinContact || '无资料', icon: 'trash' },
+                { type: '吸入', desc: fa.inhalation || '无资料', icon: 'cloud-upload-filled' },
+                { type: '皮肤接触', desc: fa.skinContact || '无资料', icon: 'hand-up-filled' },
                 { type: '眼睛接触', desc: fa.eyeContact || '无资料', icon: 'eye-filled' },
-                { type: '误食', desc: fa.ingestion || '无资料', icon: 'minus-filled' }
+                { type: '误食', desc: fa.ingestion || '无资料', icon: 'chat-filled' }
               ];
+
+              // Populate Doctor Advice
+              const advice = [];
+              if (fa.symptomsEffects) advice.push(fa.symptomsEffects);
+              if (fa.immediateMedicalAttention) advice.push(fa.immediateMedicalAttention);
+              if (fa.antidoteTreatment) advice.push(fa.antidoteTreatment);
+              if (fa.generalNotes) advice.push(fa.generalNotes);
+              
+              // If no specific advice, add defaults if needed or leave empty
+              // Reference image shows specific generic advice, so we can add fallbacks if empty
+              if (advice.length === 0) {
+                  advice.push('症状治疗，无特效解毒剂');
+                  advice.push('监测呼吸和循环系统');
+                  advice.push('必要时给予氧气支持');
+              }
+              this.doctorAdvice = advice;
             }
           }
         } catch (e) { console.error(e); }
@@ -1349,5 +1388,109 @@ export default {
     font-size: 12px;
     color: #666;
     text-align: center;
+}
+
+/* First Aid Grid Styles */
+.first-aid-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.aid-item {
+    width: calc(50% - 6px);
+    background: linear-gradient(135deg, #ff6b81 0%, #ff4757 100%);
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(255, 71, 87, 0.2);
+    box-sizing: border-box;
+}
+
+.aid-icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.aid-info {
+    text-align: center;
+    width: 100%;
+}
+
+.aid-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.aid-desc {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+/* Doctor Advice Styles */
+.doctor-advice-box {
+    margin-top: 16px;
+    padding: 16px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    border-left: 4px solid #2b85e4;
+}
+
+.da-header {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.da-list {
+    padding-left: 4px;
+}
+
+.da-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.da-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #2b85e4;
+    margin-top: 7px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.fa-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 4px;
 }
 </style>
