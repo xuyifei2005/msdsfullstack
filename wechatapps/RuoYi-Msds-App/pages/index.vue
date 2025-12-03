@@ -176,7 +176,7 @@ export default {
           icon: 'refresh-filled',
           color: '#606266',
           bgColor: 'rgba(96, 98, 102, 0.1)',
-          path: '/pages/mine/history'
+          path: '/pages/mine/history/index'
         },
         {
           name: '危险品库',

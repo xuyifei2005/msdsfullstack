@@ -120,6 +120,8 @@
 </template>
 
 <script>
+import { listMsds } from '@/api/msds/msds'
+
 export default {
   data() {
     return {
@@ -141,7 +143,9 @@ export default {
       this.flashOn = !this.flashOn;
     },
     toggleHistory() {
-      uni.showToast({ title: '查看历史记录', icon: 'none' });
+      uni.navigateTo({
+        url: '/pages/search/index'
+      });
     },
     showMenu() {
       uni.showActionSheet({
@@ -160,33 +164,78 @@ export default {
         this.processScanResult(e.result);
     },
     // 处理扫码结果
-    processScanResult(result) {
+    async processScanResult(result) {
         // 震动反馈
         uni.vibrateShort();
         
-        // 模拟API请求
+        // API请求
         uni.showLoading({ title: '查询中...' });
         
-        setTimeout(() => {
+        try {
+            // 简单的判断逻辑：如果是CAS号格式则按CAS查询，否则按名称查询
+            const query = {};
+            // CAS正则：1-7位数字-2位数字-1位数字
+            const casRegex = /^\d{1,7}-\d{2}-\d$/;
+            
+            if (casRegex.test(result)) {
+                query.casNumber = result;
+            } else {
+                query.productName = result;
+            }
+            
+            const res = await listMsds(query);
             uni.hideLoading();
-            // 这里模拟识别到了乙醇
-            // 实际项目中应该调用API: getChemicalByCode(result)
-            this.scanData = {
-                name: '乙醇',
-                nameEn: 'Ethanol',
-                cas: '64-17-5',
-                formula: 'C₂H₆O',
-                isDanger: true,
-                supplier: '国药集团化学试剂有限公司',
-                updateTime: '2024-01-15',
-                id: 'ethanol_001'
-            };
-            this.showResult = true;
-        }, 500);
+            
+            if (res.rows && res.rows.length > 0) {
+                const data = res.rows[0];
+                this.scanData = {
+                    name: data.productName,
+                    nameEn: data.productEnglishName || '-',
+                    cas: data.casNumber || '-',
+                    formula: '-', // 列表接口通常不包含成分信息，此处暂置为空，详情页会加载
+                    isDanger: data.riskLevel && data.riskLevel !== '无' && data.riskLevel !== '低', 
+                    supplier: data.supplierName || '未知供应商',
+                    updateTime: data.updateTime || data.createTime || '-',
+                    id: data.id
+                };
+                
+                // 存入历史记录
+                this.addToHistory(this.scanData);
+                
+                this.showResult = true;
+            } else {
+                this.scanData = null;
+                uni.showToast({ title: '未找到相关化学品', icon: 'none' });
+                // 可以选择不显示弹窗，或者显示"未找到"的弹窗
+                this.showResult = true;
+            }
+        } catch (e) {
+            uni.hideLoading();
+            uni.showToast({ title: '查询失败，请重试', icon: 'none' });
+            console.error(e);
+        }
+    },
+    addToHistory(item) {
+        try {
+            let history = uni.getStorageSync('scan_history') || [];
+            // 去重：移除旧的相同ID记录
+            history = history.filter(h => h.id !== item.id);
+            // 添加到头部
+            history.unshift(item);
+            // 限制数量
+            if (history.length > 10) history.pop();
+            uni.setStorageSync('scan_history', history);
+        } catch (e) {
+            console.error('Save history failed', e);
+        }
     },
     // 手动触发（模拟）
     manualTrigger() {
-        this.processScanResult('MOCK_CODE_123');
+        // 拍照识别逻辑，这里简化为从相册选或模拟
+        // uni.showToast({ title: '请使用扫码功能', icon: 'none' });
+        const mockCodes = ['64-17-5', '67-56-1', '乙醇', '甲醇'];
+        const randomCode = mockCodes[Math.floor(Math.random() * mockCodes.length)];
+        this.processScanResult(randomCode);
     },
     // 相册选择
     chooseImage() {

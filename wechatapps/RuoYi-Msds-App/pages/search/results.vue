@@ -115,7 +115,7 @@ export default {
     onItemClick(item) {
       // 跳转到详情页
       uni.navigateTo({
-        url: `/pages/document/detail?id=${item.id}`
+        url: `/pages/detail/index?id=${item.id}`
       });
     },
     getDangerText(level) {

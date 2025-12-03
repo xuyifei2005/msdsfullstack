@@ -34,21 +34,51 @@
         <button class="search-button" @click="onSearch">搜索</button>
       </view>
 
-      <view class="recent-searches" v-if="recentList.length > 0">
-        <view class="recent-header">
-          <text class="section-title">最近搜索</text>
-          <uni-icons type="trash" color="#909399" size="18" @click="clearHistory"></uni-icons>
+      <view class="recent-searches">
+        <!-- 搜索历史 -->
+        <view class="history-section" v-if="recentList.length > 0">
+          <view class="recent-header">
+            <text class="section-title">最近搜索</text>
+            <uni-icons type="trash" color="#909399" size="18" @click="clearHistory('search')"></uni-icons>
+          </view>
+          
+          <view class="recent-list">
+            <view 
+              class="recent-item" 
+              v-for="(item, index) in recentList" 
+              :key="index" 
+              @click="clickHistory(item)"
+            >
+              <uni-icons type="search" color="#909399" size="16" class="item-icon"></uni-icons>
+              <text class="item-text">{{ item }}</text>
+            </view>
+          </view>
         </view>
-        
-        <view class="recent-list">
-          <view 
-            class="recent-item" 
-            v-for="(item, index) in recentList" 
-            :key="index" 
-            @click="clickHistory(item)"
-          >
-            <uni-icons type="calendar" color="#909399" size="16" class="item-icon"></uni-icons>
-            <text class="item-text">{{ item }}</text>
+
+        <!-- 扫码历史 -->
+        <view class="history-section" v-if="scanHistory.length > 0" style="margin-top: 30px;">
+          <view class="recent-header">
+            <text class="section-title">最近扫码</text>
+            <uni-icons type="trash" color="#909399" size="18" @click="clearHistory('scan')"></uni-icons>
+          </view>
+          
+          <view class="recent-list">
+            <view 
+              class="recent-item scan-item" 
+              v-for="(item, index) in scanHistory" 
+              :key="index" 
+              @click="clickScanHistory(item)"
+            >
+              <view class="scan-icon">
+                <uni-icons type="scan" color="#1aad19" size="20"></uni-icons>
+              </view>
+              <view class="scan-info">
+                <text class="scan-name">{{ item.name }}</text>
+                <text class="scan-cas" v-if="item.cas">CAS: {{ item.cas }}</text>
+                <text class="scan-time">{{ formatTime(item.updateTime || item.createTime) }}</text>
+              </view>
+              <uni-icons type="arrowright" color="#ccc" size="16"></uni-icons>
+            </view>
           </view>
         </view>
       </view>
@@ -61,27 +91,40 @@ export default {
   data() {
     return {
       keyword: '',
-      recentList: [
-        '甲醇 (Methanol)',
-        '硫酸 (Sulfuric acid)',
-        '氯化钠 (Sodium chloride)'
-      ],
+      recentList: [],
+      scanHistory: [],
       statusBarHeight: 20
     };
   },
-  onLoad() {
+  onShow() {
     const systemInfo = uni.getSystemInfoSync();
     this.statusBarHeight = systemInfo.statusBarHeight || 20;
 
-    // 从本地存储加载搜索历史
+    // 加载搜索历史
     const history = uni.getStorageSync('search_history');
     if (history) {
-      this.recentList = JSON.parse(history);
+      try {
+        this.recentList = JSON.parse(history);
+      } catch (e) {
+        this.recentList = [];
+      }
+    }
+
+    // 加载扫码历史
+    const scanHist = uni.getStorageSync('scan_history');
+    if (scanHist) {
+      // scan_history is array of objects
+      this.scanHistory = scanHist;
     }
   },
   methods: {
     goBack() {
       uni.navigateBack();
+    },
+    formatTime(timeStr) {
+      if (!timeStr) return '';
+      // Simple formatter or just return string if already formatted
+      return timeStr;
     },
     onSearch() {
       if (!this.keyword.trim()) {
@@ -104,8 +147,19 @@ export default {
       this.keyword = item;
       this.onSearch();
     },
+    clickScanHistory(item) {
+      if (item.id) {
+        uni.navigateTo({
+            url: `/pages/detail/index?id=${item.id}`
+        });
+      } else {
+        // Fallback if no ID (shouldn't happen with new logic)
+        this.keyword = item.name || item.cas;
+        this.onSearch();
+      }
+    },
     saveHistory(keyword) {
-      let history = this.recentList;
+      let history = this.recentList || [];
       // 移除重复
       const index = history.indexOf(keyword);
       if (index > -1) {
@@ -118,19 +172,21 @@ export default {
         history = history.slice(0, 10);
       }
       this.recentList = history;
-      uni.setStorage({
-        key: 'search_history',
-        data: JSON.stringify(history)
-      });
+      uni.setStorageSync('search_history', JSON.stringify(history));
     },
-    clearHistory() {
+    clearHistory(type) {
       uni.showModal({
         title: '提示',
-        content: '确定清空搜索历史吗？',
+        content: `确定清空${type === 'scan' ? '扫码' : '搜索'}历史吗？`,
         success: (res) => {
           if (res.confirm) {
-            this.recentList = [];
-            uni.removeStorageSync('search_history');
+            if (type === 'scan') {
+                this.scanHistory = [];
+                uni.removeStorageSync('scan_history');
+            } else {
+                this.recentList = [];
+                uni.removeStorageSync('search_history');
+            }
           }
         }
       });
@@ -185,7 +241,7 @@ export default {
   background: rgba(255,255,255,0.5);
   backdrop-filter: blur(10px);
   position: sticky;
-  top: var(--status-bar-height); /* Wait, we used inline style for status bar, so we might need relative positioning if not using window var */
+  top: var(--status-bar-height);
   z-index: 100;
   
   .nav-title {
@@ -316,6 +372,45 @@ export default {
     .item-text {
       font-size: 14px;
       color: #333;
+    }
+  }
+  
+  .scan-item {
+    justify-content: space-between;
+    
+    .scan-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(26, 173, 25, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 12px;
+    }
+    
+    .scan-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .scan-name {
+      font-size: 15px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 4px;
+    }
+    
+    .scan-cas {
+      font-size: 12px;
+      color: #666;
+    }
+    
+    .scan-time {
+      font-size: 10px;
+      color: #999;
+      margin-top: 2px;
     }
   }
 }

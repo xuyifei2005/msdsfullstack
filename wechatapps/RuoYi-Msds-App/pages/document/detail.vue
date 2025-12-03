@@ -198,6 +198,7 @@ export default {
           englishName: this.document.title.split('(')[1]?.replace(')', '') || '',
           cas: this.document.cas,
           tags: this.document.tags,
+          addTime: Date.now(),
           updateTime: new Date().toISOString().split('T')[0]
         });
         this.isFavorited = true;

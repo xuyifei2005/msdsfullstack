@@ -42,6 +42,16 @@
           <uni-icons type="arrowright" size="16" color="#c7c7cc"></uni-icons>
         </view>
 
+        <view class="settings-item" @click="handleToHistory">
+          <view class="settings-icon" style="background-color: #00C7BE;">
+            <uni-icons type="eye-filled" size="18" color="#ffffff"></uni-icons>
+          </view>
+          <view class="settings-info">
+            <view class="settings-title">浏览历史</view>
+          </view>
+          <uni-icons type="arrowright" size="16" color="#c7c7cc"></uni-icons>
+        </view>
+
         <view class="settings-item" @click="handleToPwd">
           <view class="settings-icon" style="background-color: #007AFF;">
             <uni-icons type="auth-filled" size="18" color="#ffffff"></uni-icons>
@@ -160,6 +170,9 @@ export default {
     },
     handleToFavorites() {
       this.$tab.navigateTo('/pages/favorites/index');
+    },
+    handleToHistory() {
+      this.$tab.navigateTo('/pages/mine/history/index');
     },
     handleToPwd() {
       if (!this.name) {

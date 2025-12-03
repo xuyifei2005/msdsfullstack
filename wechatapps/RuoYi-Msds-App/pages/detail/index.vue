@@ -20,21 +20,27 @@
     <view :style="{ height: (44 + statusBarHeight) + 'px' }"></view>
 
     <!-- 主内容区域 -->
-    <view class="content">
+    <view class="content" v-if="loading">
+      <view class="loading-container">
+        <uni-load-more status="loading" content-text="加载中..."></uni-load-more>
+      </view>
+    </view>
+    
+    <view class="content" v-else>
       <!-- 化学品头部信息 -->
       <view class="chemical-header">
         <view class="header-bg-anim"></view>
-        <view class="danger-level-indicator">{{ chemical.dangerLevel }}</view>
-        <view class="chemical-name">{{ chemical.name }}</view>
-        <view class="chemical-formula">{{ chemical.formula }}</view>
-        <view class="chemical-cas">CAS: {{ chemical.cas }}</view>
+        <view class="danger-level-indicator">{{ chemical.dangerLevel || '?' }}</view>
+        <view class="chemical-name">{{ chemical.name || '未命名' }}</view>
+        <view class="chemical-formula">{{ chemical.formula || '-' }}</view>
+        <view class="chemical-cas">CAS: {{ chemical.cas || '-' }}</view>
       </view>
 
       <!-- 操作按钮 -->
       <view class="action-buttons">
         <button class="action-btn btn-primary" @click="onFavorite">
-          <uni-icons type="star" color="#fff" size="18" style="margin-right: 4px;"></uni-icons>
-          <text>收藏</text>
+          <uni-icons :type="isFavorited ? 'star-filled' : 'star'" color="#fff" size="18" style="margin-right: 4px;"></uni-icons>
+          <text>{{ isFavorited ? '已收藏' : '收藏' }}</text>
         </button>
         <button class="action-btn btn-secondary" @click="onDownload">
           <uni-icons type="download" color="#333" size="18" style="margin-right: 4px;"></uni-icons>
@@ -56,8 +62,8 @@
         </view>
       </view>
 
-      <!-- 危险性信息 -->
-      <view class="info-card">
+      <!-- 危险性信息 (如果有) -->
+      <view class="info-card" v-if="hazardInfo.length > 0 || chemical.tags.length > 0">
         <view class="card-header header-danger">
           <uni-icons type="info-filled" color="#fff" size="20" style="margin-right: 8px;"></uni-icons>
           <text>危险性信息</text>
@@ -67,7 +73,7 @@
             <view class="property-label">{{ item.label }}</view>
             <view class="property-value">{{ item.value }}</view>
           </view>
-          <view class="hazard-tags">
+          <view class="hazard-tags" v-if="chemical.tags.length > 0">
             <view class="hazard-tag" v-for="(tag, index) in chemical.tags" :key="index">
               <uni-icons type="info-filled" color="#fff" size="12" style="margin-right: 4px;"></uni-icons>
               <text>{{ tag }}</text>
@@ -76,8 +82,8 @@
         </view>
       </view>
 
-      <!-- 健康危害 -->
-      <view class="info-card">
+      <!-- 健康危害 (如果有) -->
+      <view class="info-card" v-if="healthHazards.length > 0">
         <view class="card-header header-health">
           <uni-icons type="heart" color="#fff" size="20" style="margin-right: 8px;"></uni-icons>
           <text>健康危害</text>
@@ -96,7 +102,7 @@
       </view>
 
       <!-- 急救措施 -->
-      <view class="info-card">
+      <view class="info-card" v-if="firstAid.length > 0">
         <view class="card-header header-firstaid">
           <uni-icons type="plus-filled" color="#fff" size="20" style="margin-right: 8px;"></uni-icons>
           <text>急救措施</text>
@@ -114,8 +120,22 @@
         </view>
       </view>
 
+      <!-- 泄漏应急处理 -->
+      <view class="info-card" v-if="leakResponse.length > 0">
+        <view class="card-header header-leak">
+          <uni-icons type="fire-filled" color="#fff" size="20" style="margin-right: 8px;"></uni-icons>
+          <text>泄漏应急处理</text>
+        </view>
+        <view class="card-content">
+          <view class="property-row" v-for="(item, index) in leakResponse" :key="index">
+            <view class="property-label">{{ item.label }}</view>
+            <view class="property-value">{{ item.value }}</view>
+          </view>
+        </view>
+      </view>
+
       <!-- 储存运输 -->
-      <view class="info-card">
+      <view class="info-card" v-if="storageInfo.length > 0">
         <view class="card-header header-storage">
           <uni-icons type="paperplane-filled" color="#fff" size="20" style="margin-right: 8px;"></uni-icons>
           <text>储存运输</text>
@@ -135,72 +155,193 @@
 </template>
 
 <script>
+import { getMsds, getMsdsFirstAidByMsdsId, getMsdsComponentByMsdsId, getMsdsLeakResponseByMsdsId } from '@/api/msds/msds'
+
 export default {
   data() {
     return {
       statusBarHeight: 20,
+      loading: true,
+      isFavorited: false,
       chemical: {
-        name: '甲醇',
-        formula: 'CH₃OH',
-        cas: '67-56-1',
-        dangerLevel: '3',
-        tags: ['易燃', '有毒', '刺激性']
+        id: '',
+        name: '',
+        formula: '',
+        cas: '',
+        dangerLevel: '',
+        tags: []
       },
-      basicInfo: [
-        { label: '中文名称', value: '甲醇' },
-        { label: '英文名称', value: 'Methanol' },
-        { label: '分子式', value: 'CH₃OH' },
-        { label: '分子量', value: '32.04' },
-        { label: '沸点', value: '64.7°C' },
-        { label: '熔点', value: '-97.8°C' },
-        { label: '密度', value: '0.791 g/cm³' }
-      ],
-      hazardInfo: [
-        { label: '危险等级', value: '3级 - 高度危险' },
-        { label: '闪点', value: '11°C' },
-        { label: '自燃温度', value: '464°C' }
-      ],
-      healthHazards: [
-        { type: '吸入', desc: '可引起头痛、眩晕、恶心、呕吐，严重时可导致昏迷甚至死亡。', icon: 'arrowup' }, // lungs -> arrow-up as proxy
-        { type: '皮肤接触', desc: '可引起皮肤干燥、脱脂，长期接触可导致皮炎。', icon: 'minus' }, // hand-paper -> minus proxy
-        { type: '眼睛接触', desc: '可引起眼睛刺激、疼痛、流泪，严重时可导致角膜损伤。', icon: 'eye' },
-        { type: '误食', desc: '可引起恶心、呕吐、腹痛，严重时可导致失明或死亡。', icon: 'closeempty' } // tint -> close proxy
-      ],
-      firstAid: [
-        { type: '吸入', desc: '迅速脱离现场至空气新鲜处，保持呼吸道通畅，必要时进行人工呼吸。', icon: 'arrowright' },
-        { type: '皮肤接触', desc: '立即脱去污染的衣着，用大量清水冲洗皮肤至少15分钟。', icon: 'trash' }, // shower -> trash proxy (cleaning)
-        { type: '眼睛接触', desc: '立即提起眼睑，用大量清水或生理盐水彻底冲洗至少15分钟。', icon: 'eye-filled' },
-        { type: '误食', desc: '用水漱口，给饮牛奶或蛋清。不要催吐，立即就医。', icon: 'minus-filled' }
-      ],
-      storageInfo: [
-        { label: '储存条件', value: '阴凉、通风、干燥处' },
-        { label: '包装要求', value: '密封包装' },
-        { label: '运输类别', value: '危险品3类' },
-        { label: 'UN编号', value: '1230' }
-      ]
+      basicInfo: [],
+      hazardInfo: [],
+      healthHazards: [],
+      firstAid: [],
+      leakResponse: [], // Added leak response
+      storageInfo: []
     }
   },
   onLoad(options) {
     const systemInfo = uni.getSystemInfoSync();
     this.statusBarHeight = systemInfo.statusBarHeight;
     
-    // 如果有传入参数，可以更新数据
-    if (options.name) {
-        this.chemical.name = options.name;
-    }
-    if (options.cas) {
-        this.chemical.cas = options.cas;
+    if (options.id) {
+      this.fetchData(options.id);
+    } else if (options.name || options.cas) {
+      // Fallback to passed options if no ID (e.g. pure UI preview)
+      this.chemical.name = options.name || '';
+      this.chemical.cas = options.cas || '';
+      this.loading = false;
+    } else {
+      this.loading = false;
     }
   },
   methods: {
+    async fetchData(id) {
+      this.loading = true;
+      try {
+        // 1. Fetch Main Info
+        const mainRes = await getMsds(id);
+        const data = mainRes.data;
+        
+        this.chemical.name = data.productName;
+        this.chemical.englishName = data.productEnglishName; // Add English name
+        this.chemical.cas = data.casNumber;
+        // Map risk level
+        this.chemical.dangerLevel = data.riskLevel || '一般'; 
+        
+        // Auto-generate tags for filtering
+        this.chemical.tags = [];
+        const risk = (this.chemical.dangerLevel || '').toString();
+        const name = (this.chemical.name || '').toLowerCase();
+        
+        if (risk.includes('高') || risk.includes('剧毒')) {
+            this.chemical.tags.push('剧毒品');
+            this.chemical.tags.push('危险品');
+        } else if (risk.includes('中') || risk.includes('警告') || risk.includes('危险')) {
+            this.chemical.tags.push('危险品');
+        }
+        
+        if (name.includes('硝酸') || name.includes('过氧化') || name.includes('氯酸')) {
+             this.chemical.tags.push('易制爆');
+             this.chemical.tags.push('危险品');
+        }
+        if (name.includes('硫酸') || name.includes('盐酸') || name.includes('甲苯') || name.includes('丙酮')) {
+             this.chemical.tags.push('易制毒');
+        }
+        if (name.includes('醇') || name.includes('醚') || name.includes('苯') || name.includes('酯')) {
+             this.chemical.tags.push('有机物');
+        } else if (name.includes('钠') || name.includes('钾') || name.includes('钙') || name.includes('铁')) {
+             this.chemical.tags.push('无机物');
+        }
+        
+        if (this.chemical.tags.length === 0) {
+            this.chemical.tags.push('常用');
+        }
+        this.chemical.tags = [...new Set(this.chemical.tags)];
+        
+        // Check favorite status
+        this.checkFavoriteStatus();
+        
+        this.basicInfo = [
+          { label: '中文名称', value: data.productName },
+          { label: '英文名称', value: data.productEnglishName || '-' },
+          { label: 'CAS号', value: data.casNumber || '-' },
+          { label: '供应商', value: data.supplierName || '-' },
+          { label: '联系电话', value: data.emergencyPhone || data.supplierPhone || '-' }
+        ];
+
+        // 2. Fetch Components (for formula)
+        try {
+          const compRes = await getMsdsComponentByMsdsId(id);
+          if (compRes.data && compRes.data.length > 0) {
+            // Use the first component's formula as the main formula for display
+            this.chemical.formula = compRes.data[0].molecularFormula || '-';
+            // Add components to basic info if needed
+            this.basicInfo.push({ 
+              label: '主要成分', 
+              value: compRes.data.map(c => c.componentName).join(', ') 
+            });
+          }
+        } catch (e) {
+          console.error('Failed to fetch components', e);
+        }
+
+        // 3. Fetch First Aid
+        try {
+          const firstAidRes = await getMsdsFirstAidByMsdsId(id);
+          if (firstAidRes.data) { 
+            let fa = firstAidRes.data;
+            if (Array.isArray(fa)) fa = fa[0];
+            
+            if (fa) {
+              this.firstAid = [
+                { type: '吸入', desc: fa.inhalation || '无资料', icon: 'arrowright' },
+                { type: '皮肤接触', desc: fa.skinContact || '无资料', icon: 'trash' },
+                { type: '眼睛接触', desc: fa.eyeContact || '无资料', icon: 'eye-filled' },
+                { type: '误食', desc: fa.ingestion || '无资料', icon: 'minus-filled' }
+              ];
+            }
+          }
+        } catch (e) {
+          console.error('Failed to fetch first aid', e);
+        }
+
+        // 4. Fetch Leak Response
+        try {
+          const leakRes = await getMsdsLeakResponseByMsdsId(id);
+          if (leakRes.data) {
+            let lr = leakRes.data;
+            if (Array.isArray(lr)) lr = lr[0];
+
+            if (lr) {
+               this.leakResponse = [
+                 { label: '应急处理', value: lr.emergencyAction || '无资料' },
+                 { label: '消除方法', value: lr.disposalMethod || '无资料' },
+                 { label: '注意事项', value: lr.precaution || '无资料' }
+               ];
+            }
+          }
+        } catch (e) {
+          console.error('Failed to fetch leak response', e);
+        }
+
+      } catch (error) {
+        uni.showToast({ title: '获取详情失败', icon: 'none' });
+        console.error(error);
+      } finally {
+        this.loading = false;
+      }
+    },
     onBack() {
       uni.navigateBack();
     },
+    checkFavoriteStatus() {
+      const id = this.chemical.id || this.chemical.cas;
+      const favorites = uni.getStorageSync('MSDS_FAVORITES') || [];
+      this.isFavorited = favorites.some(item => item.id === id || (item.cas && item.cas === id));
+    },
     onFavorite() {
-      uni.showToast({
-        title: '已收藏',
-        icon: 'success'
-      });
+      const id = this.chemical.id || this.chemical.cas;
+      let favorites = uni.getStorageSync('MSDS_FAVORITES') || [];
+      
+      if (this.isFavorited) {
+        // Remove
+        favorites = favorites.filter(item => item.id !== id && item.cas !== id);
+        this.isFavorited = false;
+        uni.showToast({ title: '已取消收藏', icon: 'none' });
+      } else {
+        // Add
+        favorites.unshift({
+          id: id,
+          name: this.chemical.name,
+          englishName: this.chemical.englishName || '',
+          cas: this.chemical.cas,
+          tags: this.chemical.tags,
+          addTime: Date.now()
+        });
+        this.isFavorited = true;
+        uni.showToast({ title: '已收藏', icon: 'success' });
+      }
+      uni.setStorageSync('MSDS_FAVORITES', favorites);
     },
     onDownload() {
       uni.showToast({
@@ -218,6 +359,12 @@ export default {
   background-color: #f5f5f7;
   position: relative;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
 }
 
 .glass-bg {
@@ -420,13 +567,11 @@ export default {
 }
 
 .header-basic { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
-.header-danger { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%); color: #d63031; } /* Danger header usually red/warning color */
-.header-danger .u-icon, .header-danger text { color: white; } /* Override for consistency if using gradient */
-.header-danger { background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%); color: white; } /* Fixed danger gradient */
-
+.header-danger { background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%); color: white; }
 .header-health { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
 .header-firstaid { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
-.header-storage { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+.header-leak { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+.header-storage { background: linear-gradient(135deg, #8fd3f4 0%, #84fab0 100%); }
 
 .card-content {
   padding: 16px;
