@@ -154,6 +154,16 @@
           <text>危险性信息</text>
         </view>
         <view class="card-content">
+          <!-- GHS Pictograms (Visual Identification) -->
+          <view class="ghs-icons-container" v-if="ghsIcons.length > 0">
+            <view class="ghs-icon-card" v-for="(icon, index) in ghsIcons" :key="index">
+              <view class="ghs-icon-wrapper" :style="{ background: icon.background, boxShadow: '0 4px 12px ' + icon.shadowColor }">
+                <uni-icons :type="icon.type" color="#fff" size="28"></uni-icons>
+              </view>
+              <text class="ghs-label">{{ icon.label }}</text>
+            </view>
+          </view>
+
           <!-- Emergency Overview Highlight -->
           <view class="hazard-overview-box" v-if="hazardDetail && hazardDetail.emergencyOverview">
              <view class="hazard-title">
@@ -373,6 +383,107 @@ export default {
       if (level.includes('高') || level.includes('剧毒')) return 'badge-danger';
       if (level.includes('中') || level.includes('警告') || level.includes('危险')) return 'badge-warning';
       return 'badge-normal';
+    },
+    ghsIcons() {
+      const icons = [];
+      const text = ((this.hazardDetail && this.hazardDetail.hazardCategory) || '') + 
+                   ((this.chemical.tags || []).join(' ')) + 
+                   ((this.chemical.dangerLevel || ''));
+      
+      // Helper to avoid duplicates
+      const hasLabel = (label) => icons.some(i => i.label === label);
+
+      // Flammable
+      if (text.includes('燃') || text.includes('火')) {
+        icons.push({ 
+            type: 'fire-filled', 
+            background: 'linear-gradient(135deg, #ff4757 0%, #ff6b81 100%)',
+            shadowColor: 'rgba(255, 71, 87, 0.3)', 
+            label: '易燃' 
+        });
+      }
+      
+      // Toxic
+      if (text.includes('毒')) {
+        if (!hasLabel('有毒')) icons.push({ 
+            type: 'close', // Changed from 'clear' to 'close' for better compatibility
+            background: 'linear-gradient(135deg, #2ed573 0%, #7bed9f 100%)',
+            shadowColor: 'rgba(46, 213, 115, 0.3)',
+            label: '有毒' 
+        });
+      }
+      
+      // Explosive
+      if (text.includes('爆')) {
+        icons.push({ 
+            type: 'fire-filled', // Reusing fire-filled or use 'warn-filled'
+            background: 'linear-gradient(135deg, #ffa502 0%, #ff6348 100%)',
+            shadowColor: 'rgba(255, 165, 2, 0.3)',
+            label: '爆炸' 
+        });
+      }
+
+      // Corrosive
+      if (text.includes('腐蚀')) {
+        icons.push({ 
+            type: 'trash', 
+            background: 'linear-gradient(135deg, #5352ed 0%, #70a1ff 100%)',
+            shadowColor: 'rgba(83, 82, 237, 0.3)',
+            label: '腐蚀' 
+        });
+      }
+      
+      // Irritant / Health Hazard
+      if (text.includes('刺激') || text.includes('过敏') || text.includes('麻醉')) {
+        icons.push({ 
+            type: 'info-filled', 
+            background: 'linear-gradient(135deg, #ff6b81 0%, #ff4757 100%)',
+            shadowColor: 'rgba(255, 107, 129, 0.3)',
+            label: '刺激' 
+        });
+      }
+      
+      // Environment
+      if (text.includes('环境') || text.includes('水生')) {
+        icons.push({ 
+            type: 'image-filled', 
+            background: 'linear-gradient(135deg, #1e90ff 0%, #00d2d3 100%)',
+            shadowColor: 'rgba(30, 144, 255, 0.3)',
+            label: '环境' 
+        });
+      }
+      
+      // Precursor Chemicals
+      if (text.includes('易制毒')) {
+        if (!hasLabel('易制毒')) icons.push({ 
+            type: 'locked-filled', 
+            background: 'linear-gradient(135deg, #00b894 0%, #55efc4 100%)',
+            shadowColor: 'rgba(0, 184, 148, 0.3)',
+            label: '易制毒' 
+        });
+      }
+      
+      // Precursor Explosives
+      if (text.includes('易制爆')) {
+         if (!hasLabel('易制爆')) icons.push({ 
+             type: 'info-filled', 
+             background: 'linear-gradient(135deg, #ff7f50 0%, #ff9f43 100%)',
+             shadowColor: 'rgba(255, 127, 80, 0.3)',
+             label: '易制爆' 
+         });
+      }
+
+      // Default Warning
+      if (icons.length === 0 && (text.includes('危险') || text.includes('警告'))) {
+          icons.push({ 
+              type: 'info-filled', 
+              background: 'linear-gradient(135deg, #ffa502 0%, #eccc68 100%)',
+              shadowColor: 'rgba(255, 165, 2, 0.3)',
+              label: '警告' 
+          });
+      }
+
+      return icons;
     }
   },
   methods: {
@@ -1204,5 +1315,39 @@ export default {
     background-color: #f8f9fa;
     padding: 12px;
     border-radius: 8px;
+}
+
+/* GHS Icons Grid Styles */
+.ghs-icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 16px;
+    padding: 16px 0 16px 0; /* Added top padding to fix spacing from header */
+    border-bottom: 1px solid #eee;
+}
+
+.ghs-icon-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60px;
+}
+
+.ghs-icon-wrapper {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.ghs-label {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
 }
 </style>
