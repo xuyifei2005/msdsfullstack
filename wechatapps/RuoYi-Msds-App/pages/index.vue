@@ -50,22 +50,7 @@
         </view>
       </view>
 
-      <!-- 学习中心 (新增) -->
-      <view class="glass-card features-card">
-        <view class="card-header">
-          <text class="card-header-title">学习中心</text>
-        </view>
-        <u-grid :col="4" :border="false" hover-class="none">
-          <u-grid-item v-for="(item, index) in eduFeatures" :key="index" @click="handleGridClick(item)" :custom-style="{padding: '15px 0'}">
-            <view class="feature-item">
-              <view class="feature-icon-wrapper" :style="{ backgroundColor: item.bgColor }">
-                <uni-icons :type="item.icon" :color="item.color" size="24"></uni-icons>
-              </view>
-              <text class="feature-name">{{ item.name }}</text>
-            </view>
-          </u-grid-item>
-        </u-grid>
-      </view>
+
 
       <!-- 更多服务 -->
       <view class="glass-card features-card">
@@ -133,36 +118,7 @@ export default {
         '/static/images/banner/banner03.jpg'
       ],
       recentList: [], 
-      eduFeatures: [
-        {
-          name: '我的课程',
-          icon: 'book-filled', // 假设有此图标，否则使用 standard
-          color: '#007AFF',
-          bgColor: 'rgba(0, 122, 255, 0.1)',
-          path: '/pages/education/course/my'
-        },
-        {
-          name: '在线考试',
-          icon: 'paperplane-filled',
-          color: '#5856D6',
-          bgColor: 'rgba(88, 86, 214, 0.1)',
-          path: '/pages/education/exam/list'
-        },
-        {
-          name: '我的证书',
-          icon: 'vip-filled',
-          color: '#FF9500',
-          bgColor: 'rgba(255, 149, 0, 0.1)',
-          path: '/pages/education/certificate/my'
-        },
-        {
-          name: '培训记录',
-          icon: 'calendar-filled',
-          color: '#34C759',
-          bgColor: 'rgba(52, 199, 89, 0.1)',
-          path: '/pages/education/training/history'
-        }
-      ],
+
       features: [
         {
           name: '我的收藏',
