@@ -49,10 +49,18 @@ export function getMsdsLeakResponseByMsdsId(msdsId) {
   })
 }
 
-// 根据MSDS ID获取理化特性
+// 根据MSDS ID查询理化特性
 export function getMsdsPhysicalChemicalByMsdsId(msdsId) {
   return request({
     url: '/system/msds/physicalchemical/msds/' + msdsId,
+    method: 'get'
+  })
+}
+
+// 根据MSDS ID查询危险性概述
+export function getMsdsHazardByMsdsId(msdsId) {
+  return request({
+    url: '/system/msds/hazard/msds/' + msdsId,
     method: 'get'
   })
 }

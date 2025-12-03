@@ -96,13 +96,7 @@
         </view>
       </view>
 
-      <!-- 原操作按钮 (移除收藏，保留下载) -->
-      <view class="action-buttons">
-        <button class="action-btn btn-download" @click="onDownload">
-          <uni-icons type="download" color="#fff" size="20"></uni-icons>
-          <text>下载MSDS文档</text>
-        </button>
-      </view>
+
 
       <!-- 二维码弹窗 -->
       <uni-popup ref="qrPopup" type="center">
@@ -115,21 +109,7 @@
         </view>
       </uni-popup>
 
-      <!-- 理化特性 -->
-      <view class="info-card" v-if="physicalProps.length > 0">
-        <view class="card-header header-physical">
-          <view class="header-icon">
-            <uni-icons type="eye-filled" color="#fff" size="18"></uni-icons>
-          </view>
-          <text>理化特性</text>
-        </view>
-        <view class="card-content">
-          <view class="property-row" v-for="(item, index) in physicalProps" :key="index">
-            <view class="property-label">{{ item.label }}</view>
-            <view class="property-value">{{ item.value }}</view>
-          </view>
-        </view>
-      </view>
+
 
       <!-- 基本信息 -->
       <view class="info-card">
@@ -150,23 +130,84 @@
         </view>
       </view>
 
-      <!-- 危险性信息 (如果有) -->
-      <view class="info-card" v-if="hazardInfo.length > 0 || chemical.tags.length > 0">
+
+      <!-- 理化特性 -->
+      <view class="info-card" v-if="physicalProps.length > 0">
+        <view class="card-header header-physical">
+          <view class="header-icon">
+            <uni-icons type="eye-filled" color="#fff" size="18"></uni-icons>
+          </view>
+          <text>理化特性</text>
+        </view>
+        <view class="card-content">
+          <view class="property-row" v-for="(item, index) in physicalProps" :key="index">
+            <view class="property-label">{{ item.label }}</view>
+            <view class="property-value">{{ item.value }}</view>
+          </view>
+        </view>
+      </view>
+
+      <!-- 危险性信息 (Enhanced) -->
+      <view class="info-card" v-if="hazardDetail || hazardInfo.length > 0 || chemical.tags.length > 0">
         <view class="card-header header-danger">
           <uni-icons type="info-filled" color="#fff" size="20" style="margin-right: 8px;"></uni-icons>
           <text>危险性信息</text>
         </view>
         <view class="card-content">
-          <view class="property-row" v-for="(item, index) in hazardInfo" :key="index">
-            <view class="property-label">{{ item.label }}</view>
-            <view class="property-value">{{ item.value }}</view>
+          <!-- Emergency Overview Highlight -->
+          <view class="hazard-overview-box" v-if="hazardDetail && hazardDetail.emergencyOverview">
+             <view class="hazard-title">
+                 <uni-icons type="sound-filled" color="#ff4757" size="16" style="margin-right: 4px;"></uni-icons>
+                 紧急情况概述
+             </view>
+             <text class="hazard-text">{{ hazardDetail.emergencyOverview }}</text>
           </view>
-          <view class="hazard-tags" v-if="chemical.tags.length > 0">
-            <view class="hazard-tag" v-for="(tag, index) in chemical.tags" :key="index">
-              <uni-icons type="info-filled" color="#fff" size="12" style="margin-right: 4px;"></uni-icons>
-              <text>{{ tag }}</text>
-            </view>
+
+          <!-- Warning Word & Tags -->
+          <view class="hazard-meta-row">
+              <view class="warning-word-badge" :class="(hazardDetail && hazardDetail.warningWord && hazardDetail.warningWord.includes('危险')) ? 'bg-red' : 'bg-orange'" v-if="hazardDetail && hazardDetail.warningWord">
+                  {{ hazardDetail.warningWord }}
+              </view>
+              <view class="hazard-tags" v-if="chemical.tags.length > 0">
+                <view class="hazard-tag" v-for="(tag, index) in chemical.tags" :key="index">
+                  <text>{{ tag }}</text>
+                </view>
+              </view>
           </view>
+
+          <!-- Categories -->
+          <view class="hazard-section" v-if="hazardDetail && hazardDetail.hazardCategory">
+             <view class="section-label">危险性类别</view>
+             <view class="section-content">{{ hazardDetail.hazardCategory }}</view>
+          </view>
+
+          <!-- Detailed Hazards -->
+           <view class="hazard-section" v-if="hazardDetail && hazardDetail.healthHazards">
+             <view class="section-label">健康危害</view>
+             <view class="section-content">{{ hazardDetail.healthHazards }}</view>
+          </view>
+           <view class="hazard-section" v-if="hazardDetail && hazardDetail.environmentalHazards">
+             <view class="section-label">环境危害</view>
+             <view class="section-content">{{ hazardDetail.environmentalHazards }}</view>
+          </view>
+           <view class="hazard-section" v-if="hazardDetail && hazardDetail.fireExplosionHazards">
+             <view class="section-label">燃爆危险</view>
+             <view class="section-content">{{ hazardDetail.fireExplosionHazards }}</view>
+          </view>
+          
+          <!-- Prevention -->
+          <view class="hazard-section" v-if="hazardDetail && hazardDetail.preventionMeasures">
+             <view class="section-label">预防措施</view>
+             <view class="section-content">{{ hazardDetail.preventionMeasures }}</view>
+          </view>
+
+          <!-- Fallback to simple list if no detail but hazardInfo exists (compatibility) -->
+          <block v-if="!hazardDetail && hazardInfo.length > 0">
+              <view class="property-row" v-for="(item, index) in hazardInfo" :key="index">
+                <view class="property-label">{{ item.label }}</view>
+                <view class="property-value">{{ item.value }}</view>
+              </view>
+          </block>
         </view>
       </view>
 
@@ -235,7 +276,22 @@
           </view>
         </view>
       </view>
+
+      <!-- 原操作按钮 (移除收藏，保留下载) -->
+      <view class="action-buttons">
+        <button class="action-btn btn-download" @click="onDownload">
+          <uni-icons type="download" color="#fff" size="20"></uni-icons>
+          <text>下载MSDS文档</text>
+        </button>
+      </view>
       
+
+
+
+
+
+
+
       <!-- 底部留白，防止内容被底部安全区遮挡 -->
       <view class="safe-area-bottom"></view>
     </view>
@@ -243,7 +299,7 @@
 </template>
 
 <script>
-import { getMsds, getMsdsFirstAidByMsdsId, getMsdsComponentByMsdsId, getMsdsLeakResponseByMsdsId, getMsdsPhysicalChemicalByMsdsId } from '@/api/msds/msds'
+import { getMsds, getMsdsFirstAidByMsdsId, getMsdsComponentByMsdsId, getMsdsLeakResponseByMsdsId, getMsdsPhysicalChemicalByMsdsId, getMsdsHazardByMsdsId } from '@/api/msds/msds'
 import config from '@/config'
 
 export default {
@@ -273,6 +329,7 @@ export default {
       physicalProps: [],
       basicInfo: [],
       hazardInfo: [],
+      hazardDetail: null, // New structured hazard data
       healthHazards: [],
       firstAid: [],
       leakResponse: [],
@@ -463,6 +520,28 @@ export default {
                 if (phys.relativeDensity) props.push({ label: '相对密度', value: phys.relativeDensity });
                 if (phys.solubility) props.push({ label: '溶解性', value: phys.solubility });
                 this.physicalProps = props;
+             }
+          }
+        } catch (e) { console.error(e); }
+
+        // 6. Fetch Hazard Info (Enhanced)
+        try {
+          const hazRes = await getMsdsHazardByMsdsId(id);
+          if (hazRes.data) {
+             let haz = hazRes.data;
+             if (Array.isArray(haz)) haz = haz[0];
+             
+             if (haz) {
+                this.hazardDetail = haz;
+                
+                // Populate basic hazard info list
+                const hInfo = [];
+                if (haz.warningWord) hInfo.push({ label: '警示词', value: haz.warningWord });
+                if (haz.hazardCategory) hInfo.push({ label: '危险性类别', value: haz.hazardCategory });
+                // Emergency overview is often long, maybe handle separately or here
+                if (haz.emergencyOverview) hInfo.push({ label: '紧急情况概述', value: haz.emergencyOverview });
+                
+                this.hazardInfo = hInfo;
              }
           }
         } catch (e) { console.error(e); }
@@ -1059,5 +1138,71 @@ export default {
     
     &::after { border: none; }
     &:active { background: #eee; }
+}
+
+/* Enhanced Hazard Module Styles */
+.hazard-overview-box {
+    background-color: #fff0f0;
+    border-radius: 12px;
+    padding: 16px;
+    margin: 16px 0;
+    border: 1px solid rgba(255, 71, 87, 0.1);
+}
+
+.hazard-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ff4757;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.hazard-text {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.hazard-meta-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.warning-word-badge {
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.bg-red { background-color: #ff4757; }
+.bg-orange { background-color: #ffa502; }
+
+.hazard-section {
+    margin-bottom: 16px;
+}
+
+.hazard-section .section-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.hazard-section .section-content {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    padding: 12px;
+    border-radius: 8px;
 }
 </style>
