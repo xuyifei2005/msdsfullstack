@@ -26,32 +26,13 @@
         ></u-swiper>
       </view>
 
-      <!-- 安全教育核心功能 (新增) -->
-      <view class="section-container glass-card">
-        <view class="section-header">
-          <uni-icons type="vip-filled" color="#007AFF" size="20"></uni-icons>
-          <text class="section-title">安全教育</text>
-        </view>
-        <u-grid :border="false" col="4">
-          <u-grid-item
-            v-for="(item, index) in eduGridList"
-            :key="index"
-            customStyle="padding-top: 20px; padding-bottom: 20px"
-            @click="gridClick(item)"
-          >
-            <view class="grid-icon-bg" :style="{ backgroundColor: item.color || '#e8f3ff' }">
-              <uni-icons :type="item.icon" :color="item.iconColor || '#007AFF'" size="28"></uni-icons>
-            </view>
-            <text class="grid-text">{{ item.title }}</text>
-          </u-grid-item>
-        </u-grid>
-      </view>
 
-      <!-- 实验室常用服务 (新增) -->
+
+      <!-- 拓展服务 -->
       <view class="section-container glass-card">
         <view class="section-header">
           <uni-icons type="grid-filled" color="#34C759" size="20"></uni-icons>
-          <text class="section-title">实验室服务</text>
+          <text class="section-title">拓展服务</text>
         </view>
         <u-grid :border="false" col="4">
           <u-grid-item
@@ -139,13 +120,7 @@
             url: '/pages/education/course/list?type=equipment'
           }
         ],
-        // 核心教育功能 (新增)
-        eduGridList: [
-          { title: '必修课程', icon: 'map-filled', color: '#e8f3ff', iconColor: '#007AFF', path: '/pages/education/course/required' },
-          { title: '选修课程', icon: 'list', color: '#fff0e6', iconColor: '#FF9500', path: '/pages/education/course/elective' },
-          { title: '在线考试', icon: 'paperplane-filled', color: '#fce8ff', iconColor: '#AF52DE', path: '/pages/education/exam/list' },
-          { title: '我的证书', icon: 'star-filled', color: '#e8fff3', iconColor: '#34C759', path: '/pages/education/certificate/index' }
-        ],
+
         // 常用服务功能 (新增)
         serviceGridList: [
           { title: '扫码准入', icon: 'scan', color: '#e8faff', iconColor: '#5AC8FA', path: '/pages/common/scan/index' },
