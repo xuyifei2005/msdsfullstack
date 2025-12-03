@@ -54,18 +54,81 @@
                 <text class="meta-value">{{ chemical.formula }}</text>
             </view>
         </view>
+
+        <!-- 快捷理化数据 (新增) -->
+        <view class="quick-stats">
+            <view class="stat-item">
+                <text class="stat-label">分子量</text>
+                <text class="stat-value">{{ quickStats.molecularWeight || '-' }}</text>
+            </view>
+            <view class="stat-item">
+                <text class="stat-label">沸点</text>
+                <text class="stat-value">{{ quickStats.boilingPoint || '-' }}</text>
+            </view>
+            <view class="stat-item">
+                <text class="stat-label">密度</text>
+                <text class="stat-value">{{ quickStats.density || '-' }}</text>
+            </view>
+            <view class="stat-item">
+                <text class="stat-label">闪点</text>
+                <text class="stat-value">{{ quickStats.flashPoint || '-' }}</text>
+            </view>
+        </view>
+
+        <!-- 快捷操作栏 (新增) -->
+        <view class="header-actions">
+            <view class="action-item" @click="onFavorite">
+                <uni-icons :type="isFavorited ? 'heart-filled' : 'heart'" color="#fff" size="20"></uni-icons>
+                <text>收藏</text>
+            </view>
+            <view class="action-item" @click="onShare">
+                <uni-icons type="redo" color="#fff" size="20"></uni-icons>
+                <text>分享</text>
+                <!-- 微信小程序分享按钮遮罩 -->
+                <!-- #ifdef MP-WEIXIN -->
+                <button open-type="share" class="share-btn-overlay"></button>
+                <!-- #endif -->
+            </view>
+            <view class="action-item" @click="onQRCode">
+                <uni-icons type="scan" color="#fff" size="20"></uni-icons>
+                <text>二维码</text>
+            </view>
+        </view>
       </view>
 
-      <!-- 操作按钮 -->
+      <!-- 原操作按钮 (移除收藏，保留下载) -->
       <view class="action-buttons">
-        <button class="action-btn btn-favorite" :class="{ 'is-active': isFavorited }" @click="onFavorite">
-          <uni-icons :type="isFavorited ? 'star-filled' : 'star'" :color="isFavorited ? '#fff' : '#666'" size="20"></uni-icons>
-          <text>{{ isFavorited ? '已收藏' : '收藏' }}</text>
-        </button>
         <button class="action-btn btn-download" @click="onDownload">
           <uni-icons type="download" color="#fff" size="20"></uni-icons>
-          <text>下载MSDS</text>
+          <text>下载MSDS文档</text>
         </button>
+      </view>
+
+      <!-- 二维码弹窗 -->
+      <uni-popup ref="qrPopup" type="center">
+        <view class="qr-popup-content">
+            <view class="qr-title">化学品二维码</view>
+            <image class="qr-image" :src="qrCodeUrl" mode="aspectFit"></image>
+            <view class="qr-desc">{{ chemical.name }}</view>
+            <view class="qr-cas">CAS: {{ chemical.cas }}</view>
+            <button class="qr-close-btn" @click="closeQRCode">关闭</button>
+        </view>
+      </uni-popup>
+
+      <!-- 理化特性 -->
+      <view class="info-card" v-if="physicalProps.length > 0">
+        <view class="card-header header-physical">
+          <view class="header-icon">
+            <uni-icons type="eye-filled" color="#fff" size="18"></uni-icons>
+          </view>
+          <text>理化特性</text>
+        </view>
+        <view class="card-content">
+          <view class="property-row" v-for="(item, index) in physicalProps" :key="index">
+            <view class="property-label">{{ item.label }}</view>
+            <view class="property-value">{{ item.value }}</view>
+          </view>
+        </view>
       </view>
 
       <!-- 基本信息 -->
@@ -180,7 +243,7 @@
 </template>
 
 <script>
-import { getMsds, getMsdsFirstAidByMsdsId, getMsdsComponentByMsdsId, getMsdsLeakResponseByMsdsId } from '@/api/msds/msds'
+import { getMsds, getMsdsFirstAidByMsdsId, getMsdsComponentByMsdsId, getMsdsLeakResponseByMsdsId, getMsdsPhysicalChemicalByMsdsId } from '@/api/msds/msds'
 import config from '@/config'
 
 export default {
@@ -200,6 +263,14 @@ export default {
         tags: [],
         filePath: '' // Store file path if available
       },
+      quickStats: {
+        molecularWeight: '',
+        boilingPoint: '',
+        density: '',
+        flashPoint: ''
+      },
+      qrCodeUrl: '',
+      physicalProps: [],
       basicInfo: [],
       hazardInfo: [],
       healthHazards: [],
@@ -367,6 +438,35 @@ export default {
           }
         } catch (e) { console.error(e); }
 
+        // 5. Fetch Physical Properties
+        try {
+          const physRes = await getMsdsPhysicalChemicalByMsdsId(id);
+          if (physRes.data) {
+             let phys = physRes.data;
+             if (Array.isArray(phys)) phys = phys[0]; // Handle if list returned
+             
+             if (phys) {
+                // Populate Quick Stats
+                this.quickStats = {
+                    molecularWeight: phys.molecularWeight,
+                    boilingPoint: phys.boilingPoint,
+                    density: phys.relativeDensity,
+                    flashPoint: phys.flashPoint
+                };
+
+                const props = [];
+                if (phys.appearance) props.push({ label: '外观与性状', value: phys.appearance });
+                if (phys.odor) props.push({ label: '气味', value: phys.odor });
+                if (phys.meltingPoint) props.push({ label: '熔点(℃)', value: phys.meltingPoint });
+                if (phys.boilingPoint) props.push({ label: '沸点(℃)', value: phys.boilingPoint });
+                if (phys.flashPoint) props.push({ label: '闪点(℃)', value: phys.flashPoint });
+                if (phys.relativeDensity) props.push({ label: '相对密度', value: phys.relativeDensity });
+                if (phys.solubility) props.push({ label: '溶解性', value: phys.solubility });
+                this.physicalProps = props;
+             }
+          }
+        } catch (e) { console.error(e); }
+
       } catch (error) {
         uni.showToast({ title: '获取详情失败', icon: 'none' });
         console.error(error);
@@ -460,6 +560,36 @@ export default {
           uni.hideLoading();
         }
       });
+    },
+    onShare() {
+        // Handle share logic (mainly for App/H5, WeChat is handled by open-type button)
+        // #ifdef APP-PLUS
+        uni.share({
+            provider: "weixin",
+            scene: "WXSceneSession",
+            type: 0,
+            href: `http://www.yourdomain.com/h5/#/pages/detail/index?id=${this.chemical.id}`,
+            title: `MSDS详情: ${this.chemical.name}`,
+            summary: `CAS: ${this.chemical.cas}`,
+            imageUrl: "/static/logo.png",
+            success: function (res) {
+                console.log("success:" + JSON.stringify(res));
+            },
+            fail: function (err) {
+                console.log("fail:" + JSON.stringify(err));
+            }
+        });
+        // #endif
+    },
+    onQRCode() {
+        // Generate QR Code URL
+        // Using a public API for demo purposes. In production, use a local generator or backend API.
+        const data = `MSDS:${this.chemical.id}|${this.chemical.cas}`;
+        this.qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(data)}`;
+        this.$refs.qrPopup.open();
+    },
+    closeQRCode() {
+        this.$refs.qrPopup.close();
     }
   }
 }
@@ -699,6 +829,7 @@ export default {
 }
 
 .header-basic { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+.header-physical { background: linear-gradient(135deg, #8EC5FC 0%, #E0C3FC 100%); }
 .header-danger { background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%); }
 .header-health { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
 .header-firstaid { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
@@ -789,5 +920,144 @@ export default {
   height: 30px;
   height: constant(safe-area-inset-bottom);
   height: env(safe-area-inset-bottom);
+}
+
+/* Quick Stats Styles */
+.quick-stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 16px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    position: relative;
+    z-index: 1;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    position: relative;
+    
+    &:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 20px;
+        width: 1px;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+.stat-label {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 4px;
+}
+
+.stat-value {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Header Actions Styles */
+.header-actions {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.action-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.2s;
+    position: relative;
+    
+    &:active {
+        background-color: rgba(255, 255, 255, 0.2);
+        transform: scale(0.95);
+    }
+    
+    text {
+        font-size: 12px;
+        color: #fff;
+        margin-top: 4px;
+    }
+}
+
+.share-btn-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 2;
+}
+
+/* QR Code Popup Styles */
+.qr-popup-content {
+    background-color: #fff;
+    width: 300px;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.qr-image {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 16px;
+}
+
+.qr-desc {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.qr-cas {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 24px;
+    font-family: monospace;
+}
+
+.qr-close-btn {
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    background: #f5f5f5;
+    border-radius: 22px;
+    color: #666;
+    font-size: 15px;
+    border: none;
+    
+    &::after { border: none; }
+    &:active { background: #eee; }
 }
 </style>
