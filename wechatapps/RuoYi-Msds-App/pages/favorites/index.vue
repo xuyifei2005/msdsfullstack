@@ -302,7 +302,40 @@ export default {
       return false;
     },
     loadFavorites() {
-      this.favorites = uni.getStorageSync('MSDS_FAVORITES') || [];
+      let rawFavorites = uni.getStorageSync('MSDS_FAVORITES') || [];
+      
+      // Deduplicate logic
+      const seenIds = new Set();
+      const seenCas = new Set();
+      const uniqueFavorites = [];
+      
+      rawFavorites.forEach(item => {
+          let isDuplicate = false;
+          
+          // Check ID
+          if (item.id && seenIds.has(String(item.id))) {
+              isDuplicate = true;
+          }
+          
+          // Check CAS (only if valid)
+          if (!isDuplicate && item.cas && seenCas.has(String(item.cas))) {
+              isDuplicate = true;
+          }
+          
+          if (!isDuplicate) {
+              if (item.id) seenIds.add(String(item.id));
+              if (item.cas) seenCas.add(String(item.cas));
+              uniqueFavorites.push(item);
+          }
+      });
+      
+      // Update if duplicates were found
+      if (uniqueFavorites.length < rawFavorites.length) {
+          uni.setStorageSync('MSDS_FAVORITES', uniqueFavorites);
+          console.log(`Cleaned up ${rawFavorites.length - uniqueFavorites.length} duplicate favorites`);
+      }
+      
+      this.favorites = uniqueFavorites;
       
       // Ensure addTime exists and auto-tag legacy items
       this.favorites = this.favorites.map((item, index) => {
