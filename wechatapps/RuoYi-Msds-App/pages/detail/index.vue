@@ -22,7 +22,7 @@
     <!-- 主内容区域 -->
     <view class="content" v-if="loading">
       <view class="loading-container">
-        <uni-load-more status="loading" content-text="正在加载MSDS详情..."></uni-load-more>
+        <uni-load-more status="loading" :content-text="{contentrefresh: '正在加载MSDS详情...'}"></uni-load-more>
       </view>
     </view>
     
@@ -334,6 +334,45 @@
         </view>
       </view>
 
+      <!-- 供应商信息 -->
+      <view class="info-card" v-if="supplierInfo && supplierInfo.name">
+        <view class="card-header header-supplier">
+          <uni-icons type="shop-filled" color="#fff" size="20" style="margin-right: 8px;"></uni-icons>
+          <text>供应商信息</text>
+        </view>
+        <view class="card-content" style="padding: 16px;">
+            <view class="supplier-card">
+                <view class="supplier-main">
+                    <view class="supplier-logo">
+                        <text>{{ supplierInfo.name.substring(0, 2) }}</text>
+                    </view>
+                    <view class="supplier-info-text">
+                        <text class="supplier-name">{{ supplierInfo.name }}</text>
+                        <text class="supplier-phone" v-if="supplierInfo.phone">电话: {{ supplierInfo.phone }}</text>
+                    </view>
+                    <button class="btn-contact" @click="handleCallSupplier" v-if="supplierInfo.phone">联系</button>
+                </view>
+                
+                <view class="supplier-divider"></view>
+                
+                <view class="supplier-grid">
+                    <view class="supplier-grid-item">
+                        <text class="grid-label">产品编号</text>
+                        <text class="grid-value">{{ supplierInfo.code || '-' }}</text>
+                    </view>
+                     <view class="supplier-grid-item">
+                        <text class="grid-label">生效日期</text>
+                        <text class="grid-value">{{ supplierInfo.effectiveDate || '-' }}</text>
+                    </view>
+                     <view class="supplier-grid-item" style="width: 100%;">
+                        <text class="grid-label">地址</text>
+                        <text class="grid-value">{{ supplierInfo.address || '-' }}</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+      </view>
+
       <!-- 泄漏应急处理 -->
       <view class="info-card" v-if="leakResponse.length > 0">
         <view class="card-header header-leak">
@@ -369,6 +408,28 @@
           <text>下载MSDS文档</text>
         </button>
       </view>
+
+      <!-- 相关推荐 -->
+      <view class="info-card" v-if="relatedProducts.length > 0">
+        <view class="card-header header-related">
+          <uni-icons type="hand-up-filled" color="#fff" size="20" style="margin-right: 8px;"></uni-icons>
+          <text>相关推荐</text>
+        </view>
+        <view class="card-content" style="padding: 0;">
+            <view class="related-list">
+                <view class="related-item" v-for="(item, index) in relatedProducts" :key="index" @click="handleRelatedClick(item)">
+                    <view class="related-icon">
+                        <text>{{ item.productName ? item.productName.substring(0, 1) : '化' }}</text>
+                    </view>
+                    <view class="related-info">
+                        <text class="related-name">{{ item.productName }}</text>
+                        <text class="related-cas">CAS: {{ item.productAlias || item.casNumber || '-' }}</text>
+                    </view>
+                    <uni-icons type="arrowright" color="#999" size="16"></uni-icons>
+                </view>
+            </view>
+        </view>
+      </view>
       
 
 
@@ -384,7 +445,7 @@
 </template>
 
 <script>
-import { getMsds, getMsdsFirstAidByMsdsId, getMsdsComponentByMsdsId, getMsdsLeakResponseByMsdsId, getMsdsPhysicalChemicalByMsdsId, getMsdsHazardByMsdsId, getMsdsExposureControlByMsdsId, getMsdsHandlingStorageByMsdsId } from '@/api/msds/msds'
+import { getMsds, listMsds, getMsdsFirstAidByMsdsId, getMsdsComponentByMsdsId, getMsdsLeakResponseByMsdsId, getMsdsPhysicalChemicalByMsdsId, getMsdsHazardByMsdsId, getMsdsExposureControlByMsdsId, getMsdsHandlingStorageByMsdsId } from '@/api/msds/msds'
 import config from '@/config'
 
 export default {
@@ -418,10 +479,12 @@ export default {
       doctorAdvice: [], // Doctor's advice list
       exposureControl: null, // Personal protection
       handlingStorage: null, // Storage requirements
+      supplierInfo: null, // Supplier information
       healthHazards: [],
       firstAid: [],
       leakResponse: [],
-      storageInfo: []
+      storageInfo: [],
+      relatedProducts: []
     }
   },
   onLoad(options) {
@@ -590,6 +653,9 @@ export default {
     },
     async fetchData(id) {
       this.loading = true;
+      // Fetch related products
+      this.fetchRelatedProducts(id);
+      
       try {
         // 1. Fetch Main Info
         const mainRes = await getMsds(id);
@@ -636,6 +702,27 @@ export default {
           { label: '供应商', value: data.supplierName || '-' },
           { label: '联系电话', value: data.emergencyPhone || data.supplierPhone || '-', copy: true }
         ];
+
+        // Populate Supplier Info
+        // Fallback to Company info if Supplier info is missing
+        const sName = data.supplierName || data.companyName;
+        const sPhone = data.supplierPhone || data.emergencyPhone || data.contactPhone;
+        const sAddress = data.supplierAddress || data.companyAddress;
+        
+        console.log('MSDS Data:', data);
+        console.log('Resolved Supplier Info:', { sName, sPhone, sAddress });
+
+        if (sName) {
+            this.supplierInfo = {
+                name: sName,
+                phone: sPhone,
+                address: sAddress,
+                code: data.productCode || data.msdsCode,
+                effectiveDate: data.effectiveDate
+            };
+        } else {
+             this.supplierInfo = null;
+        }
 
         // 2. Fetch Components (for formula)
         try {
@@ -891,6 +978,33 @@ export default {
     },
     closeQRCode() {
         this.$refs.qrPopup.close();
+    },
+    handleCallSupplier() {
+      if (this.supplierInfo && this.supplierInfo.phone) {
+        uni.makePhoneCall({
+          phoneNumber: this.supplierInfo.phone
+        });
+      }
+    },
+    handleRelatedClick(item) {
+      // Assuming item.msdsId is the ID to navigate to
+      uni.redirectTo({
+        url: `/pages/detail/index?id=${item.msdsId || item.id}`
+      });
+    },
+    async fetchRelatedProducts(currentId) {
+      try {
+        // Fetch a list of chemicals
+        const res = await listMsds({ pageNum: 1, pageSize: 6 });
+        if (res.rows) {
+           // Filter out current product and take top 5
+           this.relatedProducts = res.rows
+             .filter(item => (item.msdsId != currentId && item.id != currentId))
+             .slice(0, 5);
+        }
+      } catch (e) {
+        console.error('Fetch related products failed', e);
+      }
     }
   }
 }
@@ -1602,5 +1716,153 @@ export default {
     font-size: 14px;
     font-weight: bold;
     padding-left: 4px;
+}
+
+/* Supplier Info Styles */
+.header-supplier { background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); }
+
+.supplier-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.supplier-main {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.supplier-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 16px;
+    box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+}
+
+.supplier-info-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.supplier-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.supplier-phone {
+    font-size: 13px;
+    color: #666;
+}
+
+.btn-contact {
+    height: 32px;
+    line-height: 32px;
+    font-size: 13px;
+    background: #2b85e4;
+    color: #fff;
+    border-radius: 16px;
+    padding: 0 16px;
+    border: none;
+    
+    &::after { border: none; }
+    &:active { opacity: 0.9; }
+}
+
+.supplier-divider {
+    height: 1px;
+    background-color: #f0f0f0;
+    margin-bottom: 16px;
+}
+
+.supplier-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.supplier-grid-item {
+    width: calc(50% - 6px);
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-label {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 4px;
+}
+
+.grid-value {
+    font-size: 13px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Related Products Styles */
+.header-related { background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); }
+
+.related-list {
+    .related-item {
+        display: flex;
+        align-items: center;
+        padding: 12px 16px;
+        border-bottom: 1px solid #f5f5f5;
+        
+        &:last-child {
+            border-bottom: none;
+        }
+        
+        &:active {
+            background-color: #f9f9f9;
+        }
+        
+        .related-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            
+            text {
+                font-size: 16px;
+                color: #2b85e4;
+                font-weight: bold;
+            }
+        }
+        
+        .related-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            
+            .related-name {
+                font-size: 14px;
+                color: #333;
+                margin-bottom: 2px;
+            }
+            
+            .related-cas {
+                font-size: 12px;
+                color: #999;
+            }
+        }
+    }
 }
 </style>

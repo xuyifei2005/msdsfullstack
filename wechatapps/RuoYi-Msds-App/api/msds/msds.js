@@ -44,7 +44,7 @@ export function getMsdsComponentByMsdsId(msdsId) {
 // 根据MSDS ID获取泄漏应急处理
 export function getMsdsLeakResponseByMsdsId(msdsId) {
   return request({
-    url: '/system/msds/leakresponse/msds/' + msdsId,
+    url: '/system/msds/leakResponse/msds/' + msdsId,
     method: 'get'
   })
 }
