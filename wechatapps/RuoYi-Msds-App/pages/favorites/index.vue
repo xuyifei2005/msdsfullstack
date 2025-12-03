@@ -78,15 +78,43 @@
             :class="{ active: currentCategory === 'all' }" 
             @click="setCategory('all')"
           >全部</view>
+          
+          <!-- Visible Categories -->
           <view 
             class="category-tab" 
-            v-for="(cat, index) in categories" 
-            :key="index"
+            v-for="(cat, index) in visibleCategories" 
+            :key="cat.key"
             :class="{ active: currentCategory === cat.key }"
             @click="setCategory(cat.key)"
           >{{ cat.label }}</view>
+
+          <!-- More Tab -->
+          <view 
+            class="category-tab more-tab" 
+            :class="{ active: isMoreActive }"
+            @click="toggleMoreCategories"
+          >
+            更多
+            <uni-icons :type="showMoreCategories ? 'up' : 'down'" size="12" :color="isMoreActive ? '#fff' : '#666'" style="margin-left: 4px;"></uni-icons>
+          </view>
         </view>
       </scroll-view>
+
+      <!-- Expanded Categories Panel -->
+      <view class="more-categories-panel glass-card-sm" v-if="showMoreCategories">
+        <view class="panel-grid">
+           <view 
+             class="panel-item" 
+             v-for="cat in moreCategories" 
+             :key="cat.key"
+             :class="{ active: currentCategory === cat.key }"
+             @click="setCategory(cat.key)"
+           >
+             <text>{{ cat.label }}</text>
+             <uni-icons v-if="currentCategory === cat.key" type="checkmarkempty" size="14" color="#fff"></uni-icons>
+           </view>
+        </view>
+      </view>
 
       <!-- 收藏列表 -->
       <view class="favorites-list">
@@ -174,6 +202,7 @@ export default {
       showSortMenu: false,
       isEditMode: false,
       isSearchFocused: false,
+      showMoreCategories: false,
       selectedIds: [],
       categories: [
         { key: 'explosive', label: '易制爆' },
@@ -187,6 +216,18 @@ export default {
     };
   },
   computed: {
+    visibleCategories() {
+      // First 3 categories visible
+      return this.categories.slice(0, 3);
+    },
+    moreCategories() {
+      // The rest
+      return this.categories.slice(3);
+    },
+    isMoreActive() {
+      // If current category is one of the hidden ones
+      return this.moreCategories.some(cat => cat.key === this.currentCategory);
+    },
     currentSortLabel() {
       return this.sortBy === 'time' ? '时间' : '名称';
     },
@@ -392,6 +433,10 @@ export default {
     },
     setCategory(key) {
       this.currentCategory = key;
+      this.showMoreCategories = false;
+    },
+    toggleMoreCategories() {
+      this.showMoreCategories = !this.showMoreCategories;
     },
     onSearchFocus() {
       this.isSearchFocused = true;
@@ -595,6 +640,50 @@ export default {
       box-shadow: 0 4px 10px rgba(0, 122, 255, 0.3);
     }
   }
+  
+  .more-tab {
+    // Active state handled by common .active
+  }
+}
+
+.more-categories-panel {
+  margin: 0 16px 16px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  animation: slideDown 0.2s ease-out;
+  
+  .panel-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .panel-item {
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    font-size: 13px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid rgba(0,0,0,0.05);
+    
+    &.active {
+      background: #007aff;
+      color: #fff;
+      border-color: #007aff;
+    }
+    
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* 列表项 */

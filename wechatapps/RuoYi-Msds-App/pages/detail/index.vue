@@ -866,30 +866,50 @@ export default {
       uni.navigateBack();
     },
     checkFavoriteStatus() {
-      const id = this.chemical.id || this.chemical.cas;
+      const id = this.chemical.id;
+      const cas = this.chemical.cas;
       const favorites = uni.getStorageSync('MSDS_FAVORITES') || [];
-      this.isFavorited = favorites.some(item => item.id === id || (item.cas && item.cas === id));
+      // Robust check: match ID OR match CAS (if exists)
+      this.isFavorited = favorites.some(item => {
+          const idMatch = item.id && id && String(item.id) === String(id);
+          const casMatch = item.cas && cas && String(item.cas) === String(cas);
+          return idMatch || casMatch;
+      });
     },
     onFavorite() {
-      const id = this.chemical.id || this.chemical.cas;
-      let favorites = uni.getStorageSync('MSDS_FAVORITES') || [];
+      // Re-check status
+      this.checkFavoriteStatus();
       
       if (this.isFavorited) {
-        favorites = favorites.filter(item => item.id !== id && item.cas !== id);
-        this.isFavorited = false;
-        uni.showToast({ title: '已取消收藏', icon: 'none' });
-      } else {
-        favorites.unshift({
-          id: id,
-          name: this.chemical.name,
-          englishName: this.chemical.englishName || '',
-          cas: this.chemical.cas,
-          tags: this.chemical.tags,
-          addTime: Date.now()
-        });
-        this.isFavorited = true;
-        uni.showToast({ title: '已收藏', icon: 'success' });
+        uni.showToast({ title: '您已收藏', icon: 'none' });
+        return;
       }
+      
+      let favorites = uni.getStorageSync('MSDS_FAVORITES') || [];
+      const id = this.chemical.id || this.chemical.cas;
+      
+      // Double check to prevent duplicates in storage
+      const exists = favorites.some(item => 
+        (item.id && String(item.id) === String(id)) || 
+        (item.cas && this.chemical.cas && String(item.cas) === String(this.chemical.cas))
+      );
+      
+      if (exists) {
+         this.isFavorited = true;
+         uni.showToast({ title: '您已收藏', icon: 'none' });
+         return;
+      }
+      
+      favorites.unshift({
+        id: id,
+        name: this.chemical.name,
+        englishName: this.chemical.englishName || '',
+        cas: this.chemical.cas,
+        tags: this.chemical.tags || [],
+        addTime: Date.now()
+      });
+      this.isFavorited = true;
+      uni.showToast({ title: '已收藏', icon: 'success' });
       uni.setStorageSync('MSDS_FAVORITES', favorites);
     },
     onDownload() {
