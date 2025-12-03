@@ -1,6 +1,4 @@
-# JFKJMSDS易查宝
-
-######MSDS速查助手---->安备思用！
+# JFKJMSDS
 
 ---
 

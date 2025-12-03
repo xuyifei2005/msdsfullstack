@@ -1,11 +1,13 @@
 // 应用全局配置
 module.exports = {
   // baseUrl: 'https://vue.ruoyi.vip/prod-api',
-  baseUrl: 'http://localhost:18080',
+  //  baseUrl: 'http://localhost:18080',
+  baseUrl: 'http://192.168.0.93:18080',
+
   // 应用信息
   appInfo: {
     // 应用名称
-    name: "msds管理系统",
+    name: "MSDS安全智库网",
     // 应用版本
     version: "1.2.0",
     // 应用logo
