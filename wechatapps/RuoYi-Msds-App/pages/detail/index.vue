@@ -281,6 +281,59 @@
         </view>
       </view>
 
+      <!-- 防护措施 -->
+      <view class="info-card" v-if="exposureControl || handlingStorage">
+        <view class="card-header header-protection">
+          <uni-icons type="shield-filled" color="#fff" size="20" style="margin-right: 8px;"></uni-icons>
+          <text>防护措施</text>
+        </view>
+        <view class="card-content" style="padding: 16px;">
+          <!-- 个人防护设备 -->
+          <view class="protection-section" v-if="exposureControl">
+            <view class="section-header">
+              <uni-icons type="person-filled" color="#ffa502" size="18" style="margin-right: 6px;"></uni-icons>
+              <text>个人防护设备</text>
+            </view>
+            <view class="section-list">
+              <view class="section-item" v-if="exposureControl.respiratoryProtection">
+                <view class="item-dot"></view>
+                <text>{{ exposureControl.respiratoryProtection }}</text>
+              </view>
+              <view class="section-item" v-if="exposureControl.eyeProtection">
+                <view class="item-dot"></view>
+                <text>{{ exposureControl.eyeProtection }}</text>
+              </view>
+              <view class="section-item" v-if="exposureControl.bodyProtection">
+                <view class="item-dot"></view>
+                <text>{{ exposureControl.bodyProtection }}</text>
+              </view>
+              <view class="section-item" v-if="exposureControl.handProtection">
+                <view class="item-dot"></view>
+                <text>{{ exposureControl.handProtection }}</text>
+              </view>
+            </view>
+          </view>
+
+          <!-- 储存要求 -->
+          <view class="protection-section" v-if="handlingStorage" :style="{ marginTop: exposureControl ? '20px' : '0' }">
+            <view class="section-header">
+              <uni-icons type="home-filled" color="#2b85e4" size="18" style="margin-right: 6px;"></uni-icons>
+              <text>储存要求</text>
+            </view>
+            <view class="section-list">
+              <view class="section-item" v-if="handlingStorage.storagePrecautions">
+                <view class="item-dot"></view>
+                <text>{{ handlingStorage.storagePrecautions }}</text>
+              </view>
+              <view class="section-item" v-if="handlingStorage.optimalTemperature">
+                <view class="item-dot"></view>
+                <text>最佳储存温度: {{ handlingStorage.optimalTemperature }}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+
       <!-- 泄漏应急处理 -->
       <view class="info-card" v-if="leakResponse.length > 0">
         <view class="card-header header-leak">
@@ -331,7 +384,7 @@
 </template>
 
 <script>
-import { getMsds, getMsdsFirstAidByMsdsId, getMsdsComponentByMsdsId, getMsdsLeakResponseByMsdsId, getMsdsPhysicalChemicalByMsdsId, getMsdsHazardByMsdsId } from '@/api/msds/msds'
+import { getMsds, getMsdsFirstAidByMsdsId, getMsdsComponentByMsdsId, getMsdsLeakResponseByMsdsId, getMsdsPhysicalChemicalByMsdsId, getMsdsHazardByMsdsId, getMsdsExposureControlByMsdsId, getMsdsHandlingStorageByMsdsId } from '@/api/msds/msds'
 import config from '@/config'
 
 export default {
@@ -363,6 +416,8 @@ export default {
       hazardInfo: [],
       hazardDetail: null, // New structured hazard data
       doctorAdvice: [], // Doctor's advice list
+      exposureControl: null, // Personal protection
+      handlingStorage: null, // Storage requirements
       healthHazards: [],
       firstAid: [],
       leakResponse: [],
@@ -694,6 +749,23 @@ export default {
                 this.hazardInfo = hInfo;
              }
           }
+        } catch (e) { console.error(e); }
+
+        // 7. Fetch Protection Measures (Exposure Control & Handling Storage)
+        try {
+            const expRes = await getMsdsExposureControlByMsdsId(id);
+            if (expRes.data) {
+                let exp = expRes.data;
+                if (Array.isArray(exp)) exp = exp[0];
+                this.exposureControl = exp;
+            }
+            
+            const storeRes = await getMsdsHandlingStorageByMsdsId(id);
+            if (storeRes.data) {
+                let store = storeRes.data;
+                if (Array.isArray(store)) store = store[0];
+                this.handlingStorage = store;
+            }
         } catch (e) { console.error(e); }
 
       } catch (error) {
@@ -1064,6 +1136,7 @@ export default {
 .header-firstaid { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
 .header-leak { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
 .header-storage { background: linear-gradient(135deg, #8fd3f4 0%, #84fab0 100%); }
+.header-protection { background: linear-gradient(135deg, #fccb90 0%, #d57eeb 100%); }
 
 .card-content {
   padding: 0 16px 16px 16px;
@@ -1291,6 +1364,43 @@ export default {
 }
 
 /* Enhanced Hazard Module Styles */
+.protection-section {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.section-header {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.section-list {
+    padding-left: 4px;
+}
+
+.section-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.item-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-top: 7px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
 .hazard-overview-box {
     background-color: #fff0f0;
     border-radius: 12px;

@@ -64,3 +64,17 @@ export function getMsdsHazardByMsdsId(msdsId) {
     method: 'get'
   })
 }
+
+export function getMsdsExposureControlByMsdsId(msdsId) {
+  return request({
+    url: '/system/msds/exposure/msds/' + msdsId,
+    method: 'get'
+  })
+}
+
+export function getMsdsHandlingStorageByMsdsId(msdsId) {
+  return request({
+    url: '/system/msds/handling/msds/' + msdsId,
+    method: 'get'
+  })
+}
