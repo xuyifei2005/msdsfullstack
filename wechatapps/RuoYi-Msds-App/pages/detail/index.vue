@@ -1,17 +1,17 @@
 <template>
   <view class="page-container">
-    <!-- 背景图片/效果 -->
-    <view class="glass-bg"></view>
+    <!-- 背景效果 -->
+    <view class="bg-gradient"></view>
 
     <!-- 自定义导航栏 -->
     <view class="nav-bar" :style="{ paddingTop: statusBarHeight + 'px' }">
       <view class="nav-content">
         <view class="nav-left" @click="onBack">
-          <uni-icons type="arrow-left" color="#007AFF" size="20"></uni-icons>
+          <uni-icons type="arrow-left" color="#000" size="24"></uni-icons>
         </view>
         <view class="nav-title">化学品详情</view>
         <view class="nav-right">
-          <uni-icons type="redo" color="#007AFF" size="20"></uni-icons>
+           <!-- 预留分享或其他按钮 -->
         </view>
       </view>
     </view>
@@ -22,7 +22,7 @@
     <!-- 主内容区域 -->
     <view class="content" v-if="loading">
       <view class="loading-container">
-        <uni-load-more status="loading" content-text="加载中..."></uni-load-more>
+        <uni-load-more status="loading" content-text="正在加载MSDS详情..."></uni-load-more>
       </view>
     </view>
     
@@ -30,20 +30,40 @@
       <!-- 化学品头部信息 -->
       <view class="chemical-header">
         <view class="header-bg-anim"></view>
-        <view class="danger-level-indicator">{{ chemical.dangerLevel || '?' }}</view>
-        <view class="chemical-name">{{ chemical.name || '未命名' }}</view>
-        <view class="chemical-formula">{{ chemical.formula || '-' }}</view>
-        <view class="chemical-cas">CAS: {{ chemical.cas || '-' }}</view>
+        <view class="danger-level-badge" :class="dangerLevelClass">
+          {{ chemical.dangerLevel || '一般' }}
+        </view>
+        
+        <view class="name-section" @click="toggleName">
+          <view class="chemical-name" :class="{ 'name-expanded': isNameExpanded }">
+            {{ chemical.name || '未命名' }}
+          </view>
+          <view class="name-expand-hint" v-if="chemical.name && chemical.name.length > 20">
+            <uni-icons :type="isNameExpanded ? 'up' : 'down'" color="rgba(255,255,255,0.8)" size="14"></uni-icons>
+          </view>
+        </view>
+        
+        <view class="chemical-meta">
+            <view class="meta-item" @click.stop="handleCopyCas">
+                <text class="meta-label">CAS</text>
+                <text class="meta-value">{{ chemical.cas || '-' }}</text>
+                <uni-icons type="copy" color="rgba(255,255,255,0.8)" size="12" style="margin-left: 4px;"></uni-icons>
+            </view>
+            <view class="meta-item" v-if="chemical.formula">
+                <text class="meta-label">分子式</text>
+                <text class="meta-value">{{ chemical.formula }}</text>
+            </view>
+        </view>
       </view>
 
       <!-- 操作按钮 -->
       <view class="action-buttons">
-        <button class="action-btn btn-primary" @click="onFavorite">
-          <uni-icons :type="isFavorited ? 'star-filled' : 'star'" color="#fff" size="18" style="margin-right: 4px;"></uni-icons>
+        <button class="action-btn btn-favorite" :class="{ 'is-active': isFavorited }" @click="onFavorite">
+          <uni-icons :type="isFavorited ? 'star-filled' : 'star'" :color="isFavorited ? '#fff' : '#666'" size="20"></uni-icons>
           <text>{{ isFavorited ? '已收藏' : '收藏' }}</text>
         </button>
-        <button class="action-btn btn-secondary" @click="onDownload">
-          <uni-icons type="download" color="#333" size="18" style="margin-right: 4px;"></uni-icons>
+        <button class="action-btn btn-download" @click="onDownload">
+          <uni-icons type="download" color="#fff" size="20"></uni-icons>
           <text>下载MSDS</text>
         </button>
       </view>
@@ -51,13 +71,18 @@
       <!-- 基本信息 -->
       <view class="info-card">
         <view class="card-header header-basic">
-          <uni-icons type="info" color="#fff" size="20" style="margin-right: 8px;"></uni-icons>
+          <view class="header-icon">
+            <uni-icons type="info" color="#fff" size="18"></uni-icons>
+          </view>
           <text>基本信息</text>
         </view>
         <view class="card-content">
           <view class="property-row" v-for="(item, index) in basicInfo" :key="index">
             <view class="property-label">{{ item.label }}</view>
-            <view class="property-value">{{ item.value }}</view>
+            <view class="property-value" @click="handleCopyItem(item)">
+                {{ item.value }}
+                <uni-icons v-if="item.copy" type="copy" color="#999" size="14" style="margin-left: 4px;"></uni-icons>
+            </view>
           </view>
         </view>
       </view>
@@ -156,6 +181,7 @@
 
 <script>
 import { getMsds, getMsdsFirstAidByMsdsId, getMsdsComponentByMsdsId, getMsdsLeakResponseByMsdsId } from '@/api/msds/msds'
+import config from '@/config'
 
 export default {
   data() {
@@ -163,19 +189,22 @@ export default {
       statusBarHeight: 20,
       loading: true,
       isFavorited: false,
+      isNameExpanded: false,
       chemical: {
         id: '',
         name: '',
+        englishName: '',
         formula: '',
         cas: '',
         dangerLevel: '',
-        tags: []
+        tags: [],
+        filePath: '' // Store file path if available
       },
       basicInfo: [],
       hazardInfo: [],
       healthHazards: [],
       firstAid: [],
-      leakResponse: [], // Added leak response
+      leakResponse: [],
       storageInfo: []
     }
   },
@@ -184,9 +213,9 @@ export default {
     this.statusBarHeight = systemInfo.statusBarHeight;
     
     if (options.id) {
+      this.chemical.id = options.id;
       this.fetchData(options.id);
     } else if (options.name || options.cas) {
-      // Fallback to passed options if no ID (e.g. pure UI preview)
       this.chemical.name = options.name || '';
       this.chemical.cas = options.cas || '';
       this.loading = false;
@@ -194,7 +223,54 @@ export default {
       this.loading = false;
     }
   },
+  // Share to Friends
+  onShareAppMessage(res) {
+    return {
+      title: `MSDS详情: ${this.chemical.name}`,
+      path: `/pages/detail/index?id=${this.chemical.id}`,
+      imageUrl: '/static/logo.png' // Assuming logo exists
+    }
+  },
+  // Share to Timeline
+  onShareTimeline(res) {
+    return {
+      title: `MSDS详情: ${this.chemical.name}`,
+      query: `id=${this.chemical.id}`,
+      imageUrl: '/static/logo.png'
+    }
+  },
+  computed: {
+    dangerLevelClass() {
+      const level = (this.chemical.dangerLevel || '').toString();
+      if (level.includes('高') || level.includes('剧毒')) return 'badge-danger';
+      if (level.includes('中') || level.includes('警告') || level.includes('危险')) return 'badge-warning';
+      return 'badge-normal';
+    }
+  },
   methods: {
+    toggleName() {
+      this.isNameExpanded = !this.isNameExpanded;
+    },
+    handleCopyItem(item) {
+      if (item && item.copy) {
+        this.copyText(item.value, item.label);
+      }
+    },
+    handleCopyCas() {
+        this.copyText(this.chemical.cas, 'CAS号');
+    },
+    copyText(text, label) {
+      if (!text || text === '-') return;
+      uni.setClipboardData({
+        data: text,
+        success: () => {
+          uni.showToast({
+            title: `${label}已复制`,
+            icon: 'none'
+          });
+        }
+      });
+    },
     async fetchData(id) {
       this.loading = true;
       try {
@@ -203,12 +279,12 @@ export default {
         const data = mainRes.data;
         
         this.chemical.name = data.productName;
-        this.chemical.englishName = data.productEnglishName; // Add English name
+        this.chemical.englishName = data.productEnglishName;
         this.chemical.cas = data.casNumber;
-        // Map risk level
         this.chemical.dangerLevel = data.riskLevel || '一般'; 
+        this.chemical.filePath = data.filePath || data.fileName; // Try to catch file path
         
-        // Auto-generate tags for filtering
+        // Auto-generate tags
         this.chemical.tags = [];
         const risk = (this.chemical.dangerLevel || '').toString();
         const name = (this.chemical.name || '').toLowerCase();
@@ -227,11 +303,6 @@ export default {
         if (name.includes('硫酸') || name.includes('盐酸') || name.includes('甲苯') || name.includes('丙酮')) {
              this.chemical.tags.push('易制毒');
         }
-        if (name.includes('醇') || name.includes('醚') || name.includes('苯') || name.includes('酯')) {
-             this.chemical.tags.push('有机物');
-        } else if (name.includes('钠') || name.includes('钾') || name.includes('钙') || name.includes('铁')) {
-             this.chemical.tags.push('无机物');
-        }
         
         if (this.chemical.tags.length === 0) {
             this.chemical.tags.push('常用');
@@ -242,28 +313,24 @@ export default {
         this.checkFavoriteStatus();
         
         this.basicInfo = [
-          { label: '中文名称', value: data.productName },
-          { label: '英文名称', value: data.productEnglishName || '-' },
-          { label: 'CAS号', value: data.casNumber || '-' },
+          { label: '中文名称', value: data.productName, copy: true },
+          { label: '英文名称', value: data.productEnglishName || '-', copy: true },
+          { label: 'CAS号', value: data.casNumber || '-', copy: true },
           { label: '供应商', value: data.supplierName || '-' },
-          { label: '联系电话', value: data.emergencyPhone || data.supplierPhone || '-' }
+          { label: '联系电话', value: data.emergencyPhone || data.supplierPhone || '-', copy: true }
         ];
 
         // 2. Fetch Components (for formula)
         try {
           const compRes = await getMsdsComponentByMsdsId(id);
           if (compRes.data && compRes.data.length > 0) {
-            // Use the first component's formula as the main formula for display
             this.chemical.formula = compRes.data[0].molecularFormula || '-';
-            // Add components to basic info if needed
             this.basicInfo.push({ 
               label: '主要成分', 
               value: compRes.data.map(c => c.componentName).join(', ') 
             });
           }
-        } catch (e) {
-          console.error('Failed to fetch components', e);
-        }
+        } catch (e) { console.error(e); }
 
         // 3. Fetch First Aid
         try {
@@ -281,9 +348,7 @@ export default {
               ];
             }
           }
-        } catch (e) {
-          console.error('Failed to fetch first aid', e);
-        }
+        } catch (e) { console.error(e); }
 
         // 4. Fetch Leak Response
         try {
@@ -300,9 +365,7 @@ export default {
                ];
             }
           }
-        } catch (e) {
-          console.error('Failed to fetch leak response', e);
-        }
+        } catch (e) { console.error(e); }
 
       } catch (error) {
         uni.showToast({ title: '获取详情失败', icon: 'none' });
@@ -324,12 +387,10 @@ export default {
       let favorites = uni.getStorageSync('MSDS_FAVORITES') || [];
       
       if (this.isFavorited) {
-        // Remove
         favorites = favorites.filter(item => item.id !== id && item.cas !== id);
         this.isFavorited = false;
         uni.showToast({ title: '已取消收藏', icon: 'none' });
       } else {
-        // Add
         favorites.unshift({
           id: id,
           name: this.chemical.name,
@@ -344,9 +405,60 @@ export default {
       uni.setStorageSync('MSDS_FAVORITES', favorites);
     },
     onDownload() {
-      uni.showToast({
-        title: '开始下载MSDS...',
-        icon: 'none'
+      if (!this.chemical.id) return;
+      
+      // Check if we have a file path or if we can construct one
+      // This is a common pattern in RuoYi: /common/download/resource?resource=...
+      // But here we might just want to download the MSDS report if generated
+      // Or if there is an uploaded file.
+      
+      // Assuming the standard download URL for RuoYi common files if filePath exists
+      let url = '';
+      if (this.chemical.filePath) {
+          // If it starts with http, use it
+          if (this.chemical.filePath.startsWith('http')) {
+              url = this.chemical.filePath;
+          } else {
+              // Append base URL
+              url = config.baseUrl + this.chemical.filePath;
+          }
+      } else {
+          // Try to construct a default download or export URL
+          // e.g. /system/msds/export/{id}
+          // Since we don't know the exact endpoint for PDF generation, we'll simulate a check
+          uni.showToast({
+            title: '未找到相关文档',
+            icon: 'none'
+          });
+          return;
+      }
+
+      uni.showLoading({ title: '下载中...' });
+      
+      uni.downloadFile({
+        url: url,
+        success: (res) => {
+          if (res.statusCode === 200) {
+            uni.openDocument({
+              filePath: res.tempFilePath,
+              success: function () {
+                console.log('打开文档成功');
+              },
+              fail: function(err) {
+                  uni.showToast({ title: '无法打开文档', icon: 'none' });
+              }
+            });
+          } else {
+              uni.showToast({ title: '下载失败', icon: 'none' });
+          }
+        },
+        fail: (err) => {
+          uni.showToast({ title: '下载请求失败', icon: 'none' });
+          console.error(err);
+        },
+        complete: () => {
+          uni.hideLoading();
+        }
       });
     }
   }
@@ -367,34 +479,15 @@ export default {
   padding-top: 50px;
 }
 
-.glass-bg {
+.bg-gradient {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.3;
+  background: linear-gradient(180deg, #e0eafc 0%, #cfdef3 100%);
   z-index: 0;
-  filter: saturate(1.3) brightness(1.2);
   pointer-events: none;
-  animation: subtle-move 30s infinite alternate ease-in-out;
-}
-
-@keyframes subtle-move {
-  0% {
-    background-position: 0% 0%;
-    transform: scale(1.02);
-  }
-  50% {
-    transform: scale(1.0);
-  }
-  100% {
-    background-position: 100% 100%;
-    transform: scale(1.02);
-  }
 }
 
 .nav-bar {
@@ -403,10 +496,9 @@ export default {
   left: 0;
   width: 100%;
   z-index: 100;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .nav-content {
@@ -436,76 +528,107 @@ export default {
   position: relative;
   z-index: 1;
   padding: 16px;
+  padding-bottom: 40px;
 }
 
 .chemical-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #409eff 0%, #2b85e4 100%);
   border-radius: 16px;
-  padding: 24px;
+  padding: 24px 20px;
   margin-bottom: 20px;
-  color: white;
+  color: #fff;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 8px 24px rgba(43, 133, 228, 0.25);
 }
 
 .header-bg-anim {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.1) 0%, transparent 10%),
-              radial-gradient(circle at 80% 40%, rgba(255,255,255,0.1) 0%, transparent 5%),
-              radial-gradient(circle at 40% 80%, rgba(255,255,255,0.1) 0%, transparent 8%);
+  top: -20px;
+  right: -20px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
   pointer-events: none;
-  animation: float 20s infinite linear;
+  border-radius: 50%;
 }
 
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+.name-section {
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 .chemical-name {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 8px;
+  color: #fff;
+  line-height: 1.4;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  
+  /* Truncate logic */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* Limit to 2 lines by default */
+  overflow: hidden;
+  transition: all 0.3s ease;
+  
+  &.name-expanded {
+    -webkit-line-clamp: unset;
+  }
 }
 
-.chemical-formula {
-  font-size: 16px;
-  opacity: 0.9;
-  margin-bottom: 12px;
+.name-expand-hint {
+    text-align: center;
+    margin-top: 8px;
+    opacity: 0.8;
 }
 
-.chemical-cas {
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 6px 12px;
-  border-radius: 20px;
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 500;
+.chemical-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    z-index: 1;
 }
 
-.danger-level-indicator {
+.meta-item {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    padding: 6px 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.meta-label {
+    color: rgba(255, 255, 255, 0.8);
+    margin-right: 6px;
+}
+
+.meta-value {
+    color: #fff;
+    font-weight: 600;
+    font-family: monospace;
+}
+
+.danger-level-badge {
   position: absolute;
   top: 20px;
   right: 20px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
   font-weight: bold;
-  background-color: #ff4757;
   color: white;
-  box-shadow: 0 4px 12px rgba(255, 71, 87, 0.3);
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
+
+.badge-danger { background: linear-gradient(135deg, #ff416c, #ff4b2b); }
+.badge-warning { background: linear-gradient(135deg, #f7971e, #ffd200); }
+.badge-normal { background: linear-gradient(135deg, #56ab2f, #a8e063); }
 
 .action-buttons {
   display: flex;
@@ -515,74 +638,83 @@ export default {
 
 .action-btn {
   flex: 1;
-  padding: 0; /* Reset default padding */
-  height: 44px;
-  border-radius: 12px;
-  font-size: 14px;
+  padding: 0;
+  height: 48px;
+  border-radius: 24px;
+  font-size: 15px;
   font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
   
-  &::after {
-    border: none;
-  }
+  &::after { border: none; }
+  &:active { transform: scale(0.98); }
+}
 
-  &:active {
-    transform: scale(0.98);
-    opacity: 0.9;
+.btn-favorite {
+  background-color: #fff;
+  color: #666;
+  border: 1px solid #eee;
+  
+  &.is-active {
+    background-color: #ff9f43;
+    color: #fff;
+    border-color: #ff9f43;
   }
 }
 
-.btn-primary {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+.btn-download {
+  background: linear-gradient(135deg, #0061ff, #60efff);
   color: white;
-  box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
-}
-
-.btn-secondary {
-  background: rgba(255, 255, 255, 0.9);
-  color: #333;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 15px rgba(0, 97, 255, 0.3);
 }
 
 .info-card {
-  background-color: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 12px;
+  background-color: #fff;
+  border-radius: 16px;
   margin-bottom: 16px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
   overflow: hidden;
 }
 
 .card-header {
-  padding: 12px 16px;
+  padding: 16px;
   font-size: 16px;
   font-weight: 600;
   display: flex;
   align-items: center;
-  color: white;
+  color: #fff;
 }
 
-.header-basic { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
-.header-danger { background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%); color: white; }
+.header-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.header-basic { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+.header-danger { background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%); }
 .header-health { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
 .header-firstaid { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
 .header-leak { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
 .header-storage { background: linear-gradient(135deg, #8fd3f4 0%, #84fab0 100%); }
 
 .card-content {
-  padding: 16px;
+  padding: 0 16px 16px 16px;
 }
 
 .property-row {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 12px 0;
+  border-bottom: 1px solid #f5f5f5;
   font-size: 14px;
 }
 
@@ -591,17 +723,17 @@ export default {
 }
 
 .property-label {
-  font-weight: 500;
-  color: #333;
-  width: 80px;
+  color: #999;
+  width: 70px;
   flex-shrink: 0;
 }
 
 .property-value {
-  color: #666;
+  color: #333;
   text-align: right;
   flex: 1;
   word-break: break-all;
+  line-height: 1.4;
 }
 
 .hazard-tags {
@@ -612,21 +744,22 @@ export default {
 }
 
 .hazard-tag {
-  background: linear-gradient(135deg, #ff6b6b, #ee5a24);
-  color: white;
+  background: #fff0f0;
+  color: #ff4757;
   padding: 4px 10px;
-  border-radius: 16px;
+  border-radius: 6px;
   font-size: 12px;
   font-weight: 500;
   display: flex;
   align-items: center;
+  border: 1px solid rgba(255, 71, 87, 0.2);
 }
 
 .safety-item {
   display: flex;
   align-items: flex-start;
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 14px 0;
+  border-bottom: 1px solid #f5f5f5;
 }
 
 .safety-item:last-child {
@@ -634,10 +767,10 @@ export default {
 }
 
 .safety-icon {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  background: #f0f7ff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -647,9 +780,9 @@ export default {
 
 .safety-text {
   flex: 1;
-  color: #333;
+  color: #444;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .safe-area-bottom {
