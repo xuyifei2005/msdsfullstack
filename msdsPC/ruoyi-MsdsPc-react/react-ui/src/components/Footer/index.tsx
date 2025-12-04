@@ -9,8 +9,8 @@ const Footer: React.FC = () => {
       }}
       links={[
         {
-          key: 'MSDS 危险化学品说明书管理平台',
-          title: 'MSDS 危险化学品说明书管理平台',
+          key: 'MSDS安全智库网',
+          title: 'MSDS安全智库网',
           href: '',
           blankTarget: true,
         },

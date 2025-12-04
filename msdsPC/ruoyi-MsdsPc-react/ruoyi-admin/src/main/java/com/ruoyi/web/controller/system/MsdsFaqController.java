@@ -47,6 +47,17 @@ public class MsdsFaqController extends BaseController
     }
 
     /**
+     * 查询常见问题列表 (App端使用)
+     */
+    @GetMapping("/app/list")
+    public TableDataInfo appList(MsdsFaq msdsFaq)
+    {
+        startPage();
+        List<MsdsFaq> list = msdsFaqService.selectMsdsFaqList(msdsFaq);
+        return getDataTable(list);
+    }
+
+    /**
      * 导出常见问题列表
      */
     @PreAuthorize("@ss.hasPermi('system:faq:export')")

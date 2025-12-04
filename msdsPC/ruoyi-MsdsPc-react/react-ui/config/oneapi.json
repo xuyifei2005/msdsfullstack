@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "MSDS 危险化学品说明书管理平台",
+    "title": "MSDS安全智库网",
     "version": "1.0.0"
   },
   "servers": [

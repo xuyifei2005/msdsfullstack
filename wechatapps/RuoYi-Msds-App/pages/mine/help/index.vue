@@ -36,44 +36,34 @@
 </template>
 
 <script>
+  import { listFaq } from "@/api/system/faq";
+
   export default {
     data() {
       return {
-        list: [{
-            icon: 'iconfont icon-github',
-            title: '若依问题',
-            childList: [{
-              title: '若依开源吗？',
-              content: '开源'
-            }, {
-              title: '若依可以商用吗？',
-              content: '可以'
-            }, {
-              title: '若依官网地址多少？',
-              content: 'http://ruoyi.vip'
-            }, {
-              title: '若依文档地址多少？',
-              content: 'http://doc.ruoyi.vip'
-            }]
-          },
-          {
-            icon: 'iconfont icon-help',
-            title: '其他问题',
-            childList: [{
-              title: '如何退出登录？',
-              content: '请点击[我的] - [应用设置] - [退出登录]即可退出登录',
-            }, {
-              title: '如何修改用户头像？',
-              content: '请点击[我的] - [选择头像] - [点击提交]即可更换用户头像',
-            }, {
-              title: '如何修改登录密码？',
-              content: '请点击[我的] - [应用设置] - [修改密码]即可修改登录密码',
-            }]
-          }
-        ]
+        list: []
       }
     },
+    onLoad() {
+      this.getList();
+    },
     methods: {
+      getList() {
+        listFaq().then(response => {
+          const rows = response.rows;
+          // 将扁平的列表转换为页面需要的结构
+          // 目前数据库没有分类字段，暂时全部归为"常见问题"
+          // 如果后续有分类，可以根据分类字段进行分组
+          this.list = [{
+            icon: 'iconfont icon-help',
+            title: '常见问题',
+            childList: rows.map(item => ({
+              title: item.question,
+              content: item.answer
+            }))
+          }];
+        });
+      },
       handleText(item) {
         this.$tab.navigateTo(`/pages/common/textview/index?title=${item.title}&content=${item.content}`)
       }

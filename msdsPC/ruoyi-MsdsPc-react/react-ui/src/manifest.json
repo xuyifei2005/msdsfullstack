@@ -1,6 +1,6 @@
 {
-  "name": "MSDS 危险化学品说明书管理平台",
-  "short_name": "MSDS 危险化学品说明书管理平台",
+  "name": "MSDS安全智库网",
+  "short_name": "MSDS安全智库网",
   "display": "standalone",
   "start_url": "./?utm_source=homescreen",
   "theme_color": "#002140",

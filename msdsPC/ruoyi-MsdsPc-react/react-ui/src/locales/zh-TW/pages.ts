@@ -1,5 +1,5 @@
 export default {
-  'pages.layouts.userLayout.title': 'Ant MSDS 危险化学品说明书管理平台 ',
+  'pages.layouts.userLayout.title': 'MSDS安全智库网 ',
   'pages.login.accountLogin.tab': '賬戶密碼登錄',
   'pages.login.accountLogin.errorMessage': '錯誤的用戶名和密碼(admin/admin123)',
   'pages.login.failure': '登錄失敗，請重試！',

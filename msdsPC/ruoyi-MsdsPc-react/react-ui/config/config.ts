@@ -76,7 +76,7 @@ export default defineConfig({
    * @name layout 插件
    * @doc https://umijs.org/docs/max/layout-menu
    */
-  title: 'MSDS 危险化学品说明书管理平台',
+  title: 'MSDS安全智库网',
   layout: {
     locale: true,
     ...defaultSettings,

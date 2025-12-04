@@ -71,6 +71,21 @@ export default [
         path: '/account/settings',
         component: './User/Settings',
       },
+      {
+        name: '常见问题管理',
+        path: '/account/faq',
+        component: './Msds/Faq',
+      },
+      {
+        name: '意见反馈管理',
+        path: '/account/feedback',
+        component: './Msds/Feedback',
+      },
+      {
+        name: '关于我们管理',
+        path: '/account/about',
+        component: './Msds/About',
+      },
     ],
   },
   {
@@ -97,21 +112,7 @@ export default [
         path: '/system/audit-statistics',
         component: './System/AuditStatistics',
       },
-      {
-        name: '常见问题管理',
-        path: '/system/faq',
-        component: './Msds/Faq',
-      },
-      {
-        name: '意见反馈管理',
-        path: '/system/feedback',
-        component: './Msds/Feedback',
-      },
-      {
-        name: '关于我们管理',
-        path: '/system/about',
-        component: './Msds/About',
-      }
+
     ]
   },
   {
