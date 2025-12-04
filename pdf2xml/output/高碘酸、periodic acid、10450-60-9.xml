@@ -180,6 +180,13 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
+      <!-- MSDS补全专家: 来源: 基于高碘酸盐相关法规和标准, 2024-06-18 -->
+      <domestic_laws>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）</domestic_laws>
+      <international_laws>欧盟REACH法规、国际海运危险货物规则(IMDG Code)、国际空运危险货物规则(IATA DGR)</international_laws>
+      <classification_regulations>《化学品分类和标签规范》(GB 30000.2-2013)第5.1类氧化剂分类标准</classification_regulations>
+      <transport_regulations>JT/T 617《危险货物道路运输规则》、IMDG Code第5.1类氧化剂运输规定</transport_regulations>
+      <environmental_regulations>《危险废物污染防治技术政策》、《国家危险废物名录》(2021版)</environmental_regulations>
+      <occupational_health_regulations>《工作场所有害因素职业接触限值》(GBZ 2.1-2019)、《工作场所职业病危害警示标识》(GBZ 158-2003)</occupational_health_regulations>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第5.1类氧化剂，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
   </msds>

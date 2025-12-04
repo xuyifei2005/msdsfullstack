@@ -42,10 +42,11 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>可燃。遇明火、高热可燃。加热分解产生易燃的有毒气体。具有腐蚀性。</hazard_characteristics>
-      <fire_risk_classification>丙</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳、氧化氮。</harmful_combustion_products>
-      <suitable_extinguishing_media>采用抗溶性泡沫、干粉、二氧化碳、砂土灭火。</suitable_extinguishing_media>
+      <hazard_characteristics>可燃。遇明火、高热可燃。加热分解产生易燃的有毒气体。具有腐蚀性。蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。</hazard_characteristics>
+      <fire_risk_classification>丙类</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氧化氮</harmful_combustion_products>
+      <suitable_extinguishing_media>采用抗溶性泡沫、干粉、二氧化碳、砂土灭火</suitable_extinguishing_media>
+      <firefighting_precautions>消防人员必须佩戴空气呼吸器、穿全身防火防毒服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。处在火场中的容器若已变色或从安全泄压装置中产生声音，必须马上撤离。禁止用水直接喷射泄漏物或蒸气，可能导致飞溅和扩散。灭火后应彻底清理现场，防止残留物复燃。</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>

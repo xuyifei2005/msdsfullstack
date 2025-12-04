@@ -63,6 +63,56 @@
         </view>
       </view>
 
+      <!-- 网络设置 -->
+      <view class="settings-group-title">网络</view>
+      <view class="settings-group">
+        <view class="settings-item" @click="handleAutoDetect">
+          <view class="settings-icon" style="background-color: #0A84FF;">
+            <uni-icons type="refresh" color="#ffffff" size="18"></uni-icons>
+          </view>
+          <view class="settings-info">
+            <view class="settings-title">自动探测最佳地址</view>
+            <view class="settings-subtitle">清除当前地址并重新探测</view>
+          </view>
+          <uni-icons type="right" color="#c7c7cc" size="14"></uni-icons>
+        </view>
+
+        <view class="settings-item">
+          <view class="settings-icon" style="background-color: #34C759;">
+            <uni-icons type="paperplane" color="#ffffff" size="18"></uni-icons>
+          </view>
+          <view class="settings-info">
+            <view class="settings-title">当前后端地址</view>
+            <view class="settings-subtitle">{{ currentUrl || '未设置' }}</view>
+          </view>
+        </view>
+
+        <view class="settings-item" v-for="url in envList" :key="url" @click="handleChooseBaseUrl(url)">
+          <view class="settings-icon" style="background-color: #8E8E93;">
+            <uni-icons type="link" color="#ffffff" size="18"></uni-icons>
+          </view>
+          <view class="settings-info">
+            <view class="settings-title">{{ url }}</view>
+          </view>
+          <view class="settings-value" v-if="currentUrl === url">已选择</view>
+          <uni-icons :type="currentUrl === url ? 'checkmarkempty' : 'right'" color="#c7c7cc" size="14"></uni-icons>
+        </view>
+
+        <view class="settings-item">
+          <view class="settings-icon" style="background-color: #FF9F0A;">
+            <uni-icons type="compose" color="#ffffff" size="18"></uni-icons>
+          </view>
+          <view class="settings-info">
+            <view class="settings-title">自定义后端地址</view>
+            <view class="settings-subtitle">示例: http://192.168.1.215:18080</view>
+          </view>
+        </view>
+        <view class="custom-row">
+          <uni-easyinput v-model="customUrl" placeholder="输入完整地址" :clearable="true"></uni-easyinput>
+          <u-button type="primary" size="mini" @click="handleSetCustomUrl">设置并测试</u-button>
+        </view>
+      </view>
+
       <!-- 数据管理 -->
       <view class="settings-group-title">数据管理</view>
       <view class="settings-group">
@@ -196,6 +246,7 @@
 
 <script>
   import { mapGetters } from 'vuex'
+  import cfg from '@/config'
   
   export default {
     computed: {
@@ -208,8 +259,16 @@
           autoDownload: false,
           cloudSync: true,
           securityVerification: false
-        }
+        },
+        envList: [],
+        currentUrl: '',
+        customUrl: ''
       }
+    },
+    onShow() {
+      this.envList = (cfg.baseUrlList || []).slice()
+      const cached = uni.getStorageSync('baseUrl')
+      this.currentUrl = cached || cfg.baseUrl || (this.envList[0] || '')
     },
     methods: {
       handleUserProfile() {
@@ -247,6 +306,48 @@
       },
       handleHelpFeedback() {
         this.$tab.navigateTo('/pages/mine/help/index')
+      },
+      handleAutoDetect() {
+        uni.removeStorageSync('baseUrl')
+        cfg.baseUrl = ''
+        this.currentUrl = ''
+        this.$modal.msgSuccess('已清除，下一次请求将自动探测')
+      },
+      handleChooseBaseUrl(url) {
+        cfg.baseUrl = url
+        uni.setStorageSync('baseUrl', url)
+        this.currentUrl = url
+        this.$modal.msgSuccess('已切换到指定地址')
+      },
+      handleSetCustomUrl() {
+        const normalize = (u) => (u && u.startsWith('http')) ? u : (u ? 'http://' + u : '')
+        const candidate = normalize(this.customUrl || '')
+        if (!candidate) {
+          this.$modal.msgError('请输入地址')
+          return
+        }
+        this.$modal.loading('正在测试...')
+        uni.request({
+          method: 'get',
+          timeout: 1500,
+          url: candidate + '/captchaImage',
+          header: { isToken: false },
+          dataType: 'json'
+        }).then(r => {
+          this.$modal.closeLoading()
+          const [, res] = r
+          if (res && res.statusCode === 200) {
+            cfg.baseUrl = candidate
+            uni.setStorageSync('baseUrl', candidate)
+            this.currentUrl = candidate
+            this.$modal.msgSuccess('已设置并通过连通性测试')
+          } else {
+            this.$modal.msgError('测试失败，请检查服务可用性')
+          }
+        }).catch(() => {
+          this.$modal.closeLoading()
+          this.$modal.msgError('测试失败，请检查网络或地址')
+        })
       },
       handleClearAllData() {
         this.$modal.confirm('此操作将清除所有本地数据且不可恢复，确定继续吗？').then(() => {
@@ -466,5 +567,12 @@
     padding: 20px;
     color: #8e8e93;
     font-size: 14px;
+  }
+
+  .custom-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 12px 16px;
   }
 </style>

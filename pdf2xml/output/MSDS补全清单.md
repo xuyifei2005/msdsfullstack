@@ -754,18 +754,18 @@
 221. ✅ 1,3-二氯-2-丁烯、1,3-Dichloro-2-butene、926-57-8.xml
 222. ✅ 1,3-二氯-2-丙醇、1,3-Dichloro-2-propanol、96-23-1.xml
 223. ✅ 1,3-二氯-2-丙醇、1，3-Dichloro-2-propanol、96-23-1.xml
-224. 1,3-二氯丙烯、1,3-dichloropropene、542-75-6.xml
+224. ✅ 1,3-二氯丙烯、1,3-dichloropropene、542-75-6.xml
 225. ✅1,3-二氯丙烷、1,3-dichloropropane、142-28-9.xml
-226. 1,3-二氯丙酮、1,3-dichloroacetone、534-07-6.xml
-227. 1,3-二氯苯、1,3-dichlorobenzene、541-73-1.xml
-228. 1,3-二甲基丁胺、1,3-dimethylbutylamine、108-09-8.xml
-229. 1,3-二甲基丁醇乙酸酯、1,3-dimethylbutyl acetate、108-84-9.xml
-230. 1,3-二甲基环己烷、1，3-Dimethyl cyclohexane、592-21-9.xml
-231. 1,3-二甲基环戊烷、1,3-dimethyl cyclopentane、2453-00-1.xml
-232. 1,3-二甲氧基丁烷、1,3-Dimethoxybutane、10143-66-5.xml
+226. ✅ 1,3-二氯丙酮、1,3-dichloroacetone、534-07-6.xml
+227. ✅ 1,3-二氯苯、1,3-dichlorobenzene、541-73-1.xml
+228. ✅ 1,3-二甲基丁胺、1,3-dimethylbutylamine、108-09-8.xml
+229. ✅ 1,3-二甲基丁醇乙酸酯、1,3-dimethylbutyl acetate、108-84-9.xml
+230. ✅ 1,3-二甲基环己烷、1，3-Dimethyl cyclohexane、592-21-9.xml
+231. ✅ 1,3-二甲基环戊烷、1,3-dimethyl cyclopentane、2453-00-1.xml
+232. ✅ 1,3-二甲氧基丁烷、1,3-Dimethoxybutane、10143-66-5.xml
 233. ✅1,3-二甲苯、1,3-xylene、108-38-3.xml
-234. 1,3-二硝基丙烷、1,3-dinitropropane、6125-21-9.xml
-235. 1,3-二硝基苯、1,3-dinitrobenzene、99-65-0.xml
+234. ✅ 1,3-二硝基丙烷、1,3-dinitropropane、6125-21-9.xml
+235. ✅ 1,3-二硝基苯、1,3-dinitrobenzene、99-65-0.xml
 236. 1,3-二磺酰肼苯、Benzene-1,3-disulphohydrazide、26747-93-3.xml
 237. 1,3-己二烯、1,3-hexadiene、592-48-3.xml
 238. 1,3-戊二烯[稳定的]、1,3-pentadiene、504-60-9.xml
@@ -783,7 +783,7 @@
 250. ✅1,4-二氧杂环己烷、1,4-dioxane、123-91-1.xml
 251. 1,4-二氯-2-丁烯、1,4-Dichloro-2-butene、764-41-0.xml
 252. ✅1,4-二氯丁烷、1,4-dichlorobutane、110-56-5.xml
-253. 1,4-二氯苯、1,4-dichlorobenzene、106-46-7.xml
+253. ✅1,4-二氯苯、1,4-dichlorobenzene、106-46-7.xml
 254. 1,4-二甲基哌嗪、1,4-Dimethyl piperazine、106-58-1.xml
 255. 1,4-二甲基环己烷、1,4-Dimethyl cyclohexane、589-90-2.xml
 256. 1,4-二甲苯、1,4-xylene、106-42-3.xml
@@ -797,14 +797,14 @@
 264. 1,5-二氯戊烷、1,5-dichloropentane、628-76-2.xml
 265. 1,5-二硝基萘、1,5-Dinitronaphthalene、605-71-0.xml
 266. 1,5-二羟基-4,8-二硝基蒽醌、1,5-dihydroxy-4,8-dinitroanthraquinone、128-91-6.xml
-267. 1,5-己二烯、1,5-hexadiene、592-42-7.xml
+267. ✅1,5-己二烯、1,5-hexadiene、592-42-7.xml
 268. 1,5-戊二胺、1,5-pentanediamine、462-94-2.xml
-269. 1,5-戊二醇、1,5-Pentadiol、111-29-5.xml
-270. 1,5-环辛二烯、1,5-cyclooctadiene、111-78-4.xml
+269. ✅1,5-戊二醇、1,5-Pentadiol、111-29-5.xml
+270. ✅1,5-环辛二烯、1,5-cyclooctadiene、111-78-4.xml
 271. 1,6-二-(过氧化叔丁基-羰基氧)己烷[含量≤72%,含A型稀释剂≥28%]、1,6-di-(tert-butylperoxycarbonyloxy) hexane (not more than 72%, and diluent type A not less than 28%)、36536-42-2.xml
-272. 1,6-己二胺、1,6-hexylenediamine、124-09-4.xml
-273. 1,8-二硝基萘、1,8-dinitronaphthalene、602-38-0.xml
-274. 1,8-环氧对孟烷、1,8-epoxy-menthane、470-82-6.xml
+272. ✅1,6-己二胺、1,6-hexylenediamine、124-09-4.xml
+273. ✅1,8-二硝基萘、1,8-dinitronaphthalene、602-38-0.xml
+274. ✅1,8-环氧对孟烷、1,8-epoxy-menthane、470-82-6.xml
 275. 1,8-萘二甲酸酐、1,8-Naphthalic anhydride、81-84-5.xml
 276. 1-(2-叔丁基过氧异丙基)-3-异丙烯基苯[含量≤42%,惰性固体含量≥58%]、1-(2-tert-butylperoxyisopropyl)-3-isopropeny benzene(notmorethan42%,andinertsolidnotlessthan58%)、96319-55-0.xml
 277. 1-(2-叔丁基过氧异丙基)-3-异丙烯基苯[含量≤77%,含A型稀释剂≥23%]、1-(2-tert-butylperoxyisopropyl)-3-isopropeny benzene(notmorethan77%,anddiluenttypeAnotlessthan23%)、96319-55-0.xml
@@ -4006,7 +4006,7 @@
 3473. ✅ 高氯酸锶、strontium perchlorate、13450-97-0.xml
 3474. ✅ 高氯酸镁、magnesium perchlorate、10034-81-8.xml
 3475. ✅ 高碘酸、periodic acid、10450-60-9.xml
-3476. 高碘酸钠、sodium periodate、7790-28-5.xml
+3476. ✅ 高碘酸钠、sodium periodate、7790-28-5.xml
 3477. 高碘酸钡、barium periodate、13718-58-6.xml
 3478. 高碘酸钾、potassium periodate、7790-21-8.xml
 3479. 高碘酸铵、ammonium periodate、13446-11-2.xml

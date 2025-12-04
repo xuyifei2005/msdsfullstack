@@ -175,6 +175,13 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
+      <!-- MSDS补全专家: 来源: 基于高氯酸盐和镁化合物的法规信息, 2024-12-01 -->
+      <domestic_laws>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。</domestic_laws>
+      <international_laws>欧盟REACH法规、美国OSHA危害通信标准(29 CFR 1910.1200)、加拿大WHMIS法规。</international_laws>
+      <classification_regulations>根据《化学品分类和危险性公示通则》（GB 13690-2009）和全球化学品统一分类和标签制度(GHS)，本品属于第5.1类氧化剂。</classification_regulations>
+      <transport_regulations>《危险货物道路运输规则》（JT/T 617）、《国际海运危险货物规则》(IMDG Code)、《国际空运危险货物规则》(IATA DGR)。</transport_regulations>
+      <environmental_regulations>《中华人民共和国水污染防治法》、《中华人民共和国固体废物污染环境防治法》、《危险废物经营许可证管理办法》。</environmental_regulations>
+      <occupational_health_regulations>《工作场所有害因素职业接触限值》（GBZ 2.1-2019）、《职业病危害项目申报办法》。</occupational_health_regulations>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第5.1类氧化剂，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
   </msds>

@@ -1,38 +1,110 @@
 import store from '@/store'
-import config from '@/config'
+import cfg from '@/config'
 import { getToken } from '@/utils/auth'
 import errorCode from '@/utils/errorCode'
 import { toast, showConfirm, tansParams } from '@/utils/common'
 
 let timeout = 10000
-const baseUrl = config.baseUrl
+let detecting = null
 
-const request = config => {
+const normalize = (u) => (u && u.startsWith('http')) ? u : (u ? 'http://' + u : '')
+
+const ensureBaseUrl = async () => {
+  if (cfg.baseUrl) return cfg.baseUrl
+  if (!detecting) {
+    detecting = new Promise((resolve) => {
+      const list = (cfg.baseUrlList || []).map(normalize)
+      const cached = uni.getStorageSync('baseUrl')
+      if (cached) {
+        cfg.baseUrl = normalize(cached)
+        detecting = null
+        resolve(cfg.baseUrl)
+        return
+      }
+      const tryNext = (i) => {
+        if (i >= list.length) {
+          cfg.baseUrl = list[0] || ''
+          detecting = null
+          resolve(cfg.baseUrl)
+          return
+        }
+        const candidate = list[i]
+        uni.request({
+          method: 'get',
+          timeout: 1500,
+          url: candidate + '/captchaImage',
+          header: { isToken: false },
+          dataType: 'json'
+        }).then(r => {
+          const [, res] = r
+          if (res && res.statusCode === 200) {
+            cfg.baseUrl = candidate
+            uni.setStorageSync('baseUrl', candidate)
+            detecting = null
+            resolve(candidate)
+          } else {
+            tryNext(i + 1)
+          }
+        }).catch(() => tryNext(i + 1))
+      }
+      tryNext(0)
+    })
+  }
+  return detecting
+}
+
+const getList = () => (cfg.baseUrlList || []).map(normalize)
+const detectOne = (u) => new Promise((resolve) => {
+  uni.request({ method: 'get', timeout: 1500, url: u + '/captchaImage', header: { isToken: false }, dataType: 'json' })
+    .then(r => { const [, res] = r; resolve(!!(res && res.statusCode === 200)) })
+    .catch(() => resolve(false))
+})
+
+const request = options => {
   // 是否需要设置 token
-  const isToken = (config.headers || {}).isToken === false
-  config.header = config.header || {}
+  const isToken = (options.headers || {}).isToken === false
+  options.header = options.header || {}
   if (getToken() && !isToken) {
-    config.header['Authorization'] = 'Bearer ' + getToken()
+    options.header['Authorization'] = 'Bearer ' + getToken()
   }
   // get请求映射params参数
-  if (config.params) {
-    let url = config.url + '?' + tansParams(config.params)
+  if (options.params) {
+    let url = options.url + '?' + tansParams(options.params)
     url = url.slice(0, -1)
-    config.url = url
+    options.url = url
   }
-  return new Promise((resolve, reject) => {
-    uni.request({
-        method: config.method || 'get',
-        timeout: config.timeout ||  timeout,
-        url: config.baseUrl || baseUrl + config.url,
-        data: config.data,
-        header: config.header,
+  return new Promise(async (resolve, reject) => {
+    await ensureBaseUrl()
+    const send = () => uni.request({
+        method: options.method || 'get',
+        timeout: options.timeout ||  timeout,
+        url: options.baseUrl || cfg.baseUrl + options.url,
+        data: options.data,
+        header: options.header,
         dataType: 'json'
-      }).then(response => {
+      })
+    send().then(response => {
         let [error, res] = response
         if (error) {
-          toast('后端接口连接异常')
-          reject('后端接口连接异常')
+          const list = getList()
+          const idx = Math.max(0, list.indexOf(normalize(cfg.baseUrl)))
+          const tryNext = async (i) => {
+            if (i >= list.length) {
+              toast('后端接口连接异常')
+              reject('后端接口连接异常')
+              return
+            }
+            const candidate = list[i]
+            const ok = await detectOne(candidate)
+            if (ok) {
+              cfg.baseUrl = candidate
+              uni.setStorageSync('baseUrl', candidate)
+              send().then(r => resolve(r[1].data)).catch(e => reject(e))
+            } else {
+              tryNext(i + 1)
+            }
+          }
+          tryNext(idx + 1)
           return
         }
         const code = res.data.code || 200
