@@ -1,0 +1,1 @@
+ALTER TABLE msds_faq MODIFY answer LONGTEXT;

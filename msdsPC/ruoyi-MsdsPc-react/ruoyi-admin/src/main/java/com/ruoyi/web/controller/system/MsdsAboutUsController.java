@@ -35,6 +35,17 @@ public class MsdsAboutUsController extends BaseController
     private IMsdsAboutUsService msdsAboutUsService;
 
     /**
+     * 查询关于我们列表 (App端使用)
+     */
+    @GetMapping("/app/list")
+    public TableDataInfo appList(MsdsAboutUs msdsAboutUs)
+    {
+        startPage();
+        List<MsdsAboutUs> list = msdsAboutUsService.selectMsdsAboutUsList(msdsAboutUs);
+        return getDataTable(list);
+    }
+
+    /**
      * 查询关于我们列表
      */
     @PreAuthorize("@ss.hasPermi('system:about:list')")

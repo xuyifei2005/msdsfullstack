@@ -58,14 +58,17 @@
             icon: 'iconfont icon-help',
             title: '常见问题',
             childList: rows.map(item => ({
+              id: item.faqId,
               title: item.question,
-              content: item.answer
+              answer: item.answer,
+              createTime: item.createTime
             }))
           }];
         });
       },
       handleText(item) {
-        this.$tab.navigateTo(`/pages/common/textview/index?title=${item.title}&content=${item.content}`)
+        uni.setStorageSync('currentFaq', item);
+        this.$tab.navigateTo(`/pages/mine/help/detail`)
       }
     }
   }

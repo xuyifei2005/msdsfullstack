@@ -16,28 +16,31 @@
     <view class="content-wrapper">
       <view class="header-section">
         <image class="logo" src="/static/logo200.png" mode="widthFix"></image>
-        <view class="app-name">若依移动端</view>
+        <view class="app-name">MSDS安全智库网移动端</view>
         <view class="app-version">Version {{version}}</view>
       </view>
 
-      <view class="glass-card">
+      <view class="glass-card" v-if="aboutList.length > 0">
+        <u-cell-group :border="false">
+          <u-cell
+            v-for="(item, index) in aboutList"
+            :key="index"
+            :title="item.title"
+            isLink
+            :url="'/pages/mine/about/detail?id=' + item.id"
+            @click="handleAboutClick(item)"
+            icon="file-text"
+            :iconStyle="{color: '#007AFF', fontSize: '20px'}"
+          ></u-cell>
+        </u-cell-group>
+      </view>
+
+      <view class="glass-card" style="margin-top: 20rpx;">
         <u-cell-group :border="false">
           <u-cell
             title="版本信息"
             :value="'v' + version"
             icon="info-circle"
-            :iconStyle="{color: '#007AFF', fontSize: '20px'}"
-          ></u-cell>
-          <u-cell
-            title="官方邮箱"
-            value="ruoyi@xx.com"
-            icon="email"
-            :iconStyle="{color: '#007AFF', fontSize: '20px'}"
-          ></u-cell>
-          <u-cell
-            title="服务热线"
-            value="400-999-9999"
-            icon="phone"
             :iconStyle="{color: '#007AFF', fontSize: '20px'}"
           ></u-cell>
           <u-cell
@@ -52,7 +55,7 @@
       </view>
 
       <view class="copyright">
-        <view>Copyright &copy; 2025 ruoyi.vip</view>
+        <view>Copyright &copy; 2025 sxjfkj.com</view>
         <view>All Rights Reserved.</view>
       </view>
     </view>
@@ -60,18 +63,30 @@
 </template>
 
 <script>
+  import { listAbout } from "@/api/system/about";
+
   export default {
     data() {
       return {
         url: getApp().globalData.config.appInfo.site_url,
-        version: getApp().globalData.config.appInfo.version
+        version: getApp().globalData.config.appInfo.version,
+        aboutList: []
       }
     },
+    onLoad() {
+      this.getList();
+    },
     methods: {
+      getList() {
+        listAbout().then(response => {
+          this.aboutList = response.rows;
+        });
+      },
+      handleAboutClick(item) {
+        uni.setStorageSync('currentAbout', item);
+        this.$tab.navigateTo('/pages/mine/about/detail');
+      },
       openLink() {
-        // For simple linking, or use a webview
-        // uni.navigateTo({ url: '/pages/common/webview/index?url=' + encodeURIComponent(this.url) });
-        // Or copy to clipboard
         uni.setClipboardData({
           data: this.url,
           success: () => {
@@ -111,16 +126,16 @@
   }
 
   @keyframes subtle-move {
-    0% { background-position: 0% 0%; transform: scale(1.0); }
-    100% { background-position: 100% 100%; transform: scale(1.1); }
+    0% { transform: scale(1.0); }
+    100% { transform: scale(1.05); }
   }
 
   .content-wrapper {
     position: relative;
     z-index: 1;
-    padding: 30rpx;
+    padding: 20rpx;
   }
-
+  
   .header-section {
     display: flex;
     flex-direction: column;
@@ -131,44 +146,39 @@
       width: 160rpx;
       height: 160rpx;
       border-radius: 30rpx;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
       margin-bottom: 20rpx;
+      box-shadow: 0 8rpx 24rpx rgba(0,0,0,0.1);
     }
-
+    
     .app-name {
-      font-size: 36rpx;
-      font-weight: 600;
+      font-size: 40rpx;
+      font-weight: bold;
       color: #333;
       margin-bottom: 10rpx;
     }
-
+    
     .app-version {
-      font-size: 24rpx;
+      font-size: 26rpx;
       color: #888;
-      background: rgba(0, 0, 0, 0.05);
-      padding: 4rpx 16rpx;
-      border-radius: 20rpx;
     }
   }
 
   .glass-card {
     background: rgba(255, 255, 255, 0.65);
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border-radius: 24rpx;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    overflow: hidden; /* For u-cell-group radius */
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8rpx 32rpx rgba(31, 38, 135, 0.07);
+    overflow: hidden;
   }
 
   .copyright {
-    margin-top: 80rpx;
+    margin-top: 60rpx;
     text-align: center;
-    
-    view {
-      font-size: 24rpx;
-      color: #999;
-      line-height: 1.5;
-    }
+    color: #999;
+    font-size: 24rpx;
+    line-height: 1.6;
+    padding-bottom: 40rpx;
   }
 </style>

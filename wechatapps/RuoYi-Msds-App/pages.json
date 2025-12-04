@@ -100,9 +100,21 @@
       "navigationStyle": "custom"
     }
   }, {
+    "path": "pages/mine/help/detail",
+    "style": {
+      "navigationBarTitleText": "问题详情",
+      "navigationStyle": "custom"
+    }
+  }, {
     "path": "pages/mine/about/index",
     "style": {
       "navigationBarTitleText": "关于我们",
+      "navigationStyle": "custom"
+    }
+  }, {
+    "path": "pages/mine/about/detail",
+    "style": {
+      "navigationBarTitleText": "详情",
       "navigationStyle": "custom"
     }
   }, {

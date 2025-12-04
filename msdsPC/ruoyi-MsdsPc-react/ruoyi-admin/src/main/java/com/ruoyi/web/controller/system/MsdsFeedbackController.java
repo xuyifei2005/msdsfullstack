@@ -71,6 +71,18 @@ public class MsdsFeedbackController extends BaseController
     }
 
     /**
+     * 新增意见反馈 (App端使用)
+     */
+    @Log(title = "意见反馈", businessType = BusinessType.INSERT)
+    @PostMapping("/app/add")
+    public AjaxResult appAdd(@RequestBody MsdsFeedback msdsFeedback)
+    {
+        logger.info("App feedback received: user={}, content={}", getUsername(), msdsFeedback.getContent());
+        msdsFeedback.setCreateBy(getUsername());
+        return toAjax(msdsFeedbackService.insertMsdsFeedback(msdsFeedback));
+    }
+
+    /**
      * 新增意见反馈
      */
     @PreAuthorize("@ss.hasPermi('system:feedback:add')")

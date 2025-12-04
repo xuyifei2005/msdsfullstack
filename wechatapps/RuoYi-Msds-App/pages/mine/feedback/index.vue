@@ -97,51 +97,41 @@
 </template>
 
 <script>
+  import { addFeedback } from "@/api/system/feedback";
+  import upload from "@/utils/upload";
+
   export default {
     data() {
       return {
-        statusBarHeight: 0,
+        statusBarHeight: uni.getSystemInfoSync().statusBarHeight,
         loading: false,
         form: {
-          type: '功能异常',
+          type: '功能建议',
           content: '',
-          contact: ''
+          contact: '',
+          images: ''
         },
-        fileList: [],
         feedbackTypes: [
-          { name: '功能异常' },
-          { name: '产品建议' },
-          { name: '其他问题' }
+          { name: '功能建议' },
+          { name: '性能问题' },
+          { name: '其他' }
         ],
+        fileList: [],
         rules: {
-          type: {
-            type: 'string',
-            required: true,
-            message: '请选择反馈类型',
-            trigger: ['change']
-          },
-          content: {
-            type: 'string',
-            required: true,
-            message: '请输入反馈内容',
-            trigger: ['blur', 'change']
-          }
+          content: [
+            { required: true, message: '请输入反馈内容', trigger: ['blur', 'change'] }
+          ]
         }
       }
     },
-    onLoad() {
-      const systemInfo = uni.getSystemInfoSync();
-      this.statusBarHeight = systemInfo.statusBarHeight;
-    },
-    onReady() {
-      this.$refs.form.setRules(this.rules)
-    },
     methods: {
+      // 删除图片
       deletePic(event) {
         this.fileList.splice(event.index, 1)
       },
+      // 新增图片
       async afterRead(event) {
-        // 当设置 multiple 为 true 时, file 为数组格式，否则为对象格式
+        // 当设置 mutiple 为 true 时, file 为数组格式，否则为对象格式
         let lists = [].concat(event.file)
         let fileListLen = this.fileList.length
         lists.map((item) => {
@@ -164,25 +154,49 @@
       },
       uploadFilePromise(url) {
         return new Promise((resolve, reject) => {
-          // 模拟上传
-          setTimeout(() => {
-            resolve(url)
-          }, 1000)
+          upload({
+            url: '/common/upload',
+            filePath: url,
+            name: 'file'
+          }).then(res => {
+             // 这里返回完整URL以便前端显示
+             resolve(res.url)
+          }).catch(err => {
+             reject(err)
+          })
         })
       },
       submit() {
         this.$refs.form.validate().then(res => {
           this.loading = true;
-          // 模拟提交请求
-          setTimeout(() => {
-            this.loading = false;
-            this.$modal.msgSuccess("反馈提交成功，感谢您的宝贵意见！");
+          // 处理图片
+          let images = '';
+          if (this.fileList.length > 0) {
+            images = this.fileList.map(item => item.url).join(',');
+          }
+          
+          // 构造后端需要的参数结构
+          const data = {
+            feedbackType: this.form.type,
+            content: this.form.content,
+            contactInfo: this.form.contact,
+            images: images
+          };
+          
+          addFeedback(data).then(response => {
+            console.log('Feedback response:', response);
+            uni.$u.toast('提交成功，感谢您的反馈！');
             setTimeout(() => {
               uni.navigateBack();
             }, 1500);
-          }, 1500);
+          }).catch(err => {
+            console.error('Feedback submit error:', err);
+            uni.$u.toast('提交失败：' + (err.msg || '未知错误'));
+          }).finally(() => {
+            this.loading = false;
+          });
         }).catch(errors => {
-          uni.$u.toast('请填写必填项');
+          uni.$u.toast('请完善表单信息');
         })
       }
     }
@@ -202,39 +216,29 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.15;
-    z-index: 0;
-    filter: saturate(1.2) brightness(1.1);
-    pointer-events: none;
-    animation: subtle-move 30s infinite alternate ease-in-out;
-  }
-
-  @keyframes subtle-move {
-    0% { background-position: 0% 0%; transform: scale(1.0); }
-    100% { background-position: 100% 100%; transform: scale(1.05); }
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    z-index: -1;
   }
 
   .content-wrapper {
-    position: relative;
-    z-index: 1;
-    padding: 20px 16px;
+    padding: 0 16px 24px;
   }
 
   .glass-card {
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.05);
-    border-radius: 16px;
-    padding: 20px;
-    overflow: hidden;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+  }
+
+  .form-container {
+    padding: 24px 20px;
+    margin-bottom: 20px;
   }
 
   .btn-group {
-    margin-top: 30px;
+    margin-top: 32px;
+    padding: 0 12px;
   }
 </style>

@@ -1,4 +1,4 @@
-# 前端手动：
+# 前端自动运行！：
 
 # node版本：
 v18.20.8
@@ -7,4 +7,5 @@ v18.20.8
 docker exec -it msdsfrontend bash
 docker logs msdsfrontend -f
 npm run dev
-## 前端手动运行：
+## 前端自动运行：
+docker compose up -d msdsfrontend

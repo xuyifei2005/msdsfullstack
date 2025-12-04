@@ -3,7 +3,7 @@ DROP TABLE IF EXISTS `msds_faq`;
 CREATE TABLE `msds_faq` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键',
   `question` varchar(500) NOT NULL COMMENT '问题',
-  `answer` text NOT NULL COMMENT '回答',
+  `answer` longtext NOT NULL COMMENT '回答',
   `category` varchar(100) DEFAULT NULL COMMENT '分类',
   `sort_order` int(11) DEFAULT 0 COMMENT '排序',
   `status` char(1) DEFAULT '0' COMMENT '状态（0正常 1停用）',

@@ -5,6 +5,7 @@ import { Button, message } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
 import { listAbout, addAbout, updateAbout, removeAbout } from '@/services/msds/about';
 import { BetaSchemaForm } from '@ant-design/pro-components';
+import RichEditor from '@/components/RichEditor';
 
 const AboutList: React.FC = () => {
   const actionRef = useRef<ActionType>();
@@ -58,15 +59,14 @@ const AboutList: React.FC = () => {
     {
         title: '内容',
         dataIndex: 'content',
-        valueType: 'textarea',
         hideInTable: true,
         hideInSearch: true,
         formItemProps: {
             rules: [{ required: true, message: '此项为必填项' }],
         },
-        fieldProps: {
-            rows: 10
-        }
+        renderFormItem: (_, { defaultRender, ...rest }) => {
+            return <RichEditor {...rest} placeholder="请输入内容" />;
+        },
     },
     {
       title: '状态',

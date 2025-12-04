@@ -5,6 +5,7 @@ import { Button, message, Modal } from 'antd';
 import { PlusOutlined, DeleteOutlined, EditOutlined } from '@ant-design/icons';
 import { listFaq, addFaq, updateFaq, removeFaq } from '@/services/msds/faq';
 import { BetaSchemaForm } from '@ant-design/pro-components';
+import RichEditor from '@/components/RichEditor';
 
 const FaqList: React.FC = () => {
   const actionRef = useRef<ActionType>();
@@ -67,10 +68,27 @@ const FaqList: React.FC = () => {
     {
       title: '回答',
       dataIndex: 'answer',
-      valueType: 'textarea',
       hideInSearch: true,
       formItemProps: {
         rules: [{ required: true, message: '此项为必填项' }],
+      },
+      renderFormItem: () => {
+        return <RichEditor placeholder="请输入回答内容" />;
+      },
+      render: (dom, entity) => {
+        return (
+          <div
+            style={{
+              maxHeight: 60,
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+              display: '-webkit-box',
+              WebkitLineClamp: 3,
+              WebkitBoxOrient: 'vertical',
+            }}
+            dangerouslySetInnerHTML={{ __html: entity.answer }}
+          />
+        );
       },
     },
     {

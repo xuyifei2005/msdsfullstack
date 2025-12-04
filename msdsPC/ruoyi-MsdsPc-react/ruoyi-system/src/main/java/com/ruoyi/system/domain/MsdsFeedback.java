@@ -28,6 +28,10 @@ public class MsdsFeedback extends BaseEntity
     @Excel(name = "用户名")
     private String userName;
 
+    /** 反馈类型 */
+    @Excel(name = "反馈类型")
+    private String feedbackType;
+
     /** 反馈内容 */
     @Excel(name = "反馈内容")
     private String content;
@@ -83,6 +87,15 @@ public class MsdsFeedback extends BaseEntity
     public String getUserName() 
     {
         return userName;
+    }
+    public void setFeedbackType(String feedbackType) 
+    {
+        this.feedbackType = feedbackType;
+    }
+
+    public String getFeedbackType() 
+    {
+        return feedbackType;
     }
     public void setContent(String content) 
     {
