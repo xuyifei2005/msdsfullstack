@@ -30,48 +30,50 @@
       <!-- 化学品头部信息 -->
       <view class="chemical-header">
         <view class="header-bg-anim"></view>
-        <view class="danger-level-badge" :class="dangerLevelClass">
-          {{ chemical.dangerLevel || '一般' }}
+        
+        <!-- 顶部标识行：危险等级 + 标签 -->
+        <view class="header-top-row">
+             <view class="danger-level-badge" :class="dangerLevelClass">
+                {{ chemical.dangerLevel || '一般' }}
+             </view>
+             <!-- 增加展示关键Tags -->
+             <view class="header-tags" v-if="chemical.tags && chemical.tags.length > 0">
+                <view class="header-tag" v-for="(tag, index) in chemical.tags.slice(0, 2)" :key="index">
+                    {{ tag }}
+                </view>
+             </view>
         </view>
         
         <view class="name-section" @click="toggleName">
           <view class="chemical-name" :class="{ 'name-expanded': isNameExpanded }">
             {{ chemical.name || '未命名' }}
-          </view>
-          <view class="name-expand-hint" v-if="chemical.name && chemical.name.length > 20">
-            <uni-icons :type="isNameExpanded ? 'up' : 'down'" color="rgba(255,255,255,0.8)" size="14"></uni-icons>
+            <text class="name-en" v-if="chemical.englishName">({{ chemical.englishName }})</text>
           </view>
         </view>
         
         <view class="chemical-meta">
             <view class="meta-item" @click.stop="handleCopyCas">
-                <text class="meta-label">CAS</text>
+                <text class="meta-label">CAS:</text>
                 <text class="meta-value">{{ chemical.cas || '-' }}</text>
-                <uni-icons type="copy" color="rgba(255,255,255,0.8)" size="12" style="margin-left: 4px;"></uni-icons>
+                <uni-icons type="copy" color="rgba(255,255,255,0.6)" size="12" style="margin-left: 6px;"></uni-icons>
             </view>
+             <view class="meta-divider" v-if="chemical.formula">|</view>
             <view class="meta-item" v-if="chemical.formula">
-                <text class="meta-label">分子式</text>
+                <text class="meta-label">分子式:</text>
                 <text class="meta-value">{{ chemical.formula }}</text>
             </view>
         </view>
 
-        <!-- 快捷理化数据 (新增) -->
-        <view class="quick-stats">
-            <view class="stat-item">
-                <text class="stat-label">分子量</text>
-                <text class="stat-value">{{ quickStats.molecularWeight || '-' }}</text>
+        <!-- 危险性提示 (完全对标原型图 Danger Indicator) -->
+        <view class="hazard-alert" v-if="(hazardDetail && hazardDetail.warningWord) || (chemical.tags && chemical.tags.length > 0)">
+            <view class="alert-icon">
+                <uni-icons type="info-filled" color="#FF3B30" size="24"></uni-icons>
             </view>
-            <view class="stat-item">
-                <text class="stat-label">沸点</text>
-                <text class="stat-value">{{ quickStats.boilingPoint || '-' }}</text>
-            </view>
-            <view class="stat-item">
-                <text class="stat-label">密度</text>
-                <text class="stat-value">{{ quickStats.density || '-' }}</text>
-            </view>
-            <view class="stat-item">
-                <text class="stat-label">闪点</text>
-                <text class="stat-value">{{ quickStats.flashPoint || '-' }}</text>
+            <view class="alert-content">
+                <view class="alert-title">{{ (hazardDetail && hazardDetail.warningWord) || '注意' }}</view>
+                <view class="alert-desc">
+                    {{ (hazardDetail && hazardDetail.hazardCategory) ? hazardDetail.hazardCategory : '处理时需要特殊防护措施' }}
+                </view>
             </view>
         </view>
 
@@ -507,7 +509,7 @@ export default {
     return {
       title: `MSDS详情: ${this.chemical.name}`,
       path: `/pages/detail/index?id=${this.chemical.id}`,
-      imageUrl: '/static/logo.png' // Assuming logo exists
+      imageUrl: '/static/logo_new.png' // Assuming logo exists
     }
   },
   // Share to Timeline
@@ -515,7 +517,7 @@ export default {
     return {
       title: `MSDS详情: ${this.chemical.name}`,
       query: `id=${this.chemical.id}`,
-      imageUrl: '/static/logo.png'
+      imageUrl: '/static/logo_new.png'
     }
   },
   computed: {
@@ -979,7 +981,7 @@ export default {
             href: `http://www.yourdomain.com/h5/#/pages/detail/index?id=${this.chemical.id}`,
             title: `MSDS详情: ${this.chemical.name}`,
             summary: `CAS: ${this.chemical.cas}`,
-            imageUrl: "/static/logo.png",
+            imageUrl: "/static/logo_new.png",
             success: function (res) {
                 console.log("success:" + JSON.stringify(res));
             },
@@ -1097,25 +1099,67 @@ export default {
 }
 
 .chemical-header {
-  background: linear-gradient(135deg, #409eff 0%, #2b85e4 100%);
-  border-radius: 16px;
-  padding: 24px 20px;
-  margin-bottom: 20px;
+  background: linear-gradient(135deg, #005BEA 0%, #00C6FB 100%);
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 24px;
   color: #fff;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 8px 24px rgba(43, 133, 228, 0.25);
+  box-shadow: 0 15px 35px rgba(0, 91, 234, 0.25);
 }
 
 .header-bg-anim {
   position: absolute;
-  top: -20px;
-  right: -20px;
-  width: 200px;
-  height: 200px;
-  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+  top: -30px;
+  right: -30px;
+  width: 240px;
+  height: 240px;
+  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
   pointer-events: none;
   border-radius: 50%;
+}
+
+.header-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 2;
+}
+
+.danger-level-badge {
+  /* Position static for flow layout */
+  position: relative;
+  top: auto;
+  right: auto;
+  padding: 6px 16px;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 800;
+  color: #005BEA; /* Match header primary color */
+  background: #ffffff; /* Solid white background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.5px;
+  display: inline-block;
+}
+
+.header-tags {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.header-tag {
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-weight: 600;
 }
 
 .name-section {
@@ -1125,75 +1169,112 @@ export default {
 }
 
 .chemical-name {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 28px;
+  font-weight: 800;
   color: #fff;
   line-height: 1.4;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  
-  /* Truncate logic */
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2; /* Limit to 2 lines by default */
-  overflow: hidden;
-  transition: all 0.3s ease;
-  
-  &.name-expanded {
-    -webkit-line-clamp: unset;
-  }
+  text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
 }
 
-.name-expand-hint {
-    text-align: center;
-    margin-top: 8px;
-    opacity: 0.8;
+.name-en {
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.9;
+    margin-top: 6px;
+    letter-spacing: 0.3px;
 }
 
 .chemical-meta {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
     position: relative;
     z-index: 1;
+    margin-bottom: 24px;
 }
 
 .meta-item {
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(5px);
-    padding: 6px 12px;
-    border-radius: 8px;
     display: flex;
     align-items: center;
-    font-size: 13px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.95);
 }
 
 .meta-label {
-    color: rgba(255, 255, 255, 0.8);
-    margin-right: 6px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 4px;
+    font-size: 13px;
 }
 
 .meta-value {
-    color: #fff;
-    font-weight: 600;
+    font-weight: 500;
     font-family: monospace;
 }
 
-.danger-level-badge {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: bold;
-  color: white;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+.meta-divider {
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0 4px;
+    font-size: 12px;
 }
 
-.badge-danger { background: linear-gradient(135deg, #ff416c, #ff4b2b); }
-.badge-warning { background: linear-gradient(135deg, #f7971e, #ffd200); }
-.badge-normal { background: linear-gradient(135deg, #56ab2f, #a8e063); }
+/* Hazard Alert Styles (Prototype Match) */
+.hazard-alert {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    align-items: flex-start; /* Align top for multi-line text */
+    position: relative;
+    z-index: 1;
+    /* No border, just clean shadow and internal left border */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    margin-top: 10px;
+}
+
+.hazard-alert::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 12px;
+    bottom: 12px;
+    width: 4px;
+    background-color: #FF3B30;
+    border-radius: 0 4px 4px 0;
+}
+
+.alert-icon {
+    margin-right: 16px;
+    padding-top: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.alert-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.alert-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333; /* Dark grey for better readability on white */
+    margin-bottom: 6px;
+    line-height: 1.3;
+}
+
+.alert-desc {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Removed old gradients, relying on glass effect with possible border color tweaks if needed, 
+   but cleaner white/glass is better for the top right on blue */
 
 .action-buttons {
   display: flex;
@@ -1358,48 +1439,7 @@ export default {
   height: env(safe-area-inset-bottom);
 }
 
-/* Quick Stats Styles */
-.quick-stats {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-    padding: 16px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    position: relative;
-    z-index: 1;
-}
-
-.stat-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
-    position: relative;
-    
-    &:not(:last-child)::after {
-        content: '';
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        height: 20px;
-        width: 1px;
-        background-color: rgba(255, 255, 255, 0.2);
-    }
-}
-
-.stat-label {
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.7);
-    margin-bottom: 4px;
-}
-
-.stat-value {
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-}
+/* Hazard Alert Styles (Refined) - Removed duplicate */
 
 /* Header Actions Styles */
 .header-actions {
@@ -1417,12 +1457,12 @@ export default {
     justify-content: center;
     padding: 8px 16px;
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.15);
     transition: all 0.2s;
     position: relative;
     
     &:active {
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.25);
         transform: scale(0.95);
     }
     

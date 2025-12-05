@@ -15,7 +15,7 @@ module.exports = {
     // 应用版本
     version: "1.2.0",
     // 应用logo
-    logo: "/static/logo.png",
+    logo: "/static/logo_new.png",
     // 官方网站
     site_url: "http://ruoyi.vip",
     // 政策协议

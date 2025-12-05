@@ -134,8 +134,8 @@
 
       <!-- 版本信息 -->
       <view class="version-info">
-        MSDS文件管理系统 v1.0.0<br>
-        © 2024 All Rights Reserved
+        MSDS安全智库网移动端 v1.2.0<br>
+        © 2025 All Rights Reserved
       </view>
     </scroll-view>
   </view>
