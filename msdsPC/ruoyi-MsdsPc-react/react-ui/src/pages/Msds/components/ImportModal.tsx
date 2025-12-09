@@ -130,18 +130,21 @@ const ImportModal: React.FC<ImportModalProps> = ({ open, onOpenChange, onSuccess
         return /\.xml$/i.test(fileName);
       });
 
-      // 如果包含XML文件，使用XML导入接口（仅支持单个XML文件）
+      // 如果包含XML文件，使用XML导入接口（支持批量XML文件）
       if (hasXmlFile) {
-        if (fileList.length > 1) {
-          message.warning('XML格式导入仅支持单个文件，请重新选择');
-          setUploading(false);
-          return;
+        // 检查是否所有文件都是XML，如果混合了其他类型，提示用户分开导入
+        const allXml = fileList.every(file => (file.name || '').toLowerCase().endsWith('.xml'));
+        if (!allXml) {
+           message.warning('请勿混合导入XML和其他格式文件，建议分批导入');
+           setUploading(false);
+           return;
         }
-        
-        const xmlFile = fileList[0];
-        if (xmlFile.originFileObj) {
-          formData.append('file', xmlFile.originFileObj);
-        }
+
+        fileList.forEach((file) => {
+          if (file.originFileObj) {
+            formData.append('file', file.originFileObj);
+          }
+        });
         formData.append('overwriteDuplicates', overwriteDuplicates.toString());
 
         // 模拟进度

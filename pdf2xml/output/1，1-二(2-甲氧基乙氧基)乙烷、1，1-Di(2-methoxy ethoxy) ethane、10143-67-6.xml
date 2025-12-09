@@ -141,8 +141,67 @@
       <transportation_precautions>运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、强酸、食用化学品等混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
-    <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3类易燃液体，具刺激性，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
-    </regulatory>
+    <regulatory_info>
+      <domestic_regulations>
+        <regulation>《危险化学品安全管理条例》（国务院令第591号）</regulation>
+        <regulation>《危险化学品目录》（2015版）</regulation>
+        <regulation>《危险货物品名表》（GB 12268-2012）</regulation>
+        <regulation>《危险货物运输包装通用技术条件》（GB 12463-2009）</regulation>
+        <regulation>《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）</regulation>
+        <regulation>《工作场所有害因素职业接触限值 第1部分：化学有害因素》（GBZ 2.1-2019）</regulation>
+      </domestic_regulations>
+      <international_regulations>
+        <regulation>联合国《关于危险货物运输的建议书 试验和标准手册》</regulation>
+        <regulation>国际海事组织《国际海运危险货物规则》(IMDG Code)</regulation>
+        <regulation>国际民航组织《危险物品安全航空运输技术细则》(ICAO TI)</regulation>
+      </international_regulations>
+      <occupational_exposure_limits>
+        <country name="中国">未制订标准</country>
+        <country name="美国（ACGIH）">未制订标准</country>
+        <country name="欧盟">未制订标准</country>
+      </occupational_exposure_limits>
+      <ghs_classification>
+        <hazard_class>易燃液体 - 类别3</hazard_class>
+        <hazard_class>皮肤刺激 - 类别2</hazard_class>
+        <hazard_class>眼刺激 - 类别2A</hazard_class>
+        <hazard_statement>易燃液体和蒸气</hazard_statement>
+        <hazard_statement>造成皮肤刺激</hazard_statement>
+        <hazard_statement>造成严重眼刺激</hazard_statement>
+        <precautionary_statement>远离热源/火花/明火/热表面。禁止吸烟</precautionary_statement>
+        <precautionary_statement>保持容器密闭。使用防爆电器/通风/防静电设备</precautionary_statement>
+        <precautionary_statement>戴防护手套/穿防护服/戴防护眼罩/戴防护面具</precautionary_statement>
+        <precautionary_statement>如接触皮肤：用大量肥皂和水清洗</precautionary_statement>
+        <precautionary_statement>如进入眼睛：用水小心冲洗几分钟。如戴隐形眼镜并可方便地取出，取出隐形眼镜。继续冲洗</precautionary_statement>
+        <precautionary_statement>如感觉不适，呼叫中毒中心或医生</precautionary_statement>
+      </ghs_classification>
+    </regulatory_info>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>《危险化学品安全技术全书》（第三版）</reference>
+        <reference>《化学化工物性数据手册》（有机卷）</reference>
+        <reference>美国国家职业安全卫生研究所(NIOSH)化学品安全数据库</reference>
+        <reference>欧洲化学品管理局(ECHA)化学品信息数据库</reference>
+      </references>
+      <revision_history>
+        <revision date="2023-10-15" version="1.0">初始版本</revision>
+        <revision date="2024-06-18" version="2.0">补充毒理学信息和生态学资料</revision>
+      </revision_history>
+      <glossary>
+        <term name="CAS号">化学文摘社登记号，是化学物质的唯一标识符</term>
+        <term name="LD50">半数致死剂量，指能引起一半试验动物死亡的剂量</term>
+        <term name="LC50">半数致死浓度，指能引起一半试验动物死亡的浓度</term>
+        <term name="BCF">生物富集系数，表示化学物质在生物体内富集的程度</term>
+      </glossary>
+      <precautions>
+        <precaution>避免长期反复接触，定期进行职业健康检查</precaution>
+        <precaution>使用时应保持良好通风，避免吸入蒸气</precaution>
+        <precaution>储存时应远离火源和氧化剂，防止发生危险反应</precaution>
+        <precaution>废弃时应按照危险废物处理规定进行处置，不得随意排放</precaution>
+      </precautions>
+      <disclaimer>
+        本安全技术说明书所提供的信息基于现有知识和数据，仅供安全操作参考。使用者应根据实际使用情况自行评估风险，并遵守相关法律法规。对于因使用本产品造成的任何损失，编制方不承担责任。
+      </disclaimer>
+    </other_info>
   </msds>
 </msds_list>

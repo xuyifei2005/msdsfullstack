@@ -143,8 +143,81 @@
       <transportation_precautions>无资料</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
-    <regulatory>
-      <regulatory_info>无资料</regulatory_info>
-    </regulatory>
+    <regulatory_info>
+      <domestic_regulations>
+        <regulation_name>危险化学品安全管理条例</regulation_name>
+        <regulation_content>10-氮杂蒽（吖啶）属于危险化学品，需按照《危险化学品安全管理条例》进行管理</regulation_content>
+        <regulation_name>危险化学品目录</regulation_name>
+        <regulation_content>10-氮杂蒽（吖啶）列入《危险化学品目录》</regulation_content>
+        <regulation_name>工作场所有害因素职业接触限值</regulation_name>
+        <regulation_content>未制定10-氮杂蒽（吖啶）的职业接触限值</regulation_content>
+      </domestic_regulations>
+      <international_regulations>
+        <regulation_name>欧盟REACH法规</regulation_name>
+        <regulation_content>10-氮杂蒽（吖啶）需符合REACH法规的注册、评估、授权和限制要求</regulation_content>
+        <regulation_name>美国OSHA标准</regulation_name>
+        <regulation_content>需符合OSHA危险通信标准(29 CFR 1910.1200)的要求</regulation_content>
+      </international_regulations>
+      <occupational_exposure_limits>
+        <country>中国</country>
+        <limit_type>未制定标准</limit_type>
+        <limit_value>无资料</limit_value>
+        <country>美国(ACGIH)</country>
+        <limit_type>TWA</limit_type>
+        <limit_value>未制定标准</limit_value>
+        <country>美国(ACGIH)</country>
+        <limit_type>STEL</limit_type>
+        <limit_value>未制定标准</limit_value>
+      </occupational_exposure_limits>
+      <ghs_classification>
+        <hazard_class>健康危害</hazard_class>
+        <category>急性毒性-口服(类别4)</category>
+        <hazard_class>健康危害</hazard_class>
+        <category>皮肤腐蚀/刺激(类别2)</category>
+        <hazard_class>健康危害</hazard_class>
+        <category>严重眼损伤/眼刺激(类别2A)</category>
+        <hazard_code>H302</hazard_code>
+        <hazard_statement>吞咽有害</hazard_statement>
+        <hazard_code>H315</hazard_code>
+        <hazard_statement>造成皮肤刺激</hazard_statement>
+        <hazard_code>H319</hazard_code>
+        <hazard_statement>造成严重眼刺激</hazard_statement>
+      </ghs_classification>
+    </regulatory_info>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>国际化学品安全卡(ICSC) - 吖啶</reference>
+        <reference>美国国立职业安全卫生研究所(NIOSH) - 吖啶</reference>
+        <reference>欧洲化学品管理局(ECHA) - 吖啶</reference>
+      </references>
+      <revision_history>
+        <revision_date>2025-11-19</revision_date>
+        <revision_content>初始版本，根据GHS标准编制</revision_content>
+        <revision_date>2025-12-01</revision_date>
+        <revision_content>补充法规信息和其他信息部分</revision_content>
+      </revision_history>
+      <glossary>
+        <term>CAS号</term>
+        <definition>化学文摘服务社登记号，是化学物质的唯一识别号</definition>
+        <term>LD50</term>
+        <definition>半数致死量，指能引起一半实验动物死亡的剂量</definition>
+        <term>TWA</term>
+        <definition>时间加权平均容许浓度，指8小时工作日的时间加权平均容许浓度</definition>
+        <term>STEL</term>
+        <definition>短时间接触容许浓度，指15分钟内的容许接触浓度</definition>
+      </glossary>
+      <precautions>
+        <precaution>使用10-氮杂蒽（吖啶）时需佩戴适当的个人防护装备</precaution>
+        <precaution>避免吸入其粉尘或蒸气，避免皮肤和眼睛接触</precaution>
+        <precaution>操作区域应保持良好通风</precaution>
+        <precaution>储存时应远离火源、热源和氧化剂</precaution>
+      </precautions>
+      <disclaimer>
+        <disclaimer_text>本安全技术说明书基于当前可获得的信息编制，仅供参考</disclaimer_text>
+        <disclaimer_text>使用者应根据具体使用情况自行评估风险并采取适当的安全措施</disclaimer_text>
+        <disclaimer_text>本说明书不构成对产品性质的保证或承诺</disclaimer_text>
+      </disclaimer>
+    </other_info>
   </msds>
 </msds_list>

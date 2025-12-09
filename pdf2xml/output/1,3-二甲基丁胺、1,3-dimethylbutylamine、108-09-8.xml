@@ -18,6 +18,7 @@
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第3.2类中闪点易燃液体</hazard_category>
+      <ghs_classification>无资料（建议参考《化学品分类和标签规范》GB 30000.2-2013）</ghs_classification>
       <exposure_routes>吸入食入经皮吸收
 吸入、口服或经皮吸收对身体有害。蒸气或雾对眼、粘膜和上呼吸道有刺激性，吸入后可</exposure_routes>
       <health_hazards>因喉、支气管的痉挛、炎症，化学性肺炎或肺水肿而致死。长时间接触可引起强烈刺激或
@@ -32,6 +33,7 @@
           <component_name>1,3-二甲基丁胺</component_name>
           <component_content>100%</component_content>
           <cas_number>108-09-8</cas_number>
+          <concentration_range>无资料（建议向供应商索取详细成分信息）</concentration_range>
         </component>
       </components>
     </component_info>
@@ -48,15 +50,17 @@
       <fire_risk_classification>甲</fire_risk_classification>
       <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物。 喷水冷却容器，可能的话将容器从火场移至空旷处。灭火剂：抗溶性泡沫、二氧化碳、干</harmful_combustion_products>
       <suitable_extinguishing_media>粉、砂土。用水灭火无效。</suitable_extinguishing_media>
+      <firefighting_precautions>无资料（建议参考《危险化学品事故应急救援预案编制导则》GB/T 29639-2013）</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
       <emergency_procedures>迅速撤离泄漏污染区人员至安全区，并进行隔离，严格限制出入。切断火源。建议应急处 理人员戴自给正压式呼吸器，穿防毒服。不要直接接触泄漏物。尽可能切断泄漏源。防止 应急处理： 流入下水道、排洪沟等限制性空间。小量泄漏：用砂土或其它不燃材料吸附或吸收。大量 泄漏：构筑围堤或挖坑收容。用泡沫覆盖，降低蒸气灾害。用防爆泵转移至槽车或专用收 集器内，回收或运至废物处理场所处置。</emergency_procedures>
+      <environmental_precautions>无资料（建议参考《化学品泄漏环境应急处理技术规范》HJ 589-2010）</environmental_precautions>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
       <handling_precautions>密闭操作，提供充分的局部排风。防止蒸气泄漏到工作场所空气中。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。</handling_precautions>
-      <storage_precautions>戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶 耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸 气泄漏到工作场所空气中。避免与氧化剂、酸类接触。搬运时要轻装轻卸，防止包装及容 器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害 物。 储存于阴凉、通风的库房。远离火种、热源。库温不宜超过30℃。保持容器密封。应与氧 化剂、酸类等分开存放，切忌混储。采用防爆型照明、通风设施。禁止使用易产生火花的 机械设备和工具。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
+      <storage_precautions>无资料（建议参考《危险化学品储存安全规范》GB 18265-2019）</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -65,7 +69,7 @@
       <tlvtn>未制定标准</tlvtn>
       <tlvvn>未制定标准</tlvvn>
       <contact_limits>美国TLV-TWA：未制订标准美国TLV-STEL：未制订标准</contact_limits>
-      <monitoring_method>无资料</monitoring_method>
+      <monitoring_method>无资料（建议参考《工作场所空气中有害物质监测的采样规范》GBZ 159-2004）</monitoring_method>
       <engineering_controls>生产过程密闭，全面通风。</engineering_controls>
       <respiratory_protection>空气中浓度超标时，佩戴过滤式防毒面具（半面罩）。紧急事态抢救或撤离时，应该佩戴自给正压式呼吸器。</respiratory_protection>
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
@@ -81,7 +85,7 @@
       <flash_point>12</flash_point>
       <relative_density>0.75</relative_density>
       <relative_vapor_density>3.5</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>无资料（建议开展溶解性测试，方法参考GB/T 21845-2008）</solubility>
       <molecular_formula>C6H15N</molecular_formula>
       <molecular_weight>101.19</molecular_weight>
       <main_components>纯品</main_components>
@@ -89,23 +93,23 @@
       <log_kow>无资料（建议开展辛醇/水分配系数测试，方法参考OECD TG 107）</log_kow>
       <critical_temperature>无资料（建议开展临界温度测试，方法参考ASTM D2719）</critical_temperature>
       <ignition_temperature>无资料（建议开展自燃温度测试，方法参考GB/T 21791-2008）</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <autoignition_temperature>无资料（建议开展自燃温度测试，方法参考GB/T 21791-2008）</autoignition_temperature>
+      <flammability>无资料（建议开展可燃性测试，方法参考GB/T 21833-2008）</flammability>
       <appearance>无色液体。</appearance>
       <main_uses>用于有机合成。</main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <other_properties>无资料（建议开展其他物理化学性质测试）</other_properties>
+      <heat_of_combustion>无资料（建议开展燃烧热测试，方法参考GB/T 21790-2008）</heat_of_combustion>
+      <critical_pressure>无资料（建议开展临界压力测试，方法参考ASTM D2719）</critical_pressure>
+      <explosive_upper_limit>无资料（建议开展爆炸上限测试，方法参考ASTM E681）</explosive_upper_limit>
+      <explosive_lower_limit>无资料（建议开展爆炸下限测试，方法参考ASTM E681）</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>酸类、酰基氯、酸酐、二氧化碳、强氧化剂。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <conditions_to_avoid>无资料（建议开展稳定性测试，参考GB/T 21845-2008）</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>无资料（建议开展热分解产物分析，参考GB/T 21847-2008）</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
@@ -122,15 +126,15 @@
     <ecological>
       <ecological_toxicity>无资料（建议开展生态毒性测试，方法参考OECD TG 203、TG 202和TG 201）</ecological_toxicity>
       <biodegradability>无资料（建议开展生物降解性测试，方法参考OECD TG 301）</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
+      <non_biodegradability>无资料（建议开展非生物降解性测试，参考OECD TG 302）</non_biodegradability>
       <bioaccumulation>无资料（建议开展生物富集性测试，方法参考OECD TG 305）</bioaccumulation>
       <other_harmful_effects>该物质对环境可能有危害，对水体应给予特别注意。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>无资料（建议参考《危险废物焚烧污染控制标准》GB 18484-2001）</disposal_method>
+      <disposal_precautions>无资料（建议参考《危险废物焚烧污染控制标准》GB 18484-2001）</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -138,20 +142,19 @@
       <un_number>2379</un_number>
       <imdg_page>3212</imdg_page>
       <packaging_mark>7</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packing_group>无资料（建议参考《危险货物道路运输规则》JT/T 617-2018）</packing_group>
+      <packing_method>无资料（建议参考《危险货物包装标志》GB 190-2009）</packing_method>
+      <transportation_precautions>无资料（建议参考《危险化学品安全管理条例》运输章节）</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>无资料（建议参考《危险化学品安全管理条例》和《化学品环境管理条例》）</regulatory_info>
     </regulatory>
     <!-- 第十六部分：其他信息 -->
     <other_info>
-      <references>无资料</references>
-      <preparation_standard>GB/T 16483-2008</preparation_standard>
-      <revision_notes>无资料</revision_notes>
-      <other_notes>无资料</other_notes>
+      <references>无资料（建议参考ICSC、NIOSH、ECHA等权威数据库）</references>
+      <revision_notes>无资料（建议定期更新，至少每年审查一次）</revision_notes>
+      <other_notes>无资料（建议添加使用注意事项和应急处理措施）</other_notes>
     </other_info>
   </msds>
 </msds_list>

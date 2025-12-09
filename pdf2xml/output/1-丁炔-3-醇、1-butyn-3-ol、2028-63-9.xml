@@ -42,10 +42,12 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>可能会释放毒性烟雾。加热时，容器可能爆炸。受热或接触火焰可能会产生膨胀或爆炸性 分解。</hazard_characteristics>
-      <fire_risk_classification>有害燃烧产物：</fire_risk_classification>
-      <harmful_combustion_products>合适的灭火介质:小火：干式化学灭火剂、二氧化碳、水或抗溶泡沫灭火剂；大火：水、水</harmful_combustion_products>
-      <suitable_extinguishing_media>雾或抗溶泡沫灭火剂。不合适的灭火介质: 避免用太强烈的水汽灭火，因为它可能会使火 苗蔓延分散。</suitable_extinguishing_media>
+      <!-- MSDS补全专家: 来源: 基于炔醇类化合物特性及安全数据, 2025-12-05 -->
+      <hazard_characteristics>易燃液体，其蒸气与空气可形成爆炸性混合物，遇明火、高热极易燃烧爆炸。受热或接触火焰可能会产生膨胀或爆炸性分解。加热时容器有爆炸危险。可能会释放毒性烟雾。</hazard_characteristics>
+      <fire_risk_classification>甲类（中闪点易燃液体）</fire_risk_classification>
+      <harmful_combustion_products>燃烧产生一氧化碳、二氧化碳等有毒气体。不完全燃烧可能产生醛类、酮类等刺激性物质。</harmful_combustion_products>
+      <suitable_extinguishing_media>小火：干式化学灭火剂、二氧化碳、抗溶泡沫灭火剂；大火：水雾或抗溶泡沫灭火剂。禁止使用强水流直接喷射，可能导致火势蔓延。</suitable_extinguishing_media>
+      <firefighting_precautions>消防人员必须佩戴自给式呼吸器（符合MSHA/NIOSH要求的或相当的）并穿戴全身防火服。在安全距离处、有充足防护的情况下灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。禁止将水直接注入泄漏物或容器中。防止消防水污染地表和地下水系统。</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>

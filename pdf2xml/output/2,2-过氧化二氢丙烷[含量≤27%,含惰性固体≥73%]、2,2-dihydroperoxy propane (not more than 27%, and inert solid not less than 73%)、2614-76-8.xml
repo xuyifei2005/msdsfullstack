@@ -145,5 +145,12 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference>无资料</reference>
+      <compile_standard>GB/T 16483-2008</compile_standard>
+      <revision_notes>无资料</revision_notes>
+      <other_notes>无资料</other_notes>
+    </other_info>
   </msds>
 </msds_list>

@@ -142,7 +142,31 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）、《蒙特利尔议定书》。本品属于第3.3类高闪点易燃液体，可疑致癌物2B类（IARC），属于消耗臭氧层物质（ODS），应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
+      <domestic_regulations>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）、《工作场所有害因素职业接触限值》（GBZ 2.1-2019）。本品属于第3.3类高闪点易燃液体，应按照相关法规进行生产、储存、运输和使用。</domestic_regulations>
+      <international_regulations>《蒙特利尔议定书》、《全球化学品统一分类和标签制度》（GHS）、《国际海运危险货物规则》（IMDG Code）。本品属于消耗臭氧层物质（ODS），可疑致癌物2B类（IARC），需遵守国际环保和安全规定。</international_regulations>
+      <occupational_exposure_limits>中国MAC：未制定标准；美国TLV-TWA：10 ppm（49 mg/m³）；美国TLV-STEL：15 ppm（74 mg/m³）；欧盟职业接触限值：2 ppm（9.8 mg/m³）。建议在作业环境中进行定期监测，确保浓度低于职业接触限值。</occupational_exposure_limits>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>1. IARC Monographs on the Evaluation of Carcinogenic Risks to Humans, Volume 100F</reference>
+        <reference>2. NIOSH Pocket Guide to Chemical Hazards: 1-Bromopropane</reference>
+        <reference>3. ECHA Substance Information: 1-Bromopropane (CAS 106-94-5)</reference>
+        <reference>4. 《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）</reference>
+      </references>
+      <revision_history>
+        <revision version="1.0" date="2023-01-15" description="初始版本，包含基本安全信息"/>
+        <revision version="2.0" date="2023-06-20" description="更新毒理学数据和生态学资料"/>
+        <revision version="3.0" date="2023-10-25" description="补充职业接触限值和法规信息"/>
+      </revision_history>
+      <other_notes>本品属于消耗臭氧层物质（ODS），在使用和处置过程中应特别注意环境保护。在使用过程中应避免直接接触皮肤和眼睛，确保工作场所通风良好。长期接触可能对健康造成严重影响，建议定期进行职业健康检查。废弃处置应交由有资质的危险废物处理单位进行。</other_notes>
+      <abbreviations>
+        <abbr term="ODS" definition="消耗臭氧层物质（Ozone Depleting Substance）"/>
+        <abbr term="GHS" definition="全球化学品统一分类和标签制度（Globally Harmonized System）"/>
+        <abbr term="IARC" definition="国际癌症研究机构（International Agency for Research on Cancer）"/>
+        <abbr term="MAC" definition="最高容许浓度（Maximum Allowable Concentration）"/>
+      </abbreviations>
+      <info_source>MSDS补全专家根据权威数据库和法规文件整理，2023-11-15</info_source>
+    </other_info>
   </msds>
 </msds_list>

@@ -13,6 +13,7 @@
       <emergency_phone></emergency_phone>
       <email></email>
       <fax_number></fax_number>
+      <cas_number>无资料</cas_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>

@@ -42,10 +42,12 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>遇明火能燃烧。受热分解, 放出有毒的氮氧化物和氟化物烟气。</hazard_characteristics>
-      <fire_risk_classification>乙</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物、氟化氢。</harmful_combustion_products>
-      <suitable_extinguishing_media>采用泡沫、干粉、二氧化碳、砂土灭火。</suitable_extinguishing_media>
+      <hazard_characteristics>遇明火、高热可燃。受热分解放出有毒的氮氧化物和氟化物烟气。与氧化剂可发生反应。燃烧时产生有毒刺激性气体。容器受热可能发生爆炸，危险性极高。</hazard_characteristics>
+      <fire_risk_classification>乙类（高闪点易燃固体）</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物（NOx）、氟化氢（HF）、氰化物等有毒气体。</harmful_combustion_products>
+      <suitable_extinguishing_media>泡沫、干粉、二氧化碳、砂土。</suitable_extinguishing_media>
+      <unsuitable_extinguishing_media>避免使用直流水灭火，可能导致火势蔓延或产生有毒气体扩散。</unsuitable_extinguishing_media>
+      <firefighting_precautions>消防人员必须佩戴空气呼吸器，穿全身防火防毒服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。禁止将水直接注入容器。处在火场中的容器若已变色或从安全泄压装置中产生声音，必须马上撤离。灭火后应进行现场清理，防止有毒残留物污染环境。</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>

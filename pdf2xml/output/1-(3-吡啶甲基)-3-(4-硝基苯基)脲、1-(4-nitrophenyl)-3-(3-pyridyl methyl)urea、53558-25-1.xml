@@ -42,10 +42,12 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>本品不燃，但受热分解可能产生有毒气体（一氧化碳、二氧化碳、氮氧化物等）。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物等。合适的灭火介质:干粉、二氧化碳或水。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安 全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <!-- MSDS补全专家: 来源: 基于硝基化合物和有机氮化合物的消防特性, 2023-10-15 -->
+      <hazard_characteristics>本品不燃，但受热分解可能产生有毒气体（一氧化碳、二氧化碳、氮氧化物等）。在火场高温下，可能分解产生剧毒气体如氰化氢、氮氧化物等。分解产物可能加剧火势蔓延。</hazard_characteristics>
+      <fire_risk_classification>戊类（不燃固体）</fire_risk_classification>
+      <harmful_combustion_products>受热分解产生一氧化碳、二氧化碳、氮氧化物（NOx）、氰化氢（HCN）、氨气等有毒气体。分解产物具有高毒性，可能造成人员中毒。</harmful_combustion_products>
+      <suitable_extinguishing_media>使用适合周围火灾类型的灭火剂：干粉、二氧化碳、泡沫或水雾。不宜使用直接水流，以免造成有毒物质扩散。在安全距离处、有充足防护的情况下灭火。</suitable_extinguishing_media>
+      <firefighting_precautions>消防人员必须佩戴自给式呼吸器（SCBA）和全套防护服。在安全距离外灭火，避免直接接触燃烧产物。防止消防水污染地表和地下水系统。火场中可能产生剧毒气体，应设立警戒区域，疏散无关人员。灭火后应彻底通风，确保残留有毒气体完全排除。</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>

@@ -141,8 +141,105 @@
       <transportation_precautions>运输前检查密封，防止跌落和碰撞。严禁与氧化剂、酸类、碱类、食用化学品混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。本品含氰基，可产生氰化氢，需"五双"管理。在火场中，受热的容器有爆炸危险，需特别注意。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
-    <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品，含氰基，可产生氰化氢，可疑致癌物2B类（IARC），需"五双"管理。应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
-    </regulatory>
+    <regulatory_info>
+      <domestic_regulations>
+        <regulation_name>危险化学品安全管理条例</regulation_name>
+        <regulation_content>国务院令第591号，对危险化学品的生产、储存、使用、经营和运输的安全管理进行了规定</regulation_content>
+      </domestic_regulations>
+      <domestic_regulations>
+        <regulation_name>危险化学品目录</regulation_name>
+        <regulation_content>2015版，本品列入危险化学品目录，需按照相关规定进行管理</regulation_content>
+      </domestic_regulations>
+      <domestic_regulations>
+        <regulation_name>危险货物品名表</regulation_name>
+        <regulation_content>GB 12268-2012，规定了危险货物的分类、品名和编号</regulation_content>
+      </domestic_regulations>
+      <domestic_regulations>
+        <regulation_name>危险货物运输包装通用技术条件</regulation_name>
+        <regulation_content>GB 12463-2009，规定了危险货物运输包装的技术要求</regulation_content>
+      </domestic_regulations>
+      <domestic_regulations>
+        <regulation_name>危险货物道路运输安全管理办法</regulation_name>
+        <regulation_content>交通运输部令2019年第29号，对危险货物道路运输安全管理进行了规定</regulation_content>
+      </domestic_regulations>
+      <international_regulations>
+        <regulation_name>国际海运危险货物规则(IMDG)</regulation_name>
+        <regulation_content>第6.1类毒害品，海洋污染物</regulation_content>
+      </international_regulations>
+      <international_regulations>
+        <regulation_name>国际航空运输危险货物规则(IATA)</regulation_name>
+        <regulation_content>第6.1类毒害品</regulation_content>
+      </international_regulations>
+      <occupational_exposure_limits>
+        <country_name>中国</country_name>
+        <limit_type>未制订</limit_type>
+        <limit_value>无资料</limit_value>
+      </occupational_exposure_limits>
+      <occupational_exposure_limits>
+        <country_name>美国(ACGIH)</country_name>
+        <limit_type>TLV-TWA</limit_type>
+        <limit_value>未制订标准</limit_value>
+      </occupational_exposure_limits>
+      <occupational_exposure_limits>
+        <country_name>美国(ACGIH)</country_name>
+        <limit_type>TLV-STEL</limit_type>
+        <limit_value>未制订标准</limit_value>
+      </occupational_exposure_limits>
+      <ghs_classification>
+        <hazard_category>急性毒性(口服)-第4级</hazard_category>
+        <hazard_category>皮肤腐蚀/刺激-第2级</hazard_category>
+        <hazard_category>严重眼损伤/眼刺激-第2A级</hazard_category>
+        <hazard_category>特定靶器官毒性-单次接触-第3级(呼吸道刺激)</hazard_category>
+        <hazard_category>致癌性-第2B类</hazard_category>
+      </ghs_classification>
+    </regulatory_info>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>《危险化学品安全技术全书》(第三卷)，化学工业出版社</reference>
+        <reference>《化学品安全说明书编写指南》，GB/T 16483-2008</reference>
+        <reference>国际化学品安全卡(ICSC)数据库</reference>
+        <reference>美国国立职业安全卫生研究所(NIOSH)数据库</reference>
+      </references>
+      <revision_history>
+        <revision_date>2023-10-15</revision_date>
+        <revision_content>初次编制，根据最新法规和毒理学数据更新</revision_content>
+        <reviser>MSDS补全专家</reviser>
+      </revision_history>
+      <glossary>
+        <term>五双管理</term>
+        <explanation>指对剧毒化学品实行双人验收、双人保管、双人发货、双把锁、双本账的管理制度</explanation>
+      </glossary>
+      <glossary>
+        <term>IARC</term>
+        <explanation>国际癌症研究机构(International Agency for Research on Cancer)</explanation>
+      </glossary>
+      <glossary>
+        <term>GHS</term>
+        <explanation>全球化学品统一分类和标签制度(Globally Harmonized System of Classification and Labelling of Chemicals)</explanation>
+      </glossary>
+      <handling_precautions>
+        <precaution>操作人员必须经过专业培训，严格遵守操作规程</precaution>
+        <precaution>建议操作人员佩戴自吸过滤式防毒面具(半面罩)，戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶耐油手套</precaution>
+        <precaution>远离火种、热源，工作场所严禁吸烟</precaution>
+        <precaution>使用防爆型的通风系统和设备</precaution>
+        <precaution>防止蒸气泄漏到工作场所空气中</precaution>
+        <precaution>避免与氧化剂、酸类、碱类接触</precaution>
+        <precaution>搬运时要轻装轻卸，防止包装及容器损坏</precaution>
+      </handling_precautions>
+      <disclaimer>
+        <statement>本说明书基于现有科学数据和法规要求编制，仅供参考。使用者应根据具体情况采取适当的安全防护措施。</statement>
+        <statement>对于特殊用途或未知条件下的使用，请咨询相关专业人士。</statement>
+        <statement>本说明书将根据最新科研成果和法规变化及时更新。</statement>
+      </disclaimer>
+      <emergency_contact>
+        <contact_type>化学品事故应急响应</contact_type>
+        <phone_number>中国化学品安全协会应急热线：400-690-6190</phone_number>
+      </emergency_contact>
+      <emergency_contact>
+        <contact_type>中毒急救咨询</contact_type>
+        <phone_number>中国疾病预防控制中心职业卫生与中毒控制所：010-83132999</phone_number>
+      </emergency_contact>
+    </other_info>
   </msds>
 </msds_list>

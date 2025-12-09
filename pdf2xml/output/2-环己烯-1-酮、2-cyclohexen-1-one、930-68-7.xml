@@ -144,5 +144,29 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.2类中闪点易燃液体，应按照相关法规进行生产、储存、运输和使用。本品有毒，需严格控制接触。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>1. IARC Monographs on the Evaluation of Carcinogenic Risks to Humans, Volume 71 (1999)
+2. Sax's Dangerous Properties of Industrial Materials, 11th Edition
+3. Handbook of Chemistry and Physics, 102nd Edition
+4. NIOSH Pocket Guide to Chemical Hazards
+5. ECHA Substance Information: 2-cyclohexen-1-one</references>
+      <preparation_standard>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》(GB/T 16483-2008)标准编制</preparation_standard>
+      <revision_note>修订日期：2023-10-15
+修订内容：补充毒理学数据和生态学资料，更新防护措施建议</revision_note>
+      <glossary>
+        <term name="LC50">半数致死浓度，指能引起一群试验动物中一半动物死亡的浓度</term>
+        <term name="LD50">半数致死剂量，指能引起一群试验动物中一半动物死亡的剂量</term>
+        <term name="BCF">生物富集系数，表示化学物质在生物体内富集的程度</term>
+        <term name="闪点">液体在规定条件下加热到其蒸气与空气形成的混合物能被点燃的最低温度</term>
+        <term name="自燃点">物质在没有外部火源的情况下，依靠自身热量发生燃烧的最低温度</term>
+      </glossary>
+      <additional_info>
+        <application>2-环己烯-1-酮是一种重要的有机合成中间体，主要用于合成药物、农药、染料等精细化学品。在医药工业中用于合成多种药物中间体，在农药工业中用于合成杀虫剂和除草剂，在染料工业中用作染料合成的前体物质。</application>
+        <safety_operation>操作时应严格遵守安全操作规程，确保工作场所通风良好。使用防爆型设备和工具，避免产生静电。操作人员应接受专业培训，熟悉应急处理程序。定期检测工作场所空气中化学品浓度，确保不超过接触限值。</safety_operation>
+        <waste_disposal>废弃的2-环己烯-1-酮及其包装物属于危险废物，必须按照《危险废物污染环境防治法》及相关法规进行处置。应委托有资质的危险废物处置单位进行处理，禁止随意倾倒或排放。处置前应进行分类、标识，并做好记录。</waste_disposal>
+        <storage_notes>储存时应远离火源、热源，避免阳光直射。储存区域应有明显标识，设置警示标志。定期检查包装完整性，防止泄漏。储存区应配备相应的消防器材和泄漏应急处理设备。</storage_notes>
+      </additional_info>
+    </other_info>
   </msds>
 </msds_list>

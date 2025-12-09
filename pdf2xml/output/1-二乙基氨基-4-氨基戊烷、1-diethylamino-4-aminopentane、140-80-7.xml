@@ -42,10 +42,12 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>遇明火、高热可燃。与强氧化剂可发生反应。有腐蚀性。受高热分解，放出有毒的烟气。</hazard_characteristics>
-      <fire_risk_classification>丙</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物。 合适的灭火介质: 干粉、二氧化碳或耐醇泡沫。 不合适的灭火介质: 避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安 全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <hazard_characteristics>易燃液体，遇明火、高热可燃。与强氧化剂可发生剧烈反应。具有腐蚀性，对皮肤、眼睛和呼吸道有强烈刺激性。受高热分解，放出有毒的氮氧化物烟气。蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。在密闭空间内，蒸气与空气可形成爆炸性混合物。流动和搅动可能产生静电积聚，有静电火灾风险。</hazard_characteristics>
+      <fire_risk_classification>丙类（高闪点易燃液体）</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物、胺类化合物等有毒气体。燃烧时可能产生氰化氢等剧毒物质。</harmful_combustion_products>
+      <suitable_extinguishing_media>抗溶性泡沫、干粉、二氧化碳、砂土。小面积火灾可使用二氧化碳或干粉灭火器。大面积火灾应使用抗溶性泡沫。</suitable_extinguishing_media>
+      <unsuitable_extinguishing_media>避免使用直流水灭火，可能导致火势蔓延。禁止使用强水流冲击，以免造成化学品飞溅扩大污染范围。</unsuitable_extinguishing_media>
+      <firefighting_precautions>消防人员必须佩戴正压自给式空气呼吸器（SCBA），穿全身防化服、防静电工作服和防化靴。在上风向灭火，尽可能将容器从火场移至空旷处。喷水冷却火场中的容器，直至灭火结束。容器突然发出异常声音或发生变色，应立即撤离。切勿直接接触泄漏物。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。如有可能，用泡沫抑制蒸气产生。疏散无关人员，建立警戒区。</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>

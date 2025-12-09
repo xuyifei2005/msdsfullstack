@@ -8,20 +8,20 @@
       <product_name>1-甲氧基-1，3-丁二烯</product_name>
       <product_alias>无资料</product_alias>
       <product_english_name>1-Methoxy-1，3-butadiene</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>无资料</hazard_category>
+      <hazard_category>易燃液体，类别2；皮肤腐蚀/刺激，类别2；严重眼损伤/眼刺激，类别2A；特异性靶器官毒性—单次接触，类别3</hazard_category>
       <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards>本品对眼睛、皮肤、粘膜和上呼吸道具刺激作用。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <health_hazards>本品对眼睛、皮肤、粘膜和上呼吸道具刺激作用。高浓度蒸气可引起头痛、头晕、恶心、呕吐等中枢神经系统症状。长期接触可能引起皮肤干燥、皲裂。</health_hazards>
+      <environmental_hazards>对水生生物可能有害，建议避免排放到环境中。</environmental_hazards>
+      <fire_explosion_hazards>易燃液体，蒸气与空气可形成爆炸性混合物，遇明火、高热极易燃烧爆炸。其蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -53,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>通常商品加有阻聚剂。储存于阴凉、通风仓间内。远离火种、热源。仓温不宜超过30℃。防 止阳光直射。包装要求密封，不可与空气接触。应与氧化剂分开存放。储存间内的照明、通 风等设施应采用防爆型。罐储时要有防火防爆技术措施。禁上使用易产生火花的机械设备和 工具。搬运时要轻装轻卸，防止包装及容器损坏。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。防止蒸气泄漏到工作场所空气中。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。</handling_precautions>
+      <storage_precautions>通常商品加有阻聚剂。储存于阴凉、通风仓间内。远离火种、热源。仓温不宜超过30℃。防止阳光直射。包装要求密封，不可与空气接触。应与氧化剂分开存放。储存间内的照明、通风等设施应采用防爆型。罐储时要有防火防爆技术措施。禁上使用易产生火花的机械设备和工具。搬运时要轻装轻卸，防止包装及容器损坏。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -78,24 +78,24 @@
       <boiling_point>91</boiling_point>
       <flash_point>-5</flash_point>
       <relative_density>0.83</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <relative_vapor_density>2.9(空气=1)</relative_vapor_density>
+      <solubility>微溶于水，可混溶于多数有机溶剂</solubility>
       <molecular_formula>C5H8O</molecular_formula>
       <molecular_weight>84.11</molecular_weight>
       <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
+      <saturated_vapor_pressure>约5.3 kPa(20°C)</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
       <flammability>易燃</flammability>
       <appearance>无色液体。</appearance>
-      <main_uses></main_uses>
+      <main_uses>用于有机合成，用作聚合物单体</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <explosive_upper_limit>8.5%</explosive_upper_limit>
+      <explosive_lower_limit>1.5%</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>

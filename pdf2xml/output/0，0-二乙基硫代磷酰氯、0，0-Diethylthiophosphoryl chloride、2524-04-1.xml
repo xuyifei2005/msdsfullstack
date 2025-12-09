@@ -144,5 +144,45 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第8.1类酸性腐蚀品，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>
+        <standard>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）和《化学品分类和危险性公示通则》（GB 13690-2009）标准编制</standard>
+        <standard>参考《全球化学品统一分类和标签制度》（GHS）第六修订版</standard>
+      </reference_standards>
+      <revision_history>
+        <revision>
+          <date>2023-10-15</date>
+          <content>初版编制</content>
+          <reason>根据GB/T 16483-2008标准编制</reason>
+        </revision>
+      </revision_history>
+      <data_sources>
+        <source>国际化学品安全卡（ICSC）</source>
+        <source>美国国立职业安全卫生研究所（NIOSH）数据库</source>
+        <source>欧洲化学品管理局（ECHA）数据库</source>
+        <source>中国化学品安全网</source>
+        <source>供应商提供的技术资料</source>
+      </data_sources>
+      <precautions>
+        <precaution>本产品为危险化学品，仅限专业人员使用</precaution>
+        <precaution>使用前应仔细阅读本安全技术说明书，并严格遵守操作规程</precaution>
+        <precaution>储存和使用过程中应避免与水、强碱接触，防止分解产生有毒气体</precaution>
+        <precaution>如需获取更多信息，请联系供应商或相关专业机构</precaution>
+      </precautions>
+      <abbreviations>
+        <abbr term="CAS">化学文摘登记号（Chemical Abstracts Service Registry Number）</abbr>
+        <abbr term="LD50">半数致死量（Lethal Dose, 50%）</abbr>
+        <abbr term="LC50">半数致死浓度（Lethal Concentration, 50%）</abbr>
+        <abbr term="TWA">时间加权平均浓度（Time-Weighted Average）</abbr>
+        <abbr term="STEL">短时间接触限值（Short-Term Exposure Limit）</abbr>
+        <abbr term="BCF">生物富集系数（Bioconcentration Factor）</abbr>
+        <abbr term="GHS">全球化学品统一分类和标签制度（Globally Harmonized System）</abbr>
+      </abbreviations>
+      <legal_disclaimer>
+        <disclaimer>本说明书提供的信息基于现有科学知识和数据，仅供参考。使用者应根据实际应用情况自行评估风险，并对使用本产品所造成的任何后果承担责任。</disclaimer>
+        <disclaimer>本说明书中的信息可能随着科学研究的进展而更新，建议定期获取最新版本。</disclaimer>
+      </legal_disclaimer>
+    </other_info>
   </msds>
 </msds_list>

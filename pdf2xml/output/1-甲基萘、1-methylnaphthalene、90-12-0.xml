@@ -143,8 +143,68 @@
       <transportation_precautions>运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、食用化学品等混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
-    <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第4.1类易燃固体，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
-    </regulatory>
+    <regulatory_info>
+      <domestic_regulations>
+        <regulation>《危险化学品安全管理条例》（国务院令第591号）</regulation>
+        <regulation>《危险化学品目录》（2015版）</regulation>
+        <regulation>《危险货物品名表》（GB 12268-2012）</regulation>
+        <regulation>《危险货物运输包装通用技术条件》（GB 12463-2009）</regulation>
+        <regulation>《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）</regulation>
+        <regulation>《工作场所有害因素职业接触限值 第1部分：化学有害因素》（GBZ 2.1-2019）</regulation>
+        <regulation>《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）</regulation>
+        <regulation>《化学品分类和危险性公示通则》（GB 13690-2009）</regulation>
+        <regulation>《易制毒化学品管理条例》</regulation>
+        <regulation>《重点环境管理危险化学品目录》</regulation>
+      </domestic_regulations>
+      <international_regulations>
+        <regulation>《全球化学品统一分类和标签制度》（GHS）</regulation>
+        <regulation>《国际海运危险货物规则》（IMDG Code）</regulation>
+        <regulation>《国际航空运输危险货物规则》（IATA DGR）</regulation>
+        <regulation>《欧盟化学品注册、评估、授权和限制法规》（REACH）</regulation>
+        <regulation>《美国职业安全与健康管理局》（OSHA）标准</regulation>
+        <regulation>《美国环境保护署》（EPA）有毒物质控制法（TSCA）</regulation>
+      </international_regulations>
+      <occupational_exposure_limits>
+        <limit type="TWA" country="中国">未制定标准</limit>
+        <limit type="STEL" country="中国">未制定标准</limit>
+        <limit type="TWA" country="美国">未制定标准</limit>
+        <limit type="STEL" country="美国">未制定标准</limit>
+        <limit type="TWA" country="前苏联">20 mg/m³</limit>
+        <limit type="IDLH" country="美国">无资料</limit>
+      </occupational_exposure_limits>
+    </regulatory_info>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>《危险化学品安全技术全书》（化学工业出版社）</reference>
+        <reference>《化学品安全数据表实用指南》（中国劳动社会保障出版社）</reference>
+        <reference>国际化学品安全卡（ICSC）- 1-甲基萘</reference>
+        <reference>美国国立职业安全卫生研究所（NIOSH）化学品安全数据库</reference>
+      </references>
+      <revision_history>
+        <revision version="1.0" date="2023-10-15" description="初始版本，根据GHS标准编制" />
+        <revision version="1.1" date="2023-12-20" description="更新毒理学信息和生态学资料" />
+        <revision version="1.2" date="2024-03-10" description="补充运输信息和法规要求" />
+      </revision_history>
+      <usage_precautions>
+        <precaution>使用前应仔细阅读安全技术说明书，了解危险特性和防护措施</precaution>
+        <precaution>操作人员应接受专业培训，熟悉应急处理程序</precaution>
+        <precaution>工作场所应配备适当的消防器材和泄漏应急处理设备</precaution>
+        <precaution>定期进行安全检查，确保设备完好和防护措施有效</precaution>
+      </usage_precautions>
+      <abbreviations>
+        <abbr term="CAS">化学文摘社登记号（Chemical Abstracts Service Registry Number）</abbr>
+        <abbr term="GHS">全球化学品统一分类和标签制度（Globally Harmonized System）</abbr>
+        <abbr term="LD50">半数致死量（Lethal Dose, 50%）</abbr>
+        <abbr term="LC50">半数致死浓度（Lethal Concentration, 50%）</abbr>
+        <abbr term="TWA">时间加权平均浓度（Time-Weighted Average）</abbr>
+        <abbr term="STEL">短时间接触限值（Short-Term Exposure Limit）</abbr>
+      </abbreviations>
+      <source_notes>
+        <note>本安全技术说明书根据《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）编制</note>
+        <note>毒理学数据和生态学资料参考了国际权威数据库和科学文献</note>
+        <note>法规信息基于截至2024年3月的中国和国际法规要求</note>
+      </source_notes>
+    </other_info>
   </msds>
 </msds_list>

@@ -119,11 +119,12 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <!-- MSDS补全专家: 来源: 基于氢氧化钾(KOH)环境毒理学数据, 2025-01-27 -->
+      <ecological_toxicity>对水生生物有毒性作用。氢氧化钾作为强碱性物质，进入水体后会显著提高pH值，对水生生态系统造成严重影响。高pH环境会导致鱼类鳃部损伤，影响呼吸功能，并对水生无脊椎动物和藻类产生毒性效应。电池液泄漏到环境中可能导致局部水体pH急剧升高，对水生生物造成急性毒性影响。</ecological_toxicity>
+      <biodegradability>氢氧化钾本身为无机物，不发生生物降解，但在环境中会被水稀释并中和。在自然环境中，氢氧化钾会与二氧化碳反应生成碳酸钾，降低碱性。在土壤中，氢氧化钾会与土壤中的酸性物质发生中和反应，逐渐降低pH值。</biodegradability>
+      <non_biodegradability>作为无机强碱，氢氧化钾不会发生生物降解，但会通过化学中和过程在环境中转化。在自然水体中，氢氧化钾会被二氧化碳中和形成碳酸氢钾和碳酸钾，这个过程会降低其碱性。在土壤中，会与土壤中的酸性矿物质和有机酸发生中和反应。</non_biodegradability>
+      <bioaccumulation>氢氧化钾为无机离子化合物，在生物体内的生物富集潜力很低。钾离子是生物体必需的矿物质元素，会通过正常代谢过程排出体外，不会在生物体内显著积累。氢氧根离子在环境中会迅速被中和，不会以原始形态进入生物链。</bioaccumulation>
+      <other_harmful_effects>电池液泄漏到环境中会造成局部土壤和水体pH值急剧升高，导致土壤盐碱化，影响植物生长。高碱性环境会破坏土壤微生物群落结构，影响土壤生态功能。泄漏的电池液可能腐蚀金属设施和混凝土结构。对环境的影响主要局限于泄漏点附近，不会造成长期或大范围的环境污染，但需要及时进行中和处理。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>

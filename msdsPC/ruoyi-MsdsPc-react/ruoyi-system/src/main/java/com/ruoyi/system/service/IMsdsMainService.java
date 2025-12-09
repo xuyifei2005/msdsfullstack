@@ -165,6 +165,16 @@ public interface IMsdsMainService
     public Map<String, Object> importMsdsXml(MultipartFile file, boolean overwriteDuplicates, String createBy) throws Exception;
 
     /**
+     * 批量导入XML格式的MSDS文档
+     * 
+     * @param files XML文件数组
+     * @param overwriteDuplicates 是否覆盖重复数据
+     * @param createBy 创建人
+     * @return 导入结果
+     */
+    public Map<String, Object> importMsdsXmls(MultipartFile[] files, boolean overwriteDuplicates, String createBy) throws Exception;
+
+    /**
      * 下载MSDS XML格式导入模板
      * 
      * @param response 响应对象

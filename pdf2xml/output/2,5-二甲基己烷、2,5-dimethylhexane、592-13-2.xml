@@ -73,18 +73,18 @@
       <flash_point>26</flash_point>
       <relative_density>0.69</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>不溶于水</solubility>
       <molecular_formula>C8H18</molecular_formula>
       <molecular_weight>114.22</molecular_weight>
-      <main_components>纯品</main_components>
+      <main_components>2,5-二甲基己烷</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>无色液体。</appearance>
-      <main_uses>用于有机合成。</main_uses>
+      <flammability>易燃</flammability>
+      <appearance>无色液体</appearance>
+      <main_uses>用于有机合成</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -132,7 +132,14 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>无资料</references>
+      <compilation_standard>GB/T 16483-2008</compilation_standard>
+      <revision_notes>无资料</revision_notes>
+      <other_notes>无资料</other_notes>
+    </other_info>
   </msds>
 </msds_list>

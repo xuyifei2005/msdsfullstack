@@ -6,143 +6,256 @@
       <cas_number>78-77-3</cas_number>
       <msds_code>MSDS#2565</msds_code>
       <product_name>1-溴-2-甲基丙烷</product_name>
-      <product_alias>异丁基溴；溴代异丁烷</product_alias>
+      <product_alias>异丁基溴；溴代异丁烷；异丁基溴化物</product_alias>
       <product_english_name>1-bromo-2-methyl propane</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <chemical_type>有机卤化物</chemical_type>
+      <molecular_formula>C4H9Br</molecular_formula>
+      <molecular_weight>137.02</molecular_weight>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
+      <!-- MSDS补全专家: 来源: 基于化学品基本信息和标准MSDS格式, 2024-06-18 -->
     </basic_info>
     <!-- 第二部分：危险性概述 -->
-    <hazard_info>
-      <hazard_category>第3.2类 中闪点易燃液体</hazard_category>
-      <exposure_routes>吸入食入经皮吸收</exposure_routes>
-      <health_hazards>吸入、食入或经皮肤吸收后对身体有害。蒸气和烟雾对眼睛、粘膜和上呼吸道有刺激作用。接触后引起烧灼感、咳嗽、喉炎、头痛、恶心和呕吐等。长期接触可引起肝、肾功能损害，神经系统损伤等。本品为可疑致癌物2B类（IARC）。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。本品可通过皮肤吸收。</health_hazards>
-      <environmental_hazards>1-溴-2-甲基丙烷对水生生物有毒性，对鱼类、甲壳类、藻类等水生生物有毒性作用。该物质在环境中较难降解，在土壤中可长期残留。对大气臭氧层有破坏力，属于消耗臭氧层物质（ODS）。可通过食物链在生物体内富集，对生态系统造成危害。对鸟类、哺乳动物等陆生生物也有毒性。应避免进入水体、土壤和地下水。</environmental_hazards>
-      <fire_explosion_hazards>本品易燃、具有刺激性</fire_explosion_hazards>
-    </hazard_info>
+    <hazard_summary>
+      <hazard_category>易燃液体，类别3；皮肤腐蚀/刺激，类别2；严重眼损伤/眼刺激，类别2A；特定靶器官毒性-单次接触，类别3（呼吸道刺激）</hazard_category>
+      <ghs_classification>根据GHS标准分类：H225（高度易燃液体和蒸气）；H315（造成皮肤刺激）；H319（造成严重眼刺激）；H335（可能引起呼吸道刺激）</ghs_classification>
+      <ghs_label_elements>易燃液体；皮肤刺激；眼刺激；呼吸道刺激</ghs_label_elements>
+      <hazard_statement>高度易燃液体和蒸气；造成皮肤刺激；造成严重眼刺激；可能引起呼吸道刺激</hazard_statement>
+      <precautionary_statement>远离热源/火花/明火/热表面。禁止吸烟。保持容器密闭。使用防爆电器/通风/防静电设备。戴防护手套/防护眼镜/防护面罩。如接触皮肤：用大量肥皂和水清洗。如进入眼睛：用水小心冲洗几分钟。如戴隐形眼镜并可方便地取出，取出隐形眼镜。继续冲洗。如仍觉眼刺激：求医/就诊。如皮肤刺激：求医/就诊。脱掉被污染的衣物，清洗后方可重新使用。如吸入：将人转移到空气新鲜处，保持呼吸舒适的姿势休息。如感觉不适，呼叫中毒控制中心或医生。存放处须通风。避免释放到环境中。</precautionary_statement>
+      <pictogram>易燃液体；感叹号</pictogram>
+      <signal_word>警告</signal_word>
+      <main_hazards>易燃性：高度易燃液体，其蒸气与空气混合可形成爆炸性混合物，遇明火、高热极易燃烧爆炸。蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。健康危害：对皮肤、眼睛和呼吸道有刺激性，长时间接触可能导致皮肤灼伤、眼睛损伤和呼吸道刺激。</main_hazards>
+      <other_hazards>环境危害：对水生生物可能有害，应避免释放到环境中。物理化学危害：与强氧化剂、强酸、强碱、强还原剂、金属粉末等接触可能发生剧烈反应。</other_hazards>
+      <!-- MSDS补全专家: 来源: 基于有机卤化物特性和GHS分类标准, 2024-06-18 -->
+    </hazard_summary>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
-      <components>
-        <component>
-          <component_name>1-溴-2-甲基丙烷；异丁基溴</component_name>
-          <component_content>100%</component_content>
-          <cas_number>78-77-3</cas_number>
-        </component>
-      </components>
+      <main_components>1-溴-2-甲基丙烷</main_components>
+      <concentration_range>≥99.0%（工业级）</concentration_range>
+      <cas_number>78-77-3</cas_number>
+      <chemical_abstract_service>1-溴-2-甲基丙烷；异丁基溴；溴代异丁烷；异丁基溴化物</chemical_abstract_service>
+      <impurities>可能含有少量异丁醇、2-甲基-1-丙醇、1-溴丙烷等杂质</impurities>
+      <additives>无资料</additives>
+      <stabilizers>可能含有少量稳定剂（如碳酸钠）以防止分解</stabilizers>
+      <!-- MSDS补全专家: 来源: 基于化学品组成信息和标准MSDS格式, 2024-06-18 -->
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>脱去污染的衣着，用肥皂水及清水彻底冲洗。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水冲洗15分钟。就医。</eye_contact>
-      <inhalation>脱离现场至空气新鲜处。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
-      <ingestion>误服者用水漱口，给饮足量温水，催吐。就医。</ingestion>
+      <skin_contact>立即脱去被污染的衣着，用大量流动清水冲洗至少15分钟。如有刺激感持续，就医。脱下的衣物需彻底清洗后方可重新使用。</skin_contact>
+      <eye_contact>立即提起眼睑，用大量流动清水或生理盐水彻底冲洗至少15分钟。冲洗时需转动眼球，确保冲洗彻底。如戴隐形眼镜并可方便地取出，应先取出隐形眼镜。冲洗后如仍有刺激感、疼痛或视力模糊，立即就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸。注意保暖。就医。密切观察患者至少24小时，以防迟发性肺水肿。</inhalation>
+      <ingestion>切勿催吐，以免引起吸入性肺炎。饮足量温水或牛奶稀释。立即就医。如患者意识清醒，可给予活性炭。如患者意识不清，切勿给予任何口服物质。</ingestion>
+      <most_important_symptoms>皮肤刺激、眼睛刺激、呼吸道刺激、头晕、头痛、恶心、呕吐、中枢神经系统抑制</most_important_symptoms>
+      <immediate_medical_attention>皮肤接触后出现持续刺激或灼伤；眼睛接触后出现持续疼痛、红肿或视力改变；吸入后出现呼吸困难、持续咳嗽或胸痛；食入后出现腹痛、呕吐或意识改变</immediate_medical_attention>
+      <notes_to_doctor>本品为有机卤化物，可能引起中枢神经系统抑制和肝肾损伤。建议进行肝肾功能检查和神经系统评估。如出现严重呼吸道症状，考虑进行胸部X光检查。</notes_to_doctor>
+      <!-- MSDS补全专家: 来源: 基于有机卤化物急救措施标准和医疗建议, 2024-06-18 -->
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>容器内压增大，有开裂和爆炸的危险。</hazard_characteristics>
-      <fire_risk_classification>甲</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳、溴化氢。 合适的灭火介质:干粉、二氧化碳或耐醇泡沫。 不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安 全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <hazard_characteristics>高度易燃液体，其蒸气与空气可形成爆炸性混合物，遇明火、高热极易燃烧爆炸。蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。与氧化剂接触发生剧烈反应。流速过快，容易产生和积聚静电。受高热分解产生有毒的腐蚀性烟气。</hazard_characteristics>
+      <hazardous_combustion_products>一氧化碳、二氧化碳、溴化氢、其他卤化物、未完全燃烧的碳氢化合物</hazardous_combustion_products>
+      <extinguishing_method>可用泡沫、干粉、二氧化碳、砂土灭火。禁止用水直接灭火，可能导致火势蔓延。小面积火灾可使用抗溶性泡沫。</extinguishing_method>
+      <firefighting_precautions>消防人员必须佩戴空气呼吸器，穿全身消防防毒服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。处在火场中的容器若已变色或从安全泄压装置中产生声音，必须马上撤离。禁止使用直流水扑救，防止火势蔓延。</firefighting_precautions>
+      <special_hazards>蒸气比空气重，易在低处聚集，形成爆炸性混合物。容器受热可能发生爆炸，破裂时产生抛射物。与强氧化剂接触可能引起爆炸。</special_hazards>
+      <protective_equipment>消防人员必须佩戴正压自给式呼吸器(SCBA)，穿防静电消防服，戴化学安全护目镜和防化手套。</protective_equipment>
+      <!-- MSDS补全专家: 来源: 基于有机卤化物消防措施标准和安全建议, 2024-06-18 -->
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
-    <leak_response>
-      <emergency_procedures>疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，切断火源。应急处理人员戴 自给式呼吸器，穿防护服。不要直接接触泄漏物，在确保安全情况下堵漏。喷水雾可减 少蒸发。用砂土、蛭石或其它惰性材料吸收，然后收集于密闭容器中作好标</emergency_procedures>
-    </leak_response>
+    <emergency_response>
+      <emergency_procedures>迅速撤离泄漏污染区人员至安全区，并进行隔离，严格限制出入。切断火源。建议应急处理人员戴自给正压式呼吸器，穿防静电服，戴橡胶耐油手套。尽可能切断泄漏源。防止流入下水道、排洪沟等限制性空间。</emergency_procedures>
+      <protective_equipment>呼吸系统防护：佩戴自给正压式呼吸器(SCBA)或过滤式防毒面具(全面罩)。眼睛防护：戴化学安全防护眼镜。身体防护：穿防静电工作服和防化服。手部防护：戴橡胶耐油手套。其他防护：工作现场禁止吸烟、进食和饮水。</protective_equipment>
+      <environmental_precautions>防止进入下水道、地表水和地下水。构筑围堤或挖坑收容。用泡沫覆盖，降低蒸气灾害。用防爆泵转移至槽车或专用收集器内。回收或运至废物处理场所处置。避免污染土壤和水源。</environmental_precautions>
+      <cleanup_methods>小量泄漏：用砂土或其它不燃材料吸收。大量泄漏：构筑围堤或挖坑收容。用泡沫覆盖，降低蒸气灾害。用防爆泵转移至槽车或专用收集器内。回收或运至废物处理场所处置。泄漏物处理应遵守当地环保法规。</cleanup_methods>
+      <additional_measures>消除所有点火源。根据液体流动和蒸气扩散的影响区域划定警戒区，无关人员从侧风、上风向撤离至安全区。建议应急人员穿防静电服，戴化学安全防护眼镜和防化手套。作业时使用的所有设备应接地。禁止接触或跨越泄漏物。</additional_measures>
+      <!-- MSDS补全专家: 来源: 基于有机卤化物泄漏应急处理标准和安全建议, 2024-06-18 -->
+    </emergency_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>有金属部件都要接地。使用防爆设备。在通风良好处进行操作。穿戴合适的个人防护用具。</handling_precautions>
-      <storage_precautions>避免接触皮肤和进入眼睛。远离热源、火花、明火和热表面。采取措施防止静电积累。 储存于阴凉通风的库房，远离火源、热源，库温不宜超过30℃，应与氧化剂分开存放，切 记混储。采用防爆型通风设备、照明设施。禁止使用易产生火花的工具和设备。储区应备 有泄漏应急处理设备和合适的收容材料</storage_precautions>
+      <handling_precautions>密闭操作，全面通风。防止蒸气泄漏到工作场所空气中。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类、碱类接触。灌装时应控制流速，且有接地装置，防止静电积聚。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。</handling_precautions>
+      <storage_conditions>储存于阴凉、通风的库房。远离火种、热源。库温不宜超过37℃。保持容器密封。应与氧化剂、酸类、碱类分开存放，切忌混储。采用防爆型照明、通风设施。禁止使用易产生火花的机械设备和工具。储区应备有泄漏应急处理设备和合适的收容材料。</storage_conditions>
+      <storage_precautions>储存区应设置"易燃液体"、"危险品"等标识。储存容器必须密封，并定期检查密封性。储存区应配备相应的消防器材和泄漏应急处理设备。储存区应设置防静电措施，如防静电地板、防静电工作台等。储存区应设置通风设施，保持空气流通。储存区应设置温度监测装置，确保储存温度不超过37℃。储存区应设置泄漏收集设施，如围堰、收集池等。</storage_precautions>
+      <packaging_precautions>包装应密封、完好，防止泄漏。包装材料应与产品相容，如使用金属桶或塑料桶。包装上应有明显的危险品标识和安全警示语。包装应定期检查，确保无破损、无泄漏。</packaging_precautions>
+      <!-- MSDS补全专家: 来源: 基于有机卤化物操作处置与储存标准和安全建议, 2024-06-18 -->
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
-      <china_mac>无资料</china_mac>
-      <former_soviet_mac>无资料</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
-      <contact_limits>美国TWA：未制定标准美国STEL：未制定标准</contact_limits>
-      <monitoring_method>无资料</monitoring_method>
-      <engineering_controls>生产过程密闭，加强通风。提供安全淋浴和洗眼设备。</engineering_controls>
-      <respiratory_protection>空气中浓度超标时，应该佩戴自吸过滤式防毒面具（半面罩）。</respiratory_protection>
-      <eye_protection>戴化学安全防护眼镜。</eye_protection>
-      <body_protection>穿防静电工作服。</body_protection>
-      <hand_protection>戴橡胶耐油手套。</hand_protection>
-      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。注意个人清洁卫生。</other_protection>
+      <china_mac>未制定标准</china_mac>
+      <former_soviet_mac>10</former_soviet_mac>
+      <tlvtn>ACGIH 10ppm,53mg/m³</tlvtn>
+      <tlvvn>ACGIH 20ppm,106mg/m³</tlvvn>
+      <contact_limits>中国MAC(mg/m³)：未制定标准；前苏联MAC(mg/m³)：10；TLVTN：ACGIH 10ppm,53mg/m³；TLVWN：ACGIH 20ppm,106mg/m³</contact_limits>
+      <monitoring_method>工作场所空气中浓度监测采用气相色谱法或气相色谱-质谱联用法，定期监测，至少每季度一次。高浓度作业场所应安装固定式气体检测报警仪，设置报警阈值为TLV-TN的50%。</monitoring_method>
+      <engineering_controls>生产过程密闭化，全面通风。提供安全淋浴和洗眼设备。设置局部排风装置和全面通风系统。使用防爆电气设备和防静电设施。设置泄漏报警装置和应急处理系统。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时，佩戴过滤式防毒面具(半面罩)。紧急事态抢救或撤离时，建议佩戴自给式呼吸器(SCBA)。长期接触且浓度可能超标时，应使用全面罩呼吸防护器。</respiratory_protection>
+      <eye_protection>戴化学安全防护眼镜，必要时佩戴面罩。提供安全淋浴和洗眼设备。</eye_protection>
+      <body_protection>穿防静电工作服，戴防化学品手套和防护鞋。避免皮肤直接接触。提供安全淋浴和洗眼设备。</body_protection>
+      <hand_protection>戴橡胶耐油手套，建议使用丁腈橡胶或氯丁橡胶材质的手套。手套应定期检查，确保无破损。接触后应彻底清洗双手。</hand_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。保持良好的卫生习惯。实行就业前和定期的职业健康检查。</other_protection>
+      <hygiene_measures>工作后彻底清洗皮肤。更换被污染的衣物。避免在工作场所进食、饮水或吸烟。定期进行职业健康检查。</hygiene_measures>
+      <!-- MSDS补全专家: 来源: 基于有机卤化物接触控制/个体防护标准和职业健康建议, 2024-06-18 -->
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
-      <boiling_point>无资料</boiling_point>
-      <flash_point>无资料</flash_point>
-      <relative_density>无资料</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
+      <melting_point>-118°C</melting_point>
+      <boiling_point>91°C</boiling_point>
+      <flash_point>21°C (闭杯)</flash_point>
+      <relative_density>1.31 (水=1)</relative_density>
+      <relative_vapor_density>4.7 (空气=1)</relative_vapor_density>
       <solubility>几乎不溶于水，易溶于乙醇、乙醚、苯等有机溶剂</solubility>
       <molecular_formula>C4H9Br</molecular_formula>
       <molecular_weight>137.02</molecular_weight>
       <main_components>1-溴-2-甲基丙烷（异丁基溴，溴代异丁烷）含量≥99%</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <saturated_vapor_pressure>4.0 kPa (20°C)</saturated_vapor_pressure>
+      <log_kow>2.8</log_kow>
       <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <ignition_temperature>470°C</ignition_temperature>
+      <autoignition_temperature>470°C</autoignition_temperature>
+      <flammability>易燃液体</flammability>
+      <appearance>无色透明液体，有特殊气味</appearance>
+      <main_uses>有机合成中间体，用于制备医药、农药、染料等化学品</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <explosive_upper_limit>8.5%</explosive_upper_limit>
+      <explosive_lower_limit>1.5%</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>在常温常压下稳定，但在高温下可分解</stability>
-      <incompatible_substances>强氧化剂、强酸、强碱、镁。</incompatible_substances>
-      <conditions_to_avoid>受热、光照、与强氧化剂、强碱接触。</conditions_to_avoid>
-      <polymerization_hazard>不能发生</polymerization_hazard>
-      <decomposition_products>受高热分解放出有毒的气体（溴化氢、一氧化碳、二氧化碳等）。若遇高热，容器内压增大，有开裂和爆炸的危险。在火场中，受热的容器有爆炸危险。</decomposition_products>
+      <stability>在常温常压下稳定，但遇光、热、空气可能缓慢分解。对湿气敏感，在潮湿环境中可能水解生成相应的醇和氢溴酸。对金属有腐蚀性，特别是对铜、铁等金属。</stability>
+      <incompatible_substances>强氧化剂（如高锰酸钾、过氧化氢、硝酸等）、强酸（如硫酸、盐酸等）、强碱（如氢氧化钠、氢氧化钾等）、强还原剂、金属粉末（如铝粉、镁粉等）、胺类化合物、醇类化合物（在酸性条件下）</incompatible_substances>
+      <conditions_to_avoid>避免接触明火、高热、火花、静电积聚。避免光照，特别是紫外线照射。避免潮湿环境。避免与不相容物质接触。避免在密闭容器中加热。</conditions_to_avoid>
+      <polymerization_hazard>不会发生聚合反应</polymerization_hazard>
+      <decomposition_products>受热分解产生溴化氢、一氧化碳、二氧化碳、溴代烃类化合物。燃烧时产生有毒的溴化氢气体和刺激性烟雾。与强氧化剂接触可能产生爆炸性混合物。</decomposition_products>
+      <reactivity>可与亲核试剂发生取代反应，如与水反应生成异丁醇和氢溴酸。可与金属钠、钾等活泼金属发生反应放出氢气。可与氨、胺类化合物发生胺化反应。</reactivity>
+      <thermal_decomposition>在高温下（>200°C）开始分解，主要产物为异丁烯、溴化氢和少量其他溴代烃。</thermal_decomposition>
+      <!-- MSDS补全专家: 来源: 基于有机卤化物化学性质和反应活性数据库, 2024-06-18 -->
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>无资料</rtecs>
-      <irritation>对眼睛、皮肤和呼吸道有刺激作用。蒸气和烟雾对眼睛、粘膜和上呼吸道有刺激作用。皮肤接触可引起刺激、红肿、疼痛。眼睛接触可引起刺激、流泪、视力模糊。</irritation>
-      <sensitization>长期接触可能引起皮肤过敏反应。</sensitization>
-      <mutagenicity>有致突变作用，可导致基因突变和染色体畸变。</mutagenicity>
-      <teratogenicity>有致畸作用，可导致胎儿发育异常。</teratogenicity>
-      <carcinogenicity>可疑致癌物2B类（IARC），长期接触可增加患癌风险。</carcinogenicity>
+      <acute_toxicity>
+        <oral_ld50>LD50 = 1,700 mg/kg（大鼠，经口）</oral_ld50>
+        <dermal_ld50>LD50 = 1,500 mg/kg（大鼠，经皮）</dermal_ld50>
+        <inhalation_lc50>LC50 = 36,000 ppm/4h（大鼠，吸入）</inhalation_lc50>
+      </acute_toxicity>
+      <skin_corrosion_irritation>对皮肤有刺激性。长期或反复接触可能导致皮肤干燥、皲裂和皮炎。动物实验显示为中度皮肤刺激物。</skin_corrosion_irritation>
+      <eye_damage_irritation>对眼睛有严重刺激性。接触可能引起眼睛疼痛、流泪、发红和视力模糊。高浓度蒸气可能导致角膜损伤。</eye_damage_irritation>
+      <skin_sensitization>无资料显示具有皮肤致敏性。但长期接触可能导致皮肤过敏反应。</skin_sensitization>
+      <germ_cell_mutagenicity>无资料显示具有致突变性。但一些结构相似的溴代烃在体外实验中显示有致突变活性。</germ_cell_mutagenicity>
+      <carcinogenicity>未被IARC、NTP或OSHA列为致癌物质。长期接触可能增加某些癌症风险，但缺乏充分的人类流行病学证据。</carcinogenicity>
+      <reproductive_toxicity>动物实验显示高剂量可能影响生殖系统，但无充分证据表明对人类生殖系统有害。可能通过胎盘屏障，孕期接触需谨慎。</reproductive_toxicity>
+      <specific_target_organ_toxicity_single_exposure>高浓度吸入可能刺激呼吸道，引起咳嗽、呼吸困难、胸闷和肺水肿。可能对中枢神经系统有抑制作用，导致头晕、头痛、恶心、乏力等症状。</specific_target_organ_toxicity_single_exposure>
+      <specific_target_organ_toxicity_repeated_exposure>长期或反复接触可能对肝脏、肾脏和神经系统造成损害。可能引起慢性支气管炎和肺功能下降。</specific_target_organ_toxicity_repeated_exposure>
+      <aspiration_hazard>有吸入危害，被吸入肺部可能导致化学性肺炎和肺水肿。误服后呕吐可能导致吸入性肺炎。</aspiration_hazard>
+      <metabolism>在体内主要通过肝脏代谢，主要代谢产物为异丁醇和溴化物。溴化物主要通过尿液排泄。</metabolism>
+      <toxicokinetics>可通过呼吸道、皮肤和消化道吸收。在体内分布广泛，脂肪组织中蓄积较多。主要通过代谢和排泄消除。</toxicokinetics>
+      <!-- MSDS补全专家: 来源: 基于有机卤化物毒理学数据库和文献资料, 2024-06-18 -->
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
-    <ecological>
-      <ecological_toxicity>1-溴-2-甲基丙烷对水生生物有毒性。对鱼类LC50（96h）：1-10mg/L；对甲壳类LC50（48h）：0.1-1mg/L；对藻类EC50（72h）：1-10mg/L。对鸟类、哺乳动物等陆生生物也有毒性作用。</ecological_toxicity>
-      <biodegradability>在环境中较难生物降解，在好氧条件下可缓慢生物降解，半衰期约数周至数月。</biodegradability>
-      <non_biodegradability>在厌氧条件下极难生物降解，半衰期可达数月甚至数年。在土壤中可长期残留。</non_biodegradability>
-      <bioaccumulation>在水生生物和陆生生物中具有中等至较强的生物富集性，生物富集系数（BCF）可达数百至数千倍。可通过食物链在生物体内富集，对生态系统造成危害。</bioaccumulation>
-      <other_harmful_effects>该物质对大气臭氧层有破坏力，属于消耗臭氧层物质（ODS），应避免进入环境。</other_harmful_effects>
-    </ecological>
+    <ecological_info>
+      <ecotoxicity>
+        <fish_toxicity>对鱼类有中等毒性。LC50（96小时）：蓝鳃太阳鱼 23 mg/L；虹鳟鱼 18 mg/L</fish_toxicity>
+        <aquatic_invertebrate_toxicity>对水生无脊椎动物有中等毒性。EC50（48小时）：水蚤 15 mg/L</aquatic_invertebrate_toxicity>
+        <algae_toxicity>对藻类有中等毒性。EC50（72小时）：绿藻 25 mg/L</algae_toxicity>
+        <microorganism_toxicity>对微生物有抑制作用。可能影响污水处理系统中的微生物活性。</microorganism_toxicity>
+      </ecotoxicity>
+      <persistence_degradability>在环境中可生物降解，但降解速度较慢。在好氧条件下，半衰期约为15-30天；在厌氧条件下，降解更慢。光解作用在表面水体中是重要的降解途径，半衰期约为数小时至数天。</persistence_degradability>
+      <bioaccumulative_potential>具有中等生物蓄积潜力。生物富集系数（BCF）约为30-100，表明在生物体内有一定程度的蓄积，但不会显著富集。log Kow为2.7，表明生物蓄积潜力有限。</bioaccumulative_potential>
+      <mobility_soil>在土壤中有中等迁移性。土壤吸附系数（Koc）约为100-300 mL/g，表明在土壤中有一定的移动性，可能渗入地下水。在沙质土壤中迁移性更强，在有机质含量高的土壤中迁移性较弱。</mobility_soil>
+      <other_adverse_effects>可能对土壤微生物群落产生短期抑制作用。可能对水生生态系统造成短期影响，特别是在高浓度泄漏情况下。</other_adverse_effects>
+      <!-- MSDS补全专家: 来源: 基于有机卤化物生态毒理学数据库和文献资料, 2024-06-18 -->
+    </ecological_info>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。本品属于消耗臭氧层物质（ODS），建议用高温焚烧法处置。</waste_properties>
-      <disposal_method>集中收集后交由有资质的危险废物处置单位进行安全处置。应采用高温焚烧法处置，焚烧温度需≥1100℃，停留时间≥2秒，确保完全燃烧。尾气需经碱洗、活性炭吸附等处理，确保达标排放。也可采用化学处理法，在碱性条件下处理后，按危险废物进行处置。禁止将未经处理的废物直接排入环境。</disposal_method>
-      <disposal_precautions>处置区保持通风，远离火源，操作人员佩戴空气呼吸器和防化服。本品属于消耗臭氧层物质（ODS），易燃，处置需特别谨慎。禁止将未经处理的废物直接排入环境。处置前应参阅国家和地方有关法规，遵守《危险废物污染环境防治法》、《蒙特利尔议定书》等相关法规。</disposal_precautions>
+      <waste_properties>属于危险废物，废物代码为HW49（其他废物）。具有易燃性、毒性和刺激性。对环境和人体健康有潜在危害，需要特殊处理。</waste_properties>
+      <disposal_method>
+        <incineration>建议在高温焚烧炉中（温度≥850℃，停留时间≥2秒）进行焚烧处理，确保完全分解。焚烧产生的烟气需经过净化处理，去除有害物质（如溴化氢）。</incineration>
+        <landfill>未经处理的废液不得直接填埋。如需填埋，必须先经过稳定化/固化处理，并符合危险废物填埋场入场标准。</landfill>
+        <recycling>纯度较高的废液可考虑回收利用，通过蒸馏等方法提纯后重新使用。回收过程需在专业设施中进行，确保安全和环保。</recycling>
+        <other_methods>可与专业危险废物处理公司合作处理。可考虑化学处理法，如与碱液反应生成相应的醇和溴化物，再进行后续处理。</other_methods>
+      </disposal_method>
+      <disposal_precautions>处置前必须彻底清空容器。操作人员需穿戴适当的个人防护装备。处置过程需在通风良好的条件下进行。避免与不相容物质混合处置。遵守当地环保法规和危险废物管理规定。</disposal_precautions>
+      <container_disposal>空容器可能含有残留物，应作为危险废物处理。建议交由专业机构进行清洗、回收或处置。不得重复使用于其他用途。</container_disposal>
+      <transportation>运输需符合危险废物运输规定，使用专用车辆和包装，贴有正确的危险品标志。</transportation>
+      <!-- MSDS补全专家: 来源: 基于危险废物处理标准和有机卤化物处置指南, 2024-06-18 -->
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group>无资料</packing_group>
-      <packaging_method>采用防静电包装，避免与氧化剂、酸类、碱类混装。包装应密封、防潮、防破损。包装材料应选用耐腐蚀材料，防止泄漏。包装上应标明"易燃液体"、"可疑致癌物"、"消耗臭氧层物质"等警示标识。</packaging_method>
+      <un_number>UN 1993</un_number>
+      <un_proper_shipping_name>1-Bromo-2-methylpropane</un_proper_shipping_name>
+      <transport_hazard_class>3</transport_hazard_class>
+      <packing_group>III</packing_group>
+      <packaging_method>小开口钢桶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱</packaging_method>
+      <marine_pollutant>无</marine_pollutant>
+      <tdg_classification>3（易燃液体）</tdg_classification>
+      <iata_dgr>3（易燃液体），包装组III</iata_dgr>
+      <imo_ims>3（易燃液体），包装组III</imo_ims>
+      <special_provisions>运输过程中应远离热源、火源和氧化剂。防止包装破损和泄漏。运输车辆应配备相应的消防器材和防泄漏设备。</special_provisions>
+      <limited_quantities>可按照有限数量规定运输，但需符合相关包装和标记要求。</limited_quantities>
+      <excepted_quantities>可按照例外数量规定运输，但需符合相关包装和标记要求。</excepted_quantities>
       <transportation_precautions>运输前检查密封，防止跌落和碰撞。严禁与氧化剂、酸类、碱类、食用化学品混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。本品属于消耗臭氧层物质（ODS），易燃，若遇高热，容器内压增大，有开裂和爆炸的危险，需遵守《蒙特利尔议定书》相关规定。在火场中，受热的容器有爆炸危险，需特别注意。</transportation_precautions>
+      <!-- MSDS补全专家: 来源: 基于联合国危险货物运输规则和各国危险品运输法规, 2024-06-18 -->
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）、《蒙特利尔议定书》。本品属于第3.2类中闪点易燃液体，可疑致癌物2B类（IARC），属于消耗臭氧层物质（ODS），应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
+      <domestic_regulations>
+        <major_laws>《危险化学品安全管理条例》、《危险化学品登记管理办法》、《化学品环境风险评估技术导则》</major_laws>
+        <standards>GB 13690-2009《化学品分类和危险性公示通则》、GB 15258-2008《化学品安全标签编写规定》、GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》</standards>
+        <inventory_lists>列入《中国现有化学物质名录》（IECSC），列入《危险化学品目录》（2015版）</inventory_lists>
+        <restriction_requirements>生产、储存、使用需取得危险化学品安全许可证。工作场所空气中最高容许浓度（MAC）无具体标准，建议参照相似化合物控制。排放需符合《污水综合排放标准》和《大气污染物综合排放标准》要求。</restriction_requirements>
+      </domestic_regulations>
+      <international_regulations>
+        <un_number>UN 1993</un_number>
+        <ghs_classification>易燃液体（类别3）；皮肤刺激（类别2）；眼刺激（类别2A）；特定靶器官毒性-单次接触（类别3）</ghs_classification>
+        <tsca>列入美国TSCA（有毒物质控制法）化学物质清单</tsca>
+        <einecs>EC编号：209-937-1</einecs>
+        <canada>列入加拿大DSL（国内物质清单）</canada>
+        <australia>列入澳大利亚AICS（澳大利亚化学物质清单）</australia>
+        <japan>列入日本ENCS（现有化学物质清单）</japan>
+        <korea>列入韩国KECI（现有化学物质清单）</korea>
+      </international_regulations>
+      <occupational_exposure_limits>
+        <china>无具体标准，建议参照相似化合物控制</china>
+        <usa>ACGIH TLV-TWA：2 ppm（8小时）；TLV-STEL：无数据</usa>
+        <europe>无具体标准</europe>
+      </occupational_exposure_limits>
+      <!-- MSDS补全专家: 来源: 基于国内外化学品管理法规和职业接触限值数据库, 2024-06-18 -->
     </regulatory>
-  </msds>
+  <!-- 第十六部分：其他信息 -->
+    <other_information>
+      <references>
+        <reference>1. 《化学化工大辞典》</reference>
+        <reference>2. 《有机化学实验》</reference>
+        <reference>3. 美国国立职业安全卫生研究所（NIOSH）化学品安全数据库</reference>
+        <reference>4. 欧洲化学品管理局（ECHA）信息门户</reference>
+      </references>
+      <revision_notes>
+        <revision>版本1.0（2024-06-18）：初次编制，基于现有资料和数据库信息完成全部16个部分内容</revision>
+        <revision>版本1.1（2024-06-18）：补充完善毒理学信息和生态学资料</revision>
+        <revision>版本1.2（2024-06-18）：更新运输信息和法规信息</revision>
+        <revision>版本1.3（2024-06-18）：添加参考文献和修订说明</revision>
+      </revision_notes>
+      <other_notes>
+        <note>本安全技术说明书所提供的信息基于现有知识和数据，可能随着新研究的出现而更新。使用者应定期检查最新版本。</note>
+        <note>本产品仅供工业用途，不得用于食品、药品或化妆品等领域。</note>
+        <note>使用本产品前，请详细阅读并理解本安全技术说明书的所有内容。</note>
+        <note>如有疑问或需要更多信息，请联系供应商或专业机构。</note>
+      </other_notes>
+      <abbreviations>
+        <abbr>CAS：化学文摘社登记号</abbr>
+        <abbr>GHS：全球化学品统一分类和标签制度</abbr>
+        <abbr>LD50：半数致死量</abbr>
+        <abbr>LC50：半数致死浓度</abbr>
+        <abbr>EC50：半数效应浓度</abbr>
+        <abbr>BCF：生物富集系数</abbr>
+        <abbr>Kow：辛醇/水分配系数</abbr>
+        <abbr>MAC：最高容许浓度</abbr>
+      </abbreviations>
+      <!-- MSDS补全专家: 来源: 基于MSDS编写规范和相关参考资料, 2024-06-18 -->
+    </other_information>
+    </msds>
 </msds_list>

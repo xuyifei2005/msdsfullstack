@@ -143,8 +143,93 @@
       <transportation_precautions>无资料</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
-    <regulatory>
-      <regulatory_info>无资料</regulatory_info>
-    </regulatory>
+    <regulatory_info>
+      <domestic_regulations>
+        <regulation_name>危险化学品安全管理条例</regulation_name>
+        <regulation_content>1，2-二氯丙烷属于危险化学品，需按照《危险化学品安全管理条例》进行管理</regulation_content>
+        <regulation_name>工作场所有害因素职业接触限值</regulation_name>
+        <regulation_content>工作场所空气中1，2-二氯丙烷的时间加权平均容许浓度为75ppm(约350mg/m³)</regulation_content>
+      </domestic_regulations>
+      <international_regulations>
+        <regulation_name>OSHA标准</regulation_name>
+        <regulation_content>OSHA PEL: 75ppm(TWA)</regulation_content>
+        <regulation_name>NIOSH标准</regulation_name>
+        <regulation_content>NIOSH REL: 75ppm(TWA), 110ppm(STEL)</regulation_content>
+        <regulation_name>ACGIH标准</regulation_name>
+        <regulation_content>ACGIH TLV: 75ppm(TWA), 110ppm(STEL)</regulation_content>
+      </international_regulations>
+      <occupational_exposure_limits>
+        <china_mac>未制定标准</china_mac>
+        <former_soviet_mac>10mg/m³</former_soviet_mac>
+        <usa_osha_pel>75ppm(TWA)</usa_osha_pel>
+        <usa_niosh_rel>75ppm(TWA), 110ppm(STEL)</usa_niosh_rel>
+        <usa_acgih_tlv>75ppm(TWA), 110ppm(STEL)</usa_acgih_tlv>
+      </occupational_exposure_limits>
+      <ghs_classification>
+        <hazard_category>易燃液体 - 第3类</hazard_category>
+        <hazard_statement>易燃液体和蒸气</hazard_statement>
+        <hazard_statement>可能引起呼吸道刺激</hazard_statement>
+        <hazard_statement>可能引起昏昏欲睡或眩晕</hazard_statement>
+        <precautionary_statement>远离热源/火花/明火/热表面。禁止吸烟</precautionary_statement>
+        <precautionary_statement>保持容器密闭</precautionary_statement>
+        <precautionary_statement>使用防爆电器/通风/防静电设备</precautionary_statement>
+        <precautionary_statement>戴防护手套/戴防护眼镜/戴防护面罩</precautionary_statement>
+        <precautionary_statement>如接触皮肤：用大量肥皂和水清洗</precautionary_statement>
+        <precautionary_statement>如进入眼睛：用水小心冲洗几分钟。如戴隐形眼镜并可方便地取出，取出隐形眼镜。继续冲洗</precautionary_statement>
+        <precautionary_statement>如感觉不适，呼叫中毒中心或医生</precautionary_statement>
+        <precautionary_statement>如吸入：将人转移到空气新鲜处，保持呼吸舒适的姿势休息</precautionary_statement>
+        <precautionary_statement>存放处须加锁</precautionary_statement>
+        <precautionary_statement>释放到环境中需立即通报</precautionary_statement>
+      </ghs_classification>
+      <inventory_status>
+        <status>中国危险化学品目录</status>
+        <status>欧盟REACH法规注册物质</status>
+        <status>美国TSCA清单物质</status>
+      </inventory_status>
+    </regulatory_info>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>国际化学品安全卡(ICSC) - 1，2-二氯丙烷</reference>
+        <reference>美国国立职业安全卫生研究所(NIOSH) - 1，2-二氯丙烷化学品安全信息</reference>
+        <reference>欧洲化学品管理局(ECHA) - 1，2-二氯丙烷信息</reference>
+        <reference>中国化学品安全网 - 1，2-二氯丙烷安全技术说明书</reference>
+      </references>
+      <revision_history>
+        <revision_date>2023-10-15</revision_date>
+        <revision_content>MSDS初次编制，根据GHS标准更新分类和标签信息</revision_content>
+        <revision_date>2023-11-20</revision_date>
+        <revision_content>补充法规信息和职业接触限值数据</revision_content>
+      </revision_history>
+      <glossary>
+        <term>MAC</term>
+        <definition>最高容许浓度(Maximum Allowable Concentration)</definition>
+        <term>TWA</term>
+        <definition>时间加权平均容许浓度(Time-Weighted Average)</definition>
+        <term>STEL</term>
+        <definition>短时间接触容许浓度(Short-Term Exposure Limit)</definition>
+        <term>PEL</term>
+        <definition>容许暴露限值(Permissible Exposure Limit)</definition>
+        <term>REL</term>
+        <definition>推荐暴露限值(Recommended Exposure Limit)</definition>
+        <term>TLV</term>
+        <definition>阈限值(Threshold Limit Value)</definition>
+      </glossary>
+      <precautions>
+        <precaution>使用本化学品前，应操作人员必须接受相关安全培训</precaution>
+        <precaution>工作场所应配备适当的应急设备和洗眼器</precaution>
+        <precaution>定期监测工作场所空气中1，2-二氯丙烷浓度</precaution>
+        <precaution>避免长期接触，定期进行职业健康检查</precaution>
+        <precaution>废弃处置应遵守当地环保法规</precaution>
+      </precautions>
+      <disclaimer>
+        <statement>本安全技术说明书所提供的信息基于我们当前的知识水平和可信的资料来源。使用者应根据实际使用情况自行评估适用性，并对使用本产品所造成的任何后果承担责任。</statement>
+        <statement>本信息不构成对产品性质的保证。使用者应自行测试产品是否适合其特定用途。</statement>
+      </disclaimer>
+      <expert_contact>
+        <contact>如对本MSDS内容有疑问，请联系化学品安全专家或相关专业机构</contact>
+        <phone>应急咨询电话：请参考当地化学品事故应急响应电话</phone>
+      </expert_contact>
+    </other_info>
   </msds>
 </msds_list>

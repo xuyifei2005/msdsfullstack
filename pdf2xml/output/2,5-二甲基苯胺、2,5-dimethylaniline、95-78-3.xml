@@ -74,21 +74,21 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>15.5</melting_point>
-      <boiling_point>218</boiling_point>
-      <flash_point>93</flash_point>
-      <relative_density>0.98</relative_density>
+      <melting_point>11.5</melting_point>
+      <boiling_point>214.9±9.0</boiling_point>
+      <flash_point>93.9</flash_point>
+      <relative_density>0.973</relative_density>
       <relative_vapor_density>4.18</relative_vapor_density>
       <solubility>不溶于水，微溶于醇，溶于乙醚。</solubility>
       <molecular_formula>C8H11N</molecular_formula>
       <molecular_weight>121.18</molecular_weight>
-      <main_components>纯品</main_components>
+      <main_components>2,5-二甲基苯胺</main_components>
       <saturated_vapor_pressure>1.33(97℃)</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>易燃</flammability>
       <appearance>无色或淡黄色油状液体，低温时形成结晶。</appearance>
       <main_uses>用于制药及染料工业。</main_uses>
       <other_properties>无资料</other_properties>
@@ -142,7 +142,48 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内化学品管理法规：
+1. 《危险化学品安全管理条例》：本品属于危险化学品，应严格按照相关法规进行管理
+2. 《危险化学品目录》（2015版）：列入目录，序号未明确
+3. 《工作场所安全使用化学品规定》：工作场所空气中最高容许浓度为5mg/m³[皮]
+4. 《化学品安全技术说明书内容和项目顺序》GB/T 16483-2008：MSDS编制标准
+
+国际法规：
+1. 欧盟REACH法规：需完成注册、评估、授权和限制程序
+2. 全球化学品统一分类和标签制度（GHS）：
+   - 急性毒性－经口，类别4
+   - 急性毒性－经皮，类别4
+   - 特异性靶器官毒性－反复接触，类别2
+   - 危害水生环境－急性危害，类别2
+   - 危害水生环境－长期危害，类别2
+
+其他法规信息：
+1. 危险性类别：第6.1类毒害品
+2. UN编号：1711
+3. 包装类别：II
+4. 海关编码：2921499090</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>1. 化源网. 2,5-二甲基苯胺_MSDS_用途_密度_CAS号【95-78-3】
+2. 摩贝百科. 2,5-二甲基苯胺 - CAS号 95-78-3
+3. 道客巴巴. 2,5-二甲基苯胺安全技术说明书 CAS No 95-78-3
+4. 人人文库. 2,5-二甲基苯胺安全技术说明书.docx
+5. 书118. 2,5-二甲基苯胺(CAS:95-78-3)理化性质及危险特性表.doc</references>
+      <compilation_standard>GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》</compilation_standard>
+      <revision_notes>V1.0版本，编制日期：2023-10-15
+主要修改内容：
+1. 更新理化特性参数：熔点、沸点、闪点、相对密度等
+2. 补充法规信息：国内法规、国际法规及其他法规信息
+3. 完善参考文献信息</revision_notes>
+      <other_notes>注意事项：
+1. 本品可引起高铁血红蛋白血症，造成组织缺氧
+2. 对中枢神经系统及肝脏损害较强，对血液作用较弱
+3. 极易经皮肤吸收，可引起皮炎
+4. 对水生生物有毒并具有长期持续影响
+
+法律声明：
+本安全技术说明书所提供的信息是基于我们现有的知识和经验编写的，仅供用户参考。用户应根据实际使用情况，自行评估和判断本品的适用性，并对使用本品所造成的任何后果承担责任。</other_notes>
+    </other_info>
   </msds>
 </msds_list>

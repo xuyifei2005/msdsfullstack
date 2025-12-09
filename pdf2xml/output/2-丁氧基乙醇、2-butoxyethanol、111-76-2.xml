@@ -8,20 +8,20 @@
       <product_name>2-丁氧基乙醇</product_name>
       <product_alias>乙二醇丁醚；丁基溶纤剂</product_alias>
       <product_english_name>2-butoxyethanol</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>本品对皮肤、眼睛和呼吸道有刺激性。长期接触可引起皮炎、头痛、眩晕、乏力等症状。高浓度接触可引起中枢神经系统抑制。</health_hazards>
+      <environmental_hazards>对水生生物有毒，可能对水体环境造成长期不良影响。</environmental_hazards>
+      <fire_explosion_hazards>遇高热、明火或与氧化剂接触，有引起燃烧的危险。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -53,7 +53,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>密闭操作，全面通风。防止蒸气泄漏到工作场所空气中。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类接触。灌装时应控制流速，且有接地装置，防止静电积聚。配备相应品种和数量的消防器材及泄漏应急处理设备。</handling_precautions>
       <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光直射。包装要求密封，不可与空气接触。 不宜大量或久存。应与氧化剂分开存放。储存间内的照明、通风等设施应采用防爆型， 开关 设在仓外。配备相应品种和数量的消防器材。搬运时要轻装轻卸，防止包装及容器损坏。分装 和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -79,10 +79,10 @@
       <flash_point>71(O.C)</flash_point>
       <relative_density>0.90</relative_density>
       <relative_vapor_density>4.07</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>与水混溶，可混溶于乙醇、乙醚等多数有机溶剂</solubility>
       <molecular_formula>C6H14O2</molecular_formula>
       <molecular_weight>118.17</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>2-丁氧基乙醇</main_components>
       <saturated_vapor_pressure>40.00／140℃</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
@@ -121,8 +121,8 @@
       <ecological_toxicity>无资料</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
-      <other_harmful_effects>保持良好的卫生习惯。</other_harmful_effects>
+      <bioaccumulation>无资料</bioaccumulation>
+      <other_harmful_effects>避免释放到环境中。保持良好的卫生习惯。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
@@ -142,7 +142,14 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》、《工作场所安全使用化学品规定》、《常用危险化学品的分类及标志》(GB 13690)等法规，针对危险化学品的安全生产、经营、储存、运输、使用和处置等方面均有相关规定。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>无资料</references>
+      <standards>GB/T 16483-2008</standards>
+      <revision_notes>无资料</revision_notes>
+      <other_notes>无资料</other_notes>
+    </other_info>
   </msds>
 </msds_list>

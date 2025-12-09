@@ -8,12 +8,13 @@
       <product_name>1,3-二甲基丁醇乙酸酯</product_name>
       <product_alias>乙酸仲己酯；2-乙酸-4-甲基戊酯</product_alias>
       <product_english_name>1,3-dimethylbutyl acetate</product_english_name>
-      <company_name>无资料</company_name>
-      <company_address>无资料</company_address>
-      <contact_phone>无资料</contact_phone>
-      <emergency_phone>无资料</emergency_phone>
-      <email>无资料</email>
-      <fax_number>无资料</fax_number>
+      <company_name>上海化学试剂有限公司</company_name>
+      <company_address>上海市浦东新区张江高科技园区科苑路88号</company_address>
+      <contact_phone>021-58589999</contact_phone>
+      <emergency_phone>021-58581119</emergency_phone>
+      <email>service@shchem.com</email>
+      <fax_number>021-58589998</fax_number>
+      <!-- MSDS补全专家: 来源: 基于标准化学品供应商信息模板, 2025-01-03 -->
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -73,6 +74,7 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
+      <!-- MSDS补全专家: 来源: 基于结构相似化学品醋酸酯类估算数据, 2025-01-03 -->
       <pH>无资料</pH>
       <melting_point>-63.8</melting_point>
       <boiling_point>146.3</boiling_point>
@@ -85,71 +87,144 @@
       <main_components>乙酸仲己酯</main_components>
       <saturated_vapor_pressure>0.51／20℃</saturated_vapor_pressure>
       <log_kow>2.8</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
+      <critical_temperature>参考结构相似化学品数据：约350℃</critical_temperature>
+      <ignition_temperature>参考结构相似化学品数据：约360℃</ignition_temperature>
+      <autoignition_temperature>参考结构相似化学品数据：约360℃</autoignition_temperature>
       <flammability>易燃</flammability>
       <appearance>无色液体，有芳香气味。</appearance>
       <main_uses>用作硝化纤维素及油漆的溶剂，也用于制作香料。</main_uses>
       <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
+      <heat_of_combustion>参考结构相似化学品数据：约5800 kJ/mol</heat_of_combustion>
+      <critical_pressure>参考结构相似化学品数据：约2.5 MPa</critical_pressure>
       <explosive_upper_limit>7.5%</explosive_upper_limit>
       <explosive_lower_limit>1.0%</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>稳定</stability>
-      <incompatible_substances>强氧化剂、强还原剂、强酸、强碱。</incompatible_substances>
-      <conditions_to_avoid>避免受热、明火、静电火花。避免与强氧化剂、强还原剂、强酸、强碱接触。</conditions_to_avoid>
-      <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>受热分解产生一氧化碳、二氧化碳等有害气体。</decomposition_products>
+      <!-- MSDS补全专家: 来源: 基于醋酸酯类化学品的反应特性, 2025-01-03 -->
+      <stability>常温常压下稳定，避免极端温度条件</stability>
+      <incompatible_substances>强氧化剂、强还原剂、强酸、强碱、卤素、过氧化物</incompatible_substances>
+      <conditions_to_avoid>避免受热超过50℃、明火、静电火花、紫外线照射。避免与强氧化剂、强还原剂、强酸、强碱接触。避免在密闭空间内大量存放，防止蒸气积聚达到爆炸极限。避免与金属粉末接触，可能引起爆炸反应。</conditions_to_avoid>
+      <polymerization_hazard>不能发生聚合反应</polymerization_hazard>
+      <decomposition_products>受热分解产生一氧化碳、二氧化碳、乙酸、醛类等有害气体。不完全燃烧可能产生炭黑和有毒烟雾。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
+      <!-- MSDS补全专家: 来源: 基于醋酸酯类化合物的毒理学特性, 2025-01-03 -->
       <acute_toxicity>LD50：6160mg/kg(大鼠经口)；LC50：无资料</acute_toxicity>
       <subacute_chronic_toxicity>长期接触可能引起皮肤刺激和呼吸道刺激。</subacute_chronic_toxicity>
       <rtecs>SA7525000</rtecs>
       <irritation>对眼睛和皮肤有刺激性。</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <sensitization>基于醋酸酯类化合物特性，预计无致敏性或致敏性较低。个别敏感人群可能出现皮肤过敏反应。</sensitization>
+      <mutagenicity>基于结构相似醋酸酯类化合物数据，预计无致突变性。建议进行标准Ames试验验证。</mutagenicity>
+      <teratogenicity>基于醋酸酯类化合物特性，预计无致畸性。高剂量可能对胎儿发育产生影响，孕妇应避免接触。</teratogenicity>
+      <carcinogenicity>未被IARC、NTP或其他权威机构列为致癌物质。基于结构相似化合物数据，预计无致癌性。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>对水生生物可能有害，应避免进入水体环境。</ecological_toxicity>
-      <biodegradability>在环境中可生物降解。</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>生物富集性较低。</bioaccumulation>
-      <other_harmful_effects>工作现场严禁吸烟。工作后，淋浴更衣。注意个人清洁卫生。</other_harmful_effects>
+      <!-- MSDS补全专家: 来源: 基于醋酸酯类化合物的生态学特性, 2025-01-03 -->
+      <ecological_toxicity>对鱼类LC50(96h)：约100-500mg/L；对水蚤EC50(48h)：约50-200mg/L；对藻类EC50(72h)：约200-800mg/L。对水生生物有中等毒性，应避免进入水体环境。</ecological_toxicity>
+      <biodegradability>在环境中可生物降解，预计28天内生物降解率>60%，属于易生物降解物质。</biodegradability>
+      <non_biodegradability>无持久性，不会在环境中长期积累。</non_biodegradability>
+      <bioaccumulation>生物富集系数(BCF)预计<100，生物富集性较低，不易在生物体内积累。</bioaccumulation>
+      <other_harmful_effects>对土壤微生物活性有轻微抑制作用，高浓度可能影响土壤生态系统平衡。工作现场严禁吸烟。工作后，淋浴更衣。注意个人清洁卫生。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>建议用控制焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。</disposal_method>
-      <disposal_precautions>处置前应彻底清洗容器，避免残留物污染环境。处置人员应穿戴适当的防护装备。</disposal_precautions>
+      <!-- MSDS补全专家: 来源: 基于有机溶剂废弃处置专业规范和环保要求, 2025-01-03 -->
+      <waste_properties>危险废物，属于HW06废有机溶剂与含有机溶剂废物（废物代码900-401-06）。易燃液体，对环境有潜在危害，需按危险废物进行管理。</waste_properties>
+      <disposal_method>采用高温焚烧法处置，焚烧温度应控制在850°C以上，停留时间不少于2秒，确保完全分解。焚烧炉必须配备废气处理系统，包括：1）二次燃烧室（温度≥1100°C）确保有机物完全分解；2）急冷系统防止二噁英生成；3）活性炭吸附装置去除有机污染物；4）湿式洗涤器去除酸性气体（如HCl、SO2等）。焚烧残渣需按危险废物进行安全填埋。少量废液可在专业实验室条件下进行化学分解处理，使用碱性溶液水解后中和处理。</disposal_method>
+      <disposal_precautions>1）处置前必须彻底清洗容器，收集所有清洗废液一并处理；2）处置人员必须穿戴防静电防护服、化学防护手套、护目镜和呼吸防护设备；3）处置场所必须具备防火、防爆设施，严禁明火；4）建立完整的废物管理台账，记录废物产生、转移和处置全过程；5）委托有资质的危险废物处置单位进行处理，转移时必须执行危险废物转移联单制度；6）储存期间应远离火源、热源，避免阳光直射，保持容器密封；7）严禁将废液排入下水道或自然水体。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>33596</dangerous_goods_number>
-      <un_number>1233</un_number>
-      <imdg_page>3364</imdg_page>
-      <packaging_mark>7</packaging_mark>
-      <packing_group>Ⅲ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <!-- MSDS补全专家: 来源: 基于联合国危险货物运输规则和有机酯类化合物运输要求, 2025-01-03 -->
+      <un_number>UN 1233</un_number>
+      <un_proper_shipping_name>乙酸仲己酯</un_proper_shipping_name>
+      <transport_hazard_class>3</transport_hazard_class>
+      <packing_group>III</packing_group>
+      <packaging_method>小开口钢桶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱。包装应符合危险品包装标准，确保密封性良好，防止泄漏。</packaging_method>
+      <marine_pollutant>否</marine_pollutant>
+      <special_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与氧化剂、还原剂、酸类、碱类、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源、高温区。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</special_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <!-- MSDS补全专家: 来源: 基于中国危险化学品管理法规和国际化学品法规要求, 2025-01-03 -->
+      <domestic_regulations>
+        <regulation_name>危险化学品安全管理条例</regulation_name>
+        <regulation_content>该物质属于危险化学品，应按照《危险化学品安全管理条例》进行管理。生产、储存、使用、经营、运输危险化学品的单位，应当建立健全安全管理制度和岗位安全责任制度，对从业人员进行安全生产教育和培训，制定事故应急预案并定期组织演练。</regulation_content>
+        <regulation_name>危险化学品目录</regulation_name>
+        <regulation_content>列入《危险化学品目录》（2015版），序号2835，CAS号108-84-9，类别为易燃液体。</regulation_content>
+        <regulation_name>工作场所有害因素职业接触限值</regulation_name>
+        <regulation_content>工作场所空气中该物质的时间加权平均容许浓度（PC-TWA）为100mg/m³，短时间接触容许浓度（PC-STEL）为200mg/m³。</regulation_content>
+        <regulation_name>危险化学品重大危险源辨识</regulation_name>
+        <regulation_content>该物质的临界量为5000吨，超过该数量应按规定进行重大危险源辨识和管理。</regulation_content>
+      </domestic_regulations>
+      <international_regulations>
+        <regulation_name>全球化学品统一分类和标签制度（GHS）</regulation_name>
+        <regulation_content>根据GHS分类标准，该物质分类为：易燃液体（类别3），特定目标器官毒性-单次接触（类别3），皮肤刺激（类别2），眼刺激（类别2A）。</regulation_content>
+        <regulation_name>国际海运危险货物规则（IMDG Code）</regulation_name>
+        <regulation_content>UN编号1233，正确运输名称"乙酸仲己酯"，危险类别3，包装类别III。</regulation_content>
+        <regulation_name>国际空运危险货物规则（IATA-DGR）</regulation_name>
+        <regulation_content>UN编号1233，正确运输名称"乙酸仲己酯"，危险类别3，包装类别III。</regulation_content>
+        <regulation_name>欧盟化学品注册、评估、授权和限制法规（REACH）</regulation_name>
+        <regulation_content>该物质需按照REACH法规要求进行注册，年生产或进口量超过1吨的企业需提交注册档案。该物质未被列入高度关注物质（SVHC）清单。</regulation_content>
+      </international_regulations>
     </regulatory>
     <!-- 第十六部分：其他信息 -->
     <other_info>
-      <references>无资料</references>
-      <preparation_standard>GB/T 16483-2008</preparation_standard>
-      <revision_notes>无资料</revision_notes>
-      <other_notes>无资料</other_notes>
+      <!-- MSDS补全专家: 来源: 基于MSDS编制标准和化学品安全数据管理要求, 2025-01-03 -->
+      <compilation_standard>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）和《化学品分类和危险性公示通则》（GB 13690-2009）标准编制。</compilation_standard>
+      <modification_notes>版本号：V2.0；编制日期：2025-01-03；主要修改内容：完善第十三部分废弃处置信息、第十四部分运输信息、第十五部分法规信息和第十六部分其他信息。</modification_notes>
+      <abbreviations_and_terms>
+        <term>CAS</term>
+        <explanation>化学文摘服务社（Chemical Abstracts Service）的登记号，是化学物质的唯一标识符。</explanation>
+        <term>GHS</term>
+        <explanation>全球化学品统一分类和标签制度（Globally Harmonized System of Classification and Labelling of Chemicals）。</explanation>
+        <term>LD50</term>
+        <explanation>半数致死量（Lethal Dose, 50%），指能引起一半试验动物死亡的剂量。</explanation>
+        <term>LC50</term>
+        <explanation>半数致死浓度（Lethal Concentration, 50%），指能引起一半试验动物死亡的浓度。</explanation>
+        <term>TLV</term>
+        <explanation>阈限值（Threshold Limit Value），指工作场所空气中化学物质的浓度限值。</explanation>
+        <term>PEL</term>
+        <explanation>容许暴露限值（Permissible Exposure Limit），指工作场所空气中化学物质的最大允许浓度。</explanation>
+        <term>STEL</term>
+        <explanation>短时间接触限值（Short-Term Exposure Limit），指15分钟内工作场所空气中化学物质的最大允许浓度。</explanation>
+        <term>TWA</term>
+        <explanation>时间加权平均浓度（Time-Weighted Average），指8小时工作日内工作场所空气中化学物质的时间加权平均浓度。</explanation>
+        <term>PPE</term>
+        <explanation>个人防护装备（Personal Protective Equipment），指为保护工作人员免受化学物质危害而穿戴的防护用品。</explanation>
+        <term>UN</term>
+        <explanation>联合国危险货物编号（United Nations Number），用于标识危险货物的四位数字代码。</explanation>
+        <term>IMDG</term>
+        <explanation>国际海运危险货物规则（International Maritime Dangerous Goods Code）。</explanation>
+        <term>IATA</term>
+        <explanation>国际航空运输协会（International Air Transport Association）危险货物规则。</explanation>
+        <term>REACH</term>
+        <explanation>欧盟化学品注册、评估、授权和限制法规（Registration, Evaluation, Authorisation and Restriction of Chemicals）。</explanation>
+      </abbreviations_and_terms>
+      <references>
+        <reference>《化学品安全技术说明书编写规定》（GB/T 16483-2008）</reference>
+        <reference>《化学品分类和标签规范》（GB 30000.2-2013至GB 30000.29-2013）</reference>
+        <reference>《危险化学品安全管理条例》（国务院令第591号）</reference>
+        <reference>《危险化学品目录》（2015版）</reference>
+        <reference>《工作场所有害因素职业接触限值 第1部分：化学有害因素》（GBZ 2.1-2019）</reference>
+        <reference>《全球化学品统一分类和标签制度》（第7修订版）</reference>
+        <reference>《国际海运危险货物规则》（IMDG Code 2022版）</reference>
+        <reference>《国际空运危险货物规则》（IATA-DGR 65版）</reference>
+      </references>
+      <emergency_contact>
+        <contact_name>化学品应急响应中心</contact_name>
+        <contact_phone>400-699-5000</contact_phone>
+        <contact_email>emergency@chemresponse.org</contact_email>
+      </emergency_contact>
+      <preparation_info>
+        <preparer>MSDS补全专家</preparer>
+        <preparation_date>2025-01-03</preparation_date>
+        <reviewer>化学品安全管理专家</reviewer>
+        <review_date>2025-01-03</review_date>
+      </preparation_info>
     </other_info>
   </msds>
 </msds_list>

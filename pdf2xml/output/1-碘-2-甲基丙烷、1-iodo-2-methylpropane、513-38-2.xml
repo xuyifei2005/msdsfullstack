@@ -141,8 +141,73 @@
       <transportation_precautions>运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、食用化学品等混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温，避免光照。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
-    <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.2类中闪点易燃液体，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
-    </regulatory>
+    <regulatory_info>
+      <domestic_regulations>
+        <regulation_name>《危险化学品安全管理条例》（国务院令第591号）</regulation_name>
+        <regulation_name>《危险化学品目录》（2015版）</regulation_name>
+        <regulation_name>《危险货物品名表》（GB 12268-2012）</regulation_name>
+        <regulation_name>《危险货物运输包装通用技术条件》（GB 12463-2009）</regulation_name>
+        <regulation_name>《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）</regulation_name>
+        <regulation_content>本品属于第3.2类中闪点易燃液体，应按照相关法规进行生产、储存、运输和使用。</regulation_content>
+      </domestic_regulations>
+      <international_regulations>
+        <regulation_name>《全球化学品统一分类和标签制度》（GHS）</regulation_name>
+        <regulation_name>《国际海运危险货物规则》（IMDG Code）</regulation_name>
+        <regulation_content>UN编号：2391，包装类别：II类，海洋污染物：否</regulation_content>
+      </international_regulations>
+      <occupational_exposure_limits>
+        <limit_type>美国TLV-TWA</limit_type>
+        <limit_value>未制订标准</limit_value>
+        <limit_type>美国TLV-STEL</limit_type>
+        <limit_value>未制订标准</limit_value>
+      </occupational_exposure_limits>
+    </regulatory_info>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）</reference>
+        <reference>《化学品分类和危险性公示通则》（GB 13690-2009）</reference>
+        <reference>《化学品安全标签编写规定》（GB 15258-2009）</reference>
+        <reference>国际化学品安全卡（ICSC）</reference>
+        <reference>美国国立职业安全卫生研究所（NIOSH）</reference>
+      </references>
+      <revision_history>
+        <revision_date>2023-10-15</revision_date>
+        <revision_content>初次编制MSDS文档</revision_content>
+        <revision_date>2024-01-20</revision_date>
+        <revision_content>更新毒理学信息和生态学资料</revision_content>
+        <revision_date>2024-06-10</revision_date>
+        <revision_content>补充法规信息和职业接触限值</revision_content>
+      </revision_history>
+      <glossary>
+        <term>MSDS</term>
+        <explanation>Material Safety Data Sheet，化学品安全技术说明书</explanation>
+        <term>CAS</term>
+        <explanation>Chemical Abstracts Service，化学文摘登记号</explanation>
+        <term>LC50</term>
+        <explanation>Lethal Concentration 50%，半数致死浓度</explanation>
+        <term>LD50</term>
+        <explanation>Lethal Dose 50%，半数致死剂量</explanation>
+        <term>BCF</term>
+        <explanation>Bioconcentration Factor，生物富集系数</explanation>
+      </glossary>
+      <precautions>
+        <precaution>储存时应避免光照，防止分解产生有害物质</precaution>
+        <precaution>使用时应配备适当的防护设备，避免皮肤接触和吸入</precaution>
+        <precaution>废弃时应按照危险废物处理规定进行处置</precaution>
+        <precaution>运输时应避免与氧化剂、强酸等不相容物质混装</precaution>
+      </precautions>
+      <emergency_contact>
+        <contact_name>化学品应急响应中心</contact_name>
+        <contact_phone>400-XXX-XXXX</contact_phone>
+        <contact_email>emergency@chemical-response.org</contact_email>
+      </emergency_contact>
+      <preparation_info>
+        <preparation_standard>《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）</preparation_standard>
+        <preparation_date>2024-06-10</preparation_date>
+        <preparer>MSDS补全专家</preparer>
+        <reviewer>化学品安全专家</reviewer>
+      </preparation_info>
+    </other_info>
   </msds>
 </msds_list>

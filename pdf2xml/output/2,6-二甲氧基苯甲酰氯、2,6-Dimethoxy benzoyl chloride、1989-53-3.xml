@@ -80,18 +80,18 @@
       <flash_point>无资料</flash_point>
       <relative_density>无资料</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C9H9C</molecular_formula>
+      <solubility>遇水分解，可溶于有机溶剂</solubility>
+      <molecular_formula>C9H9ClO3</molecular_formula>
       <molecular_weight>200.62</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>2,6-二甲氧基苯甲酰氯</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>无色结晶。</appearance>
-      <main_uses>用于有机合成。</main_uses>
+      <flammability>可燃</flammability>
+      <appearance>无色结晶</appearance>
+      <main_uses>用于有机合成</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -143,7 +143,14 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第8.1类酸性腐蚀品，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>无资料</references>
+      <compilation_standard>GB/T 16483-2008</compilation_standard>
+      <revision_notes>无资料</revision_notes>
+      <other_notes>无资料</other_notes>
+    </other_info>
   </msds>
 </msds_list>

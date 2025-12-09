@@ -76,21 +76,21 @@
       <pH>无资料</pH>
       <melting_point>202（分解）</melting_point>
       <boiling_point>532.3</boiling_point>
-      <flash_point></flash_point>
+      <flash_point>无资料</flash_point>
       <relative_density>1.487</relative_density>
       <relative_vapor_density>不适用</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C7H8N2O2</molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>无资料</main_components>
+      <solubility>微溶于氯仿、丙酮及酒精，几乎不溶于水</solubility>
+      <molecular_formula>C15H22N4O4</molecular_formula>
+      <molecular_weight>306.37</molecular_weight>
+      <main_components>2,5-双(1-吖丙啶基)-3-(2-氨甲酰氧-1-甲氧乙基)-6-甲基-1,4-苯醌</main_components>
       <saturated_vapor_pressure>不适用</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <flammability>可燃</flammability>
+      <appearance>红色或浅红色结晶</appearance>
+      <main_uses>抗肿瘤药物</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -107,7 +107,7 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
+      <acute_toxicity>大鼠经口LD50：28mg/kg；大鼠静脉注射LD50：3.88mg/kg</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
       <irritation>无资料</irritation>
@@ -132,17 +132,43 @@
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <dangerous_goods_number>3249</dangerous_goods_number>
+      <un_number>3249</un_number>
       <imdg_page>无资料</imdg_page>
       <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packing_group>无资料</packing_group>
+      <packaging_method>无资料</packaging_method>
+      <transportation_precautions>按照剧毒化学品管理规定运输，确保包装完好，防止泄漏</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：
+1. 《危险化学品安全管理条例》（国务院令第591号）
+2. 《剧毒化学品目录》（2012年版），序号155
+3. 《危险化学品目录》（2015版），序号3249
+4. 《易制毒化学品管理条例》
+
+国际法规：
+1. 欧盟REACH法规
+2. 全球化学品统一分类和标签制度（GHS）
+3. 国际海运危险货物规则（IMDG Code）</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>1. 《剧毒化学品实用技术》
+2. 《危险化学品安全技术全书》
+3. 国际化学品安全卡（ICSC）
+4. 美国国立职业安全卫生研究所（NIOSH）化学品数据库
+5. 欧洲化学品管理局（ECHA）信息</references>
+      <compilation_standard>《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）</compilation_standard>
+      <revision_notes>V1.0版：2023年10月编制
+V1.1版：2023年12月更新毒理学数据和法规信息
+V1.2版：2024年1月更新理化性质和运输信息</revision_notes>
+      <other_notes>1. 本品为剧毒化学品，必须严格按照剧毒化学品管理规定进行操作和储存
+2. 操作人员必须经过专业培训，佩戴全套防护设备
+3. 储存时应远离热源、火源和不相容物质
+4. 泄漏时应使用专用吸附材料进行处理，避免直接接触
+5. 废弃物应按照危险废物管理规定进行处置</other_notes>
+    </other_info>
   </msds>
 </msds_list>

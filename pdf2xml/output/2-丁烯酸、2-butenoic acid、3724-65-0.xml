@@ -8,19 +8,18 @@
       <product_name>2-丁烯酸</product_name>
       <product_alias>巴豆酸</product_alias>
       <product_english_name>2-butenoicacid</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>急毒性-皮肤，类别3；皮肤腐蚀/刺激，类别1；眼损伤/眼刺激，类别1。</hazard_category>
-      <exposure_routes>吸入、食入、皮肤接触、眼睛接触
-吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入</exposure_routes>
-      <health_hazards>吸入、食入或经皮肤吸收后对身体有害。对眼睛、皮肤、粘膜和上呼吸道有强烈的刺激性和腐蚀性。眼接触液状本品可引起严重损害，甚至失明。皮肤接触可引起刺激、红肿、疼痛，严重者可致灼伤。吸入后可引起头痛、头晕、恶心、呕吐、咳嗽、喘息、喉炎、气短等症状。长期接触可引起肝、肾功能损害，神经系统损伤等。本品可通过皮肤吸收。</health_hazards>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入或经皮肤吸收后对身体有害。对眼睛、皮肤、粘膜和上呼吸道有强烈的刺激性和腐蚀性。眼接触液状本品可引起严重损害，甚至失明。皮肤接触可引起刺激、红肿、疼痛，严重者可致灼伤。吸入后可引起头痛、头晕、恶心、呕吐、咳嗽、喘息、喉炎、气短等症状。长期接触可引起肝、肾功能损害，神经系统损伤等。本品可通过皮肤吸收。</health_hazards>
       <environmental_hazards>2-丁烯酸（巴豆酸）对水生生物有毒性。应避免进入水体、土壤和地下水。该物质对环境可能有危害，对水体应给予特别注意。</environmental_hazards>
       <fire_explosion_hazards>本品可燃，具腐蚀性、强刺激性，可致人体灼伤。</fire_explosion_hazards>
     </hazard_info>
@@ -37,25 +36,24 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。就医。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行</eye_contact>
-      <inhalation>人工呼吸。就医。</inhalation>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
       <ingestion>误服者立即漱口，给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>能会通过压力安全阀泄漏出内容物。受热或接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>无资料 合适的灭火介质:干粉、二氧化碳或耐醇泡沫。不合适的灭火介质:避免用太强烈的水汽灭火， 因为它可能会使火苗蔓延分散。灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当</harmful_combustion_products>
-      <suitable_extinguishing_media>的)）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表 和地下水系统。</suitable_extinguishing_media>
+      <hazard_characteristics>可能会通过压力安全阀泄漏出内容物。受热或接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
+      <harmful_combustion_products>无资料</harmful_combustion_products>
+      <suitable_extinguishing_media>干粉、二氧化碳或耐醇泡沫。不合适的灭火介质:避免用太强烈的水汽灭火， 因为它可能会使火苗蔓延分散。灭火时，应佩戴呼吸面具（符合MSHA/NIOSH要求的或相当的）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上风 应急处理： 措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或惰性吸 附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中， 并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防暴设备。</emergency_procedures>
+      <emergency_procedures>保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上风位置。应急处理：措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或惰性吸附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中，并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防暴设备。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
       <handling_precautions>密闭操作，注意通风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（全面罩），穿防酸碱工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免与氧化剂、碱类、还原剂接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
-      <storage_precautions>火花、明火和热表面。采取措施防止静电积累。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远离 不相容材料和食品容器的地方。</storage_precautions>
+      <storage_precautions>火花、明火和热表面。采取措施防止静电积累。保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远离不相容材料和食品容器的地方。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -145,5 +143,12 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第8.1类酸性腐蚀品，具腐蚀性、强刺激性，可致人体灼伤，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference>无资料</reference>
+      <preparation_standard>GB/T 16483-2008</preparation_standard>
+      <revision_notes>无资料</revision_notes>
+      <other_notes>无资料</other_notes>
+    </other_info>
   </msds>
 </msds_list>

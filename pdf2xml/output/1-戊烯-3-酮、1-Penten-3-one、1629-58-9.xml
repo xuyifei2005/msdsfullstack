@@ -42,10 +42,12 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>发生聚合反应，出现大量放热现象，引起容器破裂或爆炸事故。</hazard_characteristics>
-      <fire_risk_classification>甲</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳。 合适的灭火介质:干粉、二氧化碳或耐醇泡沫。 不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安 全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <hazard_characteristics>易燃，其蒸气与空气可形成爆炸性混合物，遇明火、高热极易燃烧爆炸。若遇高热，可发生聚合反应，出现大量放热现象，引起容器破裂或爆炸事故。其蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。与氧化剂接触发生强烈反应，甚至引起燃烧。</hazard_characteristics>
+      <fire_risk_classification>甲类（中闪点易燃液体）</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳。</harmful_combustion_products>
+      <suitable_extinguishing_media>干粉、二氧化碳或耐醇泡沫。</suitable_extinguishing_media>
+      <unsuitable_extinguishing_media>避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</unsuitable_extinguishing_media>
+      <firefighting_precautions>尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。处在火场中的容器若已变色或从安全泄压装置中产生声音，必须马上撤离。灭火时，应佩戴呼吸面具（符合MSHA/NIOSH要求的或相当的）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>

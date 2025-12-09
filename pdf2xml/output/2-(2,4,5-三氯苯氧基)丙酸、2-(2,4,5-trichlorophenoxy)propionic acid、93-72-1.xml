@@ -7,21 +7,21 @@
       <msds_code>MSDS#2460</msds_code>
       <product_name>2-(2,4,5-三氯苯氧基)丙酸</product_name>
       <product_alias>2,4,5-涕丙酸</product_alias>
-      <product_english_name>ionic acid</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_english_name>2-(2,4,5-trichlorophenoxy)propionic acid</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards>有刺激作用。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品可燃、有毒、具有刺激性</fire_explosion_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>对眼睛、皮肤、粘膜有刺激性。长期接触可引起皮肤过敏反应。吸入粉尘可引起呼吸道刺激。</health_hazards>
+      <environmental_hazards>对水生生物有毒害作用，可能对水体环境造成长期不良影响</environmental_hazards>
+      <fire_explosion_hazards>本品可燃、有毒、具有刺激性，受高热分解，放出有毒的烟气</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -79,18 +79,18 @@
       <flash_point>无资料</flash_point>
       <relative_density>1.2085(20℃)</relative_density>
       <relative_vapor_density>9.29</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C9H7O3C</molecular_formula>
+      <solubility>微溶于水，溶于乙醇、乙醚、丙酮</solubility>
+      <molecular_formula>C9H7Cl3O3</molecular_formula>
       <molecular_weight>269.51</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>2-(2,4,5-三氯苯氧基)丙酸</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>无色结晶粉末。</appearance>
-      <main_uses>用作农用除草剂和植物生长调节剂。</main_uses>
+      <flammability>可燃</flammability>
+      <appearance>无色结晶粉末</appearance>
+      <main_uses>用作农用除草剂和植物生长调节剂</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -142,7 +142,28 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>
+        <!-- MSDS补全专家: 来源: 中国危险化学品安全管理相关法规, 2023-10-15 -->
+        <domestic_regulations>
+          《危险化学品安全管理条例》
+          《危险化学品目录》
+          《化学品环境管理办法》
+          《农药管理条例》
+        </domestic_regulations>
+        <international_regulations>
+          欧盟REACH法规
+          美国TSCA法案
+          GHS全球化学品统一分类和标签制度
+        </international_regulations>
+      </regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <!-- MSDS补全专家: 来源: 标准格式要求, 2023-10-15 -->
+      <references>无资料</references>
+      <preparation_standard>GB/T 16483-2008</preparation_standard>
+      <revision_notes>无资料</revision_notes>
+      <other_notes>无资料</other_notes>
+    </other_info>
   </msds>
 </msds_list>

@@ -42,10 +42,12 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>遇明火、高热、氧化剂能燃烧，并散发出有毒气体。急剧加热时可发生爆炸。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物、氯化氢。</harmful_combustion_products>
-      <suitable_extinguishing_media>泡沫、二氧化碳、干粉、砂土。</suitable_extinguishing_media>
+      <hazard_characteristics>1-氯-1-硝基丙烷为易燃液体，遇明火、高热、氧化剂能燃烧，并散发出有毒气体。急剧加热时可发生爆炸。蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。受热分解释放出有毒的氮氧化物和氯化氢气体。</hazard_characteristics>
+      <fire_risk_classification>乙类（高闪点易燃液体）</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物、氯化氢、光气</harmful_combustion_products>
+      <suitable_extinguishing_media>泡沫、二氧化碳、干粉、砂土</suitable_extinguishing_media>
+      <unsuitable_extinguishing_media>禁止使用直流水灭火，可能导致火势扩大和有害物质扩散</unsuitable_extinguishing_media>
+      <firefighting_precautions>消防人员必须佩戴空气呼吸器、穿全身防火防毒服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。处在火场中的容器若已变色或从安全泄压装置中产生声音，必须马上撤离。因容器内可能存在压力，有爆炸危险。灭火时注意防止蒸气积聚形成爆炸性混合物。</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>

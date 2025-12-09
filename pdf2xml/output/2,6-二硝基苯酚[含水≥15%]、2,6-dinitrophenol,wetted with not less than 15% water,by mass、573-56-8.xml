@@ -4,22 +4,22 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>573-56-8</cas_number>
-      <msds_code>供应商名称： 供应商地址：</msds_code>
+      <msds_code>MSDS#1055</msds_code>
       <product_name>2,6-二硝基苯酚[含水≥15%]</product_name>
-      <product_alias>2,6-dinitrophenol,wetted with</product_alias>
-      <product_english_name>6-二硝基苯酚[含水≥15%]</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_alias>2,6-dinitrophenol,wetted with not less than 15% water,by mass</product_alias>
+      <product_english_name>2,6-dinitrophenol,wetted with not less than 15% water,by mass</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>侵入途径：</hazard_category>
-      <exposure_routes></exposure_routes>
-      <health_hazards></health_hazards>
+      <hazard_category>第5.1类 易燃固体</hazard_category>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>对眼睛、皮肤、粘膜有强烈刺激性。可引起高铁血红蛋白血症，出现紫绀、头痛、眩晕、恶心等症状。高浓度可致死。</health_hazards>
       <environmental_hazards>对水生物有剧毒,对水生环境可能会引起长期有害作用</environmental_hazards>
       <fire_explosion_hazards>高度易燃，其粉体与空气混合，能形成爆炸性混合物</fire_explosion_hazards>
     </hazard_info>
@@ -76,21 +76,21 @@
       <pH>无资料</pH>
       <melting_point>63</melting_point>
       <boiling_point>35</boiling_point>
-      <flash_point></flash_point>
+      <flash_point>无意义</flash_point>
       <relative_density>1.645</relative_density>
       <relative_vapor_density>6.35</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>微溶于水，溶于乙醇、乙醚</solubility>
       <molecular_formula>C6H4N2O5</molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>无资料</main_components>
+      <molecular_weight>184.11</molecular_weight>
+      <main_components>2,6-二硝基苯酚[含水≥15%]</main_components>
       <saturated_vapor_pressure>不适用</saturated_vapor_pressure>
       <log_kow>1.38</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <flammability>易燃</flammability>
+      <appearance>黄色结晶</appearance>
+      <main_uses>用于有机合成</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -142,7 +142,14 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第5.1类易燃固体，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>无资料</references>
+      <compilation_standard>GB/T 16483-2008</compilation_standard>
+      <revision_notes>无资料</revision_notes>
+      <other_notes>无资料</other_notes>
+    </other_info>
   </msds>
 </msds_list>

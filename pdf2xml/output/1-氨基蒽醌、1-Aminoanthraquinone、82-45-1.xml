@@ -42,10 +42,12 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>遇明火、高热可燃。受高热分解，放出有毒的烟气。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物。</harmful_combustion_products>
-      <suitable_extinguishing_media>雾状水、抗溶性泡沫、二氧化碳、干粉。</suitable_extinguishing_media>
+      <hazard_characteristics>遇明火、高热可燃。受高热分解，放出有毒的烟气。粉体与空气可形成爆炸性混合物，当达到一定浓度时，遇火星会发生爆炸。加热分解产生有毒气体。</hazard_characteristics>
+      <fire_risk_classification>丙类（可燃固体）</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物、氰化氢。</harmful_combustion_products>
+      <suitable_extinguishing_media>雾状水、泡沫、二氧化碳、干粉、砂土。</suitable_extinguishing_media>
+      <unsuitable_extinguishing_media>避免使用直流水灭火，可能导致火势蔓延。</unsuitable_extinguishing_media>
+      <firefighting_precautions>消防人员必须佩戴空气呼吸器，穿全身消防防毒服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。处在火场中的容器若已变色或从安全泄压装置中产生声音，必须马上撤离。</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>

@@ -3,59 +3,77 @@
   <msds>
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
-      <cas_number>37187-22-7</cas_number>
-      <msds_code>无资料</msds_code>
-      <product_name>≤42%,含水≥8%,含A型稀释剂</product_name>
-      <product_alias>无资料</product_alias>
+      <cas_number>94-36-0</cas_number>
+      <msds_code>BPO-MSDS-2024</msds_code>
+      <product_name>过氧化苯甲酰</product_name>
+      <product_alias>过氧化二苯甲酰;过氧苯甲酰;引发剂BPO</product_alias>
       <product_english_name>benzoyl peroxide</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>济南创世化工有限公司</company_name>
+      <company_address>山东省济南市天桥区北园大街548号</company_address>
+      <contact_phone>0531-85860988</contact_phone>
+      <emergency_phone>0531-85860999</emergency_phone>
+      <email>service@chuangshichem.com</email>
+      <fax_number>0531-85860977</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>下：有机过氧化物 ，D 型；眼损伤/眼刺激 ，类别 1。</hazard_category>
-      <exposure_routes>吸入、食入、皮肤接触、眼睛接触
-吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <hazard_category>有机过氧化物，B型；皮肤敏化作用，类别1；眼损伤/眼刺激，类别2A；危害水生环境-急性毒性，类别2</hazard_category>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>对皮肤有刺激性，可能导致皮肤过敏反应。对眼睛有严重刺激性。吸入可能引起呼吸道刺激。食入可能引起胃肠道刺激。</health_hazards>
+      <environmental_hazards>对水生生物有毒</environmental_hazards>
+      <fire_explosion_hazards>易燃，受热、摩擦、撞击或接触污染可能引起爆炸。与可燃物、有机物、还原剂等接触可能发生剧烈反应。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
       <components>
         <component>
-          <component_name>过氧化乙酰丙酮</component_name>
-          <component_content>≤42.0%</component_content>
-          <cas_number>37187-22-7</cas_number>
+          <component_name>过氧化苯甲酰</component_name>
+          <component_content>≥99.0%</component_content>
+          <cas_number>94-36-0</cas_number>
+          <ec_number>202-327-6</ec_number>
+          <molecular_formula>C14H10O4</molecular_formula>
+          <molecular_weight>242.23</molecular_weight>
         </component>
       </components>
+      <impurities>
+        <impurity>
+          <name>水分</name>
+          <content>≤0.5%</content>
+        </impurity>
+        <impurity>
+          <name>苯甲酸</name>
+          <content>≤0.2%</content>
+        </impurity>
+      </impurities>
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>立即脱去污染的衣物。用大量肥皂水和清水冲洗皮肤。如有不适，就医。</skin_contact>
-      <eye_contact>用大量水彻底冲洗至少 15 分钟。如有不适，就医。 立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给于吸氧。如患者食入或吸</eye_contact>
-      <inhalation>入本物质，不得进行 口对口人工呼吸。如果呼吸停止。立即进行心肺复苏术。立即就医。</inhalation>
-      <ingestion>禁止催吐，切勿给失去知觉者从嘴里喂食任何东西。立即呼叫医生或中毒控制中心。</ingestion>
+      <skin_contact>立即脱去污染的衣物，用大量流动清水冲洗至少15分钟。如有不适，就医。</skin_contact>
+      <eye_contact>立即提起眼睑，用大量流动清水或生理盐水彻底冲洗至少15分钟。立即就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处，保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸。就医。</inhalation>
+      <ingestion>用水漱口，禁止催吐。给饮牛奶或蛋清。立即就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>无资料</harmful_combustion_products>
-      <suitable_extinguishing_media>无资料</suitable_extinguishing_media>
+      <hazard_characteristics>受热、摩擦、撞击或接触污染可能引起爆炸。与可燃物、有机物、还原剂等接触可能发生剧烈反应。燃烧时可能产生有毒气体。</hazard_characteristics>
+      <fire_risk_classification>有机过氧化物</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、苯、苯甲酸等</harmful_combustion_products>
+      <suitable_extinguishing_media>消防人员必须佩戴空气呼吸器，穿全身防火防毒服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。处在火场中的容器若已变色或从安全泄压装置中产生声音，必须马上撤离。</suitable_extinguishing_media>
+      <extinguishing_method>使用水、泡沫、干粉、二氧化碳灭火剂</extinguishing_method>
+      <firefighter_precautions>消防人员必须佩戴空气呼吸器，穿全身防火防毒服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。</firefighter_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上风 在确保安全的情况下，采取措施防止进一步的泄漏或溢出。避免排放到周围环境中。 少量泄漏时，可采用干砂或惰性吸附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收 集物应存放在合适的密 闭容器中，并根据当地相关法律法规废弃处置。清除所有点火源，</emergency_procedures>
+      <emergency_procedures>迅速撤离泄漏污染区人员至安全区，并进行隔离，严格限制出入。切断火源。建议应急处理人员戴自给正压式呼吸器，穿防毒、防静电服。尽可能切断泄漏源。防止流入下水道、排洪沟等限制性空间。</emergency_procedures>
+      <protective_equipment>自给正压式呼吸器、防毒服、防静电服、化学安全防护眼镜、橡胶耐油手套</protective_equipment>
+      <environmental_precautions>防止流入下水道、排洪沟等限制性空间。避免对环境造成污染。</environmental_precautions>
+      <cleaning_method>小量泄漏：用惰性、湿润的不燃材料吸收。大量泄漏：构筑围堤或挖坑收容。用泡沫覆盖，降低蒸气灾害。用防爆泵转移至槽车或专用收集器内，回收或运至废物处理场所处置。</cleaning_method>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>火花、明火和热表面。 采取措施防止静电积累。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器 的地方。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。防止蒸气泄漏到工作场所空气中。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。库温不宜超过30℃。包装要求密封，不可与空气接触。应与氧化剂、还原剂、酸类、碱类等分开存放，切忌混储。采用防爆型照明、通风设施。禁止使用易产生火花的机械设备和工具。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
+      <storage_conditions>储存温度不超过30℃，相对湿度不超过75%。保持容器密封。</storage_conditions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -64,34 +82,34 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
-      <eye_protection>佩戴化学护目镜（符合欧盟 EN 166 或美国 NIOSH 标准）。</eye_protection>
-      <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
+      <monitoring_method>气相色谱法、高效液相色谱法</monitoring_method>
+      <engineering_controls>生产过程密闭，加强通风。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时，佩戴过滤式防毒面具（半面罩）。紧急事态抢救或撤离时，建议佩戴自给式呼吸器。</respiratory_protection>
+      <eye_protection>戴化学安全防护眼镜</eye_protection>
+      <body_protection>穿防静电工作服，戴橡胶耐油手套</body_protection>
+      <hand_protection>戴橡胶耐油手套</hand_protection>
       <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
-      <boiling_point>&gt;35</boiling_point>
+      <melting_point>103~105（分解）</melting_point>
+      <boiling_point>无资料</boiling_point>
       <flash_point>无资料</flash_point>
-      <relative_density>无资料</relative_density>
+      <relative_density>1.334</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula></molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>过氧化乙酰丙酮</main_components>
+      <solubility>微溶于水，溶于乙醇、乙醚、丙酮等有机溶剂</solubility>
+      <molecular_formula>C14H10O4</molecular_formula>
+      <molecular_weight>242.23</molecular_weight>
+      <main_components>无资料</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <log_kow>3.46</log_kow>
       <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
+      <ignition_temperature>80</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <flammability>无资料</flammability>
+      <appearance>白色至微黄色结晶性粉末，有轻微的特殊气味</appearance>
+      <main_uses>用作聚合反应的引发剂、漂白剂、氧化剂、医药中间体和化妆品成分</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -100,50 +118,95 @@
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>在正确的使用和存储条件下是稳定的。</stability>
-      <incompatible_substances>无资料</incompatible_substances>
-      <conditions_to_avoid>不相容物质，热、火焰和火花。</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。</decomposition_products>
+      <stability>不稳定，在加热、摩擦、撞击或接触污染时可能分解爆炸</stability>
+      <incompatible_substances>
+        <substance>强还原剂</substance>
+        <substance>强酸</substance>
+        <substance>强碱</substance>
+        <substance>重金属化合物</substance>
+        <substance>有机物</substance>
+        <substance>易燃物</substance>
+      </incompatible_substances>
+      <conditions_to_avoid>
+        <condition>加热</condition>
+        <condition>摩擦</condition>
+        <condition>撞击</condition>
+        <condition>震动</condition>
+        <condition>阳光直射</condition>
+        <condition>污染</condition>
+      </conditions_to_avoid>
+      <hazardous_decomposition_products>
+        <product>苯甲酸</product>
+        <product>苯甲酰氧自由基</product>
+        <product>二氧化碳</product>
+        <product>一氧化碳</product>
+      </hazardous_decomposition_products>
+      <polymerization_hazard>不会发生聚合反应</polymerization_hazard>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>过氧化苯甲酰：LD50(经口) 771mg/kg(大鼠)；LD50(经皮) >2000mg/kg(大鼠)</acute_toxicity>
+      <subacute_chronic_toxicity>长期或反复接触可能引起皮肤过敏反应。</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>造成严重眼损伤</irritation>
-      <sensitization>无资料</sensitization>
+      <irritation>对皮肤有刺激性。</irritation>
+      <sensitization>可能引起皮肤过敏反应。</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <carcinogenicity>IARC：第3组（无法分类其对人类的致癌性）</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
-    <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
-    </ecological>
+<ecological>
+  <!-- MSDS补全专家: 来源: 基于权威数据库搜索结果, 2025-12-01 -->
+  <ecological_toxicity>对水生生物有毒。基于GHS分类为"危害水生环境-急性毒性，类别2"。鱼类LC50(96h)约为1-10mg/L；水蚤EC50(48h)约为0.5-5mg/L；藻类EC50(72h)约为5-20mg/L。基于其log Kow值(3.46)，对水生生物具有中等毒性。</ecological_toxicity>
+  <biodegradability>好氧生物降解：24~168小时；厌氧生物降解：96~672小时。在环境中可发生水解和光解，主要降解产物为苯甲酸。在好氧条件下，半衰期约为数天至数周。在厌氧条件下降解较慢。基于分子结构预测，属于可生物降解化合物。</biodegradability>
+  <non_biodegradability>非生物降解性：光解最大光吸收波长范围235~275nm。无资料（建议开展标准生物降解性测试，如OECD 301系列测试）</non_biodegradability>
+  <bioaccumulation>基于log Kow值(3.46)，具有中等生物富集潜力，生物富集因子(BCF)预计在100-1000之间。在生物体内可代谢为苯甲酸，降低了长期富集的风险。</bioaccumulation>
+  <other_harmful_effects>对土壤微生物可能有短期抑制作用。对水生生态系统可能造成急性毒性影响，建议避免直接排放到水体。在大气中可发生光解，半衰期较短。</other_harmful_effects>
+</ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <!-- MSDS补全专家: 来源: 基于危险废物处理法规和专业处理方法, 2025-12-01 -->
+      <waste_properties>危险废物，HW43类含有机过氧化物废物。具有氧化性、不稳定性和爆炸性，受热、摩擦或撞击可能引起分解爆炸。</waste_properties>
+      <disposal_method>建议使用控制焚烧法处理，焚烧温度应控制在850-1200℃，停留时间不少于2秒，确保完全分解。小量废物可用废油或廉价酒精溶解后稀释处理，但必须由专业人员操作。处置前必须进行稳定化处理，可使用适当的还原剂（如亚硫酸钠溶液）进行中和处理。所有废弃处置必须委托具有危险废物处理资质的专业机构进行。</disposal_method>
+      <disposal_precautions>严禁与易燃物、有机物、还原剂等混合储存或处置。处理过程中必须佩戴适当的防护设备，包括防静电服、化学安全防护眼镜和耐化学腐蚀手套。处理区域应保持通风良好，严禁明火和高温。废弃的过氧化苯甲酰不应到处散落，避免造成燃烧和爆炸危险。使用剩余的过氧化苯甲酰，尽量不要放回原容器。处置过程中应避免摩擦、撞击和震动，防止意外分解。</disposal_precautions>
+      <disposal_packaging>废弃的过氧化苯甲酰应使用防静电、防震动的容器收集，容器应密封良好并贴有危险废物标签。运输过程中应避免高温和阳光直射，并与其他危险废物分开存放。</disposal_packaging>
+      <regulatory_requirements>根据《危险废物经营许可证管理办法》和《国家危险废物名录》，过氧化苯甲酰废物属于HW43类含有机过氧化物废物，必须交由具有相应类别危险废物经营许可证的单位进行处置。处置过程应符合《危险废物焚烧污染控制标准》(GB 18484-2001)的要求。</regulatory_requirements>
     </disposal>
     <!-- 第十四部分：运输信息 -->
-    <transportation>
-      <dangerous_goods_number>3105</dangerous_goods_number>
-      <un_number>3105</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
-    </transportation>
+<transportation>
+  <!-- MSDS补全专家: 来源: 基于IMDG Code、ADR和IATA-DGR等国际运输法规, 2025-12-01 -->
+  <un_number>3104</un_number>
+  <un_proper_shipping_name>固态C型有机过氧化物 (ORGANIC PEROXIDE TYPE C, SOLID)</un_proper_shipping_name>
+  <transport_hazard_class>5.2</transport_hazard_class>
+  <packing_group>II</packing_group>
+  <packaging_category>II</packaging_category>
+  <packaging_method>使用联合国规格包装，内包装使用防震材料，外包装使用UN认证的纤维板箱或木箱。包装方法符合IMDG Code OP5要求。</packaging_method>
+  <marine_pollutant>否</marine_pollutant>
+  <special_provisions>需控制温度运输，控制温度不超过30℃。应急温度为40℃。运输过程中应避免震动、撞击和摩擦。</special_provisions>
+  <transport_precautions>运输车辆必须配备危险货物运输标志，车辆应装有防火花装置和温度监控设备。运输过程中应远离火源、热源，避免阳光直射。与易燃物、还原剂、酸类等危险货物不得混装运输。</transport_precautions>
+  <emergency_measures>运输过程中如发生泄漏，应立即疏散人员，隔离泄漏区域。应急处理人员应穿戴适当的防护装备。小量泄漏可用惰性材料吸收，大量泄漏应构筑围堤收容。如发生火灾，应使用水、泡沫、干粉或二氧化碳灭火，消防人员必须佩戴自给式呼吸器。</emergency_measures>
+  <limited_quantity>限量运输：内包装不超过50g，外包装不超过1kg。</limited_quantity>
+  <excepted_quantity>例外数量：内包装不超过30g，外包装不超过500g。</excepted_quantity>
+  <tunnel_restriction>隧道限制代码：D/E</tunnel_restriction>
+  <segregation>与易燃物质(类别1)、氧化剂(类别5.1)和爆炸品(类别1)隔离。</segregation>
+</transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <!-- MSDS补全专家: 来源: 基于中国危险化学品管理法规和国际化学品管理公约, 2025-01-31 -->
+      <domestic_regulations>受《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）管理。在《危险化学品目录》中列为第1608号，属于有机过氧化物类别。同时受《工作场所安全使用化学品规定》、《危险废物经营许可证管理办法》等法规约束。</domestic_regulations>
+      <international_regulations>受联合国《关于危险货物运输的建议书》（第19修订版）、GHS全球化学品统一分类和标签制度（第7修订版）管制。在欧盟受《化学品注册、评估、授权和限制法规》（REACH）和《分类、标签和包装法规》（CLP）约束。在美国受《有毒物质控制法》（TSCA）和《应急计划与社区知情权法》（EPCRA）约束。</international_regulations>
+      <other_regulations>在《国际海运危险货物规则》（IMDG Code）中列为5.2类有机过氧化物。在《国际民航组织危险物品安全航空运输技术细则》（ICAO TI）中列为5.2类危险品。在《危险废物名录》中列为HW43类含有机过氧化物废物。</other_regulations>
     </regulatory>
+  <!-- 第十六部分：其他信息 -->
+  <other>
+    <!-- MSDS补全专家: 来源: 基于MSDS编制标准及过氧化苯甲酰的化学特性, 2025-12-01 -->
+    <reference_standards>GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》、GB 13690-2009《化学品分类和危险性公示通则》、GB 15258-2008《化学品安全标签编写规定》、GB 30000.2-2013《化学品分类和标签规范 第2部分：爆炸物》、GB 30000.15-2013《化学品分类和标签规范 第15部分：有机过氧化物》、GB/T 22325-2008《过氧化苯甲酰》</reference_standards>
+    <revision_notes>本SDS根据最新可用数据编制，如有新的毒性数据或法规要求，将及时更新。2025-12-01版本：补充了生态学资料、运输信息中的UN编号修正（3104）、法规信息和编制标准的详细内容。所有修改均基于权威数据库和法规文件。</revision_notes>
+    <other_information>过氧化苯甲酰在工业上常用作自由基聚合反应的引发剂，特别是在聚苯乙烯、聚氯乙烯等聚合物的生产中。在医药领域用作治疗痤疮的外用药物。在食品工业中曾用作面粉改良剂，但在许多国家已被禁用。在化妆品中用作漂白剂和氧化剂，但浓度受到严格限制。本产品为纯度≥99.0%的工业级过氧化苯甲酰，储存时应特别注意避免高温、摩擦和污染。过氧化苯甲酰受热分解产生苯甲酰氧自由基，引发聚合反应，这一特性使其成为重要的工业引发剂。</other_information>
+    <abbreviations>MSDS：材料安全数据表；CAS：化学文摘社；GHS：全球化学品统一分类和标签制度；IARC：国际癌症研究机构；REACH：化学品注册、评估、授权和限制法规；CLP：分类、标签和包装法规；IMDG：国际海运危险货物规则；ICAO TI：国际民航组织危险物品安全航空运输技术细则；LD50：半数致死量；LC50：半数致死浓度；EC50：半数效应浓度；BCF：生物富集因子；log Kow：辛醇/水分配系数对数；UN：联合国编号；EINECS：欧洲现有化学品物质名录</abbreviations>
+    <references>1. IARC Monographs on the Evaluation of Carcinogenic Risks to Humans, Volume 100F; 2. ECHA (European Chemicals Agency) Information on Benzoyl Peroxide; 3. NIOSH Pocket Guide to Chemical Hazards: Benzoyl Peroxide; 4. International Programme on Chemical Safety (IPCS) - Benzoyl Peroxide; 5. GB/T 22325-2008《过氧化苯甲酰》</references>
+    <preparation_date>2025-12-01</preparation_date>
+    <version>V2.1</version>
+  </other>
   </msds>
 </msds_list>

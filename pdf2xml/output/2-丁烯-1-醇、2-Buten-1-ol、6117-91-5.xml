@@ -8,19 +8,18 @@
       <product_name>2-丁烯-1-醇</product_name>
       <product_alias>巴豆醇；丁烯醇</product_alias>
       <product_english_name>2-Buten-1-ol</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第3.3类 高闪点易燃液体</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收
-吸入、摄入或经皮肤吸收对身体有害，高浓度丁烯醇对眼睛、皮肤、粘膜和呼吸道有强烈的</exposure_routes>
-      <health_hazards>刺激作用。中毒表现有烧灼感、咳嗽、喘息、喉炎、气短、头痛、恶心和呕吐。</health_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>高浓度丁烯醇对眼睛、皮肤、粘膜和呼吸道有强烈的刺激作用。中毒表现有烧灼感、咳嗽、喘息、喉炎、气短、头痛、恶心和呕吐。</health_hazards>
       <environmental_hazards>2-丁烯-1-醇（巴豆醇）对水生生物有毒性，对鱼类、甲壳类、藻类等水生生物有毒性作用。该物质在环境中可生物降解，但在高浓度下可能对水生生态系统造成危害。应避免进入水体、土壤和地下水。该物质对环境有危害，应特别注意对水体的污染。</environmental_hazards>
       <fire_explosion_hazards>本品易燃、刺激性</fire_explosion_hazards>
     </hazard_info>
@@ -50,7 +49,7 @@
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，切断火源。建议应急处理人员戴好 防毒面具，穿一般消防防护服。在确保安全情况下堵漏。喷水雾会减少蒸发，但不能降低泄漏 应急处理： 物在受限制空间内的易燃性。用沙土、干燥石灰或苏打灰混合，然后收集运至废物处理场所处 置。也可以用大量水冲洗，经稀释的洗水放入废水系统。如大量泄漏，利用围堤收容，然后收 集、转移、回收或无害处理后废弃。</emergency_procedures>
+      <emergency_procedures>疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，切断火源。建议应急处理人员戴好防毒面具，穿一般消防防护服。在确保安全情况下堵漏。喷水雾会减少蒸发，但不能降低泄漏物在受限制空间内的易燃性。用沙土、干燥石灰或苏打灰混合，然后收集运至废物处理场所处置。也可以用大量水冲洗，经稀释的洗水放入废水系统。如大量泄漏，利用围堤收容，然后收集、转移、回收或无害处理后废弃。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
@@ -108,7 +107,7 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：930mg／kg(大鼠经口)；1270mg／kg(兔经皮)LC50：</acute_toxicity>
+      <acute_toxicity>LD50：930mg/kg(大鼠经口)；1270mg/kg(兔经皮)；LC50：无资料</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>EM9275000</rtecs>
       <irritation>高浓度丁烯醇对眼睛、皮肤、粘膜和呼吸道有强烈的刺激作用。中毒表现有烧灼感、咳嗽、喘息、喉炎、气短、头痛、恶心和呕吐。皮肤接触可引起刺激、红肿、疼痛。眼睛接触可引起刺激、流泪、视力模糊。</irritation>
@@ -145,5 +144,12 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.3类高闪点易燃液体，具刺激性，能发生聚合反应，需添加阻聚剂，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference>无资料</reference>
+      <preparation_standard>GB/T 16483-2008</preparation_standard>
+      <revision_notes>无资料</revision_notes>
+      <other_notes>无资料</other_notes>
+    </other_info>
   </msds>
 </msds_list>

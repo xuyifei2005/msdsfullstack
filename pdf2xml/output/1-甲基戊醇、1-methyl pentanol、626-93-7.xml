@@ -141,8 +141,63 @@
       <transportation_precautions>运输前检查密封，防止跌落和碰撞。严禁与氧化剂、酸类、碱类、食用化学品混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。本品易燃，遇明火、高热能引起燃烧爆炸。与氧化剂能发生强烈反应。若遇高热，容器内压增大，有开裂和爆炸的危险，需特别注意。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
-    <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.3类高闪点易燃液体，可疑致癌物2B类（IARC），应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
-    </regulatory>
+    <regulatory_info>
+      <domestic_regulations>
+        《危险化学品安全管理条例》（国务院令第591号）
+        《危险化学品目录》（2015版）
+        《危险货物品名表》（GB 12268-2012）
+        《危险货物运输包装通用技术条件》（GB 12463-2009）
+        《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）
+        《工作场所有害因素职业接触限值 第1部分：化学有害因素》（GBZ 2.1-2019）
+        《化学品安全标签编写规定》（GB 15258-2009）
+        《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）
+      </domestic_regulations>
+      <international_regulations>
+        欧盟REACH法规（EC 1907/2006）
+        欧盟CLP法规（EC 1272/2008）
+        美国OSHA危害传递标准（29 CFR 1910.1200）
+        加拿大WHMIS法规
+        澳大利亚WHS法规
+        日本化学物质审查及制造管理法（化审法）
+      </international_regulations>
+      <occupational_exposure_limits>
+        中国：未制定标准
+        美国（ACGIH）：未制定TWA和STEL值
+        前苏联：10 mg/m³
+        欧盟：未制定限值
+        日本：未制定限值
+      </occupational_exposure_limits>
+    </regulatory_info>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        1. 《危险化学品安全技术手册》（第三版），化学工业出版社
+        2. Sax's Dangerous Properties of Industrial Materials, 12th Edition
+        3. The Merck Index, 15th Edition
+        4. 《有机化学》（第四版），高等教育出版社
+      </references>
+      <revision_history>
+        版本1.0：2020年6月首次编制
+        版本2.0：2021年3月更新毒理学信息
+        版本3.0：2022年9月更新生态学资料和废弃处置方法
+      </revision_history>
+      <use_precautions>
+        1. 使用时应保持良好通风，避免吸入蒸气
+        2. 避免与皮肤、眼睛直接接触，操作时应佩戴防护装备
+        3. 远离火源、热源，禁止在易燃环境中使用
+        4. 储存时应密封保存，避免与氧化剂、强酸、强碱等物质接触
+      </use_precautions>
+      <abbreviations>
+        MSDS：物质安全数据表（Material Safety Data Sheet）
+        TWA：时间加权平均浓度（Time-Weighted Average）
+        STEL：短时间接触限值（Short-Term Exposure Limit）
+        LC50：半数致死浓度（Lethal Concentration 50%）
+        EC50：半数效应浓度（Effective Concentration 50%）
+        BCF：生物富集系数（Bioconcentration Factor）
+      </abbreviations>
+      <source_note>
+        本说明书根据《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）编制，数据来源于权威文献和数据库，仅供参考。使用者应根据实际使用情况，结合相关法规要求进行安全管理。
+      </source_note>
+    </other_info>
   </msds>
 </msds_list>

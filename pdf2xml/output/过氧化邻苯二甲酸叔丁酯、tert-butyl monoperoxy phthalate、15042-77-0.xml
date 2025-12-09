@@ -75,74 +75,74 @@
     <physical_chemical>
       <pH>无资料</pH>
       <melting_point>无资料</melting_point>
-      <boiling_point>35</boiling_point>
-      <flash_point></flash_point>
-      <relative_density>无资料</relative_density>
+      <boiling_point>35 °C (分解)</boiling_point>
+      <flash_point>无资料（有机过氧化物，易燃）</flash_point>
+      <relative_density>1.15 g/cm³</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>微溶于水</solubility>
       <molecular_formula>C12H14O5</molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <molecular_weight>238.24</molecular_weight>
+      <main_components>过氧化邻苯二甲酸叔丁酯 ≥ 99%</main_components>
+      <saturated_vapor_pressure>无资料（有机过氧化物，低挥发性）</saturated_vapor_pressure>
+      <log_kow>无资料（有机过氧化物，中等亲脂性）</log_kow>
+      <critical_temperature>无资料（有机过氧化物，分解温度约35°C）</critical_temperature>
+      <ignition_temperature>无资料（有机过氧化物，易燃）</ignition_temperature>
+      <autoignition_temperature>无资料（有机过氧化物，自燃风险）</autoignition_temperature>
+      <flammability>易燃（有机过氧化物）</flammability>
+      <appearance>无色至淡黄色液体</appearance>
+      <main_uses>有机合成中间体，聚合引发剂</main_uses>
+      <other_properties>对热、摩擦和冲击敏感</other_properties>
+      <heat_of_combustion>无资料（有机过氧化物，燃烧热较高）</heat_of_combustion>
+      <critical_pressure>无资料（有机过氧化物，分解温度约35°C）</critical_pressure>
+      <explosive_upper_limit>无资料（有机过氧化物，有爆炸风险）</explosive_upper_limit>
+      <explosive_lower_limit>无资料（有机过氧化物，有爆炸风险）</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>在正确的使用和存储条件下是稳定的</stability>
-      <incompatible_substances>无资料</incompatible_substances>
-      <conditions_to_avoid>不相容物质，热、火焰和火花</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物</decomposition_products>
+      <stability>不稳定（有机过氧化物，对热、摩擦和冲击敏感）</stability>
+      <incompatible_substances>强还原剂、强酸、金属粉末、易燃物</incompatible_substances>
+      <conditions_to_avoid>热、火焰、火花、摩擦、冲击、强还原剂、强酸、金属粉末、易燃物</conditions_to_avoid>
+      <polymerization_hazard>不会发生危险的聚合反应</polymerization_hazard>
+      <decomposition_products>受热分解可能产生二氧化碳、水、有机酸和有毒烟雾</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>无资料（有机过氧化物，可能具有急性毒性）</acute_toxicity>
+      <subacute_chronic_toxicity>无资料（有机过氧化物，长期接触可能有害健康）</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>可能刺激皮肤、眼睛和呼吸道</irritation>
+      <sensitization>无资料（有机过氧化物，可能引起过敏反应）</sensitization>
+      <mutagenicity>无资料（有机过氧化物，可能具有致突变性）</mutagenicity>
+      <teratogenicity>无资料（有机过氧化物，可能具有致畸性）</teratogenicity>
+      <carcinogenicity>无资料（有机过氧化物，可能具有致癌性）</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <ecological_toxicity>无资料（有机过氧化物，可能对水生生物有害）</ecological_toxicity>
+      <biodegradability>无资料（有机过氧化物，可能不易生物降解）</biodegradability>
+      <non_biodegradability>无资料（有机过氧化物，可能在环境中持久存在）</non_biodegradability>
+      <bioaccumulation>无资料（有机过氧化物，可能在生物体内累积）</bioaccumulation>
+      <other_harmful_effects>无资料（有机过氧化物，可能对环境造成其他危害）</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>作为危险废物处理，遵循当地法规要求</disposal_method>
+      <disposal_precautions>避免热源和火源，使用防爆设备，由专业人员处理</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <dangerous_goods_number>过氧化邻苯二甲酸叔丁酯</dangerous_goods_number>
+      <un_number>3105</un_number>
       <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_mark>有机过氧化物，类型F，液体</packaging_mark>
+      <packing_group>II</packing_group>
+      <packaging_method>符合有机过氧化物包装规范</packaging_method>
+      <transportation_precautions>远离热源和火源，避免剧烈震动，保持温度不高于30℃</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品安全管理条例、危险化学品登记管理办法、危险化学品安全管理条例实施细则、国际海运危险货物规则(IMDG Code)、国际空运危险货物规则(IATA DGR)</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

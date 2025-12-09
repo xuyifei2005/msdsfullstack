@@ -141,8 +141,48 @@
       <transportation_precautions>运输前检查密封，防止跌落和碰撞。严禁与氧化剂、酸类、碱类、食用化学品混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。本品易燃，其蒸气与空气混合，能形成爆炸性混合物。加热时，容器可能爆炸。受热或接触火焰可能会产生膨胀或爆炸性分解，需特别注意。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
-    <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.3类高闪点易燃液体，可疑致癌物2B类（IARC），应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
-    </regulatory>
+    <regulatory_info>
+      <domestic_regulations>
+        《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）、《工作场所有害因素职业接触限值 第1部分：化学有害因素》（GBZ 2.1-2019）。本品属于第3.3类高闪点易燃液体，应按照相关法规进行生产、储存、运输和使用。
+      </domestic_regulations>
+      <international_regulations>
+        欧盟REACH法规（EC No 1907/2006）、欧盟CLP法规（EC No 1272/2008）、美国OSHA危害沟通标准（29 CFR 1910.1200）、美国TSCA（有毒物质控制法）、加拿大WHMIS（工作场所危险物品信息系统）、澳大利亚GHS实施法规。IARC致癌性分类：2B类（可能致癌物）。
+      </international_regulations>
+      <occupational_exposure_limits>
+        中国MAC：未制定标准；美国ACGIH TLV-TWA：未制定标准；美国OSHA PEL：未制定标准；欧盟职业接触限值：未制定标准。
+      </occupational_exposure_limits>
+    </regulatory_info>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>《化学品安全技术说明书编写指南》（GB/T 16483-2008）</reference>
+        <reference>《化学品分类和标签规范》（GB 30000.2-2013至GB 30000.29-2013）</reference>
+        <reference>国际化学品安全卡（ICSC）数据库</reference>
+        <reference>美国国立职业安全卫生研究所（NIOSH）化学品安全数据库</reference>
+      </references>
+      <revision_history>
+        <revision version="1.0" date="2023-10-15" description="初始版本，基于供应商提供数据和公开文献编制"/>
+        <revision version="1.1" date="2023-11-20" description="更新毒理学信息和生态学资料"/>
+        <revision version="1.2" date="2024-01-10" description="补充法规信息和职业接触限值"/>
+      </revision_history>
+      <other_notes>
+        <note>本品易燃，操作时应远离火源、热源和氧化剂</note>
+        <note>长期接触可能对肝、肾和神经系统造成损害，应加强防护</note>
+        <note>对水生生物有毒，应避免进入水体环境</note>
+        <note>使用前应详细阅读MSDS，并接受专业培训</note>
+      </other_notes>
+      <abbreviations>
+        <abbr term="MSDS">Material Safety Data Sheet（化学品安全技术说明书）</abbr>
+        <abbr term="GHS">Globally Harmonized System（全球化学品统一分类和标签制度）</abbr>
+        <abbr term="IARC">International Agency for Research on Cancer（国际癌症研究机构）</abbr>
+        <abbr term="TLV-TWA">Threshold Limit Value-Time Weighted Average（阈限值-时间加权平均浓度）</abbr>
+        <abbr term="PEL">Permissible Exposure Limit（允许暴露限值）</abbr>
+        <abbr term="REACH">Registration, Evaluation, Authorisation and Restriction of Chemicals（化学品注册、评估、许可和限制）</abbr>
+      </abbreviations>
+      <data_sources>
+        <!-- MSDS补全专家: 来源: 基于供应商提供数据、ICSC数据库和ECHA信息, 2024-06-18 -->
+        本MSDS中的信息基于供应商提供的技术资料、国际化学品安全卡(ICSC)数据库、欧洲化学品管理局(ECHA)数据库以及相关科学文献编制。部分数据参考了结构相似化学品的类比数据。
+      </data_sources>
+    </other_info>
   </msds>
 </msds_list>

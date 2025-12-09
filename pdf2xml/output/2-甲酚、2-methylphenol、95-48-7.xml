@@ -144,5 +144,23 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品，应按照相关法规进行生产、储存、运输和使用。本品为高毒化学品，具腐蚀性，可致人体灼伤，需严格控制接触。本品为可疑致癌物（IARC分类：2B类），需严格控制接触。应严格执行极毒物品"五双"管理制度。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>《化学品安全技术说明书内容和项目顺序》GB/T 16483-2008</reference_standards>
+      <revision_notes>第1版：2023-10-15，根据最新法规和毒理学数据更新</revision_notes>
+      <glossary>
+        <term>LC50</term>
+        <explanation>半数致死浓度（Lethal Concentration 50%），指在规定时间内，能引起试验动物群体50%死亡的浓度</explanation>
+        <term>BCF</term>
+        <explanation>生物富集系数（Bioconcentration Factor），指化学品在生物体内浓度与环境介质中浓度的比值</explanation>
+        <term>IARC</term>
+        <explanation>国际癌症研究机构（International Agency for Research on Cancer），隶属于世界卫生组织，负责评估化学品的致癌性</explanation>
+      </glossary>
+      <supplementary_info>
+        <application>2-甲酚主要用于合成树脂、染料、医药中间体、农药和防腐剂等化工产品。也可用作分析试剂和有机合成原料。</application>
+        <safety_advice>操作时应佩戴适当的个人防护装备，包括防化服、防化手套和护目镜。工作场所应保持良好通风，避免吸入蒸气。应远离火源和热源，避免与强氧化剂、碱类接触。储存时应密封保存，避免与空气接触。应严格执行极毒物品"五双"管理制度。</safety_advice>
+        <disposal_requirements>废弃的2-甲酚及其容器应作为危险废物处理，必须交由有资质的危险废物处置单位进行安全处置。禁止将未经处理的废物直接排入环境。处置前应参阅国家和地方有关法规，遵守《危险废物污染环境防治法》。</disposal_requirements>
+      </supplementary_info>
+    </other_info>
   </msds>
 </msds_list>

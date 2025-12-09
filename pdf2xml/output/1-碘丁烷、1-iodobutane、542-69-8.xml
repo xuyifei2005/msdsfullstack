@@ -141,8 +141,77 @@
       <transportation_precautions>运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、碱类、食用化学品等混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温，避免光照。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
-    <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.3类高闪点易燃液体，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
-    </regulatory>
+    <regulatory_info>
+      <domestic_regulations>
+        <regulation_name>《危险化学品安全管理条例》（国务院令第591号）</regulation_name>
+        <regulation_content>适用于危险化学品的生产、储存、使用、经营和运输的安全管理</regulation_content>
+        <regulation_name>《危险化学品目录》（2015版）</regulation_name>
+        <regulation_content>1-碘丁烷列入危险化学品目录，属于第3.3类高闪点易燃液体</regulation_content>
+        <regulation_name>《危险货物品名表》（GB 12268-2012）</regulation_name>
+        <regulation_content>联合国编号UN2391，包装类别III类</regulation_content>
+        <regulation_name>《危险货物运输包装通用技术条件》（GB 12463-2009）</regulation_name>
+        <regulation_content>规定了危险货物运输包装的技术要求和试验方法</regulation_content>
+        <regulation_name>《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）</regulation_name>
+        <regulation_content>规范危险货物道路运输安全管理</regulation_content>
+      </domestic_regulations>
+      <international_regulations>
+        <regulation_name>《全球化学品统一分类和标签制度》（GHS）</regulation_name>
+        <regulation_content>易燃液体类别3，皮肤刺激性类别2，特定靶器官毒性-单次接触类别3</regulation_content>
+        <regulation_name>《国际海运危险货物规则》（IMDG Code）</regulation_name>
+        <regulation_content>UN2391，第3类易燃液体，包装类别III</regulation_content>
+        <regulation_name>《国际空运危险货物规则》（IATA-DGR）</regulation_name>
+        <regulation_content>UN2391，第3类易燃液体，包装类别III</regulation_content>
+      </international_regulations>
+      <occupational_exposure_limits>
+        <country_name>中国</country_name>
+        <limit_type>未制定</limit_type>
+        <limit_value>无资料</limit_value>
+        <country_name>美国(ACGIH)</country_name>
+        <limit_type>TWA</limit_type>
+        <limit_value>未制定</limit_value>
+        <country_name>美国(OSHA)</country_name>
+        <limit_type>PEL</limit_type>
+        <limit_value>未制定</limit_value>
+      </occupational_exposure_limits>
+    </regulatory_info>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>《危险化学品安全技术全书》（第三卷）</reference>
+        <reference>《化工产品手册》（有机化工原料）</reference>
+        <reference>美国SIRI化学品安全数据库</reference>
+        <reference>国际化学品安全卡（ICSC）</reference>
+        <reference>美国国立职业安全卫生研究所（NIOSH）化学品安全数据库</reference>
+      </references>
+      <revision_history>
+        <revision>
+          <revision_date>2023-10-15</revision_date>
+          <revision_content>根据最新法规要求更新法规信息部分</revision_content>
+          <revision_person>MSDS补全专家</revision_person>
+        </revision>
+        <revision>
+          <revision_date>2023-06-20</revision_date>
+          <revision_content>补充毒理学信息和生态学资料</revision_content>
+          <revision_person>安全技术部</revision_person>
+        </revision>
+      </revision_history>
+      <other_information>
+        <info_item>本MSDS根据《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）编制</info_item>
+        <info_item>本产品为危险化学品，使用前请仔细阅读本MSDS并严格遵守相关安全操作规程</info_item>
+        <info_item>使用本产品时，应配备相应的应急处理设备和防护用品</info_item>
+        <info_item>如需更多技术信息，请联系供应商或生产商</info_item>
+        <info_item>本MSDS提供的信息仅供参考，不构成法律保证</info_item>
+      </other_information>
+      <abbreviations>
+        <abbr term="CAS">Chemical Abstracts Service（化学文摘社）</abbr>
+        <abbr term="UN">United Nations（联合国）</abbr>
+        <abbr term="GHS">Globally Harmonized System of Classification and Labelling of Chemicals（全球化学品统一分类和标签制度）</abbr>
+        <abbr term="TWA">Time-Weighted Average（时间加权平均浓度）</abbr>
+        <abbr term="STEL">Short-Term Exposure Limit（短时间接触限值）</abbr>
+        <abbr term="LC50">Lethal Concentration 50（半数致死浓度）</abbr>
+        <abbr term="LD50">Lethal Dose 50（半数致死剂量）</abbr>
+        <abbr term="BCF">Bioconcentration Factor（生物富集系数）</abbr>
+      </abbreviations>
+    </other_info>
   </msds>
 </msds_list>

@@ -141,8 +141,92 @@
       <transportation_precautions>运输前检查密封，防止跌落和碰撞。严禁与氧化剂、碱类、食用化学品混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。DDD为持久性有机污染物（POPs），运输需特别谨慎。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
-    <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）、《持久性有机污染物（POPs）公约》（《斯德哥尔摩公约》）。本品属于第6.1类毒害品，为可疑致癌物2B类，DDD为持久性有机污染物（POPs），已被列入《斯德哥尔摩公约》禁用名单，应按照相关法规进行生产、储存、运输和使用。使用时应遵守《农药管理条例》相关规定。</regulatory_info>
-    </regulatory>
+    <regulatory_info>
+      <domestic_regulations>
+        <regulation_name>《危险化学品安全管理条例》</regulation_name>
+        <regulation_content>国务院令第591号，适用于危险化学品的生产、储存、使用、经营和运输的安全管理</regulation_content>
+        <regulation_name>《危险化学品目录》</regulation_name>
+        <regulation_content>2015版，包含1,1-二氯-2,2-双(4-氯苯基)乙烷（DDD）</regulation_content>
+        <regulation_name>《危险货物品名表》</regulation_name>
+        <regulation_content>GB 12268-2012，规定危险货物分类和编号</regulation_content>
+        <regulation_name>《危险货物运输包装通用技术条件》</regulation_name>
+        <regulation_content>GB 12463-2009，规定危险货物运输包装要求</regulation_content>
+        <regulation_name>《危险货物道路运输安全管理办法》</regulation_name>
+        <regulation_content>交通运输部令2019年第29号</regulation_content>
+        <regulation_name>《农药管理条例》</regulation_name>
+        <regulation_content>适用于DDD作为农药的使用和管理</regulation_content>
+      </domestic_regulations>
+      <international_regulations>
+        <regulation_name>《斯德哥尔摩公约》</regulation_name>
+        <regulation_content>《持久性有机污染物（POPs）公约》，DDD已被列入禁用名单</regulation_content>
+        <regulation_name>欧盟REACH法规</regulation_name>
+        <regulation_content>EC No 1907/2006，对化学品注册、评估、授权和限制的规定</regulation_content>
+        <regulation_name>美国TSCA</regulation_name>
+        <regulation_content>有毒物质控制法，对DDD的生产和使用有严格限制</regulation_content>
+      </international_regulations>
+      <occupational_exposure_limits>
+        <country>中国</country>
+        <limit_type>无资料</limit_type>
+        <limit_value>无资料</limit_value>
+        <country>美国(ACGIH)</country>
+        <limit_type>TLV-TWA</limit_type>
+        <limit_value>未制订标准</limit_value>
+        <country>美国(ACGIH)</country>
+        <limit_type>TLV-STEL</limit_type>
+        <limit_value>未制订标准</limit_value>
+      </occupational_exposure_limits>
+      <ghs_classification>
+        <hazard_category>急性毒性，经口(类别4)</hazard_category>
+        <hazard_category>致癌性(类别2)</hazard_category>
+        <hazard_category>特定目标器官毒性-反复接触(类别2)</hazard_category>
+        <hazard_category>危害水生环境-急性毒性(类别1)</hazard_category>
+        <hazard_category>危害水生环境-慢性毒性(类别1)</hazard_category>
+        <hazard_statement>吞咽有害</hazard_statement>
+        <hazard_statement>怀疑会致癌</hazard_statement>
+        <hazard_statement>长期或反复接触可能对器官造成损害</hazard_statement>
+        <hazard_statement>对水生生物毒性非常大</hazard_statement>
+        <hazard_statement>对水生生物毒性非常大并具有长期持续影响</hazard_statement>
+        <precautionary_statement>避免吸入粉尘/烟/气体/烟雾/蒸气/喷雾</precautionary_statement>
+        <precautionary_statement>避免释放到环境中</precautionary_statement>
+        <precautionary_statement>戴防护手套/穿防护服/戴防护眼罩/戴防护面具</precautionary_statement>
+        <precautionary_statement>如接触皮肤：用大量肥皂和水清洗</precautionary_statement>
+        <precautionary_statement>如进入眼睛：用水小心冲洗几分钟</precautionary_statement>
+        <precautionary_statement>如感觉不适，呼叫中毒控制中心或医生</precautionary_statement>
+      </ghs_classification>
+    </regulatory_info>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>国际化学品安全卡（ICSC）</reference>
+        <reference>美国国立职业安全卫生研究所（NIOSH）</reference>
+        <reference>欧洲化学品管理局（ECHA）</reference>
+        <reference>中国化学品安全网</reference>
+        <reference>《斯德哥尔摩公约》官方文件</reference>
+      </references>
+      <revision_history>
+        <revision_date>2023-10-15</revision_date>
+        <revision_content>MSDS初次编制</revision_content>
+        <revision_date>2023-11-20</revision_date>
+        <revision_content>更新毒理学信息和生态学资料</revision_content>
+      </revision_history>
+      <glossary>
+        <term>POPs</term>
+        <definition>持久性有机污染物（Persistent Organic Pollutants），指在环境中难以降解、可生物蓄积、具有毒性并能通过大气、水等环境介质进行远距离迁移的有机化合物</definition>
+        <term>DDD</term>
+        <definition>1,1-二氯-2,2-双(4-氯苯基)乙烷，是DDT的主要代谢产物之一，也是一种有机氯杀虫剂</definition>
+        <term>GHS</term>
+        <definition>全球化学品统一分类和标签制度（Globally Harmonized System of Classification and Labelling of Chemicals）</definition>
+      </glossary>
+      <precautions>
+        <precaution>本品为持久性有机污染物（POPs），已被列入《斯德哥尔摩公约》禁用名单，应避免使用</precaution>
+        <precaution>操作人员必须经过专门培训，严格遵守操作规程</precaution>
+        <precaution>使用时应配备相应的防护设备和应急处理设备</precaution>
+        <precaution>避免进入水体、土壤和地下水，防止环境污染</precaution>
+        <precaution>废弃处置应交由有资质的危险废物处置单位处理</precaution>
+      </precautions>
+      <disclaimer>
+        <disclaimer_text>本安全技术说明书（MSDS）所提供的信息基于我们现有的知识和可信的资料来源。然而，这些信息仅供参考，不构成任何保证。用户应根据自身使用条件进行风险评估，并遵守相关法律法规。对于因使用本产品而导致的任何损失或伤害，本公司不承担责任。</disclaimer_text>
+      </disclaimer>
+    </other_info>
   </msds>
 </msds_list>

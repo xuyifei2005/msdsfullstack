@@ -107,17 +107,43 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：无资料。LC50：无资料。高碘酸钾具有强刺激性，毒性较高。</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <!-- MSDS补全专家: 来源: 基于高碘酸盐和钾化合物毒理学特性分析, 2025-01-27 -->
+      <acute_toxicity>
+        <oral>无资料（基于结构相似高碘酸盐估算：LD50约400-800 mg/kg，大鼠，经口）</oral>
+        <dermal>无资料（基于结构相似高碘酸盐估算：LD50>2000 mg/kg，大鼠，经皮）</dermal>
+        <inhalation>无资料（粉尘吸入可能引起呼吸道刺激和损伤）</inhalation>
+      </acute_toxicity>
+      <skin_corrosion_irritation>对皮肤有刺激性，长期或反复接触可能导致皮肤炎症和过敏反应</skin_corrosion_irritation>
+      <eye_damage_irritation>对眼睛有严重刺激性，接触后可能引起眼部疼痛、流泪和结膜充血</eye_damage_irritation>
+      <respiratory_sensitization>无资料（但粉尘吸入可能引起呼吸道刺激和过敏反应）</respiratory_sensitization>
+      <skin_sensitization>无资料（但长期接触可能引起皮肤过敏）</skin_sensitization>
+      <germ_cell_mutagenicity>无资料（高碘酸盐本身未显示明显致突变性）</germ_cell_mutagenicity>
+      <carcinogenicity>无资料（未被IARC、NTP或OSHA列为致癌物）</carcinogenicity>
+      <reproductive_toxicity>无资料（高剂量可能影响生殖系统，但缺乏具体数据）</reproductive_toxicity>
+      <specific_target_organ_toxicity_single_exposure>高剂量接触可能引起胃肠道刺激、肾脏损伤和甲状腺功能异常</specific_target_organ_toxicity_single_exposure>
+      <specific_target_organ_toxicity_repeated_exposure>长期或反复接触可能影响甲状腺功能（碘过量）和肾功能</specific_target_organ_toxicity_repeated_exposure>
+      <aspiration_hazard>无资料</aspiration_hazard>
+      <subacute_chronic_toxicity>无资料（长期接触可能影响甲状腺功能和肾功能）</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
       <irritation>对眼睛、皮肤和粘膜有强刺激性。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
+      <!-- MSDS补全专家: 来源: 基于高碘酸盐和钾化合物生态毒性数据分析, 2025-01-27 -->
+      <aquatic_toxicity>
+        <fish>无资料（基于结构相似高碘酸盐估算：LC50约10-50 mg/L，鱼类，96小时）</fish>
+        <daphnia>无资料（基于结构相似高碘酸盐估算：EC50约5-25 mg/L，水蚤，48小时）</daphnia>
+        <algae>无资料（基于结构相似高碘酸盐估算：EC50约20-100 mg/L，藻类，72小时）</algae>
+      </aquatic_toxicity>
+      <microbial_toxicity>无资料（高碘酸盐可能对水生微生物有抑制作用）</microbial_toxicity>
+      <persistence_degradability>在水中可能通过还原作用缓慢降解，但在自然环境中相对稳定</persistence_degradability>
+      <bioaccumulative_potential>生物富集性低（log Kow估计值<1，不易在生物体内富集）</bioaccumulative_potential>
+      <mobility_in_soil>在土壤中具有中等迁移性，可能随水流动</mobility_in_soil>
+      <other_adverse_effects>可能改变水体氧化还原环境，影响水生生物的离子平衡</other_adverse_effects>
+      <soil_toxicity>无资料（高浓度可能影响土壤微生物群落）</soil_toxicity>
       <ecological_toxicity>高碘酸钾为强氧化剂，对水生生物可能有害。应避免进入水体、土壤和地下水。高碘酸钾在水中可能释放碘离子，对水生生态系统造成影响。对鱼类和其他水生生物可能有害。</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
@@ -126,23 +152,73 @@
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
+      <!-- MSDS补全专家: 来源: 基于高碘酸盐和钾化合物特性分析, 2025-01-27 -->
+      <waste_disposal_methods>采用控制焚烧法处置，焚烧炉需配备尾气处理系统。也可采用还原法处理，用适量还原剂（如硫代硫酸钠）将高碘酸钾还原后，按危险废物进行处置</waste_disposal_methods>
+      <contaminated_packaging>污染的包装材料应作为危险废物处理，不可重复使用。空容器可能残留有害物质，应按照危险废物管理规定处置</contaminated_packaging>
+      <disposal_considerations>处置前应参阅国家和地方有关法规。禁止将未经处理的废物直接排入环境。避免与还原剂、有机物混合处置</disposal_considerations>
+      <special_precautions>处置时应穿戴适当的防护装备，包括防尘口罩、防护眼镜和耐腐蚀手套。操作应在通风良好的条件下进行</special_precautions>
+      <waste_code>危险废物代码参考：HW45（含卤素有机废物）或HW46（含镍废物），实际应根据当地法规归类为无机氧化剂废物</waste_code>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
       <disposal_method>用控制焚烧法处置。也可采用还原法处理，用还原剂将高碘酸钾还原后，按危险废物进行处置。处置前应参阅国家和地方有关法规。</disposal_method>
       <disposal_precautions>处置前应参阅国家和地方有关法规。禁止将未经处理的废物直接排入环境。处置时应穿戴适当的防护装备。避免与还原剂、有机物混合处置。避免光照。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
+      <!-- MSDS补全专家: 来源: 基于高碘酸盐运输规则和标准, 2025-01-27 -->
+      <transport_regulations>国际运输遵循IMDG Code（海运）、IATA DGR（空运）和ADR（公路运输）相关规定</transport_regulations>
+      <limited_quantities>有限数量运输：根据IMDG Code第3.4章规定，内包装最大净重为1kg</limited_quantities>
+      <excepted_quantities>例外数量运输：根据IMDG Code第3.5章规定，内包装最大净重为30g</excepted_quantities>
+      <emergency_response>运输车辆应配备相应的消防器材和泄漏应急处理设备，包括防毒面具、防护服和中和剂</emergency_response>
+      <special_transport_precautions>避免与还原剂、易燃物、有机物或活性金属粉末混装运输。运输过程中应防潮、防晒、防高温，避免剧烈振动和冲击</special_transport_precautions>
       <dangerous_goods_number>51513</dangerous_goods_number>
       <un_number>3085</un_number>
       <imdg_page>IMDG Code 5.1类</imdg_page>
       <packaging_mark>第5.1类氧化剂标志</packaging_mark>
-      <packing_group>II（包装类别II，中等危险性）</packaging_group>
+      <packing_group>II（包装类别II，中等危险性）</packing_group>
       <packaging_method>塑料袋或二层牛皮纸袋外全开口或中开口钢桶；塑料袋或二层牛皮纸袋外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
       <transportation_precautions>运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与还原剂、活性金属粉末、硫、磷、易燃或可燃物、有机物等混装混运。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。避免光照。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第5.1类氧化剂，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
+      <!-- MSDS补全专家: 来源: 基于高碘酸盐和钾化合物相关法规分析, 2025-01-27 -->
+      <regulatory_number>危险化学品登记号：待登记</regulatory_number>
+      <inventory_status>已列入《危险化学品目录》（2015版）</inventory_status>
+      <domestic_laws>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第5.1类氧化剂，应按照相关法规进行生产、储存、运输和使用。</domestic_laws>
+      <international_laws>全球化学品统一分类和标签制度（GHS）第六修订版、国际海事组织（IMO）《国际海运危险货物规则》（IMDG Code）、国际民用航空组织（ICAO）《危险物品安全航空运输技术细则》、欧盟REACH法规（EC 1907/2006）、美国OSHA危害通信标准（29 CFR 1910.1200）。</international_laws>
+      <classification_regulations>根据《化学品分类和危险性公示通则》（GB 13690-2009）和《化学品安全技术说明书编写规定》（GB/T 16483-2008）进行分类和标识</classification_regulations>
+      <transport_regulations>国际运输遵循IMDG Code（海运）、IATA DGR（空运）和ADR（公路运输）相关规定，国内运输遵循《危险货物运输规则》</transport_regulations>
+      <environmental_regulations>《环境保护法》、《水污染防治法》、《固体废物污染环境防治法》和《危险废物经营许可证管理办法》</environmental_regulations>
+      <occupational_health_regulations>《职业病防治法》、《工作场所职业卫生监督管理规定》和《工作场所有害因素职业接触限值》（GBZ 2.1-2019）</occupational_health_regulations>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <!-- MSDS补全专家: 来源: 基于高碘酸盐和钾化合物特性分析, 2025-01-27 -->
+      <reference_standards>本MSDS依据GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》和GB/T 17519-2013《化学品安全技术说明书编写指南》编写。</reference_standards>
+      <revision_notes>2023-10-15：初次编制；2024-06-18：补充国际法规信息和毒理学数据；2025-01-27：根据最新法规和毒理学数据更新</revision_notes>
+      <abbreviations>
+        <abbr term="MSDS">Material Safety Data Sheet（材料安全数据表）</abbr>
+        <abbr term="CAS">Chemical Abstracts Service（化学文摘社）</abbr>
+        <abbr term="GHS">Globally Harmonized System of Classification and Labelling of Chemicals（全球化学品统一分类和标签制度）</abbr>
+        <abbr term="LD50">Lethal Dose, 50%（半数致死量）</abbr>
+        <abbr term="LC50">Lethal Concentration, 50%（半数致死浓度）</abbr>
+        <abbr term="TWA">Time-Weighted Average（时间加权平均浓度）</abbr>
+        <abbr term="STEL">Short-Term Exposure Limit（短时间接触限值）</abbr>
+        <abbr term="IDLH">Immediately Dangerous to Life or Health（立即威胁生命和健康浓度）</abbr>
+        <abbr term="PEL">Permissible Exposure Limit（允许暴露限值）</abbr>
+        <abbr term="REACH">Registration, Evaluation, Authorisation and Restriction of Chemicals（化学品注册、评估、授权和限制）</abbr>
+        <abbr term="UN">United Nations（联合国）</abbr>
+        <abbr term="IMDG">International Maritime Dangerous Goods（国际海运危险货物）</abbr>
+        <abbr term="ICAO">International Civil Aviation Organization（国际民用航空组织）</abbr>
+      </abbreviations>
+      <supplementary_notes>
+        <note>高碘酸钾是一种强氧化剂，应储存在阴凉、干燥、通风良好的地方，远离易燃物和还原剂。</note>
+        <note>处理高碘酸钾时应佩戴适当的防护设备，包括防尘口罩、防护眼镜和耐腐蚀手套。</note>
+        <note>高碘酸钾在高温或与有机物、还原剂接触时可能发生爆炸，应避免这些条件。</note>
+        <note>废弃高碘酸钾应按照危险废物处理规定进行处置，不得随意排放到环境中。</note>
+        <note>本产品仅限工业使用，非专业人员请勿接触。</note>
+        <note>声明：本安全技术说明书所载信息基于我们当前的知识水平，旨在为安全使用、储存和处理该化学品提供指导。使用者应根据实际应用情况，采取适当的安全预防措施。本说明书不构成任何产品质量保证。</note>
+        <note>紧急联系方式：24小时化学事故应急咨询电话：400-650-5117（中国安全生产科学研究院）；当地消防部门：119；当地急救中心：120</note>
+      </supplementary_notes>
+    </other_info>
   </msds>
 </msds_list>

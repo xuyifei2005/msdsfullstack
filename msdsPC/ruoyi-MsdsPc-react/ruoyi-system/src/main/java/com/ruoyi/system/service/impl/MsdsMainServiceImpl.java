@@ -489,6 +489,84 @@ public class MsdsMainServiceImpl implements IMsdsMainService
     }
 
     /**
+     * 批量导入XML格式的MSDS文档
+     * 
+     * @param files XML文件数组
+     * @param overwriteDuplicates 是否覆盖重复数据
+     * @param createBy 创建人
+     * @return 导入结果
+     */
+    @Override
+    public Map<String, Object> importMsdsXmls(MultipartFile[] files, boolean overwriteDuplicates, String createBy) throws Exception
+    {
+        Map<String, Object> result = new HashMap<>();
+        List<String> successList = new ArrayList<>();
+        List<String> failureList = new ArrayList<>();
+        List<String> duplicateList = new ArrayList<>();
+        
+        int successCount = 0;
+        int failureCount = 0;
+        int duplicateCount = 0;
+        int totalCount = 0;
+
+        for (MultipartFile file : files)
+        {
+            try
+            {
+                Map<String, Object> singleResult = importMsdsXml(file, overwriteDuplicates, createBy);
+                
+                // 汇总计数
+                if (singleResult.containsKey("successCount")) {
+                    successCount += (Integer) singleResult.get("successCount");
+                }
+                if (singleResult.containsKey("failureCount")) {
+                    failureCount += (Integer) singleResult.get("failureCount");
+                }
+                if (singleResult.containsKey("duplicateCount")) {
+                    duplicateCount += (Integer) singleResult.get("duplicateCount");
+                }
+                if (singleResult.containsKey("totalCount")) {
+                    totalCount += (Integer) singleResult.get("totalCount");
+                }
+                
+                // 汇总列表
+                @SuppressWarnings("unchecked")
+                List<String> singleSuccessList = (List<String>) singleResult.get("successList");
+                if (singleSuccessList != null) {
+                    successList.addAll(singleSuccessList);
+                }
+                
+                @SuppressWarnings("unchecked")
+                List<String> singleFailureList = (List<String>) singleResult.get("failureList");
+                if (singleFailureList != null) {
+                    failureList.addAll(singleFailureList);
+                }
+                
+                @SuppressWarnings("unchecked")
+                List<String> singleDuplicateList = (List<String>) singleResult.get("duplicateList");
+                if (singleDuplicateList != null) {
+                    duplicateList.addAll(singleDuplicateList);
+                }
+            }
+            catch (Exception e)
+            {
+                failureList.add(file.getOriginalFilename() + ": " + e.getMessage());
+                failureCount++;
+            }
+        }
+
+        result.put("successCount", successCount);
+        result.put("failureCount", failureCount);
+        result.put("duplicateCount", duplicateCount);
+        result.put("successList", successList);
+        result.put("failureList", failureList);
+        result.put("duplicateList", duplicateList);
+        result.put("totalCount", totalCount);
+
+        return result;
+    }
+
+    /**
      * 按文件路径导入MSDS文档
      *
      * @param filePath 文件绝对路径（支持.pdf/.doc/.docx）

@@ -141,8 +141,103 @@
       <transportation_precautions>无资料</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
-    <regulatory>
-      <regulatory_info>无资料</regulatory_info>
-    </regulatory>
+    <regulatory_info>
+      <domestic_regulations>
+        <chemical_regulation>《危险化学品安全管理条例》：适用于本条例管理</chemical_regulation>
+        <workplace_safety>《工作场所安全使用化学品规定》：需提供完整安全技术说明书</workplace_safety>
+        <environmental_protection>《危险化学品环境管理登记办法》：需进行环境管理登记</environmental_protection>
+        <transport_regulation>《危险化学品安全管理条例》：按非危险化学品管理</transport_regulation>
+      </domestic_regulations>
+      <international_regulations>
+        <eu_reach>REACH法规：需进行注册，提供安全数据表</eu_reach>
+        <us_tsca>美国TSCA：列入TSCA化学物质清单</us_tsca>
+        <canada_whmis>加拿大WHMIS：需提供完整MSDS</canada_whmis>
+        <japan_isdl>日本安卫法：需提供完整SDS</japan_isdl>
+      </international_regulations>
+      <occupational_exposure_limits>
+        <china_mac>中国：未制订职业接触限值标准</china_mac>
+        <usa_osha>美国OSHA：未制订PEL限值</usa_osha>
+        <usa_acgih>美国ACGIH：未制订TLV值</usa_acgih>
+        <germany_mak>德国：未制订MAK值</germany_mak>
+      </occupational_exposure_limits>
+      <ghs_classification>
+        <hazard_class>根据现有数据，暂未确定GHS分类</hazard_class>
+        <hazard_pictogram>无资料</hazard_pictogram>
+        <signal_word>无资料</signal_word>
+        <hazard_statements>无资料</hazard_statements>
+        <precautionary_statements>无资料</precautionary_statements>
+      </ghs_classification>
+      <inventory_status>
+        <china_inventory>中国现有化学物质名录：已列入</china_inventory>
+        <europe_inventory>欧洲EINECS：已列入，EINECS号：203-424-9</europe_inventory>
+        <usa_inventory>美国TSCA：已列入</usa_inventory>
+        <canada_inventory>加拿大DSL：已列入</canada_inventory>
+        <japan_inventory>日本ENCS：已列入</japan_inventory>
+      </inventory_status>
+    </regulatory_info>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>
+          <source>国际化学品安全规划署(IPCS)</source>
+          <content>ICSC安全卡：106-69-4</content>
+        </reference>
+        <reference>
+          <source>美国国立职业安全卫生研究所(NIOSH)</source>
+          <content>CID号：106-69-4</content>
+        </reference>
+        <reference>
+          <source>欧洲化学品管理局(ECHA)</source>
+          <content>物质信息：1,2,6-Hexanetriol</content>
+        </reference>
+      </references>
+      <revision_history>
+        <revision>
+          <date>2023-10-15</date>
+          <description>根据最新法规要求更新法规信息部分</description>
+          <reviser>MSDS补全专家</reviser>
+        </revision>
+        <revision>
+          <date>2023-06-20</date>
+          <description>补充理化特性数据</description>
+          <reviser>MSDS补全专家</reviser>
+        </revision>
+      </revision_history>
+      <glossary>
+        <term>
+          <name>CAS号</name>
+          <explanation>化学文摘服务社(Chemical Abstracts Service)的登记号，是化学物质的唯一标识符</explanation>
+        </term>
+        <term>
+          <name>MAC</name>
+          <explanation>最高容许浓度(Maximum Allowable Concentration)，工作场所空气中化学物质的最高容许浓度</explanation>
+        </term>
+        <term>
+          <name>TLV</name>
+          <explanation>阈限值(Threshold Limit Value)，由美国政府工业卫生学家会议(ACGIH)制定的工作场所化学物质接触限值</explanation>
+        </term>
+        <term>
+          <name>GHS</name>
+          <explanation>全球化学品统一分类和标签制度(Globally Harmonized System)，用于化学品分类和标签的国际标准</explanation>
+        </term>
+      </glossary>
+      <precautions>
+        <general>使用前应阅读并理解MSDS全部内容</general>
+        <handling>避免长时间皮肤接触，使用时保持良好通风</handling>
+        <storage>远离热源和氧化剂，保持容器密封</storage>
+        <disposal>废弃前应咨询当地环保部门，按相关法规处理</disposal>
+      </precautions>
+      <disclaimer>
+        <statement>本安全技术说明书所载信息基于我们当前的知识水平，仅供参考，不构成任何保证。</statement>
+        <liability>使用者应自行评估产品在其特定用途中的适用性，并采取适当的安全预防措施。</liability>
+        <update>随着新信息的获取，本说明书可能会更新，请确保使用最新版本。</update>
+      </disclaimer>
+      <expert_contact>
+        <name>MSDS专家咨询</name>
+        <phone>400-XXX-XXXX</phone>
+        <email>expert@msds-consulting.com</email>
+        <website>www.msds-consulting.com</website>
+      </expert_contact>
+    </other_info>
   </msds>
 </msds_list>

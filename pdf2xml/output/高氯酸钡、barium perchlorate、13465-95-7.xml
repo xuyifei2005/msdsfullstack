@@ -166,6 +166,42 @@
     <!-- 第十五部分：法规信息 -->
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第5.1类氧化剂和第6.1类毒害品，应按照相关法规进行生产、储存、运输和使用。钡化合物为高毒物质，需特别管理。</regulatory_info>
+      <international_regulations>国际海事组织(IMO)《国际海运危险货物规则》(IMDG Code)、国际民用航空组织(ICAO)《危险物品安全航空运输技术细则》、联合国《关于危险货物运输的建议书》。</international_regulations>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <!-- MSDS补全专家: 来源: 基于高氯酸盐类化合物特性及权威数据库检索, 2025-06-18 -->
+    <other_info>
+      <reference_standards>GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》、GB 13690-2009《化学品分类和危险性公示通则》、《全球化学品统一分类和标签制度》（GHS）</reference_standards>
+      <revision_notes>本版本为初版，基于高氯酸钡的化学特性和相关法规要求编制。高氯酸钡为强氧化剂和高毒物质，使用时需格外谨慎。</revision_notes>
+      <abbreviations_and_terms>
+        <term>MSDS</term>
+        <explanation>Material Safety Data Sheet，化学品安全技术说明书</explanation>
+      </abbreviations_and_terms>
+      <abbreviations_and_terms>
+        <term>CAS</term>
+        <explanation>Chemical Abstracts Service，化学文摘社编号</explanation>
+      </abbreviations_and_terms>
+      <abbreviations_and_terms>
+        <term>LD50</term>
+        <explanation>Lethal Dose 50%，半数致死量</explanation>
+      </abbreviations_and_terms>
+      <abbreviations_and_terms>
+        <term>LC50</term>
+        <explanation>Lethal Concentration 50%，半数致死浓度</explanation>
+      </abbreviations_and_terms>
+      <abbreviations_and_terms>
+        <term>MAC</term>
+        <explanation>Maximum Allowable Concentration，最高容许浓度</explanation>
+      </abbreviations_and_terms>
+      <abbreviations_and_terms>
+        <term>TLV</term>
+        <explanation>Threshold Limit Value，阈限值</explanation>
+      </abbreviations_and_terms>
+      <abbreviations_and_terms>
+        <term>GHS</term>
+        <explanation>Globally Harmonized System，全球化学品统一分类和标签制度</explanation>
+      </abbreviations_and_terms>
+      <additional_info>高氯酸钡为强氧化剂和高毒物质，使用时应严格遵守安全操作规程，避免与还原剂、有机物、易燃物接触。储存时应远离火种、热源，防止受潮。操作人员应接受专业培训，穿戴适当的防护装备。废弃时应按照危险废物处理规定进行处置。</additional_info>
+    </other_info>
   </msds>
 </msds_list>

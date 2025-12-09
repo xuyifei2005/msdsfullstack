@@ -5,29 +5,29 @@
     <basic_info>
       <cas_number>120-36-5</cas_number>
       <msds_code>MSDS#1749</msds_code>
-      <product_name>2-(2</product_name>
-      <product_alias>2-(2，</product_alias>
-      <product_english_name>4-二氯苯氧基)丙酸</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_name>2-(2,4-二氯苯氧基)丙酸</product_name>
+      <product_alias>2-(2,4-Dichlorophenoxy)propionic acid</product_alias>
+      <product_english_name>2-(2,4-Dichlorophenoxy)propionic acid</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards>本品对眼睛、皮肤、粘膜和上呼吸道有刺激作用。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品可燃、具有腐蚀性、刺激性、可致人体灼伤</fire_explosion_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>本品对眼睛、皮肤、粘膜和上呼吸道有刺激作用。长期接触可能引起皮肤过敏和呼吸道刺激。</health_hazards>
+      <environmental_hazards>对水生生物有毒害作用，可能对水环境造成长期不良影响。</environmental_hazards>
+      <fire_explosion_hazards>本品可燃、具有腐蚀性、刺激性、可致人体灼伤。受高热分解，放出有毒的氯化氢烟气。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
       <components>
         <component>
-          <component_name>2-(2，4-二氯苯氧基)丙酸，2，4-滴丙酸</component_name>
+          <component_name>2-(2,4-二氯苯氧基)丙酸，2，4-滴丙酸</component_name>
           <component_content>100%</component_content>
           <cas_number>120-36-5</cas_number>
         </component>
@@ -73,10 +73,10 @@
       <flash_point>无资料</flash_point>
       <relative_density>无资料</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C9H8C</molecular_formula>
+      <solubility>微溶于水，溶于乙醇、乙醚、丙酮</solubility>
+      <molecular_formula>C9H8Cl2O3</molecular_formula>
       <molecular_weight>235.07</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>2-(2,4-二氯苯氧基)丙酸</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
@@ -136,7 +136,14 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》、《危险化学品登记管理办法》、《工作场所安全使用化学品规定》、《常用危险化学品的分类及标志》、《中华人民共和国安全生产法》等。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>无资料</references>
+      <preparation_standard>GB/T 16483-2008</preparation_standard>
+      <revision_notes>无资料</revision_notes>
+      <other_notes>无资料</other_notes>
+    </other_info>
   </msds>
 </msds_list>

@@ -42,10 +42,11 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>遇明火、高热能引起燃烧爆炸。与氧化剂能发生强烈反应。若遇高热，容器内压增大，有 开裂和爆炸的危险。</hazard_characteristics>
-      <fire_risk_classification>乙</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳。 合适的灭火介质:干粉、二氧化碳或耐醇泡沫。 不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安 全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <hazard_characteristics>易燃液体，其蒸气与空气可形成爆炸性混合物，遇明火、高热能引起燃烧爆炸。与氧化剂能发生强烈反应。若遇高热，容器内压增大，有开裂和爆炸的危险。流速过快容易产生和积聚静电。</hazard_characteristics>
+      <fire_risk_classification>乙类（高闪点易燃液体）</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳。</harmful_combustion_products>
+      <suitable_extinguishing_media>干粉、二氧化碳或耐醇泡沫。</suitable_extinguishing_media>
+      <firefighting_precautions>消防人员必须佩戴空气呼吸器，穿全身防火防毒服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。处在火场中的容器若已变色或从安全泄压装置中产生声音，必须马上撤离。避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。防止消防水污染地表和地下水系统。</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>

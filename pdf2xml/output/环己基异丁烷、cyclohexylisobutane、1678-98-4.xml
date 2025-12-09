@@ -8,20 +8,20 @@
       <product_name>环己基异丁烷</product_name>
       <product_alias>异丁基环己烷</product_alias>
       <product_english_name>cyclohexylisobutane</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>易燃液体，类别3。</hazard_category>
       <exposure_routes>吸入、食入、皮肤接触、眼睛接触
 吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <health_hazards>吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入本品可能对胃肠道造成刺激，引起恶心、呕吐和腹泻。皮肤接触可能导致刺激和皮炎。眼睛接触可能导致严重刺激和损伤。</health_hazards>
+      <environmental_hazards>该物质对水生生物可能有害并可能导致长期不良影响。</environmental_hazards>
       <fire_explosion_hazards>易燃液体，其蒸气与空气混合，能形成爆炸性混合物。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -37,16 +37,16 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>脱去污染的衣着，立即用大量流动清水彻底冲洗至少15分钟，就医。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗至少15分钟。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人工</eye_contact>
-      <inhalation>呼吸。就医。</inhalation>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗至少15分钟。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
       <ingestion>误服者立即嗽口，给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>容器可能爆炸。暴露于火中的容器可能会通过压力安全阀泄漏出内容物。受热或接触火焰 可能会产生膨胀或爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>无资料 合适的灭火介质:干粉、二氧化碳或耐醇泡沫。不合适的灭火介质:避免用太强烈的水汽灭</harmful_combustion_products>
-      <suitable_extinguishing_media>火，因为它可能会使火苗蔓延分散。</suitable_extinguishing_media>
+      <fire_risk_classification>易燃液体，类别3</fire_risk_classification>
+      <harmful_combustion_products>燃烧可能产生一氧化碳、二氧化碳等有害气体</harmful_combustion_products>
+      <suitable_extinguishing_media>合适的灭火介质:干粉、二氧化碳或耐醇泡沫。不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
@@ -64,9 +64,9 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>使用局部排风装置或全面通风系统控制空气中的浓度。</engineering_controls>
+      <respiratory_protection>当空气中浓度超过职业接触限值时，应佩戴适当的呼吸防护器，如过滤式防毒面具。</respiratory_protection>
       <eye_protection>佩戴化学护目镜（符合欧盟EN166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
       <hand_protection></hand_protection>
@@ -90,8 +90,8 @@
       <ignition_temperature>274</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
       <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <appearance>无色液体</appearance>
+      <main_uses>用作有机合成中间体，溶剂，以及用于特殊化学品的生产</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>

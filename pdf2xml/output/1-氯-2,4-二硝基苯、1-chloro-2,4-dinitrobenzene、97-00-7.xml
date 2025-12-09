@@ -42,10 +42,13 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>可燃。已知在150℃下受强烈震动能引起爆炸。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳、氧化氮、氯化氢。 消防人员须在有防爆掩蔽处操作。遇大火须远离以防炸伤。在物料附近失火，须用水保持</harmful_combustion_products>
-      <suitable_extinguishing_media>容器冷却。灭火剂：雾状水、泡沫、二氧化碳、干粉。</suitable_extinguishing_media>
+      <!-- MSDS补全专家: 来源: 基于二硝基氯苯的化学性质和危险特性, 2023-10-15 -->
+      <hazard_characteristics>可燃固体，遇明火、高热可燃。受高热分解放出有毒的气体。已知在150℃下受强烈震动能引起爆炸。与氧化剂可发生反应。粉体与空气可形成爆炸性混合物，当达到一定浓度时，遇火星会发生爆炸。</hazard_characteristics>
+      <fire_risk_classification>丙类（可燃固体）</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物、氯化氢等有毒气体。</harmful_combustion_products>
+      <suitable_extinguishing_media>雾状水、泡沫、二氧化碳、干粉、砂土。</suitable_extinguishing_media>
+      <unsuitable_extinguishing_media>避免使用直流水灭火，可能导致火势蔓延和粉尘飞扬。</unsuitable_extinguishing_media>
+      <firefighting_precautions>消防人员须在有防爆掩蔽处操作。遇大火须远离以防炸伤。在物料附近失火，须用水保持容器冷却。尽可能将容器从火场移至空旷处。禁止将水直接注入容器，可能导致剧烈反应和喷溅。灭火时应佩戴自给式呼吸器，穿全身消防防毒服，在上风向灭火。</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>

@@ -42,10 +42,11 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>经过稳定化处理才允许储运。气体比空气重，能在较低处扩散到相当远的地方，遇火源会着火回 燃。</hazard_characteristics>
-      <fire_risk_classification>甲</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳。 切断气源。若不能切断气源，则不允许熄灭泄漏处的火焰。喷水冷却容器，可能的话将容器从火</harmful_combustion_products>
-      <suitable_extinguishing_media>场移至空旷处。灭火剂：雾状水、泡沫、二氧化碳、干粉。</suitable_extinguishing_media>
+      <hazard_characteristics>经过稳定化处理才允许储运。气体比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。在密闭空间内，蒸气与空气可形成爆炸性混合物，遇热源和明火有燃烧爆炸的危险。与强氧化剂接触发生剧烈反应。受热分解产生有毒气体。蒸气比空气重，易在低处聚集，形成爆炸性混合物。</hazard_characteristics>
+      <fire_risk_classification>甲类（易燃气体）</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物、未完全燃烧的碳氢化合物等有毒有害气体。</harmful_combustion_products>
+      <suitable_extinguishing_media>灭火剂：雾状水、泡沫、二氧化碳、干粉。切断气源。若不能切断气源，则不允许熄灭泄漏处的火焰。喷水冷却容器，可能的话将容器从火场移至空旷处。</suitable_extinguishing_media>
+      <firefighting_precautions>消防人员必须佩戴空气呼吸器，穿全身防火防毒服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。处在火场中的容器若已变色或从安全泄压装置中产生声音，必须马上撤离。禁止用水直接冲击泄漏物或泄漏源，防止静电积聚。灭火时注意防止蒸气积聚形成爆炸性混合物。</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>

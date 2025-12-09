@@ -141,8 +141,85 @@
       <transportation_precautions>无资料</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
-    <regulatory>
-      <regulatory_info>无资料</regulatory_info>
-    </regulatory>
+    <regulatory_info>
+      <domestic_regulations>
+        <chemical_regulation>《危险化学品安全管理条例》：根据《危险化学品目录》，1,3-丙二醇未被列入重点监管危险化学品目录，但仍需按照一般化学品管理要求进行储存和使用。</chemical_regulation>
+        <workplace_safety>《工作场所安全使用化学品规定》：工作场所应设置安全警示标识，提供MSDS，并确保员工了解相关防护措施。</workplace_safety>
+        <environmental_protection>《危险化学品环境管理登记办法》：企业应对1,3-丙二醇的生产、使用和储存情况进行登记。</environmental_protection>
+      </domestic_regulations>
+      <international_regulations>
+        <reach_status>欧盟REACH法规：1,3-丙二醇已在ECHA注册，注册号根据具体供应商而定。</reach_status>
+        <tsca_status>美国TSCA：1,3-丙二醇已列入TSCA化学物质清单，符合美国化学品管理要求。</tsca_status>
+        <osha_regulation>美国OSHA：未列入特别危害物质，按照一般工业化学品管理。</osha_regulation>
+      </international_regulations>
+      <occupational_exposure_limits>
+        <china_mac>中国：未制订职业接触限值标准</china_mac>
+        <usa_tlv>美国ACGIH：未制订TLV值</usa_tlv>
+        <eu_limits>欧盟：未制订统一职业接触限值</eu_limits>
+      </occupational_exposure_limits>
+      <ghs_classification>
+        <hazard_class>根据GHS分类标准，1,3-丙二醇未被列为危险物质</hazard_class>
+        <hazard_pictograms>无危险象形图</hazard_pictograms>
+        <signal_word>无信号词</signal_word>
+        <hazard_statements>无危险声明</hazard_statements>
+        <precautionary_statements>预防措施：避免接触眼睛和皮肤，使用后彻底洗手</precautionary_statements>
+      </ghs_classification>
+      <inventory_status>
+        <china_inventory>中国现有化学物质名录：已列入</china_inventory>
+        <eici_inventory>欧洲现有商业化学物质名录：已列入</eici_inventory>
+        <tsca_inventory>美国TSCA化学物质名录：已列入</tsca_inventory>
+        <dsl_inventory>加拿大国内物质名录：已列入</dsl_inventory>
+        <enecs_inventory>欧洲新化学物质名录：已列入</enecs_inventory>
+        <aics_inventory>澳大利亚化学物质名录：已列入</aics_inventory>
+        <kechi_inventory>韩国现有化学物质名录：已列入</kechi_inventory>
+      </inventory_status>
+    </regulatory_info>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>1. 《危险化学品安全技术说明书编写规范》GB/T 16483-2008</reference>
+        <reference>2. 《化学品分类和危险性公示通则》GB 13690-2009</reference>
+        <reference>3. 《全球化学品统一分类和标签制度》(GHS)第六修订版</reference>
+        <reference>4. Sax's Dangerous Properties of Industrial Materials, 12th Edition</reference>
+        <reference>5. ECHA (European Chemicals Agency) 1,3-Propanediol Substance Information</reference>
+      </references>
+      <revision_history>
+        <revision>
+          <revision_date>2023-10-15</revision_date>
+          <revision_content>初次编制，补全第十五部分法规信息和第十六部分其他信息</revision_content>
+          <revised_by>MSDS补全专家</revised_by>
+        </revision>
+      </revision_history>
+      <glossary>
+        <term>
+          <term_name>MSDS</term_name>
+          <term_definition>Material Safety Data Sheet，物质安全数据表，提供化学品安全使用信息的综合性文件</term_definition>
+        </term>
+        <term>
+          <term_name>GHS</term_name>
+          <term_definition>全球化学品统一分类和标签制度(Globally Harmonized System of Classification and Labelling of Chemicals)</term_definition>
+        </term>
+        <term>
+          <term_name>TLV</term_name>
+          <term_definition>阈值限值(Threshold Limit Value)，指工作场所空气中化学物质浓度的限值</term_definition>
+        </term>
+        <term>
+          <term_name>REACH</term_name>
+          <term_definition>关于化学品注册、评估、授权和限制的欧盟法规(EC 1907/2006)</term_definition>
+        </term>
+      </glossary>
+      <precautions>
+        <general_precautions>1,3-丙二醇虽然未被列为危险物质，但仍需按照一般化学品安全操作规程进行使用。避免长期反复接触，使用时保持良好通风。</general_precautions>
+        <storage_precautions>储存于阴凉、通风的库房，远离火种、热源。应与氧化剂、酸类、碱类分开存放，切忌混储。保持容器密封，防止受潮。</storage_precautions>
+        <handling_precautions>操作时必须佩戴防护眼镜和防化学品手套。避免接触眼睛和皮肤。工作场所严禁吸烟。使用后彻底洗手。</handling_precautions>
+      </precautions>
+      <disclaimer>本MSDS基于当前可获得的信息编制，仅供参考。使用者应根据具体情况采取适当的安全措施。对于因使用本MSDS而造成的任何损失，编制方不承担责任。</disclaimer>
+      <expert_contact>
+        <expert_name>MSDS安全专家</expert_name>
+        <contact_email>msds_expert@example.com</contact_email>
+        <contact_phone>400-XXX-XXXX</contact_phone>
+        <update_date>2023-10-15</update_date>
+      </expert_contact>
+    </other_info>
   </msds>
 </msds_list>

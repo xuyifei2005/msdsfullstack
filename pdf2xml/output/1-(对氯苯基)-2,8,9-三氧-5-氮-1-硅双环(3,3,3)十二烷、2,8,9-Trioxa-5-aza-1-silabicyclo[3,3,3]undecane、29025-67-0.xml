@@ -42,10 +42,12 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>无资料 合适的灭火介质:干粉、二氧化碳或耐醇泡沫。 不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安 全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <!-- MSDS补全专家: 来源: 基于有机硅化合物特性及毒鼠硅安全数据, 2025-12-05 -->
+      <hazard_characteristics>本品本身不燃，但受热至分解温度时可能发生爆炸性分解，产生剧毒气体。火场高温下可能释放有毒气体，加剧火场危险。作为有机硅化合物，在特定条件下可能产生硅烷类易燃气体。</hazard_characteristics>
+      <fire_risk_classification>戊类（不燃固体）</fire_risk_classification>
+      <harmful_combustion_products>受热分解产生一氧化碳、二氧化碳、氯化氢、氮氧化物、硅氧化物等有毒气体。分解产物可能形成腐蚀性烟雾。</harmful_combustion_products>
+      <suitable_extinguishing_media>使用适合火灾类型的合适的灭火剂：干粉、二氧化碳、耐醇泡沫。禁止使用强水流直接喷射，可能导致火势蔓延和有害物质扩散。</suitable_extinguishing_media>
+      <firefighting_precautions>消防人员必须佩戴自给式呼吸器（符合MSHA/NIOSH要求的或相当的）并穿戴全身防化服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。若泄漏物未着火，应使用雾状水冷却容器，避免直接接触。灭火后应彻底清理现场，防止残留物造成二次危害。</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>

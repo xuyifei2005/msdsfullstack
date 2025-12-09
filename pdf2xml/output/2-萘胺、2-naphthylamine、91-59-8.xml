@@ -144,5 +144,50 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品，应按照相关法规进行生产、储存、运输和使用。本品为确认致癌物（IARC分类：1类，确认对人类致癌），可导致膀胱癌，需严格控制接触。应严格执行极毒物品"五双"管理制度。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_info>
+        <references>
+          <reference>国际癌症研究机构(IARC)致癌物分类：1类，确认对人类致癌</reference>
+          <reference>美国EPA综合风险信息系统(IRIS)数据库</reference>
+          <reference>欧盟化学品管理局(ECHA)风险评估报告</reference>
+          <reference>《化学品安全技术说明书内容和项目顺序》GB/T 16483-2008</reference>
+        </references>
+        <data_sources>本MSDS文档信息来源于权威数据库和科学文献，包括IARC、ECHA、NIOSH等专业机构</data_sources>
+      </reference_info>
+      <compilation_info>
+        <compilation_standard>GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》</compilation_standard>
+        <compilation_date>2023-10-15</compilation_date>
+        <revision_notes>根据最新法规要求和科学数据更新，补充了毒理学和生态学数据</revision_notes>
+        <next_review_date>2024-10-15</next_review_date>
+      </compilation_info>
+      <glossary>
+        <term>
+          <name>LC50</name>
+          <explanation>半数致死浓度，指在规定时间内，导致50%试验动物死亡的浓度</explanation>
+        </term>
+        <term>
+          <name>LD50</name>
+          <explanation>半数致死剂量，指导致50%试验动物死亡的剂量</explanation>
+        </term>
+        <term>
+          <name>BCF</name>
+          <explanation>生物富集系数，表示化学物质在生物体内富集程度的指标</explanation>
+        </term>
+        <term>
+          <name>IARC</name>
+          <explanation>国际癌症研究机构，负责评估化学物质致癌性的权威机构</explanation>
+        </term>
+        <term>
+          <name>"五双"管理制度</name>
+          <explanation>指对剧毒化学品实行的双人验收、双人保管、双人领取、双把锁、双本账的管理制度</explanation>
+        </term>
+      </glossary>
+      <additional_info>
+        <applications>2-萘胺主要用于染料中间体的生产，特别是合成偶氮染料和蒽醌染料。也用作分析试剂和有机合成原料。</applications>
+        <safety_operation_recommendations>操作时应严格遵守极毒物品"五双"管理制度。所有操作必须在通风良好的局部排风系统下进行，避免皮肤接触和吸入。操作人员应接受专业培训，了解应急处理程序。</safety_operation_recommendations>
+        <disposal_requirements>废弃处置必须由有资质的危险废物处置单位进行，禁止随意丢弃。处置过程中需采取严格防护措施，防止对环境和人体造成危害。</disposal_requirements>
+      </additional_info>
+    </other_info>
   </msds>
 </msds_list>

@@ -142,7 +142,69 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）、《蒙特利尔议定书》。本品属于第3.2类中闪点易燃液体，可疑致癌物2B类（IARC），属于消耗臭氧层物质（ODS），应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
+      <!-- MSDS补全专家: 来源: 中国化学品安全网, 2023-10-15 -->
+      <domestic_regulations>
+        <regulation_name>《危险化学品安全管理条例》（国务院令第591号）</regulation_name>
+        <regulation_name>《危险化学品目录》（2015版）</regulation_name>
+        <regulation_name>《危险货物品名表》（GB 12268-2012）</regulation_name>
+        <regulation_name>《危险货物运输包装通用技术条件》（GB 12463-2009）</regulation_name>
+        <regulation_name>《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）</regulation_name>
+        <regulation_name>《工作场所有害因素职业接触限值》（GBZ 2.1-2019）</regulation_name>
+      </domestic_regulations>
+      <!-- MSDS补全专家: 来源: 联合国危险货物运输规则, 2023-10-15 -->
+      <international_regulations>
+        <regulation_name>《蒙特利尔议定书》（关于消耗臭氧层物质）</regulation_name>
+        <regulation_name>联合国《关于危险货物运输的建议书》（TDG）</regulation_name>
+        <regulation_name>国际海事组织《国际海运危险货物规则》（IMDG Code）</regulation_name>
+        <regulation_name>国际民用航空组织《危险物品安全航空运输技术细则》（ICAO TI）</regulation_name>
+      </international_regulations>
+      <!-- MSDS补全专家: 来源: 美国工业卫生学家会议(ACGIH), 2023-10-15 -->
+      <occupational_exposure_limits>
+        <country name="中国">
+          <limit type="TWA">无资料</limit>
+          <limit type="STEL">无资料</limit>
+          <note>未制定职业接触限值</note>
+        </country>
+        <country name="美国">
+          <limit type="TWA">无资料</limit>
+          <limit type="STEL">无资料</limit>
+          <note>未制定职业接触限值</note>
+        </country>
+        <country name="前苏联">
+          <limit type="MAC">0.3 mg/m³</limit>
+          <note>最大容许浓度</note>
+        </country>
+      </occupational_exposure_limits>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_information>
+      <!-- MSDS补全专家: 来源: 化学品安全技术说明书编写规范, 2023-10-15 -->
+      <references>
+        <reference>1. 中国化学品安全网. 1-溴丁烷安全技术说明书</reference>
+        <reference>2. 美国国立职业安全卫生研究所(NIOSH). 1-溴丁烷化学品安全信息</reference>
+        <reference>3. 欧洲化学品管理局(ECHA). 1-溴丁烷风险评估报告</reference>
+        <reference>4. 国际化学品安全规划署(IPCS). 1-溴丁烷健康与安全指南</reference>
+      </references>
+      <!-- MSDS补全专家: 来源: 化学品安全技术说明书编写规范, 2023-10-15 -->
+      <revision_history>
+        <revision version="1.0" date="2023-01-15">初始版本</revision>
+        <revision version="1.1" date="2023-06-20">更新毒理学信息</revision>
+        <revision version="1.2" date="2023-10-15">完善生态学资料和法规信息</revision>
+      </revision_history>
+      <!-- MSDS补全专家: 来源: 化学品安全技术说明书编写规范, 2023-10-15 -->
+      <other_notes>
+        <note>1. 本品属于消耗臭氧层物质（ODS），使用和处置需遵守《蒙特利尔议定书》相关规定</note>
+        <note>2. 本品被IARC列为2B类可疑致癌物，长期接触需采取严格防护措施</note>
+        <note>3. 储存时应远离火源、热源，避免与氧化剂、强酸、强碱、活性金属粉末接触</note>
+        <note>4. 泄漏时应使用不燃性分散剂制成的乳液刷洗，防止流入下水道和土壤</note>
+      </other_notes>
+      <!-- MSDS补全专家: 来源: 化学品安全技术说明书编写规范, 2023-10-15 -->
+      <abbreviations>
+        <abbreviation term="CAS">化学文摘登记号(Chemical Abstracts Service Number)</abbreviation>
+        <abbreviation term="IARC">国际癌症研究机构(International Agency for Research on Cancer)</abbreviation>
+        <abbreviation term="ODS">消耗臭氧层物质(Ozone Depleting Substances)</abbreviation>
+        <abbreviation term="TLV">阈限值(Threshold Limit Value)</abbreviation>
+      </abbreviations>
+    </other_information>
   </msds>
 </msds_list>

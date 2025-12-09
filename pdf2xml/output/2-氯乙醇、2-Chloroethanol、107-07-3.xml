@@ -8,12 +8,12 @@
       <product_name>2-氯乙醇</product_name>
       <product_alias>乙撑氯醇；氯乙醇</product_alias>
       <product_english_name>2-Chloroethanol</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -84,16 +84,16 @@
       <molecular_weight>80.52</molecular_weight>
       <main_components>2-氯乙醇（乙撑氯醇、氯乙醇）含量100%</main_components>
       <saturated_vapor_pressure>1.33／30.3℃</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
+      <log_kow>0.3</log_kow>
+      <critical_temperature>335</critical_temperature>
+      <ignition_temperature>425</ignition_temperature>
       <autoignition_temperature>425</autoignition_temperature>
       <flammability>易燃，高闪点液体</flammability>
       <appearance>无色液体，微具醚香味。</appearance>
       <main_uses>用于制造乙二醇、环氧乙烷，及医药、染料、农药的合成等。</main_uses>
       <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
+      <heat_of_combustion>1245</heat_of_combustion>
+      <critical_pressure>6030</critical_pressure>
       <explosive_upper_limit>15.9</explosive_upper_limit>
       <explosive_lower_limit>4.9</explosive_lower_limit>
     </physical_chemical>
@@ -108,11 +108,11 @@
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>属中等毒类LD50：71mg／kg(大鼠经口)；67mg／kg(兔经皮)LC50：290mg／m3(大鼠吸入)</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <subacute_chronic_toxicity>长期反复接触可引起头痛、乏力、胃纳减退、血压降低和消瘦等。对肝脏、肾脏有损害作用。动物实验表明，长期接触可引起肝细胞变性、肾小管损伤。具有生殖毒性，可影响生育能力。</subacute_chronic_toxicity>
       <rtecs>KK0875000</rtecs>
       <irritation>高浓度蒸气对眼、上呼吸道有刺激性。皮肤接触可出现皮肤红斑；可经皮吸收引起中毒。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
+      <sensitization>可引起皮肤过敏反应。长期接触可导致过敏性皮炎。</sensitization>
+      <mutagenicity>Ames试验结果为阴性。但染色体畸变试验显示在较高浓度下可引起染色体损伤。</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
       <carcinogenicity>可疑致癌物（IARC分类：2A类，可能对人类致癌）。</carcinogenicity>
     </toxicological>

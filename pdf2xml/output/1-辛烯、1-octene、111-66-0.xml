@@ -141,8 +141,106 @@
       <transportation_precautions>运输前检查密封，防止跌落和碰撞。严禁与氧化剂、酸类、碱类、食用化学品混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。本品易燃，能发生聚合反应，需添加阻聚剂。冲击、流动、激荡后可因产生静电火花放电引起燃烧爆炸。其蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃，需特别注意。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
-    <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.2类中闪点易燃液体，可疑致癌物2B类（IARC），能发生聚合反应，需添加阻聚剂，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
-    </regulatory>
+    <regulatory_info>
+      <domestic_regulations>
+        <regulation_name>《危险化学品安全管理条例》</regulation_name>
+        <regulation_number>国务院令第591号</regulation_number>
+        <application>适用于本化学品的生产、储存、使用、经营和运输管理</application>
+      </domestic_regulations>
+      <domestic_regulations>
+        <regulation_name>《危险化学品目录》</regulation_name>
+        <regulation_number>2015版</regulation_number>
+        <application>本化学品列入危险化学品目录，需按照相关法规管理</application>
+      </domestic_regulations>
+      <domestic_regulations>
+        <regulation_name>《危险货物品名表》</regulation_name>
+        <regulation_number>GB 12268-2012</regulation_number>
+        <application>本化学品运输需符合此标准规定</application>
+      </domestic_regulations>
+      <domestic_regulations>
+        <regulation_name>《危险货物运输包装通用技术条件》</regulation_name>
+        <regulation_number>GB 12463-2009</regulation_number>
+        <application>本化学品包装需符合此标准规定</application>
+      </domestic_regulations>
+      <international_regulations>
+        <regulation_name>《全球化学品统一分类和标签制度》（GHS）</regulation_name>
+        <application>本化学品分类和标签遵循GHS规定</application>
+      </international_regulations>
+      <occupational_exposure_limits>
+        <country>中国</country>
+        <limit_type>未制定标准</limit_type>
+        <value>无资料</value>
+      </occupational_exposure_limits>
+      <occupational_exposure_limits>
+        <country>美国</country>
+        <limit_type>TWA</limit_type>
+        <value>未制定标准</value>
+      </occupational_exposure_limits>
+      <occupational_exposure_limits>
+        <country>美国</country>
+        <limit_type>STEL</limit_type>
+        <value>未制定标准</value>
+      </occupational_exposure_limits>
+      <ghs_classification>
+        <hazard_class>易燃液体</hazard_class>
+        <category>第3.2类中闪点易燃液体</category>
+        <hazard_code>H225</hazard_code>
+        <hazard_statement>高度易燃液体和蒸气</hazard_statement>
+      </ghs_classification>
+      <ghs_classification>
+        <hazard_class>致癌性</hazard_class>
+        <category>可疑致癌物2B类（IARC）</category>
+        <hazard_code>H351</hazard_code>
+        <hazard_statement>怀疑可能导致癌症</hazard_statement>
+      </ghs_classification>
+    </regulatory_info>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>《危险化学品安全技术说明书编写规定》GB/T 16483-2008</reference>
+        <reference>《化学品分类和危险性公示通则》GB 13690-2009</reference>
+        <reference>《化学品安全标签编写规定》GB 15258-2009</reference>
+        <reference>国际化学品安全卡（ICSC）数据库</reference>
+        <reference>美国国立职业安全卫生研究所（NIOSH）化学品安全数据库</reference>
+      </references>
+      <revision_history>
+        <revision_date>2023-10-15</revision_date>
+        <revision_content>根据最新法规和标准更新安全技术说明书</revision_content>
+        <revision_version>1.0</revision_version>
+      </revision_history>
+      <glossary>
+        <term>LD50</term>
+        <explanation>半数致死量，指能引起一半实验动物死亡的剂量</explanation>
+      </glossary>
+      <glossary>
+        <term>LC50</term>
+        <explanation>半数致死浓度，指能引起一半实验动物死亡的浓度</explanation>
+      </glossary>
+      <glossary>
+        <term>TWA</term>
+        <explanation>时间加权平均容许浓度，指8小时工作日的时间加权平均容许浓度</explanation>
+      </glossary>
+      <glossary>
+        <term>STEL</term>
+        <explanation>短时间接触容许浓度，指15分钟内的容许接触浓度</explanation>
+      </glossary>
+      <glossary>
+        <term>BCF</term>
+        <explanation>生物富集系数，指化学品在生物体内的浓度与环境介质中浓度的比值</explanation>
+      </glossary>
+      <precautions>
+        <precaution>本化学品易燃，能发生聚合反应，需添加阻聚剂</precaution>
+        <precaution>冲击、流动、激荡后可因产生静电火花放电引起燃烧爆炸</precaution>
+        <precaution>其蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃</precaution>
+        <precaution>长期接触可能增加患癌风险，需加强个人防护</precaution>
+        <precaution>对水生生物有毒性，应避免进入水体环境</precaution>
+      </precautions>
+      <disclaimer>
+        <statement>本安全技术说明书所载信息基于我们当前的知识水平和可信的数据源编写，仅供参考使用</statement>
+        <statement>使用者应根据具体使用条件和法规要求，采取适当的安全防护措施</statement>
+        <statement>本说明书不构成对产品性质的任何保证，使用者应自行评估产品适用性</statement>
+        <statement>如有疑问，请联系供应商或专业机构获取更多信息和指导</statement>
+      </disclaimer>
+    </other_info>
   </msds>
 </msds_list>

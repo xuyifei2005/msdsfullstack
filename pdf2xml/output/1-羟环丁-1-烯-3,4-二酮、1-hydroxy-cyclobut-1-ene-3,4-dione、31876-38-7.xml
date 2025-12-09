@@ -141,8 +141,75 @@
       <transportation_precautions>运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、还原剂、碱类、食用化学品等混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
-    <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
-    </regulatory>
+    <regulatory_info>
+      <domestic_regulations>
+        <regulation_name>《危险化学品安全管理条例》（国务院令第591号）</regulation_name>
+        <regulation_content>适用于危险化学品的生产、储存、使用、经营和运输的安全管理</regulation_content>
+        <regulation_name>《危险化学品目录》（2015版）</regulation_name>
+        <regulation_content>列入危险化学品目录，需按照相关规定管理</regulation_content>
+        <regulation_name>《危险货物品名表》（GB 12268-2012）</regulation_name>
+        <regulation_content>按第6.1类毒害品进行管理</regulation_content>
+        <regulation_name>《危险货物运输包装通用技术条件》（GB 12463-2009）</regulation_name>
+        <regulation_content>规定了危险货物运输包装的技术要求</regulation_content>
+        <regulation_name>《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）</regulation_name>
+        <regulation_content>规范危险货物道路运输安全管理</regulation_content>
+      </domestic_regulations>
+      <international_regulations>
+        <regulation_name>《全球化学品统一分类和标签制度》（GHS）</regulation_name>
+        <regulation_content>按照GHS进行分类、标签和包装</regulation_content>
+        <regulation_name>《国际海运危险货物规则》（IMDG Code）</regulation_name>
+        <regulation_content>国际海运危险货物运输规范</regulation_content>
+        <regulation_name>《国际空运危险货物规则》（IATA DGR）</regulation_name>
+        <regulation_content>国际空运危险货物运输规范</regulation_content>
+      </international_regulations>
+      <occupational_exposure_limits>
+        <country>中国</country>
+        <limit_type>未制定</limit_type>
+        <limit_value>无资料</limit_value>
+        <country>美国(ACGIH)</country>
+        <limit_type>TLV-TWA</limit_type>
+        <limit_value>未制定</limit_value>
+        <country>美国(OSHA)</country>
+        <limit_type>PEL-TWA</limit_type>
+        <limit_value>未制定</limit_value>
+      </occupational_exposure_limits>
+    </regulatory_info>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>国际化学品安全卡（ICSC）</reference>
+        <reference>美国国立职业安全卫生研究所（NIOSH）</reference>
+        <reference>欧洲化学品管理局（ECHA）</reference>
+        <reference>中国化学品安全网</reference>
+      </references>
+      <revision_history>
+        <version>A</version>
+        <date>2023-10-15</date>
+        <description>初始版本</description>
+        <change_notes>根据GHS标准编制</change_notes>
+      </revision_history>
+      <glossary>
+        <term>CAS号</term>
+        <explanation>化学文摘服务社登记号，是化学物质的唯一识别号</explanation>
+        <term>LD50</term>
+        <explanation>半数致死量，指能引起一半实验动物死亡的剂量</explanation>
+        <term>LC50</term>
+        <explanation>半数致死浓度，指能引起一半实验动物死亡的浓度</explanation>
+        <term>TLV-TWA</term>
+        <explanation>时间加权平均阈限值，指8小时工作日或40小时工作周的时间加权平均浓度</explanation>
+      </glossary>
+      <use_precautions>
+        <precaution>使用前应详细阅读MSDS，了解产品的危险性和安全操作方法</precaution>
+        <precaution>操作时应佩戴适当的个人防护装备，包括防护手套、防护眼镜和防护服</precaution>
+        <precaution>确保工作场所通风良好，避免吸入蒸气或粉尘</precaution>
+        <precaution>避免接触皮肤和眼睛，如不慎接触，应立即用大量清水冲洗</precaution>
+        <precaution>远离热源、火源和氧化剂，储存于阴凉、干燥、通风良好的地方</precaution>
+      </use_precautions>
+      <disclaimer>
+        <statement>本MSDS基于当前可获得的信息编制，仅供参考使用</statement>
+        <statement>使用者应根据具体使用条件和法律法规要求，采取适当的安全防护措施</statement>
+        <statement>如有疑问，请咨询专业人员或供应商</statement>
+      </disclaimer>
+    </other_info>
   </msds>
 </msds_list>

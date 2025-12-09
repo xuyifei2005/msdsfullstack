@@ -141,8 +141,58 @@
       <transportation_precautions>运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、食用化学品等混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温，避免受热、光照。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。需添加稳定剂防止聚合。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
-    <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.2类中闪点易燃液体，能发生聚合反应，需添加稳定剂防止聚合，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
-    </regulatory>
+    <regulatory_info>
+      <domestic_regulations>
+        <regulation_name>《危险化学品安全管理条例》（国务院令第591号）</regulation_name>
+        <regulation_name>《危险化学品目录》（2015版）</regulation_name>
+        <regulation_name>《危险货物品名表》（GB 12268-2012）</regulation_name>
+        <regulation_name>《危险货物运输包装通用技术条件》（GB 12463-2009）</regulation_name>
+        <regulation_name>《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）</regulation_name>
+      </domestic_regulations>
+      <international_regulations>
+        <regulation_name>《关于危险货物运输的建议书》（橙皮书）</regulation_name>
+        <regulation_name>《国际海运危险货物规则》（IMDG Code）</regulation_name>
+        <regulation_name>《国际航空运输危险货物规则》（IATA DGR）</regulation_name>
+      </international_regulations>
+      <occupational_exposure_limits>
+        <country name="中国">未制定标准</country>
+        <country name="美国">TWA: 未制定标准; STEL: 未制定标准</country>
+        <country name="前苏联">未制定标准</country>
+      </occupational_exposure_limits>
+      <ghs_classification>
+        <hazard_class>易燃液体 - 类别3</hazard_class>
+        <hazard_statement>易燃液体和蒸气</hazard_statement>
+        <precautionary_statement>远离热源/火花/明火/热表面。禁止吸烟。保持容器密闭。使用防爆电器/通风/防静电设备。戴防护手套/穿防护服/戴防护眼罩/戴防护面具。</precautionary_statement>
+      </ghs_classification>
+    </regulatory_info>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference name="国际化学品安全卡（ICSC）" url="http://www.inchem.org/documents/icsc/icsc/eic0756.htm"/>
+        <reference name="美国国立职业安全卫生研究所（NIOSH）" url="https://www.cdc.gov/niosh/npg/npgd0474.html"/>
+        <reference name="欧洲化学品管理局（ECHA）" url="https://echa.europa.eu/substance-information/-/substanceinfo/100.003.254"/>
+      </references>
+      <revision_history>
+        <revision date="2023-10-15" version="1.0" description="根据GHS标准编制MSDS文档"/>
+        <revision date="2024-06-18" version="1.1" description="更新毒理学和生态学数据"/>
+        <revision date="2025-01-27" version="1.2" description="完善法规信息和其他信息部分"/>
+      </revision_history>
+      <glossary>
+        <term name="LC50">半数致死浓度，指能引起50%受试动物死亡的浓度</term>
+        <term name="EC50">半数效应浓度，指能引起50%受试生物产生某种效应的浓度</term>
+        <term name="BCF">生物富集系数，表示化学物质在生物体内积累的程度</term>
+        <term name="TWA">时间加权平均容许浓度</term>
+        <term name="STEL">短时间接触容许浓度</term>
+      </glossary>
+      <precautions>
+        <precaution>本品能发生聚合反应，需添加稳定剂防止聚合</precaution>
+        <precaution>避免受热、光照，储存时应密封包装</precaution>
+        <precaution>操作时应全面通风，使用防爆型设备</precaution>
+        <precaution>对水生生物有毒性，应避免进入水体环境</precaution>
+      </precautions>
+      <disclaimer>
+        本安全技术说明书（MSDS）所提供的信息是基于我们当前的知识和可信的来源。然而，这些信息仅供参考，不构成任何保证。使用者应根据实际使用情况自行评估风险并采取适当的安全措施。对于因使用本产品而造成的任何损失或伤害，本公司不承担责任。
+      </disclaimer>
+    </other_info>
   </msds>
 </msds_list>

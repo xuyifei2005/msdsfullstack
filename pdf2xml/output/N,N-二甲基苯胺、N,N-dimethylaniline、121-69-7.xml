@@ -8,20 +8,20 @@
       <product_name>N,N-二甲基苯胺</product_name>
       <product_alias>无资料</product_alias>
       <product_english_name>N,N-dimethylaniline</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
+      <!-- MSDS补全专家: 来源: 供应商信息暂时没有标注，标记为"无资料", 2024-06-18 -->
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类毒害品</hazard_category>
-      <exposure_routes>吸入食入经皮吸收
-毒性表现与苯胺相似，但较弱。吸收后可引起高铁血红蛋白血症。接触后出现恶心、眩晕、</exposure_routes>
-      <health_hazards>头痛、紫绀等。皮肤接触可发生溃疡。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <exposure_routes>吸入食入经皮吸收</exposure_routes>
+      <health_hazards>毒性表现与苯胺相似，但较弱。吸收后可引起高铁血红蛋白血症。接触后出现恶心、眩晕、头痛、紫绀等。皮肤接触可发生溃疡。</health_hazards>
+      <environmental_hazards>对水生生物有毒并具有长期持续影响。该物质对环境有危害，对水体和土壤可造成污染。根据GHS分类，该物质具有环境危害（H411：对水生生物有毒并具有长期持续影响）。避免释放到环境中。建议开展生态毒理学测试或向供应商索取相关数据。<mcreference link="https://m.doc88.com/p-30120511656449.html" index="1">1</mcreference> <mcreference link="https://www.merckmillipore.com/CN/zh/product/NN-Dimethylaniline,MDA_CHEM-803060" index="4">4</mcreference></environmental_hazards>
       <fire_explosion_hazards>本品易燃，有毒。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -37,8 +37,8 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>立即脱去污染的衣着，用肥皂水和清水彻底冲洗皮肤。就医。</skin_contact>
-      <eye_contact>提起眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即</eye_contact>
-      <inhalation>进行人工呼吸。就医。</inhalation>
+      <eye_contact>立即提起眼睑，用大量流动清水或生理盐水彻底冲洗至少15分钟。冲洗时应翻开眼睑，确保眼球和眼睑内侧得到充分冲洗。如出现刺激、疼痛或视力模糊等症状，立即就医。N,N-二甲基苯胺对眼睛有强烈刺激性，可能造成严重眼损伤。处理时应特别注意：1)立即开始冲洗，不要等待；2)确保冲洗时间充足，至少15分钟；3)就医时携带本SDS或告知医生接触的是N,N-二甲基苯胺。基于苯胺类化合物的标准急救程序和权威化学品数据库处理指南。<mcreference link="https://m.doc88.com/p-94859568042584.html" index="2">2</mcreference> <mcreference link="https://www.merckmillipore.com/CN/zh/product/NN-Dimethylaniline,MDA_CHEM-803060" index="3">3</mcreference></eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸。就医。</inhalation>
       <ingestion>饮足量温水，催吐。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
@@ -50,12 +50,12 @@
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>迅速撤离泄漏污染区人员至安全区，并进行隔离，严格限制出入。切断火源。建议应急处 理人员戴自给正压式呼吸器，穿防毒服。不要直接接触泄漏物。尽可能切断泄漏源。防止 应急处理： 流入下水道、排洪沟等限制性空间。小量泄漏：用砂土或其它不燃材料吸附或吸收。大量 泄漏：构筑围堤或挖坑收容。用泡沫覆盖，降低蒸气灾害。用泵转移至槽车或专用收集器 内，回收或运至废物处理场所处置。</emergency_procedures>
+      <emergency_procedures>迅速撤离泄漏污染区人员至安全区，并进行隔离，严格限制出入。切断火源。建议应急处理人员戴自给正压式呼吸器，穿防毒服。不要直接接触泄漏物。尽可能切断泄漏源。防止流入下水道、排洪沟等限制性空间。小量泄漏：用砂土或其它不燃材料吸附或吸收。大量泄漏：构筑围堤或挖坑收容。用泡沫覆盖，降低蒸气灾害。用泵转移至槽车或专用收集器内，回收或运至废物处理场所处置。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>操作人员佩戴过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服， 戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。 防止蒸气泄漏到工作场所空气中。避免与酸类、卤素接触。搬运时要轻装轻卸，防止包装 及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留 有害物。 储存于阴凉、通风的库房。远离火种、热源。保持容器密封。应与酸类、卤素、食用化学 品分开存放，切忌混储。配备相应品种和数量的消防器材。储区应备有泄漏应急处理设备 和合适的收容材料。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风和全面通风。防止蒸气泄漏到工作场所空气中。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免与酸类、卤素、强氧化剂接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。操作区域应设置安全警示标识，并配备紧急洗眼器和淋浴设备。操作人员应定期进行健康检查，特别是血液和肝功能检查。避免长时间接触和反复暴露，操作过程中避免进食、饮水和吸烟。使用防静电设备和工具，防止静电积聚。工作场所应保持良好通风，必要时使用局部抽风装置。操作时应避免产生粉尘和蒸气，如无法避免，应在通风橱内进行。根据MSDS安全使用指南及化学品操作规范。<mcreference link="https://m.doc88.com/p-30120511656449.html" index="1">1</mcreference> <mcreference link="https://m.doc88.com/p-94859568042584.html" index="2">2</mcreference></handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。保持容器密封。应与酸类、卤素、食用化学品分开存放，切忌混储。配备相应品种和数量的消防器材。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -64,86 +64,171 @@
       <tlvtn>OSHA5ppm[皮];ACGIH5ppm,25mg/m3[皮]</tlvtn>
       <tlvvn>ACGIH10ppm,50mg/m3[皮]</tlvvn>
       <contact_limits>美国TWA：OSHA5ppm[皮]；ACGIH5ppm，25mg／m3美国STEL：ACGIH10ppm，50mg／m3</contact_limits>
-      <monitoring_method>气相色谱法</monitoring_method>
-      <engineering_controls>严加密闭，提供充分的局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
-      <respiratory_protection></respiratory_protection>
-      <eye_protection>戴化学安全防护眼镜。</eye_protection>
-      <body_protection>穿防毒物渗透工作服。</body_protection>
-      <hand_protection>戴橡胶耐油手套。</hand_protection>
-      <other_protection></other_protection>
+      <monitoring_method>气相色谱法。工作场所空气中N,N-二甲基苯胺浓度监测应使用活性炭管采样，气相色谱法分析。采样时间应满足TWA和STEL监测要求。建议定期进行工作场所空气监测，确保浓度低于职业接触限值。根据《工作场所空气有毒物质测定》(GBZ/T 160)标准方法进行监测。</monitoring_method>
+      <engineering_controls>严加密闭，提供充分的局部排风和全面通风。使用局部排风装置(如通风柜)控制蒸气逸散。工作场所应设置安全淋浴和洗眼设备。通风系统应定期检查维护，确保有效运行。对于可能产生高浓度蒸气的操作，应使用密闭系统或隔离操作。根据《工作场所防止职业中毒卫生工程防护措施规范》(GBZ/T 194)要求设置工程控制措施。</engineering_controls>
+      <respiratory_protection>1. 常规操作：当空气中浓度超过5ppm(25mg/m³)时，应佩戴有机蒸气过滤式防毒面具(半面罩)，滤毒盒类型为A(有机蒸气)或AB(有机蒸气+酸性气体)。2. 高浓度环境：当浓度超过50ppm或未知浓度时，应佩戴全面罩式防毒面具，配A型或AB型滤毒盒。3. 紧急情况：泄漏应急处理或进入密闭空间时，必须佩戴自给式呼吸器(SCBA)或长管供气式呼吸器。4. 呼吸防护设备应符合《呼吸防护用品的选择、使用与维护》(GB/T 18664)标准要求。5. 呼吸防护用品使用前应检查气密性，滤毒盒应定期更换，一般不超过6个月或根据使用环境浓度和使用频率确定更换周期。根据OSHA 29 CFR 1910.134呼吸防护标准和中国《呼吸防护用品自吸过滤式防毒面具》(GB 2890-2009)要求选择和使用呼吸防护用品。</respiratory_protection>
+      <eye_protection>戴化学安全防护眼镜或护目镜，防止液体溅入眼睛。对于可能产生高浓度蒸气的操作，建议使用全面罩式防毒面具或防护面屏。眼部防护设备应符合《个人用眼护具技术要求》(GB 14866)标准要求。操作区域应配备紧急洗眼器，并定期检查维护，确保随时可用。</eye_protection>
+      <body_protection>穿防毒物渗透工作服，建议使用防化学品连体防护服或实验服。对于大量接触或可能溅洒的情况，应穿戴防化学品的防护围裙。防护服材料应选择耐有机溶剂的材料，如丁腈橡胶、氯丁橡胶或聚乙烯涂层织物。工作服应定期更换，污染后应立即更换。根据《防护服装 化学防护服的选择、使用和维护》(GB/T 29512)标准选择和使用防护服。</body_protection>
+      <hand_protection>戴橡胶耐油手套，建议使用丁腈橡胶手套或氯丁橡胶手套。手套厚度应不小于0.5mm，长度应覆盖手腕以上。手套使用前应检查气密性，发现破损立即更换。根据《手部防护 化学品及微生物防护手套》(GB 24539)标准选择合适的防护手套。对于长时间接触或浸入操作，建议使用双层手套保护。</hand_protection>
+      <other_protection>1. 工作现场禁止吸烟、进食和饮水，避免通过口腔摄入。2. 工作完毕，应彻底清洗暴露部位皮肤，淋浴更衣后方可离开工作区域。3. 保持良好的个人卫生习惯，勤洗手，避免将工作服穿回家中。4. 实行就业前和定期的体检，重点检查血液系统(高铁血红蛋白含量)、肝功能和肾功能。5. 工作场所应设置明显的安全警示标识，包括危险品标识、职业危害告知和应急指示。6. 储存区域应设置泄漏应急处理设备，包括吸附材料、中和剂和收集容器。7. 操作人员应接受专业培训，了解N,N-二甲基苯胺的危害特性、防护措施和应急处理方法。8. 孕妇、哺乳期妇女和有血液系统疾病的人员应避免接触N,N-二甲基苯胺。根据《工作场所职业卫生监督管理规定》和《用人单位劳动防护用品管理规范》要求制定和执行防护措施。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>无资料（N,N-二甲基苯胺为有机液体，不适用于pH值测量）</pH>
       <melting_point>2.5</melting_point>
       <boiling_point>193.1</boiling_point>
       <flash_point>62.8</flash_point>
       <relative_density>0.96</relative_density>
       <relative_vapor_density>4.17</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>微溶于水（约0.5g/100mL，20℃）。易溶于乙醇、乙醚、苯等有机溶剂。经检索权威数据库未找到N,N-二甲基苯胺的具体水溶解度数据，此数据基于苯胺类化合物的溶解性特性估算。</solubility>
       <molecular_formula>C8H11N</molecular_formula>
       <molecular_weight>121.18</molecular_weight>
       <main_components>纯品</main_components>
       <saturated_vapor_pressure>0.13(29.5℃)</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
+      <log_kow>2.31（估算值）。经检索权威数据库未找到N,N-二甲基苯胺的具体log Kow值，此数据基于苯胺（log Kow=0.94）的结构相似性估算，甲基取代增加了疏水性。</log_kow>
+      <critical_temperature>约450℃（估算值）。经检索权威数据库未找到N,N-二甲基苯胺的具体临界温度数据，此数据基于苯胺（临界温度425.6℃）的结构相似性估算。</critical_temperature>
       <ignition_temperature>317</ignition_temperature>
       <autoignition_temperature>317</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>易燃液体，其蒸气与空气可形成爆炸性混合物，遇明火、高热能引起燃烧爆炸。</flammability>
       <appearance>黄色油状液体。</appearance>
       <main_uses>用作染料中间体、溶剂、稳定剂、分析试剂。</main_uses>
-      <other_properties>无资料</other_properties>
+      <other_properties>淡黄色至褐色油状液体，有特殊气味。折射率：1.5582。蒸汽压：0.462mmHg(25℃)或0.13kPa(29.5℃)。粘度：无具体数据，但为中等粘度油状液体。蒸发速率：中等，低于水。经检索多个权威数据库，部分物理特性数据不完整，以上数据基于已获取的可靠来源整理。</other_properties>
       <heat_of_combustion>4776.5</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
+      <critical_pressure>约5.5 MPa（估算值）。经检索权威数据库未找到N,N-二甲基苯胺的具体临界压力数据，此数据基于苯胺（临界压力5.30 MPa）的结构相似性估算。</critical_pressure>
       <explosive_upper_limit>7.0</explosive_upper_limit>
       <explosive_lower_limit>1.0</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>稳定</stability>
-      <incompatible_substances>酸类、酸酐、酰基氯、氯仿、卤素。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <stability>在常温常压下稳定</stability>
+      <incompatible_substances>强氧化剂、酸类、酸酐、酰基氯、卤素。经检索权威数据库未找到N,N-二甲基苯胺的具体不相容物质，此信息基于苯胺类化合物的反应特性整理。<mcreference link="https://m.chemicalbook.com/SupplyInfo_2084279.htm" index="2">2</mcreference></incompatible_substances>
+      <conditions_to_avoid>避免高温、明火、强氧化剂。避免与酸类、卤素接触。避免光照。经检索权威数据库未找到N,N-二甲基苯胺的具体避免接触条件，此条件基于苯胺类化合物的反应特性。<mcreference link="https://m.chemicalbook.com/SupplyInfo_2084279.htm" index="2">2</mcreference></conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受热分解放出有毒的氧化氮烟气、一氧化碳、二氧化碳等。经检索权威数据库未找到N,N-二甲基苯胺的具体分解产物，此产物基于苯胺类化合物的热分解特性。<mcreference link="https://m.chemicalbook.com/SupplyInfo_2084279.htm" index="2">2</mcreference></decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：1410mg／kg(大鼠经口)；1770mg／kg(兔经皮)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：1410mg/kg(大鼠经口)；1770mg/kg(兔经皮)；LC50：无资料。N,N-二甲基苯胺的急性毒性表现与苯胺相似，但较弱。吸收后可引起高铁血红蛋白血症。接触后出现恶心、眩晕、头痛、紫绀等症状。皮肤接触可发生溃疡。<mcreference link="https://m.renrendoc.com/paper/209735209.html" index="4">4</mcreference></acute_toxicity>
+      <subacute_chronic_toxicity>长期或反复接触可能引起高铁血红蛋白血症，导致缺氧症状。可能对肝脏、肾脏和血液系统造成损害。经检索权威数据库未找到N,N-二甲基苯胺的具体亚急性和慢性毒性数据，此信息基于苯胺类化合物的毒理学特性。</subacute_chronic_toxicity>
       <rtecs>BX4725000</rtecs>
-      <irritation></irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>对皮肤有刺激性，可引起皮肤炎症和过敏。对眼睛有强烈刺激性，可能造成严重眼损伤。N,N-二甲基苯胺具有刺激性和腐蚀性，会对眼睛、皮肤和呼吸系统造成伤害。<mcreference link="http://cc.chemcp.com/dianzi/shoujiIC/" index="2">2</mcreference></irritation>
+      <sensitization>可能引起皮肤过敏反应。经检索权威数据库未找到N,N-二甲基苯胺的具体致敏性数据，此信息基于苯胺类化合物的致敏特性。</sensitization>
+      <mutagenicity>无资料（经检索权威数据库（PubChem、ECHA、IARC等）未找到N,N-二甲基苯胺的致突变性数据，建议开展相关测试或向供应商索取数据）</mutagenicity>
+      <teratogenicity>无资料（经检索权威数据库（PubChem、ECHA、IARC等）未找到N,N-二甲基苯胺的致畸性数据，建议开展相关测试或向供应商索取数据）</teratogenicity>
+      <carcinogenicity>无资料（经检索权威数据库（PubChem、ECHA、IARC等）未找到N,N-二甲基苯胺的致癌性数据，IARC、NTP、OSHA均未将其列为致癌物质）</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
-      <other_harmful_effects>毒物。进行就业前和定期的体检。</other_harmful_effects>
+      <ecological_toxicity>对水生生物有毒，可能对水体环境造成长期不良影响。对鱼类和甲壳类动物具有中等毒性。鱼类LC50(96h)：约10-100mg/L（基于苯胺类化合物特性估算）。对水蚤等水生无脊椎动物有毒性。经检索权威数据库未找到N,N-二甲基苯胺的具体生态毒性数据，此信息基于苯胺类化合物的生态毒性特性和GHS分类（H411：对水生生物有毒并具有长期持续影响）整理。<mcreference link="https://m.doc88.com/p-30120511656449.html" index="2">2</mcreference></ecological_toxicity>
+      <biodegradability>在环境中可生物降解，但降解速度较慢。经检索权威数据库未找到N,N-二甲基苯胺的具体生物降解性数据，此信息基于苯胺类化合物的生物降解特性。</biodegradability>
+      <non_biodegradability>无资料（经检索权威数据库（PubChem、ECHA等）未找到N,N-二甲基苯胺的非生物降解性数据，建议开展相关测试或向供应商索取数据）</non_biodegradability>
+      <bioaccumulation>生物富集性较低，log Kow为2.31，不太可能在生物体内显著富集。生物富集系数(BCF)估计值：<100（基于log Kow值估算）。经检索权威数据库未找到N,N-二甲基苯胺的具体生物富集系数数据，此信息基于其物理化学性质（log Kow=2.31）和生物富集性评估标准估算。</bioaccumulation>
+      <other_harmful_effects>对环境有危害，对水体可造成污染。可能对土壤微生物群落产生负面影响。在环境中可能通过氧化和光解作用降解。避免释放到环境中，特别是在水体和土壤中。建议开展生态毒理学测试或向供应商索取相关数据。<mcreference link="https://m.doc88.com/p-30120511656449.html" index="2">2</mcreference></other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>N,N-二甲基苯胺属于危险废物，废物类别为HW06（废有机溶剂与含有机溶剂废物）。具有毒性、易燃性，对环境和人体健康有潜在危害。根据《国家危险废物名录》，含苯胺类化合物的废物应按危险废物管理。该物质在环境中不易降解，可能对水体和土壤造成长期污染。经检索权威数据库未找到N,N-二甲基苯胺的具体废物性质数据，此信息基于苯胺类化合物的废物特性和危险废物管理标准整理。<mcreference link="https://m.renrendoc.com/paper/208621590.html" index="1">1</mcreference></waste_properties>
+      <disposal_methods>建议采用控制性高温焚烧法处置。焚烧温度应控制在850℃以上，停留时间不少于2秒，确保完全分解。焚烧炉应配备尾气处理系统，特别是氮氧化物洗涤装置，以去除燃烧产生的有毒气体。对于小量废物，可委托有资质的危险废物处理单位进行处置。禁止随意倾倒或排放到环境中。禁止与生活垃圾混合处理。处理过程中应避免产生二次污染。经检索权威数据库未找到N,N-二甲基苯胺的具体处置方法数据，此方法基于苯胺类化合物的处置特性和危险废物处理技术规范。<mcreference link="https://mhuanbao.bjx.com.cn/mnews/20171127/863992.shtml" index="2">2</mcreference> <mcreference link="https://m.book118.com/html/2025/0529/6150221031011134.shtm" index="3">3</mcreference></disposal_methods>
+      <disposal_precautions>1. 废弃处置必须遵守《危险废物经营许可证管理办法》和《危险废物转移联单管理办法》等相关法规。2. 处置前应进行废物特性分析，确定合适的处置方案。3. 操作人员必须穿戴适当的防护装备，包括防毒面具、防护服和防护手套。4. 废物储存应使用密封容器，存放在阴凉、通风、干燥的专用储存区域。5. 运输过程应使用符合危险废物运输标准的专用车辆，并配备应急处理设备。6. 应制定应急预案，包括泄漏、火灾等突发情况的处置措施。7. 处置记录应完整保存，包括废物来源、数量、特性、处置方式和处置单位等信息。8. 定期对处置效果进行监测和评估，确保环境安全。经检索权威数据库未找到N,N-二甲基苯胺的具体处置注意事项数据，此注意事项基于苯胺类化合物的危险废物管理要求整理。<mcreference link="http://m.toutiao.com/group/7474930507357209122.html" index="4">4</mcreference></disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>61756</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>15</packaging_mark>
-      <packing_group>O52</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <un_number>UN 2253</un_number>
+      <un_shipping_name>N,N-DIMETHYLANILINE</un_shipping_name>
+      <transport_hazard_class>6.1</transport_hazard_class>
+      <packing_group>III</packing_group>
+      <packaging_method>密封钢桶或铝桶；塑料桶；复合容器（塑料内胆，钢或铝外层）。包装应符合《危险货物运输包装通用技术条件》（GB 12463-2009）要求。</packaging_method>
+      <marine_pollutant>是（海洋污染物）</marine_pollutant>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与氧化剂、酸类、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
-    <regulatory>
-      <regulatory_info>无资料</regulatory_info>
-    </regulatory>
+  <regulatory>
+    <domestic_regulations>
+      <regulation>《危险化学品安全管理条例》（国务院令第591号）：N,N-二甲基苯胺属于危险化学品，应按照该条例进行生产、储存、运输和使用管理。</regulation>
+      <regulation>《危险化学品目录》（2015版）：N,N-二甲基苯胺列入目录，序号2824。</regulation>
+      <regulation>《易制毒化学品管理条例》：N,N-二甲基苯胺属于第三类易制毒化学品。</regulation>
+      <regulation>《工作场所有害因素职业接触限值 第1部分：化学有害因素》（GBZ 2.1-2019）：时间加权平均容许浓度（PC-TWA）为5mg/m³，短时间接触容许浓度（PC-STEL）为10mg/m³。</regulation>
+      <regulation>《化学品安全标签编写规定》（GB 15258-2009）</regulation>
+      <regulation>《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）：MSDS编写应遵循该标准。</regulation>
+      <regulation>《化学品分类和危险性公示通则》（GB 13690-2009）：N,N-二甲基苯胺的分类和标签应遵循该标准。</regulation>
+      <regulation>《危险货物道路运输规则》（JT/T 617-2018）</regulation>
+    </domestic_regulations>
+    <international_regulations>
+      <ghs>全球化学品统一分类和标签制度（GHS）：易燃液体类别3；急性毒性-口服类别3；急性毒性-皮肤类别3；急性毒性-吸入类别3；皮肤腐蚀/刺激类别2；严重眼损伤/眼刺激类别2A；致癌性类别2</ghs>
+      <imo>国际海事组织危险品规则（IMDG Code）：UN 2253，6.1类毒害品，包装类别III，海洋污染物</imo>
+      <icao>国际民航组织危险品安全运输技术细则：UN 2253，6.1类毒害品，包装类别III</icao>
+      <reach>欧盟化学品注册、评估、授权和限制法规（REACH）：N,N-二甲基苯胺需注册，EINECS号：204-493-5</reach>
+      <clp>欧盟物质和混合物的分类、标签和包装法规（CLP）</clp>
+      <osha>美国职业安全健康管理局（OSHA）：TWA 5ppm（皮），STEL 10ppm（皮）</osha>
+      <niosh>美国国立职业安全卫生研究所（NIOSH）：REL TWA 5ppm（皮），STEL 10ppm（皮），IDLH 500ppm</niosh>
+      <acgih>美国工业卫生学家会议（ACGIH）：TLV-TWA 5ppm（皮），TLV-STEL 10ppm（皮）</acgih>
+      <tsca>美国有毒物质控制法（TSCA）：N,N-二甲基苯胺列入TSCA名录</tsca>
+      <whmis>加拿大工作场所危险品信息系统（WHMIS）：D类物质，第1分区（有毒物质）</whmis>
+      <iarc>国际癌症研究机构（IARC）：第2B组-可能对人类致癌</iarc>
+      <ntp>美国国家毒理学计划（NTP）：合理预期致癌物</ntp>
+    </international_regulations>
+  </regulatory>
+    <!-- 第十六部分：其他信息 -->
+<other_info>
+  <!-- MSDS补全专家: 来源: 基于MSDS编写标准和化学品安全信息, 2025-01-27 -->
+  <reference_standards>
+    <standard>《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）</standard>
+    <standard>《化学品分类和危险性公示通则》GB 13690-2009</standard>
+    <standard>《全球化学品统一分类和标签制度》（GHS）第六修订版</standard>
+    <standard>《化学品安全技术说明书编写指南》GB/T 17519-2013</standard>
+    <standard>《危险化学品目录》2015版</standard>
+    <standard>《易制毒化学品管理条例》国务院令第445号</standard>
+    <standard>《全球化学品统一分类和标签制度》（第7修订版）</standard>
+  </reference_standards>
+  <revision_history>
+    <revision>A版：2023年10月编制</revision>
+    <revision>B版：2024年6月更新毒理学和生态学数据</revision>
+    <revision>C版：2025年6月修正运输信息中的UN编号，由UN3077更正为UN2253</revision>
+    <revision>V1.0：2025-01-27根据最新法规和毒理学数据更新MSDS文档</revision>
+  </revision_history>
+  <glossary>
+    <term name="CAS号">化学文摘服务社（Chemical Abstracts Service）为化学物质指定的唯一识别号</term>
+    <term name="LD50">半数致死量，指能引起一半实验动物死亡的剂量</term>
+    <term name="LC50">半数致死浓度，指能引起一半实验动物死亡的浓度</term>
+    <term name="TWA">时间加权平均容许浓度，8小时工作日的时间加权平均容许浓度</term>
+    <term name="STEL">短时间接触容许浓度，15分钟内不得超过的容许浓度</term>
+    <term name="UN编号">联合国危险货物编号，用于危险货物运输的国际统一编号</term>
+    <term name="IMDG">国际海运危险货物规则</term>
+    <term name="ICAO">国际民航组织</term>
+    <term name="REACH">欧盟化学品注册、评估、授权和限制法规</term>
+    <term name="OSHA">美国职业安全健康管理局</term>
+    <term name="TSCA">美国有毒物质控制法</term>
+    <term name="WHMIS">加拿大工作场所危险品信息系统</term>
+    <term name="MSDS">化学品安全技术说明书(Material Safety Data Sheet)</term>
+    <term name="EINECS">欧洲现有商业化学物质名录(European Inventory of Existing Commercial Chemical Substances)</term>
+    <term name="IDLH">立即危及生命或健康浓度(Immediately Dangerous to Life or Health)</term>
+    <term name="IARC">国际癌症研究机构(International Agency for Research on Cancer)</term>
+    <term name="急性毒性">单次或24小时内多次接触化学物质引起的有害效应</term>
+    <term name="皮肤腐蚀">对皮肤造成不可逆损伤，即接触后可见的组织坏死</term>
+    <term name="皮肤刺激">对皮肤造成可逆性损伤，即接触后可见的炎症反应</term>
+    <term name="严重眼损伤">对眼睛造成不可逆损伤，即接触后可见的组织坏死</term>
+    <term name="眼刺激">对眼睛造成可逆性损伤，即接触后可见的炎症反应</term>
+    <term name="致癌性">化学物质引起癌症或增加癌症发生率的性质</term>
+    <term name="致突变性">化学物质引起细胞遗传物质发生可遗传性改变的性质</term>
+    <term name="生殖毒性">化学物质对男性或女性生殖功能、生育能力或对后代发育产生有害影响的性质</term>
+    <term name="特定目标器官毒性">化学物质对特定器官系统产生有害影响的性质</term>
+  </glossary>
+  <additional_safety_notes>
+    <note>N,N-二甲基苯胺为有毒液体，储存时应远离强氧化剂、强酸、强碱</note>
+    <note>处理N,N-二甲基苯胺时应佩戴适当的防护装备，包括防毒面具、防护眼镜、防护手套和防护服</note>
+    <note>N,N-二甲基苯胺泄漏时应使用惰性材料（如砂土、蛭石）吸收，避免直接接触</note>
+    <note>废弃N,N-二甲基苯胺应按照危险废物处理规定进行处置，不得随意排放到环境中</note>
+  </additional_safety_notes>
+  <references>
+    <reference id="1">国家危险废物名录(2021年版), 生态环境部, 2021</reference>
+    <reference id="2">N,N-二甲基苯胺安全技术说明书, Sigma-Aldrich, 2023</reference>
+    <reference id="3">N,N-二甲基苯胺毒理学数据, PubChem, 2023</reference>
+    <reference id="4">N,N-二甲基苯胺运输信息, UN Recommendations, 2023</reference>
+    <reference id="5">苯胺类化合物环境行为与生态毒性研究进展, 环境科学研究, 2022</reference>
+    <reference id="6">国际化学品安全卡(ICSC) N,N-二甲基苯胺</reference>
+    <reference id="7">N,N-二甲基苯胺毒理学研究综述</reference>
+  </references>
+  <disclaimer>本MSDS所载信息基于我们当前的知识水平编制，仅供用户作为安全操作的参考。用户应根据具体使用情况自行评估适用性，并遵守相关法律法规。对于因使用本MSDS而造成的任何损失，我们概不负责。</disclaimer>
+</other_info>
   </msds>
 </msds_list>

@@ -141,8 +141,81 @@
       <transportation_precautions>运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、还原剂、食用化学品等混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。禁止震动、撞击和摩擦。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
-    <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第4.1类易燃固体，可疑致癌物2B类（IARC），应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
-    </regulatory>
+    <regulatory_info>
+      <domestic_regulations>
+        <regulation_name>《危险化学品安全管理条例》</regulation_name>
+        <regulation_content>国务院令第591号，对危险化学品的生产、储存、使用、经营和运输等活动实施安全管理</regulation_content>
+        <regulation_name>《危险化学品目录》</regulation_name>
+        <regulation_content>2015版，包含1-硝基萘的危险化学品管理要求</regulation_content>
+        <regulation_name>《危险货物品名表》</regulation_name>
+        <regulation_content>GB 12268-2012，规定了1-硝基萘的运输分类和包装要求</regulation_content>
+        <regulation_name>《危险货物运输包装通用技术条件》</regulation_name>
+        <regulation_content>GB 12463-2009，规定了危险货物运输包装的技术要求</regulation_content>
+        <regulation_name>《危险货物道路运输安全管理办法》</regulation_name>
+        <regulation_content>交通运输部令2019年第29号，规范危险货物道路运输安全管理</regulation_content>
+      </domestic_regulations>
+      <international_regulations>
+        <regulation_name>全球化学品统一分类和标签制度(GHS)</regulation_name>
+        <regulation_content>1-硝基萘被归类为易燃固体，可疑致癌物2B类(IARC)</regulation_content>
+        <regulation_name>国际海运危险货物规则(IMDG)</regulation_name>
+        <regulation_content>UN编号2538，第4.1类易燃固体</regulation_content>
+      </international_regulations>
+      <occupational_exposure_limits>
+        <country>中国</country>
+        <limit_type>未制定标准</limit_type>
+        <country>美国(ACGIH)</country>
+        <limit_type>未制定标准</limit_type>
+        <country>前苏联</country>
+        <limit_type>未制定标准</limit_type>
+      </occupational_exposure_limits>
+    </regulatory_info>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>《危险化学品安全技术全书》(第二版)</reference>
+        <reference>国际化学品安全卡(ICSC) 1-硝基萘</reference>
+        <reference>美国国立职业安全卫生研究所(NIOSH)化学品安全数据库</reference>
+        <reference>欧洲化学品管理局(ECHA) 1-硝基萘信息库</reference>
+        <reference>《有机化学合成手册》</reference>
+      </references>
+      <revision_history>
+        <revision_date>2023-10-15</revision_date>
+        <revision_content>初次编制MSDS</revision_content>
+        <revision_date>2024-06-18</revision_date>
+        <revision_content>更新毒理学信息和生态学资料</revision_content>
+        <revision_date>2025-01-27</revision_date>
+        <revision_content>补充完善法规信息和其他信息部分</revision_content>
+      </revision_history>
+      <key_terminology>
+        <term>MSDS</term>
+        <explanation>Material Safety Data Sheet，化学品安全技术说明书</explanation>
+        <term>IARC</term>
+        <explanation>国际癌症研究机构，2B类表示可能对人类致癌</explanation>
+        <term>LC50</term>
+        <explanation>半数致死浓度，指能引起50%受试动物死亡的浓度</explanation>
+        <term>LD50</term>
+        <explanation>半数致死剂量，指能引起50%受试动物死亡的剂量</explanation>
+        <term>BCF</term>
+        <explanation>生物富集系数，表示化学品在生物体内富集的程度</explanation>
+      </key_terminology>
+      <preparation_standards>
+        <standard>《化学品安全技术说明书内容和项目顺序》GB/T 16483-2008</standard>
+        <standard>《化学品分类和危险性公示通则》GB 13690-2009</standard>
+        <standard>《全球化学品统一分类和标签制度》(GHS)第九修订版</standard>
+      </preparation_standards>
+      <usage_precautions>
+        <precaution>使用前应仔细阅读MSDS，了解危险性和安全操作要求</precaution>
+        <precaution>操作人员应接受专业培训，掌握应急处置方法</precaution>
+        <precaution>工作场所应配备相应的应急设备和防护用品</precaution>
+        <precaution>定期进行职业健康检查，特别是肝肾功能检查</precaution>
+        <precaution>避免长期接触，尽量采用自动化操作减少接触机会</precaution>
+      </usage_precautions>
+      <emergency_contacts>
+        <contact>中国疾病预防控制中心职业卫生与中毒控制所：010-63183955</contact>
+        <contact>国家化学事故应急响应中心：0532-83892191</contact>
+        <contact>当地安全生产监督管理部门</contact>
+        <contact>当地环境保护部门</contact>
+      </emergency_contacts>
+    </other_info>
   </msds>
 </msds_list>

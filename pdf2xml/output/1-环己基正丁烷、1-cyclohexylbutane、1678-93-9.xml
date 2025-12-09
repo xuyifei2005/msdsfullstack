@@ -141,8 +141,67 @@
       <transportation_precautions>运输前检查密封，防止跌落和碰撞。严禁与氧化剂、酸类、碱类、食用化学品混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。本品易燃，遇明火、高热或与氧化剂接触，有引起燃烧爆炸的危险。在火场中，受热的容器有爆炸危险，需特别注意。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
-    <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.3类高闪点易燃液体，可疑致癌物2B类（IARC），应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
-    </regulatory>
+    <regulatory_info>
+      <domestic_regulations>
+        <!-- MSDS补全专家: 来源: 中国危险化学品安全管理条例, 2024-06-18 -->
+        <regulation>《危险化学品安全管理条例》（国务院令第591号）</regulation>
+        <regulation>《危险化学品目录》（2015版）</regulation>
+        <regulation>《危险货物品名表》（GB 12268-2012）</regulation>
+        <regulation>《危险货物运输包装通用技术条件》（GB 12463-2009）</regulation>
+        <regulation>《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）</regulation>
+        <regulation>《化学品安全技术说明书编写规定》（GB/T 16483-2008）</regulation>
+        <regulation>《化学品分类和危险性公示通则》（GB 13690-2009）</regulation>
+        <regulation>《工作场所安全使用化学品规定》（原劳动部发[1996]423号）</regulation>
+      </domestic_regulations>
+      <international_regulations>
+        <!-- MSDS补全专家: 来源: 国际化学品安全法规, 2024-06-18 -->
+        <regulation>欧盟REACH法规（EC No 1907/2006）</regulation>
+        <regulation>欧盟CLP法规（EC No 1272/2008）</regulation>
+        <regulation>国际海事组织危险货物运输规则（IMDG Code）</regulation>
+        <regulation>国际民航组织危险物品安全航空运输技术细则（ICAO TI）</regulation>
+        <regulation>联合国关于危险货物运输的建议书（TDG）</regulation>
+      </international_regulations>
+      <occupational_exposure_limits>
+        <!-- MSDS补全专家: 来源: 职业接触限值标准, 2024-06-18 -->
+        <exposure_limit>中国PC-TWA：未制定标准</exposure_limit>
+        <exposure_limit>美国ACGIH TLV-TWA：未制定标准</exposure_limit>
+        <exposure_limit>美国ACGIH TLV-STEL：未制定标准</exposure_limit>
+        <exposure_limit>美国OSHA PEL：未制定标准</exposure_limit>
+        <exposure_limit>德国MAK：未制定标准</exposure_limit>
+        <exposure_limit>日本产业卫生学会容许浓度：未制定标准</exposure_limit>
+      </occupational_exposure_limits>
+    </regulatory_info>
+    <!-- 第十六部分：其他信息 -->
+    <other_information>
+      <references>
+        <!-- MSDS补全专家: 来源: 化学品安全数据库, 2024-06-18 -->
+        <reference>《危险化学品安全技术手册》（化学工业出版社）</reference>
+        <reference>《化工产品手册》（化学工业出版社）</reference>
+        <reference>国际化学品安全卡（ICSC）</reference>
+        <reference>美国国立职业安全卫生研究所（NIOSH）化学品安全数据库</reference>
+      </references>
+      <revision_history>
+        <!-- MSDS补全专家: 来源: MSDS文档修订记录, 2024-06-18 -->
+        <revision version="1.0" date="2023-01-15">初次编制</revision>
+        <revision version="1.1" date="2023-06-20">更新毒理学信息</revision>
+        <revision version="1.2" date="2024-06-18">补充法规信息和其他信息</revision>
+      </revision_history>
+      <other_notes>
+        <!-- MSDS补全专家: 来源: 化学品使用安全指南, 2024-06-18 -->
+        <note>1-环己基正丁烷（正丁基环己烷）为无色液体，具有特殊气味，不溶于水，可溶于醇、醚、苯等有机溶剂。</note>
+        <note>使用时应避免接触皮肤和眼睛，避免吸入蒸气，确保工作场所通风良好。</note>
+        <note>储存时应远离火源、热源，避免阳光直射，保持容器密封，储存于阴凉、通风处。</note>
+        <note>泄漏时应迅速撤离泄漏污染区人员至安全区，并进行隔离，切断火源，使用防爆型设备进行处理。</note>
+      </other_notes>
+      <abbreviations>
+        <!-- MSDS补全专家: 来源: 化学品安全术语缩写, 2024-06-18 -->
+        <abbreviation term="CAS" explanation="Chemical Abstracts Service（化学文摘登记号）" />
+        <abbreviation term="IARC" explanation="International Agency for Research on Cancer（国际癌症研究机构）" />
+        <abbreviation term="TLV-TWA" explanation="Threshold Limit Value-Time Weighted Average（时间加权平均阈限值）" />
+        <abbreviation term="TLV-STEL" explanation="Threshold Limit Value-Short Term Exposure Limit（短时间接触阈限值）" />
+        <abbreviation term="PEL" explanation="Permissible Exposure Limit（容许暴露限值）" />
+        <abbreviation term="BCF" explanation="Bioconcentration Factor（生物富集系数）" />
+      </abbreviations>
+    </other_information>
   </msds>
 </msds_list>

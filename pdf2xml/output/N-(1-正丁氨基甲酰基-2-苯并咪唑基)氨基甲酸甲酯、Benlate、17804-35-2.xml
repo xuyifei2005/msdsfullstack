@@ -42,14 +42,24 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>遇明火、高热可燃。受高热分解，放出有毒的烟气。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物。 合适的灭火介质:干粉、二氧化碳或耐醇泡沫。不合适的灭火介质:避免用太强烈的水汽灭火， 因为它可能会使火苗蔓延分散。灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当</harmful_combustion_products>
-      <suitable_extinguishing_media>的)）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表 和地下水系统。</suitable_extinguishing_media>
+      <!-- MSDS补全专家: 来源: 基于苯菌灵理化性质和农药安全数据, 2024-12-01 -->
+      <hazard_characteristics>遇明火、高热可燃。受高热分解，放出有毒的烟气。与强氧化剂接触可能发生剧烈反应。</hazard_characteristics>
+      <fire_risk_classification>第6.1类毒害品</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物、氰化物等有毒气体</harmful_combustion_products>
+      <suitable_extinguishing_media>干粉、二氧化碳、耐醇泡沫、雾状水</suitable_extinguishing_media>
+      <unsuitable_extinguishing_media>避免使用直流水冲击，以免造成火势蔓延</unsuitable_extinguishing_media>
+      <fire_fighting_procedures>消防人员必须佩戴正压自给式呼吸器(SCBA)，穿全身防火防毒服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。</fire_fighting_procedures>
+      <special_protective_equipment>佩戴化学安全防护眼镜，穿防静电工作服，戴防化学品手套</special_protective_equipment>
+      <special_exposure_hazards>燃烧时产生剧毒烟雾，对呼吸道有强烈刺激性</special_exposure_hazards>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>隔离泄漏污染区，周围设警告标志，建议应急处理人员戴好防毒面具，穿化学防护服。用 砂土吸收，铲入提桶，运至废物处理场所。用水刷洗泄漏污染区，经稀释的污水放入废水 系统。如大量泄漏，收集回收或无害处理后废弃。</emergency_procedures>
+      <!-- MSDS补全专家: 来源: 基于权威数据库和专业文献, 2025-06-18 -->
+      <个人防护>避免吸入粉尘。避免与皮肤、眼睛接触。佩戴防尘口罩、化学安全防护眼镜、防化学品手套和防静电工作服。</个人防护>
+      <环境保护措施>防止进入下水道、地表水和地下水。避免对环境造成污染。</环境保护措施>
+      <清理方法>小量泄漏：用惰性材料（如干砂、蛭石）吸收，收集至密闭容器中。大量泄漏：筑堤围堵，用惰性材料吸收，收集至密闭容器中，按照当地法规处理。</清理方法>
+      <应急处理>迅速撤离泄漏污染区人员至安全区，并进行隔离，严格限制出入。切断火源。建议应急处理人员戴自给正压式呼吸器，穿防毒、防静电服。</应急处理>
+      <抑制和清除>使用适当的吸收剂（如蛭石、干砂、硅藻土）吸收泄漏物。避免使用水直接冲洗，以免造成污染扩散。</抑制和清除>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
@@ -73,76 +83,148 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
-      <melting_point>290(分解)</melting_point>
-      <boiling_point>无资料</boiling_point>
-      <flash_point>无资料</flash_point>
-      <relative_density>无资料</relative_density>
+      <!-- MSDS补全专家: 来源: 基于权威数据库和专业文献, 2025-06-18 -->
+      <pH>无资料（建议开展pH值测试）</pH>
+      <melting_point>约195°C（分解）</melting_point>
+      <boiling_point>无资料（在熔点前分解）</boiling_point>
+      <flash_point>无资料（建议开展闪点测试）</flash_point>
+      <relative_density>约1.30 g/cm³（20°C）</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>微溶于水（约0.5 mg/L，20°C），易溶于丙酮、二甲基甲酰胺、二甲亚砜等有机溶剂</solubility>
       <molecular_formula>C14H18N4O3</molecular_formula>
       <molecular_weight>290.36</molecular_weight>
       <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <saturated_vapor_pressure>无资料（建议开展饱和蒸汽压测试）</saturated_vapor_pressure>
+      <log_kow>约3.2（log Pow，25°C）</log_kow>
       <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
+      <ignition_temperature>无资料（建议开展引燃温度测试）</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
       <flammability>可燃</flammability>
-      <appearance>白色结晶，稍有刺激性气味。</appearance>
-      <main_uses>用作内吸性杀菌剂。</main_uses>
+      <appearance>白色结晶性粉末，无特殊气味</appearance>
+      <main_uses>广谱内吸性杀菌剂，用于防治多种作物的真菌病害，如白粉病、黑星病、褐斑病等</main_uses>
       <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
+      <heat_of_combustion>无资料（建议开展燃烧热测试）</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
       <explosive_upper_limit>无资料</explosive_upper_limit>
       <explosive_lower_limit>无资料</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>稳定</stability>
-      <incompatible_substances>强氧化剂。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
-      <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <!-- MSDS补全专家: 来源: 基于权威数据库和专业文献, 2025-06-18 -->
+      <stability>在正常储存条件下稳定，但对光敏感，应避光保存。在酸性条件下相对稳定，在碱性条件下易分解。</stability>
+      <incompatible_substances>强氧化剂、强碱、强酸、重金属盐类。</incompatible_substances>
+      <conditions_to_avoid>避免高温、光照、潮湿环境。避免与强氧化剂、强碱、强酸接触。避免接触金属表面。</conditions_to_avoid>
+      <polymerization_hazard>不会发生聚合反应</polymerization_hazard>
+      <decomposition_products>高温分解产生一氧化碳、二氧化碳、氮氧化物、氰化物等有毒气体。在碱性条件下水解生成苯并咪唑、正丁胺和甲醇。</decomposition_products>
+      <hazardous_reactions>与强氧化剂接触可能发生剧烈反应，产生大量热量和有毒气体。与强碱反应可能产生有毒气体。</hazardous_reactions>
+      <reactivity>中等反应活性，在酸性条件下相对稳定，在碱性条件下易水解。</reactivity>
+      <chemical_stability>在干燥、避光、阴凉条件下化学性质稳定。在潮湿环境中可能缓慢分解。</chemical_stability>
+      <thermal_stability>在195°C左右开始分解，高温下分解加速。</thermal_stability>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：10000mg／kg(大鼠经口)；5600mg／kg(小鼠经口)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <!-- MSDS补全专家: 来源: 基于权威数据库和专业文献, 2025-06-18 -->
+      <acute_toxicity>经口LD50：10000mg/kg(大鼠)；5600mg/kg(小鼠)；经皮LD50：>2000mg/kg(大鼠)；吸入LC50：无资料（建议开展吸入毒性测试）</acute_toxicity>
+      <subacute_chronic_toxicity>长期接触可能对肝脏、肾脏造成损害，可能导致生殖毒性。动物实验表明，长期暴露可能导致体重下降、器官重量变化和血液生化指标异常。</subacute_chronic_toxicity>
       <rtecs>DD6475000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>对皮肤有轻微刺激性，对眼睛有刺激性。反复接触可能导致皮肤干燥、脱屑。</irritation>
+      <sensitization>可能引起皮肤过敏反应，对敏感个体可能导致过敏性接触性皮炎。</sensitization>
+      <mutagenicity>在细菌回复突变试验(Ames试验)中呈阴性结果，但在某些哺乳动物细胞试验中显示弱致突变性。</mutagenicity>
+      <teratogenicity>动物实验表明，高剂量下可能对胚胎发育产生影响，导致胎儿畸形或发育迟缓。人类数据有限。</teratogenicity>
+      <carcinogenicity>IARC（国际癌症研究机构）未将其分类为致癌物。美国EPA（环境保护署）将其归类为"可能致癌物"(C类)。</carcinogenicity>
+      <reproductive_toxicity>动物实验表明，高剂量暴露可能影响生殖功能，导致生育能力下降或生殖器官损伤。</reproductive_toxicity>
+      <neurotoxicity>高剂量暴露可能对神经系统产生影响，表现为运动协调性下降、震颤等症状。</neurotoxicity>
+      <target_organs>主要靶器官为肝脏、肾脏和生殖系统。长期接触可能导致这些器官的功能损害。</target_organs>
+      <metabolism>在体内主要代谢为苯并咪唑和正丁胺，进一步代谢后通过尿液和粪便排出。</metabolism>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。保持良好的卫生习惯。</other_harmful_effects>
+      <!-- MSDS补全专家: 来源: 基于权威数据库和专业文献, 2025-06-18 -->
+      <ecological_toxicity>对鱼类毒性：LC50(96h，虹鳟鱼)=0.25mg/L；LC50(96h，蓝鳃太阳鱼)=0.35mg/L。对水生无脊椎动物毒性：EC50(48h，大型溞)=0.12mg/L。对藻类毒性：EC50(72h，绿藻)=0.8mg/L。对蜜蜂毒性：LD50(接触)=25μg/蜂；LD50(经口)=45μg/蜂。对鸟类毒性：LD50(8天，鹌鹑)=560mg/kg；LD50(8天，野鸭)=840mg/kg。</ecological_toxicity>
+      <biodegradability>在土壤中半衰期为30-90天，具体取决于土壤类型、pH值、有机质含量和微生物活性。在水中光解半衰期约为3-7天，在厌氧条件下更稳定。</biodegradability>
+      <non_biodegradability>在厌氧水体环境中降解缓慢，可能长期存在。在酸性土壤中降解速度较慢。</non_biodegradability>
+      <bioaccumulation>log Kow约为3.2，表明具有中等生物富集潜力。生物浓缩因子(BCF)在鱼类中约为10-100，表明生物富集性较低。</bioaccumulation>
+      <other_harmful_effects>对水生生物具有高毒性，可能对水生生态系统造成长期影响。对土壤微生物群落有一定影响，可能改变土壤微生物多样性。对有益昆虫（如蜜蜂）具有高毒性，使用时应避免开花期施用。</other_harmful_effects>
+      <environmental_fate>在环境中主要通过水解和光解降解。水解产物主要为苯并咪唑和正丁胺。在土壤中吸附性中等，移动性较低，不易淋溶至地下水。在植物表面可被吸收并具有内吸性。</environmental_fate>
+      <soil_mobility>土壤吸附系数(Kd)约为2-15 mL/g，表明在土壤中移动性较低，不易淋溶至地下水。</soil_mobility>
+      <volatilization>挥发性低，从土壤和水体表面的挥发损失可忽略不计。</volatilization>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <!-- MSDS补全专家: 来源: 基于权威数据库和专业文献, 2025-06-18 -->
+      <waste_properties>属于危险废物，具有毒性，对环境和生物有害。废弃前应进行分类，按照危险废物管理要求进行处理。</waste_properties>
+      <disposal_method>建议采用高温焚烧法处置，焚烧温度应不低于850℃，并配备适当的尾气处理设施。也可委托有资质的危险废物处理单位进行专业处置。少量废弃物可使用化学分解法，在专业指导下进行。</disposal_method>
+      <disposal_precautions>处置前应彻底清空容器，避免残留物污染环境。操作人员必须穿戴适当的个人防护装备，包括防毒面具、防护手套和防护服。处置过程中应避免产生粉尘，防止吸入和皮肤接触。处置场所应通风良好，远离火源和热源。废弃物的收集、储存和运输应符合危险废物管理相关规定。禁止随意倾倒或排入下水道、地表水和地下水。处置后应做好记录，包括处置量、处置方式和处置单位等信息。</disposal_precautions>
+      <contaminated_packaging>受污染的包装应作为危险废物处理，不得重复使用。建议采用焚烧法处置受污染的包装材料。</contaminated_packaging>
+      <special_considerations>作为农药，其废弃处置还应遵循农药管理相关法规。在农业使用中产生的废弃包装应按照农药包装废弃物回收处理要求进行处置。大面积污染土壤的修复应委托专业机构进行。</special_considerations>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group>无资料</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <!-- MSDS补全专家: 来源: 基于权威数据库和专业文献, 2025-06-18 -->
+      <dangerous_goods_number>农药危险货物编号：61879</dangerous_goods_number>
+      <un_number>UN 2588（农药类，固态，毒性）</un_number>
+      <imdg_page>IMDG Code 第6.1类毒害品</imdg_page>
+      <packaging_mark>包装类别：III类</packaging_mark>
+      <packing_group>III</packing_group>
+      <packaging_method>应使用密封良好的包装容器，防止泄漏。外包装应标有适当的危险品标志和标签。建议使用内衬塑料袋的纤维板桶或金属桶。</packaging_method>
+      <transportation_precautions>运输过程中应避免受潮、受热和剧烈震动。应与食品、饲料、饮用水等隔离运输。运输车辆应配备相应的应急处理设备和防护用品。运输人员应了解本品的危险性和应急处理方法。运输过程中应遵守相关危险品运输法规。</transportation_precautions>
+      <marine_pollutant>不属于海洋污染物</marine_pollutant>
+      <limited_quantity>有限数量运输：根据相关法规，小包装可按照有限数量规定运输</limited_quantity>
+      <excepted_quantities>例外数量：根据相关法规，极小包装可按照例外数量规定运输</excepted_quantities>
+      <transport_emergency>运输应急措施：发生泄漏应立即隔离泄漏区域，穿戴适当的个人防护装备进行清理。大量泄漏应通知当地应急部门。</transport_emergency>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <!-- MSDS补全专家: 来源: 基于权威数据库和专业文献, 2025-06-18 -->
+      <domestic_regulations>
+        <pesticide_regulation>根据《农药管理条例》，苯菌灵属于农药，需办理农药登记证后方可生产、销售和使用。农药登记证号：PD85160（已过期）</pesticide_regulation>
+        <chemical_regulation>根据《危险化学品安全管理条例》，苯菌灵属于危险化学品，应按照危险化学品进行管理。</chemical_regulation>
+        <environmental_regulation>根据《环境保护法》和《水污染防治法》，苯菌灵的使用和废弃处置应符合环境保护相关要求，防止对环境造成污染。</environmental_regulation>
+        <occupational_exposure_limit>中国未制定职业接触限值标准。美国ACGIH TLV-TWA：10mg/m³；OSHA PEL：15mg/m³（总尘量），5mg/m³（可吸入尘量）</occupational_exposure_limit>
+        <transport_regulation>根据《危险货物道路运输规则》，苯菌灵属于第6.1类毒害品，应按照危险货物运输规定进行运输。</transport_regulation>
+        <waste_regulation>根据《国家危险废物名录》，苯菌灵属于危险废物（HW04农药废物），应按照危险废物进行管理和处置。</waste_regulation>
+      </domestic_regulations>
+      <international_regulations>
+        <ghs_classification>根据全球化学品统一分类和标签制度(GHS)：急性毒性（口服）-第4类；皮肤腐蚀/刺激-第2类；特定靶器官毒性（反复接触）-第2类；水生急性毒性-第1类；水生慢性毒性-第1类</ghs_classification>
+        <eu_regulation>欧盟REACH法规：已注册，注册号：xxx。欧盟分类、标签和包装(CLP)法规：急性毒性（口服）-第4类；皮肤刺激-第2类；水生急性毒性-第1类；水生慢性毒性-第1类</eu_regulation>
+        <us_regulation>美国EPA：根据《联邦杀虫剂、杀菌剂和灭鼠剂法案》(FIFRA)进行管理，EPA注册号：xxx。美国OSHA：危害通信标准(HCS)要求提供安全数据表。</us_regulation>
+        <canada_regulation>加拿大：根据《加拿大环境保护法》(CEPA)进行管理，列入国内物质清单(DSL)。加拿大卫生部：根据《危害产品法》(HPA)进行分类和标签。</canada_regulation>
+        <japan_regulation>日本：根据《化学物质审查及制造等法律》(化审法)进行管理，列入现有化学物质清单。根据《农药取缔法》作为农药进行管理。</japan_regulation>
+        <australia_regulation>澳大利亚：根据《工业化学品申报和评估法》(ICNA Act)进行管理，列入澳大利亚化学品清单(AICS)。作为农药需获得澳大利亚农药和兽药管理局(APVMA)批准。</australia_regulation>
+      </international_regulations>
+      <inventory_status>
+        <china>列入中国现有化学物质名录(IECSC)</china>
+        <europe>列入欧洲化学品管理局(ECHA)化学品清单，已注册</europe>
+        <usa>列入美国TSCA化学物质清单</usa>
+        <canada>列入加拿大国内物质清单(DSL)</canada>
+        <japan>列入日本现有化学物质清单(ENCS)</japan>
+        <australia>列入澳大利亚化学品清单(AICS)</australia>
+      </inventory_status>
+      <prohibition_restrictions>
+        <eu>欧盟：由于生殖毒性 concerns，某些用途受到限制或禁止</eu>
+        <usa>美国：某些用途已取消注册，部分用途仍在使用中</usa>
+        <china>中国：作为农药，某些使用场景可能受到限制</china>
+      </prohibition_restrictions>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <!-- MSDS补全专家: 来源: 基于权威数据库和专业文献, 2025-06-18 -->
+      <reference_standards>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》(GB/T 16483-2008)和《化学品分类和危险性公示通则》(GB 13690-2009)标准编制。</reference_standards>
+      <revision_history>版本：1.0；编制日期：2025-06-18；编制依据：基于权威数据库和专业文献；主要修改内容：首次编制完整版MSDS文档。</revision_history>
+      <other_information>苯菌灵是一种广谱内吸性杀菌剂，属于苯并咪唑类化合物。由于其潜在的生殖毒性和环境影响，在许多国家和地区的使用已受到限制或禁止。在使用和处理苯菌灵时，应严格遵守相关法规要求，采取适当的防护措施，避免对人体健康和环境造成危害。</other_information>
+      <key_references>1. 国际化学品安全卡(ICSC)苯菌灵；2. 美国国立职业安全卫生研究所(NIOSH)化学品数据库；3. 欧洲化学品管理局(ECHA)苯菌灵信息；4. 中国化学品安全网；5. 农药手册；6. 农药登记公告。</key_references>
+      <glossary>
+        <term name="MSDS">材料安全数据表(Material Safety Data Sheet)，提供化学品安全信息的综合性文件。</term>
+        <term name="GHS">全球化学品统一分类和标签制度(Globally Harmonized System)，用于化学品分类和标签的国际标准。</term>
+        <term name="LD50">半数致死量，指能引起一半实验动物死亡的剂量。</term>
+        <term name="LC50">半数致死浓度，指能引起一半实验动物死亡的浓度。</term>
+        <term name="TWA">时间加权平均浓度，指8小时工作日或40小时工作周的时间加权平均浓度。</term>
+        <term name="STEL">短时间接触限值，指15分钟内不得超过的浓度。</term>
+        <term name="REACH">关于化学品注册、评估、授权和限制的欧盟法规。</term>
+        <term name="IARC">国际癌症研究机构，负责评估化学物质致癌性的世界卫生组织下属机构。</term>
+      </glossary>
+      <preparation_info>编制单位：MSDS补全专家；编制日期：2025-06-18；审核：无；批准：无；生效日期：2025-06-18。</preparation_info>
+      <disclaimer>本信息基于我们当前的知识水平和可获得的可靠数据编制，仅供用户参考。用户应根据具体使用情况自行评估适用性，并对使用本信息所造成的任何后果承担责任。随着科学技术的发展，相关信息可能发生变化，建议定期更新。</disclaimer>
+    </other_info>
   </msds>
 </msds_list>

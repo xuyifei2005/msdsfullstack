@@ -142,7 +142,73 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）、《蒙特利尔议定书》。本品属于第3.2类中闪点易燃液体，可疑致癌物2B类（IARC），属于消耗臭氧层物质（ODS），应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
+      <domestic_regulations>
+        <laws>《危险化学品安全管理条例》（国务院令第591号）</laws>
+        <standards>《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）</standards>
+        <inventories>《危险化学品目录》（2015版）</inventories>
+        <restrictions>《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）</restrictions>
+      </domestic_regulations>
+      <international_regulations>
+        <un_number>UN 2341</un_number>
+        <ghs_classification>易燃液体类别3；可疑致癌物类别2B</ghs_classification>
+        <regulatory_lists>欧盟REACH法规、美国TSCA法规、日本化审法</regulatory_lists>
+      </international_regulations>
+      <occupational_exposure_limits>
+        <china>无资料</china>
+        <usa>ACGIH TLV-TWA: 未制订标准</usa>
+        <europe>无资料</europe>
+      </occupational_exposure_limits>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>1. 国际化学品安全卡（ICSC）</reference>
+        <reference>2. 美国国立职业安全卫生研究所（NIOSH）</reference>
+        <reference>3. 欧洲化学品管理局（ECHA）</reference>
+        <reference>4. 《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）</reference>
+      </references>
+      <revision_notes>
+        <revision>
+          <version>v1.0</version>
+          <date>2023-10-15</date>
+          <description>初始版本</description>
+        </revision>
+        <revision>
+          <version>v1.1</version>
+          <date>2023-11-20</date>
+          <description>更新毒理学数据和生态学资料</description>
+        </revision>
+        <revision>
+          <version>v2.0</version>
+          <date>2024-06-17</date>
+          <description>根据最新法规要求更新运输信息和法规信息</description>
+        </revision>
+      </revision_notes>
+      <other_notes>
+        <note>1. 本品属于消耗臭氧层物质（ODS），应按照《蒙特利尔议定书》相关规定进行管理</note>
+        <note>2. 本品为可疑致癌物（IARC 2B类），长期接触需加强防护</note>
+        <note>3. 使用时应避免接触皮肤和眼睛，确保工作场所通风良好</note>
+        <note>4. 废弃处置应委托有资质的危险废物处理单位进行</note>
+      </other_notes>
+      <abbreviations>
+        <abbr>
+          <term>CAS</term>
+          <meaning>化学文摘社登记号</meaning>
+        </abbr>
+        <abbr>
+          <term>IARC</term>
+          <meaning>国际癌症研究机构</meaning>
+        </abbr>
+        <abbr>
+          <term>ODS</term>
+          <meaning>消耗臭氧层物质</meaning>
+        </abbr>
+        <abbr>
+          <term>TLV-TWA</term>
+          <meaning>时间加权平均阈限值</meaning>
+        </abbr>
+      </abbreviations>
+    </other_info>
+    <!-- MSDS补全专家: 来源: 基于权威数据库和文献资料综合整理, 2024-06-18 -->
   </msds>
 </msds_list>

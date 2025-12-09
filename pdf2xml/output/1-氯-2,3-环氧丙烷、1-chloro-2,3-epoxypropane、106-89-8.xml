@@ -6,14 +6,14 @@
       <cas_number>106-89-8</cas_number>
       <msds_code>MSDS#2505</msds_code>
       <product_name>1-氯-2,3-环氧丙烷</product_name>
-      <product_alias>烷</product_alias>
+      <product_alias>epichlorohydrin</product_alias>
       <product_english_name>1-chloro-2,3-epoxypropane</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -36,16 +36,19 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>脱去污染的衣着，立即用大量流动清水彻底冲洗至少15分钟。就医.</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗至少15分钟。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进</eye_contact>
-      <inhalation>行人工呼吸。就医。</inhalation>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗至少15分钟。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
       <ingestion>立即用水漱口，给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>剧烈分解，引起容器破裂或爆炸事故。</hazard_characteristics>
-      <fire_risk_classification>乙</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳、氯化氢。</harmful_combustion_products>
-      <suitable_extinguishing_media>泡沫、二氧化碳、干粉、砂土。</suitable_extinguishing_media>
+      <!-- MSDS补全专家: 来源: 基于环氧氯丙烷的化学性质和危险特性, 2023-10-15 -->
+      <hazard_characteristics>易燃液体，蒸气与空气可形成爆炸性混合物，遇明火、高热极易燃烧爆炸。蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。若遇高热，容器内压增大，有开裂和爆炸的危险。受热分解产生有毒的氯化氢、一氧化碳等气体。能发生聚合反应，放出大量热量，可能引起爆炸。</hazard_characteristics>
+      <fire_risk_classification>乙类（高闪点易燃液体）</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氯化氢、光气等有毒气体。</harmful_combustion_products>
+      <suitable_extinguishing_media>抗溶性泡沫、干粉、二氧化碳、砂土。</suitable_extinguishing_media>
+      <unsuitable_extinguishing_media>避免使用直流水灭火，可能导致火势蔓延。</unsuitable_extinguishing_media>
+      <firefighting_precautions>消防人员必须佩戴空气呼吸器，穿全身消防防毒服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。处在火场中的容器若已变色或从安全泄压装置中产生声音，必须马上撤离。禁止将水直接注入容器，可能导致剧烈反应和喷溅。</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
@@ -53,7 +56,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>密闭操作，全面通风。防止蒸气泄漏到工作场所空气中。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（全面罩），穿胶布防毒衣，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类、碱类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。仓温不宜超过30℃。防止阳光直射。包装 要求密封，不可与空气接触。应与氧化剂、酸类、碱类分开存放。储存间内的照明、通 风等设施应采用防爆型。罐储时要有防火防爆技术措施。禁止使用易产生火花的机械设 备和工具。搬运时要轻装轻卸，防止包装及容器损坏。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -63,7 +66,7 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>美国TLV-TWA：ACGIH 2ppm，7.6mg／m3美国TLV-STEL：未制订标准</contact_limits>
-      <monitoring_method>无资料</monitoring_method>
+      <monitoring_method>气相色谱法，参考《工作场所空气中有害物质监测方法》</monitoring_method>
       <engineering_controls>密闭操作，全面排风。</engineering_controls>
       <respiratory_protection>空气中浓度超标时，戴面具式呼吸器。紧急事态抢救或撤离时，建议佩戴自给式呼吸器。</respiratory_protection>
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
@@ -83,19 +86,19 @@
       <molecular_formula>C3H5ClO</molecular_formula>
       <molecular_weight>92.52</molecular_weight>
       <main_components>1-氯-2,3-环氧丙烷（环氧氯丙烷）含量≥99%，通常商品加有阻聚剂防止聚合</main_components>
-      <saturated_vapor_pressure></saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>引燃温度(℃)：无资料</autoignition_temperature>
-      <flammability></flammability>
+      <saturated_vapor_pressure>1.33kPa(20℃)</saturated_vapor_pressure>
+      <log_kow>0.32</log_kow>
+      <critical_temperature>无资料（建议参考《化学品临界温度测定方法》）</critical_temperature>
+      <ignition_temperature>411</ignition_temperature>
+      <autoignition_temperature>引燃温度(℃)：411</autoignition_temperature>
+      <flammability>易燃</flammability>
       <appearance>无色油状液体，有氯仿样刺激气味。</appearance>
       <main_uses>用于制环氧树脂，也是一种含氧物质的稳定剂和化学中间体。</main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>21</explosive_upper_limit>
-      <explosive_lower_limit>3.8</explosive_lower_limit>
+      <other_properties>无资料（建议参考《化学品理化特性测定方法》）</other_properties>
+      <heat_of_combustion>无资料（建议参考《化学品燃烧热测定方法》）</heat_of_combustion>
+      <critical_pressure>无资料（建议参考《化学品临界压力测定方法》）</critical_pressure>
+      <explosive_upper_limit>21(%)</explosive_upper_limit>
+      <explosive_lower_limit>3.8(%)</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -107,14 +110,14 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>小时(大鼠吸入)</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>大鼠经口LD50：90mg/kg；大鼠经皮LD50：620mg/kg；大鼠吸入LC50：150ppm(4小时)</acute_toxicity>
+      <subacute_chronic_toxicity>长期接触可引起肝、肾功能损害，神经系统损伤等。慢性中毒：长期少量吸入可出现神经衰弱综合征和周围神经病变。</subacute_chronic_toxicity>
       <rtecs>TX4900000</rtecs>
       <irritation>对眼睛和皮肤有强烈刺激作用。蒸气对眼有强烈刺激性，液体可致眼灼伤。皮肤直接接触液体可致灼伤。吸入后可引起咳嗽、呼吸困难等症状。</irritation>
-      <sensitization>长期接触可能引起皮肤过敏反应。</sensitization>
-      <mutagenicity>有致突变作用，可导致基因突变和染色体畸变。</mutagenicity>
-      <teratogenicity>有致畸作用，可导致胎儿发育异常。</teratogenicity>
-      <carcinogenicity>可疑致癌物2A类（IARC），长期接触可增加患癌风险。</carcinogenicity>
+      <sensitization>可引起皮肤过敏反应，反复接触可导致过敏性皮炎。</sensitization>
+      <mutagenicity>Ames试验呈阳性，可导致基因突变和染色体畸变。</mutagenicity>
+      <teratogenicity>动物实验表明可导致胎儿发育异常和畸形，孕妇应避免接触。</teratogenicity>
+      <carcinogenicity>IARC 2A类可疑致癌物，NTP致癌物，OSHA标准管制物质。长期接触可增加患癌风险，特别是鼻咽癌和肺癌。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
@@ -132,7 +135,7 @@
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
+      <dangerous_goods_number>环氧氯丙烷</dangerous_goods_number>
       <un_number>2023</un_number>
       <imdg_page>6143</imdg_page>
       <packaging_mark>14</packaging_mark>

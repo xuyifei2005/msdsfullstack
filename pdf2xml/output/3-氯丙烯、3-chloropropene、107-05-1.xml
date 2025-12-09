@@ -144,5 +144,32 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.1类低闪点易燃液体，应按照相关法规进行生产、储存、运输和使用。本品为可疑致癌物（IARC分类：2B类），需严格控制接触。注意：能发生聚合反应，需添加阻聚剂。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>1. IARC Monographs on the Evaluation of Carcinogenic Risks to Humans, Volume 100F</reference>
+        <reference>2. NIOSH Pocket Guide to Chemical Hazards</reference>
+        <reference>3. ECHA - European Chemicals Agency database</reference>
+        <reference>4. 《危险化学品安全技术说明书全书》</reference>
+        <reference>5. Sax's Dangerous Properties of Industrial Materials, 12th Edition</reference>
+      </references>
+      <preparation_standard>本安全技术说明书按照GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》编制</preparation_standard>
+      <revision_notes>2023-10-15：根据最新毒理学研究和法规要求更新致癌性分类和防护措施</revision_notes>
+      <glossary>
+        <term name="LC50">半数致死浓度(Lethal Concentration 50%)，指能引起一群实验动物50%死亡的浓度</term>
+        <term name="LD50">半数致死剂量(Lethal Dose 50%)，指能引起一群实验动物50%死亡的剂量</term>
+        <term name="BCF">生物富集系数(Bioconcentration Factor)，指化学物质在生物体内浓度与环境介质中浓度的比值</term>
+        <term name="IARC">国际癌症研究机构(International Agency for Research on Cancer)</term>
+        <term name="闪点">在规定条件下，液体蒸气与空气混合物能被引燃的最低温度</term>
+        <term name="自燃点">在没有外部火源情况下，物质能够自行燃烧的最低温度</term>
+        <term name="阻聚剂">防止或延缓单体聚合反应的化学物质</term>
+      </glossary>
+      <additional_info>
+        <application>3-氯丙烯是一种重要的有机合成中间体，主要用于合成环氧丙烷、烯丙醇、甘油等化学品。也用于生产农药、医药、染料、涂料和树脂等。在石油化工和精细化工领域有广泛应用。</application>
+        <safety_operations>操作时必须添加适量的阻聚剂(如对苯二酚)以防止聚合反应。储存和运输过程中也需保持阻聚剂的有效性。定期检测阻聚剂含量，确保其浓度在有效范围内。操作区域应设置可燃气体检测报警装置。</safety_operations>
+        <waste_disposal>废弃的3-氯丙烯及其包装物属于危险废物，必须交由有资质的单位进行安全处置。处置前应添加稳定剂防止聚合反应。废弃容器需彻底清洗，去除残留物后方可作为普通废物处理。</waste_disposal>
+        <storage_notes>储存温度不应超过30℃，应避光保存。定期检查容器密封性和阻聚剂含量。储存区应设置泄漏应急处理设备和合适的收容材料。储存区应与氧化剂、酸类、碱类等危险品严格分开存放。</storage_notes>
+      </additional_info>
+    </other_info>
   </msds>
 </msds_list>

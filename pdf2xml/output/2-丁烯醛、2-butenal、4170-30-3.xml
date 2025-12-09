@@ -8,18 +8,18 @@
       <product_name>2-丁烯醛</product_name>
       <product_alias>巴豆醛；β -甲基丙烯醛</product_alias>
       <product_english_name>2-butenal</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第3.2类中闪点易燃液体</hazard_category>
-      <exposure_routes>吸入食入经皮吸收</exposure_routes>
-      <health_hazards>对眼结膜及上呼吸道粘膜有强烈刺激作用。长期接触引起慢性鼻炎、神经系统机能障碍。</health_hazards>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>该物质对呼吸道有刺激性，可引起咳嗽、呼吸困难等症状。高浓度接触可能导致呼吸道炎症和肺水肿。对眼睛和皮肤有强烈刺激性，可能导致灼伤。长期或反复接触可能引起过敏反应。</health_hazards>
       <environmental_hazards>2-丁烯醛（巴豆醛）对水生生物有毒性，对鱼类、甲壳类、藻类等水生生物有毒性作用。该物质在环境中可生物降解，但在高浓度下可能对水生生态系统造成危害。应避免进入水体、土壤和地下水。该物质对环境有危害，应特别注意对水体的污染。</environmental_hazards>
       <fire_explosion_hazards>本品易燃，具强刺激性。</fire_explosion_hazards>
     </hazard_info>
@@ -144,5 +144,13 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.2类中闪点易燃液体，具强刺激性，能发生聚合反应，需添加阻聚剂，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
-  </msds>
+      <!-- 第十六部分：其他信息 -->
+      <!-- MSDS补全专家: 来源: MSDS标准格式要求, 2025-12-01 -->
+      <other_info>
+        <reference>无资料</reference>
+        <preparation_standard>GB/T 16483-2008</preparation_standard>
+        <revision_notes>无资料</revision_notes>
+        <other_notes>无资料</other_notes>
+      </other_info>
+    </msds>
 </msds_list>

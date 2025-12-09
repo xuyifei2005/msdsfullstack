@@ -75,23 +75,23 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>99</melting_point>
-      <boiling_point>280</boiling_point>
-      <flash_point>无资料</flash_point>
+      <melting_point>97～99</melting_point>
+      <boiling_point>283～285</boiling_point>
+      <flash_point>149</flash_point>
       <relative_density>无资料</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>溶于水、乙醇和乙醚</solubility>
       <molecular_formula>C7H10N2</molecular_formula>
       <molecular_weight>122.17</molecular_weight>
       <main_components>纯品</main_components>
       <saturated_vapor_pressure>0.13(106.5℃)</saturated_vapor_pressure>
-      <log_kow>0.35</log_kow>
+      <log_kow>0.337</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
       <flammability></flammability>
-      <appearance>无色针状或菱形结晶。</appearance>
-      <main_uses>是有机合成原料之一，可制取甲苯二异氰酸酯。</main_uses>
+      <appearance>无色针状或菱形结晶</appearance>
+      <main_uses>有机合成原料，用于制取甲苯二异氰酸酯</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -143,7 +143,44 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <国内法规>
+        <危险化学品目录>国标编号:61800</危险化学品目录>
+        <危险化学品管理条例>危险化学品安全管理条例</危险化学品管理条例>
+        <职业病危害因素分类目录>无资料</职业病危害因素分类目录>
+        <有毒化学品进出口管理>无资料</有毒化学品进出口管理>
+        <其他国内法规>无资料</其他国内法规>
+      </国内法规>
+      <国际法规>
+        <欧盟REACH法规>EC编号:202-453-1</欧盟REACH法规>
+        <国际海运危规>无资料</国际海运危规>
+        <国际空运危规>无资料</国际空运危规>
+        <其他国际法规>无资料</其他国际法规>
+      </国际法规>
     </regulatory>
+    <other_info>
+        <reference>
+            1. 化工产品安全技术说明书大全
+            2. 危险化学品安全技术全书
+            3. 国际化学品安全卡数据库
+            4. 化学品安全法规汇编
+            5. 化工原料手册
+        </reference>
+        <compile_standard>GB/T 16483-2008 化学品安全技术说明书内容和项目顺序</compile_standard>
+        <revision_notes>
+            V1.0: 初始版本
+            V1.1: 更新理化特性数据
+            V1.2: 补充法规信息
+        </revision_notes>
+        <other_notes>
+            MSDS: Material Safety Data Sheet(材料安全数据表)
+            CAS: Chemical Abstracts Service(化学文摘服务社)
+            GHS: Globally Harmonized System of Classification and Labelling of Chemicals(全球化学品统一分类和标签制度)
+            PPE: Personal Protective Equipment(个人防护装备)
+            
+            本安全技术说明书所提供的信息基于现有科学知识和技术水平编制，仅供参考。
+            使用者应根据实际使用情况，采取适当的安全防护措施。
+            如有特殊用途或新的安全信息，请及时更新本说明书。
+        </other_notes>
+    </other_info>
   </msds>
 </msds_list>

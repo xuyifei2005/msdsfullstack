@@ -77,19 +77,19 @@
       <pH>无资料</pH>
       <melting_point>-61.8</melting_point>
       <boiling_point>112-113</boiling_point>
-      <flash_point>无资料</flash_point>
+      <flash_point>29.9</flash_point>
       <relative_density>1.14(20℃)</relative_density>
       <relative_vapor_density>2.58</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>与水混溶，可混溶于多数有机溶剂。</solubility>
       <molecular_formula>C3H4O2</molecular_formula>
       <molecular_weight>72.06</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>2,3-环氧-1-丙醛</main_components>
       <saturated_vapor_pressure>10.13(57-58℃)</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>引燃温度(℃)：无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>易燃</flammability>
       <appearance>无色不稳定液体，有刺鼻气味。</appearance>
       <main_uses>用作在棉织品处理、皮革、鞣革和蛋白凝固中双官能的化学中间体和交联剂。</main_uses>
       <other_properties>无资料</other_properties>
@@ -143,7 +143,47 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：
+1. 《危险化学品目录》(2022调整版)：危险化学品目录序号976
+2. 《危险货物道路运输规则》(JT/T 617)：
+   - UN编号：2622
+   - 包装类别：Ⅱ
+   - 运输分类：第3.3类 高闪点易燃液体
+3. 《危险化学品安全管理条例》
+4. 《工作场所安全使用化学品规定》
+
+国际法规：
+1. 《全球化学品统一分类和标签制度》(GHS)：
+   - 易燃液体类别3
+   - 皮肤腐蚀/刺激类别2
+   - 严重眼损伤/眼刺激类别2A
+   - 特异性靶器官毒性—单次接触类别3
+2. 《国际海运危险货物规则》(IMDG Code)
+3. 《国际空运危险货物规则》(IATA DGR)
+4. 《关于危险货物运输的建议书·规章范本》(TDG)</regulatory_info>
     </regulatory>
+    <other_info>
+        <reference>1. 《化学品安全技术说明书编写指南》GB/T 16483-2008
+2. 《化学品分类和危险性公示通则》GB 13690-2009
+3. 《危险化学品目录》(2022调整版)
+4. 《危险货物道路运输规则》(JT/T 617)
+5. 《全球化学品统一分类和标签制度》(GHS)</reference>
+        <compile_standard>GB/T 16483-2008</compile_standard>
+        <revision_notes>V1.0 初版发布
+2023-10-15 根据最新法规和标准更新内容，补充理化特性数据和法规信息</revision_notes>
+        <other_notes>缩略语和术语解释：
+MSDS：化学品安全技术说明书(Material Safety Data Sheet)
+CAS号：化学文摘社登记号(Chemical Abstracts Service Registry Number)
+UN编号：联合国危险货物编号(United Nations Number)
+GHS：全球化学品统一分类和标签制度(Globally Harmonized System)
+TWA：时间加权平均浓度(Time-Weighted Average)
+STEL：短时间接触容许浓度(Short-Term Exposure Limit)
+
+注意事项：
+1. 本产品不稳定，应储存于阴凉通风处，避免高温和阳光直射
+2. 使用时应佩戴适当的个人防护装备
+3. 避免与强氧化剂、强酸类物质接触
+4. 泄漏时应立即采取应急处理措施</other_notes>
+    </other_info>
   </msds>
 </msds_list>

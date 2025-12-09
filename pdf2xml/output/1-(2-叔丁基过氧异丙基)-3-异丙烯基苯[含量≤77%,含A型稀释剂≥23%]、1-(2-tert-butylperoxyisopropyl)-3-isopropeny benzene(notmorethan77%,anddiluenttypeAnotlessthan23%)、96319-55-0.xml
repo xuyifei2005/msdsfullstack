@@ -42,10 +42,11 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>无资料</harmful_combustion_products>
-      <suitable_extinguishing_media>合适的灭火介质：使用适合火灾类型的合适的灭火剂。不合适的灭火介质：无特别说明。</suitable_extinguishing_media>
+      <hazard_characteristics>有机过氧化物（D型），受热、接触火焰或受到摩擦、震动、撞击时可能发生爆炸性分解。与还原剂、促进剂、强酸、强碱等接触可能发生剧烈反应。燃烧时可能产生爆炸性分解，释放大量热量和有毒气体。容器受热可能发生爆炸。</hazard_characteristics>
+      <fire_risk_classification>甲类（有机过氧化物）</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、有机过氧化物分解产物、有毒烟雾</harmful_combustion_products>
+      <suitable_extinguishing_media>使用大量水冷却容器，避免直接喷射到泄漏物上。可使用干粉、二氧化碳、泡沫灭火剂。禁止使用强水流直接冲击泄漏物，可能导致扩散</suitable_extinguishing_media>
+      <firefighting_precautions>消防人员必须佩戴全套防护装备，包括自给式呼吸器、防火服和防化手套。灭火时应站在上风向，保持安全距离。先冷却容器，再扑灭火焰。如有可能，将容器移至安全区域。火灾扑灭后，继续冷却容器防止复燃。泄漏物应使用惰性材料覆盖，防止二次火灾</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>

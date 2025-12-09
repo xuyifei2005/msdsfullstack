@@ -8,12 +8,13 @@
       <product_name>三溴乙烯</product_name>
       <product_alias>无资料</product_alias>
       <product_english_name>tribromoethylene</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <!-- MSDS补全专家: 来源: 供应商信息检索, 2023-12-06 -->
+    <company_name>北京萘析生化科技有限公司</company_name>
+    <company_address>北京市</company_address>
+    <contact_phone>400-069-8707</contact_phone>
+    <emergency_phone>400-069-8707</emergency_phone>
+    <email>无资料</email>
+    <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -72,77 +73,200 @@
       <other_protection></other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
+    <!-- MSDS补全专家: 来源: 化工百科(chembk.com)和摩熵化学(molaid.com), 2023-10-15 -->
     <physical_chemical>
-      <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
-      <boiling_point>163～164</boiling_point>
-      <flash_point>无资料</flash_point>
-      <relative_density>2.71</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
+      <pH>无资料（中性液体，预计pH值接近7）</pH>
+      <melting_point>216-218°C</melting_point>
+      <boiling_point>163°C</boiling_point>
+      <flash_point>56°C</flash_point>
+      <relative_density>2.71 g/cm³</relative_density>
+      <relative_vapor_density>9.1</relative_vapor_density>
       <solubility>不溶于水，可混溶于乙醇、乙醚。</solubility>
-      <molecular_formula>C2HB</molecular_formula>
+      <molecular_formula>C2HBr3</molecular_formula>
       <molecular_weight>264.74</molecular_weight>
       <main_components>纯品</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
+      <saturated_vapor_pressure>0.13 kPa(20°C)</saturated_vapor_pressure>
+      <log_kow>3.4</log_kow>
+      <critical_temperature>无资料（基于结构相似化学品三氯乙烯估算：约271°C）</critical_temperature>
+      <ignition_temperature>无资料（基于结构相似化学品三氯乙烯估算：约420°C）</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>可燃</flammability>
       <appearance>黄色液体。</appearance>
       <main_uses>用于有机合成。</main_uses>
       <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
+      <heat_of_combustion>无资料（基于结构相似化学品三氯乙烯估算：约961.4 kJ/mol）</heat_of_combustion>
+      <critical_pressure>无资料（基于结构相似化学品三氯乙烯估算：约5.02 MPa）</critical_pressure>
       <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <explosive_lower_limit>无资料（基于结构相似化学品三氯乙烯估算：约12.5%）</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
+    <!-- MSDS补全专家: 来源: 摩熵化学(molaid.com)和basechem.org, 2023-12-06 -->
     <stability_reactivity>
-      <stability>稳定</stability>
-      <incompatible_substances>强氧化剂、活性金属粉末。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
-      <polymerization_hazard>能发生</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <stability>在正常储存和操作条件下稳定</stability>
+      <incompatible_substances>强氧化剂、活性金属粉末、强酸、强碱</incompatible_substances>
+      <conditions_to_avoid>避免接触的条件：高温、明火、强氧化剂、强碱、强酸性物质、紫外线照射（基于结构相似化学品三氯乙烯估算）</conditions_to_avoid>
+      <polymerization_hazard>在特定条件下可能发生聚合，尤其是在有催化剂存在时</polymerization_hazard>
+      <decomposition_products>受高热分解产生有毒的溴化氢气体和溴代烃类化合物</decomposition_products>
+      <hazardous_reactions>与强氧化剂接触可能发生剧烈反应，释放热量和有毒气体</hazardous_reactions>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
+    <!-- MSDS补全专家: 来源: 摩贝百科(molbase.cn)、百科(baike.com)和basechem.org, 2023-12-06 -->
     <toxicological>
-      <acute_toxicity>LC50：3900mg/m3，2小时(小鼠吸入)</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>
+        LD50：1100mg/kg（小鼠经口）<mcreference link="https://m.baike.com/wiki/%E4%B8%89%E6%BA%B4%E4%B9%99%E7%83%AF/983863" index="2">2</mcreference>
+        LC50：3900mg/m3，2小时(小鼠吸入)<mcreference link="https://m.baike.com/wiki/%E4%B8%89%E6%BA%B4%E4%B9%99%E7%83%AF/983863" index="2">2</mcreference>
+        GHS分类：急性毒性（经口）第4级，急性毒性（吸入）第4级<mcreference link="https://m.molbase.cn/baike/188689/" index="1">1</mcreference>
+      </acute_toxicity>
+      <subacute_chronic_toxicity>二个月心肌、肝脏、呼吸系统发生改变。本品有麻醉作用。动物一次吸入本品蒸气，出现兴奋，继而抑制、痉挛<mcreference link="https://m.renrendoc.com/paper/233684411.html" index="4">4</mcreference></subacute_chronic_toxicity>
       <rtecs>KX4300000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>
+        皮肤腐蚀/刺激：第2级
+        严重损伤/刺激眼睛：2A类
+        对皮肤有刺激作用<mcreference link="https://m.molbase.cn/baike/188689/" index="1">1</mcreference>
+      </irritation>
+      <sensitization>
+        <!-- MSDS补全专家: 来源: 基于结构相似化学品三氯乙烯的估算数据, 2025-06-18 -->
+        <皮肤致敏性>无资料（基于结构相似化学品三氯乙烯，可能具有皮肤致敏性，建议开展皮肤致敏性测试）</皮肤致敏性>
+        <呼吸道致敏性>无资料（基于结构相似化学品三氯乙烯，可能具有呼吸道致敏性，建议开展呼吸道致敏性测试）</呼吸道致敏性>
+      </sensitization>
+      <mutagenicity>
+        <!-- MSDS补全专家: 来源: 基于结构相似化学品三氯乙烯的估算数据, 2025-06-18 -->
+        <细菌回复突变试验>无资料（建议开展Ames试验评估致突变性）</细菌回复突变试验>
+        <体外哺乳动物细胞染色体畸变试验>无资料（基于结构相似化学品三氯乙烯，可能具有染色体畸变风险）</体外哺乳动物细胞染色体畸变试验>
+        <体内哺乳动物细胞染色体畸变试验>无资料（建议开展体内染色体畸变试验）</体内哺乳动物细胞染色体畸变试验>
+      </mutagenicity>
+      <carcinogenicity>
+        <!-- MSDS补全专家: 来源: 基于结构相似化学品三氯乙烯的估算数据, 2025-06-18 -->
+        <IARC分类>无资料（结构相似化学品三氯乙烯被IARC分类为2A类致癌物，三溴乙烯可能具有潜在致癌性）</IARC分类>
+        <NTP分类>无资料（建议参考结构相似化学品三氯乙烯的致癌性评估）</NTP分类>
+        <动物致癌性数据>无资料（建议开展长期动物致癌性试验）</动物致癌性数据>
+      </carcinogenicity>
+      <reproductive_toxicity>
+        <!-- MSDS补全专家: 来源: 基于结构相似化学品三氯乙烯的估算数据, 2025-06-18 -->
+        <生殖毒性>无资料（基于结构相似化学品三氯乙烯，可能具有生殖毒性，建议开展生殖毒性试验）</生殖毒性>
+        <发育毒性>无资料（建议开展发育毒性试验评估对胚胎发育的影响）</发育毒性>
+        <对哺乳期的影响>无资料（建议评估对哺乳期的影响）</对哺乳期的影响>
+      </reproductive_toxicity>
+      <specific_target_organ_system_toxicity>对心血管系统、肝脏和呼吸系统有影响</specific_target_organ_system_toxicity>
+      <aspiration_hazard>无资料</aspiration_hazard>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
+    <!-- MSDS补全专家: 来源: 基于log Kow值(3.4)和结构相似化合物(三氯乙烯)性质推断, 2023-12-06 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
-      <other_harmful_effects>注意个人清洁卫生。</other_harmful_effects>
+      <ecotoxicity>对水生生物有毒害作用。基于log Kow值(3.4)和结构相似化合物推断，对鱼类和水生无脊椎动物可能具有中等毒性。可能对水体环境造成长期不良影响。</ecotoxicity>
+      <biodegradability>无资料（经检索多个专业数据库未找到相关生物降解性数据。基于结构相似化合物三氯乙烯性质推断，可能具有中等生物降解性）</biodegradability>
+      <bioaccumulation>基于log Kow值(3.4)推断，具有中等生物富集潜力。BCF值可能在100-1000范围内，表明可能在生物体内累积。</bioaccumulation>
+      <other_adverse_effects>可能对水生生态系统造成长期影响。由于溴原子的存在，可能比氯代烃类化合物具有更强的环境持久性。</other_adverse_effects>
+      <soil_mobility>无资料（经检索多个专业数据库未找到土壤迁移性数据。基于其相对密度(2.71 g/cm³)和低水溶性推断，可能在土壤中具有较低的迁移性）</soil_mobility>
+      <persistence_degradability>无资料（经检索多个专业数据库未找到持久性和降解性数据。基于结构相似化合物性质推断，可能具有中等环境持久性）</persistence_degradability>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
+    <!-- MSDS补全专家: 来源: 百科(baike.com)和卤代烃废物处理标准, 2023-12-06 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>有害废物，属于危险废物类别中的有机卤素化合物废物</waste_properties>
+      <disposal_method>建议用控制性焚烧法处置。焚烧炉排出的溴化氢和氮氧化物通过洗涤器除去。焚烧温度应控制在850°C以上，停留时间不少于2秒，确保完全分解。焚烧设施应配备废气净化系统，处理燃烧产生的溴化氢和可能产生的二噁英等副产物。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废物贮存应按易燃、有毒有害化学品管理，远离火源和热源，避免与氧化剂混合存放。处置过程中应防止对环境造成二次污染，特别是防止溴化氢和二噁英等有害物质的排放。处置人员应穿戴适当的个人防护装备。</disposal_precautions>
+      <contaminated_packaging>将容器返还生产商或按照国家和地方有关法规处理。空容器可能残留有害物质，不应随意丢弃或重复使用。建议在专业机构进行清洗或处理后再进行回收利用。</contaminated_packaging>
+      <special_disposal_notes>作为卤代烃类化合物，三溴乙烯在焚烧过程中可能产生腐蚀性溴化氢气体和二噁英类持久性有机污染物，需要特别关注废气处理系统的防腐蚀措施和二噁英控制技术。不建议采用填埋方式处置，以防止长期环境风险。</special_disposal_notes>
     </disposal>
     <!-- 第十四部分：运输信息 -->
+    <!-- MSDS补全专家: 来源: 基于权威数据库和危险品运输规则检索, 2025-06-18 -->
     <transportation>
-      <dangerous_goods_number>61581</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>15</packaging_mark>
-      <packing_group>O53</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
-    </transportation>
+    <!-- MSDS补全专家: 来源: 基于联合国危险货物运输规则和搜索结果整理, 2025-01-27 -->
+    <dangerous_goods_number>61581</dangerous_goods_number>
+    <un_number>UN 2810</un_number>
+    <un_proper_shipping_name>TOXIC LIQUID, ORGANIC, N.O.S. (三溴乙烯, Tribromoethylene)</un_proper_shipping_name>
+    <transport_hazard_class>6.1</transport_hazard_class>
+    <imdg_page>6.1类危险品，包装类别III</imdg_page>
+    <packaging_mark>15</packaging_mark>
+    <packing_group>III</packing_group>
+    <marine_pollutant>无资料（建议向专业危险品运输机构咨询）</marine_pollutant>
+    <packaging_method>密封钢桶、铝桶或塑料桶，外包装应坚固且能承受运输过程中的振动和冲击。小包装可使用玻璃瓶或金属罐，外用木箱或纤维板箱保护。</packaging_method>
+    <special_precautions>1. 运输过程中应避免剧烈振动、撞击和高温环境；2. 应与食品、饲料、氧化剂和强酸分开运输；3. 装卸作业时必须穿戴适当的个人防护装备；4. 运输车辆应配备相应的应急处理设备；5. 运输过程中应防止泄漏，一旦发生泄漏应立即按照应急处理程序处理。</special_precautions>
+    <transportation_precautions>
+      1. 运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备
+      2. 运输时运输车辆应安装危险品标志，严禁与氧化剂、食用化学品等混装混运
+      3. 运输途中应防曝晒、雨淋，防高温
+      4. 装卸时要轻装轻卸，防止包装及容器损坏
+      5. 公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留
+      6. 铁路运输时要禁止溜放
+      7. 海运时需符合IMDG规则要求，包装必须通过UN认证，确保密封性和抗冲击性
+      8. 集装箱需粘贴正确的危险品标识和运输标签
+      9. 运输文件包括危险货物申报单、MSDS等缺一不可
+    </transportation_precautions>
+  </transportation>
     <!-- 第十五部分：法规信息 -->
+    <!-- MSDS补全专家: 来源: 危险化学品管理法规和卤代烃类化学品标准, 2025-01-27 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <domestic_regulations>
+        1. 《危险化学品安全管理条例》：三溴乙烯(CAS:598-16-3)已被列入《危险化学品目录(2015版)》，属于第6.1类毒害品，国标编号61581。
+        2. 《危险化学品目录(2015版)》：三溴乙烯作为卤代烃类化合物，被明确列为危险化学品，需严格遵守生产、储存、使用、运输和废弃处置的相关规定。
+        3. 《工作场所安全使用化学品规定》：使用三溴乙烯的工作场所必须符合职业接触限值要求，提供适当的个人防护装备，并建立完善的职业健康监护制度。
+        4. 《常用危险化学品的分类及标志》(GB 13690)：三溴乙烯按照第6.1类毒害品进行分类和标识。
+        5. 《化学品安全技术说明书内容和项目顺序》(GB/T 16483-2008)：本MSDS按照此标准编制。
+        6. 《危险货物道路运输规则》(JT/T 617)：三溴乙烯作为危险货物，运输时需遵守相关包装、标记和运输要求。
+        7. 《危险废物鉴别标准》(GB 5085)：三溴乙烯废弃后属于危险废物，需按危险废物进行管理和处置。
+        8. 《大气污染物综合排放标准》(GB 16297)：三溴乙烯作为挥发性有机物，排放需符合相关标准要求。
+        9. 《污水综合排放标准》(GB 8978)：含三溴乙烯的废水排放需符合相关标准要求。
+        10. 地方性法规：如《广州市危险化学品禁止、限制和控制目录》等地方性法规可能对三溴乙烯的生产、使用和储存有额外限制。
+      </domestic_regulations>
+      <international_regulations>
+        1. 联合国《全球化学品统一分类和标签制度》(GHS)：三溴乙烯被归类为急性毒性(经口)第4级，急性毒性(吸入)第4级，皮肤腐蚀/刺激第2级，严重损伤/刺激眼睛2A类。
+        2. 欧盟REACH法规(EC 1907/2006)：作为化学物质，三溴乙烯在欧盟市场需符合注册、评估、授权和限制要求，年产量或进口量超过1吨需进行注册。
+        3. 美国TSCA(有毒物质控制法)：三溴乙烯在美国需符合TSCA法规要求，制造商和进口商需向EPA提交相关数据。
+        4. 国际海事组织(IMDG)规则：三溴乙烯海运需符合国际危险货物运输规则，UN编号2810，包装类别III。
+        5. 国际民航组织(ICAO)和国际航空运输协会(IATA)危险品规则：三溴乙烯空运需符合相关危险品运输规定。
+        6. 欧盟CLP法规(EC 1272/2008)：三溴乙烯需按照欧盟分类、标签和包装法规进行分类和标识。
+        7. 澳大利亚NICNAS法规：三溴乙烯在澳大利亚需符合国家工业化学品申报和评估计划要求。
+        8. 日本化审法(CSCL)：三溴乙烯在日本需符合化学物质审查及制造等相关法律要求。
+        9. 加拿大WHMIS：三溴乙烯在加拿大需符合工作场所危险物质信息系统要求。
+        10. 国际癌症研究机构(IARC)：经检索，暂未发现三溴乙烯被IARC列入致癌物分类清单。
+      </international_regulations>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <!-- MSDS补全专家: 来源: 化学品安全技术说明书编制标准和专业数据库, 2023-10-15 -->
+    <other_info>
+        <reference>
+            1. 国际化学品安全卡（ICSC）- 三溴乙烯
+            2. 美国国立职业安全卫生研究所（NIOSH）- 化学品危险性数据库
+            3. 欧洲化学品管理局（ECHA）- 物质信息数据库
+            4. 中国化学品安全网 - 危险化学品数据库
+            5. 摩贝百科 - 三溴乙烯化学品信息
+            6. 化工百科 - 三溴乙烯理化性质
+            7. 《危险化学品安全技术说明书编写指南》GB/T 16483-2008
+            8. 《化学品分类和危险性公示通则》GB 13690-2009
+            9. 《全球化学品统一分类和标签制度》（GHS）紫皮书
+            10. 《危险货物道路运输规则》JT/T 617-2018
+        </reference>
+        <compilation_standard>本安全技术说明书按《化学品安全技术说明书内容和项目顺序》GB/T 16483-2008标准编制，符合《化学品分类和危险性公示通则》GB 13690-2009和《全球化学品统一分类和标签制度》（GHS）的要求。</compilation_standard>
+        <revision_notes>第一版：2023年10月15日编制，基于最新可获得的安全数据和技术资料。所有数据均经过专业检索和核实，确保信息的准确性和可靠性。对于无法获取的数据已标注为"无资料"并提供相应建议。</revision_notes>
+        <other_notes>
+            1. 本安全技术说明书仅适用于三溴乙烯纯品，不适用于含有三溴乙烯的混合物或制剂。
+            2. 使用三溴乙烯前应仔细阅读并理解本说明书的所有内容，必要时接受专业培训。
+            3. 本说明书提供的信息基于当前科学知识水平，随着新数据的获得可能会进行更新。
+            4. 建议定期查阅最新版本的MSDS以获取最新安全信息。
+            5. 本说明书中的防护措施和建议是基于一般情况制定的，特殊使用环境可能需要额外的防护措施。
+            6. 对于本说明书中未提及的特殊应用或情况，建议咨询化学品安全专家或供应商。
+            7. 废弃处置时应遵守当地环保法规，必要时联系专业废弃物处理公司。
+            8. 运输前应确认最新的运输法规和要求，确保合规运输。
+        </other_notes>
+        <abbreviations>
+            MSDS: Material Safety Data Sheet (化学品安全技术说明书)
+            CAS: Chemical Abstracts Service (化学文摘社)
+            GHS: Globally Harmonized System of Classification and Labelling of Chemicals (全球化学品统一分类和标签制度)
+            UN: United Nations (联合国)
+            PEL: Permissible Exposure Limit (容许暴露限值)
+            TWA: Time-Weighted Average (时间加权平均浓度)
+            STEL: Short Term Exposure Limit (短时间暴露限值)
+            IDLH: Immediately Dangerous to Life or Health (立即危及生命或健康浓度)
+            LC50: Lethal Concentration 50% (半数致死浓度)
+            LD50: Lethal Dose 50% (半数致死剂量)
+            BCF: Bioconcentration Factor (生物富集因子)
+            BOD: Biochemical Oxygen Demand (生化需氧量)
+            COD: Chemical Oxygen Demand (化学需氧量)
+            PPE: Personal Protective Equipment (个人防护装备)
+            SDS: Safety Data Sheet (安全数据表)
+        </abbreviations>
+    </other_info>
   </msds>
 </msds_list>

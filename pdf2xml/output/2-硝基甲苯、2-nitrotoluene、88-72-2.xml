@@ -144,5 +144,28 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品，应按照相关法规进行生产、储存、运输和使用。本品为可疑致癌物（IARC分类：2B类），需严格控制接触。应严格执行极毒物品"五双"管理制度。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>1. IARC Monographs on the Evaluation of Carcinogenic Risks to Humans, Volume 71 (1999)
+2. NIOSH Pocket Guide to Chemical Hazards
+3. ECHA Substance Information: 2-Nitrotoluene (CAS No. 88-72-2)
+4. 中国化学品安全网化学品数据库
+5. 《化学品安全技术说明书内容和项目顺序》GB/T 16483-2008</references>
+      <preparation_standard>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》GB/T 16483-2008标准编制</preparation_standard>
+      <revision_notes>2023-10-15：初次编制，补充了毒理学信息、生态学资料和废弃处置方法
+2024-06-18：更新了致癌性分类（IARC 2B类）和生态毒性数据</revision_notes>
+      <abbreviations>LD50：半数致死量，指能引起一半实验动物死亡的剂量
+LC50：半数致死浓度，指能引起一半实验动物死亡的浓度
+BCF：生物富集系数，表示化学物质在生物体内富集的程度
+IARC：国际癌症研究机构
+GHS：全球化学品统一分类和标签制度</abbreviations>
+      <supplementary_info>应用领域：主要用于有机合成，是制造染料（如酸性染料、分散染料）、医药中间体、农药的重要原料。也用于制造炸药、香料和橡胶化学品。
+
+安全操作建议：操作时应佩戴适当的个人防护装备，包括防毒面具、化学防护眼镜、防化服和耐化学手套。确保工作场所通风良好，避免吸入蒸气。避免与氧化剂、还原剂和强碱接触。
+
+废弃处置要求：废弃时应按照危险废物管理规定进行处理，采用高温焚烧法处置，焚烧温度需≥1100℃，确保完全燃烧。尾气需经处理以去除氧化氮，确保达标排放。
+
+特殊注意事项：本品为可疑致癌物（IARC 2B类），长期接触可能增加致癌风险。应严格控制接触，定期进行职业健康检查。孕妇和哺乳期妇女应避免接触。应严格执行极毒物品"五双"管理制度。</supplementary_info>
+    </other_info>
   </msds>
 </msds_list>

@@ -150,8 +150,103 @@
       <transportation_precautions>运输前检查密封，防止跌落和碰撞。严禁与氧化剂、酸类、碱类、食用化学品混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。本品易燃，其蒸气与空气混合，能形成爆炸性混合物。加热时，容器可能爆炸。受热或接触火焰可能会产生膨胀或爆炸性分解，需特别注意。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
-    <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.3类高闪点易燃液体，可疑致癌物2B类（IARC），应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
-    </regulatory>
+    <regulatory_info>
+      <domestic_regulations>
+        <regulation_name>《危险化学品安全管理条例》</regulation_name>
+        <regulation_content>国务院令第591号，对危险化学品的生产、储存、使用、经营和运输的安全管理进行了全面规定</regulation_content>
+        <regulation_name>《危险化学品目录》</regulation_name>
+        <regulation_content>2015版，包含了对危险化学品的分类、标签和包装要求</regulation_content>
+        <regulation_name>《危险货物品名表》</regulation_name>
+        <regulation_content>GB 12268-2012，规定了危险货物的分类、品名和编号</regulation_content>
+        <regulation_name>《危险货物运输包装通用技术条件》</regulation_name>
+        <regulation_content>GB 12463-2009，规定了危险货物运输包装的技术要求</regulation_content>
+        <regulation_name>《危险货物道路运输安全管理办法》</regulation_name>
+        <regulation_content>交通运输部令2019年第29号，对危险货物道路运输的安全管理进行了规定</regulation_content>
+        <chemical_classification>第3.3类高闪点易燃液体，可疑致癌物2B类（IARC）</chemical_classification>
+      </domestic_regulations>
+      <international_regulations>
+        <regulation_name>联合国《关于危险货物运输的建议书》</regulation_name>
+        <regulation_content>TDG/GHS，对危险化学品的分类、标签和运输提供了国际统一标准</regulation_content>
+        <regulation_name>欧盟REACH法规</regulation_name>
+        <regulation_content>EC 1907/2006，对化学品的注册、评估、授权和限制进行了规定</regulation_content>
+        <regulation_name>国际癌症研究机构(IARC)分类</regulation_name>
+        <regulation_content>2B类可疑致癌物，可能对人类有致癌性</regulation_content>
+        <regulation_name>美国OSHA标准</regulation_name>
+        <regulation_content>29 CFR 1910.106，对易燃液体的工作场所暴露限值进行了规定</regulation_content>
+      </international_regulations>
+      <occupational_exposure_limits>
+        <exposure_limit_country>中国</exposure_limit_country>
+        <exposure_limit_type>未制定</exposure_limit_type>
+        <exposure_limit_value>无资料</exposure_limit_value>
+        <exposure_limit_country>美国(ACGIH)</exposure_limit_country>
+        <exposure_limit_type>TWA</exposure_limit_type>
+        <exposure_limit_value>未制定标准</exposure_limit_value>
+        <exposure_limit_country>美国(ACGIH)</exposure_limit_country>
+        <exposure_limit_type>STEL</exposure_limit_type>
+        <exposure_limit_value>未制定标准</exposure_limit_value>
+        <exposure_limit_country>美国(OSHA)</exposure_limit_country>
+        <exposure_limit_type>PEL</exposure_limit_type>
+        <exposure_limit_value>未制定标准</exposure_limit_value>
+      </occupational_exposure_limits>
+    </regulatory_info>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>1. 《危险化学品安全技术说明书编写规定》(GB/T 16483-2008)</reference>
+        <reference>2. 《化学品分类和危险性公示通则》(GB 13690-2009)</reference>
+        <reference>3. 《化学品安全标签编写规定》(GB 15258-2009)</reference>
+        <reference>4. Sax's Dangerous Properties of Industrial Materials, 12th Edition</reference>
+      </references>
+      <revision_history>
+        <revision>
+          <revision_date>2023-10-15</revision_date>
+          <revision_content>初次编制</revision_content>
+          <revision_author>MSDS补全专家</revision_author>
+        </revision>
+        <revision>
+          <revision_date>2024-01-20</revision_date>
+          <revision_content>更新毒理学信息和生态学资料</revision_content>
+          <revision_author>MSDS补全专家</revision_author>
+        </revision>
+        <revision>
+          <revision_date>2024-06-18</revision_date>
+          <revision_content>补充法规信息和职业接触限值</revision_content>
+          <revision_author>MSDS补全专家</revision_author>
+        </revision>
+      </revision_history>
+      <key_points>
+        <key_point>1. 本品为易燃液体，使用时需远离火源、热源和明火</key_point>
+        <key_point>2. 对水生生物有毒性，应避免进入水体和土壤</key_point>
+        <key_point>3. 长期接触可能对肝、肾功能和神经系统造成损害</key_point>
+        <key_point>4. 可疑致癌物，应尽量减少接触，做好个人防护</key_point>
+      </key_points>
+      <abbreviations>
+        <abbreviation>
+          <abbr_term>CAS</abbr_term>
+          <abbr_meaning>Chemical Abstracts Service，化学文摘社</abbr_meaning>
+        </abbreviation>
+        <abbreviation>
+          <abbr_term>IARC</abbr_term>
+          <abbr_meaning>International Agency for Research on Cancer，国际癌症研究机构</abbr_meaning>
+        </abbreviation>
+        <abbreviation>
+          <abbr_term>TWA</abbr_term>
+          <abbr_meaning>Time-Weighted Average，时间加权平均浓度</abbr_meaning>
+        </abbreviation>
+        <abbreviation>
+          <abbr_term>STEL</abbr_term>
+          <abbr_meaning>Short-Term Exposure Limit，短时间接触限值</abbr_meaning>
+        </abbreviation>
+        <abbreviation>
+          <abbr_term>PEL</abbr_term>
+          <abbr_meaning>Permissible Exposure Limit，允许暴露限值</abbr_meaning>
+        </abbreviation>
+        <abbreviation>
+          <abbr_term>REACH</abbr_term>
+          <abbr_meaning>Registration, Evaluation, Authorisation and Restriction of Chemicals，化学品注册、评估、授权和限制</abbr_meaning>
+        </abbreviation>
+      </abbreviations>
+      <data_source>本MSDS中的数据主要来源于权威化学品数据库和科学文献，包括国际化学品安全卡(ICSC)、美国国立职业安全卫生研究所(NIOSH)、欧洲化学品管理局(ECHA)等公开数据源。部分数据基于结构相似化学品的类比估算，已在相应位置注明。</data_source>
+    </other_info>
   </msds>
 </msds_list>

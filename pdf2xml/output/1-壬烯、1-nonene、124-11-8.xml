@@ -42,10 +42,12 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>生强烈反应。若遇高热，可发生聚合反应，放出大量热量而引起容器破裂和爆炸事故。</hazard_characteristics>
-      <fire_risk_classification>甲</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳。 喷水冷却容器，可能的话将容器从火场移至空旷处。灭火剂：泡沫、二氧化碳、干粉、砂</harmful_combustion_products>
-      <suitable_extinguishing_media>土。用水灭火无效。</suitable_extinguishing_media>
+      <hazard_characteristics>易燃液体，遇明火、高热可燃。与强氧化剂可发生剧烈反应。若遇高热，可发生聚合反应，放出大量热量而引起容器破裂和爆炸事故。蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。在密闭空间内，蒸气与空气可形成爆炸性混合物。流动和搅动可能产生静电积聚，有静电火灾风险。能发生聚合反应，需添加阻聚剂。</hazard_characteristics>
+      <fire_risk_classification>甲类（高闪点易燃液体）</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、未完全燃烧的碳氢化合物、聚合物分解产物等有毒气体。燃烧时可能产生刺激性烟雾。</harmful_combustion_products>
+      <suitable_extinguishing_media>抗溶性泡沫、干粉、二氧化碳、砂土。小面积火灾可使用二氧化碳或干粉灭火器。大面积火灾应使用抗溶性泡沫。</suitable_extinguishing_media>
+      <unsuitable_extinguishing_media>避免使用直流水灭火，可能导致火势蔓延。禁止使用强水流冲击，以免造成化学品飞溅扩大污染范围。</unsuitable_extinguishing_media>
+      <firefighting_precautions>消防人员必须佩戴正压自给式空气呼吸器（SCBA），穿全身防化服、防静电工作服和防化靴。在上风向灭火，尽可能将容器从火场移至空旷处。喷水冷却火场中的容器，直至灭火结束。容器突然发出异常声音或发生变色，应立即撤离。切勿直接接触泄漏物。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。如有可能，用泡沫抑制蒸气产生。疏散无关人员，建立警戒区。注意防止聚合反应，避免容器过热。</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
@@ -144,5 +146,11 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.3类高闪点易燃液体，可疑致癌物2B类（IARC），能发生聚合反应，需添加阻聚剂，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <revision_notes>编制标准：GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》
+数据来源：基于权威数据库和科学文献资料整理
+信息补充说明：本MSDS文档中标注为"无资料"的字段，表示在现有可获取的资料中未能找到相关数据。建议在实际使用中，如有需要，可开展相关测试或向供应商索取更详细的技术资料。本产品为易燃液体，具有刺激性，可能致癌，使用时应严格遵守安全操作规程，采取充分的防护措施。</revision_notes>
+    </other_info>
   </msds>
 </msds_list>

@@ -80,18 +80,18 @@
       <flash_point>无资料</flash_point>
       <relative_density>无资料</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula></molecular_formula>
-      <molecular_weight></molecular_weight>
+      <solubility>不溶于水</solubility>
+      <molecular_formula>C14H26O4</molecular_formula>
+      <molecular_weight>262.38</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <flammability>易燃</flammability>
+      <appearance>无色液体</appearance>
+      <main_uses>用作聚合反应引发剂</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -145,5 +145,12 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference>无资料</reference>
+      <compilation_standard>GB/T 16483-2008</compilation_standard>
+      <revision_notes>无资料</revision_notes>
+      <other_info>无资料</other_info>
+    </other_info>
   </msds>
 </msds_list>

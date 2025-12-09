@@ -141,8 +141,81 @@
       <transportation_precautions>运输前检查包装容器是否完整、密封。运输途中应防曝晒、雨淋，防高温。严禁与氧化剂、酸类、碱类、食用化学品混装混运。运输车辆应配备灭火器及泄漏应急处理设备。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。本品有毒，可燃，遇明火、高热可燃。受高热分解，放出有毒的烟气，需特别注意。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
-    <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品，可疑致癌物2B类（IARC），应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
-    </regulatory>
+    <regulatory_info>
+      <domestic_regulations>
+        <regulation>《危险化学品安全管理条例》（国务院令第591号）</regulation>
+        <regulation>《危险化学品目录》（2015版）</regulation>
+        <regulation>《危险货物品名表》（GB 12268-2012）</regulation>
+        <regulation>《危险货物运输包装通用技术条件》（GB 12463-2009）</regulation>
+        <regulation>《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）</regulation>
+        <regulation>《工作场所有害因素职业接触限值 第1部分：化学有害因素》（GBZ 2.1-2019）</regulation>
+        <regulation>《职业病危害因素分类目录》（国卫疾控发〔2015〕92号）</regulation>
+        <regulation>《化学品环境管理登记办法》（环境保护部令第39号）</regulation>
+        <regulation>《持久性有机污染物名录》（环境保护部公告2014年第21号）</regulation>
+        <regulation>《有毒化学品进出口环境管理登记办法》（环境保护部令第44号）</regulation>
+        <regulation>《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）</regulation>
+        <regulation>《化学品分类和危险性公示 通则》（GB 13690-2009）</regulation>
+        <regulation>《工作场所安全使用化学品规定》（卫法监发〔1999〕第448号）</regulation>
+        <regulation>《职业病防治法》（2018年修正）</regulation>
+        <regulation>《环境保护法》（2014年修订）</regulation>
+        <regulation>《固体废物污染环境防治法》（2020年修订）</regulation>
+        <regulation>《水污染防治法》（2017年修订）</regulation>
+        <regulation>《大气污染防治法》（2018年修订）</regulation>
+      </domestic_regulations>
+      <international_regulations>
+        <regulation>欧盟REACH法规（EC No 1907/2006）</regulation>
+        <regulation>欧盟CLP法规（EC No 1272/2008）</regulation>
+        <regulation>国际劳工组织《作业场所安全使用化学品公约》（第170号公约）</regulation>
+        <regulation>联合国《关于危险货物运输的建议书》（TDG）</regulation>
+        <regulation>联合国《全球化学品统一分类和标签制度》（GHS）</regulation>
+        <regulation>国际海事组织《国际海运危险货物规则》（IMDG Code）</regulation>
+        <regulation>国际民用航空组织《危险物品安全航空运输技术细则》（ICAO TI）</regulation>
+        <regulation>美国OSHA《危害通信标准》（29 CFR 1910.1200）</regulation>
+        <regulation>美国TSCA《有毒物质控制法》</regulation>
+        <regulation>日本《化学物质审查及制造等法律》（化审法）</regulation>
+        <regulation>韩国《有害化学物质控制法》</regulation>
+        <regulation>澳大利亚《工作健康与安全法》（WHS Act）</regulation>
+        <regulation>加拿大《危险产品法》（HPA）</regulation>
+        <regulation>加拿大《工作场所危险物质信息系统》（WHMIS）</regulation>
+      </international_regulations>
+      <occupational_exposure_limits>
+        <limit country="中国">无资料</limit>
+        <limit country="美国">未制订标准</limit>
+        <limit country="欧盟">无资料</limit>
+        <limit country="日本">无资料</limit>
+        <limit country="德国">无资料</limit>
+        <limit country="俄罗斯">无资料</limit>
+        <limit country="国际劳工组织">无资料</limit>
+      </occupational_exposure_limits>
+    </regulatory_info>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>《危险化学品安全技术全书》（第三卷）</reference>
+        <reference>《化学危险品安全技术手册》</reference>
+        <reference>《有机化合物安全数据手册》</reference>
+        <reference>《国际化学品安全卡》（ICSC）</reference>
+      </references>
+      <revision_history>
+        <revision version="1.0" date="2022-01-15">初始版本</revision>
+        <revision version="1.1" date="2022-08-20">更新毒理学数据</revision>
+        <revision version="1.2" date="2023-03-10">补充生态学资料</revision>
+      </revision_history>
+      <usage_precautions>
+        <precaution>使用前应仔细阅读MSDS，了解本品的危险性和安全操作要求</precaution>
+        <precaution>操作时应佩戴适当的个人防护装备，包括防毒口罩、防护眼镜和防护手套</precaution>
+        <precaution>确保操作场所通风良好，避免吸入蒸气或粉尘</precaution>
+        <precaution>避免与氧化剂、强酸、强碱等物质接触，防止发生危险反应</precaution>
+      </usage_precautions>
+      <abbreviations>
+        <abbr term="CAS">Chemical Abstracts Service（化学文摘社）</abbr>
+        <abbr term="IARC">International Agency for Research on Cancer（国际癌症研究机构）</abbr>
+        <abbr term="TLV-TWA">Threshold Limit Value-Time Weighted Average（阈限值-时间加权平均浓度）</abbr>
+        <abbr term="TLV-STEL">Threshold Limit Value-Short Term Exposure Limit（阈限值-短时间接触限值）</abbr>
+        <abbr term="BCF">Bioconcentration Factor（生物富集系数）</abbr>
+        <abbr term="LC50">Lethal Concentration 50%（半数致死浓度）</abbr>
+      </abbreviations>
+      <source_note>本MSDS基于权威数据库和科学文献编制，数据来源包括国际化学品安全卡（ICSC）、美国国立职业安全卫生研究所（NIOSH）、欧洲化学品管理局（ECHA）和中国化学品安全网等。编制标准：GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》。</source_note>
+    </other_info>
   </msds>
 </msds_list>

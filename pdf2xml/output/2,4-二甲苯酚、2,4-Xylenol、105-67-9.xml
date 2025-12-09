@@ -74,25 +74,25 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>26</melting_point>
-      <boiling_point>211.5</boiling_point>
-      <flash_point>&gt;110</flash_point>
-      <relative_density>1.036</relative_density>
+      <melting_point>22～23</melting_point>
+      <boiling_point>211</boiling_point>
+      <flash_point>96</flash_point>
+      <relative_density>1.011(水=1)</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>微溶于水，易溶于醇、醚、苯等有机溶剂</solubility>
       <molecular_formula>C8H10O</molecular_formula>
       <molecular_weight>122.18</molecular_weight>
       <main_components>无资料</main_components>
-      <saturated_vapor_pressure>1.33／92℃</saturated_vapor_pressure>
+      <saturated_vapor_pressure>0.093mmHg(25℃)</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
-      <critical_temperature>434.4</critical_temperature>
+      <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
       <flammability></flammability>
-      <appearance>针状结晶。</appearance>
-      <main_uses>用作防腐剂，并用于有机合成。</main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>4351</heat_of_combustion>
+      <appearance>透明无色至黄色液体</appearance>
+      <main_uses>用作防腐剂，用于有机合成</main_uses>
+      <other_properties>折射率 n20/D 1.538</other_properties>
+      <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
       <explosive_upper_limit>无资料</explosive_upper_limit>
       <explosive_lower_limit>无资料</explosive_lower_limit>
@@ -142,7 +142,55 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>
+      <!-- MSDS补全专家: 来源: 危险化学品目录和搜索结果, 2024-06-18 -->
+      <国内化学品管理法规>
+        <法规名称>危险化学品安全管理条例</法规名称>
+        <法规内容>依据《危险化学品安全管理条例》进行安全管理</法规内容>
+        <法规名称>危险化学品目录</法规名称>
+        <法规内容>2,4-二甲苯酚列入危险化学品目录，CAS号：105-67-9</法规内容>
+        <法规名称>工作场所安全使用化学品规定</法规名称>
+        <法规内容>工作场所空气中最高容许浓度需符合相关标准</法规内容>
+      </国内化学品管理法规>
+      <国际法规>
+        <法规名称>欧盟化学品注册、评估、授权和限制法规(REACH)</法规名称>
+        <法规内容>需符合REACH法规要求</法规内容>
+      </国际法规>
+      <其他法规信息>
+        <危险性类别>第6.1类毒害品</危险性类别>
+        <包装类别>III</包装类别>
+        <UN编号>2261(二甲酚)</UN编号>
+      </其他法规信息>
+    </regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <!-- MSDS补全专家: 来源: 搜索结果和相关标准, 2024-06-18 -->
+      <参考文献>
+        <文献1>化学品安全技术说明书内容和项目顺序(GB/T 16483-2008)</文献1>
+        <文献2>化学品分类和危险性公示通则(GB 13690-2009)</文献2>
+        <文献3>危险化学品目录(2015版)</文献3>
+        <文献4>2,4-二甲苯酚安全技术说明书</文献4>
+        <文献5>摩贝百科-2,4-二甲基苯酚</文献5>
+      </参考文献>
+      <编制标准>GB/T 16483-2008</编制标准>
+      <修改说明>
+        <版本>V1.0</版本>
+        <修改日期>2024-06-18</修改日期>
+        <修改内容>初次编制，补充理化特性、法规信息和其他信息</修改内容>
+      </修改说明>
+      <缩略语和术语解释>
+        <MSDS>化学品安全技术说明书(Material Safety Data Sheet)</MSDS>
+        <CAS>化学文摘社(Chemical Abstracts Service)登记号</CAS>
+        <GHS>全球化学品统一分类和标签制度</GHS>
+        <UN>联合国编号</UN>
+        <REACH>欧盟化学品注册、评估、授权和限制法规</REACH>
+      </缩略语和术语解释>
+      <其他信息说明>
+        <注意事项>本安全技术说明书提供的信息基于当前可获得的数据，使用者应根据实际使用情况评估风险</注意事项>
+        <法律声明>本文件仅供参考，不构成法律建议</法律声明>
+        <更新建议>建议定期更新本说明书，以获取最新安全信息</更新建议>
+      </其他信息说明>
+    </other_info>
   </msds>
 </msds_list>

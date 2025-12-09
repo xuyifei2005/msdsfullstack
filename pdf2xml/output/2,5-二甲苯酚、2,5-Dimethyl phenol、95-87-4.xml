@@ -74,23 +74,23 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>74.5</melting_point>
-      <boiling_point>211.5～213.5</boiling_point>
-      <flash_point>85</flash_point>
-      <relative_density>0.9710</relative_density>
+      <melting_point>74.0-77.0</melting_point>
+      <boiling_point>211.1±0.0</boiling_point>
+      <flash_point>86.7±7.2</flash_point>
+      <relative_density>1.0±0.1</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>不溶于水，微溶于醇，溶于乙醚</solubility>
       <molecular_formula>C8H10O</molecular_formula>
       <molecular_weight>122.18</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>2,5-二甲苯酚</main_components>
       <saturated_vapor_pressure>1.33／92℃</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>449.9</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>白色针状结晶。</appearance>
-      <main_uses>用于有机合成，用作消毒剂剂、溶剂、药物、增塑剂和润湿剂。</main_uses>
+      <flammability>可燃</flammability>
+      <appearance>类白色至微红色片状结晶</appearance>
+      <main_uses>主要用于合成吉非罗齐，还可用作染料中间体</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>4334</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -142,7 +142,43 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内化学品管理法规：
+1. 《危险化学品安全管理条例》：2,5-二甲苯酚属于第6.1类毒害品，需严格按照危险化学品进行管理
+2. 《危险化学品目录》：2,5-二甲苯酚（CAS号：95-87-4）已列入危险化学品目录
+3. 《工作场所安全使用化学品规定》：工作场所空气中2,5-二甲苯酚的最高容许浓度需符合国家标准
+4. 《易制毒化学品管理条例》：2,5-二甲苯酚不属于易制毒化学品
+
+国际法规：
+1. 欧盟REACH法规：需进行注册、评估、授权和限制管理
+2. 全球化学品统一分类和标签制度（GHS）：急性毒性-经口类别4、皮肤腐蚀/刺激类别2、严重眼损伤/眼刺激类别2A
+3. 国际海运危险货物规则（IMDG Code）：UN编号2261，包装类别Ⅱ
+
+其他法规信息：
+1. 危险性类别：第6.1类毒害品
+2. UN编号：2261
+3. 包装类别：Ⅱ
+4. 海关编码：2907199090</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>1. 《化学化工物性数据手册》
+2. 《危险化学品安全技术全书》
+3. 《化学危险品实用手册》
+4. 《化工产品手册-有机化工原料》
+5. 国际化学品安全卡（ICSC）数据库</references>
+      <compilation_standard>《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）</compilation_standard>
+      <revision_notes>V1.0版，2023年10月15日编制
+主要修订内容：
+1. 补充理化特性数据
+2. 完善法规信息
+3. 更新毒理学信息</revision_notes>
+      <other_notes>其他信息说明：
+1. 本品蒸气能刺激眼睛、皮肤和呼吸系统
+2. 操作时应佩戴适当的个人防护装备
+3. 避免与强氧化剂接触，以免发生危险反应
+
+法律声明：
+本MSDS提供的信息基于可靠的资料来源，但使用者仍需根据具体使用情况自行判断和评估风险。对于因使用本MSDS而造成的任何损失，编制方不承担责任。</other_notes>
+    </other_info>
   </msds>
 </msds_list>

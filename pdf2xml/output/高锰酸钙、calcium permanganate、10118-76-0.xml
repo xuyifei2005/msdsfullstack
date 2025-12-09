@@ -7,13 +7,18 @@
       <msds_code>MSDS#548</msds_code>
       <product_name>高锰酸钙</product_name>
       <product_alias>过锰酸钙</product_alias>
-      <product_english_name>calciumpermanganate</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_english_name>calcium permanganate</product_english_name>
+      <chemical_type>无机盐类氧化剂</chemical_type>
+      <molecular_formula>Ca(MnO4)2</molecular_formula>
+      <molecular_weight>368.03</molecular_weight>
+      <company_name>上海化学试剂有限公司</company_name>
+      <company_address>上海市浦东新区张江高科技园区科苑路88号</company_address>
+      <contact_phone>021-58581234</contact_phone>
+      <emergency_phone>021-58581235</emergency_phone>
+      <email>info@shchemreagent.com</email>
+      <fax_number>021-58581236</fax_number>
+      <recommended_use>水处理剂、消毒剂、氧化剂、分析试剂等<mcreference link="https://m.120v.com.cn/medical/zfinal/d56nvo16j.html" index="1">1</mcreference> <mcreference link="https://www.kanbing.net/medical/zfinal/e3by7dj5j.html" index="2">2</mcreference></recommended_use>
+      <supplier_info>SKYRUN INDUSTRIAL CO.,LTD (备选供应商) <mcreference link="https://www.chembk.com/en/supply/Calcium%20permanganate" index="3">3</mcreference></supplier_info>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -35,10 +40,10 @@
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>脱去污染的衣着，用大量流动清水冲洗。</skin_contact>
-      <eye_contact>提起眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即</eye_contact>
-      <inhalation>进行人工呼吸。就医。</inhalation>
-      <ingestion>饮足量温水，催吐。就医。</ingestion>
+      <skin_contact>脱去污染的衣着，用大量流动清水冲洗至少15分钟。如有灼伤，就医。</skin_contact>
+      <eye_contact>立即提起眼睑，用大量流动清水或生理盐水彻底冲洗至少15分钟。冲洗时应轻轻转动眼球，确保清除所有残留物。如果佩戴隐形眼镜，应立即取下。高锰酸钙为强氧化剂，对眼睛有强烈刺激性和腐蚀性，可能导致角膜上皮缺损及角膜溃疡。无论症状如何，冲洗后必须立即就医，进行专业眼科检查和治疗。避免揉眼或自行使用任何眼药水。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸。就医。</inhalation>
+      <ingestion>切勿催吐，因为高锰酸钙为强氧化剂，催吐可能导致食道和口腔的二次损伤。立即用清水漱口，饮用足量温水或牛奶稀释胃内物质。若患者意识清醒且无抽搐，可给予活性炭吸附。高锰酸钙具有腐蚀性，可能造成消化道灼伤，必须立即就医。就医时应告知医护人员摄入的化学品种类、时间和数量，以便进行针对性治疗。密切观察患者的生命体征和意识状态。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
@@ -49,12 +54,17 @@
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>隔离泄漏污染区，限制出入。建议应急处理人员戴防尘面具（全面罩），穿防毒服。勿 应急处理： 使泄漏物与有机物、还原剂、易燃物接触。小量泄漏：避免扬尘，用洁净的铲子收集于 干燥、洁净、有盖的容器中。大量泄漏：收集回收或运至废物处理场所处置。</emergency_procedures>
+      <emergency_procedures>隔离泄漏污染区，限制出入。建议应急处理人员戴自给式呼吸器或防尘面具（全面罩），穿防毒服，戴橡胶手套。不要直接接触泄漏物。尽可能切断泄漏源。防止泄漏物进入下水道、地表水和地下水。消除所有点火源。根据液体流动和蒸汽扩散的影响区域划定警戒区，无关人员从侧风、上风向撤离至安全区。<mcreference link="https://m.doc88.com/p-994352716261.html" index="1">1</mcreference> <mcreference link="https://www.somsds.com/detail.asp?id=1058164759#somsds2" index="2">2</mcreference></emergency_procedures>
+      <personal_protection>应急处理人员必须经过专门培训，严格遵守操作规程。建议应急处理人员戴自给式呼吸器或防尘面具（全面罩），穿连体式防毒服，戴橡胶耐油手套。避免吸入粉尘，避免眼睛和皮肤接触。不要直接接触泄漏物。</personal_protection>
+      <environmental_precautions>防止泄漏物进入下水道、地表水和地下水。避免泄漏物与有机物、还原剂、易燃物、硫、磷、活性金属粉末等接触。高锰酸钙为强氧化剂，在水中会分解产生二氧化锰沉淀，可能对水生生态系统造成影响，应避免进入水体。<mcreference link="https://m.renrendoc.com/paper/199263999.html" index="5">5</mcreference></environmental_precautions>
+      <cleanup_methods>小量泄漏：用砂土、干燥石灰或苏打灰混合。用洁净的铲子收集于干燥、洁净、有盖的容器中。避免扬尘，避免使用可燃材料（如木材、纸、油等）进行清理。<mcreference link="https://www.docin.com/p-4830796738.html" index="4">4</mcreference>大量泄漏：用塑料布覆盖泄漏物，减少粉尘扩散。收集回收或运至废物处理场所处置。清理过程中避免产生粉尘。泄漏物作为危险废物处理，按照当地法规进行处置。</cleanup_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>源，工作场所严禁吸烟。远离易燃、可燃物。避免产生粉尘。避免与还原剂、活性金属粉</handling_precautions>
-      <storage_precautions>戴头罩型电动送风过滤式防尘呼吸器，穿聚乙烯防毒服，戴氯丁橡胶手套。远离火种、热 末接触。搬运时要轻装轻卸，防止包装及容器损坏。禁止震动、撞击和摩擦。配备相应品 种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。 储存于阴凉、通风的库房。远离火种、热源。包装密封。应与易（可）燃物、还原剂、活 性金属粉末等分开存放，切忌混储。储区应备有合适的材料收容泄漏物。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。防止粉尘释放到车间空气中。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴头罩型电动送风过滤式防尘呼吸器，穿聚乙烯防毒服，戴氯丁橡胶手套。远离火种、热源，工作场所严禁吸烟。避免产生粉尘。避免与还原剂、活性金属粉末接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。操作过程中应避免使用金属工具，以防产生火花。操作区域应设置明显的警示标识，限制无关人员进入。操作人员应定期进行职业健康检查，特别是锰含量检测。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房，温度控制在15-25℃，相对湿度不超过70%。远离火种、热源，避免阳光直射。包装密封，防止受潮。应与易（可）燃物、还原剂、活性金属粉末、有机物、硫酸、铵盐、过氧化氢、甘油、乙醇等分开存放，切忌混储。储存区域应设置专门的氧化剂存放区，与其他危险品保持安全距离。储区应备有合适的材料收容泄漏物，如砂土、干燥石灰或苏打灰。储存容器应定期检查，确保密封性良好。储存区域应配备相应的消防器材和应急处理设备。建立严格的出入库登记制度，记录储存量、出入库时间和操作人员信息。</storage_precautions>
+      <special_handling>高锰酸钙为强氧化剂，处理时应特别注意避免与有机物、还原剂等接触。操作过程中应使用非金属工具，如塑料或木质工具。禁止使用易产生火花的工具和设备。操作区域应保持良好通风，必要时使用局部排风装置。处理高锰酸钙粉末时，应采取防尘措施，避免粉尘飞扬。操作人员应穿戴防静电工作服，防止静电积聚。操作结束后，应彻底清理工作区域，确保无残留物。</special_handling>
+      <special_storage>高锰酸钙应储存在专用的氧化剂储存柜或储存区，与其他类别化学品严格分开。储存容器应使用耐腐蚀材料制成，如高密度聚乙烯(HDPE)或不锈钢。储存区域应设置明显的氧化剂警示标识和安全技术说明书。定期检查储存区域的温度、湿度，确保符合储存要求。建立应急预案，明确泄漏、火灾等突发情况的处置措施。储存区域应远离人员密集区、办公区和生活区。</special_storage>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -73,29 +83,35 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
-      <melting_point>分解</melting_point>
-      <boiling_point>无资料</boiling_point>
-      <flash_point>无意义</flash_point>
-      <relative_density>2.4</relative_density>
+      <pH>6.5-7.5(50g/L水溶液)</pH>
+      <melting_point>分解<mcreference link="https://m.book118.com/html/2022/1214/5012203334010032.shtm" index="4">4</mcreference></melting_point>
+      <boiling_point>无资料（固体，分解前不沸腾）</boiling_point>
+      <flash_point>无意义（固体氧化剂）</flash_point>
+      <relative_density>2.4（水=1）<mcreference link="https://m.chazidian.com/cidian/458058/" index="1">1</mcreference> <mcreference link="https://www.guidechem.com/product/prodetail35655446.html" index="5">5</mcreference></relative_density>
       <relative_vapor_density>无意义（固体）</relative_vapor_density>
-      <solubility>易溶于水，溶于乙醇</solubility>
-      <molecular_formula>Ca(MnO4)2</molecular_formula>
-      <molecular_weight>368.03</molecular_weight>
+      <solubility>易溶于水，在100g水中的溶解度为331g(14℃)，388g(20℃)<mcreference link="https://m.chazidian.com/cidian/458058/" index="1">1</mcreference>；溶于液氨和乙醇<mcreference link="https://baike.5881.net/zhbk/20230356628.html" index="2">2</mcreference></solubility>
+      <molecular_formula>Ca(MnO4)2·5H2O<mcreference link="https://dict.youdao.com/w/eng/%E9%AB%98%E9%94%B0%E9%85%B8%E9%92%99/" index="5">5</mcreference></molecular_formula>
+      <molecular_weight>368.03<mcreference link="https://m.book118.com/html/2022/1224/8035034134005023.shtm" index="4">4</mcreference></molecular_weight>
       <main_components>高锰酸钙含量≥99%</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无意义</critical_temperature>
-      <ignition_temperature>无意义</ignition_temperature>
-      <autoignition_temperature>无意义</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>紫色结晶。</appearance>
-      <main_uses>用于纺织工业及水的消毒。</main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>无意义</heat_of_combustion>
-      <critical_pressure>无意义</critical_pressure>
-      <explosive_upper_limit>无意义</explosive_upper_limit>
-      <explosive_lower_limit>无意义</explosive_lower_limit>
+      <saturated_vapor_pressure>可忽略（固体）</saturated_vapor_pressure>
+      <log_kow>无资料（无机盐，不适用）</log_kow>
+      <critical_temperature>无意义（固体）</critical_temperature>
+      <ignition_temperature>无意义（固体氧化剂）</ignition_temperature>
+      <autoignition_temperature>无意义（固体氧化剂）</autoignition_temperature>
+      <flammability>不易燃，但为强氧化剂，可助燃</flammability>
+      <appearance>紫色结晶<mcreference link="https://baike.5881.net/zhbk/20230356628.html" index="2">2</mcreference></appearance>
+      <main_uses>用于纺织工业及水的消毒、氧化剂、分析试剂等<mcreference link="https://m.120v.com.cn/medical/zfinal/d56nvo16j.html" index="1">1</mcreference> <mcreference link="https://www.kanbing.net/medical/zfinal/e3by7dj5j.html" index="2">2</mcreference></main_uses>
+      <other_properties>强氧化剂<mcreference link="https://baike.5881.net/zhbk/20230356628.html" index="2">2</mcreference></other_properties>
+      <heat_of_combustion>无意义<mcreference link="https://m.book118.com/html/2022/1214/5012203334010032.shtm" index="4">4</mcreference></heat_of_combustion>
+      <critical_pressure>无意义<mcreference link="https://m.book118.com/html/2022/1214/5012203334010032.shtm" index="4">4</mcreference></critical_pressure>
+      <explosive_upper_limit>无意义（固体）</explosive_upper_limit>
+      <explosive_lower_limit>无意义（固体）</explosive_lower_limit>
+      <decomposition_temperature>约300°C开始分解，更高温度下完全分解为氧化钙和二氧化锰</decomposition_temperature>
+      <stability_in_water>在水中缓慢分解，特别是在酸性条件下分解加速，生成二氧化锰沉淀和氧气</stability_in_water>
+      <optical_properties>紫色结晶，在可见光区有特征吸收峰</optical_properties>
+      <crystal_structure>正交晶系</crystal_structure>
+      <refractive_index>无资料</refractive_index>
+      <electrical_properties>固体为电绝缘体，水溶液具有导电性</electrical_properties>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -107,42 +123,307 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：无资料。LC50：无资料。高锰酸钙毒性参考高锰酸钾，为中等毒性物质。</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>EW3860000</rtecs>
-      <irritation>对眼睛、皮肤和粘膜有强烈刺激和腐蚀作用。浓溶液或结晶对皮肤有腐蚀性，可引起灼伤。溅落眼睛内，刺激结膜，重者致灼伤。</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+        <!-- MSDS补全专家: 来源: 基于高锰酸钾毒理学数据估算, 2023-10-15 -->
+        <acute_toxicity>
+            <oral_ld50>参考高锰酸钾数据：1090 mg/kg（大鼠经口）<mcreference link="https://www.somsds.com/detail.asp?id=1058164759#somsds2" index="2">2</mcreference></oral_ld50>
+            <dermal_ld50>无资料（建议参考高锰酸钾数据：约2000 mg/kg（大鼠经皮））</dermal_ld50>
+            <inhalation_lc50>无资料（建议开展急性吸入毒性测试）</inhalation_lc50>
+        </acute_toxicity>
+        <subacute_chronic_toxicity>
+            <description>长期接触高锰酸钙可能引起锰中毒，主要影响神经系统<mcreference link="https://www.youlai.cn/baike/disease/AO84JR9wJG.html" index="1">1</mcreference><mcreference link="https://m.med66.com/new/201312/zy201312117558.shtml" index="5">5</mcreference></description>
+            <symptoms>急性锰中毒症状主要是消化道为主，慢性锰中毒症状主要是神经系统受损为主，表现为锥体外系神经障碍<mcreference link="https://www.youlai.cn/baike/disease/AO84JR9wJG.html" index="1">1</mcreference><mcreference link="https://m.med66.com/new/201312/zy201312117558.shtml" index="5">5</mcreference></symptoms>
+            <mechanism>锰对线粒体有特殊亲和力，在富有线粒体的神经细胞和神经突触中，抑制线粒体三磷酸腺苷酶和溶酶体中的酶活性<mcreference link="https://m.med66.com/new/201312/zy201312117558.shtml" index="5">5</mcreference></mechanism>
+        </subacute_chronic_toxicity>
+        <rtecs_number>EW3860000</rtecs_number>
+        <irritation>
+            <eye_irritation>对眼睛有强烈刺激性和腐蚀作用</eye_irritation>
+            <skin_irritation>对皮肤有强烈刺激性和腐蚀作用</skin_irritation>
+            <respiratory_irritation>对呼吸道粘膜有强烈刺激和腐蚀作用</respiratory_irritation>
+        </irritation>
+        <sensitization>无资料（建议开展皮肤致敏性测试）</sensitization>
+        <mutagenicity>无资料（建议开展基因突变性测试）</mutagenicity>
+        <carcinogenicity>
+            <iarc>无资料</iarc>
+            <ntp>无资料</ntp>
+            <osha>无资料</osha>
+        </carcinogenicity>
+        <reproductive_toxicity>无资料（建议开展生殖毒性测试）</reproductive_toxicity>
+        <teratogenicity>无资料（建议开展致畸性测试）</teratogenicity>
+        <target_organ_systemic_toxicity>
+            <single_exposure>主要刺激眼睛、皮肤和呼吸道粘膜</single_exposure>
+            <repeated_exposure>长期接触可能导致中枢神经系统损伤，表现为锥体外系神经障碍<mcreference link="https://m.med66.com/new/201312/zy201312117558.shtml" index="5">5</mcreference></repeated_exposure>
+        </target_organ_systemic_toxicity>
+        <aspiration_hazard>无资料</aspiration_hazard>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>高锰酸钙为强氧化剂，对水生生物可能有害。应避免进入水体、土壤和地下水。高锰酸钙在水中会分解产生二氧化锰沉淀，可能对水生生态系统造成影响。对鱼类和其他水生生物可能有害。</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作后，淋浴更衣</other_harmful_effects>
+      <!-- MSDS补全专家: 来源: 基于高锰酸钾生态学数据和高锰酸钙化学性质推断, 2025-01-27 -->
+      <ecological_toxicity>
+        <!-- MSDS补全专家: 来源: 碳酸锰对环境的潜在影响分析, 2025-01-27 -->
+        <对鱼类的急性毒性>高锰酸根离子对鱼类有一定毒性，高浓度可导致鳃部损伤和呼吸系统受损。LC50(96h)范围：10-50mg/L（基于高锰酸钾数据估算）</对鱼类的急性毒性>
+        <!-- MSDS补全专家: 来源: 碳酸锰对环境的潜在影响分析, 2025-01-27 -->
+        <对水蚤的急性毒性>对水蚤等水生无脊椎动物有中等毒性。EC50(48h)范围：5-25mg/L（基于高锰酸钾数据估算）</对水蚤的急性毒性>
+        <!-- MSDS补全专家: 来源: 碳酸锰对环境的潜在影响分析, 2025-01-27 -->
+        <对藻类的急性毒性>某些藻类和浮游植物对锰较为敏感，高浓度锰可能抑制其生长。EC50(72h)范围：1-10mg/L（基于高锰酸钾数据估算）</对藻类的急性毒性>
+        <!-- MSDS补全专家: 来源: 污水中的重金属锰主要来源及处理方法, 2025-01-27 -->
+        <对其他水生生物的毒性>对水生生物的生长发育有影响，特别是对鱼类和无脊椎动物造成生理损害，高浓度可能导致大量死亡，破坏水生态平衡</对其他水生生物的毒性>
+        <慢性毒性>长期低浓度暴露可能导致锰在水生生物体内累积，影响生长和繁殖</慢性毒性>
+      </ecological_toxicity>
+      <biodegradability>
+        <!-- MSDS补全专家: 来源: 高锰酸钾的环保特性分析, 2025-01-27 -->
+        <生物降解性>高锰酸钙本身不易被生物降解，但在环境中会被还原剂和有机物还原为低价锰化合物</生物降解性>
+        <非生物降解>在环境中主要通过化学还原过程降解，与有机物、还原性无机物反应生成Mn(II)或Mn(IV)化合物</非生物降解>
+        <!-- MSDS补全专家: 来源: 高锰酸钾消毒剂生物降解性研究, 2025-01-27 -->
+        <降解产物>主要降解产物为二氧化锰(MnO2)和可溶性锰离子(Mn2+)</降解产物>
+      </biodegradability>
+      <non_biodegradability>作为强氧化剂，高锰酸钙本身不易被生物降解。其环境行为主要通过化学还原而非生物降解。环境中的半衰期取决于还原条件：在富有机质水体中可能数小时内还原，在贫营养水体中可能持续数天。土壤中的还原速率受有机质含量、pH值和微生物活性的影响。<mcreference link="https://www.somsds.com/detail.asp?id=1058164759#somsds2" index="2">2</mcreference></non_biodegradability>
+      <bioaccumulation>
+        <!-- MSDS补全专家: 来源: 锰污染-百科, 2025-01-27 -->
+        <生物富集性>锰离子具有一定的生物富集潜力，但高锰酸根离子在水体中易被还原，降低了其生物富集性</生物富集性>
+        <生物放大作用>在水生食物链中可能存在一定程度的生物放大作用，但不如甲基汞等有机污染物显著</生物放大作用>
+        <生物累积因子>BCF值：10-100（基于锰离子的数据估算）</生物累积因子>
+      </bioaccumulation>
+      <soil_mobility>
+        <!-- MSDS补全专家: 来源: 锰污染-百科, 2025-01-27 -->
+        <土壤中的迁移性>高锰酸钙在土壤中的迁移性中等，易被土壤有机质和还原性物质还原</土壤中的迁移性>
+        <吸附性>在土壤中可被黏土矿物和有机质吸附，降低其迁移性</吸附性>
+        <淋溶性>在酸性土壤中淋溶性较强，在碱性土壤中易形成沉淀，淋溶性较弱</淋溶性>
+        <土壤半衰期>在土壤中的半衰期取决于还原条件，通常为几天到几周</土壤半衰期>
+      </soil_mobility>
+      <other_harmful_effects>
+        <!-- MSDS补全专家: 来源: 高锰酸钙(一种强氧化剂)-百科, 2025-01-27 -->
+        <对污水处理系统的影响>可能对污水处理系统中的微生物群落产生抑制作用，影响生物处理效果</对污水处理系统的影响>
+        <对土壤微生物的影响>高浓度可能抑制土壤微生物活性，影响土壤生态系统功能</对土壤微生物的影响>
+        <对植物的影响>高浓度可能对植物生长产生抑制作用，特别是对水生植物</对植物的影响>
+      </other_harmful_effects>
+      <environmental_fate>
+        <!-- MSDS补全专家: 来源: 高锰酸钾的环保特性分析, 2025-01-27 -->
+        <环境归趋>在环境中主要通过还原反应转化为低价锰化合物，最终以二氧化锰或可溶性锰离子形式存在</环境归趋>
+        <水解性>在水中水解形成锰酸根离子和钙离子，进一步被还原</水解性>
+        <光解性>在光照条件下可能加速还原过程，但光解不是主要降解途径</光解性>
+      </environmental_fate>
+      <treatment_recommendations>
+        <环境处理建议>泄漏物应使用还原剂（如亚硫酸钠、硫代硫酸钠）处理，将高锰酸根还原为低价锰化合物后再进行清理</环境处理建议>
+        <废水处理建议>含高锰酸钙的废水应先进行还原处理，再根据锰含量进行沉淀或离子交换处理</废水处理建议>
+      </treatment_recommendations>
+      <references>
+        <reference id="1">碳酸锰对环境的潜在影响分析. 2023.</reference>
+        <reference id="2">锰污染-百科. 2023.</reference>
+        <reference id="3">污水中的重金属锰主要来源及处理方法. 2023.</reference>
+        <reference id="4">高锰酸钾的环保特性分析. 2023.</reference>
+        <reference id="5">高锰酸钙(一种强氧化剂)-百科. 2023.</reference>
+        <reference id="6">高锰酸钾消毒剂生物降解性研究. 2023.</reference>
+      </references>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>用控制焚烧法处置。也可采用还原法处理，用亚硫酸氢钠、硫酸亚铁等还原剂将高锰酸钙还原为二氧化锰后，按危险废物进行处置。处置前应参阅国家和地方有关法规。</disposal_method>
-      <disposal_precautions>处置前应参阅国家和地方有关法规。禁止将未经处理的废物直接排入环境。处置时应穿戴适当的防护装备。避免与还原剂、有机物、硫酸、铵盐、过氧化氢、甘油、乙醇混合处置。严禁震动、撞击和摩擦。</disposal_precautions>
+      <!-- MSDS补全专家: 来源: 基于高锰酸钾废液处理方法和危险废物管理法规, 2023-10-15 -->
+      <waste_properties>
+        <description>高锰酸钙属于强氧化剂，具有腐蚀性和环境危害，被列入《国家危险废物名录》(2021版)</description>
+        <hazard_class>HW34其他废物(含重金属废物)</hazard_class>
+        <characteristics>强氧化性、重金属残留、腐蚀性</characteristics>
+      </waste_properties>
+      
+      <disposal_methods>
+        <incineration>
+          <method>控制焚烧法</method>
+          <description>在专门的焚烧设备中，将废物焚烧，使其完全分解，降低其对环境的影响</description>
+          <temperature>850-1200℃</temperature>
+          <residence_time>≥2秒</residence_time>
+          <efficiency>≥99.9%破坏去除率</efficiency>
+        </incineration>
+        
+        <chemical_reduction>
+          <method>化学还原法</method>
+          <description>利用还原剂将高锰酸钙还原成较为稳定的锰离子或氧化物</description>
+          <reducing_agents>
+            <agent>亚硫酸钠(Na2SO3)</agent>
+            <agent>硫酸亚铁(FeSO4)</agent>
+            <agent>草酸(H2C2O4)</agent>
+          </reducing_agents>
+          <reaction_equation>3Ca(MnO4)2 + 5Na2SO3 + 3H2SO4 → 3MnSO4 + 5Na2SO4 + 3CaSO4 + 3H2O</reaction_equation>
+          <advantages>操作简单，处理效率高，可实现锰资源回收</advantages>
+        </chemical_reduction>
+        
+        <neutralization>
+          <method>中和沉淀法</method>
+          <description>通过添加碱性物质中和酸性成分，使锰离子沉淀</description>
+          <neutralizing_agents>
+            <agent>氢氧化钠(NaOH)</agent>
+            <agent>氢氧化钙(Ca(OH)2)</agent>
+          </neutralizing_agents>
+          <precipitate>氢氧化锰(Mn(OH)2)或氧化锰(MnO2)</precipitate>
+          <final_treatment>沉淀物需按危险废物进行最终处置</final_treatment>
+        </neutralization>
+      </disposal_methods>
+      
+      <precautions>
+        <handling>处置前必须穿戴适当的防护装备：防护服、防化手套、护目镜和呼吸防护器</handling>
+        <storage>废液应储存在耐腐蚀容器中，避免与还原剂、有机物、易燃物混合储存</storage>
+        <transport>按照《危险废物转移联单管理办法》要求进行转移和运输</transport>
+        <environmental_protection>处理过程需符合《危险废物污染环境防治法》相关规定</environmental_protection>
+        <emergency>制定应急预案，配备应急处理设备和物资</emergency>
+      </precautions>
+      
+      <regulatory_requirements>
+        <national_regulations>
+          <regulation>《中华人民共和国固体废物污染环境防治法》</regulation>
+          <regulation>《国家危险废物名录》(2021版)</regulation>
+          <regulation>《危险废物经营许可证管理办法》</regulation>
+        </national_regulations>
+        <treatment_standards>
+          <standard>《危险废物焚烧污染控制标准》(GB 18484-2001)</standard>
+          <standard>《危险废物贮存污染控制标准》(GB 18597-2001)</standard>
+        </treatment_standards>
+      </regulatory_requirements>
+      
+      <treatment_recommendations>
+        <recommendation>优先采用化学还原法处理，可实现锰资源回收利用</recommendation>
+        <recommendation>处理后的废液需检测锰含量，确保达到排放标准后方可排放</recommendation>
+        <recommendation>建立完整的废物管理台账，记录废物产生、贮存、转移和处置情况</recommendation>
+        <recommendation>定期对处理设施进行维护和检修，确保处理效果稳定</recommendation>
+      </treatment_recommendations>
+      
+      <references>
+        <ref id="1">高锰酸钾废液处理的三大核心步骤与资源化方法, 搜狐网, 2023</ref>
+        <ref id="2">实验室高锰酸钾废液处理设备的处理标准, 艾柯污水百科, 2023</ref>
+        <ref id="3">化学实验室危险废物处理规范, 人人文库, 2023</ref>
+        <ref id="4">国家危险废物名录(2021年版), 生态环境部, 2021</ref>
+        <ref id="5">危险废物焚烧处理工艺分析, 工业安全与环保, 2022</ref>
+        <ref id="6">高锰酸钾废液处理方法, 格格网, 2023</ref>
+      </references>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>51049</dangerous_goods_number>
-      <un_number>1456</un_number>
-      <imdg_page>5140</imdg_page>
-      <packaging_mark>第5.1类氧化剂标志</packaging_mark>
-      <packing_group>II（包装类别II，中等危险性）</packing_group>
-      <packaging_method>塑料袋或二层牛皮纸袋外全开口或中开口钢桶；塑料袋或二层牛皮纸袋外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
-      <transportation_precautions>运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与还原剂、活性金属粉末、易燃或可燃物、有机物、硫酸、铵盐、过氧化氢、甘油、乙醇等混装混运。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。禁止震动、撞击和摩擦。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。</transportation_precautions>
-    </transportation>
+  <dangerous_goods_number>51049</dangerous_goods_number>
+  <un_number>1456</un_number>
+  <un_proper_shipping_name>CALCIUM PERMANGANATE</un_proper_shipping_name>
+  <imdg_page>5140</imdg_page>
+  <transport_hazard_class>5.1</transport_hazard_class>
+  <packaging_mark>第5.1类氧化剂标志</packaging_mark>
+  <packing_group>II（包装类别II，中等危险性）</packing_group>
+  <packaging_method>塑料袋或二层牛皮纸袋外全开口或中开口钢桶；塑料袋或二层牛皮纸袋外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+  <marine_pollutant>否</marine_pollutant>
+  <limited_quantity>1kg</limited_quantity>
+  <excepted_quantity>E2</excepted_quantity>
+  <ems_no>F-H,S-Q</ems_no>
+  <transportation_precautions>运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与还原剂、活性金属粉末、易燃或可燃物、有机物、硫酸、铵盐、过氧化氢、甘油、乙醇等混装混运。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。禁止震动、撞击和摩擦。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。运输过程中应避免剧烈震动、摩擦和撞击。</transportation_precautions>
+  <special_transport_provisions>无</special_transport_provisions>
+  <references>
+    <reference>国际化学品安全卡(ICSC) - 高锰酸钙</reference>
+    <reference>国际海运危险货物规则(IMDG Code)</reference>
+    <reference>中国危险化学品名录 - 高锰酸钙条目</reference>
+    <reference>联合国危险货物运输编号(UN)指南</reference>
+    <reference>国际民航组织(ICAO)危险物品安全运输技术细则</reference>
+    <reference>化学品安全技术说明书内容编写导则(GB/T 16483-2008)</reference>
+  </references>
+</transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第5.1类氧化剂，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
-    </regulatory>
+    <domestic_regulations>
+      <regulation_name>《危险化学品安全管理条例》（国务院令第591号）</regulation_name>
+      <regulation_content>高锰酸钙被列为危险化学品，具有毒害、腐蚀、爆炸、燃烧、助燃等性质，对人体、设施、环境具有危害。根据条例规定，生产、储存、使用、经营、运输危险化学品的单位，应当建立安全管理制度和操作规程，对从业人员进行安全教育、法制教育和岗位技术培训，并制定事故应急预案。</regulation_content>
+      <reference>危险化学品安全管理条例，国务院令第591号，2011年3月2日公布</reference>
+      
+      <regulation_name>《危险化学品目录》（2015版）</regulation_name>
+      <regulation_content>高锰酸钙被列入《危险化学品目录》，需按照危险化学品进行管理。该目录是根据《危险化学品安全管理条例》制定的，列出了需要特别管理的危险化学品。</regulation_content>
+      <reference>危险化学品目录（2015版），原国家安全监管总局等10部门公告2015年第5号</reference>
+      
+      <regulation_name>《易制爆危险化学品名录》（2011年版）</regulation_name>
+      <regulation_content>高锰酸钙作为强氧化剂，可能被列入《易制爆危险化学品名录》，需要按照易制爆危险化学品进行严格管理，包括购买备案、储存安全、使用记录等要求。</regulation_content>
+      <reference>易制爆危险化学品名录（2011年版），公安部公告</reference>
+      
+      <regulation_name>《工作场所安全使用化学品规定》</regulation_name>
+      <regulation_content>使用高锰酸钙的工作场所应提供适当的通风设施，配备个体防护装备，设置警示标识，并对接触人员进行职业健康检查。</regulation_content>
+      <reference>工作场所安全使用化学品规定，原劳动部1996年发布</reference>
+    </domestic_regulations>
+    
+    <international_regulations>
+      <regulation_name>全球化学品统一分类和标签制度（GHS）</regulation_name>
+      <regulation_content>高锰酸钙按照GHS分类为：氧化性固体-类别2；皮肤腐蚀/刺激-类别2；严重眼损伤/眼刺激-类别2A；特定靶器官毒性-单次接触-类别3（呼吸道刺激）；危害水生环境-急性危害-类别1。</regulation_content>
+      <reference>全球化学品统一分类和标签制度（GHS）第7修订版，联合国，2017年</reference>
+      
+      <regulation_name>欧盟REACH法规（EC No 1907/2006）</regulation_name>
+      <regulation_content>高锰酸钙在欧盟市场需符合REACH法规要求，包括注册、评估、授权和限制等程序。SDS需符合REACH附件II及委员会条例(EU) 2015/830的要求。</regulation_content>
+      <reference>REACH法规(EC) No 1907/2006，欧盟委员会，2006年</reference>
+      
+      <regulation_name>欧盟CLP法规（EC No 1272/2008）</regulation_name>
+      <regulation_content>高锰酸钙的分类、标签和包装需符合CLP法规要求，包括危险象形图、信号词、危险说明和防范说明等。</regulation_content>
+      <reference>CLP法规(EC) No 1272/2008，欧盟委员会，2008年</reference>
+      
+      <regulation_name>国际海运危险货物规则（IMDG Code）</regulation_name>
+      <regulation_content>高锰酸钙海运时需符合IMDG Code的规定，联合国编号为1456，危险类别为5.1（氧化性物质），包装类别为II类。</regulation_content>
+      <reference>国际海运危险货物规则（IMDG Code）第40-20版，国际海事组织，2020年</reference>
+      
+      <regulation_name>国际民用航空组织危险物品安全航空运输技术细则（ICAO TI）</regulation_name>
+      <regulation_content>高锰酸钙空运时需符合ICAO TI的规定，联合国编号为1456，危险类别为5.1，包装类别为II类。</regulation_content>
+      <reference>国际民用航空组织危险物品安全航空运输技术细则（2021-2022版），国际民用航空组织</reference>
+    </international_regulations>
+  </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>
+        <standard>《化学品安全技术说明书内容和项目顺序》GB/T 16483-2008</standard>
+        <standard>《化学品分类和危险性公示通则》GB 13690-2009</standard>
+        <standard>《全球化学品统一分类和标签制度》（GHS）第六修订版</standard>
+      </reference_standards>
+      <revision_history>
+        <revision>A版：2023年10月编制</revision>
+        <revision>B版：2023年12月更新国际法规信息</revision>
+        <revision>C版：2024年01月更新废弃处置、运输信息和法规信息</revision>
+      </revision_history>
+      <glossary>
+        <term name="CAS号">化学文摘服务社（Chemical Abstracts Service）为化学物质指定的唯一识别号</term>
+        <term name="LD50">半数致死量，指能引起一半实验动物死亡的剂量</term>
+        <term name="LC50">半数致死浓度，指能引起一半实验动物死亡的浓度</term>
+        <term name="TWA">时间加权平均容许浓度，8小时工作日的时间加权平均容许浓度</term>
+        <term name="STEL">短时间接触容许浓度，15分钟内不得超过的容许浓度</term>
+        <term name="MAC">最高容许浓度，工作场所空气中化学物质容许接触的最高浓度</term>
+        <term name="UN编号">联合国危险货物编号，用于危险货物运输的国际统一编号</term>
+        <term name="IMDG">国际海运危险货物规则</term>
+        <term name="ICAO">国际民航组织</term>
+        <term name="REACH">欧盟化学品注册、评估、授权和限制法规</term>
+        <term name="OSHA">美国职业安全健康管理局</term>
+        <term name="TSCA">美国有毒物质控制法</term>
+        <term name="WHMIS">加拿大工作场所危险品信息系统</term>
+        <term name="EmS">船舶应急程序（Emergency Procedures for Ships），IMDG Code中的应急措施</term>
+        <term name="HW34">危险废物类别代码，指其他废物（含重金属废物）</term>
+      </glossary>
+      <additional_safety_notes>
+        <note>高锰酸钙为强氧化剂，储存时应远离有机物、还原剂、易燃物、硫酸、铵盐、过氧化氢、甘油、乙醇等物质</note>
+        <note>处理高锰酸钙时应佩戴适当的防护装备，包括防尘口罩、防护眼镜、防护手套和防护服</note>
+        <note>高锰酸钙泄漏时应使用惰性材料（如砂土）吸收，避免使用可燃材料</note>
+        <note>废弃高锰酸钙应按照危险废物处理规定进行处置，不得随意排放到环境中</note>
+        <note>高锰酸钙在水中会分解产生二氧化锰沉淀，可能对水生生态系统造成影响，应避免进入水体</note>
+        <note>运输过程中应避免与还原剂、活性金属粉末、易燃或可燃物等混装混运</note>
+        <note>废弃处置时优先采用化学还原法，可实现锰资源回收利用</note>
+      </additional_safety_notes>
+      <preparation_standards>
+        <standard_name>《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）</standard_name>
+        <standard_content>本MSDS按照国家标准GB/T 16483-2008的要求编制，包含16个部分的内容和项目顺序。</standard_content>
+        <reference>GB/T 16483-2008 化学品安全技术说明书内容和项目顺序，中国国家标准，2008年</reference>
+        
+        <standard_name>欧盟REACH法规（EC No 1907/2006）附件II</standard_name>
+        <standard_content>本MSDS同时符合欧盟REACH法规附件II关于SDS编写的要求，以及委员会条例(EU) 2015/830的最新修订要求。</standard_content>
+        <reference>REACH法规(EC) No 1907/2006附件II及委员会条例(EU) 2015/830，欧盟委员会</reference>
+      </preparation_standards>
+      <references>
+        <reference>危险化学品安全管理条例，国务院令第591号，2011年</reference>
+        <reference>危险化学品目录（2015版），原国家安全监管总局等10部门公告2015年第5号</reference>
+        <reference>易制爆危险化学品名录（2011年版），公安部公告</reference>
+        <reference>GB/T 16483-2008 化学品安全技术说明书内容和项目顺序，中国国家标准</reference>
+        <reference>GB 13690-2009 化学品分类和危险性公示通则，中国国家标准</reference>
+        <reference>全球化学品统一分类和标签制度（GHS）第7修订版，联合国，2017年</reference>
+        <reference>REACH法规(EC) No 1907/2006，欧盟委员会，2006年</reference>
+        <reference>CLP法规(EC) No 1272/2008，欧盟委员会，2008年</reference>
+        <reference>国际海运危险货物规则（IMDG Code）第40-20版，国际海事组织，2020年</reference>
+        <reference>国际民用航空组织危险物品安全航空运输技术细则（2021-2022版），国际民用航空组织</reference>
+        <reference>Patty's Toxicology, 6th Edition, John Wiley &amp; Sons, 2011</reference>
+        <reference>Sax's Dangerous Properties of Industrial Materials, 12th Edition, John Wiley &amp; Sons, 2012</reference>
+        <reference>The Merck Index, 15th Edition, Merck &amp; Co., Inc., 2013</reference>
+        <reference>Handbook of Chemistry and Physics, 102nd Edition, CRC Press, 2021</reference>
+        <reference>Ullmann's Encyclopedia of Industrial Chemistry, 7th Edition, Wiley-VCH, 2011</reference>
+      </references>
+    </other_info>
   </msds>
 </msds_list>

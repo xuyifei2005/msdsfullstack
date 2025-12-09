@@ -74,13 +74,29 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <melting_point></melting_point>
-      <boiling_point></boiling_point>
-      <flash_point></flash_point>
-      <relative_density></relative_density>
-      <solubility></solubility>
-      <molecular_formula></molecular_formula>
-      <molecular_weight></molecular_weight>
+      <pH>无资料</pH>
+      <melting_point>56.5</melting_point>
+      <boiling_point>282</boiling_point>
+      <flash_point>无资料</flash_point>
+      <relative_density>1.45</relative_density>
+      <relative_vapor_density>无资料</relative_vapor_density>
+      <solubility>不溶于水</solubility>
+      <molecular_formula>C6H3Cl2NO2</molecular_formula>
+      <molecular_weight>191.99</molecular_weight>
+      <main_components>纯品</main_components>
+      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
+      <log_kow>无资料</log_kow>
+      <critical_temperature>无资料</critical_temperature>
+      <ignition_temperature>无资料</ignition_temperature>
+      <autoignition_temperature>无资料</autoignition_temperature>
+      <flammability>可燃</flammability>
+      <appearance>白色结晶固体</appearance>
+      <main_uses>用于有机合成，染料中间体</main_uses>
+      <other_properties>无资料</other_properties>
+      <heat_of_combustion>无资料</heat_of_combustion>
+      <critical_pressure>无资料</critical_pressure>
+      <explosive_upper_limit>无资料</explosive_upper_limit>
+      <explosive_lower_limit>无资料</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -129,5 +145,12 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference>无资料</reference>
+      <compilation_standard>GB/T 16483-2008</compilation_standard>
+      <revision_notes>无资料</revision_notes>
+      <other_info>无资料</other_info>
+    </other_info>
   </msds>
 </msds_list>

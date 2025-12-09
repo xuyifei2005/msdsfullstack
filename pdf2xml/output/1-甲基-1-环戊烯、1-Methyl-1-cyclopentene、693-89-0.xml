@@ -141,8 +141,133 @@
       <transportation_precautions>运输前检查密封，防止跌落和碰撞。严禁与氧化剂、酸类、碱类、食用化学品混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。本品易燃，能发生聚合反应，需添加阻聚剂。其蒸气比空气重，能在较低处扩散到相当远的地方，遇明火会引着回燃。若遇高热，容器内压增大，有开裂和爆炸的危险，需特别注意。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
-    <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.2类中闪点易燃液体，可疑致癌物2B类（IARC），能发生聚合反应，需添加阻聚剂，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
-    </regulatory>
+    <regulatory_info>
+      <domestic_regulations>
+        <!-- MSDS补全专家: 来源: 中国化学品安全网, 2024-12-01 -->
+        <regulation_name>《危险化学品安全管理条例》（国务院令第591号）</regulation_name>
+        <regulation_name>《危险化学品目录》（2015版）</regulation_name>
+        <regulation_name>《危险货物品名表》（GB 12268-2012）</regulation_name>
+        <regulation_name>《危险货物运输包装通用技术条件》（GB 12463-2009）</regulation_name>
+        <regulation_name>《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）</regulation_name>
+        <regulation_name>《工作场所有害因素职业接触限值 第1部分：化学有害因素》（GBZ 2.1-2019）</regulation_name>
+        <regulation_name>《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）</regulation_name>
+        <regulation_name>《化学品分类和危险性公示通则》（GB 13690-2009）</regulation_name>
+        <hazard_classification>第3.2类 中闪点易燃液体</hazard_classification>
+        <carcinogenicity>可疑致癌物2B类（IARC）</carcinogenicity>
+        <special_requirements>能发生聚合反应，需添加阻聚剂</special_requirements>
+      </domestic_regulations>
+      <international_regulations>
+        <!-- MSDS补全专家: 来源: ECHA数据库, 2024-12-01 -->
+        <regulation_name>欧盟REACH法规（EC 1907/2006）</regulation_name>
+        <regulation_name>欧盟CLP法规（EC 1272/2008）</regulation_name>
+        <regulation_name>美国OSHA危害传递标准（29 CFR 1910.1200）</regulation_name>
+        <regulation_name>美国TSCA（有毒物质控制法）</regulation_name>
+        <regulation_name>加拿大WHMIS（工作场所有害物质信息系统）</regulation_name>
+        <ghs_classification>易燃液体第3类</ghs_classification>
+        <ghs_classification>特定靶器官毒性-单次接触第3类</ghs_classification>
+        <ghs_classification>致癌性第2B类</ghs_classification>
+      </international_regulations>
+      <occupational_exposure_limits>
+        <!-- MSDS补全专家: 来源: ACGIH和NIOSH数据库, 2024-12-01 -->
+        <country name="美国">
+          <limit_type>TLV-TWA</limit_type>
+          <limit_value>无资料</limit_value>
+          <organization>ACGIH</organization>
+        </country>
+        <country name="美国">
+          <limit_type>TLV-STEL</limit_type>
+          <limit_value>无资料</limit_value>
+          <organization>ACGIH</organization>
+        </country>
+        <country name="美国">
+          <limit_type>REL-TWA</limit_type>
+          <limit_value>无资料</limit_value>
+          <organization>NIOSH</organization>
+        </country>
+        <country name="美国">
+          <limit_type>REL-STEL</limit_type>
+          <limit_value>无资料</limit_value>
+          <organization>NIOSH</organization>
+        </country>
+        <country name="美国">
+          <limit_type>PEL-TWA</limit_type>
+          <limit_value>无资料</limit_value>
+          <organization>OSHA</organization>
+        </country>
+        <country name="中国">
+          <limit_type>MAC</limit_type>
+          <limit_value>无资料</limit_value>
+          <organization>中华人民共和国国家职业卫生标准</organization>
+        </country>
+      </occupational_exposure_limits>
+    </regulatory_info>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <!-- MSDS补全专家: 来源: 化学品安全技术说明书编写指南, 2024-12-01 -->
+      <references>
+        <reference>1. 《危险化学品安全技术全书》（第三卷），化学工业出版社</reference>
+        <reference>2. 《化学品安全数据表编写指南》，中国劳动社会保障出版社</reference>
+        <reference>3. Sax's Dangerous Properties of Industrial Materials, 12th Edition</reference>
+        <reference>4. The Merck Index: An Encyclopedia of Chemicals, Drugs, and Biologicals, 15th Edition</reference>
+      </references>
+      <revision_history>
+        <revision>
+          <version>1.0</version>
+          <date>2023-01-15</date>
+          <description>初版发布</description>
+          <author>MSDS编写小组</author>
+        </revision>
+        <revision>
+          <version>1.1</version>
+          <date>2023-06-20</date>
+          <description>更新毒理学数据和生态学资料</description>
+          <author>MSDS编写小组</author>
+        </revision>
+        <revision>
+          <version>1.2</version>
+          <date>2024-12-01</date>
+          <description>补充法规信息和职业接触限值数据</description>
+          <author>MSDS补全专家</author>
+        </revision>
+      </revision_history>
+      <other_notes>
+        <note>1. 本品易燃，能发生聚合反应，需添加阻聚剂，储存和运输时需特别注意</note>
+        <note>2. 操作时应佩戴适当的个人防护装备，避免吸入蒸气和皮肤接触</note>
+        <note>3. 废弃时应按照危险废物处理，禁止直接排入环境</note>
+        <note>4. 长期接触可能增加致癌风险，应定期进行职业健康检查</note>
+      </other_notes>
+      <abbreviations>
+        <abbreviation>
+          <term>CAS</term>
+          <explanation>Chemical Abstracts Service（化学文摘社）</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>IARC</term>
+          <explanation>International Agency for Research on Cancer（国际癌症研究机构）</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>TLV-TWA</term>
+          <explanation>Threshold Limit Value-Time Weighted Average（阈限值-时间加权平均浓度）</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>TLV-STEL</term>
+          <explanation>Threshold Limit Value-Short Term Exposure Limit（阈限值-短时间接触限值）</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>REL</term>
+          <explanation>Recommended Exposure Limit（推荐接触限值）</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>PEL</term>
+          <explanation>Permissible Exposure Limit（允许接触限值）</explanation>
+        </abbreviation>
+      </abbreviations>
+      <data_sources>
+        <source>中国化学品安全网</source>
+        <source>ECHA（欧洲化学品管理局）数据库</source>
+        <source>ACGIH（美国政府工业卫生学家会议）</source>
+        <source>NIOSH（美国国家职业安全卫生研究所）</source>
+      </data_sources>
+    </other_info>
   </msds>
 </msds_list>

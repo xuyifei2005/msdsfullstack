@@ -142,7 +142,112 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第5.1类氧化剂，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
+      <domestic_laws>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第5.1类氧化剂，应按照相关法规进行生产、储存、运输和使用。</domestic_laws>
+      <international_laws>
+        <ghs_classification>根据全球化学品统一分类和标签制度(GHS)第六修订版，高锰酸钠分类为：氧化性固体-类别2；特定目标器官毒性-单次接触-类别3（呼吸道刺激）；急性毒性-口服-类别4；皮肤腐蚀/刺激-类别2；严重眼损伤/眼刺激-类别2A。</ghs_classification>
+        <imo>国际海事组织(IMO)《国际海运危险货物规则》(IMDG Code)将高锰酸钠列为第5.1类氧化剂，UN编号1503，包装类别II。</imo>
+        <icao>国际民用航空组织(ICAO)《危险物品安全航空运输技术细则》将高锰酸钠列为第5.1类氧化剂，UN编号1503，包装类别II。</icao>
+        <reach>欧盟REACH法规(EC) No 1907/2006要求，高锰酸钠需进行注册、评估、授权和限制。作为氧化性物质，需符合(EC) No 1272/2008关于分类、标签和包装的法规(CLP)要求。</reach>
+        <osha>美国职业安全与健康管理局(OSHA)《危险通信标准》(29 CFR 1910.1200)要求，高锰酸钠必须提供适当的安全数据表，并按照危害通信标准进行标签。</osha>
+        <tsca>美国有毒物质控制法(TSCA)将高锰酸钠列入现有化学物质清单，需符合TSCA相关规定。</tsca>
+        <whmis>加拿大工作场所危险材料信息系统(WHMIS)将高锰酸钠分类为D2B类物质(具有其他毒性效应的物质)，要求提供适当的安全数据表和工作场所标签。</whmis>
+      </international_laws>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>
+        <standard>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》(GB/T 16483-2008)和《化学品分类和危险性公示通则》(GB 13690-2009)标准编写。</standard>
+        <standard>参考了全球化学品统一分类和标签制度(GHS)第六修订版相关要求。</standard>
+        <standard>参考了《危险货物运输规则》(IMDG Code)第40-20版相关要求。</standard>
+      </reference_standards>
+      <revision_history>
+        <revision>
+          <date>2023-10-15</date>
+          <version>1.0</version>
+          <description>初始版本发布，包含高锰酸钠的基本安全信息</description>
+        </revision>
+        <revision>
+          <date>2024-06-20</date>
+          <version>1.1</version>
+          <description>补充国际法规信息和毒理学数据</description>
+        </revision>
+      </revision_history>
+      <glossary>
+        <term>
+          <name>GHS</name>
+          <explanation>全球化学品统一分类和标签制度(Global Harmonized System of Classification and Labelling of Chemicals)，是由联合国制定的化学品分类和标签标准，旨在统一全球化学品危害分类和沟通。</explanation>
+        </term>
+        <term>
+          <name>MSDS</name>
+          <explanation>材料安全数据表(Material Safety Data Sheet)，现称为安全数据表(Safety Data Sheet, SDS)，是提供化学品危害信息和安全操作指导的重要文件。</explanation>
+        </term>
+        <term>
+          <name>UN编号</name>
+          <explanation>联合国危险货物编号，是国际通用的危险货物识别代码，用于危险货物的运输、储存和处理。</explanation>
+        </term>
+        <term>
+          <name>LD50</name>
+          <explanation>半数致死量(Lethal Dose, 50%)，指能够引起实验动物群体中50%个体死亡的剂量，是评价化学品急性毒性的重要指标。</explanation>
+        </term>
+        <term>
+          <name>LC50</name>
+          <explanation>半数致死浓度(Lethal Concentration, 50%)，指能够引起实验动物群体中50%个体死亡的浓度，是评价化学品吸入毒性的重要指标。</explanation>
+        </term>
+        <term>
+          <name>TWA</name>
+          <explanation>时间加权平均浓度(Time-Weighted Average)，指按8小时工作日、40小时工作周计算的平均容许接触浓度。</explanation>
+        </term>
+        <term>
+          <name>STEL</name>
+          <explanation>短时间接触容许浓度(Short-Term Exposure Limit)，指在工作日内任何时间不应超过的15分钟平均容许接触浓度。</explanation>
+        </term>
+        <term>
+          <name>IDLH</name>
+          <explanation>立即威胁生命和健康浓度(Immediately Dangerous to Life or Health)，指暴露30分钟内可能造成不可逆或延迟的健康影响，或妨碍人员逃离危险环境的浓度。</explanation>
+        </term>
+        <term>
+          <name>REACH</name>
+          <explanation>关于化学品注册、评估、授权和限制的欧盟法规(EC) No 1907/2006，旨在保护人类健康和环境，提高欧盟化学工业的竞争力。</explanation>
+        </term>
+        <term>
+          <name>IMDG Code</name>
+          <explanation>国际海运危险货物规则(International Maritime Dangerous Goods Code)，是国际海事组织制定的关于海运危险货物的国际规则。</explanation>
+        </term>
+        <term>
+          <name>IATA DGR</name>
+          <explanation>国际航空运输协会危险物品规则(International Air Transport Association Dangerous Goods Regulations)，是航空运输危险货物的国际规则。</explanation>
+        </term>
+        <term>
+          <name>氧化剂</name>
+          <explanation>能够提供氧原子或接受电子，使其他物质发生氧化反应的化学品。高锰酸钠是强氧化剂，能与可燃物、还原剂等发生剧烈反应。</explanation>
+        </term>
+        <term>
+          <name>包装类别</name>
+          <explanation>根据危险货物的危险程度划分的包装等级，分为I类(高危险)、II类(中等危险)和III类(低危险)。高锰酸钠属于II类包装。</explanation>
+        </term>
+      </glossary>
+      <safety_supplement>
+        <note>
+          <title>安全操作补充说明</title>
+          <content>高锰酸钠作为强氧化剂，在储存和使用过程中应特别注意：1)储存时应远离有机物、还原剂、易燃物等不相容物质；2)操作时应佩戴适当的防护装备，避免皮肤和眼睛直接接触；3)避免与易燃物混合，防止发生燃烧或爆炸；4)使用后应妥善密封保存，防止受潮分解。</content>
+        </note>
+        <note>
+          <title>应急处理补充说明</title>
+          <content>高锰酸钠泄漏时，应使用惰性材料(如砂土、干燥石灰)进行吸收，避免使用可燃材料进行清理。大量泄漏时应通知当地环保部门，防止对水体和土壤造成污染。灭火时应使用大量水，避免使用干粉或二氧化碳灭火器，因为高锰酸钠能与有机物发生剧烈反应。</content>
+        </note>
+        <note>
+          <title>环境防护补充说明</title>
+          <content>高锰酸钠对水生生物具有毒性，应避免进入水体环境。如发生泄漏进入水体，应及时采取隔离措施，防止扩散。废水处理时应先将高锰酸钠还原为低毒性的二氧化锰，再进行后续处理。</content>
+        </note>
+        <note>
+          <title>医疗急救补充说明</title>
+          <content>高锰酸钠接触皮肤或眼睛后，应立即用大量清水冲洗至少15分钟。如误服，可饮用牛奶或蛋清保护胃黏膜，并立即就医。就医时应告知医护人员接触的是高锰酸钠，以便采取针对性治疗。</content>
+        </note>
+        <note>
+          <title>储存稳定性补充说明</title>
+          <content>高锰酸钠在干燥条件下相对稳定，但在潮湿环境中会逐渐分解。长期储存时应定期检查包装完整性，避免受潮。储存区域应保持干燥、通风，温度不宜过高，避免阳光直射。</content>
+        </note>
+      </safety_supplement>
+    </other_info>
   </msds>
 </msds_list>

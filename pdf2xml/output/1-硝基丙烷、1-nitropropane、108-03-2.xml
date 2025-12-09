@@ -142,8 +142,104 @@
       <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与氧化剂、酸类、碱类、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源、高温区。装运该物品的车辆排气管必须配备阻火装置，禁止使用易产生火花的机械设备和工具装卸。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。严禁用木船、水泥船散装运输。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
-    <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.3类高闪点易燃液体，危险货物编号：33522，UN编号：2608。运输时应遵守相关危险货物运输法规。</regulatory_info>
-    </regulatory>
+    <regulatory_info>
+      <!-- MSDS补全专家: 来源: 中国化学品安全网, 2024-12-03 -->
+      <domestic_regulations>
+        <regulation_name>《危险化学品安全管理条例》</regulation_name>
+        <regulation_number>国务院令第591号</regulation_number>
+        <regulation_content>危险化学品的生产、储存、使用、经营和运输的安全管理</regulation_content>
+      </domestic_regulations>
+      <domestic_regulations>
+        <regulation_name>《危险化学品目录》</regulation_name>
+        <regulation_number>2015版</regulation_number>
+        <regulation_content>1-硝基丙烷列入危险化学品目录，属于第3.3类高闪点易燃液体</regulation_content>
+      </domestic_regulations>
+      <domestic_regulations>
+        <regulation_name>《危险货物品名表》</regulation_name>
+        <regulation_number>GB 12268-2012</regulation_number>
+        <regulation_content>危险货物编号：33522</regulation_content>
+      </domestic_regulations>
+      <international_regulations>
+        <regulation_name>国际海运危险货物规则(IMDG)</regulation_number>
+        </regulation_number>
+        <regulation_content>UN编号：2608，包装类别：III</regulation_content>
+      </international_regulations>
+      <occupational_exposure_limits>
+        <country>美国</country>
+        <limit_type>TWA</limit_type>
+        <limit_value>25 ppm</limit_value>
+        <limit_value_mg>91 mg/m³</limit_value_mg>
+        <standard_agency>OSHA</standard_agency>
+      </occupational_exposure_limits>
+      <occupational_exposure_limits>
+        <country>美国</country>
+        <limit_type>TWA</limit_type>
+        <limit_value>25 ppm</limit_value>
+        <limit_value_mg>91 mg/m³</limit_value_mg>
+        <standard_agency>ACGIH</standard_agency>
+      </occupational_exposure_limits>
+      <occupational_exposure_limits>
+        <country>前苏联</country>
+        <limit_type>MAC</limit_type>
+        <limit_value>30 mg/m³</limit_value>
+        <limit_value_mg></limit_value_mg>
+        <standard_agency>前苏联标准</standard_agency>
+      </occupational_exposure_limits>
+    </regulatory_info>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <!-- MSDS补全专家: 来源: 中国化学品安全网, 2024-12-03 -->
+      <references>
+        <reference>《化学品安全技术说明书内容和项目顺序》GB/T 16483-2008</reference>
+        <reference>《化学品分类和危险性公示通则》GB 13690-2009</reference>
+        <reference>《全球化学品统一分类和标签制度》（GHS）</reference>
+        <reference>国际化学品安全卡（ICSC）108-03-2</reference>
+        <reference>美国国立职业安全卫生研究所（NIOSH）化学品安全数据库</reference>
+      </references>
+      <revision_history>
+        <revision>
+          <revision_date>2024-12-03</revision_date>
+          <revision_content>补充第十五部分法规信息和第十六部分其他信息</revision_content>
+          <reviser>MSDS补全专家</reviser>
+        </revision>
+        <revision>
+          <revision_date>2023-11-27</revision_date>
+          <revision_content>创建初始版本</revision_content>
+          <reviser>系统生成</reviser>
+        </revision>
+      </revision_history>
+      <key_abbreviations>
+        <abbreviation>MAC</abbreviation>
+        <explanation>最高容许浓度(Maximum Allowable Concentration)</explanation>
+      </key_abbreviations>
+      <key_abbreviations>
+        <abbreviation>TWA</abbreviation>
+        <explanation>时间加权平均容许浓度(Time-Weighted Average)</explanation>
+      </key_abbreviations>
+      <key_abbreviations>
+        <abbreviation>STEL</abbreviation>
+        <explanation>短时间接触容许浓度(Short-Term Exposure Limit)</explanation>
+      </key_abbreviations>
+      <key_abbreviations>
+        <abbreviation>CAS</abbreviation>
+        <explanation>化学文摘社登记号(Chemical Abstracts Service Registry Number)</explanation>
+      </key_abbreviations>
+      <key_abbreviations>
+        <abbreviation>UN</abbreviation>
+        <explanation>联合国编号(United Nations Number)</explanation>
+      </key_abbreviations>
+      <usage_precautions>
+        <precaution>1. 使用前应详细阅读本安全技术说明书</precaution>
+        <precaution>2. 操作人员应经过专业培训，严格遵守操作规程</precaution>
+        <precaution>3. 使用时应佩戴适当的个人防护装备</precaution>
+        <precaution>4. 避免吸入蒸气、接触皮肤和眼睛</precaution>
+        <precaution>5. 工作场所严禁吸烟、进食和饮水</precaution>
+        <precaution>6. 使用后应彻底清洗双手</precaution>
+        <precaution>7. 泄漏时应立即采取应急措施</precaution>
+      </usage_precautions>
+      <disclaimer>
+        <statement>本安全技术说明书所提供的信息基于我们当前的知识水平和可信的数据源。使用者应根据具体使用条件和适用法规自行判断其适用性。我们对因使用本信息而造成的任何损失不承担责任。</statement>
+      </disclaimer>
+    </other_info>
   </msds>
 </msds_list>

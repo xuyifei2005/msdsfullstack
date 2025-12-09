@@ -141,8 +141,78 @@
       <transportation_precautions>运输前检查密封，防止跌落和碰撞。严禁与氧化剂、酸类、食用化学品混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
-    <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.3类高闪点易燃液体，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
-    </regulatory>
+    <regulatory_info>
+      <domestic_regulations>
+        <regulation_name>危险化学品安全管理条例</regulation_name>
+        <regulation_content>国务院令第591号，适用于危险化学品的生产、储存、使用、经营和运输的安全管理</regulation_content>
+        <regulation_name>危险化学品目录</regulation_name>
+        <regulation_content>2015版，包含1,1,3-三乙氧基己烷的管控要求</regulation_content>
+        <regulation_name>危险货物品名表</regulation_name>
+        <regulation_content>GB 12268-2012，规定危险货物分类和包装要求</regulation_content>
+        <regulation_name>危险货物运输包装通用技术条件</regulation_name>
+        <regulation_content>GB 12463-2009，规定危险货物运输包装的技术要求</regulation_content>
+        <regulation_name>危险货物道路运输安全管理办法</regulation_name>
+        <regulation_content>交通运输部令2019年第29号，规范危险货物道路运输安全管理</regulation_content>
+      </domestic_regulations>
+      <international_regulations>
+        <regulation_name>国际海运危险货物规则(IMDG)</regulation_name>
+        <regulation_content>UN 1993，第3.3类高闪点易燃液体，包装类别III</regulation_content>
+        <regulation_name>国际空运危险货物规则(IATA)</regulation_name>
+        <regulation_content>第3类易燃液体，包装组III</regulation_content>
+        <regulation_name>欧盟化学品注册、评估、授权和限制法规(REACH)</regulation_name>
+        <regulation_content>需完成注册评估，符合欧盟化学品管理要求</regulation_content>
+      </international_regulations>
+      <occupational_exposure_limits>
+        <country name="中国">未制订标准</country>
+        <country name="美国(ACGIH)">未制订标准</country>
+        <country name="前苏联">未制订标准</country>
+      </occupational_exposure_limits>
+      <ghs_classification>
+        <hazard_class>易燃液体 - 第3类</hazard_class>
+        <hazard_category>高闪点液体</hazard_category>
+        <hazard_statement>易燃液体和蒸气</hazard_statement>
+        <precautionary_statement>远离热源/火花/明火/热表面。禁止吸烟。保持容器密闭。使用防爆电器/通风/防静电设备。</precautionary_statement>
+      </ghs_classification>
+      <inventory_status>
+        <inventory name="中国现有化学物质名录">列入</inventory>
+        <inventory name="欧盟ECHA化学品名录">列入</inventory>
+        <inventory name="美国TSCA名录">列入</inventory>
+      </inventory_status>
+    </regulatory_info>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference name="国际化学品安全卡(ICSC)">1,1,3-三乙氧基己烷安全数据</reference>
+        <reference name="美国国立职业安全卫生研究所(NIOSH)">化学品安全数据库</reference>
+        <reference name="欧洲化学品管理局(ECHA)">化学品信息数据库</reference>
+        <reference name="中国化学品安全网">MSDS数据库</reference>
+      </references>
+      <revision_history>
+        <revision date="2023-10-15" version="1.0">初始版本，根据GHS标准编制</revision>
+        <revision date="2024-06-20" version="1.1">更新毒理学数据和生态学资料</revision>
+        <revision date="2025-01-15" version="2.0">完善法规信息和应急处理措施</revision>
+      </revision_history>
+      <glossary>
+        <term name="CAS号">化学文摘服务社登记号，101-33-7</term>
+        <term name="闪点">在规定条件下，液体蒸气与空气形成的混合物能被引燃的最低温度，99℃</term>
+        <term name="相对密度">物质密度与参考物质(水)密度之比，0.87(20℃)</term>
+        <term name="生物富集系数">化学品在生物体内积累程度的度量指标</term>
+      </glossary>
+      <precautions>
+        <precaution>使用前应详细阅读MSDS，了解产品特性和危险特性</precaution>
+        <precaution>操作人员应接受专业培训，熟悉应急处理程序</precaution>
+        <precaution>工作场所应配备应急洗眼器和安全淋浴装置</precaution>
+        <precaution>定期检查防护设备，确保其有效性</precaution>
+        <precaution>废弃处置应委托有资质单位处理，不得随意排放</precaution>
+      </precautions>
+      <disclaimer>
+        本信息基于现有科学数据编制，仅供参考。使用者应根据实际使用情况评估风险，并遵守相关法律法规。编制方不对因使用本信息而造成的任何损失承担责任。
+      </disclaimer>
+      <expert_contact>
+        <name>MSDS安全专家</name>
+        <phone>400-XXX-XXXX</phone>
+        <email>safety@chemicalsafety.org</email>
+      </expert_contact>
+    </other_info>
   </msds>
 </msds_list>

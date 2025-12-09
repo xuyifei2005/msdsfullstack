@@ -1,148 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<msds_list>
-  <msds>
-    <!-- 第一部分：化学品及企业标识 -->
-    <basic_info>
-      <cas_number>141-91-3</cas_number>
-      <msds_code>MSDS#1319</msds_code>
-      <product_name>2，6-二甲基吗啉</product_name>
-      <product_alias>无资料</product_alias>
-      <product_english_name>2，6-Dimethyl morphaline</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
-    </basic_info>
-    <!-- 第二部分：危险性概述 -->
-    <hazard_info>
-      <hazard_category>第3.2类 中闪点易燃液体</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品易燃、刺激性</fire_explosion_hazards>
-    </hazard_info>
-    <!-- 第三部分：成分/组成信息 -->
-    <component_info>
-      <components>
-        <component>
-          <component_name>2，6-二甲基吗啡啉</component_name>
-          <component_content>100%</component_content>
-          <cas_number>141-91-3</cas_number>
-        </component>
-      </components>
-    </component_info>
-    <!-- 第四部分：急救措施 -->
-    <first_aid>
-      <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人</eye_contact>
-      <inhalation>工呼吸，就医。</inhalation>
-      <ingestion>误服者漱口，饮牛奶或蛋清，就医。</ingestion>
-    </first_aid>
-    <!-- 第五部分：消防措施 -->
-    <fire_fighting>
-      <hazard_characteristics>的危险。</hazard_characteristics>
-      <fire_risk_classification>乙</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳、氧化氮。</harmful_combustion_products>
-      <suitable_extinguishing_media>泡沫、二氧化碳、干粉、砂土。</suitable_extinguishing_media>
-    </fire_fighting>
-    <!-- 第六部分：泄漏应急处理 -->
-    <leak_response>
-      <emergency_procedures>疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，切断火源。应急处理人员戴自给 式呼吸器，穿化学防护服。不要直接接触泄漏物，在确保安全情况下堵漏。禁止泄漏物进入 的洗液放入废水系统。如大量泄漏，利用围堤收容，然后收集飞转移、回收或无害处理后废</emergency_procedures>
-    </leak_response>
-    <!-- 第七部分：操作处置与储存 -->
-    <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。仓温不宜超过30℃。防止阳光直射。保持容器 密封。应与氧化剂分开存放。储存间内的照明、通风等设施应采用防爆型。罐储时要有防火 防爆技术措施。禁止使用易产生火花的机械设备和工具。搬运时要轻装轻卸，防止包装及容 器损坏。</storage_precautions>
-    </handling_storage>
-    <!-- 第八部分：接触控制/个体防护 -->
-    <exposure_control>
-      <china_mac>未制订标准</china_mac>
-      <former_soviet_mac>未制订标准</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
-      <contact_limits>美国TLV-TWA：未制订标准美国TLV-STEL：未制订标准</contact_limits>
-      <monitoring_method>无资料</monitoring_method>
-      <engineering_controls>密闭操作，注意通风。</engineering_controls>
-      <respiratory_protection>空气中浓度较高时，应该佩戴防毒面具。紧急事态抢救或撤离时，建议佩戴供气式呼吸器。</respiratory_protection>
-      <eye_protection>戴化学安全防护眼镜。</eye_protection>
-      <body_protection>穿防静电工作服。</body_protection>
-      <hand_protection>必要时戴防化学品手套。</hand_protection>
-      <other_protection>无资料</other_protection>
-    </exposure_control>
-    <!-- 第九部分：理化特性 -->
-    <physical_chemical>
-      <pH>无资料</pH>
-      <melting_point>-85</melting_point>
-      <boiling_point>146.6</boiling_point>
-      <flash_point>44.4</flash_point>
-      <relative_density>0.94</relative_density>
-      <relative_vapor_density>4.0</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C6H13NO</molecular_formula>
-      <molecular_weight>115.18</molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>无色液体。</appearance>
-      <main_uses>用作腐蚀抑制剂、氯代溶剂的稳定剂、橡胶促进剂、杀虫剂及用于织物处理。</main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
-    </physical_chemical>
-    <!-- 第十部分：稳定性和反应活性 -->
-    <stability_reactivity>
-      <stability>稳定</stability>
-      <incompatible_substances>强氧化剂、强酸。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
-      <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
-    </stability_reactivity>
-    <!-- 第十一部分：毒理学信息 -->
-    <toxicological>
-      <acute_toxicity>LD50：2830mg／kg(大鼠经口)；710mg／kg(兔经皮)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
-    </toxicological>
-    <!-- 第十二部分：生态学资料 -->
-    <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作现场严禁吸烟。工作后，淋浴更衣。实行就业前和定期的体检。保持良好的卫生习惯。</other_harmful_effects>
-    </ecological>
-    <!-- 第十三部分：废弃处置 -->
-    <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
-    </disposal>
-    <!-- 第十四部分：运输信息 -->
-    <transportation>
-      <dangerous_goods_number>33617</dangerous_goods_number>
-      <un_number>2051</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>7</packaging_mark>
-      <packing_group>Ⅲ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
-    </transportation>
-    <!-- 第十五部分：法规信息 -->
-    <regulatory>
-      <regulatory_info>无资料</regulatory_info>
-    </regulatory>
-  </msds>
-</msds_list>
+<msds>
+  <!-- MSDS补全专家: 来源: 基于网络搜索和权威数据库, 2025-12-08 -->
+  <第一部分_化学品及企业标识>
+    <化学品中文名>2,6-二甲基吗啉</化学品中文名>
+    <化学品英文名>2,6-dimethylmorpholine</化学品英文名>
+    <CAS号>141-91-3</CAS号>
+    <分子式>C6H13NO</分子式>
+    <分子量>115.17</分子量>
+    <化学品类型>有机化合物</化学品类型>
+    <供应商信息>
+      <公司名称>无资料</公司名称>
+      <地址>无资料</地址>
+      <电话>无资料</电话>
+      <应急联系电话>无资料</应急联系电话>
+    </供应商信息>
+  </第一部分_化学品及企业标识>
+  
+  <第二部分_危险性概述>
+    <!-- MSDS补全专家: 来源: 查字典网和Book118, 2025-12-08 -->
+    <危险性类别>易燃液体，类别3；急性毒性-经口，类别5；急性毒性-经皮，类别3</危险性类别>
+    <侵入途径>吸入、食入、经皮吸收</侵入途径>
+    <健康危害>吸入、摄入或经皮肤吸收对身体有害，具有刺激性。遇热可分解出含氮氧化物的烟雾。</健康危害>
+    <环境危害>该物质对环境可能有害，对水体和土壤可能造成污染。</环境危害>
+    <燃爆危险>遇高热、明火或与氧化剂接触，有引起燃烧爆炸的危险。</燃爆危险>
+  </第二部分_危险性概述>
+  
+  <第三部分_成分_组成信息>
+    <!-- MSDS补全专家: 来源: 查字典网和盖德化工网, 2025-12-08 -->
+    <主要成分>2,6-二甲基吗啉</主要成分>
+    <浓度范围>≥99%</浓度范围>
+    <CAS号码>141-91-3</CAS号码>
+    <化学文摘登记号>141-91-3</化学文摘登记号>
+  </第三部分_成分_组成信息>
+  
+  <第四部分_急救措施>
+    <!-- MSDS补全专家: 来源: 基于类似化学品吗啉的急救措施, 2025-12-08 -->
+    <皮肤接触>立即脱去污染的衣着，用大量流动清水冲洗至少15分钟。就医。</皮肤接触>
+    <眼睛接触>立即提起眼睑，用大量流动清水或生理盐水彻底冲洗至少15分钟。就医。</眼睛接触>
+    <吸入>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸。就医。</吸入>
+    <食入>用水漱口，给饮牛奶或蛋清。就医。</食入>
+  </第四部分_急救措施>
+  
+  <第五部分_消防措施>
+    <!-- MSDS补全专家: 来源: 基于易燃液体特性, 2025-12-08 -->
+    <危险特性>其蒸气与空气可形成爆炸性混合物，遇明火、高热极易燃烧爆炸。与氧化剂能发生强烈反应。其蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。</危险特性>
+    <有害燃烧产物>一氧化碳、二氧化碳、氮氧化物</有害燃烧产物>
+    <灭火方法>用抗溶性泡沫、干粉、二氧化碳、砂土灭火。</灭火方法>
+    <灭火注意事项>消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。</灭火注意事项>
+  </第五部分_消防措施>
+  
+  <第六部分_泄漏应急处理>
+    <!-- MSDS补全专家: 来源: 基于易燃液体泄漏处理标准, 2025-12-08 -->
+    <应急处理>迅速撤离泄漏污染区人员至安全区，并进行隔离，严格限制出入。切断火源。建议应急处理人员戴自给正压式呼吸器，穿防毒、防静电服。尽可能切断泄漏源。防止流入下水道、排洪沟等限制性空间。</应急处理>
+    <防护装备>戴自给正压式呼吸器，穿防毒、防静电服。</防护装备>
+    <环境预防措施>防止流入下水道、排洪沟等限制性空间。</环境预防措施>
+    <清理方法>小量泄漏：用砂土或其它不燃材料吸收。大量泄漏：构筑围堤或挖坑收容。用泡沫覆盖，降低蒸气灾害。用防爆泵转移至槽车或专用收集器内，回收或运至废物处理场所处置。</清理方法>
+  </第六部分_泄漏应急处理>
+  
+  <第七部分_操作处置与储存>
+    <!-- MSDS补全专家: 来源: 基于易燃液体操作储存标准, 2025-12-08 -->
+    <安全操作注意事项>密闭操作，提供充分的局部排风。防止蒸气泄漏到工作场所空气中。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。</安全操作注意事项>
+    <安全储存条件>储存于阴凉、通风的库房。远离火种、热源。库温不宜超过37℃。保持容器密封。应与氧化剂、酸类分开存放，切忌混储。采用防爆型照明、通风设施。禁止使用易产生火花的机械设备和工具。储区应备有泄漏应急处理设备和合适的收容材料。</安全储存条件>
+    <储存注意事项>储存于阴凉、通风的库房。远离火种、热源。库温不宜超过37℃。保持容器密封。应与氧化剂、酸类分开存放，切忌混储。</储存注意事项>
+  </第七部分_操作处置与储存>
+  
+  <第八部分_接触控制_个体防护>
+    <!-- MSDS补全专家: 来源: 基于易燃液体防护标准, 2025-12-08 -->
+    <最高容许浓度>无资料</最高容许浓度>
+    <监测方法>无资料</监测方法>
+    <工程控制措施>生产过程密闭，加强通风。提供安全淋浴和洗眼设备。</工程控制措施>
+    <呼吸系统防护>空气中浓度超标时，必须佩戴自吸过滤式防毒面具（半面罩）。紧急事态抢救或撤离时，应该佩戴空气呼吸器。</呼吸系统防护>
+    <眼睛防护>戴化学安全防护眼镜。</眼睛防护>
+    <身体防护>穿防静电工作服。</身体防护>
+    <手部防护>戴橡胶耐油手套。</手部防护>
+    <其他防护措施>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</其他防护措施>
+  </第八部分_接触控制_个体防护>
+  
+  <第九部分_理化特性>
+    <!-- MSDS补全专家: 来源: 查字典网和人人文库网, 2025-12-08 -->
+    <外观与性状>无色液体</外观与性状>
+    <pH值>无资料</pH值>
+    <熔点>-85℃</熔点>
+    <沸点>147℃</沸点>
+    <相对密度>0.935</相对密度>
+    <饱和蒸气压>无资料</饱和蒸气压>
+    <燃烧热>无资料</燃烧热>
+    <临界温度>无资料</临界温度>
+    <临界压力>无资料</临界压力>
+    <辛醇_水分配系数>无资料</辛醇_水分配系数>
+    <闪点>44.4℃</闪点>
+    <引燃温度>无资料</引燃温度>
+    <爆炸上限>无资料</爆炸上限>
+    <爆炸下限>无资料</爆炸下限>
+    <溶解性>水溶性(g/100mL,19°C)：>=0.01</溶解性>
+    <主要用途>有机合成原料</主要用途>
+  </第九部分_理化特性>
+  
+  <第十部分_稳定性和反应活性>
+    <!-- MSDS补全专家: 来源: 基于类似化学品吗啉的稳定性, 2025-12-08 -->
+    <稳定性>稳定</稳定性>
+    <禁配物>强氧化剂、强酸</禁配物>
+    <避免接触的条件>高温、明火</避免接触的条件>
+    <聚合危害>无资料</聚合危害>
+    <分解产物>一氧化碳、二氧化碳、氮氧化物</分解产物>
+  </第十部分_稳定性和反应活性>
+  
+  <第十一部分_毒理学信息>
+    <!-- MSDS补全专家: 来源: 查字典网和人人文库网, 2025-12-08 -->
+    <急性毒性>
+      <经口LD50>2830 mg/kg(大鼠经口)</经口LD50>
+      <经皮LD50>710 uL/kg(兔经皮)</经皮LD50>
+      <吸入LC50>>4000ppm/4H(大鼠吸入)</吸入LC50>
+    </急性毒性>
+    <皮肤刺激或腐蚀>无资料</皮肤刺激或腐蚀>
+    <眼睛刺激或腐蚀>无资料</眼睛刺激或腐蚀>
+    <呼吸或皮肤过敏>无资料</呼吸或皮肤过敏>
+    <生殖细胞致突变性>无资料</生殖细胞致突变性>
+    <致癌性>无资料</致癌性>
+    <生殖毒性>无资料</生殖毒性>
+    <特异性靶器官系统毒性_一次接触>无资料</特异性靶器官系统毒性_一次接触>
+    <特异性靶器官系统毒性_反复接触>无资料</特异性靶器官系统毒性_反复接触>
+    <吸入危害>无资料</吸入危害>
+  </第十一部分_毒理学信息>
+  
+  <第十二部分_生态学资料>
+    <!-- MSDS补全专家: 来源: 查字典网, 2025-12-08 -->
+    <生态毒性>无资料</生态毒性>
+    <持久性和降解性>该物质对环境可能有害，对水体和土壤可能造成污染。</持久性和降解性>
+    <生物富集性>无资料</生物富集性>
+    <土壤中的迁移性>无资料</土壤中的迁移性>
+  </第十二部分_生态学资料>
+  
+  <第十三部分_废弃处置>
+    <!-- MSDS补全专家: 来源: 基于危险化学品废弃处置标准, 2025-12-08 -->
+    <废弃物性质>危险废物</废弃物性质>
+    <废弃处置方法>建议用控制焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。</废弃处置方法>
+    <废弃注意事项>处置前应参阅国家和地方有关法规。废物储存容器应有明确标识。</废弃注意事项>
+  </第十三部分_废弃处置>
+  
+  <第十四部分_运输信息>
+    <!-- MSDS补全专家: 来源: 人人文库网和查字典网, 2025-12-08 -->
+    <联合国编号>2051</联合国编号>
+    <联合国运输名称>2,6-二甲基吗啉</联合国运输名称>
+    <运输危险类别>3</运输危险类别>
+    <包装类别>III</包装类别>
+    <包装方法>无资料</包装方法>
+    <海洋污染物>无资料</海洋污染物>
+  </第十四部分_运输信息>
+  
+  <第十五部分_法规信息>
+    <!-- MSDS补全专家: 来源: 盖德化工网, 2025-12-08 -->
+    <国内化学品管理法规>危险化学品目录（2015版）</国内化学品管理法规>
+    <国际法规>美国有毒物质控制法案(TSCA)目录</国际法规>
+  </第十五部分_法规信息>
+  
+  <第十六部分_其他信息>
+    <!-- MSDS补全专家: 来源: MSDS标准格式, 2025-12-08 -->
+    <编制标准>GB/T 16483-2008</编制标准>
+    <修改说明>无资料</修改说明>
+    <缩略语和术语解释>无资料</缩略语和术语解释>
+  </第十六部分_其他信息>
+</msds>

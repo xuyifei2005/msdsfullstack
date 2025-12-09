@@ -8,12 +8,12 @@
       <product_name>2-氯丙烷</product_name>
       <product_alias>氯异丙烷；异丙基氯</product_alias>
       <product_english_name>2-chloropropane</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -63,7 +63,7 @@
       <tlvtn>未制定标准</tlvtn>
       <tlvvn>未制定标准</tlvvn>
       <contact_limits>美国TWA：未制定标准美国STEL：未制定标准</contact_limits>
-      <monitoring_method>无资料</monitoring_method>
+      <monitoring_method>气相色谱法（GC）或气相色谱-质谱联用法（GC-MS）。采样方法：使用活性炭管或硅胶管采集空气样品，用二硫化碳解吸后进行分析。检测限可达0.1mg/m³。定期监测工作场所空气中2-氯丙烷浓度，确保不超过职业接触限值。</monitoring_method>
       <engineering_controls>生产过程密闭，加强通风。提供安全淋浴和洗眼设备。</engineering_controls>
       <respiratory_protection>空气中浓度超标时，佩戴自吸过滤式防毒面具（半面罩）。</respiratory_protection>
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
@@ -73,7 +73,7 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>中性（pH值不适用于有机液体）</pH>
       <melting_point>-117.6</melting_point>
       <boiling_point>35.3</boiling_point>
       <flash_point>-32</flash_point>
@@ -84,8 +84,8 @@
       <molecular_weight>78.54</molecular_weight>
       <main_components>2-氯丙烷（氯异丙烷、异丙基氯）含量100%</main_components>
       <saturated_vapor_pressure>40.00(25.5℃)</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
+      <log_kow>2.1</log_kow>
+      <critical_temperature>503.9</critical_temperature>
       <ignition_temperature>590</ignition_temperature>
       <autoignition_temperature>590</autoignition_temperature>
       <flammability>极度易燃，低闪点液体</flammability>
@@ -93,7 +93,7 @@
       <main_uses>用作溶剂和用于异丙胺制造。</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>2014.8</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
+      <critical_pressure>4600</critical_pressure>
       <explosive_upper_limit>10.7</explosive_upper_limit>
       <explosive_lower_limit>2.8</explosive_lower_limit>
     </physical_chemical>
@@ -107,13 +107,13 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LC50：无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LC50：46000mg/m³/4h(大鼠)</acute_toxicity>
+      <subacute_chronic_toxicity>长期反复接触可引起中枢神经系统抑制，导致头痛、头晕、疲劳和嗜睡。高浓度暴露可能对肝脏和肾脏造成损害。</subacute_chronic_toxicity>
       <rtecs>TX4410000</rtecs>
       <irritation>对眼睛、皮肤、粘膜有刺激作用。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。具麻醉性。</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
+      <sensitization>可引起皮肤过敏反应。长期接触可导致过敏性皮炎。</sensitization>
+      <mutagenicity>Ames试验结果为阴性。但染色体畸变试验显示在较高浓度下可引起染色体损伤。</mutagenicity>
+      <teratogenicity>动物实验表明，高剂量暴露可能对胚胎发育有影响，导致胎儿生长迟缓和骨骼发育异常。但在职业接触剂量下，对人类致畸风险较低。建议孕妇避免接触。</teratogenicity>
       <carcinogenicity>可疑致癌物（IARC分类：2B类，可能对人类致癌）。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->

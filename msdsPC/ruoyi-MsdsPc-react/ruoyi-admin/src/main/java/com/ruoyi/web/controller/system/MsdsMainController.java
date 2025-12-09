@@ -241,24 +241,29 @@ public class MsdsMainController extends BaseController
     @Log(title = "MSDS XML导入", businessType = BusinessType.IMPORT)
     @PostMapping("/importXml")
     public AjaxResult importXml(
-            @RequestParam("file") MultipartFile file,
+            @RequestParam("file") MultipartFile[] files,
             @RequestParam(value = "overwriteDuplicates", defaultValue = "false") boolean overwriteDuplicates)
     {
         try
         {
-            if (file.isEmpty())
+            if (files == null || files.length == 0)
             {
                 return error("请选择要导入的XML文件");
             }
             
             // 验证文件格式
-            String fileName = file.getOriginalFilename();
-            if (fileName == null || !fileName.toLowerCase().endsWith(".xml"))
-            {
-                return error("请上传XML格式的文件");
+            for (MultipartFile file : files) {
+                if (file.isEmpty()) {
+                    continue;
+                }
+                String fileName = file.getOriginalFilename();
+                if (fileName == null || !fileName.toLowerCase().endsWith(".xml"))
+                {
+                    return error("请上传XML格式的文件: " + fileName);
+                }
             }
             
-            Map<String, Object> result = msdsMainService.importMsdsXml(file, overwriteDuplicates, getUsername());
+            Map<String, Object> result = msdsMainService.importMsdsXmls(files, overwriteDuplicates, getUsername());
             return success(result);
         }
         catch (Exception e)

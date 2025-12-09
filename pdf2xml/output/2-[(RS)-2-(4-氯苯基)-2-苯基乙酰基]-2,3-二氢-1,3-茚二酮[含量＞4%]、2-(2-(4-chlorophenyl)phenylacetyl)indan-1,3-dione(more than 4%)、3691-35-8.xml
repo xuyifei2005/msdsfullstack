@@ -5,23 +5,23 @@
     <basic_info>
       <cas_number>3691-35-8</cas_number>
       <msds_code>MSDS#2259</msds_code>
-      <product_name>酰基]-2,3-二氢-1,3-茚二酮[含</product_name>
-      <product_alias>-1,3-二酮；氯鼠酮</product_alias>
-      <product_english_name>tyl)indan-1,3-dione(more than</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_name>2-[(RS)-2-(4-氯苯基)-2-苯基乙酰基]-2,3-二氢-1,3-茚二酮[含量＞4%]</product_name>
+      <product_alias>氯鼠酮</product_alias>
+      <product_english_name>2-(2-(4-chlorophenyl)phenylacetyl)indan-1,3-dione(more than 4%)</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards>高毒杀鼠剂。误服或皮肤接触会中毒。受热分解释出氯烟雾。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品可燃、高毒</fire_explosion_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>高毒杀鼠剂。误服或皮肤接触会中毒。受热分解释出氯烟雾。急性中毒可出现恶心、呕吐、腹痛、腹泻、便血、呼吸困难、紫绀、抽搐、昏迷等症状。</health_hazards>
+      <environmental_hazards>对水生生物有极高毒性，可能对水体环境造成长期不良影响。</environmental_hazards>
+      <fire_explosion_hazards>本品可燃、高毒。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -53,7 +53,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。防止粉尘释放到车间空气中。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴防尘面具（全面罩），穿胶布防毒衣，戴橡胶手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免产生粉尘。避免与氧化剂、酸类接触。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。管理应按“五双”管理制度执行。保持容 器密封。防止受潮和雨淋。应与氧化剂、酸类、食用化工原料分开存放。不能与粮食、 食物、种子、饲料、各种日用品混装、混运。操作现场不得吸烟、饮水、进食。搬运时 要轻装轻卸，防止包装及容器损坏。分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -73,13 +73,13 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <melting_point></melting_point>
-      <boiling_point></boiling_point>
-      <flash_point></flash_point>
-      <relative_density></relative_density>
-      <solubility></solubility>
-      <molecular_formula></molecular_formula>
-      <molecular_weight></molecular_weight>
+      <melting_point>236-240℃</melting_point>
+      <boiling_point>无资料</boiling_point>
+      <flash_point>无资料</flash_point>
+      <relative_density>无资料</relative_density>
+      <solubility>不溶于水，微溶于乙醇、乙醚、丙酮</solubility>
+      <molecular_formula>C23H15ClO3</molecular_formula>
+      <molecular_weight>374.82</molecular_weight>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -105,8 +105,8 @@
       <ecological_toxicity>无资料</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
-      <other_harmful_effects>存放被毒物污染的衣服，洗后再用。严禁皮肤直接接触。</other_harmful_effects>
+      <bioaccumulation>无资料</bioaccumulation>
+      <other_harmful_effects>避免释放到环境中。存放被毒物污染的衣服，洗后再用。严禁皮肤直接接触。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
@@ -126,7 +126,14 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》、《危险化学品目录》、《剧毒化学品目录》、《有毒化学品进出口环境管理登记证管理办法》</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>无资料</references>
+      <preparation_standard>GB/T 16483-2008</preparation_standard>
+      <revision_notes>无资料</revision_notes>
+      <other_notes>无资料</other_notes>
+    </other_info>
   </msds>
 </msds_list>
