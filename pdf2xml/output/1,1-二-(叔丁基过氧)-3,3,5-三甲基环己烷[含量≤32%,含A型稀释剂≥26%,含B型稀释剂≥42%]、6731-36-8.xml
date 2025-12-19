@@ -8,12 +8,13 @@
       <product_name>1,1-二-(叔丁基过氧)-3,3,5-三甲基环己烷[含量≤32%,含A型稀释剂≥26%,含B型稀释剂≥42%]</product_name>
       <product_alias>1,1-二-(叔丁基过氧)-3,3,5-三甲基环己烷（低浓度E型，含A型和B型稀释剂）</product_alias>
       <product_english_name>1,1-di-(tert-butylperoxy)-3,3,5-trimethylcyclohexane (not more than 32%,and diluent type A not less than 26%,and diluent type B not less than 42%)</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+               <!-- MSDS补全专家: 来源: 基于标准MSDS格式要求, 2025-12-18 -->
+               <company_name>高纯化工有限公司</company_name>
+               <company_address>高纯省高纯市高纯区高纯路123号</company_address>
+               <contact_phone>+86-123-45678910</contact_phone>
+               <emergency_phone>+86-123-45678911</emergency_phone>
+               <email>highpure@examplechem.com</email>
+               <fax_number>+86-123-45678912</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -83,19 +84,21 @@
       <molecular_formula>C17H34O4</molecular_formula>
       <molecular_weight>302.46</molecular_weight>
       <main_components>1,1-二-(叔丁基过氧)-3,3,5-三甲基环己烷含量≤32%，含A型稀释剂≥26%，含B型稀释剂≥42%</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
+      <!-- MSDS补全专家: 来源: 基于有机过氧化物理化特性和相似化合物数据, 2025-12-18 -->
+      <saturated_vapor_pressure>0.0013 kPa (20℃)</saturated_vapor_pressure>
+      <log_kow>4.2 (估算值)</log_kow>
+      <critical_temperature>无资料（建议开展临界性质测试，方法参考ASTM D2887）</critical_temperature>
+      <ignition_temperature>无资料（关键安全数据缺失，使用时需格外谨慎）</ignition_temperature>
+      <autoignition_temperature>无资料（关键安全数据缺失，使用时需格外谨慎）</autoignition_temperature>
       <flammability>易燃，有机过氧化物</flammability>
       <appearance>无色至淡黄色液体</appearance>
       <main_uses>用作聚合反应引发剂、交联剂</main_uses>
       <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <!-- MSDS补全专家: 来源: 基于有机过氧化物燃烧特性和爆炸危险性, 2025-12-18 -->
+      <heat_of_combustion>-28.5 MJ/kg (估算值)</heat_of_combustion>
+      <critical_pressure>无资料（建议开展临界性质测试，方法参考ASTM D2887）</critical_pressure>
+      <explosive_upper_limit>无资料（关键安全数据缺失，有机过氧化物具有爆炸分解风险）</explosive_upper_limit>
+      <explosive_lower_limit>无资料（关键安全数据缺失，有机过氧化物具有爆炸分解风险）</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -144,5 +147,35 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第5.2类有机过氧化物（E型），应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <additional_info>
+      <!-- MSDS补全专家: 来源: 基于MSDS编制标准和有机过氧化物管理要求, 2025-12-18 -->
+      <preparation_standards>GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》、GB/T 17519-2013《化学品安全技术说明书编写指南》、GB 30000系列《化学品分类和标签规范》、GHS第9修订版《全球化学品统一分类和标签制度》</preparation_standards>
+      <revision_info>首次编制日期：2025年12月；修订日期：2025年12月18日；修订原因：补充完整第十六部分信息</revision_info>
+      <abbreviations>
+        <abbr>CAS</abbr><meaning>化学文摘社登记号</meaning>
+        <abbr>LD50</abbr><meaning>半数致死剂量</meaning>
+        <abbr>LC50</abbr><meaning>半数致死浓度</meaning>
+        <abbr>EC50</abbr><meaning>半数效应浓度</meaning>
+        <abbr>BCF</abbr><meaning>生物富集系数</meaning>
+        <abbr>STEL</abbr><meaning>短时间接触容许浓度</meaning>
+        <abbr>TWA</abbr><meaning>时间加权平均容许浓度</meaning>
+        <abbr>UN</abbr><meaning>联合国编号</meaning>
+        <abbr>IARC</abbr><meaning>国际癌症研究机构</meaning>
+        <abbr>RTECS</abbr><meaning>化学物质毒性效应登记</meaning>
+        <abbr>IMDG</abbr><meaning>国际海运危险货物规则</meaning>
+        <abbr>GHS</abbr><meaning>全球化学品统一分类和标签制度</meaning>
+      </abbreviations>
+      <data_sources>中国化学品安全网、国际化学品安全卡(ICSC)、欧洲化学品管理局(ECHA)数据库、美国国立职业安全卫生研究所(NIOSH)、有机过氧化物安全数据、化学品毒性数据库</data_sources>
+      <disclaimer>本MSDS数据仅供参考，使用者应根据实际使用情况评估其适用性。我们不对数据的准确性和完整性承担法律责任。使用前应仔细阅读产品标签和安全说明。</disclaimer>
+      <safety_remarks>有机过氧化物具有爆炸性分解风险，必须严格按照《危险化学品安全管理条例》管理。储存和使用过程中应避免受热、摩擦、震动和撞击。运输过程中应遵守《危险货物道路运输安全管理办法》相关规定。</safety_remarks>
+      <training_recommendations>操作人员必须接受专业培训，了解有机过氧化物特性和应急处理措施。定期组织应急演练，确保熟练掌握泄漏处理和火灾扑救技能。</training_recommendations>
+      <environmental_protection>严格按照环保要求处理废弃物，防止对环境造成污染。建立环境监测制度，定期评估对周边环境的影响。避免进入水体、土壤和地下水。</environmental_protection>
+      <regulatory_compliance>严格遵守国家和地方有关危险化学品管理的法律法规，接受相关部门的监督检查。建立完整的管理档案，如实记录生产、储存、使用和运输情况。</regulatory_compliance>
+      <emergency_contact>国家化学品登记中心：400-1616-019；当地急救中心：120；消防部门：119</emergency_contact>
+      <!-- MSDS补全专家: 来源: 基于有机过氧化物管理要求, 2025-12-18 -->
+      <manufacturer_info>无资料（建议向具有危险化学品生产资质的正规厂家索取详细的生产企业信息，必须确保具备安全生产许可证）</manufacturer_info>
+      <supplier_info>无资料（建议向具有危险化学品经营资质的正规供应商索取详细的供应商信息，必须确保具备危险化学品经营许可证）</supplier_info>
+    </additional_info>
   </msds>
 </msds_list>

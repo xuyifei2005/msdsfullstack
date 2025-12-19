@@ -8,12 +8,13 @@
       <product_name>2-甲基-2-丙醇</product_name>
       <product_alias>叔丁醇；三甲基甲醇；特丁醇</product_alias>
       <product_english_name>2-methylpropan-2-ol</product_english_name>
-      <company_name>无资料</company_name>
-      <company_address>无资料</company_address>
-      <contact_phone>无资料</contact_phone>
-      <emergency_phone>无资料</emergency_phone>
-      <email>无资料</email>
-      <fax_number>无资料</fax_number>
+      <!-- MSDS补全专家: 来源: 基于标准MSDS格式要求, 2025-12-18 -->
+              <company_name>无资料（建议向供应商索取详细企业信息）</company_name>
+              <company_address>无资料（建议向供应商索取详细地址信息）</company_address>
+              <contact_phone>无资料（建议向供应商索取联系电话）</contact_phone>
+              <emergency_phone>无资料（紧急情况下联系当地急救中心：120）</emergency_phone>
+              <email>无资料（建议向供应商索取邮箱地址）</email>
+              <fax_number>无资料（建议向供应商索取传真号码）</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>

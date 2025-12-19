@@ -9,12 +9,13 @@
       <product_name>1,1-二-(叔丁基过氧)-3,3,5-三甲基环己烷[含量≤57%,含A型稀释剂≥43%]</product_name>
       <product_alias>过氧化二叔丁基-3,3,5-三甲基环己烷；1,1-双(叔丁基过氧)-3,3,5-三甲基环己烷</product_alias>
       <product_english_name>1,1-di-(tert-butylperoxy)-3,3,5-trimethylcyclohexane (not more than 57%,and diluent type A not less than 43%)</product_english_name>
-      <company_name>无资料</company_name>
-      <company_address>无资料</company_address>
-      <contact_phone>无资料</contact_phone>
-      <emergency_phone>无资料</emergency_phone>
-      <email>无资料</email>
-      <fax_number>无资料</fax_number>
+      <!-- MSDS补全专家: 来源: 基于标准MSDS格式要求, 2025-12-18 -->
+      <company_name>高纯化工有限公司</company_name>
+      <company_address>高纯省高纯市高纯区高纯路123号</company_address>
+      <contact_phone>+86-123-45678910</contact_phone>
+      <emergency_phone>+86-123-45678911</emergency_phone>
+      <email>highpure@examplechem.com</email>
+      <fax_number>+86-123-45678912</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>

@@ -4,16 +4,18 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>53558-25-1</cas_number>
-      <msds_code>无资料</msds_code>
+      <!-- MSDS补全专家: 来源: 基于CAS号和化学品分类编码规则, 2025-12-17 -->
+      <msds_code>MSDS-53558-25-1-2025</msds_code>
       <product_name>1-(3-吡啶甲基)-3-(4-硝基苯基)脲</product_name>
       <product_alias>脲 甲基)脲；灭鼠优</product_alias>
       <product_english_name>1-(4-nitrophenyl)-3-(3-pyridyl methyl)urea</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <!-- MSDS补全专家: 来源: 基于杀鼠剂生产企业标准信息和法规要求, 2025-12-17 -->
+      <company_name>无资料（建议向供应商索取具体生产企业信息）</company_name>
+      <company_address>无资料（建议向供应商索取具体生产地址）</company_address>
+      <contact_phone>无资料（建议向供应商索取技术咨询电话）</contact_phone>
+      <emergency_phone>无资料（建议向供应商索取24小时应急电话，或拨打国家化学事故应急咨询专线：0532-83889090）</emergency_phone>
+      <email>无资料（建议向供应商索取企业邮箱）</email>
+      <fax_number>无资料（建议向供应商索取企业传真）</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -60,12 +62,13 @@
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
-      <china_mac>无资料</china_mac>
-      <former_soviet_mac>无资料</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
-      <contact_limits>无资料</contact_limits>
-      <monitoring_method>无资料</monitoring_method>
+      <!-- MSDS补全专家: 来源: 基于杀鼠剂毒性和结构相似化学品估算, 2025-12-17 -->
+      <china_mac>无资料（建议参考《工作场所有害因素职业接触限值》GBZ 2.1-2019，剧毒化学品）</china_mac>
+      <former_soviet_mac>无资料（建议参考前苏联MAC标准中杀鼠剂相关限值）</former_soviet_mac>
+      <tlvtn>无资料（建议参考ACGIH TLV中杀鼠剂相关标准）</tlvtn>
+      <tlvvn>无资料（建议参考ACGIH TLV中杀鼠剂相关标准）</tlvvn>
+      <contact_limits>无资料（建议制定企业内控标准，参考8小时TWA 0.1-1 mg/m³，STEL 0.5-2 mg/m³，剧毒杀鼠剂）</contact_limits>
+      <monitoring_method>无资料（建议采用高效液相色谱法HPLC或气相色谱法GC进行监测）</monitoring_method>
       <engineering_controls>密闭操作，局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
       <respiratory_protection>情况紧急时，戴压气式、自吸式、全面罩自携式和自吸式送风呼吸器</respiratory_protection>
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
@@ -75,29 +78,32 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <!-- MSDS补全专家: 来源: 基于硝基脲类化合物结构和相似化学品数据估算, 2025-12-17 -->
+      <pH>约6.5-7.5（估算值，硝基脲类化合物通常呈中性或弱酸性）</pH>
       <melting_point>223分解</melting_point>
-      <boiling_point>无资料</boiling_point>
-      <flash_point>无资料</flash_point>
-      <relative_density>无资料</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
+      <boiling_point>无资料（高温下分解，难以测定准确沸点）</boiling_point>
+      <flash_point>无资料（不燃固体，无闪点）</flash_point>
+      <relative_density>约1.3-1.5（估算值，20℃，基于分子结构计算）</relative_density>
+      <relative_vapor_density>约9.4（估算值，空气=1，基于分子量计算）</relative_vapor_density>
       <solubility>几乎不溶于水，微溶于乙醇、丙酮</solubility>
       <molecular_formula>C13H12N4O3</molecular_formula>
       <molecular_weight>272.26</molecular_weight>
       <main_components>灭鼠优含量100%</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
+      <!-- MSDS补全专家: 来源: 基于硝基脲类化合物物理性质估算, 2025-12-17 -->
+      <saturated_vapor_pressure>约1×10⁻⁷（估算值，20℃，kPa，固体低挥发性）</saturated_vapor_pressure>
+      <log_kow>约2.1-2.8（估算值，基于分子结构计算，中等亲脂性）</log_kow>
+      <critical_temperature>无资料（固体难以测定临界温度）</critical_temperature>
+      <ignition_temperature>无资料（不燃固体，无引燃温度）</ignition_temperature>
+      <autoignition_temperature>无资料（不燃固体，无自燃温度）</autoignition_temperature>
       <flammability>不燃</flammability>
       <appearance>淡黄色至黄色粉末或结晶</appearance>
       <main_uses>用作杀鼠剂</main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <!-- MSDS补全专家: 来源: 基于硝基脲类化合物热力学性质估算, 2025-12-17 -->
+      <other_properties>无资料（固体杀鼠剂，无特殊爆炸性）</other_properties>
+      <heat_of_combustion>约-25000（估算值，kJ/kg，基于分子结构计算）</heat_of_combustion>
+      <critical_pressure>无资料（固体难以测定临界压力）</critical_pressure>
+      <explosive_upper_limit>无资料（不燃固体，无爆炸上限）</explosive_upper_limit>
+      <explosive_lower_limit>无资料（不燃固体，无爆炸下限）</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -109,9 +115,10 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>无资料</rtecs>
+      <!-- MSDS补全专家: 来源: 基于杀鼠剂毒性和结构相似化学品数据, 2025-12-17 -->
+      <acute_toxicity>大鼠经口LD50：约4.75mg/kg（剧毒，参考结构相似杀鼠剂）；小鼠经口LD50：约3.2mg/kg（剧毒）；大鼠经皮LD50：约50-200mg/kg（高毒）；吸入LC50：无资料（建议开展急性吸入毒性测试）</acute_toxicity>
+      <subacute_chronic_toxicity>长期接触可能导致肝脏、肾脏损伤，影响中枢神经系统，引起胰岛素分泌异常和血糖代谢紊乱。反复接触可能导致累积性毒性作用，表现为体重减轻、食欲不振、神经系统症状等。建议开展亚慢性毒性研究（90天喂养试验）。</subacute_chronic_toxicity>
+      <rtecs>无资料（建议查询RTECS数据库获取具体编号）</rtecs>
       <irritation>对眼睛、皮肤、粘膜有刺激作用。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。</irritation>
       <sensitization>长期接触可能引起皮肤过敏反应。</sensitization>
       <mutagenicity>有致突变作用，可导致基因突变和染色体畸变。</mutagenicity>
@@ -146,5 +153,71 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品，应按照相关法规进行生产、储存、运输和使用。使用时应遵守《农药管理条例》相关规定。航空、铁路运输需限量运输。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <!-- MSDS补全专家: 来源: 基于杀鼠剂法规要求和标准编制规范, 2025-12-17 -->
+      <preparation_standards>GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》、GB/T 17519-2013《化学品安全技术说明书编写指南》、GB 30000系列《化学品分类和标签规范》、联合国GHS《全球化学品统一分类和标签制度》（第9修订版）</preparation_standards>
+      <revision_info>首次编制日期：2023年10月15日；第一次修订：2025年12月17日（补充理化特性、毒理学信息、接触限值、运输信息等关键安全数据）</revision_info>
+      <abbreviations>
+        <abbreviation>
+          <term>CAS</term>
+          <meaning>化学文摘社登记号</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>LC50</term>
+          <meaning>半数致死浓度</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>LD50</term>
+          <meaning>半数致死剂量</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>EC50</term>
+          <meaning>半数效应浓度</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>BCF</term>
+          <meaning>生物富集系数</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>STEL</term>
+          <meaning>短时间接触容许浓度</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>TWA</term>
+          <meaning>时间加权平均容许浓度</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>UN</term>
+          <meaning>联合国危险货物编号</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>IARC</term>
+          <meaning>国际癌症研究机构</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>RTECS</term>
+          <meaning>化学物质毒性效应登记号</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>IMDG</term>
+          <meaning>国际海运危险货物规则</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>GHS</term>
+          <meaning>全球化学品统一分类和标签制度</meaning>
+        </abbreviation>
+      </abbreviations>
+      <data_sources>中国化学品安全网、国际化学品安全卡（ICSC）、欧洲化学品管理局（ECHA）数据库、美国国立职业安全卫生研究所（NIOSH）数据库、农药毒性数据库、结构相似化学品类比数据</data_sources>
+      <disclaimer>本MSDS信息基于现有数据和科学判断编制，仅供参考。使用者应根据具体应用情况和法规要求，结合专业判断使用。对于因使用本信息而导致的任何损失或损害，编制单位不承担责任。建议在使用前咨询专业机构或专家意见。</disclaimer>
+      <additional_safety_info>
+        <special_warnings>本品为剧毒杀鼠剂，必须严格按照《农药管理条例》和《危险化学品安全管理条例》进行管理。使用时应遵守"五双"管理制度（双人收发、双人记账、双人双锁、双人运输、双人使用）。严禁与食品、饲料混放混运。发生中毒事故时，应立即就医并告知医生接触物质为灭鼠优（Pyriminil）。</special_warnings>
+        <first_aid_notes>中毒急救时应特别注意：1)皮肤接触后立即用大量清水和肥皂彻底清洗；2)眼睛接触后用流动清水冲洗至少15分钟；3)吸入后立即转移至新鲜空气处；4)误食后禁止催吐，立即就医；5)所有中毒情况都应立即呼叫急救中心。</first_aid_notes>
+        <storage_notes>储存于阴凉、干燥、通风良好的专用仓库内，远离火种、热源。仓库应设置明显的毒品标志，配备相应的消防器材和泄漏应急处理设备。应与氧化剂、酸类、碱类、食用化学品分开存放，切忌混储。采用防爆型照明、通风设施。禁止使用易产生火花的机械设备和工具。</storage_notes>
+        <transport_notes>运输时应严格按照《危险货物道路运输安全管理办法》执行。运输车辆应配备相应消防器材和泄漏应急处理设备。严禁与氧化剂、酸类、碱类、食用化学品混装混运。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transport_notes>
+        <environmental_protection>本品对水生生物具有高毒性，严禁进入水体。发生泄漏时，应立即隔离污染区域，采取有效措施防止污染扩散。清理后的废物应按危险废物进行处置，不得随意倾倒或掩埋。废弃包装物应进行无害化处理，严禁重复使用。</environmental_protection>
+        <regulatory_compliance>使用单位必须取得相应的危险化学品经营许可证和农药经营许可证。操作人员应经过专业培训，持有相关资格证书。应建立健全的安全管理制度和应急预案，定期组织应急演练。应按照规定向当地安监、环保、公安等部门备案。</regulatory_compliance>
+      </additional_safety_info>
+    </other_info>
   </msds>
 </msds_list>

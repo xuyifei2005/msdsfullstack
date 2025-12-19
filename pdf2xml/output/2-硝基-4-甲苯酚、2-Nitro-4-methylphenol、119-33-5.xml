@@ -142,7 +142,55 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <domestic_regulations>
+        <!-- MSDS补全专家: 来源: 中国危险化学品管理法规, 2025-12-17 -->
+        <main_regulations>《危险化学品安全管理条例》（国务院令第591号）</main_regulations>
+        <inventory_list>《危险化学品目录》（2015版）</inventory_list>
+        <transport_regulations>《危险货物品名表》（GB 12268-2012）</transport_regulations>
+        <packaging_standards>《危险货物运输包装通用技术条件》（GB 12463-2009）</packaging_standards>
+        <road_transport>《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）</road_transport>
+        <hazard_classification>本品属于第6.1类毒害品，应按照相关法规进行生产、储存、运输和使用</hazard_classification>
+        <carcinogenic_classification>本品为有毒化学品，具刺激性，需严格控制接触</carcinogenic_classification>
+        <management_system>应严格执行危险化学品管理制度，做好安全防护</management_system>
+      </domestic_regulations>
+      <international_regulations>
+        <!-- MSDS补全专家: 来源: 国际化学品管理法规, 2025-12-17 -->
+        <ghs_classification>全球化学品统一分类和标签制度（GHS）</ghs_classification>
+        <iarc_classification>IARC未分类</iarc_classification>
+        <eu_regulations>欧盟REACH法规</eu_regulations>
+        <us_regulations>美国OSHA危害通信标准（29 CFR 1910.1200）</us_regulations>
+        <transport_classifications>国际海运危险货物规则（IMDG Code）</transport_classifications>
+      </international_regulations>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_information>
+      <!-- MSDS补全专家: 来源: MSDS标准编写规范, 2025-12-17 -->
+      <preparation_standard>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）和《全球化学品统一分类和标签制度》（GHS）编写</preparation_standard>
+      <revision_notes>本版本为初次编制，后续如有新数据将及时更新。所有数据均基于最新科学研究和法规要求</revision_notes>
+      <abbreviations_and_terms>
+        <abbreviation>CAS: 化学文摘服务社登记号</abbreviation>
+        <abbreviation>IARC: 国际癌症研究机构</abbreviation>
+        <abbreviation>TLV-TWA: 阈限值-时间加权平均浓度</abbreviation>
+        <abbreviation>LC50: 半数致死浓度</abbreviation>
+        <abbreviation>LD50: 半数致死剂量</abbreviation>
+        <abbreviation>BCF: 生物富集系数</abbreviation>
+        <abbreviation>STEL: 短时间接触容许浓度</abbreviation>
+        <abbreviation>RTECS: 化学毒物登记系统</abbreviation>
+      </abbreviations_and_terms>
+      <references>
+        <reference>国际化学品安全卡（ICSC）</reference>
+        <reference>美国国立职业安全卫生研究所（NIOSH）化学品安全数据库</reference>
+        <reference>欧洲化学品管理局（ECHA）信息门户</reference>
+        <reference>中国化学品安全网安全技术说明书</reference>
+        <reference>《危险化学品安全技术手册》（第三版）</reference>
+      </references>
+      <other_notes>
+        <note>本产品为有毒化学品，具刺激性，使用前请务必完整阅读并理解本安全技术说明书</note>
+        <note>操作人员应接受专业培训，了解本品的危害性和应急处理措施</note>
+        <note>如需更多技术信息或遇到紧急情况，请联系当地化学品应急响应中心</note>
+        <note>建议定期对操作人员进行健康检查，特别是肝肾功能和血液检查</note>
+        <note>应严格执行危险化学品管理制度，做好安全防护措施</note>
+      </other_notes>
+    </other_information>
   </msds>
 </msds_list>

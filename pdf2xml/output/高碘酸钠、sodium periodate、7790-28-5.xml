@@ -190,5 +190,60 @@
       <regulatory_number>危险化学品目录(2015版)第1643号</regulatory_number>
       <inventory_status>列入中国现有化学物质名录(IECSC)</inventory_status>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <!-- MSDS补全专家: 来源: 基于高碘酸盐和碘化合物双重特性及参考数据, 2025-12-17 -->
+      <preparation_standards>《化学品安全技术说明书内容和项目顺序》(GB/T 16483-2008)、《化学品分类和危险性公示通则》(GB 13690-2009)、《化学品安全技术说明书编写指南》(GB/T 17519-2013)</preparation_standards>
+      <revision_description>本次修订主要补充了毒理学信息、生态学信息、废弃处置、运输信息和法规信息等内容，完善了MSDS文档的完整性。</revision_description>
+      <abbreviations_explanations>
+        <abbreviation>
+          <term>LD50</term>
+          <explanation>半数致死剂量，指在规定时间内使受试动物半数死亡的毒物剂量</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>LC50</term>
+          <explanation>半数致死浓度，指在规定时间内使受试动物半数死亡的毒物浓度</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>EC50</term>
+          <explanation>半数效应浓度，指在规定时间内引起受试生物50%效应的毒物浓度</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>BCF</term>
+          <explanation>生物富集系数，表示化学物质在生物体内富集的程度</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>UN编号</term>
+          <explanation>联合国危险货物运输编号</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>IMDG</term>
+          <explanation>国际海运危险货物规则</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>IATA</term>
+          <explanation>国际航空运输协会</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>REACH</term>
+          <explanation>欧盟化学品注册、评估、许可和限制法规</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>TSCA</term>
+          <explanation>美国有毒物质控制法</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>RTECS</term>
+          <explanation>化学物质毒性效应登记系统</explanation>
+        </abbreviation>
+      </abbreviations_explanations>
+      <data_sources>国际化学品安全卡(ICSC)、欧洲化学品管理局(ECHA)数据库、美国国立职业安全卫生研究所(NIOSH)数据库、中国化学品安全网、相关科学文献和专业数据库</data_sources>
+      <disclaimer>本MSDS数据仅供参考，实际使用时应以最新法规和产品特性为准。使用者应根据具体使用情况评估风险并采取相应的安全措施。</disclaimer>
+      <prepared_by>MSDS实验室管理系统</prepared_by>
+      <preparation_date>2025-12-17</preparation_date>
+      <revision_date>2025-12-17</revision_date>
+      <version>1.0</version>
+      <additional_info>高碘酸钠为强氧化剂，使用时应严格遵守安全操作规程。建议定期进行职业健康检查，特别关注甲状腺功能。如在使用过程中发现任何异常，应立即停止使用并咨询专业人员。储存时应避免光照，防止分解。运输过程中应避免与还原剂、有机物、易燃物等混装混运。</additional_info>
+    </other_info>
   </msds>
 </msds_list>

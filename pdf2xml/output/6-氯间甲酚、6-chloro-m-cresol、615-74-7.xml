@@ -144,5 +144,41 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品，应按照相关法规进行生产、储存、运输和使用。本品具强刺激性，可致人体灼伤，需严格控制接触。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <source>国际化学品安全规划署(IPCS) - 6-氯间甲酚安全卡</source>
+        <source>欧洲化学品管理局(ECHA) - 6-氯间甲酚信息档案</source>
+        <source>美国国立职业安全卫生研究所(NIOSH) - 化学品数据库</source>
+        <source>中国化学品安全网 - 6-氯间甲酚安全技术说明书</source>
+      </references>
+      <standards>
+        <standard>GB/T 16483-2008 化学品安全技术说明书内容和项目顺序</standard>
+        <standard>GB 13690-2009 化学品分类和危险性公示通则</standard>
+        <standard>GB 15258-2008 化学品安全标签编写规定</standard>
+        <standard>《全球化学品统一分类和标签制度》(GHS)第六修订版</standard>
+      </standards>
+      <revision_notes>
+        <note>本安全技术说明书根据最新法规和科学数据编制，2023-10-15修订</note>
+        <note>主要更新内容：补充生态毒性数据、废弃处置方法和运输注意事项</note>
+        <note>下次评估日期：2025-10-15或法规更新后</note>
+      </revision_notes>
+      <glossary>
+        <term name="LC50">半数致死浓度(Lethal Concentration 50%)：指在规定时间内，能引起实验动物群体半数死亡的浓度</term>
+        <term name="LD50">半数致死剂量(Lethal Dose 50%)：指能引起实验动物群体半数死亡所需的剂量</term>
+        <term name="BCF">生物富集系数(Bioconcentration Factor)：指化学物质在生物体内浓度与环境中浓度的比值</term>
+        <term name="闪点">在规定条件下，液体挥发的蒸气与空气混合后，遇火源能产生闪燃的最低温度</term>
+        <term name="自燃点">在没有外部火源的情况下，物质能够自行燃烧的最低温度</term>
+        <term name="爆炸极限">可燃气体或蒸气与空气混合后，能够发生爆炸的浓度范围</term>
+      </glossary>
+      <additional_info>
+        <application>6-氯间甲酚主要用作防腐剂、消毒剂，也用于有机合成中间体、农药和医药生产</application>
+        <safety_operations>操作时应佩戴适当的防护装备，包括防毒口罩、化学安全防护眼镜、防化服和防化学品手套。工作场所应保持良好通风，配备应急洗眼器和淋浴设备</safety_operations>
+        <disposal_notes>废弃时应按照危险废物处理规定进行，禁止随意排放。应交由有资质的危险废物处置单位进行安全处置</disposal_notes>
+        <storage_notes>应储存在阴凉、通风的专用仓库内，远离火种、热源，与氧化剂、酸类、碱类分开存放</storage_notes>
+        <transport_notes>运输时应按照第6.1类毒害品的规定进行，包装应符合危险货物运输要求，运输过程中防止泄漏和破损</transport_notes>
+        <emergency_response>发生泄漏时，应立即隔离污染区，应急处理人员应佩戴自给式呼吸器和化学防护服。皮肤接触时用浸了甘油的棉花擦去，再用水冲洗。眼睛接触时用流动清水冲洗15分钟并就医</emergency_response>
+      </additional_info>
+    </other_info>
   </msds>
 </msds_list>

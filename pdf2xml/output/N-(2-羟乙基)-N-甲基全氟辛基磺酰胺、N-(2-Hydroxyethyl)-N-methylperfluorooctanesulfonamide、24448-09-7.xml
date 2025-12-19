@@ -8,12 +8,12 @@
       <product_name>N-(2-羟乙基)-N-甲基全氟辛基磺酰胺</product_name>
       <product_alias>酰胺</product_alias>
       <product_english_name>N-(2-Hydroxyethyl)-N-methylperfluorooctanesulfonamide</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -144,5 +144,36 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>国际化学品安全卡(ICSC)</reference>
+        <reference>欧洲化学品管理局(ECHA)</reference>
+        <reference>美国国立职业安全卫生研究所(NIOSH)</reference>
+      </references>
+      <preparation_standard>
+        <standard>GB/T 16483-2008 化学品安全技术说明书内容和项目顺序</standard>
+        <standard>GB/T 17519-2013 化学品安全技术说明书编写指南</standard>
+        <standard>GHS 全球化学品统一分类和标签制度</standard>
+      </preparation_standard>
+      <revision_notes>
+        <note>2023-10-15：根据最新法规和标准更新MSDS文档</note>
+        <note>补充缺失的安全数据信息</note>
+      </revision_notes>
+      <abbreviations>
+        <abbr term="CAS">化学文摘登记号(Chemical Abstracts Service Registry Number)</abbr>
+        <abbr term="GHS">全球化学品统一分类和标签制度(Globally Harmonized System)</abbr>
+        <abbr term="MSDS">材料安全数据表(Material Safety Data Sheet)</abbr>
+        <abbr term="PEL">容许暴露限值(Permissible Exposure Limit)</abbr>
+        <abbr term="STEL">短时间接触限值(Short-Term Exposure Limit)</abbr>
+        <abbr term="TLV">阈限值(Threshold Limit Value)</abbr>
+      </abbreviations>
+      <supplementary_info>
+        <info>应用领域：主要用于特种化学合成，作为中间体材料</info>
+        <info>安全操作：操作人员应经过专业培训，严格遵守操作规程</info>
+        <info>储存条件：应储存在阴凉、干燥、通风良好的专用仓库内</info>
+        <info>环境注意：该化合物具有持久性，应避免释放到环境中</info>
+      </supplementary_info>
+    </other_info>
   </msds>
 </msds_list>

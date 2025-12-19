@@ -8,12 +8,13 @@
       <product_name>乙醇[无水]</product_name>
       <product_alias>无水酒精</product_alias>
       <product_english_name>alcohol anhydrous</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <!-- MSDS补全专家: 来源: 基于标准MSDS格式要求, 2025-12-18 -->
+      <company_name>无资料（建议向供应商索取详细企业信息）</company_name>
+      <company_address>无资料（建议向供应商索取详细地址信息）</company_address>
+      <contact_phone>无资料（建议向供应商索取联系电话）</contact_phone>
+      <emergency_phone>无资料（紧急情况下联系当地急救中心：120）</emergency_phone>
+      <email>无资料（建议向供应商索取邮箱地址）</email>
+      <fax_number>无资料（建议向供应商索取传真号码）</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>

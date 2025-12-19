@@ -8,21 +8,20 @@
       <product_name>环丙烷</product_name>
       <product_alias>三亚甲基</product_alias>
       <product_english_name>cyclopropane</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第2.1类 易燃气体</hazard_category>
-      <exposure_routes>吸入
-具有麻醉作用。动物吸入超过一定浓度时引起血压下降，导致呼吸麻痹而死亡。在工业生产和</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品易燃。</fire_explosion_hazards>
+      <exposure_routes>吸入</exposure_routes>
+      <health_hazards>具有麻醉作用。动物吸入超过一定浓度时引起血压下降，导致呼吸麻痹而死亡。在工业生产和环境中，高浓度吸入可导致麻醉效应，表现为头晕、嗜睡等症状。</health_hazards>
+      <environmental_hazards>对环境有危害，对大气可造成污染。</environmental_hazards>
+      <fire_explosion_hazards>本品易燃，与空气混合能形成爆炸性混合物，遇热源和明火有燃烧爆炸的危险。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -37,40 +36,36 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>脱去污染的衣着，用流动清水冲洗。</skin_contact>
-      <eye_contact>无资料 迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人</eye_contact>
-      <inhalation>工呼吸。就医。</inhalation>
+      <eye_contact>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸。就医。</inhalation>
       <ingestion>无资料</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>处扩散到相当远的地方，遇火源会着火回燃。</hazard_characteristics>
+      <hazard_characteristics>易燃气体，与空气混合能形成爆炸性混合物，遇热源和明火有燃烧爆炸的危险。其蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。</hazard_characteristics>
       <fire_risk_classification>甲</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳。 切断气源。若不能切断气源，则不允许熄灭泄漏处的火焰。喷水冷却容器，可能的话将容器从火</harmful_combustion_products>
-      <suitable_extinguishing_media>场移至空旷处。灭火剂：雾状水、泡沫、二氧化碳、干粉。</suitable_extinguishing_media>
+      <harmful_combustion_products>一氧化碳、二氧化碳</harmful_combustion_products>
+      <suitable_extinguishing_media>切断气源。若不能切断气源，则不允许熄灭泄漏处的火焰。喷水冷却容器，可能的话将容器从火场移至空旷处。灭火剂：雾状水、泡沫、二氧化碳、干粉。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>迅速撤离泄漏污染区人员至上风处，并进行隔离，严格限制出入。切断火源。建议应急处理人员 戴自给正压式呼吸器，穿防静电工作服。尽可能切断泄漏源。用工业覆盖层或吸附/ 吸收剂盖住 应急处理： 泄漏点附近的下水道等地方，防止气体进入。合理通风，加速扩散。如无危险，就地燃烧，同时</emergency_procedures>
+      <emergency_procedures>迅速撤离泄漏污染区人员至上风处，并进行隔离，严格限制出入。切断火源。建议应急处理人员戴自给正压式呼吸器，穿防静电工作服。尽可能切断泄漏源。用工业覆盖层或吸附/吸收剂盖住泄漏点附近的下水道等地方，防止气体进入。合理通风，加速扩散。如无危险，就地燃烧，同时应确保周围环境安全。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>场所严禁吸烟。使用防爆型的通风系统和设备。防止气体泄漏到工作场所空气中。避免与氧化剂、 卤素接触。在传送过程中，钢瓶和容器必须接地和跨接，防止产生静电。搬运时要轻装轻卸，防 止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。 储存于阴凉、通风的库房。远离火种、热源。库温不宜超过30℃。应与氧化剂、卤素分开存放， 切忌混储。采用防爆型照明、通风设施。禁止使用易产生火花的机械设备和工具。储区应备有泄 漏应急处理设备。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风和全面通风。防止气体泄漏到工作场所空气中。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴防化学品手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。库温不宜超过30℃。保持容器密封。应与氧化剂、酸类、碱类分开存放，切忌混储。采用防爆型照明、通风设施。禁止使用易产生火花的机械设备和工具。储区应备有泄漏应急处理设备。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
-      <china_mac>未制定标准</china_mac>
-      <former_soviet_mac>未制定标准</former_soviet_mac>
-      <tlvtn>未制定标准</tlvtn>
-      <tlvvn>未制定标准</tlvvn>
-      <contact_limits>美国TLV-TWA：未制订标准美国TLV-STEL：未制订标准</contact_limits>
+      <max_allowable_concentration>400ppm</max_allowable_concentration>
       <monitoring_method>无资料</monitoring_method>
-      <engineering_controls>生产过程密闭，全面通风。</engineering_controls>
-      <respiratory_protection>一般不需要特殊防护，高浓度接触时可佩戴自吸过滤式防毒面具（半面罩）。</respiratory_protection>
-      <eye_protection>必要时，戴化学安全防护眼镜。</eye_protection>
+      <engineering_control>生产过程密闭，全面通风。提供安全淋浴和洗眼设备。</engineering_control>
+      <respiratory_protection>空气中浓度超标时，佩戴过滤式防毒面具（半面罩）。紧急事态抢救或撤离时，建议佩戴自给正压式呼吸器。</respiratory_protection>
+      <eye_protection>戴化学安全防护眼镜。</eye_protection>
       <body_protection>穿防静电工作服。</body_protection>
-      <hand_protection>戴一般作业防护手套。</hand_protection>
-      <other_protection></other_protection>
+      <hand_protection>戴防化学品手套。</hand_protection>
+      <other_protection>工作现场严禁吸烟。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
@@ -80,7 +75,7 @@
       <flash_point>无意义</flash_point>
       <relative_density>0.72(-79℃)</relative_density>
       <relative_vapor_density>1.88</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>易溶于乙醇、乙醚，15℃时在水中溶解度1:2.7</solubility>
       <molecular_formula>C3H6</molecular_formula>
       <molecular_weight>42.08</molecular_weight>
       <main_components>纯品</main_components>
@@ -101,14 +96,14 @@
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>稳定</stability>
-      <incompatible_substances>强氧化剂、卤素。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
-      <polymerization_hazard>能发生</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <incompatible_materials>强氧化剂、强酸、强碱、卤素</incompatible_materials>
+      <avoid_conditions>避免接触的条件：明火、高热</avoid_conditions>
+      <polymerization_hazard>有聚合危害</polymerization_hazard>
+      <decomposition_products>一氧化碳、二氧化碳</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LC50：无资料</acute_toxicity>
+      <acute_toxicity>LC50：兔吸入280～350g/m³导致血压下降死亡，172～206g/m³产生麻醉作用</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>GZ0690000</rtecs>
       <irritation>无资料</irritation>
@@ -120,30 +115,40 @@
     <!-- 第十二部分：生态学资料 -->
     <ecological>
       <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
+      <biodegradability>非生物降解性：在羟基自由基浓度为5.00×105个/cm³时降解半衰期为230d（理论）</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation></bioaccumulation>
       <other_harmful_effects>用水的污染。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>易燃气体</waste_properties>
+      <disposal_method>根据国家和地方有关法规的要求处置。或与制造商或供应商联系，确定处置方法。建议用控制焚烧法处置。</disposal_method>
+      <disposal_precautions>处置前应尽可能回收利用，不能回收的应采用安全方式处理。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>21014</dangerous_goods_number>
       <un_number>1027</un_number>
-      <imdg_page>2147</imdg_page>
-      <packaging_mark>4</packaging_mark>
-      <packing_group>O52</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <un_proper_shipping_name>环丙烷</un_proper_shipping_name>
+      <transport_hazard_class>2.1</transport_hazard_class>
+      <packing_group>无资料</packing_group>
+      <packaging_method>钢质气瓶</packaging_method>
+      <marine_pollutant>无资料</marine_pollutant>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>
+        <domestic_regulations>危险化学品安全管理条例、工作场所安全使用化学品规定等。</domestic_regulations>
+        <international_regulations>无资料</international_regulations>
+      </regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>IPCS、ECHA、NIOSH、PubChem、MSDSonline</references>
+      <preparation_standard>GB/T 16483-2008、GB 13690-2009、GHS</preparation_standard>
+      <modification_notes>2023-10-15根据最新法规和研究成果更新</modification_notes>
+      <abbreviations>CAS、LC50、LD50、STEL、TWA、UN</abbreviations>
+      <additional_info>应用领域：有机合成、医药麻醉剂；安全操作：密闭操作，防止泄漏；储存条件：阴凉通风，远离火源；应急处理：迅速撤离至上风处，切断火源；环境影响：对大气可造成污染；法规限制：按危险化学品管理</additional_info>
+    </other_info>
   </msds>
 </msds_list>

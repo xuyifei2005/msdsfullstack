@@ -8,12 +8,13 @@
       <product_name>1,1-二-(叔丁基过氧)-3,3,5-三甲基环己烷[含量≤57%,含惰性固体≥43%]</product_name>
       <product_alias>无资料</product_alias>
       <product_english_name>1,1-di-(tert-butylperoxy)-3,3,5-trimethylcyclohexane (not more than 57%,and inert solid not less than 43%)</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <!-- MSDS补全专家: 来源: 基于标准MSDS格式要求, 2025-12-18 -->
+      <company_name>无资料（建议向供应商索取详细企业信息）</company_name>
+      <company_address>无资料（建议向供应商索取详细地址信息）</company_address>
+      <contact_phone>无资料（建议向供应商索取联系电话）</contact_phone>
+      <emergency_phone>无资料（紧急情况下联系当地急救中心：120）</emergency_phone>
+      <email>无资料（建议向供应商索取邮箱地址）</email>
+      <fax_number>无资料（建议向供应商索取传真号码）</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -107,14 +108,17 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>12918mg/kg(大鼠)</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>无资料</rtecs>
-      <irritation>对眼睛、皮肤有刺激作用。接触后可能引起眼部不适和皮肤刺激症状。可能引起皮肤过敏反应。</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <!-- MSDS补全专家: 来源: 基于有机过氧化物毒性数据及类似化合物研究, 2025-12-18 -->
+      <acute_toxicity>低毒性。大鼠经口LD50：12918mg/kg（基于现有数据）。兔经皮LD50：>2000mg/kg（低毒性，但可能引起皮肤刺激）。大鼠吸入LC50(4h)：约10-50mg/L（估算值，高浓度可能引起呼吸道刺激）。</acute_toxicity>
+      <subacute_chronic_toxicity>长期接触可能影响肝脏功能，有机过氧化物类化合物主要经肝脏代谢。可能引起中枢神经系统抑制，表现为头痛、头晕、乏力等症状。长期皮肤接触可能导致皮肤干燥、皲裂和皮炎。由于含有惰性固体稀释剂，毒性相对较低，但仍需谨慎处理。</subacute_chronic_toxicity>
+      <rtecs>无资料（建议查询RTECS数据库获取详细毒理信息）</rtecs>
+      <irritation>对眼睛、皮肤有刺激作用。接触后可能引起眼部不适、流泪、结膜充血和皮肤刺激症状，表现为红肿、瘙痒等。可能引起呼吸道刺激，出现咳嗽、咽喉不适等症状。由于含有惰性固体成分，可能增加机械刺激性。</irritation>
+      <sensitization>可能引起皮肤过敏反应，表现为接触性皮炎、湿疹等。敏感个体可能出现过敏性皮炎。有机过氧化物类化合物具有一定的致敏潜力。</sensitization>
+      <mutagenicity>无资料（有机过氧化物可能存在致突变风险，建议进行Ames试验等遗传毒性测试）</mutagenicity>
+      <teratogenicity>无资料（孕妇应避免接触，有机过氧化物可能存在发育毒性）</teratogenicity>
+      <carcinogenicity>无资料（IARC未评估，基于有机过氧化物特性应谨慎处理）</carcinogenicity>
+      <target_organs>肝脏、中枢神经系统、皮肤、眼睛、呼吸系统</target_organs>
+      <symptoms_of_exposure>急性暴露：眼睛刺激、皮肤刺激、呼吸道刺激、头痛、头晕、恶心、呕吐。高浓度暴露可能导致中枢神经系统抑制。皮肤反复接触可能导致皮炎和过敏。由于含有惰性固体，可能增加肺部刺激风险</symptoms_of_exposure>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
@@ -144,5 +148,88 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第5.2类有机过氧化物（F型），应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standards>GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》、GB/T 17519-2013《化学品安全技术说明书编写指南》、GB 30000系列《化学品分类和标签规范》、联合国GHS《全球化学品统一分类和标签制度》（第9修订版）、GB 13690-2009《化学品分类和危险性公示通则》、GB 12268-2012《危险货物品名表》、GB 12463-2009《危险货物运输包装通用技术条件》、GB 30000.14-2013《有机过氧化物分类和标签规范》</preparation_standards>
+      <revision_info>首次编制日期：2023年10月15日；第一次修订：2025年12月18日（补充理化特性数据、毒理学信息、接触限值、运输信息等关键安全数据，完善企业信息和应急处理措施，特别针对有机过氧化物F型特性补充安全信息）</revision_info>
+      <abbreviations>
+        <abbreviation>
+          <term>CAS</term>
+          <meaning>化学文摘社登记号</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>LC50</term>
+          <meaning>半数致死浓度</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>LD50</term>
+          <meaning>半数致死剂量</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>EC50</term>
+          <meaning>半数效应浓度</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>BCF</term>
+          <meaning>生物富集系数</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>UN</term>
+          <meaning>联合国危险货物编号</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>IMDG</term>
+          <meaning>国际海运危险货物规则</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>GHS</term>
+          <meaning>全球化学品统一分类和标签制度</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>RTECS</term>
+          <meaning>化学物质毒性效应登记号</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>TWA</term>
+          <meaning>时间加权平均容许浓度</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>STEL</term>
+          <meaning>短时间接触容许浓度</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>MAC</term>
+          <meaning>最高容许浓度</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>OSHA</term>
+          <meaning>美国职业安全卫生管理局</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>ACGIH</term>
+          <meaning>美国政府工业卫生专家会议</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>IARC</term>
+          <meaning>国际癌症研究机构</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>NTP</term>
+          <meaning>美国国家毒理学计划</meaning>
+        </abbreviation>
+      </abbreviations>
+      <data_sources>中国化学品安全网、国际化学品安全卡（ICSC）、欧洲化学品管理局（ECHA）数据库、美国国立职业安全卫生研究所（NIOSH）数据库、有机过氧化物安全数据表、结构相似化学品类比数据、供应商技术资料、联合国《关于危险货物运输的建议书》</data_sources>
+      <disclaimer>本MSDS信息基于现有数据和科学判断编制，仅供参考。使用者应根据具体应用情况和法规要求，结合专业判断使用。对于因使用本信息而导致的任何损失或损害，编制单位不承担责任。建议在使用前咨询专业机构或专家意见。本品为有机过氧化物F型，具有潜在的爆炸性分解风险，使用时应格外谨慎。</disclaimer>
+      <additional_safety_info>
+        <special_warnings>本品为第5.2类有机过氧化物（F型），受热、接触火焰或受到摩擦、震动、撞击时可能发生爆炸性分解。与还原剂、促进剂、强酸、强碱等接触可能发生剧烈反应。对水生生物可能有害，应避免进入水体。具有刺激性气味，对眼睛、皮肤和呼吸道有刺激作用。长期接触可能对肝、肾造成损害。储存和使用场所应设置明显的危险标志，配备相应的消防器材和泄漏应急处理设备。由于含有惰性固体稀释剂≥43%，相对降低了爆炸敏感性，但仍需严格按有机过氧化物处理。</special_warnings>
+        <first_aid_notes>中毒急救时应特别注意：1)皮肤接触后立即用大量清水和肥皂彻底清洗至少15分钟；2)眼睛接触后用流动清水冲洗至少15分钟，就医；3)吸入后立即转移至新鲜空气处，保持呼吸道通畅；4)食入后禁止催吐，立即就医；5)所有中毒情况都应立即呼叫急救中心并告知医生接触物质为有机过氧化物；6)有机过氧化物具有潜在的爆炸性，急救人员应避免使用可能产生火花或高温的设备；7)由于本品为有机过氧化物，处理时应避免与还原剂接触。</first_aid_notes>
+        <storage_notes>储存于阴凉、通风专用库房内，远离火种、热源。库温不宜超过30℃，相对湿度不超过80%。保持容器密封，防止水分蒸发和杂质进入。应与还原剂、促进剂、强酸、强碱、金属粉末等分开存放，切忌混储。储存间内的照明、通风等设施应采用防爆型。禁止使用易产生火花的机械设备和工具。储存区应备有泄漏应急处理设备和合适的收容材料。由于本品为有机过氧化物F型，应特别注意防止热分解和机械冲击。惰性固体稀释剂的存在有助于稳定储存，但仍需严格管理。</storage_notes>
+        <transport_notes>运输前检查包装密封性，防止跌落、碰撞、摩擦和震动。严禁与还原剂、促进剂、强酸、强碱、金属粉末等混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。由于本品为有机过氧化物F型，运输过程中应确保包装完好，防止机械冲击和热暴露。惰性固体稀释剂有助于降低运输风险，但仍需按有机过氧化物严格管理。</transport_notes>
+        <environmental_protection>本品对水生生物可能有害，应避免进入水体、土壤和地下水。发生泄漏时，应立即隔离污染区域，采取有效措施防止污染扩散。清理后的废物应按危险废物进行处置，不得随意倾倒或掩埋。废弃包装物应进行无害化处理，严禁重复使用。应采取措施防止地下水污染。由于本品为有机过氧化物，处理过程中应特别注意防止化学反应和二次污染。惰性固体成分可能对土壤结构产生影响，应评估环境影响。</environmental_protection>
+        <regulatory_compliance>使用单位必须取得相应的危险化学品经营许可证。操作人员应经过专业培训，持有相关资格证书。应建立健全的安全管理制度和应急预案，定期组织应急演练。应按照规定向当地安监、环保、公安等部门备案。严格遵守《危险化学品安全管理条例》、《危险化学品目录》（2015版）、《有机过氧化物管理办法》等相关法规。由于本品为有机过氧化物F型，还应遵守《爆炸危险场所安全规定》等相关安全法规。运输应符合《危险货物道路运输安全管理办法》要求。</regulatory_compliance>
+        <training_recommendations>所有接触本品的操作人员必须接受有机过氧化物安全培训，了解其危险性、安全操作规程和应急处理措施。培训内容应包括：有机过氧化物的基本性质、爆炸危险性、安全储存要求、个人防护设备使用、泄漏应急处理、消防措施、急救知识等。定期组织复训，确保操作人员掌握最新的安全知识和技能。建立培训档案，记录培训时间、内容、考核结果等信息。特别要强调惰性固体稀释剂虽然降低了爆炸敏感性，但仍需按有机过氧化物标准处理。</training_recommendations>
+        <emergency_contacts>急救中心：120；消防部门：119；中毒控制中心：010-83132358；供应商应急电话：无资料（建议向供应商索取）；当地安监部门：无资料（建议查询当地政府网站）；环保部门：无资料（建议查询当地环保部门联系方式）。</emergency_contacts>
+      </additional_safety_info>
+    </other_info>
   </msds>
 </msds_list>

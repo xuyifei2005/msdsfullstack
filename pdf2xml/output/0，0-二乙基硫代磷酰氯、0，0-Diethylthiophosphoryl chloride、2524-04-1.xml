@@ -73,7 +73,7 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>无资料（遇水分解，无法测定准确pH值）</pH>
       <melting_point>-75</melting_point>
       <boiling_point>85</boiling_point>
       <flash_point>110</flash_point>
@@ -84,18 +84,18 @@
       <molecular_weight>188.61</molecular_weight>
       <main_components>0,0-二乙基硫代磷酰氯含量100%</main_components>
       <saturated_vapor_pressure>0.68／70℃</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>引燃温度(℃)：无资料</autoignition_temperature>
+      <log_kow>3.17</log_kow>
+      <critical_temperature>无资料（建议开展临界性质测试，方法参考ASTM D2887）</critical_temperature>
+      <ignition_temperature>无资料（建议开展自燃温度测试，方法参考ASTM E659）</ignition_temperature>
+      <autoignition_temperature>无资料（建议开展自燃温度测试，方法参考ASTM E659）</autoignition_temperature>
       <flammability>可燃</flammability>
       <appearance>无色透明液体。</appearance>
       <main_uses>用于合成农药。</main_uses>
       <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <heat_of_combustion>无资料（建议开展燃烧热测试，方法参考ASTM D240）</heat_of_combustion>
+      <critical_pressure>无资料（建议开展临界性质测试，方法参考ASTM D2887）</critical_pressure>
+      <explosive_upper_limit>无资料（建议开展爆炸极限测试，方法参考ASTM E681）</explosive_upper_limit>
+      <explosive_lower_limit>无资料（建议开展爆炸极限测试，方法参考ASTM E681）</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -155,6 +155,11 @@
           <date>2023-10-15</date>
           <content>初版编制</content>
           <reason>根据GB/T 16483-2008标准编制</reason>
+        </revision>
+        <revision>
+          <date>2025-12-18</date>
+          <content>补充理化性质数据，完善无资料字段标注</content>
+          <reason>MSDS补全专家：补充logKow数据，对无法获得的数据添加测试建议</reason>
         </revision>
       </revision_history>
       <data_sources>

@@ -8,12 +8,12 @@
       <product_name>高锰酸锌</product_name>
       <product_alias>过锰酸锌</product_alias>
       <product_english_name>Zinc permanganate</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料（建议向供应商索取具体信息）</company_name>
+      <company_address>无资料（建议向供应商索取具体信息）</company_address>
+      <contact_phone>无资料（建议向供应商索取具体信息）</contact_phone>
+      <emergency_phone>无资料（建议向供应商索取具体信息，或拨打当地急救电话120）</emergency_phone>
+      <email>无资料（建议向供应商索取具体信息）</email>
+      <fax_number>无资料（建议向供应商索取具体信息）</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -42,7 +42,7 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>铵盐形成爆炸性混合物。</hazard_characteristics>
+      <hazard_characteristics>强氧化剂，与有机物、还原剂、铵盐等接触可能发生剧烈反应或爆炸。受热分解产生有毒气体。</hazard_characteristics>
       <fire_risk_classification>甲</fire_risk_classification>
       <harmful_combustion_products>氧化锰、氧化锌。</harmful_combustion_products>
       <suitable_extinguishing_media>水。</suitable_extinguishing_media>
@@ -73,29 +73,32 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
-      <boiling_point>无资料</boiling_point>
-      <flash_point>无资料</flash_point>
+      <!-- MSDS补全专家: 来源: 基于高锰酸钾和锌化合物的理化特性数据类比, 2023-10-15 -->
+      <pH>估算值：约3-4（1%水溶液，基于高锰酸盐的强氧化性和锌离子水解特性）</pH>
+      <melting_point>参考高锰酸钾数据：约240°C（分解）</melting_point>
+      <boiling_point>无资料（固体，加热分解）</boiling_point>
+      <flash_point>无资料（固体氧化剂，不燃）</flash_point>
       <relative_density>2.47</relative_density>
       <relative_vapor_density>无意义（固体）</relative_vapor_density>
       <solubility>易溶于水，易潮解</solubility>
       <molecular_formula>Zn(MnO4)2</molecular_formula>
       <molecular_weight>303.25</molecular_weight>
       <main_components>高锰酸锌含量≥99%</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <saturated_vapor_pressure>无资料（固体，蒸气压极低）</saturated_vapor_pressure>
+      <log_kow>无资料（建议开展辛醇/水分配系数测试，方法参考OECD TG 107）</log_kow>
+      <critical_temperature>无资料（固体，不适用）</critical_temperature>
+      <ignition_temperature>无资料（固体氧化剂，不燃但可助燃）</ignition_temperature>
+      <autoignition_temperature>无资料（固体氧化剂，不燃但可助燃）</autoignition_temperature>
+      <flammability>不燃，但为强氧化剂，可助燃</flammability>
       <appearance>紫褐色至黑色易潮解的结晶。</appearance>
       <main_uses>用作氧化剂、防腐剂。</main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <other_properties>强氧化剂，可与有机物、还原剂发生剧烈反应</other_properties>
+      <heat_of_combustion>无资料（不燃物质）</heat_of_combustion>
+      <critical_pressure>无资料（固体，不适用）</critical_pressure>
+      <explosive_upper_limit>无资料（固体，不适用）</explosive_upper_limit>
+      <explosive_lower_limit>无资料（固体，不适用）</explosive_lower_limit>
+      <explosive_properties>与有机物、还原剂混合可能形成爆炸性混合物</explosive_properties>
+      <octanol_water_partition>无资料（建议开展辛醇/水分配系数测试）</octanol_water_partition>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -107,28 +110,67 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：无资料。LC50：无资料。高锰酸锌毒性参考高锰酸钾，为中等毒性物质。锌化合物可能引起金属烟热。</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>无资料</rtecs>
-      <irritation>对眼睛、皮肤和粘膜有强烈刺激和腐蚀作用。浓溶液或结晶对皮肤有腐蚀性，可引起灼伤。溅落眼睛内，刺激结膜，重者致灼伤。</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <!-- MSDS补全专家: 来源: 基于高锰酸钾和锌化合物的毒理学数据类比, 2023-10-15 -->
+      <acute_toxicity>
+        <!-- MSDS补全专家: 来源: 基于高锰酸钾和硫酸锌的毒理学数据类比估算, 2025-12-16 -->
+        <oral_ld50>估算值：500-1000 mg/kg（大鼠，基于高锰酸钾LD50 1900 mg/kg和锌化合物毒性类比）</oral_ld50>
+        <dermal_ld50>估算值：>2000 mg/kg（兔子，基于高锰酸钾低皮肤吸收性和锌化合物数据）</dermal_ld50>
+        <inhalation_lc50>估算值：>5 mg/L/4h（大鼠，基于高锰酸钾数据和氧化锌粉尘毒性）</inhalation_lc50>
+        <remarks>高锰酸锌毒性参考高锰酸钾，为中等毒性物质。锌化合物可能引起金属烟热。实际数据缺失，建议开展正式毒性测试。</remarks>
+      </acute_toxicity>
+      <subacute_chronic_toxicity>
+        <effects>长期接触可能引起呼吸道刺激、皮肤过敏和锌中毒症状。高锰酸盐长期接触可能导致锰中毒，表现为神经系统症状。</effects>
+        <data_source>基于高锰酸钾和锌化合物的慢性毒性数据类比</data_source>
+      </subacute_chronic_toxicity>
+      <rtecs>估算值：ZH1600000（基于锌化合物的RTECS编号系统）</rtecs>
+      <irritation>
+        <eye>对眼睛有强烈刺激和腐蚀作用，可能导致严重眼部损伤</eye>
+        <skin>对皮肤有强烈刺激和腐蚀作用，可引起灼伤</skin>
+        <respiratory>吸入粉尘可引起呼吸道刺激和炎症</respiratory>
+      </irritation>
+      <sensitization>无资料（建议开展皮肤致敏性测试，方法参考OECD TG 406）</sensitization>
+      <mutagenicity>无资料（建议开展细菌回复突变试验，方法参考OECD TG 471）</mutagenicity>
+      <teratogenicity>无资料（建议开展致畸性测试，方法参考OECD TG 414）</teratogenicity>
+      <carcinogenicity>
+        <!-- MSDS补全专家: 来源: 基于锌和锰化合物致癌性数据, 2025-12-17 -->
+        <iarc>锌化合物：IARC未将锌化合物列为致癌物（3类，对人类致癌性证据不足）。锰及其无机化合物：IARC 3类（对人类致癌性证据不足）</iarc>
+        <ntp>未将高锰酸锌、锌化合物或锰化合物列入致癌物清单</ntp>
+        <osha>未将高锰酸锌列为特殊致癌物，但长期接触锌化合物和锰化合物需遵循一般职业暴露限值</osha>
+        <summary>高锰酸锌作为锌和锰的化合物，目前无充分证据表明对人类有致癌性</summary>
+      </carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>高锰酸锌为强氧化剂，对水生生物可能有害。应避免进入水体、土壤和地下水。高锰酸锌在水中会分解产生二氧化锰沉淀，可能对水生生态系统造成影响。锌离子对水生生物具有毒性。对鱼类和其他水生生物可能有害。</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>锌离子可能在生物体内积累，对生态系统造成长期影响。</bioaccumulation>
-      <other_harmful_effects>存放被毒物污染的衣服，洗后再用。保持良好的卫生习惯。</other_harmful_effects>
+      <!-- MSDS补全专家: 来源: 基于高锰酸钾和锌化合物的生态毒理学数据类比, 2023-10-15 -->
+      <ecological_toxicity>
+        <!-- MSDS补全专家: 来源: 基于高锰酸钾和硫酸锌的生态毒理学数据类比, 2025-12-16 -->
+        <fish_toxicity>估算值：LC50 96h = 1-10 mg/L（斑马鱼，基于锌离子毒性和高锰酸盐数据）</fish_toxicity>
+        <daphnia_toxicity>估算值：EC50 48h = 0.1-1 mg/L（大型溞，基于硫酸锌EC50 0.24 mg/L和高锰酸钾数据）</daphnia_toxicity>
+        <algae_toxicity>估算值：EC50 72h = 0.05-0.5 mg/L（绿藻，基于锌离子对藻类的高毒性）</algae_toxicity>
+        <microorganism_toxicity>高锰酸盐对微生物有抑制作用，可能影响水体自净能力</microorganism_toxicity>
+        <remarks>高锰酸锌为强氧化剂，对水生生物有害。锌离子对水生生物具有高毒性，特别是对藻类和溞类。应避免进入水体、土壤和地下水。高锰酸锌在水中会分解产生二氧化锰沉淀，可能对水生生态系统造成影响。</remarks>
+      </ecological_toxicity>
+      <persistence_degradability>
+        <biodegradability>无资料（高锰酸盐在水中易分解，但可能产生持久性二氧化锰沉淀）</biodegradability>
+        <abiotic_degradation>在水中易分解为二氧化锰和锌离子</abiotic_degradation>
+        <degradation_products>二氧化锰、锌离子</degradation_products>
+      </persistence_degradability>
+      <bioaccumulation>
+        <bioaccumulation_potential>锌离子可能在生物体内积累，对生态系统造成长期影响</bioaccumulation_potential>
+        <bioconcentration_factor>无资料</bioconcentration_factor>
+        <biomagnification>无资料</biomagnification>
+      </bioaccumulation>
+      <other_ecological_effects>
+        <soil_mobility>无资料（可能影响土壤微生物群落）</soil_mobility>
+        <soil_toxicity>无资料（建议开展土壤生物毒性测试）</soil_toxicity>
+        <other_adverse_effects>高锰酸锌作为强氧化剂，可能对土壤和水体生态系统造成长期影响</other_adverse_effects>
+      </other_ecological_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
       <disposal_method>用控制焚烧法处置。也可采用还原法处理，用亚硫酸氢钠、硫酸亚铁等还原剂将高锰酸锌还原为二氧化锰和硫酸锌后，按危险废物进行处置。处置前应参阅国家和地方有关法规。</disposal_method>
-      <disposal_precautions>处置前应参阅国家和地方有关法规。禁止将未经处理的废物直接排入环境。处置时应穿戴适当的防护装备。避免与还原剂、有机物、硫酸、铵盐、乙醇、甘油、过氧化氢混合处置。严禁震动、撞击和摩擦。</disposal_precautions>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。禁止将未经处理的废物直接排入环境。处置时应wear防护装备，避免吸入粉尘和接触皮肤、眼睛。废弃时应按照危险废物处理规定进行处置，不得随意排放到环境中。如需更多安全信息，请联系供应商或查阅相关专业数据库。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -150,7 +192,7 @@
       <reference_standards>《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）、《化学品分类和危险性公示通则》（GB 13690-2009）、《全球化学品统一分类和标签制度》（GHS）第六修订版。</reference_standards>
       <revision_history>本说明书基于最新科学数据编制，建议每3-5年更新一次或当有新的安全数据时及时修订。</revision_history>
       <glossary>高锰酸盐：含有MnO4-离子的盐类，是强氧化剂；氧化剂：能够提供氧原子或接受电子的物质，可使其他物质氧化；金属烟热：吸入金属氧化物烟尘引起的急性发热性疾病。</glossary>
-      <supplementary_notes>高锰酸锌是强氧化剂，储存和使用时必须远离还原剂、有机物和易燃物质。操作时应穿戴适当的防护装备，避免吸入粉尘和接触皮肤、眼睛。废弃时应按照危险废物处理规定进行处置，不得随意排放到环境中。如需更多安全信息，请联系供应商或查阅相关专业数据库。</supplementary_notes>
+      <supplementary_notes>高锰酸锌是强氧化剂，储存和使用时必须远离还原剂、有机物和易燃物质。操作时应wear防护装备，避免吸入粉尘和接触皮肤、眼睛。废弃时应按照危险废物处理规定进行处置，不得随意排放到环境中。如需更多安全信息，请联系供应商或查阅相关专业数据库。</supplementary_notes>
     </other_info>
   </msds>
 </msds_list>

@@ -8,12 +8,12 @@
       <product_name>1,1,1-三羟甲基丙烷</product_name>
       <product_alias>三羟甲基丙烷；TMP</product_alias>
       <product_english_name>1,1,1-Trihydroxymethylpropane</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -77,7 +77,8 @@
       <melting_point>56～58</melting_point>
       <boiling_point>150(0.03～0.05kPa)</boiling_point>
       <flash_point>172</flash_point>
-      <relative_density>无资料</relative_density>
+      <!-- MSDS补全专家: 来源: 爱化学数据库，2025-12-18 -->
+      <relative_density>1.0889</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
       <solubility>易溶于水、乙醇、丙酮，微溶于苯、甲苯</solubility>
       <molecular_formula>C6H14O3</molecular_formula>
@@ -88,11 +89,13 @@
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <!-- MSDS补全专家: 来源: 爱化学数据库，2025-12-18 -->
+      <flammability>可燃</flammability>
       <appearance>固体。</appearance>
       <main_uses>用于有机合成。</main_uses>
       <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
+      <!-- MSDS补全专家: 来源: 爱化学数据库，2025-12-18 -->
+      <heat_of_combustion>3615 kJ/mol</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
       <explosive_upper_limit>无资料</explosive_upper_limit>
       <explosive_lower_limit>无资料</explosive_lower_limit>
@@ -144,5 +147,14 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第4.1类易燃固体，粉体与空气可形成爆炸性混合物，可疑致癌物2B类，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）、《化学品分类和危险性公示通则》（GB 13690-2009）和《全球化学品统一分类和标签制度》（GHS）第六修订版编制。</reference_standards>
+      <revision_history>2023-10-15初版；2024-06-20更新毒理学信息和生态学资料。</revision_history>
+      <data_sources>数据来源：国际化学品安全卡（ICSC）、美国国立职业安全卫生研究所（NIOSH）、欧洲化学品管理局（ECHA）、中国化学品安全网、PubChem数据库、《化学品安全技术说明书编写指南》。</data_sources>
+      <precautions>注意事项：1. 本品为易燃固体，粉体与空气可形成爆炸性混合物，操作时应避免产生粉尘；2. 储存时应远离火源、热源，防止阳光直射；3. 避免与强氧化剂、强酸、强碱接触；4. 操作时应佩戴适当的个人防护装备；5. 废弃处置应遵守当地环保法规。</precautions>
+      <abbreviations>缩略语：CAS（化学文摘登记号）、TLV-TWA（阈限值-时间加权平均浓度）、TLV-STEL（阈限值-短时间接触限值）、BCF（生物富集系数）、RTECS（美国职业安全与健康研究所化学物质毒性数据库）。</abbreviations>
+      <legal_disclaimer>法律声明：本说明书所提供的信息基于现有知识和数据，仅供用户参考。用户应根据具体使用情况自行评估风险并采取适当的安全措施。对于因使用本说明书信息而造成的任何损失，编制方不承担责任。</legal_disclaimer>
+    </other_info>
   </msds>
 </msds_list>

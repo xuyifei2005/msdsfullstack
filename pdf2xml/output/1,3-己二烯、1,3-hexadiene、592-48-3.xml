@@ -19,7 +19,7 @@
     <hazard_info>
       <hazard_category>第3.1类 低闪点易燃液体</hazard_category>
       <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards></health_hazards>
+      <health_hazards>吸入、摄入或经皮肤吸收后对身体有害。对眼睛、皮肤、粘膜和呼吸道有刺激作用。高浓度吸入可引起头痛、恶心、呕吐、昏迷等症状。</health_hazards>
       <environmental_hazards>无资料</environmental_hazards>
       <fire_explosion_hazards>本品极度易燃、具有刺激性</fire_explosion_hazards>
     </hazard_info>
@@ -53,7 +53,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>密闭操作，全面通风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类接触。灌装时应控制流速，且有接地装置，防止静电积聚。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>通常商品加有阻聚剂。储存于阴凉、通风仓间内。远离火种、热源。防止阳光直射。仓温 不宜超过25℃。应与氧化剂分开存放。储存间内的照明、通风等设施应采用防爆型，开关 设在仓外。禁止使用易产生火花的机械设备和工具。罐储时要有防火防爆技术措施。配备 相应品种和数量的消防器材。灌装时应注意流速(不超过3m／s)，且有接地装置，防止静 电积聚。操作现场不得吸烟、饮水、进食。搬运时要轻装轻卸，防止包装及容器损坏。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->

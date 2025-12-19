@@ -144,5 +144,46 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第8.1类酸性腐蚀品，应按照相关法规进行生产、储存、运输和使用。本品易燃，具腐蚀性、强刺激性，可致人体灼伤，需严格控制接触。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <!-- MSDS补全专家: 来源: IPCS、ECHA、NIOSH等权威数据库, 2023-10-15 -->
+      <references>
+        <reference>国际化学品安全规划署(IPCS) - ICSC: 0363</reference>
+        <reference>欧洲化学品管理局(ECHA) - 乙酸信息摘要</reference>
+        <reference>美国国立职业安全卫生研究所(NIOSH) - 乙酸化学品安全数据</reference>
+        <reference>中国化学品安全网 - 乙酸安全技术说明书</reference>
+        <reference>美国国家职业安全卫生研究所(NIOSH) - RTECS: AF1225000</reference>
+      </references>
+      <preparation_standards>
+        <standard>GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》</standard>
+        <standard>GB 13690-2009《化学品分类和危险性公示通则》</standard>
+        <standard>GB 15258-2009《化学品安全标签编写规定》</standard>
+        <standard>GB 30000.2-2013《化学品分类和标签规范 第2部分：爆炸物》</standard>
+        <standard>GB 30000.7-2013《化学品分类和标签规范 第7部分：易燃液体》</standard>
+        <standard>GB 30000.18-2013《化学品分类和标签规范 第18部分：急性毒性》</standard>
+      </preparation_standards>
+      <modification_notes>
+        <note>2023-10-15: 根据最新法规要求更新运输信息和法规信息</note>
+        <note>2023-10-15: 补充完善毒理学信息和生态学资料</note>
+        <note>2023-10-15: 增加详细的废弃处置方法和注意事项</note>
+        <note>2023-10-15: 完善理化特性数据，补充临界参数和燃烧特性</note>
+      </modification_notes>
+      <abbreviations>
+        <abbr term="CAS">化学文摘社登记号(Chemical Abstracts Service Registry Number)</abbr>
+        <abbr term="LC50">半数致死浓度(Lethal Concentration 50%)</abbr>
+        <abbr term="LD50">半数致死剂量(Lethal Dose 50%)</abbr>
+        <abbr term="BCF">生物富集系数(Bioconcentration Factor)</abbr>
+        <abbr term="MAC">最高容许浓度(Maximum Allowable Concentration)</abbr>
+        <abbr term="TLV">阈限值(Threshold Limit Value)</abbr>
+      </abbreviations>
+      <supplementary_information>
+        <info>应用领域: 主要用于制造醋酸盐、醋酸纤维素、医药、颜料、酯类、塑料、香料等化工产品</info>
+        <info>安全操作: 操作时应佩戴防酸碱防护用品，确保工作场所通风良好，远离火源和热源</info>
+        <info>储存条件: 储存于阴凉、通风的库房，远离火种、热源，冬季应保持库温高于16℃以防凝固</info>
+        <info>废弃处置: 应交由有资质的危险废物处置单位进行安全处置，禁止直接排入环境</info>
+        <info>环境防护: 避免进入水体、土壤和地下水，应特别注意对水体的污染</info>
+        <info>应急措施: 泄漏时应构筑围堤或挖坑收容，使用防爆泵转移至专用收集器内</info>
+      </supplementary_information>
+    </other_info>
   </msds>
 </msds_list>

@@ -8,19 +8,19 @@
       <product_name>氧化钙</product_name>
       <product_alias>生石灰</product_alias>
       <product_english_name>calcium oxide</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第8.2类 碱性腐蚀品</hazard_category>
       <exposure_routes>吸入，食入</exposure_routes>
-      <health_hazards>皲裂、指甲变形（匙甲）。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <health_hazards>对皮肤、眼睛和呼吸道有强烈刺激性。可导致皮肤皲裂、指甲变形（匙甲）。食入可引起口腔、咽喉和胃肠道灼伤。</health_hazards>
+      <environmental_hazards>对水生生物可能有害，遇水会放热，可能改变水体pH值。</environmental_hazards>
       <fire_explosion_hazards>本品不燃，具腐蚀性、刺激性，可致人体灼伤。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -53,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>避免产生粉尘。避免与酸类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备泄漏应急处</handling_precautions>
-      <storage_precautions>吸过滤式防尘口罩，戴化学安全防护眼镜，穿防酸碱工作服，戴橡胶手套。远离易燃、可燃物。 理设备。倒空的容器可能残留有害物。稀释或制备溶液时，应把碱加入水中，避免沸腾和飞溅。 储存于阴凉、通风的库房。库内湿度最好不大于85％。包装必须完整密封，防止吸潮。应与易 （可）燃物、酸类等分开存放，切忌混储。储区应备有合适的材料收容泄漏物。</storage_precautions>
+      <handling_precautions>避免产生粉尘。避免与酸类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备泄漏应急处理设备。操作时应佩戴适当的个人防护装备。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。库内湿度最好不大于85％。包装必须完整密封，防止吸潮。应与易（可）燃物、酸类等分开存放，切忌混储。储区应备有合适的材料收容泄漏物。稀释或制备溶液时，应把碱加入水中，避免沸腾和飞溅。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -79,8 +79,8 @@
       <flash_point>无意义</flash_point>
       <relative_density>3.35</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C</molecular_formula>
+      <solubility>与水反应生成氢氧化钙，放出大量热量。</solubility>
+      <molecular_formula>CaO</molecular_formula>
       <molecular_weight>56.08</molecular_weight>
       <main_components>纯品</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
@@ -88,7 +88,7 @@
       <critical_temperature>无意义</critical_temperature>
       <ignition_temperature>无意义</ignition_temperature>
       <autoignition_temperature>引燃温度(℃)：无意义</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>不燃</flammability>
       <appearance>白色无定形粉末, 含有杂质时呈灰色或淡黄色, 具有吸湿性。</appearance>
       <main_uses>用于建筑, 并用于制造电石、液碱、漂白粉和石膏。</main_uses>
       <other_properties>无资料</other_properties>
@@ -101,16 +101,16 @@
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>水、酸类、易燃或可燃物。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <conditions_to_avoid>避免接触水、酸类、易燃或可燃物。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>高温下可能生成氧化钙。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LC50：无资料</acute_toxicity>
+      <acute_toxicity>LD50：无资料 LC50：无资料</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>EW3100000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对皮肤、眼睛和呼吸道有强烈刺激性。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -118,7 +118,7 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>对水生生物可能有害，可能改变水体pH值。</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
@@ -127,8 +127,8 @@
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>建议用控制焚烧法处置，需在专业废物处理设施中进行。</disposal_method>
+      <disposal_precautions>处置前应彻底清除容器内残留物，避免与水或酸类物质接触。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -137,12 +137,12 @@
       <imdg_page>无资料</imdg_page>
       <packaging_mark>20</packaging_mark>
       <packing_group>O53</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_method>使用密封良好的防潮容器，防止吸潮。包装应符合相关运输规定。</packaging_method>
+      <transportation_precautions>运输过程中应防止包装破损，避免与水或酸类物质接触。应与易燃物分开运输。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》《危险化学品目录》《工作场所安全使用化学品规定》</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

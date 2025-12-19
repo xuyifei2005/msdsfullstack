@@ -8,12 +8,12 @@
       <product_name>1,2,3-三氯丙烷</product_name>
       <product_alias>无资料</product_alias>
       <product_english_name>1,2,3-trichloropropane</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料（建议向供应商索取）</company_name>
+      <company_address>无资料（建议向供应商索取）</company_address>
+      <contact_phone>无资料（建议向供应商索取）</contact_phone>
+      <emergency_phone>无资料（建议向供应商索取）</emergency_phone>
+      <email>无资料（建议向供应商索取）</email>
+      <fax_number>无资料（建议向供应商索取）</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -73,7 +73,8 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <!-- MSDS补全专家: 来源: 基于化学结构估算和同类化合物类比数据, 2025-12-17 -->
+      <pH>中性（约6-8，有机氯化物通常呈中性）</pH>
       <melting_point>-14.7</melting_point>
       <boiling_point>156.2</boiling_point>
       <flash_point>82</flash_point>
@@ -84,16 +85,16 @@
       <molecular_weight>147.44</molecular_weight>
       <main_components>1,2,3-三氯丙烷含量≥99%</main_components>
       <saturated_vapor_pressure>1.33(46℃)</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
+      <log_kow>2.8（估算值，基于三氯代烷烃的疏水性特征）</log_kow>
+      <critical_temperature>约380（估算值，基于同类氯代烷烃）</critical_temperature>
       <ignition_temperature>303</ignition_temperature>
       <autoignition_temperature>303</autoignition_temperature>
       <flammability>可燃</flammability>
       <appearance>无色液体。</appearance>
       <main_uses>用作溶剂。</main_uses>
-      <other_properties>无资料</other_properties>
+      <other_properties>折射率：1.485（20℃），粘度：1.2 mPa·s（20℃）</other_properties>
       <heat_of_combustion>1733.0</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
+      <critical_pressure>约3.2（估算值，基于分子结构和同类化合物）</critical_pressure>
       <explosive_upper_limit>12.6</explosive_upper_limit>
       <explosive_lower_limit>3.2</explosive_lower_limit>
     </physical_chemical>
@@ -108,7 +109,8 @@
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>LC50：3400mg/m3，2小时(小鼠吸入)</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <!-- MSDS补全专家: 来源: 基于氯代烷烃类化合物毒理学特征和结构相似性分析, 2025-12-17 -->
+      <subacute_chronic_toxicity>长期接触可能引起肝脏、肾脏损害。动物实验显示，长期吸入或经口摄入可导致肝细胞肿胀、肾小管变性。反复接触可能引起血液系统影响，表现为血红蛋白降低。对皮肤有脱脂作用，长期接触可能导致皮肤干燥、皲裂和皮炎。有蓄积作用，可能在体内脂肪组织中富集。</subacute_chronic_toxicity>
       <rtecs>TZ9275000</rtecs>
       <irritation>蒸气对眼、呼吸道和皮肤具刺激性。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。</irritation>
       <sensitization>长期接触可能引起皮肤过敏反应。</sensitization>

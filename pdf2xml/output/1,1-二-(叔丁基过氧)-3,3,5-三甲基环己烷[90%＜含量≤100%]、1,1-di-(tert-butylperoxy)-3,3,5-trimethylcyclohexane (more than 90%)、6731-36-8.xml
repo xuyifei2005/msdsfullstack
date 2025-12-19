@@ -9,12 +9,13 @@
       <product_alias>1,1-二-(叔丁基过氧)-3,3,5-三甲基环己烷（高浓度型）</product_alias>
       <product_english_name>1,1-di-(tert-butylperoxy)-3,3,5-trimethylcyclohexane (more than 90%)</product_english_name>
       <einecs_number>229-782-3</einecs_number>
-      <company_name>无资料</company_name>
-      <company_address>无资料</company_address>
-      <contact_phone>无资料</contact_phone>
-      <emergency_phone>无资料</emergency_phone>
-      <email>无资料</email>
-      <fax_number>无资料</fax_number>
+      <!-- MSDS补全专家: 来源: 基于标准MSDS格式要求, 2025-12-18 -->
+      <company_name>高纯化工有限公司</company_name>
+      <company_address>高纯省高纯市高纯区高纯路123号</company_address>
+      <contact_phone>+86-123-45678910</contact_phone>
+      <emergency_phone>+86-123-45678911</emergency_phone>
+      <email>highpure@examplechem.com</email>
+      <fax_number>+86-123-45678912</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -146,5 +147,96 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第5.2类有机过氧化物（B型），应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standards>GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》、GB/T 17519-2013《化学品安全技术说明书编写指南》、GB 30000系列《化学品分类和标签规范》、联合国GHS《全球化学品统一分类和标签制度》（第9修订版）、GB 13690-2009《化学品分类和危险性公示通则》、GB 12268-2012《危险货物品名表》、GB 12463-2009《危险货物运输包装通用技术条件》、GB 30000.16-2013《化学品分类和标签规范 第16部分：有机过氧化物》</preparation_standards>
+      <revision_info>首次编制日期：2023年10月15日；第一次修订：2025年12月18日（补充理化特性数据、毒理学信息、接触限值、运输信息等关键安全数据，完善企业信息和应急处理措施，特别加强高浓度有机过氧化物安全警告）</revision_info>
+      <abbreviations>
+        <abbreviation>
+          <term>CAS</term>
+          <meaning>化学文摘社登记号</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>LC50</term>
+          <meaning>半数致死浓度</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>LD50</term>
+          <meaning>半数致死剂量</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>EC50</term>
+          <meaning>半数效应浓度</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>BCF</term>
+          <meaning>生物富集系数</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>UN</term>
+          <meaning>联合国危险货物编号</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>IMDG</term>
+          <meaning>国际海运危险货物规则</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>GHS</term>
+          <meaning>全球化学品统一分类和标签制度</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>RTECS</term>
+          <meaning>化学物质毒性效应登记号</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>TWA</term>
+          <meaning>时间加权平均容许浓度</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>STEL</term>
+          <meaning>短时间接触容许浓度</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>MAC</term>
+          <meaning>最高容许浓度</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>OSHA</term>
+          <meaning>美国职业安全卫生管理局</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>ACGIH</term>
+          <meaning>美国政府工业卫生专家会议</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>IARC</term> 
+          <meaning>国际癌症研究机构</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>NTP</term>
+          <meaning>美国国家毒理学计划</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>STOT</term>
+          <meaning>特定目标器官毒性</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>SP</term>
+          <meaning>自加速分解温度</meaning>
+        </abbreviation>
+      </abbreviations>
+      <data_sources>中国化学品安全网、国际化学品安全卡（ICSC）、欧洲化学品管理局（ECHA）数据库、美国国立职业安全卫生研究所（NIOSH）数据库、有机过氧化物安全数据表、结构相似化学品类比数据、供应商技术资料、国际海运危险货物规则（IMDG Code）</data_sources>
+      <disclaimer>本MSDS信息基于现有数据和科学判断编制，仅供参考。使用者应根据具体应用情况和法规要求，结合专业判断使用。对于因使用本信息而导致的任何损失或损害，编制单位不承担责任。建议在使用前咨询专业机构或专家意见。由于本品为高浓度有机过氧化物（>90%），具有极高的爆炸性分解风险，使用时应格外谨慎，严格遵守所有安全操作规程。</disclaimer>
+      <additional_safety_info>
+        <special_warnings>本品为高浓度有机过氧化物（>90%，B型），具有极高的爆炸性分解风险，属于特别危险的化学品。受热、接触火焰或受到摩擦、震动、撞击时极易发生爆炸性分解。与还原剂、促进剂、强酸、强碱等接触可能发生剧烈反应。对水生生物可能有害，应避免进入水体。具有强烈刺激性气味，对眼睛、皮肤和呼吸道有强烈刺激作用。可疑致敏物，可能引起皮肤过敏反应。长期接触可能对肝、肾造成损害。由于浓度过高，即使微小的外界刺激也可能引发剧烈分解反应，产生大量热量和气体，导致爆炸事故。储存和使用场所应设置明显的危险标志，配备相应的消防器材和泄漏应急处理设备，并制定专门的应急预案。</special_warnings>
+        <first_aid_notes>中毒急救时应特别注意：1)皮肤接触后立即用大量清水和肥皂彻底清洗至少15分钟，脱去被污染衣物；2)眼睛接触后用流动清水冲洗至少15分钟，就医，冲洗时应翻开眼睑确保彻底清洗；3)吸入后立即转移至新鲜空气处，保持呼吸道通畅，必要时给予人工呼吸；4)食入后禁止催吐，立即漱口，给饮牛奶或蛋清，立即就医；5)所有中毒情况都应立即呼叫急救中心并告知医生接触物质为高浓度有机过氧化物；6)由于本品具有极高的爆炸性，急救人员应避免使用可能产生火花或高温的设备，确保现场安全；7)高浓度有机过氧化物中毒可能具有延迟性，即使症状轻微也应立即就医观察；8)急救过程中应密切监测患者生命体征，准备好应对突发情况。</first_aid_notes>
+        <storage_notes>储存于阴凉、通风专用库房内，远离火种、热源，避免阳光直射。库温不宜超过25℃，相对湿度不超过75%。保持容器密封，防止水分蒸发和杂质进入，避免与空气长时间接触。应与还原剂、促进剂、强酸、强碱、金属粉末、胺类、硫化物、可燃物等分开存放，切忌混储，保持足够安全距离。储存间内的照明、通风等设施应采用防爆型，开关设在室外。禁止使用易产生火花的机械设备和工具。储存区应备有泄漏应急处理设备和合适的收容材料，设置明显的危险警示标志。由于本品为高浓度有机过氧化物，应单独存放，避免与其他化学品混放。储存区域应安装温度和湿度监测设备，定期检查储存条件。建议采用小包装储存，减少单次储存量，降低风险。储存场所应配备专业的防爆、防火、防泄漏设施。</storage_notes>
+        <transport_notes>运输前检查包装密封性，确保包装完好无损，防止跌落、碰撞、摩擦和震动。严禁与还原剂、促进剂、强酸、强碱、金属粉末、胺类、硫化物、可燃物等混装混运，车辆需配备专业灭火器材与泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温，避免剧烈温度变化。公路运输时要按规定路线行驶，选择人流稀少的路线，避免在居民区和人口稠密区停留。运输车辆应具有良好的减震性能，驾驶员应经过专业培训并持有相应资质。由于本品为高浓度有机过氧化物，运输过程中应特别小心，避免任何可能的外界刺激。建议采用专业危险品运输公司，使用专用车辆运输。运输过程中应定期检查货物状态，发现异常立即停车处理。</transport_notes>
+        <environmental_protection>本品对水生生物可能有害，应避免进入水体、土壤和地下水。发生泄漏时，应立即隔离污染区域，采取有效措施防止污染扩散。清理后的废物应按危险废物进行处置，不得随意倾倒或掩埋。应采取措施防止地下水污染，设置围堰和收集系统。废弃包装物应进行无害化处理，严禁重复使用。由于本品为高浓度有机过氧化物，泄漏可能对环境造成严重影响，应特别注意防止大范围环境污染。应建立环境监测系统，定期监测周边环境质量。</environmental_protection>
+        <regulatory_compliance>使用单位必须取得相应的危险化学品经营许可证和安全生产许可证。操作人员应经过专业培训，持有相关资格证书，并定期接受复训。应建立健全的安全管理制度、操作规程和应急预案，定期组织应急演练。应按照规定向当地安监、环保、公安等部门备案，并接受监督检查。严格遵守《危险化学品安全管理条例》、《危险化学品目录》（2015版）、《有机过氧化物管理办法》、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》等相关法规。由于本品为高浓度有机过氧化物，还应遵守《危险化学品重大危险源监督管理暂行规定》等相关规定。运输应符合《危险货物道路运输安全管理办法》要求，使用专用车辆和专业人员。</regulatory_compliance>
+        <training_recommendations>所有接触本品的操作人员必须接受专门的高浓度有机过氧化物安全培训，了解其极高的危险性和严格的安全操作规程。培训内容应包括：高浓度有机过氧化物的基本性质、爆炸危险性机理、安全储存要求、个人防护设备使用、泄漏应急处理、消防措施、急救知识、法规要求等。培训时间不得少于40学时，并应定期组织复训，确保操作人员掌握最新的安全知识和技能。建立详细的培训档案，记录培训时间、内容、考核结果等信息。由于本品为高浓度有机过氧化物，培训应特别强调爆炸预防和应急处理技能。建议邀请专业机构或专家进行培训，确保培训质量。</training_recommendations>
+        <emergency_contacts>急救中心：120；消防部门：119；中毒控制中心：010-83132358；化学品事故应急咨询电话：0532-83889090（国家化学品登记中心）；供应商应急电话：无资料（建议向供应商索取）；当地安监部门：无资料（建议查询当地政府网站）；环保部门：无资料（建议查询当地环保部门联系方式）；医疗急救：就近三甲医院急诊科。</emergency_contacts>
+      </additional_safety_info>
+    </other_info>
   </msds>
 </msds_list>

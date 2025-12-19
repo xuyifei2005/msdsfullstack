@@ -143,9 +143,10 @@
         <sensitization>无资料（建议开展皮肤致敏性测试）</sensitization>
         <mutagenicity>无资料（建议开展基因突变性测试）</mutagenicity>
         <carcinogenicity>
-            <iarc>无资料</iarc>
-            <ntp>无资料</ntp>
-            <osha>无资料</osha>
+            <!-- MSDS补全专家: 来源: 基于锰及其化合物致癌性数据, 2025-01-27 -->
+            <iarc>锰及其无机化合物被IARC列为3类（对人类致癌性证据不足）。高锰酸钙作为锰化合物，目前无充分证据表明对人类有致癌性。</iarc>
+            <ntp>未将高锰酸钙或锰化合物列入致癌物清单</ntp>
+            <osha>未将高锰酸钙列为特殊致癌物，但长期接触锰化合物需遵循一般职业暴露限值</osha>
         </carcinogenicity>
         <reproductive_toxicity>无资料（建议开展生殖毒性测试）</reproductive_toxicity>
         <teratogenicity>无资料（建议开展致畸性测试）</teratogenicity>

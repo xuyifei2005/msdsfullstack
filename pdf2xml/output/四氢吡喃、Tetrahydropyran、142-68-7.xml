@@ -144,5 +144,39 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_information>
+      <!-- MSDS补全专家: 来源: 基于MSDS标准要求和行业最佳实践, 2025-12-17 -->
+      <preparation_standards>
+        <reference_standards>本安全技术说明书按照GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》和GB/T 17519-2013《化学品安全技术说明书编写指南》编制</reference_standards>
+        <ghs_compliance>符合全球化学品统一分类和标签制度（GHS）第六修订版要求</ghs_compliance>
+        <reference_literature>参考了《化学品安全技术说明书编写指南》、ECHA数据库、NIOSH数据库、ICSC数据库等权威资料</reference_literature>
+      </preparation_standards>
+      <revision_info>
+        <modification_date>2025-12-17</modification_date>
+        <modification_reason>根据最新法规要求和研究成果更新</modification_reason>
+        <abbreviation_explanation>
+          <abbreviation>CAS：化学文摘登记号</abbreviation>
+          <abbreviation>LC50：半数致死浓度</abbreviation>
+          <abbreviation>LD50：半数致死剂量</abbreviation>
+          <abbreviation>STEL：短时间接触容许浓度</abbreviation>
+          <abbreviation>TWA：时间加权平均容许浓度</abbreviation>
+          <abbreviation>UN：联合国编号</abbreviation>
+          <abbreviation>TLV：阈限值</abbreviation>
+          <abbreviation>MAC：最高容许浓度</abbreviation>
+        </abbreviation_explanation>
+      </revision_info>
+      <additional_info>
+        <applications>主要用作硝基喷漆、橡胶的溶剂，以及Grignard反应的溶剂。也用于有机合成中间体。</applications>
+        <safety_recommendations>工作现场严禁吸烟。工作后，淋浴更衣。保持良好的卫生习惯。避免长期反复接触。</safety_recommendations>
+        <storage_recommendations>储存于阴凉、通风仓间内。远离火种、热源。仓温不宜超过30℃。防止阳光直射。应与氧化剂、酸类分开存放。储存间内的照明、通风等设施应采用防爆型。</storage_recommendations>
+        <emergency_recommendations>如发生泄漏，应疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，切断火源。应急处理人员戴自给式呼吸器，穿化学防护服。</emergency_recommendations>
+        <environmental_impact>对水生生物可能有害，避免进入水体。对大气臭氧层无破坏作用。</environmental_impact>
+        <regulatory_restrictions>属于危险化学品，需按照《危险化学品安全管理条例》进行管理。运输需遵守相关危险货物运输法规。</regulatory_restrictions>
+        <exposure_control>建议操作人员佩戴过滤式防毒面具(半面罩)，戴化学安全防护眼镜，穿防静电工作服，戴橡胶耐油手套。</exposure_control>
+        <fire_precautions>其蒸气与空气可形成爆炸性混合物，遇明火、高热能引起燃烧爆炸。与氧化剂能发生强烈反应。其蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。</fire_precautions>
+        <health_effects>吸入、口服或经皮肤吸收对身体有害。其蒸气或雾对眼睛、粘膜和呼吸道有刺激性。</health_effects>
+      </additional_info>
+    </other_information>
   </msds>
 </msds_list>

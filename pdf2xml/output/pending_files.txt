@@ -1,18 +1,15 @@
-(1,4,5,6,7,7-六氯-8,9,10-三降冰片-5-烯-2,3-亚基双亚甲基)亚硫酸酯、1,2,3,4,7,7-hexachloro-8,9,10-trinorborn-2-en-5,6-ylenedimethyl、115-29-7.xml
-(1R,2R,4R)-冰片-2-硫氰基醋酸酯、1,7,7-trimethylbicyclo(2,2,1)hept-2-yl thiocyanatoacetate、115-31-1.xml
-(1R,4S,4aS,5R,6R,7S,8S,8aR)-1,2,3,4,10,10-六氯-1,4,4a,5,6,7,8,8a-八氢-6,7-环氧-1,4,5,8-二亚甲基萘、dieldrin(not less than 2% but not more than 90%)、60-57-1.xml
-(1R,4S,5R,8S)-1,2,3,4,10,10-六氯-1,4,4a,5,6,7,8,8a-八氢-6,7-环氧-1,4,5,8-二亚甲基萘[含量＞5%]、1,2,3,4,10,10-hexachloro-6,7-epoxy-1,4,4a,5,6,7,8,8a-octahydro-1,45,8-dimethanonaphthalene(more than 5%)、72-20-8.xml
-(2-氨基甲酰氧乙基)三甲基氯化铵、(2-carbamoyloxyethyl) trimethylammonium chloride、51-83-2.xml
-(E)-O,O-二甲基-O-[1-甲基-2-(1-苯基-乙氧基甲酰)乙烯基]磷酸酯、1-phenylethyl 3-(dimethoxyphosphinyloxy)isocrotonate powder、7700-17-6.xml
-(E)-O,O-二甲基-O-[1-甲基-2-(二甲基氨基甲酰)乙烯基]磷酸酯[含量＞25%]、(E)-2-dimethylcarbamoyl-1-methylvinyl dimethyl phosphate(more than 25%)、141-66-2.xml
-(RS)-2-[4-(5-三氟甲基-2-吡啶氧基)苯氧基]丙酸丁酯、butyl 2-[4-[[5-(trifluoromethyl)-2-pyridyl]oxy]phenoxy]propionate、69806-50-4.xml
-(RS)-α-氰基-3-苯氧基苄基(SR)-3-(2,2-二氯乙烯基)-2,2-二甲基环丙烷羧酸酯、cyclopropanecarboxylic acid, 3-(2,2-dichloroethenyl)-2,2-dimethyl-, cyano(3-phenoxyphenyl)methyl ester、52315-07-8.xml
-(S)-3-(1-甲基吡咯烷-2-基)吡啶、Nicotine、54-11-5.xml
-0，0-二乙基硫代磷酰氯、0，0-Diethylthiophosphoryl chloride、2524-04-1.xml
-1,1'-偶氮-二-(六氢苄腈)、1,1'-azodi-(hexahydrobenzonitrile)、2094-98-6.xml
-1,1'-偶氮-二-(六氢苄腈)、1,1’-azodi-(hexahydrobenzonitrile)、2094-98-6.xml
-1,1,1-三氟乙烷、1,1,1-trifluoroethane、420-46-2.xml
-1,1,1-三氯-2,2-双(4-氯苯基)乙烷、1，1，1-Trichloro-2，2-bis(p-chlorophenyl)ethane、50-29-3.xml
+
+
+
+
+
+
+
+
+
+
+
+
 1,1,1-三氯乙烷、1,1,1-trichloroethane、71-55-6.xml
 1,1,1-三羟甲基丙烷、1,1,1-Trihydroxymethylpropane、77-99-6.xml
 1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,8-十七氟-1-辛烷磺酸、1-octanesulfonicacid,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,8-heptadecafluoro-,ion(1-)、45298-90-6.xml

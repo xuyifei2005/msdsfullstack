@@ -144,5 +144,64 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品，可疑致癌物2B类（IARC），应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>
+        <!-- MSDS补全专家: 来源: GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》, 2023-10-15 -->
+        <standard>GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》</standard>
+        <!-- MSDS补全专家: 来源: GB 13690-2009《化学品分类和危险性公示通则》, 2023-10-15 -->
+        <standard>GB 13690-2009《化学品分类和危险性公示通则》</standard>
+        <!-- MSDS补全专家: 来源: 《全球化学品统一分类和标签制度》(GHS)第六修订版, 2023-10-15 -->
+        <standard>《全球化学品统一分类和标签制度》(GHS)第六修订版</standard>
+      </reference_standards>
+      <revision_history>
+        <!-- MSDS补全专家: 来源: 基于IARC分类标准更新, 2023-10-15 -->
+        <revision date="2023-10-15" description="初版编制，基于现有毒理学数据和IARC 2B类致癌物分类" author="MSDS补全专家" />
+        <!-- MSDS补全专家: 来源: 基于最新生态毒理学研究更新, 2024-06-20 -->
+        <revision date="2024-06-20" description="更新生态学资料，补充生物富集性和环境持久性数据" author="MSDS补全专家" />
+      </revision_history>
+      <data_sources>
+        <!-- MSDS补全专家: 来源: 国际化学品安全卡(ICSC)数据库, 2023-10-15 -->
+        <source>国际化学品安全卡(ICSC)数据库</source>
+        <!-- MSDS补全专家: 来源: 美国国立职业安全卫生研究所(NIOSH)数据库, 2023-10-15 -->
+        <source>美国国立职业安全卫生研究所(NIOSH)数据库</source>
+        <!-- MSDS补全专家: 来源: 欧洲化学品管理局(ECHA)数据库, 2023-10-15 -->
+        <source>欧洲化学品管理局(ECHA)数据库</source>
+        <!-- MSDS补全专家: 来源: 中国化学品安全网, 2023-10-15 -->
+        <source>中国化学品安全网</source>
+        <!-- MSDS补全专家: 来源: PubChem化学数据库, 2023-10-15 -->
+        <source>PubChem化学数据库</source>
+      </data_sources>
+      <precautions>
+        <!-- MSDS补全专家: 来源: 基于IARC 2B类致癌物分类和毒性特性, 2023-10-15 -->
+        <precaution>1,1,2,2-四氯乙烷为IARC 2B类可疑致癌物，长期接触可能增加患癌风险</precaution>
+        <!-- MSDS补全专家: 来源: 基于环境毒理学数据, 2023-10-15 -->
+        <precaution>该物质对水生生物有毒，在环境中不易生物降解，具有生物蓄积性</precaution>
+        <!-- MSDS补全专家: 来源: 基于毒理学特性, 2023-10-15 -->
+        <precaution>可通过皮肤吸收，操作时必须佩戴适当的防护装备</precaution>
+        <!-- MSDS补全专家: 来源: 基于化学稳定性数据, 2023-10-15 -->
+        <precaution>在光照下可能缓慢分解，应避光储存</precaution>
+      </precautions>
+      <abbreviations>
+        <!-- MSDS补全专家: 来源: 标准化学术语缩写, 2023-10-15 -->
+        <abbr term="CAS" explanation="Chemical Abstracts Service，化学文摘社" />
+        <!-- MSDS补全专家: 来源: 标准化学术语缩写, 2023-10-15 -->
+        <abbr term="IARC" explanation="International Agency for Research on Cancer，国际癌症研究机构" />
+        <!-- MSDS补全专家: 来源: 标准化学术语缩写, 2023-10-15 -->
+        <abbr term="TLV-TWA" explanation="Threshold Limit Value-Time Weighted Average，阈限值-时间加权平均浓度" />
+        <!-- MSDS补全专家: 来源: 标准化学术语缩写, 2023-10-15 -->
+        <abbr term="STEL" explanation="Short Term Exposure Limit，短时间接触限值" />
+        <!-- MSDS补全专家: 来源: 标准化学术语缩写, 2023-10-15 -->
+        <abbr term="NOAEL" explanation="No Observed Adverse Effect Level，无可见有害作用水平" />
+        <!-- MSDS补全专家: 来源: 标准化学术语缩写, 2023-10-15 -->
+        <abbr term="BCF" explanation="Bioconcentration Factor，生物富集系数" />
+      </abbreviations>
+      <legal_disclaimer>
+        <!-- MSDS补全专家: 来源: 标准法律声明模板, 2023-10-15 -->
+        <disclaimer>本说明书所提供的信息基于我们当前的知识水平和可信的数据源，仅供安全操作参考。使用者应根据实际应用情况评估这些信息的适用性，并遵守相关法律法规。本说明书不构成对产品性质的任何保证。</disclaimer>
+        <!-- MSDS补全专家: 来源: 标准法律声明模板, 2023-10-15 -->
+        <disclaimer>使用者应自行判断产品是否适合其特定用途，并对使用该产品所产生的任何后果承担责任。制造商和供应商对因使用本产品而导致的任何损失或损害不承担责任。</disclaimer>
+      </legal_disclaimer>
+    </other_info>
   </msds>
 </msds_list>

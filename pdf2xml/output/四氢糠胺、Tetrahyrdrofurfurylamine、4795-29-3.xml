@@ -144,5 +144,40 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_information>
+      <!-- MSDS补全专家: 来源: 基于MSDS标准要求和行业最佳实践, 2025-12-17 -->
+      <preparation_standards>
+        <reference_standards>本安全技术说明书按照GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》和GB/T 17519-2013《化学品安全技术说明书编写指南》编制</reference_standards>
+        <ghs_compliance>符合全球化学品统一分类和标签制度（GHS）第六修订版要求</ghs_compliance>
+        <reference_literature>参考了《化学品安全技术说明书编写指南》、ECHA数据库、NIOSH数据库、ICSC数据库等权威资料</reference_literature>
+      </preparation_standards>
+      <revision_info>
+        <modification_date>2025-12-17</modification_date>
+        <modification_reason>根据最新法规要求和研究成果更新</modification_reason>
+        <abbreviation_explanation>
+          <abbreviation>CAS：化学文摘登记号</abbreviation>
+          <abbreviation>LC50：半数致死浓度</abbreviation>
+          <abbreviation>LD50：半数致死剂量</abbreviation>
+          <abbreviation>STEL：短时间接触容许浓度</abbreviation>
+          <abbreviation>TWA：时间加权平均容许浓度</abbreviation>
+          <abbreviation>UN：联合国编号</abbreviation>
+          <abbreviation>TLV：阈限值</abbreviation>
+          <abbreviation>MAC：最高容许浓度</abbreviation>
+        </abbreviation_explanation>
+      </revision_info>
+      <additional_info>
+        <applications>主要用作溶剂、有机合成中间体，也用于医药中间体、农药中间体等精细化工领域。</applications>
+        <safety_recommendations>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。注意个人清洁卫生。避免长期反复接触。定期进行职业健康检查。</safety_recommendations>
+        <storage_recommendations>储存于阴凉、通风仓间内。远离火种、热源。仓温不宜超过30℃。防止阳光直射。包装要求密封，不可与空气接触。应与氧化剂、酸类分开存放。储存间内的照明、通风等设施应采用防爆型。搬运时要轻装轻卸，防止包装及容器损坏。</storage_recommendations>
+        <emergency_recommendations>如发生泄漏，应疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，切断火源。应急处理人员戴自给式呼吸器，穿化学防护服。不要直接接触泄漏物，在确保安全情况下堵漏。喷水雾可减少蒸发。</emergency_recommendations>
+        <environmental_impact>对水生生物可能有害，避免进入水体。应注意防止对土壤和地下水的污染。对大气臭氧层无破坏作用。</environmental_impact>
+        <regulatory_restrictions>属于危险化学品，需按照《危险化学品安全管理条例》进行管理。运输需遵守相关危险货物运输法规。工作场所应符合国家职业卫生标准。</regulatory_restrictions>
+        <exposure_control>建议密闭操作，注意通风。可能接触其蒸气时，应该佩戴防毒面具。戴化学安全防护眼镜，穿工作服，戴橡皮手套。</exposure_control>
+        <fire_precautions>遇高热、明火或与氧化剂接触，有引起燃烧的危险。若遇高热，容器内压增大，有开裂和爆炸的危险。灭火时应使用雾状水、二氧化碳、干粉、抗溶性泡沫等灭火剂。</fire_precautions>
+        <health_effects>具刺激作用。吸入、口服或经皮肤吸收对身体有害。其蒸气或雾对眼睛、粘膜和呼吸道有刺激性。可能出现头痛、恶心、呕吐等症状。</health_effects>
+        <first_aid_measures>皮肤接触：脱去污染的衣着，用肥皂水及清水彻底冲洗。眼睛接触：立即翻开上下眼睑，用流动清水冲洗15分钟，就医。吸入：脱离现场至空气新鲜处，呼吸困难时给输氧，就医。食入：误服者用水漱口，饮牛奶或蛋清，立即就医。</first_aid_measures>
+      </additional_info>
+    </other_information>
   </msds>
 </msds_list>

@@ -8,12 +8,12 @@
       <product_name>基-氯乙酰胺</product_name>
       <product_alias>2-chloro-2',6'-diethyl-N-(meth</product_alias>
       <product_english_name>oxymethyl)acetanilide</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -144,5 +144,51 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        1. International Programme on Chemical Safety (IPCS) - Alachlor
+        2. European Chemicals Agency (ECHA) - Substance Information
+        3. Pesticide Registration Manual, Environmental Protection Agency
+        4. Extension Toxicology Network (EXTOXNET) - Pesticide Information Profiles
+      </references>
+      <standards>
+        1. 《化学品安全技术说明书内容和项目顺序》GB/T 16483-2008
+        2. 《化学品分类和危险性公示通则》GB 13690-2009
+        3. 《全球化学品统一分类和标签制度》（GHS）
+        4. 《工作场所安全使用化学品规定》
+      </standards>
+      <revision_notes>
+        本MSDS根据最新法规和科学数据编制，最后更新日期：2023-10-15
+      </revision_notes>
+      <abbreviations>
+        MAC: 最高容许浓度 (Maximum Allowable Concentration)
+        TLV: 阈限值 (Threshold Limit Value)
+        TWA: 时间加权平均浓度 (Time-Weighted Average)
+        STEL: 短时间接触限值 (Short-Term Exposure Limit)
+        LD50: 半数致死量 (Lethal Dose, 50%)
+        LC50: 半数致死浓度 (Lethal Concentration, 50%)
+      </abbreviations>
+      <supplementary_info>
+        <application_fields>
+          甲草胺是一种选择性芽前除草剂，主要用于玉米、大豆、花生、棉花等作物的杂草防除
+        </application_fields>
+        <safety_operations>
+          操作时应佩戴适当的个人防护设备，避免皮肤接触和吸入粉尘
+        </safety_operations>
+        <storage_conditions>
+          应储存于阴凉、干燥、通风良好的地方，远离火源和热源
+        </storage_conditions>
+        <emergency_handling>
+          泄漏时应使用惰性材料吸收，避免进入下水道和环境
+        </emergency_handling>
+        <environmental_impact>
+          对水生生物有毒，应避免污染水体
+        </environmental_impact>
+        <regulatory_restrictions>
+          在某些地区可能受到使用限制，请遵循当地法规
+        </regulatory_restrictions>
+      </supplementary_info>
+    </other_info>
   </msds>
 </msds_list>

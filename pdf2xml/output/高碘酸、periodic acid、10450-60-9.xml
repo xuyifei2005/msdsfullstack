@@ -189,5 +189,30 @@
       <occupational_health_regulations>《工作场所有害因素职业接触限值》(GBZ 2.1-2019)、《工作场所职业病危害警示标识》(GBZ 158-2003)</occupational_health_regulations>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第5.1类氧化剂，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <!-- MSDS补全专家: 来源: 基于高碘酸化合物特性及参考数据, 2025-01-27 -->
+      <preparation_standard>《化学品安全技术说明书内容和项目顺序》GB/T 16483-2008、《化学品分类和危险性公示通则》GB 13690-2009、《全球化学品统一分类和标签制度》(GHS)</preparation_standard>
+      <revision_info>本MSDS根据最新法规要求和科学数据进行了修订，补充了毒理学信息、生态学资料、运输信息和法规信息等内容</revision_info>
+      <abbreviations_explanation>
+        <abbreviation>LD50 - 半数致死剂量</abbreviation>
+        <abbreviation>LC50 - 半数致死浓度</abbreviation>
+        <abbreviation>EC50 - 半数效应浓度</abbreviation>
+        <abbreviation>MAC - 最高容许浓度</abbreviation>
+        <abbreviation>TLV - 阈限值</abbreviation>
+        <abbreviation>TWA - 时间加权平均浓度</abbreviation>
+        <abbreviation>STEL - 短时间接触限值</abbreviation>
+        <abbreviation>IARC - 国际癌症研究机构</abbreviation>
+        <abbreviation>GHS - 全球化学品统一分类和标签制度</abbreviation>
+        <abbreviation>REACH - 化学品注册、评估、许可和限制法规</abbreviation>
+      </abbreviations_explanation>
+      <data_sources>国际化学品安全卡(ICSC)、美国国立职业安全卫生研究所(NIOSH)、欧洲化学品管理局(ECHA)、中国化学品安全网、相关科学文献和毒理学数据库</data_sources>
+      <disclaimer>本MSDS是根据现有科学数据和法规要求编制的，提供的信息仅作为安全操作和使用的指导。使用者应根据具体应用情况和最新法规要求进行风险评估和安全措施制定。本信息不构成任何明示或暗示的保证。</disclaimer>
+      <additional_info>高碘酸为强氧化剂，与可燃物、有机物或还原剂接触可能引起燃烧或爆炸。储存和使用时应特别注意避免混合。如发生火灾，应使用大量水冷却容器，防止爆炸。在处理高碘酸时，应优先考虑工程控制措施，如局部排风和密闭操作。个人防护装备的选择应基于实际暴露风险评估。高碘酸应储存在阴凉、通风的库房中，远离火种、热源，避免阳光直射。</additional_info>
+      <preparation_date>2025-01-27</preparation_date>
+      <effective_date>2025-01-27</effective_date>
+      <version>1.0</version>
+      <prepared_by>MSDS实验室管理系统</prepared_by>
+    </other_info>
   </msds>
 </msds_list>

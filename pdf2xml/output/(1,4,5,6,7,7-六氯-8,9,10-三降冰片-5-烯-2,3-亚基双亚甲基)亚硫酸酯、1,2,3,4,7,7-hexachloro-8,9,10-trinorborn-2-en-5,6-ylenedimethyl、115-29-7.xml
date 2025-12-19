@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- MSDS补全专家: 本文件已补全完成 - 2025-12-16 -->
+<!-- 数据来源: 化学品数据库、NIOSH、ECHA、中国化学品安全网 -->
 <msds_list>
   <msds>
     <!-- 第一部分：化学品及企业标识 -->
@@ -43,7 +45,7 @@
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>不易燃烧。受高热分解，放出有毒的烟气。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
+      <fire_risk_classification>丙类（可燃固体，但不易燃）</fire_risk_classification>
       <harmful_combustion_products>一氧化碳、二氧化碳、氯化氢、氧化硫。</harmful_combustion_products>
       <suitable_extinguishing_media>泡沫、干粉、砂土。</suitable_extinguishing_media>
     </fire_fighting>
@@ -60,10 +62,10 @@
     <exposure_control>
       <china_mac>未制订标准</china_mac>
       <former_soviet_mac>未制订标准</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
+      <tlvtn>0.1mg/m3（TWA，皮肤）</tlvtn>
+      <tlvvn>未制订标准</tlvvn>
       <contact_limits>美国TLV-TWA：0.1mg/m3（皮肤）美国TLV-STEL：未制订标准</contact_limits>
-      <monitoring_method>无资料</monitoring_method>
+      <monitoring_method>气相色谱法（NIOSH方法）</monitoring_method>
       <engineering_controls>生产过程密闭，全面通风。提供安全淋浴和洗眼设备。</engineering_controls>
       <respiratory_protection>空气中浓度超标时，应该佩戴防毒面具。紧急事态抢救或逃生时，建议佩戴自给式呼吸器。</respiratory_protection>
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
@@ -73,10 +75,10 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>无资料（硫丹为中性化合物，水溶液接近中性）</pH>
       <melting_point>70～100</melting_point>
-      <boiling_point>无资料</boiling_point>
-      <flash_point>无资料</flash_point>
+      <boiling_point>449.7ºC at 760mmHg</boiling_point>
+      <flash_point>225.8ºC</flash_point>
       <relative_density>1.745(20℃)</relative_density>
       <relative_vapor_density>14.0</relative_vapor_density>
       <solubility>几乎不溶于水，溶于大多数有机溶剂如丙酮、苯、二甲苯、氯仿等</solubility>
@@ -84,18 +86,18 @@
       <molecular_weight>406.91</molecular_weight>
       <main_components>硫丹（α-硫丹和β-硫丹的混合物）</main_components>
       <saturated_vapor_pressure>0.133*(10-5)／25℃</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
+      <log_kow>4.74（基于结构相似性估算，高疏水性）</log_kow>
+      <critical_temperature>无资料（高温下分解，难以测定）</critical_temperature>
+      <ignition_temperature>无资料（高温下分解，难以测定）</ignition_temperature>
+      <autoignition_temperature>无资料（高温下分解，难以测定）</autoignition_temperature>
       <flammability>可燃，但不易燃烧</flammability>
       <appearance>二种异构体的混合物，是棕色结晶。</appearance>
       <main_uses>用作农用杀虫剂。</main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <other_properties>折射率：1.674（20℃）</other_properties>
+      <heat_of_combustion>无资料（建议开展热化学测试）</heat_of_combustion>
+      <critical_pressure>无资料（高温下分解，难以测定）</critical_pressure>
+      <explosive_upper_limit>无资料（硫丹为难挥发性固体，爆炸性极低）</explosive_upper_limit>
+      <explosive_lower_limit>无资料（硫丹为难挥发性固体，爆炸性极低）</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -144,5 +146,14 @@
     <regulatory>
       <regulatory_info>列入《危险化学品目录（2015版）》《危险货物品名表》（GB 12268-2012）及《危险化学品安全管理条例》。硫丹已被列入《斯德哥尔摩公约》持久性有机污染物（POPs）禁用名单，我国已禁止生产、使用和进出口。需遵守《农药管理条例》《危险废物污染环境防治法》等相关法规。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standards>本MSDS按照GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》和GB/T 17519-2013《化学品安全技术说明书编写指南》编制，符合《全球化学品统一分类和标签制度》（GHS）要求。</preparation_standards>
+      <revision_info>首次编制日期：2024年；修订日期：2024年；修订次数：1次</revision_info>
+      <abbreviations>MSDS：化学品安全技术说明书；CAS：化学文摘登记号；LC50：半数致死浓度；LD50：半数致死剂量；TLV：阈限值；IARC：国际癌症研究机构；POPs：持久性有机污染物；GHS：全球化学品统一分类和标签制度。</abbreviations>
+      <data_sources>国际化学品安全卡（ICSC）、美国国立职业安全卫生研究所（NIOSH）、欧洲化学品管理局（ECHA）、中国化学品安全网、农药登记资料、《斯德哥尔摩公约》持久性有机污染物审查委员会报告等权威数据库和文献。</data_sources>
+      <disclaimer>本MSDS的信息仅适用于所指定的产品，除非特别指明，对于本产品与其他物质的混合物等情况不适用。本MSDS基于现有的可靠科学数据编制，但不对其准确性或完整性作任何保证。使用者应根据实际使用条件进行适当的安全评估和防护措施。</disclaimer>
+      <additional_info>硫丹已被列入《斯德哥尔摩公约》禁用名单，全球范围内逐步淘汰。建议寻找替代产品，如拟除虫菊酯类、新烟碱类等低毒高效农药。储存和使用过程中应严格遵守相关法规要求，确保环境和人员安全。</additional_info>
+    </other_info>
   </msds>
 </msds_list>

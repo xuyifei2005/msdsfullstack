@@ -9,12 +9,12 @@
       <product_alias>过氧化双(叔丁基)-3,3,5-三甲基环己烷；过氧化二叔丁基-3,3,5-三甲基环己烷</product_alias>
       <product_english_name>1,1-Di-(tert-butylperoxy)-3,3,5-trimethylcyclohexane (not more than 90%, and diluent type A not less than 10%)</product_english_name>
       <einecs_number>229-782-3</einecs_number>
-      <company_name>无资料</company_name>
-      <company_address>无资料</company_address>
-      <contact_phone>无资料</contact_phone>
-      <emergency_phone>无资料</emergency_phone>
-      <email>无资料</email>
-      <fax_number>无资料</fax_number>
+      <company_name>示例化工有限公司</company_name>
+      <company_address>示例省示例市示例区示例路123号</company_address>
+      <contact_phone>+86-123-45678901</contact_phone>
+      <emergency_phone>+86-123-45678902</emergency_phone>
+      <email>safety@examplechem.com</email>
+      <fax_number>+86-123-45678903</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>

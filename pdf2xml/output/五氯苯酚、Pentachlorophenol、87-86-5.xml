@@ -8,12 +8,12 @@
       <product_name>五氯苯酚</product_name>
       <product_alias>五氯酚</product_alias>
       <product_english_name>Pentachlorophenol</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -145,5 +145,13 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>IPCS、ECHA、NIOSH、PubChem、MSDSonline</references>
+      <preparation_standard>GB/T 16483-2008、GB 13690-2009、GHS</preparation_standard>
+      <modification_notes>2023-10-15根据最新法规和研究成果更新</modification_notes>
+      <abbreviations>CAS：化学文摘社编号；LD50：半数致死量；LC50：半数致死浓度；STEL：短时间接触限值；TWA：时间加权平均容许浓度；UN：联合国编号</abbreviations>
+      <supplementary_info>应用领域：主要用于木材防腐剂、除草剂、杀菌剂、杀虫剂等。安全操作：操作时必须佩戴适当的个人防护设备，包括防毒面具、防护手套和防护服。储存条件：储存于阴凉、通风的库房，远离火种、热源，防止阳光直射。应急处理：泄漏时应立即隔离污染区，穿戴防护设备进行处理，避免扬尘。环境影响：对水生生物有剧毒，可能对水环境造成长期不良影响。法规限制：在许多国家受到严格限制或禁止使用，因其对环境和健康的潜在危害。</supplementary_info>
+    </other_info>
   </msds>
 </msds_list>

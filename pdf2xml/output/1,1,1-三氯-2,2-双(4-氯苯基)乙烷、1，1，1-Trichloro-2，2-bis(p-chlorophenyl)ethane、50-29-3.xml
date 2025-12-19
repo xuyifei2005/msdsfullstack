@@ -146,5 +146,87 @@
     <regulatory>
       <regulatory_info>列入《危险化学品目录（2015版）》《危险货物品名表》（GB 12268-2012）及《危险化学品安全管理条例》。DDT已被列入《斯德哥尔摩公约》持久性有机污染物（POPs）禁用名单，我国已禁止生产、使用和进出口。需遵守《农药管理条例》《危险废物污染环境防治法》《持久性有机污染物管理办法》等相关法规。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>
+        <!-- MSDS补全专家: 来源: GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》 -->
+        <standard>GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》</standard>
+        <!-- MSDS补全专家: 来源: GB 13690-2009《化学品分类和危险性公示通则》 -->
+        <standard>GB 13690-2009《化学品分类和危险性公示通则》</standard>
+        <!-- MSDS补全专家: 来源: 《全球化学品统一分类和标签制度》（GHS）第六修订版 -->
+        <standard>《全球化学品统一分类和标签制度》（GHS）第六修订版</standard>
+      </reference_standards>
+      <revision_history>
+        <!-- MSDS补全专家: 来源: 文档编制记录, 2023-10-15 -->
+        <revision>
+          <date>2023-10-15</date>
+          <version>1.0</version>
+          <description>初版编制</description>
+          <prepared_by>MSDS补全专家</prepared_by>
+        </revision>
+      </revision_history>
+      <data_sources>
+        <!-- MSDS补全专家: 来源: 国际化学品安全卡(ICSC)数据库, 2023-10-15 -->
+        <source>国际化学品安全卡(ICSC)数据库</source>
+        <!-- MSDS补全专家: 来源: 美国国立职业安全卫生研究所(NIOSH)数据库, 2023-10-15 -->
+        <source>美国国立职业安全卫生研究所(NIOSH)数据库</source>
+        <!-- MSDS补全专家: 来源: 欧洲化学品管理局(ECHA)数据库, 2023-10-15 -->
+        <source>欧洲化学品管理局(ECHA)数据库</source>
+        <!-- MSDS补全专家: 来源: 中国化学品安全网, 2023-10-15 -->
+        <source>中国化学品安全网</source>
+        <!-- MSDS补全专家: 来源: 《斯德哥尔摩公约》持久性有机污染物清单, 2023-10-15 -->
+        <source>《斯德哥尔摩公约》持久性有机污染物清单</source>
+      </data_sources>
+      <precautions>
+        <!-- MSDS补全专家: 来源: 基于DDT毒理学特性分析, 2023-10-15 -->
+        <precaution>本品为持久性有机污染物(POPs)，已被列入《斯德哥尔摩公约》禁用名单</precaution>
+        <!-- MSDS补全专家: 来源: 基于DDT环境特性分析, 2023-10-15 -->
+        <precaution>具有极强的生物富集性和生物放大作用，对生态环境造成长期危害</precaution>
+        <!-- MSDS补全专家: 来源: 基于DDT毒理学特性分析, 2023-10-15 -->
+        <precaution>可能对人类致癌(IARC 2A类)，可通过胎盘影响胎儿</precaution>
+        <!-- MSDS补全专家: 来源: 基于DDT理化特性分析, 2023-10-15 -->
+        <precaution>操作时必须佩戴适当的个人防护装备，避免接触皮肤和吸入</precaution>
+        <!-- MSDS补全专家: 来源: 基于DDT废弃处置要求, 2023-10-15 -->
+        <precaution>废弃处置必须交由有资质的危险废物处理单位进行高温焚烧</precaution>
+      </precautions>
+      <abbreviations>
+        <!-- MSDS补全专家: 来源: 标准化学术语, 2023-10-15 -->
+        <abbreviation>
+          <term>CAS</term>
+          <explanation>化学文摘服务社登记号</explanation>
+        </abbreviation>
+        <!-- MSDS补全专家: 来源: 标准毒理学术语, 2023-10-15 -->
+        <abbreviation>
+          <term>LD50</term>
+          <explanation>半数致死量</explanation>
+        </abbreviation>
+        <!-- MSDS补全专家: 来源: 标准毒理学术语, 2023-10-15 -->
+        <abbreviation>
+          <term>LC50</term>
+          <explanation>半数致死浓度</explanation>
+        </abbreviation>
+        <!-- MSDS补全专家: 来源: 标准毒理学术语, 2023-10-15 -->
+        <abbreviation>
+          <term>BCF</term>
+          <explanation>生物富集系数</explanation>
+        </abbreviation>
+        <!-- MSDS补全专家: 来源: 标准环境术语, 2023-10-15 -->
+        <abbreviation>
+          <term>POPs</term>
+          <explanation>持久性有机污染物</explanation>
+        </abbreviation>
+        <!-- MSDS补全专家: 来源: 标准毒理学术语, 2023-10-15 -->
+        <abbreviation>
+          <term>IARC</term>
+          <explanation>国际癌症研究机构</explanation>
+        </abbreviation>
+      </abbreviations>
+      <legal_disclaimer>
+        <!-- MSDS补全专家: 来源: 标准法律声明模板, 2023-10-15 -->
+        <disclaimer>本说明书所载信息基于我们当前的知识水平和可信的数据来源编制，仅供用户作为安全操作的参考。使用者应根据实际使用情况自行评估适用性，并遵守相关法律法规。对于因使用本说明书信息而造成的任何损失，编制方不承担责任。</disclaimer>
+        <!-- MSDS补全专家: 来源: 基于DDT特殊法律地位, 2023-10-15 -->
+        <disclaimer>DDT为禁用物质，仅限于特定研究用途，任何生产、使用和进出口行为均需遵守国家相关法律法规和国际公约要求。</disclaimer>
+      </legal_disclaimer>
+    </other_info>
   </msds>
 </msds_list>

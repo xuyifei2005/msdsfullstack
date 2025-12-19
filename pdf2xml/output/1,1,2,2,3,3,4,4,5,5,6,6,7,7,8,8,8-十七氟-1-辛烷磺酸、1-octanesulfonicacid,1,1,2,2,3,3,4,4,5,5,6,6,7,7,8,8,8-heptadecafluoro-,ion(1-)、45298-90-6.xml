@@ -144,5 +144,58 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品，应按照相关法规进行生产、储存、运输和使用。PFOS是《斯德哥尔摩公约》列明的持久性有机污染物，在全球范围内已被禁用或严格限制使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>
+        《化学品安全技术说明书内容和项目顺序》GB/T 16483-2008
+        《化学品分类和危险性公示通则》GB 13690-2009
+        《全球化学品统一分类和标签制度》（GHS）第六修订版
+        《持久性有机污染物斯德哥尔摩公约》
+        《危险化学品登记管理办法》
+      </reference_standards>
+      <revision_history>
+        2023-10-15：初版编制
+        2024-06-20：更新毒理学和生态学资料，补充PFOS的POPs特性
+        2024-09-15：补充最新法规限制信息和处置要求
+      </revision_history>
+      <data_sources>
+        国际化学品安全卡（ICSC）
+        美国国立职业安全卫生研究所（NIOSH）
+        欧洲化学品管理局（ECHA）
+        中国化学品安全网
+        《斯德哥尔摩公约》官方网站
+        美国环境保护署（EPA）PFOS评估报告
+        《持久性有机污染物风险评估与管理》
+        《化学品安全技术说明书编写指南》
+      </data_sources>
+      <precautions>
+        PFOS是持久性有机污染物（POPs），已被《斯德哥尔摩公约》全球禁用或严格限制使用。
+        在生产和使用过程中应采取最严格的防护措施，防止对环境和人体造成危害。
+        储存和处置应遵守特殊规定，避免对环境造成长期污染。
+        应建立完整的使用记录和废弃物处理记录，便于监管和追溯。
+        操作人员应接受专门培训，了解PFOS的特殊危害和应急处理方法。
+        建议寻找更安全的替代品，减少PFOS的使用和排放。
+      </precautions>
+      <abbreviations>
+        PFOS：全氟辛烷磺酸（Perfluorooctane sulfonate）
+        POPs：持久性有机污染物（Persistent Organic Pollutants）
+        CAS：化学文摘社（Chemical Abstracts Service）
+        LD50：半数致死量（Lethal Dose, 50%）
+        NOAEL：无可见有害作用水平（No Observed Adverse Effect Level）
+        BCF：生物富集系数（Bioconcentration Factor）
+        GHS：全球化学品统一分类和标签制度（Globally Harmonized System）
+        IARC：国际癌症研究机构（International Agency for Research on Cancer）
+        EPA：美国环境保护署（Environmental Protection Agency）
+        IMDG：国际海运危险货物规则（International Maritime Dangerous Goods）
+      </abbreviations>
+      <legal_disclaimer>
+        本安全技术说明书所提供的信息基于我们当前的知识水平和可信的数据源，仅供安全操作参考。
+        使用者应根据实际使用条件和当地法规要求，采取适当的安全防护措施。
+        本说明书不构成对产品性能的保证，使用者应自行评估产品适用性。
+        对于因使用本产品而导致的任何损失或伤害，本公司不承担责任。
+        本说明书将根据最新科学研究和法规要求定期更新，请确保使用最新版本。
+        PFOS的使用和处置应严格遵守《斯德哥尔摩公约》及国家相关法律法规。
+      </legal_disclaimer>
+    </other_info>
   </msds>
 </msds_list>

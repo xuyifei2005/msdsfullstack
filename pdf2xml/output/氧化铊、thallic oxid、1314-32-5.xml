@@ -8,20 +8,18 @@
       <product_name>氧化铊</product_name>
       <product_alias>三氧化二铊</product_alias>
       <product_english_name>thallic oxid</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收
-属高毒类。误服，出现急性胃肠道刺激症状：腹痛、恶心、呕吐，几天后出现口唇及四
-肢无力、麻木、痛觉敏感，严重时有谵妄、精神失常、晕厥和呼吸肌麻痹；同时对心、</exposure_routes>
-      <health_hazards></health_hazards>
+      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
+      <health_hazards>属高毒类。误服，出现急性胃肠道刺激症状：腹痛、恶心、呕吐，几天后出现口唇及四肢无力、麻木、痛觉敏感，严重时有谵妄、精神失常、晕厥和呼吸肌麻痹；同时对心、肝、肾有损害。</health_hazards>
       <environmental_hazards>无资料</environmental_hazards>
       <fire_explosion_hazards>本品不燃、高毒、具有刺激性</fire_explosion_hazards>
     </hazard_info>
@@ -38,25 +36,26 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。就医。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行</eye_contact>
-      <inhalation>人工呼吸。就医。</inhalation>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
       <ingestion>误服者立即漱口，给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>和硫、三硫化锑的混合物在研磨时可能发生爆炸。受高热分解，放出有毒的烟气。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>铊。</harmful_combustion_products>
-      <suitable_extinguishing_media>不燃。火场周围可用的灭火介质。</suitable_extinguishing_media>
-    </fire_fighting>
+        <hazard_characteristics>和硫、三硫化锑的混合物在研磨时可能发生爆炸。受高热分解，放出有毒的烟气。</hazard_characteristics>
+        <fire_risk_classification>无资料</fire_risk_classification>
+        <harmful_combustion_products>铊。</harmful_combustion_products>
+        <suitable_extinguishing_media>不燃。火场周围可用的灭火介质。</suitable_extinguishing_media>
+        <firefighting_precautions>消防人员必须佩戴空气呼吸器，穿全身防火防毒服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。</firefighting_precautions>
+      </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
       <emergency_procedures>隔离泄漏污染区，周围设警告标志，建议应急处理人员戴自给式呼吸器，穿化学防护服。 不要直接接触泄漏物，用砂土吸收，收集于一个密闭的容器中，倒至空旷地方深埋。用 水刷洗泄漏污染区，经稀释的污水放入废水系统。如大量泄漏，收集回收或无害处理后 废弃。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>火花、明火和热表面。采取措施防止静电积累。 储存于阴凉、通风仓间内。远离火种、热源。保持容器密封。专人保管.应与氧化剂、食 用 化工原料分开存放。不能与粮食、食物、种子、饲料、各种日用品混装、混运。操作 现场不得吸烟、饮水、进食。搬运时要轻装轻卸，防止包装及容器损坏。分装和搬运作业 要注意个人防护。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。防止粉尘释放到车间空气中。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴化学安全防护眼镜，穿防毒物渗透工作服，戴防化学品手套。避免产生粉尘。避免与氧化剂接触。配备泄漏应急处理设备。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。防止阳光直射。保持容器密封。应与氧化剂、食用化工原料分开存放，切忌混储。配备相应品种和数量的消防器材。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -78,19 +77,19 @@
       <pH>无资料</pH>
       <melting_point>71715</melting_point>
       <boiling_point>875(-O2)</boiling_point>
-      <flash_point>无资料</flash_point>
+      <flash_point>不适用</flash_point>
       <relative_density>10.19(22℃，结晶)</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>T</molecular_formula>
+      <solubility>不溶于水，溶于酸和碱。</solubility>
+      <molecular_formula>Tl2O3</molecular_formula>
       <molecular_weight>456.74</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>氧化铊</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>不燃</flammability>
       <appearance>棕色至黑色六面晶系结晶或无定形粉末。</appearance>
       <main_uses>用作分析试剂，也用于制火柴。</main_uses>
       <other_properties>无资料</other_properties>
@@ -103,9 +102,9 @@
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>强氧化剂。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <conditions_to_avoid>避免接触强氧化剂、高温、明火。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受高热分解，放出有毒的铊氧化物和铊蒸气。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
@@ -129,7 +128,7 @@
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
+      <disposal_method>建议用控制焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。处置前应参阅国家和地方有关法规。</disposal_method>
       <disposal_precautions>无资料</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
@@ -139,12 +138,12 @@
       <imdg_page>6265</imdg_page>
       <packaging_mark>14</packaging_mark>
       <packing_group>Ⅱ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>使用密封良好的防潮容器，防止吸潮。包装应符合相关运输规定。</packaging_method>
+      <transportation_precautions>运输过程中应防止包装破损，避免与食品、饲料和氧化剂混运。运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》《危险化学品目录》《工作场所安全使用化学品规定》《剧毒化学品目录》</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

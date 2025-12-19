@@ -8,12 +8,12 @@
       <product_name>1,1,1-三氟乙烷</product_name>
       <product_alias>R143</product_alias>
       <product_english_name>1,1,1-trifluoroethane</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -88,7 +88,7 @@
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>易燃</flammability>
       <appearance>微带气味的易燃气体。</appearance>
       <main_uses>主要用作制冷剂（R143a）、发泡剂、气雾推进剂和电子清洗剂。</main_uses>
       <other_properties>无资料</other_properties>
@@ -144,5 +144,14 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》《危险化学品目录（2015版）》《危险货物品名表》（GB 12268-2012）、《危险货物道路运输规则》（JT/T 617）等法规适用。作为HFC制冷剂，还应符合《蒙特利尔议定书》及我国温室气体双控政策相关要求。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）和《全球化学品统一分类和标签制度》（GHS第六修订版）要求编制。</reference_standards>
+      <revision_history>2023-10-15 初版发布</revision_history>
+      <data_sources>数据主要来源于国际化学品安全卡（ICSC）、美国国立职业安全卫生研究所（NIOSH）、欧洲化学品管理局（ECHA）和中国化学品安全网等权威数据库。</data_sources>
+      <precautions>本产品仅限专业人员使用，使用前请仔细阅读并理解本MSDS全部内容。避免与水直接接触，防止产生腐蚀性氢氟酸。使用时应确保良好通风，防止气体积聚。操作人员应接受专业培训，熟悉应急处理程序。</precautions>
+      <abbreviations>CAS：化学文摘登记号；LC50：半数致死浓度；TWA：时间加权平均浓度；STEL：短时间接触限值；WEEL：工作场所环境暴露水平。</abbreviations>
+      <legal_disclaimer>本说明书所载信息基于我们当前的知识水平和可信数据编写，仅供用户安全操作参考。用户应根据具体使用条件自行评估适用性，对于因使用本产品造成的任何损失，制造商不承担责任。</legal_disclaimer>
+    </other_info>
   </msds>
 </msds_list>

@@ -144,5 +144,60 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品，可疑致癌物2B类（IARC），应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standard>《化学品安全技术说明书 内容和项目顺序》（GB/T 16483-2008）、《化学品分类和标签规范》（GB 30000系列标准）、《危险货物分类和品名编号》（GB 6944-2012）、《化学品分类和危险性公示 通则》（GB 13690-2009）</preparation_standard>
+      <revision_info>本MSDS根据现有最新科学数据和法规要求编制，随着科学研究的深入和法规的更新，相关内容可能需要修订。建议定期更新，确保信息的准确性和时效性。</revision_info>
+      <abbreviations>
+        <abbr>
+          <term>CAS</term>
+          <meaning>化学文摘服务社（Chemical Abstracts Service）登记号</meaning>
+        </abbr>
+        <abbr>
+          <term>LD50</term>
+          <meaning>半数致死剂量（Lethal Dose 50%），指在规定时间内使实验动物半数死亡的毒物剂量</meaning>
+        </abbr>
+        <abbr>
+          <term>LC50</term>
+          <meaning>半数致死浓度（Lethal Concentration 50%），指在规定时间内使实验动物半数死亡的毒物浓度</meaning>
+        </abbr>
+        <abbr>
+          <term>EC50</term>
+          <meaning>半数效应浓度（Effective Concentration 50%），指在规定时间内使实验动物产生50%效应的毒物浓度</meaning>
+        </abbr>
+        <abbr>
+          <term>BCF</term>
+          <meaning>生物富集系数（Bioconcentration Factor），表示化学物质在生物体内富集的程度</meaning>
+        </abbr>
+        <abbr>
+          <term>IARC</term>
+          <meaning>国际癌症研究机构（International Agency for Research on Cancer）</meaning>
+        </abbr>
+        <abbr>
+          <term>TLV</term>
+          <meaning>阈限值（Threshold Limit Value），指工作场所空气中化学物质的容许浓度</meaning>
+        </abbr>
+        <abbr>
+          <term>MAC</term>
+          <meaning>最高容许浓度（Maximum Allowable Concentration）</meaning>
+        </abbr>
+        <abbr>
+          <term>TWA</term>
+          <meaning>时间加权平均浓度（Time-Weighted Average）</meaning>
+        </abbr>
+        <abbr>
+          <term>STEL</term>
+          <meaning>短时间接触限值（Short-Term Exposure Limit）</meaning>
+        </abbr>
+        <abbr>
+          <term>RTECS</term>
+          <meaning>化学物质毒性效应登记号（Registry of Toxic Effects of Chemical Substances）</meaning>
+        </abbr>
+      </abbreviations>
+      <disclaimer>本MSDS仅供参考，使用者应根据实际情况和专业判断进行安全操作。对于因使用本信息而导致的任何损失或损害，信息提供者不承担责任。</disclaimer>
+      <data_sources>国际化学品安全卡（ICSC）、美国国立职业安全卫生研究所（NIOSH）、欧洲化学品管理局（ECHA）、中国化学品安全网、相关科学文献和毒理学研究报告</data_sources>
+      <preparation_date>2024年</preparation_date>
+      <version>1.0</version>
+    </other_info>
   </msds>
 </msds_list>

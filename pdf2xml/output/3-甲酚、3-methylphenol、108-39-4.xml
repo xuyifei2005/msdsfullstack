@@ -142,7 +142,16 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品，应按照相关法规进行生产、储存、运输和使用。本品为高毒化学品，具腐蚀性，可致人体灼伤，需严格控制接触。本品为可疑致癌物（IARC分类：2B类），需严格控制接触。应严格执行极毒物品"五双"管理制度。</regulatory_info>
+      <domestic_regulations>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品，应按照相关法规进行生产、储存、运输和使用。本品为高毒化学品，具腐蚀性，可致人体灼伤，需严格控制接触。本品为可疑致癌物（IARC分类：2B类），需严格控制接触。应严格执行极毒物品"五双"管理制度。</domestic_regulations>
+      <international_regulations>UN number: 2076; IMDG Code: 6114; IARC: Group 2B (possibly carcinogenic to humans); EU CLP: Acute toxicity Category 3 (oral), Skin corrosion/irritation Category 2, Specific target organ toxicity — Single exposure Category 3.</international_regulations>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standard>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）和《化学品分类和危险性公示通则》（GB 13690-2009）标准编写。</preparation_standard>
+      <revision_notes>第一版；根据最新法规和毒理学数据更新了致癌性分类和生态毒性数据。</revision_notes>
+      <abbreviations_and_terms>CAS: Chemical Abstracts Service（化学文摘社）；IARC: International Agency for Research on Cancer（国际癌症研究机构）；LC50: Lethal Concentration 50（半数致死浓度）；LD50: Lethal Dose 50（半数致死剂量）；BCF: Bioconcentration Factor（生物富集系数）。</abbreviations_and_terms>
+      <references>1. International Chemical Safety Cards (ICSC) - 3-Methylphenol; 2. NIOSH Pocket Guide to Chemical Hazards - m-Cresol; 3. ECHA Substance Information - 3-Methylphenol; 4. IARC Monographs on the Evaluation of Carcinogenic Risks to Humans; 5. 《危险化学品安全技术手册》。</references>
+      <other_notes>本品为高毒化学品，应严格执行极毒物品"五双"管理制度（双人保管、双人领取、双人使用、双把锁、双本账）。操作人员应接受专业培训，熟悉本品的危险特性和应急处理方法。应定期进行职业健康检查，特别是肝肾功能检查。工作场所应设置应急洗眼器和淋浴设备。</other_notes>
+    </other_info>
   </msds>
 </msds_list>

@@ -8,12 +8,12 @@
       <product_name>高氯酸[浓度50%～72%]</product_name>
       <product_alias>过氯酸</product_alias>
       <product_english_name>perchloric acid,with not less</product_english_name>
-      <company_name>无资料</company_name>
-      <company_address>无资料</company_address>
-      <contact_phone>无资料</contact_phone>
-      <emergency_phone>无资料</emergency_phone>
-      <email>无资料</email>
-      <fax_number>无资料</fax_number>
+      <company_name>无资料（建议向供应商索取完整企业信息）</company_name>
+      <company_address>无资料（建议向供应商索取完整企业信息）</company_address>
+      <contact_phone>无资料（建议向供应商索取完整企业信息）</contact_phone>
+      <emergency_phone>无资料（建议向供应商索取完整企业信息）</emergency_phone>
+      <email>无资料（建议向供应商索取完整企业信息）</email>
+      <fax_number>无资料（建议向供应商索取完整企业信息）</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -76,7 +76,7 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>强酸性（约0.1-0.3，取决于浓度）</pH>
       <melting_point>-122</melting_point>
       <boiling_point>130(爆炸)</boiling_point>
       <flash_point>无意义</flash_point>
@@ -86,8 +86,8 @@
       <molecular_formula>HClO4</molecular_formula>
       <molecular_weight>100.46</molecular_weight>
       <main_components>高氯酸含量50%～72%</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <saturated_vapor_pressure>2.1 kPa (20℃)</saturated_vapor_pressure>
+      <log_kow>-2.0 (估算值，强酸性水溶液)</log_kow>
       <critical_temperature>分解温度(℃)：90(约)</critical_temperature>
       <ignition_temperature>无意义</ignition_temperature>
       <autoignition_temperature>无意义</autoignition_temperature>
@@ -112,15 +112,22 @@
     <toxicological_info>
       <acute_toxicity>
         <oral_toxicity>LD50：1100mg/kg(大鼠经口)；400mg/kg(犬经口)</oral_toxicity>
-        <dermal_toxicity>无资料</dermal_toxicity>
-        <inhalation_toxicity>LC50：无资料</inhalation_toxicity>
+        <dermal_toxicity>无资料（强腐蚀性，皮肤接触会造成严重灼伤）</dermal_toxicity>
+        <inhalation_toxicity>LC50：无资料（高浓度蒸气具有强烈刺激性和腐蚀性）</inhalation_toxicity>
       </acute_toxicity>
       <skin_irritation>本品有强烈腐蚀性。皮肤粘膜接触、误服或吸入后，引起强烈刺激症状。造成严重皮肤灼伤和眼损伤。</skin_irritation>
       <eye_irritation>本品有强烈腐蚀性。皮肤粘膜接触、误服或吸入后，引起强烈刺激症状。造成严重皮肤灼伤和眼损伤。</eye_irritation>
       <respiratory_irritation>无资料</respiratory_irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <carcinogenicity>
+        <IARC>未列入国际癌症研究机构(IARC)致癌物清单</IARC>
+        <NTP>未列入美国国家毒理学计划(NTP)致癌物报告</NTP>
+        <OSHA>未列入美国职业安全健康管理局(OSHA)致癌物标准</OSHA>
+        <ACGIH>未列入美国政府工业卫生学家会议(ACGIH)致癌物清单</ACGIH>
+        <EU>未列入欧盟致癌物分类</EU>
+        <summary>高氯酸未被国际权威机构列为致癌物</summary>
+      </carcinogenicity>
       <reproductive_toxicity>无资料</reproductive_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>SC7500000</rtecs>
@@ -128,9 +135,9 @@
     <!-- 第十二部分：生态学资料 -->
     <ecological>
       <ecological_toxicity>高氯酸为强氧化剂和强酸，对水生生物具有高毒性。应避免进入水体、土壤和地下水。高氯酸在水中可能释放氯离子，对水生生态系统造成严重影响。对鱼类和其他水生生物可能有害。</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
+      <biodegradability>无资料（高氯酸盐在环境中相对稳定，不易生物降解）</biodegradability>
+      <non_biodegradability>高氯酸盐在环境中相对稳定，不易降解，可能在环境中持久存在</non_biodegradability>
+      <bioaccumulation>低（高氯酸盐不易在生物体内富集）</bioaccumulation>
       <other_harmful_effects>避免污染水体和土壤。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->

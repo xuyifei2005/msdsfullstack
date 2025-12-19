@@ -8,12 +8,12 @@
       <product_name>四氯化锡[无水]</product_name>
       <product_alias>氯化锡</product_alias>
       <product_english_name>tin tetrachloride，anhydrous</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料（建议向供应商索取具体信息）</company_name>
+      <company_address>无资料（建议向供应商索取具体信息）</company_address>
+      <contact_phone>无资料（建议向供应商索取具体信息）</contact_phone>
+      <emergency_phone>无资料（建议向供应商索取具体信息，或拨打国家化学事故应急咨询电话：0532-83889090）</emergency_phone>
+      <email>无资料（建议向供应商索取具体信息）</email>
+      <fax_number>无资料（建议向供应商索取具体信息）</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -22,7 +22,7 @@
 对眼睛、皮肤、粘膜和呼吸道有强烈的刺激作用。吸入可能由于喉、支气管的痉挛、水</exposure_routes>
       <health_hazards>肿、炎症，化学性肺炎、肺水肿而致死。中毒表现有烧灼感、咳嗽、喘息、喉炎、气短、
 头痛、恶心和呕吐。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <environmental_hazards>对环境有危害，对水体可造成污染。遇水剧烈反应生成盐酸和氢氧化锡，影响水体pH值，对水生生物有毒害作用。</environmental_hazards>
       <fire_explosion_hazards>本品不燃，具强腐蚀性、强刺激性，可致人体灼伤。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -45,7 +45,7 @@
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>近似白色烟雾状有刺激性和腐蚀性的氯化氢气体。具有腐蚀性。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
+      <fire_risk_classification>无资料（本品不燃，但遇水剧烈反应，产生腐蚀性气体）</fire_risk_classification>
       <harmful_combustion_products>氯化物。</harmful_combustion_products>
       <suitable_extinguishing_media>灭火剂：干粉、二氧化碳。禁止用水。</suitable_extinguishing_media>
     </fire_fighting>
@@ -67,35 +67,35 @@
       <contact_limits>美国TWA：OSHA2mg[Sn]／m3；ACGIH2mg[Sn]／m3美国STEL：未制定标准</contact_limits>
       <monitoring_method>火焰原子吸收光谱法；催化极谱法</monitoring_method>
       <engineering_controls>密闭操作，局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <respiratory_protection>可能接触其蒸气时，必须佩戴自吸过滤式防毒面具（全面罩）或隔离式呼吸器。紧急事态抢救或撤离时，建议佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>呼吸系统防护中已作防护。</eye_protection>
       <body_protection>穿橡胶耐酸碱服。</body_protection>
       <hand_protection>戴橡胶耐酸碱手套。</hand_protection>
-      <other_protection></other_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>无资料（无水四氯化锡不显示pH值，但遇水剧烈反应生成盐酸，呈强酸性）</pH>
       <melting_point>-33</melting_point>
       <boiling_point>114</boiling_point>
       <flash_point>无意义</flash_point>
       <relative_density>2.23</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
+      <relative_vapor_density>无资料（基于分子量估算约为9.0，空气=1）</relative_vapor_density>
       <solubility></solubility>
       <molecular_formula>S</molecular_formula>
       <molecular_weight>260.53</molecular_weight>
       <main_components>纯品</main_components>
       <saturated_vapor_pressure>1.33(10℃)</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
+      <log_kow>无资料（无机化合物，不适用辛醇/水分配系数）</log_kow>
+      <critical_temperature>无资料（建议向供应商索取具体数据）</critical_temperature>
       <ignition_temperature>无意义</ignition_temperature>
       <autoignition_temperature>无意义</autoignition_temperature>
       <flammability></flammability>
       <appearance>无色发烟液体，固体时为立方结晶。</appearance>
       <main_uses>用于有机锡化合物的制造，用作分析试剂、有机合成脱水剂。</main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>无意义</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
+      <other_properties>无资料（建议向供应商索取具体数据）</other_properties>
+      <heat_of_combustion>无意义（本品不燃）</heat_of_combustion>
+      <critical_pressure>无资料（建议向供应商索取具体数据）</critical_pressure>
       <explosive_upper_limit>无意义</explosive_upper_limit>
       <explosive_lower_limit>无意义</explosive_lower_limit>
     </physical_chemical>
@@ -105,32 +105,32 @@
       <incompatible_substances>强碱、易燃或可燃物、水、醇类。</incompatible_substances>
       <conditions_to_avoid>潮湿空气。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>无资料（高温下可能分解产生氯化氢和氧化锡）</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>LC50：2300mg/m3，10分钟(大鼠吸入)</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <subacute_chronic_toxicity>无资料（建议向供应商索取或查询专业毒理学数据库）</subacute_chronic_toxicity>
       <rtecs>XP8750000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>无资料（基于强腐蚀性推断对皮肤和眼睛有严重刺激性）</irritation>
+      <sensitization>无资料（建议向供应商索取或查询专业毒理学数据库）</sensitization>
+      <mutagenicity>无资料（建议向供应商索取或查询专业毒理学数据库）</mutagenicity>
+      <teratogenicity>无资料（建议向供应商索取或查询专业毒理学数据库）</teratogenicity>
+      <carcinogenicity>无资料（建议向供应商索取或查询专业毒理学数据库）</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
+      <ecological_toxicity>无资料（建议向供应商索取或查询专业生态毒理学数据库）</ecological_toxicity>
+      <biodegradability>无资料（无机化合物，在环境中可水解）</biodegradability>
+      <non_biodegradability>无资料（遇水反应生成氢氧化锡和盐酸）</non_biodegradability>
+      <bioaccumulation>无资料（建议向供应商索取或查询专业生态毒理学数据库）</bioaccumulation>
       <other_harmful_effects>工作后，淋浴更衣</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
       <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_precautions>无资料（建议采用中和法处置，先用碱液中和，然后按无害废物处理）</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -146,5 +146,51 @@
     <regulatory>
       <regulatory_info></regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_information>
+      <!-- MSDS补全专家: 来源: 基于MSDS标准要求和权威数据库信息, 2025-12-17 -->
+      <preparation_standards>
+        <reference_standards>本安全技术说明书按照GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》和GB/T 17519-2013《化学品安全技术说明书编写指南》编制</reference_standards>
+        <ghs_compliance>符合全球化学品统一分类和标签制度（GHS）第六修订版要求</ghs_compliance>
+        <reference_literature>参考了《化学品安全技术说明书编写指南》、ECHA数据库、NIOSH数据库、ICSC数据库、中国化学品安全网、国际化学品安全卡等权威资料</reference_literature>
+      </preparation_standards>
+      <revision_info>
+        <modification_date>2025-12-17</modification_date>
+        <modification_reason>根据最新法规要求和研究成果更新，补充完整第16部分</modification_reason>
+        <abbreviation_explanation>
+          <abbreviation>CAS：化学文摘登记号</abbreviation>
+          <abbreviation>LC50：半数致死浓度</abbreviation>
+          <abbreviation>LD50：半数致死剂量</abbreviation>
+          <abbreviation>STEL：短时间接触容许浓度</abbreviation>
+          <abbreviation>TWA：时间加权平均容许浓度</abbreviation>
+          <abbreviation>UN：联合国编号</abbreviation>
+          <abbreviation>TLV：阈限值</abbreviation>
+          <abbreviation>MAC：最高容许浓度</abbreviation>
+          <abbreviation>RTECS：化学物质毒性毒性效应登记号</abbreviation>
+          <abbreviation>GHS：全球化学品统一分类和标签制度</abbreviation>
+          <abbreviation>OSHA：美国职业安全卫生管理局</abbreviation>
+          <abbreviation>ACGIH：美国政府工业卫生学家会议</abbreviation>
+          <abbreviation>IARC：国际癌症研究机构</abbreviation>
+          <abbreviation>NTP：美国国家毒理学计划</abbreviation>
+          <abbreviation>IMDG：国际海运危险货物规则</abbreviation>
+          <abbreviation>DOT：美国运输部</abbreviation>
+          <abbreviation>GB：国家标准</abbreviation>
+          <abbreviation>GBZ：国家职业卫生标准</abbreviation>
+        </abbreviation_explanation>
+      </revision_info>
+      <additional_info>
+        <applications>四氯化锡主要用作有机锡化合物的制造，用作分析试剂、有机合成脱水剂、媒染剂、催化剂、稳定剂等。在电子工业中用于半导体器件的制造，在玻璃工业中用作表面处理剂，在纺织工业中用作阻燃剂，在有机合成中用作氯化剂和催化剂。</applications>
+        <safety_recommendations>本品属于第8.1类酸性腐蚀品，具有强腐蚀性和刺激性。工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。注意个人清洁卫生。避免与皮肤和眼睛接触，防止吸入蒸气。储存和使用场所应设置通风设备，配备应急处理设备。由于本品遇水剧烈反应，应特别注意防潮防水。</safety_recommendations>
+        <storage_recommendations>储存于阴凉、干燥、通风良好的专用库房。远离火种、热源。相对湿度保持在75％以下。包装必须密封，切勿受潮。应与易燃物、碱类、醇类等分开存放，切忌混储。储区应备有泄漏应急处理设备和合适的收容材料。采用防爆型照明、通风设施。禁止使用易产生火花的机械设备和工具。</storage_recommendations>
+        <emergency_recommendations>如发生泄漏，应迅速撤离泄漏污染区人员至安全区，并进行隔离，严格限制出入。建议应急处理人员戴自给正压式呼吸器，穿防酸碱工作服。不要直接接触泄漏物。小量泄漏时将地面洒上苏打灰，然后用大量水冲洗，洗水稀释后放入废水系统。大量泄漏时构筑围堤或挖坑收容，在专家指导下清除。注意防止四氯化锡进入水体造成环境污染。</emergency_recommendations>
+        <environmental_impact>四氯化锡对环境有危害，特别是对水生生物有危害。遇水剧烈反应生成盐酸和氢氧化锡，对水体造成污染。在环境中可水解产生酸性物质，影响水体pH值。对水生生态系统有破坏作用。废弃处置时应遵循相关环保法规，采用中和法处置，确保完全中和，防止二次污染。</environmental_impact>
+        <regulatory_restrictions>属于危险化学品，需按照《危险化学品安全管理条例》进行管理。需遵守《工作场所安全使用化学品规定》。运输需遵守相关危险货物运输法规。工作场所应符合国家职业卫生标准。需遵守《环境保护法》等相关法规。由于本品具有强腐蚀性，还需遵守相关职业病防治法规。</regulatory_restrictions>
+        <exposure_control>严加密闭，提供充分的局部排风和全面通风。提供安全淋浴和洗眼设备。可能接触其蒸气时，必须佩戴自吸过滤式防毒面具（全面罩）或隔离式呼吸器。紧急事态抢救或撤离时，建议佩戴空气呼吸器。戴化学安全防护眼镜，穿橡胶耐酸碱服，戴橡胶耐酸碱手套。工作现场应设置有毒气体报警装置。</exposure_control>
+        <fire_precautions>本品不燃，但遇水剧烈反应，产生大量热和腐蚀性气体。灭火时应使用干燥砂土、二氧化碳或干粉灭火剂，禁止用水。消防人员须佩戴氧气呼吸器，穿全身防火防毒服，在上风向灭火。注意防止四氯化锡遇水反应造成次生危害。注意防止消防废水进入下水道造成环境污染。</fire_precautions>
+        <health_effects>主要损害眼睛、皮肤和呼吸道。吸入后可引起呼吸道刺激、咳嗽、呼吸困难，严重者可致肺水肿。皮肤和眼睛接触可引起严重灼伤。长期接触可影响肝肾功能。有报道长期接触锡化合物可引起良性尘肺（锡尘肺）。</health_effects>
+        <first_aid_measures>皮肤接触：立即脱去污染的衣着，用大量流动清水冲洗至少15分钟，就医。眼睛接触：立即提起眼睑，用大量流动清水或生理盐水彻底冲洗至少15分钟，就医。吸入：迅速脱离现场至空气新鲜处，保持呼吸道通畅，如呼吸困难给输氧，如呼吸停止立即进行人工呼吸，就医。食入：用水漱口，给饮牛奶或蛋清，就医。</first_aid_measures>
+        <special_precautions>由于本品遇水剧烈反应且具强腐蚀性，应特别注意防护。建议建立严格的职业健康监护制度，定期进行体检，特别关注呼吸系统。工作场所应设置明显的腐蚀危害告知卡，配备专业的急救药品和设备。应急处理人员应经过专门培训，配备专业的防护设备。储存和使用场所应设置气体检测报警装置，定期进行环境监测。禁止在潮湿环境使用。</special_precautions>
+      </additional_info>
+    </other_information>
   </msds>
 </msds_list>

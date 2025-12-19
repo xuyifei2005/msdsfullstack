@@ -2,18 +2,19 @@
 <msds_list>
   <msds>
     <!-- 第一部分：化学品及企业标识 -->
+    <!-- MSDS补全专家: 来源: 基于1,1-二乙氧基乙烷生产和供应商信息, 2025-12-17 -->
     <basic_info>
       <cas_number>105-57-7</cas_number>
       <msds_code>MSDS-ACETAL-2023-001</msds_code>
       <product_name>1,1-二乙氧基乙烷</product_name>
       <product_alias>乙缩醛</product_alias>
       <product_english_name>1,1-diethoxyethane</product_english_name>
-      <company_name>无资料</company_name>
-      <company_address>无资料</company_address>
-      <contact_phone>无资料</contact_phone>
-      <emergency_phone>无资料</emergency_phone>
-      <email>无资料</email>
-      <fax_number>无资料</fax_number>
+      <company_name>无资料（建议向供应商索取具体企业信息，如江西众鼎生物科技有限公司等生产厂家）</company_name>
+      <company_address>无资料（建议联系供应商获取详细地址信息）</company_address>
+      <contact_phone>无资料（建议联系供应商获取技术支持和产品信息）</contact_phone>
+      <emergency_phone>无资料（紧急情况下建议拨打：国家化学事故应急响应中心0532-83889090，中毒控制中心010-83132345）</emergency_phone>
+      <email>无资料（建议通过供应商官网或销售部门获取联系方式）</email>
+      <fax_number>无资料（建议向供应商索取传真联系方式）</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -63,11 +64,11 @@
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
-      <china_mac>未制定标准</china_mac>
-      <former_soviet_mac>未制定标准</former_soviet_mac>
-      <tlvtn>未制定标准</tlvtn>
-      <tlvvn>未制定标准</tlvvn>
-      <contact_limits>美国TWA：未制定标准；可参考企业内部控制值 200ppm。</contact_limits>
+      <china_mac>未制定标准（建议参考相似化合物乙醚标准：300 mg/m³）</china_mac>
+      <former_soviet_mac>未制定标准（建议参考相似化合物乙醚标准：300 mg/m³）</former_soviet_mac>
+      <tlvtn>未制定标准（建议参考ACGIH乙醚标准：400 ppm TWA）</tlvtn>
+      <tlvvn>未制定标准（建议参考ACGIH乙醚标准：500 ppm STEL）</tlvvn>
+      <contact_limits>美国TWA：未制定标准；可参考相似化合物乙醚标准：400 ppm TWA，500 ppm STEL（约1200-1500 mg/m³）</contact_limits>
       <monitoring_method>气相色谱法</monitoring_method>
       <engineering_controls>生产过程密闭，全面通风。提供安全淋浴和洗眼设备。设置局部排风装置。</engineering_controls>
       <respiratory_protection>空气中浓度超标时，佩戴过滤式防毒面具（半面罩）。紧急抢险时使用空气呼吸器。</respiratory_protection>
@@ -78,8 +79,9 @@
       <other_protection>工作场所严禁吸烟。配备相应品种和数量的消防器材及泄漏应急处理设备。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
+    <!-- MSDS补全专家: 来源: 基于1,1-二乙氧基乙烷化学结构和相似化合物数据估算, 2025-12-17 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>无资料（基于化学结构估算：中性至弱酸性，pH约6-7，建议进行实际测试确认）</pH>
       <melting_point>-100</melting_point>
       <boiling_point>102.7</boiling_point>
       <flash_point>-21</flash_point>
@@ -91,15 +93,15 @@
       <main_components>纯品</main_components>
       <saturated_vapor_pressure>40kPa(20℃)</saturated_vapor_pressure>
       <log_kow>0.31</log_kow>
-      <critical_temperature>无资料</critical_temperature>
+      <critical_temperature>无资料（基于化学结构估算：约280-300℃，建议进行实际测试确认）</critical_temperature>
       <ignition_temperature>230</ignition_temperature>
       <autoignition_temperature>230</autoignition_temperature>
       <flammability>易燃</flammability>
       <appearance>无色易挥发液体，具有芳香气味。</appearance>
       <main_uses>用作溶剂、无水乙醇脱水剂，以及化妆品、香料和医药中间体的原料。</main_uses>
-      <other_properties>无资料</other_properties>
+      <other_properties>无资料（基于化学结构估算：折射率约1.38，黏度约0.5 mPa·s，建议进行实际测试确认）</other_properties>
       <heat_of_combustion>459.4</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
+      <critical_pressure>无资料（基于化学结构估算：约3.0-3.5 MPa，建议进行实际测试确认）</critical_pressure>
       <explosive_upper_limit>10.4</explosive_upper_limit>
       <explosive_lower_limit>1.6</explosive_lower_limit>
     </physical_chemical>

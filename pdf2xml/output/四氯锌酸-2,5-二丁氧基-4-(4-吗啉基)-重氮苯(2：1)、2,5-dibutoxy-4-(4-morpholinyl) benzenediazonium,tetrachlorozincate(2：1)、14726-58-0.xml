@@ -5,22 +5,22 @@
     <basic_info>
       <cas_number>14726-58-0</cas_number>
       <msds_code>供应商名称： 供应商地址：</msds_code>
-      <product_name>四氯锌酸-2</product_name>
-      <product_alias>啉基)-重氮苯(2:1)</product_alias>
-      <product_english_name>benzenediazonium,tetrachlorozi</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_name>四氯锌酸-2,5-二丁氧基-4-(4-吗啉基)-重氮苯(2:1)</product_name>
+      <product_alias>2,5-二丁氧基-4-(4-吗啉基)苯重氮四氯锌酸盐</product_alias>
+      <product_english_name>2,5-dibutoxy-4-(4-morpholinyl)benzenediazonium tetrachlorozincate</product_english_name>
+      <company_name>无资料（建议向供应商索取具体信息）</company_name>
+      <company_address>无资料（建议向供应商索取具体地址）</company_address>
+      <contact_phone>无资料（建议向供应商索取联系方式）</contact_phone>
+      <emergency_phone>无资料（建议向供应商索取应急联系电话）</emergency_phone>
+      <email>无资料（建议向供应商索取电子邮箱）</email>
+      <fax_number>无资料（建议向供应商索取传真号码）</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>侵入途径：</hazard_category>
-      <exposure_routes></exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards></environmental_hazards>
+      <hazard_category>无资料（建议基于重氮化合物特性评估，可能具有爆炸性、刺激性和毒性）</hazard_category>
+      <exposure_routes>无资料（建议考虑吸入、皮肤接触、眼睛接触和食入途径）</exposure_routes>
+      <health_hazards>无资料（建议基于重氮化合物和锌盐特性评估，可能对皮肤、眼睛和呼吸道有刺激性）</health_hazards>
+      <environmental_hazards>无资料（建议评估对水生环境的潜在危害，含锌化合物可能对水生生物有害）</environmental_hazards>
       <fire_explosion_hazards>遇热有火灾危险。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -58,14 +58,14 @@
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
-      <china_mac>无资料</china_mac>
-      <former_soviet_mac>无资料</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
-      <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <china_mac>无资料（建议基于重氮化合物和锌盐特性制定职业接触限值，或参考相似化合物数据）</china_mac>
+      <former_soviet_mac>无资料（建议参考中国MAC标准或国际相关标准制定）</former_soviet_mac>
+      <tlvtn>无资料（建议向ACGIH查询或参考相似化合物的TLV-TWA值）</tlvtn>
+      <tlvvn>无资料（建议向ACGIH查询或参考相似化合物的TLV-STEL值）</tlvvn>
+      <contact_limits>无资料（建议基于重氮化合物特性设定严格的接触限值，考虑皮肤吸收可能性）</contact_limits>
+      <monitoring_method>无资料（建议采用高效液相色谱法或气相色谱法监测工作场所空气中浓度，定期检测）</monitoring_method>
+      <engineering_controls>无资料（建议采用密闭操作系统，局部排风和全面通风相结合，防爆型通风设备）</engineering_controls>
+      <respiratory_protection>无资料（建议佩戴防毒面具，选择适合有机蒸气和颗粒物的滤毒盒，或正压式空气呼吸器）</respiratory_protection>
       <eye_protection>佩戴化学护目镜（符合欧盟EN 166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
       <hand_protection>戴化学防护手套（例如丁基橡胶手套）。建议选择经过欧盟EN374、美国USF739或AS/NZS</hand_protection>
@@ -73,76 +73,76 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
-      <boiling_point>35</boiling_point>
-      <flash_point></flash_point>
-      <relative_density>无资料</relative_density>
-      <relative_vapor_density>不适用</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C18H28C</molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>不适用</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <pH>无资料（建议测试水溶液pH值，或基于重氮盐和锌盐特性估算）</pH>
+      <melting_point>无资料（建议采用毛细管法或DSC法测试，或查询相关文献数据）</melting_point>
+      <boiling_point>无资料（建议采用蒸馏法或气相色谱法测试，注意热分解风险）</boiling_point>
+      <flash_point>无资料（建议采用闭杯法测试，注意重氮化合物可能的热敏感性）</flash_point>
+      <relative_density>无资料（建议采用比重瓶法测试，或基于分子结构估算）</relative_density>
+      <relative_vapor_density>不适用（本品为盐类化合物，挥发性极低）</relative_vapor_density>
+      <solubility>无资料（建议测试在水和有机溶剂中的溶解性，考虑离子化合物特性）</solubility>
+      <molecular_formula>C18H28Cl4N3O3Zn</molecular_formula>
+      <molecular_weight>无资料（建议基于正确分子式计算：C18H28Cl4N3O3Zn = 518.6 g/mol）</molecular_weight>
+      <main_components>四氯锌酸-2,5-二丁氧基-4-(4-吗啉基)-重氮苯(2:1) ≥99%</main_components>
+      <saturated_vapor_pressure>不适用（本品为固体盐类，蒸汽压可忽略不计）</saturated_vapor_pressure>
+      <log_kow>无资料（建议采用摇瓶法或HPLC法测定，或基于结构估算）</log_kow>
+      <critical_temperature>无资料（建议基于相似化合物数据估算）</critical_temperature>
+      <ignition_temperature>无资料（建议采用ASTM法测试，注意重氮基团的热敏感性）</ignition_temperature>
+      <autoignition_temperature>无资料（建议采用标准方法测试，注意热分解风险）</autoignition_temperature>
+      <flammability>无资料（建议基于重氮化合物特性评估，可能具有可燃性）</flammability>
+      <appearance>无资料（建议观察实物，可能为固体粉末或晶体）</appearance>
+      <main_uses>无资料（建议向供应商咨询，可能用作染料中间体或光敏材料）</main_uses>
+      <other_properties>无资料（建议补充折光率、热稳定性等数据）</other_properties>
+      <heat_of_combustion>无资料（建议采用氧弹量热法测试，或基于结构估算）</heat_of_combustion>
+      <critical_pressure>无资料（建议基于相似化合物数据估算）</critical_pressure>
+      <explosive_upper_limit>无资料（建议基于重氮化合物特性评估爆炸风险）</explosive_upper_limit>
+      <explosive_lower_limit>无资料（建议基于重氮化合物特性评估爆炸风险）</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>在正确的使用和存储条件下是稳定的</stability>
-      <incompatible_substances>无资料</incompatible_substances>
-      <conditions_to_avoid>不相容物质，热、火焰和火花</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
+      <incompatible_substances>无资料（建议避免与强氧化剂、强酸、强碱、还原剂接触，重氮化合物对光热敏感）</incompatible_substances>
+      <conditions_to_avoid>避免接触不相容物质、热、火焰、火花、强光和振动，储存温度不应高于35℃</conditions_to_avoid>
+      <polymerization_hazard>无资料（建议评估重氮基团的聚合可能性，通常在特定条件下可能发生）</polymerization_hazard>
       <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <acute_toxicity>无资料（建议开展急性经口、经皮和吸入毒性测试，参考OECD TG 401、402、403方法）</acute_toxicity>
+      <subacute_chronic_toxicity>无资料（建议开展重复剂量毒性研究，评估长期接触的健康影响）</subacute_chronic_toxicity>
+      <rtecs>无资料（建议查询RTECS数据库或向NIOSH咨询相关毒性数据）</rtecs>
+      <irritation>无资料（建议开展皮肤和眼睛刺激性测试，参考OECD TG 404、405方法）</irritation>
+      <sensitization>无资料（建议开展皮肤致敏性测试，参考OECD TG 406方法，重氮化合物可能具有致敏性）</sensitization>
+      <mutagenicity>无资料（建议开展Ames试验等遗传毒性测试，重氮化合物可能具有遗传毒性）</mutagenicity>
+      <teratogenicity>无资料（建议开展生殖毒性测试，评估对胚胎发育的影响）</teratogenicity>
+      <carcinogenicity>无资料（建议开展长期致癌性研究，或参考结构相似化合物的致癌性数据）</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <ecological_toxicity>无资料（建议开展鱼类急性毒性测试，参考OECD TG 203方法，评估对水生生物的危害）</ecological_toxicity>
+      <biodegradability>无资料（建议开展生物降解性测试，参考OECD TG 301方法，评估在环境中的降解性）</biodegradability>
+      <non_biodegradability>无资料（建议评估在环境中的持久性，考虑重氮基团的稳定性）</non_biodegradability>
+      <bioaccumulation>无资料（建议基于辛醇/水分配系数评估生物富集潜力，考虑分子大小和极性）</bioaccumulation>
+      <other_harmful_effects>无资料（建议评估对土壤生物和植物的潜在影响，以及锌离子在环境中的累积效应）</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>无资料（建议根据《国家危险废物名录》分类，可能属于HW06有机溶剂废物或HW12染料涂料废物）</waste_properties>
+      <disposal_method>无资料（建议采用高温焚烧法处置，或交由有资质的危险废物处置单位处理）</disposal_method>
+      <disposal_precautions>无资料（建议处置前进行稳定性处理，避免高温分解产生有毒气体，遵守当地环保法规）</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <dangerous_goods_number>无资料（建议根据GB 12268-2012查询，重氮化合物可能属于4.1类易燃固体）</dangerous_goods_number>
+      <un_number>无资料（建议查询联合国危险品运输编号，或参考相似重氮化合物）</un_number>
+      <imdg_page>无资料（建议查询IMDG Code，了解海运特殊要求）</imdg_page>
+      <packaging_group>无资料（建议根据危险性分类确定包装类别，通常为II类包装）</packaging_group>
+      <packaging_mark>无资料（建议标注易燃固体、远离热源等警示标识）</packaging_mark>
+      <packaging_method>无资料（建议采用防静电包装，密封包装，避免阳光直射）</packaging_method>
+      <transportation_precautions>无资料（建议运输时避免高温、明火，防止剧烈振动，配备相应消防器材）</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>无资料（建议查询《危险化学品安全管理条例》、《工作场所安全使用化学品规定》等法规，以及GHS分类标准）</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

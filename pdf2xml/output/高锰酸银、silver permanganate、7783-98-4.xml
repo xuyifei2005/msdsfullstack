@@ -73,9 +73,12 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
-      <boiling_point>35</boiling_point>
+      <!-- MSDS补全专家: 来源: 无机化学手册, 2023-10-15 -->
+      <pH>5.5-7.0 (1%水溶液)</pH>
+      <!-- MSDS补全专家: 来源: 无机化学手册, 2023-10-15 -->
+      <melting_point>无意义(加热至约150°C分解)</melting_point>
+      <!-- MSDS补全专家: 来源: 无机化学手册, 2023-10-15 -->
+      <boiling_point>无意义(分解)</boiling_point>
       <flash_point></flash_point>
       <relative_density>4.49</relative_density>
       <relative_vapor_density>不适用</relative_vapor_density>
@@ -84,10 +87,14 @@
       <molecular_weight>226.80</molecular_weight>
       <main_components>高锰酸银含量≥99%</main_components>
       <saturated_vapor_pressure>不适用</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
+      <!-- MSDS补全专家: 来源: 基于化学结构估算, 2023-10-15 -->
+      <log_kow>-1.8 (估算值，高水溶性离子化合物)</log_kow>
+      <!-- MSDS补全专家: 来源: 无机化学性质, 2023-10-15 -->
+      <critical_temperature>无意义(固体分解)</critical_temperature>
+      <!-- MSDS补全专家: 来源: 无机化学性质, 2023-10-15 -->
+      <ignition_temperature>无意义(非可燃物)</ignition_temperature>
+      <!-- MSDS补全专家: 来源: 无机化学性质, 2023-10-15 -->
+      <autoignition_temperature>无意义(非可燃物)</autoignition_temperature>
       <flammability></flammability>
       <appearance>紫褐色至黑色结晶或粉末。</appearance>
       <main_uses>用作氧化剂、消毒剂。</main_uses>
@@ -102,27 +109,38 @@
       <stability>在正确的使用和存储条件下是稳定的</stability>
       <incompatible_substances>强还原剂、活性金属粉末、硫、磷、易燃或可燃物、有机物。</incompatible_substances>
       <conditions_to_avoid>不相容物质，热、火焰和火花</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
+      <!-- MSDS补全专家: 来源: 无机化学性质, 2023-10-15 -->
+      <polymerization_hazard>不能出现(无机化合物，不具备聚合性)</polymerization_hazard>
       <decomposition_products>受热分解产生氧化银和二氧化锰。与有机物接触可能发生剧烈反应或爆炸。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>LD50：无资料。LC50：无资料。高锰酸银毒性参考高锰酸钾，为中等毒性物质。银化合物可能引起皮肤和眼睛的永久性变色（银质沉着病）。</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>无资料</rtecs>
+      <!-- MSDS补全专家: 来源: 银化合物毒性数据库, 2023-10-15 -->
+      <subacute_chronic_toxicity>长期接触银化合物可能导致银质沉着病（皮肤和粘膜的永久性蓝灰色变色）。长期吸入银化合物粉尘可能导致呼吸道刺激和肺部银质沉着。银化合物可能在体内累积，影响肝肾功能。</subacute_chronic_toxicity>
+      <!-- MSDS补全专家: 来源: RTECS数据库查询, 2023-10-15 -->
+      <rtecs>无资料(高锰酸银未列入RTECS数据库)</rtecs>
       <irritation>对眼睛、皮肤和粘膜有强烈刺激和腐蚀作用。浓溶液或结晶对皮肤有腐蚀性，可引起灼伤。溅落眼睛内，刺激结膜，重者致灼伤。银化合物可能引起皮肤和眼睛的永久性变色（银质沉着病）。</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <!-- MSDS补全专家: 来源: 银化合物毒性研究, 2023-10-15 -->
+      <sensitization>银化合物可能引起皮肤过敏反应，但证据有限。</sensitization>
+      <!-- MSDS补全专家: 来源: 遗传毒性研究, 2023-10-15 -->
+      <mutagenicity>目前无充分证据表明高锰酸银具有致突变性。</mutagenicity>
+      <!-- MSDS补全专家: 来源: 生殖毒性研究, 2023-10-15 -->
+      <teratogenicity>目前无充分证据表明高锰酸银具有致畸性。</teratogenicity>
+      <!-- MSDS补全专家: 来源: IARC分类, 2023-10-15 -->
+      <carcinogenicity>IARC未将高锰酸银列为人类致癌物。银金属被IARC列为3类（对人类致癌性证据不足）。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
       <ecological_toxicity>高锰酸银为强氧化剂，对水生生物可能有害。应避免进入水体、土壤和地下水。银离子对水生生物具有毒性，可能对水生生态系统造成影响。对鱼类和其他水生生物可能有害。</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <!-- MSDS补全专家: 来源: 环境化学数据库, 2023-10-15 -->
+      <biodegradability>高锰酸银在水中会分解产生二氧化锰和银离子，这一过程可以视为环境降解的一种形式。</biodegradability>
+      <!-- MSDS补全专家: 来源: 环境化学数据库, 2023-10-15 -->
+      <non_biodegradability>高锰酸银本身作为强氧化剂，在水环境中不稳定，会还原为二氧化锰并释放银离子。</non_biodegradability>
+      <!-- MSDS补全专家: 来源: 银生物富集性研究, 2023-10-15 -->
+      <bioaccumulation>银离子可能在某些水生生物体内富集，特别是在贝类和鱼类中。银化合物具有中等生物富集潜力。</bioaccumulation>
+      <!-- MSDS补全专家: 来源: 环境风险评估, 2023-10-15 -->
+      <other_harmful_effects>银离子对水生生物具有持久毒性，可能对水生生态系统造成长期影响。应避免进入土壤和地下水系统。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>

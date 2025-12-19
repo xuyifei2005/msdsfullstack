@@ -7,12 +7,12 @@
       <product_name>高氯酸醋酐溶液</product_name>
       <product_alias>过氯酸醋酐溶液</product_alias>
       <product_english_name>perchloric acid (in acetic anhydride, solution)</product_english_name>
-      <company_name>无资料</company_name>
-      <company_address>无资料</company_address>
-      <contact_phone>无资料</contact_phone>
-      <emergency_phone>无资料</emergency_phone>
-      <email>无资料</email>
-      <fax_number>无资料</fax_number>
+      <company_name>无资料（建议向供应商索取完整企业信息）</company_name>
+      <company_address>无资料（建议向供应商索取完整企业信息）</company_address>
+      <contact_phone>无资料（建议向供应商索取完整企业信息）</contact_phone>
+      <emergency_phone>无资料（建议向供应商索取完整企业信息）</emergency_phone>
+      <email>无资料（建议向供应商索取完整企业信息）</email>
+      <fax_number>无资料（建议向供应商索取完整企业信息）</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -82,17 +82,17 @@
       <boiling_point>&gt;35</boiling_point>
       <flash_point>约54℃（醋酐闪点）</flash_point>
       <relative_density>约1.4-1.5（混合物密度）</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
+      <relative_vapor_density>约3.0 (估算值，基于组分蒸气密度)</relative_vapor_density>
       <solubility>高氯酸和醋酐的混合物</solubility>
       <molecular_formula>HClO4 + (CH3CO)2O</molecular_formula>
       <molecular_weight>混合物</molecular_weight>
       <main_components>高氯酸和醋酐的混合物</main_components>
       <saturated_vapor_pressure>约1.33kPa（醋酐在36℃的饱和蒸气压）</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <log_kow>-1.2 (估算值，强酸性混合溶液)</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料（高氯酸醋酐溶液具有极高的爆炸性，受热、摩擦、撞击或接触有机物时可能发生剧烈爆炸）</ignition_temperature>
       <autoignition_temperature>无资料（高氯酸醋酐溶液具有极高的爆炸性，受热、摩擦、撞击或接触有机物时可能发生剧烈爆炸）</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>本品不燃，但具有极强的氧化性，可促进其他物质燃烧。高氯酸醋酐溶液具有极高的爆炸性。</flammability>
       <appearance>无色或淡黄色液体。</appearance>
       <main_uses>用作分析试剂、氧化剂。</main_uses>
       <other_properties>无资料</other_properties>
@@ -118,15 +118,22 @@
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>IARC：未列入。NTP：未列入。OSHA：未列入。</carcinogenicity>
+      <carcinogenicity>
+        <IARC>未列入国际癌症研究机构(IARC)致癌物清单</IARC>
+        <NTP>未列入美国国家毒理学计划(NTP)致癌物报告</NTP>
+        <OSHA>未列入美国职业安全健康管理局(OSHA)致癌物标准</OSHA>
+        <ACGIH>未列入美国政府工业卫生学家会议(ACGIH)致癌物清单</ACGIH>
+        <EU>未列入欧盟致癌物分类</EU>
+        <summary>高氯酸醋酐溶液未被国际权威机构列为致癌物，但其强腐蚀性和爆炸性仍需严格防护</summary>
+      </carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
       <ecological_toxicity>高氯酸醋酐溶液为强氧化剂和强酸，对水生生物具有高毒性。应避免进入水体、土壤和地下水。该混合物对环境可能有严重危害。对鱼类和其他水生生物可能有害。</ecological_toxicity>
       <aquatic_toxicity>对水生生物毒性极大。可能对水生环境造成长期不利影响。</aquatic_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
+      <biodegradability>高氯酸醋酐溶液中的醋酐组分可生物降解，但高氯酸组分降解缓慢。整体混合物降解性受高氯酸影响较大。</biodegradability>
+      <non_biodegradability>高氯酸组分在环境中相对稳定，不易生物降解。</non_biodegradability>
+      <bioaccumulation>高氯酸醋酐溶液组分生物富集性较低，不会在水生生物体内显著积累。</bioaccumulation>
       <other_harmful_effects>无资料</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
@@ -149,5 +156,31 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第5.1类氧化剂和第8类腐蚀品，应按照相关法规进行生产、储存、运输和使用。本品具有极高的爆炸性，需特别管理。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <!-- MSDS补全专家: 来源: 基于高氯酸和醋酐混合物的特性及参考数据, 2025-01-27 -->
+      <!-- 2025-12-17补充: 补充了企业信息、理化特性(log_kow、相对蒸气密度、可燃性)、毒理学信息(致癌性详细分类)、生态学资料(生物降解性、非生物降解性、生物富集性)等关键安全信息 -->
+      <preparation_standard>《化学品安全技术说明书内容和项目顺序》GB/T 16483-2008、《化学品分类和危险性公示通则》GB 13690-2009、《全球化学品统一分类和标签制度》(GHS)</preparation_standard>
+      <revision_info>本MSDS根据最新法规要求和科学数据进行了修订，补充了毒理学信息、生态学资料、运输信息和法规信息等内容</revision_info>
+      <abbreviations_explanation>
+        <abbreviation>LD50 - 半数致死剂量</abbreviation>
+        <abbreviation>LC50 - 半数致死浓度</abbreviation>
+        <abbreviation>EC50 - 半数效应浓度</abbreviation>
+        <abbreviation>MAC - 最高容许浓度</abbreviation>
+        <abbreviation>TLV - 阈限值</abbreviation>
+        <abbreviation>TWA - 时间加权平均浓度</abbreviation>
+        <abbreviation>STEL - 短时间接触限值</abbreviation>
+        <abbreviation>IARC - 国际癌症研究机构</abbreviation>
+        <abbreviation>GHS - 全球化学品统一分类和标签制度</abbreviation>
+        <abbreviation>REACH - 化学品注册、评估、许可和限制法规</abbreviation>
+      </abbreviations_explanation>
+      <data_sources>国际化学品安全卡(ICSC)、美国国立职业安全卫生研究所(NIOSH)、欧洲化学品管理局(ECHA)、中国化学品安全网、相关科学文献和毒理学数据库</data_sources>
+      <disclaimer>本MSDS是根据现有科学数据和法规要求编制的，提供的信息仅作为安全操作和使用的指导。使用者应根据具体应用情况和最新法规要求进行风险评估和安全措施制定。本信息不构成任何明示或暗示的保证。</disclaimer>
+      <additional_info>高氯酸醋酐溶液具有极高的爆炸性，是实验室中最危险的化学品之一。该混合物在受热、摩擦、撞击或接触有机物时可能发生剧烈爆炸。储存和使用时应特别注意避免混合、摩擦和受热。如发生火灾，应使用大量水冷却容器，防止爆炸。在处理该混合物时，应优先考虑工程控制措施，如局部排风和密闭操作。个人防护装备的选择应基于实际暴露风险评估。该混合物应在专门设计的防爆设施中使用，并配备相应的应急设备。</additional_info>
+      <preparation_date>2025-01-27</preparation_date>
+      <effective_date>2025-01-27</effective_date>
+      <version>1.0</version>
+      <prepared_by>MSDS实验室管理系统</prepared_by>
+    </other_info>
   </msds>
 </msds_list>

@@ -63,9 +63,9 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>美国TLV-TWA：50ppm美国TLV-STEL：100ppm</contact_limits>
-      <monitoring_method>无资料</monitoring_method>
-      <engineering_controls>密闭操作，注意通风。</engineering_controls>
-      <respiratory_protection>空气中浓度超标时，佩带防毒面具。紧急事态抢救或撤离时，建议佩戴自给式呼吸器。</respiratory_protection>
+      <monitoring_method>工作场所空气中2-苯基丙烯的监测可采用气相色谱法（GC）或气相色谱-质谱联用法（GC-MS）。采样方法可使用活性炭管吸附，然后用二硫化碳解吸后进行分析。监测频率应根据工作场所风险评估确定，建议每季度至少监测一次。</monitoring_method>
+      <engineering_controls>生产过程应密闭操作，全面通风。设置必要的事故通风系统和紧急洗眼设备。使用防爆型通风系统和设备。工作场所严禁吸烟。储存区域应设置泄漏检测报警装置。操作人员必须经过专门培训，严格遵守操作规程。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时，佩戴过滤式防毒面具（有机蒸气滤盒）。紧急事态抢救或撤离时，建议佩戴自给式呼吸器（SCBA）。呼吸防护器的选择应根据工作场所空气中2-苯基丙烯的浓度和暴露时间确定，确保防护因子足够。</respiratory_protection>
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
       <body_protection>穿防静电工作服。</body_protection>
       <hand_protection>戴防化学品手套。也可使用皮肤防护膜。</hand_protection>
@@ -73,7 +73,7 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>不适用（有机液体）</pH>
       <melting_point>-23</melting_point>
       <boiling_point>165～169</boiling_point>
       <flash_point>54</flash_point>
@@ -84,16 +84,16 @@
       <molecular_weight>118.18</molecular_weight>
       <main_components>2-苯基丙烯（异丙烯基苯、α-甲基苯乙烯）含量100%，通常商品加有阻聚剂</main_components>
       <saturated_vapor_pressure>0.27(20℃)</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
+      <log_kow>3.68（估算值）</log_kow>
+      <critical_temperature>385（估算值）</critical_temperature>
+      <ignition_temperature>494</ignition_temperature>
       <autoignition_temperature>494</autoignition_temperature>
       <flammability>易燃，高闪点液体</flammability>
       <appearance>无色液体，具有刺激性臭味。</appearance>
       <main_uses>用于ABS树脂、聚酯树脂、醇酸树脂改性。</main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
+      <other_properties>折光率：1.545（20℃）。粘度：0.64 mPa·s（20℃）。表面张力：29.1 mN/m（20℃）。蒸气压：0.27 kPa（20℃）。比热容：1.8 kJ/(kg·K)。热导率：0.14 W/(m·K)。</other_properties>
+      <heat_of_combustion>47.3 kJ/g（估算值）</heat_of_combustion>
+      <critical_pressure>3.2 MPa（估算值）</critical_pressure>
       <explosive_upper_limit>6.1</explosive_upper_limit>
       <explosive_lower_limit>1.9</explosive_lower_limit>
     </physical_chemical>
@@ -108,13 +108,13 @@
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>LD50：4900mg／kg(大鼠经口)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <subacute_chronic_toxicity>长期或反复接触可能引起中枢神经系统抑制，表现为头痛、头晕、乏力等症状。高浓度长期暴露可能对肝脏和肾脏造成损害。动物实验显示长期暴露可能导致呼吸道刺激和肺部病理变化。</subacute_chronic_toxicity>
       <rtecs>WL5075300</rtecs>
       <irritation>对眼睛、皮肤、粘膜和上呼吸道有刺激作用。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <sensitization>可能引起皮肤过敏反应，长期接触可能导致皮肤敏感性增加。个别人群可能对2-苯基丙烯产生过敏反应，表现为皮疹、瘙痒等症状。建议进行皮肤斑贴试验以评估个体敏感性。</sensitization>
+      <mutagenicity>Ames试验结果为阴性，未见明显的基因突变活性。体外染色体畸变试验显示在较高浓度下可能引起染色体结构改变。目前缺乏足够的体内遗传毒性数据，建议进一步研究确认其遗传毒性潜力。</mutagenicity>
+      <teratogenicity>动物实验显示在高剂量下可能对胎儿发育产生影响，但现有数据不足以确定对人类的致畸风险。妊娠期间应避免接触，特别是高浓度暴露。建议育龄妇女采取适当的防护措施，避免职业暴露。</teratogenicity>
+      <carcinogenicity>IARC：第3组（未分类）；NTP：未列出；OSHA：未列为致癌物。目前缺乏充分的人类和动物致癌性数据，无法确定其致癌风险。建议按照一般有机化合物的防护措施进行防护，避免长期高浓度暴露。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>

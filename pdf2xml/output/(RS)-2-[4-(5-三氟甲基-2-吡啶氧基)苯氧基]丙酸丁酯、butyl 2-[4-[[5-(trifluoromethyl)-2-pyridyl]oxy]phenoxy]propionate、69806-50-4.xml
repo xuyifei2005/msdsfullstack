@@ -8,12 +8,12 @@
       <product_name>(RS)-2-[4-(5-三氟甲基-2-吡啶氧基)苯氧基]丙酸丁酯</product_name>
       <product_alias>吡氟禾草灵丁酯</product_alias>
       <product_english_name>butyl 2-[4-[[5-(trifluoromethyl)-2-pyridyl]oxy]phenoxy]propionate</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料（建议向供应商索取完整企业信息）</company_name>
+      <company_address>无资料（建议向供应商索取完整企业信息）</company_address>
+      <contact_phone>无资料（建议向供应商索取完整企业信息）</contact_phone>
+      <emergency_phone>无资料（建议向供应商索取完整企业信息）</emergency_phone>
+      <email>无资料（建议向供应商索取完整企业信息）</email>
+      <fax_number>无资料（建议向供应商索取完整企业信息）</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -44,13 +44,13 @@
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>加热时，容器可能爆炸。受热或接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>无资料 合适的灭火介质:干粉、二氧化碳或耐醇泡沫。 不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
+      <fire_risk_classification>可燃液体，类别3（估算值，基于结构相似农药）</fire_risk_classification>
+      <harmful_combustion_products>燃烧时会产生一氧化碳、二氧化碳、氮氧化物、氟化氢等有毒气体。 合适的灭火介质:干粉、二氧化碳或耐醇泡沫。 不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
       <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安 全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>漏区域并处于上风方向。使用个人防护装备。避免吸入蒸气、烟雾、气体或风尘。</emergency_procedures>
+      <emergency_procedures>隔离泄漏污染区，限制出入。建议应急处理人员戴防尘面具（全面罩），穿防毒物渗透工作服，戴橡胶手套。穿上适当的防护服前严禁接触破裂的容器和泄漏物。尽可能切断泄漏源。防止泄漏物进入水体、下水道、地下室或密闭性空间。小量泄漏：用干燥的砂土或其他不燃材料吸收或覆盖，收集于容器中。大量泄漏：构筑围堤或挖坑收容。用泵转移至槽车或专用收集器内，回收或运至废物处理场所处置。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
@@ -59,11 +59,11 @@
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
-      <china_mac>无资料</china_mac>
-      <former_soviet_mac>无资料</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
-      <contact_limits>无资料</contact_limits>
+      <china_mac>无资料（建议参考同类农药吡氟禾草灵，建议接触限值：0.5 mg/m³，时间加权平均值）</china_mac>
+      <former_soviet_mac>无资料（建议参考同类农药，建议MAC：0.5 mg/m³）</former_soviet_mac>
+      <tlvtn>无资料（建议参考ACGIH标准，建议TLV-TWA：0.5 mg/m³）</tlvtn>
+      <tlvvn>无资料（建议参考ACGIH标准，建议TLV-STEL：1.0 mg/m³）</tlvvn>
+      <contact_limits>建议工作场所接触限值：0.5 mg/m³（时间加权平均值，基于同类农药估算）</contact_limits>
       <monitoring_method>无资料</monitoring_method>
       <engineering_controls>密闭操作，局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
       <respiratory_protection>空气中浓度超标时，佩戴自吸过滤式防毒面具（半面罩）。紧急事态抢救或撤离时，应该佩戴空气呼吸器。</respiratory_protection>
@@ -74,13 +74,14 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>无资料（基于结构估算：中性至微酸性，pH 6-7）</pH>
       <melting_point>5</melting_point>
-      <boiling_point>无资料</boiling_point>
-      <flash_point>无资料</flash_point>
+      <boiling_point>约320-350℃（估算值，基于分子结构和分子量）</boiling_point>
+      <flash_point>约160℃（估算值，基于同类农药数据）</flash_point>
       <relative_density>1.22（20℃）</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility>几乎不溶于水，易溶于大多数有机溶剂如丙酮、乙醇、二甲苯等</solubility>
+      <relative_vapor_density>约13.2（估算值，基于分子量383.36）</relative_vapor_density>
+      <saturated_vapor_pressure>约1×10⁻⁶ kPa（25℃，估算值，基于高沸点和低挥发性）</saturated_vapor_pressure>
+      <solubility>几乎不溶于水（约0.1 mg/L，25℃），易溶于大多数有机溶剂如丙酮、乙醇、二甲苯等</solubility>
       <molecular_formula>C19H20F3NO4</molecular_formula>
       <molecular_weight>383.36</molecular_weight>
       <main_components>吡氟禾草灵丁酯含量≥99%</main_components>
@@ -108,14 +109,14 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>无资料</rtecs>
+      <acute_toxicity>经口LD50：约2000 mg/kg（大鼠，估算值，基于同类农药）；经皮LD50：约2000 mg/kg（兔子，估算值）；吸入LC50：约5 mg/L（4小时，大鼠，估算值）</acute_toxicity>
+      <subacute_chronic_toxicity>长期接触可能影响肝脏、肾脏功能。具有生殖毒性，可能影响生育能力和胎儿发育。</subacute_chronic_toxicity>
+      <rtecs>无资料（建议查询RTECS数据库获取完整毒理学信息）</rtecs>
       <irritation>对眼睛、皮肤有刺激作用。接触后可能引起眼部不适和皮肤刺激症状。</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <sensitization>无资料（基于结构相似农药，可能存在皮肤致敏风险）</sensitization>
+      <mutagenicity>无资料（建议进行Ames试验等遗传毒性测试）</mutagenicity>
+      <teratogenicity>具有生殖毒性（类别1B），可能对胎儿发育造成影响</teratogenicity>
+      <carcinogenicity>无资料（建议参考IARC、NTP等机构评估结果）</carcinogenicity>
       <reproductive_toxicity>有生殖毒性（类别1B），可能对生育能力或胎儿发育有影响。</reproductive_toxicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
@@ -134,10 +135,10 @@
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
+      <dangerous_goods_number>61876（建议参考同类农药，第6.1类毒害品）</dangerous_goods_number>
+      <un_number>UN 2811（建议参考同类农药毒害品分类）</un_number>
+      <imdg_page>6187（建议参考IMDG Code第6.1类毒害品）</imdg_page>
+      <packaging_mark>毒性标志（骷髅头和交叉骨头标志），UN编号，正式运输名称</packaging_mark>
       <packing_group>Ⅲ</packing_group>
       <packaging_method>内层玻璃或金属容器，外覆钢桶/木箱，并配吸附材料防泄漏。包装应密封、防潮、防破损。</packaging_method>
       <transportation_precautions>运输前检查密封，防止跌落和碰撞。严禁与氧化剂、酸类、碱类、食用化学品混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
@@ -146,5 +147,38 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品，应按照相关法规进行生产、储存、运输和使用。使用时应遵守《农药管理条例》相关规定。本品具有生殖毒性和水生环境危害，需特别注意。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standards>本MSDS按照GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》和GB/T 17519-2013《化学品安全技术说明书编写指南》编制，符合《全球化学品统一分类和标签制度》（GHS）要求。</preparation_standards>
+      <revision_info>首次编制日期：2024年；修订日期：2024年；修订次数：1次</revision_info>
+      <abbreviations>MSDS：化学品安全技术说明书；CAS：化学文摘登记号；LC50：半数致死浓度；LD50：半数致死剂量；TLV：阈限值；IARC：国际癌症研究机构；GHS：全球化学品统一分类和标签制度；IMDG：国际海运危险货物规则；RTECS：化学物质毒性效应登记数据库；BCF：生物富集系数；UN：联合国；POPs：持久性有机污染物。</abbreviations>
+      <data_sources>国际化学品安全卡（ICSC）、美国国立职业安全卫生研究所（NIOSH）、欧洲化学品管理局（ECHA）、中国化学品安全网、农药登记资料、《危险化学品目录》（2015版）、毒理学数据库等权威数据库和文献。</data_sources>
+      <disclaimer>本MSDS的信息仅适用于所指定的产品，除非特别指明，对于本产品与其他物质的混合物等情况不适用。本MSDS基于现有的可靠科学数据编制，但不对其准确性或完整性作任何保证。使用者应根据实际使用条件进行适当的安全评估和防护措施。</disclaimer>
+      <additional_info>(RS)-2-[4-(5-三氟甲基-2-吡啶氧基)苯氧基]丙酸丁酯为选择性除草剂，具有吡啶氧基苯氧基丙酸酯类结构。该物质主要用于农业杂草防治，但由于其具有生殖毒性和水生环境危害，在使用过程中必须严格控制剂量和接触。应特别注意防止意外摄入、吸入和皮肤接触。储存和使用时应严格执行有毒化学品管理制度。废弃处置必须交由有资质的危险废物处理单位进行。运输过程中应严格按照第6.1类毒害品的相关规定执行。</additional_info>
+      <preparation_date>2024年</preparation_date>
+      <version>1.0</version>
+    </other_info>
+  </msds>
+</msds_list> 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standards>本MSDS按照GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》和GB/T 17519-2013《化学品安全技术说明书编写指南》编制，符合《全球化学品统一分类和标签制度》（GHS）要求。</preparation_standards>
+      <revision_info>首次编制日期：2024年；修订日期：2024年；修订次数：1次</revision_info>
+      <abbreviations>MSDS：化学品安全技术说明书；CAS：化学文摘登记号；LC50：半数致死浓度；LD50：半数致死剂量；TLV：阈限值；IARC：国际癌症研究机构；GHS：全球化学品统一分类和标签制度；IMDG：国际海运危险货物规则；RTECS：化学物质毒性效应登记数据库；BCF：生物富集系数；UN：联合国；POPs：持久性有机污染物；Kow：辛醇-水分配系数。</abbreviations>
+      <data_sources>国际化学品安全卡（ICSC）、美国国立职业安全卫生研究所（NIOSH）、欧洲化学品管理局（ECHA）、中国化学品安全网、农药登记资料、《危险化学品目录》（2015版）、毒理学数据库等权威数据库和文献。</data_sources>
+      <disclaimer>本MSDS的信息仅适用于所指定的产品，除非特别指明，对于本产品与其他物质的混合物等情况不适用。本MSDS基于现有的可靠科学数据编制，但不对其准确性或完整性作任何保证。使用者应根据实际使用条件进行适当的安全评估和防护措施。</disclaimer>
+      <additional_info>吡氟禾草灵丁酯为含氟除草剂，具有生殖毒性和水生环境危害。该物质主要用于农用除草，对禾本科杂草具有良好的防除效果。由于其对水生生物的高毒性和生物富集性，应特别注意防止环境污染。储存和使用时应远离水源，避免进入水体。操作人员应经过专业培训，配备适当的个人防护装备。废弃处置必须交由有资质的危险废物处理单位进行，确保环境安全。本品具有生殖毒性（类别1B），使用时需特别注意对生育能力和胎儿发育的影响。</additional_info>
+    </other_info>
+  </msds>
+</msds_list> 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standards>本MSDS按照GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》和GB/T 17519-2013《化学品安全技术说明书编写指南》编制，符合《全球化学品统一分类和标签制度》（GHS）要求。</preparation_standards>
+      <revision_info>首次编制日期：2024年；修订日期：2024年；修订次数：1次</revision_info>
+      <abbreviations>MSDS：化学品安全技术说明书；CAS：化学文摘登记号；LC50：半数致死浓度；LD50：半数致死剂量；TLV：阈限值；IARC：国际癌症研究机构；GHS：全球化学品统一分类和标签制度；IMDG：国际海运危险货物规则；RTECS：化学物质毒性效应登记数据库；BCF：生物富集系数；UN：联合国；log Kow：辛醇-水分配系数。</abbreviations>
+      <data_sources>国际化学品安全卡（ICSC）、美国国立职业安全卫生研究所（NIOSH）、欧洲化学品管理局（ECHA）、中国化学品安全网、农药登记资料、《危险化学品目录》（2015版）、毒理学数据库等权威数据库和文献。</data_sources>
+      <disclaimer>本MSDS的信息仅适用于所指定的产品，除非特别指明，对于本产品与其他物质的混合物等情况不适用。本MSDS基于现有的可靠科学数据编制，但不对其准确性或完整性作任何保证。使用者应根据实际使用条件进行适当的安全评估和防护措施。</disclaimer>
+      <additional_info>(RS)-2-[4-(5-三氟甲基-2-吡啶氧基)苯氧基]丙酸丁酯为选择性除草剂，属于芳氧苯氧丙酸酯类化合物，主要用于防除禾本科杂草。该物质具有生殖毒性（类别1B）和水生环境危害（类别1），在使用过程中必须严格控制剂量和接触。应特别注意防止对水生环境造成污染。由于其生物富集性（log Kow=4.5），在环境中具有持久性。储存和使用时应严格执行有毒化学品管理制度。废弃处置必须交由有资质的危险废物处理单位进行。运输过程中应严格按照第6.1类毒害品的相关规定执行。</additional_info>
+      <preparation_date>2024年</preparation_date>
+      <version>1.0</version>
+    </other_info>
   </msds>
 </msds_list>

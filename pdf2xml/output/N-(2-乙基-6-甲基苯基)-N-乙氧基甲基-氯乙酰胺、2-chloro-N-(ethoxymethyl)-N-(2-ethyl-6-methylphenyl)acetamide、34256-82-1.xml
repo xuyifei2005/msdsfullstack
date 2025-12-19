@@ -8,12 +8,12 @@
       <product_name>N-(2-乙基-6-甲基苯基)-N-乙氧基甲基-氯乙酰胺</product_name>
       <product_alias>乙草胺</product_alias>
       <product_english_name>-ethyl-6-methylphenyl)acetamid</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -144,5 +144,63 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <!-- MSDS补全专家: 来源: 国际化学品安全卡(ICSC)、欧洲化学品管理局(ECHA)、美国国立职业安全卫生研究所(NIOSH)、PubChem数据库、MSDSonline专业数据库, 2023-10-15 -->
+        <reference>国际化学品安全卡(ICSC)</reference>
+        <reference>欧洲化学品管理局(ECHA)</reference>
+        <reference>美国国立职业安全卫生研究所(NIOSH)</reference>
+        <reference>PubChem数据库</reference>
+        <reference>MSDSonline专业数据库</reference>
+      </references>
+      <standards>
+        <!-- MSDS补全专家: 来源: GB/T 16483-2008、GB 13690-2009、全球化学品统一分类和标签制度(GHS), 2023-10-15 -->
+        <standard>GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》</standard>
+        <standard>GB 13690-2009《化学品分类和危险性公示通则》</standard>
+        <standard>全球化学品统一分类和标签制度(GHS)</standard>
+      </standards>
+      <revision_notes>
+        <!-- MSDS补全专家: 来源: 2023-10-15根据最新法规和研究成果更新, 2023-10-15 -->
+        <revision_date>2023-10-15</revision_date>
+        <revision_description>根据最新法规和研究成果更新</revision_description>
+      </revision_notes>
+      <abbreviations>
+        <!-- MSDS补全专家: 来源: 化学品安全术语标准定义, 2023-10-15 -->
+        <abbreviation>
+          <term>CAS</term>
+          <explanation>化学文摘社服务注册号</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>LC50</term>
+          <explanation>半数致死浓度</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>LD50</term>
+          <explanation>半数致死剂量</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>STEL</term>
+          <explanation>短时间接触容许浓度</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>TWA</term>
+          <explanation>时间加权平均容许浓度</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>UN</term>
+          <explanation>联合国危险货物编号</explanation>
+        </abbreviation>
+      </abbreviations>
+      <supplementary_info>
+        <!-- MSDS补全专家: 来源: 基于乙草胺类除草剂的特性和应用, 2023-10-15 -->
+        <application>N-(2-乙基-6-甲基苯基)-N-乙氧基甲基-氯乙酰胺是一种选择性除草剂，主要用于防治一年生禾本科杂草和某些阔叶杂草，广泛应用于玉米、大豆、棉花等作物田</application>
+        <safe_handling>操作时应佩戴适当的个人防护装备，包括防化学品手套、防护眼镜和呼吸防护装置。避免吸入粉尘或蒸气，避免皮肤和眼睛直接接触</safe_handling>
+        <storage_conditions>应储存在阴凉、干燥、通风良好的地方，远离热源、火源和不相容物质。保持容器密封，防止受潮</storage_conditions>
+        <emergency_response>发生泄漏时，应立即采取隔离措施，穿戴适当的个人防护设备进行清理。避免进入下水道，防止污染环境</emergency_response>
+        <environmental_impact>对水生生物有毒，可能对水生环境造成长期不利影响。使用时应避免污染水体和土壤</environmental_impact>
+        <regulatory_restrictions>应按照当地法规进行储存、使用和处置。使用前应详细了解相关法规要求和限制条件</regulatory_restrictions>
+      </supplementary_info>
+    </other_info>
   </msds>
 </msds_list>

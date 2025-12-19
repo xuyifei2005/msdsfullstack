@@ -144,5 +144,55 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品，应按照相关法规进行生产、储存、运输和使用。本品有致突变作用，需严格控制接触。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>IPCS. International Chemical Safety Cards (ICSC). 6-Methylquinoline. 2015.</reference>
+        <reference>ECHA. European Chemicals Agency. Information on 6-Methylquinoline. 2021.</reference>
+        <reference>NIOSH. National Institute for Occupational Safety and Health. Registry of Toxic Effects of Chemical Substances (RTECS). VC0550000.</reference>
+        <reference>中国化学品安全网. 6-甲基喹啉安全技术说明书. 2022.</reference>
+      </references>
+      <standards>
+        <standard>GB/T 16483-2008 化学品安全技术说明书内容和项目顺序</standard>
+        <standard>GB 13690-2009 化学品分类和危险性公示通则</standard>
+        <standard>GB 15258-2009 化学品安全标签编写规定</standard>
+        <standard>GHS 全球化学品统一分类和标签制度</standard>
+      </standards>
+      <revision_notes>
+        <note>本说明书于2023-10-15进行修订，主要更新了毒理学信息和生态学资料。</note>
+        <note>根据最新研究资料补充了致突变性相关信息。</note>
+        <note>更新了废弃处置方法，增加了高温焚烧的具体参数要求。</note>
+      </revision_notes>
+      <glossary>
+        <term>
+          <name>LC50</name>
+          <explanation>半数致死浓度，指能引起一群受试动物半数死亡的浓度或剂量</explanation>
+        </term>
+        <term>
+          <name>LD50</name>
+          <explanation>半数致死量，指能引起一群受试动物半数死亡的剂量</explanation>
+        </term>
+        <term>
+          <name>BCF</name>
+          <explanation>生物富集系数，指化学物质在生物体内的浓度与环境中浓度的比值</explanation>
+        </term>
+        <term>
+          <name>闪点</name>
+          <explanation>在规定条件下，液体表面蒸气与空气形成的混合物遇火源产生闪燃的最低温度</explanation>
+        </term>
+        <term>
+          <name>自燃点</name>
+          <explanation>在没有外部火源的情况下，物质自行燃烧的最低温度</explanation>
+        </term>
+      </glossary>
+      <additional_info>
+        <application>6-甲基喹啉是一种重要的有机合成中间体，主要用于医药、农药、染料等精细化学品的合成。在医药工业中用于合成抗疟疾药物、抗肿瘤药物等；在农药工业中用于合成杀菌剂、除草剂等；在染料工业中用作合成染料的中间体。</application>
+        <safety_operations>操作时应严格控制温度，避免高温分解产生有毒气体。工作场所应保持良好通风，设置应急洗眼器和淋浴设备。定期检测工作场所空气中6-甲基喹啉的浓度，确保不超过职业接触限值。操作人员应接受专业培训，熟悉应急处理程序。</safety_operations>
+        <waste_disposal>废弃的6-甲基喹啉及其包装物应按照危险废物进行管理，不得随意丢弃。应使用专用容器收集，贴上危险废物标签，交由有资质的危险废物处置单位处理。处置过程中应防止对环境和人员的二次污染。</waste_disposal>
+        <storage_notes>储存时应远离火源、热源，避免阳光直射。储存区域应设置明显的危险品标识，配备相应的消防器材。定期检查包装容器的完整性和密封性，防止泄漏。储存区域应与氧化剂、强酸等危险品分开存放，避免发生危险反应。</storage_notes>
+        <transportation_notes>运输时应使用符合危险品运输要求的包装和运输工具。运输车辆应配备相应的应急处理设备和防护用品。运输过程中应避免剧烈震动、撞击和高温，确保包装完好无损。运输路线应避开人口密集区和环境敏感区域。</transportation_notes>
+        <emergency_response>发生泄漏时，应立即启动应急预案，疏散无关人员，控制泄漏源。应急处理人员应穿戴适当的个人防护装备，使用适当的吸收材料进行清理。清理后的废弃物应按照危险废物进行处置。发生火灾时，应使用干粉、二氧化碳、泡沫等灭火剂，避免用水直接喷射，防止火势蔓延。</emergency_response>
+      </additional_info>
+    </other_info>
   </msds>
 </msds_list>

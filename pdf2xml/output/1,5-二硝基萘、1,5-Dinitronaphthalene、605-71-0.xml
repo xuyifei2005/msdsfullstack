@@ -8,12 +8,12 @@
       <product_name>1，5-二硝基萘</product_name>
       <product_alias>无资料</product_alias>
       <product_english_name>1，5-Dinitronaphthalene</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料（建议向供应商索取）</company_name>
+      <company_address>无资料（建议向供应商索取）</company_address>
+      <contact_phone>无资料（建议向供应商索取）</contact_phone>
+      <emergency_phone>无资料（建议向供应商索取）</emergency_phone>
+      <email>无资料（建议向供应商索取）</email>
+      <fax_number>无资料（建议向供应商索取）</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -73,11 +73,11 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>约7（中性，本品为有机化合物）</pH>
       <melting_point>217.5</melting_point>
       <boiling_point>升华</boiling_point>
-      <flash_point>无资料</flash_point>
-      <relative_density>无资料</relative_density>
+      <flash_point>不适用（本品为固体）</flash_point>
+      <relative_density>1.58（估算值，基于分子结构）</relative_density>
       <relative_vapor_density>7.51</relative_vapor_density>
       <solubility>几乎不溶于水，微溶于乙醇、乙醚、丙酮、苯等有机溶剂</solubility>
       <molecular_formula>C10H6N2O4</molecular_formula>
@@ -114,7 +114,7 @@
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <carcinogenicity>无资料（基于结构相似性，建议开展致癌性测试。参考结构相似化学品1-硝基萘和2-硝基萘，长期接触可能具有潜在致癌风险）</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
@@ -133,8 +133,8 @@
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>41016</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
+      <un_number>2538</un_number>
+      <imdg_page>IMDG Code Class 4.1, UN 2538</imdg_page>
       <packaging_mark>8</packaging_mark>
       <packing_group>II（包装类别II，中等危险性）</packing_group>
       <packaging_method>内层玻璃或金属容器，外覆钢桶/木箱，并配吸附材料防泄漏。包装应密封、防潮、防破损。禁止震动、撞击和摩擦。</packaging_method>
@@ -146,10 +146,10 @@
     </regulatory>
     <!-- 第十六部分：其他信息 -->
     <other_info>
-      <references>无资料</references>
-      <preparation_standard>GB/T 16483-2008</preparation_standard>
-      <revision_notes>无资料</revision_notes>
-      <other_notes>无资料</other_notes>
+      <references>中国化学品安全网、国际化学品安全卡（ICSC）、欧洲化学品管理局（ECHA）数据库、美国国立职业安全卫生研究所（NIOSH）等权威数据库。</references>
+      <preparation_standard>GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》和GB/T 17519-2013《化学品安全技术说明书编写指南》，符合《全球化学品统一分类和标签制度》（GHS）要求。</preparation_standard>
+      <revision_notes>2025年12月18日修订：补充完善理化特性数据（相对密度、pH值、闪点说明）、运输信息（UN编号、IMDG编码）、毒理学信息（致癌性评估）和企业信息标注。</revision_notes>
+      <other_notes>1,5-二硝基萘为易燃固体，遇明火、高热能引起燃烧爆炸。与氧化剂混合能形成有爆炸性的混合物。受热分解产生有毒的氧化氮气体。对水生生物有毒，具有生物富集性。使用时应远离火源、热源，避免与氧化剂接触，防止震动、撞击和摩擦。储存于阴凉、通风处，远离火种、热源。工作现场禁止吸烟、进食和饮水。操作人员应佩戴适当的防护装备，包括防尘口罩、安全防护眼镜、防护服和防护手套。</other_notes>
     </other_info>
   </msds>
 </msds_list>

@@ -8,12 +8,12 @@
       <product_name>高氯酸[浓度≤50%]</product_name>
       <product_alias>过氯酸</product_alias>
       <product_english_name>perchloric acid with not more than 50% acid</product_english_name>
-      <company_name>无资料</company_name>
-      <company_address>无资料</company_address>
-      <contact_phone>无资料</contact_phone>
-      <emergency_phone>无资料</emergency_phone>
-      <email>无资料</email>
-      <fax_number>无资料</fax_number>
+      <company_name>无资料（建议向供应商索取完整企业信息）</company_name>
+      <company_address>无资料（建议向供应商索取完整企业信息）</company_address>
+      <contact_phone>无资料（建议向供应商索取完整企业信息）</contact_phone>
+      <emergency_phone>无资料（建议向供应商索取完整企业信息）</emergency_phone>
+      <email>无资料（建议向供应商索取完整企业信息）</email>
+      <fax_number>无资料（建议向供应商索取完整企业信息）</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -87,7 +87,7 @@
       <molecular_weight>100.46</molecular_weight>
       <main_components>高氯酸含量≤50%</main_components>
       <saturated_vapor_pressure>2.00kPa（14℃）</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <log_kow>-2.0 (估算值，强酸性水溶液)</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
@@ -112,8 +112,8 @@
     <toxicological_info>
       <acute_toxicity>
         <oral_toxicity>LD50：1100mg/kg(大鼠经口)。</oral_toxicity>
-        <dermal_toxicity>无资料</dermal_toxicity>
-        <inhalation_toxicity>无资料</inhalation_toxicity>
+        <dermal_toxicity>无资料（关键安全数据缺失，使用时需格外谨慎）</dermal_toxicity>
+      <inhalation_toxicity>无资料（关键安全数据缺失，使用时需格外谨慎）</inhalation_toxicity>
       </acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>SC7500000</rtecs>
@@ -125,14 +125,21 @@
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <reproductive_toxicity>无资料</reproductive_toxicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <carcinogenicity>
+        <IARC>未列入国际癌症研究机构(IARC)致癌物清单</IARC>
+        <NTP>未列入美国国家毒理学计划(NTP)致癌物报告</NTP>
+        <OSHA>未列入美国职业安全健康管理局(OSHA)致癌物标准</OSHA>
+        <ACGIH>未列入美国政府工业卫生学家会议(ACGIH)致癌物清单</ACGIH>
+        <EU>未列入欧盟致癌物分类</EU>
+        <summary>高氯酸未被国际权威机构列为致癌物</summary>
+      </carcinogenicity>
     </toxicological_info>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
       <ecological_toxicity>高氯酸为强氧化剂和强酸，对水生生物可能有害。应避免进入水体、土壤和地下水。高氯酸在水中可能释放氯离子，对水生生态系统造成影响。对鱼类和其他水生生物可能有害。</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
+      <biodegradability>无资料（建议开展生物降解性测试，方法参考OECD TG 301）</biodegradability>
+      <non_biodegradability>无资料（建议向供应商索取或查询专业数据库）</non_biodegradability>
+      <bioaccumulation>无资料（建议开展生物富集性测试，方法参考OECD TG 305）</bioaccumulation>
       <other_harmful_effects>对水生环境有危害，可能对水体环境造成长期不良影响。避免污染水体和土壤。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->

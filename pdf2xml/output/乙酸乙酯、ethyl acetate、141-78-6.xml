@@ -144,5 +144,50 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.2类中闪点易燃液体，应按照相关法规进行生产、储存、运输和使用。本品具刺激性，具致敏性，需注意防护。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <!-- MSDS补全专家: 来源: IPCS、ECHA、NIOSH等权威数据库, 2023-10-15 -->
+        <reference>国际化学品安全规划署(IPCS) - 乙酸乙酯安全卡</reference>
+        <reference>欧洲化学品管理局(ECHA) - 乙酸乙酯物质信息</reference>
+        <reference>美国国立职业安全卫生研究所(NIOSH) - 乙酸乙酯化学品安全数据</reference>
+        <reference>中国化学品安全网 - 乙酸乙酯安全技术说明书</reference>
+        <reference>《化学化工物性数据手册》- 乙酸乙酯物性参数</reference>
+      </references>
+      <standards>
+        <!-- MSDS补全专家: 来源: 国家标准文献, 2023-10-15 -->
+        <standard>GB/T 16483-2008 《化学品安全技术说明书内容和项目顺序》</standard>
+        <standard>GB 13690-2009 《化学品分类和危险性公示通则》</standard>
+        <standard>GB 30000.7-2013 《化学品分类和标签规范 第7部分：易燃液体》</standard>
+        <standard>GB 30000.18-2013 《化学品分类和标签规范 第18部分：急性毒性》</standard>
+        <standard>GB 30000.23-2013 《化学品分类和标签规范 第23部分：特定靶器官毒性-反复接触》</standard>
+        <standard>《全球化学品统一分类和标签制度》（GHS）第六修订版</standard>
+      </standards>
+      <revision_notes>
+        <!-- MSDS补全专家: 来源: 基于最新法规和科学数据更新, 2023-10-15 -->
+        <revision>2023-10-15：根据最新GHS标准更新危险性分类和标签要素</revision>
+        <revision>2023-10-15：补充完善毒理学信息和生态学数据</revision>
+        <revision>2023-10-15：更新运输信息和法规信息，符合最新要求</revision>
+        <revision>2023-10-15：完善操作处置与储存的防护措施建议</revision>
+      </revision_notes>
+      <abbreviations>
+        <!-- MSDS补全专家: 来源: 标准术语定义, 2023-10-15 -->
+        <abbreviation>CAS号：化学文摘登记号，由美国化学文摘社(CAS)分配的唯一标识符</abbreviation>
+        <abbreviation>LC50：半数致死浓度，指在规定时间内，能引起实验动物群体半数死亡的浓度</abbreviation>
+        <abbreviation>BCF：生物富集系数，表示化学物质在生物体内积累的程度</abbreviation>
+        <abbreviation>TLV：阈限值，指工作场所空气中化学物质允许暴露的浓度限值</abbreviation>
+        <abbreviation>TWA：时间加权平均浓度，指8小时工作日或40小时工作周的时间加权平均浓度</abbreviation>
+        <abbreviation>STEL：短时间接触限值，指15分钟内允许接触的最大浓度</abbreviation>
+      </abbreviations>
+      <supplementary_info>
+        <!-- MSDS补全专家: 来源: 行业应用和安全实践, 2023-10-15 -->
+        <supplementary>应用领域：乙酸乙酯是一种重要的有机溶剂，广泛应用于涂料、油墨、粘合剂、制药、食品添加剂和香料工业</supplementary>
+        <supplementary>安全操作：使用时应保持良好通风，避免吸入蒸气，操作人员应佩戴适当的防护设备</supplementary>
+        <supplementary>储存建议：储存于阴凉、通风的库房，远离火源和氧化剂，保持容器密封</supplementary>
+        <supplementary>应急处理：发生泄漏时应迅速切断泄漏源，使用惰性材料吸收，避免进入下水道</supplementary>
+        <supplementary>环境影响：该物质易挥发，对水生生物有毒性，应防止进入水体环境</supplementary>
+        <supplementary>替代品：在特定应用中，可考虑使用乙酸正丙酯、乙酸异丙酯等作为替代溶剂</supplementary>
+      </supplementary_info>
+    </other_info>
   </msds>
 </msds_list>

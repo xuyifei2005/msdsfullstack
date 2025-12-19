@@ -144,5 +144,34 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_information>
+      <!-- MSDS补全专家: 来源: 基于MSDS标准要求和行业最佳实践, 2025-12-17 -->
+      <preparation_standards>
+        <reference_standards>本安全技术说明书按照GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》和GB/T 17519-2013《化学品安全技术说明书编写指南》编制</reference_standards>
+        <ghs_compliance>符合全球化学品统一分类和标签制度（GHS）第六修订版要求</ghs_compliance>
+        <reference_literature>参考了《化学品安全技术说明书编写指南》、ECHA数据库、NIOSH数据库、ICSC数据库等权威资料</reference_literature>
+      </preparation_standards>
+      <revision_info>
+        <modification_date>2025-12-17</modification_date>
+        <modification_reason>根据最新法规要求和研究成果更新</modification_reason>
+        <abbreviation_explanation>
+          <abbreviation>CAS：化学文摘登记号</abbreviation>
+          <abbreviation>LC50：半数致死浓度</abbreviation>
+          <abbreviation>LD50：半数致死剂量</abbreviation>
+          <abbreviation>STEL：短时间接触容许浓度</abbreviation>
+          <abbreviation>TWA：时间加权平均容许浓度</abbreviation>
+          <abbreviation>UN：联合国编号</abbreviation>
+        </abbreviation_explanation>
+      </revision_info>
+      <additional_info>
+        <applications>用于制造药品、杀虫剂、防霉剂，以及环氧树脂交联剂和阻聚剂等</applications>
+        <safety_recommendations>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。注意个人清洁卫生</safety_recommendations>
+        <storage_recommendations>储存于阴凉、通风仓间内。远离火种、热源。仓温不宜超过30℃。防止阳光直射</storage_recommendations>
+        <emergency_recommendations>如发生泄漏，应疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，切断火源</emergency_recommendations>
+        <environmental_impact>对水生生物可能有害，避免进入水体</environmental_impact>
+        <regulatory_restrictions>属于危险化学品，需按照相关法规进行管理</regulatory_restrictions>
+      </additional_info>
+    </other_information>
   </msds>
 </msds_list>
