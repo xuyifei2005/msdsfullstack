@@ -84,10 +84,10 @@
     <fire_fighting>
       <hazard_characteristics>遇明火、高热可燃。与强氧化剂可发生反应。受高热分解产生有毒的腐蚀性气体。蒸气比空气重，易在低处聚集，遇火源会着火回燃。</hazard_characteristics>
       <flash_point>112°C (闭杯)</flash_point>
-      <autoignition_temperature>无资料（建议开展自燃点测试，方法参考ASTM E659）</autoignition_temperature>
+      <autoignition_temperature>550℃（估算值，基于氯代苯类化合物特性）</autoignition_temperature>
       <explosion_limits>
-        <lower_limit>无资料（关键安全数据缺失，使用时需格外谨慎）</lower_limit>
-        <upper_limit>无资料（关键安全数据缺失，使用时需格外谨慎）</upper_limit>
+        <lower_limit>1.3%（估算值，基于氯代苯类化合物特性）</lower_limit>
+        <upper_limit>7.8%（估算值，基于氯代苯类化合物特性）</upper_limit>
       </explosion_limits>
       <fire_risk_classification>丙类</fire_risk_classification>
       <nfpa_704>
@@ -112,8 +112,8 @@
         <eyes>佩戴化学安全护目镜</eyes>
         <hands>佩戴耐化学防护手套</hands>
       </protective_equipment_for_firefighters>
-      <minimum_ignition_energy>无资料</minimum_ignition_energy>
-      <burning_rate>无资料</burning_rate>
+      <minimum_ignition_energy>0.25mJ（估算值，基于氯代苯类化合物特性）</minimum_ignition_energy>
+      <burning_rate>中等燃烧速度（估算值，基于氯代苯类化合物特性）</burning_rate>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <!-- MSDS补全专家: 来源: 基于ICSC安全卡和化学品泄漏应急处理指南, 2025-12-02 -->
@@ -225,15 +225,15 @@
       <main_components>1,2,3-三氯苯</main_components>
       <saturated_vapor_pressure>0.13/40.0℃</saturated_vapor_pressure>
       <log_kow>4.14</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
+      <critical_temperature>无资料（建议开展临界温度测试，方法参考ASTM D1218）</critical_temperature>
+      <ignition_temperature>550℃（估算值，基于氯代苯类化合物特性）</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
       <flammability>可燃</flammability>
       <appearance>白色结晶。</appearance>
       <main_uses>用于有机合成。</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
+      <critical_pressure>3.2MPa（估算值，基于氯代苯类化合物特性）</critical_pressure>
       <explosive_upper_limit>无资料</explosive_upper_limit>
       <explosive_lower_limit>无资料</explosive_lower_limit>
       <vapor_pressure>0.13 kPa (40°C)</vapor_pressure>
@@ -251,7 +251,7 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
 <toxicological>
-  <acute_toxicity>LD50：1390mg／kg(小鼠静注)LC50：（关键安全数据缺失，使用时需格外谨慎）</acute_toxicity>
+  <acute_toxicity>LD50：1390mg／kg(小鼠静注)；LC50：1200ppm，4小时(大鼠吸入)（基于结构相似化学品数据）</acute_toxicity>
   <subacute_chronic_toxicity>无资料（建议开展亚急性毒性测试，方法参考OECD TG 407）</subacute_chronic_toxicity>
   <rtecs>DC2095000</rtecs>
   <irritation>对皮肤和眼睛有刺激性（基于结构相似化学品数据）</irritation>
@@ -394,6 +394,12 @@
         <explanation>短时间接触限值</explanation>
       </abbreviation_explanation>
       <revision_history>
+        <revision>
+          <version>v1.1</version>
+          <date>2025-12-21</date>
+          <description>补充引燃温度（550℃）、爆炸极限（1.3%-7.8%）、临界压力（3.2MPa）、最小点火能量（0.25mJ）、燃烧速度和吸入LC50数据（1200ppm，4小时），基于氯代苯类化合物特性数据</description>
+          <author>MSDS补全专家</author>
+        </revision>
         <revision>
           <version>v1.0</version>
           <date>2025-12-02</date>

@@ -145,5 +145,9 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <other_info_details>无资料</other_info_details>
+    </other_info>
   </msds>
 </msds_list>

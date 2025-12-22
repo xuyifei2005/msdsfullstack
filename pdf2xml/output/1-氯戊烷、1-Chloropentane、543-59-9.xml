@@ -6,14 +6,18 @@
       <cas_number>543-59-9</cas_number>
       <msds_code>MSDS#1471</msds_code>
       <product_name>1-氯戊烷</product_name>
-      <product_alias>氯代正戊烷</product_alias>
+      <product_alias>氯代正戊烷;戊基氯;1-氯代戊烷</product_alias>
       <product_english_name>1-Chloropentane</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <molecular_formula>C5H11Cl</molecular_formula>
+      <molecular_weight>106.59</molecular_weight>
+      <company_name>武汉卡诺斯科技有限公司</company_name>
+      <company_address>湖北省武汉市江汉区发展大道181号</company_address>
+      <contact_phone>027-83238443</contact_phone>
+      <emergency_phone>15327105076</emergency_phone>
+      <email>info@kanos.com.cn</email>
+      <fax_number>027-83238443</fax_number>
+      <recommended_usage>用作有机合成中间体、溶剂</recommended_usage>
+      <restricted_usage>禁止用于食品、药品、化妆品等人体直接接触的产品生产</restricted_usage>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>

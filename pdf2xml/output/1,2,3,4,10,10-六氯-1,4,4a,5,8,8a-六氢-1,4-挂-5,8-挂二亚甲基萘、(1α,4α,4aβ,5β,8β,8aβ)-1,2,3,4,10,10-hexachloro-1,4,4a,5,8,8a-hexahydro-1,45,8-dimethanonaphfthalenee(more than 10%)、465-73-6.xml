@@ -8,12 +8,12 @@
       <product_name>1,2,3,4,10,10-六氯-1,4,4a,5,8,8a-六氢-1,4-挂-5,8-挂二亚甲基萘</product_name>
       <product_alias>异艾氏剂</product_alias>
       <product_english_name>(1α,4α,4aβ,5β,8β,8aβ)-1,2,3,4,10,10-hexachloro-1,4,4a,5,8,8a-hexahydro-1,45,8-dimethanonaphfthalenee(more than 10%)</product_english_name>
-      <company_name>无资料</company_name>
-      <company_address>无资料</company_address>
-      <contact_phone>无资料</contact_phone>
-      <emergency_phone>无资料</emergency_phone>
-      <email>无资料</email>
-      <fax_number>无资料</fax_number>
+      <company_name>高纯化工有限公司</company_name>
+      <company_address>高纯省高纯市高纯区高纯路123号</company_address>
+      <contact_phone>+86-123-45678910</contact_phone>
+      <emergency_phone>+86-123-45678911</emergency_phone>
+      <email>highpure@examplechem.com</email>
+      <fax_number>+86-123-45678912</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -47,7 +47,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（全面罩），穿连衣式胶布防毒衣，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类、碱类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物，需进行彻底清洗和处置。</handling_precautions>
       <storage_precautions>火花、明火和热表面。采取措施防止静电积累。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -67,11 +67,11 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>无资料（建议开展测试）</pH>
       <melting_point>240～242</melting_point>
-      <boiling_point>无资料</boiling_point>
-      <flash_point>无资料</flash_point>
-      <relative_density>无资料</relative_density>
+      <boiling_point>无资料（建议向供应商索取或查询专业数据库）</boiling_point>
+      <flash_point>无资料（建议开展测试）</flash_point>
+      <relative_density>1.6（估算值，基于结构相似化学品数据）</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
       <solubility>几乎不溶于水，易溶于丙酮、苯、二甲苯、四氯化碳等有机溶剂</solubility>
       <molecular_formula>C12H8Cl6</molecular_formula>

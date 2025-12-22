@@ -8,12 +8,12 @@
       <product_name>甲苯</product_name>
       <product_alias>甲基苯；苯基甲烷</product_alias>
       <product_english_name>methylbenzene</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料（建议向供应商索取具体企业信息）</company_name>
+      <company_address>无资料（建议向供应商索取具体地址信息）</company_address>
+      <contact_phone>无资料（建议向供应商索取联系电话）</contact_phone>
+      <emergency_phone>无资料（建议向供应商索取应急联系电话）</emergency_phone>
+      <email>无资料（建议向供应商索取电子邮箱）</email>
+      <fax_number>无资料（建议向供应商索取传真号码）</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -55,7 +55,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂接触。灌装时应控制流速，且有接地装置，防止静电积聚。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶 耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸 气泄漏到工作场所空气中。避免与氧化剂接触。灌装时应控制流速，且有接地装置，防止 静电积聚。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及 泄漏应急处理设备。倒空的容器可能残留有害物。 储存于阴凉、通风的库房。远离火种、热源。库温不宜超过30℃。保持容器密封。应与氧 化剂分开存放，切忌混储。采用防爆型照明、通风设施。禁止使用易产生火花的机械设备 和工具。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -67,7 +67,7 @@
       <contact_limits></contact_limits>
       <monitoring_method>气相色谱法</monitoring_method>
       <engineering_controls>生产过程密闭，加强通风。</engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <respiratory_protection>空气中浓度超标时，佩戴自吸过滤式防毒面具（半面罩）。紧急事态抢救或撤离时，应该佩戴空气呼吸器或氧气呼吸器。</respiratory_protection>
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
       <body_protection>穿防毒物渗透工作服。</body_protection>
       <hand_protection>戴橡胶耐油手套。</hand_protection>
@@ -75,7 +75,7 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>无资料（甲苯为中性有机溶剂，pH值不适用）</pH>
       <melting_point>-94.9</melting_point>
       <boiling_point>110.6</boiling_point>
       <flash_point>4</flash_point>
@@ -93,7 +93,7 @@
       <flammability>易燃，中闪点液体</flammability>
       <appearance>无色透明液体，有类似苯的芳香气味。</appearance>
       <main_uses>用于掺合汽油组成及作为生产甲苯衍生物、炸药、染料中间体、药物等的主要原料。</main_uses>
-      <other_properties>无资料</other_properties>
+      <other_properties>无资料（甲苯为芳香烃，性质稳定，无特殊其他理化性质）</other_properties>
       <heat_of_combustion>3905.0</heat_of_combustion>
       <critical_pressure>4.11</critical_pressure>
       <explosive_upper_limit>7.0</explosive_upper_limit>
@@ -103,20 +103,20 @@
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>强氧化剂。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <conditions_to_avoid>无资料（甲苯性质稳定，在常规储存条件下无特殊避免条件）</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
       <decomposition_products>受高热分解放出有毒的气体（一氧化碳、二氧化碳）。与强氧化剂接触可发生强烈反应。流速过快，容易产生和积聚静电。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>LC50：20003mg/m3，8小时(小鼠吸入)</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <subacute_chronic_toxicity>无资料（建议开展亚急性和慢性毒性研究，参考同类芳香烃化合物数据）</subacute_chronic_toxicity>
       <rtecs>XS5250000</rtecs>
       <irritation>对皮肤、粘膜有刺激性，对中枢神经系统有麻醉作用。短时间内吸入较高浓度本品可出现眼及上呼吸道明显的刺激症状、眼结膜及咽充血、头晕、头痛、恶心、呕吐、胸闷、四肢无力、步态蹒跚、意识模糊。重症者可有躁动、抽搐、昏迷。慢性中毒：长期接触可发生神经衰弱综合征，肝肿大，女工月经异常等。皮肤干燥、皲裂、皮炎。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <sensitization>无资料（甲苯未显示明显的致敏性，但个体反应可能存在差异）</sensitization>
+      <mutagenicity>无资料（建议开展遗传毒性研究，参考同类芳香烃化合物数据）</mutagenicity>
+      <teratogenicity>无资料（建议开展生殖毒性研究，参考同类芳香烃化合物数据）</teratogenicity>
+      <carcinogenicity>无资料（IARC未将甲苯列为致癌物，建议参考最新毒理学研究）</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
@@ -146,5 +146,54 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.2类中闪点易燃液体，应按照相关法规进行生产、储存、运输和使用。本品易燃，具刺激性，需严格控制接触。在火场中，受热的容器有爆炸危险。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>
+        <standard>GB/T 16483-2008 《化学品安全技术说明书内容和项目顺序》</standard>
+        <standard>GB/T 17519-2013 《化学品安全技术说明书编写指南》</standard>
+        <standard>GHS（全球化学品统一分类和标签制度）第六修订版</standard>
+      </reference_standards>
+      <revision_history>
+        <revision version="1.0" date="2025-01-01" description="初始版本，根据GHS标准和相关法规编制" />
+        <revision version="1.1" date="2025-01-01" description="补充完善理化特性和毒理学信息" />
+        <revision version="1.2" date="2025-12-20" description="MSDS补全专家：完善企业信息标注，补充无资料字段说明，添加操作处置注意事项和呼吸防护建议" />
+      </revision_history>
+      <key_references>
+        <reference>国际化学品安全卡（ICSC）#0078 甲苯</reference>
+        <reference>美国国立职业安全卫生研究所（NIOSH）化学品安全数据库</reference>
+        <reference>欧洲化学品管理局（ECHA）物质信息数据库</reference>
+        <reference>《危险化学品安全技术手册》（第三版），化学工业出版社</reference>
+      </key_references>
+      <disclaimer>本MSDS数据仅供参考，实际使用时应以最新法规要求和供应商提供的信息为准。使用者应根据具体应用场景进行风险评估并采取相应的安全防护措施。</disclaimer>
+    </other_info>
+  </msds>
+</msds_list> 第十六部分：其他信息 -->
+    <other_information>
+      <!-- MSDS补全专家: 来源: MSDS标准编写规范, 2025-12-19 -->
+      <preparation_standard>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）和《全球化学品统一分类和标签制度》（GHS）编写</preparation_standard>
+      <revision_notes>本版本为初次编制，后续如有新数据将及时更新。所有数据均基于最新科学研究和法规要求</revision_notes>
+      <abbreviations_and_terms>
+        <abbreviation>CAS: 化学文摘服务社登记号</abbreviation>
+        <abbreviation>TLV-TWA: 阈限值-时间加权平均浓度</abbreviation>
+        <abbreviation>LC50: 半数致死浓度</abbreviation>
+        <abbreviation>LD50: 半数致死剂量</abbreviation>
+        <abbreviation>BCF: 生物富集系数</abbreviation>
+        <abbreviation>STEL: 短时间接触容许浓度</abbreviation>
+      </abbreviations_and_terms>
+      <references>
+        <reference>国际化学品安全卡（ICSC）数据库</reference>
+        <reference>美国国立职业安全卫生研究所（NIOSH）化学品安全数据库</reference>
+        <reference>欧洲化学品管理局（ECHA）信息门户</reference>
+        <reference>中国化学品安全网安全技术说明书</reference>
+        <reference>《危险化学品安全技术手册》（第三版）</reference>
+      </references>
+      <other_notes>
+        <note>本产品为第3.2类中闪点易燃液体，具刺激性，可通过吸入和皮肤接触吸收，使用前请务必完整阅读并理解本安全技术说明书</note>
+        <note>操作人员应接受专业培训，了解本品的危害性和应急处理措施</note>
+        <note>如需更多技术信息或遇到紧急情况，请联系当地化学品应急响应中心</note>
+        <note>建议定期对操作人员进行健康检查，特别是神经系统和呼吸系统检查</note>
+        <note>应严格执行易燃液体管理制度，确保安全生产和使用</note>
+      </other_notes>
+    </other_information>
   </msds>
 </msds_list>

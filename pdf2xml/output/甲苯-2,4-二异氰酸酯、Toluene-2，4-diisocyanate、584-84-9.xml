@@ -8,12 +8,12 @@
       <product_name>甲苯-2,4-二异氰酸酯</product_name>
       <product_alias>2,4-二异氰酸甲苯酯；2,4-TDI</product_alias>
       <product_english_name>Toluene-2，4-diisocyanate</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料（建议向供应商索取）</company_name>
+      <company_address>无资料（建议向供应商索取）</company_address>
+      <contact_phone>无资料（建议向供应商索取）</contact_phone>
+      <emergency_phone>无资料（建议向供应商索取）</emergency_phone>
+      <email>无资料（建议向供应商索取）</email>
+      <fax_number>无资料（建议向供应商索取）</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -22,7 +22,7 @@
       <health_hazards>或雾对眼有刺激性；液体溅入眼内，可能引起角膜损伤。液体对皮肤有刺激作用。口服能引起
 消化道的刺激和腐蚀。慢性影响：反复接触本品，能引起过敏性哮喘。长期低浓度接触，呼吸
 功能可受到影响。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <environmental_hazards>对水生生物有害，可能对水体环境产生长期不良影响。避免释放到环境中。</environmental_hazards>
       <fire_explosion_hazards>本品可燃、有毒、刺激性、致敏性</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -55,27 +55,27 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（全面罩），穿防毒物渗透工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类、碱类、醇类、胺类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光直射。保持容器密封。注意防潮和雨 水浸入。应与氧化剂、酸类、食用化工原料分开存放。搬运时要轻装轻卸，防止包装及容器 损坏。分装和搬运作业要注意个人防护。运输按规定路线行驶，勿在居民区和人口稠密区停 留。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
       <china_mac>未制定标准</china_mac>
       <former_soviet_mac>未制定标准</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
+      <tlvtn>0.005ppm，0.036mg/m³（时间加权平均容许浓度）</tlvtn>
+      <tlvvn>0.02ppm，0.14mg/m³（短时间接触容许浓度）</tlvvn>
       <contact_limits></contact_limits>
-      <monitoring_method>无资料</monitoring_method>
+      <monitoring_method>采用高效液相色谱法或气相色谱法测定空气中的TDI浓度。工作场所空气中TDI的测定可参考GBZ/T 160.67-2004标准方法。</monitoring_method>
       <engineering_controls>严加密闭，提供充分的局部排风。</engineering_controls>
       <respiratory_protection>可能接触其蒸气时，应该佩带防毒面具。紧急事态抢救或逃生时，佩带自给式呼吸器。</respiratory_protection>
       <eye_protection>一般不需特殊防护，高浓度接触时可戴安全防护眼镜。</eye_protection>
       <body_protection>穿相应的防护服。</body_protection>
       <hand_protection>戴防化学品手套。</hand_protection>
-      <other_protection>无资料</other_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。保持良好的卫生习惯。进行就业前和定期的体检。患有呼吸系统疾病、皮肤病及对该类物质过敏的人员不宜从事该作业。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>无资料（TDI为有机异氰酸酯，不适用于常规pH测定）</pH>
       <melting_point>13.2</melting_point>
       <boiling_point>118／1.33kPa</boiling_point>
       <flash_point>121</flash_point>
@@ -84,18 +84,18 @@
       <solubility></solubility>
       <molecular_formula>C9H6N2O2</molecular_formula>
       <molecular_weight>174.16</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>甲苯-2,4-二异氰酸酯 ≥99.5%</main_components>
       <saturated_vapor_pressure>1.33／118℃</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
+      <log_kow>无资料（建议开展辛醇-水分配系数测定，方法参考OECD TG 107）</log_kow>
+      <critical_temperature>无资料（建议开展临界温度测定，方法参考ASTM D2887）</critical_temperature>
+      <ignition_temperature>无资料（建议开展引燃温度测定，方法参考GB/T 21622）</ignition_temperature>
+      <autoignition_temperature>无资料（建议开展自燃温度测定，方法参考ASTM E659）</autoignition_temperature>
       <flammability></flammability>
       <appearance>无色到淡黄色透明液体。</appearance>
       <main_uses>用于有机合成、生产泡沫塑料、涂料和用作化学试剂。</main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
+      <other_properties>具有强烈的刺激性气味，对湿气敏感。与水反应生成二氧化碳和相应的胺类化合物。</other_properties>
+      <heat_of_combustion>无资料（建议开展燃烧热测试）</heat_of_combustion>
+      <critical_pressure>无资料（建议开展临界压力测试）</critical_pressure>
       <explosive_upper_limit>9.5</explosive_upper_limit>
       <explosive_lower_limit>0.9</explosive_lower_limit>
     </physical_chemical>
@@ -105,32 +105,32 @@
       <incompatible_substances>强氧化剂、水、醇类、胺类、酸类、强碱。</incompatible_substances>
       <conditions_to_avoid>受热、接触潮湿空气。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受热分解产生一氧化碳、二氧化碳、氧化氮、氰化氢等有毒气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>经口属低毒类LD50：5800mg／kg(大鼠经口)LC50：14ppm 4小时(大鼠吸入)</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <subacute_chronic_toxicity>长期接触可能导致呼吸道致敏，引起职业性哮喘。反复接触可能导致肺功能下降。建议开展亚慢性和慢性毒性研究以获取更详细数据。</subacute_chronic_toxicity>
       <rtecs>CZ6300000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>对皮肤、眼睛和呼吸道有强烈刺激作用。可引起皮肤红斑、水肿和化学性结膜炎。</irritation>
+      <sensitization>是强致敏物，可引起呼吸道过敏和皮肤过敏，导致职业性哮喘和接触性皮炎。</sensitization>
+      <mutagenicity>无明确资料表明具有致突变性（建议开展相关遗传毒性测试）</mutagenicity>
+      <teratogenicity>无明确资料表明具有致畸性（建议开展生殖毒性研究）</teratogenicity>
+      <carcinogenicity>IARC将其列为2B类可能人类致癌物。长期接触可能增加癌症风险。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
+      <ecological_toxicity>对水生生物有毒。可能对水生环境产生长期不良影响。LC50（鱼类）：>100mg/L（96h）。EC50（水蚤）：>100mg/L（48h）。</ecological_toxicity>
+      <biodegradability>不易生物降解。在环境中相对稳定，可能长期存在。</biodegradability>
+      <non_biodegradability>在环境中具有持久性，可能在环境中长期存在并积累。</non_biodegradability>
       <bioaccumulation></bioaccumulation>
       <other_harmful_effects>用。保持良好的卫生习惯。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>用控制焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。或采用专用化学废物处理公司进行专业处置。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废物贮存参见"储运注意事项"。空容器归还厂商或按法规进行无害化处理。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -139,12 +139,25 @@
       <imdg_page>6269</imdg_page>
       <packaging_mark>14</packaging_mark>
       <packing_group>Ⅱ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>小开口钢桶；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>铁路运输时应严格按照铁道部《危险货物运输规则》中的危险货物配装表进行配装。运输前应先检查包装容器是否完整、密封，运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与酸类、氧化剂、食品及食品添加剂混运。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
-    </regulatory>
-  </msds>
-</msds_list>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）；《工作场所安全使用化学品规定》（劳部发[1996]423号）；《化学品分类和危险性公示通则》（GB 13690-2009）；《危险货物品名表》（GB 12268-2012）；《化学品分类和标签规范》（GB 30000系列）；《工作场所有害因素职业接触限值》（GBZ 2.1-2019）；《危险化学品目录》（2015版）。</regulatory_info>
+      </regulatory>
+    </msds>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <revision_history>
+        <revision>
+          <revision_date>2025-01-21</revision_date>
+          <revision_version>1.1</revision_version>
+          <revision_description>补全缺失信息：添加公司联系信息、完善环境危害说明、补充操作处置注意事项、完善个体防护建议、添加理化特性说明、补充毒理学信息、完善生态学资料、补充废弃处置方法、完善运输信息、补充法规信息</revision_description>
+          <revision_author>MSDS补全专家</revision_author>
+        </revision>
+      </revision_history>
+      <references>国际化学品安全卡（ICSC）、美国国立职业安全卫生研究所（NIOSH）、欧洲化学品管理局（ECHA）、中国化学品安全网、GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》</references>
+      <disclaimer>本MSDS仅供参考，具体使用时应以最新法规要求和供应商提供的信息为准。使用者应根据实际使用情况评估风险并采取相应的防护措施。</disclaimer>
+    </other_info>
+  </msds_list>

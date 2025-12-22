@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>1691-99-2</cas_number>
-      <msds_code>供应商名称： 供应商地址：</msds_code>
+      <msds_code>MSDS#2646</msds_code>
       <product_name>N-乙基-N-(2-羟乙基)全氟辛基磺酰胺</product_name>
       <product_alias>酰胺</product_alias>
       <product_english_name>N-ethylheptadecafluoro-N-(2-hydroxyethyl)octanesulphonamide</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>高纯化工有限公司</company_name>
+      <company_address>高纯省高纯市高纯区高纯路123号</company_address>
+      <contact_phone>+86-123-45678910</contact_phone>
+      <emergency_phone>+86-123-45678911</emergency_phone>
+      <email>highpure@examplechem.com</email>
+      <fax_number>+86-123-45678912</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>

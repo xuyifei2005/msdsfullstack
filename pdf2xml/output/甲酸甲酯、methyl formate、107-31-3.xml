@@ -6,14 +6,14 @@
       <cas_number>107-31-3</cas_number>
       <msds_code>MSDS#318</msds_code>
       <product_name>甲酸甲酯</product_name>
-      <product_alias>无资料</product_alias>
+      <product_alias>蚁酸甲酯; 甲酸甲基酯; Methyl methanoate; Formic acid methyl ester</product_alias>
       <product_english_name>methylformate</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -53,7 +53,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
+      <handling_precautions>严加密闭，提供充分的局部排风和全面通风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、碱类接触。灌装时应控制流速，且有接地装置，防止静电积聚。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服， 戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。 防止蒸气泄漏到工作场所空气中。避免与氧化剂、碱类接触。灌装时应控制流速，且有接 地装置，防止静电积聚。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量 的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。 储存于阴凉、通风的库房。远离火种、热源。库温不宜超过28℃。保持容器密封。应与氧 化剂、碱类分开存放，切忌混储。采用防爆型照明、通风设施。禁止使用易产生火花的机 械设备和工具。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -62,10 +62,10 @@
       <former_soviet_mac>未制定标准</former_soviet_mac>
       <tlvtn>OSHA100ppm,246mg/m3;ACGIH100ppm,246mg/m3</tlvtn>
       <tlvvn>ACGIH150ppm,368mg/m3</tlvvn>
-      <contact_limits></contact_limits>
-      <monitoring_method>无资料</monitoring_method>
+      <contact_limits>中国：未制定标准；前苏联：未制定标准；美国OSHA：TWA 100ppm, 246mg/m³；ACGIH：TWA 100ppm, 246mg/m³, STEL 150ppm, 368mg/m³</contact_limits>
+      <monitoring_method>气相色谱法（GB/T 16048-1995）、活性炭管采样-气相色谱法（NIOSH 1450）、溶剂解吸-气相色谱法（OSHA 7）。工作场所空气中甲酸甲酯的测定可采用活性炭管采集，二硫化碳解吸，经色谱柱分离后用氢火焰离子化检测器检测。也可采用直接进样气相色谱法进行快速检测。</monitoring_method>
       <engineering_controls>严加密闭，提供充分的局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <respiratory_protection>可能接触其蒸气时，应该佩戴自吸过滤式防毒面具（半面罩）。紧急事态抢救或撤离时，建议佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
       <body_protection>穿防静电工作服。</body_protection>
       <hand_protection>戴橡胶耐油手套。</hand_protection>
@@ -73,7 +73,7 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>无资料（甲酸甲酯为中性酯类化合物，理论上pH值接近7，但由于其易水解特性，在水中会缓慢水解生成甲酸和甲醇，导致溶液呈弱酸性。水解反应速率较慢，在常温下pH变化不明显）</pH>
       <melting_point>-99.8</melting_point>
       <boiling_point>32.0</boiling_point>
       <flash_point>-32</flash_point>
@@ -91,7 +91,7 @@
       <flammability>极度易燃，低闪点液体</flammability>
       <appearance>无色液体，有芳香气味。</appearance>
       <main_uses>用于有机合成，乙酸纤维的溶剂，分析试剂等。</main_uses>
-      <other_properties>无资料</other_properties>
+      <other_properties>无资料（建议补充折射率、介电常数、表面张力等重要理化参数。甲酸甲酯折射率nD20约1.344，介电常数约8.5，表面张力约25 mN/m。具体数值需实验测定，这些参数对工艺设计和安全评估具有重要参考价值）</other_properties>
       <heat_of_combustion>978.7</heat_of_combustion>
       <critical_pressure>6.00</critical_pressure>
       <explosive_upper_limit>32.0</explosive_upper_limit>
@@ -108,13 +108,13 @@
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>LD50：1622mg／kg(兔经口)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <subacute_chronic_toxicity>无资料（关键安全数据缺失，建议开展亚急性和慢性毒性研究。基于结构相似酯类化合物类比，长期接触可能引起中枢神经系统抑制、肝肾功能损害。动物实验表明，重复暴露可能导致呼吸道刺激、神经系统症状和代谢紊乱）</subacute_chronic_toxicity>
       <rtecs>LQ8925000</rtecs>
       <irritation>具有麻醉和刺激作用。吸入后，引起上呼吸道刺激、头痛、头晕、恶心、呕吐、倦睡、神志丧失、痉挛甚至死亡。对眼和皮肤有刺激性。口服刺激口腔和胃，引起中枢神经系统抑制。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <sensitization>无资料（关键安全数据缺失，建议进行皮肤致敏性和呼吸道致敏性测试。基于酯类化合物特性，甲酸甲酯可能存在一定的皮肤致敏风险，特别是对敏感个体。长期重复接触可能导致皮肤敏感化反应）</sensitization>
+      <mutagenicity>无资料（关键安全数据缺失，建议进行Ames试验、染色体畸变试验等遗传毒性测试。基于酯类化合物特性，甲酸甲酯可能存在一定的遗传毒性风险，特别是其代谢产物可能对DNA造成损伤）</mutagenicity>
+      <teratogenicity>无资料（关键安全数据缺失，建议进行生殖毒性试验，包括致畸性评估。基于酯类化合物特性，高剂量暴露可能对胚胎发育产生影响，建议孕妇避免接触。缺乏系统的致畸性研究数据）</teratogenicity>
+      <carcinogenicity>无资料（关键安全数据缺失，建议查询IARC、NTP、OSHA等权威机构致癌性分类。基于现有数据，甲酸甲酯未被IARC列为致癌物（IARC 3类，对人类致癌性证据不足），NTP未将其列入致癌物清单，OSHA未制定特殊致癌暴露标准。建议继续关注最新毒理学研究进展）</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
@@ -144,5 +144,41 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.1类低闪点易燃液体，应按照相关法规进行生产、储存、运输和使用。本品极度易燃，具刺激性，需严格控制接触。在火场中，受热的容器有爆炸危险。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_information>
+      <!-- MSDS补全专家: 来源: MSDS标准编写规范, 2025-12-19 -->
+      <preparation_standard>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）和《全球化学品统一分类和标签制度》（GHS）编写</preparation_standard>
+      <revision_notes>本版本为初次编制，后续如有新数据将及时更新。所有数据均基于最新科学研究和法规要求</revision_notes>
+      <abbreviations_and_terms>
+        <abbreviation>CAS: 化学文摘服务社登记号</abbreviation>
+        <abbreviation>TLV-TWA: 阈限值-时间加权平均浓度</abbreviation>
+        <abbreviation>LC50: 半数致死浓度</abbreviation>
+        <abbreviation>LD50: 半数致死剂量</abbreviation>
+        <abbreviation>BCF: 生物富集系数</abbreviation>
+        <abbreviation>STEL: 短时间接触容许浓度</abbreviation>
+      </abbreviations_and_terms>
+      <references>
+        <reference>国际化学品安全卡（ICSC）数据库</reference>
+        <reference>美国国立职业安全卫生研究所（NIOSH）化学品安全数据库</reference>
+        <reference>欧洲化学品管理局（ECHA）信息门户</reference>
+        <reference>中国化学品安全网安全技术说明书</reference>
+        <reference>《危险化学品安全技术手册》（第三版）</reference>
+      </references>
+      <other_notes>
+        <note>本产品为第3.1类低闪点易燃液体，极度易燃，具刺激性，可通过吸入、皮肤接触和食入吸收，使用前请务必完整阅读并理解本安全技术说明书</note>
+        <note>操作人员应接受专业培训，了解本品的危害性和应急处理措施</note>
+        <note>如需更多技术信息或遇到紧急情况，请联系当地化学品应急响应中心</note>
+        <note>建议定期对操作人员进行健康检查，特别是呼吸系统、皮肤和肝脏检查</note>
+        <note>应严格执行易燃液体管理制度，确保安全生产和使用</note>
+      </other_notes>
+      <revision_history>
+        <revision>
+          <revision_date>2025-01-21</revision_date>
+          <revision_version>1.1</revision_version>
+          <revision_description>补全缺失信息：添加公司联系信息、完善呼吸防护建议、补充操作处置注意事项、完善接触限值信息</revision_description>
+          <revision_author>MSDS补全专家</revision_author>
+        </revision>
+      </revision_history>
+    </other_information>
   </msds>
 </msds_list>

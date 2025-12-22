@@ -8,12 +8,12 @@
       <product_name>1-氯-2,3-环氧丙烷</product_name>
       <product_alias>epichlorohydrin</product_alias>
       <product_english_name>1-chloro-2,3-epoxypropane</product_english_name>
-      <company_name>无资料</company_name>
-      <company_address>无资料</company_address>
-      <contact_phone>无资料</contact_phone>
-      <emergency_phone>无资料</emergency_phone>
-      <email>无资料</email>
-      <fax_number>无资料</fax_number>
+      <company_name>无资料（建议向供应商索取）</company_name>
+      <company_address>无资料（建议向供应商索取）</company_address>
+      <contact_phone>无资料（建议向供应商索取）</contact_phone>
+      <emergency_phone>无资料（建议向供应商索取）</emergency_phone>
+      <email>无资料（建议向供应商索取）</email>
+      <fax_number>无资料（建议向供应商索取）</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -76,8 +76,8 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
-      <melting_point>-25.6</melting_point>
+      <pH>无资料（建议开展测试）</pH>
+      <melting_point>-57.2</melting_point>
       <boiling_point>117.9</boiling_point>
       <flash_point>34</flash_point>
       <relative_density>1.18(20℃)</relative_density>
@@ -118,6 +118,10 @@
       <mutagenicity>Ames试验呈阳性，可导致基因突变和染色体畸变。</mutagenicity>
       <teratogenicity>动物实验表明可导致胎儿发育异常和畸形，孕妇应避免接触。</teratogenicity>
       <carcinogenicity>IARC 2A类可疑致癌物，NTP致癌物，OSHA标准管制物质。长期接触可增加患癌风险，特别是鼻咽癌和肺癌。</carcinogenicity>
+      <reproductive_toxicity>无资料（建议查阅专业毒理学数据库）</reproductive_toxicity>
+      <specific_target_organ_toxicity_single_exposure>无资料（建议开展专项毒理学研究）</specific_target_organ_toxicity_single_exposure>
+      <specific_target_organ_toxicity_repeated_exposure>长期接触可引起肝、肾功能损害，神经系统损伤等</specific_target_organ_toxicity_repeated_exposure>
+      <aspiration_hazard>无资料（建议参考同类化学品数据）</aspiration_hazard>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
@@ -147,5 +151,12 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品，可疑致癌物2A类（IARC），能发生聚合反应，需添加阻聚剂，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <revision_history>无资料</revision_history>
+      <disclaimer>本MSDS提供的信息基于目前所掌握的知识，但不排除存在未知的风险。使用者应根据实际情况采取适当的安全防护措施。</disclaimer>
+      <preparation_standard>GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》</preparation_standard>
+      <other_notes>无资料</other_notes>
+    </other_info>
   </msds>
 </msds_list>

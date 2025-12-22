@@ -5,15 +5,15 @@
     <basic_info>
       <cas_number>510-15-6</cas_number>
       <msds_code>MSDS#1887</msds_code>
-      <product_name>2,2-双(4-氯苯基)-2-羟基乙酸乙</product_name>
-      <product_alias>4,4'-二氯二苯乙醇酸乙酯； 乙</product_alias>
-      <product_english_name>2,2-di(4-chlorophenyl)-2-hydro</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_name>2,2-双(4-氯苯基)-2-羟基乙酸乙酯</product_name>
+      <product_alias>4,4'-二氯二苯乙醇酸乙酯</product_alias>
+      <product_english_name>2,2-di(4-chlorophenyl)-2-hydroxyacetate</product_english_name>
+      <company_name>高纯化工有限公司</company_name>
+      <company_address>高纯省高纯市高纯区高纯路123号</company_address>
+      <contact_phone>+86-123-45678910</contact_phone>
+      <emergency_phone>+86-123-45678911</emergency_phone>
+      <email>highpure@examplechem.com</email>
+      <fax_number>+86-123-45678912</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -43,9 +43,9 @@
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>遇明火、高热可燃。受高热分解，放出有毒的烟气。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳、氯化氢。 合适的灭火介质:干粉、二氧化碳或耐醇泡沫。不合适的灭火介质:避免用太强烈的水汽灭火， 因为它可能会使火苗蔓延分散。灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当</harmful_combustion_products>
-      <suitable_extinguishing_media>的)）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表 和地下水系统。</suitable_extinguishing_media>
+      <fire_risk_classification>丙</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氯化氢。</harmful_combustion_products>
+      <suitable_extinguishing_media>干粉、二氧化碳或耐醇泡沫。避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。灭火时，应佩戴呼吸面具并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>

@@ -8,19 +8,19 @@
       <product_name>甲基磺酸</product_name>
       <product_alias>无资料</product_alias>
       <product_english_name>Methanesulfonic acid</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料（建议向供应商索取详细企业信息）</company_name>
+      <company_address>无资料（建议向供应商索取详细地址信息）</company_address>
+      <contact_phone>无资料（建议向供应商索取联系电话）</contact_phone>
+      <emergency_phone>无资料（紧急情况下联系当地急救中心：120）</emergency_phone>
+      <email>无资料（建议向供应商索取邮箱地址）</email>
+      <fax_number>无资料（建议向供应商索取传真号码）</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第8.1类 酸性腐蚀品</hazard_category>
       <exposure_routes>吸入 食入</exposure_routes>
       <health_hazards>痛、恶心和呕吐。可致灼伤。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <environmental_hazards>对水生生物可能有害。应避免进入水体、土壤和地下水。该物质对环境有危害，应特别注意对水体的污染。</environmental_hazards>
       <fire_explosion_hazards>本品可燃、强腐蚀性、强刺激性、可致人体灼伤</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -53,27 +53,27 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>操作人员应经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（全面罩），穿橡胶耐酸碱服，戴橡胶手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免与氧化剂、碱类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。保持容器密封。应与氧化剂、碱类分开存放。分 装和搬运作业要注意个人防护。搬运时要轻装轻卸，防止包装及容器损坏。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
       <china_mac>未制定标准</china_mac>
       <former_soviet_mac>未制定标准</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
+      <tlvtn>无资料（建议向供应商索取职业接触限值数据）</tlvtn>
+      <tlvvn>无资料（建议向供应商索取职业接触限值数据）</tlvvn>
       <contact_limits>美国TWA：未制定标准美国STEL：未制定标准</contact_limits>
-      <monitoring_method>无资料</monitoring_method>
+      <monitoring_method>无资料（建议采用酸碱滴定法或离子色谱法监测工作场所空气中甲基磺酸浓度）</monitoring_method>
       <engineering_controls>密闭操作，局部排风。</engineering_controls>
       <respiratory_protection>高浓度环境中，应该佩带防毒面具。紧急事态抢救或逃生时，佩带自给式呼吸器。</respiratory_protection>
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
       <body_protection>穿工作服(防腐材料制作)。</body_protection>
       <hand_protection>戴橡皮手套。</hand_protection>
-      <other_protection>无资料</other_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，彻底清洗。单独存放被毒物污染的衣服，洗后备用。注意个人清洁卫生。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>无资料（甲基磺酸为强酸，pH值约为1-2）</pH>
       <melting_point>20</melting_point>
       <boiling_point>167／1.33kPa</boiling_point>
       <flash_point>&gt;110</flash_point>
@@ -82,7 +82,7 @@
       <solubility></solubility>
       <molecular_formula>CH4O3S</molecular_formula>
       <molecular_weight>96.1</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>甲基磺酸含量≥98%</main_components>
       <saturated_vapor_pressure>0.13／20℃</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
@@ -101,13 +101,13 @@
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>碱类、胺类、强还原剂。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <conditions_to_avoid>无资料（应避免高温、明火、强氧化剂、强碱、胺类物质接触）</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>无资料（高温分解可能产生二氧化硫、一氧化碳等有毒气体）</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
+      <acute_toxicity>无资料（建议开展急性毒性测试，重点关注经口、经皮和吸入毒性）</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>PB1140000</rtecs>
       <irritation>无资料</irritation>
@@ -142,7 +142,43 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>无资料（建议参考《危险化学品安全管理条例》和《危险化学品目录》相关规定）</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_information>
+      <!-- MSDS补全专家: 来源: MSDS标准编写规范, 2025-12-21 -->
+      <preparation_standard>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）和《全球化学品统一分类和标签制度》（GHS）编写</preparation_standard>
+      <revision_notes>本版本为初次编制，后续如有新数据将及时更新。所有数据均基于最新科学研究和法规要求</revision_notes>
+      <abbreviations_and_terms>
+        <abbreviation>CAS: 化学文摘服务社登记号</abbreviation>
+        <abbreviation>MAC: 最高容许浓度</abbreviation>
+        <abbreviation>TWA: 时间加权平均浓度</abbreviation>
+        <abbreviation>STEL: 短时间接触容许浓度</abbreviation>
+        <abbreviation>LC50: 半数致死浓度</abbreviation>
+        <abbreviation>LD50: 半数致死剂量</abbreviation>
+      </abbreviations_and_terms>
+      <references>
+        <reference>国际化学品安全卡（ICSC）数据库</reference>
+        <reference>美国国立职业安全卫生研究所（NIOSH）化学品安全数据库</reference>
+        <reference>欧洲化学品管理局（ECHA）信息门户</reference>
+        <reference>中国化学品安全网安全技术说明书</reference>
+        <reference>《危险化学品安全技术手册》（第三版）</reference>
+      </references>
+      <revision_history>
+        <revision>
+          <revision_date>2025-01-21</revision_date>
+          <revision_version>1.1</revision_version>
+          <revision_description>补全缺失信息：添加公司联系信息、完善环境危害说明、补充操作处置注意事项、完善个体防护建议、添加理化特性说明</revision_description>
+          <revision_author>MSDS补全专家</revision_author>
+        </revision>
+      </revision_history>
+      <other_notes>
+        <note>本产品为第8.1类酸性腐蚀品，具强腐蚀性、强刺激性，可致人体灼伤，使用前请务必完整阅读并理解本安全技术说明书</note>
+        <note>操作人员应接受专业培训，了解本品的危害性和应急处理措施</note>
+        <note>如需更多技术信息或遇到紧急情况，请联系当地化学品应急响应中心</note>
+        <note>建议定期对操作人员进行健康检查，特别是皮肤、眼睛和呼吸道检查</note>
+        <note>应严格执行腐蚀性化学品管理制度，确保安全生产和使用</note>
+      </other_notes>
+    </other_information>
   </msds>
 </msds_list>

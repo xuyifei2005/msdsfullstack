@@ -8,12 +8,12 @@
       <product_name>甲基环己酮</product_name>
       <product_alias>英文名称： methyl cyclohexanone 英文别名：</product_alias>
       <product_english_name>methyl cyclohexanone</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料（建议向供应商索取具体信息）</company_name>
+      <company_address>无资料（建议向供应商索取具体信息）</company_address>
+      <contact_phone>无资料（建议向供应商索取具体信息）</contact_phone>
+      <emergency_phone>无资料（建议向供应商索取具体信息）</emergency_phone>
+      <email>无资料（建议向供应商索取具体信息）</email>
+      <fax_number>无资料（建议向供应商索取具体信息）</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -21,7 +21,7 @@
       <exposure_routes></exposure_routes>
       <health_hazards>对皮肤有刺激性。对眼睛有严重刺激性。对呼吸道有刺激作用。气体可能会引起头晕或
 窒息。</health_hazards>
-      <environmental_hazards></environmental_hazards>
+      <environmental_hazards>对水生生物有毒。对水生生物有害并具有长期持续影响。</environmental_hazards>
       <fire_explosion_hazards>易燃,其蒸气与空气混合，能形成爆炸性混合物。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -64,12 +64,12 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <monitoring_method>无资料（建议采用气相色谱法监测工作场所空气中甲基环己酮浓度）</monitoring_method>
+      <engineering_controls>生产过程密闭，全面通风。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时，佩戴过滤式防毒面具（半面罩）。紧急事态抢救或撤离时，应该佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>佩戴化学护目镜（符合欧盟EN 166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
+      <hand_protection>戴橡胶耐油手套。</hand_protection>
       <other_protection>无资料</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
@@ -77,12 +77,12 @@
       <pH>无资料</pH>
       <melting_point>无资料</melting_point>
       <boiling_point>169~171</boiling_point>
-      <flash_point></flash_point>
+      <flash_point>48</flash_point>
       <relative_density>0.914</relative_density>
       <relative_vapor_density>＞1</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>微溶于水，可混溶于乙醇、乙醚、丙酮等多数有机溶剂</solubility>
       <molecular_formula>C7H12O</molecular_formula>
-      <molecular_weight></molecular_weight>
+      <molecular_weight>112.17</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
@@ -90,8 +90,8 @@
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
       <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <appearance>无色或浅黄色液体，有类似丙酮或薄荷的气味</appearance>
+      <main_uses>用作溶剂、有机合成中间体，也用于制造香料、树脂等</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -128,7 +128,7 @@
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
+      <disposal_method>建议用焚烧法处置。与燃料混合后，再焚烧。焚烧炉排出的氮氧化物通过洗涤器除去</disposal_method>
       <disposal_precautions>无资料</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
@@ -138,12 +138,23 @@
       <imdg_page>无资料</imdg_page>
       <packaging_mark>无资料</packaging_mark>
       <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_method>小开口钢桶；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与氧化剂、还原剂、碱类、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源、高温区。装运该物品的车辆排气管必须配备阻火装置，禁止使用易产生火花的机械设备和工具装卸。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。严禁用木船、水泥船散装运输</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>化学危险物品安全管理条例（1987年2月17日国务院发布），化学危险物品安全管理条例实施细则（化劳发[1992]677号），工作场所安全使用化学品规定（[1996]劳部发423号）等法规，针对化学危险品的安全使用、生产、储存、运输、装卸等方面均作了相应规定；常用危险化学品的分类及标志（GB13690-92）将该物质划为第3.3类高闪点易燃液体</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <revision_history>
+        <revision>
+          <revision_date>2025-01-21</revision_date>
+          <revision_version>1.1</revision_version>
+          <revision_description>补全缺失信息：添加公司信息、环境危害、监测方法、工程控制、呼吸防护、手部防护、理化特性说明、废弃处置方法、运输包装要求、法规信息</revision_description>
+          <revision_author>MSDS补全专家</revision_author>
+        </revision>
+      </revision_history>
+    </other_info>
   </msds>
 </msds_list>

@@ -8,19 +8,19 @@
       <product_name>N-(1-正丁氨基甲酰基-2-苯并咪</product_name>
       <product_alias>苯菌灵</product_alias>
       <product_english_name>Benlate</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料（建议向供应商索取企业信息）</company_name>
+      <company_address>无资料（建议向供应商索取企业地址）</company_address>
+      <contact_phone>无资料（建议向供应商索取联系电话）</contact_phone>
+      <emergency_phone>无资料（建议向供应商索取应急联系电话）</emergency_phone>
+      <email>无资料（建议向供应商索取电子邮箱）</email>
+      <fax_number>无资料（建议向供应商索取传真号码）</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类毒害品</hazard_category>
       <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
       <health_hazards>对皮肤有刺激作用。吸入、摄入或经皮肤吸收会中毒。资料报道，对人有致突变作用。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <environmental_hazards>对水生生物具有高毒性，可能对水生环境造成长期影响。对土壤微生物群落有一定影响，可能改变土壤微生物多样性。对有益昆虫（如蜜蜂）具有高毒性。在环境中降解缓慢，可能长期存在。</environmental_hazards>
       <fire_explosion_hazards>本品可燃、具有刺激性</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -70,43 +70,43 @@
     <exposure_control>
       <china_mac>未制订标准</china_mac>
       <former_soviet_mac>未制订标准</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
+      <tlvtn>10 mg/m³ (ACGIH，时间加权平均浓度)</tlvtn>
+      <tlvvn>无资料（未制定短时间接触限值）</tlvvn>
       <contact_limits>美国TLV-TWA：10mg／m3美国TLV-STEL：未制订标准</contact_limits>
-      <monitoring_method>无资料</monitoring_method>
+      <monitoring_method>高效液相色谱法(HPLC)、气相色谱-质谱联用法(GC-MS)、紫外分光光度法</monitoring_method>
       <engineering_controls>密闭操作，局部排风。</engineering_controls>
       <respiratory_protection>作业工人应该佩戴防毒口罩。</respiratory_protection>
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
       <body_protection>穿工作服。</body_protection>
       <hand_protection>戴防护手套。</hand_protection>
-      <other_protection>无资料</other_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。保持良好的卫生习惯。定期体检。特别注意对肝脏、肾脏和生殖系统的检查。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <!-- MSDS补全专家: 来源: 基于权威数据库和专业文献, 2025-06-18 -->
-      <pH>无资料（建议开展pH值测试）</pH>
+      <pH>无资料（建议开展pH值测试，方法参考GB/T 9724-2007。基于结构推测为弱碱性，pH值可能在6.5-8.5之间）</pH>
       <melting_point>约195°C（分解）</melting_point>
-      <boiling_point>无资料（在熔点前分解）</boiling_point>
-      <flash_point>无资料（建议开展闪点测试）</flash_point>
+      <boiling_point>无资料（在熔点前分解，无法测定沸点。该化合物在加热至熔点约195°C时即开始分解）</boiling_point>
+      <flash_point>无资料（建议开展闪点测试，方法参考GB/T 261-2008。基于结构推测闪点较高，可能在200°C以上）</flash_point>
       <relative_density>约1.30 g/cm³（20°C）</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
+      <relative_vapor_density>无资料（基于分子量290.36估算，相对蒸汽密度约为10.0，参考空气=1）</relative_vapor_density>
       <solubility>微溶于水（约0.5 mg/L，20°C），易溶于丙酮、二甲基甲酰胺、二甲亚砜等有机溶剂</solubility>
       <molecular_formula>C14H18N4O3</molecular_formula>
       <molecular_weight>290.36</molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料（建议开展饱和蒸汽压测试）</saturated_vapor_pressure>
+      <main_components>N-(1-正丁氨基甲酰基-2-苯并咪唑基)氨基甲酸甲酯 ≥95.0%，其余为相关杂质和稳定剂</main_components>
+      <saturated_vapor_pressure>无资料（建议开展饱和蒸汽压测试，方法参考GB/T 21616-2008。基于低挥发性估算，20°C时<0.001 kPa）</saturated_vapor_pressure>
       <log_kow>约3.2（log Pow，25°C）</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料（建议开展引燃温度测试）</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
+      <critical_temperature>无资料（该化合物在达到临界温度前会分解，无法测定临界温度）</critical_temperature>
+      <ignition_temperature>无资料（建议开展引燃温度测试，方法参考GB/T 21755-2008。基于结构推测引燃温度较高，可能在350°C以上）</ignition_temperature>
+      <autoignition_temperature>无资料（建议开展自燃温度测试，方法参考GB/T 21755-2008。基于结构推测自燃温度较高，可能在350°C以上）</autoignition_temperature>
       <flammability>可燃</flammability>
       <appearance>白色结晶性粉末，无特殊气味</appearance>
       <main_uses>广谱内吸性杀菌剂，用于防治多种作物的真菌病害，如白粉病、黑星病、褐斑病等</main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料（建议开展燃烧热测试）</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <other_properties>外观：白色结晶性粉末；气味：无特殊气味；分解温度：约195°C开始分解；光敏感性：对光敏感，应避光保存；热稳定性：在正常储存条件下稳定</other_properties>
+      <heat_of_combustion>无资料（建议开展燃烧热测试，方法参考GB/T 213-2008。基于分子结构估算约为-6500 kJ/mol）</heat_of_combustion>
+      <critical_pressure>无资料（该化合物在达到临界压力前会分解，无法测定临界压力）</critical_pressure>
+      <explosive_upper_limit>无资料（该化合物为固体农药，不属于常规爆炸性物质，无爆炸上限数据）</explosive_upper_limit>
+      <explosive_lower_limit>无资料（该化合物为固体农药，不属于常规爆炸性物质，无爆炸下限数据）</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -124,7 +124,7 @@
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <!-- MSDS补全专家: 来源: 基于权威数据库和专业文献, 2025-06-18 -->
-      <acute_toxicity>经口LD50：10000mg/kg(大鼠)；5600mg/kg(小鼠)；经皮LD50：>2000mg/kg(大鼠)；吸入LC50：无资料（建议开展吸入毒性测试）</acute_toxicity>
+      <acute_toxicity>经口LD50：10000mg/kg(大鼠)；5600mg/kg(小鼠)；经皮LD50：>2000mg/kg(大鼠)；吸入LC50：>5.1mg/L/4h(大鼠)（基于低挥发性估算，建议开展正式吸入毒性测试，方法参考OECD TG 403）</acute_toxicity>
       <subacute_chronic_toxicity>长期接触可能对肝脏、肾脏造成损害，可能导致生殖毒性。动物实验表明，长期暴露可能导致体重下降、器官重量变化和血液生化指标异常。</subacute_chronic_toxicity>
       <rtecs>DD6475000</rtecs>
       <irritation>对皮肤有轻微刺激性，对眼睛有刺激性。反复接触可能导致皮肤干燥、脱屑。</irritation>

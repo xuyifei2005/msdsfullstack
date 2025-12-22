@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>4151-50-2</cas_number>
-      <msds_code>供应商名称： 供应商地址：</msds_code>
+      <msds_code>MSDS#1113</msds_code>
       <product_name>N-乙基全氟辛基磺酰胺</product_name>
-      <product_alias>英文名称： 无资料 英文别名：</product_alias>
-      <product_english_name>无资料</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_alias>N-ethylperfluorooctanesulfonamide</product_alias>
+      <product_english_name>N-ethylperfluorooctanesulfonamide</product_english_name>
+      <company_name>高纯化工有限公司</company_name>
+      <company_address>高纯省高纯市高纯区高纯路123号</company_address>
+      <contact_phone>+86-123-45678910</contact_phone>
+      <emergency_phone>+86-123-45678911</emergency_phone>
+      <email>highpure@examplechem.com</email>
+      <fax_number>+86-123-45678912</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>

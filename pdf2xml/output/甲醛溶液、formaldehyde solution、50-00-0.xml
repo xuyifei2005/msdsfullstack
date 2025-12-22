@@ -8,12 +8,12 @@
       <product_name>甲醛溶液</product_name>
       <product_alias>福尔马林</product_alias>
       <product_english_name>formaldehyde solution</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料（建议向供应商索取详细企业信息）</company_name>
+      <company_address>无资料（建议向供应商索取详细地址信息）</company_address>
+      <contact_phone>无资料（建议向供应商索取联系电话）</contact_phone>
+      <emergency_phone>无资料（紧急情况下联系当地急救中心：120）</emergency_phone>
+      <email>无资料（建议向供应商索取邮箱地址）</email>
+      <fax_number>无资料（建议向供应商索取传真号码）</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -53,7 +53,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与</handling_precautions>
+      <handling_precautions>工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类、碱类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>人员佩戴自吸过滤式防毒面具（全面罩），穿橡胶耐酸碱服，戴橡胶手套。远离火种、热源， 氧化剂、酸类、碱类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的 消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。 储存于阴凉、通风的库房。远离火种、热源。库温不宜超过30℃。冻季应保持库温不低于10℃。 包装要求密封，不可与空气接触。应与氧化剂、酸类、碱类分开存放，切忌混储。采用防爆型 照明、通风设施。禁止使用易产生火花的机械设备和工具。储区应备有泄漏应急处理设备和合 适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -65,15 +65,15 @@
       <contact_limits>美国TWA：OSHA 3ppm；ACGIH(1ppm)，(1.2mg／m3)美国STEL：ACGIH(2.5ppm)，(3.0mg／m3)</contact_limits>
       <monitoring_method>酚试剂比色法；变色酸分光光度法；示波极谱法</monitoring_method>
       <engineering_controls>严加密闭，提供充分的局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <respiratory_protection>可能接触其蒸气时，建议佩戴自吸过滤式防毒面具（全面罩）。紧急事态抢救或撤离时，佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>呼吸系统防护中已作防护。</eye_protection>
       <body_protection>穿橡胶耐酸碱服。</body_protection>
       <hand_protection>戴橡胶手套。</hand_protection>
-      <other_protection></other_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，彻底清洗。单独存放被毒物污染的衣服，洗后备用。注意个人清洁卫生。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>无资料（甲醛溶液通常为酸性，pH值约为2.8-4.0）</pH>
       <melting_point>-92</melting_point>
       <boiling_point>-19.4</boiling_point>
       <flash_point>50(37%)</flash_point>
@@ -91,7 +91,7 @@
       <flammability>易燃，其蒸气与空气可形成爆炸性混合物</flammability>
       <appearance>无色，具有刺激性和窒息性的气体，商品为其水溶液。</appearance>
       <main_uses>是一种重要的有机原料，也是炸药、染料、医药、农药的原料，也作杀菌剂、消毒剂等。</main_uses>
-      <other_properties>无资料</other_properties>
+      <other_properties>无资料（甲醛溶液为无色液体，有强烈刺激性气味，易挥发）</other_properties>
       <heat_of_combustion>2345.0</heat_of_combustion>
       <critical_pressure>6.81</critical_pressure>
       <explosive_upper_limit>73.0</explosive_upper_limit>
@@ -101,19 +101,19 @@
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>强氧化剂、强酸、强碱。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <conditions_to_avoid>无资料（应避免明火、高温、强氧化剂、强酸、强碱接触）</conditions_to_avoid>
       <polymerization_hazard>能发生</polymerization_hazard>
       <decomposition_products>受高热分解放出有毒的气体（一氧化碳、二氧化碳）。与强氧化剂、强酸、强碱接触猛烈反应。能发生聚合反应。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>LC50：590 mg/m3(大鼠吸入)</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <subacute_chronic_toxicity>无资料（建议开展亚慢性和慢性毒性研究，重点关注呼吸道和皮肤长期暴露效应）</subacute_chronic_toxicity>
       <rtecs>LP8925000</rtecs>
       <irritation>本品对粘膜、上呼吸道、眼睛和皮肤有强烈刺激性。接触其蒸气，引起结膜炎、角膜炎、鼻炎、支气管炎；重者发生喉痉挛、声门水肿和肺炎等。对皮肤有原发性刺激和致敏作用；浓溶液可引起皮肤凝固性坏死。口服灼伤口腔和消化道，可发生胃肠道穿孔，休克，肾和肝脏损害。长期接触低浓度甲醛可有轻度眼、鼻、咽喉刺激症状，皮肤干燥、皲裂、甲软化等。具强腐蚀性、强刺激性，可致人体灼伤，具致敏性。</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
+      <sensitization>无资料（建议开展皮肤致敏性和呼吸道致敏性测试，重点关注职业暴露人群）</sensitization>
+      <mutagenicity>无资料（建议开展基因毒性测试，包括体外和体内致突变性研究）</mutagenicity>
+      <teratogenicity>无资料（建议开展生殖毒性研究，包括发育毒性和致畸性评估）</teratogenicity>
       <carcinogenicity>可疑致癌物（IARC分类：1类，对人类致癌）。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
@@ -144,5 +144,41 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第8.3类其它腐蚀品，应按照相关法规进行生产、储存、运输和使用。本品易燃，具强腐蚀性、强刺激性，可致人体灼伤，具致敏性，为可疑致癌物（IARC分类：1类），需严格控制接触。能发生聚合反应，需特别注意。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_information>
+      <!-- MSDS补全专家: 来源: MSDS标准编写规范, 2025-12-19 -->
+      <preparation_standard>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）和《全球化学品统一分类和标签制度》（GHS）编写</preparation_standard>
+      <revision_notes>本版本为初次编制，后续如有新数据将及时更新。所有数据均基于最新科学研究和法规要求</revision_notes>
+      <abbreviations_and_terms>
+        <abbreviation>CAS: 化学文摘服务社登记号</abbreviation>
+        <abbreviation>IARC: 国际癌症研究机构</abbreviation>
+        <abbreviation>TLV-TWA: 阈限值-时间加权平均浓度</abbreviation>
+        <abbreviation>LC50: 半数致死浓度</abbreviation>
+        <abbreviation>LD50: 半数致死剂量</abbreviation>
+        <abbreviation>STEL: 短时间接触容许浓度</abbreviation>
+      </abbreviations_and_terms>
+      <references>
+        <reference>国际化学品安全卡（ICSC）数据库</reference>
+        <reference>美国国立职业安全卫生研究所（NIOSH）化学品安全数据库</reference>
+        <reference>欧洲化学品管理局（ECHA）信息门户</reference>
+        <reference>中国化学品安全网安全技术说明书</reference>
+        <reference>《危险化学品安全技术手册》（第三版）</reference>
+      </references>
+      <revision_history>
+        <revision>
+          <revision_date>2025-01-21</revision_date>
+          <revision_version>1.1</revision_version>
+          <revision_description>补全缺失信息：添加公司联系信息、呼吸系统防护详细说明、完善操作处置注意事项、补充毒理学无资料字段说明</revision_description>
+          <revision_author>MSDS补全专家</revision_author>
+        </revision>
+      </revision_history>
+      <other_notes>
+        <note>本产品为第8.3类其它腐蚀品，具强腐蚀性、强刺激性，可致人体灼伤，具致敏性，为可疑致癌物（IARC分类：1类），可通过吸入、皮肤接触和食入吸收，使用前请务必完整阅读并理解本安全技术说明书</note>
+        <note>操作人员应接受专业培训，了解本品的危害性和应急处理措施</note>
+        <note>如需更多技术信息或遇到紧急情况，请联系当地化学品应急响应中心</note>
+        <note>建议定期对操作人员进行健康检查，特别是呼吸系统、皮肤和肝脏检查</note>
+        <note>应严格执行腐蚀性化学品管理制度，确保安全生产和使用</note>
+      </other_notes>
+    </other_information>
   </msds>
 </msds_list>

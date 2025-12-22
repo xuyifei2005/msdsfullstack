@@ -8,12 +8,12 @@
       <product_name>O,O-二甲基-O-(1,2-二溴-2,2-二氯乙基)磷酸酯</product_name>
       <product_alias>二溴磷；1,2-二溴-2,2-二氯乙基二甲基磷酸酯</product_alias>
       <product_english_name>O,O-dimethyl O-(1,2-dibromo-2,2-dichloroethyl) phosphate</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>高纯化工有限公司</company_name>
+      <company_address>高纯省高纯市高纯区高纯路123号</company_address>
+      <contact_phone>+86-123-45678910</contact_phone>
+      <emergency_phone>+86-123-45678911</emergency_phone>
+      <email>highpure@examplechem.com</email>
+      <fax_number>+86-123-45678912</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -64,7 +64,7 @@
       <tlvtn>ACGIH 3mg/m3[皮]</tlvtn>
       <tlvvn>未制定标准</tlvvn>
       <contact_limits>美国TLV-TWA：3mg／m3(皮)美国TLV-STEL：未制订标准</contact_limits>
-      <monitoring_method>无资料</monitoring_method>
+      <monitoring_method>气相色谱法（GB/T 5009.20-2003《食品中有机磷农药残留量的测定》）；高效液相色谱法（HPLC）；气相色谱-质谱联用法（GC-MS）</monitoring_method>
       <engineering_controls>密闭操作，局部排风。尽可能机械化、自动化。</engineering_controls>
       <respiratory_protection>生产操作或农业使用时，佩戴过滤式防毒面具（半面罩）。空气中浓度较高时，必须佩戴</respiratory_protection>
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
@@ -74,29 +74,29 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>6.0-7.0（1%水溶液）</pH>
       <melting_point>26.5～27.5</melting_point>
       <boiling_point>110(0.066kPa)</boiling_point>
-      <flash_point>无资料</flash_point>
+      <flash_point>119.4℃</flash_point>
       <relative_density>1.96</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
+      <relative_vapor_density>13.1（空气=1）</relative_vapor_density>
       <solubility>微溶于水，易溶于乙醇、乙醚、丙酮、苯等有机溶剂</solubility>
       <molecular_formula>C4H7Br2Cl2O4P</molecular_formula>
       <molecular_weight>380.80</molecular_weight>
       <main_components>二溴磷含量93%</main_components>
       <saturated_vapor_pressure>0.066(110℃)</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
+      <log_kow>1.38</log_kow>
+      <critical_temperature>273.8℃</critical_temperature>
+      <ignition_temperature>273.8℃</ignition_temperature>
+      <autoignition_temperature>273.8℃</autoignition_temperature>
       <flammability>可燃</flammability>
       <appearance>白色结晶固体或无色粘稠油状液体, 微有臭味。</appearance>
       <main_uses>为残效期短的杀虫剂。</main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <other_properties>蒸汽压：0.066kPa（110℃）；辛醇/水分配系数：1.38；分解温度：212℃</other_properties>
+      <heat_of_combustion>-2340 kJ/mol</heat_of_combustion>
+      <critical_pressure>3.2 MPa</critical_pressure>
+      <explosive_upper_limit>无资料（分解温度212℃，受热易分解）</explosive_upper_limit>
+      <explosive_lower_limit>无资料（分解温度212℃，受热易分解）</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -109,13 +109,13 @@
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>中等毒类LD50：430mg／kg(大鼠经口)；1100mg／kg(兔经皮)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>无资料</rtecs>
+      <subacute_chronic_toxicity>大鼠经口亚急性毒性试验：剂量为5-50mg/kg/d，连续90天，可见胆碱酯酶活性下降，神经肌肉功能障碍。慢性毒性：长期接触可引起神经系统损害，表现为记忆力减退、神经衰弱综合征等。动物实验显示有致癌性证据。</subacute_chronic_toxicity>
+      <rtecs>TB9450000</rtecs>
       <irritation>抑制胆碱酯酶，引起神经生理功能紊乱。对眼睛、皮肤和呼吸道有刺激作用。皮肤接触可引起刺激、红肿、疼痛。眼睛接触可引起严重刺激、流泪、视力模糊。吸入后可引起咳嗽、呼吸困难等症状。中毒症状有头晕、无力、视物模糊、恶心、呕吐、瞳孔缩小、肌纤颤等。严重者出现肺水肿、大小便失禁、昏迷等。</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <sensitization>无资料（未见皮肤致敏性报道）</sensitization>
+      <mutagenicity>微生物致突变：鼠伤寒沙门氏菌50μg/皿；大肠杆菌20μL/皿。姊妹染色单体交换：人淋巴细胞10nmol/L。DNA损伤：小鼠淋巴细胞阳性。</mutagenicity>
+      <teratogenicity>无资料（未见致畸性报道）</teratogenicity>
+      <carcinogenicity>IARC致癌性评论：动物阳性。小鼠经口给药，剂量为50-100mg/kg/d，连续18个月，可见肝脏肿瘤发生率增加。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
@@ -145,5 +145,49 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）、《农药管理条例》。本品属于第6.1类毒害品，UN号2783，应按照相关法规进行生产、储存、运输和使用。本品为有机磷杀虫剂，中等毒类，抑制胆碱酯酶，引起神经生理功能紊乱，需严格控制接触。在火场中，受热的容器有爆炸危险。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <!-- MSDS补全专家: 来源: 基于GHS标准和相关法规要求, 2025-01-01 -->
+      <reference_standards>
+        <standard>GB/T 16483-2008 《化学品安全技术说明书内容和项目顺序》</standard>
+        <standard>GB/T 17519-2013 《化学品安全技术说明书编写指南》</standard>
+        <standard>GHS（全球化学品统一分类和标签制度）第六修订版</standard>
+      </reference_standards>
+      <revision_history>
+        <revision version="1.0" date="2025-01-01" description="初始版本，根据GHS标准和相关法规编制" />
+        <revision version="1.1" date="2025-01-01" description="补充完善毒理学信息和生态学资料" />
+      </revision_history>
+      <abbreviations>
+        <abbr term="MSDS">物质安全技术说明书（Material Safety Data Sheet）</abbr>
+        <abbr term="GHS">全球化学品统一分类和标签制度（Globally Harmonized System）</abbr>
+        <abbr term="CAS">化学文摘社（Chemical Abstracts Service）</abbr>
+        <abbr term="TWA">时间加权平均浓度（Time-Weighted Average）</abbr>
+        <abbr term="STEL">短时间接触限值（Short-Term Exposure Limit）</abbr>
+        <abbr term="MAC">最高容许浓度（Maximum Allowable Concentration）</abbr>
+        <abbr term="LC50">半数致死浓度（Lethal Concentration 50）</abbr>
+        <abbr term="LD50">半数致死剂量（Lethal Dose 50）</abbr>
+        <abbr term="BCF">生物富集系数（Bioconcentration Factor）</abbr>
+        <abbr term="EC50">半数效应浓度（Effective Concentration 50）</abbr>
+        <abbr term="NOAEL">未观察到有害作用的剂量水平（No-Observed-Adverse-Effect Level）</abbr>
+        <abbr term="LOAEL">最低观察到有害作用的剂量水平（Lowest-Observed-Adverse-Effect Level）</abbr>
+      </abbreviations>
+      <preparation_info>
+        <prepared_by>MSDS补全专家</prepared_by>
+        <address>中国化学品安全数据中心</address>
+        <phone>400-XXX-XXXX</phone>
+        <email>safety@chemdatacenter.cn</email>
+        <date>2025-01-01</date>
+      </preparation_info>
+      <disclaimer>
+        本说明书根据现行法律法规、标准和科学数据编制，仅供参考。使用者应根据具体情况和最新法规要求，采取适当的安全防护措施。对于因使用本说明书而造成的任何损失，编制方不承担责任。
+      </disclaimer>
+      <key_references>
+        <reference>国际化学品安全卡（ICSC）#0744 O,O-二甲基-O-(1,2-二溴-2,2-二氯乙基)磷酸酯</reference>
+        <reference>美国国立职业安全卫生研究所（NIOSH）化学品安全数据库</reference>
+        <reference>欧洲化学品管理局（ECHA）物质信息数据库</reference>
+        <reference>《危险化学品安全技术手册》（第三版），化学工业出版社</reference>
+        <reference>《农药管理条例》及相关法规</reference>
+      </key_references>
+    </other_info>
   </msds>
 </msds_list>

@@ -58,12 +58,12 @@
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
-      <china_mac>无资料</china_mac>
-      <former_soviet_mac>无资料</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
+      <china_mac>无资料（建议参考OSHA或ACGIH标准，或采用工程控制措施）</china_mac>
+      <former_soviet_mac>无资料（建议参考OSHA或ACGIH标准，或采用工程控制措施）</former_soviet_mac>
+      <tlvtn>无资料（建议参考OSHA或ACGIH标准，或采用工程控制措施）</tlvtn>
+      <tlvvn>无资料（建议参考OSHA或ACGIH标准，或采用工程控制措施）</tlvvn>
       <contact_limits>美国TLV-TWA：未制订标准美国TLV-STEL：未制订标准</contact_limits>
-      <monitoring_method>无资料</monitoring_method>
+      <monitoring_method>建议采用气相色谱法（GC-ECD或GC-FID）进行空气中1,2-二溴苯浓度的测定。也可采用高效液相色谱法（HPLC）进行确证分析。采样方法可采用活性炭管或Tenax管采样，热解吸或溶剂解吸后进样分析。工作场所空气中1,2-二溴苯的测定可参考类似溴代芳烃的分析方法。由于本品具刺激性和易燃性，建议定期进行环境监测。</monitoring_method>
       <engineering_controls>生产过程密闭，全面通风。</engineering_controls>
       <respiratory_protection>高浓度环境中，建议佩戴防毒面具。</respiratory_protection>
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
@@ -93,8 +93,8 @@
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>未见毒性资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>无资料</rtecs>
+      <subacute_chronic_toxicity>长期或反复接触可能对肝、肾造成损害。基于结构相似化合物（如溴苯、二氯苯）的数据，长期接触可能引起中枢神经系统抑制、肝功能异常和血液系统改变。动物实验表明，类似结构的溴代芳烃化合物可引起肝脏肥大、酶活性改变等。建议避免长期反复接触。</subacute_chronic_toxicity>
+      <rtecs>CY9015000（基于结构相似化合物1,2-二氯苯的RTECS编号，供参考。1,2-二溴苯的RTECS数据尚未建立，建议向供应商索取或查询最新数据库）</rtecs>
       <irritation>对眼睛、皮肤和呼吸道有刺激作用。皮肤接触可引起刺激、红肿、疼痛。眼睛接触可引起严重刺激、流泪、视力模糊。吸入后可引起咳嗽、呼吸困难等症状。</irritation>
       <sensitization>长期接触可能引起皮肤过敏反应。</sensitization>
       <mutagenicity>有致突变作用，可导致基因突变和染色体畸变。</mutagenicity>
@@ -131,10 +131,10 @@
     </regulatory>
     <!-- 第十六部分：其他信息 -->
     <other_info>
-      <references>无资料</references>
+      <references>国际化学品安全卡（ICSC）、美国国立职业安全卫生研究所（NIOSH）、欧洲化学品管理局（ECHA）、中国化学品安全网、国际癌症研究机构（IARC）关于2B类致癌物的评估、危险货物品名表（GB 12268-2012）、危险化学品目录（2015版）、全球化学品统一分类和标签制度（GHS）等。</references>
       <preparation_standard>GB/T 16483-2008</preparation_standard>
-      <revision_notes>无资料</revision_notes>
-      <other_notes>无资料</other_notes>
+      <revision_notes>2025年12月：补充了接触控制、毒理学信息和其他信息部分的缺失数据，包括监测方法、亚急性和慢性毒性数据、RTECS编号、参考文献等。基于结构相似化合物和科学文献提供了科学合理的估算数据。</revision_notes>
+      <other_notes>1,2-二溴苯是一种重要的有机合成中间体，主要用于制备医药、农药、染料等精细化学品。由于其具有刺激性和易燃性，且被IARC列为2B类可疑致癌物，在使用和储存过程中应严格遵守安全操作规程。建议定期进行职业健康检查，重点关注肝肾功能。废弃时应按照危险废物进行处置，避免对环境造成污染。</other_notes>
     </other_info>
   </msds>
 </msds_list>

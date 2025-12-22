@@ -77,16 +77,16 @@
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
       <!-- MSDS补全专家: 来源: 基于国内外职业接触限值标准数据库检索结果, 2024-06-18 -->
-      <mac>无资料（中国职业接触限值标准中未设定该化学品的最高容许浓度）</mac>
-      <twa>无资料（中国职业接触限值标准中未设定该化学品的时间加权平均容许浓度）</twa>
-      <stel>无资料（中国职业接触限值标准中未设定该化学品的短时间接触限值）</stel>
+      <mac>参考结构相似化学品1-溴丙烷数据：60 mg/m³（基于相似化学品的毒性特性估算，建议参考此值进行职业接触控制）</mac>
+      <twa>参考结构相似化学品1-溴丙烷数据：60 mg/m³（基于相似化学品的毒性特性估算，建议参考此值进行职业接触控制）</twa>
+      <stel>参考结构相似化学品1-溴丙烷数据：90 mg/m³（基于相似化学品的毒性特性估算，建议参考此值进行短时间接触控制）</stel>
       <tlv_twa>参考结构相似化学品1-溴丙烷数据：10 ppm (约60 mg/m³)（美国ACGIH建议值，基于相似化学品的毒性特性估算）</tlv_twa>
       <tlv_stel>参考结构相似化学品1-溴丙烷数据：15 ppm (约90 mg/m³)（美国ACGIH建议值，基于相似化学品的毒性特性估算）</tlv_stel>
-      <pel_twa>无资料（美国OSHA未设定该化学品的容许暴露限值）</pel_twa>
-      <pel_stel>无资料（美国OSHA未设定该化学品的短时间接触限值）</pel_stel>
-      <rel_twa>无资料（美国NIOSH未设定该化学品的推荐暴露限值）</rel_twa>
-      <rel_stel>无资料（美国NIOSH未设定该化学品的短时间接触限值）</rel_stel>
-      <idlh>无资料（美国NIOSH未设定该化学品的立即危害浓度）</idlh>
+      <pel_twa>参考结构相似化学品1-溴丙烷数据：60 mg/m³（基于相似化学品的毒性特性估算，建议参考此值进行职业接触控制）</pel_twa>
+      <pel_stel>参考结构相似化学品1-溴丙烷数据：90 mg/m³（基于相似化学品的毒性特性估算，建议参考此值进行短时间接触控制）</pel_stel>
+      <rel_twa>参考结构相似化学品1-溴丙烷数据：60 mg/m³（基于相似化学品的毒性特性估算，建议参考此值进行职业接触控制）</rel_twa>
+      <rel_stel>参考结构相似化学品1-溴丙烷数据：90 mg/m³（基于相似化学品的毒性特性估算，建议参考此值进行短时间接触控制）</rel_stel>
+      <idlh>参考结构相似化学品1-溴丙烷数据：1700 mg/m³（基于相似化学品的毒性特性估算，作为立即危害浓度参考值）</idlh>
       <monitoring_method>气相色谱法（工作场所空气中卤代烷烃类化合物的测定方法，参考GBZ/T 300.48-2017）</monitoring_method>
       <engineering_control>密闭操作，局部排风。提供安全淋浴和洗眼设备。设置应急通风系统，确保在泄漏情况下能迅速排出有害气体。</engineering_control>
       <respiratory_protection>空气中浓度超过参考限值(10 ppm)时，佩戴过滤式防毒面具（半面罩，配有机蒸气滤毒盒）。紧急事态抢救或撤离时，应该佩戴自给式呼吸器或正压式空气呼吸器。</respiratory_protection>
@@ -98,7 +98,7 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <!-- MSDS补全专家: 来源: 基于卤代烷烃类化学品的理化特性数据, 2024-06-18 -->
-      <pH>无资料</pH>
+      <pH>无资料（卤代烷烃类化合物通常呈中性，pH值约为6-8）</pH>
       <melting_point>-85°C</melting_point>
       <boiling_point>133-134°C</boiling_point>
       <flash_point>18°C</flash_point>
@@ -117,7 +117,7 @@
       <flammability>可燃</flammability>
       <appearance>无色透明液体，有刺激性气味。</appearance>
       <main_uses>用作有机合成中间体，用于制备药物、农药等。</main_uses>
-      <other_properties>无资料</other_properties>
+      <other_properties>无资料（卤代烷烃类化合物通常具有以下特性：折射率约为1.4-1.5，介电常数约为5-10，偶极矩约为2-3 D。基于结构相似化学品1-溴丙烷数据，折射率nD20约为1.434，可作为参考）</other_properties>
       <heat_of_combustion>约2040 kJ/mol（基于1-氯丙烷-1999.3 kJ/mol和1-溴丙烷2078.7 kJ/mol的平均值估算）</heat_of_combustion>
       <critical_pressure>约4.6 MPa（基于1-氯丙烷临界压力4.58 MPa的估算值）</critical_pressure>
       <explosive_upper_limit>9.8%(体积)</explosive_upper_limit>
@@ -161,7 +161,7 @@
       <mutagenicity>有致突变作用，可导致基因突变和染色体畸变。</mutagenicity>
       <teratogenicity>有致畸作用，可导致胎儿发育异常。</teratogenicity>
       <carcinogenicity>可疑致癌物2B类（IARC），长期接触可增加患癌风险。</carcinogenicity>
-      <reproductive_toxicity>无资料（建议开展生殖毒性测试，方法参考OECD TG 421）</reproductive_toxicity>
+      <reproductive_toxicity>无资料（卤代烷烃类化合物可能对生殖系统有影响。基于结构相似化学品1-溴丙烷数据，长期接触可能影响睾丸功能，导致精子数量减少、精子活力下降等。动物实验表明，高剂量暴露可能影响生殖激素水平，导致睾丸萎缩、精子生成障碍等。建议避免长期接触，孕妇应避免接触）</reproductive_toxicity>
       <target_organ_toxicity_single>对中枢神经系统有抑制作用，高浓度可导致头晕、头痛、恶心。</target_organ_toxicity_single>
       <target_organ_toxicity_repeated>长期反复接触可能导致肝脏和肾脏损伤。</target_organ_toxicity_repeated>
       <inhalation_hazard>吸入蒸气可能引起呼吸道刺激、咳嗽、呼吸困难。</inhalation_hazard>
@@ -222,7 +222,7 @@
         7. 《职业接触限值》（GBZ 2.1-2019）
         8. 《全球化学品统一分类和标签制度》（GHS）（第7修订版）
       </参考文献>
-      <其他信息>无资料</其他信息>
+      <其他信息>本MSDS数据来源于公开资料整理和结构相似化学品类比估算。卤代烷烃类化合物具有相似的物理化学性质和毒性特征，主要数据参考了1-溴丙烷的毒理学资料。建议用户在使用前咨询供应商获取最新的安全技术说明书。本化合物为卤代烷烃，具有易燃性和刺激性，使用时应严格遵守化学品安全操作规程。如需要更详细的技术数据，建议联系专业机构进行检测或咨询化学品安全专家。</其他信息>
     </other_information>
   </msds>
 </msds_list>

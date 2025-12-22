@@ -5,9 +5,9 @@
     <basic_info>
       <cas_number>26748-41-4</cas_number>
       <msds_code>供应商名称： 供应商地址：</msds_code>
-      <product_name>过氧化新癸酸叔丁酯</product_name>
-      <product_alias>中文名称： 过氧化新癸酸叔丁酯</product_alias>
-      <product_english_name>tert-butylperneodecanoate</product_english_name>
+      <product_name>叔丁基过氧新癸酸酯[77%＜含量≤100%]</product_name>
+      <product_alias>过氧化新癸酸叔丁酯</product_alias>
+      <product_english_name>tert-butyl peroxyneodecanoate (more than 77%)</product_english_name>
       <company_name></company_name>
       <company_address></company_address>
       <contact_phone></contact_phone>
@@ -17,10 +17,10 @@
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>侵入途径：</hazard_category>
-      <exposure_routes></exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards></environmental_hazards>
+      <hazard_category>有机过氧化物，F型。</hazard_category>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入本品可能有害。皮肤接触会中毒，吸收后可导致全身性中毒。眼睛直接接触本品可导致暂时不适。</health_hazards>
+      <environmental_hazards>无资料</environmental_hazards>
       <fire_explosion_hazards>遇热有火灾危险。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -43,8 +43,8 @@
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>加热时，容器可能爆炸。受热或接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>有害燃烧产物：</fire_risk_classification>
-      <harmful_combustion_products>灭火方法： 合适的灭火介质：使用适合火灾类型的合适的灭火剂。不合适的灭火介质：无特别说明。</harmful_combustion_products>
+      <fire_risk_classification>无资料</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳</harmful_combustion_products>
       <suitable_extinguishing_media>合适的灭火介质：使用适合火灾类型的合适的灭火剂。不合适的灭火介质：无特别说明。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
@@ -81,7 +81,7 @@
       <relative_vapor_density>无资料</relative_vapor_density>
       <solubility></solubility>
       <molecular_formula>C14H28O3</molecular_formula>
-      <molecular_weight></molecular_weight>
+      <molecular_weight>244.37</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
@@ -89,8 +89,8 @@
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
       <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <appearance>无色至淡黄色液体</appearance>
+      <main_uses>用作聚合反应引发剂，用于合成树脂、橡胶等高分子材料</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -142,7 +142,11 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）
+《化学品分类和危险性公示通则》（GB 13690-2009）
+《全球化学品统一分类和标签制度》（GHS）
+《危险化学品目录》（2015版）
+《工作场所安全使用化学品规定》（劳部发[1996]423号）</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

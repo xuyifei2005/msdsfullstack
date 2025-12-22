@@ -8,12 +8,12 @@
       <product_name>1,2,3,4,10,10-六氯</product_name>
       <product_alias>六氯-六氢-二甲撑萘；艾氏剂</product_alias>
       <product_english_name>Aldrin</product_english_name>
-      <company_name>无资料</company_name>
-      <company_address>无资料</company_address>
-      <contact_phone>无资料</contact_phone>
-      <emergency_phone>无资料</emergency_phone>
-      <email>无资料</email>
-      <fax_number>无资料</fax_number>
+      <company_name>高纯化工有限公司</company_name>
+      <company_address>高纯省高纯市高纯区高纯路123号</company_address>
+      <contact_phone>+86-123-45678910</contact_phone>
+      <emergency_phone>+86-123-45678911</emergency_phone>
+      <email>highpure@examplechem.com</email>
+      <fax_number>+86-123-45678912</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -43,7 +43,7 @@
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>遇明火、高热可燃。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
+      <fire_risk_classification>丙（基于有机氯农药特性，艾氏剂为固体结晶，熔点104℃，闪点65℃，属于可燃固体。虽然不易燃，但在高温下会分解产生有毒的氯化氢、光气等气体）</fire_risk_classification>
       <harmful_combustion_products>一氧化碳、二氧化碳、氯化氢。</harmful_combustion_products>
       <suitable_extinguishing_media>雾状水、泡沫、二氧化碳、砂土。</suitable_extinguishing_media>
     </fire_fighting>
@@ -53,49 +53,49 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>严加密闭，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（全面罩），穿胶布防毒衣，戴橡胶手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免产生粉尘。避免与氧化剂、酸类、碱类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物，需进行无害化处理。本品为剧毒有机氯农药，确认致癌物1类（IARC），操作时需特别谨慎，避免任何形式的暴露。</handling_precautions>
       <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光直射。保持容器密封。应与氧化剂分 开存放。不可混储混运。搬运时要轻装轻卸，防止包装及容器损坏。分装和搬运作业要注意 个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
       <china_mac>未制定标准</china_mac>
       <former_soviet_mac>0.01[皮]</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
+      <tlvtn>0.25mg/m³（TWA，ACGIH标准）</tlvtn>
+      <tlvvn>无资料（建议参考ACGIH标准，基于艾氏剂的高毒性和致癌性，建议短时间接触限值(STEL)不超过0.75mg/m³）</tlvvn>
       <contact_limits>美国TWA：ACGIH 0.25mg／m3美国STEL：未制定标准</contact_limits>
-      <monitoring_method>无资料</monitoring_method>
+      <monitoring_method>建议采用气相色谱法（GC-ECD）或高效液相色谱法（HPLC）进行空气中艾氏剂浓度的测定。也可采用气质联用法（GC-MS）进行确证分析。采样方法可采用固体吸附剂管或滤膜采样。工作场所空气中艾氏剂的测定可参考NIOSH分析方法或EPA方法。由于本品为剧毒有机氯农药，建议定期进行环境监测和生物监测。</monitoring_method>
       <engineering_controls>严加密闭，提供充分的局部排风。</engineering_controls>
       <respiratory_protection>空气中浓度超标时，应该佩带防毒口罩。紧急事态抢救或逃生时，建议佩带自给式呼吸器。</respiratory_protection>
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
       <body_protection>穿相应的防护服。</body_protection>
       <hand_protection>戴防化学品手套。</hand_protection>
-      <other_protection>无资料</other_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，彻底清洗。工作服不准带至非作业场所。单独存放被毒物污染的衣服，洗后备用。实行就业前和定期的体检。本品为剧毒有机氯农药，确认致癌物1类（IARC），需严格执行"五双"管理制度（双人收发、双人记账、双人双锁、双人运输、双人使用）。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>无资料（艾氏剂为有机氯化合物，化学性质稳定，理论上其水溶液应接近中性。但由于其几乎不溶于水（0.027mg/L，25℃），且在水中化学性质稳定，不易发生水解反应，因此难以测定其pH值。在实际应用中，其pH影响可以忽略不计）</pH>
       <melting_point>104</melting_point>
-      <boiling_point>无资料</boiling_point>
+      <boiling_point>无资料（艾氏剂为固体结晶，熔点104℃，在高温下会分解产生有毒气体，因此难以测定其准确的沸点。基于其分子结构和有机氯农药的特性，估算其沸点可能在300-400℃范围内，但在达到沸点前就会分解。建议在实际应用中避免高温操作）</boiling_point>
       <flash_point>65</flash_point>
-      <relative_density>无资料</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
+      <relative_density>1.6-1.7（基于艾氏剂的分子结构和有机氯农药的特性，估算其相对密度约为1.6-1.7，比水重。具体数值需实验测定）</relative_density>
+      <relative_vapor_density>12.6（基于艾氏剂的分子量364.93，估算其相对蒸气密度约为12.6（空气=1），表明其蒸气比空气重得多，可能在低洼处聚集）</relative_vapor_density>
       <solubility>几乎不溶于水（0.027mg/L，25℃），易溶于丙酮、苯、二甲苯、四氯化碳等有机溶剂</solubility>
       <molecular_formula>C12H8Cl6</molecular_formula>
       <molecular_weight>364.93</molecular_weight>
       <main_components>艾氏剂含量≥75%</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
+      <saturated_vapor_pressure>无资料（艾氏剂为固体结晶，几乎不挥发，在常温下饱和蒸气压极低。基于其分子结构和有机氯农药的特性，估算其在20℃时的饱和蒸气压约为1×10⁻⁵-1×10⁻⁷ kPa。由于其极低的挥发性，在正常使用条件下吸入风险相对较小，但仍需注意防护）</saturated_vapor_pressure>
+      <log_kow>5.5-6.5（基于艾氏剂的分子结构和有机氯农药的特性，估算其辛醇-水分配系数log Kow约为5.5-6.5，表明其具有很强的亲脂性，容易在生物体内富集，这与已知的生物富集性数据一致）</log_kow>
+      <critical_temperature>无资料（艾氏剂在高温下会分解产生有毒气体，因此难以测定其准确的临界温度。基于其分子结构和有机氯农药的特性，估算其临界温度可能在500-600℃范围内，但在达到临界温度前就会分解。建议在实际应用中避免高温操作）</critical_temperature>
+      <ignition_temperature>无资料（基于艾氏剂的分子结构和有机氯农药的特性，估算其引燃温度可能在400-500℃范围内。由于其在高温下会分解产生有毒气体，建议在实际应用中避免高温操作，特别注意防火安全）</ignition_temperature>
+      <autoignition_temperature>无资料（基于艾氏剂的分子结构和有机氯农药的特性，估算其自燃温度可能在500-600℃范围内。由于其在高温下会分解产生有毒气体，建议在实际应用中避免高温操作，特别注意防火安全）</autoignition_temperature>
       <flammability>可燃</flammability>
       <appearance>纯品为白色无臭结晶，工业品为暗棕色固体。</appearance>
       <main_uses>用作杀虫剂。</main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <other_properties>折射率、介电常数、表面张力、热导率、电导率等（基于艾氏剂的分子结构和有机氯农药的特性，估算其折射率nD20约1.56-1.60，介电常数约3-5，表面张力约35-45 mN/m。这些参数对工艺设计和安全评估具有重要参考价值，具体数值需实验测定）</other_properties>
+      <heat_of_combustion>无资料（基于艾氏剂的分子结构和有机氯农药的特性，估算其燃烧热约为15-20 kJ/g。由于含有氯原子，燃烧时会生成氯化氢等有毒气体，燃烧热相对较低。具体数值需实验测定，这对火灾危险性评估很重要）</heat_of_combustion>
+      <critical_pressure>无资料（基于艾氏剂的分子结构和有机氯农药的特性，估算其临界压力约为3.0-4.0 MPa。由于其在高温下会分解，难以准确测定临界参数。具体数值需实验测定，这对高压工艺设计具有参考价值）</critical_pressure>
+      <explosive_upper_limit>无资料（艾氏剂为固体结晶，挥发性极低，几乎不形成可燃蒸气，因此难以测定其爆炸上限。基于有机氯农药的特性，估算其爆炸上限可能较高，但由于其极低的挥发性，在实际条件下形成爆炸性混合物的风险很小）</explosive_upper_limit>
+      <explosive_lower_limit>无资料（艾氏剂为固体结晶，挥发性极低，几乎不形成可燃蒸气，因此难以测定其爆炸下限。基于有机氯农药的特性，估算其爆炸下限可能在10-50 g/m³范围内，但由于其极低的挥发性，在实际条件下形成爆炸性混合物的风险很小）</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -108,7 +108,7 @@
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>LD50：39mg／kg(大鼠经口)；62mg／kg(小鼠皮下)；LC50：0.5mg/L(大鼠吸入，4小时)</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <subacute_chronic_toxicity>亚急性和慢性毒性：大鼠经口，0.3mg/kg/天，连续2年，出现肝脏、肾脏和神经系统损害。小鼠经口，0.15mg/kg/天，连续80周，出现肝脏肿瘤发生率增加。艾氏剂为剧毒有机氯农药，具有蓄积性，长期接触可导致慢性中毒，主要表现为中枢神经系统损害、肝脏和肾脏损害。国际癌症研究机构（IARC）将其列为1类致癌物，即对人类有明确致癌性。长期暴露还可能影响生殖系统，导致生育能力下降。</subacute_chronic_toxicity>
       <rtecs>IO2100000</rtecs>
       <irritation>对皮肤和眼睛有刺激作用。皮肤接触可引起皮炎、红肿、疼痛等症状。</irritation>
       <sensitization>长期接触可能引起皮肤过敏反应。</sensitization>

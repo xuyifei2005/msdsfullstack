@@ -5,24 +5,23 @@
     <basic_info>
       <cas_number>927-07-1</cas_number>
       <msds_code>无资料</msds_code>
-      <product_name>叔丁基过氧新戊酸酯[含量≤27%</product_name>
+      <product_name>叔丁基过氧新戊酸酯[含量≤27%,含B型稀释剂≥73%]</product_name>
       <product_alias>无资料</product_alias>
-      <product_english_name>含B型稀释剂≥73%]</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_english_name>peroxypivalate (not more than 27%, and diluent type B not less than 73%)</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>有机过氧化物，F型。</hazard_category>
-      <exposure_routes>吸入、食入、皮肤接触、眼睛接触
-吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入</exposure_routes>
-      <health_hazards></health_hazards>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入本品可能有害。皮肤接触会中毒，吸收后可导致全身性中毒。眼睛直接接触本品可导致暂时不适。</health_hazards>
       <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <fire_explosion_hazards>本品为有机过氧化物，接触火焰、受热或摩擦、震动、撞击可能引起分解并发生爆炸。在受到撞击、摩擦或震动时可能分解。如果受到污染可能加速分解。分解可能产生有毒气体。容器受热可能爆炸。火灾时可能产生有毒烟雾。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -37,8 +36,8 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。就医。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行</eye_contact>
-      <inhalation>人工呼吸。就医。</inhalation>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
       <ingestion>误服者立即漱口，给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
@@ -50,12 +49,12 @@
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上风 应急处理： 措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或惰性吸 附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中， 并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防暴设备。</emergency_procedures>
+      <emergency_procedures>保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上风处。应急处理：采取措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或惰性吸附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中，并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防爆设备。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
       <handling_precautions></handling_precautions>
-      <storage_precautions>火花、明火和热表面。采取措施防止静电积累。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。</storage_precautions>
+      <storage_precautions>保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远离不相容材料和食品容器的地方。采取措施防止静电积累。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -81,8 +80,8 @@
       <relative_density>无资料</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
       <solubility></solubility>
-      <molecular_formula></molecular_formula>
-      <molecular_weight></molecular_weight>
+      <molecular_formula>C9H18O3</molecular_formula>
+      <molecular_weight>174.24</molecular_weight>
       <main_components>叔丁基过氧新戊酸酯</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
@@ -90,8 +89,8 @@
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
       <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <appearance>无色至淡黄色液体</appearance>
+      <main_uses>用作聚合反应引发剂，用于合成树脂、橡胶等高分子材料</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -143,7 +142,11 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）
+《化学品分类和危险性公示通则》（GB 13690-2009）
+《全球化学品统一分类和标签制度》（GHS）
+《危险化学品目录》（2015版）
+《工作场所安全使用化学品规定》（劳部发[1996]423号）</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

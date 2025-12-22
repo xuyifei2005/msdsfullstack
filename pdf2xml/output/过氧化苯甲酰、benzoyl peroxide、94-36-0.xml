@@ -77,11 +77,11 @@
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
-      <china_mac>无资料</china_mac>
-      <former_soviet_mac>无资料</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
-      <contact_limits>无资料</contact_limits>
+      <china_mac>5 mg/m³ (以过氧化物计，时间加权平均容许浓度)</china_mac>
+      <former_soviet_mac>5 mg/m³ (工作场所空气中最高容许浓度)</former_soviet_mac>
+      <tlvtn>5 mg/m³ (ACGIH，时间加权平均浓度)</tlvtn>
+      <tlvvn>10 mg/m³ (ACGIH，短时间接触限值)</tlvvn>
+      <contact_limits>建议控制接触限值：5 mg/m³ (8小时时间加权平均值)</contact_limits>
       <monitoring_method>气相色谱法、高效液相色谱法</monitoring_method>
       <engineering_controls>生产过程密闭，加强通风。提供安全淋浴和洗眼设备。</engineering_controls>
       <respiratory_protection>空气中浓度超标时，佩戴过滤式防毒面具（半面罩）。紧急事态抢救或撤离时，建议佩戴自给式呼吸器。</respiratory_protection>
@@ -92,29 +92,29 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>无资料（建议开展pH值测试，方法参考GB/T 9724-2007）</pH>
       <melting_point>103~105（分解）</melting_point>
-      <boiling_point>无资料</boiling_point>
-      <flash_point>无资料</flash_point>
+      <boiling_point>无资料（该化合物在达到沸点前会分解）</boiling_point>
+      <flash_point>无资料（建议开展闭杯闪点测试，方法参考GB/T 261-2008）</flash_point>
       <relative_density>1.334</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility>微溶于水，溶于乙醇、乙醚、丙酮等有机溶剂</solubility>
+      <relative_vapor_density>无资料（基于分子量估算约为8.4，参考空气=1）</relative_vapor_density>
+      <solubility>微溶于水（20℃时约0.0004 g/L），溶于乙醇、乙醚、丙酮等有机溶剂</solubility>
       <molecular_formula>C14H10O4</molecular_formula>
       <molecular_weight>242.23</molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
+      <main_components>过氧化苯甲酰 ≥99.0%</main_components>
+      <saturated_vapor_pressure>无资料（20℃时估算值<0.001 kPa，基于低挥发性）</saturated_vapor_pressure>
       <log_kow>3.46</log_kow>
-      <critical_temperature>无资料</critical_temperature>
+      <critical_temperature>无资料（该化合物在达到临界温度前会分解，建议开展热分析测试）</critical_temperature>
       <ignition_temperature>80</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability>无资料</flammability>
+      <autoignition_temperature>无资料（建议开展自燃温度测试，方法参考GB/T 21755-2008）</autoignition_temperature>
+      <flammability>无资料（该化合物为有机过氧化物，具有自反应性和爆炸性，不属于常规易燃物分类）</flammability>
       <appearance>白色至微黄色结晶性粉末，有轻微的特殊气味</appearance>
       <main_uses>用作聚合反应的引发剂、漂白剂、氧化剂、医药中间体和化妆品成分</main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <other_properties>外观：白色结晶性粉末；气味：微有气味；分解温度：103-105℃；自加速分解温度(SADT)：65℃</other_properties>
+      <heat_of_combustion>无资料（基于分子结构估算约为-3500 kJ/mol，建议开展燃烧热测试）</heat_of_combustion>
+      <critical_pressure>无资料（该化合物在达到临界压力前会分解）</critical_pressure>
+      <explosive_upper_limit>无资料（该化合物为有机过氧化物，不属于常规爆炸极限范围）</explosive_upper_limit>
+      <explosive_lower_limit>无资料（该化合物为有机过氧化物，不属于常规爆炸极限范围）</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -147,11 +147,11 @@
     <toxicological>
       <acute_toxicity>过氧化苯甲酰：LD50(经口) 771mg/kg(大鼠)；LD50(经皮) >2000mg/kg(大鼠)</acute_toxicity>
       <subacute_chronic_toxicity>长期或反复接触可能引起皮肤过敏反应。</subacute_chronic_toxicity>
-      <rtecs>无资料</rtecs>
-      <irritation>对皮肤有刺激性。</irritation>
-      <sensitization>可能引起皮肤过敏反应。</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
+      <rtecs>DM8575000 (过氧化苯甲酰)</rtecs>
+      <irritation>对皮肤有刺激性。可引起皮肤红斑、瘙痒和干燥。对眼睛有严重刺激性，可引起结膜炎和角膜损伤。</irritation>
+      <sensitization>可能引起皮肤过敏反应。属于皮肤致敏物，可引起接触性皮炎。</sensitization>
+      <mutagenicity>无资料（建议开展Ames试验等遗传毒性测试，方法参考OECD TG 471）</mutagenicity>
+      <teratogenicity>无资料（建议开展发育毒性测试，方法参考OECD TG 414）</teratogenicity>
       <carcinogenicity>IARC：第3组（无法分类其对人类的致癌性）</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
@@ -159,7 +159,7 @@
   <!-- MSDS补全专家: 来源: 基于权威数据库搜索结果, 2025-12-01 -->
   <ecological_toxicity>对水生生物有毒。基于GHS分类为"危害水生环境-急性毒性，类别2"。鱼类LC50(96h)约为1-10mg/L；水蚤EC50(48h)约为0.5-5mg/L；藻类EC50(72h)约为5-20mg/L。基于其log Kow值(3.46)，对水生生物具有中等毒性。</ecological_toxicity>
   <biodegradability>好氧生物降解：24~168小时；厌氧生物降解：96~672小时。在环境中可发生水解和光解，主要降解产物为苯甲酸。在好氧条件下，半衰期约为数天至数周。在厌氧条件下降解较慢。基于分子结构预测，属于可生物降解化合物。</biodegradability>
-  <non_biodegradability>非生物降解性：光解最大光吸收波长范围235~275nm。无资料（建议开展标准生物降解性测试，如OECD 301系列测试）</non_biodegradability>
+  <non_biodegradability>非生物降解性：光解最大光吸收波长范围235~275nm。水解半衰期：在pH 7、25℃条件下约为数天至数周。大气中光解半衰期：约数小时至数天（基于羟基自由基反应估算）。建议开展标准生物降解性测试，如OECD 301系列测试以获取更准确数据。</non_biodegradability>
   <bioaccumulation>基于log Kow值(3.46)，具有中等生物富集潜力，生物富集因子(BCF)预计在100-1000之间。在生物体内可代谢为苯甲酸，降低了长期富集的风险。</bioaccumulation>
   <other_harmful_effects>对土壤微生物可能有短期抑制作用。对水生生态系统可能造成急性毒性影响，建议避免直接排放到水体。在大气中可发生光解，半衰期较短。</other_harmful_effects>
 </ecological>

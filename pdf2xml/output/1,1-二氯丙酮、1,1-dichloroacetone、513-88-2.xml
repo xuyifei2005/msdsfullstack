@@ -4,9 +4,9 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>513-88-2</cas_number>
-      <msds_code>无资料</msds_code>
+      <msds_code>MSDS#319</msds_code>
       <product_name>1,1-二氯丙酮</product_name>
-      <product_alias>无资料</product_alias>
+      <product_alias>不对称二氯丙酮; 1,1-二氯-2-丙酮; 1,1-Dichloro-2-propanone; unsym-Dichloroacetone</product_alias>
       <product_english_name>1,1-dichloroacetone</product_english_name>
       <company_name></company_name>
       <company_address></company_address>
@@ -43,8 +43,8 @@
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>可与空气形成爆炸性混合物。暴露于火中的容器可能会通过压力安全阀泄漏出内容物，从 而增加火势和/或蒸气的浓度。蒸气可能会移动到着火源并回闪。液体和蒸气易燃。燃烧时 可能会释放毒性烟雾。加热时，容器可能爆炸。受热或接触火焰可能会产生膨胀或爆炸性 分解。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>无资料 合适的灭火介质：小火：干式化学灭火剂、二氧化碳、水或抗溶泡沫灭火剂；大火：水、</harmful_combustion_products>
+      <fire_risk_classification>乙</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氯化氢、光气等有毒气体</harmful_combustion_products>
       <suitable_extinguishing_media>水雾或抗溶泡沫灭火剂。不合适的灭火介质：避免用太强烈的水汽灭火，因为它可能会使 火苗蔓延分散。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
@@ -58,22 +58,22 @@
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
-      <china_mac>无资料</china_mac>
-      <former_soviet_mac>无资料</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
-      <contact_limits>无资料</contact_limits>
+      <china_mac>无资料（建议参考结构相似化学品丙酮的MAC值：400 mg/m³，但1,1-二氯丙酮因含氯基团毒性可能更高，建议采用更严格标准）</china_mac>
+      <former_soviet_mac>无资料（建议参考丙酮标准：200 mg/m³，考虑氯代基团毒性增强因素）</former_soviet_mac>
+      <tlvtn>无资料（建议参考ACGIH对氯代酮类化合物的推荐标准，基于结构相似性建议值：25 ppm或100 mg/m³，具体数值需毒理学数据支持）</tlvtn>
+      <tlvvn>无资料（建议参考氯代丙酮类化合物标准，考虑皮肤吸收和呼吸道刺激效应）</tlvvn>
+      <contact_limits>无资料（建议工作场所空气中短时间接触限值(STEL)不超过50 ppm，时间加权平均容许浓度(TWA)不超过25 ppm，基于氯代酮类化合物的刺激性和潜在毒性）</contact_limits>
       <monitoring_method></monitoring_method>
       <engineering_controls></engineering_controls>
       <respiratory_protection></respiratory_protection>
       <eye_protection>佩戴化学护目镜（符合欧盟EN166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
       <hand_protection></hand_protection>
-      <other_protection>无资料</other_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。注意个人清洁卫生。皮肤接触后立即用大量肥皂水和清水彻底冲洗。定期进行职业健康检查，重点监测肝肾功能。配备应急冲洗设备和应急药品。避免长期反复接触。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>无资料（1,1-二氯丙酮为氯代酮类化合物，理论上中性，但由于其反应活性较高，在水中可能发生缓慢水解反应。根据结构相似化学品数据，其水溶液pH值应接近中性（6-8），但具体数值需实验测定。建议在实际应用中监测pH变化）</pH>
       <melting_point>＜-50</melting_point>
       <boiling_point>117</boiling_point>
       <flash_point>约30-35</flash_point>
@@ -84,18 +84,18 @@
       <molecular_weight>126.97</molecular_weight>
       <main_components>1,1-二氯丙酮含量≥99%</main_components>
       <saturated_vapor_pressure>＜30hPa（20℃）</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
+      <log_kow>无资料（建议参考结构相似化学品数据。基于1,1-二氯丙酮的分子结构和氯代烷烃的特性，估算log Kow值约为1.5-2.5，表明其具有一定的亲脂性，可能在生物体内有中等程度的富集潜力。具体数值需实验测定）</log_kow>
+      <critical_temperature>无资料（基于结构相似化学品丙酮的临界温度235℃，考虑氯代基团的影响，估算1,1-二氯丙酮的临界温度可能在300-350℃范围内。氯代通常会提高临界温度，但具体数值需实验测定）</critical_temperature>
+      <ignition_temperature>无资料（基于结构相似化学品数据，1,1-二氯丙酮的引燃温度估算约为400-500℃。氯代酮类化合物通常比相应烷烃更难引燃，但受热分解可能产生易燃气体。建议在实际应用中测定具体数值）</ignition_temperature>
+      <autoignition_temperature>无资料（基于氯代酮类化合物的特性，估算自燃温度约为500-600℃。氯代基团的存在通常会提高自燃温度，但高温下可能分解释放有毒气体。储存和使用时应避免高温环境）</autoignition_temperature>
       <flammability></flammability>
       <appearance>无色至淡黄色液体，有刺激性气味</appearance>
       <main_uses>用作有机合成中间体、化学试剂等</main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <other_properties>无资料（建议补充折射率、介电常数、表面张力等重要理化参数。基于氯代酮类化合物的特性，估算折射率nD20约1.42-1.46，介电常数约15-25，表面张力约30-40 mN/m。这些参数对工艺设计和安全评估具有重要参考价值，具体数值需实验测定）</other_properties>
+      <heat_of_combustion>无资料（基于结构相似化学品丙酮的燃烧热，考虑氯代基团的影响，估算1,1-二氯丙酮的燃烧热约为15-20 kJ/g。氯代通常会降低燃烧热，但具体数值需实验测定，这对火灾危险性评估很重要）</heat_of_combustion>
+      <critical_pressure>无资料（基于氯代酮类化合物的特性，估算临界压力约为4.0-5.0 MPa。氯代基团的存在通常会提高临界压力，但具体数值需实验测定，这对高压工艺设计具有参考价值）</critical_pressure>
+      <explosive_upper_limit>无资料（基于氯代酮类化合物的特性，估算爆炸上限约为8-12%（体积比）。氯代化合物通常具有较窄的爆炸范围，但具体数值需实验测定，这对防爆安全设计很重要）</explosive_upper_limit>
+      <explosive_lower_limit>无资料（基于结构相似化学品数据，估算爆炸下限约为2-4%（体积比）。氯代基团通常会提高爆炸下限，但具体数值需实验测定，这对通风设计和安全操作具有指导意义）</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -109,12 +109,12 @@
     <toxicological>
       <acute_toxicity>LD50：无资料。LC50：无资料。本品有毒，对眼睛、皮肤和呼吸道有强烈刺激作用。吸入后可引起咳嗽、呼吸困难、头痛、头晕、恶心、呕吐等症状。皮肤接触可引起灼伤、红肿、疼痛。眼睛接触可引起严重刺激、流泪、视力模糊。吞食后可引起口腔、咽喉、胃肠道刺激，出现恶心、呕吐、腹痛等症状。</acute_toxicity>
       <subacute_chronic_toxicity>长期或反复接触可能对肝、肾造成损害。长期接触可能引起皮肤过敏反应。</subacute_chronic_toxicity>
-      <rtecs>无资料</rtecs>
+      <rtecs>无资料（建议查询美国国家职业安全卫生研究所（NIOSH）RTECS数据库，获取1,1-二氯丙酮的毒理学登记号。基于氯代酮类化合物的特性，可能具有眼睛、皮肤和呼吸道刺激性，建议按有害化学品进行管理和防护）</rtecs>
       <irritation>对眼睛、皮肤和呼吸道有强烈刺激作用。皮肤接触可引起灼伤、红肿、疼痛。眼睛接触可引起严重刺激、流泪、视力模糊。吸入后可引起咳嗽、呼吸困难等症状。</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <sensitization>无资料（基于氯代酮类化合物的特性，可能存在皮肤致敏风险。建议进行皮肤斑贴试验评估致敏性。长期或反复接触可能引起皮肤过敏反应，表现为皮肤红肿、瘙痒、皮疹等症状。有过敏体质的个体应特别注意防护）</sensitization>
+      <mutagenicity>无资料（建议进行Ames试验、染色体畸变试验等遗传毒性测试。基于氯代化合物的结构特征，理论上可能存在一定的遗传毒性风险。建议参考结构相似化学品的遗传毒性数据，但具体结果需实验验证）</mutagenicity>
+      <teratogenicity>无资料（建议进行发育毒性试验评估。基于氯代酮类化合物的特性，理论上可能存在一定的发育毒性风险。孕妇及育龄妇女应避免接触。建议参考EPA、OECD等机构的发育毒性评估指南进行测试）</teratogenicity>
+      <carcinogenicity>无资料（关键安全数据缺失，建议查询IARC、NTP、OSHA等权威机构致癌性分类。基于氯代化合物的结构特征，理论上存在一定的致癌风险，但具体致癌性需长期动物试验验证。建议按潜在致癌物进行防护，避免长期反复接触）</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
@@ -132,10 +132,10 @@
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
+      <dangerous_goods_number>无资料（建议参考《危险货物品名表》GB 12268，基于1,1-二氯丙酮的理化性质和危险性，可能属于第3类易燃液体或第6.1类毒害品。具体编号需根据其闪点、毒性等特性确定，建议咨询专业危险品分类机构）</dangerous_goods_number>
+      <un_number>无资料（建议参考UN危险货物运输编号体系。基于氯代酮类化合物的特性，可能属于UN 1224（酮类溶液）或类似编号。具体UN编号需根据其危险特性和运输条件确定，建议查询最新版UN RTDG）</un_number>
+      <imdg_page>无资料（建议查询《国际海运危险货物规则》（IMDG Code）最新版本。基于氯代酮类化合物的海运要求，可能属于第3类或第6.1类，具体页码和包装要求需根据其危险分类确定）</imdg_page>
+      <packaging_mark>无资料（建议按照GB 190-2009《危险货物包装标志》要求，标注相应的危险性标志。可能需要的标志包括易燃液体标志、毒性标志等。具体标志需根据其最终危险分类确定，建议咨询专业包装机构）</packaging_mark>
       <packing_group>III（包装类别III，低危险性）</packing_group>
       <packaging_method>采用防静电包装，避免与氧化剂、碱类混装。包装应密封、防潮、防破损。灌装时应控制流速，且有接地装置，防止静电积聚。</packaging_method>
       <transportation_precautions>运输前检查密封，防止跌落和碰撞。严禁与氧化剂、碱类、食用化学品混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。在火场中，受热的容器有爆炸危险，需特别注意。</transportation_precautions>

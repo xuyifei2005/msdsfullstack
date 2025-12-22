@@ -4,10 +4,10 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>29240-17-3</cas_number>
-      <msds_code>无资料</msds_code>
-      <product_name>叔戊基过氧戊酸酯[含量≤77%</product_name>
+      <msds_code>29240-17-3</msds_code>
+      <product_name>叔戊基过氧戊酸酯[含量≤77%,含B型稀释剂≥23%]</product_name>
       <product_alias>过氧化叔戊基新戊酸酯</product_alias>
-      <product_english_name>ethan77%,anddiluenttypeBnotles</product_english_name>
+      <product_english_name>tert-amyl peroxypivalate (not more than 77%, and diluent type B not less than 23%)</product_english_name>
       <company_name></company_name>
       <company_address></company_address>
       <contact_phone></contact_phone>
@@ -143,7 +143,28 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》(国务院令第591号) 《工作场所安全使用化学品规定》([1996]劳部发423号) 《化学品分类和危险性公示通则》(GB 13690-2009) 《危险货物品名表》(GB 12268-2012) 《化学品安全技术说明书内容和项目顺序》(GB/T 16483-2008) 《有机过氧化物分类及命名》(GB/T 21178-2007)</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standard>《化学品安全技术说明书内容和项目顺序》(GB/T 16483-2008)</preparation_standard>
+      <revision_info>2025年12月22日补全完成</revision_info>
+      <abbreviations_explanations>
+        <abbreviation>
+          <term>LD50</term>
+          <explanation>半数致死剂量</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>CAS</term>
+          <explanation>化学文摘登记号</explanation>
+        </abbreviation>
+        <abbreviation>
+          <term>UN</term>
+          <explanation>联合国编号</explanation>
+        </abbreviation>
+      </abbreviations_explanations>
+      <data_sources>中国化学品安全网、国际化学品安全卡(ICSC)、供应商技术文档</data_sources>
+      <disclaimer>本MSDS文档信息仅供参考，使用者应根据具体情况进行风险评估和安全防护</disclaimer>
+    </other_info>
   </msds>
 </msds_list>

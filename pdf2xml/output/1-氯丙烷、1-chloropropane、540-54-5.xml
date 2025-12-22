@@ -146,5 +146,50 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.1类低闪点易燃液体，可疑致癌物2B类（IARC），应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standard>本MSDS按照GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》和GB/T 17519-2013《化学品安全技术说明书编写指南》编制</preparation_standard>
+      <revision_info>首次编制日期：2025年12月22日。本文件为第1版。</revision_info>
+      <abbreviations>
+        <abbreviation>
+          <term>MSDS</term>
+          <meaning>化学品安全技术说明书</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>CAS</term>
+          <meaning>化学文摘社登记号</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>LC50</term>
+          <meaning>半数致死浓度</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>LD50</term>
+          <meaning>半数致死剂量</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>EC50</term>
+          <meaning>半数效应浓度</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>BCF</term>
+          <meaning>生物富集系数</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>IARC</term>
+          <meaning>国际癌症研究机构</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>GHS</term>
+          <meaning>全球化学品统一分类和标签制度</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>RTECS</term>
+          <meaning>化学物质毒性效应登记号</meaning>
+        </abbreviation>
+      </abbreviations>
+      <data_sources>国际化学品安全卡(ICSC)、美国国立职业安全卫生研究所(NIOSH)、欧洲化学品管理局(ECHA)、中国化学品安全网、PubChem数据库、RTECS数据库、供应商技术文档、科学文献数据库</data_sources>
+      <disclaimer>本MSDS信息基于现有数据和专业知识编制，仅供参考。使用者应根据实际使用条件和法规要求，结合专业判断，确定适当的安全措施。对于因使用本信息而导致的任何损失或损害，编制者不承担责任。本品为可疑致癌物2B类（IARC），使用时应特别注意防护。</disclaimer>
+    </other_info>
   </msds>
 </msds_list>

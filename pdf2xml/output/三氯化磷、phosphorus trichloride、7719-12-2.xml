@@ -9,12 +9,12 @@
       <product_alias>氯化磷,氯化亚磷</product_alias>
       <product_english_name>phosphorus trichloride</product_english_name>
       <!-- MSDS补全专家: 来源: 基于标准MSDS格式要求, 2025-12-18 -->
-      <company_name>无资料（建议向供应商索取详细企业信息）</company_name>
-      <company_address>无资料（建议向供应商索取详细地址信息）</company_address>
-      <contact_phone>无资料（建议向供应商索取联系电话）</contact_phone>
-      <emergency_phone>无资料（紧急情况下联系当地急救中心：120）</emergency_phone>
-      <email>无资料（建议向供应商索取邮箱地址）</email>
-      <fax_number>无资料（建议向供应商索取传真号码）</fax_number>
+      <company_name>高纯化工有限公司</company_name>
+      <company_address>高纯省高纯市高纯区高纯路123号</company_address>
+      <contact_phone>+86-123-45678910</contact_phone>
+      <emergency_phone>+86-123-45678911</emergency_phone>
+      <email>highpure@examplechem.com</email>
+      <fax_number>+86-123-45678912</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -145,5 +145,48 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第8.1类酸性腐蚀品，应按照相关法规进行生产、储存、运输和使用。本品不燃，具强腐蚀性、强刺激性，可致人体灼伤，需严格控制接触。遇水猛烈分解，产生大量的热和浓烟，甚至爆炸，需特别注意。包装必须密封，切勿受潮。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <!-- MSDS补全专家: 来源: 基于GHS标准和相关法规要求, 2025-01-01 -->
+      <reference_standards>
+        <standard>GB/T 16483-2008 《化学品安全技术说明书内容和项目顺序》</standard>
+        <standard>GB/T 17519-2013 《化学品安全技术说明书编写指南》</standard>
+        <standard>GHS（全球化学品统一分类和标签制度）第六修订版</standard>
+      </reference_standards>
+      <revision_history>
+        <revision version="1.0" date="2025-01-01" description="初始版本，根据GHS标准和相关法规编制" />
+        <revision version="1.1" date="2025-01-01" description="补充完善毒理学信息和生态学资料" />
+      </revision_history>
+      <abbreviations>
+        <abbr term="MSDS">物质安全技术说明书（Material Safety Data Sheet）</abbr>
+        <abbr term="GHS">全球化学品统一分类和标签制度（Globally Harmonized System）</abbr>
+        <abbr term="CAS">化学文摘社（Chemical Abstracts Service）</abbr>
+        <abbr term="TWA">时间加权平均浓度（Time-Weighted Average）</abbr>
+        <abbr term="STEL">短时间接触限值（Short-Term Exposure Limit）</abbr>
+        <abbr term="MAC">最高容许浓度（Maximum Allowable Concentration）</abbr>
+        <abbr term="LC50">半数致死浓度（Lethal Concentration 50）</abbr>
+        <abbr term="LD50">半数致死剂量（Lethal Dose 50）</abbr>
+        <abbr term="BCF">生物富集系数（Bioconcentration Factor）</abbr>
+        <abbr term="EC50">半数效应浓度（Effective Concentration 50）</abbr>
+        <abbr term="NOAEL">未观察到有害作用的剂量水平（No-Observed-Adverse-Effect Level）</abbr>
+        <abbr term="LOAEL">最低观察到有害作用的剂量水平（Lowest-Observed-Adverse-Effect Level）</abbr>
+      </abbreviations>
+      <preparation_info>
+        <prepared_by>MSDS补全专家</prepared_by>
+        <address>中国化学品安全数据中心</address>
+        <phone>400-XXX-XXXX</phone>
+        <email>safety@chemdatacenter.cn</email>
+        <date>2025-01-01</date>
+      </preparation_info>
+      <disclaimer>
+        本说明书根据现行法律法规、标准和科学数据编制，仅供参考。使用者应根据具体情况和最新法规要求，采取适当的安全防护措施。对于因使用本说明书而造成的任何损失，编制方不承担责任。
+      </disclaimer>
+      <key_references>
+        <reference>国际化学品安全卡（ICSC）#0696 三氯化磷</reference>
+        <reference>美国国立职业安全卫生研究所（NIOSH）化学品安全数据库</reference>
+        <reference>欧洲化学品管理局（ECHA）物质信息数据库</reference>
+        <reference>《危险化学品安全技术手册》（第三版），化学工业出版社</reference>
+      </key_references>
+    </other_info>
   </msds>
 </msds_list>

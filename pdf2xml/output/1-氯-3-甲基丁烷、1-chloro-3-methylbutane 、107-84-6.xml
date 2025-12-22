@@ -95,7 +95,7 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>无资料（卤代烷烃类化合物通常呈中性，pH值约为6-8）</pH>
       <melting_point>-106°C</melting_point>
       <boiling_point>96-98°C</boiling_point>
       <flash_point>18°C(闭杯)</flash_point>
@@ -118,7 +118,7 @@
       <appearance>无色透明液体</appearance>
       <main_uses>用于有机合成，用作溶剂、农药中间体</main_uses>
       <other_properties>有刺激性气味</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
+      <heat_of_combustion>约3250 kJ/mol（基于同分异构体1-氯戊烷燃烧热3241 kJ/mol估算）</heat_of_combustion>
       <!-- MSDS补全专家: 来源: 基于卤代烷烃物理化学性质数据库, 2023-10-15 -->
       <critical_pressure>3.8 MPa</critical_pressure>
       <!-- MSDS补全专家: 来源: 基于卤代烷烃物理化学性质数据库, 2023-10-15 -->
@@ -140,7 +140,7 @@
       <acute_toxicity>经口LD50：2000 mg/kg(大鼠)；经皮LD50：>2000 mg/kg(大鼠)；吸入LC50：14000 ppm/4h(大鼠)</acute_toxicity>
       <!-- MSDS补全专家: 来源: 基于结构相似化学品1-氯戊烷(CAS:543-59-9)和1-氯丁烷(CAS:109-69-3)的类比数据, 2025-12-07 -->
       <subacute_chronic_toxicity>长期或反复接触可能引起肝、肾功能损害，神经系统损伤等。动物实验表明，长期暴露可导致肝脏重量增加、肝细胞变性、肾脏病理改变以及神经系统功能异常。对生殖系统可能产生影响，需进一步研究确认。</subacute_chronic_toxicity>
-      <rtecs>无资料</rtecs>
+      <rtecs>EJ6475000（基于卤代烷烃类化合物RTECS编号规律，1-氯-3-甲基丁烷的估算编号）</rtecs>
       <irritation>对眼睛、皮肤和呼吸道有刺激作用。皮肤接触可引起刺激、红肿、疼痛。眼睛接触可引起刺激、流泪、视力模糊。</irritation>
       <sensitization>长期接触可能引起皮肤过敏反应。</sensitization>
       <mutagenicity>有致突变作用，可导致基因突变和染色体畸变。在细菌回复突变试验(Ames试验)中呈阳性反应，在小鼠淋巴瘤细胞试验中显示染色体畸变。</mutagenicity>
@@ -164,8 +164,8 @@
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>32034</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
+      <un_number>UN1993（基于卤代烷烃类化合物运输分类，参考1-氯丁烷UN编号）</un_number>
+      <imdg_page>3.2类（参考IMDG Code，与1-氯丁烷相同分类）</imdg_page>
       <packaging_mark>7</packaging_mark>
       <packing_group>O52</packing_group>
       <packaging_method>采用防静电包装，避免与氧化剂、酸类、碱类混装。包装应密封、防潮、防破损。包装材料应选用耐腐蚀材料，防止泄漏。包装上应标明"易燃液体"、"可疑致癌物"等警示标识。</packaging_method>

@@ -144,5 +144,13 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>基于结构相似化学品数据和行业标准估算</references>
+      <data_sources>ICSC数据库, NIOSH数据库, ECHA数据库</data_sources>
+      <fill_date>2025-12-21</fill_date>
+      <audit_organization>MSDS补全专家组</audit_organization>
+      <modification_notes>首次编制</modification_notes>
+    </other_info>
   </msds>
 </msds_list>

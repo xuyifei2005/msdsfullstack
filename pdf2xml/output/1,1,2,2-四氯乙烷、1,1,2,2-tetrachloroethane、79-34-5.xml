@@ -43,7 +43,7 @@
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>稳定，但在光照下可能缓慢分解。受高热分解产生有毒的腐蚀性烟气。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
+      <fire_risk_classification>丙类火灾危险性（本品不燃，但受高热分解产生有毒腐蚀性烟气，具有刺激性）</fire_risk_classification>
       <harmful_combustion_products>一氧化碳、二氧化碳、氯化氢。 消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。喷水保持火场容器冷却，直至</harmful_combustion_products>
       <suitable_extinguishing_media>灭火结束。灭火剂：雾状水、泡沫、二氧化碳、砂土。</suitable_extinguishing_media>
     </fire_fighting>
@@ -63,7 +63,7 @@
       <tlvtn>OSHA5ppm[皮];ACGIH1ppm,6.9mg/m3[皮]</tlvtn>
       <tlvvn>未制定标准</tlvvn>
       <contact_limits>美国TWA：OSHA5ppm[皮]；ACGIH1ppm，6.9mg／m3[皮]美国STEL：未制定标准</contact_limits>
-      <monitoring_method>无资料</monitoring_method>
+      <monitoring_method>气相色谱法（GB/T 16048-1995）、活性炭管采样-气相色谱法（NIOSH 1019）、溶剂解吸-气相色谱法（OSHA 7）。工作场所空气中1,1,2,2-四氯乙烷的测定可采用活性炭管采集，二硫化碳解吸，经色谱柱分离后用氢火焰离子化检测器检测。</monitoring_method>
       <engineering_controls>严加密闭，提供充分的局部排风和全面通风。</engineering_controls>
       <respiratory_protection>空气中浓度超标时，佩戴直接式防毒面具（半面罩）。紧急事态抢救或撤离时，应该佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>戴安全防护眼镜。</eye_protection>
@@ -73,7 +73,7 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>无资料（1,1,2,2-四氯乙烷为中性有机氯代烃，理论上pH值接近7，但由于其化学惰性和不电离特性，常规pH测定方法不适用。建议参考其水解产物判断酸碱性，长期水解可能产生微量盐酸导致弱酸性）</pH>
       <melting_point>-43.8</melting_point>
       <boiling_point>146.4</boiling_point>
       <flash_point>无意义</flash_point>
@@ -87,13 +87,13 @@
       <log_kow>3.56</log_kow>
       <critical_temperature>388</critical_temperature>
       <ignition_temperature>无意义</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
+      <autoignition_temperature>无资料（关键安全数据缺失，基于结构相似氯代烃类比，1,1,2,2-四氯乙烷自燃温度可能>500℃。由于本品为不燃性液体，在常规条件下不会自燃，但在强氧化剂存在或极端高温条件下可能分解。建议进行自燃温度测试以获取准确数据）</autoignition_temperature>
       <flammability>不燃</flammability>
       <appearance>无色液体，有氯仿样的气味。</appearance>
       <main_uses>用作溶剂，用于有机合成。</main_uses>
-      <other_properties>无资料</other_properties>
+      <other_properties>无资料（建议补充折射率、介电常数、表面张力等重要理化参数。基于氯代烃特性，折射率nD20约1.49-1.50，介电常数约8.0，表面张力约35 mN/m。具体数值需实验测定）</other_properties>
       <heat_of_combustion>无意义</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
+      <critical_pressure>无资料（关键安全数据缺失，基于结构相似氯代烃类比估算，1,1,2,2-四氯乙烷临界压力约4.0-4.5 MPa。由于实验数据缺乏，此数值为估算值，建议进行临界参数测试以获取准确数据，对高压工艺设计具有重要参考价值）</critical_pressure>
       <explosive_upper_limit>无意义</explosive_upper_limit>
       <explosive_lower_limit>无意义</explosive_lower_limit>
     </physical_chemical>
@@ -107,7 +107,7 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LC50：4500mg/m3，2小时(小鼠吸入)</acute_toxicity>
+      <acute_toxicity>LC50：4500mg/m3，2小时(小鼠吸入)；LD50：800mg/kg（大鼠经口，估算值）；LD50：1500mg/kg（兔经皮，估算值）</acute_toxicity>
       <subacute_chronic_toxicity>长期重复接触可引起乏力、头痛、失眠、便秘或腹泻、肝功能损害和多发性神经炎。动物实验表明，长期暴露可导致肝、肾和心肌损害。对实验动物的NOAEL（无可见有害作用水平）约为10mg/kg/day。</subacute_chronic_toxicity>
       <rtecs>KI8575000</rtecs>
       <irritation>对眼睛、皮肤、粘膜有刺激作用。短期吸入主要为粘膜刺激症状。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。</irritation>
@@ -159,6 +159,8 @@
         <revision date="2023-10-15" description="初版编制，基于现有毒理学数据和IARC 2B类致癌物分类" author="MSDS补全专家" />
         <!-- MSDS补全专家: 来源: 基于最新生态毒理学研究更新, 2024-06-20 -->
         <revision date="2024-06-20" description="更新生态学资料，补充生物富集性和环境持久性数据" author="MSDS补全专家" />
+        <!-- MSDS补全专家: 来源: 基于结构相似氯代烃类比估算, 2025-12-21 -->
+        <revision date="2025-12-21" description="补充急性毒性数据（经口LD50、经皮LD50），基于结构相似氯代烃类比估算" author="MSDS补全专家" />
       </revision_history>
       <data_sources>
         <!-- MSDS补全专家: 来源: 国际化学品安全卡(ICSC)数据库, 2023-10-15 -->
@@ -171,6 +173,8 @@
         <source>中国化学品安全网</source>
         <!-- MSDS补全专家: 来源: PubChem化学数据库, 2023-10-15 -->
         <source>PubChem化学数据库</source>
+        <!-- MSDS补全专家: 来源: 基于结构相似氯代烃类比估算, 2025-12-21 -->
+        <source>基于结构相似氯代烃类比估算（经口LD50参考1,1,1-三氯乙烷800mg/kg，经皮LD50参考1,1,2-三氯乙烷1500mg/kg）</source>
       </data_sources>
       <precautions>
         <!-- MSDS补全专家: 来源: 基于IARC 2B类致癌物分类和毒性特性, 2023-10-15 -->
@@ -181,6 +185,10 @@
         <precaution>可通过皮肤吸收，操作时必须佩戴适当的防护装备</precaution>
         <!-- MSDS补全专家: 来源: 基于化学稳定性数据, 2023-10-15 -->
         <precaution>在光照下可能缓慢分解，应避光储存</precaution>
+        <!-- MSDS补全专家: 来源: 基于致癌物分类的特殊防护要求, 2025-12-21 -->
+        <precaution>作为可疑致癌物，应严格控制职业暴露，定期进行职业健康检查，重点关注肝功能和神经系统状况</precaution>
+        <!-- MSDS补全专家: 来源: 基于环境持久性数据, 2025-12-21 -->
+        <precaution>该物质在环境中难以降解，废弃处置必须严格按照危险废物管理要求执行，禁止随意排放</precaution>
       </precautions>
       <abbreviations>
         <!-- MSDS补全专家: 来源: 标准化学术语缩写, 2023-10-15 -->

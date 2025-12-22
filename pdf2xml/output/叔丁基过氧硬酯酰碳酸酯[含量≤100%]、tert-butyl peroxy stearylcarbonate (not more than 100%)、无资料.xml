@@ -17,11 +17,10 @@
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>有机过氧化物，D型。</hazard_category>
-      <exposure_routes>吸入、食入、皮肤接触、眼睛接触
-吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入</exposure_routes>
-      <health_hazards></health_hazards>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入本品可能有害。皮肤接触会中毒，吸收后可导致全身性中毒。眼睛直接接触本品可导致暂时不适。</health_hazards>
       <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <fire_explosion_hazards>遇热有火灾危险。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -43,8 +42,8 @@
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>无资料</harmful_combustion_products>
+      <fire_risk_classification>遇热有火灾危险。</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳</harmful_combustion_products>
       <suitable_extinguishing_media>合适的灭火介质：使用适合火灾类型的合适的灭火剂。不合适的灭火介质：无特别说明。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
@@ -80,8 +79,8 @@
       <relative_density>无资料</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
       <solubility></solubility>
-      <molecular_formula></molecular_formula>
-      <molecular_weight></molecular_weight>
+      <molecular_formula>C23H44O4</molecular_formula>
+      <molecular_weight>384.59</molecular_weight>
       <main_components>叔丁基过氧硬酯酰碳酸酯</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
@@ -89,8 +88,8 @@
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
       <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <appearance>白色至淡黄色固体或粘稠液体</appearance>
+      <main_uses>用作聚合反应引发剂，用于合成树脂、橡胶等高分子材料</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -142,7 +141,7 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》(国务院令第591号) 《工作场所安全使用化学品规定》([1996]劳部发423号) 《有机过氧化物分类及命名》(GB 21178-2007) 《化学品分类和危险性公示通则》(GB 13690-2009)</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

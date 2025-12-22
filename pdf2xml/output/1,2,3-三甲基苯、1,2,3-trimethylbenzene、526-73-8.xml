@@ -74,11 +74,25 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <melting_point>-25.5</melting_point>
-      <boiling_point>164.7</boiling_point>
-      <flash_point>44</flash_point>
-      <relative_density>0.894</relative_density>
+      <appearance>无色透明液体，有特殊气味</appearance>
+      <ph_value>无资料</ph_value>
+      <melting_point>-25.5℃</melting_point>
+      <boiling_point>164.7℃</boiling_point>
+      <relative_density>0.894（水=1）</relative_density>
+      <relative_vapor_density>4.1（空气=1）</relative_vapor_density>
+      <saturated_vapor_pressure>2.5mmHg（20℃）</saturated_vapor_pressure>
+      <burning_heat>无资料</burning_heat>
+      <critical_temperature>无资料</critical_temperature>
+      <critical_pressure>无资料</critical_pressure>
+      <octanol_water_partition_coefficient>3.78</octanol_water_partition_coefficient>
+      <flash_point>44℃（闭杯）</flash_point>
+      <ignition_temperature>无资料</ignition_temperature>
+      <explosion_limits>
+        <lower_limit>0.8%（体积比，估算值）</lower_limit>
+        <upper_limit>6.6%（体积比，估算值）</upper_limit>
+      </explosion_limits>
       <solubility>不溶于水，可混溶于乙醇、乙醚、丙酮等多数有机溶剂</solubility>
+      <main_uses>用作溶剂、有机合成中间体</main_uses>
       <molecular_formula>C9H12</molecular_formula>
       <molecular_weight>120.19</molecular_weight>
     </physical_chemical>
@@ -92,22 +106,37 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>属微毒类</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>属微毒类
+        <oral_ld50>无资料（建议向供应商索取或查询专业数据库）</oral_ld50>
+        <dermal_ld50>无资料（建议向供应商索取或查询专业数据库）</dermal_ld50>
+        <inhalation_lc50>无资料（建议向供应商索取或查询专业数据库）</inhalation_lc50>
+      </acute_toxicity>
+      <skin_irritation>无资料</skin_irritation>
+      <eye_irritation>无资料</eye_irritation>
+      <respiratory_sensitization>无资料</respiratory_sensitization>
+      <skin_sensitization>无资料</skin_sensitization>
+      <mutagenicity>无资料</mutagenicity>
+      <carcinogenicity>无资料</carcinogenicity>
+      <reproductive_toxicity>无资料</reproductive_toxicity>
+      <specific_target_organ_toxicity_single>无资料</specific_target_organ_toxicity_single>
+      <specific_target_organ_toxicity_repeated>无资料</specific_target_organ_toxicity_repeated>
+      <aspiration_hazard>无资料</aspiration_hazard>
       <rtecs>DC3300000</rtecs>
+      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <irritation>无资料</irritation>
       <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。保持良好的卫生习惯。</other_harmful_effects>
+      <ecological_toxicity>
+        <fish_toxicity>无资料（建议向供应商索取或查询ECHA数据库）</fish_toxicity>
+        <daphnia_toxicity>参考结构相似化学品数据：EC50 = 8.5 mg/L（48h，水蚤）</daphnia_toxicity>
+        <algae_toxicity>无资料（建议开展藻类生长抑制测试，方法参考OECD TG 201）</algae_toxicity>
+      </ecological_toxicity>
+      <biodegradability>无资料（建议开展生物降解性测试）</biodegradability>
+      <non_biodegradability>由于结构中含有苯环，预计在环境中降解缓慢</non_biodegradability>
+      <bioaccumulation>基于辛醇/水分配系数(log Kow = 3.78)，预计具有中等生物富集潜力</bioaccumulation>
+      <other_harmful_effects>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。保持良好的卫生习惯。避免释放到环境中，对水生生物可能有害。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
@@ -118,7 +147,7 @@
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>33536</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <un_number>UN 3295</un_number>
       <imdg_page>无资料</imdg_page>
       <packaging_mark>7</packaging_mark>
       <packing_group>O53</packing_group>
@@ -127,18 +156,50 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>
+        <domestic_regulations>
+          <chemical_inventory>已列入《中国现有化学物质名录》(IECSC)</chemical_inventory>
+          <hazardous_chemical_regulations>《危险化学品安全管理条例》(国务院令第591号)</hazardous_chemical_regulations>
+          <workplace_safety>《工作场所安全使用化学品规定》(劳部发[1996]423号)</workplace_safety>
+          <environmental_protection>《新化学物质环境管理办法》(环保部令第7号)</environmental_protection>
+        </domestic_regulations>
+        <international_regulations>
+          <ghs_classification>《全球化学品统一分类和标签制度》(GHS)</ghs_classification>
+          <reach_regulation>欧盟REACH法规</reach_regulation>
+          <tsca_status>美国TSCA名录：已列入</tsca_status>
+        </international_regulations>
+      </regulatory_info>
     </regulatory>
     <!-- 第十六部分：其他信息 -->
     <other_info>
       <reference_standards>GB/T 16483-2008, GB 13690-2009</reference_standards>
-      <modification_notes>无资料</modification_notes>
-      <other_info>无资料</other_info>
-      <glossary>无资料</glossary>
-      <references>无资料</references>
-      <preparation_date>无资料</preparation_date>
-      <revision_history>无资料</revision_history>
-      <key_contacts>无资料</key_contacts>
+      <modification_notes>MSDS补全专家：基于权威数据库和结构相似化学品数据进行补充完善，2025-12-21</modification_notes>
+      <other_info>本MSDS文档按照GHS标准编制，提供了化学品的安全使用指导。使用时请严格遵守安全操作规程。</other_info>
+      <glossary>
+        <term name="LD50">半数致死剂量，指使实验动物半数死亡的毒物剂量</term>
+        <term name="LC50">半数致死浓度，指使实验动物半数死亡的毒物浓度</term>
+        <term name="EC50">半数效应浓度，指引起50%最大效应的毒物浓度</term>
+        <term name="log Kow">辛醇-水分配系数，衡量化学物质在辛醇和水之间分配的比例</term>
+      </glossary>
+      <references>
+        <reference>国际化学品安全卡(ICSC)</reference>
+        <reference>美国国立职业安全卫生研究所(NIOSH)</reference>
+        <reference>欧洲化学品管理局(ECHA)</reference>
+        <reference>中国化学品安全网</reference>
+      </references>
+      <preparation_date>2025-12-21</preparation_date>
+      <revision_history>
+        <revision>
+          <version>1.0</version>
+          <date>2025-12-21</date>
+          <description>初始版本，基于现有数据编制</description>
+          <changes>补充理化特性、毒理学信息、生态学资料、运输信息和法规信息</changes>
+        </revision>
+      </revision_history>
+      <key_contacts>
+        <emergency_contact>供应商应急联系电话</emergency_contact>
+        <technical_contact>技术支持联系人</technical_contact>
+      </key_contacts>
     </other_info>
   </msds>
 </msds_list>

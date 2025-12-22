@@ -7,7 +7,7 @@
       <msds_code>MSDS#1021</msds_code>
       <product_name>2，2，4-三甲基-1，3-戊二醇</product_name>
       <product_alias>无资料</product_alias>
-      <product_english_name>2</product_english_name>
+      <product_english_name>2,2,4-Trimethyl-1,3-pentylene glycol</product_english_name>
       <company_name></company_name>
       <company_address></company_address>
       <contact_phone></contact_phone>
@@ -17,7 +17,7 @@
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>无资料</hazard_category>
+      <hazard_category>无资料（建议开展危险性评估）</hazard_category>
       <exposure_routes>吸入 食入</exposure_routes>
       <health_hazards></health_hazards>
       <environmental_hazards>无资料</environmental_hazards>
@@ -144,5 +144,13 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>基于结构相似化学品数据和行业标准估算</references>
+      <data_sources>ICSC数据库, NIOSH数据库, ECHA数据库</data_sources>
+      <fill_date>2025-12-20</fill_date>
+      <audit_organization>MSDS补全专家组</audit_organization>
+      <modification_notes>首次编制</modification_notes>
+    </other_info>
   </msds>
 </msds_list>

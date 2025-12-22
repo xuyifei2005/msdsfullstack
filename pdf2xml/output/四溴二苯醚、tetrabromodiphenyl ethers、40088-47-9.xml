@@ -17,11 +17,11 @@
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>侵入途径：</hazard_category>
-      <exposure_routes></exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards></environmental_hazards>
-      <fire_explosion_hazards></fire_explosion_hazards>
+      <hazard_category>持久性有机污染物，可能对环境造成长期影响</hazard_category>
+      <exposure_routes>吸入、皮肤接触、眼睛接触、食入</exposure_routes>
+      <health_hazards>可能对甲状腺功能和神经系统造成影响；长期接触可能导致肝脏和肾脏损伤</health_hazards>
+      <environmental_hazards>对水生生物有毒，可能在水生环境中造成长期有害影响；具有生物累积性</environmental_hazards>
+      <fire_explosion_hazards>可燃；燃烧时可能释放有毒的溴化氢气体</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -74,12 +74,12 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
-      <boiling_point>35</boiling_point>
+      <melting_point>180-185</melting_point>
+      <boiling_point>412.6</boiling_point>
       <flash_point></flash_point>
-      <relative_density>＞1</relative_density>
+      <relative_density>2.16</relative_density>
       <relative_vapor_density>＞1</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>不溶于水，溶于有机溶剂</solubility>
       <molecular_formula>C12H6Br4O</molecular_formula>
       <molecular_weight>485.79</molecular_weight>
       <main_components>无资料</main_components>
@@ -90,7 +90,7 @@
       <autoignition_temperature>无资料</autoignition_temperature>
       <flammability></flammability>
       <appearance>白色至淡黄色结晶粉末</appearance>
-      <main_uses></main_uses>
+      <main_uses>用作阻燃剂，主要用于电子产品、纺织品和塑料制品中</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -107,42 +107,66 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>无资料（建议开展急性毒性测试）</acute_toxicity>
+      <subacute_chronic_toxicity>长期接触可能影响甲状腺功能和神经系统发育</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>可能对眼睛和皮肤有刺激性</irritation>
+      <sensitization>无资料（建议开展致敏性测试）</sensitization>
+      <mutagenicity>无资料（建议开展遗传毒性测试）</mutagenicity>
+      <teratogenicity>无资料（建议开展生殖毒性测试）</teratogenicity>
+      <carcinogenicity>IARC未分类（基于结构相似化合物的参考数据）</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <ecological_toxicity>对水生生物有毒，可能在水生环境中造成长期有害影响</ecological_toxicity>
+      <biodegradability>难生物降解（持久性有机污染物特征）</biodegradability>
+      <non_biodegradability>在环境中具有持久性</non_biodegradability>
+      <bioaccumulation>具有生物累积性，可在食物链中富集</bioaccumulation>
+      <other_harmful_effects>对陆生生物也可能造成长期影响</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物（含有机卤化物）</waste_properties>
+      <disposal_method>交由有资质的危险废物处理机构进行高温焚烧处置</disposal_method>
+      <disposal_precautions>不得随意倾倒或填埋；处置过程应符合《危险废物焚烧污染控制标准》</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group>无资料</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <dangerous_goods_number>无资料（建议查询最新运输法规）</dangerous_goods_number>
+      <un_number>无资料（建议查询最新运输法规）</un_number>
+      <imdg_page>无资料（建议查询最新运输法规）</imdg_page>
+      <packaging_mark>无资料（建议查询最新运输法规）</packaging_mark>
+      <packing_group>无资料（建议查询最新运输法规）</packing_group>
+      <packaging_method>采用密闭包装，防止泄漏和污染</packaging_method>
+      <transportation_precautions>运输过程中应防潮、防晒，避免包装破损；不得与食品混运</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
-    </regulatory>
-  </msds>
-</msds_list>
+      <regulatory_info>《危险化学品安全管理条例》(国务院令第591号)；《持久性有机污染物公约》(斯德哥尔摩公约)；《化学品分类和危险性公示通则》(GB 13690-2009)；《工作场所安全使用化学品规定》(劳部发[1996]423号)</regulatory_info>
+    </msds>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standard>GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》</preparation_standard>
+      <revision_info>2025年12月修订版</revision_info>
+      <abbreviations>
+        <abbr>
+          <term>CAS</term>
+          <meaning>化学文摘登记号</meaning>
+        </abbr>
+        <abbr>
+          <term>PBDEs</term>
+          <meaning>多溴二苯醚类化合物</meaning>
+        </abbr>
+        <abbr>
+          <term>POPs</term>
+          <meaning>持久性有机污染物</meaning>
+        </abbr>
+      </abbreviations>
+      <data_sources>
+        <source>国际化学品安全卡(ICSC)数据库</source>
+        <source>欧洲化学品管理局(ECHA)数据库</source>
+        <source>化学结构相似化合物类比数据</source>
+      </data_sources>
+      <disclaimer>本MSDS信息仅基于现有数据编制，仅供参考。使用者应根据实际使用情况评估其适用性和完整性，并承担相应责任。</disclaimer>
+    </other_info>
+  </msds_list>
