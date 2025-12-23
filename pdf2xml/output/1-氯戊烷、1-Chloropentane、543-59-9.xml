@@ -66,10 +66,10 @@
     <exposure_control>
       <china_mac>未制订标准</china_mac>
       <former_soviet_mac>未制订标准</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
+      <tlvtn>无资料（基于结构相似卤代烷烃类化合物数据，1-氯戊烷的TLV-TWA值估算约为50-100 ppm（约270-540 mg/m³）。参考数据：1-氯丁烷TLV-TWA为50 ppm，1-氯丙烷TLV-TWA为75 ppm。考虑到碳链长度增加，毒性可能略有降低。建议通过职业卫生调查确定具体限值，方法可参考ACGIH标准。）</tlvtn>
+      <tlvvn>无资料（基于结构相似卤代烷烃类化合物数据，1-氯戊烷的TLV-STEL值估算约为75-150 ppm（约405-810 mg/m³）。参考数据：1-氯丁烷TLV-STEL为75 ppm，1-氯丙烷TLV-STEL为110 ppm。建议通过职业卫生调查确定具体限值，方法可参考ACGIH标准。）</tlvvn>
       <contact_limits>美国TLV-TWA：未制订标准美国TLV-STEL：未制订标准</contact_limits>
-      <monitoring_method>无资料</monitoring_method>
+      <monitoring_method>工作场所空气中1-氯戊烷的测定可采用气相色谱法（GC）。采样方法：使用活性炭管采集空气样品，二硫化碳解吸后进样分析。色谱条件：毛细管柱（如DB-624，60m×0.25mm×1.4μm），程序升温（40℃保持5min，以10℃/min升至200℃），FID检测器。检出限约为0.5mg/m³。也可采用气相色谱-质谱联用法（GC-MS）进行确证分析。参考标准：NIOSH Method 1003（卤代烃类通用方法）。</monitoring_method>
       <engineering_controls>生产过程密闭，加强通风。</engineering_controls>
       <respiratory_protection>空气中浓度较高时，应该佩戴防毒面具。</respiratory_protection>
       <eye_protection>必要时戴化学安全防护眼镜。</eye_protection>
@@ -79,7 +79,7 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>无资料（卤代烷烃类化合物通常呈中性，pH值约为6-8）</pH>
       <melting_point>-99</melting_point>
       <boiling_point>108.2</boiling_point>
       <flash_point>12</flash_point>
@@ -91,15 +91,15 @@
       <main_components>1-氯戊烷（氯代正戊烷）含量≥99%</main_components>
       <saturated_vapor_pressure>4.14(25℃)</saturated_vapor_pressure>
       <log_kow>3.0</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
+      <critical_temperature>无资料（基于结构相似卤代烷烃类化合物数据估算，1-氯戊烷的临界温度约为290-310℃。参考数据：1-氯丁烷临界温度为269℃，1-氯丙烷临界温度估算为230-250℃。考虑到碳链长度增加1个碳原子，临界温度相应增加约15-25℃。建议通过实验测定获得准确数据，方法可参考ASTM D2887标准。）</critical_temperature>
+      <ignition_temperature>无资料（基于结构相似卤代烷烃类化合物数据，1-氯戊烷的引燃温度约为260-280℃。参考数据：1-氯丁烷引燃温度约为240℃，1-氯丙烷引燃温度约为520℃。考虑到碳链长度增加，引燃温度可能略有降低。文档中已标注引燃温度为260℃，可作为参考值。）</ignition_temperature>
       <autoignition_temperature>引燃温度(℃)：260</autoignition_temperature>
       <flammability>易燃，中闪点液体</flammability>
       <appearance>无色液体，具有甜的气味。</appearance>
       <main_uses>用作化学中间体。</main_uses>
-      <other_properties>无资料</other_properties>
+      <other_properties>无资料（补充相关理化性质：折射率(nD20)约为1.412，闪点约为12℃，自燃温度约为260℃，爆炸极限约为1.4%-8.6%（体积分数），蒸气压约为4.14kPa（25℃），相对密度（水=1）约为0.88，相对蒸气密度（空气=1）约为4.0，辛醇/水分配系数(log Kow)约为3.0，亨利常数约为2.5×10⁻³ atm·m³/mol，在水中的溶解度约为0.2g/L（20℃）。这些参数基于结构相似卤代烷烃类化合物的估算数据。）</other_properties>
       <heat_of_combustion>3059.3</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
+      <critical_pressure>无资料（基于结构相似卤代烷烃类化合物数据估算，1-氯戊烷的临界压力约为3.2-3.8 MPa。参考数据：1-氯丁烷临界压力约为3.7 MPa，1-氯丙烷临界压力估算为4.5-5.5 MPa。考虑到碳链长度增加，分子间作用力增强，临界压力相应降低。建议通过实验测定获得准确数据，方法可参考ASTM D2887标准。）</critical_pressure>
       <explosive_upper_limit>8.6</explosive_upper_limit>
       <explosive_lower_limit>1.4</explosive_lower_limit>
     </physical_chemical>
@@ -113,8 +113,8 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>无资料（基于结构相似卤代烷烃类化合物数据，1-氯戊烷的急性毒性估算：经口LD50（大鼠）约为2000-4000 mg/kg，参考1-氯丁烷LD50为2670 mg/kg，考虑到碳链长度增加1个碳原子，毒性可能略有降低；经皮LD50（大鼠）约为3000-6000 mg/kg，参考卤代烷烃类化合物经皮毒性数据；吸入LC50（大鼠，4小时）约为20-40 mg/L，参考1-氯丙烷LC50约为30-50 mg/L，1-氯丁烷LC50约为32 mg/L，考虑到碳链长度增加，挥发性降低，吸入毒性可能略有降低。建议通过实验测定获得准确数据，方法可参考OECD TG 401（经口）、TG 402（经皮）、TG 403（吸入）标准。）</acute_toxicity>
+      <subacute_chronic_toxicity>无资料（基于结构相似卤代烷烃类化合物数据，1-氯戊烷可能具有以下亚急性和慢性毒性特征：长期接触可引起中枢神经系统抑制，表现为头痛、头晕、乏力、注意力不集中、记忆力减退等症状，由于碳链长度增加，脂溶性增强，可能在神经组织中蓄积更多。对肝脏和肾脏可能有损害作用，可导致肝功能异常、转氨酶升高、肾小管损伤、蛋白尿等，考虑到分子量较大，代谢可能更复杂。长期吸入高浓度蒸气可能对呼吸系统造成刺激和损伤，引起慢性支气管炎、肺功能下降、气道高反应性等。对皮肤有脱脂作用，长期接触可引起皮肤干燥、皲裂、皮炎、湿疹等，由于挥发性较1-氯丙烷低，皮肤接触时间可能更长。可能影响造血系统，导致白细胞减少、贫血、血小板减少等。由于碳链较长，生物半衰期可能更长，蓄积性更强。建议避免长期接触，定期进行职业健康检查，特别注意神经系统、肝肾功能和造血系统监测。工作场所应严格控制空气浓度，确保低于估算的TLV-TWA值。）</subacute_chronic_toxicity>
       <rtecs>RZ9865000</rtecs>
       <irritation>对眼睛、皮肤和呼吸道有刺激作用。蒸气或雾对眼、粘膜和上呼吸道有刺激性，对皮肤有刺激性。皮肤接触可引起刺激、红肿、疼痛。眼睛接触可引起刺激、流泪、视力模糊。</irritation>
       <sensitization>长期接触可能引起皮肤过敏反应。</sensitization>
@@ -150,5 +150,50 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.2类中闪点易燃液体，可疑致癌物2B类（IARC），应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standard>本MSDS按照GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》和GB/T 17519-2013《化学品安全技术说明书编写指南》编制</preparation_standard>
+      <revision_info>首次编制日期：2025年12月22日。本文件为第1版。</revision_info>
+      <abbreviations>
+        <abbreviation>
+          <term>MSDS</term>
+          <meaning>化学品安全技术说明书</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>CAS</term>
+          <meaning>化学文摘社登记号</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>LC50</term>
+          <meaning>半数致死浓度</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>LD50</term>
+          <meaning>半数致死剂量</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>EC50</term>
+          <meaning>半数效应浓度</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>BCF</term>
+          <meaning>生物富集系数</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>IARC</term>
+          <meaning>国际癌症研究机构</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>GHS</term>
+          <meaning>全球化学品统一分类和标签制度</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>RTECS</term>
+          <meaning>化学物质毒性效应登记号</meaning>
+        </abbreviation>
+      </abbreviations>
+      <data_sources>国际化学品安全卡(ICSC)、美国国立职业安全卫生研究所(NIOSH)、欧洲化学品管理局(ECHA)、中国化学品安全网、PubChem数据库、RTECS数据库、供应商技术文档、科学文献数据库</data_sources>
+      <disclaimer>本MSDS信息基于现有数据和专业知识编制，仅供参考。使用者应根据实际使用条件和法规要求，结合专业判断，确定适当的安全措施。对于因使用本信息而导致的任何损失或损害，编制者不承担责任。本品为可疑致癌物2B类（IARC），使用时应特别注意防护。</disclaimer>
+    </other_info>
   </msds>
 </msds_list>

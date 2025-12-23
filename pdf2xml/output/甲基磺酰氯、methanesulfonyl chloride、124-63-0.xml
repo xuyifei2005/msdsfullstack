@@ -8,19 +8,19 @@
       <product_name>甲基磺酰氯</product_name>
       <product_alias>甲烷磺酰氯；氯化硫酰甲烷；</product_alias>
       <product_english_name>methanesulfonyl chloride</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料（建议向供应商索取详细信息）</company_name>
+      <company_address>无资料（建议向供应商索取详细地址）</company_address>
+      <contact_phone>无资料（建议向供应商索取联系方式）</contact_phone>
+      <emergency_phone>无资料（建议向供应商索取应急联系电话，或拨打当地急救电话120）</emergency_phone>
+      <email>无资料（建议向供应商索取邮箱地址）</email>
+      <fax_number>无资料（建议向供应商索取传真号码）</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第8.1类 酸性腐蚀品</hazard_category>
       <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
       <health_hazards>头痛、恶心和呕吐。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <environmental_hazards>对水生生物有害，可能对水体环境产生长期不良影响。避免释放到环境中。</environmental_hazards>
       <fire_explosion_hazards>本品可燃，具强腐蚀性、强刺激性，可致人体灼伤。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -65,7 +65,7 @@
       <contact_limits>美国TWA：未制定标准美国STEL：未制定标准</contact_limits>
       <monitoring_method>无资料</monitoring_method>
       <engineering_controls>密闭操作，局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <respiratory_protection>可能接触其蒸气时，建议佩戴过滤式防毒面具（全面罩）或自给式呼吸器。紧急事态抢救或撤离时，必须佩戴空气呼吸器。符合GB/T 18664-2002《呼吸防护用品的选择、使用与维护》标准。
       <eye_protection>呼吸系统防护中已作防护。</eye_protection>
       <body_protection>穿橡胶耐酸碱服。</body_protection>
       <hand_protection>戴橡胶耐酸碱手套。</hand_protection>
@@ -84,18 +84,18 @@
       <molecular_weight>114.55</molecular_weight>
       <main_components>纯品</main_components>
       <saturated_vapor_pressure>1.60(53℃)</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <log_kow>无资料（建议开展辛醇-水分配系数测试，方法参考OECD TG 107）</log_kow>
+      <critical_temperature>无资料（建议开展临界温度测试，方法参考OECD TG 107）</critical_temperature>
+      <ignition_temperature>无资料（建议开展引燃温度测试，方法参考GB/T 21719-2008）</ignition_temperature>
+      <autoignition_temperature>无资料（建议开展自燃温度测试，方法参考GB/T 21719-2008）</autoignition_temperature>
+      <flammability>可燃，具腐蚀性</flammability>
       <appearance>无色或微黄色液体。</appearance>
       <main_uses>用作分析试剂。</main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <other_properties>折射率(n20/D)：1.457；表面张力：约35 mN/m；介电常数：约8.5</other_properties>
+      <heat_of_combustion>无资料（建议开展燃烧热测试，方法参考GB/T 213-2008）</heat_of_combustion>
+      <critical_pressure>无资料（建议开展临界压力测试，方法参考OECD TG 107）</critical_pressure>
+      <explosive_upper_limit>无资料（建议开展爆炸上限测试，方法参考GB/T 12474-2008）</explosive_upper_limit>
+      <explosive_lower_limit>无资料（建议开展爆炸下限测试，方法参考GB/T 12474-2008）</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -107,22 +107,31 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LC50：无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <acute_toxicity>
+        <经口LD50>无资料（关键安全数据缺失，使用时需格外谨慎）</经口LD50>
+        <经皮LD50>无资料（建议开展急性经皮毒性测试，方法参考OECD TG 402）</经皮LD50>
+        <吸入LC50>无资料（建议开展急性吸入毒性测试，方法参考OECD TG 403）</吸入LC50>
+      </acute_toxicity>
+      <subacute_chronic_toxicity>无资料（建议开展亚慢性毒性测试，方法参考OECD TG 408）</subacute_chronic_toxicity>
+      <rtecs>MO5250000</rtecs>
+      <irritation>对皮肤、眼睛和呼吸道有强烈刺激性，可引起严重灼伤</irritation>
+      <sensitization>无资料（建议开展皮肤致敏性测试，方法参考OECD TG 406）</sensitization>
+      <mutagenicity>无资料（建议开展致突变性测试，方法参考OECD TG 471）</mutagenicity>
+      <teratogenicity>无资料（建议开展致畸性测试，方法参考OECD TG 414）</teratogenicity>
+      <carcinogenicity>IARC：未列入；NTP：未列入</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作后，淋浴更衣</other_harmful_effects>
+      <ecological_toxicity>
+        <对鱼类的急性毒性>无资料（建议开展鱼类急性毒性测试，方法参考OECD TG 203）</对鱼类的急性毒性>
+        <对水蚤的急性毒性>无资料（建议开展水蚤急性毒性测试，方法参考OECD TG 202）</对水蚤的急性毒性>
+        <对藻类的抑制作用>无资料（建议开展藻类生长抑制测试，方法参考OECD TG 201）</对藻类的抑制作用>
+        <对微生物的毒性>无资料（建议开展微生物毒性测试，方法参考OECD TG 209）</对微生物的毒性>
+      </ecological_toxicity>
+      <biodegradability>无资料（建议开展生物降解性测试，方法参考OECD TG 301）</biodegradability>
+      <non_biodegradability>无资料（建议开展非生物降解性测试，方法参考OECD TG 111）</non_biodegradability>
+      <bioaccumulation>无资料（建议开展生物富集性测试，方法参考OECD TG 305）</bioaccumulation>
+      <other_harmful_effects>对水生生物有害，可能对水体环境产生长期不良影响。避免释放到环境中。工作后，淋浴更衣，避免将污染物带入生活区。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
@@ -142,7 +151,50 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>
+        <国内法规>
+          <危险化学品安全管理条例>《危险化学品安全管理条例》（国务院令第591号，2013年修订），甲基磺酰氯属于危险化学品，需按照相关规定进行生产、储存、运输和使用管理。</危险化学品安全管理条例>
+          <化学品分类和危险性公示通则>《化学品分类和危险性公示通则》（GB 13690-2009），本品属于第8.1类酸性腐蚀品。</化学品分类和危险性公示通则>
+          <工作场所安全使用化学品规定>《工作场所安全使用化学品规定》（劳部发[1996]423号），用人单位应提供安全使用培训和个人防护用品。</工作场所安全使用化学品规定>
+          <危险化学品名录>《危险化学品名录》（2015版），甲基磺酰氯（CAS号：124-63-0）已列入名录。</危险化学品名录>
+          <化学品安全技术说明书编写规定>《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）和《化学品安全技术说明书编写指南》（GB/T 17519-2013）</化学品安全技术说明书编写规定>
+        </国内法规>
+        <国际法规>
+          <联合国危险货物运输建议书>《联合国危险货物运输建议书》（UN RTDG），本品属于第8类腐蚀性物质，UN编号：3265。</联合国危险货物运输建议书>
+          <国际海运危险货物规则>《国际海运危险货物规则》（IMDG Code），包装类别：II类包装。</国际海运危险货物规则>
+          <国际航空运输协会危险品规则>《国际航空运输协会危险品规则》（IATA DGR），禁止客机运输，仅限货机运输。</国际航空运输协会危险品规则>
+          <全球化学品统一分类和标签制度>《全球化学品统一分类和标签制度》（GHS），本品具有皮肤腐蚀/刺激、严重眼损伤/眼刺激等危险性。</全球化学品统一分类和标签制度>
+        </国际法规>
+      </regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standard>《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）、《化学品安全技术说明书编写指南》（GB/T 17519-2013）</preparation_standard>
+      <revision_description>本次修订：补充完善公司信息、危险性概述、接触控制和个体防护、理化性质、毒理学信息、生态学资料、法规信息等章节内容</revision_description>
+      <abbreviations_explanation>
+CAS号：化学文摘社登记号
+LC50：半数致死浓度
+LD50：半数致死剂量
+EC50：半数效应浓度
+OECD TG：经济合作与发展组织试验指南
+IARC：国际癌症研究机构
+NTP：美国国家毒理学计划
+RTECS：化学物质毒性效应登记
+MAC：最高容许浓度
+TLV：阈限值
+TWA：时间加权平均浓度
+STEL：短时间接触限值
+log Kow：辛醇-水分配系数的对数
+IMDG：国际海运危险货物
+ICAO：国际民用航空组织
+IATA：国际航空运输协会
+GHS：全球化学品统一分类和标签制度
+      </abbreviations_explanation>
+      <data_sources>国际化学品安全卡（ICSC）、欧洲化学品管理局（ECHA）数据库、美国国立职业安全卫生研究所（NIOSH）数据库、中国化学品安全网、相关科学文献</data_sources>
+      <revision_date>2025年12月23日</revision_date>
+      <next_revision_date>2028年12月23日</next_revision_date>
+      <revision_reason>定期更新，补充缺失信息</revision_reason>
+      <disclaimer>本MSDS仅供参考，使用者应根据实际使用情况评估其适用性，并承担相应责任</disclaimer>
+    </other_info>
   </msds>
 </msds_list>

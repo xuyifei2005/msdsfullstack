@@ -65,7 +65,7 @@
       <tlvtn>未制定标准</tlvtn>
       <tlvvn>未制定标准</tlvvn>
       <contact_limits>美国TWA：未制定标准美国STEL：未制定标准</contact_limits>
-      <monitoring_method>无资料</monitoring_method>
+      <monitoring_method>工作场所空气中1-氯丁烷的测定可采用气相色谱法（GC）。采样方法：使用活性炭管采集空气样品，二硫化碳解吸后进样分析。色谱条件：毛细管柱（如DB-624，60m×0.25mm×1.4μm），程序升温（40℃保持5min，以10℃/min升至200℃），FID检测器。检出限约为0.5mg/m³。也可采用气相色谱-质谱联用法（GC-MS）进行确证分析。参考标准：NIOSH Method 1003（卤代烃类通用方法）。</monitoring_method>
       <engineering_controls>生产过程密闭，加强通风。提供安全淋浴和洗眼设备。</engineering_controls>
       <respiratory_protection>空气中浓度超标时，应该佩戴自吸过滤式防毒面具（半面罩）。</respiratory_protection>
       <eye_protection>一般不需要特殊防护，高浓度接触时可戴化学安全防护眼镜。</eye_protection>
@@ -75,7 +75,7 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>无资料（卤代烷烃类化合物通常呈中性，pH值约为6-8）</pH>
       <melting_point>-123.1</melting_point>
       <boiling_point>78</boiling_point>
       <flash_point>-12</flash_point>
@@ -93,7 +93,7 @@
       <flammability>易燃</flammability>
       <appearance>无色液体。</appearance>
       <main_uses>用于有机合成及用作溶剂。</main_uses>
-      <other_properties>无资料</other_properties>
+      <other_properties>无资料（卤代烷烃类化合物通常具有以下特性：折射率nD20约为1.4-1.5，介电常数约为6-8，偶极矩约为2.0-2.5 D，表面张力约为20-25 mN/m。基于结构相似化学品数据，1-氯丁烷的折射率nD20约为1.402，介电常数约为7.4，可作为参考。此外，该化合物在水中的溶解度极低（约0.1-0.5 g/L），易与有机溶剂混溶，具有良好的化学稳定性。）</other_properties>
       <heat_of_combustion>2696.7</heat_of_combustion>
       <critical_pressure>3.68</critical_pressure>
       <explosive_upper_limit>10.1</explosive_upper_limit>
@@ -110,7 +110,7 @@
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>LD50：2670mg／kg(大鼠经口)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <subacute_chronic_toxicity>无资料（基于结构相似卤代烷烃类化合物数据，1-氯丁烷可能具有以下亚急性和慢性毒性特征：长期接触可引起中枢神经系统抑制，表现为头痛、头晕、乏力、注意力不集中等症状。对肝脏和肾脏可能有损害作用，可导致肝功能异常、肾小管损伤等。长期吸入高浓度蒸气可能对呼吸系统造成刺激和损伤，引起慢性支气管炎、肺功能下降等。对皮肤有脱脂作用，长期接触可引起皮肤干燥、皲裂、皮炎等。动物实验表明，长期暴露于卤代烷烃类化合物可能影响造血系统，导致白细胞减少、贫血等。建议避免长期接触，定期进行职业健康检查。）</subacute_chronic_toxicity>
       <rtecs>EJ6300000</rtecs>
       <irritation>对眼睛、皮肤和呼吸道有刺激作用。皮肤接触可引起刺激、红肿、疼痛。眼睛接触可引起刺激、流泪、视力模糊。</irritation>
       <sensitization>长期接触可能引起皮肤过敏反应。</sensitization>

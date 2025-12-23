@@ -8,12 +8,12 @@
       <product_name>N-乙基吗琳</product_name>
       <product_alias>N-乙基四氢-1,4-噁嗪</product_alias>
       <product_english_name>N-Ethyl morpholine</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -75,21 +75,21 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>-63</melting_point>
-      <boiling_point>139</boiling_point>
-      <flash_point>29</flash_point>
+      <melting_point>-63℃</melting_point>
+      <boiling_point>139℃</boiling_point>
+      <flash_point>29℃</flash_point>
       <relative_density>0.92</relative_density>
       <relative_vapor_density>4.00</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>无资料</solubility>
       <molecular_formula>C6H13NO</molecular_formula>
       <molecular_weight>115.18</molecular_weight>
       <main_components>无资料</main_components>
-      <saturated_vapor_pressure>2.13／20℃</saturated_vapor_pressure>
+      <saturated_vapor_pressure>2.13kPa／20℃</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>无资料</flammability>
       <appearance>无色液体，有氨味。</appearance>
       <main_uses>用作药品、橡胶促进剂、乳化剂制造的中间体，也用作溶剂及催化剂。</main_uses>
       <other_properties>无资料</other_properties>
@@ -108,7 +108,7 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：1780mg／kg (大鼠经口)LC50：18000mg／m3 2小时(小鼠吸入)</acute_toxicity>
+      <acute_toxicity>LD50：1780mg／kg (大鼠经口)；LC50：18000mg／m3，2小时(小鼠吸入)</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>QE4025000</rtecs>
       <irritation>无资料</irritation>
@@ -116,6 +116,12 @@
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
       <carcinogenicity>无资料</carcinogenicity>
+      <skin_corrosion_irritation>无资料</skin_corrosion_irritation>
+      <eye_damage_irritation>无资料</eye_damage_irritation>
+      <reproductive_toxicity>无资料</reproductive_toxicity>
+      <specific_target_organ_toxicity_single>无资料</specific_target_organ_toxicity_single>
+      <specific_target_organ_toxicity_repeated>无资料</specific_target_organ_toxicity_repeated>
+      <aspiration_hazard>无资料</aspiration_hazard>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
@@ -123,6 +129,7 @@
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
+      <soil_mobility>无资料</soil_mobility>
       <other_harmful_effects>工作现场严禁吸烟。工作后，淋浴更衣。注意个人清洁卫生。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
@@ -144,6 +151,9 @@
     <!-- 第十五部分：法规信息 -->
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
+      <china_regulations>无资料</china_regulations>
+      <international_regulations>无资料</international_regulations>
+      <chemical_safety_guidelines>无资料</chemical_safety_guidelines>
     </regulatory>
   </msds>
 </msds_list>

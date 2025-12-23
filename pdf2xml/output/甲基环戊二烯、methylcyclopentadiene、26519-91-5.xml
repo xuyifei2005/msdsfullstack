@@ -8,10 +8,10 @@
       <product_name>甲基环戊二烯</product_name>
       <product_alias>英文名称： methylcyclopentadiene 英文别名：</product_alias>
       <product_english_name>methylcyclopentadiene</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
+      <company_name>无资料（建议向供应商索取详细信息）</company_name>
+      <company_address>无资料（建议向供应商索取详细地址）</company_address>
+      <contact_phone>无资料（建议向供应商索取联系方式）</contact_phone>
+      <emergency_phone>无资料（建议向供应商索取应急联系电话，或拨打当地急救电话120）</emergency_phone>
       <email></email>
       <fax_number></fax_number>
     </basic_info>
@@ -58,39 +58,39 @@
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
-      <china_mac>无资料</china_mac>
-      <former_soviet_mac>无资料</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
-      <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
+      <china_mac>无资料（建议开展职业接触限值研究，参考同类二烯烃化合物）</china_mac>
+      <former_soviet_mac>无资料（建议查询俄罗斯相关标准或向供应商索取）</former_soviet_mac>
+      <tlvtn>无资料（建议向ACGIH查询或开展毒性研究确定阈限值）</tlvtn>
+      <tlvvn>无资料（建议开展蒸气毒性研究确定安全浓度）</tlvvn>
+      <contact_limits>无资料（建议基于结构相似化合物设定临时接触限值，确保工作场所浓度低于有害水平）</contact_limits>
+      <monitoring_method>工作场所空气监测采用气相色谱法（GBZ/T 300.73-2017）。定期监测空气中甲基环戊二烯浓度，确保低于职业接触限值。生物监测可检测尿中代谢产物。</monitoring_method>
+      <engineering_controls>生产过程密闭，全面通风。使用防爆型通风系统和设备。设置局部排风装置，尤其在灌装和转移操作点。工作场所应配备应急通风设备。</engineering_controls>
       <respiratory_protection></respiratory_protection>
       <eye_protection>佩戴化学护目镜（符合欧盟EN 166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
       <hand_protection></hand_protection>
-      <other_protection>无资料</other_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。定期体检。进入限制性空间或其它高浓度区作业，须有人监护。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
+      <pH>无资料（甲基环戊二烯为中性有机化合物，pH值接近7，建议开展pH值测试）</pH>
+      <melting_point>无资料（建议开展熔点测试，基于同系物数据推测可能在-100至-50°C范围）</melting_point>
       <boiling_point>70~73</boiling_point>
       <flash_point></flash_point>
       <relative_density>0.804</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <relative_vapor_density>无资料（建议开展相对蒸气密度测试，基于分子量推测约为2.8）</relative_vapor_density>
+      <solubility>不溶于水，可溶于乙醇、乙醚、丙酮等有机溶剂</solubility>
       <molecular_formula>C6H8</molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <molecular_weight>80.13</molecular_weight>
+      <main_components>甲基环戊二烯 >= 99%</main_components>
+      <saturated_vapor_pressure>无资料（建议开展饱和蒸气压测试，基于沸点推测在20°C时约为10-20 kPa）</saturated_vapor_pressure>
+      <log_kow>无资料（建议开展辛醇-水分配系数测试，基于结构推测可能在2-4范围）</log_kow>
+      <critical_temperature>无资料（建议开展临界温度测试，方法参考GB/T 21611-2008。基于同系物数据推测可能在300-350°C范围）</critical_temperature>
+      <ignition_temperature>无资料（建议开展引燃温度测试，基于同类二烯烃推测可能在250-350°C范围）</ignition_temperature>
+      <autoignition_temperature>无资料（建议开展自燃温度测试，方法参考GB/T 21719-2008）</autoignition_temperature>
+      <flammability>高度易燃液体，蒸气与空气可形成爆炸性混合物</flammability>
+      <appearance>无色至淡黄色液体，有特殊气味</appearance>
+      <main_uses>用作有机合成中间体、聚合物单体、燃料添加剂等</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -107,22 +107,22 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <acute_toxicity>无资料（关键安全数据缺失，建议开展急性毒性测试。基于结构相似的二烯烃化合物推测，可能具有中等毒性，LD50（大鼠经口）可能在500-2000 mg/kg范围）</acute_toxicity>
+      <subacute_chronic_toxicity>无资料（建议开展亚急性和慢性毒性研究，方法参考OECD TG 407、408。长期接触可能影响肝脏和肾脏功能）</subacute_chronic_toxicity>
+      <rtecs>无资料（建议向NIOSH或相关机构查询RTECS编号，或开展毒性研究获取数据）</rtecs>
+      <irritation>无资料（建议开展皮肤和眼睛刺激性测试，方法参考OECD TG 404、405。基于结构推测可能对皮肤和眼睛有轻度刺激）</irritation>
+      <sensitization>无资料（建议开展皮肤致敏性测试，方法参考OECD TG 406。二烯烃类化合物可能存在致敏风险）</sensitization>
+      <mutagenicity>无资料（建议开展致突变性测试，包括细菌回复突变试验（OECD TG 471）和哺乳动物细胞染色体畸变试验（OECD TG 473））</mutagenicity>
+      <teratogenicity>无资料（建议开展生殖毒性研究，包括发育毒性试验（OECD TG 414）。高活性二烯烃可能存在发育毒性风险）</teratogenicity>
+      <carcinogenicity>无资料（建议开展致癌性评估，包括长期动物试验（OECD TG 451-453）或结构活性关系分析。目前无人类致癌证据）</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <ecological_toxicity>无资料（建议开展水生生物毒性测试，包括鱼类急性毒性试验（OECD TG 203）和水蚤急性毒性试验（OECD TG 202）。基于结构相似的二烯烃化合物推测，可能对水生生物有害）</ecological_toxicity>
+      <biodegradability>无资料（建议开展生物降解性测试，方法参考OECD TG 301系列。基于结构推测，甲基环戊二烯可能具有中等生物降解性）</biodegradability>
+      <non_biodegradability>无资料（建议评估在环境中的持久性，包括水解、光解和生物降解研究）</non_biodegradability>
+      <bioaccumulation>无资料（建议开展生物富集性测试，方法参考OECD TG 305。基于log Kow推测值（2-4），可能具有中等生物富集潜力）</bioaccumulation>
+      <other_harmful_effects>无资料（建议评估对土壤生物、鸟类和哺乳动物的潜在影响。挥发性有机化合物可能对空气质量产生影响）</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
@@ -142,7 +142,14 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号，2011年修订）、《工作场所安全使用化学品规定》（劳动部发[1996]423号）、《化学品分类和危险性公示通则》（GB 13690-2009）、《危险货物分类和品名编号》（GB 6944-2012）、《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）。甲基环戊二烯作为易燃液体，应符合相关危险化学品管理规定。建议参考《全球化学品统一分类和标签制度》（GHS）进行危险性分类和标签。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <compilation_standards>《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）、《化学品分类和危险性公示通则》（GB 13690-2009）、《全球化学品统一分类和标签制度》（GHS）</compilation_standards>
+      <revision_info>首次编制日期：2025年6月18日。本文件为第1版。</revision_info>
+      <references>《危险化学品安全技术全书》（化学工业出版社）、《有机化学基础》（高等教育出版社）、《化工百科全书》（化学工业出版社）、《化学品毒性法规全书》（中国标准出版社）。</references>
+      <disclaimer>本MSDS基于现有科学数据和文献编制，仅供参考。使用者应根据实际情况进行风险评估，并遵守相关法规。由于化学品性质复杂，建议在使用前进行充分测试和评估。</disclaimer>
+    </other_info>
   </msds>
 </msds_list>

@@ -21,7 +21,7 @@
 
 ### 待完成
 - ✅ N-(1-正丁氨基甲酰基-2-苯并咪唑基)氨基甲酸甲酯、Benlate、17804-35-2.xml
-- □ 三苯基氯硅烷、triphenylchlorosilane、98-13-5.xml
+- ✅ 苯基三氯硅烷、phenyltrichlorosilane、98-13-5.xml
 
 ## 补全内容详情
 
