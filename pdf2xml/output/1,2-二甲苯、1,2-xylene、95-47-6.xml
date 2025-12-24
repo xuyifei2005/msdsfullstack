@@ -8,12 +8,12 @@
       <product_name>1,2-二甲苯</product_name>
       <product_alias>邻二甲苯</product_alias>
       <product_english_name>1,2-xylene</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -105,14 +105,15 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>属低毒类LD50：1364mg／kg(小鼠静注)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>属低毒类。LD50：1364mg/kg(小鼠静注)；LD50：4300mg/kg(大鼠经口)；LC50：29g/m3，4小时(大鼠吸入)</acute_toxicity>
+      <subacute_chronic_toxicity>长期接触可引起神经衰弱综合征，女工有月经异常，工人常发生皮肤干燥、皲裂、皮炎</subacute_chronic_toxicity>
       <rtecs>ZE2450000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对皮肤、粘膜有刺激作用，对中枢神经系统有麻醉作用</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <carcinogenicity>IARC致癌性分类：3类（现有证据不足以对人类致癌性进行分类）</carcinogenicity>
+      <inhalation_hazard>吸入高浓度蒸气可引起麻醉作用</inhalation_hazard>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
@@ -120,6 +121,7 @@
       <biodegradability>可生物降解，但速度较慢。</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>具有一定生物富集性。</bioaccumulation>
+      <soil_mobility>无资料</soil_mobility>
       <other_harmful_effects>挥发进入大气后可形成光化学烟雾，应避免排放。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
@@ -132,15 +134,18 @@
     <transportation>
       <dangerous_goods_number>33535</dangerous_goods_number>
       <un_number>1307</un_number>
-      <imdg_page>3292</imdg_page>
+      <transport_name>二甲苯</transport_name>
+      <transport_class>3</transport_class>
       <packaging_mark>7</packaging_mark>
       <packing_group>III（包装类别III）</packing_group>
       <packaging_method>采用钢桶或槽车密闭包装，设置接地装置防静电。</packaging_method>
       <transportation_precautions>运输时应防止曝晒、雨淋和高温，严禁与氧化剂等混运。车辆应配备相应灭火器材和泄漏应急装置。</transportation_precautions>
+      <marine_pollutant>无资料</marine_pollutant>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》《危险化学品目录（2015版）》及《危险货物品名表》（GB 12268-2012）适用。</regulatory_info>
+      <domestic_regulations>《危险化学品安全管理条例》《危险化学品目录（2015版）》及《危险货物品名表》（GB 12268-2012）适用。</domestic_regulations>
+      <international_regulations>无资料</international_regulations>
     </regulatory>
     <!-- 第十六部分：其他信息 -->
     <other_info>

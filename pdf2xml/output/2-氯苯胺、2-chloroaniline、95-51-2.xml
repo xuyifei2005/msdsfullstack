@@ -19,8 +19,8 @@
     <hazard_info>
       <hazard_category>第6.1类 毒害品</hazard_category>
       <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards></environmental_hazards>
+      <health_hazards>吸入、摄入或经皮肤吸收后对身体有害。对眼睛、皮肤和呼吸道有刺激作用。可能导致高铁血红蛋白血症，出现紫绀。</health_hazards>
+      <environmental_hazards>对水生生物有毒，可能对水体环境产生长期不良影响。</environmental_hazards>
       <fire_explosion_hazards>本品可燃，有毒。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -80,7 +80,7 @@
       <relative_density>1.21</relative_density>
       <relative_vapor_density>4.4</relative_vapor_density>
       <solubility>不溶于水，溶于乙醇、乙醚。</solubility>
-      <molecular_formula>C6H6C</molecular_formula>
+      <molecular_formula>C6H6ClN</molecular_formula>
       <molecular_weight>127.57</molecular_weight>
       <main_components>纯品</main_components>
       <saturated_vapor_pressure>0.13(46.3℃)</saturated_vapor_pressure>

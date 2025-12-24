@@ -2,27 +2,26 @@
 <msds_list>
   <msds>
     <!-- 第一部分：化学品及企业标识 -->
-    <basic_info>
-      <cas_number>151-56-4</cas_number>
-      <msds_code>无资料</msds_code>
-      <product_name>乙撑亚胺[稳定的]</product_name>
-      <product_alias>吖丙啶、2-氮杂环丙烷、氮丙啶</product_alias>
-      <product_english_name>ethyleneimine,stabilized</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
-    </basic_info>
+  <basic_info>
+    <cas_number>151-56-4</cas_number>
+    <msds_code>无资料</msds_code>
+    <product_name>乙撑亚胺[稳定的]</product_name>
+    <product_alias>吖丙啶、2-氮杂环丙烷、氮丙啶</product_alias>
+    <product_english_name>ethyleneimine,stabilized</product_english_name>
+    <company_name>无资料</company_name>
+    <company_address>无资料</company_address>
+    <contact_phone>无资料</contact_phone>
+    <emergency_phone>无资料</emergency_phone>
+    <email>无资料</email>
+    <fax_number>无资料</fax_number>
+  </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>眼损伤/眼刺激，类别1；急毒性-吸入，类别2；生殖细胞致突变性，类别1B；致癌性，类</hazard_category>
-      <exposure_routes>吸入、食入、皮肤接触、眼睛接触
-在正常生产处理过程中，吸入</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>高度易燃液体，其蒸气与空气混合，能形成爆炸性混合物。</fire_explosion_hazards>
+      <hazard_class>第3.2类中闪点易燃液体；急性毒性-经口-2类；急性毒性-经皮-2类；急性毒性-吸入-2类；皮肤腐蚀/刺激-1B类；严重眼损伤/眼刺激-1类；呼吸道致敏-1类；皮肤致敏-1类；生殖细胞致突变性-2类；致癌性-2类；生殖毒性-2类；特异性靶器官毒性-反复接触-2类</hazard_class>
+      <invasion_route>吸入、食入、经皮吸收</invasion_route>
+      <health_hazards>本品有剧毒。对眼睛、皮肤、粘膜和上呼吸道有剧烈刺激作用，可致灼伤。吸入后引起喉、支气管的痉挛、炎症和水肿，化学性肺炎、肺水肿。中毒表现有烧灼感、咳嗽、喘息、喉炎、气短、头痛、恶心和呕吐。长期接触可引起眼睛和呼吸道的慢性炎症。有致突变性、致癌性和生殖毒性。</health_hazards>
+      <environmental_hazards>对水生生物有极高毒性，可能在水生环境中造成长期不利影响。</environmental_hazards>
+      <fire_explosion_hazards>易燃液体，遇明火、高热或与氧化剂接触，有引起燃烧爆炸的危险。其蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -64,86 +63,93 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
-      <eye_protection>佩戴化学护目镜（符合欧盟EN166或美国NIOSH标准）。</eye_protection>
-      <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
-      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
+      <monitoring_method>气相色谱法；高效液相色谱法</monitoring_method>
+      <engineering_controls>严加密闭，提供充分的局部排风和全面通风。尽可能机械化、自动化。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>可能接触其蒸气时，应该佩戴过滤式防毒面具（全面罩）或空气呼吸器。紧急事态抢救或撤离时，建议佩戴空气呼吸器。</respiratory_protection>
+      <eye_protection>呼吸系统防护中已作防护。</eye_protection>
+      <body_protection>穿密闭型防毒服。</body_protection>
+      <hand_protection>戴橡胶耐油手套。</hand_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，彻底清洗。单独存放被毒物污染的衣服，洗后备用。注意个人清洁卫生。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>强碱性（约11-12）</pH>
       <melting_point>-74</melting_point>
       <boiling_point>56~57</boiling_point>
       <flash_point>-11</flash_point>
-      <relative_density>0.8</relative_density>
+      <relative_density>0.832（20℃）</relative_density>
       <relative_vapor_density>1.5</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula></molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>21.3（20℃）</saturated_vapor_pressure>
-      <log_kow>-0.36</log_kow>
+      <solubility>与水混溶，可混溶于多数有机溶剂</solubility>
+      <molecular_formula>C2H5N</molecular_formula>
+      <molecular_weight>43.07</molecular_weight>
+      <main_components>乙撑亚胺 ≥99.0%</main_components>
+      <saturated_vapor_pressure>21.3kPa（20℃）</saturated_vapor_pressure>
+      <log_kow>-0.63</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>322</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <flammability>高度易燃液体</flammability>
+      <appearance>无色至淡黄色液体，有强烈的氨味</appearance>
+      <main_uses>用作有机合成中间体、聚合物单体、纸张处理剂、粘合剂等</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>55</explosive_upper_limit>
-      <explosive_lower_limit>3.3</explosive_lower_limit>
+      <explosive_upper_limit>54.8%（V/V）</explosive_upper_limit>
+      <explosive_lower_limit>3.6%（V/V）</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>在正确的使用和存储条件下是稳定的。</stability>
-      <incompatible_substances>无资料</incompatible_substances>
-      <conditions_to_avoid>不相容物质，热、火焰和火花。</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。</decomposition_products>
+      <stability>在正确的使用和存储条件下是稳定的。含有稳定剂以防止聚合。</stability>
+      <incompatible_substances>酸类、酰基氯、酸酐、强氧化剂、二氧化碳、铜及其合金</incompatible_substances>
+      <conditions_to_avoid>不相容物质，热、火焰和火花。避免光照和接触空气。</conditions_to_avoid>
+      <polymerization_hazard>在酸、金属盐、高温等条件下可能发生剧烈聚合反应。</polymerization_hazard>
+      <decomposition_products>热分解可能产生有毒的氮氧化物。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>乙撑亚胺：LD50(经口)、15mg/kg(大鼠)</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>无资料</rtecs>
+      <acute_toxicity>乙撑亚胺：LD50(经口) 15mg/kg(大鼠)；LD50(经皮) 14mg/kg(兔)；LC50(吸入) 250ppm，4小时(大鼠)</acute_toxicity>
+      <subacute_chronic_toxicity>长期接触可引起眼睛和呼吸道的慢性炎症，可能导致肝肾损伤</subacute_chronic_toxicity>
+      <rtecs>KX5075000</rtecs>
       <irritation>造成严重皮肤灼伤和眼损伤、造成严重眼损伤</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <sensitization>可能导致皮肤过敏反应和呼吸道过敏反应</sensitogenicity>
+      <mutagenicity>体外试验显示有致突变性，动物试验显示有遗传毒性</mutagenicity>
+      <teratogenicity>动物试验显示有生殖毒性，可能影响生育能力</teratogenicity>
+      <carcinogenicity>IARC将其列为2B类（可能对人类致癌）</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <ecological_toxicity>对水生生物有极高毒性。乙撑亚胺对藻类的EC50（72小时）约为1mg/L，对水蚤的EC50（48小时）约为2mg/L，对鱼类的LC50（96小时）约为5mg/L</ecological_toxicity>
+      <biodegradability>可生物降解，但降解速度较慢</biodegradability>
+      <non_biodegradability>在环境中可能持续存在一段时间</non_biodegradability>
+      <bioaccumulation>由于水溶性好，生物富集可能性较低</bioaccumulation>
+      <other_harmful_effects>可能对土壤微生物造成影响，在环境中可能形成亚硝酸盐</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物。有毒、易燃液体。</waste_properties>
+      <disposal_method>用焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。或按照当地法规要求处理。</disposal_method>
+      <disposal_precautions>废弃处置前应参阅国家和地方有关法规。空容器可能残留有害物，应妥善处理。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>1185</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <un_number>UN1185</un_number>
       <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_mark>易燃液体6；毒性物质6</packaging_mark>
+      <packing_group>I</packing_group>
+      <packaging_method>小开口钢桶；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与氧化剂、酸类、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源、高温区。装运该物品的车辆排气管必须配备阻火装置，禁止使用易产生火花的机械设备和工具装卸。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）；《化学品分类和标签规范》（GB 30000系列）；《工作场所有害因素职业接触限值》（GBZ 2.1）；《危险货物品名表》（GB 12268）；《化学品安全技术说明书编写规定》（GB/T 16483）。本产品属于剧毒化学品，应严格遵守相关法规要求。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>GB/T 16483-2008《化学品安全技术说明书编写规定》；GB 30000《化学品分类和标签规范》；联合国GHS制度（第8修订版）；IARC致癌性分类</reference_standards>
+      <revision_info>本说明书按照最新可获得的信息编制。如有新的危害信息或法规要求，将及时更新。</revision_info>
+      <abbreviations>LD50：半数致死剂量；LC50：半数致死浓度；EC50：半数效应浓度；log Kow：辛醇-水分配系数；IARC：国际癌症研究机构；TLV：阈限值</abbreviations>
+      <disclaimer>本MSDS仅供参考，使用者应根据实际使用情况评估风险并采取适当措施。乙撑亚胺为剧毒化学品，必须严格按照相关规定操作。</disclaimer>
+    </other_info>
   </msds>
 </msds_list>

@@ -74,13 +74,13 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <melting_point></melting_point>
-      <boiling_point></boiling_point>
-      <flash_point></flash_point>
-      <relative_density></relative_density>
-      <solubility></solubility>
-      <molecular_formula></molecular_formula>
-      <molecular_weight></molecular_weight>
+      <melting_point>115～116℃</melting_point>
+      <boiling_point>无资料</boiling_point>
+      <flash_point>无资料</flash_point>
+      <relative_density>1.211（水=1）</relative_density>
+      <solubility>微溶于水，溶于乙醇、乙醚等有机溶剂</solubility>
+      <molecular_formula>C7H8N2O2</molecular_formula>
+      <molecular_weight>152.15</molecular_weight>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -94,8 +94,8 @@
     <toxicological>
       <acute_toxicity>无资料</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <rtecs>XU8225000</rtecs>
+      <irritation>对眼睛、皮肤、粘膜和上呼吸道有刺激作用</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -127,7 +127,7 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号），《工作场所安全使用化学品规定》（劳部发[1996]423号），《化学品分类和标签规范》（GB 30000系列标准），《危险货物品名表》（GB 12268），《化学品安全技术说明书编写规定》（GB/T 16483）</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>
