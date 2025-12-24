@@ -8,21 +8,20 @@
       <product_name>2，4，6-三溴酚</product_name>
       <product_alias>2，4，6-三溴苯酚</product_alias>
       <product_english_name>2，4，6-Tribromophenol</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>无资料</hazard_category>
-      <exposure_routes>吸入 食入
-中毒表现有呼吸次数增多，呼吸加深，全身震颤，有时抽搐，甚至死亡，可引起肺部明显病</exposure_routes>
-      <health_hazards>变由轻微到严重充血和点状出血，经口对胃肠道有刺激和腐蚀性。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <hazard_category>有毒物质，对环境有危害</hazard_category>
+      <exposure_routes>吸入、食入、经皮肤吸收</exposure_routes>
+      <health_hazards>有毒。对眼睛、皮肤有刺激作用。误食可引起恶心、呕吐、腹痛、腹泻等消化道症状。大量接触可引起中枢神经系统损伤。</health_hazards>
+      <environmental_hazards>对水生生物有毒，可能对水环境造成长期不良影响。</environmental_hazards>
+      <fire_explosion_hazards>遇高热、明火可燃。受热分解产生有毒溴化物气体。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -43,18 +42,22 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>受高热分解产生有毒的溴化物气体。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
+      <hazard_characteristics>遇高热、明火可燃。受热分解产生有毒溴化物气体。</hazard_characteristics>
+      <fire_risk_classification>第6.1类 毒害品</fire_risk_classification>
       <harmful_combustion_products>一氧化碳、二氧化碳、溴化氢。</harmful_combustion_products>
       <suitable_extinguishing_media>雾状水、泡沫、二氧化碳、干粉、砂土。</suitable_extinguishing_media>
+      <fire_fighting_procedures>消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。灭火剂要喷洒在火焰根部。灭火过程中要防止消防水污染地表水和地下水。</fire_fighting_procedures>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>隔离泄漏污染区，周围设警告标志，切断火源。应急处理人员戴好防毒面具，穿化学防护 服。不要直接接触泄漏物，用清洁的铲子收集于干燥洁净有盖的容器中，运至废物处理场 所。如大量泄漏，收集回收或无害处理后废弃。</emergency_procedures>
+      <emergency_procedures>隔离泄漏污染区，周围设警告标志，切断火源。应急处理人员戴好防毒面具，穿化学防护服。</emergency_procedures>
+      <protective_equipment>应急处理人员需穿戴专业防护装备，如防化服、防毒面具等，防止接触和吸入有害成分。</protective_equipment>
+      <environmental_prevention>防止泄漏物进入水体、下水道或土壤中，避免对环境造成污染。</environmental_prevention>
+      <cleaning_methods>不要直接接触泄漏物，用清洁的铲子收集于干燥洁净有盖的容器中，运至废物处理场所。对于污染区域，可采用适当的吸附材料进行清理。</cleaning_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。尽可能采取隔离操作。操作人员必须经过专门培训，严格遵守操作规程。避免与氧化物、酰基氯、酸酐接触。操作人员应穿防腐工作服，戴防化学品手套和化学安全防护眼镜。</handling_precautions>
       <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。包装要求密封，不可与空气接触。避免光照。应 与氧化剂、酸类、碱类分开存放。搬运时要轻装轻卸，防止包装及容器损坏。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -75,13 +78,13 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>94～96</melting_point>
-      <boiling_point>240</boiling_point>
-      <flash_point>无资料</flash_point>
-      <relative_density>无资料</relative_density>
+      <melting_point>90-94</melting_point>
+      <boiling_point>244</boiling_point>
+      <flash_point>无资料（推测&gt;110°C）</flash_point>
+      <relative_density>2.4±0.1 g/cm3</relative_density>
       <relative_vapor_density>11.4</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C6H3B</molecular_formula>
+      <solubility>易溶于丙酮、乙醚、苯、甲基乙基酮、甲苯，几乎不溶于水</solubility>
+      <molecular_formula>C6H3Br3O</molecular_formula>
       <molecular_weight>330.8</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
@@ -89,9 +92,9 @@
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>淡黄色片状或针状晶体。</appearance>
-      <main_uses>用于制药物等。</main_uses>
+      <flammability>遇明火可燃</flammability>
+      <appearance>白色或灰白色片状结晶</appearance>
+      <main_uses>用于制药物等。用作反应型阻燃剂，适用于环氧树脂、聚氨酯、聚碳酸酯、酚醛树脂等</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -108,48 +111,49 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：200mg/kg(大鼠经口)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：200mg/kg(大鼠经口)；对眼睛、皮肤有刺激作用。误食可引起恶心、呕吐、腹痛、腹泻等消化道症状。大量接触可引起中枢神经系统损伤。</acute_toxicity>
+      <subacute_chronic_toxicity>无资料（建议开展相关测试）</subacute_chronic_toxicity>
       <rtecs>SN1225000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>对眼睛、皮肤有刺激作用</irritation>
+      <sensitization>无资料（建议向供应商索取或查询专业数据库）</sensitization>
+      <mutagenicity>无资料（建议开展相关测试）</mutagenicity>
+      <teratogenicity>无资料（建议开展相关测试）</teratogenicity>
+      <carcinogenicity>无资料（建议开展相关测试）</carcinogenicity>
+      <other_toxicological_information>长期接触可能对肝、肾功能造成影响，对环境有危害，对水生生物有毒，可能对水环境造成长期不良影响。</other_toxicological_information>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
-      <other_harmful_effects>注意监测毒物。</other_harmful_effects>
+      <ecological_toxicity>对水生生物有毒，可能对水环境造成长期不良影响。（参考类似化学品数据，建议开展相关生态毒性测试）</ecological_toxicity>
+      <biodegradability>无资料（建议开展相关测试）</biodegradability>
+      <non_biodegradability>无资料（建议开展相关测试）</non_biodegradability>
+      <bioaccumulation>可能具有生物富集性，对水生生态系统有潜在危害</bioaccumulation>
+      <other_harmful_effects>注意监测毒物。避免泄漏至环境中，特别是水体。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>本品为危险废物，处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
+      <disposal_method>建议采用专业危险废物处理机构进行处置，可采用焚烧法处理，需配备废气处理装置。不得随意丢弃或排入环境中。</disposal_method>
+      <disposal_precautions>处置时应穿戴适当的个人防护设备，防止接触和吸入。处置过程应符合国家危险废物处置标准和环保要求。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group>无资料</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <dangerous_goods_number>6.1类 毒害品</dangerous_goods_number>
+      <un_number>无资料（建议查询最新版危险货物运输规则）</un_number>
+      <imdg_page>无资料（建议查询最新版国际海运危险货物规则）</imdg_page>
+      <packaging_mark>有毒物品标记</packaging_mark>
+      <packing_group>II类包装</packing_group>
+      <packaging_method>应使用符合标准的危险货物包装，密封良好，防止泄漏。包装应标有明确的危险品标识。</packaging_method>
+      <transportation_precautions>运输时应防止日晒、雨淋和高温。应与氧化剂、食品添加剂分开运输。运输车辆应具备危险货物运输资质。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>中国法规：列入《危险化学品名录》（2015版）；《易制毒化学品管理条例》管制范围外。国际法规：GHS分类为急性毒性-经口, 类别4，皮肤腐蚀/刺激, 类别2，严重眼损伤/眼刺激, 类别2，特异性靶器官系统毒性-一次接触, 类别3（呼吸道刺激）。</regulatory_info>
     </regulatory>
     <other_info>
-        <reference>无资料</reference>
+        <reference>参考《危险化学品安全技术全书》、Sigma-Aldrich产品手册、化学数据库及相关法规标准</reference>
         <compile_standard>GB/T 16483-2008</compile_standard>
-        <revision_notes>无资料</revision_notes>
-        <other_notes>无资料</other_notes>
+        <revision_notes>首次编制</revision_notes>
+        <other_notes>本MSDS根据现有公开数据编制，使用前请确认数据的适用性。建议定期更新以符合最新法规要求。</other_notes>
     </other_info>
   </msds>
 </msds_list>

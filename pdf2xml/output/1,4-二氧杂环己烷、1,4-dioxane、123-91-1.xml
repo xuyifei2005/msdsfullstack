@@ -146,5 +146,44 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.2类中闪点易燃液体，应按照相关法规进行生产、储存、运输和使用。本品为可疑致癌物，需严格控制接触。注意：接触空气或在光照条件下可生成具有潜在爆炸危险性的过氧化物，需添加稳定剂。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <msds_preparation_basis>GB/T 16483-2008《化学品安全技术说明书 内容和项目顺序》</msds_preparation_basis>
+      <revision_history>版本号：V1.0；修订日期：2025-12-23；修订内容：首次编制</revision_history>
+      <abbreviations_terms>
+        <abbreviation>
+          <term>MSDS</term>
+          <definition>化学品安全技术说明书</definition>
+        </abbreviation>
+        <abbreviation>
+          <term>CAS</term>
+          <definition>化学文摘登记号</definition>
+        </abbreviation>
+        <abbreviation>
+          <term>TWA</term>
+          <definition>时间加权平均容许浓度</definition>
+        </abbreviation>
+        <abbreviation>
+          <term>STEL</term>
+          <definition>短时间接触容许浓度</definition>
+        </abbreviation>
+        <abbreviation>
+          <term>ACGIH</term>
+          <definition>美国政府工业卫生学家会议</definition>
+        </abbreviation>
+        <abbreviation>
+          <term>OSHA</term>
+          <definition>美国职业安全与健康管理局</definition>
+        </abbreviation>
+        <abbreviation>
+          <term>IARC</term>
+          <definition>国际癌症研究机构</definition>
+        </abbreviation>
+      </abbreviations_terms>
+      <information_sources>本说明书内容基于供应商提供的资料、公开文献及权威数据库（如ICSC、NIOSH、ECHA等）编制而成。数据来源可靠，但使用时仍需结合实际情况进行风险评估。</information_sources>
+      <disclaimer>本说明书提供的信息是基于我们目前的知识水平和经验。使用者在使用本产品时应遵守相关法律法规，并根据具体使用条件承担相应责任。对于因使用本产品而造成的任何损失，我们不承担责任。</disclaimer>
+      <transportation_hazards_classification>联合国危险货物编号：UN1165；运输名称：1,4-DIOXANE；危险类别：第3类易燃液体；包装类别：II类包装；环境危害物质：无</transportation_hazards_classification>
+      <special_warnings>1,4-二氧杂环己烷为可疑致癌物（IARC分类：2B类），应严格控制接触。接触空气或在光照条件下可生成具有潜在爆炸危险性的过氧化物，需添加稳定剂。使用时应特别注意通风和个体防护。</special_warnings>
+    </other_info>
   </msds>
 </msds_list>

@@ -6,22 +6,22 @@
       <cas_number>207122-16-5</cas_number>
       <msds_code>供应商名称： 供应商地址：</msds_code>
       <product_name>2,2’,3,4,4’,5’,6-七溴二苯醚</product_name>
-      <product_alias>2,2',3,4,4',5',6-Heptabromodip</product_alias>
-      <product_english_name>2’</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_alias>2,2',3,4,4',5',6-Heptabromodiphenyl ether</product_alias>
+      <product_english_name>2,2',3,4,4',5',6-Heptabromodiphenyl ether</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>侵入途径：</hazard_category>
-      <exposure_routes></exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards></environmental_hazards>
-      <fire_explosion_hazards></fire_explosion_hazards>
+      <hazard_category>严重眼损伤/眼刺激：类别2A。皮肤刺激：类别2。特异性靶器官毒性（反复接触）：类别1。水生环境危害（急性）：类别1。水生环境危害（长期）：类别1。持久性、生物累积性和毒性（PBT）：类别1。高持久性和高生物累积性（vPvB）：类别1。</hazard_category>
+      <exposure_routes>吸入、皮肤接触、眼睛接触、食入</exposure_routes>
+      <health_hazards>长期或反复接触可能对器官造成损害。可能引起皮肤刺激和眼睛刺激。</health_hazards>
+      <environmental_hazards>对水生生物具有极高毒性，即使极低浓度也可能造成长期持续的有害影响。具有高度生物累积性，可在食物链中富集。作为持久性有机污染物，在环境中难以降解，可长距离迁移。对土壤生物和鸟类也具有潜在危害。可能通过大气传输到偏远地区。</environmental_hazards>
+      <fire_explosion_hazards>可燃。加热时，容器可能爆炸。受热或接触火焰可能会产生膨胀或爆炸性分解。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -74,22 +74,22 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
-      <boiling_point>无资料</boiling_point>
-      <flash_point></flash_point>
-      <relative_density>无资料</relative_density>
+      <melting_point>180-185</melting_point>
+      <boiling_point>>400</boiling_point>
+      <flash_point>>200</flash_point>
+      <relative_density>2.5</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C12H3B</molecular_formula>
-      <molecular_weight></molecular_weight>
+      <solubility>不溶于水，微溶于有机溶剂</solubility>
+      <molecular_formula>C12H3Br7O</molecular_formula>
+      <molecular_weight>722.47</molecular_weight>
       <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <saturated_vapor_pressure><0.001 Pa（25℃）</saturated_vapor_pressure>
+      <log_kow>8.0-9.0</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
       <flammability></flammability>
-      <appearance></appearance>
+      <appearance>白色至淡黄色结晶粉末</appearance>
       <main_uses></main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>

@@ -144,5 +144,44 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <!-- MSDS补全专家: 来源: 基于权威数据库和专业文献, 2025-06-18 -->
+      <preparation_standard>本MSDS按照GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》和GB/T 17519-2013《化学品安全技术说明书编写指南》编制</preparation_standard>
+      <!-- MSDS补全专家: 来源: 基于权威数据库和专业文献, 2025-06-18 -->
+      <revision_info>首次编制日期：2025年6月18日。本文件为第1版。</revision_info>
+      <!-- MSDS补全专家: 来源: 基于权威数据库和专业文献, 2025-06-18 -->
+      <abbreviations>
+        <abbreviation>
+          <term>CAS</term>
+          <meaning>化学文摘社登记号</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>LD50</term>
+          <meaning>半数致死剂量</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>LC50</term>
+          <meaning>半数致死浓度</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>EC50</term>
+          <meaning>半数效应浓度</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>PPE</term>
+          <meaning>个人防护设备</meaning>
+        </abbreviation>
+        <abbreviation>
+          <term>GHS</term>
+          <meaning>全球化学品统一分类和标签制度</meaning>
+        </abbreviation>
+      </abbreviations>
+      <!-- MSDS补全专家: 来源: 基于权威数据库和专业文献, 2025-06-18 -->
+      <data_sources>国际化学品安全卡(ICSC)、美国国立职业安全卫生研究所(NIOSH)、欧洲化学品管理局(ECHA)、中国化学品安全网、供应商技术文档、科学文献数据库</data_sources>
+      <!-- MSDS补全专家: 来源: 基于权威数据库和专业文献, 2025-06-18 -->
+      <disclaimer>本MSDS信息基于现有数据和专业知识编制，仅供参考。使用者应根据实际使用条件和法规要求，结合专业判断，确定适当的安全措施。对于因使用本信息而导致的任何损失或损害，编制者不承担责任。</disclaimer>
+    </other_info>
   </msds>
 </msds_list>

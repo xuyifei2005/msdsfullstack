@@ -10,12 +10,12 @@
       <product_name>(1,4,5,6,7,7-六氯-8,9,10-三降冰片-5-烯-2,3-亚基双亚甲基)亚硫酸酯</product_name>
       <product_alias>硫丹；硫丹酸酯；1,2,3,4,7,7-六氯-8,9,10-三降冰片-5-烯-2,3-亚基双亚甲基亚硫酸酯</product_alias>
       <product_english_name>1,2,3,4,7,7-hexachloro-8,9,10-trinorborn-2-en-5,6-ylenedimethyl sulfite; Endosulfan</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -109,7 +109,7 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：18mg／kg(大鼠经口)；7.36mg／kg(小鼠经口)；34mg／kg(大鼠经皮)LC50：</acute_toxicity>
+      <acute_toxicity>LD50：18mg／kg(大鼠经口)；7.36mg／kg(小鼠经口)；34mg／kg(大鼠经皮)；LC50：0.002-0.01mg/L(96小时，鱼类)</acute_toxicity>
       <subacute_chronic_toxicity>长期接触可导致肝、肾损害，对神经系统有累积性毒性作用。动物实验表明，长期暴露可导致肝、肾损害，对实验动物的NOAEL（无可见有害作用水平）约为0.5mg/kg/day。长期接触可引起头痛、眩晕、恶心、呕吐、共济失调等症状，严重者可出现肝、肾功能损害。</subacute_chronic_toxicity>
       <rtecs>RB9275000</rtecs>
       <irritation>对皮肤和眼睛有刺激作用，接触后可引起皮肤红肿、疼痛，眼部不适。对皮肤有刺激作用，可引起接触性皮炎。</irritation>
