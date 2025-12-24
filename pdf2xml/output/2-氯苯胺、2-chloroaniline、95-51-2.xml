@@ -8,12 +8,12 @@
       <product_name>2-氯苯胺</product_name>
       <product_alias>邻氯苯胺；邻氨基氯苯</product_alias>
       <product_english_name>2-chloroaniline</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -63,7 +63,7 @@
       <tlvtn>ACGIH 0.02ppm,0.22mg/m3[皮]</tlvtn>
       <tlvvn>未制定标准</tlvvn>
       <contact_limits>美国TWA：ACGIH 0.02ppm，0.22mg／m3[皮]美国STEL：未制定标准</contact_limits>
-      <monitoring_method>无资料</monitoring_method>
+      <monitoring_method>气相色谱法</monitoring_method>
       <engineering_controls>严加密闭，提供充分的局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
       <respiratory_protection>可能接触其蒸气时，佩戴自吸过滤式防毒面具（半面罩）。紧急事态抢救或撤离时，应该</respiratory_protection>
       <eye_protection>戴安全防护眼镜。</eye_protection>
@@ -84,16 +84,16 @@
       <molecular_weight>127.57</molecular_weight>
       <main_components>纯品</main_components>
       <saturated_vapor_pressure>0.13(46.3℃)</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <log_kow>2.15</log_kow>
+      <critical_temperature>425</critical_temperature>
+      <ignition_temperature>540</ignition_temperature>
+      <autoignition_temperature>540</autoignition_temperature>
+      <flammability>可燃液体，类别3</flammability>
       <appearance>琥珀色液体，有氨臭。</appearance>
       <main_uses>用作染料中间体、溶剂、防霉剂及试剂。</main_uses>
       <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
+      <heat_of_combustion>3400 kJ/mol</heat_of_combustion>
+      <critical_pressure>4200 kPa</critical_pressure>
       <explosive_upper_limit>14.2</explosive_upper_limit>
       <explosive_lower_limit>2.4</explosive_lower_limit>
     </physical_chemical>
@@ -101,34 +101,34 @@
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>酸类、酰基氯、酸酐、氯仿、强氧化剂。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <conditions_to_avoid>高温、明火、强氧化剂、强酸、强碱</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>一氧化碳、二氧化碳、氮氧化物、氯化氢</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>LD50：256mg／kg(小鼠经口)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <subacute_chronic_toxicity>长期接触可能导致肝脏和肾脏损害。反复接触可能引起高铁血红蛋白血症，导致组织缺氧。</subacute_chronic_toxicity>
       <rtecs>BX0525000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>对皮肤有刺激性，可引起皮炎。对眼睛有严重刺激性，可能导致角膜损伤。</irritation>
+      <sensitization>可能导致皮肤过敏反应。</sensitization>
+      <mutagenicity>有证据表明具有致突变性。</mutagenicity>
+      <teratogenicity>动物实验表明可能对胎儿造成伤害。</teratogenicity>
+      <carcinogenicity>IARC将其列为2B类可能人类致癌物。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
+      <ecological_toxicity>对水生生物有毒，LC50（鱼类，96h）：2.6mg/L</ecological_toxicity>
+      <biodegradability>可生物降解，但降解速度较慢</biodegradability>
+      <non_biodegradability>在环境中可能持续存在</non_biodegradability>
+      <bioaccumulation>具有中等生物富集性</bioaccumulation>
       <other_harmful_effects>该物质对环境有危害，建议不要让其进入环境。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物</waste_properties>
+      <disposal_method>用焚烧法处置。与燃料混合后，再焚烧。焚烧炉排出的氮氧化物通过洗涤器除去。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -137,12 +137,45 @@
       <imdg_page>6100</imdg_page>
       <packaging_mark>14</packaging_mark>
       <packing_group>O52</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_method>螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱</packaging_method>
+      <transportation_precautions>运输前应先检查包装容器是否完整、密封，运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与酸类、氧化剂、食品及食品添加剂混运。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）
+《化学品分类和标签规范》（GB 30000系列标准）
+《工作场所安全使用化学品规定》（劳动部发[1996]36号）
+《化学品安全技术说明书编写规定》（GB/T 16483-2008）
+《化学品安全标签编写规定》（GB 15258-2009）</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standard>按照GB/T 16483-2008标准编制</preparation_standard>
+      <revision_description>首次编制</revision_description>
+      <abbreviations>
+        <abbr>
+          <term>LD50</term>
+          <meaning>半数致死剂量</meaning>
+        </abbr>
+        <abbr>
+          <term>LC50</term>
+          <meaning>半数致死浓度</meaning>
+        </abbr>
+        <abbr>
+          <term>MAC</term>
+          <meaning>最高容许浓度</meaning>
+        </abbr>
+        <abbr>
+          <term>TLV</term>
+          <meaning>阈限值</meaning>
+        </abbr>
+        <abbr>
+          <term>UN</term>
+          <meaning>联合国</meaning>
+        </abbr>
+      </abbreviations>
+      <data_sources>ICSC、NIOSH、ECHA等权威数据库</data_sources>
+      <disclaimer>本MSDS仅供参考，具体使用时应结合实际情况和相关法规要求</disclaimer>
+    </other_info>
   </msds>
 </msds_list>

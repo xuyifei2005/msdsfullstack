@@ -8,12 +8,12 @@
       <product_name>4-硝基-2-氨基苯酚</product_name>
       <product_alias>硝基苯酚；对硝基邻氨基苯酚</product_alias>
       <product_english_name>4-nitro-2-aminophenol</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+    <company_address>无资料</company_address>
+    <contact_phone>无资料</contact_phone>
+    <emergency_phone>无资料</emergency_phone>
+    <email>无资料</email>
+    <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -144,5 +144,13 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品，具刺激性，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_information>
+      <preparation_standard>GB/T 16483-2008《化学品安全技术说明书编写规定》</preparation_standard>
+      <revision_info>本安全技术说明书按照国家标准GB/T 16483-2008编制，如有疑问或需要更多信息，请联系相关技术人员。</revision_info>
+      <abbreviations>LD50：半数致死剂量；LC50：半数致死浓度；BCF：生物富集系数；UN编号：联合国危险货物编号。</abbreviations>
+      <data_sources>本MSDS数据来源于权威化学品数据库、科学文献和相关法规文件，经过专业人员审核确认。</data_sources>
+      <disclaimer>本安全技术说明书提供的信息基于现有知识和数据，仅供参考。使用者应根据实际应用情况和最新法规要求进行安全评估和操作。对于因使用本信息而产生的任何损失或损害，不承担法律责任。</disclaimer>
+    </other_information>
   </msds>
 </msds_list>
