@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>88-18-6</cas_number>
-      <msds_code>MSDS#2169</msds_code>
+      <msds_code>MSDS-88-18-6</msds_code>
       <product_name>2-叔丁基苯酚</product_name>
       <product_alias>邻叔丁基苯酚</product_alias>
       <product_english_name>2-tert-butyl phenol</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -54,8 +54,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>火花、明火和热表面。采取措施防止静电积累。 储存于阴凉、通风仓间内。远离火种、热源。专人保管。保持容器密封。防潮、防晒。 应与碱类、氧化剂、食用化工原料等分开存放。操作现场不得吸烟、饮水、进食。搬运 时要轻装轻卸，防止包装及容器损坏。分装和搬运作业要注意个人防护。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。防止蒸气泄漏到工作场所空气中。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶手套。避免与氧化剂、酸类接触。工作场所严禁吸烟、进食和饮水。配备相应品种和数量的消防器材及泄漏应急处理设备。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。专人保管。保持容器密封。防潮、防晒。应与碱类、氧化剂、食用化工原料等分开存放。操作现场不得吸烟、饮水、进食。搬运时要轻装轻卸，防止包装及容器损坏。分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -79,17 +79,17 @@
       <boiling_point>221～224</boiling_point>
       <flash_point>110</flash_point>
       <relative_density>0.9783</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <relative_vapor_density>5.17</relative_vapor_density>
+      <solubility>微溶于水，可混溶于乙醇、乙醚、丙酮等有机溶剂。</solubility>
       <molecular_formula>C10H14O</molecular_formula>
       <molecular_weight>150.22</molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>0.067／20℃</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <main_components>纯品</main_components>
+      <saturated_vapor_pressure>0.067kPa(20℃)</saturated_vapor_pressure>
+      <log_kow>3.31</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>可燃</flammability>
       <appearance>淡黄色油状液体。</appearance>
       <main_uses>用作抗氧剂及用于有机合成。</main_uses>
       <other_properties>无资料</other_properties>

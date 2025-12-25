@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>67-63-0</cas_number>
-      <msds_code>MSDS#1131</msds_code>
+      <msds_code>MSDS-67-63-0</msds_code>
       <product_name>2-丙醇</product_name>
       <product_alias>异丙醇</product_alias>
       <product_english_name>2-Propanol</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -53,17 +53,17 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>密闭操作，全面通风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴过滤式防毒面具（半面罩），戴安全防护眼镜，穿防静电工作服，戴乳胶手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类、酸酐、卤素接触。灌装时应控制流速，且有接地装置，防止静电积聚。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。仓温不宜超过30℃。防止阳光直射。保持容器 密封。应与氧化剂分开存放。储存间内的照明、通风等设施应采用防爆型，开关设在仓外。 配备相应品种和数量的消防器材。桶装堆垛不可过大，应留墙距、顶距、柱距及必要的防火 检查走道。罐储时要有防火防爆技术措施。禁止使用易产生火花的机械设备和工具。灌装时 应注意流速(不超过3m／s)，且有接地装置，防止静电积聚。搬运时要轻装轻卸，防止包装及 容器损坏。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
       <china_mac>未制定标准</china_mac>
       <former_soviet_mac>10</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
+      <tlvtn>OSHA 400 ppm; ACGIH 400 ppm, 500 ppm [15-minute maximum peak]</tlvtn>
+      <tlvvn>ACGIH 500 ppm</tlvvn>
       <contact_limits></contact_limits>
-      <monitoring_method>无资料</monitoring_method>
+      <monitoring_method>溶剂解吸-气相色谱法</monitoring_method>
       <engineering_controls>生产过程密闭，全面通风。</engineering_controls>
       <respiratory_protection>空气中浓度超标时，应该佩带防毒面具。</respiratory_protection>
       <eye_protection>一般不需特殊防护，高浓度接触时可戴安全防护眼镜。</eye_protection>
@@ -82,15 +82,15 @@
       <solubility>与水混溶，可混溶于乙醇、乙醚、氯仿等多數有機溶劑。</solubility>
       <molecular_formula>C3H8O</molecular_formula>
       <molecular_weight>60.1</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>2-丙醇（100%）</main_components>
       <saturated_vapor_pressure>4.40／20℃</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <log_kow>0.05</log_kow>
       <critical_temperature>275.2</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>399</autoignition_temperature>
       <flammability></flammability>
       <appearance>无色透明液体，有似乙醇和丙酮混合物的气味。</appearance>
-      <main_uses>是重要的化工产品和原料。</main_uses>
+      <main_uses>是重要的化工产品和原料。主要用于制药、化妆品、塑料、香料、涂料及电子工业上用作脱水剂及清洗剂。</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>1984.7</heat_of_combustion>
       <critical_pressure>4.76</critical_pressure>
@@ -101,19 +101,19 @@
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>强氧化剂、酸类、酸酐、卤素。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <conditions_to_avoid>明火、高热。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>一氧化碳、二氧化碳。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>属微毒类LD50：5045mg／kg(大鼠经口)；12800mg／kg(兔经皮)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>属微毒类LD50：5045mg／kg(大鼠经口)；12800mg／kg(兔经皮)LC50：12000ppm/8h(大鼠吸入)</acute_toxicity>
+      <subacute_chronic_toxicity>大鼠吸入0.27ppm，24h/天，12周，未见异常；大鼠吸入0.54ppm，24h/天，12周，肝、肾轻度损害。</subacute_chronic_toxicity>
       <rtecs>NT8050000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>家兔经眼：100mg，轻度刺激。家兔经皮：500mg/24h，轻度刺激。</irritation>
       <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
+      <mutagenicity>微生物致突变：鼠伤寒沙门氏菌阳性。细胞遗传学分析：仓鼠卵巢细胞染色体畸变阳性。</mutagenicity>
+      <teratogenicity>大鼠孕后6-15天经口给予最低中毒剂量（TDLo）5000mg/kg，致肌肉骨骼系统发育畸形。</teratogenicity>
       <carcinogenicity>无资料</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
@@ -122,7 +122,7 @@
       <biodegradability>在环境中可生物降解，在好氧条件下可较快生物降解，半衰期约数天至数周。</biodegradability>
       <non_biodegradability>在厌氧条件下生物降解较慢，半衰期约数周至数月。</non_biodegradability>
       <bioaccumulation>在水生生物中具有较弱的生物富集性，生物富集系数（BCF）较低，一般不会在生物体内大量富集。</bioaccumulation>
-      <other_harmful_effects>该物质对环境可能有危害，对水体应给予特别注意。工作现场禁止吸烟、进食和饮水。保持良好的卫生习惯。工作后，淋浴更衣。注意个人清洁卫生。</other_harmful_effects>
+      <other_harmful_effects>该物质对环境可能有危害，对水体应给予特别注意。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
@@ -144,5 +144,13 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.2类中闪点易燃液体，属微毒类，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standard>按照GB/T 16483-2008标准编制</preparation_standard>
+      <revision_info>无资料</revision_info>
+      <abbreviations>MAC：最高容许浓度；TLV：阈限值；LD50：半数致死剂量；LC50：半数致死浓度；UN编号：联合国危险货物运输编号</abbreviations>
+      <references>《危险化学品安全技术全书》，《化学品毒性法规环境数据手册》，《国际化学品安全卡(ICSC)》，《化学品分类和标签规范(GB 30000系列)》</references>
+      <other_remarks>本说明书提供的信息是基于现有的知识和经验，使用者应根据具体情况进行判断和使用。如有疑问，请咨询专业机构。本品的毒性数据主要来源于动物实验，仅供参考。在实际应用中，应结合具体工艺条件和使用环境进行风险评估。废弃处置应严格遵守相关环保法规。</other_remarks>
+    </other_info>
   </msds>
 </msds_list>

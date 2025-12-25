@@ -8,12 +8,12 @@
       <product_name>2-氨基吡啶</product_name>
       <product_alias>邻氨基吡啶</product_alias>
       <product_english_name>2-Aminopyridine</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -45,15 +45,20 @@
       <hazard_characteristics>遇明火、高热可燃。与强氧化剂可发生反应。受热分解放出有毒的氧化氮烟气。</hazard_characteristics>
       <fire_risk_classification>丙</fire_risk_classification>
       <harmful_combustion_products>一氧化碳、二氧化碳、氧化氮。</harmful_combustion_products>
-      <suitable_extinguishing_media>消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。尽可能将容器从火场移至空旷 处。灭火剂：干粉、砂土。禁止用水和泡沫灭火。</suitable_extinguishing_media>
+      <suitable_extinguishing_media>干粉、砂土。禁止用水和泡沫灭火。</suitable_extinguishing_media>
+      <extinguishing_precautions>消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。</extinguishing_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>隔离泄漏污染区，周围设警告标志，建议应急处理人员戴好防毒面具，穿化学防护服。不 要直接接触泄漏物，避免扬尘，用清洁的铲子收集于干燥净洁有盖的容器中，运至废物处 理场所。也可以用大量水冲洗，经稀释的洗水放入废水系统。如大量泄漏，收集回收或无 害处理后废弃。</emergency_procedures>
+      <emergency_procedures>隔离泄漏污染区，周围设警告标志，建议应急处理人员戴好防毒面具，穿化学防护服。不要直接接触泄漏物，避免扬尘，用清洁的铲子收集于干燥净洁有盖的容器中，运至废物处理场所。也可以用大量水冲洗，经稀释的洗水放入废水系统。如大量泄漏，收集回收或无害处理后废弃。</emergency_procedures>
+      <protective_equipment>应急处理人员必须佩戴自吸过滤式防毒面具（半面罩）或全面罩型呼吸防护器，穿防毒物渗透工作服，戴橡胶耐油手套。</protective_equipment>
+      <environmental_precautions>防止泄漏物进入下水道、地下室或限制性空间。避免扬尘，避免接触皮肤和眼睛。泄漏区域应通风良好。</environmental_precautions>
+      <cleanup_methods>小量泄漏：用清洁的铲子收集于干燥净洁有盖的容器中，运至废物处理场所。大量泄漏：收集回收或无害处理后废弃。也可以用大量水冲洗，经稀释的洗水放入废水系统。</cleanup_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
       <handling_precautions>密闭操作，全面通风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿相应的防护服，戴防化学品手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免产生粉尘。避免与氧化剂、酸类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_conditions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光曝晒。保持容器密封。应与氧化剂、食用化工原料分开存放。不可混储混运。储存温度不宜超过37℃。</storage_conditions>
       <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光曝晒。保持容器密封。应与氧化剂、 食用化工原料分开存放。不可混储混运。搬运时要轻装轻卸，防止包装及容器损坏。分装 和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -74,28 +79,28 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>58.1</melting_point>
-      <boiling_point>210.6</boiling_point>
-      <flash_point>92</flash_point>
-      <relative_density>1.061（20℃）</relative_density>
+      <melting_point>58.1℃</melting_point>
+      <boiling_point>210.6℃</boiling_point>
+      <flash_point>92℃</flash_point>
+      <relative_density>1.061（20℃）（水=1）</relative_density>
       <relative_vapor_density>3.24（空气=1）</relative_vapor_density>
       <solubility>易溶于水、乙醇、乙醚、丙酮等有机溶剂</solubility>
       <molecular_formula>C5H6N2</molecular_formula>
       <molecular_weight>94.12</molecular_weight>
       <main_components>2-氨基吡啶含量≥99%</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
+      <saturated_vapor_pressure>无资料（kPa）</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
+      <critical_temperature>无资料（℃）</critical_temperature>
+      <ignition_temperature>无资料（℃）</ignition_temperature>
+      <autoignition_temperature>无资料（℃）</autoignition_temperature>
       <flammability>可燃</flammability>
       <appearance>白色片状或无色结晶。</appearance>
       <main_uses>用作药物制造中间体，也用于有机合成。</main_uses>
       <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <heat_of_combustion>无资料（kJ/mol）</heat_of_combustion>
+      <critical_pressure>无资料（kPa）</critical_pressure>
+      <explosive_upper_limit>无资料（% v/v）</explosive_upper_limit>
+      <explosive_lower_limit>无资料（% v/v）</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -144,5 +149,11 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品，属中等毒类，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <standard_reference>本MSDS按照GB/T 16483-2008、GB/T 17519-2013标准编制。</standard_reference>
+      <modification_notes>无</modification_notes>
+      <abbreviations>CAS号：化学文摘社登记号；LD50：半数致死量；LC50：半数致死浓度；MAC：最高容许浓度；TLV-TWA：阈限值-时间加权平均浓度；TLV-STEL：阈限值-短时间接触限值；GHS：全球化学品统一分类和标签制度。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

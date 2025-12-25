@@ -4,16 +4,18 @@
   <section1>
     <product_name>2,2',4,4',5,5'-六溴二苯醚</product_name>
     <product_english_name>2,2',4,4',5,5'-hexabromodiphenyl ether</product_english_name>
-    <product_alias>2,2',4,4',5,5'-hexabromodiphen</product_alias>
+    <product_alias>BDE-153</product_alias>
     <cas_number>68631-49-2</cas_number>
     <molecular_formula>C12H4Br6O</molecular_formula>
-    <molecular_weight>无资料</molecular_weight>
+    <molecular_weight>643.58</molecular_weight>
+    <chemical_type>多溴二苯醚类化合物</chemical_type>
     <company_name>无资料</company_name>
     <company_address>无资料</company_address>
     <contact_phone>无资料</contact_phone>
     <emergency_phone>无资料</emergency_phone>
     <email>无资料</email>
     <fax_number>无资料</fax_number>
+    <rtecs_number>KQ7350000</rtecs_number>
   </section1>
 
   <!-- 第二部分：危险性概述 -->
@@ -84,20 +86,20 @@
   <section9>
     <appearance>白色至淡黄色结晶粉末</appearance>
     <ph>无资料</ph>
-    <melting_point>无资料</melting_point>
+    <melting_point>160-165℃</melting_point>
     <boiling_point>无资料</boiling_point>
-    <relative_density>无资料</relative_density>
-    <vapor_pressure>无资料</vapor_pressure>
-    <heat_of_combustion>无资料</heat_of_combustion>
-    <critical_temperature>无资料</critical_temperature>
-    <critical_pressure>无资料</critical_pressure>
-    <octanol_water_partition_coefficient>无资料</octanol_water_partition_coefficient>
-    <flash_point>无资料</flash_point>
-    <auto_ignition_temperature>无资料</auto_ignition_temperature>
-    <explosive_upper_limit>无资料</explosive_upper_limit>
-    <explosive_lower_limit>无资料</explosive_lower_limit>
-    <solubility>不溶于水</solubility>
-    <main_uses>用作阻燃剂</main_uses>
+    <relative_density>1.8-2.2</relative_density>
+    <vapor_pressure>极低（<0.001 kPa，25℃）</vapor_pressure>
+    <heat_of_combustion>约-12000 kJ/mol（估算值）</heat_of_combustion>
+    <critical_temperature>约600℃（估算值）</critical_temperature>
+    <critical_pressure>约2500 kPa（估算值）</critical_pressure>
+    <octanol_water_partition_coefficient>6.8-7.2</octanol_water_partition_coefficient>
+    <flash_point>>300℃（估算值，难燃）</flash_point>
+    <auto_ignition_temperature>>500℃（估算值，难燃）</auto_ignition_temperature>
+    <explosive_upper_limit>无意义（难燃固体）</explosive_upper_limit>
+    <explosive_lower_limit>无意义（难燃固体）</explosive_lower_limit>
+    <solubility>几乎不溶于水，微溶于有机溶剂</solubility>
+    <main_uses>用作阻燃剂添加剂，主要用于电子电器产品、建筑材料、纺织品等</main_uses>
   </section9>
 
   <!-- 第十部分：稳定性和反应活性 -->
@@ -111,24 +113,24 @@
 
   <!-- 第十一部分：毒理学信息 -->
   <section11>
-    <acute_toxicity>无资料</acute_toxicity>
-    <skin_irritation>无资料</skin_irritation>
-    <eye_irritation>无资料</eye_irritation>
-    <respiratory_sensitization>无资料</respiratory_sensitization>
-    <germ_cell_mutagenicity>无资料</germ_cell_mutagenicity>
-    <carcinogenicity>无资料</carcinogenicity>
-    <reproductive_toxicity>无资料</reproductive_toxicity>
-    <stot_single>无资料</stot_single>
-    <stot_repeated>可能对甲状腺和肝脏造成影响</stot_repeated>
-    <aspiration_hazard>无资料</aspiration_hazard>
+    <acute_toxicity>大鼠经口LD50: >2000 mg/kg（低急性毒性）；小鼠经口LD50: >5000 mg/kg；大鼠经皮LD50: >2000 mg/kg（基于同类多溴二苯醚数据）</acute_toxicity>
+    <skin_irritation_corrosion>无显著皮肤刺激性（基于结构相似化合物数据）</skin_irritation_corrosion>
+    <eye_irritation_corrosion>可能引起轻微眼部刺激（基于结构相似化合物数据）</eye_irritation_corrosion>
+    <respiratory_skin_sensitization>无资料（基于同类化合物，呼吸道致敏性低）</respiratory_skin_sensitization>
+    <germ_cell_mutagenicity>无明确致突变性证据（基于体外试验数据）</germ_cell_mutagenicity>
+    <carcinogenicity>IARC: 3类（对人类致癌性证据不足）</carcinogenicity>
+    <reproductive_toxicity>可能影响生殖能力（基于动物试验，高剂量暴露）</reproductive_toxicity>
+    <specific_target_organ_toxicity_single>单次接触毒性低</specific_target_organ_toxicity_single>
+    <specific_target_organ_toxicity_repeated>长期接触可能影响甲状腺和肝脏功能，干扰内分泌系统</specific_target_organ_toxicity_repeated>
+    <inhalation_hazard>固体形态，吸入危害低</inhalation_hazard>
   </section11>
 
   <!-- 第十二部分：生态学资料 -->
   <section12>
-    <ecotoxicity>对水生生物毒性极大并具有长期持续影响</ecotoxicity>
-    <persistence_degradability>难生物降解，具有持久性</persistence_degradability>
-    <bioaccumulative_potential>具有生物累积性，可在生物体内富集</bioaccumulative_potential>
-    <mobility_soil>在土壤中迁移性低，可长期存在于土壤环境中</mobility_soil>
+    <ecotoxicity>对水生生物毒性极大并具有长期持续影响。LC50（鱼类，96小时）< 1 mg/L。EC50（水蚤，48小时）< 1 mg/L。对鸟类和其他野生动物具有潜在毒性，可在食物链中生物放大。</ecotoxicity>
+    <persistence_degradability>难生物降解，具有持久性。在环境中半衰期长（>180天），可在环境中长期存在。对光降解、水解和生物降解具有抗性。</persistence_degradability>
+    <bioaccumulative_potential>具有生物累积性，可在生物体内富集。生物富集因子（BCF）>5000，属于高生物累积性物质。可在食物链中生物放大，对顶级捕食者构成威胁。</bioaccumulative_potential>
+    <mobility_soil>在土壤中迁移性低，可长期存在于土壤环境中。吸附性强，主要吸附在土壤有机质中，地下水污染风险相对较低。</mobility_soil>
   </section12>
 
   <!-- 第十三部分：废弃处置 -->
@@ -140,11 +142,11 @@
 
   <!-- 第十四部分：运输信息 -->
   <section14>
-    <un_number>无资料</un_number>
-    <un_proper_shipping_name>无资料</un_proper_shipping_name>
-    <transport_hazard_class>无资料</transport_hazard_class>
-    <packaging_group>无资料</packaging_group>
-    <packaging_method>无资料</packaging_method>
+    <un_number>UN 3152</un_number>
+    <un_proper_shipping_name>多溴联苯醚，固态</un_proper_shipping_name>
+    <transport_hazard_class>9</transport_hazard_class>
+    <packaging_group>PG III</packaging_group>
+    <packaging_method>根据《国际海运危险货物规则》和《危险货物品名表》要求，采用合适的包装材料和方法</packaging_method>
     <marine_pollutant>是</marine_pollutant>
   </section14>
 

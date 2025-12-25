@@ -43,10 +43,10 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>酿成事故。</hazard_characteristics>
+      <hazard_characteristics>易燃，遇明火、高热或与氧化剂接触，有引起燃烧爆炸的危险。受热分解释放出有毒气体。</hazard_characteristics>
       <fire_risk_classification>乙</fire_risk_classification>
-      <harmful_combustion_products>氮氧化物。</harmful_combustion_products>
-      <suitable_extinguishing_media>泡沫、砂土、二氧化碳。</suitable_extinguishing_media>
+      <harmful_combustion_products>氮氧化物、一氧化碳、二氧化碳。</harmful_combustion_products>
+      <suitable_extinguishing_media>泡沫、砂土、二氧化碳、干粉。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
@@ -64,13 +64,13 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>美国TLV-TWA：未制订标准美国TLV-STEL：未制订标准</contact_limits>
-      <monitoring_method>无资料</monitoring_method>
+      <monitoring_method>现场应急监测方法：气体检测管法。实验室监测方法：气相色谱法。</monitoring_method>
       <engineering_controls>严加密闭，提供充分的局部排风和全面排风。</engineering_controls>
       <respiratory_protection>可能接触其蒸气时，应该佩戴防毒面具。紧急事态抢救或撤离时，建议佩戴自给式呼吸器。</respiratory_protection>
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
       <body_protection>穿防静电工作服。</body_protection>
       <hand_protection>戴防化学品手套。</hand_protection>
-      <other_protection>无资料</other_protection>
+      <other_protection>工作现场严禁吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
@@ -128,8 +128,8 @@
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废弃物应与易燃物分开处理。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -143,7 +143,7 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内化学品安全管理法规：危险化学品安全管理条例。国际法规：欧盟REACH法规、美国TSCA法案。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

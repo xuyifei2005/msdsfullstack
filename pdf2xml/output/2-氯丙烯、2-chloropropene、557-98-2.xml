@@ -79,13 +79,13 @@
       <flash_point>-34</flash_point>
       <relative_density>0.90</relative_density>
       <relative_vapor_density>2.63</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C3H5C</molecular_formula>
+      <solubility>不溶于水，可溶于乙醚、氯仿、苯、丙酮</solubility>
+      <molecular_formula>C3H5Cl</molecular_formula>
       <molecular_weight>76.53</molecular_weight>
       <main_components>纯品</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow></log_kow>
-      <critical_temperature></critical_temperature>
+      <log_kow>无资料</log_kow>
+       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
       <flammability>易燃</flammability>

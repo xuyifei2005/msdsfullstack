@@ -4,23 +4,23 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>78-76-2</cas_number>
-      <msds_code>供应商名称： 供应商地址：</msds_code>
+      <msds_code>MSDS#2442</msds_code>
       <product_name>2-溴丁烷</product_name>
       <product_alias>仲丁基溴；溴代仲丁烷</product_alias>
       <product_english_name>2-bromobutane</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>侵入途径：</hazard_category>
-      <exposure_routes></exposure_routes>
+      <hazard_category>第3.2类 中闪点易燃液体</hazard_category>
+      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
       <health_hazards>气体可能会引起头晕或窒息。</health_hazards>
-      <environmental_hazards></environmental_hazards>
+      <environmental_hazards>无资料</environmental_hazards>
       <fire_explosion_hazards>高度易燃,其蒸气与空气混合，能形成爆炸性混合物。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->

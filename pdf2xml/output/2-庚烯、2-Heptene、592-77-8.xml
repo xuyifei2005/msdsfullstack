@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>592-77-8</cas_number>
-      <msds_code>MSDS#2005</msds_code>
+      <msds_code>MSDS-592-77-8</msds_code>
       <product_name>2-庚烯</product_name>
       <product_alias>无资料</product_alias>
       <product_english_name>2-Heptene</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>第3.2类中闪点易燃液体</hazard_category>
-      <exposure_routes>吸入食入经皮吸收</exposure_routes>
+      <hazard_category>第3.2类 中闪点易燃液体</hazard_category>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
       <health_hazards>吸入、食入或经皮肤吸收后对身体有害。本品易燃、具有刺激性。吸入或口服对身体有害，可引起麻醉，伴眼和呼吸道粘膜刺激、眩晕、呕吐及紫绀。对皮肤有刺激性。吸入后可引起头痛、头晕、恶心、呕吐、倦睡、不安等症状。皮肤接触可引起刺激、红肿、疼痛。眼睛接触可引起刺激、流泪、视力模糊。长期接触可引起肝、肾功能损害，神经系统损伤等。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。本品可通过皮肤吸收。</health_hazards>
-      <environmental_hazards>2-庚烯对水生生物有毒性，对鱼类、甲壳类、藻类等水生生物有毒性作用。该物质在环境中较难降解，在土壤中可长期残留。可通过食物链在生物体内富集，对生态系统造成危害。对鸟类、哺乳动物等陆生生物也有毒性。应避免进入水体、土壤和地下水。该物质对环境有危害，应特别注意对水体的污染。</environmental_hazards>
-      <fire_explosion_hazards>本品易燃、具有刺激性</fire_explosion_hazards>
+      <environmental_hazards>对水生生物有毒性，对鱼类、甲壳类、藻类等水生生物有毒性作用。该物质在环境中较难降解，在土壤中可长期残留。可通过食物链在生物体内富集，对生态系统造成危害。对鸟类、哺乳动物等陆生生物也有毒性。应避免进入水体、土壤和地下水。该物质对环境有危害，应特别注意对水体的污染。</environmental_hazards>
+      <fire_explosion_hazards>本品易燃，其蒸气与空气可形成爆炸性混合物，遇明火、高热或与氧化剂接触，有引起燃烧爆炸的危险。其蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。若遇高热，容器内压增大，有开裂和爆炸的危险。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -42,14 +42,14 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>应。其蒸气比空气重，能在较低处扩散到相当远的地方，遇明火会引着回燃。若遇高热， 容器内压增大，有开裂和爆炸的危险。</hazard_characteristics>
+      <hazard_characteristics>易燃，遇明火、高热或与氧化剂接触，有引起燃烧爆炸的危险。其蒸气比空气重，能在较低处扩散到相当远的地方，遇明火会引着回燃。若遇高热，容器内压增大，有开裂和爆炸的危险。</hazard_characteristics>
       <fire_risk_classification>甲</fire_risk_classification>
       <harmful_combustion_products>一氧化碳、二氧化碳。</harmful_combustion_products>
-      <suitable_extinguishing_media>砂土、泡沫、干粉、二氧化碳。用水灭火无效。</suitable_extinguishing_media>
+      <suitable_extinguishing_media>泡沫、干粉、二氧化碳、砂土。用水灭火无效。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>切断火源。戴自给式呼吸器，穿工作服。不要直接笨触泄漏物，在确保安全情况下堵漏。 发、或焚烧。如大量泄漏，利用围堤收容，撒湿冰或冰水冷却，然后收集、转移、回收 或无害处理后废弃。</emergency_procedures>
+      <emergency_procedures>切断火源。迅速撤离泄漏污染区人员至安全区，并进行隔离，严格限制出入。建议应急处理人员戴自给正压式呼吸器，穿防静电工作服。不要直接接触泄漏物。尽可能切断泄漏源。防止流入下水道、排洪沟等限制性空间。小量泄漏：用砂土、蛭石或其他惰性材料吸收，收集于密闭容器中。大量泄漏：构筑围堤或挖坑收容。用泡沫覆盖，降低蒸气灾害。用防爆泵转移至槽车或专用收集器内，回收或运至废物处理场所处置。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
@@ -80,10 +80,10 @@
       <relative_density>0.70-0.71(20℃)</relative_density>
       <relative_vapor_density>3.4</relative_vapor_density>
       <solubility>不溶于水，溶于乙醇、丙酮、乙醚、石油醚。</solubility>
-      <molecular_formula>C6H14</molecular_formula>
-      <molecular_weight>98.2</molecular_weight>
+      <molecular_formula>C7H14</molecular_formula>
+      <molecular_weight>98.19</molecular_weight>
       <main_components>2-庚烯含量≥99%</main_components>
-      <saturated_vapor_pressure>7.52(25℃)</saturated_vapor_pressure>
+      <saturated_vapor_pressure>7.52kPa(25℃)</saturated_vapor_pressure>
       <log_kow>3.4</log_kow>
       <critical_temperature>280</critical_temperature>
       <ignition_temperature>260</ignition_temperature>
@@ -144,5 +144,11 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.2类中闪点易燃液体，可疑致癌物2B类（IARC），能发生聚合反应，需添加阻聚剂，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <compilation_standard>本安全技术说明书按照《化学品安全技术说明书 内容和项目顺序》（GB/T 16483-2008）和《化学品安全技术说明书编写指南》（GB/T 17519-2013）标准编制。</compilation_standard>
+      <modification_notes>无资料</modification_notes>
+      <abbreviations>无资料</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

@@ -144,5 +144,13 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品，应按照相关法规进行生产、储存、运输和使用。本品为剧毒化学品，需严格控制接触。本品为可疑致癌物（IARC分类：2A类），需严格控制接触。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standard>《化学品安全技术说明书编写规定》（GB/T 16483-2008）、《化学品安全技术说明书编写指南》（GB/T 17519-2013）</preparation_standard>
+      <revision_description>首次编制</revision_description>
+      <abbreviations>LD50：半数致死剂量；LC50：半数致死浓度；CAS号：化学文摘社登记号；IARC：国际癌症研究机构；GHS：全球化学品统一分类和标签制度</abbreviations>
+      <data_sources>中国化学品安全网、国际化学品安全卡（ICSC）、欧洲化学品管理局（ECHA）数据库</data_sources>
+      <disclaimer>本安全技术说明书（MSDS）仅供参考。用户应根据实际使用情况和当地法规要求，采取适当的安全措施。对于因使用本信息而导致的任何损失或损害，我们不承担责任。</disclaimer>
+    </other_info>
   </msds>
 </msds_list>

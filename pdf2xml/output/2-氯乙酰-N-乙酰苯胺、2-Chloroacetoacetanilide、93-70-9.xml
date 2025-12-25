@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>93-70-9</cas_number>
-      <msds_code>MSDS#2903</msds_code>
+      <msds_code>MSDS-93-70-9</msds_code>
       <product_name>2-氯乙酰-N-乙酰苯胺</product_name>
       <product_alias>邻氯乙酰-N-乙酰苯胺</product_alias>
       <product_english_name>2-Chloroacetoacetanilide</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -42,10 +42,11 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>遇明火、高热可燃。与氧化剂能发生强烈反应。受高热分解产生有毒的腐蚀性烟气。</hazard_characteristics>
+      <hazard_characteristics>遇明火、高热可燃。其粉体与空气可形成爆炸性混合物，当达到一定浓度时，遇火星会发生爆炸。受高热分解放出有毒的气体。</hazard_characteristics>
       <fire_risk_classification>丙</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物、氯化氢、氯化物。</harmful_combustion_products>
-      <suitable_extinguishing_media>雾状水、泡沫、二氧化碳、砂土。</suitable_extinguishing_media>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物、氯化氢</harmful_combustion_products>
+      <suitable_extinguishing_media>尽可能将容器从火场移至空旷处。灭火剂：雾状水、泡沫、干粉、二氧化碳、砂土。</suitable_extinguishing_media>
+      <firefighting_precautions>消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
@@ -53,15 +54,15 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>密闭操作，局部排风。防止粉尘释放到车间空气中。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防尘口罩，戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免产生粉尘。避免与氧化剂接触。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。专人保管。保持容器密封。应与氧化剂、食 用化工原料分开存放。搬运时要轻装轻卸，防止包装及容器损坏。操作现场不得吸烟、饮 水、进食。分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
-      <china_mac>无资料</china_mac>
-      <former_soviet_mac>无资料</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
+      <china_mac>未制定标准</china_mac>
+      <former_soviet_mac>未制定标准</former_soviet_mac>
+      <tlvtn>未制定标准</tlvtn>
+      <tlvvn>未制定标准</tlvvn>
       <contact_limits>美国TLV-TWA：未制订标准美国TLV-STEL：未制订标准</contact_limits>
       <monitoring_method>无资料</monitoring_method>
       <engineering_controls>严加密闭，提供充分的局部排风。</engineering_controls>
@@ -79,8 +80,8 @@
       <flash_point>177(0.C)</flash_point>
       <relative_density>1.438(20℃)</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C10H10C</molecular_formula>
+      <solubility>微溶于水，溶于有机溶剂</solubility>
+      <molecular_formula>C10H10ClNO2</molecular_formula>
       <molecular_weight>211.65</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
@@ -103,14 +104,14 @@
       <incompatible_substances>强氧化剂。</incompatible_substances>
       <conditions_to_avoid>无资料</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>一氧化碳、二氧化碳、氮氧化物、氯化氢</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
+      <acute_toxicity>LD50：>500 mg/kg(大鼠经口)</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤、粘膜和上呼吸道有刺激作用</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -121,19 +122,19 @@
       <ecological_toxicity>无资料</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。保持良好的卫生习惯。</other_harmful_effects>
+      <bioaccumulation>可能有生物累积性</bioaccumulation>
+      <other_harmful_effects>该物质对环境可能有危害，对水体应给予特别注意。工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。保持良好的卫生习惯。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。废弃物性质：危险废物</waste_properties>
+      <disposal_method>焚烧法处置</disposal_method>
+      <disposal_precautions>注意防止二次污染</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>61773</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <un_number>2811</un_number>
       <imdg_page>无资料</imdg_page>
       <packaging_mark>14</packaging_mark>
       <packing_group>Ⅲ</packing_group>
@@ -142,7 +143,13 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号），《工作场所安全使用化学品规定》（劳部发[1996]423号）等法规，针对化学危险品的安全使用、生产、储存、运输、装卸等方面均作了相应规定。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>《危险化学品安全技术说明书编写规定》（GB16483-2000）</reference_standards>
+      <revision_info>无资料</revision_info>
+      <abbreviations_explanation>MAC：指工作场所空气中有害物质最高容许浓度；TLV-TWA：指时间加权平均容许浓度；TLV-STEL：指短时间接触容许浓度</abbreviations_explanation>
+    </other_info>
   </msds>
 </msds_list>

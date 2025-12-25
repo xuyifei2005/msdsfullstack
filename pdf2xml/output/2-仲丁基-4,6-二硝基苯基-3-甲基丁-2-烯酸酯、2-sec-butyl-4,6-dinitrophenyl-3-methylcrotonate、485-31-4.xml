@@ -53,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>在通风良好处进行操作。穿戴合适的个人防护用具。避免接触皮肤和进入眼睛。远离热源、</handling_precautions>
-      <storage_precautions>火花、明火和热表面。采取措施防止静电积累。 储存于阴凉、通风仓间内。远离火种、热源。保持容器密封。避光保存。防止受潮和雨淋。 防止阳光曝晒。专人保管。操作现场不得吸烟、饮水、进食。应与氧化剂、碱类、食用化 工原料分开存放。不能与粮食、食物、种子、饲料、各种日用品混装、混运。搬运时要轻 装轻卸，防止包装及容器损坏。分装和搬运作业要注意个人防护。</storage_precautions>
+      <handling_precautions>在通风良好处进行操作。穿戴合适的个人防护用具。避免接触皮肤和进入眼睛。远离热源、火花、明火和热表面。采取措施防止静电积累。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。保持容器密封。避光保存。防止受潮和雨淋。防止阳光曝晒。专人保管。操作现场不得吸烟、饮水、进食。应与氧化剂、碱类、食用化工原料分开存放。不能与粮食、食物、种子、饲料、各种日用品混装、混运。搬运时要轻装轻卸，防止包装及容器损坏。分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -121,7 +121,7 @@
       <ecological_toxicity>无资料</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
+      <bioaccumulation>无资料</bioaccumulation>
       <other_harmful_effects>存放被毒物污染的衣服，洗后再用。保持良好的卫生习惯。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
@@ -141,7 +141,7 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内化学品安全管理法规：危险化学品安全管理条例。国际法规：欧盟REACH法规、美国TSCA法案。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

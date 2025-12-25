@@ -20,8 +20,8 @@
       <hazard_category>侵入途径：</hazard_category>
       <exposure_routes>吞食后有毒。跟皮肤接触有毒。对皮肤有刺激性。有严重损害眼睛的危险。吸入有剧毒。</exposure_routes>
       <health_hazards>对呼吸道有刺激作用。</health_hazards>
-      <environmental_hazards></environmental_hazards>
-      <fire_explosion_hazards></fire_explosion_hazards>
+      <environmental_hazards>对水生生物有害</environmental_hazards>
+      <fire_explosion_hazards>可燃液体，遇明火、高热可燃</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -53,7 +53,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
+      <handling_precautions>操作人员应经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>火花、明火和热表面。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。储存温度一般不应高于32℃，相对湿度一般不应高于 80%。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -76,12 +76,12 @@
       <pH>无资料</pH>
       <melting_point>无资料</melting_point>
       <boiling_point>114</boiling_point>
-      <flash_point></flash_point>
+      <flash_point>95</flash_point>
       <relative_density>0.945</relative_density>
       <relative_vapor_density>＞1</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>微溶于水，溶于多数有机溶剂</solubility>
       <molecular_formula>C7H12N2</molecular_formula>
-      <molecular_weight></molecular_weight>
+      <molecular_weight>124.18</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
@@ -89,8 +89,8 @@
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
       <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <appearance>无色至淡黄色液体</appearance>
+      <main_uses>用作有机合成中间体、医药中间体、催化剂等</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -107,7 +107,7 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
+      <acute_toxicity>LD50 经口 - 大鼠 - 500 mg/kg</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
       <irritation>无资料</irritation>
@@ -118,7 +118,7 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>对水生生物有毒，可能对水体环境产生长期不良影响</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>

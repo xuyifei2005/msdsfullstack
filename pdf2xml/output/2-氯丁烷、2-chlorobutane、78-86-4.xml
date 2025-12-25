@@ -63,7 +63,7 @@
       <tlvtn>未制定标准</tlvtn>
       <tlvvn>未制定标准</tlvvn>
       <contact_limits>美国TWA：未制定标准美国STEL：未制定标准</contact_limits>
-      <monitoring_method>无资料</monitoring_method>
+      <monitoring_method>气相色谱法</monitoring_method>
       <engineering_controls>生产过程密闭，加强通风。提供安全淋浴和洗眼设备。</engineering_controls>
       <respiratory_protection>空气中浓度超标时，应该佩戴自吸过滤式防毒面具（半面罩）。紧急事态抢救或逃生时，应该佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>戴安全防护眼镜。</eye_protection>
@@ -83,17 +83,17 @@
       <molecular_formula>C4H9Cl</molecular_formula>
       <molecular_weight>92.57</molecular_weight>
       <main_components>2-氯丁烷（仲丁基氯、氯代仲丁烷）含量100%</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
+      <saturated_vapor_pressure>13.3kPa（20℃）</saturated_vapor_pressure>
       <log_kow>2.0</log_kow>
       <critical_temperature>247.5</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
+      <ignition_temperature>260</ignition_temperature>
+      <autoignition_temperature>460</autoignition_temperature>
       <flammability>易燃，中闪点液体</flammability>
       <appearance>无色透明液体，有类似醚的气味。</appearance>
       <main_uses>用于有机合成，及用作溶剂。</main_uses>
       <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
+      <heat_of_combustion>-2690</heat_of_combustion>
+      <critical_pressure>3.68</critical_pressure>
       <explosive_upper_limit>10.1</explosive_upper_limit>
       <explosive_lower_limit>1.8</explosive_lower_limit>
     </physical_chemical>

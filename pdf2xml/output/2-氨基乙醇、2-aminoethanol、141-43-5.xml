@@ -55,6 +55,7 @@
     <handling_storage>
       <handling_precautions>密闭操作，注意通风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿工作服（防腐材料制作），戴橡皮手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光直射；保持容器密封。应与氧化剂、 酸类分开存放。分装和搬运作业要注意个人防护。搬运时要轻装轻卸，防止包装及容器损坏。</storage_precautions>
+      <storage_conditions>储存温度不超过37℃，保持容器密封。储存区应备有泄漏应急处理设备和合适的收容材料。</storage_conditions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -144,5 +145,11 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第8.2类碱性腐蚀品，具腐蚀性和刺激性，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <standard_reference>本MSDS按照GB/T 16483-2008、GB/T 17519-2013标准编制。</standard_reference>
+      <modification_notes>无</modification_notes>
+      <abbreviations>CAS号：化学文摘社登记号；LD50：半数致死量；LC50：半数致死浓度；MAC：最高容许浓度；TLV-TWA：阈限值-时间加权平均浓度；TLV-STEL：阈限值-短时间接触限值；GHS：全球化学品统一分类和标签制度。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

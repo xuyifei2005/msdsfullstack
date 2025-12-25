@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>6032-29-7</cas_number>
-      <msds_code>MSDS#167</msds_code>
+      <msds_code>MSDS-6032-29-7</msds_code>
       <product_name>2-戊醇</product_name>
       <product_alias>仲戊醇</product_alias>
-      <product_english_name>2-amylalcohol</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_english_name>2-amyl alcohol</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -107,10 +107,10 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LC50：无资料</acute_toxicity>
+      <acute_toxicity>属低毒类。LD50：无资料。LC50：无资料。</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤和呼吸道有刺激性。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -142,7 +142,13 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.3类高闪点易燃液体，有时出现高铁血红蛋白血症，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
+      <regulatory_info>国内化学品安全管理法规：《危险化学品安全管理条例》、《工作场所安全使用化学品规定》、《危险化学品登记管理办法》等。国际法规：GHS全球化学品统一分类和标签制度。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <compilation_standard>本安全技术说明书按照《化学品安全技术说明书 内容和项目顺序》（GB/T 16483-2008）和《化学品安全技术说明书编写指南》（GB/T 17519-2013）标准编制。</compilation_standard>
+      <modification_notes>无资料</modification_notes>
+      <abbreviations>无资料</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

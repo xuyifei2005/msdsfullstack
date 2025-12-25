@@ -7,13 +7,13 @@
       <msds_code>MSDS#2441</msds_code>
       <product_name>2-溴-2-甲基丙酸乙酯</product_name>
       <product_alias>2-溴异丁酸乙酯</product_alias>
-      <product_english_name>propionate</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_english_name>ethyl 2-bromo-2-methyl propionate</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -80,7 +80,7 @@
       <relative_density>1.33</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
       <solubility>不溶于水，可混溶于乙醇、乙醚。</solubility>
-      <molecular_formula>C6H11</molecular_formula>
+      <molecular_formula>C6H11BrO2</molecular_formula>
       <molecular_weight>195.06</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>1.47(65-67℃)</saturated_vapor_pressure>
@@ -133,7 +133,7 @@
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>61619</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <un_number>UN 61619</un_number>
       <imdg_page>无资料</imdg_page>
       <packaging_mark>14</packaging_mark>
       <packing_group>Ⅲ</packing_group>
@@ -142,7 +142,15 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《化学品分类和标签规范》（GB 30000系列）、《危险货物品名表》（GB 12268）、《化学品安全技术说明书内容和项目顺序》（GB/T 16483）、《化学品安全技术说明书编写指南》（GB/T 17519）等。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <info_sources>本MSDS基于现有公开数据编制，仅供参考。使用者应根据实际使用情况获取更详细的信息。</info_sources>
+      <revision_date>2025-12-24</revision_date>
+      <revision_description>根据GB/T 16483-2008标准完成MSDS编制</revision_description>
+      <abbreviations>MAC：最高容许浓度；TLV：阈限值；LD50：半数致死剂量；LC50：半数致死浓度；UN：联合国；GHS：全球化学品统一分类和标签制度</abbreviations>
+      <disclaimer>本说明书提供的信息是基于我们目前的知识，仅供安全操作、使用、加工、储存、运输和处置本产品之参考。本信息不应被视为担保或质量保证，也不应被视为对产品特定用途的适用性之担保。</disclaimer>
+    </other_info>
   </msds>
 </msds_list>

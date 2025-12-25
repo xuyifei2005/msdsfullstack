@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>207122-15-4</cas_number>
-      <msds_code>供应商名称： 供应商地址：</msds_code>
+      <msds_code>无资料</msds_code>
       <product_name>2,2’,4,4’,5,6’-六溴二苯醚</product_name>
-      <product_alias>2,2',4,4',5,6'-hexabromodiphen</product_alias>
-      <product_english_name>2’</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_alias>2,2',4,4',5,6'-hexabromodiphenyl ether; BDE-154; PBDE 154</product_alias>
+      <product_english_name>2,2',4,4',5,6'-hexabromodiphenyl ether</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>侵入途径：</hazard_category>
-      <exposure_routes></exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards></environmental_hazards>
-      <fire_explosion_hazards></fire_explosion_hazards>
+      <hazard_category>根据GHS分类，属于持久有机污染物(POP)，具有高毒性</hazard_category>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>长期接触可能对肝脏、甲状腺和神经系统造成损害，具有潜在的内分泌干扰作用</health_hazards>
+      <environmental_hazards>对水生生物具有极高毒性，具有生物积累性和持久性</environmental_hazards>
+      <fire_explosion_hazards>受热分解产生有毒的溴化物气体</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -50,11 +50,14 @@
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
       <emergency_procedures>离泄漏区域并处于上风方向。使用个人防护装备。避免吸入蒸气、烟雾、气体或风尘。</emergency_procedures>
+      <protective_equipment>佩戴适当的呼吸防护设备和化学防护手套、护目镜。</protective_equipment>
+      <environmental_precautions>防止进入水体、下水道、地下室或封闭区域。</environmental_precautions>
+      <cleanup_methods>用干净的铲子收集泄漏物，置于干净、干燥、盖子较松的容器中，将容器移离泄漏区域。</cleanup_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>源、火花、明火和热表面。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于 远离不相容材料和食品容器的地方。</storage_precautions>
+      <handling_precautions>在通风良好的区域进行操作。避免接触皮肤和眼睛。避免吸入粉尘。操作后彻底清洗。</handling_precautions>
+      <storage_precautions>保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远离不相容材料和食品容器的地方。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -63,34 +66,34 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <monitoring_method>定期监测工作场所空气中的粉尘浓度。</monitoring_method>
+      <engineering_controls>确保充分的通风，使用局部排气通风。</engineering_controls>
+      <respiratory_protection>当空气中粉尘浓度超过暴露限值时，佩戴合适的防尘口罩或防毒面具。</respiratory_protection>
       <eye_protection>佩戴化学护目镜（符合欧盟EN 166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
-      <other_protection>无资料</other_protection>
+      <hand_protection>佩戴化学防护手套（如丁腈橡胶手套）。</hand_protection>
+      <other_protection>工作场所禁止吸烟、进食和饮水。操作后彻底清洗。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
       <melting_point>无资料</melting_point>
       <boiling_point>无资料</boiling_point>
-      <flash_point></flash_point>
+      <flash_point>无资料</flash_point>
       <relative_density>无资料</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C12H4B</molecular_formula>
-      <molecular_weight></molecular_weight>
+      <solubility>不溶于水，溶于有机溶剂</solubility>
+      <molecular_formula>C12H4Br6O</molecular_formula>
+      <molecular_weight>624.59</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <flammability>不燃</flammability>
+      <appearance>白色至淡黄色结晶粉末</appearance>
+      <main_uses>主要用于塑料、橡胶等材料的阻燃剂</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -108,13 +111,14 @@
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <subacute_chronic_toxicity>长期接触可能对肝脏、甲状腺和神经系统造成损害。</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对皮肤和眼睛可能有刺激性。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
       <carcinogenicity>无资料</carcinogenicity>
+      <endocrine_disruption>具有潜在的内分泌干扰作用。</endocrine_disruption>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>

@@ -8,19 +8,19 @@
       <product_name>丁酸酐</product_name>
       <product_alias>无资料</product_alias>
       <product_english_name>butyric anhydride</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第8.1类 酸性腐蚀品</hazard_category>
       <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards>心和呕吐。</health_hazards>
-      <environmental_hazards></environmental_hazards>
+      <health_hazards>吸入、摄入或经皮肤吸收后对身体有害。对眼睛、皮肤和粘膜有强烈的刺激作用。吸入后，可引起喉、支气管痉挛、炎症，化学性肺炎、肺水肿。接触后可引起烧灼感、咳</health_hazards>
+      <environmental_hazards>该物质对环境有危害，应特别注意对水体的污染。</environmental_hazards>
       <fire_explosion_hazards>本品可燃，具腐蚀性、强刺激性，可致人体灼伤。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -53,7 +53,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
+      <handling_precautions>密闭操作，注意通风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（全面罩），穿防酸碱工作服，戴橡胶耐酸碱手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、还原剂、酸类、碱类、醇类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>吸过滤式防毒面具（全面罩），穿防酸碱工作服，戴橡胶耐酸碱手套。远离火种、热源，工作 场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化 剂、还原剂、酸类、碱类、醇类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品 种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。 储存于阴凉、干燥、通风良好的库房。远离火种、热源。库温不宜超过30℃。保持容器密封。 应与氧化剂、还原剂、酸类、碱类、醇类等分开存放，切忌混储。配备相应品种和数量的消防 器材。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -79,10 +79,10 @@
       <flash_point>87.8</flash_point>
       <relative_density>0.97</relative_density>
       <relative_vapor_density>5.4</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>可混溶于乙醚、乙醇。</solubility>
       <molecular_formula>C8H14O3</molecular_formula>
       <molecular_weight>158.20</molecular_weight>
-      <main_components></main_components>
+      <main_components>丁酸酐 ≥95.0％</main_components>
       <saturated_vapor_pressure>0.04(20℃)</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
@@ -127,7 +127,7 @@
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
+      <disposal_method>用焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。</disposal_method>
       <disposal_precautions>无资料</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
@@ -137,12 +137,18 @@
       <imdg_page>8134</imdg_page>
       <packaging_mark>20</packaging_mark>
       <packing_group>O53</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_method>小开口钢桶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>铁路运输时应严格按照铁道部《危险货物运输规则》中的危险货物配装表进行配装。起运时包装要完整，装载应稳妥。运输过程中要确保容器不泄漏、不倒塌、坠落、不损坏。严禁与氧化剂、还原剂、酸类、碱类、醇类、食用化学品等混装混运。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）；《工作场所安全使用化学品规定》（劳部发[1996]423号）；《化学品分类和危险性公示通则》（GB 13690-2009）；《化学品分类和标签规范》（GB 30000系列标准）；《危险货物品名表》（GB 12268-2012）；《危险化学品目录》（2015版）。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standard>《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）</preparation_standard>
+      <revision_info>无资料</revision_info>
+      <abbreviations>LD50：半数致死剂量；LC50：半数致死浓度；MAC：最高容许浓度；TLV：阈限值；STEL：短时间接触限值；TWA：时间加权平均浓度。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

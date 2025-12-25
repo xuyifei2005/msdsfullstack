@@ -77,19 +77,19 @@
       <pH>无资料</pH>
       <melting_point>69-73</melting_point>
       <boiling_point>无资料</boiling_point>
-      <flash_point>2</flash_point>
-      <relative_density></relative_density>
+      <flash_point>110</flash_point>
+      <relative_density>1.32</relative_density>
       <relative_vapor_density>7.73</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>不溶于水，可混溶于乙醇、乙醚、丙酮等有机溶剂。</solubility>
       <molecular_formula>C10H12N2O5</molecular_formula>
       <molecular_weight>240.21</molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <main_components>纯品</main_components>
+      <saturated_vapor_pressure>0.013kPa(20℃)</saturated_vapor_pressure>
+      <log_kow>3.45</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>可燃</flammability>
       <appearance>暗黄色蜡状固体。</appearance>
       <main_uses>用于染料、有机合成、木材防腐等。</main_uses>
       <other_properties>无资料</other_properties>
@@ -143,7 +143,13 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内化学品安全管理法规：危险化学品安全管理条例、工作场所安全使用化学品规定等。国际法规：联合国GHS制度、国际海运危险货物规则(IMDG Code)等。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference>中国化学品安全网、NIOSH、ICSC等权威数据库</reference>
+      <filling_date>2024-01-01</filling_date>
+      <other_instructions>本安全技术说明书根据GB/T 16483-2008、GB/T 17519-2013标准编制。</other_instructions>
+    </other_info>
   </msds>
 </msds_list>

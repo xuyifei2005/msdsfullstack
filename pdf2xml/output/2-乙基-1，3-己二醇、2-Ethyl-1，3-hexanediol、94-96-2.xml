@@ -8,20 +8,20 @@
       <product_name>2-乙基-1，3-己二醇</product_name>
       <product_alias>无资料</product_alias>
       <product_english_name>2-Ethyl-1，3-hexanediol</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+<company_address>无资料</company_address>
+<contact_phone>无资料</contact_phone>
+<emergency_phone>无资料</emergency_phone>
+<email>无资料</email>
+<fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>无资料</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <hazard_category>第6.1类 毒害品</hazard_category>
+<exposure_routes>吸入 食入 经皮吸收</exposure_routes>
+<health_hazards>吸入、摄入或经皮肤吸收后对身体有害。对眼睛、皮肤、粘膜和上呼吸道有刺激作用。</health_hazards>
+<environmental_hazards>2-乙基-1，3-己二醇对水生生物可能有害。应避免进入水体、土壤和地下水。该物质对环境可能有危害，对水体应给予特别注意。</environmental_hazards>
+<fire_explosion_hazards>遇高热、明火或与氧化剂接触，有引起燃烧的危险。受热分解产生有毒气体。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -53,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储运注意事项：储存于阴凉、干燥、通风良好的库房。远离火种、热源。仓温不宜超过30℃。 保持容器密封。应与氧化剂、酸类、碱类分开存放。搬运时要轻装轻卸，防止包装及容器损坏。</storage_precautions>
+      <handling_precautions>密闭操作，全面通风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴过滤式防毒面具（半面罩），戴安全防护眼镜，穿防静电工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂接触。灌装时应控制流速，且有接地装置，防止静电积聚。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。所有金属部件都要接地。使用防爆设备。在通风良好处进行操作。穿戴合适的个人防护用具。</handling_precautions>
+<storage_precautions>避免接触皮肤和进入眼睛。远离热源、火花、明火和热表面。采取措施防止静电积累。 储存于阴凉、通风仓间内。远离火种、热源。仓温不宜超过30℃。防止阳光直射。保持容 器密封。不宜大量或久存。应与氧化剂分开存放。储存间内的照明、通风等设施应采用防 爆型，开关设在仓外。禁止使用易产生火花的机械设备和工具。配备相应品种和数量的消 防器材。若是储罐存放，储罐区域要有禁火标志和防火防爆技术措施。灌装时应注意流速 (不超过3m／s)，且有接地装置，防止静电积聚。搬运时要轻装轻卸，防止包装及容器损 坏。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -79,31 +79,31 @@
       <flash_point>126.7(O.C)</flash_point>
       <relative_density>0.94(20℃)</relative_density>
       <relative_vapor_density>5.03</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C8H18O2</molecular_formula>
-      <molecular_weight>146.22</molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>＜0.0013(20℃)</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <solubility>微溶于水，能与乙醇、乙醚、苯等多数有机溶剂混溶</solubility>
+<molecular_formula>C8H18O2</molecular_formula>
+<molecular_weight>146.22</molecular_weight>
+<main_components>2-乙基-1，3-己二醇（100%）</main_components>
+<saturated_vapor_pressure>0.0013kPa／20℃</saturated_vapor_pressure>
+<log_kow>2.5</log_kow>
+<critical_temperature>380.0</critical_temperature>
+<ignition_temperature>无资料</ignition_temperature>
+<autoignition_temperature>390</autoignition_temperature>
+<flammability>易燃</flammability>
       <appearance>无色、无臭液体，有吸湿性。</appearance>
       <main_uses>用于硼酸络合剂、医药、涂料的载色剂和溶剂以及化妆品、驱虫剂等。</main_uses>
       <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <heat_of_combustion>4800.0kJ/mol</heat_of_combustion>
+<critical_pressure>3.0MPa</critical_pressure>
+<explosive_upper_limit>8.0%</explosive_upper_limit>
+<explosive_lower_limit>1.0%</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>强氧化剂、强还原剂、强酸、酰基氯、酸酐。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
-      <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <conditions_to_avoid>明火、高热、光照。</conditions_to_avoid>
+<polymerization_hazard>不能出现</polymerization_hazard>
+<decomposition_products>一氧化碳、二氧化碳。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>

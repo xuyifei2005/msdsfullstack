@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>78-89-7</cas_number>
-      <msds_code>MSDS#1630</msds_code>
+      <msds_code>MSDS-78-89-7</msds_code>
       <product_name>2-氯-1-丙醇</product_name>
       <product_alias>2-氯-1-羟基丙烷</product_alias>
       <product_english_name>2-Chloro-1-propanol</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入食入经皮吸收</exposure_routes>
+      <hazard_category>第6.1类毒害品</hazard_category>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
       <health_hazards>吸入、食入或经皮肤吸收后对身体有害。对眼有刺激性。可引起皮肤刺激。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。长期接触可引起肝、肾功能损害，神经系统损伤等。本品可通过皮肤吸收。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品易燃、有毒、具有刺激性</fire_explosion_hazards>
+      <environmental_hazards>对水生生物有毒性。应避免进入水体、土壤和地下水。</environmental_hazards>
+      <fire_explosion_hazards>本品易燃、有毒、具有刺激性。遇明火、高热能引起燃烧爆炸。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -42,19 +42,23 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>遇明火、高热能引起燃烧爆炸。与氧化剂能发生强烈反应。受高热分解产生有毒的腐蚀性 气体。若遇高热，容器内压增大，有开裂和爆炸的危险。</hazard_characteristics>
+      <hazard_characteristics>遇明火、高热能引起燃烧爆炸。与氧化剂能发生强烈反应。受高热分解产生有毒的腐蚀性气体。若遇高热，容器内压增大，有开裂和爆炸的危险。</hazard_characteristics>
       <fire_risk_classification>乙</fire_risk_classification>
       <harmful_combustion_products>一氧化碳、二氧化碳、氯化氢。</harmful_combustion_products>
-      <suitable_extinguishing_media>消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。尽可能将容器从火场移至空旷 处。灭火剂：泡沫、二氧化碳、砂土。</suitable_extinguishing_media>
+      <suitable_extinguishing_media>泡沫、二氧化碳、干粉、砂土。</suitable_extinguishing_media>
+      <extinguishing_precautions>消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。</extinguishing_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，切断火源。建议应急处理人员 戴自给式呼吸器，穿化学防护服。不要直接接触泄漏物，在确保安全情况下堵漏。喷水雾 应急处理： 会减少蒸发，但不能降低泄漏物在受限制空间内的易燃性。用沙土、干燥石灰或苏打灰混 合，收集运至废物处理场所处置。如大量泄漏，利用围堤收容，然后收集、转移、回收或 无害处理后废弃。</emergency_procedures>
+      <emergency_procedures>疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，切断火源。建议应急处理人员戴自给式呼吸器，穿化学防护服。不要直接接触泄漏物，在确保安全情况下堵漏。</emergency_procedures>
+      <protective_equipment>应急处理人员戴自给式呼吸器，穿化学防护服。</protective_equipment>
+      <environmental_precautions>防止流入下水道、排洪沟等限制性空间。避免污染水体、土壤和大气。</environmental_precautions>
+      <cleanup_methods>小量泄漏：用沙土、干燥石灰或苏打灰混合，收集运至废物处理场所处置。大量泄漏：利用围堤收容，然后收集、转移、回收或无害处理后废弃。</cleanup_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光直射。保持容器密封。应与氧化剂、 食用化工原料分开存放。搬运时要轻装轻卸，防止包装及容器损坏。分装和搬运作业要注 意个人防护。</storage_precautions>
+      <handling_precautions>远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光直射。保持容器密封。应与氧化剂、食用化工原料分开存放。搬运时要轻装轻卸，防止包装及容器损坏。分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -74,21 +78,21 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
+      <melting_point>-80</melting_point>
       <boiling_point>133</boiling_point>
       <flash_point>44</flash_point>
       <relative_density>1.11</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C3H7CIO</molecular_formula>
+      <relative_vapor_density>3.25</relative_vapor_density>
+      <solubility>与水混溶，可混溶于乙醇、乙醚、丙酮等多数有机溶剂。</solubility>
+      <molecular_formula>C3H7ClO</molecular_formula>
       <molecular_weight>94.54</molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <main_components>纯品</main_components>
+      <saturated_vapor_pressure>1.33(20℃)</saturated_vapor_pressure>
+      <log_kow>0.16</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>易燃</flammability>
       <appearance>稍带醚臭的无色液体。</appearance>
       <main_uses>是制造环氧丙烷的重要中间体，也广泛用于聚酯树脂生产。</main_uses>
       <other_properties>无资料</other_properties>
@@ -103,7 +107,7 @@
       <incompatible_substances>强氧化剂、酰基氯、酸酐、强碱。</incompatible_substances>
       <conditions_to_avoid>接触潮湿空气。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>一氧化碳、二氧化碳、氯化氢。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
@@ -132,17 +136,24 @@
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>61584</dangerous_goods_number>
       <un_number>2611</un_number>
-      <imdg_page>6245</imdg_page>
-      <packaging_mark>14</packaging_mark>
-      <packing_group>无资料</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <un_proper_shipping_name>氯代醇类</un_proper_shipping_name>
+      <transportation_hazard_class>6.1</transportation_hazard_class>
+      <packing_group>III</packing_group>
+      <packaging_method>小开口钢桶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱。</packaging_method>
+      <marine_pollutant>无资料</marine_pollutant>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。车辆运输完毕应进行彻底清扫。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <domestic_regulations>《危险化学品安全管理条例》（国务院令第591号）；《易制毒化学品管理条例》；《工作场所安全使用化学品规定》。</domestic_regulations>
+      <international_regulations>GHS分类：易燃液体类别3；皮肤腐蚀/刺激类别2；严重眼损伤/眼刺激类别2；特异性靶器官毒性-反复接触类别3；危害水生环境-急性毒性类别2。</international_regulations>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <standard_reference>本MSDS按照GB/T 16483-2008、GB/T 17519-2013标准编制。</standard_reference>
+      <modification_notes>无</modification_notes>
+      <abbreviations>CAS号：化学文摘社登记号；LD50：半数致死量；LC50：半数致死浓度；MAC：最高容许浓度；TLV-TWA：阈限值-时间加权平均浓度；TLV-STEL：阈限值-短时间接触限值；GHS：全球化学品统一分类和标签制度；IARC：国际癌症研究机构；NTP：国家毒理学计划。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

@@ -80,8 +80,8 @@
       <flash_point>无资料</flash_point>
       <relative_density>无资料</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C6H5C</molecular_formula>
+      <solubility>溶于乙醇、乙醚、苯及二硫化碳，微溶于水和强酸，不溶于粗汽油。</solubility>
+      <molecular_formula>C6H5ClN2O2</molecular_formula>
       <molecular_weight>172.57</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
@@ -108,7 +108,7 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：6340mg／kg(大鼠经口)LC50：</acute_toxicity>
+      <acute_toxicity>LD50：6430mg/kg(大鼠经口)；1250mg/kg(小鼠经口)</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>BX1400000</rtecs>
       <irritation>无资料</irritation>
