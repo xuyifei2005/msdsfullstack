@@ -8,19 +8,18 @@
       <product_name>2-甲氨基乙醇</product_name>
       <product_alias>2-甲基氨基乙醇</product_alias>
       <product_english_name>2-Methylaminoethanol</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>无资料</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收
-吸入或摄入对身体有害。对皮肤有刺激性。蒸气或雾对眼、粘膜、上呼吸道有刺激性，接触后</exposure_routes>
-      <health_hazards></health_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>吸入或摄入对身体有害。对皮肤有刺激性。蒸气或雾对眼、粘膜、上呼吸道有刺激性。</health_hazards>
       <environmental_hazards>无资料</environmental_hazards>
       <fire_explosion_hazards>无资料</fire_explosion_hazards>
     </hazard_info>
@@ -37,8 +36,8 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人</eye_contact>
-      <inhalation>工呼吸。就医。</inhalation>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
       <ingestion>给饮足量温水，催吐，就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
@@ -80,7 +79,7 @@
       <flash_point>73</flash_point>
       <relative_density>0.94</relative_density>
       <relative_vapor_density>2.6</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>与水混溶，可混溶于乙醇、乙醚。</solubility>
       <molecular_formula>C3H9NO</molecular_formula>
       <molecular_weight>75.11</molecular_weight>
       <main_components>无资料</main_components>
@@ -89,7 +88,7 @@
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>引燃温度(℃)：350</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>易燃</flammability>
       <appearance>无色液体，有特臭。</appearance>
       <main_uses>用于有机合成。</main_uses>
       <other_properties>无资料</other_properties>
@@ -134,10 +133,10 @@
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <un_number>UN 2735</un_number>
       <imdg_page>无资料</imdg_page>
       <packaging_mark>无资料</packaging_mark>
-      <packing_group>无资料</packing_group>
+      <packing_group>III</packing_group>
       <packaging_method>无资料</packaging_method>
       <transportation_precautions>无资料</transportation_precautions>
     </transportation>

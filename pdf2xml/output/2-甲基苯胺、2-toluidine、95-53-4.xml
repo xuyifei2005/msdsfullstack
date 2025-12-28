@@ -133,7 +133,7 @@
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>61750</dangerous_goods_number>
-      <un_number>1708</un_number>
+      <un_number>UN 1708</un_number>
       <imdg_page>6270</imdg_page>
       <packaging_mark>14</packaging_mark>
       <packing_group>O52</packing_group>

@@ -4,7 +4,7 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>75-29-6</cas_number>
-      <msds_code>MSDS#207</msds_code>
+      <msds_code>MSDS-75-29-6</msds_code>
       <product_name>2-氯丙烷</product_name>
       <product_alias>氯异丙烷；异丙基氯</product_alias>
       <product_english_name>2-chloropropane</product_english_name>

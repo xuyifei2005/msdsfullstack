@@ -3,27 +3,26 @@
   <msds>
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
-      <cas_number>109-09-1</cas_number>
-      <msds_code>MSDS#1263</msds_code>
-      <product_name>2-氯吡啶</product_name>
-      <product_alias>无资料</product_alias>
-      <product_english_name>2-Chloropyridine</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
-    </basic_info>
+          <cas_number>109-09-1</cas_number>
+          <msds_code>MSDS-109-09-1</msds_code>
+          <product_name>2-氯吡啶</product_name>
+          <product_alias>无资料</product_alias>
+          <product_english_name>2-Chloropyridine</product_english_name>
+          <company_name>无资料</company_name>
+          <company_address>无资料</company_address>
+          <contact_phone>无资料</contact_phone>
+          <emergency_phone>无资料</emergency_phone>
+          <email>无资料</email>
+          <fax_number>无资料</fax_number>
+        </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收
-生产工人可发生接触性湿疹。其蒸气和气溶胶对眼睛、粘膜、呼吸道和皮肤有刺激作用。吸</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品可燃、有毒、具有刺激性</fire_explosion_hazards>
-    </hazard_info>
+          <hazard_category>第6.1类 毒害品</hazard_category>
+          <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+          <health_hazards>生产工人可发生接触性湿疹。其蒸气和气溶胶对眼睛、粘膜、呼吸道和皮肤有刺激作用。吸入可能引起呼吸道刺激、头痛、头晕、恶心和呕吐。食入可能引起胃肠道刺激、恶心、呕吐和腹痛。皮肤接触可能引起刺激和过敏反应。眼睛接触可能引起刺激、发红和疼痛。</health_hazards>
+          <environmental_hazards>无资料</environmental_hazards>
+          <fire_explosion_hazards>本品可燃、有毒、具有刺激性</fire_explosion_hazards>
+        </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
       <components>
@@ -54,96 +53,108 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光直射。保持容器密封。应与氧化剂、 食用化工原料分开存放。不可混储混运。搬运时要轻装轻卸，防止包装及容器损坏。分装和 搬运作业要注意个人防护。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶耐油手套。避免产生烟雾。避免与氧化剂、酸类接触。搬运时要轻装轻卸，防止包装及容器损坏。倒空的容器可能残留有害物。配备相应品种和数量的消防器材及泄漏应急处理设备。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光直射。保持容器密封。应与氧化剂、酸类、食用化工原料分开存放，切忌混储。存放处须加锁。保持低温。上锁保管。配备相应品种和数量的消防器材。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
       <china_mac>未制定标准</china_mac>
       <former_soviet_mac>未制定标准</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
-      <contact_limits>美国TWA：未制定标准美国STEL：未制定标准</contact_limits>
+      <tlvtn>未制定标准</tlvtn>
+      <tlvvn>未制定标准</tlvvn>
+      <contact_limits>美国TWA：未制定标准；美国STEL：未制定标准</contact_limits>
       <monitoring_method>无资料</monitoring_method>
-      <engineering_controls>严加密闭，提供充分的局部排风。</engineering_controls>
-      <respiratory_protection>高浓度环境中，应该佩带防毒口罩。紧急事态抢救或逃生时，佩带自给式呼吸器。</respiratory_protection>
+      <engineering_controls>严加密闭，提供充分的局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时，必须佩戴自吸过滤式防毒面具（半面罩）。紧急事态抢救或逃生时，佩带自给式呼吸器。</respiratory_protection>
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
-      <body_protection>穿相应的防护服。</body_protection>
-      <hand_protection>戴防化学品手套。</hand_protection>
-      <other_protection>无资料</other_protection>
+      <body_protection>穿防毒物渗透工作服。</body_protection>
+      <hand_protection>戴防化学品手套（橡胶耐油手套）。</hand_protection>
+      <other_protection>工作现场严禁吸烟、进食和饮水。工作后，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
-      <boiling_point>166／95.18kPa</boiling_point>
-      <flash_point>65</flash_point>
-      <relative_density>1.2</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C5H4C</molecular_formula>
-      <molecular_weight>113.55</molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>1.60／55℃</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>无色液体。</appearance>
-      <main_uses>用于有机合成。</main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
-    </physical_chemical>
+          <pH>无资料</pH>
+          <melting_point>-46℃</melting_point>
+          <boiling_point>168℃（常压）</boiling_point>
+          <flash_point>65℃</flash_point>
+          <relative_density>1.209（水=1）</relative_density>
+          <relative_vapor_density>无资料</relative_vapor_density>
+          <solubility>难溶于水，可溶于醇类、醚类、芳烃、卤代烃等有机溶剂</solubility>
+          <molecular_formula>C5H4ClN</molecular_formula>
+          <molecular_weight>113.55</molecular_weight>
+          <main_components>2-氯吡啶</main_components>
+          <saturated_vapor_pressure>1.7 kPa（20℃）</saturated_vapor_pressure>
+          <log_kow>1.52</log_kow>
+          <critical_temperature>无资料</critical_temperature>
+          <ignition_temperature>无资料</ignition_temperature>
+          <autoignition_temperature>无资料</autoignition_temperature>
+          <flammability>可燃</flammability>
+          <appearance>无色或淡黄色透明液体，具有刺激性气味</appearance>
+          <main_uses>用于有机合成，制造药物和杀虫剂等</main_uses>
+          <other_properties>折射率：1.532（D20）</other_properties>
+          <heat_of_combustion>无资料</heat_of_combustion>
+          <critical_pressure>无资料</critical_pressure>
+          <explosive_upper_limit>无资料</explosive_upper_limit>
+          <explosive_lower_limit>无资料</explosive_lower_limit>
+        </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>稳定</stability>
-      <incompatible_substances>强氧化剂、强酸。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <incompatible_substances>强氧化剂、强酸</incompatible_substances>
+      <conditions_to_avoid>避免明火、高热</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>一氧化碳、二氧化碳、氧化氮、氯化氢</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>属高毒类LD50：110mg／kg(小鼠经口)；64mg／kg(兔经皮)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>US5950000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
-    </toxicological>
+          <acute_toxicity>属高毒类。急性毒性数据：大鼠经吸入LCLo：100 ppm/4H；小鼠经口LD50：110 mg/kg；小鼠经腹腔LD50：130 mg/kg；兔子经皮肤接触LD50：64 mg/kg；兔子经腹腔LD50：48 mg/kg。</acute_toxicity>
+          <subacute_toxicity>无资料</subacute_toxicity>
+          <subchronic_toxicity>无资料</subchronic_toxicity>
+          <chronic_toxicity>无资料</chronic_toxicity>
+          <irritation>对眼睛、皮肤、粘膜和上呼吸道有刺激作用。生产工人可发生接触性湿疹。</irritation>
+          <sensitization>无资料</sensitization>
+          <mutagenicity>小鼠淋巴细胞1980 mg/L（来源：RTECS US5950000）</mutagenicity>
+          <carcinogenicity>无资料</carcinogenicity>
+          <reproductive_toxicity>无资料</reproductive_toxicity>
+          <teratogenicity>无资料</teratogenicity>
+        </toxicological>
+    <!-- 第十二部分：生态学资料 -->
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
+      <ecological_toxicity>对水生生物有毒。可能对水生环境造成长期不利影响。小鼠淋巴细胞1980 mg/L（来源：RTECS US5950000）。</ecological_toxicity>
+      <biodegradability>无资料。由于缺乏具体的生物降解性数据，建议避免直接排放到水体环境中。</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
-      <other_harmful_effects>被毒物污染的衣服，洗后再用。保持良好的卫生习惯。</other_harmful_effects>
+      <bioaccumulation>该物质可能在生物体内富集。由于缺乏具体的生物富集系数数据，建议避免长期接触和排放到环境中。</bioaccumulation>
+      <other_harmful_effects>该物质对环境有危害，应特别注意对水体的污染。被毒物污染的衣服，洗后再用。保持良好的卫生习惯。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废弃化学品应妥善包装，并贴上适当标签，交由有资质的危险废物处理单位处置。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>61118</dangerous_goods_number>
       <un_number>2822</un_number>
-      <imdg_page>6110</imdg_page>
-      <packaging_mark>14</packaging_mark>
-      <packing_group>Ⅱ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <un_name>2-氯吡啶</un_name>
+      <imdg_page>第6.1类毒害品</imdg_page>
+      <packaging_mark>第6.1类毒害品</packaging_mark>
+      <packing_group>II类</packing_group>
+      <packaging_method>螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱</packaging_method>
+      <transportation_precautions>避免与氧化剂、酸类接触。充装要控制流速，防止静电积聚。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品目录序号：1428；RTECS编号：US5950000</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standard>按照GB/T 16483-2008、GB/T 17519-2013标准编制</reference_standard>
+      <revision_info>无</revision_info>
+      <abbreviations>CAS号：化学文摘社登记号；LD50：半数致死量；LC50：半数致死浓度；LCLo：最低致死浓度；PC-TWA：时间加权平均容许浓度；PC-STEL：短时间接触容许浓度；MAC：最高容许浓度；TLV：阈限值；IDLH：立即威胁生命和健康浓度；GHS：全球化学品统一分类和标签制度；UN：联合国编号；IATA：国际航空运输协会；IMDG：国际海运危险货物规则；ADR：国际公路运输危险货物协定；RID：国际铁路运输危险货物规则；SDS：安全数据表；MSDS：材料安全数据表；PPE：个人防护装备；LEL：爆炸下限；UEL：爆炸上限；VOC：挥发性有机化合物；HOC：危害操作规程；SOP：标准操作规程；EHS：环境、健康与安全；TDG：联合国关于危险货物运输的建议书；REACH：化学品注册、评估、授权和限制法规；CLP：欧盟化学品分类、标签和包装法规；IARC：国际癌症研究机构；ACGIH：美国政府工业卫生师协会；NIOSH：美国国家职业安全卫生研究所；OSHA：美国职业安全与健康管理局；EPA：美国环境保护署；ECHA：欧洲化学品管理局；ICSC：国际化学品安全卡；RTECS：有毒物质效应登记系统；HSDB：危险物质数据库；DOT：美国运输部；IMO：国际海事组织；ICAO：国际民用航空组织；WHO：世界卫生组织；ILO：国际劳工组织；ISO：国际标准化组织；ASTM：美国材料与试验协会；CEN：欧洲标准化委员会；JIS：日本工业标准；GB：中国国家标准；AQ：中国安全生产行业标准；HG：中国化工行业标准；TSG：中国特种设备安全技术规范；EC编号：欧洲共同体编号；EINECS：欧洲现有商业化学品目录；ELINCS：欧洲通报化学品目录；NLP：未列入聚合物目录</abbreviations>
+      <other_notes>本安全技术说明书提供的信息基于现有科学知识和数据，仅供用户参考。用户应根据实际使用情况采取适当的安全措施。如有疑问，请咨询专业人士或联系供应商获取更多信息。</other_notes>
+    </other_info>
   </msds>
 </msds_list>

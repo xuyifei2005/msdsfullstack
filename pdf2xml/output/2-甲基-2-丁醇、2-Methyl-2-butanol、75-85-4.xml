@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>75-85-4</cas_number>
-      <msds_code>MSDS#1756</msds_code>
+      <msds_code>MSDS-75-85-4</msds_code>
       <product_name>2-甲基-2-丁醇</product_name>
       <product_alias>叔戊醇</product_alias>
       <product_english_name>2-Methyl-2-butanol</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第3.3类高闪点易燃液体</hazard_category>
-      <exposure_routes>吸入食入经皮吸收</exposure_routes>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
       <health_hazards>吸入、食入或经皮肤吸收后对身体有害。对眼睛、皮肤和粘膜有刺激作用。一般临床症状有头痛、眩晕、乏力、恶心、呕吐等。浓度高时有麻醉作用。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。长期接触可引起肝、肾功能损害，神经系统损伤等。本品可通过皮肤吸收。</health_hazards>
       <environmental_hazards>2-甲基-2-丁醇（叔戊醇）对水生生物可能有害。应避免进入水体、土壤和地下水。该物质对环境可能有危害，对水体应给予特别注意。</environmental_hazards>
-      <fire_explosion_hazards>本品易燃、具有刺激性</fire_explosion_hazards>
+      <fire_explosion_hazards>本品易燃、具有刺激性。其蒸气与空气可形成爆炸性混合物，遇明火、高热能引起燃烧爆炸。与氧化剂接触发生反应。其蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -46,10 +46,14 @@
       <fire_risk_classification>甲</fire_risk_classification>
       <harmful_combustion_products>一氧化碳、二氧化碳。</harmful_combustion_products>
       <suitable_extinguishing_media>抗溶性泡沫、二氧化碳、干粉、1211灭火剂。</suitable_extinguishing_media>
+      <fire_fighting_precautions>消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。处在火场中的容器若已变色或从安全泄压装置中发出声音，必须马上撤离。</fire_fighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，切断火源。建议应急处理人员 戴好防毒面具，穿一般消防防护服。喷水雾可减少蒸发。用砂土、蛭石或其它惰性材料吸 收， 使用不产生火花的工具收集于密闭容器中作好标记，等待处理。用水刷洗泄漏污染 区，对污染地带进行通风。如大量泄漏，利用围堤收容，然后收集、转移、回收或无害处 理后废弃。</emergency_procedures>
+      <emergency_procedures>迅速撤离泄漏污染区人员至安全区，并进行隔离，严格限制出入。切断火源。建议应急处理人员戴自给正压式呼吸器，穿防毒服。尽可能切断泄漏源。防止流入下水道、排洪沟等限制性空间。</emergency_procedures>
+      <environmental_precautions>防止泄漏物进入下水道、地下室、排水沟等限制性空间。避免进入水体、土壤和地下水。在安全距离外设置警戒线，禁止无关人员进入。</environmental_precautions>
+      <personal_protection>应急处理人员必须佩戴自给正压式呼吸器，穿防毒物渗透工作服，戴化学安全防护眼镜和防化学品手套。避免直接接触泄漏物。</personal_protection>
+      <cleaning_methods>小量泄漏：用活性炭、砂土或其他惰性材料吸收，收集于密闭容器中。大量泄漏：构筑围堤或挖坑收容，用防爆泵转移至槽车或专用收集器内，回收或运至废物处理场所处置。被污染的地面和设备应彻底清洗。</cleaning_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
@@ -73,29 +77,29 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
-      <melting_point>-11.9</melting_point>
-      <boiling_point>101.8</boiling_point>
-      <flash_point>40.6</flash_point>
-      <relative_density>0.8059</relative_density>
-      <relative_vapor_density>3.03</relative_vapor_density>
+      <pH>中性</pH>
+      <melting_point>-11.9℃</melting_point>
+      <boiling_point>101.8℃</boiling_point>
+      <flash_point>40.6℃</flash_point>
+      <relative_density>0.8059（20℃）</relative_density>
+      <relative_vapor_density>3.03（空气=1）</relative_vapor_density>
       <solubility>微溶于水，易溶于乙醇、乙醚等有机溶剂</solubility>
       <molecular_formula>C5H12O</molecular_formula>
       <molecular_weight>88.17</molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>2.666／27.9℃</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>272</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>437</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>无色有特殊气味和焦灼味的易挥发液体。</appearance>
-      <main_uses>用于合成香料、彩色胶片成色剂、溶剂、增塑剂、有色金属浮选剂等。</main_uses>
+      <main_components>2-甲基-2-丁醇</main_components>
+      <saturated_vapor_pressure>2.67kPa（27.9℃）</saturated_vapor_pressure>
+      <log_kow>0.96</log_kow>
+      <critical_temperature>272℃</critical_temperature>
+      <ignition_temperature>437℃</ignition_temperature>
+      <autoignition_temperature>437℃</autoignition_temperature>
+      <flammability>易燃</flammability>
+      <appearance>无色有特殊气味和焦灼味的易挥发液体</appearance>
+      <main_uses>用于合成香料、彩色胶片成色剂、溶剂、增塑剂、有色金属浮选剂等</main_uses>
       <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>9</explosive_upper_limit>
-      <explosive_lower_limit>1.2</explosive_lower_limit>
+      <heat_of_combustion>3350kJ/mol</heat_of_combustion>
+      <critical_pressure>3.9MPa</critical_pressure>
+      <explosive_upper_limit>9.0%</explosive_upper_limit>
+      <explosive_lower_limit>1.2%</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -107,8 +111,8 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>属低毒类LD50：1000mg／kg(大鼠经口)；2520mg／kg(兔经皮)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：1000mg/kg（大鼠经口）；2520mg/kg（兔经皮）；LC50：>10000mg/m³（大鼠吸入，4小时）</acute_toxicity>
+      <subacute_chronic_toxicity>长期或反复接触可能影响肝、肾功能。对眼睛、皮肤和呼吸道有刺激性。高浓度接触可引起中枢神经系统症状，包括头痛、头晕、意识模糊等。</subacute_chronic_toxicity>
       <rtecs>SC0175000</rtecs>
       <irritation>对眼睛、皮肤和粘膜有刺激作用。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。</irritation>
       <sensitization>无资料</sensitization>
@@ -122,7 +126,7 @@
       <biodegradability>在环境中可生物降解，在好氧条件下可较快生物降解，半衰期约数天至数周。</biodegradability>
       <non_biodegradability>在厌氧条件下生物降解较慢，半衰期约数周至数月。</non_biodegradability>
       <bioaccumulation>在水生生物中具有较弱的生物富集性，生物富集系数（BCF）较低，一般不会在生物体内大量富集。</bioaccumulation>
-      <other_harmful_effects>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。注意个人清洁卫生。</other_harmful_effects>
+      <other_harmful_effects>该物质对环境可能有危害，对水体应给予特别注意。应避免进入水体、土壤和地下水。在安全距离外设置警戒线，禁止无关人员进入。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
@@ -144,5 +148,11 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.3类高闪点易燃液体，属低毒类，有麻醉作用，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <standard_reference>本安全技术说明书按照GB/T 16483-2008、GB/T 17519-2013标准编制。</standard_reference>
+      <revision_info>本说明书基于现有资料编制，如有新资料或法规更新，应及时修订。</revision_info>
+      <abbreviations>CAS：化学文摘社登记号；LD50：半数致死量；LC50：半数致死浓度；PC-TWA：时间加权平均容许浓度；PC-STEL：短时间接触容许浓度；MAC：最高容许浓度；TLV-TWA：阈限值-时间加权平均；TLV-STEL：阈限值-短时间接触；IDLH：立即威胁生命和健康浓度；RTECS：化学物质毒性登记系统；BCF：生物富集系数；EC50：半数效应浓度；NOAEL：无可见有害作用水平；LOAEL：最低可见有害作用水平；IARC：国际癌症研究机构；ACGIH：美国政府工业卫生师协会；NIOSH：美国国家职业安全卫生研究所；OSHA：美国职业安全与健康管理局；GHS：全球化学品统一分类和标签制度；SDS：安全数据表；MSDS：材料安全数据表。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

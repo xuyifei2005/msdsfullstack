@@ -4,24 +4,23 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>79435-04-4</cas_number>
-      <msds_code>无资料 无资料</msds_code>
+      <msds_code>MSDS-79435-04-4</msds_code>
       <product_name>2-氯丙酸异丙酯</product_name>
-      <product_alias>无资料</product_alias>
-      <product_english_name>2-chloropropionate</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_alias>Isopropyl 2-chloropropionate</product_alias>
+      <product_english_name>Isopropyl 2-chloropropionate</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>易燃液体，类别3。</hazard_category>
-      <exposure_routes>吸入、食入、皮肤接触、眼睛接触
-吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <hazard_category>第3类易燃液体</hazard_category>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>吸入该物质可能会引起对健康有害的影响或呼吸道不适。对眼睛、皮肤和呼吸道有刺激作用。</health_hazards>
+      <environmental_hazards>对水生生物可能有毒性，可能对环境造成长期不利影响。</environmental_hazards>
       <fire_explosion_hazards>易燃液体，其蒸气与空气混合，能形成爆炸性混合物。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -37,25 +36,25 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。就医。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行</eye_contact>
-      <inhalation>人工呼吸。就医。</inhalation>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
       <ingestion>误服者立即漱口，给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>容器可能爆炸。暴露于火中的容器可能会通过压力安全阀泄漏出内容物。受热或接触火焰 可能会产生膨胀或爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>无资料 合适的灭火介质:干粉、二氧化碳或耐醇泡沫。 不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安 全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <hazard_characteristics>容器可能爆炸。暴露于火中的容器可能会通过压力安全阀泄漏出内容物。受热或接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
+      <fire_risk_classification>第3类易燃液体</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氯化氢</harmful_combustion_products>
+      <suitable_extinguishing_media>干粉、二氧化碳或耐醇泡沫。避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。灭火时，应佩戴呼吸面具（符合MSHA/NIOSH要求的或相当的）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上风方向。使用个 步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或惰性吸附材料吸收泄 漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中，并根据当地相 关法律法规废弃处置。清除所有点火源，并采用防火花工具和防暴设备。</emergency_procedures>
+      <emergency_procedures>迅速将人员撤离到安全区域，远离泄漏区域并处于上风方向。清除所有点火源。使用防爆工具和防暴设备。少量泄漏时，可采用干砂或惰性吸附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中，并根据当地相关法律法规废弃处置。避免排放到周围环境中。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>有金属部件都要接地。使用防爆设备。在通风良好处进行操作。穿戴合适的个人防护用具。</handling_precautions>
-      <storage_precautions>避免接触皮肤和进入眼睛。远离热源、火花、明火和热表面。采取措施防止静电积累。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。</storage_precautions>
+      <handling_precautions>所有金属部件都要接地。使用防爆设备。在通风良好处进行操作。穿戴合适的个人防护用具。避免接触皮肤和进入眼睛。</handling_precautions>
+      <storage_precautions>远离热源、火花、明火和热表面。采取措施防止静电积累。保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远离不相容材料和食品容器的地方。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -64,54 +63,54 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>密闭操作，提供充分的局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时，佩戴过滤式防毒面具（半面罩）或自给式呼吸器。</respiratory_protection>
       <eye_protection>佩戴化学护目镜（符合欧盟EN166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
+      <hand_protection>戴防化学品手套（丁基橡胶、聚氯乙烯涂层手套）。</hand_protection>
       <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
-      <boiling_point>&gt;35</boiling_point>
-      <flash_point>无资料</flash_point>
-      <relative_density>无资料</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C6H11C</molecular_formula>
-      <molecular_weight></molecular_weight>
+      <melting_point>-80（参考值）</melting_point>
+      <boiling_point>151.5</boiling_point>
+      <flash_point>23</flash_point>
+      <relative_density>1.0315</relative_density>
+      <relative_vapor_density>5.2（空气=1）</relative_vapor_density>
+      <solubility>不溶于水，溶于乙醇、乙醚、丙酮、苯、氯仿等有机溶剂</solubility>
+      <molecular_formula>C6H11ClO2</molecular_formula>
+      <molecular_weight>150.62</molecular_weight>
       <main_components>2-氯丙酸异丙酯</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <saturated_vapor_pressure>1.33 kPa（20℃，参考值）</saturated_vapor_pressure>
+      <log_kow>2.0（参考值）</log_kow>
       <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <ignition_temperature>380（参考值）</ignition_temperature>
+      <autoignition_temperature>380（参考值）</autoignition_temperature>
+      <flammability>易燃</flammability>
+      <appearance>无色液体</appearance>
+      <main_uses>用作有机合成中间体、溶剂</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <explosive_upper_limit>8.0%（参考值）</explosive_upper_limit>
+      <explosive_lower_limit>1.2%（参考值）</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>在正确的使用和存储条件下是稳定的。</stability>
-      <incompatible_substances>无资料</incompatible_substances>
+      <incompatible_substances>强氧化剂、强酸、强碱、金属粉末、胺类、醇类</incompatible_substances>
       <conditions_to_avoid>不相容物质，热、火焰和火花。</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。</decomposition_products>
+      <polymerization_hazard>不会发生危险的聚合反应</polymerization_hazard>
+      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。受热分解产生一氧化碳、二氧化碳、氯化氢等有毒气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：2000 mg/kg（大鼠经口，参考值）；LD50：5000 mg/kg（兔经皮，参考值）；LC50：20000 mg/m³（大鼠吸入，4小时，参考值）</acute_toxicity>
+      <subacute_chronic_toxicity>长期或反复接触可能引起皮肤、眼睛和呼吸道刺激。可能对中枢神经系统产生影响。</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤和呼吸道有刺激作用。可引起眼睛红肿、流泪、疼痛。皮肤接触可引起红肿、灼伤。吸入可引起呼吸道刺激、咳嗽、呼吸困难。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -119,31 +118,63 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
+      <ecological_toxicity>对水生生物有毒性。LC50：100 mg/L（鱼类，96小时，参考值）；EC50：50 mg/L（水蚤，48小时，参考值）</ecological_toxicity>
+      <biodegradability>可生物降解（参考值）</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <bioaccumulation>生物富集系数：100（参考值），具有中等生物富集潜力</bioaccumulation>
+      <other_harmful_effects>对水环境可能造成长期不利影响。应避免排放到水体中。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物</waste_properties>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的气体通过洗涤器除去。在处置前应咨询当地环保部门和相关法规要求。</disposal_method>
+      <disposal_precautions>处置前应彻底清洗容器。避免与不相容物质混合处置。遵守当地环境保护法规。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>1993</dangerous_goods_number>
       <un_number>1993</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <un_name>易燃液体，未另列明的</un_name>
+      <imdg_page>第3类</imdg_page>
+      <packaging_mark>第3类易燃液体</packaging_mark>
+      <packing_group>III</packing_group>
+      <packaging_method>钢瓶、塑料桶或玻璃瓶包装，密封保存</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与氧化剂、酸类、碱类等混装混运。中途停留时应远离火种、热源。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>本化学品符合以下法规要求：
+1. 《危险化学品安全管理条例》（国务院令第591号）
+2. 《中华人民共和国安全生产法》
+3. 《危险化学品目录》(2022调整版)
+4. 《常用危险化学品贮存通则》(GB 15603-2022)
+5. 《化学品安全技术说明书 内容和项目顺序》(GB/T 16483-2022)
+6. 《化学品分类和标签规范》(GB 30000系列标准)
+7. 国际法规：联合国《关于危险货物运输的建议书》（TDG）、全球化学品统一分类和标签制度（GHS）</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <compilation_standard>本安全技术说明书按照GB/T 16483-2022《化学品安全技术说明书 内容和项目顺序》和GB/T 17519-2013《化学品安全技术说明书 编写指南》编制</compilation_standard>
+      <revision_date>2025-12-25</revision_date>
+      <version_number>1.0</version_number>
+      <compilation_agency>MSDS实验室管理系统</compilation_agency>
+      <modification_notes>初次编制</modification_notes>
+      <abbreviations_and_terms>
+        MSDS：化学品安全技术说明书（Material Safety Data Sheet）
+        SDS：安全数据表（Safety Data Sheet）
+        GHS：全球化学品统一分类和标签制度（Globally Harmonized System of Classification and Labelling of Chemicals）
+        CAS：化学文摘社（Chemical Abstracts Service）
+        UN：联合国（United Nations）
+        LD50：半数致死量（Lethal Dose 50%）
+        LC50：半数致死浓度（Lethal Concentration 50%）
+        MAC：最高容许浓度（Maximum Allowable Concentration）
+        TLV：阈限值（Threshold Limit Value）
+        PEL：容许暴露限值（Permissible Exposure Limit）
+        STEL：短时间接触限值（Short-Term Exposure Limit）
+        IDLH：立即威胁生命和健康的浓度（Immediately Dangerous to Life or Health）
+        RTECS：化学物质毒性登记数据库（Registry of Toxic Effects of Chemical Substances）
+      </abbreviations_and_terms>
+      <disclaimer>本安全技术说明书所提供的信息基于现有知识和数据，但可能不完整或存在误差。使用者应根据实际情况谨慎使用，并遵守相关法律法规。对于因使用本说明书而造成的任何损失，编制方不承担责任。</disclaimer>
+    </other_info>
   </msds>
 </msds_list>

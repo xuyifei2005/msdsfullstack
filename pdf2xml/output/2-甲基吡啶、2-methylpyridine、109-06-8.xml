@@ -107,7 +107,7 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>属低毒类LD50：790mg／kg(大鼠经口)；410mg／kg(兔经皮)LC50：</acute_toxicity>
+      <acute_toxicity>属低毒类LD50：790mg／kg(大鼠经口)；410mg／kg(兔经皮)；LC50：无资料(大鼠吸入)</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>TJ4900000</rtecs>
       <irritation>对眼睛、皮肤、粘膜和上呼吸道有刺激作用。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。</irritation>

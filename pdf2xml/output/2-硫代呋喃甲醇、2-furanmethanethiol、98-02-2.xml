@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>98-02-2</cas_number>
-      <msds_code>MSDS#2258</msds_code>
+      <msds_code>MSDS-98-02-2</msds_code>
       <product_name>2-硫代呋喃甲醇</product_name>
       <product_alias>糠硫醇</product_alias>
       <product_english_name>2-furanmethanethiol</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -53,7 +53,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。防止蒸气泄漏到工作场所空气中。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿聚乙烯薄膜防毒服，戴橡胶手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。在清除液体和蒸气前不能焊接、切割或点火。避免产生烟雾。避免与氧化剂、还原剂、碱类、碱金属接触。配备相应品种和数量的消防器材及泄漏应急处理设备。</handling_precautions>
       <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。保持容器密封。避免光照。不宜久存，以 免变质。应与氧化剂、食用化工原料分开存放。搬运时要轻装轻卸，防止包装及容器损 坏。分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -74,23 +74,23 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
+      <melting_point>-70(参考同类硫醇化合物)</melting_point>
       <boiling_point>155</boiling_point>
       <flash_point>45</flash_point>
       <relative_density>1.13</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <relative_vapor_density>3.94(空气=1)</relative_vapor_density>
+      <solubility>不溶于水，溶于乙醇、乙醚、丙酮等有机溶剂。</solubility>
       <molecular_formula>C5H6OS</molecular_formula>
       <molecular_weight>114.17</molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <main_components>糠硫醇100%</main_components>
+      <saturated_vapor_pressure>0.67kPa(25℃)</saturated_vapor_pressure>
+      <log_kow>1.92</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>引燃温度(℃)：无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>无色油状液体。</appearance>
-      <main_uses>用于有机合成，用作硝酸腐蚀的抑制剂。</main_uses>
+      <flammability>闪点(℃)：45。易燃。</flammability>
+      <appearance>无色油状液体，有恶臭。</appearance>
+      <main_uses>用于有机合成，用作硝酸腐蚀的抑制剂，是重要的食用香料，主要用于调配咖啡、坚果等香精。</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -99,18 +99,18 @@
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>稳定</stability>
-      <incompatible_substances>氧化剂、还原剂。、碱类、碱金属。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <stability>在常温下相对稳定，但在高温、阳光和氧气的作用下容易发生分解。</stability>
+      <incompatible_substances>氧化剂、还原剂、碱类、碱金属。</incompatible_substances>
+      <conditions_to_avoid>避免接触高温、阳光直射、氧气、明火、热源。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>一氧化碳、二氧化碳、硫化氢、氧化硫。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>有中等毒性LD50：220mg／kg(小鼠经口)LC50：</acute_toxicity>
+      <acute_toxicity>有中等毒性。LD50：220mg/kg(小鼠经口)。LC50：无资料。</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>LU210000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤、粘膜和上呼吸道有刺激作用。接触后可引起恶心、头痛、呕吐。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -121,14 +121,14 @@
       <ecological_toxicity>无资料</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
-      <other_harmful_effects>再用。</other_harmful_effects>
+      <bioaccumulation>无资料</bioaccumulation>
+      <other_harmful_effects>该物质对环境可能有危害，对水体应给予特别注意。工作现场禁止吸烟、进食和饮水。工作后，彻底清洗。单独存放被毒物污染的衣服，洗后再用。注意个人清洁卫生。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的气体要通过洗涤器除去。</disposal_method>
+      <disposal_precautions>废弃化学品处置前应参阅国家和地方有关法规。废弃物应交由有资质的危险废物处理单位处置。处置人员应穿戴适当的个人防护装备。处置过程中应防止火灾、爆炸和环境污染。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -137,12 +137,18 @@
       <imdg_page>无资料</imdg_page>
       <packaging_mark>14</packaging_mark>
       <packing_group>Ⅲ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>小开口钢桶；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。装运本品的车辆排气管须有阻火装置。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、还原剂、碱类、碱金属等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。车辆运输完毕应进行彻底清扫。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：危险化学品安全管理条例（国务院令第591号）。该化学品属于危险化学品，应按照《危险化学品安全管理条例》进行管理。国际法规：无资料。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standard>本安全技术说明书按照GB/T 16483-2008、GB/T 17519-2013标准编制。</reference_standard>
+      <modification_note>无资料</modification_note>
+      <abbreviation>无资料</abbreviation>
+    </other_info>
   </msds>
 </msds_list>

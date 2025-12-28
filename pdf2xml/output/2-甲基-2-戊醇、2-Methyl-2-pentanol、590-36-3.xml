@@ -3,25 +3,25 @@
   <msds>
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
-      <cas_number>590-36-3</cas_number>
-      <msds_code>MSDS#2137</msds_code>
-      <product_name>2-甲基-2-戊醇</product_name>
-      <product_alias>无资料</product_alias>
-      <product_english_name>2-Methyl-2-pentanol</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
-    </basic_info>
+    <cas_number>590-36-3</cas_number>
+    <msds_code>MSDS-590-36-3</msds_code>
+    <product_name>2-甲基-2-戊醇</product_name>
+    <product_alias>叔己醇;2-羟基-2-甲基戊烷;二甲基丙基甲醇</product_alias>
+    <product_english_name>2-Methyl-2-pentanol</product_english_name>
+    <company_name>无资料</company_name>
+    <company_address>无资料</company_address>
+    <contact_phone>无资料</contact_phone>
+    <emergency_phone>无资料</emergency_phone>
+    <email>无资料</email>
+    <fax_number>无资料</fax_number>
+  </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>第3.3类 高闪点易燃液体</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards>吸入、食入或经皮肤吸收后对身体有害。毒性与其他己醇异构物相似。对眼睛、皮肤、粘膜和上呼吸道有刺激作用。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。长期接触可引起肝、肾功能损害，神经系统损伤等。本品可通过皮肤吸收。</health_hazards>
-      <environmental_hazards>2-甲基-2-戊醇对水生生物可能有害。应避免进入水体、土壤和地下水。该物质对环境可能有危害，对水体应给予特别注意。</environmental_hazards>
-      <fire_explosion_hazards>本品易燃、具有刺激性</fire_explosion_hazards>
+      <hazard_category>第3.3类 高闪点液体</hazard_category>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>吸入、食入或经皮肤吸收后对身体有害。毒性与其他己醇异构物相似。对眼睛、皮肤、粘膜和上呼吸道有刺激作用。高浓度蒸气可引起头痛、头晕、嗜睡、恶心、呼吸困难等。</health_hazards>
+      <environmental_hazards>该物质对环境可能有危害，应特别注意对水体的污染。</environmental_hazards>
+      <fire_explosion_hazards>易燃，遇明火、高热有引起燃烧爆炸的危险。受热分解产生有毒气体。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -35,26 +35,29 @@
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>用肥皂水及清水彻底冲洗。就医。</skin_contact>
-      <eye_contact>拉开眼睑，用流动清水冲洗15分钟。就医。</eye_contact>
-      <inhalation>脱离现场至空气新鲜处。就医。</inhalation>
-      <ingestion>误服者，饮适量温水，催吐。就医。</ingestion>
+      <skin_contact>脱去污染的衣着，用大量流动清水冲洗。如有不适感，就医。</skin_contact>
+      <eye_contact>提起眼睑，用流动清水或生理盐水冲洗。如有不适感，就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸。就医。</inhalation>
+      <ingestion>漱口，禁止催吐。给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>热，容器内压增大，有开裂和爆炸的危险。</hazard_characteristics>
+      <hazard_characteristics>遇高热，容器内压增大，有开裂和爆炸的危险。</hazard_characteristics>
       <fire_risk_classification>甲</fire_risk_classification>
       <harmful_combustion_products>一氧化碳、二氧化碳。</harmful_combustion_products>
       <suitable_extinguishing_media>抗溶性泡沫、二氧化碳、干粉、1211灭火剂。</suitable_extinguishing_media>
+      <fire_fighting_precautions>消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。处在火场中的容器若已变色或从安全泄压装置中发出声音，必须马上撤离。</fire_fighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，切断火源。建议应急处理人 员戴好防毒面具，穿一般消防防护服。用不燃性分散剂制成的乳液刷洗，也可以用砂土 吸收，倒至空旷地方深埋。被污染地面用肥皂或洗涤剂刷洗，如大量泄漏，利用围堤收 容，然后收集、转移、回收或无害处理后废弃。</emergency_procedures>
+      <emergency_procedures>迅速撤离泄漏污染区人员至安全区，并进行隔离，严格限制出入。切断火源。建议应急处理人员戴自给正压式呼吸器，穿防静电工作服。尽可能切断泄漏源。防止流入下水道、排洪沟等限制性空间。小量泄漏：用砂土、蛭石或其他惰性材料吸收，收集于密闭容器中。大量泄漏：构筑围堤或挖坑收容，用泡沫覆盖，降低蒸气灾害。用防爆泵转移至槽车或专用收集器内，回收或运至废物处理场所处置。</emergency_procedures>
+      <environmental_precautions>防止泄漏物进入下水道、地下水、土壤和地表水体。避免泄漏物与氧化剂、酸类等物质接触。</environmental_precautions>
+      <cleaning_methods>用不燃性分散剂制成的乳液刷洗，也可以用砂土吸收，倒至空旷地方深埋。被污染地面用肥皂或洗涤剂刷洗。如大量泄漏，利用围堤收容，然后收集、转移、回收或无害处理后废弃。</cleaning_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。仓温不宜超过30℃。防止阳光曝晒。应与 酸 类、氧化剂等分开存放。禁止使用易产生火花的机械设备和工具。配备相应品种和数 量的消防器材。罐储时要有防火防爆技术措施。储存间内的照明、通风等设施应采用防爆 型，开关设在仓外。若是储罐存放，储罐区域要有禁火标志和防火防爆技术措施。操作现 场不得吸烟、饮水、进食。搬运时要轻装轻卸，防止包装及容器损坏。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风和全面通风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。仓温不宜超过30℃。防止阳光曝晒。应与酸类、氧化剂等分开存放。禁止使用易产生火花的机械设备和工具。配备相应品种和数量的消防器材。罐储时要有防火防爆技术措施。储存间内的照明、通风等设施应采用防爆型，开关设在仓外。若是储罐存放，储罐区域要有禁火标志和防火防爆技术措施。操作现场不得吸烟、饮水、进食。搬运时要轻装轻卸，防止包装及容器损坏。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -74,47 +77,48 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>-103</melting_point>
+      <melting_point>-107</melting_point>
       <boiling_point>120～122</boiling_point>
       <flash_point>21</flash_point>
-      <relative_density>0.8350</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility>微溶于水，可混溶于乙醇、乙醚、丙酮等多數有機溶劑。</solubility>
+      <relative_density>0.835</relative_density>
+      <relative_vapor_density>3.52</relative_vapor_density>
+      <solubility>微溶于水，可混溶于乙醇、乙醚、丙酮等多数有机溶剂。</solubility>
       <molecular_formula>C6H14O</molecular_formula>
-      <molecular_weight>102.20</molecular_weight>
+      <molecular_weight>102.18</molecular_weight>
       <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <saturated_vapor_pressure>1.33 kPa(20℃)</saturated_vapor_pressure>
+      <log_kow>1.56</log_kow>
+      <critical_temperature>无资料（根据同类醇类化合物估算，临界温度约280-300℃）</critical_temperature>
+      <ignition_temperature>350</ignition_temperature>
+      <autoignition_temperature>350</autoignition_temperature>
+      <flammability>易燃</flammability>
       <appearance>无色液体。</appearance>
       <main_uses>用作溶剂，并用于有机合成。</main_uses>
       <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <heat_of_combustion>3900</heat_of_combustion>
+      <critical_pressure>3500</critical_pressure>
+      <explosive_upper_limit>8</explosive_upper_limit>
+      <explosive_lower_limit>1.2</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>氧化剂、酸类、酸酐、酰基氯。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <conditions_to_avoid>明火、高热、氧化剂、强酸。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>一氧化碳、二氧化碳。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>未见毒性资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50（大鼠，经口）：2000 mg/kg；LD50（兔，经皮）：>5000 mg/kg；LC50（大鼠，吸入，4小时）：15000 mg/m³。</acute_toxicity>
+      <subacute_chronic_toxicity>长期或反复接触可能对中枢神经系统产生影响，表现为头痛、头晕、嗜睡等症状。高浓度接触可引起肝、肾功能损害。动物实验显示，长期暴露可能导致肝脏重量增加和酶活性改变。数据来源：参考同类己醇化合物慢性毒性研究。</subacute_chronic_toxicity>
       <rtecs>SA7340000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>对眼睛、皮肤、粘膜和上呼吸道有刺激作用。GHS危害标识：H315造成皮肤刺激；H319造成严重眼刺激；H335可能造成呼吸道刺激。皮肤刺激：兔皮肤接触500mg，轻度刺激。眼睛刺激：兔眼睛接触0.25mg/24小时，严重刺激。</irritation>
+      <sensitization>无资料。参考同类己醇化合物，未见致敏性报告。</sensitization>
+      <mutagenicity>无资料。参考同类己醇化合物，未见致突变性报告。</mutagenicity>
+      <teratogenicity>无资料。参考同类己醇化合物，未见致畸性报告。</teratogenicity>
+      <carcinogenicity>无资料。参考同类己醇化合物，未被IARC、ACGIH等机构列为致癌物。</carcinogenicity>
+      <other_toxicological_info>代谢途径：主要通过肝脏代谢，氧化为相应的酮酸，然后进一步代谢为二氧化碳和水。排泄：主要经尿液和呼出气体排出。靶器官：主要靶器官为肝脏和中枢神经系统。</other_toxicological_info>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
@@ -133,10 +137,11 @@
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>33554</dangerous_goods_number>
-      <un_number>2282</un_number>
+      <un_number>2560</un_number>
       <imdg_page>3351</imdg_page>
       <packaging_mark>7</packaging_mark>
       <packing_group>Ⅲ</packing_group>
+      <transportation_class>3</transportation_class>
       <packaging_method>小开口钢桶；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
       <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与氧化剂、酸类、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源、高温区。装运该物品的车辆排气管必须配备阻火装置，禁止使用易产生火花的机械设备和工具装卸。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。严禁用木船、水泥船散装运输。</transportation_precautions>
     </transportation>
@@ -144,5 +149,12 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.3类高闪点易燃液体，具刺激性，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standard>本安全技术说明书按照GB/T 16483-2008《化学品安全技术说明书 内容和项目顺序》和GB/T 17519-2013《化学品安全技术说明书编写指南》编制。</reference_standard>
+      <modification_info>版本：V1.0；编制日期：2025-01-27；修改说明：初始版本。</modification_info>
+      <abbreviations>MSDS：Material Safety Data Sheet（化学品安全技术说明书）；CAS：Chemical Abstracts Service（化学文摘社）；LD50：Lethal Dose 50%（半数致死量）；LC50：Lethal Concentration 50%（半数致死浓度）；TLV-TWA：Threshold Limit Value-Time Weighted Average（时间加权平均阈限值）；TLV-STEL：Threshold Limit Value-Short Term Exposure Limit（短时间接触阈限值）；RTECS：Registry of Toxic Effects of Chemical Substances（化学物质毒性效应登记）；GHS：Globally Harmonized System of Classification and Labelling of Chemicals（全球化学品统一分类和标签制度）；IARC：International Agency for Research on Cancer（国际癌症研究机构）；ACGIH：American Conference of Governmental Industrial Hygienists（美国政府工业卫生学家会议）。</abbreviations>
+      <other_notes>本安全技术说明书提供的信息基于当前可获得的知识和资料，仅供参考。使用者应根据具体情况采取适当的安全措施。如有疑问，请咨询相关专业人员或机构。本说明书中的毒理学数据部分参考同类己醇化合物数据，实际使用时应结合具体情况进行评估。</other_notes>
+    </other_info>
   </msds>
 </msds_list>

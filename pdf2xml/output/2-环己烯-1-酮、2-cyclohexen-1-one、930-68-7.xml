@@ -18,7 +18,7 @@
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第3.2类中闪点易燃液体</hazard_category>
-      <exposure_routes>吸入食入经皮吸收</exposure_routes>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
       <health_hazards>吸入、食入或经皮肤吸收后对身体有害。本品对眼睛、皮肤、粘膜和上呼吸道具刺激作用。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。本品可通过皮肤吸收。</health_hazards>
       <environmental_hazards>2-环己烯-1-酮对水生生物可能有害。应避免进入水体、土壤和地下水。该物质对环境可能有危害，对水体应给予特别注意。</environmental_hazards>
       <fire_explosion_hazards>本品易燃、有毒、具有刺激性。其蒸气与空气可形成爆炸性混合物，遇明火、高热或与氧化剂接触，有引起燃烧爆炸的危险。与氧化剂能发生强烈反应。其蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。</fire_explosion_hazards>

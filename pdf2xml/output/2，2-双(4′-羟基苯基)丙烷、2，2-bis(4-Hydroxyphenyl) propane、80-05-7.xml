@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>80-05-7</cas_number>
-      <msds_code>MSDS#1452</msds_code>
+      <msds_code>MSDS-80-05-7</msds_code>
       <product_name>2，2-双(4′-羟基苯基)丙烷</product_name>
-      <product_alias>双酚A</product_alias>
+      <product_alias>80-05-7</product_alias>
       <product_english_name>2，2-bis(4-Hydroxyphenyl) propane</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>无资料</hazard_category>
+      <hazard_category>第6.1类毒害品</hazard_category>
       <exposure_routes>吸入 食入</exposure_routes>
-      <health_hazards>吸道刺激症状，有报道可引起皮肤过敏反应。</health_hazards>
+      <health_hazards>吸入、食入、皮肤接触、眼睛接触。对眼睛、皮肤、粘膜和上呼吸道有刺激作用。可引起皮肤过敏反应。</health_hazards>
       <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <fire_explosion_hazards>遇明火、高热可燃。受热分解产生有毒气体。粉体与空气可形成爆炸性混合物，当达到一定浓度时，遇火星会发生爆炸。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -42,7 +42,7 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>炸。</hazard_characteristics>
+      <hazard_characteristics>遇明火、高热可燃。粉体与空气可形成爆炸性混合物，当达到一定浓度时，遇火星会发生爆炸。受热分解产生有毒气体。</hazard_characteristics>
       <fire_risk_classification>丙</fire_risk_classification>
       <harmful_combustion_products>一氧化碳、二氧化碳。</harmful_combustion_products>
       <suitable_extinguishing_media>雾状水、泡沫、二氧化碳、干粉、砂土。</suitable_extinguishing_media>
@@ -79,7 +79,7 @@
       <flash_point>无资料</flash_point>
       <relative_density>1.20</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>微溶于水，溶于乙醇、乙醚、丙酮、苯等有机溶剂。</solubility>
       <molecular_formula>C15H16O2</molecular_formula>
       <molecular_weight>228.29</molecular_weight>
       <main_components>无资料</main_components>
@@ -95,7 +95,7 @@
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
       <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>20(g／m3)</explosive_lower_limit>
+      <explosive_lower_limit>20g/m³</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -107,7 +107,7 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：大鼠经口：3250mg／kg；兔经皮：3000mg／kgLC50：</acute_toxicity>
+      <acute_toxicity>LD50：大鼠经口3250mg/kg；兔经皮3000mg/kg；LC50：大鼠吸入＞10mg/m³(4h)</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>SL6300000</rtecs>
       <irritation>无资料</irritation>
@@ -122,27 +122,34 @@
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作现场禁止吸烟、进食和饮水。及时换洗工作服。</other_harmful_effects>
+      <other_harmful_effects>该物质对水生生物有毒性，可能对水生环境造成长期不利影响。具有内分泌干扰作用，对水生生态系统有潜在危害。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
+      <disposal_method>建议用焚烧法处置。在焚烧炉中焚烧时，应配备尾气净化装置，确保充分燃烧。废弃的包装容器应按照危险废物管理规定进行处理。</disposal_method>
       <disposal_precautions>无资料</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <dangerous_goods_number>UN 3077</dangerous_goods_number>
+      <un_number>UN 3077</un_number>
       <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group>无资料</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_mark>环境危害物质</packaging_mark>
+      <packing_group>III</packing_group>
+      <packaging_method>塑料袋外塑料编织袋或复合塑料编织袋，外钢桶；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>运输前应先检查包装容器是否完整、密封，运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、酸类等混装混运。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：危险化学品安全管理条例（国务院令第591号）；危险化学品目录（2015版）；易制毒化学品管理条例；工作场所安全使用化学品规定。国际法规：欧盟REACH法规；欧盟CLP法规（EC No 1272/2008）；国际海事组织IMDG Code。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standard>GB/T 16483-2008、GB/T 17519-2013</preparation_standard>
+      <revision_note>本安全技术说明书按照GB/T 16483-2008、GB/T 17519-2013标准编制。</revision_note>
+      <abbreviation_explanation>无</abbreviation_explanation>
+      <other_notes>无</other_notes>
+    </other_info>
   </msds>
 </msds_list>

@@ -44,8 +44,8 @@
     <fire_fighting>
       <hazard_characteristics>其蒸气与空气可形成爆炸性混合物，遇明火、高热或与氧化剂接触，有引起燃烧爆炸的危险。与强氧化剂发生反应，可引起燃烧。其蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。</hazard_characteristics>
       <fire_risk_classification>乙</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳。 喷水冷却容器，可能的话将容器从火场移至空旷处。灭火剂：抗溶性泡沫、雾状水、干粉、</harmful_combustion_products>
-      <suitable_extinguishing_media>二氧化碳、砂土。</suitable_extinguishing_media>
+      <harmful_combustion_products>一氧化碳、二氧化碳。</harmful_combustion_products>
+      <suitable_extinguishing_media>抗溶性泡沫、雾状水、干粉、二氧化碳、砂土。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>

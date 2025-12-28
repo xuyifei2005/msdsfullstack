@@ -4,7 +4,7 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>594-72-9</cas_number>
-      <msds_code>MSDS#1096</msds_code>
+      <msds_code>MSDS-594-72-9</msds_code>
       <product_name>1，1-二氯-1-硝基乙烷</product_name>
       <product_alias>硝基二氯乙烷</product_alias>
       <product_english_name>1，1-Dichloro-1-nitroethane</product_english_name>
@@ -194,21 +194,5 @@
         <ref>中国化学品安全网</ref>
       </references>
     </other_info>
-  </msds>
-</msds_list> 第十六部分：其他信息 -->
-    <other_information>
-      <reference_literature>《危险化学品安全技术全书》（第三卷）、《化学化工物性数据手册》、《有机化学合成手册》、《国际化学品安全卡》（ICSC）、《美国国立职业安全卫生研究所》（NIOSH）数据库、《欧洲化学品管理局》（ECHA）数据库</reference_literature>
-      <preparation_standard>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）和《化学品分类和危险性公示通则》（GB 13690-2009）标准编制</preparation_standard>
-      <revision_notes>2023年10月15日首次编制，2024年6月18日根据最新毒理学数据更新致癌性分类，2024年10月1日补充生态毒理学数据</revision_notes>
-      <other_info>本产品仅供工业使用，禁止用于食品、医药或化妆品领域。使用前请仔细阅读本安全技术说明书，并严格按照操作规程进行操作。如有疑问，请联系供应商或专业技术人员获取更多信息和指导。</other_info>
-      <abbreviations_explanations>CAS：化学文摘登记号；LD50：半数致死量；LC50：半数致死浓度；TWA：时间加权平均容许浓度；STEL：短时间接触容许浓度；BCF：生物富集系数；IARC：国际癌症研究机构；GHS：全球化学品统一分类和标签制度</abbreviations_explanations>
-    </other_information>
-  </msds>
-</msds_list> 第十六部分：其他信息 -->
-    <other_information>
-      <reference_standards>GB/T 16483-2008</reference_standards>
-      <modification_notes>无资料</modification_notes>
-      <other_info>无资料</other_info>
-    </other_information>
   </msds>
 </msds_list>

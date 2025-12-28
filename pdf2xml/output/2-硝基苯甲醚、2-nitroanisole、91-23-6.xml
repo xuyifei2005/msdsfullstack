@@ -4,23 +4,23 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>91-23-6</cas_number>
-      <msds_code>MSDS#665</msds_code>
+      <msds_code>MSDS-91-23-6</msds_code>
       <product_name>2-硝基苯甲醚</product_name>
       <product_alias>邻甲氧基硝基苯；</product_alias>
       <product_english_name>2-nitroanisole</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+        <company_address>无资料</company_address>
+        <contact_phone>无资料</contact_phone>
+        <emergency_phone>无资料</emergency_phone>
+        <email>无资料</email>
+        <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类毒害品</hazard_category>
       <exposure_routes>吸入食入经皮吸收</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <health_hazards>吸入、摄入或经皮肤吸收后对身体有害。对眼睛、皮肤、粘膜和上呼吸道有刺激作用。长期接触可引起高铁血红蛋白血症，出现紫绀、头晕、头痛、乏力等症状。</health_hazards>
+      <environmental_hazards>对水生环境可能会引起长期有害作用。</environmental_hazards>
       <fire_explosion_hazards>本品可燃，有毒，具刺激性。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -53,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶 耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸 气泄漏到工作场所空气中。避免与氧化剂、还原剂、酸类、碱类接触。搬运时要轻装轻卸， 防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器 可能残留有害物。 储存于阴凉、通风的库房。远离火种、热源。保持容器密封。应与氧化剂、还原剂、酸类、 碱类、食用化学品分开存放，切忌混储。配备相应品种和数量的消防器材。储区应备有泄 漏应急处理设备和合适的收容材料。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、还原剂、酸类、碱类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。保持容器密封。应与氧化剂、还原剂、酸类、碱类、食用化学品分开存放，切忌混储。配备相应品种和数量的消防器材。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -65,11 +65,11 @@
       <contact_limits>美国TWA：未制定标准美国STEL：未制定标准</contact_limits>
       <monitoring_method>无资料</monitoring_method>
       <engineering_controls>生产过程密闭，加强通风。提供安全淋浴和洗眼设备。</engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <respiratory_protection>空气中浓度超标时，佩戴自吸过滤式防毒面具（半面罩）。紧急事态抢救或撤离时，应该佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>可能接触其蒸气时，戴化学安全防护眼镜。</eye_protection>
       <body_protection>穿防毒物渗透工作服。</body_protection>
       <hand_protection>戴橡胶耐油手套。</hand_protection>
-      <other_protection></other_protection>
+      <other_protection>工作现场严禁吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
@@ -78,8 +78,8 @@
       <boiling_point>276.8</boiling_point>
       <flash_point>&gt;112</flash_point>
       <relative_density>1.26</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <relative_vapor_density>5.28(空气=1)</relative_vapor_density>
+      <solubility>不溶于水，溶于乙醇、乙醚等多数有机溶剂。</solubility>
       <molecular_formula>C7H7NO3</molecular_formula>
       <molecular_weight>153.14</molecular_weight>
       <main_components>纯品</main_components>
@@ -110,24 +110,24 @@
       <acute_toxicity>LD50：740mg／kg(大鼠经口)；1300mg／kg(小鼠经口)LC50：</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>BZ8790000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤有刺激性。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <carcinogenicity>IARC：2B组（可能对人类致癌）</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>该物质对水生生物有毒性。</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
-      <other_harmful_effects>再用。保持良好的卫生习惯。</other_harmful_effects>
+      <bioaccumulation>无资料</bioaccumulation>
+      <other_harmful_effects>该物质对环境有危害，应特别注意对水体的污染。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。</disposal_method>
       <disposal_precautions>无资料</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
@@ -142,7 +142,7 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品安全管理条例（2011年国务院令第591号）</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

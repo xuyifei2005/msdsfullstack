@@ -4,7 +4,7 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>98-83-9</cas_number>
-      <msds_code>MSDS#1407</msds_code>
+      <msds_code>MSDS-98-83-9</msds_code>
       <product_name>2-苯基丙烯</product_name>
       <product_alias>异丙烯基苯；α -甲基苯乙烯</product_alias>
       <product_english_name>2-phenylpropene</product_english_name>
@@ -144,5 +144,11 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.3类高闪点易燃液体，应按照相关法规进行生产、储存、运输和使用。注意：能发生聚合反应，需添加阻聚剂。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>本安全技术说明书按照GB/T 16483-2008、GB/T 17519-2013标准编制。</reference_standards>
+      <modification_notes>本说明书为初始版本，后续如有修改将在此处注明修改内容、日期和原因。</modification_notes>
+      <abbreviations>MSDS：化学品安全技术说明书；CAS：化学文摘社；TLV-TWA：时间加权平均阈限值；TLV-STEL：短时间接触阈限值；IARC：国际癌症研究机构；NTP：国家毒理学计划；OSHA：职业安全与健康管理局；RTECS：化学物质毒性登记数据库；UN：联合国；IMDG：国际海运危险货物规则；GC：气相色谱；GC-MS：气相色谱-质谱联用；BCF：生物富集系数；LC50：半数致死浓度；LD50：半数致死剂量；EC50：半数效应浓度；ppm：百万分比；kPa：千帕；MPa：兆帕；mN/m：毫牛/米；mPa·s：毫帕·秒；kJ：千焦；W：瓦特；K：开尔文。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

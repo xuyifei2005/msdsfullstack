@@ -89,7 +89,7 @@
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>285</ignition_temperature>
       <autoignition_temperature>285</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>无资料</flammability>
       <appearance>无色液体，略有醚样的气味。</appearance>
       <main_uses>用作纤维素脂、以及各种树脂、蜡、油的溶剂。</main_uses>
       <other_properties>无资料</other_properties>
@@ -108,7 +108,7 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：3390mg／kg(大鼠经口)；5250mg／kg(兔经皮)LC50：</acute_toxicity>
+      <acute_toxicity>LD50：3390mg／kg(大鼠经口)；5250mg／kg(兔经皮)LC50：无资料</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>KL5950000</rtecs>
       <irritation>无资料</irritation>
@@ -143,7 +143,7 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>无资料</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

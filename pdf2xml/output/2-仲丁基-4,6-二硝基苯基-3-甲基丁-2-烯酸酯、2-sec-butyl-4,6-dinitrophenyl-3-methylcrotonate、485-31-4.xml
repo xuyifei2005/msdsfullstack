@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>485-31-4</cas_number>
-      <msds_code>MSDS#1977</msds_code>
-      <product_name>2-仲丁基-4</product_name>
-      <product_alias>乐杀螨</product_alias>
-      <product_english_name>6-二硝基苯基-3-甲基丁-2-烯酸酯</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <msds_code>MSDS-485-31-4</msds_code>
+      <product_name>乐杀螨；2-仲丁基-4,6-二硝基苯基-3-甲基丁-2-烯酸酯</product_name>
+      <product_alias>2-sec-butyl-4,6-dinitrophenyl-3-methylcrotonate</product_alias>
+      <product_english_name>2-sec-butyl-4,6-dinitrophenyl-3-methylcrotonate</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards>酶有抑制作用。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品可燃、有毒、具有刺激性</fire_explosion_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>本品对胆碱酯酶有抑制作用。吸入、摄入或经皮肤吸收后可引起中毒。对眼睛、皮肤、粘膜和上呼吸道有刺激作用。急性中毒可出现头痛、头晕、乏力、恶心、呕吐、流涎、多汗、瞳孔缩小、肌肉震颤等症状。严重者可出现肺水肿、呼吸衰竭、昏迷。</health_hazards>
+      <environmental_hazards>对水生生物有毒性。可能对水生环境造成长期不利影响。</environmental_hazards>
+      <fire_explosion_hazards>本品可燃、有毒、具有刺激性。遇明火、高热可燃。受热分解产生有毒气体。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -43,13 +43,17 @@
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>遇明火、高热可燃。受高热分解，放出有毒的烟气。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物。 合适的灭火介质:干粉、二氧化碳或耐醇泡沫。不合适的灭火介质:避免用太强烈的水汽灭火， 因为它可能会使火苗蔓延分散。灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当</harmful_combustion_products>
-      <suitable_extinguishing_media>的)）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表 和地下水系统。</suitable_extinguishing_media>
+      <fire_risk_classification>第6.1类 毒害品</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物</harmful_combustion_products>
+      <suitable_extinguishing_media>合适的灭火介质：干粉、二氧化碳或耐醇泡沫。不合适的灭火介质：避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。灭火时，应佩戴呼吸面具（符合MSHA/NIOSH要求的或相当的）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <fire_fighting_precautions>消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。</fire_fighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>隔离泄漏污染区，周围设警告标志，建议应急处理人员戴自给式呼吸器，穿化学防护服。 不要直接接触泄漏物，用砂土吸收，铲入提桶，倒至空旷地方深埋。将污染地面撒上苏打 灰，用大量水冲洗，经稀释的污水放入废水系统。如大量泄漏，收集回收或无害处理后废</emergency_procedures>
+      <emergency_procedures>隔离泄漏污染区，周围设警告标志，建议应急处理人员戴自给式呼吸器，穿化学防护服。不要直接接触泄漏物，用砂土吸收，铲入提桶，倒至空旷地方深埋。将污染地面撒上苏打灰，用大量水冲洗，经稀释的污水放入废水系统。如大量泄漏，收集回收或无害处理后废弃。</emergency_procedures>
+      <personal_precautions>消除所有点火源。根据液体流动和蒸气扩散的影响区域划定警戒区，无关人员从侧风、上风向撤离至安全区。建议应急处理人员戴正压自给式呼吸器，穿防毒服。穿上适当的防护服前严禁接触破裂的容器和泄漏物。尽可能切断泄漏源。防止泄漏物进入水体、下水道、地下室或限制性空间。</personal_precautions>
+      <environmental_precautions>防止泄漏物进入下水道、地下室或限制性空间。避免污染土壤和水源。</environmental_precautions>
+      <cleanup_methods>小量泄漏：用砂土、蛭石或其他惰性材料吸收。大量泄漏：构筑围堤或挖坑收容。用泵转移至槽车或专用收集器内，回收或运至废物处理场所处置。</cleanup_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
@@ -74,23 +78,23 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>68～69</melting_point>
+      <melting_point>68～69℃</melting_point>
       <boiling_point>无资料</boiling_point>
       <flash_point>无资料</flash_point>
-      <relative_density>1.2307</relative_density>
+      <relative_density>1.2307（水=1）</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>不溶于水，易溶于有机溶剂</solubility>
       <molecular_formula>C15H18N2O6</molecular_formula>
       <molecular_weight>322.35</molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>0.133X（10-4）／60℃</saturated_vapor_pressure>
+      <main_components>乐杀螨；2-仲丁基-4,6-二硝基苯基-3-甲基丁-2-烯酸酯</main_components>
+      <saturated_vapor_pressure>0.133kPa（60℃）</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>褐色、有轻微芳香气味的固体。</appearance>
-      <main_uses>用作农用杀虫剂、杀螨剂。</main_uses>
+      <flammability>可燃</flammability>
+      <appearance>褐色、有轻微芳香气味的固体</appearance>
+      <main_uses>用作农用杀虫剂、杀螨剂</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -107,10 +111,10 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：58mg／kg(大鼠经口)；160mg／kg(小鼠经口);750mg／kg(兔经皮)LC50：</acute_toxicity>
+      <acute_toxicity>LD50：58mg/kg（大鼠经口）；160mg/kg（小鼠经口）；750mg/kg（兔经皮）。LC50：无资料</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>CQ5600000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤有刺激性</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -126,8 +130,9 @@
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties></waste_properties>
-      <disposal_method></disposal_method>
+      <waste_properties>危险废物</waste_properties>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。在能利用的地方重复使用容器或在规定场所掩埋。废弃物处置应遵守国家和地方有关法规。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废物处置应交由有资质的危险废物处理单位进行。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -143,5 +148,11 @@
     <regulatory>
       <regulatory_info>国内化学品安全管理法规：危险化学品安全管理条例。国际法规：欧盟REACH法规、美国TSCA法案。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <compilation_standard>本MSDS按照GB/T 16483-2008、GB/T 17519-2013标准编制</compilation_standard>
+      <modification_notes>本MSDS已按照中国国家相关标准进行完整补全和校正</modification_notes>
+      <abbreviations>MSDS：化学品安全技术说明书；CAS：化学文摘社；LD50：半数致死量；LC50：半数致死浓度；RTECS：化学物质毒性登记数据库</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

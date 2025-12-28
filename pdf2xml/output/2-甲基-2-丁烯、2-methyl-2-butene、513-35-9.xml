@@ -137,7 +137,7 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>危险货物编号：31007；UN编号：UN 2460；危险类别：3；包装类别：II类包装；海关编码：2901291000</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

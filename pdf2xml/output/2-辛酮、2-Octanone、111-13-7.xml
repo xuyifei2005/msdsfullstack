@@ -17,11 +17,11 @@
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>无资料</hazard_category>
+      <hazard_category>第3.2类中闪点易燃液体</hazard_category>
       <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
       <health_hazards>本品对人皮肤及眼仅引起轻微刺激作用。</health_hazards>
       <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <fire_explosion_hazards>遇高热、明火或与氧化剂接触，有引起燃烧的危险。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -142,7 +142,13 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>GB/T 16483-2008、GB/T 17519-2013</reference_standards>
+      <modification_notes>无</modification_notes>
+      <abbreviations_and_terms>无</abbreviations_and_terms>
+    </other_info>
   </msds>
 </msds_list>
