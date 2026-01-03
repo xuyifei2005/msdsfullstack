@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>106-38-7</cas_number>
-      <msds_code>MSDS#1850</msds_code>
+      <msds_code>MSDS-106-38-7</msds_code>
       <product_name>4-溴甲苯</product_name>
-      <product_alias>对溴甲苯；对甲基溴苯；4-甲基</product_alias>
+      <product_alias>p-bromotoluene</product_alias>
       <product_english_name>4-bromotoluene</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -79,16 +79,16 @@
       <flash_point>85</flash_point>
       <relative_density>1.3900</relative_density>
       <relative_vapor_density>5.9</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C7H7B</molecular_formula>
-      <molecular_weight>171.04</molecular_weight>
+      <solubility>不溶于水，溶于乙醇、乙醚、苯等有机溶剂。</solubility>
+      <molecular_formula>C7H7Br</molecular_formula>
+      <molecular_weight>171.03</molecular_weight>
       <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <saturated_vapor_pressure>0.13kPa（20℃）</saturated_vapor_pressure>
+      <log_kow>3.0</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>可燃</flammability>
       <appearance>白色结晶。</appearance>
       <main_uses>用于有机合成。</main_uses>
       <other_properties>无资料</other_properties>
@@ -101,16 +101,16 @@
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>强氧化剂。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <conditions_to_avoid>明火、高热</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>一氧化碳、二氧化碳、溴化氢等有毒气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>未见毒性资料</acute_toxicity>
+      <acute_toxicity>属低毒类。LD50（经口，大鼠）：无资料。LC50（吸入，大鼠，4小时）：无资料。</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>XS7965600</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤、粘膜有刺激性。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -118,31 +118,37 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
+      <ecological_toxicity>对水生生物有害。</ecological_toxicity>
+      <biodegradability>在环境中可生物降解。</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
+      <bioaccumulation>生物富集系数（BCF）约10.5，生物富集性较低。</bioaccumulation>
       <other_harmful_effects>工作现场禁上吸烟、进食和饮水。工作后，淋浴更衣。保持良好的卫生习惯。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物</waste_properties>
+      <disposal_method>建议用焚烧法处置，焚烧温度需≥1100℃。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规，禁止随意倾倒，操作人员必须佩戴适当的防护装备。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>61669</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <un_number>UN 2811</un_number>
       <imdg_page>无资料</imdg_page>
       <packaging_mark>14</packaging_mark>
       <packing_group>Ⅲ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>小开口钢桶；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。严禁与氧化剂、食用化学品等混装混运。装运该物品的车辆排气管必须配备阻火装置。使用槽(罐)车运输时应有接地链，槽内可设孔隔板以减少震荡产生静电。中途停留时应远离火种、热源。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内化学品安全管理法规：《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录（2015版）》、《工作场所安全使用化学品规定》（〔1996〕劳部发423号）。国际法规：联合国关于危险货物运输的建议书（TDG）、全球化学品统一分类和标签制度（GHS）。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_information>
+      <reference_standards>GB/T 16483-2008 化学品安全技术说明书 内容和项目顺序</reference_standards>
+      <modification_note>无</modification_note>
+      <abbreviations_and_terms>CAS：化学文摘服务社编号；LD50：半数致死量；LC50：半数致死浓度；PC-TWA：时间加权平均容许浓度；PC-STEL：短时间接触容许浓度；MAC：最高容许浓度；GHS：全球化学品统一分类和标签制度；TDG：联合国关于危险货物运输的建议书。</abbreviations_and_terms>
+    </other_information>
   </msds>
 </msds_list>

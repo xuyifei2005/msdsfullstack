@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>5117-16-8</cas_number>
-      <msds_code>MSDS#1321</msds_code>
+      <msds_code>MSDS-5117-16-8</msds_code>
       <product_name>N，N-二甲基硒脲</product_name>
       <product_alias>二甲基硒脲[不对称]</product_alias>
       <product_english_name>N，N-Dimethylseleniumurea</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -36,8 +36,8 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧；呼吸停止时，立即进行人</eye_contact>
-      <inhalation>工呼吸。就医。</inhalation>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧；呼吸停止时，立即进行人工呼吸。就医。</inhalation>
       <ingestion>误服者漱口，饮牛奶或蛋清，就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
@@ -79,8 +79,8 @@
       <flash_point>无资料</flash_point>
       <relative_density>无资料</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C3H8N2S</molecular_formula>
+      <solubility>不溶于水，溶于乙醇、苯</solubility>
+      <molecular_formula>C3H8N2Se</molecular_formula>
       <molecular_weight>151.07</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
@@ -133,16 +133,22 @@
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>61865</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
+      <un_number>3283</un_number>
+      <imdg_page>第6.1类</imdg_page>
       <packaging_mark>14</packaging_mark>
       <packing_group>Ⅲ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>小开口钢桶；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。严禁与氧化剂、酸类、碱类、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源、高温区。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录（2015版）》；国际法规：GHS标准、IATA危险品规则、IMDG规则</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standard>GB/T 16483-2008、GB/T 17519-2013</preparation_standard>
+      <modification_notes>本MSDS依据最新可用资料编制，如有新资料将及时更新</modification_notes>
+      <abbreviations>CAS：化学文摘社；LD50：半数致死量；LC50：半数致死浓度；GHS：全球化学品统一分类和标签制度；UN：联合国</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

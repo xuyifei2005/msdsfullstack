@@ -4,24 +4,29 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>51-43-4</cas_number>
-      <msds_code>供应商名称： 供应商地址：</msds_code>
-      <product_name>3</product_name>
+      <msds_code>MSDS-51-43-4</msds_code>
+      <product_name>3,4-二羟基-α-((甲氨基)甲基)苄醇</product_name>
       <product_alias>肾上腺素；付肾碱；付肾素</product_alias>
-      <product_english_name>4-二羟基-α-((甲氨基)甲基)苄醇</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_english_name>3,4-dihydroxy-alpha-((methylamino)methyl)benzyl alcohol; Epinephrine; Adrenaline</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>侵入途径：</hazard_category>
-      <exposure_routes></exposure_routes>
-      <health_hazards>跟皮肤接触有剧毒。</health_hazards>
-      <environmental_hazards></environmental_hazards>
-      <fire_explosion_hazards></fire_explosion_hazards>
+      <hazard_category>第6.1类毒害品（参考：肾上腺素盐酸盐UN 2811）</hazard_category>
+      <ghs_classification>根据GB30000-2013化学品分类和标签规范系列标准，该产品分类如下：急性毒性-经口，类别3；急性毒性-经皮，类别3；急性毒性-吸入，类别3；皮肤腐蚀/刺激，类别2；严重眼损伤/眼刺激，类别2；特异性靶器官毒性-一次接触，类别3(呼吸道刺激)；特异性靶器官毒性-反复接触，类别1；对水生环境的危害-急性，类别2；对水生环境的危害-慢性，类别2（基于R代码转换：R23/24/25-33-36/37/38-52/53）</ghs_classification>
+      <hazard_pictogram>GHS06（骷髅和交叉骨）、GHS07（感叹号）、GHS08（健康危害）、GHS09（环境危害）</hazard_pictogram>
+      <signal_word>警告</signal_word>
+      <hazard_statements>H302: 吞咽中毒；H311: 皮肤接触中毒；H331: 吸入中毒；H315: 造成皮肤刺激；H319: 造成严重眼刺激；H335: 可能引起呼吸道刺激；H372: 长期或反复接触对器官造成损害；H412: 对水生生物有害并具有长期持续影响</hazard_statements>
+      <precautionary_statements>预防措施：避免吸入粉尘/烟/气体/烟雾/蒸气/喷雾。操作后彻底清洗皮肤。避免释放到环境中。戴防护手套/穿防护服/戴护目镜/戴面罩。避免接触眼睛、皮肤和衣物。禁止饮食、吸烟或在使用场所进食。事故响应：如吸入：将患者移到空气新鲜处。如感觉不适，呼叫中毒控制中心或就医。如皮肤（或头发）沾染：立即脱掉所有沾染的衣服。用水清洗皮肤/淋浴。如进入眼睛：用水小心冲洗几分钟。如戴隐形眼镜并可方便地取出，取出隐形眼镜。继续冲洗。如误食：禁止催吐，切勿给失去知觉者从嘴里喂食任何东西。立即呼叫医生或中毒控制中心。储存：存放于通风良好处。保持容器密闭。远离热源、火花、明火和热表面。避光保存，建议冷藏储存（2-8℃）。废弃：按照当地/区域/国家/国际规章处置内装物/容器。</precautionary_statements>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>吸入、食入或经皮肤吸收对身体有害。对眼睛、皮肤、粘膜和上呼吸道有刺激作用。大剂量可引起高血压、心悸、头痛、焦虑、震颤等不良反应。长期或反复接触可能对心血管系统、神经系统产生影响，可能引起心律失常、心肌缺血等不良反应。</health_hazards>
+      <environmental_hazards>对水生生物有害并具有长期持续影响。避免进入水体、土壤和地下水。</environmental_hazards>
+      <fire_explosion_hazards>遇明火、高热可燃。受热分解产生有毒的氮氧化物烟雾。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -36,62 +41,65 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>立即脱去污染的衣物。用大量肥皂水和清水冲洗皮肤。如有不适，就医。</skin_contact>
-      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。 立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给于吸氧。如患者食入或吸</eye_contact>
-      <inhalation>入本物质，不得进行口对口人工呼吸。如果呼吸停止。立即进行心肺复苏术。立即就医。</inhalation>
+      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。</eye_contact>
+      <inhalation>立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给予吸氧。如患者食入或吸入本物质，不得进行口对口人工呼吸。如果呼吸停止，立即进行心肺复苏术。立即就医。</inhalation>
       <ingestion>禁止催吐，切勿给失去知觉者从嘴里喂食任何东西。立即呼叫医生或中毒控制中心。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>有害燃烧产物：</fire_risk_classification>
-      <harmful_combustion_products>合适的灭火介质: 干粉、二氧化碳或耐醇泡沫。 不合适的灭火介质: 避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安 全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <hazard_characteristics>遇明火、高热可燃。受热分解产生有毒的氮氧化物烟雾。</hazard_characteristics>
+      <harmful_combustion_products>氮氧化物、一氧化碳、二氧化碳</harmful_combustion_products>
+      <suitable_extinguishing_media>合适的灭火介质: 干粉、二氧化碳或耐醇泡沫。不合适的灭火介质: 避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</suitable_extinguishing_media>
+      <fire_fighting_precautions>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</fire_fighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>无火灾状况下的溢漏和泄漏应穿着蒸气防护服，且完全密封。不要触摸或穿越泄漏物。不 要触摸破损的容器或泄漏物质除非穿着合适的防护服。保证充分的通风。清除所有点火源。 采取防静电措施。迅速将人员撤离到安全区域，远离泄漏区域并处于上风方向。使用个人</emergency_procedures>
+      <emergency_procedures>无火灾状况下的溢漏和泄漏应穿着蒸气防护服，且完全密封。不要触摸或穿越泄漏物。不要触摸破损的容器或泄漏物质除非穿着合适的防护服。保证充分的通风。清除所有点火源。采取防静电措施。迅速将人员撤离到安全区域，远离泄漏区域并处于上风方向。</emergency_procedures>
+      <protective_equipment>佩戴自给式呼吸器（SCBA），穿防毒物渗透工作服，戴化学安全防护眼镜和防化学品手套。</protective_equipment>
+      <environmental_precautions>防止泄漏物进入下水道、地下室或限制性空间。避免污染土壤和水源。如可能，使用沙土、惰性吸收剂收集泄漏物。</environmental_precautions>
+      <cleanup_methods>用沙土、蛭石或其他惰性吸收剂吸收泄漏物，并置于密闭容器中。根据当地法规处置。用大量水冲洗泄漏区域，但需防止污染水体。</cleanup_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>火花、明火和热表面。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。储存温度一般不应高于32℃，相对湿度一般不应高于80%。</storage_precautions>
+      <handling_precautions>操作后彻底洗手。避免接触眼睛、皮肤和衣物。避免吸入粉尘或烟雾。在通风良好的地方操作。使用适当的工程控制和个人防护设备。避免产生粉尘。禁止饮食、吸烟或在使用场所进食。</handling_precautions>
+      <storage_precautions>保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远离不相容材料和食品容器的地方。储存温度一般不应高于32℃，相对湿度一般不应高于80%。避光保存，建议冷藏储存（2-8℃）。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
-      <china_mac>无资料</china_mac>
-      <former_soviet_mac>无资料</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
-      <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <china_mac>未制定（参考：肾上腺素盐酸盐）</china_mac>
+      <former_soviet_mac>未制定</former_soviet_mac>
+      <tlvtn>未制定</tlvtn>
+      <tlvvn>未制定</tlvvn>
+      <contact_limits>未制定职业接触限值</contact_limits>
+      <monitoring_method>定期监测工作场所空气中化学品浓度，确保不超过职业接触限值。可采用气相色谱法、高效液相色谱法等分析方法进行监测。</monitoring_method>
+      <engineering_controls>密闭操作，提供充分的局部排风。尽可能采用隔离化操作。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时，佩戴过滤式防毒面具（半面罩）或全面罩。紧急事态抢救或撤离时，建议佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>佩戴化学护目镜（符合欧盟EN 166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
-      <other_protection>无资料</other_protection>
+      <hand_protection>戴防化学品手套（推荐使用丁腈橡胶手套），手套在使用前应检查是否有破损。</hand_protection>
+      <other_protection>工作现场严禁吸烟、进食和饮水。操作后彻底清洗。定期进行职业健康检查。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>＞7（碱性）</pH>
       <melting_point>211.5</melting_point>
       <boiling_point>215（分解）</boiling_point>
-      <flash_point></flash_point>
-      <relative_density>无资料</relative_density>
+      <flash_point>207.9°C</flash_point>
+      <relative_density>1.24</relative_density>
       <relative_vapor_density>不适用</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>易溶于矿酸及氢氧化碱溶液，微溶于水，不溶于醇、醚、丙酮、氯仿</solubility>
       <molecular_formula>C9H13NO3</molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>无资料</main_components>
+      <molecular_weight>183.21</molecular_weight>
+      <main_components>3,4-二羟基-α-((甲氨基)甲基)苄醇</main_components>
       <saturated_vapor_pressure>不适用</saturated_vapor_pressure>
       <log_kow>-2.59</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
-      <other_properties>无资料</other_properties>
+      <flammability>可燃</flammability>
+      <appearance>白色结晶性粉末</appearance>
+      <main_uses>肾上腺素受体激动剂，用于治疗过敏性休克、支气管哮喘、心脏骤停等急症；局部用于止血；眼科用于治疗青光眼。</main_uses>
+      <other_properties>在空气中易氧化变色，遇光易分解，应避光保存。具有旋光性，比旋光度为-50.5°（1% NaOH溶液）。</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
       <explosive_upper_limit>无资料</explosive_upper_limit>
@@ -99,18 +107,18 @@
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>在正确的使用和存储条件下是稳定的</stability>
-      <incompatible_substances>无资料</incompatible_substances>
-      <conditions_to_avoid>不相容物质，热、火焰和火花</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物</decomposition_products>
+      <stability>在正确的使用和存储条件下是稳定的。在空气中易氧化变色，遇光易分解。</stability>
+      <incompatible_substances>强氧化剂、强酸、强碱、重金属离子、醛类、酮类</incompatible_substances>
+      <conditions_to_avoid>不相容物质，热、火焰和火花，光照，潮湿环境</conditions_to_avoid>
+      <polymerization_hazard>不会发生危险的聚合反应</polymerization_hazard>
+      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。受热分解产生有毒的氮氧化物烟雾。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <acute_toxicity>急性毒性：小鼠腹腔注射LD50: 4 mg/kg；小鼠口服LD50: 90 mg/kg（肾上腺素盐酸盐）。大剂量可引起高血压、心悸、头痛、焦虑、震颤等不良反应。</acute_toxicity>
+      <subacute_chronic_toxicity>长期或反复接触可能对心血管系统、神经系统产生影响。可能引起心律失常、心肌缺血等不良反应。</subacute_chronic_toxicity>
+      <rtecs>DN6650000</rtecs>
+      <irritation>对眼睛、皮肤、粘膜和上呼吸道有刺激作用。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -118,31 +126,38 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
+      <ecological_toxicity>对水生生物可能有害，避免进入水体、土壤和地下水。由于log Kow = -2.59，生物富集潜力较低。</ecological_toxicity>
+      <biodegradability>可生物降解</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <bioaccumulation>生物富集潜力低（log Kow < 3），不易在生物体内富集。</bioaccumulation>
+      <other_harmful_effects>避免化学品对环境造成污染，特别是对水体的污染。应按照环保要求进行处置。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险化学品废物</waste_properties>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的气体通过洗涤器除去。与当地环保部门联系，按照国家危险废物管理法规进行处置。</disposal_method>
+      <disposal_precautions>处置前应咨询专业机构，确保符合当地法律法规要求。避免随意倾倒，防止污染环境。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <dangerous_goods_number>UN 2811</dangerous_goods_number>
+      <un_number>UN 2811</un_number>
+      <imdg_page>第6.1类毒害品</imdg_page>
+      <packaging_mark>III</packaging_mark>
+      <packing_group>III</packing_group>
+      <packaging_method>按照危险货物运输规则进行包装。使用符合标准的包装容器，确保在运输过程中不泄漏。</packaging_method>
+      <transportation_precautions>运输时需贴上"毒害品"标志。运输车辆应配备应急处理设备。运输过程中应远离火源、热源。运输途中应防暴晒、雨淋，防高温。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：列入《危险化学品目录（2015版）》、列入《2021年兴奋剂目录》、列入《内河禁运危险化学品目录（2019版）》。国际法规：美国TSCA（有毒物质控制法案）、欧盟REACH法规。该化学品属于第6.1类毒害品，运输时需遵守《危险货物规则》。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <standard_reference>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）和《化学品安全技术说明书编写规定》（GB/T 17519-2013）标准编制。</standard_reference>
+      <modification_notes>本说明书基于肾上腺素（Epinephrine, CAS 51-43-4）的公开资料编制，部分数据参考了肾上腺素盐酸盐的相关信息。</modification_notes>
+      <abbreviations>CAS号：化学文摘社登记号；LD50：半数致死量；LC50：半数致死浓度；TLV-TWA：阈限值-时间加权平均浓度；TLV-STEL：阈限值-短时间接触浓度；MAC：最高容许浓度；RTECS：化学物质毒性登记系统；IARC：国际癌症研究机构；NTP：国家毒理学计划；ACGIH：美国政府工业卫生学家协会；UN：联合国；IMDG：国际海运危险货物规则。</abbreviations>
+      <other_notes>本技术说明书提供的资料仅供安全操作参考，使用者应根据具体情况采取适当的安全措施。如需更多信息，请咨询相关专业机构或查阅相关文献资料。</other_notes>
+    </other_info>
   </msds>
 </msds_list>

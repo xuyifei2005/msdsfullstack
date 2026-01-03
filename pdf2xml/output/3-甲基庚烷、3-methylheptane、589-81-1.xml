@@ -3,18 +3,18 @@
   <msds>
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
-      <cas_number>589-81-1</cas_number>
-      <msds_code>供应商名称： 供应商地址：</msds_code>
-      <product_name>3-甲基庚烷</product_name>
-      <product_alias>英文名称： 3-methylheptane 英文别名：</product_alias>
-      <product_english_name>3-methylheptane</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
-    </basic_info>
+          <cas_number>589-81-1</cas_number>
+          <msds_code>MSDS-589-81-1</msds_code>
+          <product_name>3-甲基庚烷</product_name>
+          <product_alias>英文名称：3-methylheptane 英文别名：2-乙基己烷</product_alias>
+          <product_english_name>3-methylheptane</product_english_name>
+          <company_name>无资料</company_name>
+          <company_address>无资料</company_address>
+          <contact_phone>无资料</contact_phone>
+          <emergency_phone>无资料</emergency_phone>
+          <email>无资料</email>
+          <fax_number>无资料</fax_number>
+        </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>侵入途径：</hazard_category>
@@ -49,7 +49,7 @@
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>分的通风。清除所有点火源。采取防静电措施。 迅速将人员撤离到安全区域，远离泄漏</emergency_procedures>
+      <emergency_procedures>迅速撤离泄漏污染区人员至安全区，并进行隔离，严格限制出入。切断火源。建议应急处理人员戴自给正压式呼吸器，穿防静电工作服。尽可能切断泄漏源。防止流入下水道、排洪沟等限制性空间。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
@@ -63,40 +63,40 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>密闭操作，提供充分的局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时，佩戴过滤式防毒面具（半面罩）。紧急事态抢救或撤离时，应该佩戴空气呼吸器或氧气呼吸器。</respiratory_protection>
       <eye_protection>佩戴化学护目镜（符合欧盟EN 166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection>戴化学防护手套（例如丁基橡胶手套）。建议选择经过欧盟EN374、美国USF739或AS/NZS</hand_protection>
-      <other_protection>无资料</other_protection>
+      <hand_protection>戴化学防护手套（例如丁基橡胶手套）。建议选择经过欧盟EN374、美国USF739或AS/NZS 2161.1标准认证的手套。</hand_protection>
+      <other_protection>工作现场严禁吸烟。进食前必须洗手。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
-      <melting_point>-121</melting_point>
-      <boiling_point>119</boiling_point>
-      <flash_point></flash_point>
-      <relative_density>0.706</relative_density>
-      <relative_vapor_density>3.94</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C8H18</molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure></saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>6.5</explosive_upper_limit>
-      <explosive_lower_limit>0.98</explosive_lower_limit>
-    </physical_chemical>
+          <pH>无资料</pH>
+          <melting_point>-121</melting_point>
+          <boiling_point>119</boiling_point>
+          <flash_point>11.1±11.4 °C（来源：检索补充）</flash_point>
+          <relative_density>0.706</relative_density>
+          <relative_vapor_density>3.94</relative_vapor_density>
+          <solubility>792 μg/kg at 25 °C（来源：检索补充）</solubility>
+          <molecular_formula>C8H18</molecular_formula>
+          <molecular_weight>114.229（来源：检索补充）</molecular_weight>
+          <main_components>无资料</main_components>
+          <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
+          <log_kow>无资料</log_kow>
+          <critical_temperature>无资料</critical_temperature>
+          <ignition_temperature>无资料</ignition_temperature>
+          <autoignition_temperature>无资料</autoignition_temperature>
+          <flammability>高度易燃（来源：检索补充）</flammability>
+          <appearance>无色透明易燃液体（来源：检索补充）</appearance>
+          <main_uses>用作溶剂、有机合成中间体（来源：检索补充）</main_uses>
+          <other_properties>无资料</other_properties>
+          <heat_of_combustion>无资料</heat_of_combustion>
+          <critical_pressure>无资料</critical_pressure>
+          <explosive_upper_limit>6.5</explosive_upper_limit>
+          <explosive_lower_limit>0.98</explosive_lower_limit>
+        </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>在正确的使用和存储条件下是稳定的</stability>
@@ -126,23 +126,23 @@
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
-    </disposal>
+          <waste_properties>无资料</waste_properties>
+          <disposal_method>根据当地法规进行处置。建议咨询专业的废弃物处理机构。废弃化学品应按照危险废物管理规定进行分类、收集、储存和处置。</disposal_method>
+          <disposal_precautions>无资料</disposal_precautions>
+        </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <dangerous_goods_number>32007</dangerous_goods_number>
+      <un_number>1262</un_number>
       <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_mark>7</packaging_mark>
+      <packing_group>Ⅱ</packing_group>
+      <packaging_method>小开口钢桶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱。（来源：检索补充）</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与氧化剂、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。（来源：检索补充）</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
-    </regulatory>
+          <regulatory_info>国内法规：《危险化学品安全管理条例》、《危险化学品目录（2015版）》等法律法规。国际法规：符合联合国GHS分类标准，按照国际运输法规（IATA、IMDG、ADR）进行分类和包装。建议在储存、运输和使用过程中严格遵守相关法规要求。</regulatory_info>
+        </regulatory>
   </msds>
 </msds_list>

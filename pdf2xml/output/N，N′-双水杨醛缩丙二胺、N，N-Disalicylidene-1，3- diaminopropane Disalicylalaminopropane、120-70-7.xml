@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>120-70-7</cas_number>
-      <msds_code>MSDS#1451</msds_code>
+      <msds_code>MSDS-120-70-7</msds_code>
       <product_name>N，N′-双水杨醛缩丙二胺</product_name>
-      <product_alias>无资料</product_alias>
-      <product_english_name>N，N-Disalicylidene-1，3- diaminopropane Disalicylalaminopropane</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_alias>N,N′-二亚水杨基-1,3-二氨基丙烷</product_alias>
+      <product_english_name>N,N-Disalicylidene-1,3-diaminopropane</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -142,7 +142,14 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内化学品安全管理法规：危险化学品安全管理条例、工作场所安全使用化学品规定等。国际法规：GHS全球化学品统一分类和标签制度。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>GB/T 16483-2008 化学品安全技术说明书 内容和项目顺序</reference_standards>
+      <modification_notes>本说明书依据国家标准编制，数据来源于权威化学数据库及文献资料。</modification_notes>
+      <abbreviations>无资料</abbreviations>
+      <other_notes>无资料</other_notes>
+    </other_info>
   </msds>
 </msds_list>

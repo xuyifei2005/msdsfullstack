@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>616-44-4</cas_number>
-      <msds_code>MSDS#1040</msds_code>
+      <msds_code>MSDS-616-44-4</msds_code>
       <product_name>3-甲基噻吩</product_name>
       <product_alias>甲基硫茂</product_alias>
       <product_english_name>3-Methylthiophene</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -107,7 +107,7 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：1800mg／kg(小鼠经口)LC50：18000mg／m3 2小时(小鼠吸入)</acute_toxicity>
+      <acute_toxicity>LD50：1800mg/kg(小鼠经口)；LC50：18000mg/m³ 2小时(小鼠吸入)。（来源：检索补充）</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>XM9800000</rtecs>
       <irritation>无资料</irritation>
@@ -128,12 +128,12 @@
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
       <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废物处置应符合环保要求。（来源：检索补充）</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>32112</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <un_number>UN 1993</un_number>
       <imdg_page>无资料</imdg_page>
       <packaging_mark>7</packaging_mark>
       <packing_group>Ⅱ</packing_group>
@@ -142,7 +142,13 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品安全管理条例（国务院令第591号），工作场所安全使用化学品规定（〔1996〕劳部发423号），危险化学品目录（2015版）。（来源：检索补充）</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>GB/T 16483-2008、GB/T 17519-2013、GB 30000系列标准</reference_standards>
+      <modification_notes>无</modification_notes>
+      <abbreviations>MSDS：化学品安全技术说明书；CAS：化学文摘社号；LD50：半数致死量；LC50：半数致死浓度；LEL：爆炸下限；UEL：爆炸上限；UN：联合国编号；IMDG：国际海运危险货物规则。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

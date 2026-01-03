@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>77-74-7</cas_number>
-      <msds_code>MSDS#2138</msds_code>
+      <msds_code>MSDS-77-74-7</msds_code>
       <product_name>3-甲基-3-戊醇</product_name>
-      <product_alias>无资料</product_alias>
+      <product_alias>叔戊醇；tert-Amyl alcohol</product_alias>
       <product_english_name>3-Methyl-3-pentanol</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -42,7 +42,7 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>应。若遇高热，容器内压增大，有开裂和爆炸的危险。</hazard_characteristics>
+      <hazard_characteristics>易燃，遇明火、高热或与氧化剂接触，有引起燃烧爆炸的危险。若遇高热，容器内压增大，有开裂和爆炸的危险。</hazard_characteristics>
       <fire_risk_classification>乙</fire_risk_classification>
       <harmful_combustion_products>一氧化碳、二氧化碳。</harmful_combustion_products>
       <suitable_extinguishing_media>抗溶性泡沫、二氧化碳、干粉、1211灭火剂。</suitable_extinguishing_media>
@@ -53,7 +53,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。防止蒸气泄漏到工作场所空气中。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶手套。远离火种、热源。工作场所严禁吸烟。使用防爆型的通风系统和设备。在清除液体和蒸气前不能进行焊接、切割等作业。避免与氧化剂、酸类接触。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光曝晒。仓温不宜超过30℃。应与 酸类、氧化剂等分开存放。禁止使用易产生火花的机械设备和工具。配备相应品种和数量 的消防器材。罐储时要有防火防爆技术措施。储存间内的照明、通风等设施应采用防爆型， 开关设在仓外。充装要控制流速，注意防止静电积聚。操作现场不得吸烟、饮水、进食。 搬运时要轻装轻卸，防止包装及容器损坏。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -79,7 +79,7 @@
       <flash_point>46</flash_point>
       <relative_density>0.8286</relative_density>
       <relative_vapor_density>3.53</relative_vapor_density>
-      <solubility>微溶于水，可混溶于乙醇、乙醚、丙酮等多數有機溶劑。</solubility>
+      <solubility>微溶于水，可混溶于乙醇、乙醚、丙酮等多数有机溶剂。</solubility>
       <molecular_formula>C6H14O</molecular_formula>
       <molecular_weight>102.18</molecular_weight>
       <main_components>无资料</main_components>
@@ -88,7 +88,7 @@
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>易燃液体。</flammability>
       <appearance>无色液体。</appearance>
       <main_uses>用作溶剂，也用于有机合成。</main_uses>
       <other_properties>无资料</other_properties>
@@ -101,16 +101,16 @@
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>氧化剂、酸类、酸酐、酰基氯。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <conditions_to_avoid>避免受热、明火、静电火花。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
       <decomposition_products>无资料</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：710mg／kg(大鼠经口)LC50：</acute_toxicity>
+      <acute_toxicity>LD50：710mg/kg(大鼠经口)；LC50：2000ppm/4h(大鼠吸入)</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>SA7450000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>本品对眼睛、皮肤有刺激作用。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -144,5 +144,12 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第3.3类高闪点易燃液体，具刺激性，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standard>GB/T 16483-2008《化学品安全技术说明书 内容和项目顺序》</reference_standard>
+      <modification_notes>无</modification_notes>
+      <abbreviations>CAS：化学文摘社编号；LD50：半数致死量；LC50：半数致死浓度；TLV-TWA：阈限值-时间加权平均浓度；TLV-STEL：阈限值-短时间接触限值；MAC：最高容许浓度；RTECS：化学毒物登记系统；BCF：生物富集系数；EC50：半数效应浓度。</abbreviations>
+      <other_notes>本安全技术说明书仅提供该化学品的安全信息，不作为商业合同依据。使用者应结合实际情况采取适当的安全措施。如需更多信息，请咨询相关专业人员。</other_notes>
+    </other_info>
   </msds>
 </msds_list>

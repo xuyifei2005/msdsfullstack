@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>95-77-2</cas_number>
-      <msds_code>MSDS#1669</msds_code>
+      <msds_code>MSDS-95-77-2</msds_code>
       <product_name>3，4-二氯苯酚</product_name>
       <product_alias>3,4-二氯酚</product_alias>
       <product_english_name>3，4-Dichlorophenol</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -74,13 +74,13 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>68</melting_point>
-      <boiling_point>145～146</boiling_point>
-      <flash_point>无资料</flash_point>
-      <relative_density>无资料</relative_density>
+      <melting_point>65-67</melting_point>
+        <boiling_point>247.1±20.0</boiling_point>
+        <flash_point>109.1±15.0</flash_point>
+        <relative_density>1.5±0.1</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C6H4C</molecular_formula>
+      <solubility>溶于乙醇、乙醚、苯；20℃时在水中溶解度为0.1 g/100 mL</solubility>
+      <molecular_formula>C6H4Cl2O</molecular_formula>
       <molecular_weight>163.00</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
@@ -133,16 +133,16 @@
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>61704</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <un_number>2020</un_number>
       <imdg_page>无资料</imdg_page>
-      <packaging_mark>14</packaging_mark>
-      <packing_group>Ⅲ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_mark>6.1</packaging_mark>
+      <packing_group>III</packing_group>
+      <packaging_method>按照联合国危险货物运输规则进行包装。包装应密封、防潮、防破损。包装材料应选用耐腐蚀材料，防止泄漏。包装上应标明"毒害品"等警示标识。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。严禁与氧化剂、酸类、食用化学品等混装混运。装运该物品的车辆排气管必须配备阻火装置。使用槽(罐)车运输时要有接地链，槽内可设孔隔板以减少震荡产生静电。中途停留时应远离火种、热源。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：危险化学品安全管理条例（国务院令第591号）；易制毒化学品管理条例；工作场所安全使用化学品规定。国际法规：欧盟REACH法规；欧盟CLP法规（EC No 1272/2008）；联合国全球化学品统一分类和标签制度（GHS）。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

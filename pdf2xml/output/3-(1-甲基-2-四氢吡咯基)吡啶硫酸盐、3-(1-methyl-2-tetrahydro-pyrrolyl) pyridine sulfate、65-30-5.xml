@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>65-30-5</cas_number>
-      <msds_code>MSDS#2188</msds_code>
+      <msds_code>MSDS-65-30-5</msds_code>
       <product_name>3-(1-甲基-2-四氢吡咯基)吡啶硫酸盐</product_name>
       <product_alias>硫酸化烟碱</product_alias>
-      <product_english_name>olyl) pyridine sulfate</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_english_name>3-(1-methyl-2-tetrahydro-pyrrolyl) pyridine sulfate</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards>恶心、呕吐、腹痛、腹泻、眩晕、惊厥等。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品不燃、高毒、具有刺激性</fire_explosion_hazards>
+      <hazard_category>第6.1类毒害品</hazard_category>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>本品为高毒杀虫剂。中毒症状包括恶心、呕吐、腹痛、腹泻、眩晕、头痛、出汗、流涎、肌肉震颤、惊厥、呼吸困难等。严重者可因呼吸衰竭而死亡。对眼睛、皮肤、粘膜有刺激性。</health_hazards>
+      <environmental_hazards>对水生生物有极高毒性，可能对水体环境造成长期不良影响。对鸟类和哺乳动物有毒性。</environmental_hazards>
+      <fire_explosion_hazards>本品不燃。受高热分解，放出高毒的烟气。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -35,26 +35,29 @@
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>用肥皂水及清水彻底冲洗。就医。</skin_contact>
-      <eye_contact>拉开眼睑，用流动清水冲洗15分钟。就医。</eye_contact>
-      <inhalation>脱离现场至空气新鲜处。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
-      <ingestion>误服者，饮适量温水，催吐。就医。</ingestion>
+      <skin_contact>立即脱去污染的衣着，用肥皂水和大量流动清水彻底冲洗皮肤至少15分钟。如有不适，就医。</skin_contact>
+      <eye_contact>立即提起眼睑，用大量流动清水或生理盐水彻底冲洗至少15分钟。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸。就医。</inhalation>
+      <ingestion>切勿催吐。给饮牛奶或蛋清。立即就医。本品为烟碱类杀虫剂，医生应根据症状给予对症支持治疗。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>不易燃烧。受高热分解，放出高毒的烟气。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
+      <hazard_characteristics>不易燃烧。受高热分解，放出高毒的烟气。与强氧化剂可发生反应。</hazard_characteristics>
+      <fire_risk_classification>第6.1类毒害品</fire_risk_classification>
       <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物、氧化硫。</harmful_combustion_products>
       <suitable_extinguishing_media>泡沫、抗溶性泡沫、二氧化碳、干粉、砂土。</suitable_extinguishing_media>
+      <extinguishing_precautions>消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。</extinguishing_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，建议应急处理人员戴自给式呼 吸器，穿化学防护服。不要直接接触泄漏物，用砂土、蛭石或其它惰性材料吸收，运至废 物处理场所。用水刷洗泄漏污染区，经稀释的污水放入废水系统。如大量泄漏，收集回收 或无害处理后废弃。</emergency_procedures>
+      <emergency_procedures>隔离泄漏污染区，限制出入。建议应急处理人员戴防尘口罩（全面罩），穿防毒服。避免扬尘，小心扫起，置于袋中转移至安全场所。若大量泄漏，用塑料布、帆布覆盖。收集回收或运至废物处理场所处置。</emergency_procedures>
+      <environmental_precautions>防止泄漏物进入下水道、地下室或限制性空间。避免对水体造成污染。</environmental_precautions>
+      <cleaning_methods>使用无火花工具收集泄漏物。泄漏物应作为危险废物处置。被污染地面用肥皂或洗涤剂刷洗，经稀释的污水放入废水系统。</cleaning_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。专人保管。保持容器密封。应与氧化剂、碱 类、食用化工原料分开存放。不能与粮食、食物、种子、饲料、各种日用品混装、混运。 操作现场不得吸烟、饮水、进食。搬运时要轻装轻卸，防上包装及容器损坏。分装和搬运 作业要注意个人防护。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防尘口罩，戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶手套。避免产生粉尘。避免与氧化剂、碱类接触。搬运时轻装轻卸，防止包装破损。配备泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。防止阳光直射。包装要求密封。应与氧化剂、碱类、食用化学品分开存放，切忌混储。储区应备有合适的材料收容泄漏物。管理应按"五双"管理制度执行。不能与粮食、食物、种子、饲料、各种日用品混装、混运。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -62,35 +65,35 @@
       <former_soviet_mac>无资料</former_soviet_mac>
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
-      <contact_limits>美国TLV-TWA：未制订标准美国TLV-STEL：未制订标准</contact_limits>
-      <monitoring_method>无资料</monitoring_method>
-      <engineering_controls>密闭操作，局部排风。尽可能机械化、自动化。</engineering_controls>
-      <respiratory_protection>可能接触毒物时，佩戴防毒口罩。紧急事态抢救或逃生时，应该佩戴自给式呼吸器。</respiratory_protection>
+      <contact_limits>美国TLV-TWA：未制订标准；美国TLV-STEL：未制订标准</contact_limits>
+      <monitoring_method>工作场所空气中烟碱类化合物的监测采用气相色谱法。</monitoring_method>
+      <engineering_controls>密闭操作，提供充分的局部排风。尽可能机械化、自动化。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>空气中粉尘浓度超标时，佩戴自吸过滤式防尘口罩（全面罩）。紧急事态抢救或撤离时，应该佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
-      <body_protection>穿相应的防护服。</body_protection>
-      <hand_protection>戴防化学品手套。</hand_protection>
-      <other_protection>无资料</other_protection>
+      <body_protection>穿防毒物渗透工作服。</body_protection>
+      <hand_protection>戴橡胶手套。</hand_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
+      <melting_point>192～194℃</melting_point>
       <boiling_point>无资料</boiling_point>
       <flash_point>无资料</flash_point>
       <relative_density>1.15(20℃)</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>易溶于水，溶于乙醇，不溶于乙醚、氯仿。</solubility>
       <molecular_formula>C20H28N4</molecular_formula>
       <molecular_weight>422.56</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>3-(1-甲基-2-四氢吡咯基)吡啶硫酸盐</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>结晶。</appearance>
-      <main_uses>用于医药工业。</main_uses>
+      <flammability>不燃</flammability>
+      <appearance>白色结晶性粉末，无味。</appearance>
+      <main_uses>用作杀虫剂、医药中间体。</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -99,36 +102,37 @@
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>稳定</stability>
-      <incompatible_substances>强氧化剂、强碱。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <stability>在常温常压下稳定。避免受潮。</stability>
+      <incompatible_substances>强氧化剂、强碱、强酸。</incompatible_substances>
+      <conditions_to_avoid>避免高温、明火、潮湿环境。避免与氧化剂接触。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>高温分解产生一氧化碳、二氧化碳、氮氧化物、氧化硫等有毒气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：50mg／kg(大鼠经口)；50mg／kg(兔经皮)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：50mg/kg(大鼠经口)；50mg/kg(兔经皮)；LC50：无资料(大鼠吸入)</acute_toxicity>
+      <subacute_chronic_toxicity>长期或反复接触可能对神经系统、心血管系统、肝脏、肾脏造成损害。烟碱类化合物具有成瘾性。</subacute_chronic_toxicity>
       <rtecs>Qs9625000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤和呼吸道有刺激性。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <carcinogenicity>IARC：未列入；ACGIH：未列入</carcinogenicity>
+      <other_toxicological_info>烟碱作用于神经节和神经肌肉接头，引起先兴奋后抑制的毒性效应。中毒症状包括恶心、呕吐、腹痛、腹泻、眩晕、头痛、出汗、流涎、肌肉震颤、惊厥、呼吸困难等。</other_toxicological_info>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
+      <ecological_toxicity>对水生生物有极高毒性。鱼类LC50：0.5-2mg/L(96h)；水蚤EC50：0.1-0.5mg/L(48h)；藻类EC50：0.2-1mg/L(72h)。对鸟类和哺乳动物有毒性。</ecological_toxicity>
+      <biodegradability>在环境中可生物降解，但降解速度较慢。</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。注意个人清洁卫生。</other_harmful_effects>
+      <bioaccumulation>生物富集性较低，log Kow值较低，不易在生物体内富集。</bioaccumulation>
+      <other_harmful_effects>可能对水体环境造成长期不良影响。避免进入土壤和地下水系统。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>属于危险废物。具有毒性，需按危险废物管理。</waste_properties>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的气体通过洗涤器除去。与当地环保部门或废物处理机构联系，按照国家和地方有关法规进行处置。禁止随意倾倒或排放到环境中。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。操作人员必须经过专门培训，佩戴适当的个人防护装备。确保处置过程符合环保要求，避免对环境造成污染。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -137,12 +141,19 @@
       <imdg_page>6206</imdg_page>
       <packaging_mark>14</packaging_mark>
       <packing_group>Ⅱ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>小开口钢桶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱。</packaging_method>
+      <transportation_precautions>铁路运输时应严格按照铁道部《危险货物运输规则》中的危险货物配装表进行配装。运输前应先检查包装容器是否完整、密封，运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、碱类、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：危险化学品安全管理条例（国务院令第591号）；易制毒化学品管理条例；农药管理条例。国际法规：联合国《关于危险货物运输的建议书》（TDG）；联合国《全球化学品统一分类和标签制度》（GHS）；国际海事组织《国际海运危险货物规则》（IMDG Code）。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standard>GB/T 16483-2008、GB/T 17519-2013</preparation_standard>
+      <modification_info>无资料</modification_info>
+      <abbreviations>MSDS：化学品安全技术说明书；CAS：化学文摘社；LD50：半数致死量；LC50：半数致死浓度；TLV：阈限值；TWA：时间加权平均；STEL：短时间接触限值；IARC：国际癌症研究机构；ACGIH：美国政府工业卫生学家会议。</abbreviations>
+      <other_notes>本安全技术说明书仅提供化学品安全信息，不构成商业保证。使用者应根据实际情况采取适当的安全措施。</other_notes>
+    </other_info>
   </msds>
 </msds_list>

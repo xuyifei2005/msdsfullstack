@@ -5,22 +5,21 @@
     <basic_info>
       <cas_number>6731-36-8</cas_number>
       <einecs_number>229-782-3</einecs_number>
-      <msds_code>MSDS#OP-6731-36-8-E</msds_code>
+      <msds_code>MSDS-6731-36-8</msds_code>
       <product_name>1,1-二-(叔丁基过氧)-3,3,5-三甲基环己烷[含量≤57%,含A型稀释剂≥43%]</product_name>
       <product_alias>过氧化二叔丁基-3,3,5-三甲基环己烷；1,1-双(叔丁基过氧)-3,3,5-三甲基环己烷</product_alias>
       <product_english_name>1,1-di-(tert-butylperoxy)-3,3,5-trimethylcyclohexane (not more than 57%,and diluent type A not less than 43%)</product_english_name>
-      <!-- MSDS补全专家: 来源: 基于标准MSDS格式要求, 2025-12-18 -->
-      <company_name>高纯化工有限公司</company_name>
-      <company_address>高纯省高纯市高纯区高纯路123号</company_address>
-      <contact_phone>+86-123-45678910</contact_phone>
-      <emergency_phone>+86-123-45678911</emergency_phone>
-      <email>highpure@examplechem.com</email>
-      <fax_number>+86-123-45678912</fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第5.2类有机过氧化物（E型）；特定目标器官毒性-重复接触，类别2</hazard_category>
-      <exposure_routes>吸入食入经皮吸收</exposure_routes>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
       <health_hazards>吸入、食入或经皮肤吸收后对身体有害。吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入可能引起胃肠道刺激症状。对眼睛、皮肤有刺激作用。有机过氧化物可能引起皮肤过敏反应。特定目标器官毒性-重复接触，类别2。吸入后可引起头痛、头晕、恶心、呕吐等症状。皮肤接触可引起刺激、红肿、疼痛。眼睛接触可引起刺激、流泪、视力模糊。长期接触可能对肝、肾造成损害。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。本品可通过皮肤吸收。</health_hazards>
       <environmental_hazards>对水生生物可能有害。应避免进入水体、土壤和地下水。该物质对环境可能有危害，对水体应给予特别注意。</environmental_hazards>
       <fire_explosion_hazards>本品为有机过氧化物（E型），受热、接触火焰或受到摩擦、震动、撞击时可能发生爆炸性分解。与还原剂、促进剂、强酸、强碱等接触可能发生剧烈反应。</fire_explosion_hazards>
@@ -56,7 +55,7 @@
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
       <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与还原剂、促进剂、强酸、强碱接触。搬运时要轻装轻卸，防止包装及容器损坏，避免摩擦、震动、撞击。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
-      <storage_precautions>火花、明火和热表面。采取措施防止静电积累。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。</storage_precautions>
+      <storage_precautions>远离火花、明火和热表面。采取措施防止静电积累。保持容器密闭。储存在干燥、阴凉和通风处。存储于远离不相容材料和食品容器的地方。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -76,28 +75,28 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>-40</melting_point>
-      <boiling_point>&gt;35</boiling_point>
-      <flash_point>46</flash_point>
+      <melting_point>-40℃</melting_point>
+      <boiling_point>分解（有机过氧化物在达到沸点前会分解）</boiling_point>
+      <flash_point>46℃</flash_point>
       <relative_density>0.904</relative_density>
       <relative_vapor_density>不适用</relative_vapor_density>
       <solubility>易溶于大多数有机溶剂</solubility>
       <molecular_formula>C17H34O4</molecular_formula>
-      <molecular_weight>302.46</molecular_weight>
+      <molecular_weight>302.45</molecular_weight>
       <main_components>1,1-二-(叔丁基过氧)-3,3,5-三甲基环己烷含量≤57%，含A型稀释剂≥43%</main_components>
-      <saturated_vapor_pressure>约0.01 kPa（20℃，估算值）</saturated_vapor_pressure>
-      <log_kow>3.5（估算值）</log_kow>
-      <critical_temperature>约450℃（估算值）</critical_temperature>
-      <ignition_temperature>约180℃（估算值）</ignition_temperature>
-      <autoignition_temperature>约180℃（估算值）</autoignition_temperature>
+      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
+      <log_kow>无资料</log_kow>
+      <critical_temperature>无资料</critical_temperature>
+      <ignition_temperature>无资料</ignition_temperature>
+      <autoignition_temperature>无资料</autoignition_temperature>
       <flammability>易燃，有机过氧化物</flammability>
       <appearance>无色至淡黄色液体</appearance>
       <main_uses>用作聚合反应引发剂、交联剂</main_uses>
       <other_properties>无资料</other_properties>
-      <heat_of_combustion>约-10500 kJ/mol（估算值）</heat_of_combustion>
-      <critical_pressure>约2.5 MPa（估算值）</critical_pressure>
-      <explosive_upper_limit>约8.0%（体积比，估算值）</explosive_upper_limit>
-      <explosive_lower_limit>约1.2%（体积比，估算值）</explosive_lower_limit>
+      <heat_of_combustion>无资料</heat_of_combustion>
+      <critical_pressure>无资料</critical_pressure>
+      <explosive_upper_limit>无资料</explosive_upper_limit>
+      <explosive_lower_limit>无资料</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>

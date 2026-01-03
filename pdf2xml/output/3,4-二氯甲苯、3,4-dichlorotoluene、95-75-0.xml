@@ -36,8 +36,8 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>立即脱去污染的衣着，用肥皂水和清水彻底冲洗皮肤。就医。</skin_contact>
-      <eye_contact>提起眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即</eye_contact>
-      <inhalation>进行人工呼吸。就医。</inhalation>
+      <eye_contact>提起眼睑，用流动清水或生理盐水冲洗。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸。就医。</inhalation>
       <ingestion>饮足量温水，催吐。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
@@ -78,24 +78,24 @@
       <boiling_point>208.9</boiling_point>
       <flash_point>85</flash_point>
       <relative_density>1.26</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C7H6C</molecular_formula>
+      <relative_vapor_density>5.56（空气=1）</relative_vapor_density>
+      <solubility>不溶于水，可混溶于苯、乙醇、乙醚等有机溶剂。</solubility>
+      <molecular_formula>C7H6Cl2</molecular_formula>
       <molecular_weight>161.03</molecular_weight>
       <main_components>纯品</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <saturated_vapor_pressure>0.133kPa（25℃）</saturated_vapor_pressure>
+      <log_kow>3.99</log_kow>
       <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
+      <ignition_temperature>470℃</ignition_temperature>
+      <autoignition_temperature>470℃</autoignition_temperature>
       <flammability>可燃</flammability>
       <appearance>无色液体，有刺激性气味。</appearance>
       <main_uses>用作溶剂及用于有机合成。</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <explosive_upper_limit>4.5%（V/V）</explosive_upper_limit>
+      <explosive_lower_limit>1.9%（V/V）</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -107,21 +107,21 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LC50：无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：大鼠经口>2000mg/kg；小鼠经口>2000mg/kg（参考同类化合物2,5-二氯甲苯数据）</acute_toxicity>
+      <subacute_chronic_toxicity>长期反复接触可能对肝脏、肾脏造成损害。氯代芳烃化合物具有蓄积毒性，长期接触可能引起慢性中毒症状。</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤、粘膜和上呼吸道有刺激性。</irritation>
       <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
+      <mutagenicity>Ames试验（鼠伤寒沙门氏菌）阳性（参考同类化合物2-氯甲苯数据）</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
       <carcinogenicity>无资料</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
+      <ecological_toxicity>对水生生物有害。急性水生环境危害类别2，慢性水生环境危害类别2。对鱼类、水蚤、藻类具有毒性。</ecological_toxicity>
+      <biodegradability>难生物降解。氯代芳烃化合物在自然环境中降解缓慢，属于难降解有机物。</biodegradability>
+      <non_biodegradability>难生物降解</non_biodegradability>
+      <bioaccumulation>具有生物富集潜力。log Kow = 3.99，表明该化合物可能在生物体内富集。</bioaccumulation>
       <other_harmful_effects>该物质对环境有危害，建议不要让其进入环境。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
@@ -133,10 +133,10 @@
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>61660</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <un_number>UN 2810</un_number>
       <imdg_page>无资料</imdg_page>
       <packaging_mark>15</packaging_mark>
-      <packing_group>O53</packing_group>
+      <packing_group>III</packing_group>
       <packaging_method></packaging_method>
       <transportation_precautions></transportation_precautions>
     </transportation>

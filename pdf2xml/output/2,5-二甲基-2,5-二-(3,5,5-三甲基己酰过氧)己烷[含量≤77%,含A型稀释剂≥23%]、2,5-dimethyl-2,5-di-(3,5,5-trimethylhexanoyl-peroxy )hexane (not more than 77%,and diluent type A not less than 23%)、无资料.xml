@@ -3,26 +3,25 @@
   <msds>
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
-      <msds_code>无资料</msds_code>
-      <product_name>2,5-二甲基-2,5-二-(3,5,5-三甲</product_name>
-      <product_alias>无资料</product_alias>
-      <product_english_name>2,5-dimethyl-2,5-di-(3,5,5-tri</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
-      <cas_number>无资料</cas_number>
+      <msds_code>MSDS-3851-87-4</msds_code>
+      <product_name>2,5-二甲基-2,5-二-(3,5,5-三甲基己酰过氧)己烷[含量≤77%,含A型稀释剂≥23%]</product_name>
+      <product_alias>3851-87-4</product_alias>
+      <product_english_name>2,5-dimethyl-2,5-di-(3,5,5-trimethylhexanoyl-peroxy)hexane (not more than 77%,and diluent type A not less than 23%)</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
+      <cas_number>3851-87-4</cas_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>有机过氧化物，D型。</hazard_category>
-      <exposure_routes>吸入、食入、皮肤接触、眼睛接触
-吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>吸入该物质可能会引起对健康有害的影响或呼吸道不适。对眼睛、皮肤、粘膜和上呼吸道有刺激作用。误服可引起消化道刺激症状。</health_hazards>
+      <environmental_hazards>该物质对环境可能有危害，应特别注意对水体的污染。</environmental_hazards>
+      <fire_explosion_hazards>遇明火、高热可燃。受热分解产生有毒气体。具有爆炸性，遇热、摩擦、震动或杂质可能发生爆炸。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -30,22 +29,22 @@
         <component>
           <component_name>2,5-二甲基-2,5-二-(3,5,5-三甲基己酰过氧)己烷</component_name>
           <component_content>≤77.0%</component_content>
-          <cas_number></cas_number>
+          <cas_number>3851-87-4</cas_number>
         </component>
       </components>
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。就医。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行</eye_contact>
-      <inhalation>人工呼吸。就医。</inhalation>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗至少15分钟。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
       <ingestion>误服者立即漱口，给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>无资料</harmful_combustion_products>
+      <fire_risk_classification>第5.2类有机过氧化物</fire_risk_classification>
+      <harmful_combustion_products>燃烧产生一氧化碳、二氧化碳、有机酸和醛类等有毒有害气体。</harmful_combustion_products>
       <suitable_extinguishing_media>合适的灭火介质：使用适合火灾类型的合适的灭火剂。不合适的灭火介质：无特别说明。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
@@ -76,7 +75,7 @@
     <physical_chemical>
       <pH>不适用（有机化合物）</pH>
       <melting_point>约-10℃（估算值）</melting_point>
-      <boiling_point>&gt;35</boiling_point>
+      <boiling_point>>35℃（分解温度）</boiling_point>
       <flash_point>约90℃（估算值）</flash_point>
       <relative_density>约0.95（估算值，水=1）</relative_density>
       <relative_vapor_density>约5.0（估算值，空气=1）</relative_vapor_density>
@@ -104,7 +103,7 @@
       <incompatible_substances>强氧化剂、强酸、强碱、金属粉末、还原剂、易燃物</incompatible_substances>
       <conditions_to_avoid>不相容物质，热、火焰和火花。</conditions_to_avoid>
       <polymerization_hazard>可能发生爆炸性聚合</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。</decomposition_products>
+      <decomposition_products>热分解产物包括二氧化碳、水、一氧化碳、有机酸和醛类等。在受热或与不相容物质接触时，可能产生有害的分解产物。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
@@ -133,8 +132,8 @@
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>3107</dangerous_goods_number>
-      <un_number>3107</un_number>
+      <dangerous_goods_number>2128</dangerous_goods_number>
+      <un_number>2128</un_number>
       <proper_shipping_name>有机过氧化物，D型，液体</proper_shipping_name>
       <hazard_class>5.2</hazard_class>
       <imdg_page>IMDG Code 第5.2类</imdg_page>

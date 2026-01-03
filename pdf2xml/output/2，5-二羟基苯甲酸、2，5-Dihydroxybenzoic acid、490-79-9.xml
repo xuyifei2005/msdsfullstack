@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>490-79-9</cas_number>
-      <msds_code>MSDS#1309</msds_code>
+      <msds_code>MSDS-490-79-9</msds_code>
       <product_name>2，5-二羟基苯甲酸</product_name>
-      <product_alias>无资料</product_alias>
+      <product_alias>龙胆酸</product_alias>
       <product_english_name>2，5-Dihydroxybenzoic acid</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -84,7 +84,7 @@
       <molecular_weight>154.13</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <log_kow>1.1(预测值)</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
@@ -103,7 +103,7 @@
       <incompatible_substances>强氧化剂、强碱、酰基氯、酸酐。</incompatible_substances>
       <conditions_to_avoid>无资料</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>一氧化碳、二氧化碳等有毒气体</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
@@ -127,7 +127,7 @@
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
+      <disposal_method>建议用焚烧法处置，焚烧温度需≥1100℃。</disposal_method>
       <disposal_precautions>无资料</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
@@ -142,7 +142,13 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
-    </regulatory>
+        <regulatory_info>国内化学品管理法规：《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录（2015版）》。国际法规：无资料。</regulatory_info>
+      </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <compilation_standard>本MSDS依据GB/T 16483-2008和GB/T 17519-2013标准编制。</compilation_standard>
+      <modification_notes>部分数据因缺乏权威来源标注为"无资料"。</modification_notes>
+      <abbreviations>无</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

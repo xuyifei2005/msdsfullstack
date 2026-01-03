@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>8065-36-9</cas_number>
-      <msds_code>供应商名称： 供应商地址：</msds_code>
-      <product_name>基甲酸酯 和 3-(1-乙基丙基)苯</product_name>
+      <msds_code>MSDS-8065-36-9</msds_code>
+      <product_name>3-(1-甲基丁基)苯基-N-甲基氨基甲酸酯和3-(1-乙基丙基)苯基-N-甲基氨基甲酸酯</product_name>
       <product_alias>合杀威</product_alias>
-      <product_english_name>N-methylcarbamate and</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_english_name>reaction mass of 3-(1-methylbutyl)phenyl N-methylcarbamate and 3-(1-ethylpropyl)phenyl N-methylcarbamate</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>侵入途径：</hazard_category>
-      <exposure_routes></exposure_routes>
-      <health_hazards>吞食后有毒。跟皮肤接触有毒。</health_hazards>
-      <environmental_hazards>对水生物有剧毒, 对水生环境可能会引起长期有害作用。</environmental_hazards>
-      <fire_explosion_hazards></fire_explosion_hazards>
+      <hazard_category>第6.1类毒害品</hazard_category>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>吞食后有毒。跟皮肤接触有毒。中毒症状包括恶心、呕吐、腹痛、腹泻、眩晕、头痛、出汗、流涎、肌肉震颤、惊厥、呼吸困难等。对眼睛、皮肤、粘膜有刺激性。</health_hazards>
+      <environmental_hazards>对水生物有剧毒，对水生环境可能会引起长期有害作用。对鸟类和哺乳动物有毒性。</environmental_hazards>
+      <fire_explosion_hazards>遇明火、高热可燃。受热分解产生有毒的氮氧化物、一氧化碳、二氧化碳等气体。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -35,26 +35,30 @@
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>立即脱去污染的衣物。用大量肥皂水和清水冲洗皮肤。如有不适，就医。</skin_contact>
-      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。 立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给于吸氧。如患者食入或</eye_contact>
-      <inhalation>吸入本物质，不得进行口对口人工呼吸。如果呼吸停止。立即进行心肺复苏术。立即就 医。</inhalation>
-      <ingestion>禁止催吐，切勿给失去知觉者从嘴里喂食任何东西。立即呼叫医生或中毒控制中心。</ingestion>
+      <skin_contact>立即脱去污染的衣着，用肥皂水和大量流动清水彻底冲洗皮肤至少15分钟。如有不适，就医。</skin_contact>
+      <eye_contact>立即提起眼睑，用大量流动清水或生理盐水彻底冲洗至少15分钟。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸。就医。</inhalation>
+      <ingestion>禁止催吐。切勿给失去知觉者从嘴里喂食任何东西。立即呼叫医生或中毒控制中心。本品为氨基甲酸酯类杀虫剂，医生应根据症状给予对症支持治疗。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>有害燃烧产物：</fire_risk_classification>
-      <harmful_combustion_products>合适的灭火介质:干粉、二氧化碳或耐醇泡沫。 不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在 安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <hazard_characteristics>遇明火、高热可燃。受热分解产生有毒的氮氧化物、一氧化碳、二氧化碳等气体。</hazard_characteristics>
+      <fire_risk_classification>第6.1类毒害品</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物。</harmful_combustion_products>
+      <suitable_extinguishing_media>泡沫、抗溶性泡沫、二氧化碳、干粉、砂土。</suitable_extinguishing_media>
+      <extinguishing_precautions>消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。防止消防水污染地表和地下水系统。</extinguishing_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>无火灾状况下的溢漏和泄漏应穿着蒸气防护服，且完全密封。不要触摸或穿越泄漏物。不 要触摸破损的容器或泄漏物质除非穿着合适的防护服。保证充分的通风。清除所有点火源。 采取防静电措施。迅速将人员撤离到安全区域，远离泄漏区域并处于上风方向。使用个人</emergency_procedures>
+      <emergency_procedures>隔离泄漏污染区，限制出入。切断火源。建议应急处理人员戴防尘口罩（全面罩），穿防毒服。不要直接接触泄漏物。小量泄漏：避免扬尘，用洁净的铲子收集于干燥、洁净、有盖的容器中。大量泄漏：用塑料布、帆布覆盖，减少飞散。然后收集回收或运至废物处理场所处置。</emergency_procedures>
+      <personal_precautions>避免吸入粉尘、烟雾。避免与眼睛、皮肤接触。佩戴适当的个人防护装备。</personal_precautions>
+      <environmental_precautions>防止泄漏物进入下水道、地下室或限制性空间。防止污染土壤和水源。</environmental_precautions>
+      <cleanup_methods>使用惰性吸附材料（如砂土、蛭石）吸收泄漏物。收集的废弃物应按照危险废物处理。</cleanup_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>火花、明火和热表面。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。储存温度一般不应高于32℃，相对湿度一般不应高于 80%。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防尘口罩，戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶手套。避免产生粉尘。避免与氧化剂、酸类接触。搬运时轻装轻卸，防止包装破损。配备泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。防止阳光直射。包装要求密封。应与氧化剂、酸类、食用化学品分开存放，切忌混储。储区应备有合适的材料收容泄漏物。储存温度一般不应高于32℃，相对湿度一般不应高于80%。管理应按"五双"管理制度执行。不能与粮食、食物、种子、饲料、各种日用品混装、混运。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -63,34 +67,34 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
+      <monitoring_method>定期监测工作场所空气中的化学品浓度，确保在职业接触限值以下。</monitoring_method>
+      <engineering_controls>密闭操作，提供充分的局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
       <respiratory_protection>如果蒸气浓度超过职业接触限值或发生刺激等症状时，请使用全面罩式多功能防毒面具</respiratory_protection>
       <eye_protection>佩戴化学护目镜（符合欧盟EN 166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
-      <other_protection>无资料</other_protection>
+      <hand_protection>戴防化学品手套（推荐使用丁基橡胶或聚乙烯醇手套）。</hand_protection>
+      <other_protection>工作现场严禁吸烟、进食和饮水。工作完毕，彻底清洗。单独存放被毒物污染的衣服，洗后备用。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
       <melting_point>26</melting_point>
-      <boiling_point>125</boiling_point>
-      <flash_point></flash_point>
+      <boiling_point>296.1</boiling_point>
+      <flash_point>200</flash_point>
       <relative_density>1.024（26℃）</relative_density>
       <relative_vapor_density>＞1</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula></molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <solubility>不溶于水，溶于有机溶剂。</solubility>
+      <molecular_formula>2C13H19NO2</molecular_formula>
+      <molecular_weight>442.596</molecular_weight>
+      <main_components>3-(1-甲基丁基)苯基-N-甲基氨基甲酸酯和3-(1-乙基丙基)苯基-N-甲基氨基甲酸酯的混合物</main_components>
+      <saturated_vapor_pressure>0.002（40℃）</saturated_vapor_pressure>
+      <log_kow>3.5</log_kow>
       <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <ignition_temperature>300</ignition_temperature>
+      <autoignition_temperature>300</autoignition_temperature>
+      <flammability>可燃</flammability>
+      <appearance>黄色到琥珀色固体</appearance>
+      <main_uses>用作氨基甲酸酯类杀虫剂，主要用于防治农业害虫。</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -100,49 +104,56 @@
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>在正确的使用和存储条件下是稳定的</stability>
-      <incompatible_substances>无资料</incompatible_substances>
+      <incompatible_substances>强氧化剂、强酸、强碱</incompatible_substances>
       <conditions_to_avoid>不相容物质，热、火焰和火花</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物</decomposition_products>
+      <polymerization_hazard>不会发生聚合反应</polymerization_hazard>
+      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。受热分解产生有毒的氮氧化物、一氧化碳、二氧化碳等气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>大鼠经口LD50：约260-800mg/kg（苯基氨基甲酸酯类参考值）；大鼠经皮LD50：约1000-5000mg/kg；吸入LC50：无资料。氨基甲酸酯类杀虫剂通过抑制体内乙酰胆碱酯酶活性，导致乙酰胆碱在突触间隙过量蓄积，引起毒蕈碱样、烟碱样和中枢神经系统症状。</acute_toxicity>
+      <subacute_chronic_toxicity>长期接触可能引起胆碱酯酶活性持续降低，出现神经功能紊乱、头痛、头晕、恶心、呕吐、腹痛、腹泻等症状。严重时可出现肌肉无力、呼吸困难、意识障碍等。与有机磷农药相比，氨基甲酸酯类中毒恢复较快，症状持续时间较短。</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>对眼睛、皮肤和呼吸道有刺激性。接触后可引起眼睛红肿、疼痛、流泪；皮肤接触可引起红肿、瘙痒、灼热感；吸入可引起呼吸道刺激症状。</irritation>
+      <sensitization>可能引起皮肤过敏反应，敏感个体接触后可能出现过敏性皮炎。</sensitization>
+      <mutagenicity>现有资料未显示有致突变性。</mutagenicity>
+      <teratogenicity>现有资料未显示有致畸性。</teratogenicity>
+      <carcinogenicity>未列入IARC、NTP等国际权威机构的致癌物名单。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
+      <ecological_toxicity>对水生生物有毒。鱼类LC50（96小时）：约0.1-10mg/L（因具体品种而异）；水蚤EC50（48小时）：约0.5-5mg/L；藻类EC50（72小时）：约1-20mg/L。对蜜蜂高毒，应避免在蜜蜂活动期使用。对鸟类低毒至中等毒性。</ecological_toxicity>
+      <biodegradability>在环境中易降解，主要通过水解和微生物降解作用分解。在土壤中的半衰期一般为数天至数周，受土壤pH值、温度、湿度等环境因素影响。</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <bioaccumulation>辛醇/水分配系数（log Kow）约为3.5，具有中等生物富集潜力，但在生物体内的代谢较快，不易在食物链中高度富集。</bioaccumulation>
+      <other_harmful_effects>避免该物质进入水体、土壤和大气。使用时应注意保护环境，防止对非靶标生物造成危害。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>属于危险废物，废物类别为HW04农药废物，具有毒性，需按照危险废物进行管理。</waste_properties>
+      <disposal_method>建议用焚烧法处置，焚烧温度应不低于1100℃，并配备二次燃烧室。焚烧炉排出的气体要通过洗涤器除去酸性气体和有害物质。也可采用化学分解法处理。处置前应与相关环保部门联系，获得许可后交由有资质的危险废物处理单位进行处置。必须按照《国家危险废物名录》和《危险废物经营许可证管理办法》的要求进行处置。</disposal_method>
+      <disposal_precautions>处置前应彻底清洗容器，确保无残留物。处置过程中应佩戴适当的个人防护装备（防毒面具、防护服、防护手套），避免直接接触。处置场所应保持良好通风，远离火源和热源。严禁随意倾倒或排放到环境中。废弃包装物应作为危险废物一并处理，不得重复使用。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <dangerous_goods_number>UN编号：2758（有毒固态氨基甲酸酯农药）</dangerous_goods_number>
+      <un_number>UN 2758</un_number>
+      <imdg_page>IMDG Code第6.1类</imdg_page>
+      <packaging_mark>第6.1类毒害品标志</packaging_mark>
+      <packing_group>II类包装</packing_group>
+      <packaging_method>使用符合UN标准的II类包装容器。包装容器应密封完好，标签清晰。</packaging_method>
+      <transportation_precautions>运输时应远离火源、热源。运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、酸类、碱类、食品、饲料等混装混运。运输途中应防暴晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>1. 国内法规：《中华人民共和国农药管理条例》（1997年5月8日起施行，最新修订于2022年）、《危险化学品安全管理条例》（国务院令第591号）、《中华人民共和国职业病防治法》、《中华人民共和国环境保护法》等。2. 国际法规：欧盟REACH法规（化学品注册、评估、授权和限制法规，EC No 1907/2006）、美国TSCA法案（有毒物质控制法案，Toxic Substances Control Act）等。3. 本产品属于氨基甲酸酯类杀虫剂，应严格按照农药标签标注的使用范围、使用方法和剂量、使用技术要求和注意事项使用，不得扩大使用范围、加大用药剂量或改变使用方法。4. 生产、经营和使用本产品必须取得相应的农药登记证、生产许可证和经营许可证。5. 运输和储存必须符合危险化学品安全管理相关规定。6. 本产品列入《危险化学品目录（2022年调整版）》，序号：1113。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standard>本MSDS依据GB/T 16483-2008《化学品安全技术说明书 内容和项目顺序》和GB/T 17519-2013《化学品安全技术说明书编写指南》编制。</preparation_standard>
+      <revision_notes>本MSDS为初次编制。</revision_notes>
+      <abbreviations>无资料</abbreviations>
+      <references>参考了氨基甲酸酯类杀虫剂相关技术资料和安全数据。</references>
+    </other_info>
   </msds>
 </msds_list>

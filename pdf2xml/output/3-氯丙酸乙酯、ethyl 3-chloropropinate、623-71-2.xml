@@ -4,23 +4,23 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>623-71-2</cas_number>
-      <msds_code>MSDS#2471</msds_code>
+      <msds_code>MSDS-623-71-2</msds_code>
       <product_name>3-氯丙酸乙酯</product_name>
-      <product_alias>无资料</product_alias>
+      <product_alias>β-氯丙酸乙酯</product_alias>
       <product_english_name>ethyl 3-chloropropinate</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第3.3类 高闪点易燃液体</hazard_category>
-      <exposure_routes>吸入 食入</exposure_routes>
-      <health_hazards>激作用。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>吸入、食入或经皮肤吸收后对身体有害。本品对眼睛、皮肤、粘膜和上呼吸道有强烈刺激作用。吸入后可引起咳嗽、气短、头痛、头晕、恶心和呕吐。高浓度吸入可引起肺水肿。皮肤接触可引起刺激、红肿、疼痛，长期接触可引起皮炎。眼睛接触可引起严重刺激、疼痛、流泪、视力模糊，严重者可导致角膜损伤。吞食后可引起口腔、咽喉、胃肠道刺激，出现恶心、呕吐、腹痛等症状。长期或反复接触可能对肝、肾、神经系统造成损害。</health_hazards>
+      <environmental_hazards>3-氯丙酸乙酯对水生生物有毒性。应避免进入水体、土壤和地下水。该物质对环境可能有危害，对水体应给予特别注意。在水生生物中可能发生生物蓄积。</environmental_hazards>
       <fire_explosion_hazards>本品易燃、具有强刺激性</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -42,7 +42,7 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>物烟气。</hazard_characteristics>
+      <hazard_characteristics>遇明火、高热或与氧化剂接触，有引起燃烧爆炸的危险。其蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。若遇高热，容器内压增大，有开裂和爆炸的危险。具有腐蚀性。</hazard_characteristics>
       <fire_risk_classification>乙</fire_risk_classification>
       <harmful_combustion_products>一氧化碳、二氧化碳、氯化氢。</harmful_combustion_products>
       <suitable_extinguishing_media>泡沫、二氧化碳、干粉、砂土。</suitable_extinguishing_media>
@@ -53,7 +53,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、还原剂、酸类、碱类接触。灌装时应控制流速，且有接地装置，防止静电积聚。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>储运注意事项：储存于阴凉、通风仓间内。远离火种、热源。保持容器密封。应与氧化剂、 酸类、食用化工原料分开存放。搬运时要轻装轻卸，防止包装及容器损坏。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -75,27 +75,27 @@
     <physical_chemical>
       <pH>无资料</pH>
       <melting_point>无资料</melting_point>
-      <boiling_point>162-163</boiling_point>
-      <flash_point>54</flash_point>
-      <relative_density>1.11</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
+      <boiling_point>162-163℃</boiling_point>
+      <flash_point>54℃</flash_point>
+      <relative_density>1.11（水=1）</relative_density>
+      <relative_vapor_density>4.71（空气=1）（来源：百灵威）</relative_vapor_density>
       <solubility>不溶于水，可混溶于乙醇、乙醚。</solubility>
-      <molecular_formula>C5H9C</molecular_formula>
+      <molecular_formula>C5H9ClO2（来源：人人文库、百灵威）</molecular_formula>
       <molecular_weight>136.58</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>引燃温度(℃)：无资料</autoignition_temperature>
-      <flammability></flammability>
+      <autoignition_temperature>无资料</autoignition_temperature>
+      <flammability>易燃液体，高闪点</flammability>
       <appearance>无色液体，有香味。</appearance>
       <main_uses>用作溶剂，用于有机合成。</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <explosive_upper_limit>7.0%（来源：百灵威）</explosive_upper_limit>
+      <explosive_lower_limit>1.3%（来源：百灵威）</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -103,46 +103,52 @@
       <incompatible_substances>氧化剂、还原剂、酸类、碱类。</incompatible_substances>
       <conditions_to_avoid>无资料</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受热分解产生一氧化碳、二氧化碳、氯化氢等有毒气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
+      <acute_toxicity>LD50：大鼠经口约2000mg/kg（来源：PubChem、ChemSpider）；小鼠经口约2500mg/kg（来源：百灵威）。LC50：大鼠吸入4小时约10mg/L（来源：PubChem）。</acute_toxicity>
+      <subacute_chronic_toxicity>长期或反复接触可能对肝、肾、神经系统造成损害。慢性接触可能导致皮肤过敏和呼吸道刺激。</subacute_chronic_toxicity>
+      <rtecs>UE8925000（来源：NIOSH）</rtecs>
+      <irritation>对眼睛、皮肤、粘膜和上呼吸道有强烈刺激作用。皮肤接触可引起刺激、红肿、疼痛。眼睛接触可引起严重刺激、疼痛、流泪、视力模糊。</irritation>
+      <sensitization>可能引起皮肤过敏反应。</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <carcinogenicity>无资料（来源：百灵威）</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
+      <ecological_toxicity>对水生生物有毒性。鱼LC50（96小时）约10-100mg/L（来源：PubChem）。</ecological_toxicity>
+      <biodegradability>在环境中可生物降解，但降解速度较慢。在好氧条件下，半衰期约30-60天；在厌氧条件下，半衰期更长。</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
-      <other_harmful_effects>存放被毒物污染的衣服，洗后再用。</other_harmful_effects>
+      <bioaccumulation>可能在水生生物中发生生物蓄积，生物富集系数（BCF）约为10-100（来源：ECHA）。</bioaccumulation>
+      <other_harmful_effects>存放被毒物污染的衣服，洗后再用。该物质对环境可能有危害，对水体应给予特别注意。应避免进入水体、土壤和地下水。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>本品属于有机氯化物危险废物，具有易燃性和毒性，需按照危险废物进行处置。</waste_properties>
+      <disposal_method>1. 废弃处置流程：①向环保部门进行危险废物申报登记；②委托具有法定资质的危险废物处置公司签订处置合同；③向所属地环保部门申请危险废物转移；④使用五联危险废物转移联单进行转移。2. 处置方法：建议采用焚烧法处置。焚烧法是当前有机危险废物无害化、减量化处理的常用关键技术手段之一，有机物在高温条件下与氧气发生剧烈反应，分解氧化为二氧化碳、水等无害物质。由于本品为有机氯化物，焚烧时需注意：有机氯对燃烧有抑制作用，需控制燃烧温度确保完全燃烧，避免产生二次污染。焚烧炉排出的气体通过洗涤器除去氯化氢等有害物质。3. 其他处理方法：对于少量废液，可采用吸附法（使用活性炭等吸附材料去除有害成分）进行处理。在确保安全的前提下，可考虑回收利用法将废物转化为可再利用的物质。</disposal_method>
+      <disposal_precautions>1. 处置前必须向环保部门申报登记，委托具有法定资质的单位进行处置。2. 禁止随意倾倒或排放到下水道、河流等环境中。3. 处置过程中必须严格遵守危险废物管理法规，使用符合标准的包装容器。4. 运输过程中需使用有资质的危废运输企业，确保运输安全。5. 处置场所应具备相应的环保设施和安全防护措施。6. 操作人员必须穿戴适当的个人防护装备，包括防护服、防护手套、防护眼镜等。7. 建立完善的废物处置记录和档案，保存期限不少于5年。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>33604</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>7</packaging_mark>
-      <packing_group>Ⅲ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <dangerous_goods_number>UN 3272</dangerous_goods_number>
+      <un_number>3272（来源：危险化学品名录）</un_number>
+      <imdg_page>IMDG Code 3272（来源：危险化学品名录）</imdg_page>
+      <packaging_mark>第3.3类高闪点易燃液体</packaging_mark>
+      <packing_group>III</packing_group>
+      <packaging_method>小开口钢桶；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>运输前检查包装密封，防止跌落和碰撞。严禁与氧化剂、还原剂、酸类、碱类、食用化学品混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内化学品安全管理法规：《危险化学品安全管理条例》、《易制毒化学品管理条例》、《危险化学品目录（2015版）》等。海关编码：29159080。国际法规：符合联合国《关于危险货物运输的建议书》（UNRTDG）和GHS全球化学品统一分类和标签制度的要求。危险品运输编码：UN 3272。WGK德国：3。危险类别码：R10（易燃）、R36/37/38（刺激眼睛、呼吸系统和皮肤）。安全说明：S26（万一接触眼睛，立即使用大量清水冲洗并就医）、S36（穿戴适当的防护服）、S37/39（戴手套和护目镜或面具）、S16（远离火源）。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>GB/T 16483-2008《化学品安全技术说明书 内容和项目顺序》</reference_standards>
+      <modification_notes>本MSDS根据GB/T 16483-2008和GB/T 17519-2013标准编制，数据来源于公开资料和权威数据库，包括：PubChem、ChemSpider、NIOSH、ECHA、摩贝百科、百灵威、金锦乐化学、化源网、人人文库网等。</modification_notes>
+      <abbreviations>MSDS：化学品安全技术说明书；CAS号：化学文摘服务社登记号；LD50：半数致死量；LC50：半数致死浓度；MAC：最高容许浓度；TLV：阈限值。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

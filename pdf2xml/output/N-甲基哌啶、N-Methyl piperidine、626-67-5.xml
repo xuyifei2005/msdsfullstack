@@ -4,22 +4,22 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>626-67-5</cas_number>
-      <msds_code>MSDS#1132</msds_code>
+      <msds_code>MSDS-626-67-5</msds_code>
       <product_name>N-甲基哌啶</product_name>
       <product_alias>N-甲基六氢吡啶；1-甲基哌啶</product_alias>
       <product_english_name>N-Methyl piperidine</product_english_name>
-      <company_name>高纯化工有限公司</company_name>
-      <company_address>江苏省南京市化工园区创新路168号</company_address>
-      <contact_phone>025-88888888</contact_phone>
-      <emergency_phone>025-99999999</emergency_phone>
-      <email>info@gaochunchem.com</email>
-      <fax_number>025-77777777</fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第3.2类 中闪点易燃液体</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards></health_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>误服、吸入或与皮肤接触对身体有害。本品对眼睛、皮肤和粘膜有刺激性。</health_hazards>
       <environmental_hazards>无资料</environmental_hazards>
       <fire_explosion_hazards>本品易燃、具有刺激性</fire_explosion_hazards>
     </hazard_info>
@@ -73,29 +73,29 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
+      <pH>12 (100g/l， H2O， 20℃)</pH>
+      <melting_point>-50</melting_point>
       <boiling_point>106～107</boiling_point>
       <flash_point>3</flash_point>
       <relative_density>0.82</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <relative_vapor_density>3.4</relative_vapor_density>
+      <solubility>与水混溶，可混溶于醇、醚</solubility>
       <molecular_formula>C6H13N</molecular_formula>
-      <molecular_weight>99.2</molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <molecular_weight>99.17</molecular_weight>
+      <main_components>纯品</main_components>
+      <saturated_vapor_pressure>3.57kPa(20℃)</saturated_vapor_pressure>
+      <log_kow>1.15</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>易燃液体</flammability>
       <appearance>无色液体。</appearance>
       <main_uses>用于有机合成。</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <explosive_upper_limit>9.9</explosive_upper_limit>
+      <explosive_lower_limit>1.1</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -107,10 +107,10 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
+      <acute_toxicity>LD50：9200mg/kg（大鼠静脉）</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>TN1225000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤和粘膜有刺激性</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -118,17 +118,17 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>该物质对水生生物可能有毒性。对水环境可能造成危害。</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作现场严禁吸烟。工作后，淋浴更衣。实行就业前和定期的体检。</other_harmful_effects>
+      <other_harmful_effects>避免该物质进入环境，特别是水体系统。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>建议用焚烧法处置。在具备相关资质的危险废物焚烧设施中进行焚烧处理，确保完全燃烧。焚烧过程中应配备尾气处理设施，防止氮氧化物等有害气体排放。</disposal_method>
+      <disposal_precautions>废弃物处置必须委托有资质的单位进行。处置前应咨询当地环保部门，了解相关法规要求。严禁随意倾倒或排放。处置过程中应采取适当的防护措施，避免接触和吸入。容器和包装材料应按照危险废物管理规定进行处理。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -137,12 +137,12 @@
       <imdg_page>3260</imdg_page>
       <packaging_mark>7</packaging_mark>
       <packing_group>Ⅱ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>小开口钢桶；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外木板箱；安瓿瓶外木板箱</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与氧化剂、酸类、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。防止静电积聚。搬运时要轻装轻卸，防止包装及容器损坏。倒空的容器可能残留有害物。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：1. 《危险化学品安全管理条例》（国务院令第591号，2011年修订，2013年修正）；2. 《易制毒化学品管理条例》（国务院令第445号）；3. 《危险化学品目录》（2015版）；4. 《工作场所安全使用化学品规定》（劳部发[1996]423号）。国际法规：1. 联合国《关于危险货物运输的建议书》（TDG）；2. 欧盟《化学品注册、评估、授权和限制法规》（REACH）；3. 全球化学品统一分类和标签制度（GHS）。</regulatory_info>
     </regulatory>
     <!-- 第十六部分：其他信息 -->
     <other_info>

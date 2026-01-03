@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>98-16-8</cas_number>
-      <msds_code>MSDS#1617</msds_code>
+      <msds_code>MSDS-98-16-8</msds_code>
       <product_name>3-三氟甲基苯胺</product_name>
       <product_alias>3-氨基三氟甲苯；间三氟甲基苯</product_alias>
       <product_english_name>3-Aminobenzotrifluoride</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -108,10 +108,10 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：480mg／kg(大鼠经口)LC50：440mg／m3(大鼠吸入) 4小时</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：480mg/kg(大鼠经口)；LD50：2000mg/kg(大鼠经皮)；LC50：440mg/m3(大鼠吸入，4小时)</acute_toxicity>
+      <subacute_chronic_toxicity>长期接触可引起贫血、肝脾肿大、神经系统损害等。</subacute_chronic_toxicity>
       <rtecs>XU9180000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤、粘膜有强烈刺激作用。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -143,7 +143,13 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内化学品安全管理法规：《危险化学品安全管理条例》、《工作场所安全使用化学品规定》、《常用危险化学品的分类及标志》(GB 13690-92)等。国际法规：联合国GHS制度、欧盟REACH法规等。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>GB/T 16483-2008，GB/T 17519-2013</reference_standards>
+      <revision_notes>无资料</revision_notes>
+      <abbreviations>MAC：最高容许浓度；PC-TWA：时间加权平均容许浓度；PC-STEL：短时间接触容许浓度；TLV-TWA：阈限值-时间加权平均浓度；TLV-STEL：阈限值-短时间接触浓度；LD50：半数致死量；LC50：半数致死浓度</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

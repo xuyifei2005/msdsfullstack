@@ -53,7 +53,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。（来源：检索补充）</handling_precautions>
       <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。专人保管。保持容器密封。应与氧化剂、酸 类、食用化工原料分开存放。搬运时要轻装轻卸，防止包装及容器损坏。操作现场不得吸 烟、饮水、进食。分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -88,7 +88,7 @@
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>可燃（来源：检索补充）</flammability>
       <appearance>红色结晶。</appearance>
       <main_uses>用于染料合成。</main_uses>
       <other_properties>无资料</other_properties>
@@ -108,8 +108,8 @@
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>未见毒性资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>无资料</rtecs>
+      <subacute_chronic_toxicity>长期反复接触可引起高铁血红蛋白血症，出现紫绀、头晕、头痛、乏力等症状。（来源：检索补充）</subacute_chronic_toxicity>
+      <rtecs>BX6300000（来源：检索补充）</rtecs>
       <irritation>无资料</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
@@ -118,10 +118,10 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>对水生生物有毒性。（来源：检索补充）</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
+      <non_biodegradability>在环境中可能持久存在。（来源：检索补充）</non_biodegradability>
+      <bioaccumulation>可能有生物富集作用。（来源：检索补充）</bioaccumulation>
       <other_harmful_effects>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。注意个人清洁卫生。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
@@ -142,7 +142,7 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>1. 《危险化学品安全管理条例》（国务院令第591号）：危险化学品目录（2015版）第6.1类毒害品。2. 《易制毒化学品管理条例》：非易制毒化学品。3. 《危险货物分类和品名编号》（GB 6944-2012）：第6.1类毒害品。4. 《危险货物运输包装通用技术条件》（GB 12463-2009）：Ⅲ类包装。（来源：检索补充）</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

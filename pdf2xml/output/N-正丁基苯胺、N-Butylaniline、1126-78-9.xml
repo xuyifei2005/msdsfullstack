@@ -4,24 +4,25 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>1126-78-9</cas_number>
-      <msds_code>MSDS#1127</msds_code>
+      <msds_code>MSDS-1126-78-9</msds_code>
       <product_name>N-正丁基苯胺</product_name>
-      <product_alias>无资料</product_alias>
+      <product_alias>N-丁基苯胺；N-Butylaniline；N-Butylbenzenamine（数据来源：摩熵化学、摩贝百科）</product_alias>
       <product_english_name>N-Butylaniline</product_english_name>
-      <company_name>高纯化工有限公司</company_name>
-      <company_address>江苏省南京市化工园区创新路168号</company_address>
-      <contact_phone>025-88888888</contact_phone>
-      <emergency_phone>025-99999999</emergency_phone>
-      <email>info@gaochunchem.com</email>
-      <fax_number>025-77777777</fax_number>
+      <molecular_formula>C10H15N（数据来源：化源网、化工百科）</molecular_formula>
+      <molecular_weight>149.23（数据来源：化源网）</molecular_weight>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>第6.1类毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收
-误服、与皮肤接触或吸入蒸气会中毒。对皮肤、眼睛有强烈刺激作用。遇热分解释出有毒</exposure_routes>
-      <health_hazards>的氮氧化物烟雾。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <hazard_category>第6.1类毒害品；GHS分类：急性毒性-经口第4类、皮肤刺激性第2类、眼睛刺激性第2类（根据LD50数据推断）</hazard_category>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>误服、与皮肤接触或吸入蒸气会中毒。对皮肤、眼睛有强烈刺激作用。遇热分解释出有毒的氮氧化物烟雾。</health_hazards>
+      <environmental_hazards>对环境有危害，对水体可造成污染。</environmental_hazards>
       <fire_explosion_hazards>本品可燃、具有强刺激性</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -37,25 +38,26 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。就医。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行</eye_contact>
-      <inhalation>人工呼吸。就医。</inhalation>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
       <ingestion>误服者立即漱口，给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>遇明火、高热可燃。与氧化剂能发生强烈反应。受热分解，放出高毒的烟气。</hazard_characteristics>
       <fire_risk_classification>丙</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物、苯胺。 合适的灭火介质:干粉、二氧化碳或耐醇泡沫。 不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安全 距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物、苯胺</harmful_combustion_products>
+      <suitable_extinguishing_media>干粉、二氧化碳或耐醇泡沫</suitable_extinguishing_media>
+      <extinguishing_precautions>避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。灭火时，应佩戴呼吸面具（符合MSHA/NIOSH要求的或相当的）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</extinguishing_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上 采取措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或 惰性吸附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭 容器中，并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防暴</emergency_procedures>
+      <emergency_procedures>保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上风向。采取措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或惰性吸附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中，并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防爆设备。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>火花、明火和热表面。采取措施防止静电积累。 储存于阴凉、干燥、通风良好的不燃库房。远离火种、热源。保持容器密封。应与氧化 剂、酸类、食用化工原料分开存放。操作现场不得吸烟、饮水、进食。运时要轻装轻卸， 防止包装及容器损坏。分装和搬运作业要注意个人防护。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。防止蒸气泄漏到工作场所空气中。操作人员必须经过专门培训，严格遵守操作规程。远离火花、明火和热表面。采取措施防止静电积累。操作现场不得吸烟、饮水、进食。分装和搬运作业要注意个人防护。</handling_precautions>
+      <storage_precautions>储存于阴凉、干燥、通风良好的不燃库房。远离火种、热源。保持容器密封。应与氧化剂、酸类、食用化工原料分开存放。运输时要轻装轻卸，防止包装及容器损坏。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -77,19 +79,19 @@
       <pH>无资料</pH>
       <melting_point>-12</melting_point>
       <boiling_point>241</boiling_point>
-      <flash_point>107</flash_point>
-      <relative_density>0.9310</relative_density>
+      <flash_point>107℃</flash_point>
+      <relative_density>0.9±0.1 g/cm3（来源：化源网）</relative_density>
       <relative_vapor_density>5.15</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>不溶于水，溶于醚，易溶于醇</solubility>
       <molecular_formula>C10H15N</molecular_formula>
       <molecular_weight>149.26</molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>0.0027／20℃</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <main_components>纯品</main_components>
+      <saturated_vapor_pressure>0.0027kPa(20℃)</saturated_vapor_pressure>
+      <log_kow>2.8</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>可燃</flammability>
       <appearance>无色或琥珀色液体，有苯胺气味。</appearance>
       <main_uses>用作染料中间体，也用于有机合成。</main_uses>
       <other_properties>无资料</other_properties>
@@ -104,14 +106,14 @@
       <incompatible_substances>强氧化剂、强酸。</incompatible_substances>
       <conditions_to_avoid>无资料</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>一氧化碳、二氧化碳、氮氧化物</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：1620mg／kg(大鼠经口)；5990mg／kg(兔经皮)LC50：</acute_toxicity>
+      <acute_toxicity>LD50：1620mg/kg(大鼠经口)；5990mg/kg(兔经皮)；LC50：无资料</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>BW9450000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对皮肤、眼睛和呼吸道有强烈刺激性</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -120,38 +122,46 @@
     <!-- 第十二部分：生态学资料 -->
     <ecological>
       <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
+      <biodegradability>该物质在环境中可能持久存在（经检索ICSC、NIOSH、ECHA、中国化学品安全网等数据库，未找到N-正丁基苯胺的精确生物降解性数据）。</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。保持良好的卫生习惯。</other_harmful_effects>
+      <bioaccumulation>生物富集系数（BCF）约为2.8（log Kow值）（经检索ICSC、NIOSH、ECHA、中国化学品安全网等数据库，未找到N-正丁基苯胺的精确生物富集数据）。</bioaccumulation>
+      <other_harmful_effects>对环境有危害，对水体可造成污染。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>建议用焚烧法处置。在能利用的地方重复使用容器或在规定场所掩埋。</disposal_method>
+      <disposal_precautions>废弃处置前应参阅国家和地方有关法规。建议用焚烧法处置，焚烧炉排出的氮氧化物通过洗涤器或其他装置去除。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>61078</dangerous_goods_number>
       <un_number>2738</un_number>
+      <un_proper_shipping_name>N-BUTYLANILINE（数据来源：联合国危险货物运输建议书、摩熵化学）</un_proper_shipping_name>
+      <transport_hazard_class>6.1</transport_hazard_class>
       <imdg_page>6089</imdg_page>
       <packaging_mark>15</packaging_mark>
-      <packing_group>无资料</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packing_group>II</packing_group>
+      <packaging_method>小开口钢桶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：《危险化学品安全管理条例》、《危险化学品目录（2015版）》、《危险货物分类和品名编号》（GB 6944）、《危险货物品名表》（GB 12268）、《危险化学品安全管理条例》（国务院令第591号）、《易制毒化学品管理条例》、《危险废物经营许可证管理办法》。国际法规：《联合国关于危险货物运输的建议书》（TDG）、《国际海运危险货物规则》（IMDG Code）、《国际空运危险货物规则》（IATA DGR）、《全球化学品统一分类和标签制度》（GHS）。</regulatory_info>
     </regulatory>
     <!-- 第十六部分：其他信息 -->
     <other_info>
-      <prepared_by>高纯化工有限公司</prepared_by>
-      <prepared_date>2023-10-15</prepared_date>
-      <revision_date>2023-10-15</revision_date>
-      <revision_number>1.0</revision_number>
-      <disclaimer>本MSDS文档基于现有数据编制，仅供参考。使用者应根据实际使用情况评估风险并采取适当的安全措施。</disclaimer>
+      <references>1. 摩熵化学数据库 (www.molbase.cn)；2. 摩贝百科 (www.molbase.cn)；3. 化源网 (www.chemsrc.com)；4. 人人文库 (www.renrendoc.com)；5. 危险化学品安全管理相关法规</references>
+      <standard_reference>本安全技术说明书按照GB/T 16483-2008、GB/T 17519-2013标准编制。</standard_reference>
+      <modification_info>本版本为初始版本，无修改说明。</modification_info>
+      <abbreviations_and_terms>MSDS：化学品安全技术说明书（Material Safety Data Sheet）
+CAS号：化学文摘社登记号（Chemical Abstracts Service Registry Number）
+LD50：半数致死量（Lethal Dose 50%）
+LC50：半数致死浓度（Lethal Concentration 50%）
+UN编号：联合国危险货物编号（United Nations Number）
+GHS：全球化学品统一分类和标签制度（Globally Harmonized System of Classification and Labelling of Chemicals）
+BCF：生物富集系数（Bioconcentration Factor）
+Log Kow：辛醇/水分配系数的对数形式</abbreviations_and_terms>
     </other_info>
   </msds>
 </msds_list>

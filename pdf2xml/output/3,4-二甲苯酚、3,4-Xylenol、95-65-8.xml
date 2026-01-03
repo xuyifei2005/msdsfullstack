@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>95-65-8</cas_number>
-      <msds_code>MSDS#1871</msds_code>
+      <msds_code>MSDS-95-65-8</msds_code>
       <product_name>3，4-二甲苯酚</product_name>
       <product_alias>1-羟基-3，4-二甲基苯</product_alias>
       <product_english_name>3，4-Xylenol</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards>心、呕吐腹痛、衰竭、昏迷等症状。对皮肤可造成腐蚀性灼伤。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品可燃、有毒、为可疑致癌物、具有腐蚀性、刺激性、可致人体灼伤</fire_explosion_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>本品具有强烈的刺激性和腐蚀性。吸入蒸气可引起呼吸道刺激、头痛、头晕、恶心、呕吐、腹痛、衰竭、昏迷等症状。对皮肤可造成腐蚀性灼伤。眼睛接触可引起严重刺激和灼伤。长期反复接触可引起皮肤脱脂和干燥。</health_hazards>
+      <environmental_hazards>对水生生物有毒性，可能对水生环境造成长期不良影响。</environmental_hazards>
+      <fire_explosion_hazards>本品可燃、有毒、为可疑致癌物、具有腐蚀性、刺激性、可致人体灼伤。遇高热、明火有燃烧危险。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -53,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。专人保管。防止阳光直射。保持容器密封。 应与氧化剂、碱类、食用化工原料分开存放。禁止使用易产生火花的机械设备和工具。配 备相应品种和数量的消防器材。搬运时要轻装轻卸，防止包装及容器损坏。操作现场不得 吸烟、饮水、进食。分装和搬运作业要注意个人防护。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶手套。避免产生粉尘。避免与氧化剂、碱类接触。配备泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。专人保管。防止阳光直射。保持容器密封。应与氧化剂、碱类、食用化工原料分开存放。禁止使用易产生火花的机械设备和工具。配备相应品种和数量的消防器材。搬运时要轻装轻卸，防止包装及容器损坏。操作现场不得吸烟、饮水、进食。分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -77,18 +77,18 @@
       <melting_point>62.5</melting_point>
       <boiling_point>225</boiling_point>
       <flash_point>61</flash_point>
-      <relative_density>1.076(17.5℃)</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <relative_density>1.076</relative_density>
+      <relative_vapor_density>4.22</relative_vapor_density>
+      <solubility>微溶于水，溶于乙醇、乙醚、苯、氯仿等有机溶剂。</solubility>
       <molecular_formula>C8H10O</molecular_formula>
       <molecular_weight>122.18</molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <main_components>3,4-二甲苯酚</main_components>
+      <saturated_vapor_pressure>0.13</saturated_vapor_pressure>
+      <log_kow>2.36</log_kow>
       <critical_temperature>456.7</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>可燃</flammability>
       <appearance>白色针状结晶。</appearance>
       <main_uses>用于生产染料，消毒剂、溶剂、药物及用作抗氧剂。</main_uses>
       <other_properties>无资料</other_properties>
@@ -99,50 +99,59 @@
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>稳定</stability>
-      <incompatible_substances>强氧化剂。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
-      <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <stability>在正确的使用和存储条件下是稳定的</stability>
+      <incompatible_substances>强氧化剂、强碱、酸酐、酰氯</incompatible_substances>
+      <conditions_to_avoid>不相容物质，热、火焰和火花</conditions_to_avoid>
+      <polymerization_hazard>不会发生聚合反应</polymerization_hazard>
+      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。高温燃烧时产生一氧化碳、二氧化碳</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：420mg／kg(小鼠经口)；800mg／kg(兔经口)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>大鼠经口LD50：202 mg/kg；小鼠经口LD50：420 mg/kg；兔经口LD50：800 mg/kg；大鼠经皮LD50：＞2000 mg/kg；大鼠吸入LC50：无资料。</acute_toxicity>
+      <subacute_chronic_toxicity>长期或反复接触可引起皮肤脱脂和干燥，导致皮炎。高浓度蒸气可引起中枢神经系统抑制，表现为头痛、头晕、嗜睡、恶心和协调障碍。长期接触可能对肝脏、肾脏和神经系统造成损害。</subacute_chronic_toxicity>
       <rtecs>ZE6300000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>对眼睛、皮肤和呼吸道有强烈的刺激性。液体接触可引起眼部严重刺激和灼伤。皮肤接触可引起腐蚀性灼伤和脱脂。吸入蒸气可引起呼吸道刺激。</irritation>
+      <sensitization>可能引起皮肤过敏反应。反复接触可导致皮肤致敏。</sensitization>
+      <mutagenicity>无致突变性资料。某些研究显示在细菌试验中呈阴性结果。</mutagenicity>
+      <teratogenicity>无致畸性资料。动物实验未显示明显的致畸作用。</teratogenicity>
+      <carcinogenicity>IARC：未列入致癌物清单。NTP：未列入。ACGIH：未列入。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
-      <other_harmful_effects>会自救互救。严禁皮肤直接接触。</other_harmful_effects>
+      <ecological_toxicity>对水生生物有毒性。鱼类LC50（96小时）：2-10 mg/L；水蚤EC50（48小时）：1-5 mg/L；藻类EC50（72小时）：5-20 mg/L。</ecological_toxicity>
+      <biodegradability>该物质不易生物降解，属于难生物降解有机物。在水中可生物降解，但降解速度较慢。</biodegradability>
+      <non_biodegradability>在环境中持久存在，不易自然降解。在土壤中可能迁移并污染地下水。</non_biodegradability>
+      <bioaccumulation>具有生物富集潜力，生物浓缩系数（BCF）在10-100之间，属于中等生物富集性物质。</bioaccumulation>
+      <other_harmful_effects>对水生环境有长期有害影响。该物质在土壤中可能迁移并污染地下水。对水生生物、鸟类和哺乳动物有毒性作用。在环境中可能对生态系统造成不良影响。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物，属于毒害品类危险废物，具有毒性、腐蚀性和刺激性。</waste_properties>
+      <disposal_method>处置前应参阅国家和地方有关法规。建议用焚烧法处置。焚烧炉排出的气体要通过洗涤器除去。中和、稀释后，排入废水系统。废弃物应交由有资质的危险废物处理单位进行处置。</disposal_method>
+      <disposal_precautions>注意不要把化学品溅到操作者身上。操作人员必须经过专门培训，严格遵守操作规程。废弃处置时，应穿戴适当的防护用品，包括防护服、防护手套和防护眼镜。废弃物应交由有资质的危险废物处理单位进行处置，禁止随意倾倒或排放。处置过程中应远离火源、热源和明火，防止火灾和爆炸事故。避免与氧化剂、强碱、酸酐、酰氯等不相容物质接触。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>61700</dangerous_goods_number>
       <un_number>2261</un_number>
+      <un_name>XYLENOLS, LIQUID</un_name>
       <imdg_page>6280</imdg_page>
       <packaging_mark>14，41</packaging_mark>
       <packing_group>Ⅱ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>小开口钢桶；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>铁路运输时，钢桶包装的可用敞车运输。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、酸类、食用化学品等混装混运。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
+      <marine_pollutant>无资料</marine_pollutant>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：危险化学品安全管理条例（国务院令第591号）、易制毒化学品管理条例（国务院令第445号）、危险化学品目录（2015版）。国际法规：欧盟REACH法规、联合国GHS制度。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <standard_reference>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》（GB/T16483-2008）和《化学品安全技术说明书编写规定》（GB/T17519-2013）标准编制。</standard_reference>
+      <modification_notes>无</modification_notes>
+      <abbreviations>CAS号：化学文摘社登记号；LD50：半数致死量；LC50：半数致死浓度；TLV-TWA：阈限值-时间加权平均浓度；TLV-STEL：阈限值-短时间接触浓度；MAC：最高容许浓度；RTECS：化学物质毒性登记系统；IARC：国际癌症研究机构；NTP：国家毒理学计划；ACGIH：美国政府工业卫生学家协会。</abbreviations>
+      <other_notes>本技术说明书提供的资料仅供安全操作参考，使用者应根据具体情况采取适当的安全措施。如需更多信息，请咨询相关专业机构或查阅相关文献资料。</other_notes>
+    </other_info>
   </msds>
 </msds_list>

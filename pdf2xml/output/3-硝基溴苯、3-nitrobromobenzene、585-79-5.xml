@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>585-79-5</cas_number>
-      <msds_code>MSDS#1671</msds_code>
+      <msds_code>MSDS-585-79-5</msds_code>
       <product_name>3-硝基溴苯</product_name>
       <product_alias>间硝基溴苯；间溴硝基苯</product_alias>
       <product_english_name>3-nitrobromobenzene</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -127,7 +127,7 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品安全管理条例（国务院令第591号），危险化学品目录（2015版），易制毒化学品管理条例，剧毒化学品购买和运输管理办法。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

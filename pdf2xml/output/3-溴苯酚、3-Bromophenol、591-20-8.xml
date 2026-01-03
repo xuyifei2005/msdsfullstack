@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>591-20-8</cas_number>
-      <msds_code>MSDS#1635</msds_code>
+      <msds_code>MSDS-591-20-8</msds_code>
       <product_name>3-溴苯酚</product_name>
-      <product_alias>间溴苯酚</product_alias>
+      <product_alias>间溴苯酚；3-溴(苯)酚</product_alias>
       <product_english_name>3-Bromophenol</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
       <health_hazards>吸入、摄入或经皮肤吸收后会中毒。对眼睛、皮肤、粘膜和上呼吸道有强烈的刺激作用。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品可燃、具有强刺激性</fire_explosion_hazards>
+      <environmental_hazards>对水生生物有毒。（来源：检索补充）</environmental_hazards>
+      <fire_explosion_hazards>遇明火、高热可燃。受热分解产生有毒的溴化氢气体。（来源：检索补充）</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -53,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。专人保管。保持容器密封。应与氧化剂、酸 类、食用化工原料分开存放。操作现场不得吸烟、饮水、进食。搬运时要轻装轻卸，防止 包装及容器损坏。分装和搬运作业要注意个人防护。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。防止粉尘释放到车间空气中。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴防尘面具（全面罩），穿胶布防毒衣，戴橡胶手套。避免吸入粉尘/烟/气体/烟雾/蒸气/喷雾。操作后彻底清洁皮肤。（来源：检索补充）</handling_precautions>
+      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。专人保管。保持容器密封。应与氧化剂、酸类、食用化工原料分开存放。操作现场不得吸烟、饮水、进食。搬运时要轻装轻卸，防止包装及容器损坏。分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -73,13 +73,15 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <melting_point></melting_point>
-      <boiling_point></boiling_point>
-      <flash_point></flash_point>
-      <relative_density></relative_density>
-      <solubility></solubility>
-      <molecular_formula></molecular_formula>
-      <molecular_weight></molecular_weight>
+      <appearance>白色至黄色结晶。（来源：检索补充）</appearance>
+      <ph_value>无资料</ph_value>
+      <melting_point>30-33℃（来源：检索补充）</melting_point>
+      <boiling_point>236℃（来源：检索补充）</boiling_point>
+      <flash_point>>110℃（来源：检索补充）</flash_point>
+      <relative_density>1.63 g/cm³（来源：检索补充）</relative_density>
+      <solubility>微溶于水，溶于乙醇、氯仿、乙醚、碱溶液。（来源：检索补充）</solubility>
+      <molecular_formula>C6H5BrO（来源：检索补充）</molecular_formula>
+      <molecular_weight>173.01（来源：检索补充）</molecular_weight>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -91,10 +93,10 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>未见毒性资料LD50： -LC50：</acute_toxicity>
+      <acute_toxicity>LD50：522mg/kg(大鼠经口)；LD50：无资料(大鼠经皮)；LC50：无资料(大鼠吸入)。（来源：检索补充）</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤、黏膜和上呼吸道有强烈的刺激作用。（来源：检索补充）</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -102,7 +104,7 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>对水生生物有毒。（来源：检索补充）</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
@@ -111,22 +113,28 @@
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>按照地方/区域/国家/国际规章处置内装物/容器。建议用焚烧法处置。（来源：检索补充）</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废物处置应符合环保要求。（来源：检索补充）</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>61710</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <un_number>2811（来源：检索补充）</un_number>
       <imdg_page>无资料</imdg_page>
       <packaging_mark>14</packaging_mark>
       <packing_group>Ⅲ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>小开口钢桶；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。（来源：检索补充）</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。车辆运输完毕应进行彻底清扫。公路运输时要按规定路线行驶，禁止在居民区和人口稠密区停留。铁路运输时要禁止溜放。（来源：检索补充）</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <compilation_standard>本说明书按照GB/T 16483-2008、GB/T 17519-2013标准编制。（来源：标准补充）</compilation_standard>
+      <modification_notes>无资料</modification_notes>
+      <abbreviations_and_terms>MSDS：化学品安全技术说明书（Material Safety Data Sheet）；CAS号：化学文摘社登记号；GHS：全球化学品统一分类和标签制度；LD50：半数致死量；LC50：半数致死浓度。（来源：标准补充）</abbreviations_and_terms>
+    </other_info>
   </msds>
 </msds_list>

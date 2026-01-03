@@ -4,7 +4,7 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>120-71-8</cas_number>
-      <msds_code>MSDS#2161</msds_code>
+      <msds_code>MSDS-120-71-8</msds_code>
       <product_name>3-甲基-6-甲氧基苯胺</product_name>
       <product_alias>邻氨基对甲苯甲醚</product_alias>
       <product_english_name>3-methyl-6-methoxyaniline</product_english_name>
@@ -18,8 +18,7 @@
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入
-有毒。对眼睛、皮肤、粘膜和上呼吸道有刺激作用。吸收进体内，可形成高铁血红蛋白而</exposure_routes>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
       <health_hazards>致紫绀。</health_hazards>
       <environmental_hazards>无资料</environmental_hazards>
       <fire_explosion_hazards>本品可燃、有毒、具有刺激性</fire_explosion_hazards>
@@ -37,7 +36,7 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>立即脱去污染的衣物。用大量肥皂水和清水冲洗皮肤。如有不适，就医。</skin_contact>
-      <eye_contact>拉开眼睑，用流动清水冲洗15分钟。就医。 脱离现场至空气新鲜处。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</eye_contact>
+      <eye_contact>拉开眼睑，用流动清水冲洗15分钟。就医。</eye_contact>
       <inhalation>食入： 误服者，饮适量温水，催吐。就医。</inhalation>
       <ingestion>误服者，饮适量温水，催吐。就医。</ingestion>
     </first_aid>
@@ -54,7 +53,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。专人保管。保持容器密封。防潮、防晒。 应与氧化剂、食用化工原料分开存放。操作现场不得吸烟、饮水、进食。搬运时要轻装 轻卸，防止包装及容器损坏。分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -89,7 +88,7 @@
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>可燃。（来源：检索补充）</flammability>
       <appearance>白色针状或片状结晶。</appearance>
       <main_uses>用作染料中间体。</main_uses>
       <other_properties>无资料</other_properties>
@@ -129,7 +128,7 @@
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
       <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废弃物应交由有资质的危险废物处理单位处置。（来源：检索补充）</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -139,11 +138,11 @@
       <packaging_mark>15</packaging_mark>
       <packing_group>Ⅲ</packing_group>
       <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与氧化剂、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。（来源：检索补充）</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品安全管理条例（国务院令第591号），工作场所安全使用化学品规定（〔1996〕劳部发423号），危险化学品目录（2015版）。（来源：检索补充）</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

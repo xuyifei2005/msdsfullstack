@@ -4,25 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>937-14-4</cas_number>
-      <msds_code>无资料 无资料</msds_code>
-      <product_name>3-氯苯过氧甲酸[含量≤57%,惰性</product_name>
-      <product_alias>无资料</product_alias>
-      <product_english_name>3-chloroperoxybenzoicacid(no</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <msds_code>MSDS-937-14-4</msds_code>
+      <product_name>3-氯苯过氧甲酸[含量≤57%,惰性固体含量≤3%,含水≥40%]</product_name>
+      <product_alias>间氯过氧苯甲酸；mCPBA</product_alias>
+      <product_english_name>3-chloroperoxybenzoic acid (not more than 57%, and inert solid not more than 3%, and water not less than 40%)</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>有机过氧化物，D型。</hazard_category>
-      <exposure_routes>吸入、食入、皮肤接触、眼睛接触
-吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <hazard_category>第5.2类有机过氧化物，D型。</hazard_category>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入可能引起化学灼伤、胃肠道刺激。对皮肤、眼睛和呼吸道有刺激作用。</health_hazards>
+      <environmental_hazards>该物质可能对水生生物有害。</environmental_hazards>
+      <fire_explosion_hazards>接触火焰可能会产生膨胀或爆炸性分解。受热分解产生有毒气体。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -37,25 +36,25 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。就医。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行</eye_contact>
-      <inhalation>人工呼吸。就医。</inhalation>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
       <ingestion>误服者立即漱口，给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>无资料 合适的灭火介质：使用适合火灾类型的合适的灭火剂。不合适的灭火介质：无特别说明。</harmful_combustion_products>
-      <suitable_extinguishing_media></suitable_extinguishing_media>
+      <hazard_characteristics>接触火焰可能会产生膨胀或爆炸性分解。受热分解产生一氧化碳、二氧化碳、氯化氢等有毒气体。</hazard_characteristics>
+      <fire_risk_classification>第5.2类有机过氧化物</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氯化氢等有毒气体</harmful_combustion_products>
+      <suitable_extinguishing_media>使用适合火灾类型的合适的灭火剂。建议使用大量水、泡沫、干粉灭火剂。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上风 应急处理： 措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或惰性吸 附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中， 并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防暴设备。</emergency_procedures>
+      <emergency_procedures>保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上风处。采取措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或惰性吸附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中，并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防暴设备。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>火花、明火和热表面。采取措施防止静电积累。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。</storage_precautions>
+      <handling_precautions>避免吸入粉尘、烟雾。操作后彻底清洗。避免与眼睛、皮肤接触。仅在通风良好的区域使用。避免所有火源，如明火、火花和热表面。采取措施防止静电积累。</handling_precautions>
+      <storage_precautions>保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远离不相容材料和食品容器的地方。避免与还原剂、酸类、碱类、有机物、易（可）燃物混储。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -64,24 +63,24 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <monitoring_method>定期监测工作场所空气中化学品浓度</monitoring_method>
+      <engineering_controls>密闭操作，提供充分的局部排风和全面通风。尽可能机械化、自动化。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时，佩戴过滤式防毒面具（半面罩）或自给式呼吸器。紧急事态抢救或撤离时，建议佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>佩戴化学护目镜（符合欧盟EN166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
+      <hand_protection>戴防化学品手套（如丁基橡胶手套、氯丁橡胶手套）。</hand_protection>
       <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
-      <boiling_point>&gt;35</boiling_point>
+      <melting_point>92～94℃（分解）</melting_point>
+      <boiling_point>&gt;35℃</boiling_point>
       <flash_point>无资料</flash_point>
-      <relative_density>无资料</relative_density>
+      <relative_density>0.56 g/cm³</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C7H5C</molecular_formula>
+      <solubility>溶于有机溶剂，如醚、醇和酮，不溶于水</solubility>
+      <molecular_formula>C7H5ClO3</molecular_formula>
       <molecular_weight>172.57</molecular_weight>
       <main_components>3-氯苯过氧甲酸</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
@@ -89,10 +88,10 @@
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
-      <other_properties>无资料</other_properties>
+      <flammability>可燃</flammability>
+      <appearance>湿润白色粉末，有轻微的刺激性气味</appearance>
+      <main_uses>可用作氧化剂，漂白剂等；广泛用于环化反应、Baeyer-Villiger反应、N-氧化反应和S-氧化</main_uses>
+      <other_properties>有腐蚀性</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
       <explosive_upper_limit>无资料</explosive_upper_limit>
@@ -100,19 +99,19 @@
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>在正确的使用和存储条件下是稳定的。</stability>
-      <incompatible_substances>无资料</incompatible_substances>
+      <stability>在正确的使用和存储条件下是稳定的。有机过氧化物，受热可能分解。</stability>
+      <incompatible_substances>还原剂、酸类、碱类、有机物、易（可）燃物</incompatible_substances>
       <conditions_to_avoid>不相容物质，热、火焰和火花。</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。</decomposition_products>
+      <polymerization_hazard>不会发生聚合</polymerization_hazard>
+      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。受热分解产生一氧化碳、二氧化碳、氯化氢等有毒气体</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>无资料</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
+      <rtecs>SD9470000</rtecs>
+      <irritation>对眼睛、皮肤、粘膜有刺激性</irritation>
+      <sensitization>可能造成皮肤过敏反应</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
       <carcinogenicity>无资料</carcinogenicity>
@@ -127,23 +126,30 @@
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物，属于有机过氧化物</waste_properties>
+      <disposal_method>应委托具有危险废物处置资质的单位进行专业处理，处置前需进行安全性评估并制定处置方案</disposal_method>
+      <disposal_precautions>处置前应进行彻底的化学稳定性评估，避免在处置过程中发生分解反应。处置过程中应采取防爆措施，远离火源和热源。处置人员应佩戴适当的个人防护装备。禁止随意倾倒或排放到环境中。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>3106</dangerous_goods_number>
-      <un_number>3106</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <dangerous_goods_number>3102</dangerous_goods_number>
+      <un_number>3102</un_number>
+      <un_proper_shipping_name>3-CHLOROPEROXYBENZOIC ACID, SOLID</un_proper_shipping_name>
+      <transport_hazard_class>5.2</transport_hazard_class>
+      <packaging_group>II</packaging_group>
+      <packaging_method>内包装：聚乙烯塑料瓶；外包装：钢桶（UN 1A1）或塑料桶（UN 1H1）</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。车辆运输完毕应进行彻底清扫。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：《危险化学品安全管理条例》、《危险化学品目录（2015版）》、《危险货物分类和品名编号》（GB 6944）、《危险货物品名表》（GB 12268）、《危险化学品安全管理条例》（国务院令第591号）、《易制毒化学品管理条例》、《危险废物经营许可证管理办法》。国际法规：《联合国关于危险货物运输的建议书》（TDG）、《国际海运危险货物规则》（IMDG Code）、《国际空运危险货物规则》（IATA DGR）、《全球化学品统一分类和标签制度》（GHS）。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <compilation_standard>GB/T 16483-2008、GB/T 17519-2013</compilation_standard>
+      <modification_info>无资料</modification_info>
+      <abbreviations>无资料</abbreviations>
+      <other_notes>无资料</other_notes>
+    </other_info>
   </msds>
 </msds_list>
