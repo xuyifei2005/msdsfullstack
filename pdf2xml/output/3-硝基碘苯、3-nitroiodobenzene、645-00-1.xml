@@ -18,10 +18,10 @@
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards>有毒。对眼睛、皮肤和粘膜有刺激作用。进入体内能形成高铁血红蛋白，导致紫绀。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品可燃、有毒、具有刺激性</fire_explosion_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>有毒。对眼睛、皮肤和粘膜有刺激作用。进入体内能形成高铁血红蛋白，导致紫绀。严重中毒者可致死。</health_hazards>
+      <environmental_hazards>该物质对环境有危害，应特别注意对水体的污染。</environmental_hazards>
+      <fire_explosion_hazards>本品可燃、有毒、具有刺激性。遇明火、高热可燃。受热分解放出有毒的烟气。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -142,7 +142,7 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品安全管理条例（国务院令第591号），工作场所安全使用化学品规定（[1996]劳部发423号），危险化学品目录（2015版），易制爆危险化学品名录（2017版），剧毒化学品目录（2015版），GB 6944-2012危险货物分类和品名编号，GB 12268-2012危险货物品名表，GB 13690-2009化学品分类和危险性公示 通则，GB 15603-1995常用化学危险品贮存通则，GB 18218-2018危险化学品重大危险源辨识，GB/T 16483-2008化学品安全技术说明书 内容和项目顺序，GB/T 17519-2013化学品安全技术说明书编写指南。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

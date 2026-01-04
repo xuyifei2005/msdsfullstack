@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>23321-74-6</cas_number>
-      <msds_code>供应商名称： 供应商地址：</msds_code>
+      <msds_code>MSDS-23321-74-6</msds_code>
       <product_name>氨基化钙</product_name>
       <product_alias>氨基钙</product_alias>
       <product_english_name>Calcium amide</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>侵入途径：</hazard_category>
-      <exposure_routes>吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards></environmental_hazards>
-      <fire_explosion_hazards></fire_explosion_hazards>
+      <hazard_category>遇水放出易燃气体的物质和混合物，类别2</hazard_category>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入本品可能引起毒害作用。本品在正常生产过程中生成的粉尘可对身体产生毒害作用。对眼睛、皮肤、粘膜和上呼吸道有刺激作用。</health_hazards>
+      <environmental_hazards>对水生生物可能有害。</environmental_hazards>
+      <fire_explosion_hazards>遇水放出易燃气体，遇明火、高热有燃烧爆炸危险。受热分解产生有毒的氮氧化物和氨气。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -36,16 +36,16 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>立即脱去污染的衣物。用大量肥皂水和清水冲洗皮肤。如有不适，就医。</skin_contact>
-      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。 立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给于吸氧。如患者食入或吸</eye_contact>
-      <inhalation>入本物质，不得进行口对口人工呼吸。如果呼吸停止。立即进行心肺复苏术。立即就医。</inhalation>
+      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。</eye_contact>
+      <inhalation>立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给于吸氧。如患者食入或吸入本物质，不得进行口对口人工呼吸。如果呼吸停止，立即进行心肺复苏术。立即就医。</inhalation>
       <ingestion>禁止催吐，切勿给失去知觉者从嘴里喂食任何东西。立即呼叫医生或中毒控制中心。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>建规火险分级：</hazard_characteristics>
-      <fire_risk_classification>有害燃烧产物：</fire_risk_classification>
-      <harmful_combustion_products>合适的灭火介质: 干粉，干砂或石灰。不合适的灭火介质: 水、二氧化碳和泡沫。灭火时，</harmful_combustion_products>
-      <suitable_extinguishing_media>应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安全距离处、 有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <hazard_characteristics>遇水放出易燃气体，遇明火、高热有燃烧爆炸危险</hazard_characteristics>
+      <fire_risk_classification>第4.3项危险物（遇水放出易燃气体的物质）</fire_risk_classification>
+      <harmful_combustion_products>氨气、氮氧化物</harmful_combustion_products>
+      <suitable_extinguishing_media>合适的灭火介质: 干粉，干砂或石灰。不合适的灭火介质: 水、二氧化碳和泡沫。灭火时，应佩戴呼吸面具（符合MSHA/NIOSH要求的或相当的）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
@@ -53,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>穿戴合适的个人防护用具。避免接触皮肤和进入眼睛。远离热源、火花、明火和热表面。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。请储存于干燥的惰性气体氛围中。</storage_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防尘口罩，戴化学安全防护眼镜，穿防静电工作服，戴橡胶手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免产生粉尘。避免与氧化剂、酸类、醇类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。</handling_precautions>
+      <storage_precautions>储存于阴凉、干燥、通风良好的库房。远离火种、热源。库温不宜超过37℃。包装要求密封，切勿受潮。应与氧化剂、酸类、醇类等分开存放，切忌混储。储区应备有合适的材料收容泄漏物。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -63,34 +63,34 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
-      <eye_protection>佩戴化学护目镜（符合欧盟EN 166或美国NIOSH标准）。</eye_protection>
-      <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
+      <monitoring_method>工作场所空气中粉尘浓度监测</monitoring_method>
+      <engineering_controls>密闭操作，提供充分的局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>空气中粉尘浓度超标时，佩戴自吸过滤式防尘口罩（半面罩）。紧急事态抢救或撤离时，建议佩戴空气呼吸器。</respiratory_protection>
+      <eye_protection>佩戴化学安全防护眼镜。</eye_protection>
+      <body_protection>穿防静电工作服。</body_protection>
+      <hand_protection>戴橡胶手套。</hand_protection>
       <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>遇水分解呈碱性</pH>
       <melting_point>无资料</melting_point>
-      <boiling_point>35</boiling_point>
+      <boiling_point>无资料</boiling_point>
       <flash_point>不适用</flash_point>
       <relative_density>无资料</relative_density>
       <relative_vapor_density>不适用</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula></molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>无资料</main_components>
+      <solubility>遇水分解</solubility>
+      <molecular_formula>Ca(NH2)2</molecular_formula>
+      <molecular_weight>72.13</molecular_weight>
+      <main_components>氨基化钙</main_components>
       <saturated_vapor_pressure>不适用</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <flammability>遇水放出易燃气体</flammability>
+      <appearance>白色结晶或粉末，有氨的气味</appearance>
+      <main_uses>用于有机合成、药物制造</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -100,17 +100,17 @@
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>在正确的使用和存储条件下是稳定的</stability>
-      <incompatible_substances>无资料</incompatible_substances>
-      <conditions_to_avoid>不相容物质，热、火焰和火花</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物</decomposition_products>
+      <incompatible_substances>强氧化剂、酸类、水、醇类</incompatible_substances>
+      <conditions_to_avoid>不相容物质，热、火焰和火花，潮湿环境</conditions_to_avoid>
+      <polymerization_hazard>不会发生聚合反应</polymerization_hazard>
+      <decomposition_products>遇水分解产生氨气和氢氧化钙，受热分解产生氨气</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <acute_toxicity>属微毒类。急性毒性数据有限。由于该物质遇水分解产生氨气，其毒性主要来自氨气。大鼠经口LD50：无资料。大鼠经皮LD50：无资料。大鼠吸入LC50：无资料。</acute_toxicity>
+      <subacute_chronic_toxicity>长期或反复接触可能引起呼吸道刺激、皮肤和眼睛刺激。由于遇水分解产生氨气，可能对呼吸系统造成慢性影响。</subacute_chronic_toxicity>
+      <rtecs>ev8040000</rtecs>
+      <irritation>对眼睛、皮肤、粘膜和上呼吸道有刺激作用。可引起眼部红肿、疼痛、流泪。皮肤接触可引起红肿、灼烧感。吸入可引起呼吸道刺激、咳嗽、呼吸困难。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -118,31 +118,36 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
+      <ecological_toxicity>该物质遇水分解产生氨气，对水生生物有毒。鱼类LC50（96小时）：0.5-5 mg/L（以氨计）。水蚤EC50（48小时）：0.5-2 mg/L（以氨计）。藻类EC50（72小时）：0.1-1 mg/L（以氨计）。对水生生物有长期影响。</ecological_toxicity>
+      <biodegradability>在环境中遇水分解为氨气和氢氧化钙。氨气在环境中可被硝化细菌转化为硝酸盐。</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <bioaccumulation>由于遇水分解，不会在生物体内显著富集。log Kow：无资料（由于遇水分解，不适用）。</bioaccumulation>
+      <other_harmful_effects>该物质遇水分解产生的氨气可导致水体pH值升高，对水生生态系统造成危害。应避免该物质进入水体、土壤和地下水系统。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险化学品废物</waste_properties>
+      <disposal_method>建议用焚烧法处置。在能利用的地方重复使用容器或在规定场所掩埋。用控制焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。废弃物处置前应参阅国家和地方有关法规。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废物容器应密封，防止受潮。处置过程中应佩戴适当的个人防护装备，避免接触和吸入。禁止将废弃物排入下水道或环境中。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <dangerous_goods_number>UN 1412</dangerous_goods_number>
+      <un_number>UN 1412</un_number>
       <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_mark>氨基化钙</packaging_mark>
+      <packing_group>II</packing_group>
+      <packaging_method>密封包装，防止受潮</packaging_method>
+      <transportation_precautions>4.3</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录（2015版）》、《危险化学品登记管理办法》。国际法规：联合国《关于危险货物运输的建议书》（TDG）、《全球化学品统一分类和标签制度》（GHS）。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>本安全技术说明书依据GB/T 16483-2008和GB/T 17519-2013标准编制。</references>
+      <other_notes>修改说明：第一版编制。缩略语和术语解释：CAS号-美国化学文摘社登记号；GHS-全球化学品统一分类和标签制度；UN-联合国；TLV-阈限值；MAC-最高容许浓度。</other_notes>
+    </other_info>
   </msds>
 </msds_list>

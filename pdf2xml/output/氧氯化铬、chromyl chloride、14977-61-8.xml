@@ -4,7 +4,7 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>14977-61-8</cas_number>
-      <msds_code>MSDS#925</msds_code>
+      <msds_code>MSDS-14977-61-8</msds_code>
       <product_name>氧氯化铬</product_name>
       <product_alias>氯化铬酰；二氯氧化铬；铬酰氯</product_alias>
       <product_english_name>chromyl chloride</product_english_name>
@@ -46,10 +46,14 @@
       <fire_risk_classification>无资料</fire_risk_classification>
       <harmful_combustion_products>氯化氢、氧化铬</harmful_combustion_products>
       <suitable_extinguishing_media>干粉、二氧化碳、干燥砂土。禁止用水。</suitable_extinguishing_media>
+      <extinguishing_precautions>消防人员必须佩戴空气呼吸器、穿全身防化服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。切勿将水流直接射入熔融液体，以免引起严重的流淌火灾或剧烈的沸溅。</extinguishing_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
       <emergency_procedures>迅速撤离泄漏污染区人员至安全区，并进行隔离，严格限制出入。建议应急处理人员戴自给正压式呼吸器，穿防酸碱工作服。不要直接接触泄漏物。尽可能切断泄漏源。防止流入下水道、排洪沟等限制性空间。小量泄漏：用砂土、干燥石灰或苏打灰混合。大量泄漏：构筑围堤或挖坑收容。在专家指导下清除。</emergency_procedures>
+      <protective_equipment>应急处理人员必须佩戴自给正压式呼吸器（全面罩），穿防酸碱工作服，戴橡胶耐酸碱手套。</protective_equipment>
+      <environmental_precautions>防止泄漏物进入下水道、地下室或限制性空间。避免污染土壤和水源。对泄漏区域进行隔离，防止扩散。</environmental_precautions>
+      <cleanup_methods>小量泄漏：用砂土、干燥石灰或苏打灰混合，收集于密闭容器中。大量泄漏：构筑围堤或挖坑收容，用泵转移至槽车或专用收集器内。在专家指导下清除。</cleanup_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
@@ -73,12 +77,12 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
+      <pH>遇水水解</pH>
       <melting_point>-96.5</melting_point>
       <boiling_point>115.7</boiling_point>
       <flash_point>无意义</flash_point>
       <relative_density>1.91</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
+      <relative_vapor_density>5.3（空气=1）</relative_vapor_density>
       <solubility>遇水水解</solubility>
       <molecular_formula>CrO2Cl2</molecular_formula>
       <molecular_weight>154.92</molecular_weight>
@@ -88,10 +92,10 @@
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无意义</ignition_temperature>
       <autoignition_temperature>无意义</autoignition_temperature>
-      <flammability>易燃</flammability>
+      <flammability>不燃</flammability>
       <appearance>深红色液体，有强烈的焦灼味，在空气中发烟。</appearance>
       <main_uses>有机合成中作氧化剂或氯化剂，及铬酸酐、铬络合物、染料的溶剂。</main_uses>
-      <other_properties>无资料</other_properties>
+      <other_properties>遇水剧烈反应，放出氯化氢烟雾。遇有机物、还原剂、醇类等易燃物可引起燃烧或爆炸。</other_properties>
       <heat_of_combustion>无意义</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
       <explosive_upper_limit>无意义</explosive_upper_limit>
@@ -107,42 +111,53 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LC50：无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：无资料；LC50：无资料</acute_toxicity>
+      <subacute_chronic_toxicity>长期反复接触可引起铬中毒，表现为皮肤溃疡、鼻中隔穿孔、支气管炎、肺炎等。可引起肾脏损害。</subacute_chronic_toxicity>
       <rtecs>GB5775000</rtecs>
       <irritation>对眼睛、皮肤和呼吸道有强烈刺激性</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <carcinogenicity>IARC：第1组（致癌物）；NTP：已知致癌物；ACGIH：A1（确认人类致癌物）</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
       <ecological_toxicity>对水生生物有剧毒，可能导致水生生态系统长期损害</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <biodegradability>在环境中不易生物降解</biodegradability>
+      <non_biodegradability>在环境中持久存在</non_biodegradability>
+      <bioaccumulation>在生物体内有中等程度的生物富集性</bioaccumulation>
+      <other_harmful_effects>对水生生物有剧毒，可能对水体环境造成长期不利影响。对土壤生物也有毒性作用。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
       <disposal_method>建议用控制焚烧法处置。焚烧炉排出的氯化氢和氧化铬气体通过洗涤器除去。处置前应参阅国家和地方有关法规。</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_precautions>处置人员必须经过专门培训，严格遵守操作规程。处置过程中应佩戴适当的防护装备。废弃物应与其他化学品分类存放，禁止随意倾倒。处置场所应配备应急处理设备和泄漏应急处理设备。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>81038</dangerous_goods_number>
       <un_number>1758</un_number>
+      <un_name>铬酰氯</un_name>
+      <transport_hazard_class>8类腐蚀性物质</transport_hazard_class>
       <imdg_page>8146</imdg_page>
       <packaging_mark>20</packaging_mark>
       <packing_group>II</packing_group>
       <packaging_method>使用密封良好的耐腐蚀容器，防止吸潮和泄漏。包装应符合相关运输规定。</packaging_method>
+      <marine_pollutant>是</marine_pollutant>
       <transportation_precautions>运输过程中应防止包装破损，避免与食品、饲料和碱类混运。运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。雨天不宜运输。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
       <regulatory_info>危险化学品安全管理条例（2002年1月26日国务院第344号令公布，自2002年3月15日起施行）</regulatory_info>
+      <international_regulations>欧盟REACH法规、美国TSCA、加拿大DSL、澳大利亚AICS、日本化审法</international_regulations>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standard>GB/T 16483-2008</preparation_standard>
+      <modification_notes>本安全技术说明书按照GB/T 16483-2008标准编制</modification_notes>
+      <abbreviations_and_terms>CAS：化学文摘社登记号；IARC：国际癌症研究机构；NTP：国家毒物计划；ACGIH：美国政府工业卫生学家协会；TLV：阈限值；MAC：最高容许浓度；LD50：半数致死量；LC50：半数致死浓度</abbreviations_and_terms>
+      <other_information>本安全技术说明书提供的信息基于现有知识和技术，仅供参考。使用者应根据实际情况采取适当的安全措施。本说明书内容如有更新，以最新版本为准。</other_information>
+    </other_info>
   </msds>
 </msds_list>

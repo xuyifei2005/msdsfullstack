@@ -4,7 +4,7 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>1335-31-5</cas_number>
-      <msds_code>MSDS#2884</msds_code>
+      <msds_code>MSDS-1335-31-5</msds_code>
       <product_name>氧氰化汞[减敏的]</product_name>
       <product_alias>氰氧化汞</product_alias>
       <product_english_name>mercuryoxycyanide,desensitized</product_english_name>
@@ -113,22 +113,22 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>剧毒</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：25 mg/kg(大鼠经口)；LC50：无资料</acute_toxicity>
+      <subacute_chronic_toxicity>长期接触可引起慢性汞中毒和氰化物中毒，表现为神经系统损害、肾功能损伤、口腔炎等。可引起生殖毒性。</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>对眼睛、皮肤和呼吸道有强烈刺激性。</irritation>
+      <sensitization>可能引起皮肤过敏反应。</sensitization>
+      <mutagenicity>汞化合物具有致突变性，可能对生殖细胞造成遗传损伤。</mutagenicity>
+      <teratogenicity>汞化合物具有生殖毒性，可能对胎儿发育造成不良影响。</teratogenicity>
+      <carcinogenicity>汞化合物被列为可能的人类致癌物。根据GHS分类，生殖毒性类别1B。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>可能在水生生物体内累积，造成长期毒性影响</bioaccumulation>
-      <other_harmful_effects>存放被毒物污染的衣服，洗后再用。注意个人清洁卫生。</other_harmful_effects>
+      <ecological_toxicity>对水生生物有极高毒性。根据GHS分类，危害水生环境-急性危害类别1，危害水生环境-长期危害类别1。</ecological_toxicity>
+      <biodegradability>在环境中难以生物降解，具有持久性。</biodegradability>
+      <non_biodegradability>汞化合物在环境中可转化为剧毒的甲基汞，通过食物链高度富集和放大。</non_biodegradability>
+      <bioaccumulation>具有极强的生物富集性，可在水生生物体内累积，通过食物链传递至人类，造成长期毒性影响。</bioaccumulation>
+      <other_harmful_effects>对土壤和地下水造成长期污染。汞化合物具有持久性、长距离迁移性，可在全球范围内传播。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
@@ -150,5 +150,14 @@
     <regulatory>
       <regulatory_info>危险化学品安全管理条例（2002年1月26日国务院第344号令公布，自2002年3月15日起施行）</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <msds_creation_date>2023-11-15</msds_creation_date>
+      <msds_revision_date>2023-11-15</msds_revision_date>
+      <msds_revision_number>1</msds_revision_number>
+      <msds_provider>无资料</msds_provider>
+      <relevant_regulations>符合GB/T 16483-2008《化学品安全技术说明书 内容和项目顺序》要求</relevant_regulations>
+      <other_special_notes>本MSDS仅供参考，具体使用时请遵循相关法规和专业指导。氧氰化汞为剧毒化学品，含有氰化物和汞，具有双重毒性危害，应严格控制接触，防止环境污染。</other_special_notes>
+    </other_info>
   </msds>
 </msds_list>

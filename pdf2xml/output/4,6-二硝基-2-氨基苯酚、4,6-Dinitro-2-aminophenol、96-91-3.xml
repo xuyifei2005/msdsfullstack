@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>96-91-3</cas_number>
-      <msds_code>MSDS#1980</msds_code>
+      <msds_code>MSDS-96-91-3</msds_code>
       <product_name>4,6-二硝基-2-氨基苯酚</product_name>
       <product_alias>苦氨酸；二硝基氨基苯酚</product_alias>
       <product_english_name>4，6-Dinitro-2-aminophenol</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -76,12 +76,12 @@
       <pH>无资料</pH>
       <melting_point>168</melting_point>
       <boiling_point>无资料</boiling_point>
-      <flash_point>无资料</flash_point>
+      <flash_point>210</flash_point>
       <relative_density>无资料</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
       <solubility>微溶于水，易溶于乙醇、乙醚、丙酮等有机溶剂</solubility>
       <molecular_formula>C6H5N3O5</molecular_formula>
-      <molecular_weight>199.14</molecular_weight>
+      <molecular_weight>199.12</molecular_weight>
       <main_components>4,6-二硝基-2-氨基苯酚（苦氨酸）含量≥99%</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
@@ -133,7 +133,7 @@
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>41521</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <un_number>3317</un_number>
       <imdg_page>无资料</imdg_page>
       <packaging_mark>8，40</packaging_mark>
       <packing_group>Ⅱ</packing_group>

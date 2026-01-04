@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>926-63-6</cas_number>
-      <msds_code>供应商名称： 供应商地址：</msds_code>
+      <msds_code>MSDS-926-63-6</msds_code>
       <product_name>N,N-二甲基丙胺</product_name>
-      <product_alias>英文名称： dimethyl-n-propylamine 英文别名：</product_alias>
+      <product_alias>N,N-dimethylpropylamine</product_alias>
       <product_english_name>dimethyl-n-propylamine</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>侵入途径：</hazard_category>
-      <exposure_routes></exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards></environmental_hazards>
-      <fire_explosion_hazards>高度易燃,其蒸气与空气混合，能形成爆炸性混合物。</fire_explosion_hazards>
+      <hazard_category>第3.2类 中闪点易燃液体</hazard_category>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>吸入、摄入或经皮肤吸收后对身体有害。对眼睛、皮肤、粘膜和上呼吸道有强烈刺激性。吸入后可引起头痛、头晕、恶心、呼吸困难。</health_hazards>
+      <environmental_hazards>对水生生物有害。</environmental_hazards>
+      <fire_explosion_hazards>高度易燃，其蒸气与空气混合，能形成爆炸性混合物。遇明火、高热极易燃烧爆炸。蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -36,16 +36,16 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>立即脱去污染的衣物。用大量肥皂水和清水冲洗皮肤。如有不适，就医。</skin_contact>
-      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。 立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给于吸氧。如患者食入或吸</eye_contact>
-      <inhalation>入本物质，不得进行口对口人工呼吸。如果呼吸停止。立即进行心肺复苏术。立即就医。</inhalation>
+      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。</eye_contact>
+      <inhalation>立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给于吸氧。如患者食入或吸入本物质，不得进行口对口人工呼吸。如果呼吸停止。立即进行心肺复苏术。立即就医。</inhalation>
       <ingestion>禁止催吐，切勿给失去知觉者从嘴里喂食任何东西。立即呼叫医生或中毒控制中心。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>产生刺激性、毒性或腐蚀性的气体。加热时，容器可能爆炸。受热或接触火焰可能会产生 膨胀或爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>有害燃烧产物：</fire_risk_classification>
-      <harmful_combustion_products>合适的灭火介质：小火：干式化学灭火剂、二氧化碳、水或抗溶泡沫灭火剂；大火：水、</harmful_combustion_products>
-      <suitable_extinguishing_media>水雾或抗溶泡沫灭火剂。不合适的灭火介质：避免用太强烈的水汽灭火，因为它可能会使 火苗蔓延分散。</suitable_extinguishing_media>
+      <hazard_characteristics>产生刺激性、毒性或腐蚀性的气体。加热时，容器可能爆炸。受热或接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
+      <fire_risk_classification>甲</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物。</harmful_combustion_products>
+      <suitable_extinguishing_media>合适的灭火介质：小火：干式化学灭火剂、二氧化碳、水或抗溶泡沫灭火剂；大火：水、水雾或抗溶泡沫灭火剂。不合适的灭火介质：避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
@@ -75,26 +75,26 @@
     <physical_chemical>
       <pH>10（20℃，100g/L）</pH>
       <melting_point>＜-20</melting_point>
-      <boiling_point>无资料</boiling_point>
-      <flash_point></flash_point>
+      <boiling_point>65.5</boiling_point>
+      <flash_point>-10</flash_point>
       <relative_density>0.7152</relative_density>
       <relative_vapor_density>3.01</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>与水混溶，可混溶于乙醇、乙醚、丙酮等多数有机溶剂。</solubility>
       <molecular_formula>C5H13N</molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>无资料</main_components>
+      <molecular_weight>87.16</molecular_weight>
+      <main_components>N,N-二甲基丙胺</main_components>
       <saturated_vapor_pressure>172.5hPa（20℃）</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <log_kow>1.19</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <flammability>高度易燃</flammability>
+      <appearance>无色至淡黄色液体，具有胺类气味。</appearance>
+      <main_uses>用作医药、农药和其他有机化工品生产的中间体。</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
+      <explosive_upper_limit>9.5</explosive_upper_limit>
       <explosive_lower_limit>1.3</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
@@ -126,9 +126,9 @@
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物</waste_properties>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。按照地方/区域/国家/国际规章处置内装物/容器。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废物处置应交由有资质的危险废物处理单位进行。处置过程中应佩戴合适的个人防护装备，避免直接接触。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -142,7 +142,7 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品目录（2015版）序号：426。该化学品属于危险化学品，应按照《危险化学品安全管理条例》等相关法律法规进行管理。在欧盟，该物质被分类为易燃液体类别2，皮肤腐蚀/刺激类别2，严重眼损伤/眼刺激类别2A，特异性靶器官毒性-反复接触类别3。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

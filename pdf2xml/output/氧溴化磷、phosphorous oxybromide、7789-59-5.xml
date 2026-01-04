@@ -4,24 +4,23 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>7789-59-5</cas_number>
-      <msds_code>MSDS#2841</msds_code>
+      <msds_code>MSDS-7789-59-5</msds_code>
       <product_name>氧溴化磷</product_name>
       <product_alias>溴化磷酰；磷酰溴；三溴氧化磷</product_alias>
       <product_english_name>phosphorous oxybromide</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第8.1类酸性腐蚀品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收
-吸入、摄入或经皮肤吸收后会中毒。对眼睛、粘膜和皮肤有强烈刺激作用。受热分解释出</exposure_routes>
-      <health_hazards>溴和氧化磷烟雾。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>吸入、摄入或经皮肤吸收后会中毒。对眼睛、粘膜和皮肤有强烈刺激作用。受热分解释出溴和氧化磷烟雾。</health_hazards>
+      <environmental_hazards>对水生生物有毒性，可能对水生环境造成长期不利影响</environmental_hazards>
       <fire_explosion_hazards>本品助燃、有毒、具有腐蚀性、强刺激性、可致人体灼伤</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -47,14 +46,18 @@
       <fire_risk_classification>无资料</fire_risk_classification>
       <harmful_combustion_products>溴化氢、氧化磷。</harmful_combustion_products>
       <suitable_extinguishing_media>干粉、砂土。禁止用水。</suitable_extinguishing_media>
+      <extinguishing_precautions>消防人员必须佩戴空气呼吸器、穿全身防化服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。切勿将水流直接射入熔融液体，以免引起严重的流淌火灾或剧烈的沸溅。</extinguishing_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
       <emergency_procedures>隔离泄漏污染区，周围设警告标志，建议应急处理人员戴好防毒面具，穿化学防护服。 不要直接接触泄漏物，禁止向泄漏物直接喷水，更不要让水进入包装容器内。用砂土吸 收，铲入提桶，倒至空旷地方深埋。如大量泄漏，收集回收或无害处理后废弃。</emergency_procedures>
+      <protective_equipment>应急处理人员必须佩戴自给正压式呼吸器（全面罩），穿防酸碱工作服，戴橡胶耐酸碱手套。</protective_equipment>
+      <environmental_precautions>防止泄漏物进入下水道、地下室或限制性空间。避免污染土壤和水源。对泄漏区域进行隔离，防止扩散。</environmental_precautions>
+      <cleanup_methods>小量泄漏：用砂土、干燥石灰或苏打灰混合，收集于密闭容器中。大量泄漏：构筑围堤或挖坑收容，用泵转移至槽车或专用收集器内。在专家指导下清除。</cleanup_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防腐工作服，戴橡胶手套。避免产生烟雾。防止烟雾释放到工作场所空气中。避免与还原剂、水、醇类接触。尤其要注意避免与水接触。配备泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>火花、明火和热表面。采取措施防止静电积累。 储存于高燥清洁的仓间内。远离火种、热源。保持容器密封。防止受潮和雨淋。应与还 原剂、易燃物、可燃物、潮湿物品、食用化工原料、醇类等分开存放。搬运时要轻装轻卸， 防止包装及容器损坏。雨天不宜运输。运输按规定路线行驶。操作现场不得吸烟、饮水、 进食。分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -76,14 +79,14 @@
     <physical_chemical>
       <pH>无资料</pH>
       <melting_point>56</melting_point>
-      <boiling_point>190</boiling_point>
+      <boiling_point>193</boiling_point>
       <flash_point>无资料</flash_point>
       <relative_density>2.822</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>POB</molecular_formula>
+      <solubility>遇水分解，溶于乙醚</solubility>
+      <molecular_formula>POBr3</molecular_formula>
       <molecular_weight>286.70</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>氧溴化磷</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
@@ -92,7 +95,7 @@
       <flammability>助燃</flammability>
       <appearance>无色至淡橙色片状结晶，带有刺激性气味。</appearance>
       <main_uses>用作化学中间体。</main_uses>
-      <other_properties>无资料</other_properties>
+      <other_properties>汽化热38kJ/mol</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
       <explosive_upper_limit>无资料</explosive_upper_limit>
@@ -111,7 +114,7 @@
       <acute_toxicity>无资料</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤、粘膜有强烈刺激作用。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -119,17 +122,17 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作后，淋浴更衣</other_harmful_effects>
+      <ecological_toxicity>对水生生物有毒性，可能对水生环境造成长期不利影响。</ecological_toxicity>
+      <biodegradability>在环境中不易生物降解。</biodegradability>
+      <non_biodegradability>在环境中具有持久性。</non_biodegradability>
+      <bioaccumulation>可能在生物体内富集。</bioaccumulation>
+      <other_harmful_effects>避免该物质进入环境，特别是水体。工作后，淋浴更衣。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>在专用焚烧炉中焚烧，配备洗涤器或过滤器以去除酸性气体。或与碱性物质中和后，按照当地环保部门的要求进行安全处置。</disposal_method>
+      <disposal_precautions>处置前必须进行中和处理，避免与水接触产生腐蚀性气体。操作人员必须穿戴适当的个人防护装备。废弃物应交由有资质的危险废物处理单位进行处置，严禁随意倾倒或排放。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -138,12 +141,22 @@
       <imdg_page>8206</imdg_page>
       <packaging_mark>20</packaging_mark>
       <packing_group>Ⅱ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>使用耐酸腐蚀的容器，包装必须密封，防止受潮。运输时应单独装运，不得与易燃物、还原剂、醇类等混装。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。车辆运输完毕应进行彻底清扫。公路运输时要按规定路线行驶，严禁在居民区和人口稠密区停留。铁路运输时要禁止溜放。严禁与易燃物、还原剂、醇类等混装混运。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品安全管理条例（国务院令第591号）、易制毒化学品管理条例（国务院令第445号）、工作场所安全使用化学品规定（劳部发[1996]423号）等法规，针对化学危险品的安全使用、生产、储存、运输、装卸等方面均作了相应规定。</regulatory_info>
+      <international_regulations>UN No.1939、IMDG Code Class 8、IATA-DGR Class 8、ADR Class 8。</international_regulations>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <msds_creation_date>2023-11-15</msds_creation_date>
+      <msds_revision_date>2023-11-15</msds_revision_date>
+      <msds_revision_number>1</msds_revision_number>
+      <msds_provider>无资料</msds_provider>
+      <relevant_regulations>符合GB/T 16483-2008《化学品安全技术说明书 内容和项目顺序》要求</relevant_regulations>
+      <other_special_notes>本MSDS仅供参考，具体使用时请遵循相关法规和专业指导。氧溴化磷具有强腐蚀性和刺激性，应严格控制接触，避免与水接触。</other_special_notes>
+    </other_info>
   </msds>
 </msds_list>

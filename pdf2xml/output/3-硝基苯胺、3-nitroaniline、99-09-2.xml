@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>99-09-2</cas_number>
-      <msds_code>MSDS#764</msds_code>
+      <msds_code>MSDS-99-09-2</msds_code>
       <product_name>3-硝基苯胺</product_name>
       <product_alias>间硝基苯胺；1-氨基-3-硝基苯</product_alias>
       <product_english_name>3-nitroaniline</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类 毒害品</hazard_category>
       <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品可燃，有毒。</fire_explosion_hazards>
+      <health_hazards>吸入、摄入或经皮肤吸收后对身体有害。对眼睛、皮肤、粘膜和上呼吸道有刺激作用。进入体内可形成高铁血红蛋白，致紫绀。长期接触可引起头痛、头晕、乏力、失眠等神经衰弱综合征。</health_hazards>
+      <environmental_hazards>对环境有危害，对水体可造成污染。</environmental_hazards>
+      <fire_explosion_hazards>本品可燃，有毒。遇明火、高热可燃。受热分解放出有毒的氧化氮烟气。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -53,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免产生粉尘。避</handling_precautions>
-      <storage_precautions>操作人员佩戴自吸过滤式防尘口罩，戴安全防护眼镜，穿防毒物渗透工作服，戴橡胶手套。 免与氧化剂、还原剂、酸类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品 种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。 储存于阴凉、通风的库房。远离火种、热源。包装密封。应与氧化剂、还原剂、酸类、食 用化学品分开存放，切忌混储。配备相应品种和数量的消防器材。储区应备有合适的材料 收容泄漏物。</storage_precautions>
+      <handling_precautions>远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免产生粉尘。避免与氧化剂、还原剂、酸类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。包装密封。应与氧化剂、还原剂、酸类、食用化学品分开存放，切忌混储。配备相应品种和数量的消防器材。储区应备有合适的材料收容泄漏物。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -65,11 +65,11 @@
       <contact_limits>美国TWA：未制定标准美国STEL：未制定标准</contact_limits>
       <monitoring_method>无资料</monitoring_method>
       <engineering_controls>严加密闭，提供充分的局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <respiratory_protection>空气中粉尘浓度超标时，必须佩戴自吸过滤式防尘口罩（半面罩）。紧急事态抢救或撤离时，应该佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>戴安全防护眼镜。</eye_protection>
       <body_protection>穿防毒物渗透工作服。</body_protection>
       <hand_protection>戴橡胶手套。</hand_protection>
-      <other_protection></other_protection>
+      <other_protection>工作现场严禁吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
@@ -79,7 +79,7 @@
       <flash_point>无意义</flash_point>
       <relative_density>1.42</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>微溶于水，溶于乙醇、乙醚、苯。</solubility>
       <molecular_formula>C6H6N2O2</molecular_formula>
       <molecular_weight>138.13</molecular_weight>
       <main_components>纯品</main_components>
@@ -88,7 +88,7 @@
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>引燃温度(℃)：无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>遇明火、高热可燃。受热分解放出有毒的氧化氮烟气。</flammability>
       <appearance>亮黄色针状结晶。</appearance>
       <main_uses>用作染料中间体及用于有机合成，也用于松木颜色的检验。</main_uses>
       <other_properties>无资料</other_properties>
@@ -127,8 +127,8 @@
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废弃物应交由有资质的危险废物处理单位处理。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -137,12 +137,12 @@
       <imdg_page>6207</imdg_page>
       <packaging_mark>14</packaging_mark>
       <packing_group>O52</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_method>螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶(罐)外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶(罐)外满底板花格箱、纤维板箱或胶合板箱</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。严禁与酸类、氧化剂、食品及食品添加剂混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。车辆运输完毕应进行彻底清扫。公路运输时要按规定路线行驶，禁止在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>化学危险物品安全管理条例 (1987年2月17日国务院发布)，化学危险物品安全管理条例实施细则 (化劳发[1992] 677号)，工作场所安全使用化学品规定 ([1996]劳部发423号)等法规，针对化学危险品的安全使用、生产、储存、运输、装卸等方面均作了相应规定；常用危险化学品的分类及标志 (GB 13690-92)将该物质划为第6.1 类毒害品。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

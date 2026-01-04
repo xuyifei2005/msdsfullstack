@@ -4,24 +4,22 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>92-87-5</cas_number>
-      <msds_code>MSDS#1058</msds_code>
+      <msds_code>MSDS-92-87-5</msds_code>
       <product_name>4,4'-二氨基联苯</product_name>
-      <product_alias>联苯胺；二氨基联苯</product_alias>
+      <product_alias>联苯胺；二氨基联苯；对二氨基联苯；P,P'-联苯胺；4,4'-联苯二胺</product_alias>
       <product_english_name>4，4-Diaminobiphenyl</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收
-联苯胺可经呼吸道、胃肠道、皮肤进入人体。对皮肤可引起接触性皮炎；对粘膜有刺激作用；</exposure_routes>
-      <health_hazards>长期接触可引起出血性膀胱炎，膀胱复发性乳头状瘤和膀胱癌。国际癌症研究中心
-(IARC)已确认为致癌物。</health_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>联苯胺可经呼吸道、胃肠道、皮肤进入人体。对皮肤可引起接触性皮炎；对粘膜有刺激作用；长期接触可引起出血性膀胱炎，膀胱复发性乳头状瘤和膀胱癌。国际癌症研究中心(IARC)已确认为致癌物。</health_hazards>
       <environmental_hazards>无资料</environmental_hazards>
       <fire_explosion_hazards>本品有毒、刺激性</fire_explosion_hazards>
     </hazard_info>
@@ -48,16 +46,17 @@
       <fire_risk_classification>丙</fire_risk_classification>
       <harmful_combustion_products>一氧化碳、二氧化碳、氧化氮。</harmful_combustion_products>
       <suitable_extinguishing_media>雾状水、泡沫、二氧化碳、干粉、砂土。</suitable_extinguishing_media>
+      <extinguishing_precautions>消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。处在火场中的容器若已变色或从安全泄压装置中发出声音，必须马上撤离。</extinguishing_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>隔离泄漏污染区，周围设警告标志，建议应急处理人员戴好防毒面具，穿化学防护服。不要直 应急处理： 接接触泄漏物，避免扬尘，小心扫起，置于袋中转移至安全场所或按致癌物处理。如大量泄漏， 收集回收或无害处理后废弃。</emergency_procedures>
+      <emergency_procedures>隔离泄漏污染区，周围设警告标志，建议应急处理人员戴好防毒面具，穿化学防护服。不要直接接触泄漏物，避免扬尘，小心扫起，置于袋中转移至安全场所或按致癌物处理。如大量泄漏，收集回收或无害处理后废弃。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光直射。保持容器密封。应与氧化剂、酸 类、食用化工原料分开存放。搬运时要轻装轻卸，防止包装及容器损坏。分装和搬运作业要注 意个人防护。</storage_precautions>
-    </handling_storage>
+          <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴防尘面具（全面罩），穿胶布防毒衣，戴橡胶手套。避免产生粉尘。避免与氧化剂、酸类接触。配备泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+          <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光直射。保持容器密封。应与氧化剂、酸类、食用化工原料分开存放。搬运时要轻装轻卸，防止包装及容器损坏。分装和搬运作业要注意个人防护。</storage_precautions>
+        </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
       <china_mac>未制定标准</china_mac>
@@ -78,19 +77,19 @@
       <pH>无资料</pH>
       <melting_point>128</melting_point>
       <boiling_point>401.7</boiling_point>
-      <flash_point>无资料</flash_point>
+      <flash_point>180（闭杯）</flash_point>
       <relative_density>1.25</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <relative_vapor_density>6.4（相对于空气）</relative_vapor_density>
+      <solubility>微溶于水，溶于热水、乙醇、乙醚</solubility>
       <molecular_formula>C12H12N2</molecular_formula>
       <molecular_weight>184.23</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>98.64／128.7℃</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <log_kow>2.84</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>可燃</flammability>
       <appearance>白色或浅粉红色结晶性粉末，商品呈褐色或深紫褐色。</appearance>
       <main_uses>用于偶氮染料中间体，也作不溶偶氮染料的显色剂。</main_uses>
       <other_properties>无资料</other_properties>
@@ -109,28 +108,28 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：309mg／kg(大鼠经口)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：309mg/kg(大鼠经口)；LC50：无资料</acute_toxicity>
+      <subacute_chronic_toxicity>长期接触可引起出血性膀胱炎，膀胱复发性乳头状瘤和膀胱癌。联苯胺是已知的膀胱致癌物，可经呼吸道、胃肠道和皮肤吸收。动物实验显示可引起膀胱肿瘤。</subacute_chronic_toxicity>
       <rtecs>DC9625000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
+      <irritation>对眼睛、皮肤、粘膜有刺激性。</irritation>
+      <sensitization>可引起皮肤过敏反应。</sensitization>
+      <mutagenicity>有致突变性。细菌突变试验、哺乳动物细胞基因突变试验均为阳性。</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <carcinogenicity>IARC第1组致癌物。已知对人类致癌（膀胱癌）。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
-      <other_harmful_effects>前和定期的体检。</other_harmful_effects>
+      <ecological_toxicity>对水生生物有毒性。对鱼类、水生无脊椎动物和藻类具有毒性作用。</ecological_toxicity>
+      <biodegradability>在环境中不易生物降解。</biodegradability>
+      <non_biodegradability>持久性有机污染物，在环境中长期存在。</non_biodegradability>
+      <bioaccumulation>具有生物富集性，log Kow为2.84，可能在生物体内累积。</bioaccumulation>
+      <other_harmful_effects>该物质对环境有危害，对水体应给予特别注意。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>有害固体废物</waste_properties>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。根据国家和地方有关法规的规定处置。或与制造商或供应商联系，以确定最佳处置方法。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废物处置应符合当地环保部门要求。禁止随意倾倒。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -139,12 +138,23 @@
       <imdg_page>6081</imdg_page>
       <packaging_mark>14</packaging_mark>
       <packing_group>Ⅱ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>小开口钢桶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>运输前应先检查包装容器是否完整、密封，运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与酸类、氧化剂、食品及食品添加剂混运。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：危险化学品安全管理条例（国务院令第591号），工作场所安全使用化学品规定（劳部发[1996]423号），危险化学品目录（2015版）。国际法规：欧盟REACH法规（EC）No 1907/2006，欧盟CLP法规（EC）No 1272/2008。联苯胺被列入《国际癌症研究机构（IARC）致癌物清单》第1组。被列入《中国优先控制化学品名录（第一批）》。被列入《斯德哥尔摩公约》持久性有机污染物清单。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standard>GB/T 16483-2008、GB/T 17519-2013</reference_standard>
+      <revision_notes>本SDS按照GB/T 16483-2008、GB/T 17519-2013标准编制。</revision_notes>
+      <abbreviations>MAC：最高容许浓度；PC-TWA：时间加权平均容许浓度；PC-STEL：短时间接触容许浓度；TLV-TWA：阈限值-时间加权平均浓度；TLV-STEL：阈限值-短时间接触浓度；LD50：半数致死量；LC50：半数致死浓度；IARC：国际癌症研究机构。</abbreviations>
+      <other_notes>联苯胺是已知的人类致癌物，必须严格遵守相关法规要求进行管理和使用。建议使用替代品。</other_notes>
+      <preparation_standard>GB/T 16483-2008</preparation_standard>
+      <revision_date>2025-01-04</revision_date>
+      <version>1.0</version>
+      <modification_notes>初次编制</modification_notes>
+    </other_info>
   </msds>
 </msds_list>

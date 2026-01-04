@@ -4,25 +4,25 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>61-82-5</cas_number>
-      <msds_code>MSDS#1619</msds_code>
+      <msds_code>MSDS-61-82-5</msds_code>
       <product_name>氨基三唑</product_name>
       <product_alias>3-氨基-1，2，4-三氮杂茂</product_alias>
       <product_english_name>Amitrole</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
-    <hazard_info>
-      <hazard_category>无资料</hazard_category>
-      <exposure_routes>吸入 食入</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
-    </hazard_info>
+      <hazard_info>
+        <hazard_category>有害</hazard_category>
+        <exposure_routes>吸入、食入、皮肤接触</exposure_routes>
+        <health_hazards>具刺激作用。目前，未见职业危害的报道。曾有报道误服本品20mg/kg 未出现中毒症状。吞咽有害。造成皮肤刺激。造成严重眼刺激。可能引起呼吸道刺激。</health_hazards>
+        <environmental_hazards>对水生生物有毒作用</environmental_hazards>
+        <fire_explosion_hazards>可燃，其粉体与空气混合，能形成爆炸性混合物</fire_explosion_hazards>
+      </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
       <components>
@@ -45,7 +45,8 @@
       <hazard_characteristics>遇明火、高热可燃。受高热分解，放出有毒的烟气。</hazard_characteristics>
       <fire_risk_classification>无资料</fire_risk_classification>
       <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物。</harmful_combustion_products>
-      <suitable_extinguishing_media>消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。尽可能将容器从火场移至空旷 处。灭火剂：雾状水、抗溶性泡沫、二氧化碳、干粉。</suitable_extinguishing_media>
+      <suitable_extinguishing_media>雾状水、抗溶性泡沫、二氧化碳、干粉。</suitable_extinguishing_media>
+      <firefighting_precautions>消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
@@ -53,8 +54,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。保持容器密封。应与氧化剂、酸类、食用化 工原料分开存放。操作现场不得吸烟、饮水、进食。搬运时要轻装轻卸，防止包装及容器 损坏。分装和搬运作业要注意个人防护。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。防止粉尘释放到车间空气中。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴防尘面具（全面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶手套。避免产生粉尘。避免与氧化剂、酸类接触。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。保持容器密封。应与氧化剂、酸类、食用化工原料分开存放。操作现场不得吸烟、饮水、进食。搬运时要轻装轻卸，防止包装及容器损坏。分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -64,7 +65,7 @@
       <tlvvn>无资料</tlvvn>
       <contact_limits>美国TLV-TWA：0.2mg／m3美国TLV-STEL：未制订标准</contact_limits>
       <monitoring_method>无资料</monitoring_method>
-      <engineering_controls>密闭操作，局部排风。</engineering_controls>
+      <engineering_controls>严加密闭，提供充分的局部排风。</engineering_controls>
       <respiratory_protection>高浓度环境中，建议佩戴防毒口罩。</respiratory_protection>
       <eye_protection>戴安全防护眼镜。</eye_protection>
       <body_protection>穿工作服。</body_protection>
@@ -75,22 +76,22 @@
     <physical_chemical>
       <pH>无资料</pH>
       <melting_point>159</melting_point>
-      <boiling_point>无资料</boiling_point>
+      <boiling_point>244.9</boiling_point>
       <flash_point>无资料</flash_point>
       <relative_density>无资料</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>溶于水，微溶于甲醇、乙醇，不溶于乙醚、丙酮</solubility>
       <molecular_formula>C2H4N4</molecular_formula>
       <molecular_weight>84.1</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>氨基三唑</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <log_kow>-0.91</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>无色晶体。</appearance>
-      <main_uses>用作照相的试剂，农业上用作除草剂和棉花脱叶剂，还用于制分散染料、树脂固化剂等。</main_uses>
+      <flammability>可燃</flammability>
+      <appearance>无色晶体</appearance>
+      <main_uses>用作照相的试剂，农业上用作除草剂和棉花脱叶剂，还用于制分散染料、树脂固化剂等</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -107,22 +108,22 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：1100mg／kg(大鼠经口)LC50：</acute_toxicity>
+      <acute_toxicity>LD50：1100mg/kg(大鼠经口) LC50：无资料</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>XZ3850000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>造成皮肤刺激。造成严重眼刺激。可能引起呼吸道刺激</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <carcinogenicity>世界卫生组织国际癌症研究机构公布的致癌物清单初步整理参考，杀草强在3类致癌物（现有证据未能对人类致癌性进行分级评价）清单中</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>对水生生物有毒作用</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作后，淋浴更衣</other_harmful_effects>
+      <other_harmful_effects>工作后，淋浴更衣。保持良好的卫生习惯</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
@@ -132,17 +133,23 @@
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <dangerous_goods_number>UN3077</dangerous_goods_number>
+      <un_number>UN3077</un_number>
       <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group>无资料</packing_group>
+      <packaging_mark>III</packaging_mark>
+      <packing_group>III</packing_group>
       <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <transportation_precautions>运输前应先检查包装容器是否完整、密封，运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、酸类、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品安全管理条例、工作场所安全使用化学品规定等法规，针对化学危险品的安全使用、生产、储存、运输、装卸等方面均作了相应规定</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standard>GB/T 16483-2008</reference_standard>
+      <modification_notes>无</modification_notes>
+      <abbreviations>PC-TWA：时间加权平均容许浓度；PC-STEL：短时间接触容许浓度；MAC：最高容许浓度</abbreviations>
+    </other_info>
   </msds>
 </msds_list>
