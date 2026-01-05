@@ -4,22 +4,22 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>110-69-0</cas_number>
-      <msds_code>MSDS#1382</msds_code>
+      <msds_code>MSDS-110-69-0</msds_code>
       <product_name>丁醛肟</product_name>
       <product_alias>丁缩醛肟</product_alias>
       <product_english_name>Butyraldoxime</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第3.3类 高闪点易燃液体</hazard_category>
       <exposure_routes>吸入 食入</exposure_routes>
-      <health_hazards></health_hazards>
+      <health_hazards>吸入、食入或经皮肤吸收对身体有害。对眼睛、皮肤、粘膜和上呼吸道有强烈刺激性。吸入后可引起头痛、头晕、恶心、呕吐、咳嗽、胸闷等症状。高浓度接触可引起肺水肿。</health_hazards>
       <environmental_hazards>无资料</environmental_hazards>
       <fire_explosion_hazards>本品易燃、具有刺激性</fire_explosion_hazards>
     </hazard_info>
@@ -42,7 +42,7 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>的危险。</hazard_characteristics>
+      <hazard_characteristics>遇明火、高热易引起燃烧爆炸。与氧化剂接触会猛烈反应。其蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。若遇高热，容器内压增大，有开裂和爆炸的危险。</hazard_characteristics>
       <fire_risk_classification>乙</fire_risk_classification>
       <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物。</harmful_combustion_products>
       <suitable_extinguishing_media>抗溶性泡沫、干粉、砂土、二氧化碳。</suitable_extinguishing_media>
@@ -53,7 +53,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>密闭操作，加强通风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光直射。包装要求密封，不可与空气接 触。应与氧化剂分开存放。储存间内伪照明、通风等设施应采用防爆型。搬运时要轻装轻卸， 防止包装及容器损坏。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -79,7 +79,7 @@
       <flash_point>58</flash_point>
       <relative_density>0.92</relative_density>
       <relative_vapor_density>3.01</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>微溶于水，溶于乙醇、乙醚、苯等有机溶剂。</solubility>
       <molecular_formula>C4H9NO</molecular_formula>
       <molecular_weight>87.1</molecular_weight>
       <main_components>无资料</main_components>
@@ -88,14 +88,14 @@
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>易燃</flammability>
       <appearance>无色、透明、油状液体。</appearance>
       <main_uses>用作有机试剂。</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <explosive_upper_limit>8.0</explosive_upper_limit>
+      <explosive_lower_limit>1.2</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -142,7 +142,7 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品安全管理条例（国务院令第591号），工作场所安全使用化学品规定（[1996]劳部发423号）等法规，针对化学危险品的安全使用、生产、储存、运输、装卸等方面均作了相应规定。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

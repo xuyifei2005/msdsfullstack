@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>13446-74-7</cas_number>
-      <msds_code>MSDS#750</msds_code>
+      <msds_code>MSDS-13446-74-7</msds_code>
       <product_name>氟化铷</product_name>
-      <product_alias>无资料</product_alias>
+      <product_alias>氟化铷</product_alias>
       <product_english_name>rubidium fluoride</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -79,9 +79,9 @@
       <flash_point>无意义</flash_point>
       <relative_density>3.56</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>R</molecular_formula>
-      <molecular_weight>104.5</molecular_weight>
+      <solubility>易溶于水，微溶于乙醇。</solubility>
+      <molecular_formula>RbF</molecular_formula>
+      <molecular_weight>104.47</molecular_weight>
       <main_components>纯品</main_components>
       <saturated_vapor_pressure>0.13(920℃)</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
@@ -122,7 +122,7 @@
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。注意个人清洁卫生。实行就业前和</other_harmful_effects>
+      <other_harmful_effects>无资料</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
@@ -134,15 +134,15 @@
     <transportation>
       <dangerous_goods_number>61513</dangerous_goods_number>
       <un_number>1690</un_number>
-      <imdg_page>无资料</imdg_page>
+      <imdg_page>6151</imdg_page>
       <packaging_mark>14</packaging_mark>
-      <packing_group>O53</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packing_group>Ⅲ</packing_group>
+      <packaging_method>小开口钢桶；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>运输前应先检查包装容器是否完整、密封，运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与酸类、食用化学品等混装混运。运输时运输车辆应配备泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>危险化学品安全管理条例（国务院令第591号），工作场所安全使用化学品规定（[1996]劳部发423号）等法规，针对化学危险品的安全使用、生产、储存、运输、装卸等方面均作了相应规定。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

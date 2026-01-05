@@ -4,23 +4,22 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>100-40-3</cas_number>
-      <msds_code>MSDS#1121</msds_code>
+      <msds_code>MSDS-100-40-3</msds_code>
       <product_name>4-乙烯-1-环己烯</product_name>
       <product_alias>4-乙烯基环己烯</product_alias>
       <product_english_name>4-Vinyl-1-Cyclohexene</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第3.2类 中闪点易燃液体</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收
-吸入、摄入或经皮吸收对身体有害。蒸气或雾对眼、粘膜和上呼吸道有刺激性。对皮肤有刺</exposure_routes>
-      <health_hazards>激性。</health_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>吸入、摄入或经皮吸收对身体有害。蒸气或雾对眼、粘膜和上呼吸道有刺激性。对皮肤有刺激性。</health_hazards>
       <environmental_hazards>无资料</environmental_hazards>
       <fire_explosion_hazards>本品易燃、具有刺激性</fire_explosion_hazards>
     </hazard_info>
@@ -37,8 +36,8 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行</eye_contact>
-      <inhalation>人工呼吸。就医。</inhalation>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
       <ingestion>给饮足量温水，催吐，就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
@@ -50,12 +49,12 @@
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>切断火源。应急处理人员戴自给式呼吸器，穿化学防护服。在确保安全情况下堵漏。禁止泄 或其它，惰性材料吸收，然后收集于密闭容器中作好标记，等待处理。如大量泄漏，利用围 堤收容，然后收集、转移、回收或无害处理后废弃。</emergency_procedures>
+      <emergency_procedures>切断火源。应急处理人员戴自给式呼吸器，穿化学防护服。在确保安全情况下堵漏。禁止泄漏物进入下水道、地表水或地下水。用砂土或其它惰性材料吸收，然后收集于密闭容器中作好标记，等待处理。如大量泄漏，利用围堤收容，然后收集、转移、回收或无害处理后废弃。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>通常商品加有阻聚剂。储存于阴凉、通风仓间内。远离火种、热源。仓温不宜超过30℃。防 止阳光直射。包装要求密封，不可与空气接触。不宜大量或久存。应与氧化剂、酸类分开存 放。储存间内的照明、通风等设施应采用防爆型。罐储时要有防火防爆技术措施。禁止使用 易产生火花的机械设备和工具。搬运时要轻装轻卸，防止包装及容器损坏。</storage_precautions>
+      <handling_precautions>在通风良好处进行操作。穿戴合适的个人防护用具。避免接触皮肤和进入眼睛。远离热源、火花、明火和热表面。采取措施防止静电积累。</handling_precautions>
+      <storage_precautions>通常商品加有阻聚剂。储存于阴凉、通风仓间内。远离火种、热源。仓温不宜超过30℃。防止阳光直射。包装要求密封，不可与空气接触。不宜大量或久存。应与氧化剂、酸类分开存放。储存间内的照明、通风等设施应采用防爆型。罐储时要有防火防爆技术措施。禁止使用易产生火花的机械设备和工具。搬运时要轻装轻卸，防止包装及容器损坏。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -80,14 +79,14 @@
       <flash_point>16</flash_point>
       <relative_density>0.83</relative_density>
       <relative_vapor_density>3.76</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C8H</molecular_formula>
+      <solubility>不溶于水，溶于乙醇、乙醚、丙酮等有机溶剂。</solubility>
+      <molecular_formula>C8H12</molecular_formula>
       <molecular_weight>108.18</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>3.44(38℃)</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
+      <ignition_temperature>269</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
       <flammability></flammability>
       <appearance>无色液体。</appearance>
@@ -95,55 +94,60 @@
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <explosive_upper_limit>5.9</explosive_upper_limit>
+      <explosive_lower_limit>0.8</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>强氧化剂、强酸。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <conditions_to_avoid>避免受热、光照、接触空气</conditions_to_avoid>
       <polymerization_hazard>能发生</polymerization_hazard>
       <decomposition_products>无资料</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>LD50：2563mg／kg(大鼠经口)；16640mg／kg(兔经皮)LC50：27000mg／m3 l小时(小鼠吸入)</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <subacute_chronic_toxicity>反复接触可引起皮肤过敏。长期接触可能对神经系统、肝肾功能造成损害。</subacute_chronic_toxicity>
       <rtecs>GW6650000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
+      <irritation>对眼睛、皮肤、粘膜有刺激性</irritation>
+      <sensitization>可能引起皮肤过敏</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
       <carcinogenicity>无资料</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>该物质对水生生物有毒性作用。对鱼类、藻类和水生无脊椎动物具有潜在危害。可能对水生生态系统造成长期不利影响。</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作现场严禁吸烟。避免长期反复接触。</other_harmful_effects>
+      <other_harmful_effects>工作现场严禁吸烟。避免长期反复接触。该物质对环境有危害，应特别注意对水体的污染。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的气体通过洗涤器除去。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废弃物应交由有资质的危险废物处理单位处理。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>32023</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
+      <un_number>UN 1993</un_number>
+      <imdg_page>第3.2类</imdg_page>
       <packaging_mark>7</packaging_mark>
       <packing_group>Ⅱ</packing_group>
-      <packaging_method>无资料</packaging_method>
+      <packaging_method>小开口钢桶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
       <transportation_precautions>无资料</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品目录（2015版）：序号2664。危险化学品安全管理条例：该化学品属于危险化学品，应严格遵守《危险化学品安全管理条例》等相关法律法规。GB 6944-2012《危险货物分类和品名编号》：第3类易燃液体。GB 12268-2012《危险货物品名表》：UN 3295。工作场所安全使用化学品规定：应遵守《工作场所安全使用化学品规定》的相关要求。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>GB/T 16483-2008, GB 30000系列标准</reference_standards>
+      <other_notes>无资料</other_notes>
+    </other_info>
   </msds>
 </msds_list>

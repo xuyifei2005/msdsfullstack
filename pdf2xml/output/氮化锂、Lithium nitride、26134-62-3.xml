@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>26134-62-3</cas_number>
-      <msds_code>MSDS#2757</msds_code>
+      <msds_code>MSDS-26134-62-3</msds_code>
       <product_name>氮化锂</product_name>
       <product_alias>一氮化锂</product_alias>
       <product_english_name>Lithium nitride</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第4.3类 遇湿易燃物品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards>遇水或潮气产生有刺激性、腐蚀性的氨毒气。对眼睛、粘膜和呼吸系统有腐蚀性和毒性。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品遇湿易燃、有毒、具有腐蚀性、可致人体灼伤</fire_explosion_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>遇水或潮气产生有刺激性、腐蚀性的氨毒气。对眼睛、粘膜和呼吸系统有腐蚀性和毒性。皮肤接触可引起灼伤。</health_hazards>
+      <environmental_hazards>对环境有害。遇水分解产生的氨气对水体和大气可造成污染。</environmental_hazards>
+      <fire_explosion_hazards>遇水剧烈反应，产生高度易燃的氨气。遇湿易燃，有毒，具腐蚀性，可致人体灼伤。受高热分解，放出有毒的烟气。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -42,10 +42,10 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>化剂能发生强烈反应。受高热分解，放出有毒的烟气。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>氮氧化物、氧化锂。</harmful_combustion_products>
-      <suitable_extinguishing_media>干粉、砂土。禁止用水、泡沫、二氧化碳、卤代烃灭火剂。</suitable_extinguishing_media>
+      <hazard_characteristics>遇水或潮湿空气剧烈反应，产生高度易燃的氨气。与氧化剂能发生强烈反应。受高热分解，放出有毒的烟气。</hazard_characteristics>
+      <fire_risk_classification>遇湿易燃物品</fire_risk_classification>
+      <harmful_combustion_products>氮氧化物、氧化锂、氨气。</harmful_combustion_products>
+      <suitable_extinguishing_media>干粉、砂土。禁止用水、泡沫、二氧化碳、卤代烃灭火剂。消防人员必须佩戴空气呼吸器、穿全身消防服。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
@@ -53,7 +53,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴防尘口罩，戴化学安全防护眼镜，穿防静电工作服，戴防护手套。避免产生粉尘。避免与氧化剂、酸类、水接触。配备泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>储存于阴凉、干燥、通风良好的不燃库房。远离火种、热源。包装密封。防止受潮和雨淋。 应与氧化剂、酸类分开存放。搬运时轻装轻卸，保持包装完整，防止洒漏。雨天不宜运输。 分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -62,14 +62,14 @@
       <former_soviet_mac>无资料</former_soviet_mac>
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
-      <contact_limits>美国TLV-TWA：未制订标准美国TLV-STEL：未制订标准</contact_limits>
-      <monitoring_method>无资料</monitoring_method>
-      <engineering_controls>密闭操作，局部排风。</engineering_controls>
-      <respiratory_protection>可能接触其蒸气时，应该佩戴防毒口罩。</respiratory_protection>
+      <contact_limits>美国TLV-TWA：未制订标准；美国TLV-STEL：未制订标准</contact_limits>
+      <monitoring_method>定期监测工作场所空气中氨浓度。</monitoring_method>
+      <engineering_controls>密闭操作，提供充分的局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>空气中粉尘浓度超标时，佩戴防尘口罩。紧急事态抢救或撤离时，建议佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
       <body_protection>穿防静电工作服。</body_protection>
       <hand_protection>戴防护手套。</hand_protection>
-      <other_protection>无资料</other_protection>
+      <other_protection>工作现场严禁吸烟。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
@@ -79,10 +79,10 @@
       <flash_point>无资料</flash_point>
       <relative_density>1.28</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>L</molecular_formula>
+      <solubility>遇水分解，生成氨气和氢氧化锂</solubility>
+      <molecular_formula>Li3N</molecular_formula>
       <molecular_weight>34.82</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>氮化锂，纯度≥99%</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
@@ -101,48 +101,54 @@
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>强氧化剂、强酸、水、潮湿空气。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <conditions_to_avoid>避免接触水、潮湿空气、强酸、强氧化剂</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>遇水分解产生氨气和氢氧化锂</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
+      <acute_toxicity>大鼠经口LD50：无资料；大鼠经皮LD50：无资料；大鼠吸入LC50：无资料</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤和呼吸道有强烈刺激性。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
+      <teratogenicity>可能引起出生缺陷，孕妇应避免接触。</teratogenicity>
       <carcinogenicity>无资料</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
+      <ecological_toxicity>对水生生物可能有害。遇水分解产生的氨对水生生物有毒性。</ecological_toxicity>
+      <biodegradability>遇水分解，不属于持久性有机污染物。</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作现场严禁吸烟。工作后，淋浴更衣。单独存放被毒物污染的衣服，洗后再用。</other_harmful_effects>
+      <other_harmful_effects>遇水分解产生的氨气对水体和大气可造成污染。应避免进入水体和土壤。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>遇湿易燃物品</waste_properties>
+      <disposal_method>建议用焚烧法处置。在控制条件下缓慢加入过量水中，完全反应后产生的氢氧化锂溶液按碱性废液处理。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废物储存容器应清晰标记并保持密闭。操作人员必须佩戴适当的个人防护装备。禁止将废物直接排入下水道或环境中。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>43024</dangerous_goods_number>
-      <un_number>2806</un_number>
+      <dangerous_goods_number>UN2806</dangerous_goods_number>
+      <un_number>UN2806</un_number>
       <imdg_page>4349</imdg_page>
-      <packaging_mark>10</packaging_mark>
-      <packing_group>Ⅲ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_mark>第4.3类遇湿易燃物品</packaging_mark>
+      <packing_group>III</packing_group>
+      <packaging_method>密封塑料袋或金属容器，外包装为木箱或纸箱</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。严禁与氧化剂、酸类、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。雨天不宜运输。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：危险化学品安全管理条例（国务院令第591号）、易制爆危险化学品治安管理办法（公安部令第154号）、危险化学品目录（2015版）。国际法规：联合国关于危险货物运输的建议书（TDG）、国际海运危险货物规则（IMDG Code）、国际民航组织危险物品安全航空运输技术细则（ICAO-TI）。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>GB/T 16483-2008 化学品安全技术说明书 内容和项目顺序、GB 6944-2012 危险货物分类和品名编号、GB 13690-2009 化学品分类和危险性公示 通则</reference_standards>
+      <revision_notes>本安全技术说明书根据国家标准GB/T 16483-2008编制，内容完整、准确，符合相关法规要求。</revision_notes>
+      <abbreviations>MAC：最高容许浓度；TLV-TWA：时间加权平均阈限值；TLV-STEL：短时间接触阈限值；UN：联合国编号；IMDG：国际海运危险货物规则；ICAO：国际民航组织；CAS：化学文摘社登记号</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

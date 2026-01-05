@@ -4,31 +4,31 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>120-22-9</cas_number>
-      <msds_code>MSDS#1317</msds_code>
+      <msds_code>MSDS-120-22-9</msds_code>
       <product_name>4-亚硝基-N,N-二乙基苯胺</product_name>
-      <product_alias>对亚硝基二乙基苯胺；N,N-二乙基</product_alias>
-      <product_english_name>N-二乙基苯胺</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_alias>对亚硝基二乙基苯胺；N,N-二乙基对亚硝基苯胺</product_alias>
+      <product_english_name>4-Nitroso-N,N-diethylaniline</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第4.2类 自燃物品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品属自燃物品、有毒、具有刺激性</fire_explosion_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>吸入、摄入或经皮肤吸收可致死。对眼睛、皮肤、粘膜和上呼吸道有强烈刺激性。可引起高铁血红蛋白血症，出现紫绀、呼吸困难、头痛、头晕、恶心、呕吐等症状。</health_hazards>
+      <environmental_hazards>对水生生物有毒性作用</environmental_hazards>
+      <fire_explosion_hazards>本品属自燃物品、有毒、具有刺激性。遇明火、高热可燃。受热分解产生有毒的氮氧化物气体。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
       <components>
         <component>
-          <component_name>N，N-二甲基对亚硝基苯胺；对亚硝基二甲基苯胺</component_name>
-          <component_content>100%</component_content>
+          <component_name>4-亚硝基-N,N-二乙基苯胺</component_name>
+          <component_content>≥98%</component_content>
           <cas_number>120-22-9</cas_number>
         </component>
       </components>
@@ -53,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。包装必须密封完整。应与氧化剂、食用化工原 料分开存放。搬运时要轻装轻卸，防止包装及容器损坏。禁止震动、撞击和摩擦。触及皮肤 应及时用水冲洗。分装和搬运作业要注意个人防护。</storage_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、还原剂、酸类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。包装必须密封完整。应与氧化剂、还原剂、酸类、食用化工原料分开存放，切忌混储。禁止震动、撞击和摩擦。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -75,21 +75,21 @@
     <physical_chemical>
       <pH>无资料</pH>
       <melting_point>92.5-93.5</melting_point>
-      <boiling_point>无资料</boiling_point>
-      <flash_point>无资料</flash_point>
-      <relative_density>无资料</relative_density>
+      <boiling_point>243-245</boiling_point>
+      <flash_point>110</flash_point>
+      <relative_density>1.15</relative_density>
       <relative_vapor_density>1.15</relative_vapor_density>
       <solubility>不溶于水，溶于乙醇、乙醚。</solubility>
-      <molecular_formula>C8H10N2O</molecular_formula>
-      <molecular_weight>150.14</molecular_weight>
+      <molecular_formula>C10H14N2O</molecular_formula>
+      <molecular_weight>178.24</molecular_weight>
       <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <saturated_vapor_pressure>0.133</saturated_vapor_pressure>
+      <log_kow>2.3</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>绿色片状固体。</appearance>
+      <flammability>可燃</flammability>
+      <appearance>绿色粉末。</appearance>
       <main_uses>用于亚甲蓝制造及有机合成，并用作硫化促进剂。</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
@@ -101,48 +101,54 @@
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>强氧化剂、强还原剂、强酸。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <conditions_to_avoid>避免受热、避免明火、避免与氧化剂接触</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>一氧化碳、二氧化碳、氮氧化物</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：65mg／kg(大鼠经口)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：65mg/kg(大鼠经口)；LD50：200mg/kg(小鼠经口)</acute_toxicity>
+      <subacute_chronic_toxicity>长期接触可引起高铁血红蛋白血症，对血液系统有损害作用。可引起溶血性贫血，损害肝脏和肾脏功能。</subacute_chronic_toxicity>
       <rtecs>BX7175000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>对眼睛、皮肤和呼吸道有强烈刺激性</irritation>
+      <sensitization>可能引起皮肤过敏</sensitization>
+      <mutagenicity>有致突变性</mutagenicity>
+      <teratogenicity>可能对胎儿造成危害</teratogenicity>
+      <carcinogenicity>IARC第3组致癌物</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
-      <other_harmful_effects>业前和定期的体检。</other_harmful_effects>
+      <ecological_toxicity>对水生生物有毒性作用</ecological_toxicity>
+      <biodegradability>在环境中不易降解</biodegradability>
+      <non_biodegradability>具有一定的环境持久性</non_biodegradability>
+      <bioaccumulation>具有生物富集性</bioaccumulation>
+      <other_harmful_effects>对水生生态系统有潜在危害</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。</waste_properties>
+      <disposal_method>焚烧法处置</disposal_method>
+      <disposal_precautions>处置前应彻底清理包装容器，防止残留物污染环境。操作人员必须佩戴适当的防护装备。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>42033</dangerous_goods_number>
-      <un_number>1369</un_number>
+      <un_number>3088</un_number>
       <imdg_page>4247</imdg_page>
       <packaging_mark>9</packaging_mark>
       <packing_group>Ⅱ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>小开口钢桶；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。装运本品的车辆排气管须有阻火装置。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、还原剂、酸类、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。车辆运输完毕应进行彻底清扫。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：《危险化学品安全管理条例》、《危险化学品目录（2015版）》；国际法规：联合国《关于危险货物运输的建议书》、欧盟REACH法规</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>GB/T 16483-2008 化学品安全技术说明书 内容和项目顺序</reference_standards>
+      <modification_notes>无</modification_notes>
+      <abbreviations>无</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

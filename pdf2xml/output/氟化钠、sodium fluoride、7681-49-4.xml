@@ -4,26 +4,22 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>7681-49-4</cas_number>
-      <msds_code>MSDS#745</msds_code>
+      <msds_code>MSDS-7681-49-4</msds_code>
       <product_name>氟化钠</product_name>
       <product_alias>无资料</product_alias>
       <product_english_name>sodium fluoride</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入
-急性中毒：多为误服所致。服后立即出现剧烈恶心、呕吐、腹痛、腹泻。重者休克、呼吸
-困难、紫绀。如不及时抢救可致死亡。部分患者出现荨麻疹，吞咽肌麻痹，手足抽搐或四</exposure_routes>
-      <health_hazards>肢肌肉痉挛。短期内吸入大量本品粉尘，引起呼吸道刺激症状，并伴有头昏、头痛、无力
-及消化道症状。慢性影响：长期较高浓度吸入可引起氟骨症。可致皮炎，重者出现溃疡或
-大疱。</health_hazards>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>急性中毒：多为误服所致。服后立即出现剧烈恶心、呕吐、腹痛、腹泻。重者休克、呼吸困难、紫绀。如不及时抢救可致死亡。部分患者出现荨麻疹，吞咽肌麻痹，手足抽搐或四肢肌肉痉挛。短期内吸入大量本品粉尘，引起呼吸道刺激症状，并伴有头昏、头痛、无力及消化道症状。慢性影响：长期较高浓度吸入可引起氟骨症。可致皮炎，重者出现溃疡或大疱。</health_hazards>
       <environmental_hazards>无资料</environmental_hazards>
       <fire_explosion_hazards>本品不燃，高毒，具刺激性，严重损害粘膜、上呼吸道、眼睛和皮肤。</fire_explosion_hazards>
     </hazard_info>
@@ -57,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>戴自吸过滤式防尘口罩，戴化学安全防护眼镜，穿透气型防毒服，戴乳胶手套。避免产生 粉尘。避免与酸类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备泄漏应急处理设 备。倒空的容器可能残留有害物。 储存于阴凉、干燥、通风良好的库房。库温不超过30℃，相对湿度不超过80％。包装密封。 应与酸类、食用化学品分开存放，切忌混储。储区应备有合适的材料收容泄漏物。应严格 执行极毒物品“五双”管理制度。</storage_precautions>
+      <handling_precautions>密闭操作，局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防尘口罩，戴化学安全防护眼镜，穿透气型防毒服，戴乳胶手套。避免产生粉尘。避免与酸类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、干燥、通风良好的库房。库温不超过30℃，相对湿度不超过80％。包装密封。应与酸类、食用化学品分开存放，切忌混储。储区应备有合适的材料收容泄漏物。应严格执行极毒物品"五双"管理制度。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -69,7 +65,7 @@
       <contact_limits>美国TWA：OSHA 2.5mg[F]／m3；ACGIH 2.5mg[F]／m3美国STEL：未制定标准</contact_limits>
       <monitoring_method>离子选择性电极法；氟试剂－镧盐比色法</monitoring_method>
       <engineering_controls>密闭操作，局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
-      <respiratory_protection>可能接触其粉尘时，应该佩戴自吸过滤式防尘口罩。紧急事态抢救或撤离时，建议佩戴自</respiratory_protection>
+      <respiratory_protection>可能接触其粉尘时，应该佩戴自吸过滤式防尘口罩。紧急事态抢救或撤离时，建议佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
       <body_protection>穿透气型防毒服。</body_protection>
       <hand_protection>戴乳胶手套。</hand_protection>
@@ -83,18 +79,18 @@
       <flash_point>无意义</flash_point>
       <relative_density>2.56</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>N</molecular_formula>
-      <molecular_weight>42.00</molecular_weight>
-      <main_components></main_components>
-      <saturated_vapor_pressure></saturated_vapor_pressure>
+      <solubility>4g/100mL(25℃)，溶于水，微溶于乙醇。</solubility>
+      <molecular_formula>NaF</molecular_formula>
+      <molecular_weight>41.99</molecular_weight>
+      <main_components>氟化钠</main_components>
+      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无意义</ignition_temperature>
       <autoignition_temperature>无意义</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>白色粉末或结晶，无臭。</appearance>
-      <main_uses>用作杀虫剂、木材防腐剂。</main_uses>
+      <flammability>不燃</flammability>
+      <appearance>白色粉末或结晶，略有吸湿性，长期暴露于空气中易结块。</appearance>
+      <main_uses>用作杀虫剂、木材防腐剂、金属冶炼、陶瓷颜料、氟化剂、电镀助剂。</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无意义</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -111,10 +107,10 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>属高毒类LD50：52mg／kg(大鼠经口)；57mg／kg(小鼠经口)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>属高毒类。LD50：52mg/kg(大鼠经口)；57mg/kg(小鼠经口)。LC50：无资料。</acute_toxicity>
+      <subacute_chronic_toxicity>长期较高浓度吸入可引起氟骨症。</subacute_chronic_toxicity>
       <rtecs>WB0350000</rtecs>
-      <irritation></irritation>
+      <irritation>对眼睛、皮肤、粘膜和上呼吸道有刺激性。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -126,27 +122,28 @@
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。工作服不要带到非作业场所，单独</other_harmful_effects>
+      <other_harmful_effects>无资料</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。焚烧炉排出的气体通过洗涤器除去。</waste_properties>
+      <disposal_method>建议用控制焚烧法处置。在焚烧炉中焚烧，并配备洗涤器以除去酸性气体。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废物处置必须符合当地环境保护部门的要求。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>61513</dangerous_goods_number>
       <un_number>1690</un_number>
+      <un_name>氟化钠</un_name>
       <imdg_page>6258</imdg_page>
       <packaging_mark>15</packaging_mark>
-      <packing_group>O53</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packing_group>III类</packing_group>
+      <packaging_method>塑料袋或二层牛皮纸袋外纤维板桶、胶合板桶、硬纸板桶；塑料袋外塑料编织袋。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。严禁与酸类、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>国内法规：危险化学品安全管理条例（国务院令第591号），工作场所安全使用化学品规定（[1996]劳部发423号），危险化学品目录（2015版）。国际法规：国际海事组织（IMO）国际海运危险货物规则，国际民航组织（ICAO）国际航空运输危险物品规则，联合国关于危险货物运输的建议书。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

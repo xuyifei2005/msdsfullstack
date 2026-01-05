@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>10138-60-0</cas_number>
-      <msds_code>供应商名称： 供应商地址：</msds_code>
+      <msds_code>MSDS-10138-60-0</msds_code>
       <product_name>4-己烯-1-炔-3-醇</product_name>
       <product_alias>英文名称： 4-hexen-1-yn-3-ol 英文别名：</product_alias>
       <product_english_name>4-hexen-1-yn-3-ol</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>侵入途径：</hazard_category>
-      <exposure_routes></exposure_routes>
-      <health_hazards>吞食后有剧毒。跟皮肤接触有剧毒。</health_hazards>
-      <environmental_hazards></environmental_hazards>
-      <fire_explosion_hazards></fire_explosion_hazards>
+      <hazard_category>第6.1类毒害品</hazard_category>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>吞食后有剧毒。跟皮肤接触有剧毒。对眼睛、皮肤、粘膜和上呼吸道有强烈刺激作用。吸入可引起喉头水肿、支气管痉挛、化学性肺炎、肺水肿而致死。长期或反复接触可引起过敏反应。</health_hazards>
+      <environmental_hazards>对水生生物有剧毒。</environmental_hazards>
+      <fire_explosion_hazards>遇明火、高热可燃。受热分解产生有毒气体。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -43,18 +43,18 @@
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>有害燃烧产物：</fire_risk_classification>
-      <harmful_combustion_products>合适的灭火介质: 干粉、二氧化碳或耐醇泡沫。 不合适的灭火介质: 避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在 安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <fire_risk_classification>有害燃烧产物：一氧化碳、二氧化碳</fire_risk_classification>
+      <harmful_combustion_products>合适的灭火介质：干粉、二氧化碳或耐醇泡沫。不合适的灭火介质：避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
+      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（符合MSHA/NIOSH要求的或相当的）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>无火灾状况下的溢漏和泄漏应穿着蒸气防护服，且完全密封。 不要触摸或穿越泄漏物。 不要触摸破损的容器或泄漏物质除非穿着合适的防护服。保证充分的通风。清除所有点火 源。采取防静电措施。迅速将人员撤离到安全区域，远离泄漏区域并处于上风方向。使用</emergency_procedures>
+      <emergency_procedures>无火灾状况下的溢漏和泄漏应穿着蒸气防护服，且完全密封。不要触摸或穿越泄漏物。不要触摸破损的容器或泄漏物质除非穿着合适的防护服。保证充分的通风。清除所有点火源。采取防静电措施。迅速将人员撤离到安全区域，远离泄漏区域并处于上风方向。使用适当的吸收材料（如沙土、蛭石或其他惰性吸收剂）吸收泄漏物。将吸收的废弃物放入密闭容器中，按照危险废物处理。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>源、火花、明火和热表面。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于 远离不相容材料和食品容器的地方。储存温度一般不应高于32℃，相对湿度一般不应高 于80%。</storage_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类、碱类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。库温不宜超过32℃，相对湿度一般不应高于80%。保持容器密封。应与氧化剂、酸类、碱类、食用化学品分开存放，切忌混储。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -63,34 +63,34 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>密闭操作，提供充分的局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时，必须佩戴过滤式防毒面具（半面罩）或自给式呼吸器。紧急事态抢救或撤离时，建议佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>佩戴化学护目镜（符合欧盟EN 166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
-      <other_protection>无资料</other_protection>
+      <hand_protection>戴橡胶耐油手套。</hand_protection>
+      <other_protection>工作现场严禁吸烟。进食和饮水前必须洗手。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
       <melting_point>无资料</melting_point>
       <boiling_point>148~150</boiling_point>
-      <flash_point></flash_point>
+      <flash_point>无资料</flash_point>
       <relative_density>无资料</relative_density>
       <relative_vapor_density>0.9155（20℃）</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>无资料</solubility>
       <molecular_formula>C6H8O</molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>无资料</main_components>
+      <molecular_weight>96.14</molecular_weight>
+      <main_components>4-己烯-1-炔-3-醇</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <flammability>可燃</flammability>
+      <appearance>无资料</appearance>
+      <main_uses>无资料</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -107,18 +107,18 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>剧毒。LD50（大鼠，经口）：无资料。LD50（大鼠，经皮）：无资料。LC50（大鼠，吸入，4小时）：无资料。</acute_toxicity>
+      <subacute_chronic_toxicity>长期或反复接触可能引起皮肤过敏、呼吸道刺激和神经系统损害。</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
+      <irritation>对眼睛、皮肤和呼吸道有强烈刺激作用。</irritation>
+      <sensitization>可能引起皮肤过敏反应。</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
       <carcinogenicity>无资料</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>对水生生物有剧毒。</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
@@ -126,23 +126,23 @@
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物</waste_properties>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的气体通过洗涤器除去。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废物贮存场所要符合危险废物贮存污染控制标准。处置人员必须经过专门培训，佩戴适当的防护装备。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <dangerous_goods_number>UN 2811</dangerous_goods_number>
+      <un_number>UN 2811</un_number>
       <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_mark>II</packaging_mark>
+      <packing_group>II</packing_group>
+      <packaging_method>小开口钢桶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱。</packaging_method>
+      <transportation_precautions>运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与氧化剂、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源、高温区。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品安全管理条例、易制毒化学品管理条例、剧毒化学品目录（2015版）。该化学品被列入《剧毒化学品目录（2015版）》，属于剧毒化学品，生产、经营、储存、运输、使用等环节需严格遵守相关法律法规。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>
