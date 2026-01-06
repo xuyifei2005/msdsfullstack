@@ -1,0 +1,5 @@
+# 统一换行符配置
+* text=auto
+
+# XML文件使用LF换行符
+*.xml text eol=lf
