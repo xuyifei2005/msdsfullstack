@@ -4,25 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>623-70-1</cas_number>
-      <msds_code>MSDS#1703</msds_code>
+      <msds_code>MSDS-623-70-1</msds_code>
       <product_name>丁烯酸乙酯</product_name>
       <product_alias>巴豆酸乙酯</product_alias>
       <product_english_name>Ethyl crotonate</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>第3.2类 中闪点易燃液体</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收
-巴豆酸乙酯蒸气具有刺激性，能强烈刺激眼睛。误服可引起中毒，出现虚脱、呼吸困难、</exposure_routes>
-      <health_hazards>中枢神经兴奋等。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品易燃、具有强刺激性</fire_explosion_hazards>
+      <hazard_category>第3.2类中闪点易燃液体</hazard_category>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>吸入、摄入或经皮肤吸收后对身体有害。蒸气具有刺激性，能强烈刺激眼睛。误服可引起中毒，出现虚脱、呼吸困难、中枢神经兴奋等症状。</health_hazards>
+      <environmental_hazards>对环境有危害，对水体可造成污染。</environmental_hazards>
+      <fire_explosion_hazards>易燃，遇明火、高热或与氧化剂接触，有引起燃烧爆炸的危险。其蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -54,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。仓温不宜超过30℃。保持容器密封。防止阳 光直射。应与氧化剂、酸类、碱类分开存放。储存间内的照明、通风等设施应采用防爆型， 开关设在仓外。禁止使用易产生火花的机械设备和工具。罐储时要有防火防爆技术措施。 配备相应品种和数量的消防器材。灌装时应注意流速(不超过3m／s)，且有接地装置，防 止静电积聚。操作现场不得吸烟、饮水、进食。搬运时要轻装轻卸，防止包装及容器损坏。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类、碱类接触。灌装时应控制流速，且有接地装置，防止静电积聚。配备相应品种和数量的消防器材及泄漏应急处理设备。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。仓温不宜超过30℃。保持容器密封。防止阳光直射。应与氧化剂、酸类、碱类分开存放。储存间内的照明、通风等设施应采用防爆型，开关设在仓外。禁止使用易产生火花的机械设备和工具。罐储时要有防火防爆技术措施。配备相应品种和数量的消防器材。灌装时应注意流速(不超过3m/s)，且有接地装置，防止静电积聚。操作现场不得吸烟、饮水、进食。搬运时要轻装轻卸，防止包装及容器损坏。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -138,12 +137,12 @@
       <imdg_page>3224</imdg_page>
       <packaging_mark>7</packaging_mark>
       <packing_group>Ⅱ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>小开口钢桶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外木板箱。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与氧化剂、酸类、碱类等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。车辆运输完毕应进行彻底清扫。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品安全管理条例（国务院令第591号），工作场所安全使用化学品规定（〔1996〕劳部发423号），危险化学品目录（2015版）|联合国《关于危险货物运输的建议书》（TDG），联合国《全球化学品统一分类和标签制度》（GHS），欧盟REACH法规</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

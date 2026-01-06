@@ -2,43 +2,43 @@
 <msds_list>
   <msds>
     <!-- 第一部分：化学品及企业标识 -->
-    <basic_info>
-      <cas_number>104-85-8</cas_number>
-      <msds_code>MSDS#2119</msds_code>
-      <product_name>4-甲基苯甲腈</product_name>
-      <product_alias>对甲苯基氰；对甲基苯甲腈</product_alias>
-      <product_english_name>4-Methyl benzonitrile</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
-    </basic_info>
+        <basic_info>
+          <cas_number>104-85-8</cas_number>
+          <msds_code>MSDS-104-85-8</msds_code>
+          <product_name>4-甲基苯甲腈</product_name>
+          <product_alias>对甲苯基氰；对甲基苯甲腈</product_alias>
+          <product_english_name>4-Methyl benzonitrile</product_english_name>
+          <company_name>无资料</company_name>
+          <company_address>无资料</company_address>
+          <contact_phone>无资料</contact_phone>
+          <emergency_phone>无资料</emergency_phone>
+          <email>无资料</email>
+          <fax_number>无资料</fax_number>
+        </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards>有毒。吸入、摄入或经皮肤吸收后会中毒。对眼睛、皮肤、粘膜和上呼吸道有刺激作用。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品可燃、有毒、具有刺激性</fire_explosion_hazards>
+      <hazard_category>第6.1类毒害品</hazard_category>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>吸入、摄入或经皮肤吸收后对身体有害。对眼睛、皮肤、粘膜和上呼吸道有刺激作用。长期或反复接触可能引起皮肤过敏。</health_hazards>
+      <environmental_hazards>对水生生物有毒。</environmental_hazards>
+      <fire_explosion_hazards>遇明火、高热可燃。受热分解产生有毒的氰化物和氮氧化物气体。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
       <components>
         <component>
           <component_name>4-甲基苯甲腈；对甲苯基氰</component_name>
-          <component_content>100%</component_content>
+          <component_content>≥98%</component_content>
           <cas_number>104-85-8</cas_number>
         </component>
       </components>
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>用肥皂水及清水彻底冲洗。就医。</skin_contact>
-      <eye_contact>拉开眼睑，用流动清水冲洗15分钟。就医。</eye_contact>
-      <inhalation>脱离现场至空气新鲜处。就医。</inhalation>
-      <ingestion>误服者，饮适量温水，催吐。就医。</ingestion>
+      <skin_contact>立即脱去污染的衣着，用肥皂水和大量清水彻底冲洗皮肤。如有不适感，就医。</skin_contact>
+      <eye_contact>立即提起眼睑，用大量流动清水或生理盐水彻底冲洗至少15分钟。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸。就医。</inhalation>
+      <ingestion>切勿催吐。给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
@@ -53,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。专人保管。保持容器密封。防止阳光曝晒。 应与氧化剂、碱类、食用化工原料分开存放。搬运时要轻装轻卸，防止包装及容器损坏。 操作现场不得吸烟、饮水、进食。分装和搬运作业要注意个人防护。</storage_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、碱类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。保持容器密封。应与氧化剂、碱类、食用化学品分开存放，切忌混储。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -74,21 +74,21 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>29.5</melting_point>
-      <boiling_point>217.6</boiling_point>
-      <flash_point>85</flash_point>
+      <melting_point>29.5℃</melting_point>
+      <boiling_point>217.6℃</boiling_point>
+      <flash_point>85℃</flash_point>
       <relative_density>0.9810</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
+      <relative_vapor_density>4.04</relative_vapor_density>
       <solubility>不溶于水，易溶于醇、醚。</solubility>
       <molecular_formula>C8H7N</molecular_formula>
       <molecular_weight>117.16</molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <main_components>4-甲基苯甲腈</main_components>
+      <saturated_vapor_pressure>0.13kPa(25℃)</saturated_vapor_pressure>
+      <log_kow>2.25</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>可燃</flammability>
       <appearance>白色至黄色针状结晶。</appearance>
       <main_uses>用于有机合成。</main_uses>
       <other_properties>无资料</other_properties>
@@ -107,11 +107,11 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：4060mg／kg(大鼠经口)LC50：</acute_toxicity>
+      <acute_toxicity>LD50：4060mg/kg(大鼠经口)；LD50：>2000mg/kg(兔经皮)；LC50：无资料</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>XV0700000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
+      <irritation>家兔经眼：20mg，重度刺激。家兔经皮：500mg，轻度刺激。</irritation>
+      <sensitization>可能引起皮肤过敏。</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
       <carcinogenicity>无资料</carcinogenicity>
@@ -127,22 +127,28 @@
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废物处置应符合国家环保法规要求。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>61639</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <dangerous_goods_number>UN 3023</dangerous_goods_number>
+      <un_number>4-Methylbenzonitrile</un_number>
       <imdg_page>无资料</imdg_page>
-      <packaging_mark>15</packaging_mark>
-      <packing_group>无资料</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_mark>III</packaging_mark>
+      <packing_group>III</packing_group>
+      <packaging_method>小开口钢桶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与氧化剂、酸类、碱类、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源、高温区。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品安全管理条例（国务院令第591号）；工作场所安全使用化学品规定（劳部发[1996]423号）；危险化学品目录（2015版）；剧毒化学品目录（2015版）；易制毒化学品管理条例。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference>GB/T 16483-2008、GB 13690-2009、GB 6944-2012</reference>
+      <revision_info>本MSDS依据GB/T 16483-2008标准编制。</revision_info>
+      <other_notes>无资料</other_notes>
+    </other_info>
   </msds>
 </msds_list>

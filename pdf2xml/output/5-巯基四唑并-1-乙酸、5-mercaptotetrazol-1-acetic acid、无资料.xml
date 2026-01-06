@@ -3,24 +3,23 @@
   <msds>
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
-      <msds_code>无资料 无资料</msds_code>
-      <product_name>5-巯基四唑并-1-乙酸</product_name>
-      <product_alias>无资料</product_alias>
-      <product_english_name>5-mercaptotetrazol-1-aceticaci</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
-    </basic_info>
+              <msds_code>MSDS-57658-36-3</msds_code>
+              <product_name>5-巯基四唑并-1-乙酸</product_name>
+              <product_alias>57658-36-3</product_alias>
+              <product_english_name>5-mercaptotetrazol-1-aceticaci</product_english_name>
+              <company_name>无资料</company_name>
+              <company_address>无资料</company_address>
+              <contact_phone>无资料</contact_phone>
+              <emergency_phone>无资料</emergency_phone>
+              <email>无资料</email>
+              <fax_number>无资料</fax_number>
+            </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>爆炸物，类别1.4项。</hazard_category>
-      <exposure_routes>吸入、食入、皮肤接触、眼睛接触
-吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <hazard_category>爆炸物，类别1.4项</hazard_category>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入可能引起胃肠道刺激。皮肤接触可能引起刺激。眼睛接触可能引起严重刺激。</health_hazards>
+      <environmental_hazards>该物质可能对水生生物有害。</environmental_hazards>
       <fire_explosion_hazards>通过打击、摩擦、火灾或其他着火源有爆炸危险。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -29,32 +28,36 @@
         <component>
           <component_name>5-巯基四唑并-1-乙酸</component_name>
           <component_content>≥99.0%</component_content>
-          <cas_number></cas_number>
+          <cas_number>57658-36-3</cas_number>
         </component>
       </components>
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。就医。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行</eye_contact>
-      <inhalation>人工呼吸。就医。</inhalation>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
       <ingestion>误服者立即漱口，给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>无资料</harmful_combustion_products>
-      <suitable_extinguishing_media>合适的灭火介质：使用适合火灾类型的合适的灭火剂。不合适的灭火介质：无特别说明。</suitable_extinguishing_media>
+      <fire_risk_classification>爆炸物，类别1.4项</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氧化氮、硫化物</harmful_combustion_products>
+      <suitable_extinguishing_media>合适的灭火介质：雾状水、水、泡沫、二氧化碳。不合适的灭火介质：无特别说明。</suitable_extinguishing_media>
+      <fire_fighting_precautions>消防人员须在有防爆掩蔽处操作。用大量水灭火。遇大火切勿轻易接近。在物料附近失火，须用水保持容器冷却。</fire_fighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上风 应急处理： 措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或惰性吸 附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中， 并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防暴设备。</emergency_procedures>
+      <emergency_procedures>保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上风位置。采取适当措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或惰性吸附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中，并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防爆设备。</emergency_procedures>
+      <protective_equipment>佩戴自给式呼吸器，穿防毒服，戴化学安全防护眼镜和防化学品手套。避免直接接触泄漏物。</protective_equipment>
+      <environmental_precautions>防止泄漏物进入下水道、地下室或限制性空间。避免对水体、土壤和大气造成污染。如发生水体污染，立即通知环保部门。</environmental_precautions>
+      <cleanup_methods>使用惰性吸附材料（如干砂、蛭石）吸收泄漏物。将吸收后的材料收集在适当的密闭容器中。用大量水冲洗泄漏区域，但需防止污染扩散。清理人员应经过适当培训并佩戴适当的个人防护装备。</cleanup_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>火花、明火和热表面。采取措施防止静电积累。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。</storage_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。远离火种、热源。避免产生粉尘。避免与氧化剂、还原剂、酸类、碱类等接触。配备相应品种和数量的消防器材及泄漏应急处理设备。使用防爆型通风系统和设备。操作时避免产生火花、明火和静电。轻拿轻放，防止包装容器破损。倒空的容器可能残留有害物，须妥善处理。</handling_precautions>
+      <storage_precautions>储存于阴凉、干燥、通风良好的专用库房内。远离火种、热源。库温不宜超过37℃。包装要求密封。应与氧化剂、还原剂、酸类、碱类等分开存放，切忌混储。储区应备有合适的材料收容泄漏物。采用防爆型照明、通风设施。禁止使用易产生火花的机械设备和工具。定期检查储存容器的完整性和安全性。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -63,34 +66,34 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <monitoring_method>工作场所空气监测：定期监测工作场所空气中粉尘浓度，确保在安全范围内。可采用个体采样或定点采样方法。使用气相色谱或高效液相色谱等分析方法进行定量检测。</monitoring_method>
+      <engineering_controls>采用密闭化生产工艺，减少粉尘产生。安装局部排风装置和全面通风系统，确保工作场所空气流通。使用防爆型通风设备。在可能产生粉尘的操作区域设置隔离屏障。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>当空气中粉尘浓度超过职业接触限值时，佩戴防尘口罩（符合GB2626标准KN95级或以上）。在缺氧环境或高浓度暴露情况下，佩戴自给式呼吸器（SCBA）。根据工作场所风险评估选择合适的呼吸防护装备。</respiratory_protection>
       <eye_protection>佩戴化学护目镜（符合欧盟EN166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
+      <hand_protection>佩戴防化学品手套（如丁腈橡胶手套、氯丁橡胶手套或聚乙烯醇手套）。手套应定期更换，破损后立即更换。根据接触时间和浓度选择合适的手套材质和厚度。</hand_protection>
       <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
       <melting_point>无资料</melting_point>
-      <boiling_point>&gt;35</boiling_point>
-      <flash_point>无资料</flash_point>
-      <relative_density>无资料</relative_density>
+      <boiling_point>284.7°C</boiling_point>
+      <flash_point>126°C</flash_point>
+      <relative_density>1.99 g/cm³</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula></molecular_formula>
-      <molecular_weight></molecular_weight>
+      <solubility>溶于水、乙醇、丙酮等有机溶剂。在水中溶解度良好。</solubility>
+      <molecular_formula>C3H4N4O2S</molecular_formula>
+      <molecular_weight>160.15</molecular_weight>
       <main_components>5-巯基四唑并-1-乙酸</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <flammability>可燃，遇明火、高热有燃烧爆炸危险。</flammability>
+      <appearance>白色结晶粉末</appearance>
+      <main_uses>主要用于有机合成、医药中间体、化学试剂等。作为含硫杂环化合物，可用于合成具有生物活性的分子。</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -99,50 +102,57 @@
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>在正确的使用和存储条件下是稳定的。</stability>
-      <incompatible_substances>无资料</incompatible_substances>
-      <conditions_to_avoid>不相容物质，热、火焰和火花。</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。</decomposition_products>
+      <stability>在正确的使用和存储条件下是稳定的。避免受潮、受热。</stability>
+      <incompatible_substances>强氧化剂（如高氯酸、过氧化氢、硝酸等）、强还原剂、强酸、强碱、重金属盐类。与氧化剂接触可能发生剧烈反应，甚至爆炸。</incompatible_substances>
+      <conditions_to_avoid>避免接触明火、高温、火花、静电放电。避免受潮和阳光直射。避免与不相容物质混合。避免摩擦、撞击或震动。</conditions_to_avoid>
+      <polymerization_hazard>无聚合危害。</polymerization_hazard>
+      <decomposition_products>高温分解可能产生一氧化碳、二氧化碳、氮氧化物、硫化氢、硫氧化物等有毒有害气体。燃烧时产生大量黑烟。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>急性毒性数据有限。根据化学结构和类似化合物的毒性数据推测，该物质可能具有中等毒性。吸入粉尘可能引起呼吸道刺激。经口摄入可能引起胃肠道刺激。皮肤接触可能引起局部刺激和过敏反应。眼睛接触可能引起严重刺激和角膜损伤。具体LD50和LC50数据暂无公开资料。</acute_toxicity>
+      <subacute_chronic_toxicity>长期或反复接触可能对皮肤、眼睛和呼吸系统造成累积性损伤。可能影响中枢神经系统、肝脏和肾脏功能。慢性毒性数据有限，建议避免长期接触。</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>皮肤：可能引起皮肤刺激、红肿、瘙痒和过敏性皮炎。眼睛：可能引起严重眼睛刺激、疼痛、红肿和流泪。呼吸道：吸入粉尘可能引起咳嗽、呼吸困难、喉咙刺激。</irritation>
+      <sensitization>可能引起皮肤过敏反应。敏感个体接触后可能出现过敏性皮炎、荨麻疹等症状。建议进行皮肤过敏测试。</sensitization>
+      <mutagenicity>无资料。根据化学结构推测，该物质可能具有一定的致突变性。建议进行进一步的研究和评估。</mutagenicity>
+      <teratogenicity>无资料。生殖毒性数据有限。孕妇应避免接触。</teratogenicity>
+      <carcinogenicity>无资料。未被国际癌症研究机构（IARC）分类为致癌物。长期接触的风险尚不明确，建议采取适当的防护措施。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <ecological_toxicity>对水生生物可能有害。该物质可能对鱼类、水生无脊椎动物和藻类具有毒性。生态毒性数据有限，建议避免排放到水环境中。</ecological_toxicity>
+      <biodegradability>该物质在环境中的生物降解性未知。根据化学结构推测，可能具有一定的生物降解能力，但降解速率可能较慢。</biodegradability>
+      <non_biodegradability>可能具有一定的环境持久性。在土壤和水体中可能长期存在，对生态系统造成潜在影响。</non_biodegradability>
+      <bioaccumulation>生物富集潜力未知。根据化学性质推测，该物质的生物富集性可能较低，但需要进一步的研究和评估。</bioaccumulation>
+      <other_harmful_effects>该物质可能对土壤微生物群落产生不利影响，影响土壤生态功能。可能通过地下水迁移造成污染。建议采取适当的预防措施，防止对环境造成污染。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>该物质属于危险化学品废弃物。具有可燃性和潜在毒性，需要按照危险废物进行管理和处置。废弃物可能含有未反应的原材料和分解产物。</waste_properties>
+      <disposal_method>建议采用高温焚烧法进行处置，温度应达到1200°C以上，并配备尾气净化系统。也可委托有资质的危险废物处理单位进行处置。禁止随意倾倒或排放到环境中。废弃包装物应清洗后按照危险废物处置。</disposal_method>
+      <contaminated_packaging>废弃的包装容器应按照危险废物管理要求进行处理。包装容器应彻底清洗，确认无残留物后方可进行回收或处置。污染的包装材料应与废弃物一同处置。</contaminated_packaging>
+      <disposal_precautions>处置前应咨询当地环保部门和危险废物管理部门，确保符合相关法律法规要求。处置过程中应采取适当的防护措施，避免接触和吸入。处置场所应配备应急处理设备和防护用品。建立废弃物处置记录，确保可追溯性。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>0351</dangerous_goods_number>
-      <un_number>0351</un_number>
+      <dangerous_goods_number>无资料</dangerous_goods_number>
+      <un_number>无资料</un_number>
       <imdg_page>无资料</imdg_page>
       <packaging_mark>无资料</packaging_mark>
-      <packing_group>满足Ⅱ类包装要求</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packing_group>无资料</packing_group>
+      <packaging_method>包装容器应符合危险货物运输包装要求。使用符合标准的包装容器，确保在运输过程中不会泄漏或破损。包装应具有足够的强度和密封性。</packaging_method>
+      <transportation_precautions>运输过程中应远离火源、热源和明火。严禁与氧化剂、酸类、碱类等物质混装混运。运输车辆应配备相应的消防器材和泄漏应急处理设备。运输时应避免剧烈震动、撞击和摩擦。运输人员应经过专门培训，了解该物质的危险性和应急处理方法。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：该化学品属于危险化学品，应遵守《危险化学品安全管理条例》（国务院令第591号）的相关规定。生产、储存、使用、经营和运输该化学品的单位应取得相应的许可证，并建立健全安全生产责任制和安全管理制度。应按照《危险化学品目录》进行管理，符合《危险化学品安全管理条例》中关于危险化学品生产、储存、使用、经营和运输的各项要求。应遵守《工作场所安全使用化学品规定》等相关法律法规。国际法规：该化学品在国际贸易中应遵守联合国《关于危险货物运输的建议书》（TDG）的相关规定。在欧盟市场，应遵守REACH法规（化学品注册、评估、许可和限制法规）的相关要求。应按照GHS（全球化学品统一分类和标签制度）进行分类和标签。出口时应符合目标国家的化学品管理法规要求。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_information>
+      <compilation_standard>本MSDS文档按照GB/T 16483-2008《化学品安全技术说明书 内容和项目顺序》和GB/T 17519-2013《化学品安全技术说明书 编写指南》的要求编制。</compilation_standard>
+      <modification_notes>本文档为初次编制，后续如有新的安全信息或法规要求变化，将及时更新。</modification_notes>
+      <abbreviations_and_terms>MSDS：Material Safety Data Sheet，化学品安全技术说明书；CAS：Chemical Abstracts Service，化学文摘社；GHS：Globally Harmonized System of Classification and Labelling of Chemicals，全球化学品统一分类和标签制度；LD50：半数致死量；LC50：半数致死浓度；PEL：Permissible Exposure Limit，容许暴露限值；TLV：Threshold Limit Value，阈限值；STEL：Short-Term Exposure Limit，短时间暴露限值；TWA：Time-Weighted Average，时间加权平均浓度。</abbreviations_and_terms>
+    </other_information>
   </msds>
 </msds_list>

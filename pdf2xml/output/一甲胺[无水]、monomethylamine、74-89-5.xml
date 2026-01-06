@@ -4,7 +4,7 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>74-89-5</cas_number>
-      <msds_code>MSDS#87</msds_code>
+      <msds_code>MSDS-74-89-5</msds_code>
       <product_name>一甲胺[无水]</product_name>
       <product_alias>氨基甲烷；甲胺</product_alias>
       <product_english_name>monomethylamine</product_english_name>
@@ -137,13 +137,13 @@
       <un_number>1061</un_number>
       <imdg_page>2157</imdg_page>
       <packaging_mark>4</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packing_group>II</packing_group>
+      <packaging_method>钢质气瓶；安瓿瓶外普通木箱</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。严禁与氧化剂、酸类、卤素等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>危险化学品安全管理条例（国务院令第591号），危险化学品目录（2015版），易制爆危险化学品名录（2017年版）。该产品属于第2.1类易燃气体，应严格按照相关法规进行生产、储存、使用、经营和运输。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

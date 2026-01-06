@@ -4,30 +4,34 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>7440-02-0</cas_number>
-      <msds_code>MSDS#489</msds_code>
+      <msds_code>MSDS-7440-02-0</msds_code>
       <product_name>镍</product_name>
       <product_alias>无资料</product_alias>
       <product_english_name>nickel</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第4.2类自燃物品</hazard_category>
-      <exposure_routes>吸入食入经皮吸收
-可引起镍皮炎，又称镍“痒疹”。皮肤剧痒，后出现丘疹、疱疹及红斑，重者化脓、溃烂。</exposure_routes>
-      <health_hazards>长期吸入镍粉可致呼吸道刺激、慢性鼻炎，甚至发生鼻中隔穿孔。尚可引起变态反应性肺
-炎、支气管炎、哮喘等。</health_hazards>
-      <environmental_hazards></environmental_hazards>
-      <fire_explosion_hazards>本品属自燃物品，具刺激性，接触可引起皮炎，奇痒。</fire_explosion_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>可引起镍皮炎，又称镍"痒疹"。皮肤剧痒，后出现丘疹、疱疹及红斑，重者化脓、溃烂。长期吸入镍粉可致呼吸道刺激、慢性鼻炎，甚至发生鼻中隔穿孔。尚可引起变态反应性肺炎、支气管炎、哮喘等。</health_hazards>
+      <environmental_hazards>该物质对环境有危害，应特别注意对水体的污染。</environmental_hazards>
+      <fire_explosion_hazards>本品属自燃物品，具刺激性，接触可引起皮炎，奇痒。粉尘可燃，能与空气形成爆炸性混合物。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
-      <components></components>
+      <components>
+        <component>
+          <component_name>镍</component_name>
+          <component_content>≥99%</component_content>
+          <cas_number>7440-02-0</cas_number>
+        </component>
+      </components>
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
@@ -40,8 +44,8 @@
     <fire_fighting>
       <hazard_characteristics>粉尘可燃，能与空气形成爆炸性混合物。</hazard_characteristics>
       <fire_risk_classification>乙</fire_risk_classification>
-      <harmful_combustion_products>无资料 消防人员必须佩戴过滤式防毒面具(全面罩)或隔离式呼吸器、穿全身防火防毒服，在上风</harmful_combustion_products>
-      <suitable_extinguishing_media>向灭火。灭火剂：干粉、砂土。</suitable_extinguishing_media>
+      <harmful_combustion_products>氧化镍</harmful_combustion_products>
+      <suitable_extinguishing_media>消防人员必须佩戴过滤式防毒面具(全面罩)或隔离式呼吸器、穿全身防火防毒服，在上风向灭火。灭火剂：干粉、砂土。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
@@ -49,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免与氧化剂、酸类</handling_precautions>
-      <storage_precautions>戴自吸过滤式防尘口罩，戴化学安全防护眼镜，穿透气型防毒服，戴防化学品手套。远 接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏 应急处理设备。倒空的容器可能残留有害物。 储存于阴凉、通风的库房。远离火种、热源。包装要求密封，不可与空气接触。应与氧 化剂、酸类等分开存放，切忌混储。采用防爆型照明、通风设施。禁止使用易产生火花的 机械设备和工具。储区应备有合适的材料收容泄漏物。</storage_precautions>
+      <handling_precautions>远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免与氧化剂、酸类接触。戴自吸过滤式防尘口罩，戴化学安全防护眼镜，穿透气型防毒服，戴防化学品手套。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。包装要求密封，不可与空气接触。应与氧化剂、酸类等分开存放，切忌混储。采用防爆型照明、通风设施。禁止使用易产生火花的机械设备和工具。储区应备有合适的材料收容泄漏物。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -75,8 +79,8 @@
       <flash_point>无意义</flash_point>
       <relative_density>8.90</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>N</molecular_formula>
+      <solubility>不溶于水，溶于稀硝酸和氨水</solubility>
+      <molecular_formula>Ni</molecular_formula>
       <molecular_weight>58.70</molecular_weight>
       <main_components>纯品</main_components>
       <saturated_vapor_pressure>0.13(1810℃)</saturated_vapor_pressure>
@@ -84,7 +88,7 @@
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>可燃</flammability>
       <appearance>银白色坚硬金属。</appearance>
       <main_uses>用于电子管材料、加氢催化剂及镍盐制造。</main_uses>
       <other_properties>无资料</other_properties>
@@ -103,14 +107,14 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LC50：无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：>2000mg/kg（大鼠，经口）；LC50：>0.5mg/L（4小时，大鼠，吸入）</acute_toxicity>
+      <subacute_chronic_toxicity>长期吸入镍粉可致呼吸道刺激、慢性鼻炎，甚至发生鼻中隔穿孔。尚可引起变态反应性肺炎、支气管炎、哮喘等。</subacute_chronic_toxicity>
       <rtecs>QR5950000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
+      <irritation>对皮肤、眼睛和呼吸道有刺激性</irritation>
+      <sensitization>可引起皮肤过敏，又称镍"痒疹"</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <carcinogenicity>IARC 1类致癌物</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
@@ -133,12 +137,18 @@
       <imdg_page>4246</imdg_page>
       <packaging_mark>9</packaging_mark>
       <packing_group>Z01</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_method>包装类别：III类；包装方法：塑料袋或二层牛皮纸袋外全开口或中开口钢桶；塑料袋外钢桶；塑料袋或二层牛皮纸袋外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。装运本品的车辆排气管须有阻火装置。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、酸类等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。车辆运输完毕应进行彻底清扫。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>国内法规：《危险化学品安全管理条例》、《危险化学品目录》；国际法规：IARC 1类致癌物</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standard>GB/T 16483-2008</preparation_standard>
+      <modification_notes>无</modification_notes>
+      <abbreviations>MSDS：化学品安全技术说明书；CAS号：化学文摘社登记号；IARC：国际癌症研究机构</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

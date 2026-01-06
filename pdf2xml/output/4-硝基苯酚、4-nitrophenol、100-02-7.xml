@@ -4,31 +4,31 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>100-02-7</cas_number>
-      <msds_code>MSDS#732</msds_code>
+      <msds_code>MSDS-100-02-7</msds_code>
       <product_name>4-硝基苯酚</product_name>
       <product_alias>对硝基苯酚</product_alias>
       <product_english_name>4-nitrophenol</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品易燃，有毒，具强刺激性。</fire_explosion_hazards>
+      <hazard_category>第6.1类毒害品</hazard_category>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>吸入、摄入或经皮肤吸收后对身体有害。对眼睛、皮肤、粘膜和上呼吸道有刺激作用。长期或反复接触可能引起皮肤过敏。本品可引起高铁血红蛋白血症。</health_hazards>
+      <environmental_hazards>对水生生物有毒。</environmental_hazards>
+      <fire_explosion_hazards>遇明火、高热可燃。受热分解产生有毒的氮氧化物气体。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
       <components>
         <component>
-          <component_name>对硝基苯酚</component_name>
-          <component_content>100%</component_content>
+          <component_name>4-硝基苯酚</component_name>
+          <component_content>≥98%</component_content>
           <cas_number>100-02-7</cas_number>
         </component>
       </components>
@@ -53,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免产生粉尘。避免与氧化剂、</handling_precautions>
-      <storage_precautions>操作人员佩戴头罩型电动送风过滤式防尘呼吸器，穿胶布防毒衣，戴橡胶手套。远离火种、 还原剂、碱类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消 防器材及泄漏应急处理设备。倒空的容器可能残留有害物。 储存于阴凉、通风的库房。远离火种、热源。包装密封。应与氧化剂、还原剂、碱类、食 用化学品分开存放，切忌混储。采用防爆型照明、通风设施。禁止使用易产生火花的机械 设备和工具。储区应备有合适的材料收容泄漏物。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴头罩型电动送风过滤式防尘呼吸器，穿胶布防毒衣，戴橡胶手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免产生粉尘。避免与氧化剂、还原剂、碱类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。包装密封。应与氧化剂、还原剂、碱类、食用化学品分开存放，切忌混储。采用防爆型照明、通风设施。禁止使用易产生火花的机械设备和工具。储区应备有合适的材料收容泄漏物。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -65,34 +65,34 @@
       <contact_limits>美国TWA：未制定标准 美国STEL：未制定标准</contact_limits>
       <monitoring_method>无资料</monitoring_method>
       <engineering_controls>严加密闭，提供充分的局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
-      <respiratory_protection>可能接触其粉尘时，佩戴头罩型电动送风过滤式防尘呼吸器。紧急事态抢救或撤离时，应</respiratory_protection>
-      <eye_protection>呼吸系统防护中已作防护。</eye_protection>
+      <respiratory_protection>可能接触其粉尘时，佩戴头罩型电动送风过滤式防尘呼吸器。紧急事态抢救或撤离时，应佩戴空气呼吸器。</respiratory_protection>
+      <eye_protection>戴化学安全防护眼镜。</eye_protection>
       <body_protection>穿胶布防毒衣。</body_protection>
       <hand_protection>戴橡胶手套。</hand_protection>
-      <other_protection>工作现场禁止吸烟、进食和饮水。及时换洗工作服。工作前后不饮酒，用温水洗澡。实行</other_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。及时换洗工作服。工作前后不饮酒，用温水洗澡。实行就业前和定期的健康检查。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>113～114</melting_point>
-      <boiling_point>279</boiling_point>
+      <melting_point>113～114℃</melting_point>
+      <boiling_point>279℃</boiling_point>
       <flash_point>无意义</flash_point>
       <relative_density>1.49</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <relative_vapor_density>不适用</relative_vapor_density>
+      <solubility>微溶于水，溶于乙醇、乙醚、苯等有机溶剂</solubility>
       <molecular_formula>C6H5NO3</molecular_formula>
       <molecular_weight>139.11</molecular_weight>
-      <main_components>纯品</main_components>
-      <saturated_vapor_pressure>0.92(16℃)</saturated_vapor_pressure>
+      <main_components>4-硝基苯酚</main_components>
+      <saturated_vapor_pressure>0.92kPa(16℃)</saturated_vapor_pressure>
       <log_kow>1.91</log_kow>
       <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>283</ignition_temperature>
-      <autoignition_temperature>283</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>无色至淡黄色结晶粉末，有似苦杏仁的气味。</appearance>
-      <main_uses>用于染料制造，药物制造及用作试剂。</main_uses>
+      <ignition_temperature>283℃</ignition_temperature>
+      <autoignition_temperature>283℃</autoignition_temperature>
+      <flammability>可燃</flammability>
+      <appearance>无色至淡黄色结晶粉末，有似苦杏仁的气味</appearance>
+      <main_uses>用于染料制造，药物制造及用作试剂</main_uses>
       <other_properties>无资料</other_properties>
-      <heat_of_combustion>2879.2</heat_of_combustion>
+      <heat_of_combustion>2879.2kJ/mol</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
       <explosive_upper_limit>无资料</explosive_upper_limit>
       <explosive_lower_limit>无资料</explosive_lower_limit>
@@ -100,18 +100,18 @@
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>稳定</stability>
-      <incompatible_substances>强氧化剂、强还原剂、强碱。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <incompatible_substances>强氧化剂、强还原剂、强碱</incompatible_substances>
+      <conditions_to_avoid>明火、高热</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>分解产生有毒的氮氧化物气体</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：250mg／kg(大鼠经口)LC50：</acute_toxicity>
+      <acute_toxicity>LD50：250mg/kg(大鼠经口)；LC50：无资料</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>SM2275000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
+      <irritation>对眼睛、皮肤、粘膜和上呼吸道有刺激作用</irritation>
+      <sensitization>长期或反复接触可能引起皮肤过敏</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
       <carcinogenicity>无资料</carcinogenicity>
@@ -127,22 +127,28 @@
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。</disposal_method>
+      <disposal_precautions>根据国家和地方有关法规，处置前应参阅国家和地方有关法规。废弃物应交由有资质的危险废物处理单位处理。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>61712</dangerous_goods_number>
+      <dangerous_goods_number>UN1663</dangerous_goods_number>
       <un_number>1663</un_number>
       <imdg_page>6210</imdg_page>
       <packaging_mark>15</packaging_mark>
-      <packing_group>O53</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packing_group>III</packing_group>
+      <packaging_method>小开口钢桶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。装运本品的车辆排气管须有阻火装置。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、还原剂、碱类、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。车辆运输完毕应进行彻底清扫。公路运输时要按规定路线行驶。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>危险化学品安全管理条例、工作场所安全使用化学品规定、常用危险化学品的分类及标志(GB 13690-2009)、危险化学品目录(2015版)、易制毒化学品管理条例。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference>GB/T 16483-2008、GB 13690-2009、GB 6944-2012</reference>
+      <revision_info>本MSDS依据GB/T 16483-2008标准编制。</revision_info>
+      <other_notes>无资料</other_notes>
+    </other_info>
   </msds>
 </msds_list>

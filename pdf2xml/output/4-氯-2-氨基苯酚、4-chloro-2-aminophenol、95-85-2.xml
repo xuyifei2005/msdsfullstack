@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>95-85-2</cas_number>
-      <msds_code>MSDS#1853</msds_code>
+      <msds_code>MSDS-95-85-2</msds_code>
       <product_name>4-氯-2-氨基苯酚</product_name>
       <product_alias>2-氨基-4-氯苯酚；对氯邻氨基</product_alias>
       <product_english_name>4-chloro-2-aminophenol</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -74,7 +74,7 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>140～141</melting_point>
+      <melting_point>140～141℃</melting_point>
       <boiling_point>无资料</boiling_point>
       <flash_point>无资料</flash_point>
       <relative_density>无资料</relative_density>
@@ -107,7 +107,7 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：700mg／kg(大鼠经口)LC50：</acute_toxicity>
+      <acute_toxicity>LD50：700mg/kg(大鼠经口)；LD50：>2000mg/kg(大鼠经皮)；LC50：无资料(吸入)</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>SJ5700000</rtecs>
       <irritation>对眼睛、皮肤、粘膜和上呼吸道有刺激作用。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。进入体内，能形成高铁血红蛋白，引起紫绀。</irritation>
@@ -122,7 +122,7 @@
       <biodegradability>在环境中可生物降解，在好氧条件下可较快生物降解，半衰期约数天至数周。</biodegradability>
       <non_biodegradability>在厌氧条件下生物降解较慢，半衰期约数周至数月。</non_biodegradability>
       <bioaccumulation>在水生生物中具有较弱的生物富集性，生物富集系数（BCF）较低，一般不会在生物体内大量富集。</bioaccumulation>
-      <other_harmful_effects>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。保持良好的卫生习惯。</other_harmful_effects>
+      <other_harmful_effects>对水生生态系统可能产生长期不利影响。在土壤中具有中等迁移性，可能污染地下水。应避免该物质进入环境，特别是水体和土壤。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>

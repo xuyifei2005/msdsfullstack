@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>2763-96-4</cas_number>
-      <msds_code>无资料</msds_code>
+      <msds_code>MSDS-2763-96-4</msds_code>
       <product_name>5-(氨基甲基)-3-异噁唑醇</product_name>
-      <product_alias>醇</product_alias>
-      <product_english_name>5-aminomethyl-3-isoxazolol</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_alias>蝇蕈醇;毒蝇母;毒蝇蕈醇;Muscimol</product_alias>
+      <product_english_name>5-aminomethyl-3-isoxazolol;Muscimol</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类毒害品</hazard_category>
-      <exposure_routes>食入</exposure_routes>
-      <health_hazards>空间和时间感失常、睡眠时伴有轻微的恶心和呕吐。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品有毒</fire_explosion_hazards>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>吸入有毒。对眼睛、皮肤、粘膜和上呼吸道有刺激作用。误食可引起中毒症状，包括空间和时间感失常、睡眠时伴有轻微的恶心和呕吐。高剂量可引起中枢神经系统抑制。</health_hazards>
+      <environmental_hazards>对水生生物有害。</environmental_hazards>
+      <fire_explosion_hazards>遇明火、高热可燃。受热分解产生有毒的氮氧化物气体。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -36,24 +36,24 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>立即脱去污染的衣物。用大量肥皂水和清水冲洗皮肤。如有不适，就医。</skin_contact>
-      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。 立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给于吸氧。如患者食入或吸</eye_contact>
-      <inhalation>入本物质，不得进行口对口人工呼吸。如果呼吸停止。立即进行心肺复苏术。立即就医。</inhalation>
+      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。</eye_contact>
+      <inhalation>立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给予吸氧。如患者食入或吸入本物质，不得进行口对口人工呼吸。如果呼吸停止，立即进行心肺复苏术。立即就医。</inhalation>
       <ingestion>禁止催吐，切勿给失去知觉者从嘴里喂食任何东西。立即呼叫医生或中毒控制中心。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>无资料</hazard_characteristics>
+      <hazard_characteristics>遇明火、高热可燃。受热分解产生有毒的氮氧化物气体。</hazard_characteristics>
       <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>无资料 合适的灭火介质: 干粉、二氧化碳或耐醇泡沫。</harmful_combustion_products>
-      <suitable_extinguishing_media>不合适的灭火介质: 避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</suitable_extinguishing_media>
+      <harmful_combustion_products>氮氧化物、一氧化碳、二氧化碳。</harmful_combustion_products>
+        <suitable_extinguishing_media>干粉、二氧化碳、耐醇泡沫。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上 采取措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或 应急处理： 惰性吸附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭 容器中，并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防暴</emergency_procedures>
+      <emergency_procedures>保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上风处。采取措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或惰性吸附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中，并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防爆设备。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴防化学品手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物，应及时清洗。</handling_precautions>
       <storage_precautions>火花、明火和热表面。采取措施防止静电积累。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远离 不相容材料和食品容器的地方。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -75,22 +75,22 @@
     <physical_chemical>
       <pH>无资料</pH>
       <melting_point>175</melting_point>
-      <boiling_point>无资料</boiling_point>
+      <boiling_point>325.0±27.0 °C at 760 mmHg</boiling_point>
       <flash_point>无资料</flash_point>
-      <relative_density>无资料</relative_density>
+      <relative_density>1.4±0.1 g/cm3</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>CHNO</molecular_formula>
-      <molecular_weight></molecular_weight>
+      <solubility>与水混溶。</solubility>
+      <molecular_formula>C4H6N2O2</molecular_formula>
+      <molecular_weight>114.10</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <flammability>可燃</flammability>
+      <appearance>白色至灰白色粉末。</appearance>
+      <main_uses>用作科研试剂，GABA受体激动剂，具有一定的药物活性，在脑神经细胞研究中有应用。</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -99,15 +99,15 @@
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>无资料</stability>
-      <incompatible_substances>无资料</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <stability>稳定</stability>
+      <incompatible_substances>强氧化剂、酸类</incompatible_substances>
+      <conditions_to_avoid>明火、高热</conditions_to_avoid>
       <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受热分解产生有毒的氮氧化物气体、一氧化碳、二氧化碳。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LC50：</acute_toxicity>
+      <acute_toxicity>LD50：45 mg/kg(大鼠经口)；2.5 mg/kg(小鼠腹腔)。属于剧毒物质。</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
       <irritation>无资料</irritation>
@@ -126,23 +126,23 @@
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物，剧毒化学品。</waste_properties>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。与易燃溶剂混合后焚烧。必须按照当地相关法律法规和危险废物管理规定进行处置。交由有资质的危险废物处理单位处理。</disposal_method>
+      <disposal_precautions>处置前应咨询当地环保部门或专业机构，确保符合相关法规要求。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group>无资料</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <dangerous_goods_number>UN 2811</dangerous_goods_number>
+      <un_number>UN 2811</un_number>
+      <imdg_page>第6.1类毒害品</imdg_page>
+      <packaging_mark>III</packaging_mark>
+      <packing_group>III</packing_group>
+      <packaging_method>按照危险货物运输规定进行包装。使用符合标准的危险品包装容器。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。严禁与氧化剂、酸类、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。车辆运输完毕应进行彻底清扫。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>列入《危险化学品目录（2015版）》，属于危险化学品。根据《危险化学品安全管理条例》进行管理。根据《易制毒化学品管理条例》进行管理。根据《剧毒化学品购买和公路运输许可证件管理办法》进行管理。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

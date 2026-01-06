@@ -4,17 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>99-99-0</cas_number>
-      <msds_code>MSDS#672</msds_code>
+      <msds_code>MSDS-99-99-0</msds_code>
       <product_name>4-硝基甲苯</product_name>
       <product_alias>对硝基甲苯</product_alias>
       <product_english_name>4-nitrotoluene</product_english_name>
-      <!-- MSDS补全专家: 来源: 基于标准MSDS格式要求, 2025-12-18 -->
-      <company_name>无资料（建议向供应商索取详细企业信息）</company_name>
-      <company_address>无资料（建议向供应商索取详细地址信息）</company_address>
-      <contact_phone>无资料（建议向供应商索取联系电话）</contact_phone>
-      <emergency_phone>无资料（紧急情况下联系当地急救中心：120）</emergency_phone>
-      <email>无资料（建议向供应商索取邮箱地址）</email>
-      <fax_number>无资料（建议向供应商索取传真号码）</fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -37,25 +36,26 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>立即脱去污染的衣着，用肥皂水和清水彻底冲洗皮肤。就医。</skin_contact>
-      <eye_contact>提起眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即</eye_contact>
-      <inhalation>进行人工呼吸。就医。</inhalation>
-      <ingestion>饮足量温水，催吐。就医。</ingestion>
+      <eye_contact>提起眼睑，用流动清水或生理盐水冲洗。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸。就医。</inhalation>
+      <ingestion>禁止催吐，切勿给失去知觉者从嘴里喂食任何东西。立即就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>遇明火、高热可燃。受高热分解放出有毒的气体。与强氧化剂、强还原剂、强碱接触可发生反应。</hazard_characteristics>
-      <fire_risk_classification>丙</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳、氧化氮。 消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。灭火剂：泡沫、干粉、二氧化</harmful_combustion_products>
-      <suitable_extinguishing_media>碳。</suitable_extinguishing_media>
+      <fire_risk_classification>丙类</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氧化氮。</harmful_combustion_products>
+      <suitable_extinguishing_media>泡沫、干粉、二氧化碳、砂土。</suitable_extinguishing_media>
+      <extinguishing_precautions>消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。</extinguishing_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>隔离泄漏污染区，限制出入。切断火源。建议应急处理人员戴防尘面具（全面罩），穿防 应急处理： 毒服。不要直接接触泄漏物。小量泄漏：避免扬尘，用洁净的铲子收集于干燥、洁净、有 盖的容器中。大量泄漏：收集回收或运至废物处理场所处置。</emergency_procedures>
+      <emergency_procedures>隔离泄漏污染区，限制出入。切断火源。建议应急处理人员戴防尘面具（全面罩），穿防毒服。不要直接接触泄漏物。小量泄漏：避免扬尘，用洁净的铲子收集于干燥、洁净、有盖的容器中。大量泄漏：收集回收或运至废物处理场所处置。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
       <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防尘口罩，戴安全防护眼镜，穿透气型防毒服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免产生粉尘。避免与氧化剂、还原剂、碱类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
-      <storage_precautions>操作人员佩戴自吸过滤式防尘口罩，戴安全防护眼镜，穿透气型防毒服，戴橡胶耐油手套。 免与氧化剂、还原剂、碱类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品 种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。 储存于阴凉、通风的库房。远离火种、热源。包装密封。应与氧化剂、还原剂、碱类、食 用化学品分开存放，切忌混储。配备相应品种和数量的消防器材。储区应备有合适的材料 收容泄漏物。应严格执行极毒物品“五双”管理制度。</storage_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。包装密封。应与氧化剂、还原剂、碱类、食用化学品分开存放，切忌混储。配备相应品种和数量的消防器材。储区应备有合适的材料收容泄漏物。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -70,7 +70,7 @@
       <eye_protection>戴安全防护眼镜。</eye_protection>
       <body_protection>穿透气型防毒服。</body_protection>
       <hand_protection>戴橡胶手套。</hand_protection>
-      <other_protection>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。注意个人清洁卫生。应严格执行极毒物品"五双"管理制度。</other_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。注意个人清洁卫生。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
@@ -119,27 +119,27 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>4-硝基甲苯对水生生物有毒性。对鱼类LC50（96h）：1-10mg/L；对甲壳类LC50（48h）：0.1-1mg/L；对藻类EC50（72h）：1-10mg/L。对鸟类、哺乳动物等陆生生物也有毒性作用。对水生生物可能有害，应避免进入水体、土壤和地下水。应特别注意对水体的污染。</ecological_toxicity>
+      <ecological_toxicity>4-硝基甲苯对水生生物有毒性。对鱼类LC50（96h）：1-10mg/L；对甲壳类LC50（48h）：0.1-1mg/L；对藻类EC50（72h）：1-10mg/L。对鸟类、哺乳动物等陆生生物也有毒性作用。</ecological_toxicity>
       <biodegradability>在环境中较难生物降解，在好氧条件下可缓慢生物降解，半衰期约数周至数月。</biodegradability>
       <non_biodegradability>在厌氧条件下极难生物降解，半衰期可达数月甚至数年。在土壤中可长期残留。</non_biodegradability>
-      <bioaccumulation>在水生生物和陆生生物中具有中等至较强的生物富集性，生物富集系数（BCF）可达数百至数千倍。可通过食物链在生物体内富集，对生态系统造成危害。在水生生物中可能发生生物蓄积。</bioaccumulation>
-      <other_harmful_effects>该物质对环境有危害，应特别注意对水体的污染。工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。注意个人清洁卫生。应严格执行极毒物品"五双"管理制度。</other_harmful_effects>
+      <bioaccumulation>在水生生物和陆生生物中具有中等至较强的生物富集性，生物富集系数（BCF）可达数百至数千倍。可通过食物链在生物体内富集，对生态系统造成危害。</bioaccumulation>
+      <other_harmful_effects>该物质对环境有危害，应特别注意对水体的污染。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>集中收集后交由有资质的危险废物处置单位进行安全处置。应采用高温焚烧法处置，焚烧温度需≥1100℃，停留时间≥2秒，确保完全燃烧。尾气需经碱洗、活性炭吸附等处理以去除氧化氮，确保达标排放。也可采用化学处理法，在碱性条件下还原后，按危险废物进行处置。禁止将未经处理的废物直接排入环境。</disposal_method>
-      <disposal_precautions>处置区保持通风，远离火源，操作人员佩戴空气呼吸器和防化服。禁止将未经处理的废物直接排入环境。处置前应参阅国家和地方有关法规，遵守《危险废物污染环境防治法》。应严格执行极毒物品"五双"管理制度。</disposal_precautions>
+      <waste_properties>危险废物</waste_properties>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废物处置应交由有资质的废物处理单位处理。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>61058</dangerous_goods_number>
-      <un_number>1664</un_number>
-      <imdg_page>6211</imdg_page>
-      <packaging_mark>14</packaging_mark>
-      <packing_group>O52</packing_group>
-      <packaging_method>内层玻璃或金属容器，外覆钢桶/木箱，并配吸附材料防泄漏。包装应密封、防潮、防破损。</packaging_method>
-      <transportation_precautions>运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、还原剂、碱类、食用化学品等混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。应严格执行极毒物品"五双"管理制度。</transportation_precautions>
+      <dangerous_goods_number>UN 1664</dangerous_goods_number>
+      <un_number>UN 1664</un_number>
+      <imdg_page>6.1类</imdg_page>
+      <packaging_mark>III类包装</packaging_mark>
+      <packing_group>III</packing_group>
+      <packaging_method>小开口钢桶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>运输前应先检查包装容器是否完整、密封，运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、还原剂、碱类、食用化学品等混装混运。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>

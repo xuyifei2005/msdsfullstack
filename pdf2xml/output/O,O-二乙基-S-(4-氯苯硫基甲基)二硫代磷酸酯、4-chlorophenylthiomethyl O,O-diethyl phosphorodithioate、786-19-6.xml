@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>786-19-6</cas_number>
-      <msds_code>MSDS#1349</msds_code>
-      <product_name>O,O-二乙基-S-(4-氯苯硫基甲基)二</product_name>
+      <msds_code>MSDS-786-19-6</msds_code>
+      <product_name>O,O-二乙基-S-(4-氯苯硫基甲基)二硫代磷酸酯</product_name>
       <product_alias>三硫磷</product_alias>
-      <product_english_name>4-chlorophenylthiomethyl</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_english_name>4-chlorophenylthiomethyl O,O-diethyl phosphorodithioate</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -53,7 +53,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>避免接触眼睛、皮肤，操作后彻底清洗。作业场所不得进食、饮水或吸烟。戴防护手套、穿防护服。禁止排入环境。接触皮肤之后，立即使用大量皂液洗涤。</handling_precautions>
       <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。保持容器密封。防潮、防晒。寒冷季节要注意 保持库温在结晶点以上，防止冻裂容器及变质。专人保管。搬运时要轻装轻卸，防止包装及 容器损坏。分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -79,8 +79,8 @@
       <flash_point>无资料</flash_point>
       <relative_density>1.29(20℃)</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C11H16C</molecular_formula>
+      <solubility>无资料</solubility>
+      <molecular_formula>C11H16ClO2PS3</molecular_formula>
       <molecular_weight>342.87</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
@@ -118,7 +118,7 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>危害水生环境-急性危害，类别1；危害水生环境-长期危害，类别1。对环境有危害，对水体可造成污染。</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
@@ -127,7 +127,7 @@
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
+      <disposal_method>本品及内装物、容器依据国家和地方法规处置。</disposal_method>
       <disposal_precautions>无资料</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
@@ -138,11 +138,16 @@
       <packaging_mark>13</packaging_mark>
       <packing_group>Ⅱ</packing_group>
       <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <transportation_precautions>铁路运输时应严格按照铁道部《危险货物运输规则》中的危险货物配装表进行配装。运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与酸类、氧化剂、食品及食品添加剂混运。运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品目录（剧毒）。危险品类别：毒害品和感染性物品。危险货物编号：61126。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）和《化学品安全技术说明书编写指南》（GB/T 17519-2013）编制。</references>
+      <other_notes>无资料</other_notes>
+    </other_info>
   </msds>
 </msds_list>

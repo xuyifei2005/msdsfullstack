@@ -4,24 +4,22 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>100-14-1</cas_number>
-      <msds_code>MSDS#1642</msds_code>
+      <msds_code>MSDS-100-14-1</msds_code>
       <product_name>4-硝基氯化苄</product_name>
       <product_alias>对硝基氯化苄；对硝基苄基氯；</product_alias>
       <product_english_name>4-Nitrobenzyl chloride</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入
-吸入、摄入对身体有害。对眼睛、皮肤、粘膜及呼吸道有刺激作用。中毒表现有烧灼感、
-咳嗽、喘息、喉炎、气短、头痛、恶心和呕吐。吸入后可能由于喉、支气管的痉挛、炎症</exposure_routes>
-      <health_hazards>和水肿，化学性肺炎、肺水肿而致死。</health_hazards>
+      <exposure_routes>吸入、食入、皮肤接触</exposure_routes>
+      <health_hazards>吸入、摄入对身体有害。对眼睛、皮肤、粘膜及呼吸道有刺激作用。中毒表现有烧灼感、咳嗽、喘息、喉炎、气短、头痛、恶心和呕吐。吸入后可能由于喉、支气管的痉挛、炎症和水肿，化学性肺炎、肺水肿而致死。</health_hazards>
       <environmental_hazards>无资料</environmental_hazards>
       <fire_explosion_hazards>本品可燃、有毒、具有刺激性</fire_explosion_hazards>
     </hazard_info>
@@ -44,18 +42,21 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>遇明火、高热可燃。与强氧化剂可发生反应。受高热分解，产生有毒的氮氧化物和氯化物 气体。</hazard_characteristics>
+      <hazard_characteristics>遇明火、高热可燃。与强氧化剂可发生反应。受高热分解，产生有毒的氮氧化物和氯化物气体。</hazard_characteristics>
       <fire_risk_classification>丙</fire_risk_classification>
       <harmful_combustion_products>一氧化碳、二氧化碳、氧化氮、氯化氢。</harmful_combustion_products>
-      <suitable_extinguishing_media>消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。尽可能将容器从火场移至空旷 处。灭火剂：泡沫、二氧化碳、干粉、砂土。</suitable_extinguishing_media>
+      <suitable_extinguishing_media>泡沫、二氧化碳、干粉、砂土。</suitable_extinguishing_media>
+      <firefighting_precautions>消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。尽可能将容器从火场移至空旷处。</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>隔离泄漏污染区，周围设警告标志，建议应急处理人员戴好防毒面具，穿化学防护服。不 要直接接触泄漏物，用沙土、干燥石灰或苏打灰混合，然后收集运至废物处理场所。如大 量泄漏，收集回收或无害处理后废弃。</emergency_procedures>
+      <emergency_procedures>隔离泄漏污染区，周围设警告标志，建议应急处理人员戴好防毒面具，穿化学防护服。不要直接接触泄漏物，用沙土、干燥石灰或苏打灰混合，然后收集运至废物处理场所。如大量泄漏，收集回收或无害处理后废弃。</emergency_procedures>
+      <environmental_precautions>防止泄漏物进入下水道、地表水和地下水。</environmental_precautions>
+      <cleaning_methods>用沙土、干燥石灰或苏打灰混合，收集于密闭容器中作废弃处理。</cleaning_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶手套。避免产生粉尘。避免与氧化剂、碱类、胺类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光直射。包装必须密封，切勿受潮。 应与氧化剂、食用化工原料分开存放。搬运时要轻装轻卸，防止包装及容器损坏。分装和 搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -77,14 +78,14 @@
     <physical_chemical>
       <pH>无资料</pH>
       <melting_point>71</melting_point>
-      <boiling_point>无资料</boiling_point>
-      <flash_point>无资料</flash_point>
-      <relative_density>无资料</relative_density>
+      <boiling_point>263-265</boiling_point>
+      <flash_point>110</flash_point>
+      <relative_density>1.4</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C7H6C</molecular_formula>
+      <solubility>不溶于水，溶于乙醇、乙醚等有机溶剂。</solubility>
+      <molecular_formula>C7H6ClNO2</molecular_formula>
       <molecular_weight>171.58</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>4-硝基氯化苄（C7H6ClNO2）</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
@@ -105,14 +106,14 @@
       <incompatible_substances>碱、胺类、强氧化剂、水、二氧化碳。</incompatible_substances>
       <conditions_to_avoid>接触潮湿空气。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受热分解产生有毒的氮氧化物和氯化氢气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
+      <acute_toxicity>大鼠经口LD50：540mg/kg；小鼠经口LD50：500mg/kg；小鼠腹腔LD50：200mg/kg。</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>XS9093000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤、粘膜有刺激性。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -124,27 +125,35 @@
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作现场禁止吸烟、进食和饮水。及时换洗工作服。工作前后不饮酒，用温水洗澡。进行</other_harmful_effects>
+      <other_harmful_effects>对水生生物可能有害。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>有害化学品。</waste_properties>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废物应交由有资质的危险废物处理单位处置。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>61685</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <un_number>UN 2853</un_number>
+      <transport_name>对硝基氯化苄</transport_name>
+      <hazard_class>6.1</hazard_class>
       <imdg_page>无资料</imdg_page>
       <packaging_mark>14</packaging_mark>
-      <packing_group>无资料</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packing_group>III</packing_group>
+      <packaging_method>小开口钢桶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱。</packaging_method>
+      <transportation_precautions>铁路运输时应严格按照铁道部《危险货物运输规则》中的危险货物配装表进行配装。运输前应先检查包装容器是否完整、密封，运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与酸类、氧化剂、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品，应按照相关法规进行生产、储存、运输和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standard>GB/T 16483-2008</preparation_standard>
+      <modification_notes>无</modification_notes>
+      <abbreviations>无</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

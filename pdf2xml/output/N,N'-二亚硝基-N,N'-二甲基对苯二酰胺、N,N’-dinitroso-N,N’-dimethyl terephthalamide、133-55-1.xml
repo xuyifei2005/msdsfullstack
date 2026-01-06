@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>133-55-1</cas_number>
-      <msds_code>供应商名称： 供应商地址：</msds_code>
-      <product_name>N</product_name>
-      <product_alias>二酰胺</product_alias>
-      <product_english_name>N'-二亚硝基-N</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <msds_code>MSDS-133-55-1</msds_code>
+      <product_name>N,N'-二亚硝基-N,N'-二甲基对苯二酰胺</product_name>
+      <product_alias>133-55-1</product_alias>
+      <product_english_name>N,N'-dinitroso-N,N'-dimethyl terephthalamide</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>侵入途径：</hazard_category>
-      <exposure_routes></exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards></environmental_hazards>
-      <fire_explosion_hazards>遇热有火灾危险。</fire_explosion_hazards>
+      <hazard_category>第6.1类毒害品</hazard_category>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>吸入有毒。对眼睛、皮肤、粘膜和上呼吸道有刺激作用。长期或反复接触可能引起皮肤过敏。可能对器官造成损害。</health_hazards>
+      <environmental_hazards>可能对水生生物有害。避免释放到环境中。</environmental_hazards>
+      <fire_explosion_hazards>遇明火、高热可燃。受热分解产生有毒气体，包括氮氧化物和一氧化碳。与氧化剂接触有发生火灾和爆炸的危险。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -36,25 +36,28 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>立即脱去污染的衣物。用大量肥皂水和清水冲洗皮肤。如有不适，就医。</skin_contact>
-      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。 立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给于吸氧。如患者食入或吸</eye_contact>
-      <inhalation>入本物质，不得进行口对口人工呼吸。如果呼吸停止。立即进行心肺复苏术。立即就医。</inhalation>
+      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。</eye_contact>
+      <inhalation>立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给于吸氧。如患者食入或吸入本物质，不得进行口对口人工呼吸。如果呼吸停止，立即进行心肺复苏术。立即就医。</inhalation>
       <ingestion>禁止催吐，切勿给失去知觉者从嘴里喂食任何东西。立即呼叫医生或中毒控制中心。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>都可能引起火灾和爆炸。加热时，容器可能爆炸。受热或接触火焰可能会产生膨胀或爆炸 性分解。</hazard_characteristics>
-      <fire_risk_classification>有害燃烧产物：</fire_risk_classification>
-      <harmful_combustion_products>合适的灭火介质: 干粉、二氧化碳、水喷雾或耐醇泡沫。 不合适的灭火介质: 避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安 全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <hazard_characteristics>遇明火、高热可燃。受热分解产生有毒气体。与氧化剂接触有发生火灾和爆炸的危险。加热时，容器可能爆炸。受热或接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
+      <fire_risk_classification>第6.1类毒害品</fire_risk_classification>
+      <harmful_combustion_products>氮氧化物、一氧化碳、二氧化碳</harmful_combustion_products>
+      <suitable_extinguishing_media>干粉、二氧化碳、水喷雾或耐醇泡沫。避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</suitable_extinguishing_media>
+      <fire_fighting_precautions>灭火时，应佩戴呼吸面具（符合MSHA/NIOSH要求的或相当的）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</fire_fighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上 采取措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或 惰性吸附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭 容器中，并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防暴</emergency_procedures>
+      <emergency_procedures>保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上风向。采取措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或惰性吸附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中，并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防爆设备。</emergency_procedures>
+      <environmental_precautions>避免排放到周围环境中。防止污染土壤、水体和排水系统。</environmental_precautions>
+      <cleaning_methods>使用干砂、惰性吸附材料吸收泄漏物。收集物应存放在合适的密闭容器中，并根据当地相关法律法规废弃处置。</cleaning_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>良好处进行操作。穿戴合适的个人防护用具。避免接触皮肤和进入眼睛。远离热源、火花、</handling_precautions>
-      <storage_precautions>明火和热表面。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。储存温度不应高于35℃。</storage_precautions>
+      <handling_precautions>在通风良好处进行操作。穿戴合适的个人防护用具。避免接触皮肤和进入眼睛。远离热源、火花、明火和热表面。操作后彻底清洗。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防尘口罩，戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶手套。</handling_precautions>
+      <storage_precautions>保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远离不相容材料和食品容器的地方。储存温度不应高于35℃。与氧化剂、酸类分开存放，切忌混储。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -63,12 +66,12 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
-      <eye_protection>佩戴化学护目镜（符合欧盟EN 166或美国NIOSH标准）。</eye_protection>
-      <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>密闭操作，提供充分的局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>空气中粉尘浓度超标时，佩戴自吸过滤式防尘口罩（半面罩）。紧急事态抢救或撤离时，应该佩戴空气呼吸器。</respiratory_protection>
+      <eye_protection>戴化学安全防护眼镜。</eye_protection>
+      <body_protection>穿防毒物渗透工作服。</body_protection>
+      <hand_protection>戴橡胶手套。</hand_protection>
       <other_protection>无资料</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
@@ -76,21 +79,21 @@
       <pH>无资料</pH>
       <melting_point>108</melting_point>
       <boiling_point>384.4</boiling_point>
-      <flash_point></flash_point>
+      <flash_point>无资料</flash_point>
       <relative_density>1.36</relative_density>
       <relative_vapor_density>不适用</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>无资料</solubility>
       <molecular_formula>C10H10N4O4</molecular_formula>
-      <molecular_weight></molecular_weight>
+      <molecular_weight>250.22</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>不适用</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <flammability>无资料</flammability>
+      <appearance>黄色至橙色结晶粉末</appearance>
+      <main_uses>用作化学试剂、有机合成中间体</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -126,23 +129,31 @@
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物，具有毒性和潜在致癌性</waste_properties>
+      <disposal_method>建议使用焚烧法处置。焚烧炉应配备洗涤器和除尘设备，以防止氮氧化物等有害气体的排放。处置前应与有资质的危险废物处理单位联系，按照当地相关法律法规进行处置。</disposal_method>
+      <disposal_precautions>处置前必须将废弃物分类、包装、贴标。严禁随意丢弃或排入下水道、土壤或水体。操作人员应穿戴适当的个人防护设备。处置过程应在通风良好的环境中进行，避免吸入粉尘或烟雾。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <dangerous_goods_number>UN 2811</dangerous_goods_number>
+      <un_number>UN 2811</un_number>
+      <imdg_page>第6.1类毒害品</imdg_page>
+      <packaging_mark>II类包装</packaging_mark>
+      <packing_group>II</packing_group>
+      <packaging_method>使用符合危险货物运输规定的密封容器。包装应坚固、密封，防止泄漏。内包装应使用适当的衬垫材料防止破损。</packaging_method>
+      <transportation_precautions>运输过程中应远离热源、火源和阳光直射。避免剧烈震动、撞击和摩擦。运输车辆应配备相应的应急处理设备。运输人员应经过危险货物运输培训，熟悉本物质的危险性和应急处理措施。按照《危险货物运输规则》进行运输。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+        <domestic_regulations>《危险化学品安全管理条例》（国务院令第591号）、《易制毒化学品管理条例》（国务院令第445号）、《易制爆危险化学品名录》（2017年版）</domestic_regulations>
+        <international_regulations>联合国《关于危险货物运输的建议书》（TDG）、《全球化学品统一分类和标签制度》（GHS）</international_regulations>
+        <regulatory_info>该化学品属于危险化学品，按照《危险化学品安全管理条例》进行管理。该物质属于自反应物质和混合物，在运输和储存过程中需要严格遵守相关法规要求。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other>
+        <preparation_standard>本安全技术说明书按照GB/T 16483-2008、GB/T 17519-2013标准编制</preparation_standard>
+        <modification_notes>无</modification_notes>
+        <abbreviations>CAS：化学文摘社；LD50：半数致死量；LC50：半数致死浓度；GHS：全球化学品统一分类和标签制度；TDG：关于危险货物运输的建议书</abbreviations>
+    </other>
   </msds>
 </msds_list>

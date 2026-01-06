@@ -4,22 +4,21 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>110-15-6</cas_number>
-      <msds_code>MSDS#1366</msds_code>
+      <msds_code>MSDS-110-15-6</msds_code>
       <product_name>丁二酸</product_name>
       <product_alias>琥珀酸</product_alias>
       <product_english_name>Succinic acid</product_english_name>
-      <!-- MSDS补全专家: 来源: 基于标准MSDS格式要求, 2025-12-18 -->
-      <company_name>无资料（建议向供应商索取详细企业信息）</company_name>
-      <company_address>无资料（建议向供应商索取详细地址信息）</company_address>
-      <contact_phone>无资料（建议向供应商索取联系电话）</contact_phone>
-      <emergency_phone>无资料（紧急情况下联系当地急救中心：120）</emergency_phone>
-      <email>无资料（建议向供应商索取邮箱地址）</email>
-      <fax_number>无资料（建议向供应商索取传真号码）</fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第8.1类酸性腐蚀品</hazard_category>
-      <exposure_routes>吸入食入经皮吸收</exposure_routes>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
       <health_hazards>吸入、食入或经皮肤吸收后对身体有害。大剂量口服可引起非特异性呕吐和腹泻。对眼睛、皮肤、粘膜有一定的刺激作用。在工业上使用未见职业中毒报道。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。本品可通过皮肤吸收。</health_hazards>
       <environmental_hazards>丁二酸对水生生物可能有害。应避免进入水体、土壤和地下水。该物质对环境可能有危害，对水体应给予特别注意。</environmental_hazards>
       <fire_explosion_hazards>本品可燃，具刺激性。粉体与空气可形成爆炸性混合物，当达到一定的浓度时，遇火星会发生爆炸。</fire_explosion_hazards>
@@ -54,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光直射。保持容器密封。应与氧化剂、碱 类分开存放。搬运时要轻装轻卸，防止包装及容器损坏。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防尘口罩，戴化学安全防护眼镜，穿防酸碱工作服，戴橡皮胶手套。避免产生粉尘。避免与氧化剂、碱类、还原剂接触。搬运时要轻装轻卸，防止包装及容器损坏。配备泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光直射。保持容器密封。应与氧化剂、碱类分开存放。搬运时要轻装轻卸，防止包装及容器损坏。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -133,14 +132,15 @@
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>81631</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>20</packaging_mark>
-      <packing_group>III（包装类别III，低危险性）</packing_group>
-      <packaging_method>采用防静电包装，避免与氧化剂、碱类混装。包装应密封、防潮、防破损。粉体与空气可形成爆炸性混合物，需特别注意。</packaging_method>
-      <transportation_precautions>运输前检查密封，防止跌落和碰撞。严禁与氧化剂、碱类、食用化学品混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。粉体与空气可形成爆炸性混合物，需特别注意。</transportation_precautions>
-    </transportation>
+          <dangerous_goods_number>81631</dangerous_goods_number>
+          <un_number>UN3265</un_number>
+          <un_name>有机酸性腐蚀性固体，未另作规定的</un_name>
+          <transport_hazard_class>第8类腐蚀性物质</transport_hazard_class>
+          <packaging_category>III类</packaging_category>
+          <packaging_method>采用防静电包装，避免与氧化剂、碱类混装。包装应密封、防潮、防破损。粉体与空气可形成爆炸性混合物，需特别注意。</packaging_method>
+          <marine_pollutant>无资料</marine_pollutant>
+          <transportation_precautions>运输前检查密封，防止跌落和碰撞。严禁与氧化剂、碱类、食用化学品混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。粉体与空气可形成爆炸性混合物，需特别注意。</transportation_precautions>
+        </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第8.1类酸性腐蚀品，应按照相关法规进行生产、储存、运输和使用。粉体与空气可形成爆炸性混合物，需特别注意。</regulatory_info>

@@ -4,7 +4,7 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>95-49-8</cas_number>
-      <msds_code>MSDS#1625</msds_code>
+      <msds_code>MSDS-95-49-8</msds_code>
       <product_name>2-氯甲苯</product_name>
       <product_alias>邻氯甲苯</product_alias>
       <product_english_name>2-Chlorotoluene</product_english_name>

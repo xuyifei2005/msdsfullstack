@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>110-12-3</cas_number>
-      <msds_code>MSDS#1181</msds_code>
+      <msds_code>MSDS-110-12-3</msds_code>
       <product_name>5-甲基-2-己酮</product_name>
-      <product_alias>无资料</product_alias>
+      <product_alias>异庚酮；异丁基丙酮；甲基己酮；甲基异戊基酮</product_alias>
       <product_english_name>5-Methyl-2-hexanone</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -94,8 +94,8 @@
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <explosive_upper_limit>未确定</explosive_upper_limit>
+      <explosive_lower_limit>未确定</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -107,7 +107,7 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>属微毒LD50：4760mg／kg(大鼠经口)；10000mg／kg(兔经皮)LC50：</acute_toxicity>
+      <acute_toxicity>属微毒LD50：4760mg/kg(大鼠经口)；10000mg/kg(兔经皮)。LC50：无资料。</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>MP3850000</rtecs>
       <irritation>本品对眼睛、皮肤有刺激作用。接触后可能引起眼部不适、皮肤刺激和呼吸道刺激症状。</irritation>
@@ -122,7 +122,7 @@
       <biodegradability>在环境中可生物降解，在好氧条件下可缓慢生物降解，半衰期约数周至数月。挥发到大气中的酮类可在光化条件下降解。</biodegradability>
       <non_biodegradability>在厌氧条件下较难生物降解，半衰期可达数周至数月。</non_biodegradability>
       <bioaccumulation>在水生生物和陆生生物中具有较低至中等的生物富集性，生物富集系数（BCF）较低。在水生生物中可能发生生物蓄积。</bioaccumulation>
-      <other_harmful_effects>工作现场严禁吸烟。保持良好的卫生习惯。</other_harmful_effects>
+      <other_harmful_effects>挥发性有机化合物，可能参与大气光化学反应，对环境有潜在影响。对水体应给予特别注意。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
@@ -146,39 +146,9 @@
     </regulatory>
     <!-- 第十六部分：其他信息 -->
     <other_info>
-      <references>
-        <reference>国际化学品安全规划署(IPCS). ICSC: 0765</reference>
-        <reference>美国国立职业安全卫生研究所(NIOSH). RTECS: MP3850000</reference>
-        <reference>欧洲化学品管理局(ECHA). 5-甲基-2-己酮信息摘要</reference>
-        <reference>美国环保署(ECOTOX). 生态毒性数据库</reference>
-      </references>
-      <standards>
-        <standard>GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》</standard>
-        <standard>GB 13690-2009《化学品分类和危险性公示通则》</standard>
-        <standard>GB 15258-2009《化学品安全标签编写规定》</standard>
-      </standards>
-      <revision_info>
-        <version>1.0</version>
-        <revision_date>2023-10-15</revision_date>
-        <revision_notes>根据最新法规和毒理学数据更新</revision_notes>
-        <author>MSDS补全专家</author>
-      </revision_info>
-      <glossary>
-        <term name="LC50">半数致死浓度(Lethal Concentration 50%)：指在规定时间内，能使50%的试验动物死亡的浓度</term>
-        <term name="LD50">半数致死剂量(Lethal Dose 50%)：指在规定时间内，能使50%的试验动物死亡的剂量</term>
-        <term name="BCF">生物富集系数(Bioconcentration Factor)：衡量化学物质在生物体内富集程度的指标</term>
-        <term name="闪点">液体在规定条件下加热到其蒸气与空气形成的混合物接触火焰发生闪火的最低温度</term>
-        <term name="自燃点">物质在没有外部火源的情况下，在空气中自发燃烧的最低温度</term>
-        <term name="爆炸极限">可燃气体或蒸气与空气混合后能够发生爆炸的浓度范围</term>
-      </glossary>
-      <additional_info>
-        <application>5-甲基-2-己酮(异丁基丙酮)主要用作有机合成中间体、溶剂和稀释剂，广泛用于涂料、油漆、粘合剂、清洗剂和印刷油墨等行业。也可用于树脂、塑料和橡胶的制造过程。</application>
-        <safety_operations>操作时应佩戴适当的个人防护装备，包括防毒面具、化学安全防护眼镜、防静电工作服和耐油手套。工作场所应保持良好通风，使用防爆型电气设备。避免与强氧化剂、强还原剂和强碱接触。远离火源和热源，防止静电积聚。</safety_operations>
-        <disposal_notes>废弃的5-甲基-2-己酮应作为危险废物处理，不得随意排放。应收集在密闭容器中，交由有资质的危险废物处理单位进行专业处置。处理过程中应防止对环境造成污染，特别是对水体和土壤的污染。</disposal_notes>
-        <storage_notes>应储存在阴凉、通风良好的专用仓库内，远离火源、热源和阳光直射。储存温度不宜超过30℃。应与氧化剂、强还原剂和强碱等危险品分开存放，避免混储。容器应保持密封，防止泄漏。储存区域应配备相应的消防器材和泄漏应急处理设备。</storage_notes>
-        <transport_notes>运输时应按照危险货物运输规定进行，包装应符合相关标准要求。运输车辆应配备相应的消防器材和防泄漏设备。运输过程中应防止剧烈震动、撞击、高温和阳光直射。严禁与氧化剂、食用化学品等混装混运。</transport_notes>
-        <emergency_notes>发生泄漏时，应迅速撤离泄漏污染区人员至安全区，并进行隔离。应急处理人员应佩戴自给正压式呼吸器，穿防毒服。尽可能切断泄漏源，防止进入下水道、排洪沟等限制性空间。小量泄漏可用砂土或其它不燃材料吸收，大量泄漏应构筑围堤或挖坑收容。</emergency_notes>
-      </additional_info>
+      <compilation_standard>本安全技术说明书按照GB/T 16483-2008、GB/T 17519-2013标准编制。</compilation_standard>
+      <modification_notes>无</modification_notes>
+      <abbreviations_and_terms>CAS号：美国化学文摘社登记号；LD50：半数致死量；LC50：半数致死浓度；UN：联合国编号。</abbreviations_and_terms>
     </other_info>
   </msds>
 </msds_list>

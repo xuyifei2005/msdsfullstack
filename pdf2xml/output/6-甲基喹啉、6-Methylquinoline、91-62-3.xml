@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>91-62-3</cas_number>
-      <msds_code>MSDS#2036</msds_code>
+      <msds_code>MSDS-91-62-3</msds_code>
       <product_name>6-甲基喹啉</product_name>
       <product_alias>无资料</product_alias>
       <product_english_name>6-Methylquinoline</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -135,8 +135,8 @@
       <dangerous_goods_number>61848</dangerous_goods_number>
       <un_number>2659</un_number>
       <imdg_page>6220</imdg_page>
-      <packaging_mark>14</packaging_mark>
-      <packing_group>Ⅱ</packing_group>
+      <packaging_mark>15</packaging_mark>
+      <packing_group>Ⅲ</packing_group>
       <packaging_method>内层玻璃或金属容器，外覆钢桶/木箱，并配吸附材料防泄漏。包装应密封、防潮、防破损。</packaging_method>
       <transportation_precautions>运输前应先检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、酸类、食用化学品等混装混运，车辆需配备灭火器与泄漏应急装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。</transportation_precautions>
     </transportation>
