@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>75-46-7</cas_number>
-      <msds_code>MSDS#69</msds_code>
+      <msds_code>MSDS-75-46-7</msds_code>
       <product_name>三氟甲烷</product_name>
       <product_alias>R23；氟仿</product_alias>
       <product_english_name>trifluoromethane</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -35,10 +35,10 @@
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>无资料</skin_contact>
-      <eye_contact>无资料 迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人</eye_contact>
-      <inhalation>工呼吸。就医。</inhalation>
-      <ingestion>无资料</ingestion>
+      <skin_contact>接触它会引起冻伤。如果怀疑被冻伤，脱掉粘有三氟甲烷的衣服，用大量的温水冲洗几分钟，并立即进行医疗处理。</skin_contact>
+      <eye_contact>接触它会引起冻伤。如果怀疑被冻伤，用大量的温水冲洗几分钟，并立即进行医疗处理。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸。就医。</inhalation>
+      <ingestion>摄入不可能成为接触三氟甲烷的途径。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
@@ -49,7 +49,7 @@
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>迅速撤离泄漏污染区人员至上风处，并进行隔离，严格限制出入。建议应急处理人员戴自给正 应急处理： 压式呼吸器，穿一般作业工作服。尽可能切断泄漏源。合理通风，加速扩散。漏气容器要妥善</emergency_procedures>
+      <emergency_procedures>迅速撤离泄漏污染区人员至上风处，并进行隔离，严格限制出入。建议应急处理人员戴自给正压式呼吸器，穿一般作业工作服。尽可能切断泄漏源。合理通风，加速扩散。漏气容器要妥善处理，修复、检验后再用。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
@@ -79,7 +79,7 @@
       <flash_point>无意义</flash_point>
       <relative_density>1.52(-80℃)</relative_density>
       <relative_vapor_density>2.43</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>溶于水。</solubility>
       <molecular_formula>CHF3</molecular_formula>
       <molecular_weight>70.01</molecular_weight>
       <main_components>纯品</main_components>
@@ -88,7 +88,7 @@
       <critical_temperature>25.7</critical_temperature>
       <ignition_temperature>无意义</ignition_temperature>
       <autoignition_temperature>无意义</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>不燃</flammability>
       <appearance>无色无臭气体。</appearance>
       <main_uses>用作低温致冷剂及作为灭火剂和制造四氟乙烯的原料。</main_uses>
       <other_properties>无资料</other_properties>
@@ -107,7 +107,7 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LC50：无资料</acute_toxicity>
+      <acute_toxicity>大鼠吸入20%×2小时，存活；豚鼠吸入50～80%(充氧环境连续吸入)，存活。</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>PB6900000</rtecs>
       <irritation>无资料</irritation>
@@ -121,14 +121,14 @@
       <ecological_toxicity>无资料</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
-      <other_harmful_effects>层大气中可被能量更大的紫外线分解。</other_harmful_effects>
+      <bioaccumulation>无资料</bioaccumulation>
+      <other_harmful_effects>该物质对环境有危害，应特别注意对大气的污染。在对流层中稳定，可进入平流层，在平流层大气中可被能量更大的紫外线分解。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>建议用焚烧法处置。三氟甲烷（R23）是生产二氯一氯甲烷（R22）过程中的一种副产物，是一种温室效应气体（GWP值为14800）。目前R23工业化处理方法主要为焚烧和等离子处理。</disposal_method>
+      <disposal_precautions>废弃处置前应参阅国家和地方有关法规。废物处置应符合当地环境保护部门的要求。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -137,12 +137,18 @@
       <imdg_page>2184</imdg_page>
       <packaging_mark>5</packaging_mark>
       <packing_group>O53</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_method>钢瓶包装。气瓶要求：符合GB/T5099规定，推荐使用CGA320连接方式。包装标志：应标明"电子级三氟甲烷"字样，并附质量合格证。</packaging_method>
+      <transportation_precautions>采用钢瓶运输时必须戴好钢瓶上的安全帽。钢瓶一般平放，并应将瓶口朝同一方向，不可交叉；高度不得超过车辆的防护栏板，并用三角木垫卡牢，防止滚动。严禁与氧化剂、易燃物或可燃物等混装混运。夏季应早晚运输，防止日光曝晒。铁路运输时要禁止溜放。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>国内法规：危险化学品目录（2015版）；GB/T 34085-2017 电子工业用气体 三氟甲烷；GB/T 25019-2010 船用三氟甲烷灭火装置。国际法规：UN 1984（第2.2类不燃气体）。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standard>GB/T 16483-2008</reference_standard>
+      <revision_notes>无</revision_notes>
+      <abbreviations>MSDS：化学品安全技术说明书；CAS：化学文摘社；UN：联合国；GB：国家标准；TLV：阈值限值；TWA：时间加权平均浓度；STEL：短时间接触限值；RTECS：化学物质毒性登记数据库；GWP：全球变暖潜势。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

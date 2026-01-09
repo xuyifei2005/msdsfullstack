@@ -4,25 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>1600-27-7</cas_number>
-      <msds_code>MSDS#1077</msds_code>
+      <msds_code>MSDS-1600-27-7</msds_code>
       <product_name>乙酸汞</product_name>
       <product_alias>乙酸高汞；醋酸汞</product_alias>
       <product_english_name>Mercuric acetate</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收
-有刺激作用。如吸入、摄入或经皮吸收后，严重者可致死。侵犯神经系统,引起进行性神经</exposure_routes>
-      <health_hazards>麻痹、共济失调、精神障碍等。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品剧毒、刺激性</fire_explosion_hazards>
+      <hazard_category>第6.1类毒害品</hazard_category>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>有刺激作用。如吸入、摄入或经皮吸收后，严重者可致死。侵犯神经系统，引起进行性神经麻痹、共济失调、精神障碍等。</health_hazards>
+      <environmental_hazards>对水生生物有极高毒性，可能对水体环境产生长期不良影响。</environmental_hazards>
+      <fire_explosion_hazards>本品剧毒、刺激性。受高热分解放出有毒的气体。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -54,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光直射。保持容器密封。避免光照。应 与氧化剂、酸类分开存放。搬运时要轻装轻卸，防止包装及容器损坏。分装和搬运作业要注 意个人防护。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防尘口罩，戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶手套。避免产生粉尘。避免与氧化剂、酸类接触。搬运时轻装轻卸，防止包装破损。配备泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。防止阳光直射。保持容器密封。避免光照。应与氧化剂、酸类分开存放，切忌混储。储区应备有合适的材料收容泄漏物。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -80,18 +79,18 @@
       <flash_point>无资料</flash_point>
       <relative_density>3.27</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C4H6O4H</molecular_formula>
-      <molecular_weight>318.59</molecular_weight>
-      <main_components>无资料</main_components>
+      <solubility>溶于水、乙醇、乙酸</solubility>
+      <molecular_formula>C4H6HgO4</molecular_formula>
+      <molecular_weight>318.68</molecular_weight>
+      <main_components>乙酸汞</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>白色结晶或粉末，有乙酸气味。</appearance>
-      <main_uses></main_uses>
+      <flammability>不燃</flammability>
+      <appearance>白色结晶或粉末，有乙酸气味</appearance>
+      <main_uses>用于医药、有机合成、分析试剂、杀菌剂</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -108,28 +107,28 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：76mg／kg(大鼠经口)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：76mg/kg(大鼠经口)；LC50：大鼠吸入(LC50)：>2000 mg/m³/4h</acute_toxicity>
+      <subacute_chronic_toxicity>长期接触可引起汞中毒，表现为神经系统损害、肾脏损害等。可引起口腔炎、牙龈炎、震颤等症状。</subacute_chronic_toxicity>
       <rtecs>AL8575000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>对眼睛、皮肤、粘膜有强烈刺激性。可引起眼部灼伤、皮肤红肿和疼痛。</irritation>
+      <sensitization>可引起皮肤过敏</sensitization>
+      <mutagenicity>可能具有致突变性</mutagenicity>
+      <teratogenicity>可能具有致畸性</teratogenicity>
+      <carcinogenicity>IARC：第3组；NTP：未列入</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
+      <ecological_toxicity>对水生生物有极高毒性。鱼类LC50：<0.1 mg/L(96h)；水蚤EC50：<0.1 mg/L(48h)；藻类EC50：<0.1 mg/L(72h)</ecological_toxicity>
+      <biodegradability>在环境中难以生物降解，持久性强</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
-      <other_harmful_effects>保持良好的卫生习惯。</other_harmful_effects>
+      <bioaccumulation>生物富集性极高，BCF值>1000</bioaccumulation>
+      <other_harmful_effects>该物质对环境有极高危害，对水体应给予特别注意。汞化合物可在环境中长期存在，通过食物链富集。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物，有毒化学品</waste_properties>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的气体通过洗涤器除去。与燃料混合后焚烧，要配备洗涤器和冷凝器。也可用化学稳定化处理后填埋。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废物处置应符合环保要求。操作人员必须佩戴适当的个人防护装备。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -137,13 +136,13 @@
       <un_number>1629</un_number>
       <imdg_page>6178</imdg_page>
       <packaging_mark>14</packaging_mark>
-      <packing_group>Ⅱ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packing_group>II</packing_group>
+      <packaging_method>螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外木板箱；安瓿瓶外木板箱</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源、高温区。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。严禁与氧化剂、酸类等混装混运。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品安全管理条例（国务院令第591号），工作场所安全使用化学品规定（[1996]劳部发423号），危险化学品目录（2015版），剧毒化学品目录，汞及其化合物污染防治技术政策</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

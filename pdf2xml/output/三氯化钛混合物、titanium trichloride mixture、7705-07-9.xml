@@ -2,27 +2,26 @@
 <msds_list>
   <msds>
     <!-- 第一部分：化学品及企业标识 -->
-    <basic_info>
-      <cas_number>7705-07-9</cas_number>
-      <msds_code>无资料</msds_code>
-      <product_name>三氯化钛混合物</product_name>
-      <product_alias>无资料</product_alias>
-      <product_english_name>titanium trichloride mixture</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
-    </basic_info>
+        <basic_info>
+          <cas_number>7705-07-9</cas_number>
+          <msds_code>MSDS-7705-07-9</msds_code>
+          <product_name>三氯化钛混合物</product_name>
+          <product_alias>无资料</product_alias>
+          <product_english_name>titanium trichloride mixture</product_english_name>
+          <company_name>无资料</company_name>
+          <company_address>无资料</company_address>
+          <contact_phone>无资料</contact_phone>
+          <emergency_phone>无资料</emergency_phone>
+          <email>无资料</email>
+          <fax_number>无资料</fax_number>
+        </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>下：发火固体 ，类别 1； 皮肤腐蚀/刺激 ，类别 1；眼损伤/眼刺激 ，类别 1。</hazard_category>
-      <exposure_routes>吸入、食入、皮肤接触、眼睛接触
-吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <hazard_category>第8.1类酸性腐蚀品</hazard_category>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>吸入有毒。对眼睛、皮肤、粘膜和上呼吸道有强烈刺激作用。吸入可引起喉头水肿、支气管痉挛、化学性肺炎、肺水肿。高浓度接触可致死。</health_hazards>
+      <environmental_hazards>对水生生物有毒性作用。</environmental_hazards>
+      <fire_explosion_hazards>遇明火、高热可燃。受热分解产生有毒、腐蚀性烟气。与水反应剧烈，放出氯化氢气体。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -31,31 +30,36 @@
           <component_name>三氯化钛</component_name>
           <component_content>≥99.0%</component_content>
           <cas_number>7705-07-9</cas_number>
+          <molecular_formula>TiCl3</molecular_formula>
+          <molecular_weight>154.23</molecular_weight>
         </component>
       </components>
     </component_info>
     <!-- 第四部分：急救措施 -->
-    <first_aid>
-      <skin_contact></skin_contact>
-      <eye_contact></eye_contact>
-      <inhalation></inhalation>
-      <ingestion></ingestion>
-    </first_aid>
+      <first_aid>
+        <skin_contact>立即脱去污染的衣着，用大量流动清水冲洗至少15分钟。如有灼伤，就医治疗。</skin_contact>
+        <eye_contact>立即提起眼睑，用大量流动清水或生理盐水彻底冲洗至少15分钟。就医。</eye_contact>
+        <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸。就医。</inhalation>
+        <ingestion>用水漱口，禁止催吐。给饮牛奶或蛋清。就医。</ingestion>
+      </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>激性、毒性或腐蚀性的气体。加热时，容器可能爆炸。 暴露于火中的容器可能会通过压力 安全阀泄漏出内容物。受热或接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
+      <hazard_characteristics>遇明火、高热可燃。与水反应剧烈，放出氯化氢气体。受热分解产生有毒、腐蚀性烟气。</hazard_characteristics>
       <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>无资料</harmful_combustion_products>
-      <suitable_extinguishing_media>合适的灭火介质:干粉、干砂、二氧化碳或耐醇泡沫。 不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。 灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安 全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <harmful_combustion_products>氯化氢、钛氧化物。</harmful_combustion_products>
+      <suitable_extinguishing_media>消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。灭火剂：干粉、二氧化碳、砂土。禁止用水、泡沫、酸碱灭火器。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上 采取措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或 惰性吸附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭 容器中，并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防暴</emergency_procedures>
+      <emergency_procedures>迅速撤离泄漏污染区人员至安全区，并进行隔离，严格限制出入。建议应急处理人员戴自给正压式呼吸器，穿防酸碱工作服。不要直接接触泄漏物。尽可能切断泄漏源。小量泄漏：用砂土、干燥石灰或苏打灰混合。大量泄漏：构筑围堤或挖坑收容。用泵转移至槽车或专用收集器内，回收或运至废物处理场所处置。</emergency_procedures>
+      <protective_equipment>应急处理人员须佩戴防毒面具（全面罩）或自给式呼吸器，穿防酸碱工作服，戴橡胶耐酸碱手套。</protective_equipment>
+      <environmental_precautions>防止泄漏物进入下水道、地下室或限制性空间。</environmental_precautions>
+      <cleanup_methods>用砂土、干燥石灰或苏打灰混合，收集于密闭容器中。如有大量泄漏，收集回收或运至废物处理场所处置。</cleanup_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>良好处进行操作。穿戴合 适的个人防护用具。避免接触皮肤和进入眼睛。远离热源、火</handling_precautions>
-      <storage_precautions>花、明火和热表面。采取措施防止静电积累。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防酸碱工作服，戴橡胶耐酸碱手套。远离火种、热源。工作场所严禁吸烟。使用防爆型的通风系统和设备。避免与氧化剂、碱类、醇类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。</handling_precautions>
+      <storage_precautions>储存于阴凉、干燥、通风良好的库房。远离火种、热源。库温不宜超过30℃。包装要求密封，不可与空气接触。应与氧化剂、碱类、醇类等分开存放，切忌混储。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -64,12 +68,12 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
-      <eye_protection>佩戴化学护目镜（符合欧盟 EN 166 或美国 NIOSH 标准）。</eye_protection>
-      <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>密闭操作，提供充分的局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时，必须佩戴自吸过滤式防毒面具（半面罩）或自给式呼吸器。紧急事态抢救或撤离时，建议佩戴空气呼吸器。</respiratory_protection>
+      <eye_protection>戴化学安全防护眼镜。</eye_protection>
+      <body_protection>穿防酸碱工作服。</body_protection>
+      <hand_protection>戴橡胶耐酸碱手套。</hand_protection>
       <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
@@ -80,18 +84,18 @@
       <flash_point>无资料</flash_point>
       <relative_density>1.245</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula></molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>无资料</main_components>
+      <solubility>溶于水，水解生成盐酸和氢氧化钛。</solubility>
+      <molecular_formula>TiCl3</molecular_formula>
+      <molecular_weight>154.23</molecular_weight>
+      <main_components>三氯化钛</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <flammability>无资料</flammability>
+      <appearance>紫色或紫红色固体或液体，有刺激性气味。</appearance>
+      <main_uses>用作还原剂、催化剂，用于有机合成、颜料制备等。</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -101,17 +105,17 @@
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>在正确的使用和存储条件下是稳定的。</stability>
-      <incompatible_substances>无资料</incompatible_substances>
+      <incompatible_substances>强氧化剂、强碱、水、醇类、醚类。</incompatible_substances>
       <conditions_to_avoid>不相容物质，热、火焰和火花。</conditions_to_avoid>
       <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。</decomposition_products>
+      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。受热分解产生氯化氢、氯化钛等有毒腐蚀性气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50（大鼠，经口）：无资料；LD50（大鼠，经皮）：无资料；LC50（大鼠，吸入）：无资料。具有腐蚀性，可造成严重皮肤和眼睛灼伤。</acute_toxicity>
+      <subacute_chronic_toxicity>长期或反复接触可引起皮肤、眼睛和呼吸道刺激。可能对肺部造成损害。</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>造成严重眼损伤</irritation>
+      <irritation>造成严重眼损伤、皮肤刺激和呼吸道刺激。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -119,31 +123,37 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>对水生生物有毒性作用。可能对水生环境造成长期不利影响。</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <other_harmful_effects>该物质对环境可能有危害，应特别注意对水体的污染。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的气体通过洗涤器除去。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废物贮存场所应远离居民区、水源、食品库。操作人员必须经过专门培训，穿戴合适的个人防护装备。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>2441</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <un_number>UN2441</un_number>
       <imdg_page>无资料</imdg_page>
       <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packing_group>II</packing_group>
+      <packaging_method>小开口钢桶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与氧化剂、碱类、醇类、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源、高温区。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>国内法规：危险化学品安全管理条例（国务院令第591号）；易制毒化学品管理条例。国际法规：国际海运危险货物规则（IMDG Code）；国际空运危险货物规则（IATA-DGR）。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standard>本安全技术说明书按照GB/T 16483-2008、GB/T 17519-2013标准编制。</reference_standard>
+      <revision_notes>无资料</revision_notes>
+      <abbreviations>无资料</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

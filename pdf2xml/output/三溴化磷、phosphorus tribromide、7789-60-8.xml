@@ -4,25 +4,23 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>7789-60-8</cas_number>
-      <msds_code>MSDS#957</msds_code>
+      <msds_code>MSDS-7789-60-8</msds_code>
       <product_name>三溴化磷</product_name>
       <product_alias>无资料</product_alias>
       <product_english_name>phosphorus tribromide</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第8.1类 酸性腐蚀品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收
-对眼睛、皮肤、粘膜和呼吸道有强烈的刺激作用。吸入后可能由于喉、支气管的痉挛、水肿、
-炎症，化学性肺炎、肺水肿而致死。中毒表现有烧灼感、咳嗽、喘息、喉炎、气短、头痛、恶</exposure_routes>
-      <health_hazards>心和呕吐。</health_hazards>
-      <environmental_hazards></environmental_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>对眼睛、皮肤、粘膜和呼吸道有强烈的刺激作用。吸入后可能由于喉、支气管的痉挛、水肿、炎症，化学性肺炎、肺水肿而致死。中毒表现有烧灼感、咳嗽、喘息、喉炎、气短、头痛、恶心和呕吐。</health_hazards>
+      <environmental_hazards>无资料</environmental_hazards>
       <fire_explosion_hazards>本品不燃，具强腐蚀性、强刺激性，可致人体灼伤。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -55,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>作规程。建议操作人员佩戴自吸过滤式防毒面具（全面罩），穿橡胶耐酸碱服，戴橡胶耐酸碱 手套。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类、碱类接触。尤其要注意避免与 水接触。搬运时要轻装轻卸，防止包装及容器损坏。配备泄漏应急处理设备。倒空的容器可能 残留有害物。 储存于阴凉、干燥、通风良好的库房。远离火种、热源。库温不超过25℃，相对湿度不超过75％。 包装必须密封，切勿受潮。应与氧化剂、酸类、碱类等分开存放，切忌混储。不宜久存，以免 变质。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
+      <handling_precautions>密闭操作，注意通风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（全面罩），穿橡胶耐酸碱服，戴橡胶耐酸碱手套。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类、碱类接触。尤其要注意避免与水接触。搬运时要轻装轻卸，防止包装及容器损坏。配备泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、干燥、通风良好的库房。远离火种、热源。库温不超过25℃，相对湿度不超过75％。包装必须密封，切勿受潮。应与氧化剂、酸类、碱类等分开存放，切忌混储。不宜久存，以免变质。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -67,11 +65,11 @@
       <contact_limits>美国TWA：未制定标准美国STEL：未制定标准</contact_limits>
       <monitoring_method>无资料</monitoring_method>
       <engineering_controls>密闭操作，注意通风。尽可能机械化、自动化。提供安全淋浴和洗眼设备。</engineering_controls>
-      <respiratory_protection>可能接触其蒸气时，必须佩戴自吸过滤式防毒面具（全面罩）或自给式呼吸器。紧急事态抢救</respiratory_protection>
+      <respiratory_protection>可能接触其蒸气时，必须佩戴自吸过滤式防毒面具（全面罩）或自给式呼吸器。紧急事态抢救或撤离时，建议佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>呼吸系统防护中已作防护。</eye_protection>
       <body_protection>穿橡胶耐酸碱服。</body_protection>
       <hand_protection>戴橡胶耐酸碱手套。</hand_protection>
-      <other_protection>工作现场严禁吸烟。工作完毕，淋浴更衣。单独存放被毒物污染的衣服，洗后备用。保持良好</other_protection>
+      <other_protection>工作现场严禁吸烟。工作完毕，淋浴更衣。单独存放被毒物污染的衣服，洗后备用。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
@@ -81,16 +79,16 @@
       <flash_point>无意义</flash_point>
       <relative_density>2.85</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>PB</molecular_formula>
+      <solubility>遇水分解</solubility>
+      <molecular_formula>PBr3</molecular_formula>
       <molecular_weight>270.72</molecular_weight>
-      <main_components>纯品</main_components>
+      <main_components>三溴化磷</main_components>
       <saturated_vapor_pressure>1.33(47.8℃)</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无意义</ignition_temperature>
       <autoignition_temperature>无意义</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>不燃</flammability>
       <appearance>无色或淡黄色发烟液体，有刺激性臭味。</appearance>
       <main_uses>用作测定糖和氧的试剂，用于有机合成。</main_uses>
       <other_properties>无资料</other_properties>
@@ -129,8 +127,8 @@
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>用焚烧法处置。焚烧炉排出的气体要通过洗涤器除去。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废物处置应交由有资质的单位处理。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -139,12 +137,18 @@
       <imdg_page>8209</imdg_page>
       <packaging_mark>20</packaging_mark>
       <packing_group>O52</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_method>玻璃瓶外木箱内衬垫料或安瓿瓶外木箱内衬垫料。</packaging_method>
+      <transportation_precautions>铁路运输时应严格按照铁道部《危险货物运输规则》中的危险货物配装表进行配装。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>危险化学品安全管理条例（国务院令第591号），工作场所安全使用化学品规定（[1996]劳部发423号）等法规，针对化学危险品的安全使用、生产、储存、运输、装卸等方面均作了相应规定。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other>
+      <reference_standard>GB/T 16483-2008</reference_standard>
+      <modification_note>无资料</modification_note>
+      <glossary>无资料</glossary>
+    </other>
   </msds>
 </msds_list>

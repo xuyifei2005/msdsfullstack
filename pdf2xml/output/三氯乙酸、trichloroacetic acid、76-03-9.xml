@@ -4,7 +4,7 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>76-03-9</cas_number>
-      <msds_code>MSDS#955</msds_code>
+      <msds_code>MSDS-76-03-9</msds_code>
       <product_name>三氯乙酸</product_name>
       <product_alias>三氯醋酸</product_alias>
       <product_english_name>trichloroacetic acid</product_english_name>
@@ -128,7 +128,7 @@
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的氯化氢通过洗涤器除去。</disposal_method>
       <disposal_precautions>无资料</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
@@ -143,7 +143,14 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>危险化学品安全管理条例（国务院令第591号），工作场所安全使用化学品规定（〔1996〕劳部发423号），危险化学品安全管理条例实施细则（化劳发〔1992〕677号），工作场所职业病危害警示标识（GBZ158-2003），常用危险化学品的分类及标志（GB13690-2009），化学品安全技术说明书内容和项目顺序（GB/T16483-2008），危险货物运输包装通用技术条件（GB12463-2009），危险货物包装标志（GB190-2009）。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference>GB/T 16483-2008</reference>
+      <filling_date>无资料</filling_date>
+      <revision_date>无资料</revision_date>
+      <other_notes>本安全技术说明书提供的信息是准确的，但不保证其完整性。本说明书仅用于提供安全信息，不作为商业合同的一部分。</other_notes>
+    </other_info>
   </msds>
 </msds_list>

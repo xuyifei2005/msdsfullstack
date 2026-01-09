@@ -8,12 +8,12 @@
       <product_name>三氯三氟丙酮</product_name>
       <product_alias>酮</product_alias>
       <product_english_name>Trichlorotrifluoroacetone</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -81,7 +81,7 @@
       <relative_density>无资料</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
       <solubility></solubility>
-      <molecular_formula>C3C</molecular_formula>
+      <molecular_formula>C3Cl3F3O</molecular_formula>
       <molecular_weight>215.39</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
@@ -145,5 +145,12 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference>GB/T 16483-2008</reference>
+      <filling_date>无资料</filling_date>
+      <revision_date>无资料</revision_date>
+      <other_notes>本安全技术说明书提供的信息是准确的，但不保证其完整性。本说明书仅用于提供安全信息，不作为商业合同的一部分。</other_notes>
+    </other_info>
   </msds>
 </msds_list>

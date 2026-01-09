@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <msds_list>
   <msds>
-    <!-- 第一部分：化学品及企业标识 -->
-    <!-- MSDS补全专家: 来源: 基于权威数据库和化学品安全标准, 2025-12-01 -->
-    <basic_info>
+            <!-- 第一部分：化学品及企业标识 -->
+            <basic_info>
       <cas_number>10025-87-3</cas_number>
-      <msds_code>无资料 无资料</msds_code>
+      <msds_code>MSDS-10025-87-3</msds_code>
       <product_name>三氯氧磷</product_name>
       <product_alias>氧氯化磷、氯化磷酰、磷酰氯、三氯氧化磷、phosphoryl chloride、phosphorus oxytrichloride</product_alias>
       <product_english_name>phosphorus oxychloride</product_english_name>
@@ -20,7 +19,6 @@
       <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
-      <!-- MSDS补全专家: 来源: 基于GHS分类标准和权威数据库, 2025-12-01 -->
       <hazard_identification>
         <ghs_classification>
             <pictogram>
@@ -99,8 +97,7 @@
         </fire_explosion_hazards>
       </hazard_identification>
     <!-- 第三部分：成分/组成信息 -->
-    <!-- MSDS补全专家: 来源: 基于权威数据库和化学品安全标准, 2025-12-01 -->
-    <component_info>
+      <composition>
       <is_mixture>否</is_mixture>
       <components>
         <component>
@@ -130,7 +127,6 @@
       </additional_info>
     </component_info>
     <!-- 第四部分：急救措施 -->
-    <!-- MSDS补全专家: 来源: 基于权威急救指南和化学品安全标准, 2025-12-01 -->
     <first_aid_measures>
         <general_advice>
             <advice>立即就医。将患者转移到空气新鲜处，保持呼吸道通畅。如呼吸停止，立即进行人工呼吸。如呼吸困难，给予吸氧。</advice>
@@ -174,7 +170,6 @@
         </protection_for_first_aid_providers>
     </first_aid_measures>
     <!-- 第五部分：消防措施 -->
-      <!-- MSDS补全专家: 来源: 基于权威消防指南和化学品安全标准, 2025-12-01 -->
       <fire_fighting_measures>
         <suitable_extinguishing_media>
           <media>干粉灭火剂</media>
@@ -215,7 +210,6 @@
         </special_precautions>
       </fire_fighting_measures>
     <!-- 第六部分：泄漏应急处理 -->
-      <!-- MSDS补全专家: 来源: 基于权威应急处理指南和化学品安全标准, 2025-12-01 -->
       <accidental_release_measures>
         <personal_precautions>
           <precaution>迅速撤离泄漏污染区人员至安全区，并进行隔离，严格限制出入</precaution>
@@ -258,7 +252,6 @@
         </disposal_considerations>
       </accidental_release_measures>
     <!-- 第七部分：操作处置与储存 -->
-    <!-- MSDS补全专家: 来源: 基于权威操作指南和化学品安全标准, 2025-12-01 -->
     <handling_storage>
       <handling_precautions>
         <precaution>仅在通风良好的区域或通风橱内操作</precaution>
@@ -312,7 +305,6 @@
       </incompatible_materials>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
-    <!-- MSDS补全专家: 来源: 基于权威职业接触限值和个体防护标准, 2025-12-01 -->
     <exposure_control>
       <exposure_limits>
         <limit type="PC-TWA" jurisdiction="中国">0.3 mg/m³</limit>
@@ -376,7 +368,6 @@
       </hygiene_practices>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
-    <!-- MSDS补全专家: 来源: 基于权威数据库和化学品安全标准, 2025-12-01 -->
     <physical_chemical>
       <appearance>无色透明液体，有刺激性气味</appearance>
       <pH>＜7（酸性，遇水分解产生盐酸和磷酸）</pH>
@@ -413,7 +404,6 @@
       </other_properties>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
-    <!-- MSDS补全专家: 来源: 基于权威数据库和化学品安全标准, 2025-12-01 -->
     <stability_reactivity>
       <stability>在干燥、密闭条件下稳定，遇水分解，对光稳定</stability>
       <incompatible_substances>
@@ -461,7 +451,6 @@
       </storage_stability>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
-    <!-- MSDS补全专家: 来源: 基于权威毒理学数据库和化学品安全标准, 2025-12-01 -->
     <toxicological>
       <acute_toxicity>
         <toxicity type="经口LD50" species="大鼠">36 mg/kg</toxicity>
@@ -540,7 +529,6 @@
       </other_toxicological_information>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
-    <!-- MSDS补全专家: 来源: 基于权威生态学数据库和化学品安全标准, 2025-12-01 -->
     <ecological>
       <ecological_toxicity>
         <aquatic_toxicity>
@@ -638,7 +626,6 @@
       </other_adverse_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
-    <!-- MSDS补全专家: 来源: 基于危险化学品废弃处置法规和化学品安全标准, 2025-12-01 -->
     <disposal>
       <waste_properties>
         <classification>危险废物</classification>
@@ -685,7 +672,6 @@
       </regulatory_compliance>
     </disposal>
     <!-- 第十四部分：运输信息 -->
-    <!-- MSDS补全专家: 来源: 基于国际危险货物运输规则和相关法规, 2025-12-01 -->
     <transportation>
       <un_number>1810</un_number>
       <proper_shipping_name>PHOSPHORUS OXYCHLORIDE</proper_shipping_name>
@@ -737,7 +723,6 @@
       </regulatory_information>
     </transportation>
     <!-- 第十五部分：法规信息 -->
-    <!-- MSDS补全专家: 来源: 基于国内外危险化学品管理法规和标准, 2025-12-01 -->
     <regulatory>
       <domestic_regulations>
         <chemicals_management>
@@ -846,7 +831,6 @@
       </regulatory_updates>
     </regulatory>
     <!-- 第十六部分：其他信息 -->
-    <!-- MSDS补全专家: 来源: 基于MSDS编制标准和行业最佳实践, 2025-12-01 -->
     <other_information>
       <reference_standards>
         <standard>

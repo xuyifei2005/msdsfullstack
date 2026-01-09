@@ -4,25 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>2155-71-7</cas_number>
-      <msds_code>无资料</msds_code>
+      <msds_code>MSDS-2155-71-7</msds_code>
       <product_name>二-(叔丁基过氧)邻苯二甲酸酯</product_name>
       <product_alias>无资料</product_alias>
       <product_english_name>di-(tert-butylperoxy)phthalat</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>根据GB30000-2013化学品分类和标签规范系列标准（参阅第十六部分），该产品分类如下：</hazard_category>
-      <exposure_routes>吸入、食入、皮肤接触、眼睛接触
-吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <hazard_category>第5.2类 有机过氧化物</hazard_category>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>对眼睛、皮肤、粘膜和上呼吸道有刺激作用。吸入可引起呼吸道刺激。长期或反复接触可能引起皮肤过敏。</health_hazards>
+      <environmental_hazards>对水生生物可能有害。</environmental_hazards>
+      <fire_explosion_hazards>遇明火、高热可燃。受热分解产生有毒气体。与还原剂、促进剂、有机物、可燃物等反应剧烈，有燃烧爆炸危险。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -37,8 +36,8 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。就医。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行</eye_contact>
-      <inhalation>人工呼吸。就医。</inhalation>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
       <ingestion>误服者立即漱口，给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
@@ -54,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>火花、明火和热表面。采取措施防止静电积累。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与还原剂、促进剂、有机物、可燃物、酸类、碱类等接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。库温不宜超过30℃。包装要求密封，切勿受潮。应与还原剂、促进剂、有机物、可燃物、酸类、碱类等分开存放，切忌混储。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -64,12 +63,12 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
-      <eye_protection>佩戴化学护目镜（符合欧盟EN166或美国NIOSH标准）。</eye_protection>
-      <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
+      <monitoring_method>工作场所空气监测：定期进行空气浓度监测，确保在安全范围内。</monitoring_method>
+      <engineering_controls>密闭操作，提供充分的局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时，佩戴过滤式防毒面具（半面罩）。紧急事态抢救或撤离时，佩戴空气呼吸器。</respiratory_protection>
+      <eye_protection>佩戴化学安全防护眼镜。</eye_protection>
+      <body_protection>穿防静电工作服。</body_protection>
+      <hand_protection>戴橡胶耐油手套。</hand_protection>
       <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
@@ -80,7 +79,7 @@
       <flash_point>无资料</flash_point>
       <relative_density>无资料</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>不溶于水，溶于有机溶剂</solubility>
       <molecular_formula>C16H22O6</molecular_formula>
       <molecular_weight>310.34228</molecular_weight>
       <main_components>二-(叔丁基过氧)邻苯二甲酸酯</main_components>
@@ -89,9 +88,9 @@
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <flammability>可燃</flammability>
+      <appearance>无色至浅黄色液体</appearance>
+      <main_uses>用作有机过氧化物引发剂，用于聚合反应</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -100,36 +99,36 @@
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>在正确的使用和存储条件下是稳定的。</stability>
-      <incompatible_substances>无资料</incompatible_substances>
-      <conditions_to_avoid>不相容物质，热、火焰和火花。</conditions_to_avoid>
+      <stability>在正常储存条件下相对稳定。受热、撞击、摩擦或与不相容物质接触时可能分解。</stability>
+      <incompatible_substances>强还原剂、促进剂、有机物、可燃物、强酸、强碱、金属粉末等。</incompatible_substances>
+      <conditions_to_avoid>避免受热、明火、火花、高温、撞击、摩擦、光照。</conditions_to_avoid>
       <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。</decomposition_products>
+      <decomposition_products>受热分解产生二氧化碳、一氧化碳、有机过氧化物分解产物等有毒有害气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>无资料</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
+      <irritation>对皮肤、眼睛有刺激性。</irritation>
+      <sensitization>可能引起皮肤过敏。</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
       <carcinogenicity>无资料</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>对水生生物具有毒性，特别是对鱼类和甲壳类动物。过氧化物通过产生活性氧（ROS）来发挥毒性作用，ROS是高度反应性的分子，可以损伤细胞结构。</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <other_harmful_effects>避免该物质进入环境，特别是水体。应妥善处理废弃物，防止对环境造成污染。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>有机过氧化物废弃物，具有氧化性和易燃性。</waste_properties>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的气体要通过洗涤器除去。废弃物处理应委托有资质的危险废物处理单位进行。</disposal_method>
+      <disposal_precautions>处置前应与当地环保部门或危险废物处理机构联系，获取专业指导。避免直接排放到环境中。处置过程中应采取适当的防护措施，防止火灾和爆炸。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -137,13 +136,13 @@
       <un_number>3105</un_number>
       <imdg_page>无资料</imdg_page>
       <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packing_group>II类包装</packing_group>
+      <packaging_method>钢桶（UN 1A1）、塑料桶（UN 1H1）或复合包装。包装应符合《国际海运危险货物规则》（IMDG Code）和《国际空运危险货物规则》（IATA DGR）的要求。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输前应检查包装容器是否完整、密封。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与还原剂、促进剂、有机物、可燃物、酸类、碱类等混装混运。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险化学品安全管理条例》（2011修订）、《危险化学品登记管理办法》、《危险化学品经营许可证管理办法》。国际法规：联合国《关于危险货物运输的建议书》（TDG）、《国际海运危险货物规则》（IMDG Code）、《国际空运危险货物规则》（IATA DGR）、《全球化学品统一分类和标签制度》（GHS）。相关标准：GB 27833-2011《危险化学品有机过氧化物包装规范》、GB 30000系列《化学品分类和标签规范》。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

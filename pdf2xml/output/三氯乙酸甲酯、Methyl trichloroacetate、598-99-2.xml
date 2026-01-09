@@ -8,12 +8,12 @@
       <product_name>三氯乙酸甲酯</product_name>
       <product_alias>三氯醋酸甲酯</product_alias>
       <product_english_name>Methyl trichloroacetate</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -53,7 +53,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、还原剂、碱类、酸类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>储存于阴凉、干燥、通风良好的不燃库房。专人保管。远离火种、热源。防止阳光直射。 防止受潮。应与碱类、酸类、还原剂、氧化剂、食用化工原料等分开存放。操作现场不得 吸烟、饮水、进食。禁止使用易产生火花的机械设备和工具。搬运时要轻装轻卸，防止包 装及容器损坏。分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -73,13 +73,13 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <melting_point></melting_point>
-      <boiling_point></boiling_point>
-      <flash_point></flash_point>
-      <relative_density></relative_density>
-      <solubility></solubility>
-      <molecular_formula></molecular_formula>
-      <molecular_weight></molecular_weight>
+      <melting_point>-18℃</melting_point>
+      <boiling_point>152-153℃</boiling_point>
+      <flash_point>72℃</flash_point>
+      <relative_density>1.488</relative_density>
+      <solubility>不溶于水</solubility>
+      <molecular_formula>C3H3Cl3O2</molecular_formula>
+      <molecular_weight>177.41</molecular_weight>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -111,7 +111,7 @@
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的氯化氢通过洗涤器除去。</disposal_method>
       <disposal_precautions>无资料</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
@@ -121,12 +121,19 @@
       <imdg_page>6198</imdg_page>
       <packaging_mark>14</packaging_mark>
       <packing_group>Ⅲ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>小开口钢桶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与氧化剂、还原剂、碱类、酸类、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源、高温区。装运该物品的车辆排气管必须配备阻火装置，禁止使用易产生火花的机械设备和工具装卸。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。严禁用木船、水泥船散装运输。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品安全管理条例（国务院令第591号），工作场所安全使用化学品规定（〔1996〕劳部发423号），危险化学品安全管理条例实施细则（化劳发〔1992〕677号），工作场所职业病危害警示标识（GBZ158-2003），常用危险化学品的分类及标志（GB13690-2009），化学品安全技术说明书内容和项目顺序（GB/T16483-2008），危险货物运输包装通用技术条件（GB12463-2009），危险货物包装标志（GB190-2009）。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference>GB/T 16483-2008</reference>
+      <filling_date>无资料</filling_date>
+      <revision_date>无资料</revision_date>
+      <other_notes>本安全技术说明书提供的信息是准确的，但不保证其完整性。本说明书仅用于提供安全信息，不作为商业合同的一部分。</other_notes>
+    </other_info>
   </msds>
 </msds_list>

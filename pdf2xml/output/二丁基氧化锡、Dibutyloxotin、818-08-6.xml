@@ -4,24 +4,23 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>818-08-6</cas_number>
-      <msds_code>MSDS#2723</msds_code>
+      <msds_code>MSDS-818-08-6</msds_code>
       <product_name>二丁基氧化锡</product_name>
       <product_alias>氧化二丁基锡</product_alias>
       <product_english_name>Dibutyloxotin</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收
-对眼睛和皮肤有刺激作用，高浓度时有强烈刺激作用。中毒症状有剧烈头痛、恶心、呕吐、</exposure_routes>
-      <health_hazards>嗜睡，甚至昏迷。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>对眼睛和皮肤有刺激作用，高浓度时有强烈刺激作用。中毒症状有剧烈头痛、恶心、呕吐、嗜睡，甚至昏迷。</health_hazards>
+      <environmental_hazards>对水生生物有毒性，可能对水生环境造成长期不良影响。</environmental_hazards>
       <fire_explosion_hazards>本品可燃、高毒、具有强刺激性</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -54,7 +53,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴防毒口罩，戴化学安全防护眼镜，穿相应的防护服，戴防化学品手套。避免产生粉尘。避免与氧化剂接触。搬运时要轻装轻卸，防止包装及容器损坏。配备泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。专人保管。保持容器密封。防潮、防晒。应 与氧化剂、食用化工原料分开存放。不能与粮食、食物、种子、饲料、各种日用品混装、 混运。操作现场不得吸烟、饮水、进食。搬运时要轻装轻卸，防止包装及容器损坏。分装 和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -80,8 +79,8 @@
       <flash_point>无资料</flash_point>
       <relative_density>无资料</relative_density>
       <relative_vapor_density>8.6</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C8H18OS</molecular_formula>
+      <solubility>不溶于水，可溶于苯、甲苯、氯仿等有机溶剂。</solubility>
+      <molecular_formula>C8H18OSn</molecular_formula>
       <molecular_weight>248.95</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
@@ -108,10 +107,10 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：45mg／kg(大鼠经口)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：44.9mg/kg(大鼠经口)；40mg/kg(大鼠腹腔)</acute_toxicity>
+      <subacute_chronic_toxicity>长期或反复接触可能对肝脏、肾脏和神经系统造成损害。</subacute_chronic_toxicity>
       <rtecs>WH7175000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛和皮肤有刺激性。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -119,31 +118,37 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
+      <ecological_toxicity>对水生生物有毒性，可能对水生环境造成长期不良影响。</ecological_toxicity>
+      <biodegradability>在环境中不易降解，具有持久性。</biodegradability>
+      <non_biodegradability>在环境中持久存在，不易被生物降解。</non_biodegradability>
+      <bioaccumulation>具有生物富集性，可能在生物体内累积。</bioaccumulation>
       <other_harmful_effects>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。注意个人清洁卫生。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的气体通过洗涤器除去。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废物应与易燃物、氧化剂等分开存放。处置人员应穿戴适当的个人防护装备。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>61096</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
+      <un_number>UN3146</un_number>
+      <imdg_page>6.1类</imdg_page>
       <packaging_mark>14</packaging_mark>
       <packing_group>Ⅱ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>小开口钢桶；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>运输前应先检查包装容器是否完整、密封，运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与酸类、氧化剂、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
-    </regulatory>
-  </msds>
+      <regulatory_info>列入《剧毒化学品目录(2002年版)》。列入《危险化学品目录(2015版)》。根据《危险化学品安全管理条例》受公安部门管制。</regulatory_info>
+      </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standard>GB/T 16483-2008</reference_standard>
+      <modification_notes>本安全技术说明书根据国家标准GB/T 16483-2008编制。</modification_notes>
+      <abbreviations>MSDS：化学品安全技术说明书；CAS：化学文摘社；LD50：半数致死量；LC50：半数致死浓度；UN：联合国编号。</abbreviations>
+    </other_info>
+    </msds>
 </msds_list>

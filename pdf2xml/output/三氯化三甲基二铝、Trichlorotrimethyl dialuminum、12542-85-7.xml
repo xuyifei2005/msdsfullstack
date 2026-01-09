@@ -4,23 +4,22 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>12542-85-7</cas_number>
-      <msds_code>MSDS#2715</msds_code>
+      <msds_code>MSDS-12542-85-7</msds_code>
       <product_name>三氯化三甲基二铝</product_name>
       <product_alias>三氯化三甲基铝</product_alias>
       <product_english_name>Trichlorotrimethyl dialuminum</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第4.2类 自燃物品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收
-遇热分解放出有毒的氯烟雾。吸入、摄入或经皮肤吸收后对身体有害。对眼睛、皮肤、粘</exposure_routes>
-      <health_hazards>膜和上呼吸道有强烈刺激作用，可引起灼伤。吸入，可引起喉炎、化学性肺炎、肺水肿等。</health_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>遇热分解放出有毒的氯烟雾。吸入、摄入或经皮肤吸收后对身体有害。对眼睛、皮肤、粘膜和上呼吸道有强烈刺激作用，可引起灼伤。吸入，可引起喉炎、化学性肺炎、肺水肿等。</health_hazards>
       <environmental_hazards>无资料</environmental_hazards>
       <fire_explosion_hazards>本品极度易燃、有毒、具有强刺激性</fire_explosion_hazards>
     </hazard_info>
@@ -50,12 +49,12 @@
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，切断火源。建议应急处理人 员戴好防毒面具，穿一般消防防护服。禁止向泄漏物直接喷水，更不要让水进入包装容 应急处理： 工具收集于塑料桶内，然后倒入大量水中，经稀释的污水放入废水系统。如大量泄漏， 利用围堤收容，然后收集、转移、回收或无害处理后废弃。</emergency_procedures>
+      <emergency_procedures>疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，切断火源。建议应急处理人员戴好防毒面具，穿一般消防防护服。禁止向泄漏物直接喷水，更不要让水进入包装容器。用工具收集于塑料桶内，然后倒入大量水中，经稀释的污水放入废水系统。如大量泄漏，利用围堤收容，然后收集、转移、回收或无害处理后废弃。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、干燥、通风良好的不燃库房。远离火种、热源。包装要求密封，不可与空 气接触。防止受潮。应与酸类、易燃物、可燃物、氧化剂、潮湿物品、胺类等分开存放。 在氮气中操作处置。配备相应品种和数量的消防器材。搬运时要轻装轻卸，防止包装及 容器损坏。雨天不宜运输。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶手套。远离火种、热源。工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类、水、胺类接触。在氮气中操作处置。</handling_precautions>
+      <storage_precautions>储存于阴凉、干燥、通风良好的不燃库房。远离火种、热源。包装要求密封，不可与空气接触。防止受潮。应与酸类、易燃物、可燃物、氧化剂、潮湿物品、胺类等分开存放。在氮气中操作处置。配备相应品种和数量的消防器材。搬运时要轻装轻卸，防止包装及容器损坏。雨天不宜运输。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -81,7 +80,7 @@
       <relative_density>0.877</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
       <solubility></solubility>
-      <molecular_formula>C3H9C</molecular_formula>
+      <molecular_formula>C3H9Cl3Al2</molecular_formula>
       <molecular_weight>205.43</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
@@ -138,12 +137,18 @@
       <imdg_page>4221</imdg_page>
       <packaging_mark>9</packaging_mark>
       <packing_group>Ⅰ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>小开口钢桶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。装运本品的车辆排气管须有阻火装置。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与酸类、易燃物、可燃物、氧化剂、潮湿物品、胺类等混装混运。运输途中应防曝晒、雨淋、防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：危险化学品安全管理条例（国务院令第591号）、危险化学品目录（2015版）。国际法规：联合国关于危险货物运输的建议书（TDG）、国际海运危险货物规则（IMDG Code）、国际民航组织危险物品安全航空运输技术细则（ICAO TI）。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>GB/T 16483-2008 化学品安全技术说明书 内容和项目顺序</reference_standards>
+      <revision_notes>无</revision_notes>
+      <abbreviations_and_terms>无</abbreviations_and_terms>
+    </other_info>
   </msds>
 </msds_list>
