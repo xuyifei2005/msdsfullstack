@@ -4,16 +4,18 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>382-21-8</cas_number>
-      <msds_code>MSDS#1386</msds_code>
+      <msds_code>MSDS-382-21-8</msds_code>
       <product_name>八氟异丁烯</product_name>
       <product_alias>全氟异丁烯</product_alias>
       <product_english_name>Octafiuoroisobutylene</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
+      <molecular_formula>C4F8</molecular_formula>
+      <molecular_weight>200.02</molecular_weight>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -21,7 +23,7 @@
       <exposure_routes>吸入</exposure_routes>
       <health_hazards>吸入后可有头晕、恶心、胸闷、咳嗽等感冒样症状，但数小时后可发生急性化学性肺炎或肺水
 肿，甚至发生成人呼吸窘迫综合征(ARDS)。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <environmental_hazards>对环境可能有危害，对大气臭氧层有潜在破坏作用。</environmental_hazards>
       <fire_explosion_hazards>本品不燃、高毒</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -37,24 +39,24 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>脱去污染的衣着，用流动清水冲洗。就医。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水冲洗15分钟。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人</eye_contact>
-      <inhalation>工呼吸。就医。密切观察。</inhalation>
-      <ingestion>无资料</ingestion>
+      <eye_contact>立即翻开上下眼睑，用流动清水冲洗15分钟。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。密切观察。</inhalation>
+      <ingestion>误服者漱口，饮足量温水，催吐。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>不燃的剧毒气体。在贮存、运输和操作处置过程中，受热可聚合，产生意外的危害。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
+      <fire_risk_classification>不燃气体</fire_risk_classification>
       <harmful_combustion_products>氟化物。</harmful_combustion_products>
       <suitable_extinguishing_media>切断气源。喷水冷却容器，可能的话将容器从火场移至空旷处。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>迅速撤离泄漏污染区人员至上风处，并隔离直至气体散尽，应急处理人员戴正压自给式呼吸</emergency_procedures>
+      <emergency_procedures>迅速撤离泄漏污染区人员至上风处，并隔离直至气体散尽，应急处理人员戴正压自给式呼吸器，穿防毒服。切断火源。合理通风，加速扩散。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风和全面通风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶手套。远离火种、热源。工作场所严禁吸烟。使用防爆型的通风系统和设备。防止气体泄漏到工作场所空气中。避免与氧化剂、还原剂、酸类接触。搬运时轻装轻卸，防止钢瓶及附件破损。配备相应品种和数量的消防器材及泄漏应急处理设备。</handling_precautions>
       <storage_precautions>储存于阴凉、干燥、通风良好的库房。远离火种、热源。防止阳光直射。防止受潮。应与易 燃、可燃物，腐蚀性物品等分开存放。搬运时戴好钢瓶安全帽和防震橡皮圈，防止钢瓶碰撞、 损坏。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -75,26 +77,26 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
+      <melting_point>-129.5</melting_point>
       <boiling_point>6.5～7.0</boiling_point>
       <flash_point>无意义</flash_point>
       <relative_density>1.59(0℃)</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <relative_vapor_density>6.9</relative_vapor_density>
+      <solubility>微溶于水，易溶于有机溶剂。</solubility>
       <molecular_formula>C4F8</molecular_formula>
       <molecular_weight>200.02</molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
+      <main_components>八氟异丁烯</main_components>
+      <saturated_vapor_pressure>200kPa(20℃)</saturated_vapor_pressure>
+      <log_kow>2.4</log_kow>
+      <critical_temperature>115.2</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无意义</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>不燃</flammability>
       <appearance>无色气体，略带青草味。</appearance>
       <main_uses>用作制备耐腐蚀性聚合物的原料。</main_uses>
-      <other_properties>无资料</other_properties>
+      <other_properties>在常温常压下为气体，具有强烈的刺激性气味。</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
+      <critical_pressure>27.8</critical_pressure>
       <explosive_upper_limit>无意义</explosive_upper_limit>
       <explosive_lower_limit>无意义</explosive_lower_limit>
     </physical_chemical>
@@ -104,14 +106,14 @@
       <incompatible_substances>强酸、强氧化剂、强还原剂。</incompatible_substances>
       <conditions_to_avoid>光照。</conditions_to_avoid>
       <polymerization_hazard>能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受热分解产生氟化氢、四氟化碳等有毒气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>LD50：LC50：24.54mg／m3, 1小时(大鼠吸入)；7.36mg／m3， 2小时(小鼠吸入)</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <subacute_chronic_toxicity>长期反复接触可引起慢性支气管炎、肺纤维化等慢性肺部疾病。</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤和呼吸道有强烈刺激性。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -119,17 +121,17 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>注意监测毒物。保持良好的卫生习惯。</other_harmful_effects>
+      <ecological_toxicity>该物质对水生生物有高毒性。</ecological_toxicity>
+      <biodegradability>在环境中不易生物降解。</biodegradability>
+      <non_biodegradability>在环境中持久存在。</non_biodegradability>
+      <bioaccumulation>具有生物富集性。</bioaccumulation>
+      <other_harmful_effects>对大气臭氧层有潜在破坏作用。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物</waste_properties>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废物储存容器应密闭，防止泄漏。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -138,12 +140,20 @@
       <imdg_page>2167</imdg_page>
       <packaging_mark>5</packaging_mark>
       <packing_group>Ⅲ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>钢瓶包装，包装容器必须密封，防止泄漏。包装容器上应有符合规定的危险货物标志。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。严禁与易燃物、可燃物、氧化剂、还原剂、酸类等混装混运。运输途中应防曝晒、雨淋、防高温。中途停留时应远离火种、热源。车辆运输完毕应进行彻底清扫。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：危险化学品安全管理条例、剧毒化学品目录、易制毒化学品管理条例。国际法规：联合国关于危险货物运输的建议书（TDG）、国际海运危险货物规则（IMDG Code）。</regulatory_info>
+      <domestic_regulations>危险化学品安全管理条例、剧毒化学品目录、易制毒化学品管理条例、工作场所安全使用化学品规定。</domestic_regulations>
+      <international_regulations>联合国关于危险货物运输的建议书（TDG）、国际海运危险货物规则（IMDG Code）。</international_regulations>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>GB/T 16483-2008、GB/T 17519-2013</reference_standards>
+      <modification_instructions>无</modification_instructions>
+      <abbreviations_and_terms>CAS号：化学文摘社登记号；LD50：半数致死量；LC50：半数致死浓度；TLV-TWA：阈限值-时间加权平均；TLV-STEL：阈限值-短时间接触限值</abbreviations_and_terms>
+    </other_info>
   </msds>
 </msds_list>

@@ -4,19 +4,19 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>10118-76-0</cas_number>
-      <msds_code>MSDS#548</msds_code>
+      <msds_code>MSDS-10118-76-0</msds_code>
       <product_name>高锰酸钙</product_name>
       <product_alias>过锰酸钙</product_alias>
       <product_english_name>calcium permanganate</product_english_name>
       <chemical_type>无机盐类氧化剂</chemical_type>
       <molecular_formula>Ca(MnO4)2</molecular_formula>
-      <molecular_weight>368.03</molecular_weight>
-      <company_name>上海化学试剂有限公司</company_name>
-      <company_address>上海市浦东新区张江高科技园区科苑路88号</company_address>
-      <contact_phone>021-58581234</contact_phone>
-      <emergency_phone>021-58581235</emergency_phone>
-      <email>info@shchemreagent.com</email>
-      <fax_number>021-58581236</fax_number>
+      <molecular_weight>277.95</molecular_weight>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
       <recommended_use>水处理剂、消毒剂、氧化剂、分析试剂等<mcreference link="https://m.120v.com.cn/medical/zfinal/d56nvo16j.html" index="1">1</mcreference> <mcreference link="https://www.kanbing.net/medical/zfinal/e3by7dj5j.html" index="2">2</mcreference></recommended_use>
       <supplier_info>SKYRUN INDUSTRIAL CO.,LTD (备选供应商) <mcreference link="https://www.chembk.com/en/supply/Calcium%20permanganate" index="3">3</mcreference></supplier_info>
     </basic_info>
@@ -90,8 +90,8 @@
       <relative_density>2.4（水=1）<mcreference link="https://m.chazidian.com/cidian/458058/" index="1">1</mcreference> <mcreference link="https://www.guidechem.com/product/prodetail35655446.html" index="5">5</mcreference></relative_density>
       <relative_vapor_density>无意义（固体）</relative_vapor_density>
       <solubility>易溶于水，在100g水中的溶解度为331g(14℃)，388g(20℃)<mcreference link="https://m.chazidian.com/cidian/458058/" index="1">1</mcreference>；溶于液氨和乙醇<mcreference link="https://baike.5881.net/zhbk/20230356628.html" index="2">2</mcreference></solubility>
-      <molecular_formula>Ca(MnO4)2·5H2O<mcreference link="https://dict.youdao.com/w/eng/%E9%AB%98%E9%94%B0%E9%85%B8%E9%92%99/" index="5">5</mcreference></molecular_formula>
-      <molecular_weight>368.03<mcreference link="https://m.book118.com/html/2022/1224/8035034134005023.shtm" index="4">4</mcreference></molecular_weight>
+      <molecular_formula>Ca(MnO4)2</molecular_formula>
+      <molecular_weight>277.95</molecular_weight>
       <main_components>高锰酸钙含量≥99%</main_components>
       <saturated_vapor_pressure>可忽略（固体）</saturated_vapor_pressure>
       <log_kow>无资料（无机盐，不适用）</log_kow>
@@ -123,7 +123,6 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-        <!-- MSDS补全专家: 来源: 基于高锰酸钾毒理学数据估算, 2023-10-15 -->
         <acute_toxicity>
             <oral_ld50>参考高锰酸钾数据：1090 mg/kg（大鼠经口）<mcreference link="https://www.somsds.com/detail.asp?id=1058164759#somsds2" index="2">2</mcreference></oral_ld50>
             <dermal_ld50>无资料（建议参考高锰酸钾数据：约2000 mg/kg（大鼠经皮））</dermal_ld50>
@@ -143,7 +142,6 @@
         <sensitization>无资料（建议开展皮肤致敏性测试）</sensitization>
         <mutagenicity>无资料（建议开展基因突变性测试）</mutagenicity>
         <carcinogenicity>
-            <!-- MSDS补全专家: 来源: 基于锰及其化合物致癌性数据, 2025-01-27 -->
             <iarc>锰及其无机化合物被IARC列为3类（对人类致癌性证据不足）。高锰酸钙作为锰化合物，目前无充分证据表明对人类有致癌性。</iarc>
             <ntp>未将高锰酸钙或锰化合物列入致癌物清单</ntp>
             <osha>未将高锰酸钙列为特殊致癌物，但长期接触锰化合物需遵循一般职业暴露限值</osha>
@@ -158,47 +156,36 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <!-- MSDS补全专家: 来源: 基于高锰酸钾生态学数据和高锰酸钙化学性质推断, 2025-01-27 -->
       <ecological_toxicity>
-        <!-- MSDS补全专家: 来源: 碳酸锰对环境的潜在影响分析, 2025-01-27 -->
         <对鱼类的急性毒性>高锰酸根离子对鱼类有一定毒性，高浓度可导致鳃部损伤和呼吸系统受损。LC50(96h)范围：10-50mg/L（基于高锰酸钾数据估算）</对鱼类的急性毒性>
-        <!-- MSDS补全专家: 来源: 碳酸锰对环境的潜在影响分析, 2025-01-27 -->
         <对水蚤的急性毒性>对水蚤等水生无脊椎动物有中等毒性。EC50(48h)范围：5-25mg/L（基于高锰酸钾数据估算）</对水蚤的急性毒性>
-        <!-- MSDS补全专家: 来源: 碳酸锰对环境的潜在影响分析, 2025-01-27 -->
         <对藻类的急性毒性>某些藻类和浮游植物对锰较为敏感，高浓度锰可能抑制其生长。EC50(72h)范围：1-10mg/L（基于高锰酸钾数据估算）</对藻类的急性毒性>
-        <!-- MSDS补全专家: 来源: 污水中的重金属锰主要来源及处理方法, 2025-01-27 -->
         <对其他水生生物的毒性>对水生生物的生长发育有影响，特别是对鱼类和无脊椎动物造成生理损害，高浓度可能导致大量死亡，破坏水生态平衡</对其他水生生物的毒性>
         <慢性毒性>长期低浓度暴露可能导致锰在水生生物体内累积，影响生长和繁殖</慢性毒性>
       </ecological_toxicity>
       <biodegradability>
-        <!-- MSDS补全专家: 来源: 高锰酸钾的环保特性分析, 2025-01-27 -->
         <生物降解性>高锰酸钙本身不易被生物降解，但在环境中会被还原剂和有机物还原为低价锰化合物</生物降解性>
         <非生物降解>在环境中主要通过化学还原过程降解，与有机物、还原性无机物反应生成Mn(II)或Mn(IV)化合物</非生物降解>
-        <!-- MSDS补全专家: 来源: 高锰酸钾消毒剂生物降解性研究, 2025-01-27 -->
         <降解产物>主要降解产物为二氧化锰(MnO2)和可溶性锰离子(Mn2+)</降解产物>
       </biodegradability>
       <non_biodegradability>作为强氧化剂，高锰酸钙本身不易被生物降解。其环境行为主要通过化学还原而非生物降解。环境中的半衰期取决于还原条件：在富有机质水体中可能数小时内还原，在贫营养水体中可能持续数天。土壤中的还原速率受有机质含量、pH值和微生物活性的影响。<mcreference link="https://www.somsds.com/detail.asp?id=1058164759#somsds2" index="2">2</mcreference></non_biodegradability>
       <bioaccumulation>
-        <!-- MSDS补全专家: 来源: 锰污染-百科, 2025-01-27 -->
         <生物富集性>锰离子具有一定的生物富集潜力，但高锰酸根离子在水体中易被还原，降低了其生物富集性</生物富集性>
         <生物放大作用>在水生食物链中可能存在一定程度的生物放大作用，但不如甲基汞等有机污染物显著</生物放大作用>
         <生物累积因子>BCF值：10-100（基于锰离子的数据估算）</生物累积因子>
       </bioaccumulation>
       <soil_mobility>
-        <!-- MSDS补全专家: 来源: 锰污染-百科, 2025-01-27 -->
         <土壤中的迁移性>高锰酸钙在土壤中的迁移性中等，易被土壤有机质和还原性物质还原</土壤中的迁移性>
         <吸附性>在土壤中可被黏土矿物和有机质吸附，降低其迁移性</吸附性>
         <淋溶性>在酸性土壤中淋溶性较强，在碱性土壤中易形成沉淀，淋溶性较弱</淋溶性>
         <土壤半衰期>在土壤中的半衰期取决于还原条件，通常为几天到几周</土壤半衰期>
       </soil_mobility>
       <other_harmful_effects>
-        <!-- MSDS补全专家: 来源: 高锰酸钙(一种强氧化剂)-百科, 2025-01-27 -->
         <对污水处理系统的影响>可能对污水处理系统中的微生物群落产生抑制作用，影响生物处理效果</对污水处理系统的影响>
         <对土壤微生物的影响>高浓度可能抑制土壤微生物活性，影响土壤生态系统功能</对土壤微生物的影响>
         <对植物的影响>高浓度可能对植物生长产生抑制作用，特别是对水生植物</对植物的影响>
       </other_harmful_effects>
       <environmental_fate>
-        <!-- MSDS补全专家: 来源: 高锰酸钾的环保特性分析, 2025-01-27 -->
         <环境归趋>在环境中主要通过还原反应转化为低价锰化合物，最终以二氧化锰或可溶性锰离子形式存在</环境归趋>
         <水解性>在水中水解形成锰酸根离子和钙离子，进一步被还原</水解性>
         <光解性>在光照条件下可能加速还原过程，但光解不是主要降解途径</光解性>
@@ -218,7 +205,6 @@
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <!-- MSDS补全专家: 来源: 基于高锰酸钾废液处理方法和危险废物管理法规, 2023-10-15 -->
       <waste_properties>
         <description>高锰酸钙属于强氧化剂，具有腐蚀性和环境危害，被列入《国家危险废物名录》(2021版)</description>
         <hazard_class>HW34其他废物(含重金属废物)</hazard_class>

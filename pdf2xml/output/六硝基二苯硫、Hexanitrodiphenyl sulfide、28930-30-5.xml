@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>28930-30-5</cas_number>
-      <msds_code>MSDS#1705</msds_code>
+      <msds_code>MSDS-28930-30-5</msds_code>
       <product_name>六硝基二苯硫</product_name>
       <product_alias>二苦基硫</product_alias>
       <product_english_name>Hexanitrodiphenyl sulfide</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -38,7 +38,7 @@
       <skin_contact>用肥皂水及清水彻底冲洗。就医。</skin_contact>
       <eye_contact>拉开眼睑，用流动清水冲洗15分钟。就医。</eye_contact>
       <inhalation>脱离现场至空气新鲜处。就医。</inhalation>
-      <ingestion>误服者，饮适量温水，催吐。就医。</ingestion>
+      <ingestion>禁止催吐。漱口，给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
@@ -49,11 +49,11 @@
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>隔离泄漏污染区，周围设警告标志，切断火源。建议应急处理人员戴好防毒面具，穿化学 具收集于塑料桶内，运至空旷地方引爆。如大量泄漏，收集回收或无害处理后废弃。</emergency_procedures>
+      <emergency_procedures>隔离泄漏污染区，周围设警告标志，切断火源。建议应急处理人员戴好防毒面具，穿化学防护服，用无火花工具收集于塑料桶内，运至空旷地方引爆。如大量泄漏，收集回收或无害处理后废弃。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴防尘口罩，戴化学安全防护眼镜，穿防静电工作服，戴橡胶手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免产生粉尘。避免与氧化剂、金属粉末、酸类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。</handling_precautions>
       <storage_precautions>储存于按专业规范设计的仓库内，仓内要求通风阴凉。按爆炸品配装表分类划区储运。远 离火种、热源。仓温不宜超过30℃。保持一定量水份。应与氧化剂、金属粉末、酸类等分 开存放。管理应按“五双”管理制度执行。搬运时要轻装轻卸，防止包装及容器损坏。禁 止震动、撞击和摩擦。分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -79,16 +79,16 @@
       <flash_point>无资料</flash_point>
       <relative_density>无资料</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>不溶于水，微溶于有机溶剂。</solubility>
       <molecular_formula>C12H4N6O12S</molecular_formula>
       <molecular_weight>456.28</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>六硝基二苯硫</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
-      <critical_temperature>爆燃点(℃)：290</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
+      <critical_temperature>无资料</critical_temperature>
+      <ignition_temperature>290</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>爆炸性</flammability>
       <appearance>金黄色片状结晶。</appearance>
       <main_uses>用作炸药。</main_uses>
       <other_properties>无资料</other_properties>
@@ -142,7 +142,13 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品安全管理条例、易制爆危险化学品治安管理办法、民用爆炸物品安全管理条例</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>GB/T 16483-2008、GB 6944-2012</reference_standards>
+      <revision_notes>无</revision_notes>
+      <abbreviations>MSDS：化学品安全技术说明书；CAS：化学文摘社；UN：联合国；TLV：阈限值</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

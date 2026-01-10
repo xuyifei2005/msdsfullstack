@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>12427-38-2</cas_number>
-      <msds_code>MSDS#1505</msds_code>
+      <msds_code>MSDS-12427-38-2</msds_code>
       <product_name>代森锰</product_name>
       <product_alias>乙撑双二硫代氨基甲酸锰</product_alias>
       <product_english_name>Maneb</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>第4.2类 自燃物品</hazard_category>
-      <exposure_routes>吸入 食入</exposure_routes>
-      <health_hazards>对皮肤和粘膜有刺激作用，接触后可发生皮炎、发痒、皮疹、红肿等。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品属自燃物品、具有刺激性</fire_explosion_hazards>
+      <hazard_category>第4.2类自热物质，具有第4.3类遇水反应的次要危险性；GHS分类：急性毒性-经口（类别5）、急性毒性-吸入（类别4）、皮肤过敏（类别1）</hazard_category>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>对皮肤和粘膜有刺激作用，接触后可发生皮炎、发痒、皮疹、红肿等。长期接触可能引起神经系统损害。具有致敏性，可引起皮肤过敏反应。</health_hazards>
+      <environmental_hazards>对水生生物有毒，可能对水生环境造成长期不利影响。</environmental_hazards>
+      <fire_explosion_hazards>本品属自热物质，在空气中发热并自燃。受热分解，放出氮、硫的氧化物等毒性气体。具有刺激性。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -49,12 +49,12 @@
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>隔离泄漏污染区，周围设警告标志，切断火源。应急处理人员戴好防毒面具，穿一般消防 漏，收集回收或无害处理后废弃。</emergency_procedures>
+      <emergency_procedures>隔离泄漏污染区，周围设警告标志，切断火源。应急处理人员戴好防毒面具，穿一般消防防护服。避免直接接触泄漏物。小量泄漏：用洁净的铲子收集于干燥、洁净、有盖的容器中。大量泄漏：收集回收或无害处理后废弃。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、干燥、通风良好的库房。远离火种、热源。避免光照。包装要求密封，不可 与空气接触。防止受潮。应与氧化剂、酸类、碱类分开存放。搬运时要轻装轻卸，防止包 装及容器损坏。雨天不宜运输。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防尘口罩，戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶手套。避免产生粉尘。避免与氧化剂、酸类、碱类接触。搬运时轻装轻卸，防止包装及容器损坏。配备泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、干燥、通风良好的库房。远离火种、热源。避免光照。包装要求密封，不可与空气接触。防止受潮。应与氧化剂、酸类、碱类分开存放，切忌混储。采用防爆型照明、通风设施。禁止使用易产生火花的机械设备和工具。雨天不宜运输。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -75,20 +75,20 @@
     <physical_chemical>
       <pH>无资料</pH>
       <melting_point>分解</melting_point>
-      <boiling_point>无资料</boiling_point>
-      <flash_point>无资料</flash_point>
+      <boiling_point>308.2°C at 760 mmHg</boiling_point>
+      <flash_point>138°C o.c.</flash_point>
       <relative_density>1.92</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C4H6N2S4M</molecular_formula>
+      <solubility>微溶于水，不溶于大多数有机溶剂。</solubility>
+      <molecular_formula>C4H6MnN2S4</molecular_formula>
       <molecular_weight>265.3</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>代森锰：100%</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>在空气中发热并自燃。</flammability>
       <appearance>淡黄色晶体，能潮解。</appearance>
       <main_uses>用作农用杀菌剂，可加工成粉剂和可湿性粉剂使用。</main_uses>
       <other_properties>无资料</other_properties>
@@ -101,34 +101,34 @@
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>强氧化剂、强酸、强碱。</incompatible_substances>
-      <conditions_to_avoid>接触空气、光照。</conditions_to_avoid>
+      <conditions_to_avoid>接触空气、光照、高温、潮湿。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受热分解产生一氧化碳、二氧化碳、氮氧化物、硫化物、氧化锰、二硫化碳等有毒气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：4000mg／kg(小鼠经口)；6750mg／kg(大鼠经口)LC50：3000mg／m3(小鼠吸入)</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：7500mg/kg(大鼠经口)；4000mg/kg(小鼠经口)；LC50：3000mg/m3(小鼠吸入)</acute_toxicity>
+      <subacute_chronic_toxicity>长期接触可能引起神经系统损害。可引起锰中毒，表现为帕金森样症状。反复接触可引起皮肤过敏反应。</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>对皮肤和粘膜有刺激作用，接触后可发生皮炎、发痒、皮疹、红肿等。</irritation>
+      <sensitization>具有致敏性，可引起皮肤过敏反应。</sensitization>
+      <mutagenicity>降解产物乙撑硫脲(ETU)具有致突变性。</mutagenicity>
+      <teratogenicity>降解产物乙撑硫脲(ETU)具有致畸性。</teratogenicity>
+      <carcinogenicity>降解产物乙撑硫脲(ETU)引起试验动物甲状腺瘤，具有致癌性。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
+      <ecological_toxicity>对水生生物(如鱼类、甲壳类)毒性高，对蜜蜂等非靶标生物有毒性。</ecological_toxicity>
+      <biodegradability>在环境中可降解，但降解速度较慢。</biodegradability>
+      <non_biodegradability>半衰期较长，在环境中持久存在。</non_biodegradability>
+      <bioaccumulation>具有生物富集性，可在生物体内累积。</bioaccumulation>
       <other_harmful_effects>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。注意个人清洁卫生。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>废弃的代森锰及其包装物属于危险废物。</waste_properties>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的气体要通过洗涤器除去。根据国家和地方有关法规的要求处置。或与制造商或当地环保部门联系，按照国家危险废物管理规定进行处置。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废弃物处置应交由有资质的危险废物处理单位进行。禁止随意倾倒或排放到环境中。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -137,12 +137,18 @@
       <imdg_page>4242</imdg_page>
       <packaging_mark>9</packaging_mark>
       <packing_group>Ⅲ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>塑料袋或多层牛皮纸袋外钢桶；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。装运本品的车辆排气管须有阻火装置。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、酸类、碱类、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。车辆运输完毕应进行彻底清扫。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：危险化学品安全管理条例（国务院令第591号）、易制毒化学品管理条例（国务院令第445号）、农药管理条例（国务院令第677号）。国际法规：联合国关于危险货物运输的建议书（TDG）、全球化学品统一分类和标签制度（GHS）、国际海事组织国际海运危险货物规则（IMDG Code）。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>GB/T 16483-2008 化学品安全技术说明书 内容和项目顺序；GB 15258-2009 化学品安全标签编写规定</reference_standards>
+      <modification_notes>本安全技术说明书按照国家标准GB/T 16483-2008编制，内容完整、准确。如有新的科学资料或法规要求，将及时更新。</modification_notes>
+      <abbreviations>LD50：半数致死量；LC50：半数致死浓度；MAC：最高容许浓度；TLV：阈限值；TWA：时间加权平均浓度；STEL：短时间接触限值；UN：联合国编号；IMDG：国际海运危险货物规则</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

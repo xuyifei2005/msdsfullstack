@@ -4,25 +4,22 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>10361-37-2</cas_number>
-      <msds_code>MSDS#784</msds_code>
+      <msds_code>MSDS-10361-37-2</msds_code>
       <product_name>氯化钡</product_name>
       <product_alias>无资料</product_alias>
       <product_english_name>barium chloride</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入
-对各种肌肉组织产生刺激和兴奋作用。对中枢神经系统先是兴奋，后转为抑制。长期接触，对
-上呼吸道和眼结膜有刺激作用，引起口腔炎、结膜炎、支气管炎、食欲不振及消化不良等症状，</exposure_routes>
-      <health_hazards>或有气短、心悸、血压升高、传导功能障碍等。摄入引起恶心、呕吐、腹痛、腹泻，继而头晕、
-耳鸣、四肢无力、心悸、气短，重者可因呼吸麻痹而致死。</health_hazards>
+      <exposure_routes>吸入、食入</exposure_routes>
+      <health_hazards>对各种肌肉组织产生刺激和兴奋作用。对中枢神经系统先是兴奋，后转为抑制。长期接触，对上呼吸道和眼结膜有刺激作用，引起口腔炎、结膜炎、支气管炎、食欲不振及消化不良等症状，或有气短、心悸、血压升高、传导功能障碍等。摄入引起恶心、呕吐、腹痛、腹泻，继而头晕、耳鸣、四肢无力、心悸、气短，重者可因呼吸麻痹而致死。</health_hazards>
       <environmental_hazards>无资料</environmental_hazards>
       <fire_explosion_hazards>无资料</fire_explosion_hazards>
     </hazard_info>
@@ -56,7 +53,7 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防尘口罩，戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶手套。避免产生粉尘。避免与酸类、氧化剂接触。搬运时要轻装轻卸，防止包装及容器损坏。配备泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。保持容器密封。应与氧化剂、酸类、食用化工原 料分开存放。搬运时要轻装轻卸，防止包装及容器损坏。分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -77,13 +74,13 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>965</melting_point>
-      <boiling_point>1560</boiling_point>
+      <melting_point>965℃</melting_point>
+      <boiling_point>1560℃</boiling_point>
       <flash_point>无意义</flash_point>
       <relative_density>3.86</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>B</molecular_formula>
+      <solubility>易溶于水，不溶于乙醇。</solubility>
+      <molecular_formula>BaCl2</molecular_formula>
       <molecular_weight>208.25</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
@@ -91,7 +88,7 @@
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无意义</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>无资料</flammability>
       <appearance>白色粉末，无臭。</appearance>
       <main_uses>制造钡盐的原料。</main_uses>
       <other_properties>无资料</other_properties>
@@ -110,7 +107,7 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>属高毒类LD50：118mg／kg(大鼠经口)LC50：</acute_toxicity>
+      <acute_toxicity>属高毒类LD50：118mg／kg(大鼠经口)</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>C08750000</rtecs>
       <irritation>无资料</irritation>

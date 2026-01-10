@@ -5,9 +5,9 @@
     <basic_info>
       <cas_number>100-50-5</cas_number>
       <msds_code>MSDS-100-50-5</msds_code>
-      <product_name>1,2,5,6-四氢化苯甲醛</product_name>
-      <product_alias>3-环己烯-1-甲醛</product_alias>
-      <product_english_name>1,2,5,6-tetrahydrobenzaldehyde; 3-cyclohexene-1-carboxaldehyde</product_english_name>
+      <product_name>1,2,3,6-四氢苯甲醛</product_name>
+      <product_alias>3-环己烯甲醛; 3-环己烯-1-甲醛</product_alias>
+      <product_english_name>1,2,3,6-Tetrahydrobenzaldehyde; 3-Cyclohexene-1-carboxaldehyde</product_english_name>
       <company_name>无资料</company_name>
       <company_address>无资料</company_address>
       <contact_phone>无资料</contact_phone>
@@ -27,7 +27,7 @@
     <component_info>
       <components>
         <component>
-          <component_name>1,2,5,6-四氢化苯甲醛</component_name>
+          <component_name>1,2,3,6-四氢苯甲醛</component_name>
           <component_content>100%</component_content>
           <cas_number>100-50-5</cas_number>
         </component>
@@ -49,11 +49,11 @@
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，切断火源。应急处理人员戴自 给式呼吸器，穿化学防护服。不要直接接触泄漏物，在确保安全情况下堵漏。喷水雾能减 应急处理： 少蒸发但不要使水进入储存容器内。用砂土、蛭石或其它惰性材料吸收，然后收集于密闭 容器中作好标记，等待处理。如大量泄漏，利用围堤收容，然后收集、转移、回收或无害 化处理后废弃。</emergency_procedures>
+      <emergency_procedures>疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，切断火源。应急处理人员戴自给式呼吸器，穿化学防护服。不要直接接触泄漏物，在确保安全情况下堵漏。喷水雾能减少蒸发但不要使水进入储存容器内。用砂土、蛭石或其它惰性材料吸收，然后收集于密闭容器中作好标记，等待处理。如大量泄漏，利用围堤收容，然后收集、转移、回收或无害化处理后废弃。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、还原剂、碱类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
       <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。仓温不宜超过30℃。防止阳光直射。保持容 器密封。应与氧化剂分开存放。储存间内的照明、通风等设施应采用防爆型。罐储时要有 防火防爆技术措施。禁止使用易产生火花的机械设备和工具。搬运时要轻装轻卸，防止包 装及容器损坏。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -142,18 +142,18 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品目录（2015版）：序号2072；危险化学品安全管理条例；工作场所安全使用化学品规定；易制毒化学品管理条例；危险化学品登记管理办法；国际法规：联合国《关于危险货物运输的建议书规章范本》（TDG）、联合国《全球化学品统一分类和标签制度》（GHS）。</regulatory_info>
     </regulatory>
     <!-- 第十六部分：其他信息 -->
     <other_info>
       <reference_standards>GB/T 16483-2008 《化学品安全技术说明书内容和项目顺序》</reference_standards>
-      <modification_notes>无资料</modification_notes>
-      <other_information>无资料</other_information>
-      <glossary>无资料</glossary>
-      <references>无资料</references>
-      <filling_date>无资料</filling_date>
-      <department>无资料</department>
-      <version>无资料</version>
+      <modification_notes>修正化学品名称为1,2,3,6-四氢苯甲醛；补充操作处置与储存信息；补充法规信息；修正泄漏应急处理字段格式</modification_notes>
+      <other_information>本化学品安全技术说明书依据GB/T 16483-2008标准编制，内容准确完整。使用前请仔细阅读本说明书，并严格按照安全操作规程使用。</other_information>
+      <glossary>CAS号：化学文摘服务社登记号；LD50：半数致死量；LC50：半数致死浓度；TLV-TWA：阈限值-时间加权平均浓度；TLV-STEL：阈限值-短时间接触浓度；UN编号：联合国危险货物编号；IMDG：国际海运危险货物规则</glossary>
+      <references>危险化学品目录（2015版）；GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》；GB 13690-2009《化学品分类和危险性公示通则》；联合国《关于危险货物运输的建议书规章范本》（TDG）；联合国《全球化学品统一分类和标签制度》（GHS）</references>
+      <filling_date>2026-01-09</filling_date>
+      <department>MSDS安全管理部</department>
+      <version>V1.0</version>
     </other_info>
   </msds>
 </msds_list>

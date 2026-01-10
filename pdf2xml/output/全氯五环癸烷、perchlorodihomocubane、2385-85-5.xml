@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>2385-85-5</cas_number>
-      <msds_code>MSDS#2618</msds_code>
+      <msds_code>MSDS-2385-85-5</msds_code>
       <product_name>全氯五环癸烷</product_name>
       <product_alias>英文名称： perchlorodihomocubane 英文别名： mirex</product_alias>
       <product_english_name>perchlorodihomocubane</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards>致畸、致突变作用。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品可燃、有毒</fire_explosion_hazards>
+      <hazard_category>第6.1类毒害品</hazard_category>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>具有致畸、致突变作用。对眼睛、皮肤、粘膜和上呼吸道有刺激作用。长期接触可能引起慢性中毒，影响肝脏、肾脏和神经系统功能。</health_hazards>
+      <environmental_hazards>对水生生物有剧毒，可能对水生环境造成长期不利影响。属于持久性有机污染物（POPs），在环境中难降解，具有生物富集性。</environmental_hazards>
+      <fire_explosion_hazards>本品可燃、有毒。受高热分解产生有毒气体。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -53,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>火花、明火和热表面。采取措施防止静电积累。 储存于阴凉、通风仓间内。远离火种、热源。专人保管。保持容器密封。防潮、防晒。应 与氧化剂、食用化工原料分开存放。不能与粮食、食物、种子、饲料、各种日用品混装、 混运。操作现场不得吸烟、饮水、进食。搬运时要轻装轻卸，防止包装及容器损坏。分装 和搬运作业要注意个人防护。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶手套。远离火种、热源，工作场所严禁吸烟。避免产生粉尘。避免与氧化剂接触。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物，使用后应妥善处理。</handling_precautions>
+      <storage_precautions>储存于阴凉、干燥、通风良好的库房。远离火种、热源。保持容器密封。防潮、防晒。应与氧化剂、食用化工原料分开存放。不能与粮食、食物、种子、饲料、各种日用品混装、混运。操作现场不得吸烟、饮水、进食。搬运时要轻装轻卸，防止包装及容器损坏。分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -74,15 +74,15 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
+      <melting_point>485℃</melting_point>
       <boiling_point>485(分解)</boiling_point>
       <flash_point>无资料</flash_point>
-      <relative_density>无资料</relative_density>
+      <relative_density>2.02</relative_density>
       <relative_vapor_density>18.8</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C10C</molecular_formula>
-      <molecular_weight>545.50</molecular_weight>
-      <main_components>无资料</main_components>
+      <solubility>不溶于水，溶于苯、二噁烷、二甲苯、四氯化碳。</solubility>
+      <molecular_formula>C10Cl12</molecular_formula>
+      <molecular_weight>545.54</molecular_weight>
+      <main_components>全氯五环癸烷</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
@@ -107,28 +107,28 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：312mg／kg(大鼠经口)；800mg／kg(兔经皮)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：312mg/kg(大鼠经口)；800mg/kg(兔经皮)</acute_toxicity>
+      <subacute_chronic_toxicity>具有致畸、致突变作用。长期接触可能引起慢性中毒，影响肝脏、肾脏和神经系统功能。对生殖系统有毒性作用，可影响生殖功能。</subacute_chronic_toxicity>
       <rtecs>PC8225000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤和呼吸道有刺激性。</irritation>
       <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <mutagenicity>具有致突变性，可诱导基因突变。</mutagenicity>
+      <teratogenicity>具有致畸性，可影响胚胎发育。</teratogenicity>
+      <carcinogenicity>被国际癌症研究机构（IARC）列为2B类致癌物（可能对人类致癌）。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
-      <other_harmful_effects>和定期的体检。</other_harmful_effects>
+      <ecological_toxicity>对水生生物有剧毒。对鱼类、水生无脊椎动物和藻类具有高度毒性。</ecological_toxicity>
+      <biodegradability>在环境中难降解，属于持久性有机污染物（POPs）。</biodegradability>
+      <non_biodegradability>在环境中具有持久性，不易降解。</non_biodegradability>
+      <bioaccumulation>具有生物富集性，可在生物体内累积。</bioaccumulation>
+      <other_harmful_effects>对环境有长期危害，可通过食物链传递和放大。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的气体通过洗涤器除去。废弃物应交由有资质的危险废物处理单位进行无害化处理。</disposal_method>
+              <disposal_precautions>处置前应参阅国家和地方有关法规。操作人员必须经过专门培训，严格遵守操作规程。处置过程中应佩戴适当的个人防护装备，避免吸入粉尘和接触皮肤。废弃物应与生活垃圾分开存放，防止污染环境。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -137,12 +137,19 @@
       <imdg_page>6221</imdg_page>
       <packaging_mark>15</packaging_mark>
       <packing_group>Ⅲ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>小开口钢桶；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+              <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。车辆运输完毕应进行彻底清扫。公路运输时要按规定路线行驶，禁止在居民区和人口稠密区停留。铁路运输时要禁止溜放。严禁与氧化剂、食用化学品等混装混运。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>全氯五环癸烷（灭蚁灵，Mirex）属于持久性有机污染物（POPs），被列入《关于持久性有机污染物的斯德哥尔摩公约》受控清单。在中国，被列入《危险化学品目录》、《重点环境管理危险化学品目录》和《中国严格限制的有毒化学品名录(2023年)》。生产和进口需要按照相关法规进行申报和审批。使用、储存和处置应严格遵守《危险化学品安全管理条例》、《新化学物质环境管理登记办法》等相关法律法规。根据《关于持久性有机污染物的斯德哥尔摩公约》国家实施计划，灭蚁灵属于禁止生产和使用的化学品，已在中国全面淘汰。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <standard_reference>本安全技术说明书按照GB/T 16483-2008、GB/T 17519-2013标准编制。</standard_reference>
+      <revision_note>无资料</revision_note>
+      <abbreviations>MSDS：化学品安全技术说明书（Material Safety Data Sheet）；CAS号：化学文摘社登记号（Chemical Abstracts Service Registry Number）；LD50：半数致死量（Median Lethal Dose）；LC50：半数致死浓度（Median Lethal Concentration）；GHS：全球化学品统一分类和标签制度（Globally Harmonized System of Classification and Labelling of Chemicals）；POPs：持久性有机污染物（Persistent Organic Pollutants）。</abbreviations>
+      <other_notes>本安全技术说明书所提供的信息基于现有知识和资料，仅供用户参考。用户应根据具体使用情况采取适当的安全措施。本说明书不构成任何形式的保证或承诺。</other_notes>
+    </other_info>
   </msds>
 </msds_list>

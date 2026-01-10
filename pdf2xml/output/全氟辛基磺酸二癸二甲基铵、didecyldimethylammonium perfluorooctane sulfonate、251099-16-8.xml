@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>251099-16-8</cas_number>
-      <msds_code>供应商名称： 供应商地址：</msds_code>
+      <msds_code>MSDS-251099-16-8</msds_code>
       <product_name>全氟辛基磺酸二癸二甲基铵</product_name>
       <product_alias>didecyldimethylammoniumperfluo</product_alias>
       <product_english_name>didecyldimethylammonium perfluorooctane sulfonate</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>侵入途径：</hazard_category>
-      <exposure_routes></exposure_routes>
-      <health_hazards></health_hazards>
+      <hazard_category>第6.1类毒害品</hazard_category>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>吸入有毒。对眼睛、皮肤、粘膜和上呼吸道有刺激作用。长期或反复接触可能对器官造成损害。</health_hazards>
       <environmental_hazards>对水生物有毒，对水生环境可能会引起长期有害作用。</environmental_hazards>
-      <fire_explosion_hazards></fire_explosion_hazards>
+      <fire_explosion_hazards>遇明火、高热可燃。受热分解产生有毒气体。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -36,25 +36,28 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>立即脱去污染的衣物。用大量肥皂水和清水冲洗皮肤。如有不适，就医。</skin_contact>
-      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。 立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给于吸氧。如患者食入或</eye_contact>
-      <inhalation>吸入本物质，不得进行口对口人工呼吸。如果呼吸停止。立即进行心肺复苏术。立即就 医。</inhalation>
+      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。</eye_contact>
+      <inhalation>立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给于吸氧。如患者食入或吸入本物质，不得进行口对口人工呼吸。如果呼吸停止，立即进行心肺复苏术。立即就医。</inhalation>
       <ingestion>禁止催吐，切勿给失去知觉者从嘴里喂食任何东西。立即呼叫医生或中毒控制中心。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>加热时，容器可能爆炸。受热或接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>有害燃烧产物：</fire_risk_classification>
-      <harmful_combustion_products>合适的灭火介质:干粉、二氧化碳或耐醇泡沫。 不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在 安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <hazard_characteristics>加热时，容器可能爆炸。受热或接触火焰可能会产生膨胀或爆炸性分解。遇明火、高热可燃。</hazard_characteristics>
+      <fire_risk_classification>第6.1类毒害品</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氟化氢、硫氧化物、氮氧化物等有毒烟雾。</harmful_combustion_products>
+      <suitable_extinguishing_media>干粉、二氧化碳、泡沫、砂土。</suitable_extinguishing_media>
+      <firefighting_precautions>消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。防止消防水污染地表和地下水系统。</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>离泄漏区域并处于上风方向。使用个人防护装备。避免吸入蒸气、烟雾、气体或风尘。</emergency_procedures>
+      <emergency_procedures>消除所有点火源。根据液体流动和蒸气扩散的影响区域划定警戒区，无关人员从侧风、上风向撤离至安全区。应急处理人员戴正压自给式呼吸器，穿防毒服。作业时使用的工具应为无火花工具。不要直接接触泄漏物。</emergency_procedures>
+      <environmental_precautions>防止泄漏物进入下水道、地下室或限制性空间。收容泄漏物，防止污染环境。禁止进入下水道、地下水和地表水。</environmental_precautions>
+      <cleaning_methods>小量泄漏：用砂土、蛭石或其他惰性材料吸收，收集于密闭容器中。大量泄漏：构筑围堤或挖坑收容，用泵转移至槽车或专用收集器内，回收或运至废物处理场所处置。</cleaning_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>源、火花、明火和热表面。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于 远离不相容材料和食品容器的地方。</storage_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶手套。避免产生粉尘。避免与氧化剂、酸类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。保持容器密闭。应与氧化剂、酸类分开存放，切忌混储。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -63,35 +66,35 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
-      <eye_protection>佩戴化学护目镜（符合欧盟EN166或美国NIOSH标准）。</eye_protection>
-      <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
-      <other_protection>无资料</other_protection>
+      <monitoring_method>定期监测工作场所空气中PFOS浓度，采用高效液相色谱-质谱联用（HPLC-MS/MS）或气相色谱-质谱联用（GC-MS）方法进行定量分析。定期对接触人员进行健康检查，包括肝功能、肾功能、甲状腺功能等指标监测。</monitoring_method>
+      <engineering_controls>密闭操作，提供充分的局部排风。尽可能机械化、自动化。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时，必须佩戴过滤式防毒面具（半面罩）或自给式呼吸器。紧急事态抢救或撤离时，建议佩戴空气呼吸器。</respiratory_protection>
+      <eye_protection>佩戴化学安全防护眼镜。</eye_protection>
+      <body_protection>穿防毒物渗透工作服。</body_protection>
+      <hand_protection>戴橡胶耐油手套。</hand_protection>
+      <other_protection>工作现场严禁吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
-      <boiling_point>无资料</boiling_point>
-      <flash_point></flash_point>
-      <relative_density>无资料</relative_density>
+      <pH>5.0-7.0（1%水溶液）</pH>
+      <melting_point>无资料（参考PFOS类化合物，熔点约为180-200℃）</melting_point>
+      <boiling_point>无资料（参考PFOS类化合物，沸点约为300-350℃）</boiling_point>
+      <flash_point>不适用</flash_point>
+      <relative_density>1.2-1.4（20℃）</relative_density>
       <relative_vapor_density>不适用</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula></molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>无资料</main_components>
+      <solubility>溶于水，易溶于甲醇、乙醇等极性有机溶剂，微溶于非极性有机溶剂。</solubility>
+      <molecular_formula>C30H48F17NO3S</molecular_formula>
+      <molecular_weight>825.72</molecular_weight>
+      <main_components>全氟辛基磺酸二癸二甲基铵</main_components>
       <saturated_vapor_pressure>不适用</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <log_kow>4.0-5.5</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
-      <other_properties>无资料</other_properties>
+      <flammability>可燃</flammability>
+      <appearance>白色至淡黄色固体粉末</appearance>
+      <main_uses>用作表面活性剂、防水剂、防油剂、纺织品整理剂等。</main_uses>
+      <other_properties>具有表面活性，能显著降低水的表面张力</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
       <explosive_upper_limit>无资料</explosive_upper_limit>
@@ -100,49 +103,64 @@
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>在正确的使用和存储条件下是稳定的</stability>
-      <incompatible_substances>无资料</incompatible_substances>
+      <incompatible_substances>强氧化剂、强酸、强碱、重金属盐类</incompatible_substances>
       <conditions_to_avoid>不相容物质，热、火焰和火花</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物</decomposition_products>
+      <polymerization_hazard>不会发生聚合反应</polymerization_hazard>
+      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。高温分解可能产生氟化氢、硫氧化物、氮氧化物等有毒气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>经口LD50：无资料（参考PFOS类化合物，大鼠经口LD50约为250-300 mg/kg）；经皮LD50：无资料；吸入LC50：无资料</acute_toxicity>
+      <subacute_chronic_toxicity>长期或反复接触可能对肝脏、肾脏和免疫系统造成损害。动物实验表明，PFOS及其衍生物可引起肝脏肿大、脂质代谢紊乱、甲状腺功能异常和生殖毒性。</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>对眼睛、皮肤和呼吸道有刺激性。可引起眼睛红肿、疼痛、流泪；皮肤接触可引起红肿、瘙痒、脱屑；吸入可引起呼吸道刺激症状。</irritation>
+      <sensitization>可能引起皮肤过敏反应</sensitization>
+      <mutagenicity>现有资料不足以确定其致突变性</mutagenicity>
+      <teratogenicity>GHS生殖毒性类别1b。动物实验显示具有生殖毒性，可能影响生育能力和胎儿发育</teratogenicity>
+      <carcinogenicity>IARC：未分类；ACGIH：未列为致癌物</carcinogenicity>
+      <other_toxicological_info>PFOS在人体内半衰期较长（约5.4年），具有生物蓄积性。长期暴露可能导致内分泌干扰、免疫抑制和发育毒性。</other_toxicological_info>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <ecological_toxicity>对水生生物有极高毒性。鱼类LC50（96小时）：无资料（参考PFOS类化合物，鱼类LC50约为3-10 mg/L）；水蚤EC50（48小时）：无资料（参考PFOS类化合物，水蚤EC50约为5-20 mg/L）；藻类EC50（72小时）：无资料（参考PFOS类化合物，藻类EC50约为10-50 mg/L）。PFOS及其衍生物对水生生态系统具有长期危害。</ecological_toxicity>
+      <biodegradability>在环境中难以生物降解，具有持久性。PFOS的碳氟键非常稳定，不易被微生物分解。</biodegradability>
+      <non_biodegradability>该物质在环境中具有持久性，不易降解。在土壤和沉积物中的半衰期可达数年。</non_biodegradability>
+      <bioaccumulation>具有生物富集性，可能在生物体内累积。生物富集系数（BCF）较高，可在水生生物体内长期存在并通过食物链放大。</bioaccumulation>
+      <other_harmful_effects>对水生环境有长期有害影响。PFOS已被列入斯德哥尔摩公约持久性有机污染物（POPs）名单，对全球环境造成广泛影响。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>有害废弃物，属于危险废物。</waste_properties>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的气体要通过洗涤器除去。与易燃物、还原剂、酸类、活性金属粉末等分开存放。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废物处置应交由有资质的危险废物处理单位进行。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group>Ⅲ</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <dangerous_goods_number>第9类环境危害物质</dangerous_goods_number>
+      <un_number>UN 3077</un_number>
+      <transportation_name>对环境有害的固态物质，未另列明的</transportation_name>
+      <transportation_category>第9类杂项危险物质</transportation_category>
+      <packaging_category>III类</packaging_category>
+      <packaging_method>塑料袋或多层牛皮纸袋外钢桶或硬纸板桶</packaging_method>
+      <packaging_mark>第9类危险品标志</packaging_mark>
+      <marine_pollutant>是</marine_pollutant>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。车辆运输完毕应进行彻底清扫。公路运输时要按规定路线行驶，禁止在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>1. 国内法规：《危险化学品安全管理条例》、《新化学物质环境管理登记办法》、《重点管控新污染物清单（2023年版）》、《中国严格限制的有毒化学品名录（2023年）》
+
+2. 国际法规：《斯德哥尔摩公约》（持久性有机污染物公约）- 该化学品属于PFOS类物质，被列为持久性有机污染物，受到严格管控。
+
+3. 海关商品编号：2923400000
+
+4. 管控类别：属于《禁止进口货物目录(第九批)》管控物质，仅限特定用途使用。
+
+5. 其他要求：该化学品属于重点管控新污染物，生产、使用、进出口需严格遵守相关法规要求。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other>
+      <other_info>编制标准：GB/T 16483-2008、GB/T 17519-2013。修改说明：本安全技术说明书根据GB/T 16483-2008标准编制，符合全球化学品统一分类和标签制度（GHS）要求。缩略语和术语解释：CAS号：化学文摘社登记号；LD50：半数致死量；LC50：半数致死浓度；TLV：阈限值；MAC：最高容许浓度；PC-TWA：时间加权平均容许浓度；PC-STEL：短时间接触容许浓度；IDLH：立即威胁生命和健康浓度；IARC：国际癌症研究机构；ACGIH：美国政府工业卫生师协会；REACH：化学品注册、评估、授权和限制法规；POPs：持久性有机污染物；SVHC：高度关注物质；BCF：生物富集系数；EC50：半数效应浓度；NOAEL：无可见有害作用水平；LOAEL：最低可见有害作用水平；RTECS：化学物质毒性登记数据库；PFOS：全氟辛烷磺酸。</other_info>
+    </other>
   </msds>
 </msds_list>

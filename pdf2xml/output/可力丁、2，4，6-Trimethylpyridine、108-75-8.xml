@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>108-75-8</cas_number>
-      <msds_code>MSDS#1191</msds_code>
+      <msds_code>MSDS-108-75-8</msds_code>
       <product_name>可力丁</product_name>
       <product_alias>2，4，6-三甲基吡啶</product_alias>
       <product_english_name>2，4，6-Trimethylpyridine</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>无资料</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards>本品蒸气和烟雾对眼睛、粘膜和上呼吸道有刺激作用。对皮肤有刺激作用。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <hazard_category>第3类易燃液体</hazard_category>
+      <exposure_routes>吸入、食入、经皮</exposure_routes>
+      <health_hazards>对眼睛、皮肤、粘膜和上呼吸道有刺激作用。高浓度蒸气可引起头痛、头晕、恶心、麻醉作用。长期接触可能引起慢性影响。</health_hazards>
+      <environmental_hazards>对水生生物有毒，可能对水生环境造成长期不利影响。</environmental_hazards>
+      <fire_explosion_hazards>易燃，遇明火、高热可燃。受热分解产生有毒气体。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -53,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光直射。保持容器密封。应与氧化剂、酸 类分开存放。搬运时要轻装轻卸，防止包装及容器损坏。</storage_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。远离火种、热源。工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类接触。搬运时轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光直射。保持容器密封。应与氧化剂、酸类分开存放，切忌混储。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -74,28 +74,28 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>-43</melting_point>
-      <boiling_point>172</boiling_point>
-      <flash_point>57</flash_point>
+      <melting_point>-43℃</melting_point>
+      <boiling_point>172℃</boiling_point>
+      <flash_point>57℃</flash_point>
       <relative_density>0.92(20℃)</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <relative_vapor_density>4.18</relative_vapor_density>
+      <solubility>溶于水、乙醇、乙醚、丙酮、苯。</solubility>
       <molecular_formula>C8H11N</molecular_formula>
       <molecular_weight>121.18</molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <main_components>2,4,6-三甲基吡啶</main_components>
+      <saturated_vapor_pressure>1.33 kPa(20℃)</saturated_vapor_pressure>
+      <log_kow>2.26</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>易燃，遇明火、高热可燃。</flammability>
       <appearance>无色液体。</appearance>
-      <main_uses>用作反应溶剂、医药品。</main_uses>
+      <main_uses>用作反应溶剂、医药品、有机合成中间体。</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <explosive_upper_limit>8.5%</explosive_upper_limit>
+      <explosive_lower_limit>1.2%</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -142,7 +142,7 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险品标志：Xn（有害）。危险类别码：10-20/21/22-36/37/38。安全说明：26-36/37-36。WGK Germany：3。海关编码：29333999。美国有毒物质控制法案(TSCA)目录。危险化学品安全管理条例。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

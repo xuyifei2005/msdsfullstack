@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>119-36-8</cas_number>
-      <msds_code>MSDS#1429</msds_code>
+      <msds_code>MSDS-119-36-8</msds_code>
       <product_name>冬青油</product_name>
       <product_alias>水杨酸甲酯</product_alias>
       <product_english_name>Methyl salicylate</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>无资料</hazard_category>
-      <exposure_routes>吸入 食入</exposure_routes>
-      <health_hazards>热。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <hazard_category>第3类 易燃液体</hazard_category>
+      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
+      <health_hazards>吸入、食入、经皮吸收可引起中毒。对眼睛、皮肤、粘膜和上呼吸道有刺激作用。高浓度接触可引起头痛、头晕、恶心、呕吐、乏力等症状。长期接触可引起慢性中毒。</health_hazards>
+      <environmental_hazards>对水生生物有毒，对水生环境可能会引起长期有害作用。</environmental_hazards>
+      <fire_explosion_hazards>遇明火、高热可燃。受热分解产生有毒气体。其蒸气与空气可形成爆炸性混合物，遇明火、高热极易燃烧爆炸。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -35,26 +35,26 @@
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>脱上污染的衣着，用肥皂水及清水彻底冲洗。</skin_contact>
+      <skin_contact>脱去污染的衣着，用肥皂水及清水彻底冲洗。如有不适，就医。</skin_contact>
       <eye_contact>立即翻开上下眼睑，用流动清水冲洗15分钟。就医。</eye_contact>
       <inhalation>脱离现场至空气新鲜处。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
-      <ingestion>误服者漱口。给饮牛奶或蛋清，就医。</ingestion>
+      <ingestion>误服者漱口。给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>的危险。</hazard_characteristics>
-      <fire_risk_classification>丙</fire_risk_classification>
+      <hazard_characteristics>遇明火、高热可燃。受热分解产生有毒气体。其蒸气与空气可形成爆炸性混合物，遇明火、高热极易燃烧爆炸。</hazard_characteristics>
+      <fire_risk_classification>无资料</fire_risk_classification>
       <harmful_combustion_products>一氧化碳、二氧化碳。</harmful_combustion_products>
       <suitable_extinguishing_media>雾状水、泡沫、二氧化碳、砂土。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>切断火源。戴好防毒面具，穿化学防护眼。在确保安全情况下堵漏。用不燃性分散剂制成的乳 应急处理： 液刷洗。经稀释的洗液放入废水系统。也可以用砂土或其它不燃性吸附剂混合吸收，收集运到 空旷处焚烧。如大量泄漏，利用围堤收容，然后收集、转移、回收或无害处理后废弃。</emergency_procedures>
+      <emergency_procedures>切断火源。戴好防毒面具，穿化学防护服。在确保安全情况下堵漏。用不燃性分散剂制成的乳液刷洗。经稀释的洗液放入废水系统。也可以用砂土或其它不燃性吸附剂混合吸收，收集运到空旷处焚烧。如大量泄漏，利用围堤收容，然后收集、转移、回收或无害处理后废弃。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。保持容器密封。应与氧化剂、酸类、碱类分开 存放。搬运时要轻装轻卸，防止包装及容器损坏。中 国 MAC：未制订标准前苏联MAC：未制 订标准美国TLV-TWA：未制订标准美国TLV-STEL：未制订标准</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类、碱类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。保持容器密封。应与氧化剂、酸类、碱类分开存放。搬运时要轻装轻卸，防止包装及容器损坏。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -79,16 +79,16 @@
       <flash_point>101</flash_point>
       <relative_density>1.18～1.19</relative_density>
       <relative_vapor_density>4.36</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>微溶于水，溶于乙醇、乙醚、氯仿。</solubility>
       <molecular_formula>C8H8O3</molecular_formula>
       <molecular_weight>152.15</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>水杨酸甲酯</main_components>
       <saturated_vapor_pressure>133.32(540℃)</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>引燃温度(℃)：450</autoignition_temperature>
-      <flammability></flammability>
+      <ignition_temperature>450</ignition_temperature>
+      <autoignition_temperature>无资料</autoignition_temperature>
+      <flammability>可燃</flammability>
       <appearance>无色至淡黄色或微红色油状液体，具有冬青味。</appearance>
       <main_uses>用作溶剂和中间体，用于制造杀虫剂、杀菌剂、香料、涂料、化妆品、油墨及纤维助染剂等。</main_uses>
       <other_properties>无资料</other_properties>
@@ -144,5 +144,11 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>GB/T 16483-2008、GB 6944-2012</reference_standards>
+      <revision_notes>无</revision_notes>
+      <abbreviations>MSDS：化学品安全技术说明书；CAS：化学文摘社；UN：联合国；TLV：阈限值</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

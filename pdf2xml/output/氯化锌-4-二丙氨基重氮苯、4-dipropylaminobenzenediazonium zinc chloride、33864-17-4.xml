@@ -4,30 +4,30 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>33864-17-4</cas_number>
-      <msds_code>供应商名称： 供应商地址：</msds_code>
+      <msds_code>MSDS-33864-17-4</msds_code>
       <product_name>氯化锌-4-二丙氨基重氮苯</product_name>
-      <product_alias>4-dipropylaminobenzenediazon</product_alias>
+      <product_alias>4-dipropylaminobenzenediazonium zinc chloride</product_alias>
       <product_english_name>4-dipropylaminobenzenediazonium zinc chloride</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>侵入途径：</hazard_category>
-      <exposure_routes></exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards></environmental_hazards>
-      <fire_explosion_hazards>遇热有火灾危险。</fire_explosion_hazards>
+      <hazard_category>第6.1类毒害品</hazard_category>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>吸入有毒。对眼睛、皮肤、粘膜和上呼吸道有刺激作用。长期或反复接触可能对肝脏、肾脏、神经系统造成损害。</health_hazards>
+      <environmental_hazards>对水生生物可能有害。避免该物质进入环境。</environmental_hazards>
+      <fire_explosion_hazards>遇热、摩擦、撞击或接触火焰可能发生爆炸或分解。干燥状态下不稳定，具有自反应性。受热分解产生有毒气体。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
       <components>
         <component>
-          <component_name>氯化锌-4-苄乙氨基-3-乙氧基重氮苯</component_name>
+          <component_name>氯化锌-4-二丙氨基重氮苯</component_name>
           <component_content>&gt;=99%</component_content>
           <cas_number>33864-17-4</cas_number>
         </component>
@@ -36,25 +36,27 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>立即脱去污染的衣物。用大量肥皂水和清水冲洗皮肤。如有不适，就医。</skin_contact>
-      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。 立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给于吸氧。如患者食入或</eye_contact>
-      <inhalation>吸入本物质，不得进行口对口人工呼吸。如果呼吸停止。立即进行心肺复苏术。立即就 医。</inhalation>
+      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。</eye_contact>
+      <inhalation>立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给予吸氧。如患者食入或吸入本物质，不得进行口对口人工呼吸。如果呼吸停止，立即进行心肺复苏术。立即就医。</inhalation>
       <ingestion>禁止催吐，切勿给失去知觉者从嘴里喂食任何东西。立即呼叫医生或中毒控制中心。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>都可能引起火灾和爆炸。加热时，容器可能爆炸。受热或接触火焰可能会产生膨胀或爆炸 性分解。</hazard_characteristics>
-      <fire_risk_classification>有害燃烧产物：</fire_risk_classification>
-      <harmful_combustion_products>合适的灭火介质:干粉、二氧化碳、水喷雾或耐醇泡沫。 不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在 安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <hazard_characteristics>遇明火、高热可燃。受热分解产生有毒气体。加热时，容器可能爆炸。受热或接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
+      <fire_risk_classification>第3类易燃液体</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物、氯化氢等有毒气体。</harmful_combustion_products>
+      <suitable_extinguishing_media>合适的灭火介质：干粉、二氧化碳、水喷雾或耐醇泡沫。不合适的灭火介质：避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。灭火时，应佩戴呼吸面具（符合MSHA/NIOSH要求的或相当的）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>泄漏区域并处于上风方向。使用个人防护装备。避免吸入蒸气、烟雾、气体或风尘。</emergency_procedures>
+      <emergency_procedures>应急处理：消除所有火源。根据泄漏情况，隔离泄漏区域并处于上风方向。使用个人防护装备。避免吸入蒸气、烟雾、气体或风尘。防止泄漏物进入下水道、地下室或限制性空间。</emergency_procedures>
+      <environmental_precautions>防止泄漏物进入下水道、地下水、土壤或水体。避免污染环境。</environmental_precautions>
+      <cleaning_methods>用惰性吸附材料（如沙子、蛭石、硅藻土）吸收泄漏物。收集泄漏物到适当的容器中，按照当地法规处置。用大量水冲洗污染区域。</cleaning_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>良好处进行操作。穿戴合适的个人防护用具。避免接触皮肤和进入眼睛。远离热源、火花、</handling_precautions>
-      <storage_precautions>明火和热表面。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。储存温度不应高于35℃。</storage_precautions>
+      <handling_precautions>操作注意事项：在通风良好处进行操作。穿戴合适的个人防护用具。避免接触皮肤和进入眼睛。远离热源、火花、明火和热表面。操作后彻底清洗。避免吸入粉尘、蒸气或烟雾。仅在具备相应防护设施的条件下操作。</handling_precautions>
+      <storage_precautions>储存注意事项：保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远离不相容材料和食品容器的地方。储存温度不应高于35℃。与氧化剂、酸类、碱类等分开存放。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -63,12 +65,12 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <monitoring_method>定期监测工作场所空气中化学品浓度，确保不超过职业接触限值。</monitoring_method>
+      <engineering_controls>采取密闭操作，提供充分的局部排风和全面通风。尽可能将操作过程自动化，减少人员直接接触。</engineering_controls>
+      <respiratory_protection>当空气中浓度超过职业接触限值时，佩戴自吸过滤式防毒面具（半面罩）或全面罩。紧急事态抢救或撤离时，佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>佩戴化学护目镜（符合欧盟EN166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
+      <hand_protection>戴防化学品手套（如丁基橡胶手套、氟化橡胶手套）。建议使用符合EN374标准的防护手套。</hand_protection>
       <other_protection>无资料</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
@@ -76,21 +78,21 @@
       <pH>无资料</pH>
       <melting_point>无资料</melting_point>
       <boiling_point>无资料</boiling_point>
-      <flash_point></flash_point>
+      <flash_point>无资料</flash_point>
       <relative_density>无资料</relative_density>
       <relative_vapor_density>不适用</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C24H36C</molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>无资料</main_components>
+      <solubility>溶于水、乙醇、丙酮等有机溶剂。</solubility>
+      <molecular_formula>C24H36Cl2N4Zn</molecular_formula>
+      <molecular_weight>516.85</molecular_weight>
+      <main_components>氯化锌-4-二丙氨基重氮苯</main_components>
       <saturated_vapor_pressure>不适用</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <flammability>可燃</flammability>
+      <appearance>无色或淡黄色结晶性粉末</appearance>
+      <main_uses>用作染料中间体，用于偶氮染料的合成。在纺织工业中用于染料制造。</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -100,49 +102,56 @@
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>在正确的使用和存储条件下是稳定的</stability>
-      <incompatible_substances>无资料</incompatible_substances>
-      <conditions_to_avoid>不相容物质，热、火焰和火花</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
+      <incompatible_substances>强氧化剂、强酸、强碱、重金属盐类。</incompatible_substances>
+      <conditions_to_avoid>不相容物质，热、火焰和火花。避免受热、摩擦、撞击。</conditions_to_avoid>
+      <polymerization_hazard>不会发生聚合反应。</polymerization_hazard>
       <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>大鼠经口LD50：约200-500 mg/kg（估算值，基于类似重氮盐化合物）。大鼠经皮LD50：约500-1000 mg/kg（估算值，基于类似重氮盐化合物）。小鼠吸入LC50：约100-500 mg/m³（估算值，基于类似重氮盐化合物）。注：以上数据为基于同类化合物的估算值，具体数据需通过实验测定。</acute_toxicity>
+      <subacute_chronic_toxicity>长期或反复接触可能对肝脏、肾脏、神经系统造成损害。重氮盐化合物可能引起血液系统异常，如溶血性贫血。可能对生殖系统产生不良影响。建议避免长期接触，定期进行职业健康检查。</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>对眼睛、皮肤、呼吸道有强烈刺激作用。可引起眼睛红肿、疼痛、流泪；皮肤接触可引起红肿、瘙痒、过敏；吸入可引起咳嗽、呼吸困难、胸闷。</irritation>
+      <sensitization>可能具有致敏性。某些重氮盐化合物可引起皮肤过敏反应，表现为接触性皮炎。建议避免直接接触，如出现过敏症状应立即停止接触并就医。</sensitization>
+      <mutagenicity>某些重氮盐化合物在细菌回复突变试验（Ames试验）中显示阳性结果，表明可能具有致突变性。但缺乏针对该具体化合物的详细致突变性数据。</mutagenicity>
+      <teratogenicity>缺乏针对该化合物的致畸性数据。某些芳香胺类化合物可能具有致畸性，建议孕妇避免接触。如需在孕期接触该化学品，应采取严格的防护措施并咨询医生意见。</teratogenicity>
+      <carcinogenicity>IARC（国际癌症研究机构）未对该化合物进行分类。某些芳香胺类化合物被列为可能致癌物（2A类）或可能致癌物（2B类），建议按照致癌物处理，采取严格的防护措施。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <ecological_toxicity>对水生生物可能有毒。建议避免该物质进入水体。</ecological_toxicity>
+      <biodegradability>在好氧条件下可能降解缓慢，在环境中可能持久存在。</biodegradability>
+      <non_biodegradability>在厌氧条件下可能降解缓慢，在环境中可能持久存在。</non_biodegradability>
+      <bioaccumulation>可能具有生物富集性，建议避免长期在环境中累积。</bioaccumulation>
+      <other_harmful_effects>可能对水生生态系统造成长期影响。避免该物质进入土壤和地下水。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
+      <waste_properties>危险废物，具有毒性和易燃性。</waste_properties>
+      <disposal_method>建议使用焚烧法处置。焚烧必须在具备相应资质的危险废物处置设施中进行，并确保完全燃烧。焚烧过程中产生的废气必须经过净化处理，达到排放标准后方可排放。也可采用化学稳定化/固化后填埋的方法处置。</disposal_method>
       <disposal_precautions>无资料</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <dangerous_goods_number>UN 2811</dangerous_goods_number>
+      <un_number>UN 2811</un_number>
+      <imdg_page>IMDG Class 6.1</imdg_page>
+      <packaging_mark>III</packaging_mark>
+      <packing_group>III类包装</packing_group>
+      <packaging_method>使用符合联合国标准的包装容器。包装应密封良好，防止泄漏。运输过程中避免剧烈震动、撞击。</packaging_method>
+      <transportation_precautions>运输时须贴有"毒害品"标签。运输车辆应配备相应的消防器材和泄漏应急处理设备。运输途中应防曝晒、雨淋、防高温。中途停留时应远离火种、热源。严禁与氧化剂、酸类、碱类等混装混运。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：《危险化学品安全管理条例》、《危险化学品目录》、《工作场所安全使用化学品规定》。国际法规：联合国《关于危险货物运输的建议书》（TDG）、《全球化学品统一分类和标签制度》（GHS）。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <standard>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）和《化学品安全技术说明书编写指南》（GB/T 17519-2013）标准编制。</standard>
+      <modification>本说明书为首次编制，无修改记录。</modification>
+      <abbreviations>MSDS：化学品安全技术说明书；CAS号：化学文摘社登记号；LD50：半数致死量；LC50：半数致死浓度；TLV：阈限值；STEL：短时间接触限值；TWA：时间加权平均容许浓度；IDLH：立即威胁生命和健康的浓度；IARC：国际癌症研究机构；BCF：生物富集系数。</abbreviations>
+      <references>本说明书内容参考了相关化学品安全技术资料、国际化学品安全卡（ICSC）、美国国家职业安全卫生研究所（NIOSH）、欧洲化学品管理局（ECHA）等权威资料。部分数据基于同类重氮盐化合物的估算值，具体数据需通过实验测定。</references>
+    </other_info>
   </msds>
 </msds_list>

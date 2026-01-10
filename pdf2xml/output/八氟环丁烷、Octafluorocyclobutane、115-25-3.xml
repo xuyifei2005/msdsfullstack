@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>115-25-3</cas_number>
-      <msds_code>MSDS#1387</msds_code>
+      <msds_code>MSDS-115-25-3</msds_code>
       <product_name>八氟环丁烷</product_name>
-      <product_alias>RC318</product_alias>
+      <product_alias>全氟环丁烷</product_alias>
       <product_english_name>Octafluorocyclobutane</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -35,10 +35,10 @@
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>无资料</skin_contact>
-      <eye_contact>无资料</eye_contact>
-      <inhalation>脱离现场至空气新鲜处。静卧休息。注意保暖。就医。</inhalation>
-      <ingestion>无资料</ingestion>
+      <skin_contact>脱去污染的衣着，用流动清水冲洗。就医。</skin_contact>
+      <eye_contact>立即翻开上下眼睑，用流动清水冲洗15分钟。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸。就医。</inhalation>
+      <ingestion>误服者漱口，饮足量温水，催吐。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
@@ -49,12 +49,12 @@
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>意通风。漏气容器不能再用，且要经过技术处理以清除可能剩下的气体。</emergency_procedures>
+      <emergency_procedures>迅速撤离泄漏污染区人员至上风处，并进行隔离，严格限制出入。应急处理人员戴正压自给式呼吸器，穿一般作业工作服。尽可能切断泄漏源。合理通风，加速扩散。如有可能，将漏出气用排风机送至空旷地方。漏气容器要妥善处理，修复、检验后再用。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防潮、防晒。应与易燃、可燃物分开存放。平 时要注意检查容器是否有泄漏现象。搬运时戴好钢瓶安全帽和防震橡皮圈，防止钢瓶碰撞、 损坏。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止气体泄漏到工作场所空气中。避免与氧化剂接触。搬运时轻装轻卸，防止钢瓶及附件破损。配备相应品种和数量的消防器材及泄漏应急处理设备。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防潮、防晒。应与易燃、可燃物分开存放。平时要注意检查容器是否有泄漏现象。搬运时戴好钢瓶安全帽和防震橡皮圈，防止钢瓶碰撞、损坏。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -75,20 +75,20 @@
     <physical_chemical>
       <pH>无资料</pH>
       <melting_point>-41.4</melting_point>
-      <boiling_point>6.04</boiling_point>
+      <boiling_point>6.04℃</boiling_point>
       <flash_point>无意义</flash_point>
       <relative_density>1.51(21.1℃)</relative_density>
       <relative_vapor_density>7.0</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>微溶于水</solubility>
       <molecular_formula>C4F8</molecular_formula>
-      <molecular_weight>200</molecular_weight>
-      <main_components>无资料</main_components>
+      <molecular_weight>200.02</molecular_weight>
+      <main_components>八氟环丁烷</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无意义</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>不燃</flammability>
       <appearance>无色、无臭、非易燃的气体。</appearance>
       <main_uses>用作稳定无毒的食品气雾喷射剂、介质气体。</main_uses>
       <other_properties>无资料</other_properties>
@@ -107,12 +107,12 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity></acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>小鼠吸入LC50：78pph/2H；大鼠吸入80%的本品4小时，未见异常(20%为氧气)。</acute_toxicity>
+      <subacute_chronic_toxicity>小鼠吸入TCLO：861g/m3/4H/17W-I。在实验动物中表现出较低的急性毒性。</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>目前未见职业中毒报道，但热解能放出高毒的F-烟雾。</irritation>
       <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
+      <mutagenicity>黑腹果蝇吸入性染色体缺失和不分离：99pph/10M。</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
       <carcinogenicity>无资料</carcinogenicity>
     </toxicological>
@@ -126,9 +126,9 @@
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物</waste_properties>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废物储存容器应密闭，防止泄漏。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -137,12 +137,18 @@
       <imdg_page>2167</imdg_page>
       <packaging_mark>5</packaging_mark>
       <packing_group>Ⅲ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>钢瓶包装，包装容器必须密封，防止泄漏。包装容器上应有符合规定的危险货物标志。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。严禁与易燃物、可燃物、氧化剂等混装混运。运输途中应防曝晒、雨淋、防高温。中途停留时应远离火种、热源。车辆运输完毕应进行彻底清扫。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内化学品管理法规：《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录（2015版）》、《工作场所安全使用化学品规定》（[1996]劳部发423号）。国际法规：UN 1976（第2.2类不燃气体）。标准：GB/T 43977-2024 电子气体 八氟环丁烷。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>GB/T 16483-2008、GB/T 17519-2013</reference_standards>
+      <modification_instructions>无</modification_instructions>
+      <abbreviations_and_terms>CAS号：化学文摘社登记号；LD50：半数致死量；LC50：半数致死浓度；TLV-TWA：阈限值-时间加权平均；TLV-STEL：阈限值-短时间接触限值</abbreviations_and_terms>
+    </other_info>
   </msds>
 </msds_list>

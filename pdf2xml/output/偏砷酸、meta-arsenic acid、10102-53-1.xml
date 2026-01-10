@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>10102-53-1</cas_number>
-      <msds_code>供应商名称： 供应商地址：</msds_code>
+      <msds_code>MSDS-10102-53-1</msds_code>
       <product_name>偏砷酸</product_name>
-      <product_alias>英文名称： meta-arsenicacid 英文别名：</product_alias>
-      <product_english_name>meta-arsenicacid</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_alias>meta-arsenic acid</product_alias>
+      <product_english_name>meta-arsenic acid</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>侵入途径：</hazard_category>
-      <exposure_routes></exposure_routes>
-      <health_hazards>吞食后有毒。吸入有毒。</health_hazards>
+      <hazard_category>第6.1类毒害品</hazard_category>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>吞食后有毒。吸入有毒。对眼睛、皮肤、粘膜和上呼吸道有刺激作用。长期接触可引起慢性砷中毒。</health_hazards>
       <environmental_hazards>对水生物有剧毒,对水生环境可能会引起长期有害作用。</environmental_hazards>
-      <fire_explosion_hazards></fire_explosion_hazards>
+      <fire_explosion_hazards>本身不燃，但受热分解产生有毒气体。与还原剂、有机物、易燃物等接触有燃烧爆炸危险。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -36,24 +36,25 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>立即脱去污染的衣物。用大量肥皂水和清水冲洗皮肤。如有不适，就医。</skin_contact>
-      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。 立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给于吸氧。如患者食入或</eye_contact>
-      <inhalation>吸入本物质，不得进行口对口人工呼吸。如果呼吸停止。立即进行心肺复苏术。立即就 医。</inhalation>
+      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。</eye_contact>
+      <inhalation>立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给于吸氧。如患者吸入本物质，不得进行口对口人工呼吸。如果呼吸停止，立即进行心肺复苏术。立即就医。</inhalation>
       <ingestion>禁止催吐，切勿给失去知觉者从嘴里喂食任何东西。立即呼叫医生或中毒控制中心。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>有害燃烧产物：</fire_risk_classification>
-      <harmful_combustion_products>合适的灭火介质:干粉、二氧化碳或耐醇泡沫。 不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在 安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <hazard_characteristics>受热分解产生有毒气体，与还原剂、有机物、易燃物等接触有燃烧爆炸危险。</hazard_characteristics>
+      <fire_risk_classification>氧化剂</fire_risk_classification>
+      <harmful_combustion_products>砷的氧化物、砷化氢等有毒气体</harmful_combustion_products>
+      <suitable_extinguishing_media>干粉、二氧化碳或耐醇泡沫。不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</suitable_extinguishing_media>
+      <extinguishing_precautions>灭火时，应佩戴呼吸面具（符合MSHA/NIOSH要求的或相当的）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</extinguishing_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>无火灾状况下的溢漏和泄漏应穿着蒸气防护服，且完全密封。不要触摸或穿越泄漏物。不 要触摸破损的容器或泄漏物质除非穿着合适的防护服。保证充分的通风。清除所有点火源。 采取防静电措施。迅速将人员撤离到安全区域，远离泄漏区域并处于上风方向。使用个人</emergency_procedures>
+      <emergency_procedures>无火灾状况下的溢漏和泄漏应穿着蒸气防护服，且完全密封。不要触摸或穿越泄漏物。不要触摸破损的容器或泄漏物质除非穿着合适的防护服。保证充分的通风。清除所有点火源。采取防静电措施。迅速将人员撤离到安全区域，远离泄漏区域并处于上风方向。使用个人防护装备。避免吸入粉尘。用惰性吸附材料吸收泄漏物。将泄漏物收集到合适的容器中，按照危险废物处理。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。操作处置应在具备局部通风或全面通风换气设施的场所进行。避免接触眼睛、皮肤，避免吸入粉尘。操作后彻底清洗。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。如需罐装，应控制流速，且有接地装置，防止静电积聚。配备相应品种和数量的消防器材及泄漏应急处理设备。</handling_precautions>
       <storage_precautions>火花、明火和热表面。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。储存温度一般不应高于32℃，相对湿度一般不应高于 80%。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -63,86 +64,93 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <monitoring_method>工作场所空气中砷及其化合物的监测应按照GBZ/T 300.1-2017标准进行，采用原子吸收光谱法或氢化物发生-原子荧光光谱法。</monitoring_method>
+      <engineering_controls>密闭操作，提供充分的局部排风和全面通风。尽可能机械化、自动化。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>空气中粉尘浓度超标时，必须佩戴过滤式防尘呼吸器（半面罩）。紧急事态抢救或撤离时，应该佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>佩戴化学护目镜（符合欧盟EN166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
+      <hand_protection>戴防化学品手套（丁基橡胶或聚氯乙烯材质）。</hand_protection>
       <other_protection>无资料</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
+      <pH>1-2（10%水溶液）</pH>
+      <melting_point>300℃（分解）</melting_point>
       <boiling_point>无资料</boiling_point>
-      <flash_point></flash_point>
-      <relative_density>无资料</relative_density>
+      <flash_point>不适用</flash_point>
+      <relative_density>3.86</relative_density>
       <relative_vapor_density>不适用</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula></molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>无资料</main_components>
+      <solubility>易溶于水，微溶于乙醇</solubility>
+      <molecular_formula>HAsO3</molecular_formula>
+      <molecular_weight>123.93</molecular_weight>
+      <main_components>偏砷酸</main_components>
       <saturated_vapor_pressure>不适用</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <ignition_temperature>不适用</ignition_temperature>
+      <autoignition_temperature>不适用</autoignition_temperature>
+      <flammability>不燃</flammability>
+      <appearance>白色结晶性固体或粉末</appearance>
+      <main_uses>用作化学试剂、分析化学试剂，用于制备其他砷化合物</main_uses>
       <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
+      <heat_of_combustion>不适用</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <explosive_upper_limit>不适用</explosive_upper_limit>
+      <explosive_lower_limit>不适用</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>在正确的使用和存储条件下是稳定的</stability>
-      <incompatible_substances>无资料</incompatible_substances>
+      <incompatible_substances>强还原剂、易燃物、有机物、金属粉末、碱金属</incompatible_substances>
       <conditions_to_avoid>不相容物质，热、火焰和火花</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
+      <polymerization_hazard>不会发生聚合反应</polymerization_hazard>
       <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <acute_toxicity>LD50：48mg/kg（大鼠经口）；238mg/kg（小鼠经口）</acute_toxicity>
+      <subacute_chronic_toxicity>长期接触较高浓度砷化合物粉尘，可发生慢性中毒。主要有神经衰弱综合征，皮肤损害，多发性神经病，肝损害。可致鼻炎、鼻中隔穿孔、支气管炎。</subacute_chronic_toxicity>
+      <rtecs>CG0760000</rtecs>
+      <irritation>对眼睛、皮肤、粘膜和上呼吸道有强烈刺激作用。</irritation>
       <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <mutagenicity>细胞遗传学分析：人淋巴细胞7200nmol/L。微核试验：小鼠腹腔内给予20mg/kg。</mutagenicity>
+      <teratogenicity>大鼠孕后9d腹腔内给予最低中毒剂量（TDLo）30mg/kg，可致中枢神经系统发育畸形。</teratogenicity>
+      <carcinogenicity>IARC致癌性评论：IARC将砷及其无机化合物列为G1，确认人类致癌物。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <ecological_toxicity>对水生生物有剧毒。对水生环境可能会引起长期有害作用。</ecological_toxicity>
+      <biodegradability>在环境中不易生物降解</biodegradability>
+      <non_biodegradability>在环境中具有持久性</non_biodegradability>
+      <bioaccumulation>具有生物富集性</bioaccumulation>
+      <other_harmful_effects>砷作为一类环境污染物，是引起肺癌的因素之一。长期暴露在砷的环境中容易诱导肺癌、膀胱癌、皮肤癌等。对水生生物有剧毒，可能对水生生态系统造成长期危害。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物，含砷化合物</waste_properties>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的气体要通过洗涤器除去。与当地环保部门联系，按照危险废物管理法规进行处理。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废物贮存场所要符合《危险废物贮存污染控制标准》（GB 18597-2001）的要求。处置过程中应穿戴适当的个人防护装备，避免接触和吸入。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <dangerous_goods_number>UN 1553</dangerous_goods_number>
+      <un_number>UN 1553</un_number>
+      <imdg_page>IMDG 6.1类，毒害品</imdg_page>
+      <packaging_mark>第6.1类毒害品</packaging_mark>
+      <packing_group>II</packing_group>
+      <packaging_method>II类包装，内包装为玻璃瓶或塑料瓶，外包装为木箱或纸箱，衬垫防震材料。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>本产品为危险化学品，受《危险化学品安全管理条例》（国务院令第591号）监管。砷及其化合物属于剧毒化学品，受《剧毒化学品目录》管控。生产、经营、储存、运输和使用本产品需取得相应的许可证。工作场所空气中有害物质职业接触限值应符合GBZ 2.1-2019《工作场所有害因素职业接触限值 第1部分：化学有害因素》的要求。废物处置应符合《国家危险废物名录》和《危险废物贮存污染控制标准》（GB 18597-2001）的要求。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <msds_creation_date>2025-05-13</msds_creation_date>
+      <msds_revision_date>2025-05-13</msds_revision_date>
+      <msds_version>1.0</msds_version>
+      <other_notes>本MSDS按照GB/T 16483-2008标准编制。</other_notes>
+    </other_info>
   </msds>
 </msds_list>

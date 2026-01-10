@@ -4,57 +4,60 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>6834-92-0</cas_number>
-      <msds_code>供应商名称： 供应商地址：</msds_code>
+      <msds_code>MSDS-6834-92-0</msds_code>
       <product_name>偏硅酸钠</product_name>
       <product_alias>三氧硅酸二钠</product_alias>
-      <product_english_name>disodiummetasilicate</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_english_name>disodium metasilicate</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>侵入途径：</hazard_category>
-      <exposure_routes>会引起皮肤烧伤，有严重损害眼睛的危险。有严重损害眼睛的危险。对呼吸道有刺激作</exposure_routes>
-      <health_hazards>用。</health_hazards>
-      <environmental_hazards></environmental_hazards>
-      <fire_explosion_hazards></fire_explosion_hazards>
+      <hazard_category>GHS危险性类别：皮肤腐蚀/刺激，类别1b；严重眼损伤/眼刺激，类别1；特异性靶器官毒性-单次暴露，类别3（呼吸道刺激）</hazard_category>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>引起皮肤烧伤，有严重损害眼睛的危险。对呼吸道有刺激作用。误服可引起消化道灼伤、出血或穿孔。</health_hazards>
+      <environmental_hazards>对水生生物有毒性。</environmental_hazards>
+      <fire_explosion_hazards>本身不燃，遇水或水蒸气反应放热，产生有毒和腐蚀性烟雾。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
-    <component_info>
-      <components>
-        <component>
-          <component_name>金属镧</component_name>
-          <component_content>&gt;=99%</component_content>
-          <cas_number>6834-92-0</cas_number>
-        </component>
-      </components>
-    </component_info>
+        <component_info>
+          <components>
+            <component>
+              <component_name>偏硅酸钠</component_name>
+              <component_content>&gt;=95%</component_content>
+              <cas_number>6834-92-0</cas_number>
+            </component>
+          </components>
+        </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。就医。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进</eye_contact>
-      <inhalation>行人工呼吸。就医。</inhalation>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗至少15分钟。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
       <ingestion>误服者立即漱口，给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>会产生膨胀或爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>有害燃烧产物：</fire_risk_classification>
-      <harmful_combustion_products>合适的灭火介质:干粉、二氧化碳或耐醇泡沫。 不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在 安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <hazard_characteristics>本身不燃，遇水或水蒸气反应放热，产生有毒和腐蚀性烟雾。与酸类物质反应剧烈。</hazard_characteristics>
+      <fire_risk_classification>不适用</fire_risk_classification>
+      <harmful_combustion_products>氧化硅、氧化钠</harmful_combustion_products>
+      <suitable_extinguishing_media>根据周围环境选择合适的灭火剂。本品不燃，使用适合周围火源的灭火剂。</suitable_extinguishing_media>
+      <fire_fighting_precautions>消防人员必须佩戴正压自给式呼吸器，穿全身防化服。尽可能将容器从火场移至空旷处。禁止用水直接喷射泄漏物，以免产生大量热量和腐蚀性烟雾。</fire_fighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>无火灾状况下的溢漏和泄漏应穿着蒸气防护服，且完全密封。不要触摸或穿越泄漏物。不 要触摸破损的容器或泄漏物质除非穿着合适的防护服。保证充分的通风。清除所有点火源。 采取防静电措施。迅速将人员撤离到安全区域，远离泄漏区域并处于上风方向。使用个人</emergency_procedures>
+      <emergency_procedures>隔离泄漏污染区，限制出入。建议应急处理人员戴防尘口罩（全面罩），穿防酸碱工作服。不要直接接触泄漏物。小量泄漏：避免扬尘，用洁净的铲子收集于干燥、洁净、有盖的容器中。大量泄漏：用塑料布、帆布覆盖，减少飞散。在专家指导下清除。</emergency_procedures>
+      <environmental_precautions>防止泄漏物进入下水道、地下室或限制性空间。避免粉尘扩散到大气中。防止污染土壤和地下水。</environmental_precautions>
+      <cleanup_methods>小量泄漏：用沙土、蛭石或其他惰性材料吸收，收集于密闭容器中。大量泄漏：构筑围堤或挖坑收容，用泵转移至槽车或专用收集器内，回收或运至废物处理场所处置。</cleanup_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>火花、明火和热表面。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。储存温度一般不应高于30℃，相对湿度一般不应高于 80%。</storage_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防尘口罩，戴化学安全防护眼镜，穿防腐蚀工作服，戴橡胶手套。避免产生粉尘。避免与酸类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备泄漏应急处理设备。倒空的容器可能残留有害物。工作场所严禁吸烟、进食和饮水。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。应与酸类分开存放，切忌混储。储区应备有合适的材料收容泄漏物。保持容器密闭。储存温度一般不应高于30℃，相对湿度一般不应高于80%。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -63,35 +66,35 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
-      <eye_protection>佩戴化学护目镜（符合欧盟EN166或美国NIOSH标准）。</eye_protection>
-      <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
-      <other_protection>无资料</other_protection>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>密闭操作，局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>作业工人应该佩戴防尘口罩。空气中浓度较高时，建议佩戴防毒面具（半面罩或全面罩）。</respiratory_protection>
+      <eye_protection>戴化学安全防护眼镜。</eye_protection>
+      <body_protection>穿防腐蚀工作服。</body_protection>
+      <hand_protection>戴橡皮手套或橡胶手套。</hand_protection>
+      <other_protection>工作后，淋浴更衣。注意个人清洁卫生。工作场所严禁吸烟、进食和饮水。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
-      <melting_point>920</melting_point>
-      <boiling_point>3454</boiling_point>
-      <flash_point></flash_point>
-      <relative_density>6.18~6.19</relative_density>
+      <pH>11.5~13.0(50g/L,25℃)</pH>
+      <melting_point>1089</melting_point>
+      <boiling_point>无资料</boiling_point>
+      <flash_point>无资料</flash_point>
+      <relative_density>2.4</relative_density>
       <relative_vapor_density>不适用</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>L</molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>无资料</main_components>
+      <solubility>易溶于水，不溶于乙醇</solubility>
+      <molecular_formula>Na2SiO3</molecular_formula>
+      <molecular_weight>122.06</molecular_weight>
+      <main_components>偏硅酸钠</main_components>
       <saturated_vapor_pressure>不适用</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
-      <other_properties>无资料</other_properties>
+      <flammability>不燃</flammability>
+      <appearance>白色或淡黄色结晶性粉末</appearance>
+      <main_uses>用作洗涤剂助剂、金属清洗剂、纺织工业的煮练剂、陶瓷工业的粘合剂、水处理剂等</main_uses>
+      <other_properties>水溶液呈碱性</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
       <explosive_upper_limit>无资料</explosive_upper_limit>
@@ -100,17 +103,17 @@
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>在正确的使用和存储条件下是稳定的</stability>
-      <incompatible_substances>无资料</incompatible_substances>
+      <incompatible_substances>强酸、强氧化剂、铝、锌、锡及其合金</incompatible_substances>
       <conditions_to_avoid>不相容物质，热、火焰和火花</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物</decomposition_products>
+      <polymerization_hazard>不会发生聚合反应</polymerization_hazard>
+      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。高温分解时可能产生氧化硅和氧化钠烟雾。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
+      <acute_toxicity>急性毒性：LD50：无资料</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对皮肤、眼睛和呼吸道有严重刺激作用</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -118,31 +121,37 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>对水生生物有毒性</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <other_harmful_effects>可能对水生环境造成长期不利影响</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物</waste_properties>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的气体要通过洗涤器除去。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废物处置应交由有资质的危险废物处理单位处理。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <dangerous_goods_number>UN3253</dangerous_goods_number>
+      <un_number>3253</un_number>
+      <imdg_page>第8类腐蚀性物质</imdg_page>
+      <packaging_mark>III类包装</packaging_mark>
+      <packing_group>III</packing_group>
+      <packaging_method>按危险货物运输规则进行包装</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源、高温区。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>本产品为危险化学品，受《危险化学品安全管理条例》（国务院令第591号）监管。运输分类为第8类腐蚀性物质，UN编号3253。工作场所空气中有害物质职业接触限值应符合GBZ 2.1-2019《工作场所有害因素职业接触限值 第1部分：化学有害因素》的要求。废物处置应符合《国家危险废物名录》和《危险废物贮存污染控制标准》（GB 18597-2001）的要求。生产、经营、储存、运输和使用本产品需取得相应的许可证。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standard>GB/T 16483-2008、GB/T 17519-2013</preparation_standard>
+      <modification_notes>无</modification_notes>
+      <abbreviations>MSDS：化学品安全技术说明书；CAS号：化学文摘社登记号；GHS：全球化学品统一分类和标签制度；UN：联合国；IMDG：国际海运危险货物规则</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>23414-72-4</cas_number>
-      <msds_code>MSDS#1909</msds_code>
+      <msds_code>MSDS-23414-72-4</msds_code>
       <product_name>高锰酸锌</product_name>
       <product_alias>过锰酸锌</product_alias>
       <product_english_name>Zinc permanganate</product_english_name>
-      <company_name>无资料（建议向供应商索取具体信息）</company_name>
-      <company_address>无资料（建议向供应商索取具体信息）</company_address>
-      <contact_phone>无资料（建议向供应商索取具体信息）</contact_phone>
-      <emergency_phone>无资料（建议向供应商索取具体信息，或拨打当地急救电话120）</emergency_phone>
-      <email>无资料（建议向供应商索取具体信息）</email>
-      <fax_number>无资料（建议向供应商索取具体信息）</fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -141,9 +141,7 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <!-- MSDS补全专家: 来源: 基于高锰酸钾和锌化合物的生态毒理学数据类比, 2023-10-15 -->
       <ecological_toxicity>
-        <!-- MSDS补全专家: 来源: 基于高锰酸钾和硫酸锌的生态毒理学数据类比, 2025-12-16 -->
         <fish_toxicity>估算值：LC50 96h = 1-10 mg/L（斑马鱼，基于锌离子毒性和高锰酸盐数据）</fish_toxicity>
         <daphnia_toxicity>估算值：EC50 48h = 0.1-1 mg/L（大型溞，基于硫酸锌EC50 0.24 mg/L和高锰酸钾数据）</daphnia_toxicity>
         <algae_toxicity>估算值：EC50 72h = 0.05-0.5 mg/L（绿藻，基于锌离子对藻类的高毒性）</algae_toxicity>
