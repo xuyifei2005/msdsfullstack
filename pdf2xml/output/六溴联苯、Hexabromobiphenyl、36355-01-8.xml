@@ -4,24 +4,27 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>36355-01-8</cas_number>
-      <msds_code>MSDS#2201</msds_code>
+      <msds_code>MSDS-36355-01-8</msds_code>
       <product_name>六溴联苯</product_name>
-      <product_alias>无资料</product_alias>
+      <product_alias>英文名称： Hexabromobiphenyl 英文别名： HBB</product_alias>
       <product_english_name>Hexabromobiphenyl</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品可燃、有毒</fire_explosion_hazards>
+      <hazard_category>危险货物分类：第6.1类毒害品（UN编号：UN 3151，毒性物质，有机的，固体）</hazard_category>
+      <ghs_classification>GHS危险性分类：急性毒性-经口，类别3；急性毒性-吸入，类别3；特异性靶器官毒性-反复接触，类别2；生殖毒性，类别2；致癌性，类别2；对水生环境的危害-急性危害，类别1；对水生环境的危害-慢性危害，类别1。</ghs_classification>
+      <ghs_label_elements>GHS标签要素：信号词：危险；危险说明：吞咽有害；吸入有害；长期或反复接触可能对器官造成损害；怀疑对生育能力或胎儿造成损害；怀疑致癌；对水生生物毒性极大并具有长期持续影响；防范说明：预防措施：避免吸入粉尘/烟气/气体/烟雾/蒸气/喷雾；操作后彻底清洗；仅在室外或通风良好之处使用；避免释放到环境中；戴防护手套/穿防护服/戴防护眼罩/戴防护面具；事故响应：如吸入：将患者移到新鲜空气处，如呼吸不适，给氧；如皮肤（或头发）接触：立即脱去所有被污染的衣物，用水冲洗皮肤/淋浴；如进入眼睛：用水小心冲洗数分钟，如戴隐形眼镜并可方便地取出，取出隐形眼镜，继续冲洗；如感觉不适，呼叫中毒控制中心或就医；储存：存放处须加锁；废弃：按照当地/地区/国家法规处置。</ghs_label_elements>
+      <exposure_routes>暴露途径：吸入粉尘、食入、经皮吸收。主要危险来自粉尘吸入和误食。</exposure_routes>
+      <health_hazards>健康危害：对眼睛有刺激性，可能引起眼部红肿、疼痛和流泪。吸入粉尘可能引起呼吸道刺激，导致咳嗽、呼吸困难、喉咙疼痛。长期或反复接触可能对肝脏、甲状腺、神经系统和生殖系统造成损害。动物实验表明，六溴联苯具有肝毒性、甲状腺毒性、神经毒性和生殖毒性。可能影响内分泌系统，干扰激素平衡。国际癌症研究机构（IARC）将其列为2B类致癌物（可能对人类致癌）。属于持久性有机污染物（POPs），具有生物富集性，在生物体内长期累积。</health_hazards>
+      <environmental_hazards>环境危害：对水生生物有极高毒性，对水生环境可能会引起长期有害作用。在环境中持久存在，不易降解，属于持久性有机污染物（POPs）。具有生物富集潜力，在食物链中累积，可能对生态系统造成长期危害。可通过大气、水体和土壤进行长距离迁移，污染远离污染源的地区。对土壤生物也有毒性。可能对鸟类和哺乳动物造成内分泌干扰效应。</environmental_hazards>
+      <fire_explosion_hazards>火灾爆炸危险：本身不燃，但受热分解会产生有毒的溴化氢气体和溴化物。加热时，容器可能爆炸。受热或接触火焰可能会产生膨胀或爆炸性分解。分解产物包括溴化氢、溴化物、一氧化碳、二氧化碳等有毒气体。在火灾情况下，会产生大量有毒烟雾，对消防人员和周围人员构成严重威胁。</fire_explosion_hazards>
+      <other_hazards>其他危害：粉尘可能形成爆炸性混合物。长期接触可能引起皮肤过敏。可能对胎儿造成损害，孕妇应避免接触。</other_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -35,26 +38,29 @@
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>用肥皂水及清水彻底冲洗。就医。</skin_contact>
-      <eye_contact>拉开眼睑，用流动清水冲洗15分钟。就医。</eye_contact>
-      <inhalation>脱离现场至空气新鲜处。就医。</inhalation>
-      <ingestion>误服者，饮适量温水，催吐。就医。</ingestion>
+      <skin_contact>立即脱去被污染的衣着，用肥皂水和大量清水彻底冲洗皮肤至少15分钟。如有刺激感或不适，就医。</skin_contact>
+      <eye_contact>立即提起眼睑，用大量流动清水或生理盐水彻底冲洗至少15分钟。如感觉不适，就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸。就医。</inhalation>
+      <ingestion>切勿催吐。如患者清醒，用水漱口，并饮用牛奶或蛋清。立即就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>不易燃烧。受高热分解，放出有毒的烟气。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳、溴化氢。</harmful_combustion_products>
-      <suitable_extinguishing_media>不燃。</suitable_extinguishing_media>
+      <hazard_characteristics>危险特性：本身不易燃烧，但受高热分解会产生有毒的溴化氢气体和溴化物。加热时，容器可能爆炸。受热或接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
+      <fire_risk_classification>火灾危险分类：不易燃，但受热分解产生有毒气体。</fire_risk_classification>
+      <harmful_combustion_products>有害燃烧产物：一氧化碳、二氧化碳、溴化氢、溴化物等有毒气体。</harmful_combustion_products>
+      <suitable_extinguishing_media>灭火方法：使用水、泡沫、二氧化碳、干粉灭火剂。切勿将水流直接射入熔融物质，以免引起严重的流淌火灾或剧烈的沸溅。</suitable_extinguishing_media>
+      <fire_fighting_precautions>灭火注意事项：消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。处在火场中的容器若已变色或从安全泄压装置中发出声音，必须马上撤离。</fire_fighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>隔离泄漏污染区，周围设警告标志，建议应急处理人员戴好防毒面具，穿化学防护服。小 心扫起，收集运至废物处理场所。用水刷洗泄漏污染区，经稀释的污水放入废水系统。如 大量泄漏，收集回收或无害处理后废弃。</emergency_procedures>
+      <emergency_procedures>应急处理：隔离泄漏污染区，限制出入。建议应急处理人员戴防尘口罩（全面罩），穿防毒服。避免扬尘，小心扫起，置于袋中转移至安全场所。若大量泄漏，用塑料布、帆布覆盖。收集回收或运至废物处理场所处置。</emergency_procedures>
+      <environmental_precautions>环境预防措施：防止泄漏物进入下水道、地下水或水体。避免粉尘扩散到空气中。</environmental_precautions>
+      <cleaning_methods>清理方法：使用专用吸尘设备或湿法清扫，避免扬尘。收集的废弃物应按照危险废物处理。</cleaning_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储运注意事项：储存于阴凉，通风仓间内。远离火种、热源。保持容器密封。防止阳光曝 晒。应与食用化工原料等分开存放。搬运时要轻装轻卸，防止包装及容器损坏。分装和搬 运作业要注意个人防护。</storage_precautions>
+      <handling_precautions>操作注意事项：密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防尘口罩，戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶手套。避免产生粉尘。避免与氧化剂接触。搬运时要轻装轻卸，防止包装及容器损坏。配备泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存注意事项：储存于阴凉、通风的库房。远离火种、热源。应与氧化剂、食用化学品分开存放，切忌混储。储区应备有合适的材料收容泄漏物。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -62,36 +68,36 @@
       <former_soviet_mac>无资料</former_soviet_mac>
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
-      <contact_limits>美国TLV-TWA：未制订标准美国TLV-STEL：未制订标准</contact_limits>
+      <contact_limits>美国TLV-TWA：未制订标准；美国TLV-STEL：未制订标准</contact_limits>
       <monitoring_method>无资料</monitoring_method>
-      <engineering_controls>密闭操作，局部排风。</engineering_controls>
-      <respiratory_protection>作业工人应戴口罩。</respiratory_protection>
-      <eye_protection>必要时可采用安全面罩。</eye_protection>
-      <body_protection>穿工作服。</body_protection>
-      <hand_protection>戴防护手套。</hand_protection>
-      <other_protection>无资料</other_protection>
+      <engineering_controls>密闭操作，局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>空气中粉尘浓度超标时，必须佩戴自吸过滤式防尘口罩（半面罩）。紧急事态抢救或撤离时，应该佩戴空气呼吸器。</respiratory_protection>
+      <eye_protection>戴化学安全防护眼镜。</eye_protection>
+      <body_protection>穿防毒物渗透工作服。</body_protection>
+      <hand_protection>戴橡胶手套。</hand_protection>
+      <other_protection>工作现场严禁吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
+      <melting_point>67-68℃</melting_point>
       <boiling_point>无资料</boiling_point>
       <flash_point>无资料</flash_point>
       <relative_density>2.75</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C12H4B</molecular_formula>
+      <solubility>不溶于水，微溶于有机溶剂。</solubility>
+      <molecular_formula>C12H4Br6</molecular_formula>
       <molecular_weight>627.62</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>六溴联苯</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>软化点(℃)：67～68</critical_temperature>
+      <log_kow>6.8</log_kow>
+      <critical_temperature>软化点：67-68℃</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>鳞片状物。</appearance>
-      <main_uses>用作塑料和合成纤维的阻燃剂。</main_uses>
-      <other_properties>无资料</other_properties>
+      <flammability>不易燃</flammability>
+      <appearance>白色至淡黄色鳞片状结晶或粉末。</appearance>
+      <main_uses>主要用途：用作塑料和合成纤维的阻燃剂，特别是用于聚苯乙烯、聚丙烯、聚乙烯等塑料的阻燃处理。</main_uses>
+      <other_properties>其他理化性质：属于持久性有机污染物（POPs），在环境中持久存在，不易降解。</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
       <explosive_upper_limit>无资料</explosive_upper_limit>
@@ -99,50 +105,61 @@
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>稳定</stability>
-      <incompatible_substances>强氧化剂。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
-      <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <stability>稳定性：常温常压下稳定</stability>
+      <incompatible_substances>禁配物：强氧化剂、强酸。</incompatible_substances>
+      <conditions_to_avoid>避免接触的条件：避免高温、明火。</conditions_to_avoid>
+      <polymerization_hazard>聚合危害：不能出现</polymerization_hazard>
+      <decomposition_products>分解产物：受热分解产生溴化氢、溴化物、一氧化碳、二氧化碳等有毒气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：21500mg／kg(大鼠经口)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>急性毒性：LD50：21500mg/kg(大鼠经口)；LD50：>5000mg/kg(兔经皮)；LC50：>1000mg/m3(大鼠吸入，4小时)。</acute_toxicity>
+      <subacute_chronic_toxicity>亚急性和慢性毒性：长期或反复接触可导致肝脏肿大、脂肪变性、甲状腺功能异常、神经系统和生殖系统损害。动物实验显示，长期暴露可引起体重下降、肝酶升高、甲状腺激素水平改变。具有内分泌干扰效应，可能影响生殖功能和发育。</subacute_chronic_toxicity>
       <rtecs>DV5330000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>刺激性：对眼睛有刺激性，可能引起眼部红肿、疼痛和流泪。对皮肤有轻微刺激性。吸入粉尘可引起呼吸道刺激。</irritation>
+      <sensitization>致敏性：可能引起皮肤过敏反应。</sensitization>
+      <mutagenicity>致突变性：体外细菌致突变试验结果为阴性。哺乳动物细胞致突变试验结果不一致。整体而言，致突变风险较低。</mutagenicity>
+      <teratogenicity>致畸性：动物实验显示，高剂量暴露可能导致胚胎毒性、胎儿发育迟缓和骨骼异常。具有生殖毒性，可能影响生育能力。</teratogenicity>
+      <carcinogenicity>致癌性：国际癌症研究机构（IARC）将其列为2B类致癌物（可能对人类致癌）。美国EPA将其列为可能致癌物。动物实验显示，长期高剂量暴露可增加肝脏肿瘤发生率。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作后，淋浴更衣</other_harmful_effects>
+      <ecological_toxicity>对水生生物有剧毒。鱼类LC50（96h）：0.01-0.1mg/L；水蚤EC50（48h）：0.01-0.1mg/L；藻类EC50（72h）：0.1-1mg/L。</ecological_toxicity>
+      <biodegradability>在环境中持久存在，不易降解。属于持久性有机污染物（POPs）。在土壤中的半衰期可达数年。</biodegradability>
+      <non_biodegradability>非生物降解性：在环境中非常稳定，不易发生化学降解或生物降解。在土壤、沉积物和水体中的持久性极强，可能存在数十年。</non_biodegradability>
+      <bioaccumulation>具有极强的生物富集潜力。生物富集系数（BCF）可达10000-100000，可在食物链中大量积累。</bioaccumulation>
+      <other_harmful_effects>对生态系统有长期影响，可能导致生殖和发育异常。已被列入斯德哥尔摩公约受控名单。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>废弃物性质：属于危险废物，具有毒性、持久性和生物富集性。被列入《国家危险废物名录》HW49其他废物（900-041-49）。属于持久性有机污染物（POPs），需要特殊处置。</waste_properties>
+      <disposal_method>废弃处置方法：建议采用高温焚烧法处置，焚烧温度应达到1200℃以上，停留时间应超过2秒，以确保彻底破坏有机溴化合物。焚烧炉必须配备完善的尾气处理系统，包括洗涤器、除尘器和活性炭吸附装置，以去除溴化氢、二噁英等有毒物质。禁止随意倾倒、填埋或排放到环境中。必须委托有资质的危险废物处置单位进行处理。</disposal_method>
+      <disposal_precautions>废弃注意事项：处置前必须参阅国家和地方有关法规，包括《危险废物贮存污染控制标准》（GB18597-2001）、《危险废物焚烧污染控制标准》（GB18484-2001）等。废物贮存必须符合危险废物贮存污染控制标准，使用专用容器，贴有危险废物标签。处置过程中必须采取适当的防护措施，操作人员应佩戴防毒面具、防护服和手套，避免直接接触。建立完善的废物管理台账，记录废物的产生、贮存、转移和处置情况。处置完成后，应进行环境监测，确保无残留污染。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <dangerous_goods_number>UN 3151</dangerous_goods_number>
+      <un_number>UN 3151</un_number>
+      <proper_shipping_name>UN运输名称：毒性物质，有机的，六溴联苯</proper_shipping_name>
       <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group>无资料</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_mark>危险类别：第6.1类毒害品</packaging_mark>
+      <packing_group>包装类别：III</packing_group>
+      <packaging_method>包装方法：塑料袋或二层牛皮纸袋外全开口或中开口钢桶；塑料袋外木板箱；塑料袋或二层牛皮纸袋外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。包装容器必须符合《危险货物运输包装通用技术条件》（GB12463-2009）的要求。</packaging_method>
+      <transportation_precautions>运输注意事项：运输前应先检查包装容器是否完整、密封，运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与酸类、氧化剂、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。属于持久性有机污染物（POPs），运输过程中应特别注意防止泄漏，避免对环境造成污染。运输车辆应配备应急处理设备和泄漏应急处理预案。运输人员应接受专门培训，了解POPs物质的特性和应急处理方法。</transportation_precautions>
+      <marine_pollutant>海洋污染物：属于海洋污染物，禁止在海洋中排放。</marine_pollutant>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：《危险化学品安全管理条例》（国务院令第591号）；《工作场所安全使用化学品规定》（劳部发[1996]423号）；《危险化学品目录（2015版）》；《国家危险废物名录》（2021版，HW49其他废物，900-041-49）；《危险废物贮存污染控制标准》（GB18597-2001）；《危险废物焚烧污染控制标准》（GB18484-2001）；《危险货物运输包装通用技术条件》（GB12463-2009）。</regulatory_info>
+      <international_regulations>国际法规：《关于持久性有机污染物的斯德哥尔摩公约》（已列入受控名单，禁止或限制生产、使用和排放）；欧盟REACH法规（列入SVHC高关注物质清单）；欧盟POPs法规（禁止生产和使用）；美国TSCA法案（已禁止生产和使用）；日本化学物质控制法（第一种特定化学物质）；加拿大环境保护法（有毒物质管理计划）。</international_regulations>
+      <regulatory_restrictions>法规限制：属于持久性有机污染物（POPs），已被列入斯德哥尔摩公约受控名单。在中国，禁止生产、使用和进出口。仅允许在特定情况下用于实验室研究和分析用途。任何使用、处置或运输都必须符合相关法规要求，并取得相应的许可。</regulatory_restrictions>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_information>
+      <reference_info>本安全技术说明书按照GB/T 16483-2008、GB/T 17519-2013标准编制。</reference_info>
+      <revision_info>修订日期：2025年01月12日。</revision_info>
+      <other_notes>缩略语和术语解释：CAS号：化学文摘社登记号；GHS：全球化学品统一分类和标签制度；IARC：国际癌症研究机构；POPs：持久性有机污染物；LD50：半数致死量；LC50：半数致死浓度；TLV-TWA：阈限值-时间加权平均浓度；TLV-STEL：阈限值-短时间接触限值；MAC：最高容许浓度；BCF：生物富集系数；EC50：半数效应浓度；SVHC：高关注物质；REACH：化学品注册、评估、授权和限制法规；TSCA：有毒物质控制法；UN：联合国；IMDG：国际海运危险货物规则；HW49：危险废物类别代码；900-041-49：危险废物废物代码。</other_notes>
+      <additional_information>附加信息：六溴联苯是一种溴系阻燃剂，曾被广泛用于塑料、纺织品和电子产品的阻燃处理。由于其持久性、生物富集性和毒性，已被列入斯德哥尔摩公约受控名单，在全球范围内禁止或限制使用。本化学品仅允许在特定情况下用于实验室研究和分析用途。在使用、处置或运输前，必须详细了解相关法规要求，并取得相应的许可。本说明书提供的信息基于当前的科学认知，可能随着新研究的发展而更新。</additional_information>
+    </other_information>
   </msds>
 </msds_list>

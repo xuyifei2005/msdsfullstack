@@ -4,24 +4,28 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>2551-62-4</cas_number>
-      <msds_code>MSDS#56</msds_code>
+      <msds_code>MSDS-2551-62-4</msds_code>
       <product_name>六氟化硫</product_name>
       <product_alias>无资料</product_alias>
       <product_english_name>sulfur hexafluoride</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
+      <ghs_classification>根据GHS标准分类：该物质在正常使用条件下基本无毒，但若混杂低氟化硫、氟化氢，特别是十氟化硫时，则毒性增强。在密闭空间中可能导致窒息。</ghs_classification>
+      <signal_word>警告</signal_word>
+      <hazard_statements>在密闭空间中可能导致窒息。可能对环境造成危害。</hazard_statements>
+      <precautionary_statements>预防措施：避免吸入气体。仅在室外或通风良好处使用。避免释放到环境中。操作后彻底清洗。戴防护手套/穿防护服/戴防护眼罩/戴防护面具。事故响应：如吸入，将患者转移到空气新鲜处并保持呼吸舒适的姿势休息。如感觉不适，呼叫中毒控制中心或就医。储存：存放于通风良好处。保持容器密闭。远离火种、热源。废弃：按照当地/地区/国家法规处置本物质及容器。</precautionary_statements>
       <hazard_category>第2.2类 不燃气体</hazard_category>
       <exposure_routes>吸入</exposure_routes>
-      <health_hazards>纯品基本无毒。但产品中如混杂低氟化硫、氟化氢，特别是十氟化硫时，则毒性增强。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品不燃。</fire_explosion_hazards>
+      <health_hazards>纯品基本无毒。但产品中如混杂低氟化硫、氟化氢，特别是十氟化硫时，则毒性增强。在密闭空间中可能导致窒息。接触后可能引起头痛、头晕、呼吸困难。在高浓度环境下，可能导致窒息，甚至死亡。</health_hazards>
+      <environmental_hazards>该物质是一种强效温室气体，对全球变暖有显著影响。其全球变暖潜势（GWP）约为23500（以CO2为基准）。避免释放到环境中。应特别注意避免排放到大气中。</environmental_hazards>
+      <fire_explosion_hazards>本品不燃。若遇高热，容器内压增大，有开裂和爆炸的危险。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -35,10 +39,10 @@
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>无资料</skin_contact>
-      <eye_contact>无资料 迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人</eye_contact>
-      <inhalation>工呼吸。就医。</inhalation>
-      <ingestion>无资料</ingestion>
+      <skin_contact>脱去污染的衣着，用肥皂水和大量清水彻底冲洗皮肤。如有不适，就医。</skin_contact>
+      <eye_contact>提起眼睑，用流动清水或生理盐水冲洗至少15分钟。如有不适，就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸。就医。</inhalation>
+      <ingestion>无资料。本品为气体，一般不会经口摄入。如发生误服，立即就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
@@ -49,12 +53,16 @@
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>迅速撤离泄漏污染区人员至上风处，并进行隔离，严格限制出入。建议应急处理人员戴自给正 应急处理： 压式呼吸器，穿一般作业工作服。尽可能切断泄漏源。合理通风，加速扩散。如有可能，即时</emergency_procedures>
+      <emergency_procedures>迅速撤离泄漏污染区人员至上风处，并进行隔离，严格限制出入。建议应急处理人员戴自给正压式呼吸器，穿一般作业工作服。尽可能切断泄漏源。合理通风，加速扩散。如有可能，即时使用专用回收装置收集泄漏气体，避免排放到大气中。泄漏容器应妥善处理，修复、检验合格后方可重新使用。</emergency_procedures>
+      <personal_protection>应急处理人员应佩戴自给正压式呼吸器（SCBA），穿防静电工作服。避免直接接触泄漏物。</personal_protection>
+      <environmental_precautions>防止泄漏物进入下水道、地下室或限制性空间。避免排放到大气中，因为六氟化硫是强效温室气体。如已泄漏到环境中，应立即报告当地环保部门。</environmental_precautions>
+      <clean_up_methods>切断气源，加强通风。使用专用回收装置收集泄漏气体。如无法回收，应在安全条件下让其自然扩散。清理人员应穿戴适当的个人防护装备。</clean_up_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>滤式防毒面具（半面罩）。远离易燃、可燃物。防止气体泄漏到工作场所空气中。避免与氧化</handling_precautions>
-      <storage_precautions>剂接触。搬运时轻装轻卸，防止钢瓶及附件破损。配备泄漏应急处理设备。 储存于阴凉、通风的库房。远离火种、热源。库温不宜超过30℃。应与易（可）燃物、氧化剂分 开存放，切忌混储。储区应备有泄漏应急处理设备。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风和全面通风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴防化学品手套。远离火种、热源。工作场所严禁吸烟。防止气体泄漏到工作场所空气中。避免与氧化剂接触。搬运时轻装轻卸，防止钢瓶及附件破损。配备泄漏应急处理设备。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。库温不宜超过30℃。应与易（可）燃物、氧化剂分开存放，切忌混储。储区应备有泄漏应急处理设备。储存容器应保持密闭，定期检查容器的完整性和安全性。储存区域应配备适当的通风和监测设备。</storage_precautions>
+      <engineering_controls>密闭操作，局部排风。提供安全淋浴和洗眼设备。在可能产生泄漏的区域安装气体检测报警装置。</engineering_controls>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -75,23 +83,23 @@
     <physical_chemical>
       <pH>无资料</pH>
       <melting_point>-51</melting_point>
-      <boiling_point>无资料</boiling_point>
+      <boiling_point>-64</boiling_point>
       <flash_point>无意义</flash_point>
       <relative_density>1.67(-100℃)</relative_density>
       <relative_vapor_density>5.11</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>F6S</molecular_formula>
+      <solubility>微溶于水，不溶于乙醇、乙醚等有机溶剂</solubility>
+      <molecular_formula>SF6</molecular_formula>
       <molecular_weight>146.05</molecular_weight>
       <main_components>纯品</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <saturated_vapor_pressure>2338kPa(25℃)</saturated_vapor_pressure>
+      <log_kow>2.35</log_kow>
       <critical_temperature>45.6</critical_temperature>
       <ignition_temperature>无意义</ignition_temperature>
       <autoignition_temperature>无意义</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>不燃</flammability>
       <appearance>无色无臭气体。</appearance>
-      <main_uses>用作电子设备和雷达波导的气体绝缘体。</main_uses>
-      <other_properties>无资料</other_properties>
+      <main_uses>用作电子设备和雷达波导的气体绝缘体。也用于高压断路器、变压器、电缆等电气设备的绝缘介质，以及金属冶炼、半导体制造等工艺。</main_uses>
+      <other_properties>化学性质稳定，不与水、酸、碱反应。具有优异的电绝缘性能和灭弧性能。在电弧作用下可能分解产生有毒的低氟化硫和氟化氢。</other_properties>
       <heat_of_combustion>无意义</heat_of_combustion>
       <critical_pressure>3.37</critical_pressure>
       <explosive_upper_limit>无意义</explosive_upper_limit>
@@ -99,36 +107,37 @@
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>稳定</stability>
-      <incompatible_substances>强氧化剂、易燃或可燃物。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <stability>稳定。在常温常压下化学性质稳定，不与水、酸、碱反应。</stability>
+      <incompatible_substances>强氧化剂、易燃或可燃物。在电弧作用下可能与金属反应。</incompatible_substances>
+      <conditions_to_avoid>避免高温、明火、电弧。避免与强氧化剂接触。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>在高温或电弧作用下可能分解产生低氟化硫（如SF4、S2F10）、氟化氢（HF）等有毒物质。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：5790mg／kg(兔静脉)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：5790mg/kg(兔静脉)。LC50：未确定。纯品基本无毒，但若混杂低氟化硫、氟化氢，特别是十氟化硫时，则毒性显著增强。</acute_toxicity>
+      <subacute_chronic_toxicity>长期或反复接触可能对呼吸系统、神经系统造成影响。在密闭空间中可能导致窒息。动物实验显示，高浓度接触可能引起肺部炎症和肺水肿。</subacute_chronic_toxicity>
       <rtecs>WS4900000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤和呼吸道有轻微刺激性。在电弧作用下分解产生的氟化氢对眼睛、皮肤和呼吸道有强烈刺激性。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
       <carcinogenicity>无资料</carcinogenicity>
+      <other_toxicological_info>六氟化硫本身毒性较低，但在电弧作用下分解产生的低氟化硫和氟化氢具有较高毒性。应避免在可能产生电弧的环境中使用，或采取适当的防护措施。</other_toxicological_info>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
       <ecological_toxicity>无资料</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
+      <non_biodegradability>该物质在大气中非常稳定，不易降解。在大气中的寿命约为3200年。</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作后，淋浴更衣</other_harmful_effects>
+      <other_harmful_effects>六氟化硫是一种强效温室气体，对全球变暖有显著影响。其全球变暖潜势（GWP）约为23500（以CO2为基准，时间跨度100年）。该物质已被《京都议定书》列为受控温室气体。应严格控制其排放，避免对气候变化产生负面影响。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物。属于受控温室气体，需按照危险废物和温室气体管理规定进行处置。</waste_properties>
+      <disposal_method>建议采用回收利用或焚烧法处置。在配备尾气处理系统的焚烧炉中高温焚烧，确保完全分解。也可采用化学分解法处理。处置前应参阅国家和地方有关法规。建议与有关环保部门联系，寻求专业处理。</disposal_method>
+      <disposal_precautions>处置前必须确保容器密封完好。操作人员必须佩戴适当的个人防护装备。处置过程中应避免泄漏和环境污染。严禁随意排放到大气中。废弃容器必须经过彻底清洗和去污处理后才能废弃。应按照温室气体减排要求进行处置。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -137,12 +146,18 @@
       <imdg_page>2179</imdg_page>
       <packaging_mark>5</packaging_mark>
       <packing_group>O53</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_method>钢质气瓶</packaging_method>
+      <transportation_precautions>铁路运输时需经生物试验证明合格，根据合格证托运。采用钢瓶运输时必须戴好钢瓶上的安全帽。钢瓶一般平放，并应将瓶口朝同一方向，不可交叉；高度不得超过车辆的防护栏板，并用三角木垫卡牢，防止滚动。严禁与易燃物或可燃物混装混运。夏季应早晚运输，防止日光曝晒。铁路运输时要禁止溜放。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>国内法规：《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录（2015版）》、《工作场所安全使用化学品规定》（[1996]劳部发423号）、《危险货物分类和品名编号》（GB 6944）、《危险货物品名表》（GB 12268）、《六氟化硫气体回收与再利用技术规范》（GB/T 39005）。国际法规：联合国《关于危险货物运输的建议书》（TDG）、《全球化学品统一分类和标签制度》（GHS）、《京都议定书》（作为受控温室气体）。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standard>本安全技术说明书按照GB/T 16483-2008、GB/T 17519-2013标准编制。</preparation_standard>
+      <modification_notes>本说明书根据最新可获得的信息编制，使用者应确保符合相关法律法规要求。六氟化硫是强温室气体，应特别注意减少排放，加强回收利用。</modification_notes>
+      <abbreviations_and_terms>GHS：全球化学品统一分类和标签制度；CAS：化学文摘社登记号；TLV-TWA：阈限值-时间加权平均浓度；TLV-STEL：阈限值-短时间接触限值；LC50：半数致死浓度；LD50：半数致死量；GWP：全球变暖潜能值；IARC：国际癌症研究机构；ACGIH：美国工业卫生师协会；OSHA：美国职业安全与健康管理局。</abbreviations_and_terms>
+    </other_info>
   </msds>
 </msds_list>

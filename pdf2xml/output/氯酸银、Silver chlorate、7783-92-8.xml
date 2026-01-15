@@ -4,21 +4,21 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>7783-92-8</cas_number>
-      <msds_code>MSDS#2262</msds_code>
+      <msds_code>MSDS-7783-92-8</msds_code>
       <product_name>氯酸银</product_name>
-      <product_alias>无资料</product_alias>
+      <product_alias>7783-92-8</product_alias>
       <product_english_name>Silver chlorate</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第5.1类 氧化剂</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
       <health_hazards>引起全身银质沉着症：皮肤及眼结膜(或角膜)色素沉着，慢性支气管炎等。</health_hazards>
       <environmental_hazards>无资料</environmental_hazards>
       <fire_explosion_hazards>本品助燃、具有刺激性</fire_explosion_hazards>
@@ -42,7 +42,7 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>击可引起燃烧或爆炸。与硫酸接触容易发生爆炸。受高热分解，放出有毒的烟气。</hazard_characteristics>
+      <hazard_characteristics>强氧化剂。与还原剂、有机物、易燃物如硫、磷或金属粉末等混合可形成爆炸性混合物。与硫酸接触容易发生爆炸。受高热分解，放出有毒的烟气。</hazard_characteristics>
       <fire_risk_classification>无资料</fire_risk_classification>
       <harmful_combustion_products>氧化银、氯化氢。</harmful_combustion_products>
       <suitable_extinguishing_media>雾状水、泡沫、砂土。</suitable_extinguishing_media>
@@ -53,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。专仓专储。保持容器密封。应与酸类、还 原 剂、易燃物、可燃物、硫、磷、铵盐、金属粉末等分开存放。轻装轻卸。禁止震动、 撞击和摩擦。分装和搬运作业要注意个人防护。</storage_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。远离火种、热源，工作场所严禁吸烟。避免产生粉尘。避免与还原剂、酸类、易燃物、可燃物、铵盐、金属粉末等接触。配备相应品种和数量的消防器材及泄漏应急处理设备。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。专仓专储。保持容器密封。应与酸类、还原剂、易燃物、可燃物、硫、磷、铵盐、金属粉末等分开存放。轻装轻卸。禁止震动、撞击和摩擦。分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -79,16 +79,16 @@
       <flash_point>无资料</flash_point>
       <relative_density>4.430</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>A</molecular_formula>
+      <solubility>易溶于水。</solubility>
+      <molecular_formula>AgClO3</molecular_formula>
       <molecular_weight>191.34</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>氯酸银</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>助燃</flammability>
       <appearance>白色四角形结晶，在阳光下分解变黑。</appearance>
       <main_uses>用作氧化剂，并用于有机合成。</main_uses>
       <other_properties>无资料</other_properties>
@@ -121,28 +121,32 @@
       <ecological_toxicity>无资料</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
-      <other_harmful_effects>复接触。</other_harmful_effects>
+      <bioaccumulation>无资料</bioaccumulation>
+      <other_harmful_effects>无资料</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
+      <disposal_method>建议用焚烧法处置。在能保证充分燃烧的条件下，焚烧炉排出的气体通过洗涤器除去。</disposal_method>
       <disposal_precautions>无资料</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>51040</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <un_number>UN 2619</un_number>
       <imdg_page>无资料</imdg_page>
       <packaging_mark>11</packaging_mark>
       <packing_group>Ⅱ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>塑料袋或二层牛皮纸袋外全开口或中开口钢桶（钢板厚0.5毫米，每桶净重不超过50公斤）；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>铁路运输时应严格按照铁道部《危险货物运输规则》中的危险货物配装表进行配装。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与还原剂、酸类、易燃物、可燃物、金属粉末等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源、高温区。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品安全管理条例（国务院令第591号），工作场所安全使用化学品规定（〔1996〕劳部发423号）等法规，针对化学危险品的安全使用、生产、储存、运输、装卸等方面均作了相应规定。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>GB/T 16483-2008, GB/T 17519-2013</reference_standards>
+    </other_info>
   </msds>
 </msds_list>

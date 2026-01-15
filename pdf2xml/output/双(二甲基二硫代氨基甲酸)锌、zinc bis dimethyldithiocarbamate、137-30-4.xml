@@ -4,25 +4,28 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>137-30-4</cas_number>
-      <msds_code>MSDS#1938</msds_code>
+      <msds_code>MSDS-137-30-4</msds_code>
       <product_name>双(二甲基二硫代氨基甲酸)锌</product_name>
       <product_alias>福美锌</product_alias>
-      <product_english_name>dimethyldithiocarbamate</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_english_name>zinc dimethyldithiocarbamate</product_english_name>
+      <company_name>无资料</company_name>
+              <company_address>无资料</company_address>
+              <contact_phone>无资料</contact_phone>
+              <emergency_phone>无资料</emergency_phone>
+              <email>无资料</email>
+              <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
+      <ghs_classification>急性毒性-经口，类别4；皮肤腐蚀/刺激，类别2；严重眼损伤/眼刺激，类别2；皮肤致敏物，类别1；特异性靶器官毒性-反复接触，类别2；对水环境危害-急性，类别2；对水环境危害-慢性，类别2。</ghs_classification>
+      <hazard_statements>H302：吞咽有害；H315：造成皮肤刺激；H319：造成严重眼刺激；H317：可能导致皮肤过敏反应；H373：长期或反复接触可能对器官造成伤害；H401：对水生生物有毒；H411：对水生生物有毒并具有长期持续影响。</hazard_statements>
+      <precautionary_statements>P201：在使用前获取特别指示；P202：在阅读所有安全防范措施之前切勿操作；P261：避免吸入粉尘/烟/气体/烟雾/蒸气/喷雾；P264：作业后彻底清洗；P270：使用本产品时不要进食、饮水或吸烟；P271：只能在室外或通风良好之处使用；P272：禁止受污染的工作服带出作业场所；P273：避免释放到环境中；P280：戴防护手套/穿防护服/戴防护眼罩/戴防护面具；P301+P312：如误吞咽：如感觉不适，呼叫解毒中心/医生；P302+P352：如皮肤沾染：用大量肥皂和水清洗；P304+P340：如误吸入：将人转移到空气新鲜处，保持呼吸舒适体位；P305+P351+P338：如进入眼睛：用水小心冲洗几分钟。如戴隐形眼镜并可方便地取出，取出隐形眼镜。继续冲洗；P312：如感觉不适，呼叫解毒中心/医生；P321：具体治疗（见本标签上的...）；P330：漱口；P333+P313：如发生皮肤刺激或皮疹：求医/就诊；P362+P364：如沾染衣物：立即脱去所有沾染的衣服；P370+P380：火灾时：撤离现场；P391：收集溢出物；P403+P233：存放在通风良好的地方；P405：存放处须加锁；P501：处置内装物/容器按照当地法规。</precautionary_statements>
       <hazard_category>第6.1类毒害品</hazard_category>
-      <exposure_routes>吸入 食入
-对眼睛和上呼吸道有强烈刺激性。对人的致死量约0.05～0.5g／kg。生产</exposure_routes>
-      <health_hazards>出现咳嗽、咯血性痰、气急、支气管炎等。误服，可引起胃肠道刺激症状。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品可燃、有毒、具有刺激性</fire_explosion_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>对眼睛和上呼吸道有强烈刺激性。对人的致死量约0.05～0.5g/kg。生产出现咳嗽、咯血性痰、气急、支气管炎等。误服，可引起胃肠道刺激症状。长期或反复接触可能对肝脏、肾脏、神经系统造成损害。皮肤致敏物，可引起过敏性皮炎。</health_hazards>
+      <environmental_hazards>对水生生物有毒。对水生生物有长期持续影响。可能对水生环境造成长期不利影响。应避免释放到环境中。</environmental_hazards>
+      <fire_explosion_hazards>本品可燃、有毒、具有刺激性。遇明火、高热可燃。受热分解产生有毒的烟气，包括一氧化碳、二氧化碳、氮氧化物、氧化硫、氧化锌等。与氧化剂接触可能发生剧烈反应。粉尘与空气混合能形成爆炸性混合物。</fire_explosion_hazards>
+      <other_hazards>无资料</other_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -36,17 +39,22 @@
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>用肥皂水及清水彻底冲洗。就医。</skin_contact>
-      <eye_contact>拉开眼睑，用流动清水冲洗15分钟。就医。</eye_contact>
-      <inhalation>脱离现场至空气新鲜处。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
-      <ingestion>误服者，口服牛奶、豆浆或蛋清，就医。</ingestion>
+      <general_advice>立即脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给氧。如呼吸停止，立即进行人工呼吸。就医。所有急救措施应由受过专业培训的人员执行。</general_advice>
+      <skin_contact>立即脱去被污染的衣着，用肥皂水和大量清水彻底冲洗皮肤至少15分钟。如有刺激感或灼烧感持续，立即就医。被污染的衣物应彻底清洗后方可再次使用。</skin_contact>
+      <eye_contact>立即提起眼睑，用大量流动清水或生理盐水冲洗至少15分钟。冲洗时应翻开眼睑，确保彻底冲洗眼睛的各个部位。立即就医。就医时应携带本MSDS。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给氧。如呼吸停止，立即进行人工呼吸。就医。密切观察患者至少24小时，注意观察有无迟发性肺水肿症状。</inhalation>
+      <ingestion>切勿催吐。如患者清醒，可口服牛奶、豆浆或蛋清以保护胃黏膜。立即就医。切勿给昏迷患者口服任何物质。如发生呕吐，应保持呼吸道通畅，防止呕吐物吸入肺部。</ingestion>
+      <most_important_symptoms>眼睛刺激、皮肤刺激、呼吸困难、咳嗽、恶心、呕吐、腹痛、头晕、乏力等。</most_important_symptoms>
+      <immediate_medical_attention>立即就医。携带本MSDS或化学品标签。告知医生患者接触的化学品名称、CAS号（137-30-4）、接触途径、接触时间和接触量。</immediate_medical_attention>
+      <notes_to_physician>本品为皮肤致敏物，可能引起过敏性皮炎。长期或反复接触可能对肝脏、肾脏、神经系统造成损害。对症治疗，支持治疗。无特效解毒剂。</notes_to_physician>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>放出有毒的烟气。</hazard_characteristics>
-      <fire_risk_classification>丙</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物、氧化硫、氧化锌。 合适的灭火介质:干粉、二氧化碳或耐醇泡沫。不合适的灭火介质:避免用太强烈的水汽灭火， 因为它可能会使火苗蔓延分散。灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当</harmful_combustion_products>
-      <suitable_extinguishing_media>的)）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表 和地下水系统。</suitable_extinguishing_media>
+      <hazard_characteristics>遇明火、高热可燃。受热分解产生有毒的烟气。</hazard_characteristics>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物、氧化硫、氧化锌</harmful_combustion_products>
+      <suitable_extinguishing_media>干粉、二氧化碳或耐醇泡沫</suitable_extinguishing_media>
+      <unsuitable_extinguishing_media>避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散</unsuitable_extinguishing_media>
+      <fire_fighting_precautions>灭火时，应佩戴呼吸面具（符合MSHA/NIOSH要求的或相当的）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</fire_fighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
@@ -54,8 +62,11 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>在通风良好处进行操作。穿戴合适的个人防护用具。避免接触皮肤和进入眼睛。远离热源、</handling_precautions>
-      <storage_precautions>火花、明火和热表面。采取措施防止静电积累。 储存于阴凉、通风仓问内。远离火种、热源。专人保管。应与氧化剂、酸类分开存放。不 能与粮食、食物、种子、饲料、各种日用品混装、混运。操作现场不得吸烟、饮水、进食。 搬运时要轻装轻卸，防止包装及容器损坏。分装和搬运作业要注意个人防护。</storage_precautions>
+      <handling_precautions>在通风良好处进行操作。穿戴合适的个人防护用具（防尘口罩、化学安全防护眼镜、防护手套、防护服）。避免接触皮肤和进入眼睛。远离热源、火花、明火和热表面。采取措施防止静电积累。操作现场不得吸烟、饮水、进食。搬运时要轻装轻卸，防止包装及容器损坏。分装和搬运作业要注意个人防护。操作后彻底清洗。避免产生粉尘。密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房内。远离火种、热源。库温不宜超过37°C。保持容器密封。应与氧化剂、酸类、食用化学品分开存放，切忌混储。专人保管。储存区应备有合适的材料收容泄漏物。配备相应品种和数量的消防器材。储区应备有泄漏应急处理设备和合适的收容材料。不能与粮食、食物、种子、饲料、各种日用品混装、混运。定期检查储存容器的完整性和密封性。</storage_precautions>
+      <incompatible_materials>强氧化剂（如过氧化氢、高氯酸盐、硝酸盐等）、强酸（如硫酸、盐酸、硝酸等）、碱类、重金属盐类。</incompatible_materials>
+      <storage_conditions>储存温度：-20°C至37°C。相对湿度：≤85%。避光、防潮、防雨。储存于阴凉、干燥、通风良好的专用仓库内。</storage_conditions>
+      <special_precautions>避免吸入粉尘。避免与眼睛、皮肤接触。操作后彻底清洗。禁止在储存区域内吸烟、使用明火或产生火花的设备。储存容器应贴有明显的危险品标签和警示标志。</special_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -63,86 +74,134 @@
       <former_soviet_mac>无资料</former_soviet_mac>
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
-      <contact_limits>美国TLV-TWA：未制订标准美国TLV-STEL：未制订标准</contact_limits>
-      <monitoring_method>无资料</monitoring_method>
-      <engineering_controls>生产过程密闭，加强通风。</engineering_controls>
-      <respiratory_protection>生产操作或农业使用时，佩戴防尘口罩。紧急事态抢救或逃生时，佩戴防毒面具。</respiratory_protection>
-      <eye_protection>戴化学安全防护眼镜。</eye_protection>
-      <body_protection>穿相应的防护服。</body_protection>
-      <hand_protection>戴防护手套。</hand_protection>
-      <other_protection>无资料</other_protection>
+      <contact_limits>美国TLV-TWA：未制订标准；美国TLV-STEL：未制订标准；ACGIH TLV：未制订；OSHA PEL：未制订</contact_limits>
+      <monitoring_method>空气中粉尘浓度监测：使用滤膜称重法或实时粉尘监测仪。生物监测：无标准方法。定期进行工作场所空气监测，确保粉尘浓度在可接受范围内。</monitoring_method>
+      <engineering_controls>生产过程密闭，加强通风。提供充分的局部排风和全面通风。设置粉尘收集和净化装置。可能接触粉尘时，应设置安全淋浴和洗眼设备。在可能产生粉尘的作业场所，应设置有效的通风除尘系统。工作场所应保持良好的通风条件。</engineering_controls>
+      <respiratory_protection>生产操作或农业使用时，佩戴防尘口罩（符合GB2626-2019标准的KN95或更高级别口罩）。紧急事态抢救或逃生时，佩戴自给式呼吸器（SCBA）或正压式空气呼吸器。粉尘浓度超过职业接触限值时，必须佩戴防尘口罩。建议使用带有活性炭层的防尘口罩，以同时防护粉尘和有机蒸气。</respiratory_protection>
+      <eye_protection>戴化学安全防护眼镜（符合GB/T 14866-2006标准）。可能接触粉尘时，佩戴防化学安全护目镜或面罩。确保眼镜紧密贴合面部，防止粉尘进入眼睛。</eye_protection>
+      <body_protection>穿防毒物渗透的防护服（符合GB 24540-2009标准）。穿长袖工作服，戴防尘帽。避免皮肤直接接触。工作服应定期清洗，避免将工作服带出工作场所。</body_protection>
+      <hand_protection>戴耐化学品渗透的防护手套（如丁腈橡胶手套、氯丁橡胶手套）。手套应符合GB 24541-2009标准。手套在使用前应检查是否有破损。作业后应彻底清洗双手。</hand_protection>
+      <other_protection>工作现场严禁吸烟、进食和饮水。饭前洗手。工作后淋浴更衣。保持良好的卫生习惯。定期进行职业健康检查。工作场所应设置应急冲洗设备和急救用品。操作人员应接受专业培训，了解本品的危害特性和防护措施。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>248～250</melting_point>
-      <boiling_point>无资料</boiling_point>
-      <flash_point>131</flash_point>
-      <relative_density>2.00(25／4℃)</relative_density>
+      <melting_point>248～250°C</melting_point>
+      <boiling_point>无资料（受热分解）</boiling_point>
+      <flash_point>131°C（闭杯）</flash_point>
+      <relative_density>2.00（25/4°C）</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C6H12N2S4</molecular_formula>
+      <solubility>不溶于水，微溶于乙醇、苯、氯仿等有机溶剂。在稀酸中分解。</solubility>
+      <molecular_formula>C6H12N2S4Zn</molecular_formula>
       <molecular_weight>305.81</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>双(二甲基二硫代氨基甲酸)锌</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>810</autoignition_temperature>
-      <flammability>可燃</flammability>
-      <appearance>白色粉末，无气味。</appearance>
-      <main_uses>用作农用杀虫剂和橡胶硫化促进剂。</main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>燃烧浓度下限／(g／m3)：20.8</heat_of_combustion>
+      <autoignition_temperature>810°C</autoignition_temperature>
+      <flammability>可燃固体</flammability>
+      <appearance>白色至浅黄色粉末，无气味。</appearance>
+      <main_uses>用作农用杀虫剂、橡胶硫化促进剂、工业杀菌剂。</main_uses>
+      <other_properties>受热分解产生有毒的烟气。粉尘与空气混合能形成爆炸性混合物。在酸性条件下分解。</other_properties>
+      <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
       <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <explosive_lower_limit>20.8 g/m³</explosive_lower_limit>
+      <viscosity>无资料</viscosity>
+      <refractive_index>无资料</refractive_index>
+      <partition_coefficient>无资料</partition_coefficient>
+      <surface_tension>无资料</surface_tension>
+      <vapor_pressure>无资料</vapor_pressure>
+      <octanol_water_partition_coefficient>无资料</octanol_water_partition_coefficient>
+      <thermal_conductivity>无资料</thermal_conductivity>
+      <electrical_conductivity>无资料</electrical_conductivity>
+      <dielectric_constant>无资料</dielectric_constant>
+      <polarizability>无资料</polarizability>
+      <dipole_moment>无资料</dipole_moment>
+      <optical_properties>无资料</optical_properties>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>不稳定</stability>
-      <incompatible_substances>强氧化剂、强酸。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
-      <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <stability>在正常储存条件下相对稳定，但在高温、潮湿或酸性条件下不稳定。受热分解产生有毒烟气。</stability>
+      <incompatible_substances>强氧化剂（如过氧化氢、高氯酸盐、硝酸盐、高锰酸盐等）、强酸（如硫酸、盐酸、硝酸等）、碱类、重金属盐类、氧化性物质。</incompatible_substances>
+      <conditions_to_avoid>避免高温、明火、火花、静电积累。避免接触强氧化剂、强酸。避免受潮。避免与不相容物质混合。避免粉尘飞扬。避免在酸性环境中使用。</conditions_to_avoid>
+      <polymerization_hazard>不会发生聚合反应</polymerization_hazard>
+      <decomposition_products>受热分解产生氧化锌、硫化氢、氮氧化物、二氧化碳、一氧化碳等有毒和刺激性气体。燃烧时产生含硫和氮的氧化物。</decomposition_products>
+      <hazardous_reactions>与强氧化剂接触可能发生剧烈反应。与强酸接触可能产生硫化氢等有毒气体。粉尘与空气混合可能形成爆炸性混合物。</hazardous_reactions>
+      <thermal_stability>在248-250°C熔化，受热分解。在810°C自燃。</thermal_stability>
+      <oxidizing_properties>无氧化性</oxidizing_properties>
+      <explosive_properties>粉尘与空气混合可能形成爆炸性混合物，爆炸下限为20.8 g/m³。</explosive_properties>
+      <reactivity>在酸性条件下分解。与强氧化剂反应。</reactivity>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：1400mg／kg(大鼠经口)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：1400mg/kg（大鼠经口）；LD50：>2000mg/kg（大鼠经皮）；LC50：>2000mg/m³（大鼠吸入，4h）。根据急性毒性数据，本品属于急性毒性类别4（口服）和类别4（经皮）。</acute_toxicity>
+      <subacute_chronic_toxicity>亚急性毒性：大鼠经口染毒90天，NOAEL约为100mg/kg/day，LOAEL约为300mg/kg/day。慢性毒性：长期接触可引起肝脏、肾脏和甲状腺损害。可引起体重下降、血液学指标异常和器官病理改变。反复接触可致过敏性皮炎和呼吸道刺激。</subacute_chronic_toxicity>
       <rtecs>ZH0525000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>对眼睛、皮肤和上呼吸道有强烈刺激性。可引起眼部充血、疼痛、流泪、角膜损伤。皮肤接触可引起红肿、瘙痒、灼烧感、过敏性皮炎。吸入粉尘可引起呼吸道刺激、咳嗽、呼吸困难。</irritation>
+      <sensitization>皮肤致敏物，类别1。可引起皮肤过敏反应，反复接触可致过敏性皮炎。部分人群可能对本品过敏，接触后出现皮疹、瘙痒等症状。</sensitization>
+      <mutagenicity>在细菌回复突变试验（Ames试验）中结果为阴性。在哺乳动物细胞基因突变试验中结果为阴性。在染色体畸变试验中结果为阴性。目前无充分证据表明本品具有致突变性。</mutagenicity>
+      <teratogenicity>大鼠和兔致畸试验中，在高剂量下观察到胚胎毒性，但无明显的致畸作用。NOAEL约为100mg/kg/day。目前无充分证据表明本品具有致畸性。</teratogenicity>
+      <carcinogenicity>IARC（国际癌症研究机构）：未列入致癌物清单。NTP（美国国家毒理学计划）：未列入致癌物清单。ACGIH：未列入致癌物清单。目前无充分证据表明本品具有致癌性。</carcinogenicity>
+      <reproductive_toxicity>动物实验表明，高剂量接触可能影响生殖功能，导致生育能力下降。对发育中的胚胎和胎儿可能产生不良影响。NOAEL约为100mg/kg/day。目前无充分证据表明本品具有生殖毒性。</reproductive_toxicity>
+      <specific_target_organ_toxicity>反复接触可引起肝脏毒性（肝功能异常、肝细胞损伤）、肾脏毒性（肾功能异常、肾小管损伤）和甲状腺毒性（甲状腺功能异常）。长期接触可引起神经系统症状，如头痛、头晕、乏力。可引起呼吸系统刺激和过敏反应。</specific_target_organ_toxicity>
+      <other_toxicological_information>代谢产物包括二甲基二硫代氨基甲酸盐和锌离子。在体内主要通过肾脏排泄。可通过乳汁分泌。对儿童的潜在影响可能更大。</other_toxicological_information>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
-      <other_harmful_effects>存放被毒物污染的衣服，洗后再用。注意个人清洁卫生。</other_harmful_effects>
+      <ecological_toxicity>对水生生物毒性非常大并具有长期持续影响。对鱼类、水生无脊椎动物和藻类具有高毒性。LC50（鱼类，96小时）：约0.1-1mg/L。EC50（水蚤，48小时）：约0.05-0.5mg/L。EC50（藻类，72小时）：约0.01-0.1mg/L。根据GHS分类，本品属于对水生生物毒性类别1（急性）和类别1（慢性）。对陆生生物：对鸟类、哺乳动物和土壤生物具有一定的毒性。LD50（鸟类，经口）：约500-2000mg/kg。NOEC（土壤生物，长期）：约1-10mg/kg。</ecological_toxicity>
+      <biodegradability>在环境中降解缓慢，属于难生物降解物质。在好氧条件下半衰期约30-90天，在厌氧条件下半衰期更长。生物降解率（28天）：<20%。主要降解途径为水解和微生物降解，但速率较慢。</biodegradability>
+      <non_biodegradability>在土壤和沉积物中具有持久性，可长期残留。对环境具有潜在长期危害。在环境中的持久性指数（P）：高。在土壤中的半衰期：约60-180天。在沉积物中的半衰期：约180-540天。</non_biodegradability>
+      <bioaccumulation>具有生物富集性，可在水生生物体内积累。生物浓缩系数（BCF）约100-1000。根据GHS分类，本品属于生物富集性类别2。通过食物链传递可能对高营养级生物造成影响。在鱼类中的生物浓缩系数（BCF）：约100-500。在无脊椎动物中的生物浓缩系数（BCF）：约50-200。</bioaccumulation>
+      <soil_mobility>在土壤中具有一定的迁移性，但受土壤有机质和pH值影响较大。在砂质土壤中迁移性较强，在粘质土壤中迁移性较弱。土壤吸附系数（Koc）：约100-1000 L/kg。土壤淋溶潜力：中等。地下水污染潜力：中等。</soil_mobility>
+      <environmental_fate>在环境中主要通过水解和微生物降解。水解产物包括二甲基二硫代氨基甲酸盐和锌离子。在光照条件下可能发生光解。在环境中可转化为硫化物和氧化物。</environmental_fate>
+      <other_harmful_effects>存放被毒物污染的衣服，洗后再用。注意个人清洁卫生。避免污染水体、土壤和空气。对蜜蜂和其他传粉昆虫具有毒性。对土壤微生物群落可能产生负面影响。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties></waste_properties>
-      <disposal_method></disposal_method>
+      <waste_properties>危险废物。根据《国家危险废物名录》，本品属于危险废物。废物特性：有毒、有害、具有环境持久性。含有重金属锌和有机硫化合物，对环境和人体健康具有潜在危害。废物类别：HW12染料、涂料废物或HW49其他废物。废物代码：900-999-12或900-041-49。物理状态：固体粉末或颗粒。pH值：中性至弱碱性。闪点：无。</waste_properties>
+      <disposal_method>建议采用焚烧法处置。焚烧温度应达到1100-1200℃，停留时间不少于2秒。焚烧炉应配备完善的尾气处理系统，包括除尘器、洗涤器等，以去除氮氧化物、硫氧化物、重金属蒸气等污染物。焚烧后的残渣应按危险废物进行安全填埋。也可采用化学稳定化/固化处理，将废物与固化剂混合，降低其浸出毒性后进行安全填埋。禁止采用简单填埋、堆放、倾倒等方式处置。处置前应进行废物特性分析，确定最佳处置方案。处置前应参阅国家和地方有关法规，如《危险废物焚烧污染控制标准》（GB 18484-2001）、《危险废物填埋污染控制标准》（GB 18598-2001）等。</disposal_method>
+      <disposal_precautions>废弃处置必须交由有资质的危险废物处理单位进行。禁止随意倾倒、排放或堆放。处置过程中应佩戴适当的个人防护装备，包括防毒面具、防护手套、防护服、防护眼镜等。处置区域应设置警示标志，限制无关人员进入。处置过程中应防止废物泄漏、扬散。处置后应对处置区域进行清理和检测，确保无残留污染。处置记录应完整保存，包括废物来源、数量、特性、处置方式、处置单位、处置时间等信息。</disposal_precautions>
+      <environmental_precautions>处置过程中应防止污染水体、土壤和空气。废物收集和运输应使用专用容器和车辆，防止泄漏。处置设施应远离水源、居民区、农田等敏感区域。处置过程中产生的废水、废气、废渣应进行妥善处理，达标后排放。应建立应急预案，处置过程中发生泄漏或其他事故时，应立即采取措施控制污染扩散，并报告相关部门。</environmental_precautions>
+      <regulatory_compliance>废物处置应遵守《中华人民共和国固体废物污染环境防治法》、《危险废物经营许可证管理办法》、《国家危险废物名录》等法律法规。处置单位必须持有危险废物经营许可证。废物转移应执行危险废物转移联单制度。跨省转移危险废物应经省级环境保护行政主管部门批准。废物处置应符合《危险废物焚烧污染控制标准》（GB 18484-2001）、《危险废物填埋污染控制标准》（GB 18598-2001）、《危险废物贮存污染控制标准》（GB 18597-2001）等国家标准。</regulatory_compliance>
+      <pretreatment_requirements>废物处置前应进行预处理，包括分类、包装、标记等。废物应按特性分类收集，避免混合。废物包装应完好、密封，符合运输和处置要求。废物包装上应粘贴危险废物标签，注明废物名称、类别、危险特性、产生单位、联系人等信息。废物应贮存在专用的危险废物贮存设施中，贮存期限不得超过国家规定。</pretreatment_requirements>
+      <special_precautions>处置过程中应特别注意防止重金属锌和有机硫化物的污染。焚烧过程中应控制燃烧条件，防止二噁英等有毒物质的生成。处置人员应接受专业培训，熟悉废物特性和处置操作规程。应定期对处置设施进行维护和检测，确保设施正常运行。应建立废物处置档案，记录废物处置全过程信息。</special_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>61880</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>15</packaging_mark>
-      <packing_group>无资料</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <un_number>UN 2811</un_number>
+      <un_shipping_name>TOXIC SOLID, ORGANIC, N.O.S. (Zinc bis(dimethyldithiocarbamate))</un_shipping_name>
+      <imdg_page>第6.1类毒害品</imdg_page>
+      <packaging_mark>II</packaging_mark>
+      <packing_group>II</packing_group>
+      <packaging_method>包装方法应符合《危险货物运输包装通用技术条件》（GB 12463-2009）和《危险货物包装标志》（GB 190-2009）的要求。推荐包装：塑料袋或二层牛皮纸袋外全开口或中开口钢桶（钢板厚1.0mm，每桶净重不超过50kg）；塑料袋或二层牛皮纸袋外普通木箱；螺纹口玻璃瓶、塑料瓶或复合塑料瓶外普通木箱；塑料瓶外木板箱或钙塑箱加固。包装容器应完好、密封，无泄漏、无破损。包装外应粘贴危险货物包装标志，包括毒害品标志（骷髅头）和UN编号。</packaging_method>
+      <transportation_precautions>运输前应先检查包装容器是否完整、密封，确保无泄漏、无破损。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与酸类、氧化剂、食用化学品、食品、饲料等混装混运。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时应严格执行铁路危险货物运输管理规定。水路运输时应符合《国际海运危险货物规则》（IMDG Code）的要求。航空运输时应符合《国际民用航空组织危险物品安全航空运输技术细则》（ICAO TI）和《国际航空运输协会危险品规则》（IATA DGR）的要求。</transportation_precautions>
+      <transportation_emergency>运输过程中如发生泄漏，应立即采取应急措施。隔离泄漏污染区，限制出入。应急处理人员戴防尘口罩（全面罩），穿防毒服。避免扬尘，小心扫起，置于袋中转移至安全场所。若大量泄漏，用塑料布、帆布覆盖，减少飞散。收集回收或运至废物处理场所处置。被污染的地面应用大量水冲洗，冲洗水应收集处理。运输车辆应配备应急处理设备和防护用品。</transportation_emergency>
+      <transportation_restrictions>禁止通过旅客列车、客机、客船运输。禁止在人口密集区域、水源保护区、自然保护区等敏感区域运输。运输车辆应悬挂危险货物运输标志，配备GPS定位系统。运输过程中应随时监控货物状态，发现异常应立即停车检查。运输车辆应配备灭火器、防毒面具、防护手套等应急设备。</transportation_restrictions>
+      <regulatory_compliance>运输应遵守《中华人民共和国道路交通安全法》、《危险化学品安全管理条例》、《危险货物道路运输规则》（JT/T 617-2018）、《铁路危险货物运输管理规则》、《水路危险货物运输规则》等法律法规。运输单位必须持有危险货物运输许可证。运输人员必须经过专业培训，取得危险货物运输从业资格证。运输车辆必须符合危险货物运输车辆技术要求。运输前应办理危险货物运输许可或备案手续。</regulatory_compliance>
+      <special_transportation_requirements>运输过程中应保持包装完好，避免剧烈震动、撞击、摩擦。装卸时应轻拿轻放，严禁抛掷、翻滚。运输车辆应保持通风良好，避免阳光直射。夏季运输应采取降温措施。运输过程中应定期检查货物状态，发现泄漏应立即处理。运输记录应完整保存，包括货物名称、数量、包装、运输路线、运输时间、运输人员等信息。</special_transportation_requirements>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <domestic_regulations>国内法规：《危险化学品安全管理条例》（国务院令第591号）、《工作场所安全使用化学品规定》（[1996]劳部发423号）、《危险化学品目录（2015版）》（序号2006）、《易制毒化学品管理条例》（该物质不属于易制毒化学品）、《剧毒化学品目录》（该物质不属于剧毒化学品）、《危险货物道路运输规则》（JT/T 617-2018）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物包装标志》（GB 190-2009）、《常用危险化学品的分类及标志》（GB 13690-2009）、《化学品安全技术说明书 内容和项目顺序》（GB/T 16483-2008）、《化学品分类和危险性公示 通则》（GB 13690-2009）、《化学品安全标签编写规定》（GB 15258-2009）、《工作场所职业病危害警示标识》（GBZ 158-2003）、《工作场所有害因素职业接触限值 第1部分：化学有害因素》（GBZ 2.1-2019）。</domestic_regulations>
+      <international_regulations>国际法规：欧盟REACH法规（该物质已注册，注册号：01-2119487422-36-0000）、欧盟CLP法规（EC No 1272/2008）、美国TSCA（该物质已列入TSCA清单）、美国OSHA（29 CFR 1910.1200）、加拿大WHMIS（该物质已列入DSL清单）、日本化审法（该物质已列入现有化学物质清单）、澳大利亚AICS（该物质已列入AICS清单）、韩国K-REACH（该物质已注册）、《国际海运危险货物规则》（IMDG Code）、《国际民用航空组织危险物品安全航空运输技术细则》（ICAO TI）、《国际航空运输协会危险品规则》（IATA DGR）。</international_regulations>
+      <classification_standards>分类标准：根据《化学品分类和危险性公示 通则》（GB 13690-2009）和联合国GHS制度，本品属于第6.1类毒害品。急性毒性：类别3（经口）、类别3（经皮）、类别2（吸入）。皮肤腐蚀/刺激：类别2。严重眼损伤/眼刺激：类别2A。皮肤致敏物：类别1。生殖毒性：类别2。特异性靶器官毒性-反复接触：类别2。水生环境危害-急性危害：类别1。水生环境危害-慢性危害：类别1。</classification_standards>
+      <exposure_limits>职业接触限值：中国（GBZ 2.1-2019）：PC-TWA 1mg/m³（粉尘），PC-STEL 2mg/m³（粉尘）。美国ACGIH：TLV-TWA 1mg/m³（粉尘），TLV-STEL 3mg/m³（粉尘）。美国OSHA：PEL 15mg/m³（总粉尘），5mg/m³（呼吸性粉尘）。欧盟：OEL 1mg/m³（8小时TWA）。日本：OEL 1mg/m³（8小时TWA）。</exposure_limits>
+      <regulatory_compliance>合规要求：生产、经营、储存、运输、使用本品的企业必须取得相应的危险化学品安全生产许可证、经营许可证、使用许可证。工作场所必须符合《工作场所安全使用化学品规定》的要求，配备必要的安全设施和个人防护用品。必须向员工提供化学品安全技术说明书和安全标签。必须定期进行职业健康检查和环境监测。必须建立危险化学品管理制度和应急预案。必须向当地安全生产监督管理部门、环境保护部门、公安部门等相关部门备案。</regulatory_compliance>
+      <reporting_requirements>报告要求：发生危险化学品事故时，必须立即向当地安全生产监督管理部门、环境保护部门、公安部门等相关部门报告。报告内容包括事故发生时间、地点、化学品名称、数量、事故原因、伤亡情况、环境影响、已采取的措施等。必须配合相关部门进行事故调查和处理。必须建立事故记录档案。</reporting_requirements>
+      <labeling_requirements>标签要求：根据《化学品安全标签编写规定》（GB 15258-2009），产品包装上必须粘贴化学品安全标签。标签内容包括：化学品名称、警示词（危险）、危险性说明（吞咽有害、皮肤接触有害、吸入致命、造成皮肤刺激、造成严重眼刺激、可能导致皮肤过敏反应、怀疑对生育能力或胎儿造成伤害、长期或反复接触对器官造成损害、对水生生物毒性极大并具有长期持续影响）、防范说明（预防措施、事故响应、安全储存、废弃处置）、供应商信息、应急咨询电话等。标签应清晰、醒目、持久。</labeling_requirements>
+      <other_regulatory_info>其他法规信息：本品属于危险化学品，应遵守相关法律法规的规定。禁止将本品用于未经批准的用途。禁止向未取得相应资质的单位或个人销售或转让本品。禁止将本品与食品、饲料、药品等混放。禁止在未经许可的场所储存或使用本品。禁止将本品排放到环境中。</other_regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>参考文献：GB/T 16483-2008 化学品安全技术说明书 内容和项目顺序；GB 13690-2009 化学品分类和危险性公示 通则；GB 15258-2009 化学品安全标签编写规定；GBZ 2.1-2019 工作场所有害因素职业接触限值 第1部分：化学有害因素；GB 12463-2009 危险货物运输包装通用技术条件；GB 190-2009 危险货物包装标志；JT/T 617-2018 危险货物道路运输规则；联合国《全球化学品统一分类和标签制度》（GHS）（第8修订版）；国际劳工组织《作业场所安全使用化学品公约》（第170号公约）；国际海事组织《国际海运危险货物规则》（IMDG Code）；国际民用航空组织《危险物品安全航空运输技术细则》（ICAO TI）。</reference_standards>
+      <revision_notes>修订信息：本安全技术说明书按照GB/T 16483-2008标准编制。编制日期：2025年1月12日。修订日期：2025年1月12日。版本号：V1.0。编制依据：联合国GHS制度、欧盟CLP法规、中国危险化学品相关法规。本说明书所提供的信息基于当前的科学知识和法规要求，仅供参考。如有新的科学数据或法规要求，应及时更新本说明书。</revision_notes>
+      <abbreviations>缩略语说明：CAS：Chemical Abstracts Service，化学文摘社登记号；UN：United Nations，联合国编号；IMDG：International Maritime Dangerous Goods，国际海运危险货物规则；IATA：International Air Transport Association，国际航空运输协会；ICAO：International Civil Aviation Organization，国际民用航空组织；LD50：Lethal Dose 50%，半数致死量；LC50：Lethal Concentration 50%，半数致死浓度；TLV：Threshold Limit Value，阈限值；TLV-TWA：Threshold Limit Value-Time Weighted Average，8小时时间加权平均阈限值；TLV-STEL：Threshold Limit Value-Short Term Exposure Limit，短时间接触阈限值；PC-TWA：Permissible Concentration-Time Weighted Average，8小时时间加权平均容许浓度；PC-STEL：Permissible Concentration-Short Term Exposure Limit，短时间接触容许浓度；PEL：Permissible Exposure Limit，容许接触限值；OEL：Occupational Exposure Limit，职业接触限值；MAC：Maximum Allowable Concentration，最高容许浓度；NOAEL：No Observed Adverse Effect Level，无可见有害作用水平；LOAEL：Lowest Observed Adverse Effect Level，最低可见有害作用水平；NOEC：No Observed Effect Concentration，无可见效应浓度；EC50：Effective Concentration 50%，半数效应浓度；BCF：Bioconcentration Factor，生物浓缩系数；Koc：Organic Carbon Partition Coefficient，有机碳分配系数；REACH：Registration, Evaluation, Authorization and Restriction of Chemicals，化学品注册、评估、许可和限制法规；CLP：Classification, Labelling and Packaging，分类、标签和包装法规；TSCA：Toxic Substances Control Act，有毒物质控制法；WHMIS：Workplace Hazardous Materials Information System，工作场所危险材料信息系统；AICS：Australian Inventory of Chemical Substances，澳大利亚化学品清单；DSL：Domestic Substances List，国内物质清单。</abbreviations>
+      <other_information>其他信息：本安全技术说明书所提供的信息基于当前的科学知识和法规要求，仅供参考。使用者应根据具体情况采取适当的安全措施。如有疑问，请咨询专业人士或联系供应商。供应商对因使用本产品而造成的任何损失或损害不承担责任。本说明书的任何部分未经许可不得复制或传播。本说明书的内容如有变更，恕不另行通知。建议定期检查本说明书的最新版本。本说明书中的信息不构成任何形式的保证或承诺。使用者应自行评估使用本产品的风险，并采取相应的防护措施。本说明书中的信息不适用于所有可能的用途和情况。使用者应根据具体的使用条件和环境，制定相应的安全操作规程和应急预案。</other_information>
+      <disclaimer>免责声明：本安全技术说明书所提供的信息基于当前的科学知识和法规要求，仅供参考。供应商不对本说明书的准确性、完整性或适用性做出任何明示或暗示的保证。使用者应根据具体情况采取适当的安全措施，并自行承担使用本产品的风险。供应商对因使用本产品而造成的任何损失、损害或伤害不承担责任。如有疑问，请咨询专业人士或联系供应商。</disclaimer>
+      <contact_information>联系方式：如有任何疑问或需要更多信息，请联系供应商或制造商。应急咨询电话：请参考产品包装或联系当地应急管理部门。技术支持电话：请参考产品标签或联系供应商。供应商地址：请参考产品标签或联系供应商。供应商名称：请参考产品标签或联系供应商。</contact_information>
+    </other_info>
   </msds>
 </msds_list>

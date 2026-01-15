@@ -108,7 +108,7 @@
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>大鼠经口LD50：712mg/kg；大鼠经皮LD50：950mg/kg；大鼠吸入LC50：1200mg/m³(4小时)</acute_toxicity>
-      <subacute_chronic_toxicity>反复接触可引起哮喘样症状。长期接触可导致慢性支气管炎和肺功能损害。</subacute_chronic_toxicity>
+      <subacute_chronic_toxicity>慢性影响：长期接触可引起哮喘、肺功能损害、皮肤过敏等症状。</subacute_chronic_toxicity>
       <rtecs>MO1740000</rtecs>
       <irritation>对眼睛、皮肤和呼吸道有强烈刺激性</irritation>
       <sensitization>具有致敏作用，可引起过敏性哮喘和皮肤过敏</sensitization>
@@ -126,9 +126,9 @@
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>建议用焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。</disposal_method>
-      <disposal_precautions>废弃物处置必须符合国家有关危险废物管理的规定。处置过程中应采取必要的防护措施，避免对环境和人体造成危害。</disposal_precautions>
+      <waste_properties>危险废物</waste_properties>
+      <disposal_method>建议用焚烧法处置。在能保证充分燃烧的条件下,将废弃物与大量空气混合焚烧。焚烧炉排出的气体要通过洗涤器除去。根据国家和地方有关法规的要求处置。</disposal_method>
+      <disposal_precautions>处置前应咨询相关管理部门。禁止随意倾倒或排放。避免对环境造成污染。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -138,11 +138,17 @@
       <packaging_mark>14</packaging_mark>
       <packing_group>II</packing_group>
       <packaging_method>小开口钢桶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱。</packaging_method>
-      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。车辆运输完毕应进行彻底清扫。铁路运输时要禁止溜放。严禁与氧化剂、酸类、碱类、醇类、胺类等混装混运。</transportation_precautions>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与氧化剂、酸类、碱类、醇类、胺类等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源、高温区。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：《危险化学品安全管理条例》、《工作场所安全使用化学品规定》、《危险化学品目录》。国际法规：联合国GHS、欧盟REACH法规。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <standard>GB/T 16483-2008, GB/T 17519-2013</standard>
+      <modification>无</modification>
+      <abbreviations>GHS：全球化学品统一分类和标签制度；MSDS：化学品安全技术说明书；CAS：化学文摘社登记号；LD50：半数致死量；LC50：半数致死浓度。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

@@ -6,24 +6,23 @@
       <cas_number>115-80-0</cas_number>
       <msds_code>MSDS#2317</msds_code>
       <product_name>原丙酸三乙酯</product_name>
-      <product_alias>烷</product_alias>
+      <product_alias>无资料</product_alias>
       <product_english_name>Triethyl orthopropionate</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+        <company_address>无资料</company_address>
+        <contact_phone>无资料</contact_phone>
+        <emergency_phone>无资料</emergency_phone>
+        <email>无资料</email>
+        <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>第3.3类 高闪点易燃液体</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收
-吸入、摄入或经皮肤吸收后对身体可能有害。对皮肤有刺激作用。其蒸气或烟雾对眼睛、</exposure_routes>
-      <health_hazards>粘膜和上呼吸道有刺激作用。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品易燃、具有刺激性</fire_explosion_hazards>
-    </hazard_info>
+        <hazard_category>第3.3类高闪点液体</hazard_category>
+        <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+        <health_hazards>吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入该物质可能会引起对健康有害的影响或呼吸道不适。皮肤接触可能引起刺激。眼睛接触可能引起严重刺激。</health_hazards>
+        <environmental_hazards>对水生生物有害。</environmental_hazards>
+        <fire_explosion_hazards>遇明火、高热易燃。受热分解产生有毒气体。</fire_explosion_hazards>
+      </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
       <components>
@@ -43,10 +42,10 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>爆炸的危险。</hazard_characteristics>
+      <hazard_characteristics>遇明火、高热易燃。受热分解产生有毒气体。</hazard_characteristics>
       <fire_risk_classification>乙</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳。 合适的灭火介质:干粉、二氧化碳或耐醇泡沫。 不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安 全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <harmful_combustion_products>一氧化碳、二氧化碳。</harmful_combustion_products>
+      <suitable_extinguishing_media>干粉、二氧化碳或耐醇泡沫。灭火时，应佩戴呼吸面具（符合MSHA/NIOSH要求的或相当的）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
@@ -108,10 +107,10 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity></acute_toxicity>
+      <acute_toxicity>LD50：大鼠经口：5000 mg/kg；兔子经皮：>2000 mg/kg</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤、粘膜有刺激性。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -145,5 +144,11 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>GB/T 16483-2008 化学品安全技术说明书 内容和项目顺序</reference_standards>
+      <revision_notes>本安全技术说明书按照GB/T 16483-2008标准编制</revision_notes>
+      <abbreviations>CAS：化学文摘社登记号；UN：联合国编号；IMDG：国际海运危险货物规则；MAC：最高容许浓度；TLV：阈限值</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

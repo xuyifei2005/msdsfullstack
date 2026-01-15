@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>112-67-4</cas_number>
-      <msds_code>供应商名称： 供应商地址：</msds_code>
+      <msds_code>MSDS-112-67-4</msds_code>
       <product_name>十六烷酰氯</product_name>
       <product_alias>棕榈酰氯</product_alias>
-      <product_english_name>hexadecanoylchloride</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_english_name>hexadecanoyl chloride</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>侵入途径：</hazard_category>
-      <exposure_routes></exposure_routes>
-      <health_hazards>对皮肤有刺激性。跟皮肤接触可能会引起敏化作用。</health_hazards>
-      <environmental_hazards></environmental_hazards>
-      <fire_explosion_hazards></fire_explosion_hazards>
+      <hazard_category>第8类腐蚀品</hazard_category>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>对皮肤有刺激性。跟皮肤接触可能会引起敏化作用。对眼睛、粘膜和上呼吸道有刺激作用。吸入可引起呼吸道刺激。</health_hazards>
+      <environmental_hazards>对水生生物有毒性。</environmental_hazards>
+      <fire_explosion_hazards>遇明火、高热可燃。受热分解产生有毒气体。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -36,8 +36,8 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>立即脱去污染的衣物。用大量肥皂水和清水冲洗皮肤。如有不适，就医。</skin_contact>
-      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。 立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给于吸氧。如患者食入或</eye_contact>
-      <inhalation>吸入本物质，不得进行口对口人工呼吸。如果呼吸停止。立即进行心肺复苏术。立即就 医。</inhalation>
+      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。</eye_contact>
+      <inhalation>立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给于吸氧。如患者吸入本物质，不得进行口对口人工呼吸。如果呼吸停止，立即进行心肺复苏术。立即就医。</inhalation>
       <ingestion>禁止催吐，切勿给失去知觉者从嘴里喂食任何东西。立即呼叫医生或中毒控制中心。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
@@ -49,12 +49,16 @@
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>泄漏区域并处于上风方向。使用个人防护装备。避免吸入蒸气、烟雾、气体或风尘。</emergency_procedures>
+      <emergency_procedures>迅速撤离泄漏污染区人员至安全区，并进行隔离，严格限制出入。切断火源。建议应急处理人员戴自给正压式呼吸器，穿防酸碱工作服。不要直接接触泄漏物。尽可能切断泄漏源。防止流入下水道、排洪沟等限制性空间。</emergency_procedures>
+      <environmental_precautions>防止泄漏物进入下水道、地下室或限制性空间。</environmental_precautions>
+      <cleaning_methods>小量泄漏：用砂土、蛭石或其他惰性材料吸收。大量泄漏：构筑围堤或挖坑收容。用泵转移至槽车或专用收集器内，回收或运至废物处理场所处置。</cleaning_methods>
+      <precautions_for_personnel>作业人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶手套。</precautions_for_personnel>
+      <prevention_of_fire_and_explosion>消除所有点火源。根据液体流动和蒸气扩散的影响区域划定警戒区，无关人员从侧风、上风向撤离至安全区。</prevention_of_fire_and_explosion>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>火花、明火和热表面。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶手套。避免产生粉尘。避免与氧化剂、碱类、酸类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、干燥、通风良好的库房。远离火种、热源。保持容器密封。防止受潮和雨淋。应与碱类、酸类、氧化剂、潮湿物品、食用化工原料等分开存放。搬运时要轻装轻卸，防止包装及容器损坏。雨天搬运要妥善遮盖。分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -74,23 +78,23 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>12</melting_point>
-      <boiling_point>199</boiling_point>
-      <flash_point></flash_point>
-      <relative_density>0.906</relative_density>
+      <melting_point>12℃</melting_point>
+      <boiling_point>199℃</boiling_point>
+      <flash_point>121℃</flash_point>
+      <relative_density>0.906(25℃)</relative_density>
       <relative_vapor_density>1.01</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C16H31C</molecular_formula>
-      <molecular_weight></molecular_weight>
+      <solubility>遇水水解，不溶于水，溶于有机溶剂</solubility>
+      <molecular_formula>C16H31ClO</molecular_formula>
+      <molecular_weight>274.86</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <flammability>易燃</flammability>
+      <appearance>无色至淡黄色液体</appearance>
+      <main_uses>用于有机合成，用作酰化剂</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -126,23 +130,29 @@
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物</waste_properties>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的气体通过洗涤器除去。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废物应与易燃物、氧化剂等分开存放。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group>无资料</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <dangerous_goods_number>UN 3261</dangerous_goods_number>
+      <un_number>3261</un_number>
+      <imdg_page>8179</imdg_page>
+      <packaging_mark>II</packaging_mark>
+      <packing_group>II</packing_group>
+      <packaging_method>玻璃瓶、塑料桶或金属桶包装</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。严禁与氧化剂、碱类、酸类、食用化学品等混装混运。装运该物品的车辆排气管必须配备阻火装置。使用槽(罐)车运输时应有接地链，槽内可设孔隔板以减少震荡产生静电。中途停留时应远离火种、热源。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品安全管理条例、工作场所安全使用化学品规定、常用危险化学品的分类及标志(GB 13690-92)、危险化学品名录</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other>
+      <standard>GB/T 16483-2008</standard>
+      <revision_notes>无资料</revision_notes>
+      <abbreviations>MSDS：化学品安全技术说明书；CAS：化学文摘社登记号；UN：联合国编号</abbreviations>
+    </other>
   </msds>
 </msds_list>

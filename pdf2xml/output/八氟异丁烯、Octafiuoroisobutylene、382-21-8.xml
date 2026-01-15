@@ -20,11 +20,10 @@
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第2.2类 不燃气体</hazard_category>
-      <exposure_routes>吸入</exposure_routes>
-      <health_hazards>吸入后可有头晕、恶心、胸闷、咳嗽等感冒样症状，但数小时后可发生急性化学性肺炎或肺水
-肿，甚至发生成人呼吸窘迫综合征(ARDS)。</health_hazards>
-      <environmental_hazards>对环境可能有危害，对大气臭氧层有潜在破坏作用。</environmental_hazards>
-      <fire_explosion_hazards>本品不燃、高毒</fire_explosion_hazards>
+      <exposure_routes>吸入、皮肤接触、眼睛接触、食入</exposure_routes>
+      <health_hazards>八氟异丁烯是一种剧毒气体，吸入后可有头晕、恶心、胸闷、咳嗽等感冒样症状，但数小时后可发生急性化学性肺炎或肺水肿，甚至发生成人呼吸窘迫综合征(ARDS)。对眼睛、皮肤和呼吸道有强烈刺激性。长期反复接触可引起慢性支气管炎、肺纤维化等慢性肺部疾病。急性毒性极高，LC50：24.54mg/m³, 1小时(大鼠吸入)；7.36mg/m³，2小时(小鼠吸入)。</health_hazards>
+      <environmental_hazards>对环境可能有危害，对大气臭氧层有潜在破坏作用。对水生生物有高毒性。在环境中不易生物降解，持久存在，具有生物富集性。</environmental_hazards>
+      <fire_explosion_hazards>本品不燃、高毒。在贮存、运输和操作处置过程中，受热可聚合，产生意外的危害。受热分解产生氟化氢、四氟化碳等有毒气体。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -45,14 +44,17 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>不燃的剧毒气体。在贮存、运输和操作处置过程中，受热可聚合，产生意外的危害。</hazard_characteristics>
+      <hazard_characteristics>不燃的剧毒气体。在贮存、运输和操作处置过程中，受热可聚合，产生意外的危害。受热分解产生氟化氢、四氟化碳等有毒气体。容器受热内压增大，有爆炸危险。</hazard_characteristics>
       <fire_risk_classification>不燃气体</fire_risk_classification>
-      <harmful_combustion_products>氟化物。</harmful_combustion_products>
-      <suitable_extinguishing_media>切断气源。喷水冷却容器，可能的话将容器从火场移至空旷处。</suitable_extinguishing_media>
+      <harmful_combustion_products>氟化氢、四氟化碳、一氧化碳、二氧化碳等有毒气体。</harmful_combustion_products>
+      <suitable_extinguishing_media>本品不燃。根据周围环境选择适当灭火剂。切断气源。喷水冷却容器，可能的话将容器从火场移至空旷处。</suitable_extinguishing_media>
+      <firefighting_precautions>消防人员必须佩戴正压自给式呼吸器，穿全身防毒服。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>迅速撤离泄漏污染区人员至上风处，并隔离直至气体散尽，应急处理人员戴正压自给式呼吸器，穿防毒服。切断火源。合理通风，加速扩散。</emergency_procedures>
+      <emergency_procedures>迅速撤离泄漏污染区人员至上风处，并立即进行隔离，严格限制出入。建议应急处理人员戴正压自给式呼吸器，穿防毒服。从上风处进入现场。尽可能切断泄漏源。合理通风，加速扩散。喷雾状水稀释、溶解。构筑围堤或挖坑收容产生的大量废水。如有可能，将残余气或漏出气用排风机送至水洗塔或与塔相连的通风橱内。漏气容器要妥善处理，修复、检验后再用。</emergency_procedures>
+      <environmental_precautions>防止泄漏物进入下水道、地表水和地下水。避免对环境造成污染。</environmental_precautions>
+      <cleaning_methods>用大量水冲洗泄漏区域，将冲洗水收集后按照危险废物处理。对污染区域进行通风，直至气体完全消散。</cleaning_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
@@ -135,13 +137,14 @@
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>22038</dangerous_goods_number>
+      <dangerous_goods_number>UN 2422</dangerous_goods_number>
       <un_number>2422</un_number>
-      <imdg_page>2167</imdg_page>
-      <packaging_mark>5</packaging_mark>
+      <proper_shipping_name>OCTAFLUOROISOBUTYLENE</proper_shipping_name>
+      <transportation_hazard_class>第2.2类 不燃气体</transportation_hazard_class>
       <packing_group>Ⅲ</packing_group>
-      <packaging_method>钢瓶包装，包装容器必须密封，防止泄漏。包装容器上应有符合规定的危险货物标志。</packaging_method>
-      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。严禁与易燃物、可燃物、氧化剂、还原剂、酸类等混装混运。运输途中应防曝晒、雨淋、防高温。中途停留时应远离火种、热源。车辆运输完毕应进行彻底清扫。</transportation_precautions>
+      <packaging_method>钢瓶包装，包装容器必须密封，防止泄漏。包装容器上应有符合规定的危险货物标志。包装类别：Ⅲ。</packaging_method>
+      <marine_pollutant>否</marine_pollutant>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。严禁与易燃物、可燃物、氧化剂、还原剂、酸类等混装混运。运输途中应防曝晒、雨淋、防高温。中途停留时应远离火种、热源。车辆运输完毕应进行彻底清扫。铁路运输时要禁止溜放。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>

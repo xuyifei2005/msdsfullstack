@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>624-17-9</cas_number>
-      <msds_code>MSDS#1434</msds_code>
+      <msds_code>MSDS-624-17-9</msds_code>
       <product_name>壬二酸二乙酯</product_name>
       <product_alias>无资料</product_alias>
       <product_english_name>Diethyl azelate</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -88,7 +88,7 @@
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>可燃</flammability>
       <appearance>淡黄色液体。</appearance>
       <main_uses>用作增塑剂、润滑剂、气相色谱固定液。</main_uses>
       <other_properties>无资料</other_properties>
@@ -132,17 +132,25 @@
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <dangerous_goods_number>UN 3082</dangerous_goods_number>
+      <un_number>UN 3082</un_number>
       <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group>无资料</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_mark>第9类杂项危险物质和物品</packaging_mark>
+      <packing_group>III</packing_group>
+      <packaging_method>塑料袋或二层牛皮纸袋外全开口或中开口钢桶；塑料袋外木板箱或胶合板箱；塑料袋外瓦楞纸箱</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。装运本品的车辆排气管须有阻火装置。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、酸类、碱类、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录（2015版）》</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>《化学品安全技术说明书 内容和项目顺序》(GB/T 16483-2008)、《化学品分类和危险性公示 通则》(GB 13690-2009)、《危险货物分类和品名编号》(GB 6944-2012)</references>
+      <revision_history>第1版</revision_history>
+      <preparation_info>编制单位：无资料；编制日期：无资料</preparation_info>
+      <disclaimer>本安全技术说明书提供的信息基于现有知识和资料，仅供参考。使用者应结合实际情况进行风险评估，并采取适当的安全措施。对于因使用本信息而造成的任何损失，编制方不承担责任。</disclaimer>
+      <abbreviations>MSDS：Material Safety Data Sheet（化学品安全技术说明书）；CAS：Chemical Abstracts Service（化学文摘社）；LD50：半数致死量；LC50：半数致死浓度；TLV：阈值限值</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

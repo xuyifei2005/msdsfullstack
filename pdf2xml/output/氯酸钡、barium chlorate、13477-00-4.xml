@@ -4,28 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>13477-00-4</cas_number>
-      <msds_code>MSDS#563</msds_code>
+      <msds_code>MSDS-13477-00-4</msds_code>
       <product_name>氯酸钡</product_name>
       <product_alias>无资料</product_alias>
-      <product_english_name>bariumchlorate</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_english_name>barium chlorate</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第5.1类氧化剂</hazard_category>
-      <exposure_routes>吸入食入
-属可溶性钡盐，有较高毒性。吸入后刺激上呼吸道。眼和皮肤接触有刺激性。口服可引起
-腹痛、恶心、呕吐、腹泻、脉缓、面色苍白、紫绀、呼吸困难、流涎、惊厥、昏迷、胃</exposure_routes>
-      <health_hazards>肠出血、进行性肌麻痹、心律紊乱等。可致死。慢性影响：长期接触钡化合物的工人，
-可有无力、气促、流涎、口腔粘膜肿胀、糜烂、鼻炎、结膜炎、腹泻、心动过速、血压增
-高、脱发等。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品助燃，高毒，具刺激性。</fire_explosion_hazards>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>属可溶性钡盐，有较高毒性。吸入后刺激上呼吸道。眼和皮肤接触有刺激性。口服可引起腹痛、恶心、呕吐、腹泻、脉缓、面色苍白、紫绀、呼吸困难、流涎、惊厥、昏迷、胃肠出血、进行性肌麻痹、心律紊乱等。可致死。慢性影响：长期接触钡化合物的工人，可有无力、气促、流涎、口腔粘膜肿胀、糜烂、鼻炎、结膜炎、腹泻、心动过速、血压增高、脱发等。</health_hazards>
+      <environmental_hazards>对水生生物有害。该物质对环境可能有危害，对水体应给予特别注意。</environmental_hazards>
+      <fire_explosion_hazards>强氧化剂。与可燃物、还原剂、有机物等混合可形成爆炸性混合物。与硫酸接触容易发生爆炸。急剧加热时可发生爆炸。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -39,10 +35,10 @@
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>脱去污染的衣着，用肥皂水和清水彻底冲洗皮肤。</skin_contact>
-      <eye_contact>提起眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即</eye_contact>
-      <inhalation>进行人工呼吸。就医。</inhalation>
-      <ingestion>饮足量温水，催吐。用2％～5％硫酸钠溶液洗胃，导泻。就医。</ingestion>
+      <skin_contact>脱去污染的衣着，用肥皂水和清水彻底冲洗皮肤。就医。</skin_contact>
+      <eye_contact>提起眼睑，用流动清水或生理盐水冲洗。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸。就医。</inhalation>
+      <ingestion>饮足量温水，催吐。用2%～5%硫酸钠溶液洗胃，导泻。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
@@ -57,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>热源，工作场所严禁吸烟。远离易燃、可燃物。避免产生粉尘。避免与还原剂、酸类、醇</handling_precautions>
-      <storage_precautions>戴自吸过滤式防尘口罩，戴化学安全防护眼镜，穿胶布防毒衣，戴橡胶手套。远离火种、 类接触。搬运时要轻装轻卸，防止包装及容器损坏。禁止震动、撞击和摩擦。配备相应品 种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。 储存于阴凉、通风的库房。远离火种、热源。包装密封。应与易（可）燃物、还原剂、酸 类、醇类、食用化学品分开存放，切忌混储。储区应备有合适的材料收容泄漏物。应严格 执行极毒物品“五双”管理制度。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。远离火种、热源。工作场所严禁吸烟。远离易燃、可燃物。避免产生粉尘。避免与还原剂、酸类、醇类接触。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。包装密封。应与易（可）燃物、还原剂、酸类、醇类、食用化学品分开存放，切忌混储。储区应备有合适的材料收容泄漏物。应严格执行极毒物品"五双"管理制度。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -83,19 +79,19 @@
       <flash_point>无意义</flash_point>
       <relative_density>3.18</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>B</molecular_formula>
-      <molecular_weight>322.29</molecular_weight>
+      <solubility>易溶于水，不溶于乙醇</solubility>
+      <molecular_formula>Ba(ClO3)2</molecular_formula>
+      <molecular_weight>304.23</molecular_weight>
       <main_components>纯品</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无意义</critical_temperature>
       <ignition_temperature>无意义</ignition_temperature>
       <autoignition_temperature>无意义</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>无色棱形结晶或白色粉末。</appearance>
-      <main_uses>用作分析试剂，也用于烟花和炸药的制造。</main_uses>
-      <other_properties>250</other_properties>
+      <flammability>无意义</flammability>
+      <appearance>无色棱形结晶或白色粉末</appearance>
+      <main_uses>用作分析试剂，也用于烟花和炸药的制造</main_uses>
+      <other_properties>无资料</other_properties>
       <heat_of_combustion>无意义</heat_of_combustion>
       <critical_pressure>无意义</critical_pressure>
       <explosive_upper_limit>无意义</explosive_upper_limit>
@@ -146,7 +142,13 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>国内化学品安全管理法规：危险化学品安全管理条例、易制毒化学品管理条例、剧毒化学品购买和公路运输许可证件管理办法。国际法规：联合国关于危险货物运输的建议书（橙皮书）、国际海运危险货物规则（IMDG Code）。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standard>GB/T 16483-2008</reference_standard>
+      <modification_notes>无</modification_notes>
+      <abbreviations>无</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

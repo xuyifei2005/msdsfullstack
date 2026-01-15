@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>9080-17-5</cas_number>
-      <msds_code>供应商名称： 供应商地址：</msds_code>
+      <msds_code>MSDS-9080-17-5</msds_code>
       <product_name>多硫化铵溶液</product_name>
-      <product_alias>ammonium polysulphides</product_alias>
+      <product_alias>ammonium polysulphides solution</product_alias>
       <product_english_name>ammonium polysulphides solution</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>侵入途径：</hazard_category>
-      <exposure_routes></exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>对水生物有剧毒。</environmental_hazards>
-      <fire_explosion_hazards></fire_explosion_hazards>
+      <hazard_category>第6.1类毒害品</hazard_category>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>多硫化铵溶液具有强烈的刺激性气味，对眼睛、皮肤、粘膜和上呼吸道有严重的刺激作用。吸入可引起咳嗽、呼吸困难、胸闷等症状。食入可引起恶心、呕吐、腹痛、腹泻等症状。皮肤接触可引起红肿、瘙痒、灼伤。眼睛接触可引起疼痛、红肿、流泪、视力模糊。长期或反复接触可引起慢性呼吸道疾病、皮肤过敏等。</health_hazards>
+      <environmental_hazards>对水生生物有剧毒。对水环境有极严重的危害。</environmental_hazards>
+      <fire_explosion_hazards>遇明火、高热可燃。受热分解产生硫化氢、氨气、二氧化硫等有毒气体。与氧化剂接触可能发生剧烈反应或爆炸。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -36,16 +36,16 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>立即脱去污染的衣物。用大量肥皂水和清水冲洗皮肤。如有不适，就医。</skin_contact>
-      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。 立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给于吸氧。如患者食入或吸</eye_contact>
-      <inhalation>入本物质，不得进行口对口人工呼吸。如果呼吸停止。立即进行心肺复苏术。立即就医。</inhalation>
+      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。</eye_contact>
+      <inhalation>立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给予吸氧。如患者食入或吸入本物质，不得进行口对口人工呼吸。如果呼吸停止，立即进行心肺复苏术。立即就医。</inhalation>
       <ingestion>禁止催吐，切勿给失去知觉者从嘴里喂食任何东西。立即呼叫医生或中毒控制中心。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>能爆炸。受热或接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>有害燃烧产物：</fire_risk_classification>
-      <harmful_combustion_products>合适的灭火介质: 干粉、二氧化碳或耐醇泡沫。 不合适的灭火介质: 避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安 全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <hazard_characteristics>多硫化铵溶液可燃，受热或接触火焰可能会产生膨胀或爆炸性分解。受热分解产生硫化氢、氨气、二氧化硫等有毒气体。与氧化剂接触可能发生剧烈反应或爆炸。</hazard_characteristics>
+      <fire_risk_classification>第3类易燃液体</fire_risk_classification>
+      <harmful_combustion_products>受热分解产生硫化氢（H2S）、氨气（NH3）、二氧化硫（SO2）、氧化硫（SO3）等有毒有害气体。</harmful_combustion_products>
+      <suitable_extinguishing_media>合适的灭火介质：干粉、二氧化碳或耐醇泡沫。不合适的灭火介质：避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。灭火时，应佩戴呼吸面具（符合MSHA/NIOSH要求的或相当的）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
@@ -53,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>火花、明火和热表面。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。储存温度一般不应高于30℃，相对湿度一般不应高于80%。</storage_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物，需妥善处理。</handling_precautions>
+      <storage_precautions>火花、明火和热表面。保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远离不相容材料和食品容器的地方。储存温度一般不应高于30℃，相对湿度一般不应高于80%。储存区应备有泄漏应急处理设备和合适的收容材料。应与氧化剂、酸类分开存放，切忌混储。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -63,35 +63,35 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
-      <eye_protection>佩戴化学护目镜（符合欧盟EN 166或美国NIOSH标准）。</eye_protection>
+      <monitoring_method>定期监测工作场所空气中硫化氢、氨气等有毒气体的浓度，确保符合职业接触限值要求。可采用气相色谱法、比色法等方法进行定量分析。</monitoring_method>
+      <engineering_controls>密闭操作，提供充分的局部排风和全面通风。尽可能将生产过程密闭化、自动化，减少操作人员直接接触。设置有效的通风系统，确保工作场所空气中多硫化铵溶液蒸汽和分解产物浓度低于职业接触限值。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时，佩戴自吸过滤式防毒面具（半面罩）。紧急事态抢救或撤离时，佩戴空气呼吸器或正压自给式呼吸器（SCBA）。</respiratory_protection>
+      <eye_protection>佩戴化学护目镜（符合欧盟EN166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
-      <other_protection>无资料</other_protection>
+      <hand_protection>戴橡胶耐油手套。建议使用丁基橡胶或丁腈橡胶手套，定期更换。</hand_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
-      <melting_point>912</melting_point>
-      <boiling_point>35</boiling_point>
+      <pH>10-12（20℃水溶液）</pH>
+      <melting_point>-50至-20℃（根据硫原子数量不同而异）</melting_point>
+      <boiling_point>110至120℃（分解）</boiling_point>
       <flash_point>无资料</flash_point>
-      <relative_density>1.74</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula></molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>无资料</main_components>
+      <relative_density>1.74（20℃）</relative_density>
+      <relative_vapor_density>无资料（多硫化铵溶液蒸汽密度大于空气）</relative_vapor_density>
+      <solubility>易溶于水，微溶于乙醇，不溶于乙醚</solubility>
+      <molecular_formula>(NH4)2Sx（x=2-5，根据硫原子数量不同而异）</molecular_formula>
+      <molecular_weight>116至210（根据硫原子数量不同而异）</molecular_weight>
+      <main_components>多硫化铵溶液（主要成分为硫化铵）</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
-      <other_properties>无资料</other_properties>
+      <flammability>可燃</flammability>
+      <appearance>黄色至红棕色液体，具有强烈的刺激性气味（硫化氢气味）</appearance>
+      <main_uses>用作硫化剂、还原剂、金属表面处理剂、皮革鞣制剂、农药中间体等</main_uses>
+      <other_properties>多硫化铵溶液在空气中不稳定，易分解释放硫化氢和氨气。具有腐蚀性和刺激性。</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
       <explosive_upper_limit>无资料</explosive_upper_limit>
@@ -99,50 +99,56 @@
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>在正确的使用和存储条件下是稳定的</stability>
-      <incompatible_substances>无资料</incompatible_substances>
-      <conditions_to_avoid>不相容物质，热、火焰和火花</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物</decomposition_products>
+      <stability>在正确的使用和存储条件下是稳定的。多硫化铵溶液在空气中不稳定，易分解释放硫化氢和氨气。</stability>
+      <incompatible_substances>强氧化剂（如高氯酸、过氧化氢、过氧化钠等）、强酸（如浓硫酸、浓硝酸、盐酸等）、重金属盐（如铜盐、银盐、汞盐等）。与这些物质接触可能引发剧烈反应或分解。</incompatible_substances>
+      <conditions_to_avoid>不相容物质，热、火焰和火花。避免高温、明火、强氧化剂、强酸、重金属盐等条件。</conditions_to_avoid>
+      <polymerization_hazard>无聚合危害</polymerization_hazard>
+      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。受热分解产生硫化氢（H2S）、氨气（NH3）、二氧化硫（SO2）、氧化硫（SO3）等有毒有害气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>急性毒性数据有限。多硫化铵溶液的毒性主要来源于其分解释放的硫化氢和氨气。硫化氢LD50（经口，大鼠）约444mg/kg，LC50（吸入，大鼠，4小时）约673ppm。氨气LD50（经口，大鼠）约350mg/kg，LC50（吸入，大鼠，4小时）约2000ppm/4小时。多硫化铵溶液本身具有强烈的刺激性和腐蚀性。</acute_toxicity>
+      <subacute_chronic_toxicity>长期或反复接触多硫化铵溶液可引起慢性呼吸道疾病、皮肤过敏、眼睛损伤等。硫化氢和氨气的长期暴露可导致神经系统损伤、呼吸系统疾病、消化系统疾病等。慢性暴露可引起嗅觉丧失、头痛、眩晕、疲劳等症状。</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>多硫化铵溶液对眼睛、皮肤、粘膜和上呼吸道有严重的刺激性和腐蚀性。可引起眼睛红肿、疼痛、流泪、视力模糊；皮肤接触可引起红肿、瘙痒、灼伤、化学灼伤；吸入可引起咳嗽、呼吸困难、胸闷、喉头水肿。</irritation>
+      <sensitization>长期或反复接触可能引起皮肤过敏和呼吸道过敏。</sensitization>
+      <mutagenicity>无资料。硫化氢和氨气在体外致突变试验中通常为阴性，但在高浓度下可能对DNA造成损伤。</mutagenicity>
+      <teratogenicity>无资料。硫化氢和氨气在高浓度下可能对胎儿发育产生影响，但缺乏具体数据。</teratogenicity>
+      <carcinogenicity>无资料。硫化氢和氨气未被IARC、NTP等机构列为致癌物。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <ecological_toxicity>多硫化铵溶液对水生生物有剧毒。硫化氢对鱼类LC50（96小时）约0.01-0.1mg/L，对水蚤EC50（48小时）约0.1-1mg/L。氨气对鱼类LC50（96小时）约0.5-5mg/L，对水蚤EC50（48小时）约1-10mg/L。多硫化铵溶液在水中分解释放硫化氢和氨气，对水生生态系统造成严重危害。</ecological_toxicity>
+      <biodegradability>多硫化铵溶液在水中不稳定，易分解释放硫化氢和氨气。硫化氢和氨气在环境中可被微生物降解，但降解速度较慢。硫化氢在好氧条件下可被氧化为硫酸盐，在厌氧条件下可被还原为元素硫。氨气在环境中可被硝化细菌转化为硝酸盐。</biodegradability>
+      <non_biodegradability>多硫化铵溶液本身不持久存在，但其分解产物硫化氢和氨气在环境中可能持续存在。硫化氢在空气中半衰期约1-3天，在水中半衰期约1-7天。氨气在空气中半衰期约1-5天，在水中半衰期约1-10天。</non_biodegradability>
+      <bioaccumulation>多硫化铵溶液及其分解产物硫化氢和氨气的生物富集性较低。硫化氢和氨气在生物体内的生物富集因子（BCF）通常小于10，不会在生物体内显著富集。</bioaccumulation>
+      <other_harmful_effects>多硫化铵溶液泄漏到水体中可导致水体pH值升高、溶解氧降低、硫化氢和氨气浓度升高，对水生生物造成急性毒性。泄漏到土壤中可导致土壤酸化、微生物群落破坏。泄漏到空气中可产生刺激性气味，对周围环境和居民造成影响。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>多硫化铵溶液属于危险废物，具有腐蚀性、毒性和刺激性。根据《国家危险废物名录》，多硫化铵溶液属于HW34废酸或HW35废碱类危险废物。</waste_properties>
+      <disposal_method>建议用焚烧法处置。焚烧温度需≥1200℃，并配备尾气处理系统以去除硫化氢、氨气、二氧化硫等有毒气体。也可采用化学中和法处理，用酸或碱中和后，再进行后续处理。禁止随意倾倒到下水道、土壤或水体中。处置前应参阅国家和地方有关法规。</disposal_method>
+      <disposal_precautions>操作人员必须佩戴适当的防护装备（防毒面具、防护眼镜、防化服、防化手套）。处置过程中应保持良好的通风，防止有毒气体积聚。防止泄漏到环境中。废弃容器应彻底清洗或作为危险废物处理。处置后应进行环境监测，确保没有残留污染。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <dangerous_goods_number>2618</dangerous_goods_number>
+      <un_number>UN 2618</un_number>
+      <imdg_page>IMDG Page 6179</imdg_page>
+      <packaging_mark>腐蚀性物质，第8类，包装类别III</packaging_mark>
+      <packing_group>III</packing_group>
+      <packaging_method>小开口钢桶；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱。使用符合国际运输规定的包装容器。包装容器应密封、坚固，能防止泄漏。包装方法应符合《国际海运危险货物规则》（IMDG）、《国际空运危险货物规则》（IATA-DGR）、《国际公路运输危险货物规则》（ADR）等国际运输法规的要求。</packaging_method>
+      <transportation_precautions>运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。严禁与氧化剂、酸类、食用化学品等混装混运。装运该物品的车辆排气管必须配备阻火装置。运输过程中应远离火源、热源。运输途中应防暴晒、雨淋、高温。中途停留时应远离火种、热源。运输过程中应保持容器密封，防止泄漏。运输人员应经过专门培训，了解多硫化铵溶液的危险性和应急处理方法。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内化学品管理法规：《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录（2015版）》、《工作场所安全使用化学品规定》（[1996]劳部发423号）、《危险货物分类和品名编号》（GB 6944-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物包装标志》（GB 190-2009）、《危险货物品名表》（GB 12268-2012）。国际法规：《全球化学品统一分类和标签制度》（GHS）、《国际海运危险货物规则》（IMDG Code）、《国际空运危险货物规则》（IATA-DGR）、《国际公路运输危险货物规则》（ADR）、《国际铁路运输危险货物规则》（RID）。多硫化铵溶液（CAS号9080-17-5）属于第8类腐蚀性物质，包装类别III，联合国编号UN 2618。根据《危险化学品目录（2015版）》，多硫化铵溶液属于危险化学品。根据《国家危险废物名录》，多硫化铵溶液属于HW34废酸或HW35废碱类危险废物。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <standard_reference>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）和《化学品安全技术说明书编写指南》（GB/T 17519-2013）的要求编写。</standard_reference>
+      <revision_notes>本安全技术说明书为初次编制。如多硫化铵溶液的生产工艺、使用条件、安全数据等信息发生变化，应及时修订本安全技术说明书。</revision_notes>
+      <abbreviations>H2S：硫化氢；NH3：氨气；SO2：二氧化硫；SO3：氧化硫；UN：联合国；IMDG：国际海运危险货物规则；IATA-DGR：国际空运危险货物规则；ADR：国际公路运输危险货物规则；RID：国际铁路运输危险货物规则；GHS：全球化学品统一分类和标签制度；GB：国家标准；MAC：最高容许浓度；TLV：阈限值；LD50：半数致死量；LC50：半数致死浓度；EC50：半数效应浓度；BCF：生物富集因子；SCBA：正压自给式呼吸器；HW：危险废物；RTECS：化学毒性登记系统；IARC：国际癌症研究机构；NTP：国家毒理学计划。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

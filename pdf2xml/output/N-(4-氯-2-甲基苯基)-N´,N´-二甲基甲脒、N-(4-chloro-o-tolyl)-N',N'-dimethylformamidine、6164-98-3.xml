@@ -4,10 +4,10 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>6164-98-3</cas_number>
-      <msds_code>MSDS#828</msds_code>
-      <product_name>N-(4-氯-2-甲基苯基)-N´,N´-二甲</product_name>
+      <msds_code>MSDS-6164-98-3</msds_code>
+      <product_name>N-(4-氯-2-甲基苯基)-N´,N´-二甲基甲脒</product_name>
       <product_alias>杀虫脒</product_alias>
-      <product_english_name>N-(4-chloro-o-tolyl)-N',N'-dime</product_english_name>
+      <product_english_name>N-(4-chloro-o-tolyl)-N',N'-dimethylformamidine</product_english_name>
       <company_name>无资料</company_name>
       <company_address>无资料</company_address>
       <contact_phone>无资料</contact_phone>
@@ -80,7 +80,7 @@
       <relative_density>1.1</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
       <solubility>不溶于水，可溶于有机溶剂</solubility>
-      <molecular_formula>C10H13C</molecular_formula>
+      <molecular_formula>C10H13ClN2</molecular_formula>
       <molecular_weight>196.68</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
@@ -142,7 +142,7 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>国内法规：危险化学品安全管理条例（国务院令第591号）、易制毒化学品管理条例、农药管理条例。国际法规：欧盟REACH法规、国际海运危险货物规则（IMDG Code）。</regulatory_info>
     </regulatory>
     <!-- 第十六部分：其他信息 -->
     <other_info>

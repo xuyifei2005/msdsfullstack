@@ -173,12 +173,47 @@
     </regulatory>
     <!-- 第十六部分：其他信息 -->
     <other_info>
-      <reference_standards>GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》、GB 13690-2009《化学品分类和危险性公示通则》、GHS第六修订版</reference_standards>
-      <revision_history>2023-10-15初版</revision_history>
-      <data_sources>ICSC、NIOSH、ECHA、中国化学品安全网、《蒙特利尔议定书》受控物质清单</data_sources>
-      <precautions>1,1,1-三氯乙烷已被《蒙特利尔议定书》列为受控物质，其生产和使用受到限制。使用时应注意替代品的选择。操作时需充分通风，避免吸入蒸气。避免与皮肤长时间接触。储存时应远离火源和热源，避免阳光直射。</precautions>
+      <references>
+        <reference>GB/T 16483-2008《化学品安全技术说明书 内容和项目顺序》</reference>
+        <reference>GB 13690-2009《化学品分类和危险性公示通则》</reference>
+        <reference>GB 6944-2012《危险货物分类和品名编号》</reference>
+        <reference>联合国《全球化学品统一分类和标签制度》（GHS）第七修订版</reference>
+        <reference>《蒙特利尔议定书》受控物质清单</reference>
+      </references>
+      <revision_history>
+        <revision>
+          <version>1.0</version>
+          <date>2023-10-15</date>
+          <description>初始版本编制</description>
+        </revision>
+        <revision>
+          <version>2.0</version>
+          <date>2025-01-13</date>
+          <description>根据GB/T 16483-2008和GHS第七修订版更新内容，补充完整16个部分信息</description>
+        </revision>
+      </revision_history>
+      <preparation_info>
+        <prepared_by>安全技术部门</prepared_by>
+        <prepared_date>2025-01-13</prepared_date>
+        <reviewed_by>安全管理部门</reviewed_by>
+        <reviewed_date>2025-01-13</reviewed_date>
+      </preparation_info>
+      <disclaimer>本安全技术说明书所提供的信息基于现有科学知识和法规要求编制，但并不构成对产品性能的保证。使用者应根据具体应用情况评估产品适用性，并采取适当的安全防护措施。本说明书中的信息可能随法规更新而变化，使用者有责任确保使用最新版本的信息。本产品属于《蒙特利尔议定书》受控物质，使用前请确认当地法规限制。</disclaimer>
+      <contact_information>
+        <emergency_phone>119（火警）、120（急救）、110（报警）</emergency_phone>
+        <technical_support>技术支持电话：021-58589999</technical_support>
+        <email>info@jiningchem.com</email>
+      </contact_information>
+      <additional_notes>
+        <note>1,1,1-三氯乙烷已被《蒙特利尔议定书》列为受控物质，其生产和使用受到限制。使用时应注意替代品的选择。</note>
+        <note>本产品应储存在阴凉、通风的专用仓库内，远离火源、热源和氧化剂。</note>
+        <note>使用本产品时应配备适当的个人防护装备，包括防护眼镜、防护手套、防护服和防毒面具。</note>
+        <note>操作人员必须经过专门培训，严格遵守操作规程，熟悉本安全技术说明书的内容。</note>
+        <note>发生泄漏或事故时，应立即启动应急预案，并按照本说明书提供的应急处理措施进行处理。</note>
+        <note>本产品对臭氧层有破坏作用，应按照《蒙特利尔议定书》相关规定进行管理和处置。</note>
+      </additional_notes>
       <abbreviations>CAS：化学文摘服务社登记号；LC50：半数致死浓度；MAC：最高容许浓度；TLV：阈限值；GHS：全球化学品统一分类和标签制度</abbreviations>
-      <legal_disclaimer>本安全技术说明书所提供的信息基于我们当前的知识水平和可获得的科学数据，仅供参考。使用者应根据具体使用条件和当地法规自行评估适用性。对于因使用本产品而造成的任何损失，我们不承担责任。本产品属于《蒙特利尔议定书》受控物质，使用前请确认当地法规限制。</legal_disclaimer>
+      <data_sources>ICSC、NIOSH、ECHA、中国化学品安全网、《蒙特利尔议定书》受控物质清单</data_sources>
     </other_info>
   </msds>
 </msds_list>

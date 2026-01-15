@@ -9,10 +9,10 @@
       <product_alias>六氢吡啶；氮己环</product_alias>
       <product_english_name>Piperidine</product_english_name>
       <company_name>无资料</company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
       <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
@@ -73,30 +73,30 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
-      <melting_point>-7</melting_point>
-      <boiling_point>106</boiling_point>
-      <flash_point>16</flash_point>
-      <relative_density>0.86</relative_density>
-      <relative_vapor_density>3.0</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C5H11N</molecular_formula>
-      <molecular_weight>85.15</molecular_weight>
-      <main_components>纯品</main_components>
-      <saturated_vapor_pressure>5.33(29.2℃)</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability>易燃</flammability>
-      <appearance>无色澄清液体，有类似氨的气味。</appearance>
-      <main_uses>用作溶剂、有机合成中间体、环氧树脂交联剂、缩合催化剂等。</main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>3455.2</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
-    </physical_chemical>
+          <pH>无资料</pH>
+          <melting_point>-7</melting_point>
+          <boiling_point>106</boiling_point>
+          <flash_point>16</flash_point>
+          <relative_density>0.86</relative_density>
+          <relative_vapor_density>3.0</relative_vapor_density>
+          <solubility>混溶于水、乙醇、乙醚</solubility>
+          <molecular_formula>C5H11N</molecular_formula>
+          <molecular_weight>85.15</molecular_weight>
+          <main_components>纯品</main_components>
+          <saturated_vapor_pressure>5.33(29.2℃)</saturated_vapor_pressure>
+          <log_kow>无资料</log_kow>
+          <critical_temperature>无资料</critical_temperature>
+          <ignition_temperature>无资料</ignition_temperature>
+          <autoignition_temperature>无资料</autoignition_temperature>
+          <flammability>易燃</flammability>
+          <appearance>无色澄清液体，有类似氨的气味。</appearance>
+          <main_uses>用作溶剂、有机合成中间体、环氧树脂交联剂、缩合催化剂等。</main_uses>
+          <other_properties>无资料</other_properties>
+          <heat_of_combustion>3455.2</heat_of_combustion>
+          <critical_pressure>无资料</critical_pressure>
+          <explosive_upper_limit>无资料</explosive_upper_limit>
+          <explosive_lower_limit>无资料</explosive_lower_limit>
+        </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>稳定</stability>
@@ -119,27 +119,27 @@
     <!-- 第十二部分：生态学资料 -->
     <ecological>
       <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
+      <biodegradability>MITI-I测试，初始浓度100ppm，污泥浓度30ppm，2周后降解66.9%。</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
       <other_harmful_effects>工作现场严禁吸烟。工作后，淋浴更衣。注意个人清洁卫生。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
+      <waste_properties>危险废物</waste_properties>
       <disposal_method>建议用焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>32106</dangerous_goods_number>
-      <un_number>2401</un_number>
-      <imdg_page>3272</imdg_page>
-      <packaging_mark>7</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
-    </transportation>
+          <dangerous_goods_number>32106</dangerous_goods_number>
+          <un_number>2401</un_number>
+          <imdg_page>3272</imdg_page>
+          <packaging_mark>7</packaging_mark>
+          <packing_group>II</packing_group>
+          <packaging_method>小开口钢桶;安瓿瓶外普通木箱;螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶(罐)外普通木箱</packaging_method>
+          <transportation_precautions>铁路运输时应严格按照铁道部《危险货物运输规则》中的危险货物配装表进行配装。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。</transportation_precautions>
+        </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
       <regulatory_info>危险化学品安全管理条例（国务院令第591号），工作场所安全使用化学品规定（[1996]劳部发423号）等法规，针对危险化学品的安全使用、生产、储存、运输、装卸等方面均作了相应规定；常用危险化学品的分类及标志（GB13690-92）将该物质划为第3.2类中闪点易燃液体。</regulatory_info>

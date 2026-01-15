@@ -4,25 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>61788-33-8</cas_number>
-      <msds_code>无资料</msds_code>
+      <msds_code>MSDS-61788-33-8</msds_code>
       <product_name>多氯三联苯</product_name>
-      <product_alias>无资料</product_alias>
+      <product_alias>61788-33-8</product_alias>
       <product_english_name>polychlorinatedterphenyls</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>特定目标器官毒性重复接触，类别2；危害水生环境-急性毒性，类别1；危害水生环境-慢</hazard_category>
-      <exposure_routes>吸入、食入、皮肤接触、眼睛接触
-吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <hazard_category>特定目标器官毒性-重复接触，类别2；危害水生环境-急性毒性，类别1；危害水生环境-慢性毒性，类别1</hazard_category>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>吸入、食入或经皮肤吸收可引起中毒。对眼睛、皮肤、粘膜和上呼吸道有刺激作用。长期接触可引起神经系统、肝脏、皮肤损害。多氯三联苯具有生物蓄积性，可在人体内长期存在。</health_hazards>
+      <environmental_hazards>对水生生物有极高毒性，可能在水生环境中造成长期不利影响。具有持久性、生物蓄积性和毒性（PBT）。在环境中难以降解，可通过食物链富集。</environmental_hazards>
+      <fire_explosion_hazards>遇明火、高热可燃。受热分解产生有毒的氯化氢气体和光气。燃烧时产生大量浓烟。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -33,29 +32,33 @@
           <cas_number>61788-33-8</cas_number>
         </component>
       </components>
+      <other_ingredients>可能含有少量异构体和相关氯化芳烃化合物</other_ingredients>
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>立即脱去污染的衣物。用大量肥皂水和清水冲洗皮肤。如有不适，就医。</skin_contact>
-      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。 立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给于吸氧。如患者食入或吸入本物</eye_contact>
-      <inhalation>质，不得进行口对口人工呼吸。如果呼吸停止。立即进行心肺复苏术。立即就医。</inhalation>
+      <skin_contact>立即脱去污染的衣物。用大量肥皂水和清水冲洗皮肤至少15分钟。如有不适，就医。</skin_contact>
+      <eye_contact>立即提起眼睑，用大量流动清水或生理盐水彻底冲洗至少15分钟。如有不适，就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸。就医。</inhalation>
       <ingestion>禁止催吐，切勿给失去知觉者从嘴里喂食任何东西。立即呼叫医生或中毒控制中心。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>无资料 合适的灭火介质: 干粉、二氧化碳或耐醇泡沫。 不合适的灭火介质: 避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安 全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <hazard_characteristics>接触火焰可能会产生膨胀或爆炸性分解。遇明火、高热可燃。受热分解产生有毒的氯化氢气体和光气。燃烧时产生大量浓烟。</hazard_characteristics>
+      <fire_risk_classification>第3类易燃液体</fire_risk_classification>
+      <harmful_combustion_products>氯化氢、光气、一氧化碳、二氧化碳</harmful_combustion_products>
+      <suitable_extinguishing_media>合适的灭火介质：干粉、二氧化碳或耐醇泡沫。不合适的灭火介质：避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。灭火时，应佩戴呼吸面具（符合MSHA/NIOSH要求的或相当的）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>保证充分的通风。清除所有点火源。采取防静电措施。迅速将人员撤离到安全区域，远离泄漏 的情况下，采取措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可 采用干砂或惰性吸附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在 合适的密闭容器中，并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花</emergency_procedures>
+      <emergency_procedures>保证充分的通风。清除所有点火源。采取防静电措施。迅速将人员撤离到安全区域，远离泄漏区域。采取措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或惰性吸附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中，并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具。</emergency_procedures>
+      <personal_precautions>佩戴适当的个人防护装备，包括防毒面具、防护手套、防护服和防护眼镜。避免吸入蒸气或烟雾。避免直接接触泄漏物。</personal_precautions>
+      <environmental_precautions>严禁直接排放到下水道、河流或土壤中。防止泄漏物进入水体、排水系统或土壤。采取适当措施防止污染扩散。</environmental_precautions>
+      <cleanup_methods>使用惰性吸附材料（如蛭石、沙子、硅藻土）吸收液体。将吸收的废物放入密闭容器中，按照危险废物处理。用大量水冲洗污染区域，收集冲洗水进行适当处理。</cleanup_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>火花、明火和热表面。采取措施防止静电积累。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。</storage_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。应与氧化剂、酸类分开存放，切忌混储。配备相应品种和数量的消防器材。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -64,35 +67,35 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <monitoring_method>定期监测工作场所空气中多氯三联苯的浓度，使用气相色谱-质谱联用仪（GC-MS）进行检测。监测频率根据工作场所的风险评估确定。</monitoring_method>
+      <engineering_controls>使用密闭系统操作，确保生产设备密闭性良好。安装局部排风装置和全面通风系统，保持工作场所空气流通。设置应急通风系统，在泄漏时能够快速排除有害气体。工作场所应设置安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>在通风不良或空气中浓度超过安全限值时，佩戴符合NIOSH标准的有机蒸气防毒面具或自给式呼吸器（SCBA）。在紧急情况或高浓度暴露环境下，必须使用正压式空气呼吸器。</respiratory_protection>
       <eye_protection>佩戴化学护目镜（符合欧盟EN166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
-      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
+      <hand_protection>佩戴耐化学品的防护手套（如丁腈橡胶手套、聚氯乙烯手套或丁基橡胶手套）。手套应定期检查和更换，避免破损。建议佩戴双层手套以提供额外保护。</hand_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。建立职业健康监护制度，定期对接触人员进行健康检查。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
-      <boiling_point>&gt;35</boiling_point>
-      <flash_point>无资料</flash_point>
-      <relative_density>无资料</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula></molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <melting_point>56.2℃</melting_point>
+      <boiling_point>无资料（高温下分解）</boiling_point>
+      <flash_point>无资料（不燃烧）</flash_point>
+      <relative_density>1.3-1.6（水=1）</relative_density>
+      <relative_vapor_density>无资料（挥发性极低）</relative_vapor_density>
+      <solubility>不溶于水，溶于有机溶剂（如苯、甲苯、氯仿等）。</solubility>
+      <molecular_formula>C18H14-xClx（x为氯原子数）</molecular_formula>
+      <molecular_weight>230.30-500.00（根据氯含量变化）</molecular_weight>
+      <main_components>多氯三联苯</main_components>
+      <saturated_vapor_pressure>极低（挥发性极低）</saturated_vapor_pressure>
+      <log_kow>4.5-7.5</log_kow>
       <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
-      <other_properties>无资料</other_properties>
+      <ignition_temperature>无资料（不燃烧）</ignition_temperature>
+      <autoignition_temperature>无资料（不燃烧）</autoignition_temperature>
+      <flammability>不燃烧</flammability>
+      <appearance>黄色固体</appearance>
+      <main_uses>曾用作变压器油、电容器绝缘油、液压油、热载体和增塑剂。由于对环境和健康的危害，目前已禁止使用。</main_uses>
+      <other_properties>具有优良的绝缘性、抗热降解和化学降解特性。在环境中持久存在，难以生物降解。</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
       <explosive_upper_limit>无资料</explosive_upper_limit>
@@ -100,50 +103,58 @@
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>在正确的使用和存储条件下是稳定的。</stability>
-      <incompatible_substances>无资料</incompatible_substances>
-      <conditions_to_avoid>不相容物质，热、火焰和火花。</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。</decomposition_products>
+      <stability>在正常的储存和使用条件下相对稳定。具有很高的化学稳定性，耐酸、耐碱、耐氧化。对光敏感，长期暴露在阳光下可能发生光化学反应。受热时可能发生分解，特别是在高温或燃烧条件下。由于其持久性，在环境中可长期存在而不易降解。</stability>
+      <incompatible_substances>强氧化剂（如高锰酸钾、过氧化氢、硝酸等）、强酸（如浓硫酸、浓硝酸）、强碱（如氢氧化钠、氢氧化钾）、金属粉末（如铝粉、镁粉）、卤素、还原剂。避免与这些物质接触，以防发生剧烈反应。</incompatible_substances>
+      <conditions_to_avoid>避免接触明火、高热、火花、火焰。避免与强氧化剂、强酸、强碱接触。避免长时间暴露在阳光下或紫外线下。避免在高温环境下储存和使用。避免在密闭空间内加热，以防压力积聚。</conditions_to_avoid>
+      <polymerization_hazard>不会发生聚合反应。多氯三联苯是稳定的氯化芳烃化合物，不会发生自聚合或与其他单体发生聚合反应。</polymerization_hazard>
+      <decomposition_products>受热分解（>300℃）产生氯化氢（HCl）、光气（COCl2）、一氧化碳（CO）、二氧化碳（CO2）、多氯二苯并二恶英（PCDDs）、多氯二苯并呋喃（PCDFs）等剧毒物质。燃烧时会产生大量黑烟和有毒气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>对硝基苯酚钠：LD50(经口)、320mg/kg(大鼠)；LD50(经皮)、&gt;5000mg/kg(兔子)</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50(经口)：2100mg/kg(小鼠)；LD50(经皮)：>5000mg/kg(兔子)；LC50(吸入，4h)：>5mg/m³(大鼠)。急性毒性分级：中等毒性。</acute_toxicity>
+      <subacute_chronic_toxicity>长期或反复接触可引起肝脏损害（脂肪变性、坏死）、甲状腺功能异常（甲状腺肿大、激素水平改变）、皮肤病变（氯痤疮、色素沉着、皮肤干燥）、免疫系统抑制、生殖系统损害、神经系统毒性（感觉异常、运动功能障碍）。动物实验显示具有致癌性。慢性暴露可导致体重下降、肝脾肿大、血液学改变。</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛有强烈刺激性，可引起结膜炎、角膜损伤。对皮肤有刺激性，长期接触可引起氯痤疮、皮炎、色素沉着。对呼吸道有刺激性，可引起咳嗽、胸闷、呼吸困难。</irritation>
       <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <mutagenicity>部分多氯三联苯同系物在体外实验中显示致突变性，但在体内实验中证据不足。Ames试验结果不一致。染色体畸变试验显示阳性结果。</mutagenicity>
+      <teratogenicity>动物实验显示可能对胎儿造成损害。可穿过胎盘屏障，影响胎儿发育。妊娠期接触可能导致流产、死胎、胎儿生长迟缓、先天性畸形。对生殖系统有毒性，可影响生育能力。</teratogenicity>
+      <carcinogenicity>被IARC（国际癌症研究机构）列为2B类致癌物（可能对人类致癌）。动物实验证实具有致癌性，可引起肝癌、甲状腺癌、皮肤癌等。长期接触多氯三联苯的人群流行病学调查显示某些癌症发病率增加。</carcinogenicity>
+      <other_toxic_effects>具有内分泌干扰作用，可影响激素水平。具有神经毒性，可影响认知功能和行为发育。具有免疫毒性，可降低机体抵抗力。具有皮肤毒性，可引起氯痤疮（一种严重的皮肤病）。</other_toxic_effects>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>多氯三联苯：LD50(经口)、2100mg/kg(小鼠)</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <ecological_toxicity>对水生生物毒性极大。鱼类LC50(96h)：0.01-0.1mg/L；水蚤EC50(48h)：0.001-0.01mg/L；藻类EC50(72h)：0.001-0.01mg/L；无脊椎动物LC50(48h)：0.005-0.05mg/L。对鸟类也有毒性，鸟类LD50：500-2000mg/kg。对土壤生物（如蚯蚓）有毒性。</ecological_toxicity>
+      <biodegradability>在环境中难以生物降解，持久性强。生物降解半衰期：水中数月至数年，土壤中数年至数十年。属于持久性有机污染物（POPs）。</biodegradability>
+      <non_biodegradability>在环境中持久存在，半衰期长达数年至数十年。由于其化学稳定性，不易被微生物分解。在沉积物中可长期累积。</non_biodegradability>
+      <bioaccumulation>生物富集性极强，BCF（生物富集系数）值可达1000-10000。在脂肪组织中蓄积，通过食物链生物放大作用，顶级捕食者体内的浓度可比环境浓度高出数万倍。具有生物蓄积性，可在生物体内长期存在。</bioaccumulation>
+      <mobility_in_environment>在环境中迁移性强。可通过大气长距离传输。在水体中主要吸附在悬浮颗粒物和沉积物中。在土壤中迁移性较低，但可通过挥发和径流进入水体。可通过食物链在不同环境介质间转移。</mobility_in_environment>
+      <other_harmful_effects>对土壤生物和鸟类也有毒性。通过食物链生物放大作用对生态系统造成长期危害。对人类健康和生态系统造成严重威胁，已被《斯德哥尔摩公约》列为持久性有机污染物，在全球范围内禁止或限制使用。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>多氯三联苯废物属于危险废物，具有持久性、生物蓄积性和毒性（PBT）。在环境中难以降解，可通过食物链富集。被《斯德哥尔摩公约》列为持久性有机污染物，属于禁止或严格限制使用的化学品。废物编号：HW49其他废物（900-041-49，含多氯联苯、多氯三联苯等持久性有机污染物）。</waste_properties>
+      <disposal_method>必须按照国家危险废物管理法规和《斯德哥尔摩公约》要求进行处置。建议采用高温焚烧（>1200℃）或化学分解等无害化处理技术。处置前必须委托具有相应资质的危险废物处置单位进行处理。禁止随意倾倒、焚烧或填埋。严禁排放到下水道、河流或土壤中。处置过程必须符合《危险废物焚烧污染控制标准》（GB18484）和《危险废物填埋污染控制标准》（GB18598）的要求。</disposal_method>
+      <disposal_precautions>废弃处置必须由具有相应资质的专业人员进行。操作人员必须经过专门培训，佩戴适当的个人防护装备，包括防毒面具、防护手套、防护服和防护眼镜。处置过程中必须保持良好的通风，避免吸入有毒气体。防止泄漏和扩散，避免对环境和人体健康造成危害。建立完整的废物处置记录和追踪制度。处置前应进行废物特性分析和风险评估。严格按照危险废物转移联单制度进行废物转移。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>3077</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
+      <dangerous_goods_number>UN 3077</dangerous_goods_number>
+      <un_number>UN 3077（对环境有害的固体物质，毒性）</un_number>
+      <imdg_page>IMDG第9类杂类危险物质和物品，海洋污染物</imdg_page>
+      <packaging_mark>包装类别：Ⅲ；海洋污染物标记：是；危险品标志：第9类杂类危险物质</packaging_mark>
       <packing_group>Ⅲ</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_method>必须使用符合《国际海运危险货物规则》（IMDG Code）和《国际空运危险货物规则》（IATA DGR）要求的包装。固体物质应包装在密封的容器中，防止泄漏。包装容器应坚固、耐腐蚀，能够承受正常运输条件下的冲击和振动。包装方法应符合联合国包装标准（UN包装规范）。</packaging_method>
+      <transportation_precautions>运输必须委托具有危险化学品运输资质的单位进行。运输车辆必须悬挂危险品标志，配备相应的应急处理设备。运输过程中应避免高温、暴晒、剧烈震动和撞击。严禁与食品、饲料、氧化剂、酸类等物品混装运输。运输人员必须经过专门培训，了解多氯三联苯的危险性和应急处理措施。运输过程中应保持包装完好，防止泄漏。如发生泄漏，应立即采取应急措施，防止污染环境。运输路线应避开人口密集区和水源保护区。运输前应向相关部门办理危险货物运输手续。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录（2015版）》、《国家危险废物名录（2021年版）》（废物编号HW49）、《危险废物经营许可证管理办法》、《斯德哥尔摩公约》持久性有机污染物（中国已批准并实施）、《化学品环境管理条例》、《工作场所安全使用化学品规定》、《职业病防治法》、《环境保护法》。国际法规：UN TDG（联合国关于危险货物运输的建议书）、GHS（全球化学品统一分类和标签制度）、《斯德哥尔摩公约》（2001年签署，2004年生效）、《鹿特丹公约》、《巴塞尔公约》。多氯三联苯被《斯德哥尔摩公约》列为持久性有机污染物（POPs），在全球范围内禁止或严格限制生产、使用和排放。中国已全面禁止多氯三联苯的生产、进口和使用。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>GB/T 16483-2008、GB/T 17519-2013</reference_standards>
+      <modification_notes>本SDS按照GB/T 16483-2008、GB/T 17519-2013标准编制。</modification_notes>
+      <abbreviations>SDS：安全数据表；CAS：化学文摘社；LD50：半数致死量；LC50：半数致死浓度；IARC：国际癌症研究机构；GHS：全球化学品统一分类和标签制度；UN：联合国；TDG：关于危险货物运输的建议书；BCF：生物富集系数。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

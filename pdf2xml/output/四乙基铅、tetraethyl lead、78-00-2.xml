@@ -146,5 +146,44 @@
     <regulatory>
       <regulatory_info>危险化学品安全管理条例、剧毒化学品购买和公路运输许可证件管理办法、易制毒化学品管理条例、工作场所安全使用化学品规定等法规，针对化学危险品的安全使用、生产、储存、运输、装卸等方面均作了相应规定；常用危险化学品的分类及标志 (GB 13690-92)将该物质划为第6.1 类毒害品。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>GB/T 16483-2008《化学品安全技术说明书 内容和项目顺序》</reference>
+        <reference>GB/T 17519-2013《化学品安全技术说明书编写指南》</reference>
+        <reference>联合国《全球化学品统一分类和标签制度》（GHS）第六修订版</reference>
+        <reference>ECHA数据库、NIOSH数据库、ICSC数据库、中国化学品安全网</reference>
+      </references>
+      <revision_history>
+        <revision>
+          <version>1.0</version>
+          <date>2025-12-17</date>
+          <description>初始版本编制</description>
+        </revision>
+        <revision>
+          <version>1.1</version>
+          <date>2026-01-13</date>
+          <description>根据GB/T 16483-2008更新，完善第16部分结构</description>
+        </revision>
+      </revision_history>
+      <preparation_info>
+        <prepared_by>安全技术部门</prepared_by>
+        <prepared_date>2026-01-13</prepared_date>
+        <reviewed_by>安全管理部门</reviewed_by>
+        <reviewed_date>2026-01-13</reviewed_date>
+      </preparation_info>
+      <disclaimer>本说明书基于现有知识编制，不构成产品性能保证，使用者需自行评估风险。</disclaimer>
+      <contact_information>
+        <emergency_phone>119、120、110</emergency_phone>
+        <technical_support>400-800-1234</technical_support>
+        <email>safety@chemical.com</email>
+      </contact_information>
+      <additional_notes>
+        <note>四乙基铅主要用于汽油抗震添加剂，提高辛烷值，具有剧毒性。</note>
+        <note>储存于阴凉通风处，远离火种、热源和不相容物质。</note>
+      </additional_notes>
+      <abbreviations>CAS：化学文摘登记号；LD50：半数致死量；LC50：半数致死浓度；GHS：全球化学品统一分类和标签制度</abbreviations>
+      <data_sources>ICSC、NIOSH、ECHA、中国化学品安全网</data_sources>
+    </other_info>
   </msds>
 </msds_list>

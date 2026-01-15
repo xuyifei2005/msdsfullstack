@@ -148,11 +148,37 @@
       <regulatory_info>列入《禁止进口货物目录(第九批)》，属于PFOS类化合物。根据《危险化学品安全管理条例》，该化学品属于危险化学品。根据《持久性有机污染物（POPs）公约》，该化学品属于受控物质。列入《关于持久性有机污染物的斯德哥尔摩公约》受控物质清单。欧盟REACH法规中列为高度关注物质（SVHC）。</regulatory_info>
     </regulatory>
     <!-- 第十六部分：其他信息 -->
-    <other_info>
-      <reference_standards>本安全技术说明书按照GB/T 16483-2008《化学品安全技术说明书 内容和项目顺序》和GB/T 17519-2013《化学品安全技术说明书 编写指南》编写。</reference_standards>
-      <modification_notes>无</modification_notes>
-      <abbreviations_and_terms>PFOS：全氟辛烷磺酸；POPs：持久性有机污染物；LD50：半数致死量；LC50：半数致死浓度；MAC：最高容许浓度；TLV：阈限值；RTECS：化学物质毒性登记数据库；UN：联合国编号；IMDG：国际海运危险货物规则。</abbreviations_and_terms>
-      <other_information>本物质属于持久性有机污染物（POPs），在环境中难以降解，具有生物富集性。已被列入《重点管控新污染物清单(2023年版)》。使用和处置时应严格遵守相关法律法规，采取有效的环境保护措施。建议寻找替代品，减少使用和排放。</other_information>
-    </other_info>
+        <other_info>
+          <references>
+            <reference>1. GB/T 16483-2008 化学品安全技术说明书 内容和项目顺序[S]. 北京: 中国标准出版社, 2008.</reference>
+            <reference>2. 持久性有机污染物公约 (斯德哥尔摩公约) 2023年缔约方大会决议[Z].</reference>
+            <reference>3. 《重点管控新污染物清单(2023年版)》[Z]. 生态环境部, 2023.</reference>
+            <reference>4. RTECS Database. Registry of Toxic Effects of Chemical Substances[Z].</reference>
+          </references>
+          <revision_history>
+            <revision>
+              <revision_date>2026-01-13</revision_date>
+              <revision_content>初次编制,补全第16部分"其他信息"包含参考文献、修订历史、编制信息等全部强制子项。</revision_content>
+              <revised_by>MSDS管理系统</revised_by>
+            </revision>
+          </revision_history>
+          <preparation_info>
+            <preparation_date>2026-01-13</preparation_date>
+            <preparation_organization>MSDS管理系统</preparation_organization>
+            <preparation_standard>GB/T 16483-2008</preparation_standard>
+          </preparation_info>
+          <disclaimer>本说明书信息基于现有数据编制,仅供参考。使用前请核实最新法规要求,编制方不对使用后果承担责任。</disclaimer>
+          <contact_info>
+            <emergency_contact>应急电话: 12350</emergency_contact>
+          </contact_info>
+          <additional_info>本物质属于持久性有机污染物（POPs），在环境中难以降解，具有生物富集性。已被列入《重点管控新污染物清单(2023年版)》。使用和处置时应严格遵守相关法律法规，采取有效的环境保护措施。建议寻找替代品，减少使用和排放。</additional_info>
+          <abbreviations>PFOS：全氟辛烷磺酸；POPs：持久性有机污染物；LD50：半数致死量；LC50：半数致死浓度；MAC：最高容许浓度；TLV：阈限值；RTECS：化学物质毒性登记数据库；UN：联合国编号；IMDG：国际海运危险货物规则。</abbreviations>
+          <data_sources>
+            <data_source>1. 斯德哥尔摩公约官方网站</data_source>
+            <data_source>2. 生态环境部《重点管控新污染物清单(2023年版)》</data_source>
+            <data_source>3. RTECS化学物质毒性登记数据库</data_source>
+            <data_source>4. 化学品安全技术说明书编写指南 GB/T 17519-2013</data_source>
+          </data_sources>
+        </other_info>
   </msds>
 </msds_list>

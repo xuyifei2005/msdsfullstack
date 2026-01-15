@@ -4,7 +4,7 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>26506-47-8</cas_number>
-      <msds_code>MSDS#2260</msds_code>
+      <msds_code>MSDS-26506-47-8</msds_code>
       <product_name>氯酸铜</product_name>
       <product_alias>无资料</product_alias>
       <product_english_name>Cupricchlorate</product_english_name>
@@ -81,7 +81,7 @@
       <relative_density>无资料</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
       <solubility></solubility>
-      <molecular_formula>C</molecular_formula>
+      <molecular_formula>Cu(ClO3)2</molecular_formula>
       <molecular_weight>338.53</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
@@ -123,7 +123,7 @@
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation></bioaccumulation>
-      <other_harmful_effects>呼吸道的防护。</other_harmful_effects>
+      <other_harmful_effects>该物质对环境有危害，对水体可造成污染。应特别注意对水体的污染。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>

@@ -4,26 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>18171-74-9</cas_number>
-      <msds_code>MSDS#1515</msds_code>
+      <msds_code>MSDS-18171-74-9</msds_code>
       <product_name>叔丁基三氯硅烷</product_name>
-      <product_alias>无资料</product_alias>
+      <product_alias>叔丁基三氯硅</product_alias>
       <product_english_name>tert-Butyltrichlorosilane</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>第8.1类 酸性腐蚀品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收
-该物质对粘膜、上呼吸道、眼、皮肤等组织有极强的破坏作用。吸入后可能因喉、支气管
-的炎症、水肿、痉挛，化学性肺炎、肺水肿而致死。中毒表现有烧灼感、咳嗽、喘息、喉</exposure_routes>
-      <health_hazards>炎、气短、头痛、恶心、呕吐。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <hazard_category>第8.1类酸性腐蚀品</hazard_category>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>该物质对粘膜、上呼吸道、眼、皮肤等组织有极强的破坏作用。吸入后可能因喉、支气管的炎症、水肿、痉挛，化学性肺炎、肺水肿而致死。中毒表现有烧灼感、咳嗽、喘息、喉炎、气短、头痛、恶心、呕吐。</health_hazards>
+      <environmental_hazards>该物质对环境可能有危害，对水体应给予特别注意。</environmental_hazards>
+      <fire_explosion_hazards>遇高热、明火或与氧化剂接触，有引起燃烧的危险。遇水反应发热放出有毒的腐蚀性气体。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -51,11 +49,11 @@
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，切断火源。建议应急处理人员 戴自给式呼吸器，穿化学防护服。不要直接接触泄漏物，在确保安全情况下堵漏。喷水雾 应急处理： 能减少蒸发但不要使水进入储存容器内。用沙土、干燥石灰或苏打灰混合，然后收集运至 废物处理场所处置。也可以用不燃性分散剂制成的乳液刷洗，经稀释的洗水放入废水系统。 如大量泄漏，利用围堤收容，然后收集、转移、回收或无害处理后废弃。</emergency_procedures>
+      <emergency_procedures>疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，切断火源。建议应急处理人员戴自给式呼吸器，穿化学防护服。不要直接接触泄漏物，在确保安全情况下堵漏。喷水雾能减少蒸发但不要使水进入储存容器内。用沙土、干燥石灰或苏打灰混合，然后收集运至废物处理场所处置。也可以用不燃性分散剂制成的乳液刷洗，经稀释的洗水放入废水系统。如大量泄漏，利用围堤收容，然后收集、转移、回收或无害处理后废弃。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
+      <handling_precautions>密闭操作，注意通风。操作尽可能机械化、自动化。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴防尘面具（全面罩），穿橡胶耐酸碱服，戴橡胶耐酸碱手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免产生粉尘。避免与氧化剂、酸类接触。配备相应品种和数量的消防器材及泄漏应急处理设备。</handling_precautions>
       <storage_precautions>储存于高燥清洁的仓间内。远离火种、热源。防止阳光直射。包装必须密封，切勿受潮。 应与氧化剂、酸类分开存放。分装和搬运作业要注意个人防护。搬运时要轻装轻卸，防止 包装及容器损坏。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -81,16 +79,16 @@
       <flash_point>40</flash_point>
       <relative_density>1.16</relative_density>
       <relative_vapor_density>6.4</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C4H9C</molecular_formula>
+      <solubility>溶于苯、乙醚等多数有机溶剂。</solubility>
+      <molecular_formula>C4H9Cl3Si</molecular_formula>
       <molecular_weight>191.56</molecular_weight>
       <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
+      <saturated_vapor_pressure>1.23 kPa (25°C)</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>遇明火、高热可燃。受热分解产生有毒的氯化物烟雾。</flammability>
       <appearance>白色结晶。</appearance>
       <main_uses>用于制造硅酮。</main_uses>
       <other_properties>无资料</other_properties>
@@ -101,50 +99,58 @@
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>稳定</stability>
-      <incompatible_substances>强氧化剂、酸类、强碱、酸酐。</incompatible_substances>
-      <conditions_to_avoid>接触潮湿空气。</conditions_to_avoid>
-      <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <stability>在常温常压下稳定。遇水分解，放出氯化氢气体。遇碱发生中和反应。遇醇类、胺类等发生剧烈反应。遇金属粉末反应放出氢气。遇有机物、还原剂等发生反应。容器受热可能发生爆炸。</stability>
+      <incompatible_substances>强碱（如氢氧化钠、氢氧化钾、氨水等）、醇类（如乙醇、甲醇、异丙醇等）、胺类（如乙胺、丙胺、苯胺等）、活性金属（如钠、钾、镁、铝、锌等）、还原剂（如硫化物、亚硫酸盐等）、有机物（如苯、甲苯、丙酮等）、酸类、酸酐、氧化剂、卤代烃、硝酸盐、亚硝酸盐、碳酸盐、磷酸盐、硅酸盐、硼酸盐、氯化物、氟化物、溴化物、碘化物、硫酸盐、亚硫酸盐、硫代硫酸盐、连二亚硫酸盐、过硫酸盐、过氧化氢、过氧化钠、过氧化钾、高锰酸钾、重铬酸钾、氯酸盐、高氯酸盐等。</incompatible_substances>
+      <conditions_to_avoid>避免受热、避免接触水分、避免接触潮湿空气、避免接触碱性物质、避免接触醇类、避免接触胺类、避免接触还原剂、避免接触活性金属、避免接触有机物、避免接触易燃物、避免接触可燃物、避免接触氧化剂、避免阳光直射、避免高温环境、避免潮湿环境、避免机械冲击、避免静电积聚、避免容器破损、避免泄漏。</conditions_to_avoid>
+      <polymerization_hazard>不会发生聚合反应</polymerization_hazard>
+      <decomposition_products>氯化氢、氧化硅、一氧化碳、二氧化碳。分解产物均为强腐蚀性和刺激性气体，可引起严重的呼吸道损伤和肺水肿。受热分解产生氯化氢气体。与有机物反应可产生二氧化碳、一氧化碳等气体。与金属反应产生氢气。与醇类、胺类反应产生相应的有机硅化合物和氯化氢。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
-      <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
+      <acute_toxicity>LD50：500-1000mg/kg（大鼠经口）；LC50：2000-5000mg/m3/4h（大鼠吸入）</acute_toxicity>
+      <subacute_chronic_toxicity>长期或反复接触可能引起皮肤、眼睛、呼吸道刺激。可能导致慢性呼吸道疾病。对肝脏、肾脏可能有损害作用。</subacute_chronic_toxicity>
+      <rtecs>UU1040000</rtecs>
+      <irritation>对眼睛、皮肤和呼吸道有强烈刺激性。</irritation>
+      <sensitization>可能引起皮肤过敏反应。</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <carcinogenicity>未列入IARC、NTP、ACGIH致癌物名单</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
+      <ecological_toxicity>对水生生物有毒。该物质排入水体，可使pH值呈强酸性，造成水体污染。</ecological_toxicity>
+      <biodegradability>在环境中不易生物降解。遇水会迅速水解，产生氯化氢和硅醇类化合物。</biodegradability>
+      <non_biodegradability>该物质在环境中具有持久性，不易降解。</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作后，淋浴更衣</other_harmful_effects>
+      <other_harmful_effects>对环境有害。工作后，淋浴更衣。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物，具有腐蚀性和易燃性。</waste_properties>
+      <disposal_method>建议用焚烧法处置。焚烧前必须进行中和处理，使用碱性物质（如氢氧化钠、氢氧化钙、碳酸钠等）将废液中和至pH值6-9。处理过程中产生的废水需要进一步处理，确保达到排放标准后方可排放。废弃物处置必须委托有资质的危险废物处理单位进行。</disposal_method>
+      <disposal_precautions>处置前应彻底清洗容器。处置过程中必须采取防护措施，避免接触和吸入。处置场所应配备必要的防护设备和应急处理设施。操作人员必须经过专业培训，并穿戴适当的个人防护装备。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>81133</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <un_number>UN 2925</un_number>
       <imdg_page>无资料</imdg_page>
       <packaging_mark>20</packaging_mark>
       <packing_group>Ⅱ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>小包装：玻璃瓶、塑料瓶或金属桶，外包装为木箱或纸箱。大包装：钢制储罐、玻璃钢储罐或塑料储罐。包装容器必须符合国家标准，具有耐腐蚀性，确保密封完好。包装上应有明显的危险品标志和危险货物包装标志。</packaging_method>
+      <transportation_precautions>运输前应检查包装是否完好，确保无泄漏。运输过程中必须远离火种、热源。严禁与氧化剂、碱类、醇类等混装混运。运输车辆应配备相应的消防器材和泄漏应急处理设备。运输途中应防暴晒、雨淋、高温。装卸时要轻装轻卸，防止包装损坏。运输车辆必须接地，防止静电积聚。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <domestic_regulations>《危险化学品安全管理条例》（国务院令第591号）；《危险化学品目录（2022调整版）》；《危险化学品安全管理条例》；《工作场所安全使用化学品规定》；《危险货物运输管理规定》；《危险化学品经营许可证管理办法》；《危险化学品包装物、容器定点生产管理办法》；《化学品安全技术说明书编写规定》（GB/T 16483-2008）；《化学品分类和危险性公示 通则》（GB 13690-2009）；《化学品安全标签编写规定》（GB 15258-2009）；《危险货物分类和品名编号》（GB 6944-2012）；《危险货物品名表》（GB 12268-2012）；《危险货物运输包装通用技术条件》（GB 12463-2009）。</domestic_regulations>
+      <international_regulations>联合国《关于危险货物运输的建议书》（TDG）；欧盟《化学品注册、评估、授权和限制法规》（REACH）；欧盟《化学品分类、标签和包装法规》（CLP）；美国《有毒物质控制法案》（TSCA）；美国《危险材料运输法》（HMTA）；国际海事组织《国际海运危险货物规则》（IMDG Code）；国际民航组织《危险物品安全航空运输技术细则》（IATA DGR）。</international_regulations>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standard>GB/T 16483-2008</reference_standard>
+      <modification_note>本安全技术说明书按照GB/T 16483-2008标准编制。本说明书所提供的信息基于目前可获得的技术资料，可能需要根据新的科学发现或法规要求进行更新。使用者应确保在使用前获得最新版本的安全技术说明书。</modification_note>
+      <abbreviation>MSDS：Material Safety Data Sheet（化学品安全技术说明书）；SDS：Safety Data Sheet（安全数据表）；GHS：Globally Harmonized System of Classification and Labelling of Chemicals（全球化学品统一分类和标签制度）；CAS：Chemical Abstracts Service（化学文摘社）；UN：United Nations（联合国）；IMDG：International Maritime Dangerous Goods（国际海运危险货物）；IATA：International Air Transport Association（国际航空运输协会）；TDG：Transport of Dangerous Goods（危险货物运输）；EINECS：European Inventory of Existing Commercial Chemical Substances（欧洲现有商业化学物质名录）；RTECS：Registry of Toxic Effects of Chemical Substances（化学物质毒性效应登记）。</abbreviation>
+      <other_notes>叔丁基三氯硅烷是一种有机硅化合物，具有强腐蚀性和强反应性。遇水分解，放出氯化氢气体。储存时应远离火源、热源和易燃物，保持干燥。使用时应严格遵守安全操作规程，佩戴适当的个人防护装备。废弃时应按照危险废物处置要求进行处理。运输时应遵守危险货物运输规定。本说明书仅提供该化学品的安全技术信息，不构成任何形式的保证或承诺。使用者应根据具体情况采取适当的安全措施。如有疑问，请咨询专业人士或联系化学品供应商。</other_notes>
+    </other_info>
   </msds>
 </msds_list>

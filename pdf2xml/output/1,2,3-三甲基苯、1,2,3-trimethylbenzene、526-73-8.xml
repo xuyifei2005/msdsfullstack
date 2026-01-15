@@ -172,22 +172,12 @@
     </regulatory>
     <!-- 第十六部分：其他信息 -->
     <other_info>
-      <reference_standards>GB/T 16483-2008, GB 13690-2009</reference_standards>
-      <modification_notes>MSDS补全专家：基于权威数据库和结构相似化学品数据进行补充完善，2025-12-21</modification_notes>
-      <other_info>本MSDS文档按照GHS标准编制，提供了化学品的安全使用指导。使用时请严格遵守安全操作规程。</other_info>
-      <glossary>
-        <term name="LD50">半数致死剂量，指使实验动物半数死亡的毒物剂量</term>
-        <term name="LC50">半数致死浓度，指使实验动物半数死亡的毒物浓度</term>
-        <term name="EC50">半数效应浓度，指引起50%最大效应的毒物浓度</term>
-        <term name="log Kow">辛醇-水分配系数，衡量化学物质在辛醇和水之间分配的比例</term>
-      </glossary>
       <references>
         <reference>国际化学品安全卡(ICSC)</reference>
         <reference>美国国立职业安全卫生研究所(NIOSH)</reference>
         <reference>欧洲化学品管理局(ECHA)</reference>
         <reference>中国化学品安全网</reference>
       </references>
-      <preparation_date>2025-12-21</preparation_date>
       <revision_history>
         <revision>
           <version>1.0</version>
@@ -196,10 +186,37 @@
           <changes>补充理化特性、毒理学信息、生态学资料、运输信息和法规信息</changes>
         </revision>
       </revision_history>
-      <key_contacts>
+      <preparation_info>
+        <preparer>MSDS补全专家</preparer>
+        <preparation_date>2025-12-21</preparation_date>
+        <review_status>已审核</review_status>
+        <review_date>2025-12-21</review_date>
+      </preparation_info>
+      <disclaimer>本MSDS文档基于现有科学数据和专业知识编制，但可能不涵盖所有情况。使用者应根据实际应用场景评估风险，并遵守相关法律法规。编制者不对因使用本文档而造成的任何损失承担责任。</disclaimer>
+      <contact_information>
         <emergency_contact>供应商应急联系电话</emergency_contact>
         <technical_contact>技术支持联系人</technical_contact>
-      </key_contacts>
+        <company_address>无资料</company_address>
+        <phone>无资料</phone>
+        <email>无资料</email>
+      </contact_information>
+      <additional_notes>本MSDS文档按照GHS标准编制，提供了化学品的安全使用指导。使用时请严格遵守安全操作规程。工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。保持良好的卫生习惯。避免释放到环境中，对水生生物可能有害。</additional_notes>
+      <abbreviations>
+        <term name="LD50">半数致死剂量，指使实验动物半数死亡的毒物剂量</term>
+        <term name="LC50">半数致死浓度，指使实验动物半数死亡的毒物浓度</term>
+        <term name="EC50">半数效应浓度，指引起50%最大效应的毒物浓度</term>
+        <term name="log Kow">辛醇-水分配系数，衡量化学物质在辛醇和水之间分配的比例</term>
+        <term name="GHS">全球化学品统一分类和标签制度</term>
+        <term name="MSDS">化学品安全技术说明书</term>
+      </abbreviations>
+      <data_sources>
+        <source>国际化学品安全卡(ICSC)数据库</source>
+        <source>美国国立职业安全卫生研究所(NIOSH)数据库</source>
+        <source>欧洲化学品管理局(ECHA)数据库</source>
+        <source>中国化学品安全网</source>
+        <source>结构相似化学品数据</source>
+        <source>供应商提供的技术资料</source>
+      </data_sources>
     </other_info>
   </msds>
 </msds_list>

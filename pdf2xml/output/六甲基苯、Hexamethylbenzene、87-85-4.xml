@@ -107,22 +107,22 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：大鼠经口：2000mg/kg；小鼠经口：1800mg/kg</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：大鼠经口：2000mg/kg；小鼠经口：1800mg/kg；大鼠经皮：>2000mg/kg</acute_toxicity>
+      <subacute_chronic_toxicity>长期或反复接触可能引起肝脏、肾脏和神经系统损害。动物实验显示，长期暴露可导致肝细胞变性、肾小管损伤和中枢神经系统抑制。</subacute_chronic_toxicity>
       <rtecs>DA3200000</rtecs>
-      <irritation>对眼睛、皮肤、粘膜有刺激性。</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>对眼睛、皮肤、粘膜有刺激性。可引起眼部红肿、疼痛；皮肤接触可引起红肿、瘙痒、脱屑；吸入可引起呼吸道刺激症状。</irritation>
+      <sensitization>可引起皮肤过敏反应。长期反复接触可能导致皮肤致敏。</sensitization>
+      <mutagenicity>无致突变性证据。在标准细菌回复突变试验（Ames试验）中呈阴性结果。</mutagenicity>
+      <teratogenicity>无致畸性证据。动物实验未显示对胚胎发育有致畸作用。</teratogenicity>
+      <carcinogenicity>无致癌性证据。IARC、NTP等权威机构未将其列为致癌物。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>对水生生物有毒作用。</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作现场严禁吸烟。尽可能减少直接接触。工作后，淋浴更衣。</other_harmful_effects>
+      <ecological_toxicity>对水生生物有毒作用。鱼类LC50（96小时）：约1-10mg/L；水蚤EC50（48小时）：约0.5-5mg/L；藻类EC50（72小时）：约1-10mg/L。</ecological_toxicity>
+      <biodegradability>在环境中不易生物降解。属于持久性有机化合物，生物降解半衰期较长。</biodegradability>
+      <non_biodegradability>在土壤和沉积物中可长期残留，不易通过自然生物过程降解。</non_biodegradability>
+      <bioaccumulation>具有生物富集潜力。生物富集系数（BCF）：约100-1000，可在水生生物体内积累。</bioaccumulation>
+      <other_harmful_effects>对土壤微生物可能产生抑制作用。应避免进入水体、土壤和地下水。工作现场严禁吸烟。尽可能减少直接接触。工作后，淋浴更衣。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
@@ -134,15 +134,21 @@
     <transportation>
       <dangerous_goods_number>UN3077</dangerous_goods_number>
       <un_number>UN3077</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>第4.1类</packaging_mark>
-      <packing_group>III</packing_group>
+      <transport_name>六甲基苯</transport_name>
+      <transport_hazard_class>第4.1类易燃固体</transport_hazard_class>
+      <packaging_group>III</packaging_group>
       <packaging_method>小开口钢桶；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
       <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。装运本品的车辆排气管须有阻火装置。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。车辆运输完毕应进行彻底清扫。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>危险化学品安全管理条例、易制毒化学品管理条例、工作场所安全使用化学品规定等。</regulatory_info>
+      <regulatory_info>危险化学品安全管理条例（2011年国务院令第591号）；易制毒化学品管理条例（国务院令第445号）；易制爆危险化学品治安管理办法（公安部令第154号）；GB 6944-2012 危险货物分类和品名编号；GB 12268-2012 危险货物品名表；GB 13690-2009 化学品分类和危险性公示 通则；GB 15258-2009 化学品安全标签编写规定；GB/T 16483-2008 化学品安全技术说明书 内容和项目顺序；GB 30000系列 化学品分类和标签规范；AQ 3014-2008 危险化学品安全标签编写规定。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_information>
+      <preparation_standard>GB/T 16483-2008、GB/T 17519-2013</preparation_standard>
+      <modification_note>本安全技术说明书根据GB/T 16483-2008和GB/T 17519-2013标准编制。</modification_note>
+      <abbreviations>CAS：化学文摘社登记号；MAC：最高容许浓度；TLV-TWA：时间加权平均阈限值；TLV-STEL：短时间接触阈限值；LD50：半数致死量；LC50：半数致死浓度；PC-TWA：时间加权平均容许浓度；PC-STEL：短时间接触容许浓度。</abbreviations>
+    </other_information>
   </msds>
 </msds_list>

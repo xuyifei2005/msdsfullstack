@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>30525-89-4</cas_number>
-      <msds_code>MSDS#1556</msds_code>
+      <msds_code>MSDS-30525-89-4</msds_code>
       <product_name>多聚甲醛</product_name>
       <product_alias>聚蚁醛；聚合甲醛</product_alias>
       <product_english_name>Paraformaldehyde</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第4.1类 易燃固体</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards>炎、咽喉炎、胃炎、剧烈胃痛、昏迷。皮肤长期反复接触引起干燥、皲裂、脱屑。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品易燃、具有强刺激性、致敏性</fire_explosion_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>吸入本品蒸气或粉尘可引起呼吸道刺激，出现咳嗽、呼吸困难、胸闷、支气管炎、咽喉炎等症状。食入可引起口腔、咽喉、食道和胃部灼伤，出现剧烈胃痛、呕吐、腹泻，严重者可导致昏迷。皮肤接触可引起刺激、干燥、皲裂、脱屑，长期反复接触可引起过敏性皮炎。眼睛接触可引起结膜炎、角膜损伤，严重者可导致视力下降。本品具有致敏性，可引起皮肤过敏和呼吸道过敏。长期接触可引起慢性中毒，表现为头痛、头晕、乏力、食欲不振、体重下降等症状。</health_hazards>
+      <environmental_hazards>对水生生物有害。在环境中可分解为甲醛，对水体和土壤造成污染。甲醛对水生生物具有毒性，可影响水生生物的生长和繁殖。在土壤中可被微生物降解，但降解过程中可能产生中间产物对环境造成影响。</environmental_hazards>
+      <fire_explosion_hazards>本品易燃，遇高热、明火或与氧化剂接触，有引起燃烧的危险。受热分解放出易燃气体（甲醛），能与空气形成爆炸性混合物。粉体与空气可形成爆炸性混合物，当达到一定的浓度时，遇火星会发生爆炸。燃烧时产生一氧化碳、二氧化碳等有毒气体。本品具有强刺激性和致敏性，对眼睛、皮肤和呼吸道有强烈的刺激作用。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -30,105 +30,113 @@
           <component_name>多聚甲醛</component_name>
           <component_content>100%</component_content>
           <cas_number>30525-89-4</cas_number>
+          <molecular_formula>(CH2O)n</molecular_formula>
+          <molecular_weight>30.03（以甲醛单体计）</molecular_weight>
+          <purity>≥95.0%</purity>
         </component>
       </components>
+      <description>多聚甲醛是甲醛的聚合物，由8-100个甲醛分子聚合而成，白色结晶粉末，具有甲醛气味。在常温下缓慢解聚释放甲醛气体，受热时解聚速度加快。</description>
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>脱去污染的衣着，用肥皂水及清水彻底冲洗。</skin_contact>
-      <eye_contact>立即提起眼睑，用流动清水或生理盐水冲洗至少15分钟。就医。</eye_contact>
-      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅，呼吸困难时给输氧。呼吸停止时，立即进 行人工呼吸。就医。</inhalation>
-      <ingestion>误服者给饮大量温水，催吐，就医。</ingestion>
+      <skin_contact>立即脱去污染的衣着，用大量流动清水和肥皂水彻底冲洗皮肤至少15分钟。如出现红肿、疼痛等刺激症状，应立即就医。冲洗时注意不要用热水，以免加重皮肤损伤。</skin_contact>
+      <eye_contact>立即提起眼睑，用大量流动清水或生理盐水彻底冲洗至少15分钟。冲洗时应将眼睑充分翻开，确保冲洗到眼球和结膜囊的各个部位。冲洗后立即就医。就医时应告知医生接触了多聚甲醛。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅，如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸，并尽快就医。就医时应告知医生吸入多聚甲醛粉尘或蒸气。</inhalation>
+      <ingestion>误服者立即漱口，禁止催吐。给饮大量温水或牛奶，以稀释胃内容物。立即就医。就医时应告知医生误服多聚甲醛，并携带产品标签或安全技术说明书。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>遇高热、明火或与氧化剂接触，有引起燃烧的危险。受热分解放出易燃气体能与空气形成 爆炸性混合物。粉体与空气可形成爆炸性混合物，当达到一定的浓度时，遇火星会发生爆 炸。</hazard_characteristics>
-      <fire_risk_classification>乙</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳。</harmful_combustion_products>
+      <hazard_characteristics>遇高热、明火或与氧化剂接触，有引起燃烧的危险。受热分解放出易燃气体（甲醛），能与空气形成爆炸性混合物。粉体与空气可形成爆炸性混合物，当达到一定的浓度时，遇火星会发生爆炸。燃烧时产生一氧化碳、二氧化碳等有毒气体。</hazard_characteristics>
+      <fire_risk_classification>乙类火灾危险品</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、甲醛等有毒气体。</harmful_combustion_products>
       <suitable_extinguishing_media>雾状水、泡沫、干粉、砂土、二氧化碳。</suitable_extinguishing_media>
+      <extinguishing_precautions>消防人员必须佩戴正压自给式呼吸器（SCBA），穿全身消防防毒服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。切勿将水流直接射入熔融的液体中，以免引起严重的流淌火灾或飞溅。如果火场中的容器已变色或从安全泄压装置中发出声音，必须立即撤离。</extinguishing_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>隔离泄漏污染区，周围设警告标志，切断火源。建议应急处理人员戴好防毒面具，穿一般 消防防护服。使用无火花工具收集于干燥净洁有盖的容器中，运至废物处理场所。如果大 量泄漏，用水打湿然后收容回收。</emergency_procedures>
+      <emergency_procedures>隔离泄漏污染区，周围设警告标志，切断火源。建议应急处理人员戴自给式呼吸器，穿一般消防防护服。避免直接接触泄漏物。使用无火花工具收集于干燥净洁有盖的容器中，运至废物处理场所。如果大量泄漏，用水打湿然后收容回收。防止泄漏物进入下水道、排水沟、地下室或限制性空间。泄漏物应作为危险废物处理。</emergency_procedures>
+      <personal_precautions>应急处理人员必须经过专门培训，严格遵守操作规程。处理泄漏时应佩戴自吸过滤式防毒面具（半面罩），穿防静电工作服，戴橡胶手套。避免吸入粉尘、蒸气或烟雾。避免接触眼睛、皮肤和衣物。处理完毕后，彻底清洗暴露部位。</personal_precautions>
+      <environmental_precautions>防止泄漏物进入水体、土壤和地下水。如已进入水体，应立即通知环保部门。对泄漏区域进行隔离，防止污染扩散。泄漏物应收集并作为危险废物处理，不得随意排放。</environmental_precautions>
+      <cleanup_methods>小量泄漏：用砂土、蛭石或其它惰性材料吸收，收集于密闭容器中。大量泄漏：构筑围堤或挖坑收容，用泡沫覆盖，降低蒸气灾害。用防爆泵转移至槽车或专用收集器内，回收或运至废物处理场所处置。泄漏区域应用大量清水冲洗，冲洗水应收集处理。</cleanup_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。仓温不宜超过30℃。防止阳光直射。保持容 器密封。应与氧化剂分开存放。搬运时要轻装轻卸，防止包装及容器损坏。</storage_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。密闭操作，提供充分的局部排风。操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免产生粉尘。避免与氧化剂、酸类、碱类等接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物，应及时清洗并妥善处理。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房内。远离火种、热源。库温不宜超过30℃。防止阳光直射。保持容器密封。应与氧化剂、酸类、碱类分开存放，切忌混储。储区应备有泄漏应急处理设备和合适的收容材料。储存容器必须完好无损，保持密封，防止泄漏。储存区应设置明显的警示标志，标明"易燃"、"有毒"等警示信息。储存区应有良好的通风设施，防止蒸气积聚。定期检查储存容器的完整性和密封性，防止泄漏。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
       <china_mac>未制定标准</china_mac>
       <former_soviet_mac>未制定标准</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
-      <contact_limits>美国TWA：未制定标准美国STEL：未制定标准</contact_limits>
-      <monitoring_method>无资料</monitoring_method>
-      <engineering_controls>密闭操作，局部排风。</engineering_controls>
-      <respiratory_protection>佩带防尘口罩。必要时佩带防毒面具。</respiratory_protection>
-      <eye_protection>戴安全防护眼镜。</eye_protection>
-      <body_protection>穿相应的防护服。</body_protection>
-      <hand_protection>戴防护手套。</hand_protection>
-      <other_protection>无资料</other_protection>
+      <tlvtn>0.5ppm（以甲醛计）</tlvtn>
+      <tlvvn>0.5ppm（以甲醛计）</tlvvn>
+      <contact_limits>美国TWA：0.75ppm（以甲醛计），美国STEL：2.0ppm（以甲醛计）</contact_limits>
+      <monitoring_method>工作场所空气中多聚甲醛（以甲醛计）的监测方法：气相色谱法、分光光度法。定期对工作场所空气进行监测，确保浓度在容许范围内。</monitoring_method>
+      <engineering_controls>密闭操作，提供充分的局部排风和全面通风。操作区域应安装有效的通风系统，确保空气流通。操作人员应远离粉尘和蒸气源。</engineering_controls>
+      <respiratory_protection>空气中粉尘或蒸气浓度超标时，必须佩戴自吸过滤式防毒面具（半面罩）或全面罩防毒面具。紧急事态抢救或撤离时，应该佩戴空气呼吸器或氧气呼吸器。</respiratory_protection>
+      <eye_protection>戴化学安全防护眼镜（符合欧盟EN166或美国NIOSH标准）。如操作过程中可能产生飞溅，应佩戴面罩。</eye_protection>
+      <body_protection>穿防静电工作服和防化服（符合EN 14325或NIOSH标准）。避免皮肤直接接触。</body_protection>
+      <hand_protection>戴防化学品手套（如丁基橡胶手套、氯丁橡胶手套）。手套应定期更换，破损后立即更换。</hand_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。定期对操作人员进行健康检查，特别是呼吸系统和皮肤功能的检查。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
-      <melting_point>120～170</melting_point>
-      <boiling_point>无资料</boiling_point>
-      <flash_point>70</flash_point>
+      <pH>3-4（以甲醛溶液计）</pH>
+      <melting_point>120～170℃</melting_point>
+      <boiling_point>无资料（加热时分解）</boiling_point>
+      <flash_point>70℃（闭杯）</flash_point>
       <relative_density>1.39</relative_density>
-      <relative_vapor_density>1.03</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula></molecular_formula>
-      <molecular_weight>0</molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>0.19／25℃</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <relative_vapor_density>1.03（空气=1）</relative_vapor_density>
+      <solubility>溶于热水，微溶于冷水，溶于乙醇、乙醚等有机溶剂。</solubility>
+      <molecular_formula>(CH2O)n</molecular_formula>
+      <molecular_weight>30.03（以甲醛单体计）</molecular_weight>
+      <main_components>多聚甲醛</main_components>
+      <saturated_vapor_pressure>0.19kPa/25℃</saturated_vapor_pressure>
+      <log_kow>0.35（甲醛的log Kow）</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>300</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>低分子量的为白色结晶粉末，具有甲醛味。</appearance>
+      <autoignition_temperature>300℃</autoignition_temperature>
+      <flammability>可燃</flammability>
+      <appearance>白色结晶粉末，具有甲醛气味。</appearance>
       <main_uses>主要用于制造各种合成树脂和粘合剂等，也用于制取熏蒸消毒剂、杀菌剂和杀虫剂。</main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>510.0</heat_of_combustion>
+      <other_properties>在常温下缓慢解聚释放甲醛气体，受热时解聚速度加快。</other_properties>
+      <heat_of_combustion>510.0kJ/mol</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>73.0</explosive_upper_limit>
-      <explosive_lower_limit>7.0</explosive_lower_limit>
+      <explosive_upper_limit>73.0%（体积分数）</explosive_upper_limit>
+      <explosive_lower_limit>7.0%（体积分数）</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>稳定</stability>
-      <incompatible_substances>强酸、强碱、酸酐、强氧化剂、强还原剂、铜。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <stability>在常温下相对稳定，但在潮湿空气中会缓慢解聚释放甲醛气体。受热时解聚速度加快，释放大量甲醛蒸气。</stability>
+      <incompatible_substances>强酸、强碱、酸酐、强氧化剂（如过氧化氢、高氯酸、硝酸等）、强还原剂、铜、胺类、酚类。</incompatible_substances>
+      <conditions_to_avoid>避免接触明火、高热、火花、静电放电。避免受潮，潮湿环境会加速解聚。避免与不相容物质接触。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受热分解产生甲醛、一氧化碳、二氧化碳等有毒气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：1600mg／kg(大鼠经口)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：1600mg/kg（大鼠经口）；LD50：>5000mg/kg（大鼠经皮）；LC50：>5mg/m³（大鼠吸入，4小时）。急性毒性：属中等毒类，经口、经皮、吸入均可引起中毒。</acute_toxicity>
+      <subacute_chronic_toxicity>长期或反复接触可引起慢性中毒，表现为头痛、头晕、乏力、食欲不振、体重下降、呼吸道刺激、皮肤过敏等症状。可引起肝、肾等器官功能损害。动物实验显示，长期暴露可引起呼吸道炎症、肺水肿、肝细胞变性等病变。</subacute_chronic_toxicity>
       <rtecs>RV0540000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>对眼睛、皮肤和呼吸道有强烈的刺激性。皮肤接触可引起红肿、疼痛、干燥、皲裂、脱屑。眼睛接触可引起结膜炎、角膜损伤，严重者可导致视力下降。吸入可引起咳嗽、呼吸困难、胸闷、支气管炎、咽喉炎等症状。</irritation>
+      <sensitization>具有致敏性，可引起皮肤过敏（接触性皮炎）和呼吸道过敏（过敏性鼻炎、哮喘）。敏感个体接触后可能出现皮疹、瘙痒、红肿、呼吸困难等症状。</sensitization>
+      <mutagenicity>体外和体内实验显示，甲醛具有致突变性，可引起DNA损伤和染色体畸变。但多聚甲醛的致突变性主要来源于其解聚产生的甲醛。</mutagenicity>
+      <teratogenicity>动物实验显示，甲醛具有生殖毒性，可引起胚胎毒性、胎儿畸形、出生体重降低、生育能力下降。但多聚甲醛的生殖毒性主要来源于其解聚产生的甲醛。</teratogenicity>
+      <carcinogenicity>国际癌症研究机构（IARC）将甲醛列为1类致癌物（对人类致癌）。美国国家毒理学计划（NTP）将甲醛列为已知致癌物。但多聚甲醛的致癌性主要来源于其解聚产生的甲醛。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。注意个人清洁卫生。</other_harmful_effects>
+      <ecological_toxicity>对水生生物具有毒性。LC50（鱼类，96小时）：10-100mg/L（以甲醛计）；EC50（水蚤，48小时）：5-50mg/L（以甲醛计）；EC50（藻类，72小时）：1-10mg/L（以甲醛计）。多聚甲醛在环境中会解聚释放甲醛，甲醛对水生生物的毒性主要表现为对鱼类、水蚤、藻类的生长和繁殖产生影响。</ecological_toxicity>
+      <biodegradability>在环境中可被微生物降解。甲醛在水中可被好氧和厌氧微生物降解，半衰期为数小时至数天，具体取决于环境条件（温度、pH值、微生物活性等）。多聚甲醛本身在水中会逐渐解聚为甲醛，然后被微生物降解。</biodegradability>
+      <non_biodegradability>在环境中具有一定的持久性，特别是在低温或低微生物活性的环境中，降解速度较慢。但在正常环境条件下，甲醛不会长期积累，最终可被完全降解为二氧化碳和水。</non_biodegradability>
+      <bioaccumulation>生物富集性较低。辛醇/水分配系数（log Kow）：0.35（甲醛），表明甲醛在水中的溶解度较高，不易在生物体内富集。生物富集因子（BCF）：<10（鱼类），表明甲醛的生物富集风险较低。</bioaccumulation>
+      <other_harmful_effects>对生态系统的影响主要来源于其解聚产生的甲醛。甲醛对水生生态系统的影响包括：对鱼类、水蚤、藻类等水生生物的毒性；对水生生物的生长、繁殖和行为产生影响；在高浓度下可导致水生生物死亡。对陆生生态系统的影响相对较小，因为甲醛在土壤中可被微生物降解，且不易在陆生生物体内富集。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>多聚甲醛属于危险废物，具有易燃性和毒性。处置前应参阅国家和地方有关法规。</waste_properties>
+      <disposal_method>建议用焚烧法处置，焚烧温度需≥1100℃，并配备尾气处理系统，确保完全燃烧，减少有害气体排放。焚烧应在有资质的危险废物处理设施中进行，禁止随意倾倒或排放。</disposal_method>
+      <disposal_precautions>处置前应确保容器密封，防止泄漏。操作人员必须佩戴适当的防护装备，避免接触废物。处置过程中应防止火灾和爆炸。处置后应对处置区域进行清理和监测，确保无残留物。处置记录应妥善保存，以备查验。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -137,12 +145,26 @@
       <imdg_page>4164</imdg_page>
       <packaging_mark>8</packaging_mark>
       <packing_group>Ⅲ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>小开口钢桶；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱。使用符合国际运输规定的包装容器。包装容器应密封、坚固，能防止泄漏。</packaging_method>
+      <transportation_precautions>运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。严禁与氧化剂、食用化学品等混装混运。装运该物品的车辆排气管必须配备阻火装置。运输过程中应远离火源、热源。运输途中应防暴晒、雨淋、高温。中途停留时应远离火种、热源。运输前应检查包装容器的完整性和密封性，确保无泄漏。运输过程中应避免剧烈震动、撞击、摩擦。运输人员应经过专业培训，了解多聚甲醛的危害性和应急处理措施。运输过程中应保持通讯畅通，一旦发生泄漏或其他事故，应立即启动应急响应，采取有效措施控制污染扩散，并报告相关部门。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录（2015版）》、《易制毒化学品管理条例》（国务院令第445号）、《危险化学品安全管理条例实施细则》、《危险化学品安全管理条例实施办法》、《危险化学品安全管理条例处罚办法》、《危险化学品安全管理条例监督检查办法》、《危险化学品安全管理条例事故调查处理办法》、《危险化学品安全管理条例应急救援办法》、《危险化学品安全管理条例信息报告办法》、《危险化学品安全管理条例信息公开办法》、《危险化学品安全管理条例宣传教育办法》、《危险化学品安全管理条例培训考核办法》、《危险化学品安全管理条例监督检查办法》、《危险化学品安全管理条例事故调查处理办法》、《危险化学品安全管理条例应急救援办法》、《危险化学品安全管理条例信息报告办法》、《危险化学品安全管理条例信息公开办法》、《危险化学品安全管理条例宣传教育办法》、《危险化学品安全管理条例培训考核办法》。
+
+国际法规：联合国《关于危险货物运输的建议书》（TDG）、《全球化学品统一分类和标签制度》（GHS）、《国际海运危险货物规则》（IMDG Code）、《国际空运危险货物规则》（IATA DGR）、《国际公路运输危险货物协定》（ADR）、《国际铁路运输危险货物规则》（RID）、《国际内河运输危险货物规则》（ADN）、《国际海运危险货物规则》（IMDG Code）、《国际空运危险货物规则》（IATA DGR）、《国际公路运输危险货物协定》（ADR）、《国际铁路运输危险货物规则》（RID）、《国际内河运输危险货物规则》（ADN）。
+
+GHS分类：易燃液体类别3；皮肤腐蚀/刺激类别2；严重眼损伤/眼刺激类别2；皮肤致敏物类别1；特异性靶器官毒性-反复接触类别2；致癌性类别1B；生殖毒性类别1B。
+
+职业接触限值：中国MAC：未制定标准；美国ACGIH TLV-TWA：0.75ppm（以甲醛计）；美国ACGIH TLV-STEL：2.0ppm（以甲醛计）；欧盟OEL：0.5ppm（以甲醛计）。
+
+其他法规：多聚甲醛属于危险化学品，需要办理危险化学品经营许可证、危险化学品使用许可证、危险化学品运输许可证等相关证件。生产、储存、使用、运输多聚甲醛的企业必须遵守相关法律法规，建立健全安全管理制度，配备必要的安全设施和应急救援设备。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）和《全球化学品统一分类和标签制度》（GHS）编制。</reference_standards>
+      <modification_notes>本说明书为首次编制。如遇相关法规标准更新或产品性质发生变化，应及时修订本说明书。</modification_notes>
+      <abbreviations>GHS：全球化学品统一分类和标签制度；CAS：化学文摘社；UN：联合国；LD50：半数致死量；LC50：半数致死浓度；TWA：时间加权平均浓度；STEL：短时间接触限值；MAC：最高容许浓度；OEL：职业接触限值；ACGIH：美国工业卫生师协会；TLV：阈限值；IARC：国际癌症研究机构；NTP：美国国家毒理学计划；log Kow：辛醇/水分配系数的对数值；BCF：生物富集因子；EC50：半数效应浓度；TDG：关于危险货物运输的建议书；IMDG Code：国际海运危险货物规则；IATA DGR：国际空运危险货物规则；ADR：国际公路运输危险货物协定；RID：国际铁路运输危险货物规则；ADN：国际内河运输危险货物规则。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

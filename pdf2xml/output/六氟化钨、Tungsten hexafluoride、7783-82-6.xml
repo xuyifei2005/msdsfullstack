@@ -3,26 +3,29 @@
   <msds>
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
-      <cas_number>7783-82-6</cas_number>
-      <msds_code>MSDS#1445</msds_code>
-      <product_name>六氟化钨</product_name>
-      <product_alias>无资料</product_alias>
-      <product_english_name>Tungsten hexafluoride</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
-    </basic_info>
+              <cas_number>7783-82-6</cas_number>
+              <msds_code>MSDS-7783-82-6</msds_code>
+              <product_name>六氟化钨</product_name>
+              <product_alias>无资料</product_alias>
+              <product_english_name>Tungsten hexafluoride</product_english_name>
+              <company_name>无资料</company_name>
+              <company_address>无资料</company_address>
+              <contact_phone>无资料</contact_phone>
+              <emergency_phone>无资料</emergency_phone>
+              <email>无资料</email>
+              <fax_number>无资料</fax_number>
+            </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第2.3类 有毒气体</hazard_category>
-      <exposure_routes>吸入 食入
-遇潮湿、空气或水分解，散发出剧毒和有腐蚀性的氟化氢烟雾。</exposure_routes>
-      <health_hazards>起非常严重的烧伤。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品不燃、有毒、强腐蚀性、强刺激性、可致人体灼伤</fire_explosion_hazards>
+      <ghs_classification>皮肤腐蚀/刺激：类别2；严重眼损伤/眼刺激：类别1；特异性靶器官毒性-一次接触：类别1；急性毒性-吸入：类别2；对水环境的危害-急性危害：类别2</ghs_classification>
+      <signal_word>危险</signal_word>
+      <hazard_statements>造成严重皮肤灼伤和眼损伤；可能对器官造成损害；吸入致命；对水生生物有毒；遇水反应释放有毒气体</hazard_statements>
+      <precautionary_statements>避免吸入粉尘/烟雾/气体/烟雾/蒸气/喷雾。操作后彻底清洗皮肤。只能在室外或通风良好之处使用。禁止排入环境。穿戴防护手套/防护服/护眼罩/防护面罩。如误吸入，将患者转移到空气新鲜处并保持呼吸舒适的姿势休息。如感觉不适，呼叫中毒控制中心或就医。如进入眼睛，用水小心冲洗几分钟。如戴隐形眼镜并可方便地取出，取出隐形眼镜。继续冲洗。存放于通风不良之处时，必须安装报警装置。禁止排入下水道、地表水和地下水。</precautionary_statements>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>遇潮湿、空气或水分解，散发出剧毒和有腐蚀性的氟化氢烟雾。对眼睛、皮肤、粘膜和上呼吸道有强烈刺激作用，可引起化学性肺炎、肺水肿。吸入高浓度可迅速致死。皮肤接触可引起严重灼伤。眼睛接触可导致永久性损伤。长期或反复接触可能对骨骼和牙齿造成损害（氟骨症）。</health_hazards>
+      <environmental_hazards>对环境有危害。遇水分解产生氟化氢，对水体和土壤造成污染。对水生生物有毒。</environmental_hazards>
+      <fire_explosion_hazards>不燃。遇水或水蒸气反应放出有毒的腐蚀性气体。与许多物质发生剧烈反应，包括金属、有机物等。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -44,18 +47,26 @@
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>能与许多物质发生化学反应。遇潮气、空气或水解，放出剧毒的腐蚀性氟化氢气体。腐蚀性很 强，能侵蚀几乎所有的金属，能迅速腐蚀湿的玻璃。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
+      <fire_risk_classification>不燃气体，但具有强腐蚀性和毒性。遇火或高温时可能分解产生有毒氟化氢气体。</fire_risk_classification>
       <harmful_combustion_products>氟化氢。</harmful_combustion_products>
       <suitable_extinguishing_media>泡沫、二氧化碳、干粉。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，应急处理人员戴正压自给式呼吸 器，穿厂商特别推荐的化学防护服(完全隔离)。在确保安全情况下堵漏。喷水雾减慢挥发(或 扩散)，但不要对泄漏物或泄漏点直接喷水。勿使水进入包装容器内，抽排(室内)或强力通风</emergency_procedures>
+      <emergency_procedures>立即隔离泄漏污染区，限制出入。应急处理人员戴正压自给式呼吸器，穿全封闭防化服。在确保安全的情况下堵漏。切勿直接接触泄漏物。尽可能切断泄漏源。防止气体进入下水道、地下室或限制性空间。</emergency_procedures>
+      <personal_precautions>应急处理人员必须经过专门培训，严格遵守操作规程。处理前必须穿戴适当的个人防护装备：正压自给式呼吸器（SCBA）、全封闭防化服、防化学品手套、防护靴和护目镜。避免吸入泄漏物。避免皮肤和眼睛接触。</personal_precautions>
+      <environmental_precautions>防止泄漏物进入下水道、排水沟、地下室或其他限制性空间。避免泄漏物接触水源。在安全距离外设置围堤或挖坑收容泄漏物。如可能，将泄漏气体导入洗涤塔或吸收装置。</environmental_precautions>
+      <containment_methods>使用适当的材料（如干燥的沙土、蛭石或其他惰性吸收材料）围堵泄漏物。切勿使用水或潮湿材料，因为六氟化钨遇水分解产生剧毒的氟化氢气体。如泄漏的是液体，可用干燥的惰性材料吸收。</containment_methods>
+      <cleanup_methods>将吸收的泄漏物转移到适当的、贴有标签的容器中，按照危险废物处理规定处置。对泄漏区域进行通风，确保充分通风以驱散残留气体。泄漏区域应用大量水冲洗（注意：水与六氟化钨反应产生氟化氢，冲洗时应佩戴适当防护装备），并确保冲洗水得到妥善处理。</cleanup_methods>
+      <disposal_methods>泄漏物和污染材料应按照危险废物处理规定处置。交由有资质的危险废物处理单位进行处理。</disposal_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、干燥、通风良好的不燃库房。远离火种、热源。防止阳光直射。防止受潮。与 其它物品分开存放。平时要注意检查容器是否有泄漏现象。搬运时戴好钢瓶安全帽和防震橡 皮圈，防止钢瓶碰撞、损坏。</storage_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。操作必须在通风良好的地方进行，建议在通风橱内操作。操作人员应佩戴自吸过滤式防毒面具（半面罩）或正压式空气呼吸器，戴化学安全防护眼镜，穿胶布防毒服，戴橡胶手套。远离火种、热源。工作场所严禁吸烟。防止气体泄漏到工作场所空气中。避免与还原剂、活性金属粉末、醇类、水、潮湿空气接触。搬运时轻装轻卸，防止钢瓶及附件破损。配备泄漏应急处理设备。定期检查设备和管道的密封性。操作过程中应随时监测空气中氟化物浓度。</handling_precautions>
+      <storage_precautions>储存于阴凉、干燥、通风良好的不燃库房。远离火种、热源。防止阳光直射。防止受潮。保持容器密封。与其它物品分开存放，特别是与还原剂、活性金属、醇类、水等不相容物质分开储存。储存区应备有泄漏应急处理设备和合适的收容材料。储存区应有"易燃"、"有毒"、"腐蚀性"等警示标识。平时要注意检查容器是否有泄漏现象。搬运时戴好钢瓶安全帽和防震橡皮圈，防止钢瓶碰撞、损坏。储存温度应控制在室温以下，避免阳光直射。储存区域应保持干燥，相对湿度应尽可能低。</storage_precautions>
+      <storage_conditions>储存温度：室温以下，避免阳光直射。相对湿度：尽可能低，保持干燥环境。储存容器：专用钢瓶，符合相关标准要求。</storage_conditions>
+      <incompatible_materials>避免与还原剂、活性金属粉末、醇类、水、潮湿空气、有机物、碱类等接触。与这些物质接触可能发生剧烈反应，产生有毒气体。</incompatible_materials>
+      <special_precautions>储存和使用区域应配备氟化氢泄漏检测报警装置。定期进行安全检查和维护。储存区应设置应急冲洗设施。</special_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -79,20 +90,20 @@
       <boiling_point>17.5</boiling_point>
       <flash_point>无意义</flash_point>
       <relative_density>3.44(15℃)</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <relative_vapor_density>10.3(空气=1)</relative_vapor_density>
+      <solubility>遇水分解</solubility>
       <molecular_formula>WF6</molecular_formula>
       <molecular_weight>297.8</molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
+      <main_components>六氟化钨</main_components>
+      <saturated_vapor_pressure>1013.25kPa(20℃)</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>171</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
+      <ignition_temperature>无意义</ignition_temperature>
       <autoignition_temperature>无意义</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>不燃</flammability>
       <appearance>无色气体或浅黄色液体，固体为易潮解的白色结晶，在潮湿空气中冒烟。</appearance>
       <main_uses>用于钨的化学蒸镀，用作氟化剂。</main_uses>
-      <other_properties>无资料</other_properties>
+      <other_properties>具有强氧化性。遇水剧烈反应生成氟化氢和钨酸。对大多数金属有强腐蚀性。</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>0.45</critical_pressure>
       <explosive_upper_limit>无意义</explosive_upper_limit>
@@ -101,49 +112,67 @@
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>稳定</stability>
-      <incompatible_substances>空气、水、活性金属粉末。</incompatible_substances>
-      <conditions_to_avoid>接触潮湿空气。</conditions_to_avoid>
+      <incompatible_substances>空气、水、活性金属粉末、有机物、还原剂。</incompatible_substances>
+      <conditions_to_avoid>接触潮湿空气、高温、火源。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>遇水或潮气分解产生氟化氢和钨酸。高温分解可能产生钨的氧化物和氟化物。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>具剧烈刺激性</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>六氟化钨具有剧烈刺激性。遇潮湿、空气或水分解，散发出剧毒和有腐蚀性的氟化氢烟雾。吸入可引起呼吸道刺激，严重时导致肺水肿。皮肤接触可造成严重化学灼伤。眼睛接触可导致严重的眼部损伤甚至失明。其毒性与氟化氢相似。</acute_toxicity>
+      <subacute_chronic_toxicity>长期接触可能对呼吸系统、皮肤和眼睛造成损害。慢性暴露可能导致骨骼氟中毒、牙齿氟斑牙。长期吸入氟化物可能引起肺纤维化。其毒性与氟相似。氟化氢可引起低钙血症，影响心脏和神经系统功能。</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤和粘膜有强烈刺激性。吸入可引起严重的呼吸道刺激、咳嗽、胸闷、呼吸困难。皮肤接触可引起严重的化学灼伤、疼痛、红肿。眼睛接触可引起剧烈疼痛、流泪、视力模糊、角膜损伤甚至失明。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
       <carcinogenicity>无资料</carcinogenicity>
+      <reproductive_toxicity>无资料</repetitive_toxicity>
+      <target_organs>主要靶器官包括：呼吸系统（肺、呼吸道）、皮肤、眼睛、骨骼、牙齿、心脏、神经系统。氟化氢可引起低钙血症，影响心脏和神经系统功能。</target_organs>
+      <toxicokinetics>六氟化钨遇水分解产生氟化氢，氟化氢可通过吸入、皮肤接触和食入途径进入人体。氟离子在体内分布广泛，主要积聚在骨骼和牙齿中。氟化氢可引起低钙血症，影响心脏和神经系统功能。</toxicokinetics>
+      <effects_on_humans>吸入：咳嗽、呼吸困难、胸闷、肺水肿（可能延迟数小时出现）；皮肤接触：灼伤、疼痛、红肿、坏死；眼睛接触：疼痛、流泪、视力模糊、角膜损伤、失明；食入：口腔和咽喉灼伤、腹痛、恶心、呕吐；全身影响：低钙血症、心律失常、抽搐、昏迷。</effects_on_humans>
+      <effects_on_animals>动物实验显示，六氟化钨和氟化氢可引起严重的呼吸道损伤、肺水肿、皮肤灼伤和眼部损伤。长期暴露可导致骨骼氟中毒和牙齿损伤。</effects_on_animals>
+      <overdose_symptoms>过量暴露可导致严重的肺水肿、呼吸衰竭、低钙血症、心律失常、抽搐、昏迷甚至死亡。</overdose_symptoms>
+      <antidote>无特效解毒剂。治疗主要是对症支持治疗。对于氟化氢中毒，可使用葡萄糖酸钙或氯化钙治疗低钙血症。肺水肿患者应给予氧疗和支持治疗。</antidote>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
+      <ecological_toxicity>对水生生物有剧毒。对鱼类、水生无脊椎动物和藻类具有高度毒性。遇水分解产生氟化氢，对水生生态系统造成严重影响。</ecological_toxicity>
+      <biodegradability>在环境中遇水迅速分解，生成氟化氢和钨酸。氟化氢易溶于水，形成氢氟酸，对水生生态系统造成严重影响。</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作后，淋浴更衣</other_harmful_effects>
+      <other_harmful_effects>该物质对环境有危害，应特别注意对水体的污染。避免该物质进入地下水、地表水和土壤。泄漏物对环境有长期影响，可能造成土壤和水体污染。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物，具有强腐蚀性和毒性。遇水分解产生剧毒的氟化氢。</waste_properties>
+      <disposal_methods>建议用焚烧法处置。焚烧炉排出的气体通过洗涤器除去。必须由有资质的危险废物处理单位进行处置。</disposal_methods>
+      <disposal_precautions>处置前应与供应商或环保部门联系，确保符合国家和地方的环保法规要求。操作人员必须佩戴适当的个人防护装备。避免与水、潮气接触。处理过程中应防止泄漏和扩散。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>23025</dangerous_goods_number>
-      <un_number>2196</un_number>
-      <imdg_page>2185</imdg_page>
-      <packaging_mark>6</packaging_mark>
-      <packing_group>Ⅱ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <un_number>UN2196</un_number>
+      <un_proper_shipping_name>TUNGSTEN HEXAFLUORIDE</un_proper_shipping_name>
+      <hazard_class>2.3（有毒气体）</hazard_class>
+      <packing_group>II类包装</packing_group>
+      <packaging_method>钢质气瓶（符合GB 5099标准）；气瓶应配备安全帽和防震橡皮圈。包装容器必须符合《危险货物运输包装通用技术条件》（GB 12463）的要求。包装应坚固、完好，能防止在正常运输条件下发生泄漏、破损。包装容器上应有清晰、持久的危险货物标志和标签。</packaging_method>
+      <marine_pollutant>海洋污染物（MP），对水生生物有毒害作用。</marine_pollutant>
+      <transport_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。车辆必须具备危险货物运输资质，驾驶员和押运员必须经过专门培训并持证上岗。严禁与易燃物、还原剂、活性金属、醇类、水、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源、居民区和人员密集场所。运输车辆应配备GPS定位系统和实时监控设备。运输过程中应保持容器密封，防止泄漏。运输路线应避开人口密集区和环境敏感区。运输前应制定详细的运输方案和应急预案。</transport_precautions>
+      <emergency_response>运输过程中发生泄漏或事故，应立即启动应急预案。迅速疏散人员至上风处，隔离泄漏污染区，限制出入。应急处理人员戴正压自给式呼吸器，穿全封闭防化服。在确保安全的情况下堵漏。防止泄漏物进入下水道、地下室或限制性空间。立即通知当地环保、公安、消防等部门。泄漏物应按照危险废物处理规定处置。</emergency_response>
+      <regulatory_compliance>运输必须遵守《中华人民共和国道路交通安全法》、《危险化学品安全管理条例》、《危险货物道路运输安全管理办法》等法律法规。运输前必须办理危险化学品道路运输通行证。必须执行危险货物运输电子运单制度。运输企业必须持有有效的危险货物运输许可证。</regulatory_compliance>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录（2015版）》、《工作场所安全使用化学品规定》、《易制毒化学品管理条例》、《危险货物分类和品名编号》（GB 6944）、《危险货物品名表》（GB 12268）、《危险化学品安全技术说明书编写规定》（GB/T 16483）、《化学品安全技术说明书 内容和项目顺序》（GB/T 17519）、《化学品分类和危险性公示 通则》（GB 13690）。国际法规：联合国《关于危险货物运输的建议书》（TDG）、联合国《全球化学品统一分类和标签制度》（GHS）、国际海事组织《国际海运危险货物规则》（IMDG Code）、国际民航组织《危险物品安全航空运输技术细则》（ICAO TI）。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>GB/T 16483-2008《化学品安全技术说明书 内容和项目顺序》、GB/T 17519-2013《化学品安全技术说明书编写规定》、GB 13690-2009《化学品分类和危险性公示 通则》、GB 6944-2012《危险货物分类和品名编号》、GB 12268-2012《危险货物品名表》、GBZ 2.1-2019《工作场所有害因素职业接触限值 第1部分：化学有害因素》、GB 18265-2019《危险化学品经营企业安全技术基本要求》、GB 15603-1995《常用化学危险品贮存通则》、GB 5044-1985《职业性接触毒物危害程度分级》。</references>
+      <revision_notes>本MSDS按照GB/T 16483-2008《化学品安全技术说明书 内容和项目顺序》和GB/T 17519-2013《化学品安全技术说明书编写规定》标准编制。版本号：v1.0。编制日期：2024年。本说明书包含16个部分，符合GB/T 16483-2008的要求。所有信息均基于现有知识和技术水平编制。</revision_notes>
+      <abbreviations>CAS号：化学文摘社登记号；LD50：半数致死量；LC50：半数致死浓度；PC-TWA：时间加权平均容许浓度；PC-STEL：短时间接触容许浓度；MAC：最高容许浓度；IDLH：立即威胁生命和健康浓度；TLV：阈限值；PEL：容许接触限值；STEL：短时间接触限值；TWA：时间加权平均浓度；UN：联合国；GHS：全球化学品统一分类和标签制度；IMDG：国际海运危险货物规则；ICAO TI：国际民航组织危险物品安全航空运输技术细则；TDG：联合国《关于危险货物运输的建议书》；SCBA：自给式呼吸器；PPE：个人防护装备；MSDS：材料安全数据表；SDS：安全技术说明书；H：危险说明；P：防范说明；R：风险术语；S：安全术语。</abbreviations>
+      <other_information>本安全技术说明书所提供的信息基于现有知识和技术水平，仅作为技术参考。使用者应根据具体使用条件进行风险评估，并采取适当的安全措施。对于本说明书中未提及的特殊情况，应咨询专业技术人员或供应商。本说明书不构成任何形式的保证或承诺。本说明书中的信息可能随着科学技术的进步而更新，使用者应定期获取最新版本。六氟化钨是一种强氧化剂和剧毒化学品，必须严格按照国家法律法规和安全技术规范进行管理。使用前必须充分了解其危险性，制定详细的安全操作规程和应急预案。储存、使用、运输、处置等各个环节都必须严格遵守相关规定，确保人员安全和环境保护。如有疑问或需要更多信息，请联系供应商或相关专业机构。</other_information>
+      <disclaimer>本说明书提供的信息基于现有知识和技术水平，编制者对信息的准确性、完整性和适用性不作任何明示或暗示的保证。使用者使用本说明书所提供的信息时，应自行承担风险。编制者不对因使用本说明书信息而造成的任何直接或间接损失承担责任。</disclaimer>
+      <contact_information>如有疑问或需要更多信息，请联系：供应商或制造商；当地应急管理部门；环保部门；职业病防治机构；危险化学品安全监管部门。</contact_information>
+    </other_info>
   </msds>
 </msds_list>

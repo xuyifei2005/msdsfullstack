@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>7632-51-1</cas_number>
-      <msds_code>供应商名称： 供应商地址：</msds_code>
+      <msds_code>MSDS-7632-51-1</msds_code>
       <product_name>四氯化钒</product_name>
-      <product_alias>英文名称： vanadiumtetrachloride 英文别名：</product_alias>
-      <product_english_name>vanadiumtetrachloride</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_alias>无资料</product_alias>
+      <product_english_name>vanadium tetrachloride</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -31,8 +31,8 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。就医。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行</eye_contact>
-      <inhalation>人工呼吸。就医。</inhalation>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
       <ingestion>误服者立即漱口，给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
@@ -48,8 +48,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>火花、明火和热表面。采取措施防止静电积累。 存于密闭容器内，置于凉爽、通风处；隔热，远离易燃物，避水；当储存处温度降至20℃ 以下储存；穿专用防护用具，并在惰性气体保护下方可开启容器。须贴“腐蚀”标签，禁 止航空客运、铁路运输，航空货运限量运输。</storage_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶手套。远离火种、热源。工作场所严禁吸烟。防止蒸气泄漏到工作场所空气中。避免与氧化剂、碱类、活性金属粉末接触。尤其要避免与水接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、干燥、通风良好的不燃库房。包装密封。防止阳光曝晒。防止受潮和雨淋。应与氧化剂、碱类、活性金属粉末、食用化工原料等分开存放。搬运时轻装轻卸，保持包装完整，防止洒漏。雨天搬运要妥善遮盖。操作现场不得吸烟、饮水、进食。分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -75,8 +75,8 @@
       <relative_density>1．8(30)</relative_density>
       <relative_vapor_density>6</relative_vapor_density>
       <solubility></solubility>
-      <molecular_formula>C</molecular_formula>
-      <molecular_weight></molecular_weight>
+      <molecular_formula>VCl₄</molecular_formula>
+      <molecular_weight>192.75</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
@@ -127,17 +127,17 @@
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
+      <dangerous_goods_number>81052</dangerous_goods_number>
       <un_number>2444</un_number>
       <imdg_page>无资料</imdg_page>
-      <packaging_mark>不适用</packaging_mark>
-      <packing_group>无资料</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_mark>Ⅰ</packaging_mark>
+      <packing_group>Ⅰ</packing_group>
+      <packaging_method>磨砂口玻璃瓶或螺纹口玻璃瓶外普通木箱;安瓿瓶外普通木箱;螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶(罐)外普通木箱</packaging_method>
+      <transportation_precautions>运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与氧化剂、食用化学品等混装混运。装运该物品的车辆排气管必须配备阻火装置。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》(国务院令第591号)、《危险货物品名表》(GB12268)、《化学品安全技术说明书内容和项目顺序》(GB/T 16483-2008)、《危险化学品目录(2015版)》</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

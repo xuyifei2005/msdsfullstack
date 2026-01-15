@@ -4,7 +4,7 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>10049-14-6</cas_number>
-      <msds_code>MSDS#1552</msds_code>
+      <msds_code>MSDS-10049-14-6</msds_code>
       <product_name>四氟化铀</product_name>
       <product_alias>无资料</product_alias>
       <product_english_name>Uranium tetrafluoride</product_english_name>
@@ -17,11 +17,11 @@
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>无资料</hazard_category>
+      <hazard_category>第7类 放射性物品</hazard_category>
       <exposure_routes>吸入 食入</exposure_routes>
-      <health_hazards></health_hazards>
+      <health_hazards>具有放射性和化学毒性。吸入可导致肺部损伤和肾脏损害。长期接触可引起慢性铀中毒，表现为肾功能损害、肝脏损害和造血系统损害。对眼睛、皮肤、粘膜有刺激作用。摄入可引起胃肠道刺激和肾脏损伤。</health_hazards>
       <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <fire_explosion_hazards>受高热、明火会产生剧毒的蒸气。具有强腐蚀性。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -53,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于专用仓库内，不可与其它化学危险物品及生活用品混储、混运。严禁在安全距离内 堆放易燃物品，防止在发生火灾时引燃放射性物品。运输要专车专运，包装必须密封，并 应有放射性专用标志。搬运人员应穿戴防护用具。搬运时不得撞击、翻滚和摔落。</storage_precautions>
+      <handling_precautions>严加密闭，提供充分的局部排风和全面通风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防尘口罩（全面罩），穿抗辐射防护服，戴抗辐射手套。远离火种、热源。防止粉尘泄漏到工作场所空气中。避免与强氧化剂、强酸、水接触。配备泄漏应急处理设备和防护用品。操作现场严禁吸烟、进食和饮水。工作完毕，淋浴更衣。实行就业前和定期的体检。</handling_precautions>
+      <storage_precautions>储存于专用仓库内，不可与其它化学危险物品及生活用品混储、混运。严禁在安全距离内堆放易燃物品，防止在发生火灾时引燃放射性物品。运输要专车专运，包装必须密封，并应有放射性专用标志。搬运人员应穿戴防护用具。搬运时不得撞击、翻滚和摔落。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -132,17 +132,17 @@
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <dangerous_goods_number>2912</dangerous_goods_number>
+      <un_number>UN2912</un_number>
       <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
+      <packaging_mark>放射性物品标志</packaging_mark>
       <packing_group>无资料</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>按照GB11806-2019《放射性物品安全运输规程》要求进行包装，使用符合标准的放射性物品运输容器，包装必须密封完整。</packaging_method>
+      <transportation_precautions>运输要专车专运，包装必须密封，并应有放射性专用标志。搬运人员应穿戴防护用具。搬运时不得撞击、翻滚和摔落。运输过程中应避免与其它化学危险物品及生活用品混运。运输车辆应配备相应的辐射监测设备和应急处理设备。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《放射性物品运输安全管理条例》；GB11806-2019《放射性物品安全运输规程》；GB30000—2013《化学品分类和标签规范》；GB/T 16483—2008《化学品安全技术说明书内容和项目顺序》；GB/T 17519—2013《化学品安全技术说明书编写指南》</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

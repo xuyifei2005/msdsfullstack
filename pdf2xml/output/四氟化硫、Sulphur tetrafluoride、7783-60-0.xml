@@ -4,22 +4,22 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>7783-60-0</cas_number>
-      <msds_code>MSDS#1553</msds_code>
+      <msds_code>MSDS-7783-60-0</msds_code>
       <product_name>四氟化硫</product_name>
       <product_alias>无资料</product_alias>
       <product_english_name>Sulphur tetrafluoride</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第2.3类 有毒气体</hazard_category>
       <exposure_routes>吸入 食入</exposure_routes>
-      <health_hazards></health_hazards>
+      <health_hazards>具有强烈毒性的刺激性气体，可引起类似光气的呼吸道损害。实验动物有明显的肺水肿改变。对眼睛、皮肤、粘膜和上呼吸道有强烈刺激作用。</health_hazards>
       <environmental_hazards>无资料</environmental_hazards>
       <fire_explosion_hazards>本品不燃、剧毒、具有强腐蚀性、强刺激性、可致人体灼伤</fire_explosion_hazards>
     </hazard_info>
@@ -49,12 +49,15 @@
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>迅速撤离泄漏污染区人员至上风处，并隔离直至气体散尽，应急处理人员戴正压自给式呼 吸器，穿厂商特别推荐的化学防护服(完全隔离)。切断火源。在确保安全情况下堵漏。勿 使泄漏物与可燃物质(木材、纸、油等)接触，抽排(室内)或强力通风(室外)。漏气容器不</emergency_procedures>
+      <emergency_procedures>迅速撤离泄漏污染区人员至上风处，并隔离直至气体散尽，应急处理人员戴正压自给式呼吸器，穿厂商特别推荐的化学防护服（完全隔离）。切断火源。在确保安全情况下堵漏。勿使泄漏物与可燃物质（木材、纸、油等）接触，抽排（室内）或强力通风（室外）。漏气容器要妥善处理，修复、检验后再用。</emergency_procedures>
+      <elimination_methods>切断泄漏源，合理通风，加速扩散。使用惰性气体（如氮气）稀释泄漏气体。构筑围堤或挖坑收容产生的大量废水。禁止直接向泄漏物喷水，避免产生大量氟化氢。如有可能，将漏出气用排风机送至空旷地方或装设适当喷头烧掉。</elimination_methods>
+      <environmental_protection>防止泄漏物进入下水道、地下室或限制性空间。避免污染土壤和水源。泄漏物应收集后委托有资质的单位处理。泄漏区域应进行彻底清洗和中和处理。</environmental_protection>
+      <personal_protection>应急处理人员应佩戴自给正压式呼吸器，穿防毒服，戴化学安全防护眼镜和橡胶手套。避免直接接触泄漏物。处理过程中应有人监护。进入高浓度区域作业，须有人监护。</personal_protection>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>不燃有毒压缩气体。储存于阴凉、通风仓间内。远离火种、热源。防止阳光直射。防止受 潮。应与酸类、易燃、可燃物，潮湿物品、金属粉末等分开存放。搬运时戴好钢瓶安全帽 和防震橡皮圈，防止钢瓶碰撞、损坏。</storage_precautions>
+      <handling_precautions>严加密闭，提供充分的局部排风和全面通风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（全面罩），穿密闭型防毒服，戴橡胶手套。远离易燃、可燃物。防止气体泄漏到工作场所空气中。避免与氧化剂接触。配备泄漏应急处理设备。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。库温不宜超过30℃。应与易（可）燃物、氧化剂分开存放，切忌混储。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -136,13 +139,13 @@
       <un_number>2418</un_number>
       <imdg_page>2180</imdg_page>
       <packaging_mark>6</packaging_mark>
-      <packing_group>无资料</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packing_group>II类包装</packing_group>
+      <packaging_method>钢质气瓶</packaging_method>
+      <transportation_precautions>铁路运输时须报铁路局进行试运，试运期为两年。试运结束后，写出试运报告，报铁道部正式公布运输条件。铁路运输时应严格按照铁道部《危险货物运输规则》中的危险货物配装表进行配装。采用钢瓶运输时必须戴好钢瓶上的安全帽。钢瓶一般平放，并应将瓶口朝同一方向，不可交叉。严禁与易燃物或可燃物、酸类、氧化剂等混装混运。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》(2011年国务院第591号令)；GB30000—2013《化学品分类和标签规范》；GB/T 16483—2008《化学品安全技术说明书内容和项目顺序》；GB/T 17519—2013《化学品安全技术说明书编写指南》</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

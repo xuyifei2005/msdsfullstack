@@ -5,155 +5,236 @@
     <basic_info>
       <cas_number>57-55-6</cas_number>
       <msds_code>MSDS#1085</msds_code>
-      <product_name>1，2-丙二醇</product_name>
-      <product_alias>无资料</product_alias>
-      <product_english_name>1，2-Propanediol</product_english_name>
-      <company_name>无资料</company_name>
-      <company_address>无资料</company_address>
-      <contact_phone>无资料</contact_phone>
-      <emergency_phone>无资料</emergency_phone>
-      <email>无资料</email>
-      <fax_number>无资料</fax_number>
+      <product_name>1,2-丙二醇</product_name>
+      <product_alias>丙二醇、1,2-二羟基丙烷、α-丙二醇、1,2-二羟基丙醇、1,2-丙烷二醇、PG</product_alias>
+      <product_english_name>1,2-Propanediol</product_english_name>
+      <company_name>化学品生产企业（具体企业名称根据实际情况填写）</company_name>
+      <company_address>中国XX省XX市XX区XX路XX号</company_address>
+      <contact_phone>+86-XXX-XXXXXXXX</contact_phone>
+      <emergency_phone>+86-XXX-XXXXXXXX（24小时应急电话）</emergency_phone>
+      <email>contact@company.com</email>
+      <fax_number>+86-XXX-XXXXXXXX</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
+      <ghs_classification>根据《全球化学品统一分类和标签制度》（GHS）分类：易燃液体，类别3；皮肤腐蚀/刺激，类别2；严重眼损伤/眼刺激，类别2；特异性靶器官毒性-反复接触，类别2。</ghs_classification>
       <hazard_category>第3类易燃液体；皮肤腐蚀/刺激,类别2；严重眼损伤/眼刺激,类别2</hazard_category>
-      <exposure_routes>吸入 食入 皮肤接触 眼睛接触</exposure_routes>
+      <signal_word>警告</signal_word>
+      <hazard_statements>H226：易燃液体和蒸气；H315：造成皮肤刺激；H319：造成严重眼刺激；H336：可能造成嗜睡或眩晕。</hazard_statements>
+      <precautionary_statements>P201：在使用前获取特别指示；P202：在阅读所有安全措施之前切勿操作；P210：远离热源、火花、明火、热表面。禁止吸烟；P233：保持容器密闭；P240：容器和接收设备接地/等势连接；P241：使用防爆的电气/通风/照明设备；P242：只能使用不产生火花的工具；P243：采取防止静电放电的措施；P261：避免吸入粉尘/烟雾/气体/烟雾/蒸气/喷雾；P264：操作后彻底清洗皮肤；P280：戴防护手套/穿防护服/戴防护眼罩/戴防护面具；P305+P351+P338：如进入眼睛：用水小心清洗几分钟。如戴隐形眼镜并可方便地取出，取出隐形眼镜。继续冲洗；P312：如感觉不适，呼叫中毒控制中心或就医；P332+P313：如发生皮肤刺激：求医/就诊；P337+P313：如仍觉眼刺激：求医/就诊；P370+P378：火灾时：使用灭火设备灭火；P403+P235：存放在通风良好的地方。保持低温；P405：存放处须加锁；P501：处置内装物/容器按照当地/区域/国家/国际法规。</precautionary_statements>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
       <health_hazards>吸入：吸入蒸气可引起鼻和喉刺激、头痛、眩晕、嗜睡、虚弱和协调障碍。高浓度吸入可能导致意识丧失。皮肤接触：皮肤接触可引起刺激、红斑、干燥。眼睛接触：眼睛接触可引起刺激、流泪、红肿。食入：食入可引起恶心、呕吐、腹痛、腹泻。大量食入可能损害肝、肾功能。长期接触可能导致皮肤干燥或开裂。</health_hazards>
-      <environmental_hazards>对水生生物有害，可能对水生环境产生长期不良影响。</environmental_hazards>
-      <fire_explosion_hazards>本品可燃，遇明火、高热或氧化剂有燃烧爆炸危险。蒸气能与空气形成爆炸性混合物，遇明火、高热极易燃烧爆炸。蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。</fire_explosion_hazards>
+      <environmental_hazards>对水生生物有害，可能对水生环境产生长期不良影响。该物质在环境中可生物降解，生物降解率>90%（28天）。生物富集系数(BCF)低，不易在生物体内富集。对水生生物毒性较低，鱼类LC50>10000mg/L（96小时）。</environmental_hazards>
+      <fire_explosion_hazards>本品可燃，遇明火、高热或氧化剂有燃烧爆炸危险。蒸气能与空气形成爆炸性混合物，遇明火、高热极易燃烧爆炸。蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。爆炸下限：2.6%（体积）；爆炸上限：12.6%（体积）；引燃温度：371℃；闪点：99℃（闭杯）。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
+      <mixture_type>纯物质</mixture_type>
       <components>
         <component>
-          <component_name>1，2-丙二醇</component_name>
-          <component_content>100%</component_content>
+          <component_name>1,2-丙二醇</component_name>
+          <component_english_name>1,2-Propanediol</component_name>
+          <component_content>≥99.5%</component_content>
           <cas_number>57-55-6</cas_number>
+          <ec_number>200-338-0</ec_number>
+          <molecular_formula>C3H8O2</molecular_formula>
+          <molecular_weight>76.1</molecular_weight>
+          <concentration_range>≥99.5%</concentration_range>
+          <hazard_classification>易燃液体，类别3；皮肤腐蚀/刺激，类别2；严重眼损伤/眼刺激，类别2</hazard_classification>
         </component>
       </components>
+      <impurities>可能含有微量水分（≤0.5%）和其他有机杂质。具体杂质含量取决于生产工艺和纯度等级。</impurities>
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。</eye_contact>
-      <inhalation>脱离现场至空气新鲜处。就医。</inhalation>
-      <ingestion>给饮足量温水，催吐，就医。</ingestion>
+      <general_advice>立即寻求医疗救助。在将受害者送往医院时，应携带本安全技术说明书。在所有情况下，都应遵循医生的指示。</general_advice>
+      <skin_contact>立即脱去被污染的衣着，用大量流动清水冲洗皮肤至少15分钟。如果皮肤刺激持续存在，应立即就医。脱去被污染的衣服和鞋袜，清洗后方可重新使用。如出现皮肤灼伤、红斑、水泡等严重症状，应立即就医。</skin_contact>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗至少15分钟。冲洗时应将眼睑完全分开，确保冲洗液接触到眼球的各个部位。冲洗后应立即就医。在就医途中，应继续用干净的湿布覆盖眼睛，避免进一步刺激。如佩戴隐形眼镜，应在冲洗后立即取出。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处，保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸，并立即就医。在等待医疗救助时，应让受害者保持温暖和安静，避免剧烈运动。如出现意识丧失，应将受害者置于复苏体位，并立即呼叫急救服务。</inhalation>
+      <ingestion>切勿催吐。给患者饮用足量的温水或牛奶，以稀释胃内容物。如患者意识清醒，可让其漱口。如患者意识不清或出现呕吐，应立即就医。切勿给意识不清的患者口服任何物质。在就医途中，应让患者保持侧卧位，防止呕吐物吸入肺部。如患者出现抽搐，应保护患者免受伤害，并立即就医。</ingestion>
+      <most_important_symptoms_and_effects>吸入：头痛、眩晕、嗜睡、虚弱、协调障碍、意识丧失。皮肤接触：刺激、红斑、干燥。眼睛接触：刺激、流泪、红肿。食入：恶心、呕吐、腹痛、腹泻、肝肾功能损害。</most_important_symptoms_and_effects>
+      <medical_attention>医生应特别注意监测患者的肝肾功能、电解质平衡和酸碱平衡。如患者出现严重症状，应进行支持性治疗。在治疗过程中，应避免使用可能加重症状的药物。如患者出现严重的皮肤或眼睛刺激，应进行对症治疗。</medical_attention>
+      <notes_to_physician>1,2-丙二醇的毒性相对较低，但大量摄入可能对肝肾功能产生影响。治疗应以支持性治疗为主，注意维持水电解质平衡。如患者出现严重的皮肤或眼睛刺激，应进行对症治疗。在治疗过程中，应密切监测患者的生命体征。</notes_to_physician>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>遇明火、高热或与氧化剂接触，有引起燃烧爆炸的危险。蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。若遇高热，容器内压增大，有开裂和爆炸的危险。</hazard_characteristics>
-      <fire_risk_classification>丙</fire_risk_classification>
-      <harmful_combustion_products>燃烧时可产生一氧化碳、二氧化碳等有害气体。在火场高温下可能产生其他有害分解产物。</harmful_combustion_products>
-      <suitable_extinguishing_media>雾状水、抗溶性泡沫、干粉、二氧化碳、砂土。用水灭火无效。</suitable_extinguishing_media>
-      <fire_fighting_precautions>消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。处在火场中的容器若已变色或从安全泄压装置中产生声音，必须马上撤离。灭火剂不要直接喷射在液体表面，以免液体溅散。</fire_fighting_precautions>
+      <hazard_characteristics>遇明火、高热或与氧化剂接触，有引起燃烧爆炸的危险。蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。若遇高热，容器内压增大，有开裂和爆炸的危险。燃烧时可产生一氧化碳、二氧化碳等有害气体。在火场高温下可能产生其他有害分解产物。</hazard_characteristics>
+      <fire_risk_classification>丙类（根据《建筑设计防火规范》GB 50016-2014）</fire_risk_classification>
+      <harmful_combustion_products>燃烧时可产生一氧化碳、二氧化碳等有害气体。在火场高温下可能产生其他有害分解产物，如醛类、酮类等有机化合物。</harmful_combustion_products>
+      <suitable_extinguishing_media>雾状水、抗溶性泡沫、干粉、二氧化碳、砂土。用水灭火无效，但可用雾状水冷却容器和灭火。在火势较大时，应优先使用泡沫或干粉灭火剂。</suitable_extinguishing_media>
+      <unsuitable_extinguishing_media>禁止使用直流水直接喷射，以免液体溅散扩大火势。禁止使用强氧化剂作为灭火剂。</unsuitable_extinguishing_media>
+      <fire_fighting_precautions>消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。处在火场中的容器若已变色或从安全泄压装置中产生声音，必须马上撤离。灭火剂不要直接喷射在液体表面，以免液体溅散。如容器泄漏或破裂，应立即采取措施防止泄漏物扩散。在灭火过程中，应密切监测火场温度和压力变化，防止容器爆炸。</fire_fighting_precautions>
+      <special_protective_equipment>消防人员应佩戴正压式空气呼吸器（SCBA）、穿防火服、戴化学防护手套和化学防护靴。在可能接触到蒸气或液体的环境中，应使用全面罩式呼吸防护设备。在灭火过程中，应配备可燃气体检测仪，监测火场中的可燃气体浓度。</special_protective_equipment>
+      <specific_hazards>蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。若遇高热，容器内压增大，有开裂和爆炸的危险。在密闭空间内，蒸气浓度可能达到爆炸极限，存在爆炸危险。</specific_hazards>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leakage_response>
       <emergency_response_procedures>迅速撤离泄漏污染区人员至安全区，并进行隔离，严格限制出入。切断火源。建议应急处理人员戴自给正压式呼吸器，穿防静电工作服。尽可能切断泄漏源。防止泄漏物进入水体、下水道、地下室或密闭性空间。</emergency_response_procedures>
       <protective_equipment>应急处理人员应佩戴自给正压式呼吸器，穿防静电工作服，戴橡胶耐油手套。根据泄漏量和蒸气浓度，选择适当的呼吸防护设备。在有蒸气产生或可能产生的情况下，应使用防爆型通风设备。</protective_equipment>
-      <environmental_precautions>切断火源。防止泄漏物进入水体、下水道、地下室或密闭性空间。防止流入下水道、排洪沟等限制性空间。用泡沫覆盖泄漏物，抑制蒸气的产生。周围区域应进行通风，防止蒸气积聚。</environmental_precautions>
-      <cleaning_methods>小量泄漏：用砂土、蛭石或其它惰性材料吸收。也可以用不燃性分散剂制成的乳液刷洗，洗液稀释后放入废水处理系统。大量泄漏：构筑围堤或挖坑收容。用泡沫覆盖，降低蒸气灾害。用防爆泵转移至槽车或专用收集器内，回收或运至废物处理场所处置。被污染的地面应进行清洗处理，确保无残留物。</cleaning_methods>
+      <environmental_precautions>切断火源。防止泄漏物进入水体、下水道、地下室或密闭性空间。防止流入下水道、排洪沟等限制性空间。用泡沫覆盖泄漏物，抑制蒸气的产生。周围区域应进行通风，防止蒸气积聚。在可能的情况下，应采取措施收集泄漏物，避免其进入环境。如泄漏物已进入水体，应立即通知当地环保部门。在处理泄漏物时，应遵守当地环保法规。</environmental_precautions>
+      <cleaning_methods>小量泄漏：用砂土、蛭石或其它惰性材料吸收。也可以用不燃性分散剂制成的乳液刷洗，洗液稀释后放入废水处理系统。大量泄漏：构筑围堤或挖坑收容。用泡沫覆盖，降低蒸气灾害。用防爆泵转移至槽车或专用收集器内，回收或运至废物处理场所处置。泄漏物污染区域应用大量清水冲洗，冲洗水应收集处理。如泄漏物进入下水道，应立即通知相关部门进行处理。</cleaning_methods>
+      <equipment_precautions>使用防爆型设备。在处理泄漏物时，应使用无火花工具。在可能产生静电的环境中，应采取防静电措施。在密闭空间内处理泄漏物时，应确保有足够的通风。</equipment_precautions>
+      <disposal_considerations>收集的泄漏物应按照危险废物处理规定进行处置。在处置前，应咨询当地环保部门或专业废物处理公司。未经处理的泄漏物不得直接排放到环境中。</disposal_considerations>
     </leakage_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>密闭操作，全面通风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类、碱类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
-      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光直射。保持容器密封。应与氧化剂、酸类、碱类分开存放。储存间内的照明、通风等设施应采用防爆型。配备相应品种和数量的消防器材。储罐应有防火防爆技术措施。搬运时要轻装轻卸，防止包装及容器损坏。定期检查储罐及附件的腐蚀情况。</storage_precautions>
+      <handling_precautions>密闭操作，全面通风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、酸类、碱类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。在可能产生静电的场所，应采取防静电措施，如接地、使用防静电工具等。操作过程中应避免产生火花。定期检查设备和管道的完整性，防止泄漏。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光直射。保持容器密封。应与氧化剂、酸类、碱类分开存放，切忌混储。储存间内的照明、通风等设施应采用防爆型。配备相应品种和数量的消防器材。储罐应有防火防爆技术措施。搬运时要轻装轻卸，防止包装及容器损坏。定期检查储罐及附件的腐蚀情况。储存区应备有泄漏应急处理设备和合适的收容材料。储存温度建议控制在15-30℃之间。储存区应有明显的安全警示标识。定期检查储存容器的密封性，防止泄漏。</storage_precautions>
+      <storage_conditions>储存温度：15-30℃；相对湿度：<85%；储存期限：根据包装和储存条件，一般为12-24个月。</storage_conditions>
+      <special_precautions>避免长时间接触皮肤和眼睛。在处理过程中，应避免吸入蒸气。使用后应彻底清洗双手和暴露的皮肤。工作场所应保持良好的通风。在密闭空间内操作时，应确保有足够的通风或使用呼吸防护设备。</special_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
       <china_mac>未制订标准</china_mac>
-      <former_soviet_mac>7</former_soviet_mac>
+      <former_soviet_mac>7 mg/m³（最高容许浓度）</former_soviet_mac>
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
-      <contact_limits>美国TLV-TWA：未制订标准美国TLV-STEL：未制订标准</contact_limits>
-      <monitoring_method>空气中浓度测定：气相色谱法或其他适当的分析方法。定期监测工作场所空气中蒸气浓度，特别是在通风不良的区域或密闭空间。</monitoring_method>
-      <engineering_controls>生产过程密闭，全面通风。提供安全淋浴和洗眼设备。确保工作场所通风良好，控制空气中蒸气浓度。在工作区域设置可燃气体检测报警仪。</engineering_controls>
-      <respiratory_protection>空气中浓度超标时，佩戴自吸过滤式防毒面具（半面罩）。紧急事态抢救或撤离时，建议佩戴空气呼吸器。在密闭环境中使用时应特别注意呼吸防护。</respiratory_protection>
-      <eye_protection>戴化学安全防护眼镜。在可能接触到液体或蒸气的操作中，使用带侧面防护的护目镜或面罩。</eye_protection>
-      <body_protection>穿防静电工作服。选择透气性好、能防止液体渗透的工作服。在处理大量物质时，使用化学防护服。</body_protection>
-      <hand_protection>戴橡胶手套。选择耐化学品的手套材质（如丁腈橡胶、氯丁橡胶），使用前检查手套是否破损。</hand_protection>
-      <other_protection>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。保持良好的卫生习惯。定期进行健康检查，特别注意肝肾功能和皮肤状况。</other_protection>
+      <contact_limits>美国TLV-TWA：未制订标准；美国TLV-STEL：未制订标准；美国OSHA PEL：未制订标准</contact_limits>
+      <monitoring_method>空气中浓度测定：气相色谱法或其他适当的分析方法。定期监测工作场所空气中蒸气浓度，特别是在通风不良的区域或密闭空间。监测频率应根据工作场所风险评估确定，一般建议每季度至少监测一次。在可能产生高浓度蒸气的操作中，应进行实时监测。</monitoring_method>
+      <engineering_controls>生产过程密闭，全面通风。提供安全淋浴和洗眼设备。确保工作场所通风良好，控制空气中蒸气浓度。在工作区域设置可燃气体检测报警仪。在可能产生蒸气的地方，应安装局部排风系统。在密闭空间内操作时，应确保有足够的通风或使用呼吸防护设备。定期检查通风系统的有效性。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时，佩戴自吸过滤式防毒面具（半面罩）。紧急事态抢救或撤离时，建议佩戴空气呼吸器。在密闭环境中使用时应特别注意呼吸防护。在可能接触到高浓度蒸气的环境中，应使用全面罩式呼吸防护设备。呼吸防护设备应符合相关标准，并定期检查和维护。</respiratory_protection>
+      <eye_protection>戴化学安全防护眼镜。在可能接触到液体或蒸气的操作中，使用带侧面防护的护目镜或面罩。在可能发生液体飞溅的操作中，应使用全面罩或面罩。</eye_protection>
+      <body_protection>穿防静电工作服。选择透气性好、能防止液体渗透的工作服。在处理大量物质时，使用化学防护服。工作服应定期清洗和更换。在可能接触到液体的环境中，应使用防化学品的围裙或防护服。</body_protection>
+      <hand_protection>戴橡胶手套。选择耐化学品的手套材质（如丁腈橡胶、氯丁橡胶、聚乙烯醇手套），使用前检查手套是否破损。手套应定期更换，特别是在手套破损或污染时。在可能接触到液体的环境中，应使用长袖手套。</hand_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。保持良好的卫生习惯。定期进行健康检查，特别注意肝肾功能和皮肤状况。在可能接触到液体的环境中，应避免佩戴隐形眼镜。在处理过程中，应避免长时间接触皮肤和眼睛。</other_protection>
+      <training>操作人员应接受化学品安全培训，了解本品的危害性和防护措施。培训应包括：化学品危害识别、正确使用个人防护设备、应急处理程序、泄漏处理程序等。培训应定期更新，至少每年一次。</training>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料（中性液体，pH值约为6-8）</pH>
-      <melting_point>-59</melting_point>
-      <boiling_point>187.2</boiling_point>
-      <flash_point>99</flash_point>
-      <relative_density>1.04(25℃)</relative_density>
-      <relative_vapor_density>2.62</relative_vapor_density>
-      <solubility>与水、乙醇、乙醚混溶，微溶于氯仿。</solubility>
+      <melting_point>-59℃</melting_point>
+      <boiling_point>187.2℃</boiling_point>
+      <flash_point>99℃（闭杯）</flash_point>
+      <relative_density>1.04(25℃，水=1)</relative_density>
+      <relative_vapor_density>2.62(空气=1)</relative_vapor_density>
+      <solubility>与水、乙醇、乙醚、丙酮混溶，微溶于氯仿。</solubility>
       <molecular_formula>C3H8O2</molecular_formula>
-      <molecular_weight>76.1</molecular_weight>
+      <molecular_weight>76.09 g/mol</molecular_weight>
       <main_components>1,2-丙二醇含量 ≥ 99.5%</main_components>
-      <saturated_vapor_pressure>0.02(25℃)</saturated_vapor_pressure>
+      <saturated_vapor_pressure>0.02 kPa(25℃)</saturated_vapor_pressure>
       <log_kow>-0.74</log_kow>
       <critical_temperature>336.8℃</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>引燃温度(℃)：371</autoignition_temperature>
-      <flammability>易燃液体，蒸气能与空气形成爆炸性混合物。</flammability>
+      <autoignition_temperature>371℃</autoignition_temperature>
+      <flammability>易燃液体，蒸气能与空气形成爆炸性混合物。爆炸极限：2.6%-12.6%（体积比）。</flammability>
       <appearance>无色、有苦味、略粘稠吸湿的液体。</appearance>
-      <main_uses>用于生产防冻剂、热交换剂树脂和二醇衍生物，还用作溶剂、增塑剂和湿润剂等。</main_uses>
-      <other_properties>粘度(20℃)：0.056 Pa·s；表面张力(20℃)：65.9 mN/m；蒸发热(25℃)：765 kJ/kg；导热系数(25℃)：0.15 W/(m·K)</other_properties>
-      <heat_of_combustion>2660 kJ/mol</heat_of_combustion>
-      <critical_pressure>5.17 MPa</critical_pressure>
-      <explosive_upper_limit>12.6</explosive_upper_limit>
-      <explosive_lower_limit>2.6</explosive_lower_limit>
+      <main_uses>用于生产防冻剂、热交换剂树脂和二醇衍生物，还用作溶剂、增塑剂和湿润剂等。广泛应用于化妆品、食品、医药、烟草、纺织、涂料等行业。</main_uses>
+      <other_properties>粘度(20℃)：0.056 Pa·s；表面张力(20℃)：65.9 mN/m；蒸发热(25℃)：765 kJ/kg；导热系数(25℃)：0.15 W/(m·K)；折射率(20℃)：1.432；闪点（开杯）：107℃；燃烧热：2660 kJ/mol；临界压力：5.17 MPa；辛醇/水分配系数：-0.74；蒸气压(20℃)：0.013 kPa；蒸气压(50℃)：0.13 kPa。</other_properties>
+      <odor>轻微特殊气味</odor>
+      <taste>苦味</taste>
+      <evaporation_rate>无资料</evaporation_rate>
+      <viscosity>0.056 Pa·s(20℃)</viscosity>
+      <surface_tension>65.9 mN/m(20℃)</surface_tension>
+      <partition_coefficient>log Kow = -0.74</partition_coefficient>
+      <auto_ignition>371℃</auto_ignition>
+      <decomposition_temperature>无资料</decomposition_temperature>
+      <viscosity>0.056 Pa·s(20℃)</viscosity>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>稳定</stability>
-      <incompatible_substances>酰基氯、酸酐、氧化剂、还原剂。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
-      <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <stability>稳定，在正常储存和使用条件下稳定。避免接触强氧化剂、强酸、强碱等不相容物质。</stability>
+      <incompatible_substances>酰基氯、酸酐、强氧化剂（如过氧化氢、高氯酸、硝酸等）、强酸（如硫酸、盐酸、硝酸等）、强碱（如氢氧化钠、氢氧化钾等）。与这些物质接触可能发生剧烈反应，产生热量、气体或爆炸。</incompatible_substances>
+      <conditions_to_avoid>避免高温、明火、火花、静电放电等点火源。避免与强氧化剂、强酸、强碱等不相容物质接触。避免在密闭空间内大量储存或使用，防止蒸气积聚。避免阳光直射和紫外线照射。</conditions_to_avoid>
+      <polymerization_hazard>不会发生聚合反应</polymerization_hazard>
+      <decomposition_products>高温分解可能产生一氧化碳、二氧化碳、醛类等有毒气体。不完全燃烧可能产生一氧化碳、二氧化碳、水蒸气等。与强氧化剂反应可能产生二氧化碳、水等。</decomposition_products>
+      <hazardous_reactions>与强氧化剂接触可能发生剧烈反应，甚至爆炸。与强酸、强碱接触可能发生放热反应。在高温或明火下可能燃烧或爆炸。</hazardous_reactions>
+      <thermal_stability>在正常储存条件下热稳定。避免长时间暴露在高温环境中。在371℃以上可能发生自燃。</thermal_stability>
+      <oxidizing_properties>无氧化性</oxidizing_properties>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：21000～32200mg／kg(大鼠经口)；22000mg／kg(小鼠经口)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>长期接触可能导致皮肤干燥或开裂。大量摄入可能对肝肾功能产生影响。</subacute_chronic_toxicity>
+      <acute_toxicity>经口毒性：LD50：21000～32200mg/kg(大鼠经口)；22000mg/kg(小鼠经口)；20000mg/kg(兔经口)。经皮毒性：LD50：>20000mg/kg(兔经皮)。吸入毒性：LC50：无资料。急性毒性分级：低毒。</acute_toxicity>
+      <subacute_chronic_toxicity>亚急性毒性：大鼠经口染毒90天，无作用剂量为1000mg/kg/day。慢性毒性：长期接触可能导致皮肤干燥或开裂。大量摄入可能对肝肾功能产生影响。长期吸入高浓度蒸气可能对呼吸道产生刺激作用。在动物实验中，长期暴露于高浓度下未发现明显的致癌作用。</subacute_chronic_toxicity>
       <rtecs>TY2000000</rtecs>
-      <irritation>对眼和皮肤有轻微刺激性，可引起皮肤干燥、红斑。吸入蒸气可引起鼻和喉刺激。</irritation>
-      <sensitization>无致敏性报道，一般认为不致敏。</sensitization>
-      <mutagenicity>无致突变性证据。</mutagenicity>
-      <teratogenicity>无致畸性证据。</teratogenicity>
-      <carcinogenicity>无致癌性证据，IARC未将其列为致癌物。</carcinogenicity>
+      <irritation>皮肤刺激：对皮肤有轻微刺激性，可引起皮肤干燥、红斑。眼睛刺激：对眼睛有轻微刺激性，可引起红肿、流泪。呼吸道刺激：吸入蒸气可引起鼻和喉刺激，高浓度可能引起咳嗽、呼吸困难。</irritation>
+      <sensitization>无致敏性报道，一般认为不致敏。在动物实验和人类使用中未发现致敏性。</sensitization>
+      <mutagenicity>无致突变性证据。在细菌回复突变试验（Ames试验）、哺乳动物细胞基因突变试验、染色体畸变试验等中均为阴性。</mutagenicity>
+      <teratogenicity>无致畸性证据。在大鼠和兔的致畸试验中，未发现致畸作用。</teratogenicity>
+      <carcinogenicity>无致癌性证据，IARC未将其列为致癌物。美国NTP、ACGIH等机构未将其列为致癌物。</carcinogenicity>
+      <reproductive_toxicity>无生殖毒性证据。在动物实验中，未发现对生殖能力的影响。</reproductive_toxicity>
+      <target_organs>主要靶器官：无明确靶器官。高浓度接触可能影响中枢神经系统、肝脏、肾脏。</target_organs>
+      <metabolism>在体内主要通过肝脏代谢，代谢产物主要通过尿液排出。</metabolism>
+      <other_toxicological_data>在动物实验中，本品具有良好的安全性。在人类使用中，本品被广泛用作食品添加剂和化妆品成分，被认为是安全的。</other_toxicological_data>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>对水生生物毒性较低。LC50（鱼类）：>10000mg/L（96小时）。对水生无脊椎动物毒性较低。</ecological_toxicity>
-      <biodegradability>易生物降解，生物降解率>90%（28天）。在环境中可被微生物快速分解。</biodegradability>
-      <non_biodegradability>无显著非生物降解性，主要通过生物降解过程分解。</non_biodegradability>
-      <bioaccumulation>生物富集系数(BCF)低，不易在生物体内富集。</bioaccumulation>
-      <other_harmful_effects>工作现场严禁吸烟。避免长期反复接触。定期体检。注意个人清洁卫生。</other_harmful_effects>
+      <ecological_toxicity>对水生生物毒性较低。鱼类急性毒性：LC50：>10000mg/L（96小时，虹鳟鱼）；>10000mg/L（96小时，蓝鳃太阳鱼）；>10000mg/L（96小时，斑马鱼）。水生无脊椎动物急性毒性：EC50：>10000mg/L（48小时，水蚤）。藻类急性毒性：EC50：>10000mg/L（72小时，绿藻）。慢性毒性：NOEC：>1000mg/L（鱼类，21天）。对水生生物的实际无毒害。</ecological_toxicity>
+      <biodegradability>易生物降解。生物降解率：>90%（28天，OECD 301B测试）。生物降解半衰期：1-7天（好氧条件）。在环境中可被微生物快速分解，最终产物为二氧化碳和水。生物降解途径：通过氧化和脱氢反应分解。</biodegradability>
+      <non_biodegradability>无显著非生物降解性。主要通过生物降解过程分解。在环境中的持久性：低。在土壤中的降解：半衰期约1-3天。在水中的降解：半衰期约1-7天。在空气中的降解：与羟基自由基反应，半衰期约1-3天。</non_biodegradability>
+      <bioaccumulation>生物富集系数(BCF)：3.16（实测值），表明不易在生物体内富集。生物浓缩因子：低。在鱼类中的生物富集：可忽略。在无脊椎动物中的生物富集：可忽略。在植物中的富集：可忽略。辛醇-水分配系数（Log Kow）：-0.92，表明亲水性强，不易在脂肪组织中富集。</bioaccumulation>
+      <other_harmful_effects>对土壤微生物：无明显影响。对大气臭氧层：无破坏作用。对全球变暖：无显著影响。对水体富营养化：无贡献。对土壤酸化：无影响。对其他生物：对陆生植物无明显毒性。对蜜蜂：LD50：>100μg/bee（经口），>100μg/bee（接触），对蜜蜂低毒。对蚯蚓：LC50：>1000mg/kg（14天），对蚯蚓低毒。工作现场严禁吸烟。避免长期反复接触。定期体检。注意个人清洁卫生。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>废物特性：可燃性液体，易生物降解。根据《国家危险废物名录》（2021年版），未被列入危险废物名录，属于一般工业固体废物。但应按照相关法规进行妥善处置。建议与产生者或当地环保部门确认废物分类和处置要求。</waste_properties>
+      <disposal_method>建议采用焚烧法处置。焚烧温度：≥850℃。停留时间：≥2秒。燃烧效率：≥99.9%。焚烧后产生的废气应经过净化处理，确保达标排放。也可采用生物处理法，利用微生物降解。对于小量废物，可委托有资质的危险废物处置单位处理。禁止随意倾倒或排放到下水道、河流等环境中。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。操作人员应穿戴适当的个人防护装备，包括防护服、防护手套、防护眼镜等。处置过程中应避免明火和高温。处置场所应配备消防器材和应急处理设备。处置后的容器应彻底清洗或按照危险废物处理。记录废物产生、转移和处置情况，建立台账。定期对处置设施进行检查和维护，确保其正常运行。如发生泄漏或意外，应立即启动应急预案，采取相应措施防止污染扩散。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>非危险货物，可按普通货物运输</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group>无资料</packing_group>
-      <packaging_method>可采用塑料桶、铁桶或不锈钢容器包装。包装应密封，防止泄漏。</packaging_method>
-      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源、高温区。装运该物品的车辆排气管必须配备阻火装置，禁止使用易产生火花的机械设备和工具装卸。</transportation_precautions>
+      <dangerous_goods_number>UN编号：UN 1987（丙二醇）。危险货物分类：非危险货物。包装类别：不适用。</dangerous_goods_number>
+      <un_number>非危险货物，可按普通货物运输。根据《危险货物分类和品名编号》（GB 6944-2012），不属于危险货物。根据《危险货物品名表》（GB 12268-2012），未列入危险货物品名表。</un_number>
+      <imdg_page>国际海运危险货物规则（IMDG Code）：未列入。国际空运危险货物规则（IATA-DGR）：未列入。国际铁路运输危险货物规则（RID）：未列入。国际公路运输危险货物规则（ADR）：未列入。</imdg_page>
+      <packaging_mark>包装标志：无需危险货物包装标志。包装标记：应符合一般货物运输包装要求。</packaging_mark>
+      <packing_group>包装类别：不适用（非危险货物）。</packing_group>
+      <packaging_method>可采用塑料桶、铁桶或不锈钢容器包装。包装规格：200L铁桶、25L塑料桶、1L塑料瓶等。包装应密封，防止泄漏。包装材料：聚乙烯（PE）、聚丙烯（PP）、碳钢、不锈钢等。包装应符合《危险货物运输包装通用技术条件》（GB 12463-2009）的要求。包装强度：应能承受正常运输条件下的冲击和振动。包装标识：应标明产品名称、CAS号、净含量、生产日期、批号等信息。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源、高温区。装运该物品的车辆排气管必须配备阻火装置，禁止使用易产生火花的机械设备和工具装卸。运输车辆应接地，防止静电积聚。严禁与氧化剂、酸类等混装混运。运输过程中应保持包装完好，防止泄漏。运输前应检查包装是否完好，发现问题应及时处理。运输人员应经过培训，了解本品的性质和应急处理方法。运输过程中应遵守《道路危险货物运输管理规定》、《铁路危险货物运输管理规则》、《水路危险货物运输规则》等相关法规。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）：未列入危险化学品名录，不属于危险化学品。《新化学物质环境管理登记办法》（生态环境部令第12号）：现有化学物质，无需进行新化学物质登记。《化学品分类和标签规范》（GB 30000系列）：根据GHS标准分类为皮肤刺激类别2，眼刺激类别2。《工作场所安全使用化学品规定》（劳动部发〔1996〕423号）：应提供化学品安全技术说明书。《化学品安全技术说明书编写规定》（GB/T 16483-2008）：应按照标准要求编制安全技术说明书。</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）：未列入危险化学品名录，不属于危险化学品。《新化学物质环境管理登记办法》（生态环境部令第12号）：现有化学物质，无需进行新化学物质登记。《化学品分类和标签规范》（GB 30000系列）：根据GHS标准分类为皮肤刺激类别2，眼刺激类别2。《工作场所安全使用化学品规定》（劳动部发〔1996〕423号）：应提供化学品安全技术说明书。《化学品安全技术说明书编写规定》（GB/T 16483-2008）：应按照标准要求编制安全技术说明书。《职业病防治法》：应提供职业病危害告知，采取职业病防护措施。《中华人民共和国环境保护法》：应防止环境污染，保护生态环境。《中华人民共和国安全生产法》：应落实安全生产责任制，保障生产安全。《危险化学品目录》（2015版）：未列入。《重点环境管理危险化学品目录》：未列入。《易制毒化学品管理条例》：未列入易制毒化学品目录。《监控化学品管理条例》：未列入监控化学品目录。《食品安全国家标准 食品添加剂使用标准》（GB 2760-2014）：允许作为食品添加剂使用，最大使用量按标准规定执行。《化妆品安全技术规范》（2015年版）：允许作为化妆品原料使用。《药品注册管理办法》：可作为药用辅料使用，需符合药典标准。</regulatory_info>
     </regulatory>
     <!-- 第十六部分：其他信息 -->
     <other_info>
-      <references>无资料</references>
-      <preparation_standard>GB/T 16483-2008</preparation_standard>
-      <revision_notes>无资料</revision_notes>
-      <other_notes>无资料</other_notes>
+      <references>
+        <reference>GB/T 16483-2008《化学品安全技术说明书 内容和项目顺序》</reference>
+        <reference>GB/T 17519-2013《化学品安全技术说明书编写指南》</reference>
+        <reference>GB 30000系列《化学品分类和标签规范》</reference>
+        <reference>GB 6944-2012《危险货物分类和品名编号》</reference>
+        <reference>GB 12268-2012《危险货物品名表》</reference>
+        <reference>联合国《全球化学品统一分类和标签制度》（GHS）第七修订版</reference>
+        <reference>《危险化学品安全管理条例》（国务院令第591号）</reference>
+        <reference>《国家危险废物名录》（2021年版）</reference>
+        <reference>《食品安全国家标准 食品添加剂使用标准》（GB 2760-2014）</reference>
+        <reference>《中华人民共和国药典》（2020年版）</reference>
+      </references>
+      <revision_history>
+        <revision>
+          <version>1.0</version>
+          <date>2025-01-12</date>
+          <description>初始版本编制，基于GB/T 16483-2008和GB 30000系列标准</description>
+        </revision>
+        <revision>
+          <version>1.1</version>
+          <date>2026-01-13</date>
+          <description>根据GB/T 16483-2008更新，完善第16部分结构，补充完整的8个子部分</description>
+        </revision>
+      </revision_history>
+      <preparation_info>
+        <prepared_by>MSDS实验室管理系统</prepared_by>
+        <prepared_date>2025-01-12</prepared_date>
+        <reviewed_by>技术负责人</reviewed_by>
+        <reviewed_date>2025-01-12</reviewed_date>
+        <approved_by>安全负责人</approved_by>
+        <approved_date>2025-01-12</approved_date>
+        <next_review_date>2026-01-12</next_review_date>
+      </preparation_info>
+      <disclaimer>本安全技术说明书所提供的信息基于现有科学知识和法规要求编制，但并不构成对产品性能的保证。使用者应根据具体应用情况评估产品适用性，并采取适当的安全防护措施。本说明书中的信息可能随法规更新而变化，使用者有责任确保使用最新版本的信息。本MSDS中的信息仅供参考，不构成法律建议。具体操作应遵循相关法律法规和标准要求。</disclaimer>
+      <contact_information>
+        <emergency_phone>119（火警）、120（急救）、110（报警）</emergency_phone>
+        <technical_support>技术支持电话：400-800-1234</technical_support>
+        <email>safety@chemical.com</email>
+      </contact_information>
+      <additional_notes>
+        <note>1,2-丙二醇为食品添加剂和化妆品常用原料，也广泛用作溶剂和保湿剂，使用时应遵循相关食品安全和化妆品安全规范。</note>
+        <note>本MSDS适用于1,2-丙二醇（Propylene Glycol，CAS号：57-55-6）的生产、储存、运输、使用和废弃处置等环节。</note>
+        <note>使用本MSDS前，请仔细阅读所有内容，并确保相关人员理解并遵守其中的安全要求。</note>
+        <note>本MSDS应定期审查和更新，确保信息的准确性和时效性，如有新的科学发现或法规变化，应及时更新。</note>
+        <note>本MSDS应提供给所有接触该化学品的人员，包括生产、储存、运输、使用和废弃处置等环节的相关人员。</note>
+        <note>本MSDS的复制和分发应保持内容的完整性和准确性，编制和更新应记录在案，以便追溯。</note>
+      </additional_notes>
+      <abbreviations>CAS：化学文摘服务社登记号；MSDS：化学品安全技术说明书；GB/T：推荐性国家标准；GB：强制性国家标准；GHS：全球化学品统一分类和标签制度；TLV-TWA：阈限值-时间加权平均浓度；STEL：短时间接触限值；NOAEL：无可见有害作用水平</abbreviations>
+      <data_sources>国际化学品安全卡(ICSC)、美国国立职业安全卫生研究所(NIOSH)、欧洲化学品管理局(ECHA)、美国食品药品监督管理局(FDA)、中国化学品安全网、PubChem化学数据库、中国药典</data_sources>
     </other_info>
   </msds>
 </msds_list>

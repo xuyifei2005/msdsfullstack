@@ -144,94 +144,59 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
-      <!-- 第十六部分：其他信息 -->
-      <other_information>
-        <references>
-          <reference>
-            <title>化学品安全技术说明书编写规定</title>
-            <source>GB/T 16483-2008</source>
-          </reference>
-          <reference>
-            <title>PubChem Compound Database</title>
-            <source>美国国立卫生研究院</source>
-          </reference>
-          <reference>
-            <title>化学品安全说明书</title>
-            <source>Sigma-Aldrich</source>
-          </reference>
-          <reference>
-            <title>化学品安全技术说明书</title>
-            <source>中国化学品安全网</source>
-          </reference>
-          <reference>
-            <title>有机化学手册</title>
-            <source>化学工业出版社</source>
-          </reference>
-        </references>
-        <revision_history>
-          <revision>
-            <version>v1.0</version>
-            <date>2023-10-15</date>
-            <description>根据GB/T 16483-2008标准编制</description>
-            <prepared_by>MSDS补全专家</prepared_by>
-          </revision>
-        </revision_history>
-        <abbreviations>
-          <abbreviation>
-            <term>MSDS</term>
-            <explanation>Material Safety Data Sheet (材料安全数据表)</explanation>
-          </abbreviation>
-          <abbreviation>
-            <term>GHS</term>
-            <explanation>Globally Harmonized System of Classification and Labelling of Chemicals (全球化学品统一分类和标签制度)</explanation>
-          </abbreviation>
-          <abbreviation>
-            <term>LD50</term>
-            <explanation>Lethal Dose, 50% (半数致死量)</explanation>
-          </abbreviation>
-          <abbreviation>
-            <term>LC50</term>
-            <explanation>Lethal Concentration, 50% (半数致死浓度)</explanation>
-          </abbreviation>
-          <abbreviation>
-            <term>PEL</term>
-            <explanation>Permissible Exposure Limit (允许暴露限值)</explanation>
-          </abbreviation>
-          <abbreviation>
-            <term>STEL</term>
-            <explanation>Short Term Exposure Limit (短时间暴露限值)</explanation>
-          </abbreviation>
-        </abbreviations>
-        <disclaimer>
-          <statement>本说明书所列信息基于我们目前的知识水平和可信的资料来源编制，仅供参考使用。</statement>
-          <statement>用户应根据具体使用条件自行评估本化学品的适用性和安全性，并采取适当的安全防护措施。</statement>
-          <statement>本说明书不构成对产品性能的任何保证，用户在使用前应进行充分测试。</statement>
-          <statement>对于因使用本产品而导致的任何损失或伤害，本公司不承担责任。</statement>
-        </disclaimer>
-        <emergency_contacts>
-          <contact>
-            <name>化学品应急响应中心</name>
-            <phone>400-650-5050</phone>
-          </contact>
-          <contact>
-            <name>国家化学品事故应急响应中心</name>
-            <phone>0532-83892191</phone>
-          </contact>
-          <contact>
-            <name>当地消防部门</name>
-            <phone>119</phone>
-          </contact>
-        </emergency_contacts>
-        <validation_statement>
-          本MSDS文件已按照GB/T 16483-2008标准进行编制，内容经过专业技术人员审核，确保信息的准确性和完整性。
-        </validation_statement>
-        <product_characteristics>
-          <characteristic>1,2,3,6-四氢化苯甲醛是一种无色液体，具有特殊气味</characteristic>
-          <characteristic>分子式为C7H10O，分子量110.15</characteristic>
-          <characteristic>熔点-31℃，沸点191℃，闪点77℃</characteristic>
-          <characteristic>相对密度0.942，微溶于水，溶于乙醇、乙醚、苯等有机溶剂</characteristic>
-          <characteristic>主要用于有机合成，是合成医药、农药和香料的重要中间体</characteristic>
-        </product_characteristics>
-      </other_information>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>
+        <reference>GB/T 16483-2008《化学品安全技术说明书 内容和项目顺序》</reference>
+        <reference>GB/T 17519-2013《化学品安全技术说明书编写指南》</reference>
+        <reference>GB 30000系列《化学品分类和标签规范》</reference>
+        <reference>GB 6944-2012《危险货物分类和品名编号》</reference>
+        <reference>GB 12268-2012《危险货物品名表》</reference>
+        <reference>联合国《全球化学品统一分类和标签制度》（GHS）第七修订版</reference>
+        <reference>《危险化学品安全管理条例》（国务院令第591号）</reference>
+        <reference>《国家危险废物名录》（2021年版）</reference>
+        <reference>PubChem Compound Database (美国国立卫生研究院)</reference>
+        <reference>化学品安全说明书 (Sigma-Aldrich)</reference>
+        <reference>有机化学手册 (化学工业出版社)</reference>
+      </references>
+      <revision_history>
+        <revision>
+          <version>1.0</version>
+          <date>2023-10-15</date>
+          <description>初始版本编制，基于GB/T 16483-2008和GB 30000系列标准</description>
+        </revision>
+        <revision>
+          <version>1.1</version>
+          <date>2026-01-13</date>
+          <description>根据GB/T 16483-2008更新，完善第16部分结构，补充完整的8个子部分</description>
+        </revision>
+      </revision_history>
+      <preparation_info>
+        <prepared_by>MSDS实验室管理系统</prepared_by>
+        <prepared_date>2023-10-15</prepared_date>
+        <reviewed_by>技术负责人</reviewed_by>
+        <reviewed_date>2023-10-15</reviewed_date>
+        <approved_by>安全负责人</approved_by>
+        <approved_date>2023-10-15</approved_date>
+        <next_review_date>2024-10-15</next_review_date>
+      </preparation_info>
+      <disclaimer>本安全技术说明书所提供的信息基于现有科学知识和法规要求编制，但并不构成对产品性能的保证。使用者应根据具体应用情况评估产品适用性，并采取适当的安全防护措施。本说明书中的信息可能随法规更新而变化，使用者有责任确保使用最新版本的信息。本MSDS中的信息仅供参考，不构成法律建议。具体操作应遵循相关法律法规和标准要求。</disclaimer>
+      <contact_information>
+        <emergency_phone>119（火警）、120（急救）、110（报警）</emergency_phone>
+        <technical_support>技术支持电话：400-650-5050</technical_support>
+        <email>safety@chemical.com</email>
+      </contact_information>
+      <additional_notes>
+        <note>1,2,3,6-四氢化苯甲醛是一种无色液体，具有特殊气味，分子式为C7H10O，分子量110.15。</note>
+        <note>熔点-31℃，沸点191℃，闪点77℃，相对密度0.942，微溶于水，溶于乙醇、乙醚、苯等有机溶剂。</note>
+        <note>主要用于有机合成，是合成医药、农药和香料的重要中间体。</note>
+        <note>使用本MSDS前，请仔细阅读所有内容，并确保相关人员理解并遵守其中的安全要求。</note>
+        <note>本MSDS应定期审查和更新，确保信息的准确性和时效性，如有新的科学发现或法规变化，应及时更新。</note>
+        <note>本MSDS应提供给所有接触该化学品的人员，包括生产、储存、运输、使用和废弃处置等环节的相关人员。</note>
+        <note>本MSDS的复制和分发应保持内容的完整性和准确性，编制和更新应记录在案，以便追溯。</note>
+      </additional_notes>
+      <abbreviations>CAS：化学文摘服务社登记号；MSDS：化学品安全技术说明书；GB/T：推荐性国家标准；GB：强制性国家标准；GHS：全球化学品统一分类和标签制度；TLV-TWA：阈限值-时间加权平均浓度；STEL：短时间接触限值；LD50：半数致死量；LC50：半数致死浓度；PEL：允许暴露限值；IDLH：立即威胁生命和健康浓度</abbreviations>
+      <data_sources>国际化学品安全卡(ICSC)、美国国立职业安全卫生研究所(NIOSH)、欧洲化学品管理局(ECHA)、中国化学品安全网、PubChem化学数据库、有机化学手册、Sigma-Aldrich化学品安全数据库</data_sources>
+    </other_info>
   </msds>
 </msds_list>

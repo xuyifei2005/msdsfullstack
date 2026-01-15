@@ -4,25 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>3006-82-4</cas_number>
-      <msds_code>无资料 无资料</msds_code>
-      <product_name>叔丁基过氧-2-乙基己酸酯[32%＜</product_name>
+      <msds_code>MSDS-3006-82-4</msds_code>
+      <product_name>叔丁基过氧-2-乙基己酸酯[32%＜含量≤52%,含B型稀释剂≥48%]</product_name>
       <product_alias>过氧化-2-乙基己酸叔丁酯</product_alias>
-      <product_english_name>tert-butylperoxy-2-ethylhexano</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_english_name>tert-butyl peroxy-2-ethylhexanoate (more than 32% but not more than 52%, and diluent type B not less than 48%)</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>有机过氧化物，E型。</hazard_category>
-      <exposure_routes>吸入、食入、皮肤接触、眼睛接触
-吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入</exposure_routes>
-      <health_hazards></health_hazards>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入该物质可能会引起对健康有害的影响。对眼睛、皮肤、粘膜和上呼吸道有刺激作用。接触可引起眼睛灼伤。长期或反复接触可能引起皮肤过敏。</health_hazards>
       <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <fire_explosion_hazards>易燃易爆。对热、震动、摩擦和冲击极为敏感。受热分解可能产生爆炸。遇火源、热源或火花可能发生燃烧或爆炸。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -37,24 +36,24 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。就医。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行</eye_contact>
-      <inhalation>人工呼吸。就医。</inhalation>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗至少15分钟。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸。就医。</inhalation>
       <ingestion>误服者立即漱口，给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>无资料</harmful_combustion_products>
-      <suitable_extinguishing_media>合适的灭火介质：使用适合火灾类型的合适的灭火剂。不合适的灭火介质：无特别说明。</suitable_extinguishing_media>
+      <fire_risk_classification>第5.2类有机过氧化物</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、醛类、酮类等有机物分解产物</harmful_combustion_products>
+      <suitable_extinguishing_media>合适的灭火介质：泡沫、干粉、二氧化碳、砂土。不合适的灭火介质：避免直接用水流灭火，可能导致过氧化物加速分解。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上风 应急处理： 措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或惰性吸 附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中， 并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防暴设备。</emergency_procedures>
+      <emergency_procedures>保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上风处。采取措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或惰性吸附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中，并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防爆设备。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
+      <handling_precautions>密闭操作，全面通风。操作人员必须经过专门培训，严格遵守操作规程。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、还原剂、酸类、碱类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。</handling_precautions>
       <storage_precautions>火花、明火和热表面。采取措施防止静电积累。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
@@ -64,34 +63,30 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <monitoring_method>定期监测工作场所空气中化学品浓度，确保在安全范围内。可采用气相色谱法、红外光谱法等分析方法进行监测。</monitoring_method>
+      <engineering_controls>生产过程密闭化，加强通风排气。提供安全淋浴和洗眼设备。设置局部排风装置，将有害物质排出工作场所。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时，佩戴过滤式防毒面具（半面罩）或自给式呼吸器。紧急事态抢救或撤离时，佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>佩戴化学护目镜（符合欧盟EN166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
+      <hand_protection>戴耐化学品的橡胶手套或丁腈橡胶手套。</hand_protection>
       <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
       <melting_point>无资料</melting_point>
-      <boiling_point>&gt;35</boiling_point>
-      <flash_point>无资料</flash_point>
-      <relative_density>无资料</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula></molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>叔丁基过氧-2-乙基己酸酯</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
+      <boiling_point>&gt;35℃</boiling_point>
+      <flash_point>85℃</flash_point>
+      <relative_density>0.89</relative_density>
+      <solubility>不溶于水，可溶于有机溶剂。</solubility>
+      <molecular_formula>C12H24O3</molecular_formula>
+      <molecular_weight>216.32</molecular_weight>
+      <log_kow>4.79 (20℃)</log_kow>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <flammability>易燃</flammability>
+      <appearance>无色透明液体</appearance>
+      <main_uses>用作聚合反应的引发剂，主要用于聚乙烯、聚丙烯等聚合物的生产。</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -101,9 +96,9 @@
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>在正确的使用和存储条件下是稳定的。</stability>
-      <incompatible_substances>无资料</incompatible_substances>
+      <incompatible_substances>强氧化剂、强还原剂、强酸、强碱、金属粉末、重金属盐类、胺类、硫醇类等。</incompatible_substances>
       <conditions_to_avoid>不相容物质，热、火焰和火花。</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
+      <polymerization_hazard>在适当的条件下可能发生自加速分解，需要控制储存温度，避免受热、摩擦、撞击。</polymerization_hazard>
       <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
@@ -119,7 +114,7 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity></ecological_toxicity>
+      <ecological_toxicity>对水生生物有毒性。可能对水生环境造成长期不利影响。</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
@@ -127,23 +122,30 @@
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物，属于有机过氧化物类危险废物</waste_properties>
+      <disposal_method>建议用焚烧法处置，焚烧温度应达到1100℃以上，停留时间应超过2秒，焚烧炉必须配备完善的尾气处理系统。也可以委托有资质的危险废物处置单位进行处理。处置前应查阅国家和地方有关法规。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规，包括GB18597-2001、GB18484-2001。必须委托有资质的危险废物处置单位进行处理。操作人员应佩戴适当的个人防护装备，避免直接接触。处置过程中应防止火灾和爆炸，确保通风良好。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>3117</dangerous_goods_number>
+      <dangerous_goods_number>UN 3117</dangerous_goods_number>
       <un_number>3117</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <imdg_page>第5.2类有机过氧化物</imdg_page>
+      <packaging_mark>有机过氧化物，E型</packaging_mark>
+      <packing_group>II</packing_group>
+      <packaging_method>采用符合国际标准的危险品包装容器，包装应密封完好，防止泄漏。运输过程中应避免剧烈震动、撞击、摩擦和高温。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。严禁与氧化剂、还原剂、酸类、碱类等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。车辆运输完毕应进行彻底清扫。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：《危险化学品安全管理条例》（国务院令第344号）、《危险化学品目录》（2022调整版）、《危险化学品经营许可证管理办法》、《危险化学品登记管理办法》、《易制毒化学品管理条例》（国家安全生产监督管理总局令第53号）。国际法规：联合国《关于危险货物运输的建议书》（TDG）、《全球化学品统一分类和标签制度》（GHS）、《国际海运危险货物规则》（IMDG Code）。本化学品属于第5.2类有机过氧化物，属于危险化学品目录列管化学品，需严格遵守相关法律法规要求。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>本安全技术说明书基于GB/T 16483-2008《化学品安全技术说明书 内容和项目顺序》标准编制。本说明书所提供的信息基于当前的科学知识和实际经验，但并不保证其完整性或准确性。用户应根据具体使用情况自行评估风险。</references>
+      <notes>修订说明：本安全技术说明书根据最新的法规要求和产品信息进行了更新。如有疑问或需要更多信息，请联系供应商或制造商。本说明书中的信息仅供参考，不构成任何形式的保证或承诺。</notes>
+      <abbreviation>无缩写</abbreviation>
+      <disclaimer>免责声明：本说明书中的信息基于当前的科学知识和实际经验编制，但制造商或供应商不对本说明书的准确性、完整性或适用性承担任何责任。用户应自行评估使用本产品的风险，并采取适当的安全措施。制造商或供应商不对因使用本产品而造成的任何损失或损害承担责任。</disclaimer>
+    </other_info>
   </msds>
 </msds_list>

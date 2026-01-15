@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>13451-08-6</cas_number>
-      <msds_code>MSDS#2785</msds_code>
+      <msds_code>MSDS-13451-08-6</msds_code>
       <product_name>四氯化硫</product_name>
       <product_alias>无资料</product_alias>
       <product_english_name>Sulfur tetrachloride</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -36,8 +36,8 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。就医。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行</eye_contact>
-      <inhalation>人工呼吸。就医。</inhalation>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
       <ingestion>误服者立即漱口，给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
@@ -49,12 +49,15 @@
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，建议应急处理人员戴好防毒面 具，穿化学防护服。如是液体，用砂土吸收，铲入提桶，运至废物处理场所。如是气体，</emergency_procedures>
+      <emergency_procedures>迅速撤离泄漏污染区人员至上风处，并立即隔离150米，严格限制出入。建议应急处理人员戴自给正压式呼吸器，穿防毒服和防酸碱工作服。从上风处进入现场。尽可能切断泄漏源。合理通风，加速扩散。小量泄漏：用砂土、蛭石或其他惰性材料吸收，收集后密封处理。大量泄漏：构筑围堤或挖坑收容。用防爆泵转移至专用收集器内，回收或运至废物处理场所处置。处理过程中应避免摩擦、撞击、火花和热源。</emergency_procedures>
+      <elimination_methods>切断泄漏源，合理通风，加速扩散。使用惰性材料（如砂土、蛭石）吸收泄漏物。构筑围堤或挖坑收容。避免使用金属工具，防止产生火花。避免直接向泄漏物喷水，防止产生有害气体。如有可能，将泄漏物收集后委托有资质的单位处理。处理过程中应保持湿润，防止粉尘飞扬。</elimination_methods>
+      <environmental_protection>防止泄漏物进入下水道、地下室或限制性空间。避免污染土壤和水源。泄漏物应收集后委托有资质的单位处理。泄漏区域应进行彻底清洗和中和处理。防止泄漏物对环境造成长期污染。</environmental_protection>
+      <personal_protection>应急处理人员应佩戴自给正压式呼吸器，穿防毒服和防酸碱工作服，戴化学安全防护眼镜和橡胶手套。避免直接接触泄漏物。处理过程中应有人监护。进入高浓度区域作业，须有人监护。避免产生火花和静电。</personal_protection>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>火花、明火和热表面。采取措施防止静电积累。 储存于阴凉、干燥、通风良好的不燃库房。远离火种、热源。保持容器密封。防止受潮和 雨淋。应与碱类、氧化剂、食用化工原料、潮湿物品等分开存放。操作现场不得吸烟、饮 水、进食。搬运时要轻装轻卸，防止包装及容器损坏。雨天搬运要妥善遮盖。分装和搬运 作业要注意个人防护。</storage_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（全面罩），穿橡胶耐酸碱服，戴橡胶耐酸碱手套。远离火种、热源。工作场所严禁吸烟。防止蒸气泄漏到工作场所空气中。避免与氧化剂、碱类、活性金属粉末接触。尤其要避免与水接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、干燥、通风良好的不燃库房。远离火种、热源。保持容器密封。防止受潮和雨淋。应与碱类、氧化剂、食用化工原料、潮湿物品等分开存放。操作现场不得吸烟、饮水、进食。搬运时要轻装轻卸，防止包装及容器损坏。雨天搬运要妥善遮盖。分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -73,62 +76,62 @@
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
-      <melting_point>-30</melting_point>
-      <boiling_point>-15(分解)</boiling_point>
-      <flash_point>无资料</flash_point>
-      <relative_density>无资料</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>SC</molecular_formula>
+      <pH>不适用</pH>
+      <melting_point>-30℃</melting_point>
+      <boiling_point>-15℃（分解）</boiling_point>
+      <flash_point>无意义</flash_point>
+      <relative_density>约1.69</relative_density>
+      <relative_vapor_density>约6.0（空气=1）</relative_vapor_density>
+      <solubility>与水反应分解，生成氯化氢和二氧化硫。可溶于有机溶剂如二硫化碳、四氯化碳。</solubility>
+      <molecular_formula>SCl₄</molecular_formula>
       <molecular_weight>173.89</molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
+      <main_components>纯品</main_components>
+      <saturated_vapor_pressure>约101.3kPa（20℃）</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
+      <ignition_temperature>无意义</ignition_temperature>
+      <autoignition_temperature>无意义</autoignition_temperature>
+      <flammability>不燃，但遇水或水蒸气反应发热放出有毒的腐蚀性气体。</flammability>
+      <appearance>黄褐色液体</appearance>
+      <main_uses>用作有机合成中的氯化试剂，化学分析中的试剂，实验室化学试剂。</main_uses>
+      <other_properties>相对密度：约1.69；分子量：173.89；遇水反应分解，生成氯化氢和二氧化硫；遇潮时对大多数金属有腐蚀性；受热分解，放出有毒的烟气；具有强腐蚀性和刺激性；对眼睛、皮肤和粘膜有强刺激性和腐蚀性。</other_properties>
+      <heat_of_combustion>无意义</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <explosive_upper_limit>不适用</explosive_upper_limit>
+      <explosive_lower_limit>不适用</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>不稳定</stability>
-      <incompatible_substances>强氧化剂、水、潮湿空气、碱类。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <stability>在干燥、低温条件下相对稳定，但遇水或水蒸气会迅速分解，受热也会分解。</stability>
+      <incompatible_substances>强氧化剂、水、潮湿空气、碱类、活性金属粉末、醇类、胺类、醚类。</incompatible_substances>
+      <conditions_to_avoid>避免受热、明火、火花、静电积聚、撞击、摩擦。避免与水、潮湿空气、强氧化剂、碱类、活性金属粉末接触。避免高温环境。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>高温分解或遇水分解可产生氯化氢、二氧化硫、氯气等有毒有害气体。分解可能产生腐蚀性气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：无资料；LC50：无资料</acute_toxicity>
+      <subacute_chronic_toxicity>氯化物和硫化合物具有毒性，长期接触可能对呼吸系统、消化系统、神经系统造成损害。可引起慢性支气管炎、肺气肿、胃炎、胃溃疡等疾病。氯化物可引起氟中毒症状，如氟骨症、牙齿腐蚀等。</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
+      <irritation>对眼睛、皮肤、粘膜和上呼吸道有强烈刺激作用和腐蚀性。可引起眼睛灼伤、皮肤灼伤、呼吸道灼伤、化学性肺炎。</irritation>
+      <sensitization>可能引起皮肤过敏反应和呼吸道过敏反应。</sensitization>
+      <mutagenicity>氯化物和硫化合物可能具有致突变性。</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
       <carcinogenicity>无资料</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
-      <other_harmful_effects>存放被毒物污染的衣服，洗后再用。特别注意眼和呼吸道的防护。</other_harmful_effects>
+      <ecological_toxicity>对水生生物毒性极高。氯化物和硫化合物对鱼类、水生无脊椎动物和藻类具有高毒性。具体数据：对鱼类LC50（96小时）可能小于1mg/L。对水生无脊椎动物LC50（48小时）可能小于0.5mg/L。对藻类EC50（72小时）可能小于0.1mg/L。对陆生生物也有毒性，可导致土壤污染，影响植物生长和土壤微生物群落。</ecological_toxicity>
+      <biodegradability>在环境中不易生物降解。氯化物和硫化合物在环境中相对稳定，可能长期存在。遇水可能分解，但分解产物仍可能具有毒性。</biodegradability>
+      <non_biodegradability>由于氯化物和硫化合物的化学稳定性，该物质在环境中难以自然降解。氯化物在环境中迁移性强，可造成长期污染。</non_biodegradability>
+      <bioaccumulation>氯化物和硫化合物可能在生物体内累积。该物质可能通过食物链对高级捕食者造成慢性毒性影响。</bioaccumulation>
+      <other_harmful_effects>可导致土壤酸化，影响土壤微生物活性和植物生长。对水体生态系统造成长期破坏，影响水生生物群落结构。氯化物和硫化合物都可能对鸟类和哺乳动物造成慢性毒性效应。可污染地下水，影响饮用水安全。存放被毒物污染的衣服，洗后再用。特别注意眼和呼吸道的防护。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物</waste_properties>
+      <disposal_method>建议用焚烧法处置。在高温条件下使有害物质氧化分解，达到减量化和无害化的目的。需控制焚烧温度、停留时间等参数。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。处置人员应穿戴适当的防护装备。处置过程中应防止对环境造成二次污染。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -137,12 +140,21 @@
       <imdg_page>8229</imdg_page>
       <packaging_mark>20</packaging_mark>
       <packing_group>Ⅰ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>磨砂口玻璃瓶或螺纹口玻璃瓶外普通木箱;安瓿瓶外普通木箱;螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶(罐)外普通木箱</packaging_method>
+      <transportation_precautions>运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与氧化剂、食用化学品等混装混运。装运该物品的车辆排气管必须配备阻火装置。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》(国务院令第591号)、《危险货物品名表》(GB12268)、《化学品安全技术说明书内容和项目顺序》(GB/T 16483-2008)、《危险化学品目录(2015版)》</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standard>GB/T 16483-2008</reference_standard>
+      <revision_notes>版本：1.0；修订日期：2024年；修订内容：按照GB/T 16483-2008标准编制，补充完善各部分信息。</revision_notes>
+      <abbreviations>MSDS：Material Safety Data Sheet（化学品安全技术说明书）；CAS：Chemical Abstracts Service（化学文摘服务）；LD50：半数致死量；LC50：半数致死浓度；TLV：Threshold Limit Value（阈限值）；TWA：Time-Weighted Average（时间加权平均）；STEL：Short-Term Exposure Limit（短时间接触限值）。</abbreviations>
+      <glossary>无资料</glossary>
+      <disclaimer>本化学品安全技术说明书依据GB/T 16483-2008标准编制，所提供的信息基于现有知识和经验。使用者应自行评估使用本化学品的风险，并采取适当的安全防护措施。本说明书不构成任何形式的保证或承诺。对于因使用本化学品而造成的任何损失或损害，编制方不承担责任。</disclaimer>
+      <contact_information>如需更多信息或技术支持，请联系化学品供应商或制造商。紧急情况请拨打当地应急救援电话：119（火警）、120（急救）、110（报警）。</contact_information>
+    </other_info>
   </msds>
 </msds_list>

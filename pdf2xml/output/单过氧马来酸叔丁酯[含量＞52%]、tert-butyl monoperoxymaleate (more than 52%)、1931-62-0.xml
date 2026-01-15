@@ -44,9 +44,9 @@
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>无资料</harmful_combustion_products>
-      <suitable_extinguishing_media>无资料</suitable_extinguishing_media>
+      <fire_risk_classification>第5.2类有机过氧化物</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、有机过氧化物分解产物</harmful_combustion_products>
+      <suitable_extinguishing_media>泡沫、干粉、二氧化碳、砂土。禁止用水直接灭火。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
@@ -64,12 +64,12 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <monitoring_method>定期监测工作场所空气中有机过氧化物浓度。</monitoring_method>
+      <engineering_controls>密闭操作，提供充分的局部排风和全面通风。采用防爆型通风系统和设备。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时，佩戴过滤式防毒面具（半面罩）或自给式呼吸器。</respiratory_protection>
       <eye_protection>佩戴化学护目镜（符合欧盟EN166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
+      <hand_protection>戴橡胶耐油手套。</hand_protection>
       <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
@@ -119,7 +119,7 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>对水生生物有害。</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
@@ -143,7 +143,13 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品安全管理条例、易制毒化学品管理条例、危险化学品目录（2015版）</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>GB/T 16483-2008 化学品安全技术说明书 内容和项目顺序</reference_standards>
+      <revision_notes>本安全技术说明书按照GB/T 16483-2008标准编制</revision_notes>
+      <abbreviations>CAS：化学文摘社登记号；UN：联合国编号；IMDG：国际海运危险货物规则；MAC：最高容许浓度；TLV：阈限值</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

@@ -4,25 +4,23 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>7790-94-5</cas_number>
-      <msds_code>MSDS#941</msds_code>
+      <msds_code>MSDS-7790-94-5</msds_code>
       <product_name>氯磺酸</product_name>
-      <product_alias>氯化硫酸；氯硫酸</product_alias>
+      <product_alias>chlorosulfonic acid</product_alias>
       <product_english_name>chlorosulfonic acid</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第8.1类 酸性腐蚀品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收
-其蒸气对粘膜和呼吸道有明显刺激作用。临床表现有气短、咳嗽、胸痛、咽干痛以及流泪、流
-涕、痰中带血、恶心、无力等。吸入高浓度可引起化学性肺炎、甚至可发展为肺水肿。皮肤接</exposure_routes>
-      <health_hazards>触液体可致重度灼伤。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>其蒸气对粘膜和呼吸道有明显刺激作用。临床表现有气短、咳嗽、胸痛、咽干痛以及流泪、流涕、痰中带血、恶心、无力等。吸入高浓度可引起化学性肺炎、甚至可发展为肺水肿。皮肤接触液体可致重度灼伤。</health_hazards>
+      <environmental_hazards>对环境有危害，对水体和大气可造成污染。</environmental_hazards>
       <fire_explosion_hazards>本品助燃，具强腐蚀性、强刺激性，可致人体灼伤。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -55,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>作规程。建议操作人员佩戴过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿橡胶耐酸碱 服，戴橡胶耐酸碱手套。远离火种、热源，工作场所严禁吸烟。远离易燃、可燃物。防止蒸气 泄漏到工作场所空气中。避免与酸类、碱类、醇类、活性金属粉末接触。尤其要注意避免与水 接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急 处理设备。倒空的容器可能残留有害物。 储存于阴凉、干燥、通风良好的库房。库温不超过35℃，相对湿度不超过80％。包装必须密封， 切勿受潮。应与易（可）燃物、酸类、碱类、醇类、活性金属粉末等分开存放，切忌混储。储 区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
+      <handling_precautions>密闭操作，注意通风。操作尽可能机械化、自动化。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿橡胶耐酸碱服，戴橡胶耐酸碱手套。远离火种、热源，工作场所严禁吸烟。远离易燃、可燃物。防止蒸气泄漏到工作场所空气中。避免与酸类、碱类、醇类、活性金属粉末接触。尤其要注意避免与水接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、干燥、通风良好的库房。库温不超过35℃，相对湿度不超过80％。包装必须密封，切勿受潮。应与易（可）燃物、酸类、碱类、醇类、活性金属粉末等分开存放，切忌混储。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -64,33 +62,33 @@
       <former_soviet_mac>未制定标准</former_soviet_mac>
       <tlvtn>未制定标准</tlvtn>
       <tlvvn>未制定标准</tlvvn>
-      <contact_limits>美国TWA：未制定标准美国STEL：未制定标准</contact_limits>
+      <contact_limits>美国TWA：未制定标准；美国STEL：未制定标准</contact_limits>
       <monitoring_method>无资料</monitoring_method>
       <engineering_controls>密闭操作，注意通风。尽可能机械化、自动化。提供安全淋浴和洗眼设备。</engineering_controls>
-      <respiratory_protection>可能接触其烟雾时，佩戴过滤式防毒面具（半面罩）或空气呼吸器。紧急事态抢救或撤离时，</respiratory_protection>
+      <respiratory_protection>可能接触其烟雾时，佩戴过滤式防毒面具（半面罩）或空气呼吸器。紧急事态抢救或撤离时，建议佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
       <body_protection>穿橡胶耐酸碱服。</body_protection>
       <hand_protection>戴橡胶耐酸碱手套。</hand_protection>
-      <other_protection></other_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
-      <melting_point>-80</melting_point>
-      <boiling_point>151</boiling_point>
+      <pH>强酸性</pH>
+      <melting_point>-80℃</melting_point>
+          <boiling_point>151℃</boiling_point>
       <flash_point>无意义</flash_point>
       <relative_density>1.77</relative_density>
       <relative_vapor_density>4.02</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>HC</molecular_formula>
+      <solubility>遇水剧烈反应，生成硫酸和氯化氢</solubility>
+      <molecular_formula>HClO3S</molecular_formula>
       <molecular_weight>116.52</molecular_weight>
-      <main_components></main_components>
-      <saturated_vapor_pressure></saturated_vapor_pressure>
+      <main_components>氯磺酸</main_components>
+      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无意义</ignition_temperature>
       <autoignition_temperature>无意义</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>助燃</flammability>
       <appearance>无色半油状液体，有极浓的刺激性气味。</appearance>
       <main_uses>用于制造磺胺类药品，用作染料中间体、磺化剂、脱水剂及合成糖精等。</main_uses>
       <other_properties>无资料</other_properties>
@@ -105,7 +103,7 @@
       <incompatible_substances>酸类、碱类、醇类、活性金属粉末、胺类、水、易燃或可燃物。</incompatible_substances>
       <conditions_to_avoid>潮湿空气。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>氯化氢、氧化硫</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
@@ -124,12 +122,12 @@
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作后，淋浴更衣</other_harmful_effects>
+      <other_harmful_effects>该物质对环境有危害，应特别注意对水体和空气的污染。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
+      <disposal_method>用焚烧法处置。焚烧炉排出的气体要通过洗涤器除去。</disposal_method>
       <disposal_precautions>无资料</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
@@ -139,12 +137,18 @@
       <imdg_page>8144</imdg_page>
       <packaging_mark>20</packaging_mark>
       <packing_group>O51</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_method>耐酸坛或玻璃瓶外普通木箱或半花格木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外木板箱。</packaging_method>
+        <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与易燃物或可燃物、碱类、醇类、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>《危险化学品安全管理条例》（国务院令第591号），针对危险化学品的安全使用、生产、储存、运输、装卸等方面均作了相应规定；《易制毒化学品管理条例》（国务院令第445号），对易制毒化学品的生产、经营、购买、运输和进口、出口进行了规范。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <preparation_standard>本MSDS按照《化学品安全技术说明书内容和项目顺序》(GB/T16483-2008)标准编制。</preparation_standard>
+      <modification_notes>无资料</modification_notes>
+      <abbreviations>PC-TWA：指以时间为权数规定的8h工作日、40h工作周的平均容许接触浓度。PC-STEL：指在遵守PC-TWA前提下允许短时间（15分钟）接触的浓度。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

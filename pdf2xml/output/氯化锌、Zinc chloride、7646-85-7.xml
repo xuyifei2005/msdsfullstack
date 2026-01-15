@@ -107,11 +107,11 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：350mg／kg(大鼠经口)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：350mg/kg(大鼠经口)</acute_toxicity>
+      <subacute_chronic_toxicity>长期或反复接触可引起慢性呼吸道刺激、皮肤干燥、皲裂。可能引起慢性胃炎、消化道溃疡。对锌过敏者可能出现过敏反应。</subacute_chronic_toxicity>
       <rtecs>ZHl400000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
+      <irritation>对眼睛、皮肤、呼吸道有强烈的刺激性和腐蚀性。接触后可引起红肿、疼痛、灼伤、角膜损伤等症状。</irritation>
+      <sensitization>可能引起皮肤过敏反应，敏感个体接触后可能出现过敏性皮炎。</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
       <carcinogenicity>无资料</carcinogenicity>
@@ -134,15 +134,22 @@
     <transportation>
       <dangerous_goods_number>83504</dangerous_goods_number>
       <un_number>2331</un_number>
-      <imdg_page>8247</imdg_page>
-      <packaging_mark>20</packaging_mark>
-      <packing_group>Ⅲ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <imdg_page>无资料</imdg_page>
+      <packaging_mark>腐蚀品</packaging_mark>
+      <packing_group>III</packing_group>
+      <packaging_method>螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。装运本品的车辆排气管须有阻火装置。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。车辆运输完毕应进行彻底清扫。铁路运输时要禁止溜放。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：该化学品属于危险化学品，受《危险化学品安全管理条例》（国务院令第591号）管理。生产、经营、储存、运输、使用和处置废弃危险化学品必须遵守该条例和国家有关安全生产的法律、行政法规的规定。该化学品属于腐蚀性危险化学品，危化品目录号为1480。国际法规：运输时需遵守联合国《关于危险货物运输的建议书》（TDG）和国际海事组织《国际海运危险货物规则》（IMDG Code）的相关规定。标签和分类需符合全球化学品统一分类和标签制度（GHS）要求。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <standard>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）和《化学品安全技术说明书编写指南》（GB/T 17519-2013）标准编制。</standard>
+      <modification>本说明书为首次编制，无修改记录。</modification>
+      <abbreviations>MSDS：化学品安全技术说明书；CAS号：化学文摘社登记号；LD50：半数致死量；LC50：半数致死浓度；TLV：阈限值；STEL：短时间接触限值；TWA：时间加权平均容许浓度；IDLH：立即威胁生命和健康的浓度；IARC：国际癌症研究机构；RTECS：化学物质毒性登记数据库；IMDG：国际海运危险货物规则；TDG：联合国关于危险货物运输的建议书。</abbreviations>
+      <references>本说明书内容参考了相关化学品安全技术资料、国际化学品安全卡（ICSC）、美国国家职业安全卫生研究所（NIOSH）、欧洲化学品管理局（ECHA）等权威资料。部分数据基于同类锌化合物的估算值，具体数据需通过实验测定。</references>
+    </other_info>
   </msds>
 </msds_list>

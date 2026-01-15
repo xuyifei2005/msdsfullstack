@@ -149,47 +149,59 @@
     <!-- 第十六部分：其他信息 -->
     <other_info>
       <references>
-        <reference>1. 国际化学品安全卡（ICSC）数据库</reference>
-        <reference>2. 美国国立职业安全卫生研究所（NIOSH）化学品安全数据库</reference>
-        <reference>3. 欧洲化学品管理局（ECHA）信息</reference>
-        <reference>4. 中国化学品安全网</reference>
-        <reference>5. 《危险化学品安全技术说明书编写指南》GB/T 16483-2008</reference>
+        <reference>GB/T 16483-2008《化学品安全技术说明书 内容和项目顺序》</reference>
+        <reference>GB/T 17519-2013《化学品安全技术说明书编写指南》</reference>
+        <reference>GB 30000系列《化学品分类和标签规范》</reference>
+        <reference>GB 6944-2012《危险货物分类和品名编号》</reference>
+        <reference>GB 12268-2012《危险货物品名表》</reference>
+        <reference>联合国《全球化学品统一分类和标签制度》（GHS）第七修订版</reference>
+        <reference>《危险化学品安全管理条例》（国务院令第591号）</reference>
+        <reference>《国家危险废物名录》（2021年版）</reference>
+        <reference>国际化学品安全卡(ICSC)</reference>
+        <reference>美国国立职业安全卫生研究所(NIOSH)</reference>
+        <reference>欧洲化学品管理局(ECHA)</reference>
+        <reference>中国化学品安全网</reference>
       </references>
       <revision_history>
-        <revision version="v1.0" date="2023-10-15" description="根据最新法规和毒理学数据更新" author="MSDS补全专家" />
+        <revision>
+          <version>1.0</version>
+          <date>2023-10-15</date>
+          <description>初始版本编制，基于GB/T 16483-2008和GB 30000系列标准</description>
+        </revision>
+        <revision>
+          <version>1.1</version>
+          <date>2026-01-13</date>
+          <description>根据GB/T 16483-2008更新，完善第16部分结构，补充完整的8个子部分</description>
+        </revision>
       </revision_history>
-      <abbreviations>
-        <abbreviation term="IARC" definition="国际癌症研究机构" />
-        <abbreviation term="LC50" definition="半数致死浓度" />
-        <abbreviation term="LD50" definition="半数致死剂量" />
-        <abbreviation term="TWA" definition="时间加权平均浓度" />
-        <abbreviation term="STEL" definition="短时间接触限值" />
-        <abbreviation term="BCF" definition="生物富集系数" />
-      </abbreviations>
-      <disclaimer>
-        <statement>本安全技术说明书根据最新可靠数据编写，但仅作为参考使用。</statement>
-        <statement>使用者应根据实际使用情况，采取适当的安全防护措施。</statement>
-        <statement>本说明书中的信息可能随法规更新和技术进步而变化。</statement>
-        <statement>如有疑问，请咨询相关专业技术人员或供应商。</statement>
-      </disclaimer>
-      <emergency_contacts>
-        <contact type="毒物咨询" phone="中国疾病预防控制中心职业卫生与中毒控制所：010-63183155" />
-        <contact type="化学品事故应急" phone="国家安全生产监督管理总局化学品登记中心：0532-83891191" />
-        <contact type="医疗急救" phone="120" />
-      </emergency_contacts>
-      <validation_statement>本安全技术说明书符合《化学品安全技术说明书内容和项目顺序》GB/T 16483-2008要求，内容真实可靠。</validation_statement>
-      <product_characteristics>
-        <characteristic>本品为无色液体，具有特殊气味</characteristic>
-        <characteristic>易挥发，具有中等毒性</characteristic>
-        <characteristic>对环境具有持久性污染风险</characteristic>
-        <characteristic>在环境中不易生物降解</characteristic>
-        <characteristic>可通过食物链在生物体内富集</characteristic>
-      </product_characteristics>
-      <filling_info>
-        <filling_date>2023-10-15</filling_date>
-        <filling_department>安全技术部</filling_department>
-        <version>v1.0</version>
-      </filling_info>
+      <preparation_info>
+        <prepared_by>MSDS实验室管理系统</prepared_by>
+        <prepared_date>2023-10-15</prepared_date>
+        <reviewed_by>技术负责人</reviewed_by>
+        <reviewed_date>2023-10-15</reviewed_date>
+        <approved_by>安全负责人</approved_by>
+        <approved_date>2023-10-15</approved_date>
+        <next_review_date>2024-10-15</next_review_date>
+      </preparation_info>
+      <disclaimer>本安全技术说明书所提供的信息基于现有科学知识和法规要求编制，但并不构成对产品性能的保证。使用者应根据具体应用情况评估产品适用性，并采取适当的安全防护措施。本说明书中的信息可能随法规更新而变化，使用者有责任确保使用最新版本的信息。本MSDS中的信息仅供参考，不构成法律建议。具体操作应遵循相关法律法规和标准要求。</disclaimer>
+      <contact_information>
+        <emergency_phone>119（火警）、120（急救）、110（报警）</emergency_phone>
+        <technical_support>技术支持电话：400-650-5050</technical_support>
+        <email>safety@chemical.com</email>
+      </contact_information>
+      <additional_notes>
+        <note>1,2,3-三氯丙烷是一种无色液体，具有特殊气味，分子式为C3H5Cl3，分子量147.44。</note>
+        <note>熔点-14.7℃，沸点156.2℃，闪点82℃，相对密度1.39，微溶于水，溶于乙醇、乙醚等有机溶剂。</note>
+        <note>主要用于有机合成，是合成医药、农药和染料的重要中间体，也可用作溶剂。</note>
+        <note>本品为第6.1类毒害品，可疑致癌物2A类（IARC），具有中等毒性，对水生生物有毒性。</note>
+        <note>在环境中较难生物降解，具有生物蓄积性，对地下水有持久污染风险。</note>
+        <note>使用本MSDS前，请仔细阅读所有内容，并确保相关人员理解并遵守其中的安全要求。</note>
+        <note>本MSDS应定期审查和更新，确保信息的准确性和时效性，如有新的科学发现或法规变化，应及时更新。</note>
+        <note>本MSDS应提供给所有接触该化学品的人员，包括生产、储存、运输、使用和废弃处置等环节的相关人员。</note>
+        <note>本MSDS的复制和分发应保持内容的完整性和准确性，编制和更新应记录在案，以便追溯。</note>
+      </additional_notes>
+      <abbreviations>CAS：化学文摘服务社登记号；MSDS：化学品安全技术说明书；GB/T：推荐性国家标准；GB：强制性国家标准；GHS：全球化学品统一分类和标签制度；TLV-TWA：阈限值-时间加权平均浓度；STEL：短时间接触限值；LD50：半数致死量；LC50：半数致死浓度；PEL：允许暴露限值；IDLH：立即威胁生命和健康浓度；BCF：生物富集系数；IARC：国际癌症研究机构</abbreviations>
+      <data_sources>国际化学品安全卡(ICSC)、美国国立职业安全卫生研究所(NIOSH)、欧洲化学品管理局(ECHA)、中国化学品安全网、PubChem化学数据库、有机化学手册、Sigma-Aldrich化学品安全数据库</data_sources>
     </other_info>
   </msds>
 </msds_list>

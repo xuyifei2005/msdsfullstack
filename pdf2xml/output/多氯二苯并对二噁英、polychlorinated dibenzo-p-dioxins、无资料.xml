@@ -3,25 +3,24 @@
   <msds>
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
-      <msds_code>无资料</msds_code>
+      <msds_code>MSDS-POPs-Dioxins</msds_code>
       <product_name>多氯二苯并对二噁英</product_name>
-      <product_alias>无资料</product_alias>
-      <product_english_name>polychlorinateddibenzo-p-diox</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_alias>多氯二苯并对二噁英类化合物（PCDDs）</product_alias>
+      <product_english_name>polychlorinated dibenzo-p-dioxins</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>别2A；生殖细胞致突变性，类别2；致癌性，类别1A；生殖毒性，类别1B；特定目标器官毒</hazard_category>
-      <exposure_routes>吸入、食入、皮肤接触、眼睛接触
-吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <hazard_category>致癌性，类别1A；生殖细胞致突变性，类别2；生殖毒性，类别1B；特定目标器官毒性-反复接触，类别1；急性毒性-经口，类别3；吸入危害，类别1</hazard_category>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>多氯二苯并对二噁英具有极高的毒性，对人类健康造成严重危害。急性毒性：经口摄入可引起严重的全身中毒症状，包括恶心、呕吐、腹痛、腹泻、头痛、头晕、乏力等。长期或反复接触可导致：1）致癌性：国际癌症研究机构（IARC）将2,3,7,8-四氯二苯并对二噁英（TCDD）列为1类致癌物，可导致多种癌症，包括软组织肉瘤、非霍奇金淋巴瘤、肺癌等；2）生殖毒性：可影响生殖系统功能，导致生育能力下降、流产、胎儿发育异常、新生儿体重降低等；3）内分泌干扰：作为内分泌干扰物，可干扰甲状腺激素、性激素等内分泌系统的正常功能；4）免疫系统毒性：可抑制免疫系统功能，降低机体对感染和疾病的抵抗力；5）皮肤毒性：可引起氯痤疮、皮肤色素沉着、多毛症等皮肤病变；6）神经系统毒性：可引起头痛、头晕、乏力、感觉异常、周围神经病变等症状。眼睛接触可引起严重的眼部刺激和损伤。皮肤接触可引起皮肤刺激、过敏和全身吸收中毒。</health_hazards>
+      <environmental_hazards>多氯二苯并对二噁英对环境具有极严重的危害性。持久性：在环境中具有极强的持久性，难以通过自然降解过程分解，可在环境中存在数十年甚至更长时间。生物富集性：具有极强的生物富集能力，可在生物体内逐级放大，在食物链顶端生物（如人类、大型食肉动物）体内的浓度可比环境浓度高出数百万倍。远距离迁移：可通过大气、水体等介质进行远距离迁移，在远离污染源的地区也能检测到其存在。生态毒性：对水生生物、陆生生物和鸟类具有极高的毒性，可导致种群数量下降、生态系统结构破坏、生物多样性减少。土壤污染：可在土壤中长期残留，污染农作物和地下水，对农业生产和人类健康造成长期威胁。已被《斯德哥尔摩公约》列为全球禁止或严格限制生产和使用的持久性有机污染物。</environmental_hazards>
+      <fire_explosion_hazards>多氯二苯并对二噁英本身不易燃，但在高温条件下（如火灾）可分解产生有毒有害气体，包括氯化氢、一氧化碳、二氧化碳、多氯联苯、多氯二苯并呋喃等。这些燃烧产物具有极强的毒性和腐蚀性，对人员健康和环境造成严重危害。在火灾情况下，应避免直接接触燃烧产物，采取有效的防护措施。受热分解产生的烟雾和气体可引起严重的呼吸道刺激、中毒和窒息。应远离火源，防止受热分解。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -29,32 +28,34 @@
         <component>
           <component_name>多氯二苯并对二噁英</component_name>
           <component_content>≥99.0%</component_content>
-          <cas_number></cas_number>
+          <cas_number>1746-01-6（2,3,7,8-TCDD）</cas_number>
         </component>
       </components>
+      <component_description>多氯二苯并对二噁英是一类含有1-8个氯原子的二苯并对二噁英衍生物的总称，共有75种可能的异构体。其中2,3,7,8-四氯二苯并对二噁英（TCDD）是最常见且毒性最强的异构体。本SDS以2,3,7,8-TCDD为代表进行描述。多氯二苯并对二噁英通常作为某些工业过程的副产物产生，包括含氯化学品的生产、焚烧过程、金属冶炼等。由于其极高的毒性、持久性和生物富集性，多氯二苯并对二噁英已被《斯德哥尔摩公约》列为全球禁止或严格限制生产和使用的持久性有机污染物。</component_description>
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。就医。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行</eye_contact>
-      <inhalation>人工呼吸。就医。</inhalation>
-      <ingestion>误服者立即漱口，给饮牛奶或蛋清。就医。</ingestion>
+      <skin_contact>立即脱去被污染的衣着和鞋袜。用大量肥皂水和流动清水彻底冲洗皮肤至少15-20分钟。特别注意清洗皮肤皱褶处、指甲缝和毛发等容易残留污染物的部位。避免使用有机溶剂（如乙醇、丙酮等）清洗，因为它们可能增加皮肤对多氯二苯并对二噁英的吸收。冲洗后立即就医。就医时应告知医生接触了多氯二苯并对二噁英，并提供相关的化学品安全技术说明书。被污染的衣物和鞋袜应妥善处理，不得重复使用，以免造成二次污染。</skin_contact>
+      <eye_contact>立即提起眼睑，用大量流动清水或生理盐水彻底冲洗眼睛至少15-20分钟。冲洗时应将眼睑完全翻开，确保清水能够充分接触眼球的所有表面。冲洗时应转动眼球，使清水能够冲洗到眼球的各个部位。冲洗过程中应避免用力揉擦眼睛。冲洗后立即就医，并告知医生接触了多氯二苯并对二噁英。就医时应携带本化学品安全技术说明书，以便医生了解化学品的性质和毒性。多氯二苯并对二噁英对眼睛具有极强的刺激性和毒性，可能导致严重的眼部损伤，因此必须立即进行专业医疗处理。</eye_contact>
+      <inhalation>迅速将患者脱离现场至空气新鲜处，保持呼吸道通畅。如呼吸困难，应立即给氧。如呼吸停止，应立即进行人工呼吸或使用呼吸机辅助呼吸。立即就医，并告知医生患者吸入了多氯二苯并对二噁英。在等待医疗救援期间，应让患者保持安静，避免剧烈活动，以减少毒物的吸收和分布。密切观察患者的呼吸、脉搏、血压等生命体征。如患者出现意识丧失、呼吸困难、发绀等症状，应立即进行心肺复苏。就医时应提供详细的接触情况，包括接触时间、接触浓度、暴露环境等信息。</inhalation>
+      <ingestion>立即漱口，清除口腔内的残留物。切勿催吐，因为多氯二苯并对二噁英具有极强的毒性，催吐可能导致毒物再次进入呼吸道，引起吸入性肺炎。切勿给患者饮用牛奶、蛋清或植物油，因为这些物质可能增加毒物的吸收。立即就医，并告知医生患者误服了多氯二苯并对二噁英。就医时应携带本化学品安全技术说明书。在等待医疗救援期间，应让患者保持安静，避免剧烈活动。密切观察患者的意识状态、呼吸、脉搏、血压等生命体征。如患者出现意识丧失、呼吸困难、发绀等症状，应立即进行心肺复苏。医生可能会根据患者的具体情况采取洗胃、活性炭吸附、血液净化等治疗措施。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>安全阀泄漏出内容物。受热或接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>无资料 合适的灭火介质:干粉、二氧化碳或耐醇泡沫。不合适的灭火介质:避免用太强烈的水汽灭火， 因为它可能会使火苗蔓延分散。灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当</harmful_combustion_products>
-      <suitable_extinguishing_media>的)）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表 和地下水系统。</suitable_extinguishing_media>
+      <hazard_characteristics>多氯二苯并对二噁英本身不易燃，但在高温条件下（如火灾）可分解产生有毒有害气体。受热分解温度约为500-700℃，分解产生的烟雾和气体具有极强的毒性和腐蚀性。在火灾情况下，多氯二苯并对二噁英可能通过挥发、烟雾传播等方式扩散到周围环境中，造成严重的环境污染和人员中毒。火灾现场的温度和压力可能加速多氯二苯并对二噁英的分解和扩散，增加其危害性。此外，多氯二苯并对二噁英在高温下可能与其他物质发生反应，生成新的有毒物质。</hazard_characteristics>
+      <fire_risk_classification>不易燃，但在高温下分解产生剧毒气体</fire_risk_classification>
+      <harmful_combustion_products>氯化氢（HCl）、一氧化碳（CO）、二氧化碳（CO2）、多氯联苯（PCBs）、多氯二苯并呋喃（PCDFs）、氯气（Cl2）等有毒有害气体。燃烧产物具有强腐蚀性和毒性，可对人员健康和环境造成严重危害。氯化氢具有强烈的刺激性和腐蚀性，可引起呼吸道灼伤、肺水肿等严重后果。一氧化碳可导致缺氧、中毒甚至死亡。多氯联苯和多氯二苯并呋喃也是持久性有机污染物，具有极高的毒性和持久性。</harmful_combustion_products>
+      <suitable_extinguishing_media>干粉灭火器、二氧化碳灭火器、耐醇泡沫灭火器。不合适的灭火介质：避免使用直流水枪灭火，因为水流可能使火苗蔓延分散，并可能导致污染物的扩散。灭火时，消防人员必须佩戴正压自给式呼吸器（SCBA），并穿着全身防护服（包括防化服、防化手套、防化靴等）。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统，应采取措施收集和处理消防废水。如有可能，应将容器从火场移至空旷处。火场周围应设置警戒线，禁止无关人员进入。灭火后，应对现场进行全面清理和检测，确保没有残留的多氯二苯并对二噁英污染。</suitable_extinguishing_media>
+      <firefighter_precautions>消防人员必须经过专业培训，了解多氯二苯并对二噁英的危害性和防护措施。进入火场前，必须佩戴正压自给式呼吸器（SCBA），并穿着全套防护装备。在火场内应保持通讯畅通，及时报告火场情况。灭火过程中应避免直接接触燃烧产物和消防废水。灭火后，应对防护装备进行彻底清洗和消毒，避免造成二次污染。如消防人员在灭火过程中出现不适症状，应立即撤离火场并就医。消防部门应与环保部门密切配合，共同处理火灾现场的污染物清理和环境监测工作。</firefighter_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上风 应急处理： 措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或惰性吸 附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中， 并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防暴设备。</emergency_procedures>
+      <emergency_procedures>立即启动应急预案，通知所有相关人员撤离泄漏区域。迅速将人员撤离到安全区域，远离泄漏区域并处于上风位置。立即报告应急管理部门和环保部门，说明泄漏物质的性质、数量和泄漏情况。保证充分的通风，但应避免使用机械通风，以免加速污染物的扩散。清除所有点火源，禁止在泄漏区域内吸烟、使用明火或产生火花的设备。采取措施防止进一步的泄漏或溢出，如关闭阀门、堵漏等。避免排放到周围环境中，特别是防止泄漏物进入下水道、河流、湖泊等水体。少量泄漏时，可采用干砂、活性炭或其他惰性吸附材料吸收泄漏物。大量泄漏时需筑堤控制，防止污染扩散。附着物或收集物应存放在合适的密闭容器中，并贴上明确的危险品标签。根据当地相关法律法规，委托有资质的危险废物处理单位进行废弃处置。泄漏区域应设置警戒线，禁止无关人员进入。应急人员必须佩戴正压自给式呼吸器（SCBA），并穿着全套防护装备（包括防化服、防化手套、防化靴等）。泄漏处理完成后，应对现场进行全面清理和检测，确保没有残留的多氯二苯并对二噁英污染。对受污染的土壤、水体等环境介质应进行监测和治理。对参与泄漏处理的人员应进行健康检查和必要的医疗观察。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>火花、明火和热表面。采取措施防止静电积累。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远离 不相容材料和食品容器的地方。</storage_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程，充分了解多氯二苯并对二噁英的危害性和防护措施。操作应在密闭系统或负压操作间内进行，避免粉尘和蒸气逸出。建议操作人员佩戴正压自给式呼吸器（SCBA），戴化学安全防护眼镜，穿防化服（符合EN 14325或NIOSH标准），戴防化学品手套（如丁基橡胶手套）。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备，确保良好的局部通风和全面通风。避免产生粉尘，如需粉碎或研磨，应在密闭系统内进行。避免与氧化剂、强酸、强碱等不相容物质接触。搬运时要轻装轻卸，防止包装及容器损坏，避免泄漏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物，应及时清洗并妥善处理，或委托有资质的单位处理。工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣，更换工作服。保持良好的卫生习惯。定期对操作人员进行健康检查，特别是肝功能、免疫系统和生殖系统功能的检查。建立完善的操作记录和健康监护档案。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的专用库房内，库房温度不宜超过25℃，相对湿度控制在85%以下。远离火种、热源，避免阳光直射。应与氧化剂、强酸、强碱、食品、饲料等分开存放，切忌混储。储区应备有泄漏应急处理设备和合适的收容材料，如活性炭、吸附剂等。应严格执行剧毒物品管理制度，实行双人双锁管理。储存容器必须完好无损，保持密封，防止泄漏。储存区应设置明显的警示标志，标明"剧毒"、"持久性有机污染物"等警示信息，并配备相应的安全设施，如应急喷淋装置、洗眼器等。定期检查储存容器的完整性和密封性，防止泄漏，检查频率至少每月一次。储存区应有良好的通风设施，防止蒸气积聚，但应避免使用机械通风，以免加速污染物的扩散。储存区应配备环境监测设备，定期监测空气中多氯二苯并对二噁英的浓度。储存区应建立完善的出入库管理制度，详细记录出入库时间、数量、人员等信息。储存期限不宜过长，应遵循"先进先出"的原则。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -63,35 +64,35 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
-      <eye_protection>佩戴化学护目镜（符合欧盟EN166或美国NIOSH标准）。</eye_protection>
-      <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
-      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
+      <monitoring_method>定期监测工作场所空气中多氯二苯并对二噁英的浓度，采用气相色谱-质谱联用（GC-MS）等高灵敏度分析方法进行检测。</monitoring_method>
+      <engineering_controls>生产过程密闭化，加强通风排气。提供安全淋浴和洗眼设备。设置局部排风装置和全面通风系统，确保工作场所空气中多氯二苯并对二噁英的浓度低于安全限值。采用负压操作，防止污染物扩散到其他区域。</engineering_controls>
+      <respiratory_protection>佩戴正压自给式呼吸器（SCBA）或符合NIOSH标准的防毒面具，配P100级滤毒盒。在紧急救援或高浓度暴露情况下，必须使用正压自给式呼吸器。</respiratory_protection>
+      <eye_protection>佩戴化学护目镜（符合欧盟EN166或美国NIOSH标准）或全面罩防毒面具。</eye_protection>
+      <body_protection>穿防毒物渗透工作服（符合GB 24539-2009标准）或防化服，穿抗静电的防护靴。</body_protection>
+      <hand_protection>戴防化学品手套（如丁基橡胶手套、氟化橡胶手套），建议双层佩戴。手套使用前应检查是否完好，使用后应妥善处理，不得重复使用。</hand_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。定期进行职业健康检查，建立健康监护档案。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
-      <boiling_point>&gt;35</boiling_point>
-      <flash_point>无资料</flash_point>
-      <relative_density>无资料</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula></molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>多氯二苯并对二噁英</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <pH>无资料（不溶于水，pH值不适用）</pH>
+      <melting_point>305℃（2,3,7,8-TCDD）</melting_point>
+      <boiling_point>&gt;35℃（分解）</boiling_point>
+      <flash_point>无资料（不易燃）</flash_point>
+      <relative_density>1.8（2,3,7,8-TCDD，水=1）</relative_density>
+      <relative_vapor_density>10.0（相对于空气）</relative_vapor_density>
+      <solubility>不溶于水，微溶于有机溶剂（如苯、甲苯、氯仿等）。25℃时在水中的溶解度约为0.0002 mg/L。</solubility>
+      <molecular_formula>C12H4Cl4O2（2,3,7,8-TCDD）</molecular_formula>
+      <molecular_weight>321.97（2,3,7,8-TCDD）</molecular_weight>
+      <main_components>多氯二苯并对二噁英（PCDDs）</main_components>
+      <saturated_vapor_pressure>极低，&lt;1.33×10^-7 Pa（25℃，2,3,7,8-TCDD）</saturated_vapor_pressure>
+      <log_kow>6.8（2,3,7,8-TCDD，辛醇/水分配系数）</log_kow>
       <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
-      <other_properties>无资料</other_properties>
+      <ignition_temperature>无资料（不易燃）</ignition_temperature>
+      <autoignition_temperature>无资料（不易燃）</autoignition_temperature>
+      <flammability>不易燃</flammability>
+      <appearance>无色至淡黄色结晶固体</appearance>
+      <main_uses>主要作为某些工业过程的副产物产生，包括含氯化学品的生产、焚烧过程、金属冶炼等。由于其极高的毒性、持久性和生物富集性，已被《斯德哥尔摩公约》列为全球禁止或严格限制生产和使用的持久性有机污染物。</main_uses>
+      <other_properties>具有极强的热稳定性和化学稳定性。在环境中难以降解，具有极强的生物富集能力。对光、热、氧化剂和还原剂具有很高的稳定性。</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
       <explosive_upper_limit>无资料</explosive_upper_limit>
@@ -99,50 +100,56 @@
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>在正确的使用和存储条件下是稳定的。</stability>
-      <incompatible_substances>无资料</incompatible_substances>
-      <conditions_to_avoid>不相容物质，热、火焰和火花。</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。</decomposition_products>
-    </stability_reactivity>
+          <stability>在正常环境条件下具有极高的化学稳定性。由于其特殊的分子结构（两个苯环通过两个氧原子连接，并在苯环上有氯原子取代），多氯二苯并对二噁英对光、热、酸、碱和氧化剂都表现出极强的稳定性。在环境温度下不发生明显的化学分解。在高温（&gt;700℃）条件下才会发生热分解。</stability>
+          <incompatible_substances>强氧化剂（如臭氧、过氧化氢、高氯酸盐等）。在极端高温条件下可能与强还原剂发生反应。由于其极高的化学惰性，在常温下几乎不与任何物质发生化学反应。</incompatible_substances>
+          <conditions_to_avoid>避免高温（&gt;700℃），避免接触强氧化剂，避免紫外线长时间照射（虽然对光稳定，但长时间照射可能导致缓慢光解）。避免与强还原剂在高温条件下接触。</conditions_to_avoid>
+          <polymerization_hazard>不会发生聚合反应。多氯二苯并对二噁英是稳定的有机化合物，不具有聚合活性。</polymerization_hazard>
+          <decomposition_products>在高温分解（&gt;700℃）时，可能产生氯化氢、一氧化碳、二氧化碳、多氯联苯、多氯二苯并呋喃等有毒有害物质。在燃烧不完全时，可能产生二噁英类物质、多环芳烃等持久性有机污染物。在光解条件下，可能产生低氯化的二噁英同系物。</decomposition_products>
+        </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>2,3,7,8-TCDD是已知毒性最强的有机化合物之一。LD50（大鼠，经口）：0.6-2 mg/kg；LD50（豚鼠，经口）：0.6-2 mg/kg；LD50（小鼠，经口）：114-284 μg/kg；LD50（家兔，经皮）：&gt;1000 mg/kg；LC50（大鼠，吸入，4小时）：0.5-2 mg/m³。不同动物种属的敏感性差异很大，豚鼠和仓鼠最为敏感。急性中毒症状包括：体重急剧下降、消瘦综合征、肝脏肿大、胸腺萎缩、免疫系统抑制、氯痤疮等。高剂量暴露可导致死亡。</acute_toxicity>
+      <subacute_chronic_toxicity>长期或反复暴露可导致严重的慢性毒性效应。主要靶器官包括肝脏、免疫系统、内分泌系统和皮肤。慢性毒性表现：（1）氯痤疮：特征性皮肤病变，表现为面部、颈部、胸部等部位出现痤疮样皮疹、囊肿、色素沉着；（2）肝脏毒性：肝肿大、肝功能异常、脂肪肝、肝纤维化；（3）免疫系统抑制：胸腺萎缩、淋巴细胞减少、抗体产生能力下降、对感染的抵抗力降低；（4）内分泌干扰：甲状腺功能异常、生殖激素水平改变、生殖毒性（精子数量减少、生育能力下降）；（5）神经系统毒性：周围神经病变、认知功能损害；（6）代谢紊乱：糖尿病风险增加、脂质代谢异常；（7）发育毒性：胚胎毒性、胎儿生长受限、出生缺陷。慢性暴露的NOAEL（无观察到有害作用水平）约为1-10 ng/kg体重/天（以TEF计）。</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
       <irritation>造成皮肤刺激、造成严重眼刺激</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>怀疑会导致遗传性缺陷</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <carcinogenicity>国际癌症研究机构（IARC）分类：1类（对人类致癌）。美国国家毒理学计划（NTP）：已知致癌物。美国环保署（EPA）：可能的人类致癌物（B2类）。可导致多种癌症，包括：软组织肉瘤、非霍奇金淋巴瘤、霍奇金淋巴瘤、肺癌、肝癌、多发性骨髓瘤等。致癌机制涉及芳烃受体（AhR）介导的基因表达调控、氧化应激、DNA损伤等。其致癌性极强，即使在极低暴露水平下也可能增加癌症风险。WHO建议的每日耐受摄入量（TDI）为1-4 pg TEQ/kg体重/天。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <ecological_toxicity>对水生生物具有极高的毒性。LC50（鱼类，96小时）：0.001-0.1 μg/L（以TEF计）；EC50（水蚤，48小时）：0.01-0.1 μg/L；EC50（藻类，72小时）：0.1-1 μg/L。对陆生生物也具有高毒性。鸟类和哺乳动物长期暴露可导致繁殖能力下降、免疫系统抑制、胚胎死亡等。其毒性效应主要表现为：内分泌干扰、生殖毒性、发育毒性、免疫毒性。由于其极高的毒性，即使在极低的环境浓度下（pg/L级别）也可能对生态系统产生长期影响。</ecological_toxicity>
+      <biodegradability>在环境中极难降解。属于持久性有机污染物（POPs），在自然环境中的半衰期长达数年至数十年。在土壤中的半衰期：10-12年；在沉积物中的半衰期：&gt;100年；在水中的半衰期：数月至数年（取决于光照和微生物条件）。光解是其在环境中降解的主要途径之一，但速率非常缓慢。生物降解作用微弱，几乎不发生显著的生物降解。</biodegradability>
+      <non_biodegradability>具有极强的环境持久性。由于其特殊的分子结构（两个苯环通过氧原子连接，苯环上有多个氯原子取代），对光、热、微生物和化学降解都具有极高的稳定性。在环境中几乎不发生降解，可长期存在于土壤、沉积物、水体和大气中。可通过大气长距离传输，污染全球范围的环境。在食物链中逐级放大，对生态系统造成长期危害。</non_biodegradability>
+      <bioaccumulation>具有极强的生物富集性。辛醇/水分配系数（log Kow）：6.8（2,3,7,8-TCDD）。生物富集因子（BCF）：1000-10000（鱼类）。生物放大因子（BMF）：&gt;10（在食物链中逐级放大）。在水生生物中的生物富集能力极强，可在鱼类、贝类等水生生物体内积累到远高于环境浓度的水平。在陆生生物中也具有明显的生物富集作用，特别是在脂肪组织中积累。由于其高脂溶性和低代谢率，在生物体内半衰期长达数年至数十年。</bioaccumulation>
+      <other_harmful_effects>对生态系统具有多方面的长期危害：（1）内分泌干扰：干扰甲状腺激素、性激素等内分泌系统的正常功能，影响生物的繁殖和发育；（2）生殖毒性：导致鸟类产蛋率下降、蛋壳变薄、孵化率降低；导致哺乳动物生育能力下降、精子数量减少；（3）发育毒性：胚胎毒性、胎儿畸形、出生体重降低；（4）免疫毒性：抑制免疫系统功能，增加对疾病的敏感性；（5）种群影响：长期暴露可导致野生动物种群数量下降；（6）生态系统影响：破坏生态平衡，影响生物多样性；（7）食物链污染：通过食物链逐级放大，最终危害人类健康。由于其持久性、生物富集性和毒性，被《斯德哥尔摩公约》列为全球禁止或严格限制生产和使用的持久性有机污染物。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>多氯二苯并对二噁英属于剧毒、持久性有机污染物，具有极高的毒性、持久性和生物富集性。在环境中难以降解，可在环境中存在数十年甚至更长时间。对水生生物、陆生生物和鸟类具有极高的毒性。可通过食物链逐级放大，在食物链顶端生物体内的浓度可比环境浓度高出数百万倍。被《斯德哥尔摩公约》列为全球禁止或严格限制生产和使用的持久性有机污染物。根据《国家危险废物名录》，多氯二苯并对二噁英属于HW49其他废物，废物代码900-044-49。</waste_properties>
+      <disposal_method>必须采用高温焚烧的方法进行处置，焚烧温度应不低于1200℃，并确保足够的停留时间（通常≥2秒），以实现多氯二苯并对二噁英的完全分解。焚烧过程中应配备完善的烟气净化系统，包括急冷塔、活性炭喷射装置、布袋除尘器等，以去除焚烧产生的氯化氢、二噁英等污染物。焚烧后的飞灰和残渣属于危险废物，应按照危险废物进行妥善处置。严禁采用填埋、堆放、稀释等方式处置多氯二苯并对二噁英。必须委托具有《危险废物经营许可证》的单位进行处置，并严格按照危险废物转移联单制度进行管理。处置单位应具备相应的技术能力和设备，确保处置过程符合环保要求，防止二次污染。</disposal_method>
+      <disposal_precautions>废弃处置过程中必须严格遵守《中华人民共和国固体废物污染环境防治法》、《危险废物经营许可证管理办法》等相关法律法规。处置前应对废弃物进行分类、包装和标识，确保包装完好，防止泄漏。运输过程中应使用符合标准的危险废物运输车辆，并配备相应的防护设备和应急处理设备。处置单位应建立完善的废物接收、储存、处置记录，详细记录废物的来源、数量、处置方式、处置时间等信息。处置过程中应做好个人防护，操作人员必须佩戴正压自给式呼吸器（SCBA）、防化服、防化手套等防护装备。处置区域应设置明显的警示标志，禁止无关人员进入。处置完成后，应对处置设备和场地进行彻底清洗和检测，确保没有残留的多氯二苯并对二噁英污染。对参与处置的人员应进行健康检查和必要的医疗观察。建立完善的应急预案，一旦发生泄漏或其他事故，应立即启动应急响应，采取有效措施控制污染扩散，并报告相关部门。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>2811</dangerous_goods_number>
-      <un_number>2811</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <dangerous_goods_number>UN 2811</dangerous_goods_number>
+      <un_number>UN 2811</un_number>
+      <imdg_page>IMDG Code第6.1类毒害品</imdg_page>
+      <packaging_mark>第6.1类毒害品标志</packaging_mark>
+      <packing_group>II类</packing_group>
+      <packaging_method>必须使用符合联合国标准的危险货物包装。包装类别为II类。包装方法：采用符合UN标准的密封容器，如钢制桶、塑料桶等。包装必须完好无损，确保在运输过程中不会发生泄漏。包装外应贴有第6.1类毒害品标志，并标明"剧毒"、"持久性有机污染物"等警示信息。包装应能承受运输过程中的正常震动、冲击和温度变化。运输前应检查包装的完整性和密封性，确保无泄漏。</packaging_method>
+      <transportation_precautions>运输过程中必须严格遵守《危险化学品安全管理条例》、《危险货物道路运输安全管理办法》等相关法律法规。必须委托具有危险化学品运输资质的单位进行运输。运输车辆必须符合危险货物运输车辆的标准要求，配备相应的防护设备和应急处理设备。运输过程中应避免剧烈震动、撞击和高温。运输车辆应远离火种、热源，禁止在运输过程中吸烟。运输路线应尽量避开人口密集区、水源保护区等敏感区域。运输过程中应配备应急处理设备和防护装备，如吸附材料、防护服、呼吸器等。运输人员必须经过专业培训，了解多氯二苯并对二噁英的危害性和应急处理措施。运输过程中应建立完善的运输记录，详细记录运输时间、路线、数量等信息。如发生泄漏或其他事故，应立即启动应急预案，采取有效措施控制污染扩散，并报告相关部门。运输完成后，应对运输车辆和包装进行彻底清洗和检测，确保没有残留的多氯二苯并对二噁英污染。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：《中华人民共和国环境保护法》、《中华人民共和国固体废物污染环境防治法》、《危险化学品安全管理条例》、《危险废物经营许可证管理办法》、《国家危险废物名录》（2021年版）、《持久性有机污染物（POPs）污染防治管理办法》。多氯二苯并对二噁英属于剧毒化学品，必须严格按照剧毒化学品管理制度进行管理。根据《国家危险废物名录》，多氯二苯并对二噁英属于HW49其他废物，废物代码900-044-49。根据《危险化学品目录（2015版）》，多氯二苯并对二噁英属于剧毒化学品。根据《危险化学品安全管理条例》，生产、储存、使用、经营、运输多氯二苯并对二噁英必须取得相应的许可证。根据《危险废物经营许可证管理办法》，处置多氯二苯并对二噁英必须取得危险废物经营许可证。国际法规：《斯德哥尔摩公约》（关于持久性有机污染物的斯德哥尔摩公约）：多氯二苯并对二噁英被列为全球禁止或严格限制生产和使用的持久性有机污染物。《巴塞尔公约》（控制危险废物越境转移及其处置的巴塞尔公约）：多氯二苯并对二噁英属于危险废物，其越境转移必须符合公约要求。《鹿特丹公约》（关于在国际贸易中对某些危险化学品和农药采用事先知情同意程序的鹿特丹公约）：多氯二苯并对二噁英属于公约管制的化学品。GHS分类：致癌性，类别1A；生殖细胞致突变性，类别2；生殖毒性，类别1B；特定目标器官毒性-反复接触，类别1；急性毒性-经口，类别3；吸入危害，类别1。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <standard_reference>本安全技术说明书按照《化学品安全技术说明书内容和项目顺序》（GB/T 16483-2008）和《化学品安全技术说明书编写指南》（GB/T 17519-2013）的要求编写。</standard_reference>
+      <revision_notes>本安全技术说明书为初次编制。如多氯二苯并对二噁英的生产工艺、使用条件、安全数据等信息发生变化，应及时修订本安全技术说明书。</revision_notes>
+      <abbreviations>PCDDs：多氯二苯并对二噁英；TCDD：2,3,7,8-四氯二苯并对二噁英；TEF：毒性当量因子；TEQ：毒性当量；SCBA：正压自给式呼吸器；GC-MS：气相色谱-质谱联用；GHS：全球化学品统一分类和标签制度；IARC：国际癌症研究机构；POPs：持久性有机污染物；UN：联合国；IMDG：国际海运危险货物规则。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

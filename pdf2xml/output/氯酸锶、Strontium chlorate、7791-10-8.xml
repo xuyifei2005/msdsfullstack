@@ -8,12 +8,12 @@
       <product_name>氯酸锶</product_name>
       <product_alias>无资料</product_alias>
       <product_english_name>Strontium chlorate</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -80,7 +80,7 @@
       <relative_density>3.152(20℃)</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
       <solubility></solubility>
-      <molecular_formula>S</molecular_formula>
+      <molecular_formula>Sr(ClO3)2</molecular_formula>
       <molecular_weight>254.52</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
@@ -127,13 +127,13 @@
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
+      <disposal_method>建议用焚烧法处置。在能保证充分燃烧的条件下，焚烧炉排出的气体通过洗涤器除去。</disposal_method>
       <disposal_precautions>无资料</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>51034</dangerous_goods_number>
-      <un_number>1506</un_number>
+      <un_number>UN 1506</un_number>
       <imdg_page>5187</imdg_page>
       <packaging_mark>11</packaging_mark>
       <packing_group>Ⅱ</packing_group>
@@ -144,5 +144,9 @@
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>GB/T 16483-2008, GB/T 17519-2013</reference_standards>
+    </other_info>
   </msds>
 </msds_list>

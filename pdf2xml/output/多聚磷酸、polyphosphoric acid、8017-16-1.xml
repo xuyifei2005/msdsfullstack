@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>8017-16-1</cas_number>
-      <msds_code>MSDS#911</msds_code>
+      <msds_code>MSDS-8017-16-1</msds_code>
       <product_name>多聚磷酸</product_name>
       <product_alias>四磷酸</product_alias>
       <product_english_name>polyphosphoric acid</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>第8.1类 酸性腐蚀品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品不燃，具腐蚀性、刺激性，可致人体灼伤。</fire_explosion_hazards>
+      <hazard_category>第8.1类酸性腐蚀品</hazard_category>
+      <exposure_routes>吸入、食入、经皮吸收、眼睛接触</exposure_routes>
+      <health_hazards>具有强烈的腐蚀性和刺激性。皮肤接触可引起严重灼伤、疼痛、红肿、水疱、溃疡。眼睛接触可引起严重灼伤、角膜损伤、视力下降，甚至失明。吸入可引起呼吸道刺激、咳嗽、呼吸困难、肺水肿。食入可引起口腔、咽喉、食道、胃部灼伤、疼痛、呕吐、腹泻，严重者可引起休克、死亡。长期或反复接触可引起牙齿酸蚀、皮肤干燥、皲裂、慢性支气管炎。</health_hazards>
+      <environmental_hazards>对水生生物有毒性。泄漏到水体中可降低pH值，对水生生态系统造成危害。在土壤中可被稀释和中和，但高浓度可对土壤微生物和植物造成损害。</environmental_hazards>
+      <fire_explosion_hazards>本品不燃，但具有强腐蚀性。受热分解产生剧毒的氧化磷烟气。遇H发泡剂立即燃烧。可致人体灼伤。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -35,26 +35,26 @@
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>立即脱去污染的衣着，用大量流动清水冲洗至少15分钟。就医。</skin_contact>
-      <eye_contact>立即提起眼睑，用大量流动清水或生理盐水彻底冲洗至少15分钟。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进</eye_contact>
-      <inhalation>行人工呼吸。就医。</inhalation>
-      <ingestion>用水漱口，给饮牛奶或蛋清。就医。</ingestion>
+      <skin_contact>立即脱去污染的衣着，用大量流动清水冲洗至少15分钟。如有灼伤，就医治疗。</skin_contact>
+      <eye_contact>立即提起眼睑，用大量流动清水或生理盐水彻底冲洗至少15分钟。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸。就医。</inhalation>
+      <ingestion>用水漱口，禁止催吐。给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>不燃。受热分解产生剧毒的氧化磷烟气。遇Ｈ发泡剂立即燃烧。具有腐蚀性。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>氧化磷、磷烷。</harmful_combustion_products>
-      <suitable_extinguishing_media>用雾状水保持火场中容器冷却。用大量水灭火。</suitable_extinguishing_media>
+      <hazard_characteristics>不燃。受热分解产生剧毒的氧化磷烟气。遇H发泡剂立即燃烧。具有强腐蚀性。</hazard_characteristics>
+      <fire_risk_classification>不燃，但受热分解产生剧毒烟气</fire_risk_classification>
+      <harmful_combustion_products>氧化磷、磷烷等有毒气体</harmful_combustion_products>
+      <suitable_extinguishing_media>用雾状水保持火场中容器冷却。用大量水灭火。灭火时注意防止酸液飞溅伤人。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>迅速撤离泄漏污染区人员至安全区，并进行隔离，严格限制出入。建议应急处理人员戴自给正 压式呼吸器，穿防酸碱工作服。不要直接接触泄漏物。尽可能切断泄漏源。小量泄漏：用砂土、 应急处理： 蛭石或其它惰性材料吸收。大量泄漏：构筑围堤或挖坑收容。用泡沫覆盖，降低蒸气灾害。用 泵转移至槽车或专用收集器内，回收或运至废物处理场所处置。</emergency_procedures>
+      <emergency_procedures>迅速撤离泄漏污染区人员至安全区，并进行隔离，严格限制出入。建议应急处理人员戴正压自给式呼吸器，穿防酸碱工作服。不要直接接触泄漏物。尽可能切断泄漏源。小量泄漏：用砂土、蛭石或其它惰性材料吸收。大量泄漏：构筑围堤或挖坑收容。用泵转移至槽车或专用收集器内，回收或运至废物处理场所处置。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>塑料工作服，戴耐酸（碱）手套。防止蒸气泄漏到工作场所空气中。避免与氧化剂接触。搬运</handling_precautions>
-      <storage_precautions>作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防酸碱 时要轻装轻卸，防止包装及容器损坏。配备泄漏应急处理设备。倒空的容器可能残留有害物。 稀释或制备溶液时，应小心把酸慢慢加入水中，防止发生过热和飞溅。 储存于阴凉、通风的库房。远离火种、热源。保持容器密封。应与氧化剂分开存放，切忌混储。 储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。密闭操作，提供充分的局部排风。操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防酸碱工作服，戴耐酸（碱）手套。防止蒸气泄漏到工作场所空气中。避免与氧化剂接触。搬运时要轻装轻卸，防止包装及容器损坏。配备泄漏应急处理设备。倒空的容器可能残留有害物。稀释或制备溶液时，应小心把酸慢慢加入水中，防止发生过热和飞溅。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。保持容器密封。应与氧化剂分开存放，切忌混储。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -62,55 +62,55 @@
       <former_soviet_mac>未制定标准</former_soviet_mac>
       <tlvtn>未制定标准</tlvtn>
       <tlvvn>未制定标准</tlvvn>
-      <contact_limits>美国TWA：未制定标准美国STEL：未制定标准</contact_limits>
-      <monitoring_method>无资料</monitoring_method>
+      <contact_limits>美国TWA：未制定标准，美国STEL：未制定标准</contact_limits>
+      <monitoring_method>工作场所空气中多聚磷酸的监测方法：气相色谱法、分光光度法。定期对工作场所空气进行监测，确保浓度在容许范围内。</monitoring_method>
       <engineering_controls>密闭操作，注意通风。尽可能机械化、自动化。提供安全淋浴和洗眼设备。</engineering_controls>
-      <respiratory_protection>空气中浓度超标时，建议佩戴自吸过滤式防毒面具（半面罩）。</respiratory_protection>
-      <eye_protection>戴化学安全防护眼镜。</eye_protection>
-      <body_protection>穿防酸碱塑料工作服。</body_protection>
-      <hand_protection>戴耐酸（碱）手套。</hand_protection>
-      <other_protection></other_protection>
+      <respiratory_protection>空气中浓度超标时，必须佩戴自吸过滤式防毒面具（半面罩）或全面罩防毒面具。紧急事态抢救或撤离时，应该佩戴空气呼吸器或氧气呼吸器。</respiratory_protection>
+      <eye_protection>戴化学安全防护眼镜（符合欧盟EN166或美国NIOSH标准）。如操作过程中可能产生飞溅，应佩戴面罩。</eye_protection>
+      <body_protection>穿防酸碱工作服（符合EN 14325或NIOSH标准）。避免皮肤直接接触。</body_protection>
+      <hand_protection>戴防化学品手套（如丁基橡胶手套、氯丁橡胶手套）。手套应定期更换，破损后立即更换。</hand_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。定期对操作人员进行健康检查，特别是呼吸系统和皮肤功能的检查。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
-      <boiling_point>856</boiling_point>
-      <flash_point>无意义</flash_point>
+      <pH>约0.5-1.0（1%水溶液）</pH>
+      <melting_point>无资料（粘稠液体）</melting_point>
+      <boiling_point>856℃</boiling_point>
+      <flash_point>不燃</flash_point>
       <relative_density>2.1</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <relative_vapor_density>无资料（不挥发）</relative_vapor_density>
+      <solubility>与水混溶，溶于乙醇。</solubility>
       <molecular_formula>H6P4O13</molecular_formula>
       <molecular_weight>337.93</molecular_weight>
-      <main_components></main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <main_components>多聚磷酸</main_components>
+      <saturated_vapor_pressure>极低（不挥发）</saturated_vapor_pressure>
+      <log_kow>-0.5至0.5（磷酸的log Kow）</log_kow>
       <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无意义</ignition_temperature>
-      <autoignition_temperature>无意义</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>无色粘稠状液体，易潮解。</appearance>
-      <main_uses>主要用作分析试剂，并可作为化学环化剂及酰化剂。</main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>无意义</heat_of_combustion>
+      <ignition_temperature>不燃</ignition_temperature>
+      <autoignition_temperature>不燃</autoignition_temperature>
+      <flammability>不燃</flammability>
+      <appearance>无色粘稠液体，易吸潮。</appearance>
+      <main_uses>主要用作分析试剂，并可作为化学环化剂及酰化剂。用于制造磷酸盐、磷酸酯、金属表面处理剂、水处理剂、食品添加剂等。</main_uses>
+      <other_properties>在空气中易吸潮，逐渐水解为磷酸。具有强腐蚀性。</other_properties>
+      <heat_of_combustion>不燃</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无意义</explosive_upper_limit>
-      <explosive_lower_limit>无意义</explosive_lower_limit>
+      <explosive_upper_limit>不燃</explosive_upper_limit>
+      <explosive_lower_limit>不燃</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>稳定</stability>
-      <incompatible_substances>强氧化剂。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <stability>在常温下相对稳定，但在空气中易吸潮，逐渐水解为磷酸。受热时分解速度加快，释放磷酸蒸气。</stability>
+      <incompatible_substances>强氧化剂、强碱、碱金属、有机胺类、醇类。</incompatible_substances>
+      <conditions_to_avoid>避免接触明火、高热、火花、静电放电。避免受潮，潮湿环境会加速水解。避免与不相容物质接触。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受热分解产生氧化磷、磷烷等有毒气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LC50：无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：1530mg/kg（大鼠经口）。LD50：>5000mg/kg（兔经皮）。LC50：无资料（大鼠吸入）。</acute_toxicity>
+      <subacute_chronic_toxicity>长期或反复接触可引起牙齿酸蚀、皮肤干燥、皲裂、慢性支气管炎。对骨骼和牙齿有腐蚀作用。</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>兔经皮：595mg（24h），重度刺激。兔经眼：119mg，重度刺激。对眼睛、皮肤、粘膜和上呼吸道有强烈的刺激性和腐蚀性。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -118,31 +118,38 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作后，淋浴更衣</other_harmful_effects>
+      <ecological_toxicity>对水生生物有毒性。LC50（鱼类）：100-1000mg/L（估算值）。LC50（水蚤）：50-500mg/L（估算值）。</ecological_toxicity>
+      <biodegradability>在环境中可被微生物降解，多聚磷酸会逐渐水解为磷酸盐，最终被微生物利用。</biodegradability>
+      <non_biodegradability>水解产物磷酸盐在环境中可被植物和微生物吸收利用，不会长期积累。</non_biodegradability>
+      <bioaccumulation>log Kow：-0.5至0.5（磷酸的log Kow），生物富集性弱，BCF（生物富集系数）<10。</bioaccumulation>
+      <other_harmful_effects>泄漏到水体中可降低pH值，对水生生态系统造成危害。在土壤中可被稀释和中和，但高浓度可对土壤微生物和植物造成损害。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>多聚磷酸属于危险废物，类别为HW34废酸，废物代码900-300-34。具有强腐蚀性，对环境有危害。</waste_properties>
+      <disposal_method>建议用焚烧法处置。焚烧温度应达到1100℃以上，确保完全燃烧。焚烧过程中应配备尾气处理装置，防止酸性气体排放。也可采用中和法处理，用碱性物质（如氢氧化钙、氢氧化钠）中和后，按照当地环保部门要求进行处置。</disposal_method>
+      <disposal_precautions>禁止随意倾倒或排入下水道。处置前应参阅国家和地方有关法规。必须交由有危险废物处置资质的单位进行处理。操作人员应穿戴适当的防护装备。储存和运输过程中应防止泄漏。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>81505</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>20</packaging_mark>
-      <packing_group>O53</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <un_number>UN 1805（磷酸）</un_number>
+      <imdg_page>第8类腐蚀性物质</imdg_page>
+      <packaging_mark>III类包装</packaging_mark>
+      <packing_group>III类</packing_group>
+      <packaging_method>使用耐腐蚀的包装容器，如玻璃瓶、塑料桶或内衬防腐材料的金属桶。包装容器必须密封完好，符合相关运输法规要求。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。严禁与氧化剂、碱类、碱金属、有机胺类、醇类等混装混运。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。装卸时要轻装轻卸，防止包装及容器损坏。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>国内法规：《危险化学品安全管理条例》、《危险化学品目录（2022调整版）》（序号270）、《危险化学品安全管理条例实施细则》、《危险化学品生产、储存、经营、运输和使用许可证管理办法》。多聚磷酸属于第8.1类酸性腐蚀品，危险化学品编号81505。GHS分类：皮肤腐蚀/刺激，类别1；严重眼损伤/眼刺激，类别1。国际法规：欧盟REACH法规，美国TSCA法规，加拿大DSL/NDSL法规。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <compilation_standard>本安全技术说明书按照GB/T 16483-2008标准编制。</compilation_standard>
+      <modification_notes>本说明书所列信息为目前掌握的资料，随着研究的深入和法规的更新，相关内容可能发生变化。</modification_notes>
+      <abbreviations_and_terms>GHS：全球化学品统一分类和标签制度；CAS：化学文摘社；LD50：半数致死量；LC50：半数致死浓度；TWA：时间加权平均容许浓度；STEL：短时间接触容许浓度；BCF：生物富集系数；log Kow：辛醇/水分配系数的对数值；REACH：化学品注册、评估、许可和限制法规；TSCA：有毒物质控制法；DSL/NDSL：国内物质名录/非国内物质名录。</abbreviations_and_terms>
+      <other_notes>无其他特别说明。</other_notes>
+    </other_info>
   </msds>
 </msds_list>

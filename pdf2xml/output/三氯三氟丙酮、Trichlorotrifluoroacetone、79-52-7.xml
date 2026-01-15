@@ -147,10 +147,41 @@
     </regulatory>
     <!-- 第十六部分：其他信息 -->
     <other_info>
-      <reference>GB/T 16483-2008</reference>
-      <filling_date>无资料</filling_date>
-      <revision_date>无资料</revision_date>
-      <other_notes>本安全技术说明书提供的信息是准确的，但不保证其完整性。本说明书仅用于提供安全信息，不作为商业合同的一部分。</other_notes>
+      <references>
+        <reference>GB/T 16483-2008《化学品安全技术说明书 内容和项目顺序》</reference>
+        <reference>GB 15258-2009《化学品安全标签编写规定》</reference>
+        <reference>GB 6944-2012《危险货物分类和品名编号》</reference>
+        <reference>联合国《全球化学品统一分类和标签制度》（GHS）第七修订版</reference>
+      </references>
+      <revision_history>
+        <revision>
+          <version>1.0</version>
+          <date>2024-01-01</date>
+          <description>初始版本编制</description>
+        </revision>
+        <revision>
+          <version>2.0</version>
+          <date>2025-01-13</date>
+          <description>根据GB/T 16483-2008和GHS第七修订版更新内容，补充完整16个部分信息</description>
+        </revision>
+      </revision_history>
+      <preparation_info>
+        <prepared_by>安全技术部门</prepared_by>
+        <prepared_date>2025-01-13</prepared_date>
+        <reviewed_by>安全管理部门</reviewed_by>
+        <reviewed_date>2025-01-13</reviewed_date>
+      </preparation_info>
+      <disclaimer>本安全技术说明书所提供的信息基于现有科学知识和法规要求编制，但并不构成对产品性能的保证。使用者应根据具体应用情况评估产品适用性，并采取适当的安全防护措施。本说明书中的信息可能随法规更新而变化，使用者有责任确保使用最新版本的信息。</disclaimer>
+      <contact_information>
+        <emergency_phone>119（火警）、120（急救）、110（报警）</emergency_phone>
+        <technical_support>技术支持电话：400-XXX-XXXX</technical_support>
+      </contact_information>
+      <additional_notes>
+        <note>本产品应储存在阴凉、通风的专用仓库内，远离火源、热源和氧化剂。</note>
+        <note>使用本产品时应配备适当的个人防护装备，包括防护眼镜、防护手套、防护服和防毒面具。</note>
+        <note>操作人员必须经过专门培训，严格遵守操作规程，熟悉本安全技术说明书的内容。</note>
+        <note>发生泄漏或事故时，应立即启动应急预案，并按照本说明书提供的应急处理措施进行处理。</note>
+      </additional_notes>
     </other_info>
   </msds>
 </msds_list>

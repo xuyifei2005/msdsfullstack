@@ -18,11 +18,10 @@
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>有机过氧化物，F型。</hazard_category>
-      <exposure_routes>吸入、食入、皮肤接触、眼睛接触
-吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入该物质可能会引起对健康有害的影响。对眼睛、皮肤、粘膜和上呼吸道有刺激作用。接触可引起眼睛灼伤。长期或反复接触可能引起皮肤过敏。</health_hazards>
+      <environmental_hazards>对水生生物有害并具有长期持续影响。</environmental_hazards>
+      <fire_explosion_hazards>易燃易爆。对热、震动、摩擦和冲击极为敏感。受热分解可能产生爆炸。遇火源、热源或火花可能发生燃烧或爆炸。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -119,7 +118,7 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity></ecological_toxicity>
+      <ecological_toxicity>对水生生物有害。该物质对水生生物有毒性作用，可能对水生环境造成长期不良影响。</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
@@ -136,14 +135,21 @@
       <dangerous_goods_number>3118</dangerous_goods_number>
       <un_number>3118</un_number>
       <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_mark>第5.2类有机过氧化物，F型</packaging_mark>
+      <packing_group>II</packing_group>
+      <packaging_method>按照联合国《关于危险货物运输的建议书》（TDG）和《国际海运危险货物规则》（IMDG Code）的要求进行包装。使用符合标准的包装容器，确保包装完好无损。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源、高温区。装运该物品的车辆排气管必须配备阻火装置，禁止使用易产生火花的机械设备和工具装卸。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。铁路运输时要禁止溜放。严禁与氧化剂、还原剂、酸类、碱类等混装混运。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
       <regulatory_info>无资料</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <references>本安全技术说明书基于GB/T 16483-2008《化学品安全技术说明书 内容和项目顺序》标准编制。本说明书所提供的信息基于当前的科学知识和实际经验，但并不保证其完整性或准确性。用户应根据具体使用情况自行评估风险。</references>
+      <notes>修订说明：本安全技术说明书根据最新的法规要求和产品信息进行了更新。如有疑问或需要更多信息，请联系供应商或制造商。本说明书中的信息仅供参考，不构成任何形式的保证或承诺。</notes>
+      <abbreviation>无缩写</abbreviation>
+      <disclaimer>免责声明：本说明书中的信息基于当前的科学知识和实际经验编制，但制造商或供应商不对本说明书的准确性、完整性或适用性承担任何责任。用户应自行评估使用本产品的风险，并采取适当的安全措施。制造商或供应商不对因使用本产品而造成的任何损失或损害承担责任。</disclaimer>
+    </other_info>
   </msds>
 </msds_list>

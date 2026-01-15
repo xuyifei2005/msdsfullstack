@@ -74,9 +74,9 @@
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料（补充参考数据）</pH>
-      <melting_point>70～95</melting_point>
+      <melting_point>70~95</melting_point>
       <boiling_point>无资料（补充参考数据）</boiling_point>
-      <flash_point>无资料（补充参考数据）</flash_point>
+      <flash_point>135</flash_point>
       <relative_density>1.6</relative_density>
       <relative_vapor_density>无资料（补充参考数据）</relative_vapor_density>
       <solubility>不溶于水，溶于多数有机溶剂。</solubility>
@@ -107,7 +107,7 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：40～69mg／kg(大鼠经口)LC50：2000mg／m3 2小时(小鼠吸入)</acute_toxicity>
+      <acute_toxicity>LD50：40~69mg/kg(大鼠经口)LC50：2000mg/m3 2小时(小鼠吸入)</acute_toxicity>
       <subacute_chronic_toxicity>长期反复接触可引起慢性中毒，表现为神经系统、肝脏、肾脏损害。</subacute_chronic_toxicity>
       <rtecs>无资料（补充参考数据）</rtecs>
       <irritation>对眼睛、皮肤和呼吸道有刺激性。</irritation>

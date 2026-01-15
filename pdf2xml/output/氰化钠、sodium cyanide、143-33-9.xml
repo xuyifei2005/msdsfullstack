@@ -8,23 +8,21 @@
       <product_name>氰化钠</product_name>
       <product_alias>山奈钠</product_alias>
       <product_english_name>sodium cyanide</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收
-抑制呼吸酶，造成细胞内窒息。吸入、口服或经皮吸收均可引起急性中毒。口服50～100mg 即
-可引起猝死。非骤死者临床分为４期：前驱期有粘膜刺激、 呼吸加快加深、乏力、头痛；口</exposure_routes>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
       <health_hazards>服有舌尖、口腔发麻等。呼吸困难期有呼吸困难、血压升高、皮肤粘膜呈鲜红色等。惊厥期
 出现抽搐、昏迷、呼吸衰竭。麻痹期全身肌肉松弛，呼吸心跳停止而死亡。长期接触小量氰
 化物出现神经衰弱综合征、眼及上呼吸道刺激。可引起皮疹。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <environmental_hazards>对水生生物有极高毒性。氰化物对水生生态系统有严重危害，可能导致鱼类和其他水生生物大量死亡。氰化物污染地下水后，会对饮用水源造成严重威胁。在环境中可被生物降解，但降解速度较慢。</environmental_hazards>
       <fire_explosion_hazards>本品不燃，剧毒，具刺激性。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -46,10 +44,10 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>氰化氢气体。在潮湿空气或二氧化碳中即缓慢发出微量氰化氢气体。</hazard_characteristics>
+      <hazard_characteristics>受热或接触酸类会放出剧毒的氰化氢气体。在潮湿空气或二氧化碳中即缓慢发出微量氰化氢气体。</hazard_characteristics>
       <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>氰化氢、氧化氮。 本品不燃。发生火灾时应尽量抢救商品，防止包装破损，引起环境污染。消防人员须佩戴防毒 面具、穿全身消防服，在上风向灭火。灭火剂：干粉、砂土。禁止用二氧化碳和酸碱灭火剂灭</harmful_combustion_products>
-      <suitable_extinguishing_media>火。</suitable_extinguishing_media>
+      <harmful_combustion_products>氰化氢、氧化氮。</harmful_combustion_products>
+      <suitable_extinguishing_media>本品不燃。发生火灾时应尽量抢救商品，防止包装破损，引起环境污染。消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。灭火剂：干粉、砂土。禁止用二氧化碳和酸碱灭火剂灭火。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
@@ -68,8 +66,8 @@
       <tlvvn>ACGIH 5mg[CN]/m3[皮]</tlvvn>
       <contact_limits>美国TWA：OSHA 5mg[CN]／m3[皮]；ACGIH 5mg[CN]／m3[皮]美国8TEL：未制定标准</contact_limits>
       <monitoring_method>异菸酸钠－巴比安酸钠比色法</monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <engineering_controls>密闭操作，提供充分的局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>空气中粉尘浓度超标时，佩戴头罩型电动送风过滤式防尘呼吸器。紧急事态抢救或撤离时，佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>呼吸系统防护中已作防护。</eye_protection>
       <body_protection>穿连衣式胶布防毒衣。</body_protection>
       <hand_protection>戴橡胶手套。</hand_protection>
@@ -83,8 +81,8 @@
       <flash_point>无意义</flash_point>
       <relative_density>1.60</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>N</molecular_formula>
+      <solubility>易溶于水，微溶于乙醇，不溶于乙醚。</solubility>
+      <molecular_formula>NaCN</molecular_formula>
       <molecular_weight>49.02</molecular_weight>
       <main_components>无资料</main_components>
       <saturated_vapor_pressure>0.13(817℃)</saturated_vapor_pressure>
@@ -111,10 +109,10 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>属高毒类LD50：6.4mg／kg(大鼠经口)LC50：</acute_toxicity>
+      <acute_toxicity>属高毒类。LD50：6.4mg/kg(大鼠经口)。LC50：504mg/m3(大鼠吸入，4小时)。</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>VZ7525000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤、粘膜和上呼吸道有刺激作用。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -126,18 +124,19 @@
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>该物质对环境可能有危害，对水体应给予特别注意。</other_harmful_effects>
+      <other_harmful_effects>该物质对环境可能有危害，对水体应给予特别注意。氰化物污染地下水后，会对饮用水源造成严重威胁。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的氮氧化物通过洗涤器除去。</disposal_method>
       <disposal_precautions>无资料</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>61001</dangerous_goods_number>
       <un_number>1689</un_number>
+      <un_proper_shipping_name>SODIUM CYANIDE</un_proper_shipping_name>
       <imdg_page>6257</imdg_page>
       <packaging_mark>13</packaging_mark>
       <packing_group>O51</packing_group>
@@ -146,7 +145,7 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>本安全技术说明书按照GB/T 16483-2008、GB/T 17519-2013标准编制。本产品为剧毒化学品，必须严格按照国家有关法律法规进行管理。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

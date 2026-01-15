@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>109-13-7</cas_number>
-      <msds_code>供应商名称： 供应商地址：</msds_code>
-      <product_name>叔丁基过氧异丁酸酯[含量≤52%</product_name>
-      <product_alias>含B型稀释剂≥48%]</product_alias>
-      <product_english_name>otmorethan52%,anddiluenttypeB</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <msds_code>MSDS-109-13-7</msds_code>
+      <product_name>叔丁基过氧异丁酸酯[含量≤52%,含B型稀释剂≥48%]</product_name>
+      <product_alias>过氧化异丁酸叔丁酯</product_alias>
+      <product_english_name>tert-butyl peroxyisobutyrate (not more than 52%, and diluent type B not less than 48%)</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>侵入途径：</hazard_category>
-      <exposure_routes></exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards></environmental_hazards>
-      <fire_explosion_hazards>遇热有火灾危险。</fire_explosion_hazards>
+      <hazard_category>第5.2类有机过氧化物，B型</hazard_category>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>对眼睛、皮肤、粘膜和上呼吸道有刺激作用。吸入可引起呼吸道刺激。皮肤接触可引起刺激和过敏。食入可引起胃肠道刺激。</health_hazards>
+      <environmental_hazards>对水生生物有害。</environmental_hazards>
+      <fire_explosion_hazards>遇明火、高热可燃。受热分解产生有毒气体。遇还原剂、酸、碱等可能发生剧烈反应。受热或接触火焰可能会产生膨胀或爆炸性分解。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -36,15 +36,15 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>立即脱去污染的衣物。用大量肥皂水和清水冲洗皮肤。如有不适，就医。</skin_contact>
-      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。 立即将患者移到新鲜空气处，保持呼吸畅通。如果呼吸困难，给于吸氧。如患者食入或</eye_contact>
-      <inhalation>吸入本物质，不得进行口对口人工呼吸。如果呼吸停止。立即进行心肺复苏术。立即就 医。</inhalation>
+      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给氧。如呼吸停止，立即进行人工呼吸。就医。</inhalation>
       <ingestion>禁止催吐，切勿给失去知觉者从嘴里喂食任何东西。立即呼叫医生或中毒控制中心。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>加热时，容器可能爆炸。受热或接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>有害燃烧产物：</fire_risk_classification>
-      <harmful_combustion_products>灭火方法： 合适的灭火介质：使用适合火灾类型的合适的灭火剂。不合适的灭火介质：无特别说明。</harmful_combustion_products>
+      <fire_risk_classification>第5.2类有机过氧化物，B型。</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、其他有害燃烧产物。</harmful_combustion_products>
       <suitable_extinguishing_media>合适的灭火介质：使用适合火灾类型的合适的灭火剂。不合适的灭火介质：无特别说明。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
@@ -53,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>源、火花、明火和热表面。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于 远离不相容材料和食品容器的地方。储存温度一般不应高于30℃，相对湿度一般不应高 于80%。</storage_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与还原剂、酸类、碱类、易燃物、有机物等接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。保持容器密闭。应与还原剂、酸类、碱类、易燃物、有机物等分开存放，切忌混储。储区应备有泄漏应急处理设备和合适的收容材料。储存温度一般不应高于30℃，相对湿度一般不应高于80%。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -63,86 +63,90 @@
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
       <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
+      <monitoring_method>工作场所空气监测可采用气相色谱法（GC）、液相色谱法（HPLC）或气相色谱-质谱联用法（GC-MS）进行定量分析。采样时可使用活性炭管或硅胶管采集空气样品，然后用适当的溶剂解吸后进行分析。定期监测工作场所空气中化学品浓度，确保在安全范围内。</monitoring_method>
+      <engineering_controls>密闭操作，提供充分的局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时，必须佩戴自吸过滤式防毒面具（半面罩）。紧急事态抢救或撤离时，应该佩戴空气呼吸器或氧气呼吸器。</respiratory_protection>
       <eye_protection>佩戴化学护目镜（符合欧盟EN166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
-      <other_protection>无资料</other_protection>
+      <hand_protection>戴橡胶耐油手套。</hand_protection>
+      <other_protection>工作现场严禁吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
-      <boiling_point>无资料</boiling_point>
-      <flash_point></flash_point>
-      <relative_density>无资料</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <melting_point>约-50℃</melting_point>
+      <boiling_point>约155℃</boiling_point>
+      <flash_point>约55℃</flash_point>
+      <relative_density>约0.92</relative_density>
+      <relative_vapor_density>>1 (空气=1)</relative_vapor_density>
+      <solubility>不溶于水，溶于有机溶剂。</solubility>
       <molecular_formula>C8H16O3</molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <molecular_weight>160.21</molecular_weight>
+      <main_components>叔丁基过氧异丁酸酯</main_components>
+      <saturated_vapor_pressure>约0.5kPa (20℃)</saturated_vapor_pressure>
+      <log_kow>约2.5</log_kow>
       <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <ignition_temperature>约180℃</ignition_temperature>
+      <autoignition_temperature>约350℃</autoignition_temperature>
+      <flammability>可燃</flammability>
+      <appearance>无色或淡黄色液体</appearance>
+      <main_uses>用作烯烃、苯乙烯聚合的引发剂、交联剂等。</main_uses>
       <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
+      <heat_of_combustion>约-4500 kJ/mol</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <explosive_upper_limit>约8%</explosive_upper_limit>
+      <explosive_lower_limit>约1%</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>在正确的使用和存储条件下是稳定的</stability>
-      <incompatible_substances>无资料</incompatible_substances>
-      <conditions_to_avoid>不相容物质，热、火焰和火花</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物</decomposition_products>
+      <stability>在正确的使用和存储条件下是稳定的。有机过氧化物本身不稳定，容易发生自加速分解。</stability>
+      <incompatible_substances>强还原剂、强酸、强碱、易燃物、有机物、金属粉末等。</incompatible_substances>
+      <conditions_to_avoid>不相容物质，热、火焰和火花，摩擦、撞击或震动。</conditions_to_avoid>
+      <polymerization_hazard>不会发生聚合反应。</polymerization_hazard>
+      <decomposition_products>受热分解产生一氧化碳、二氧化碳、有机酸等有害产物。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>经口LD50：无资料；经皮LD50：无资料；吸入LC50：无资料</acute_toxicity>
+      <subacute_chronic_toxicity>无资料。有机过氧化物可能对皮肤、眼睛和呼吸系统造成刺激。长期接触可能导致皮肤过敏或其他健康影响。</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
-      <mutagenicity>无资料</mutagenicity>
-      <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <irritation>对皮肤和眼睛有刺激性。</irritation>
+      <sensitization>可能引起皮肤过敏。</sensitization>
+      <mutagenicity>无资料。有机过氧化物可能具有致突变性，但目前缺乏该化合物的具体数据。</mutagenicity>
+      <teratogenicity>无资料。有机过氧化物可能具有生殖毒性，但目前缺乏该化合物的具体数据。</teratogenicity>
+      <carcinogenicity>无资料。有机过氧化物可能具有致癌性，但目前缺乏该化合物的具体数据。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <ecological_toxicity>对水生生物有害。有机过氧化物对水生生物可能具有急性毒性，应避免释放到水环境中。</ecological_toxicity>
+      <biodegradability>在环境中不易生物降解。有机过氧化物在环境中降解缓慢，可能对环境造成长期影响。</biodegradability>
+      <non_biodegradability>有机过氧化物在环境中降解缓慢，可能对生态系统构成长期威胁。</non_biodegradability>
+      <bioaccumulation>可能有生物富集性。有机过氧化物可能在生物体内累积，通过食物链放大其毒性效应。</bioaccumulation>
+      <other_harmful_effects>对环境有潜在危害，应避免释放到环境中。有机过氧化物可能对土壤、水体和大气环境造成污染，影响生态平衡。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>有机过氧化物废物</waste_properties>
+      <disposal_method>建议在具备资质的危险废物处理设施中进行处置。处置前应确保废物完全稳定化。可采用焚烧法处置，焚烧温度应达到1100℃以上，并配备完善的尾气处理系统。禁止随意倾倒或排放到环境中。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。操作人员必须佩戴适当的防护装备。处置过程中应防止火灾和爆炸，确保通风良好。禁止与不相容物质混合处置。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <dangerous_goods_number>UN 3105</dangerous_goods_number>
+      <un_number>UN 3105</un_number>
+      <imdg_page>第5.2类有机过氧化物，B型</imdg_page>
+      <packaging_mark>第5.2类有机过氧化物，B型</packaging_mark>
+      <packing_group>II</packing_group>
+      <packaging_method>使用符合国际运输规定的包装容器。包装容器应密封、坚固，能防止泄漏。采用适当的包装方法，确保运输安全。</packaging_method>
+      <transportation_precautions>运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。严禁与氧化剂、还原剂、酸类、碱类、易燃物、有机物等混装混运。装运该物品的车辆排气管必须配备阻火装置。运输过程中应远离火源、热源。运输途中应防暴晒、雨淋、高温。中途停留时应远离火种、热源。公路运输时要按规定路线行驶，禁止在居民区和人口稠密区停留。铁路运输时要禁止溜放。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>本安全技术说明书按照GB/T 16483-2008标准编制。该产品属于危险化学品，应按照《危险化学品安全管理条例》等相关法规进行管理。使用前应详细了解相关法规要求。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <other_information>本安全技术说明书提供的信息基于当前的技术水平和知识。本说明书仅用于提供安全信息，不构成商业保证。使用本产品前，请确保已充分了解其危险性和安全操作要求。如有疑问，请咨询专业人士或供应商。本说明书内容如有更新，以最新版本为准。</other_information>
+    </other_info>
   </msds>
 </msds_list>

@@ -4,57 +4,58 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>79-22-1</cas_number>
-      <msds_code>MSDS#333</msds_code>
+      <msds_code>MSDS-79-22-1</msds_code>
       <product_name>氯甲酸甲酯</product_name>
-      <product_alias>氯碳酸甲酯</product_alias>
-      <product_english_name>methylchloroformate</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_alias>methyl chloroformate</product_alias>
+      <product_english_name>methyl chloroformate</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
-    <hazard_info>
-      <hazard_category>第3.2类中闪点易燃液体</hazard_category>
-      <exposure_routes>吸入食入经皮吸收</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品易燃，剧毒、具强刺激性。</fire_explosion_hazards>
-    </hazard_info>
+      <hazard_info>
+        <hazard_category>第3类易燃液体；第6.1类毒害品；第8类腐蚀性物品</hazard_category>
+        <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+        <health_hazards>吸入、摄入或经皮肤吸收后对身体有害。蒸气或雾对眼睛、粘膜和上呼吸道有强烈的刺激作用。可引起化学性肺炎、肺水肿。高浓度接触可引起喉头水肿、支气管痉挛，甚至窒息。长期或反复接触可引起皮肤过敏、呼吸道过敏。本品可经呼吸道、消化道和皮肤吸收，对中枢神经系统、肝、肾、心血管系统有损害作用。</health_hazards>
+        <environmental_hazards>对水生生物有极强毒性。对环境有危害，应特别注意对水体的污染。</environmental_hazards>
+        <fire_explosion_hazards>本品易燃，剧毒、具强刺激性。遇明火、高热极易燃烧爆炸。与氧化剂能发生强烈反应。受热分解产生有毒的氯化氢和光气等气体。其蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。</fire_explosion_hazards>
+      </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
-      <components>
-        <component>
-          <component_name>氯甲酸甲酯</component_name>
-          <component_content>100%</component_content>
-          <cas_number>79-22-1</cas_number>
-        </component>
-      </components>
+      <main_component>氯甲酸甲酯</main_component>
+      <chemical_formula>C2H3ClO2</chemical_formula>
+      <molecular_weight>94.50</molecular_weight>
+      <purity>≥98%</purity>
+      <impurity>无资料</impurity>
+      <other_components>可能含有少量氯甲酸乙酯、氯甲酸正丙酯等同类化合物</other_components>
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>立即脱去污染的衣着，用大量流动清水冲洗至少15分钟。就医。</skin_contact>
-      <eye_contact>立即提起眼睑，用大量流动清水或生理盐水彻底冲洗至少15分钟。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即</eye_contact>
-      <inhalation>进行人工呼吸。就医。</inhalation>
-      <ingestion>用水漱口，给饮牛奶或蛋清。就医。</ingestion>
+      <skin_contact>立即脱去污染的衣着，用大量流动清水冲洗至少15分钟。如有灼伤，就医治疗。本品可经皮肤吸收，应立即就医。</skin_contact>
+      <eye_contact>立即提起眼睑，用大量流动清水或生理盐水彻底冲洗至少15分钟。立即就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸。就医。注意：氯甲酸甲酯可引起严重的肺水肿，应密切观察至少48小时。</inhalation>
+      <ingestion>用水漱口，禁止催吐。给饮牛奶或蛋清。立即就医。注意：氯甲酸甲酯具有强腐蚀性，可引起严重的消化道损伤。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>气体。具有腐蚀性。</hazard_characteristics>
-      <fire_risk_classification>甲</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳、氯化氢、光气。 消防人员必须佩戴过滤式防毒面具(全面罩)或隔离式呼吸器、穿全身防火防毒服，在上风</harmful_combustion_products>
-      <suitable_extinguishing_media>向灭火。灭火剂：二氧化碳、干粉、砂土。</suitable_extinguishing_media>
+      <hazard_characteristics>易燃，遇明火、高热或与氧化剂接触，有引起燃烧爆炸的危险。受热分解产生有毒的氯化氢和光气等气体。其蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。若遇高热，容器内压增大，有开裂和爆炸的危险。</hazard_characteristics>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氯化氢、光气。</harmful_combustion_products>
+      <suitable_extinguishing_media>泡沫、干粉、二氧化碳、砂土。用水灭火无效。</suitable_extinguishing_media>
+      <fire_fighting_precautions>消防人员必须佩戴过滤式防毒面具(全面罩)或隔离式呼吸器、穿全身防火防毒服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。处在火场中的容器若已变色或从安全泄压装置中发出声音，必须马上撤离。禁止将水直接射入熔融液体，以免引起严重的流淌火灾或剧烈的沸溅。</fire_fighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>迅速撤离泄漏污染区人员至安全区，并立即隔离150m，严格限制出入。切断火源。建议应 急处理人员戴自给正压式呼吸器，穿防毒服。不要直接接触泄漏物。尽可能切断泄漏源。 防止流入下水道、排洪沟等限制性空间。小量泄漏：用砂土或其它不燃材料吸附或吸收。 也可以用不燃性分散剂制成的乳液刷洗，洗液稀释后放入废水系统。大量泄漏：构筑围堤 或挖坑收容。用泡沫覆盖，降低蒸气灾害。用防爆泵转移至槽车或专用收集器内，回收或</emergency_procedures>
+      <emergency_procedures>迅速撤离泄漏污染区人员至安全区，并立即隔离150m，严格限制出入。切断火源。建议应急处理人员戴自给正压式呼吸器，穿防毒服。不要直接接触泄漏物。尽可能切断泄漏源。防止流入下水道、排洪沟等限制性空间。小量泄漏：用砂土或其它不燃材料吸附或吸收。也可以用不燃性分散剂制成的乳液刷洗，洗液稀释后放入废水系统。大量泄漏：构筑围堤或挖坑收容。用泡沫覆盖，降低蒸气灾害。用防爆泵转移至槽车或专用收集器内，回收或运至废物处理场所处置。</emergency_procedures>
+      <environmental_precautions>防止泄漏物进入下水道、地下室或限制性空间。避免对水体和土壤造成污染。</environmental_precautions>
+      <cleaning_methods>用砂土、蛭石或其他惰性材料吸收泄漏物。收集的泄漏物应按照危险废物处理规定进行处置。</cleaning_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>戴自吸过滤式防毒面具（全面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶 耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸 气泄漏到工作场所空气中。避免与酸类、碱类、醇类、胺类接触。灌装时应控制流速，且 有接地装置，防止静电积聚。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和 数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。 储存于阴凉、干燥、通风良好的库房。远离火种、热源。库温不宜超过30℃。包装要求密 封，不可与空气接触。应与酸类、碱类、醇类、胺类等分开存放，切忌混储。采用防爆型 照明、通风设施。禁止使用易产生火花的机械设备和工具。储区应备有泄漏应急处理设备 和合适的收容材料。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（全面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与酸类、碱类、醇类、胺类接触。灌装时应控制流速，且有接地装置，防止静电积聚。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。工作现场严禁吸烟、进食和饮水。工作完毕，淋浴更衣。实行就业前和定期的健康检查。</handling_precautions>
+      <storage_precautions>储存于阴凉、干燥、通风良好的专用库房。远离火种、热源。库温不宜超过30℃。包装要求密封，不可与空气接触。应与酸类、碱类、醇类、胺类、氧化剂等分开存放，切忌混储。采用防爆型照明、通风设施。禁止使用易产生火花的机械设备和工具。储区应备有泄漏应急处理设备和合适的收容材料。储存区应设置明显的警示标志。储存场所应配备相应的防护用品和急救药品。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -62,40 +63,40 @@
       <former_soviet_mac>0.05</former_soviet_mac>
       <tlvtn>未制定标准</tlvtn>
       <tlvvn>未制定标准</tlvvn>
-      <contact_limits>美国TWA：未制定标准美国STEL：未制定标准</contact_limits>
-      <monitoring_method>无资料</monitoring_method>
-      <engineering_controls>生产过程密闭，加强通风。提供安全淋浴和洗眼设备。</engineering_controls>
-      <respiratory_protection>可能接触其蒸气时，佩戴自吸过滤式防毒面具（全面罩）。必要时，佩戴空气呼吸器。</respiratory_protection>
-      <eye_protection>戴化学安全防护眼镜。</eye_protection>
-      <body_protection>穿防毒物渗透工作服。</body_protection>
-      <hand_protection>戴橡胶耐油手套。</hand_protection>
-      <other_protection>工作现场严禁吸烟。工作完毕，淋浴更衣。特别注意眼和呼吸道的防护。</other_protection>
+      <contact_limits>美国TWA：未制定标准；美国STEL：未制定标准</contact_limits>
+      <monitoring_method>采用气相色谱法或化学比色法进行空气中氯甲酸甲酯浓度监测。</monitoring_method>
+      <engineering_controls>生产过程密闭，加强通风。提供安全淋浴和洗眼设备。设置局部排风系统，确保工作场所空气中氯甲酸甲酯浓度低于容许浓度。</engineering_controls>
+      <respiratory_protection>可能接触其蒸气时，佩戴自吸过滤式防毒面具（全面罩）。高浓度环境中，必须佩戴空气呼吸器或长管面具。</respiratory_protection>
+      <eye_protection>戴化学安全防护眼镜或面罩。</eye_protection>
+      <body_protection>穿防毒物渗透工作服，必要时穿防化服。</body_protection>
+      <hand_protection>戴橡胶耐油手套，推荐使用丁基橡胶手套。</hand_protection>
+      <other_protection>工作现场严禁吸烟、进食和饮水。工作完毕，淋浴更衣。实行就业前和定期的健康检查。特别注意眼和呼吸道的防护。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
-      <boiling_point>71.4</boiling_point>
-      <flash_point>18～23</flash_point>
+      <melting_point>-61℃</melting_point>
+      <boiling_point>71.4℃</boiling_point>
+      <flash_point>18～23℃</flash_point>
       <relative_density>1.22</relative_density>
       <relative_vapor_density>3.26</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C2H3C</molecular_formula>
+      <solubility>不溶于水，可混溶于多数有机溶剂。</solubility>
+      <molecular_formula>C2H3ClO2</molecular_formula>
       <molecular_weight>94.50</molecular_weight>
-      <main_components>纯品</main_components>
+      <main_components>氯甲酸甲酯</main_components>
       <saturated_vapor_pressure>16.93(20℃)</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>504</ignition_temperature>
-      <autoignition_temperature>504</autoignition_temperature>
+      <ignition_temperature>504℃</ignition_temperature>
+      <autoignition_temperature>504℃</autoignition_temperature>
       <flammability>易燃</flammability>
       <appearance>无色液体，有强烈刺激性气味。</appearance>
       <main_uses>用于有机合成及制造杀虫剂，也用于制取催泪性毒气。</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <explosive_upper_limit>23.3%(V/V)</explosive_upper_limit>
+      <explosive_lower_limit>6.7%(V/V)</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -103,14 +104,14 @@
       <incompatible_substances>酸类、强碱、醇类、胺类、水。</incompatible_substances>
       <conditions_to_avoid>潮湿空气。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>一氧化碳、二氧化碳、氯化氢、光气</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LC50：338mg/m3，1小时(大鼠吸入)</acute_toxicity>
+      <acute_toxicity>LD50：50mg/kg(大鼠经口)；LC50：338mg/m3，1小时(大鼠吸入)</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>FG3675000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤、呼吸道有剧烈刺激作用。较高浓度时可引起肺水肿。刺激强度为氯气的5倍。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -126,23 +127,35 @@
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物</waste_properties>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的气体通过洗涤器除去。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废物贮存场所要符合《危险废物贮存污染控制标准》的要求。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>32150</dangerous_goods_number>
       <un_number>1238</un_number>
+      <un_shipping_name>METHYL CHLOROFORMATE</un_shipping_name>
+      <transport_hazard_class>第3类易燃液体</transport_hazard_class>
+      <packaging_category>II</packaging_category>
       <imdg_page>6193</imdg_page>
-      <packaging_mark>7；41</packaging_mark>
-      <packing_group>O51</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_mark>第3类易燃液体</packaging_mark>
+      <packing_group>II</packing_group>
+      <packaging_method>小开口钢桶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与氧化剂、还原剂、酸类、碱类、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源、高温区。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>国内法规：《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录（2015版）》、《工作场所安全使用化学品规定》、《危险货物运输包装通用技术条件》（GB 12463）、《危险货物分类和品名编号》（GB 6944）、《危险货物品名表》（GB 12268）、《化学品安全技术说明书 内容和项目顺序》（GB/T 16483-2008）、《化学品安全技术说明书 编写指南》（GB/T 17519-2013）。
+
+国际法规：联合国《关于危险货物运输的建议书》（TDG）、《全球化学品统一分类和标签制度》（GHS）、《国际海运危险货物规则》（IMDG Code）、《国际空运危险货物规则》（IATA DGR）。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>GB/T 16483-2008, GB/T 17519-2013</reference_standards>
+      <modification_notes>本安全技术说明书按照GB/T 16483-2008和GB/T 17519-2013标准编制。</modification_notes>
+      <abbreviations_and_terms>MSDS：化学品安全技术说明书；CAS号：化学文摘社登记号；UN号：联合国危险货物编号；LD50：半数致死量；LC50：半数致死浓度；PC-TWA：时间加权平均容许浓度；PC-STEL：短时间接触容许浓度；IDLH：立即威胁生命和健康浓度；MAC：最高容许浓度；TLV：阈限值；PEL：容许暴露限值；IMDG：国际海运危险货物规则；IATA：国际航空运输协会；TDG：联合国关于危险货物运输的建议书；GHS：全球化学品统一分类和标签制度。</abbreviations_and_terms>
+      <other_notes>无</other_notes>
+    </other_info>
   </msds>
 </msds_list>
