@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>105-56-6</cas_number>
-      <msds_code>MSDS#1583</msds_code>
+      <msds_code>MSDS-105-56-6</msds_code>
       <product_name>氰基乙酸乙酯</product_name>
       <product_alias>氰基醋酸乙酯；乙基氰基乙酸酯</product_alias>
       <product_english_name>Ethyl cyanoacetate</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards>兔皮下注射，最低致死量为1410mg／kg，出现痉挛性麻痹和呼吸兴奋。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品可燃、有毒</fire_explosion_hazards>
+      <hazard_category>第6.1类毒害品</hazard_category>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>兔皮下注射，最低致死量为1410mg/kg，出现痉挛性麻痹和呼吸兴奋。吸入、摄入或经皮肤吸收均有毒。对眼睛、皮肤有刺激作用。口服有毒，可引起头痛、眩晕、恶心、呕吐、呼吸困难等症状。长期接触可引起慢性中毒，影响神经系统、肾脏和肝脏。</health_hazards>
+      <environmental_hazards>对环境有危害，对水体和土壤可造成污染。对水生生物有极高毒性。</environmental_hazards>
+      <fire_explosion_hazards>本品可燃、有毒。遇明火、高热可燃。与强氧化剂可发生反应。受高热分解放出有毒的气体。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -35,60 +35,62 @@
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>脱去污染的衣着，立即用流动清水彻底冲洗。</skin_contact>
-      <eye_contact>立即提起眼睑，用大量流动清水彻底冲洗。</eye_contact>
+      <skin_contact>脱去污染的衣着，立即用流动清水彻底冲洗。就医。</skin_contact>
+      <eye_contact>立即提起眼睑，用大量流动清水彻底冲洗。就医。</eye_contact>
       <inhalation>迅速脱离现场至空气新鲜处。注意保暖，必要时进行人工呼吸。就医。</inhalation>
-      <ingestion>误服者给饮大量温水，催吐，就医。</ingestion>
+      <ingestion>误服者给饮大量温水，催吐。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>遇明火、高热可燃。与强氧化剂可发生反应。受高热分解放出有毒的气体。</hazard_characteristics>
-      <fire_risk_classification>丙</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳、氧化氮。</harmful_combustion_products>
+      <fire_risk_classification>第6.1类毒害品</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氧化氮、氰化氢。</harmful_combustion_products>
       <suitable_extinguishing_media>干粉、泡沫、二氧化碳、砂土。禁止使用酸碱灭火剂。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，切断火源。建议应急处理人员 戴自给式呼吸器，穿化学防护服。不要直接接触泄漏物，在确保安全情况下堵漏。喷雾状 水，减少蒸发。用沙土或其它不燃性吸附剂混合吸收，然后收集运至废物处理场所处置。 如大量泄漏，利用围堤收容，然后收集、转移、回收或无害处理后废弃。</emergency_procedures>
+      <emergency_procedures>疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，切断火源。建议应急处理人员戴自给式呼吸器，穿化学防护服。不要直接接触泄漏物，在确保安全情况下堵漏。喷雾状水，减少蒸发。用沙土或其它不燃性吸附剂混合吸收，然后收集运至废物处理场所处置。如大量泄漏，利用围堤收容，然后收集、转移、回收或无害处理后废弃。</emergency_procedures>
+      <environmental_precautions>防止进入下水道、排洪沟等限制性空间。</environmental_precautions>
+      <cleaning_methods>用沙土或其它不燃性吸附剂混合吸收，然后收集运至废物处理场所处置。</cleaning_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光直射。保持容器密封。注意防潮和 雨水浸入。应与氧化剂、酸类、食用化工原料分开存放。搬运时要轻装轻卸，防止包装及 容器损坏。分装和搬运作业要注意个人防护。</storage_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免产生粉尘。避免与氧化剂、酸类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光直射。保持容器密封。注意防潮和雨水浸入。应与氧化剂、酸类、食用化工原料分开存放。搬运时要轻装轻卸，防止包装及容器损坏。分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
       <china_mac>未制定标准</china_mac>
       <former_soviet_mac>未制定标准</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
-      <contact_limits>美国TWA：未制定标准美国STEL：未制定标准</contact_limits>
-      <monitoring_method>无资料</monitoring_method>
+      <tlvtn>未制定标准</tlvtn>
+      <tlvvn>未制定标准</tlvvn>
+      <contact_limits>美国TLV-TWA：未制定标准；美国TLV-STEL：未制定标准</contact_limits>
+      <monitoring_method>异菸酸钠-巴比安酸钠比色法（氰化物）</monitoring_method>
       <engineering_controls>严加密闭，提供充分的局部排风。</engineering_controls>
       <respiratory_protection>可能接触其蒸气时，应该佩带防毒面具。紧急事态抢救或逃生时，佩带自给式呼吸器。</respiratory_protection>
       <eye_protection>一般不需特殊防护。必要时戴安全防护眼镜。</eye_protection>
       <body_protection>穿相应的防护服。</body_protection>
       <hand_protection>戴防化学品手套。</hand_protection>
-      <other_protection>无资料</other_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作后，彻底清洗。单独存放被毒物污染的衣服，洗后备用。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>-22.5</melting_point>
-      <boiling_point>206～208</boiling_point>
-      <flash_point>110</flash_point>
+      <melting_point>-22.5℃</melting_point>
+      <boiling_point>206～208℃</boiling_point>
+      <flash_point>110℃</flash_point>
       <relative_density>1.06</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>微溶于水，溶于乙醇、乙醚</solubility>
       <molecular_formula>C5H7NO2</molecular_formula>
       <molecular_weight>113.12</molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>2.00／99℃</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
+      <main_components>纯品</main_components>
+      <saturated_vapor_pressure>2.00kPa(99℃)</saturated_vapor_pressure>
+      <log_kow>0.06</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>可燃</flammability>
       <appearance>无色液体，略有气味。</appearance>
       <main_uses>用于有机合成，制药工业，染料工业。</main_uses>
       <other_properties>无资料</other_properties>
@@ -101,34 +103,34 @@
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>强氧化剂、强还原剂、强酸、强碱。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <conditions_to_avoid>光照、潮湿空气</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受热分解产生氰化氢、氮氧化物等有毒气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>小时(大鼠吸入)</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>属低毒类。LD50：1410mg/kg(兔皮下注射)；LC50：无资料</acute_toxicity>
+      <subacute_chronic_toxicity>长期接触可引起慢性中毒，影响神经系统、肾脏和肝脏。</subacute_chronic_toxicity>
       <rtecs>AG4110000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤、粘膜和上呼吸道有刺激作用。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <carcinogenicity>IARC致癌性分类：3组（无法分类）</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
+      <ecological_toxicity>对水生生物有极高毒性。可能对水生环境造成长期不良影响。</ecological_toxicity>
+      <biodegradability>在环境中可缓慢降解，但在自然条件下降解速度较慢。</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作现场禁止吸烟、进食和饮水。工作后，彻底清洗。单独存放被毒物污染的衣服，洗后</other_harmful_effects>
+      <other_harmful_effects>该物质对环境有危害，应特别注意对水体的污染。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>根据国家和地方有关法规，建议用焚烧法处置。焚烧炉排出的气体要通过洗涤器除去氰化氢。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。焚烧时必须配备完善的废气处理系统，防止氰化氢污染环境。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -136,13 +138,19 @@
       <un_number>2666</un_number>
       <imdg_page>6149</imdg_page>
       <packaging_mark>15</packaging_mark>
-      <packing_group>Ⅲ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packing_group>III</packing_group>
+      <packaging_method>小开口钢桶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>铁路运输时应严格按照铁道部《危险货物运输规则》中的危险货物配装表进行配装。运输前应先检查包装容器是否完整、密封，运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与酸类、氧化剂、食用化学品等混装混运。运输车辆应配备泄漏应急处理设备。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：危险化学品安全管理条例、易制毒化学品管理条例、危险化学品目录（2015版）。国际法规：IARC致癌性分类：3组（无法分类）；GHS危险性分类：急性毒性-经口、经皮、吸入（类别3）；皮肤腐蚀/刺激（类别2）；严重眼损伤/眼刺激（类别2）；特异性靶器官毒性-反复接触（类别2）；对水环境的危害-急性（类别2）；对水环境的危害-慢性（类别2）。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <standard_reference>GB/T 16483-2008</standard_reference>
+      <modification_notes>按照GB/T 16483-2008标准编制，补全16个部分内容。</modification_notes>
+      <abbreviations>MSDS：Material Safety Data Sheet（化学品安全技术说明书）；CAS：Chemical Abstracts Service（化学文摘服务社）；UN：United Nations（联合国）；GHS：Globally Harmonized System of Classification and Labelling of Chemicals（全球化学品统一分类和标签制度）；IARC：International Agency for Research on Cancer（国际癌症研究机构）；ACGIH：American Conference of Governmental Industrial Hygienists（美国政府工业卫生学家会议）；NIOSH：National Institute for Occupational Safety and Health（美国国家职业安全卫生研究所）；OSHA：Occupational Safety and Health Administration（美国职业安全与健康管理局）。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

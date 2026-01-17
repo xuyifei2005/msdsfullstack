@@ -4,26 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>30560-19-1</cas_number>
-      <msds_code>MSDS#1297</msds_code>
+      <msds_code>MSDS-30560-19-1</msds_code>
       <product_name>杀虫灵</product_name>
       <product_alias>乙酰甲胺磷</product_alias>
       <product_english_name>Acephate</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards>水肿，血胆碱酯酶活性降低，少数重度中毒者在临床症状消失后数周出现神经病。接触有机磷
-农药工人可有头晕、头痛、无力、失眠、多汗、四肢麻木、肌肉跳动等。血胆碱酯
-活性降低。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品有毒</fire_explosion_hazards>
+      <hazard_category>第6.1类毒害品</hazard_category>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>本品为有机磷杀虫剂，抑制胆碱酯酶活性。中毒症状有头痛、头晕、无力、失眠、多汗、四肢麻木、肌肉跳动等。严重中毒可出现肺水肿、脑水肿、昏迷、呼吸麻痹。少数重度中毒者在临床症状消失后数周出现神经病。接触有机磷农药工人可有头晕、头痛、无力、失眠、多汗、四肢麻木、肌肉跳动等。血胆碱酯酶活性降低。</health_hazards>
+      <environmental_hazards>对环境有害。对水生生物有毒性，对水生环境可能会引起长期有害作用。对蜜蜂、家蚕有毒。</environmental_hazards>
+      <fire_explosion_hazards>遇明火、高热可燃。受热分解，放出氮、磷的氧化物等毒性气体。在火场中，容器内压增大有开裂或爆炸的危险。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -37,15 +35,15 @@
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。注意头发，手，足和指甲等部位。就医。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人</eye_contact>
-      <inhalation>工呼吸。就医。</inhalation>
+      <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。注意头发、手、足和指甲等部位。就医。</skin_contact>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
       <ingestion>给饮足量温水，催吐，尽快彻底洗胃。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>遇明火、高热可燃。受热分解，放出氮、磷的氧化物等毒性气体。</hazard_characteristics>
-      <fire_risk_classification>丙</fire_risk_classification>
+      <hazard_characteristics>遇明火、高热可燃。受热分解，放出氮、磷的氧化物等毒性气体。在火场中，容器内压增大有开裂或爆炸的危险。</hazard_characteristics>
+      <fire_risk_classification>第6.1类毒害品</fire_risk_classification>
       <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物、氧化磷。</harmful_combustion_products>
       <suitable_extinguishing_media>雾状水、泡沫、二氧化碳、干粉、砂土。</suitable_extinguishing_media>
     </fire_fighting>
@@ -55,8 +53,8 @@
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光直射。保持容器密封。应与氧化剂、 碱类、食用化工原料分开存放。搬运时要轻装轻卸，防止包装及容器损坏。分装和搬运作业 要注意个人防护。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶手套。避免产生粉尘。避免与氧化剂、碱类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。防止阳光直射。保持容器密封。应与氧化剂、碱类、食用化工原料分开存放，切忌混储。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -64,35 +62,35 @@
       <former_soviet_mac>未制订标准</former_soviet_mac>
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
-      <contact_limits>美国TLV-TWA：未制订标准美国TLV-STEL：未制订标准</contact_limits>
+      <contact_limits>美国TLV-TWA：未制订标准；美国TLV-STEL：未制订标准</contact_limits>
       <monitoring_method>无资料</monitoring_method>
-      <engineering_controls>密闭操作，局部排风。尽可能机械化、自动化。</engineering_controls>
-      <respiratory_protection>生产操作或农业使用时，建议佩戴防毒口罩。紧急事态抢救或撤离时，佩带自给式呼吸器。</respiratory_protection>
-      <eye_protection>一般不需特殊防护，但建议特殊情况下，戴化学安全防护眼镜。</eye_protection>
-      <body_protection>穿工作服。</body_protection>
-      <hand_protection>戴防护手套。</hand_protection>
-      <other_protection>无资料</other_protection>
+      <engineering_controls>密闭操作，局部排风。尽可能机械化、自动化。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>生产操作或农业使用时，建议佩戴防毒口罩。紧急事态抢救或撤离时，佩戴自给式呼吸器。</respiratory_protection>
+      <eye_protection>戴化学安全防护眼镜。</eye_protection>
+      <body_protection>穿防毒物渗透工作服。</body_protection>
+      <hand_protection>戴橡胶手套。</hand_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。注意个人清洁卫生。实行就业前和定期的健康检查。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>92(纯)；70-80(工业品)</melting_point>
-      <boiling_point>147(分解)</boiling_point>
+      <melting_point>92℃(纯品)；70-80℃(工业品)</melting_point>
+      <boiling_point>147℃(分解)</boiling_point>
       <flash_point>无资料</flash_point>
       <relative_density>1.35</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C4H10NO3SP</molecular_formula>
+      <solubility>易溶于水、甲醇、乙醇、丙酮，微溶于苯、甲苯、二甲苯</solubility>
+      <molecular_formula>C4H10NO3PS</molecular_formula>
       <molecular_weight>183.16</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>乙酰甲胺磷</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>纯品为白色结晶，工业品为白色吸湿性固体，有刺激性气味。</appearance>
-      <main_uses>用作农用杀虫剂。</main_uses>
+      <flammability>可燃</flammability>
+      <appearance>纯品为白色结晶，工业品为白色吸湿性固体，有刺激性气味</appearance>
+      <main_uses>用作农用杀虫剂</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -102,17 +100,17 @@
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>稳定</stability>
-      <incompatible_substances>强氧化剂、强碱。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <incompatible_substances>强氧化剂、强碱</incompatible_substances>
+      <conditions_to_avoid>避免接触强氧化剂、强碱，避免高温</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受热分解产生氮氧化物、氧化磷、一氧化碳、二氧化碳等</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：886-945mg／kg(大鼠经口)；361mg／kg(小鼠经口) ?LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：886-945mg/kg(大鼠经口)；361mg/kg(小鼠经口)；2000mg/kg(兔经皮)</acute_toxicity>
+      <subacute_chronic_toxicity>长期接触可引起慢性中毒，表现为血胆碱酯酶活性降低、头痛、头晕、无力、失眠、多汗、四肢麻木、肌肉跳动等。少数重度中毒者在临床症状消失后数周出现神经病。</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对皮肤、眼睛有刺激性</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -120,31 +118,37 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>对水生生物有毒性。对蜜蜂、家蚕有毒。</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作后，淋浴更衣；注意个人清洁卫生</other_harmful_effects>
+      <other_harmful_effects>对环境有害。对水生环境可能会引起长期有害作用。避免排放到周围环境中。工作后，淋浴更衣；注意个人清洁卫生。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>焚烧法处置</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。避免排放到周围环境中。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>61874</dangerous_goods_number>
-      <un_number>2783</un_number>
+      <un_number>UN 2783</un_number>
       <imdg_page>6219</imdg_page>
-      <packaging_mark>14</packaging_mark>
+      <packaging_mark>第6.1类毒害品</packaging_mark>
       <packing_group>Ⅱ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>小开口钢桶；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱</packaging_method>
+      <transportation_precautions>铁路运输时应严格按照铁道部《危险货物运输规则》中的危险货物配装表进行配装。运输前应先检查包装容器是否完整、密封。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与氧化剂、碱类、食用化学品等混装混运。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内化学品管理法规：危险化学品安全管理条例、工作场所安全使用化学品规定、危险化学品登记管理办法、农药管理条例。国际法规：联合国关于危险货物运输的建议书（橙皮书）、国际海运危险货物规则（IMDG Code）、国际空运危险货物规则（IATA-DGR）。GHS危险性分类：急性毒性，经口（类别4）；急性毒性，经皮（类别4）；急性水生毒性（类别1）。Hazard Statements: H302 吞咽有害。H312 皮肤接触有害。H332 吸入有害。H410 对水生生物毒性极大并具有长期持续影响。Precautionary Statements: P270 禁止本产品使用时进食、饮水或吸烟。P261 避免吸入粉尘、烟、气体、烟雾、蒸气、喷雾。P264 作业后彻底清洗。P271 只能在室外或通风良好之处使用。P280 戴防护手套/穿防护服/戴护目镜/戴面罩。P301+P312 如误吞咽：如感觉不适，呼叫中毒控制中心或医生。P302+P352 如皮肤沾染：用大量肥皂和水清洗。P304+P340 如误吸入：将人转移到空气新鲜处，保持呼吸舒适体位。P312 如感觉不适，呼叫中毒控制中心或医生。P321 具体治疗（见本标签上的……）。P330 漱口。P391 收集泄漏物。P501 按当地法规处置内装物/容器。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <standard_reference>GB/T 16483-2008</standard_reference>
+      <modification_notes>按照GB/T 16483-2008标准编制</modification_notes>
+      <abbreviations>MSDS：化学品安全技术说明书；CAS：化学文摘服务社编号；LD50：半数致死量；LC50：半数致死浓度；UN：联合国编号；IMDG：国际海运危险货物规则；GHS：全球化学品统一分类和标签制度；H：危害说明；P：防范说明</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

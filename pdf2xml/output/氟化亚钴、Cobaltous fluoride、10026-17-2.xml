@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>10026-17-2</cas_number>
-      <msds_code>MSDS#1788</msds_code>
-      <product_name>氟化亚钻</product_name>
-      <product_alias>二氟化钻</product_alias>
+      <msds_code>MSDS-10026-17-2</msds_code>
+      <product_name>氟化亚钴</product_name>
+      <product_alias>二氟化钴</product_alias>
       <product_english_name>Cobaltous fluoride</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第6.1类毒害品</hazard_category>
-      <exposure_routes>吸入 食入</exposure_routes>
+      <exposure_routes>吸入、食入</exposure_routes>
       <health_hazards>吸入、摄入有毒。对皮肤及粘膜有刺激和腐蚀作用。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品不燃、有毒、具有腐蚀性、刺激性、可致人体灼伤</fire_explosion_hazards>
+      <environmental_hazards>对环境有危害，对水体和土壤可造成污染。</environmental_hazards>
+      <fire_explosion_hazards>本品不燃、有毒、具有腐蚀性、刺激性、可致人体灼伤。受高热分解，放出有毒的烟气。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -37,24 +37,27 @@
     <first_aid>
       <skin_contact>用肥皂水及清水彻底冲洗。就医。</skin_contact>
       <eye_contact>拉开眼睑，用流动清水冲洗15分钟。就医。</eye_contact>
-      <inhalation>脱离现场至空气新鲜处。就医。</inhalation>
-      <ingestion>误服者，用水漱口。就医。</ingestion>
+      <inhalation>脱离现场至空气新鲜处。呼吸困难时给输氧。如呼吸停止，立即进行人工呼吸。就医。</inhalation>
+      <ingestion>禁止催吐，切勿给失去知觉者从嘴里喂食任何东西。立即呼叫医生或中毒控制中心。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>受高热分解，放出有毒的烟气。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
+      <fire_risk_classification>第6.1类毒害品</fire_risk_classification>
       <harmful_combustion_products>氧化钴、氟化氢。</harmful_combustion_products>
       <suitable_extinguishing_media>不燃。火场周围可用的灭火介质。</suitable_extinguishing_media>
+      <extinguishing_precautions>消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。</extinguishing_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>隔离泄漏污染区，周围设警告标志，建议应急处理人员戴好防毒面具，穿化学防护服。不 要直接接触泄漏物，用大量水冲洗，经稀释的污水放入废水系统。如大量泄漏，收集回收 或无害处理后废弃。</emergency_procedures>
+      <emergency_procedures>隔离泄漏污染区，周围设警告标志，建议应急处理人员戴好防毒面具，穿化学防护服。不要直接接触泄漏物。</emergency_procedures>
+      <environmental_precautions>防止流入下水道、排洪沟等限制性空间。</environmental_precautions>
+      <cleaning_methods>用大量水冲洗，经稀释的污水放入废水系统。如大量泄漏，收集回收或无害处理后废弃。</cleaning_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、干燥、通风良好的库房。远离火种、热源。专人保管。保持容器密封。应与 碱类、酸类、食用化工原料等分开存放。搬运时要轻装轻卸，防止包装及容器损坏。操作 现场不得吸烟、饮水、进食。分装和搬运作业要注意个人防护。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。避免产生粉尘。避免与酸类接触。配备泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、干燥、通风良好的库房。远离火种、热源。专人保管。保持容器密封。应与碱类、酸类、食用化工原料等分开存放。搬运时要轻装轻卸，防止包装及容器损坏。操作现场不得吸烟、饮水、进食。分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -62,33 +65,33 @@
       <former_soviet_mac>未制订标准</former_soviet_mac>
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
-      <contact_limits>美国TLV-TWA：2.5mg(F)／m3美国TLV-STEL：未制订标准</contact_limits>
+      <contact_limits>美国TLV-TWA：2.5 mg(F)/m³；美国TLV-STEL：未制订标准</contact_limits>
       <monitoring_method>无资料</monitoring_method>
       <engineering_controls>密闭操作，局部排风。</engineering_controls>
       <respiratory_protection>作业工人应该佩戴防毒口罩。必要时佩戴防毒面具。</respiratory_protection>
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
       <body_protection>穿相应的防护服。</body_protection>
       <hand_protection>戴防护手套。</hand_protection>
-      <other_protection>无资料</other_protection>
+      <other_protection>工作现场严禁吸烟。工作完毕，淋浴更衣。注意个人清洁卫生。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>1100～1200</melting_point>
-      <boiling_point>1400</boiling_point>
+      <melting_point>1100～1200℃</melting_point>
+      <boiling_point>1400℃</boiling_point>
       <flash_point>无资料</flash_point>
       <relative_density>4.43</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C</molecular_formula>
+      <solubility>微溶于水，溶于氢氟酸。</solubility>
+      <molecular_formula>CoF2</molecular_formula>
       <molecular_weight>96.93</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>氟化亚钴</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>不燃</flammability>
       <appearance>淡红色单斜或四方形结晶。</appearance>
       <main_uses>用作有机反应的催化剂。</main_uses>
       <other_properties>无资料</other_properties>
@@ -99,50 +102,56 @@
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>稳定</stability>
-      <incompatible_substances>强酸。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
-      <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <stability>常温常压下稳定</stability>
+      <incompatible_substances>强酸、强碱。</incompatible_substances>
+      <conditions_to_avoid>高温、潮湿环境</conditions_to_avoid>
+      <polymerization_hazard>不会发生聚合反应</polymerization_hazard>
+      <decomposition_products>受热分解产生氟化氢等有毒气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：150mg／kg(大鼠经口)LC50：</acute_toxicity>
+      <acute_toxicity>属中等毒性。LD50：150 mg/kg(大鼠经口)</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>GG0770000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
+      <irritation>对眼睛、皮肤、粘膜和上呼吸道有刺激性和腐蚀性。</irritation>
+      <sensitization>可引起皮肤过敏反应</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <carcinogenicity>IARC：2B组（可能对人类致癌）</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
-      <other_harmful_effects>再用。保持良好的卫生习惯。</other_harmful_effects>
+      <ecological_toxicity>对水生生物有毒性。钴化合物对环境有危害。</ecological_toxicity>
+      <biodegradability>无机物，不适用生物降解</biodegradability>
+      <non_biodegradability>不适用</non_biodegradability>
+      <bioaccumulation>有生物富集性</bioaccumulation>
+      <other_harmful_effects>对环境有危害，对水体和土壤可造成污染。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物</waste_properties>
+      <disposal_method>建议用焚烧法处置。焚烧炉排出的气体要通过洗涤器除去。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废物处置必须符合国家环境保护法规和相关标准。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>61513</dangerous_goods_number>
       <un_number>无资料</un_number>
       <imdg_page>无资料</imdg_page>
-      <packaging_mark>15</packaging_mark>
-      <packing_group>无资料</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_mark>第6.1类毒害品</packaging_mark>
+      <packing_group>II</packing_group>
+      <packaging_method>小开口钢桶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱。使用符合国际运输规定的包装容器。包装容器应密封、坚固，能防止泄漏。</packaging_method>
+      <transportation_precautions>铁路运输时应严格按照铁道部《危险货物运输规则》中的危险货物配装表进行配装。运输前应先检查包装容器是否完整、密封。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。严禁与酸类、碱类、食用化学品等混装混运。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内化学品管理法规：危险化学品安全管理条例、易制毒化学品管理条例、危险化学品目录（2015版）。国际法规：联合国关于危险货物运输的建议书（TDG）、国际海事组织国际海运危险货物规则（IMDG Code）、国际民用航空组织危险物品安全航空运输技术细则（ICAO TI/IATA DGR）。GHS危险性分类：急性毒性-经口，类别3；致癌性，类别2。Hazard Statements：H301（吞咽中毒）、H315（造成皮肤刺激）、H319（造成严重眼刺激）、H335（可能引起呼吸道刺激）、H351（怀疑致癌）。Precautionary Statements：P201（使用前取得特别说明）、P260（不要吸入粉尘/烟/气体/烟雾/蒸气/喷雾）、P261（避免吸入粉尘/烟/气体/烟雾/蒸气/喷雾）、P264（作业后彻底清洗）、P270（使用本产品时不要进食、饮水或吸烟）、P271（只能在室外或通风良好之处使用）、P280（戴防护手套/穿防护服/戴护目镜/戴面罩）、P301+P312（如误吞咽：如感觉不适，呼叫解毒中心或医生）、P302+P352（如皮肤沾染：用大量肥皂和水清洗）、P304+P340（如误吸入：将人转移到空气新鲜处，如呼吸停止，进行人工呼吸）、P312（如感觉不适，呼叫解毒中心或医生）、P321（具体治疗）、P330（漱口）、P361+P364（如皮肤（或头发）沾染：立即脱掉所有沾染的衣服。清洗皮肤/淋浴）、P403+P233（存放在通风良好的地方。保持容器密闭）、P405（存放处须加锁）、P501（按当地法规处置内装物/容器）。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <standard_reference>本安全技术说明书按照GB/T 16483-2008、GB/T 17519-2013标准编制。</standard_reference>
+      <modification_notes>本版本为初始编制版本。</modification_notes>
+      <abbreviations>CAS号：化学文摘社登记号；GHS：全球化学品统一分类和标签制度；TLV-TWA：阈限值-时间加权平均浓度；TLV-STEL：阈限值-短时间接触浓度；MAC：最高容许浓度；PC-TWA：时间加权平均容许浓度；PC-STEL：短时间接触容许浓度；IDLH：立即威胁生命和健康浓度；IARC：国际癌症研究机构。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

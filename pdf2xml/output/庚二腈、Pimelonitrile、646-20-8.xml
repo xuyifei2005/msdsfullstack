@@ -4,16 +4,16 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>646-20-8</cas_number>
-      <msds_code>MSDS#1256</msds_code>
+      <msds_code>MSDS-646-20-8</msds_code>
       <product_name>庚二腈</product_name>
       <product_alias>1,5-二氰基戊烷</product_alias>
       <product_english_name>Pimelonitrile</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
@@ -118,11 +118,11 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>对水生生物可能有毒性。</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
-      <other_harmful_effects>被毒物污染的衣服，洗后再用。</other_harmful_effects>
+      <bioaccumulation>无资料</bioaccumulation>
+      <other_harmful_effects>无资料</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
@@ -142,7 +142,7 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品安全管理条例（国务院令第591号），工作场所安全使用化学品规定（〔1996〕劳部发423号）等法规，针对化学危险品的安全使用、生产、储存、运输、装卸等方面均作了相应规定。GHS危险性分类：皮肤腐蚀/刺激，类别2；严重眼损伤/眼刺激，类别2；特异性靶器官毒性-一次接触，类别3（呼吸道刺激）；危害水生环境-急性危害，类别3。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

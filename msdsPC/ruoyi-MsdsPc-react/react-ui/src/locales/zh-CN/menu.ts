@@ -49,4 +49,7 @@ export default {
   'menu.editor.flow': '流程编辑器',
   'menu.editor.mind': '脑图编辑器',
   'menu.editor.koni': '拓扑编辑器',
+  'menu.monitor': '系统监控',
+  'menu.monitor.online': '在线用户',
+  'menu.monitor.job-log': '任务日志',
 };

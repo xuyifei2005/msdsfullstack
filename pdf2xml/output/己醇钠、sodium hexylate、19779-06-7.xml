@@ -17,11 +17,11 @@
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>侵入途径：</hazard_category>
-      <exposure_routes></exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards></environmental_hazards>
-      <fire_explosion_hazards></fire_explosion_hazards>
+      <hazard_category>第8.2类有机碱性腐蚀品</hazard_category>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>腐蚀物能引起呼吸道刺激，伴有咳嗽、呼吸道阻塞和粘膜损伤。意外食入本品可能对个体健康有害。皮肤直接接触造成严重皮肤灼伤。</health_hazards>
+      <environmental_hazards>对水生生物可能有毒性。</environmental_hazards>
+      <fire_explosion_hazards>本品易燃，具有腐蚀性。遇明火、高热易燃。与氧化剂能发生强烈反应。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -100,9 +100,9 @@
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>在正确的使用和存储条件下是稳定的</stability>
-      <incompatible_substances>无资料</incompatible_substances>
+      <incompatible_substances>强氧化剂、酸类、水。</incompatible_substances>
       <conditions_to_avoid>不相容物质，热、火焰和火花</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
+      <polymerization_hazard>不能出现</polymerization_hazard>
       <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
@@ -118,7 +118,7 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>对水生生物可能有毒性。</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
@@ -142,7 +142,7 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品安全管理条例（国务院令第591号），工作场所安全使用化学品规定（〔1996〕劳部发423号）等法规，针对化学危险品的安全使用、生产、储存、运输、装卸等方面均作了相应规定。GHS危险性分类：皮肤腐蚀/刺激，类别1；严重眼损伤/眼刺激，类别1；特异性靶器官毒性-一次接触，类别3（呼吸道刺激）。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

@@ -7,14 +7,8 @@ const Footer: React.FC = () => {
       style={{
         background: 'none',
       }}
-      links={[
-        {
-          key: 'MSDS安全智库网',
-          title: 'MSDS安全智库网',
-          href: '',
-          blankTarget: true,
-        },
-      ]}
+      links={[]}
+      copyright={null}
     />
   );
 };

@@ -1,4 +1,4 @@
-import { Footer, Question, SelectLang, AvatarDropdown, AvatarName } from '@/components';
+import { Footer, SelectLang, AvatarDropdown, AvatarName } from '@/components';
 import type { Settings as LayoutSettings } from '@ant-design/pro-components';
 import { SettingDrawer } from '@ant-design/pro-components';
 import type { RunTimeLayoutConfig } from '@umijs/max';

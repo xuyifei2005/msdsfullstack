@@ -142,14 +142,13 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>危险化学品安全管理条例、易制毒化学品管理条例</regulatory_info>
+      <regulatory_info>国内法规：危险化学品安全管理条例、易制毒化学品管理条例、危险化学品目录（2015版）。国际法规：IARC致癌性分类：2B组（可能致癌）；GHS危险性分类：急性毒性-经口、经皮、吸入（类别1）；皮肤腐蚀/刺激（类别2）；严重眼损伤/眼刺激（类别2）；特异性靶器官毒性-反复接触（类别1）。</regulatory_info>
     </regulatory>
     <!-- 第十六部分：其他信息 -->
     <other_info>
-      <standard_reference>GB/T 16483-2008、GB/T 17519-2013</standard_reference>
-      <modification_notes>无</modification_notes>
-      <abbreviations>无</abbreviations>
-      <other_references>无</other_references>
+      <standard_reference>GB/T 16483-2008</standard_reference>
+      <modification_notes>按照GB/T 16483-2008标准编制，补全16个部分内容。</modification_notes>
+      <abbreviations>MSDS：Material Safety Data Sheet（化学品安全技术说明书）；CAS：Chemical Abstracts Service（化学文摘服务社）；UN：United Nations（联合国）；GHS：Globally Harmonized System of Classification and Labelling of Chemicals（全球化学品统一分类和标签制度）；IARC：International Agency for Research on Cancer（国际癌症研究机构）；ACGIH：American Conference of Governmental Industrial Hygienists（美国政府工业卫生学家会议）；NIOSH：National Institute for Occupational Safety and Health（美国国家职业安全卫生研究所）；OSHA：Occupational Safety and Health Administration（美国职业安全与健康管理局）。</abbreviations>
     </other_info>
   </msds>
 </msds_list>

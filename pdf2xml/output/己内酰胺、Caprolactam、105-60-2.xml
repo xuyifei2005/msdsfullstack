@@ -145,5 +145,11 @@
     <regulatory>
       <regulatory_info>《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录》（2015版）、《危险货物品名表》（GB 12268-2012）、《危险货物运输包装通用技术条件》（GB 12463-2009）、《危险货物道路运输安全管理办法》（交通运输部令2019年第29号）。本品属于第6.1类毒害品，应按照相关法规进行生产、储存、运输和使用。本品可燃，具刺激性，需严格控制接触。与空气可形成爆炸性混合物，需特别注意。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <standard_reference>GB/T 16483-2008</standard_reference>
+      <revision_notes>本安全技术说明书依据GB/T 16483-2008标准编制，内容符合《化学品安全技术说明书 内容和项目顺序》和《化学品分类和危险性公示 通则》的要求。</revision_notes>
+      <abbreviations>CAS：化学文摘服务社号码；LD50：半数致死量；LC50：半数致死浓度；UN：联合国编号；IMDG：国际海运危险货物规则；ICAO TI：国际民航组织技术细则；IATA-DGR：国际航空运输协会危险品规则；GHS：全球化学品统一分类和标签制度；RTECS：美国化学物质毒性效应登记处。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

@@ -4,30 +4,30 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>7784-21-6</cas_number>
-      <msds_code>MSDS#2666</msds_code>
+      <msds_code>MSDS-7784-21-6</msds_code>
       <product_name>氢化铝</product_name>
-      <product_alias>无资料</product_alias>
+      <product_alias>三氢化铝</product_alias>
       <product_english_name>Aluminium hydride</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第4.3类遇湿易燃物品</hazard_category>
-      <exposure_routes>吸入 食入</exposure_routes>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
       <health_hazards>本品粉尘对眼睛、鼻、皮肤和呼吸系统有刺激作用，长期作用可引起尘肺。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品遇湿易燃、有毒、具有刺激性</fire_explosion_hazards>
+      <environmental_hazards>对环境可能有害。</environmental_hazards>
+      <fire_explosion_hazards>本品遇湿易燃、有毒、具有刺激性。暴露在空气中能自燃。遇水或酸发生反应放出氢气及热量，能引起燃烧。与氧化剂能发生强烈反应。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
       <components>
         <component>
-          <component_name>氢化铝；三氢化铝</component_name>
+          <component_name>氢化铝</component_name>
           <component_content>100%</component_content>
           <cas_number>7784-21-6</cas_number>
         </component>
@@ -36,59 +36,61 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。就医。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行</eye_contact>
-      <inhalation>人工呼吸。就医。</inhalation>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
       <ingestion>误服者立即漱口，给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>暴露在空气中能自燃。遇水或酸发生反应放出氢气及热量，能引起燃烧。与氧化剂能发生 强烈反应。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>氢气、氧化铝、水。 合适的灭火介质:干粉，干砂或石灰。 不合适的灭火介质:水、二氧化碳和泡沫。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安 全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <hazard_characteristics>暴露在空气中能自燃。遇水或酸发生反应放出氢气及热量，能引起燃烧。与氧化剂能发生强烈反应。</hazard_characteristics>
+      <fire_risk_classification>第4.3类遇湿易燃物品</fire_risk_classification>
+      <harmful_combustion_products>氢气、氧化铝、水。</harmful_combustion_products>
+      <suitable_extinguishing_media>合适的灭火介质：干粉、干砂或石灰。不合适的灭火介质：水、二氧化碳和泡沫。灭火时，应佩戴呼吸面具（符合MSHA/NIOSH要求的或相当的）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>隔离泄漏污染区，周围设警告标志，切断火源。建议应急处理人员戴好防毒面具，穿化 学防护服。禁止向泄漏物直接喷水，更不要让水进入包装容器内。用干燥砂土混合，小 心扫起，使用不产生火花的工具收集送至空旷地方，倒入大量水中，经分解稀释后的污 水放入废水系统。如大量泄漏，收集回收或无害处理后废弃。</emergency_procedures>
+      <emergency_procedures>隔离泄漏污染区，周围设警告标志，切断火源。建议应急处理人员戴好防毒面具，穿化学防护服。禁止向泄漏物直接喷水，更不要让水进入包装容器内。用干燥砂土混合，小心扫起，使用不产生火花的工具收集送至空旷地方，倒入大量水中，经分解稀释后的污水放入废水系统。如大量泄漏，收集回收或无害处理后废弃。</emergency_procedures>
+      <environmental_precautions>防止进入下水道、地下水和地表水。</environmental_precautions>
+      <cleaning_methods>用干燥砂土混合，小心扫起，使用不产生火花的工具收集送至空旷地方，倒入大量水中，经分解稀释后的污水放入废水系统。</cleaning_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、干燥、通风良好的不燃库房。远离火种、热源。相对湿度保持在75%以下。 防 止阳光直射。在氮气中操作处置。保持容器密封。防止受潮和雨淋。应与酸类、氧化 剂、醇类等分开存放。搬运时要轻装轻卸，防止包装及容器损坏。雨天不宜运输。分装和 搬运作业要注意个人防护。</storage_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免产生粉尘。避免与氧化剂、酸类、醇类、水接触。在氮气中操作处置。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。</handling_precautions>
+      <storage_precautions>储存于阴凉、干燥、通风良好的不燃库房。远离火种、热源。相对湿度保持在75%以下。防止阳光直射。在氮气中操作处置。保持容器密封。防止受潮和雨淋。应与酸类、氧化剂、醇类等分开存放。搬运时要轻装轻卸，防止包装及容器损坏。雨天不宜运输。分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
-      <china_mac>无资料</china_mac>
-      <former_soviet_mac>无资料</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
-      <contact_limits>美国TLV-TWA：未制订标准美国TLV-STEL：未制订标准</contact_limits>
+      <china_mac>未制定标准</china_mac>
+      <former_soviet_mac>未制定标准</former_soviet_mac>
+      <tlvtn>未制定标准</tlvtn>
+      <tlvvn>未制定标准</tlvvn>
+      <contact_limits>美国TLV-TWA：未制订标准；美国TLV-STEL：未制订标准</contact_limits>
       <monitoring_method>无资料</monitoring_method>
       <engineering_controls>密闭操作，局部排风。</engineering_controls>
       <respiratory_protection>可能接触其粉尘时，必须佩戴防毒口罩。</respiratory_protection>
       <eye_protection>戴安全防护眼镜。</eye_protection>
       <body_protection>穿防静电工作服。</body_protection>
       <hand_protection>戴防护手套。</hand_protection>
-      <other_protection>无资料</other_protection>
+      <other_protection>工作现场严禁吸烟。工作后，淋浴更衣。注意个人清洁卫生。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>(分解)</melting_point>
+      <melting_point>分解</melting_point>
       <boiling_point>无资料</boiling_point>
       <flash_point>无资料</flash_point>
-      <relative_density>无资料</relative_density>
+      <relative_density>1.45</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>A1H3</molecular_formula>
+      <solubility>遇水分解</solubility>
+      <molecular_formula>AlH3</molecular_formula>
       <molecular_weight>30.01</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>氢化铝</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>遇湿易燃</flammability>
       <appearance>无色至灰色粉末或固体。</appearance>
       <main_uses>用作还原剂、聚合催化剂等。</main_uses>
       <other_properties>无资料</other_properties>
@@ -100,17 +102,17 @@
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>不稳定</stability>
-      <incompatible_substances>酸类、醇类、水。</incompatible_substances>
-      <conditions_to_avoid>光照可分解。</conditions_to_avoid>
+      <incompatible_substances>酸类、醇类、水、氧化剂。</incompatible_substances>
+      <conditions_to_avoid>光照可分解、潮湿空气、高温。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>遇水产生氢气。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <subacute_chronic_toxicity>长期作用可引起尘肺。</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>粉尘对眼睛、鼻、皮肤和呼吸系统有刺激作用。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -122,27 +124,33 @@
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作现场严禁吸烟。工作后，淋浴更衣。注意个人清洁卫生。</other_harmful_effects>
+      <other_harmful_effects>对环境可能有害。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>建议用焚烧法处置。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>43021</dangerous_goods_number>
       <un_number>2463</un_number>
       <imdg_page>4328</imdg_page>
-      <packaging_mark>10</packaging_mark>
-      <packing_group>Ⅰ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_mark>第4.3类遇湿易燃物品</packaging_mark>
+      <packing_group>I</packing_group>
+      <packaging_method>钢瓶包装</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。严禁与氧化剂、酸类、醇类、水等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内化学品管理法规：危险化学品安全管理条例、易制毒化学品管理条例、危险化学品目录（2015版）。国际法规：UN 2463（氢化铝）、GHS危险性分类：遇水放出易燃气体的物质类别1。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <standard_reference>GB/T 16483-2008</standard_reference>
+      <modification_notes>按照GB/T 16483-2008标准编制，补全16个部分内容。</modification_notes>
+      <abbreviations>MSDS：Material Safety Data Sheet（化学品安全技术说明书）；CAS：Chemical Abstracts Service（化学文摘服务社）；UN：United Nations（联合国）；GHS：Globally Harmonized System of Classification and Labelling of Chemicals（全球化学品统一分类和标签制度）。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

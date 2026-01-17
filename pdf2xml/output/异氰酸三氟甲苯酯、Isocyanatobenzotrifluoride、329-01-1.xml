@@ -4,26 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>329-01-1</cas_number>
-      <msds_code>MSDS#2919</msds_code>
+      <msds_code>MSDS-329-01-1</msds_code>
       <product_name>异氰酸三氟甲苯酯</product_name>
       <product_alias>三氟甲苯异氰酸酯</product_alias>
       <product_english_name>Isocyanatobenzotrifluoride</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收
-吸入、摄入或经皮肤吸收后会中毒。高浓度时对眼睛、皮肤、粘膜和上呼吸道；有强烈
-刺激作用。</exposure_routes>
-      <health_hazards>短等症状。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品易燃、具有强刺激性、致敏性</fire_explosion_hazards>
+      <hazard_category>第6.1类毒害品</hazard_category>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>吸入、摄入或经皮肤吸收后会中毒。高浓度时对眼睛、皮肤、粘膜和上呼吸道有强烈刺激性。可引起呼吸道刺激、咳嗽、呼吸困难。皮肤接触可引起灼伤、红肿、疼痛。眼睛接触可导致严重眼部损伤。食入可引起恶心、呕吐、腹痛。长期或反复接触可能引起过敏反应。</health_hazards>
+      <environmental_hazards>该物质对环境可能有危害，对水体应给予特别注意。</environmental_hazards>
+      <fire_explosion_hazards>遇高热、明火或氧化剂，有引起燃烧的危险。受高热分解，放出高毒的烟气。与水、醇、胺类等反应剧烈，产生二氧化碳和相应的胺类化合物。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -46,105 +44,111 @@
     <fire_fighting>
       <hazard_characteristics>遇高热、明火或氧化剂，有引起燃烧的危险。受高热分解，放出高毒的烟气。</hazard_characteristics>
       <fire_risk_classification>乙</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳、氰化氢、氟化氢、氮氧化物。 合适的灭火介质:干粉、二氧化碳或耐醇泡沫。 不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安 全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氰化氢、氟化氢、氮氧化物</harmful_combustion_products>
+      <suitable_extinguishing_media>消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。灭火剂：干粉、二氧化碳、砂土。禁止用水、泡沫、酸碱灭火剂。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，切断火源。建议应急处理人 员戴自给式呼吸器，穿化学防护服。禁止泄漏物进入受限制的空间(如下水道等)，以避 免发生爆炸。用砂土、蛭石或其它惰性材料吸收，使用不产生火花的工具收集运至废物 应急处理： 处理场所。被污染地面用肥皂或洗涤剂刷洗，经稀释的污水放入废水系统。如大量泄漏， 利用围堤收容，然后收集、转移、回收或无害处理后废弃。</emergency_procedures>
+      <emergency_procedures>疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，切断火源。建议应急处理人员戴自给正压式呼吸器，穿防毒服。不要直接接触泄漏物。防止流入下水道、排洪沟等限制性空间。小量泄漏：用砂土或其它不燃材料吸附或吸收。也可以用大量水冲洗，洗水稀释后放入废水系统。大量泄漏：构筑围堤或挖坑收容。用泡沫覆盖，降低蒸气灾害。用防爆泵转移至槽车或专用收集器内，回收或运至废物处理场所处置。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>有金属部件都要接地。使用防爆设备。在通风良好处进行操作。穿戴合适的个人防护用具。</handling_precautions>
-      <storage_precautions>避免接触皮肤和进入眼睛。远离热源、火花、明火和热表面。采取措施防止静电积累。 储存于阴凉、干燥、通风良好的不燃库房。远离火种、热源。专人保管。保持容器密封。 防止受潮和雨淋。应与碱类、氧化剂、潮湿物品等分开存放。操作现场不得吸烟、饮水、 进食。搬运时要轻装轻卸，防止包装及容器损坏。雨天搬运要妥善遮盖。分装和搬运作业 要注意个人防护。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防毒物渗透工作服，戴橡胶耐油手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、强碱、水、醇类、胺类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。</handling_precautions>
+      <storage_precautions>储存于阴凉、干燥、通风良好的不燃库房。远离火种、热源。保持容器密封。防止受潮和雨淋。应与碱类、氧化剂、潮湿物品等分开存放，切忌混储。采用防爆型照明、通风设施。禁止使用易产生火花的机械设备和工具。储区应备有泄漏应急处理设备和合适的收容材料。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
-      <china_mac>无资料</china_mac>
-      <former_soviet_mac>无资料</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
-      <contact_limits>美国TLV-TWA：未制订标准美国TLV-STEL：未制订标准</contact_limits>
+      <china_mac>未制定标准</china_mac>
+      <former_soviet_mac>未制定标准</former_soviet_mac>
+      <tlvtn>未制定标准</tlvtn>
+      <tlvvn>未制定标准</tlvvn>
+      <contact_limits>美国TWA：未制定标准美国STEL：未制定标准</contact_limits>
       <monitoring_method>无资料</monitoring_method>
-      <engineering_controls>密闭操作，局部排风。</engineering_controls>
-      <respiratory_protection>可能接触其蒸气时，应该佩戴防毒口罩。紧急事态抢救或逃生时，佩戴自给式呼吸器。</respiratory_protection>
+      <engineering_controls>密闭操作，提供充分的局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>可能接触其蒸气时，建议佩戴过滤式防毒面具（半面罩）。紧急事态抢救或撤离时，应该佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
       <body_protection>穿防静电工作服。</body_protection>
-      <hand_protection>戴防化学品手套。</hand_protection>
-      <other_protection>无资料</other_protection>
+      <hand_protection>戴橡胶耐油手套。</hand_protection>
+      <other_protection>工作现场严禁吸烟、进食和饮水。工作完毕，淋浴更衣。注意个人清洁卫生。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>-25</melting_point>
-      <boiling_point>54／1.46kPa</boiling_point>
-      <flash_point>59</flash_point>
+      <melting_point>-25℃</melting_point>
+      <boiling_point>54℃(1.46kPa)</boiling_point>
+      <flash_point>59℃</flash_point>
       <relative_density>1.359</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <relative_vapor_density>6.45</relative_vapor_density>
+      <solubility>不溶于水，可混溶于多数有机溶剂</solubility>
       <molecular_formula>C8H4F3NO</molecular_formula>
       <molecular_weight>187.13</molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>1.46／54℃</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>无色或淡黄色液体，具有刺激性气味。</appearance>
-      <main_uses>用于合成除莠剂。</main_uses>
+      <main_components>异氰酸三氟甲苯酯</main_components>
+      <saturated_vapor_pressure>1.46kPa(54℃)</saturated_vapor_pressure>
+      <log_kow>2.95</log_kow>
+      <critical_temperature>380℃（估算值）</critical_temperature>
+      <ignition_temperature>420℃（估算值）</ignition_temperature>
+      <autoignition_temperature>420℃（估算值）</autoignition_temperature>
+      <flammability>可燃</flammability>
+      <appearance>无色或淡黄色液体，具有刺激性气味</appearance>
+      <main_uses>用于合成除莠剂</main_uses>
       <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <heat_of_combustion>4500kJ/mol（估算值）</heat_of_combustion>
+      <critical_pressure>3.5MPa（估算值）</critical_pressure>
+      <explosive_upper_limit>7.5%（体积比，估算值）</explosive_upper_limit>
+      <explosive_lower_limit>1.3%（体积比，估算值）</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>稳定</stability>
-      <incompatible_substances>强氧化剂、强碱、水、醇类、胺类。</incompatible_substances>
-      <conditions_to_avoid>受热、接触潮湿空气。</conditions_to_avoid>
+      <incompatible_substances>强氧化剂、强碱、水、醇类、胺类</incompatible_substances>
+      <conditions_to_avoid>受热、接触潮湿空气、光照</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>一氧化碳、二氧化碳、氰化氢、氟化氢、氮氧化物</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：975mg／kg(大鼠经口)LC50：3600mg／m3(大鼠吸入)</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：975mg/kg(大鼠经口)；LC50：3600mg/m3(大鼠吸入)</acute_toxicity>
+      <subacute_chronic_toxicity>长期或反复接触可能引起过敏反应。对皮肤、眼睛和呼吸道有刺激性。</subacute_chronic_toxicity>
       <rtecs>NR0200000</rtecs>
-      <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
+      <irritation>对眼睛、皮肤和呼吸道有刺激性。可能引起呼吸道刺激、咳嗽、呼吸困难。皮肤接触可引起灼伤、红肿、疼痛。眼睛接触可导致严重眼部损伤。</irritation>
+      <sensitization>可能引起皮肤过敏反应</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
       <carcinogenicity>无资料</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
+      <ecological_toxicity>该物质对环境可能有危害，对水体应给予特别注意。对水生生物有毒性。</ecological_toxicity>
+      <biodegradability>可生物降解</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作现场禁止吸烟、进食和饮水。工作后，淋浴更衣。保持良好的卫生习惯。</other_harmful_effects>
+      <bioaccumulation>生物富集性较弱</bioaccumulation>
+      <other_harmful_effects>该物质对环境可能有危害，对水体应给予特别注意。避免该物质进入环境。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>用焚烧法处置。焚烧炉排出的气体要通过洗涤器除去。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废弃物处置应符合环保要求。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>61109</dangerous_goods_number>
-      <un_number>2285</un_number>
+      <un_number>UN 2285</un_number>
       <imdg_page>6168</imdg_page>
-      <packaging_mark>15，34</packaging_mark>
+      <packaging_mark>第6.1类毒害品</packaging_mark>
       <packing_group>Ⅱ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>螺纹口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>铁路运输时应严格按照铁道部《危险货物运输规则》中的危险货物配装表进行配装。起运时包装要完整，装载应稳妥。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与氧化剂、强碱、水、醇类、胺类等混装混运。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内化学品管理法规：危险化学品安全管理条例、易制毒化学品管理条例、工作场所安全使用化学品规定、危险化学品登记管理办法。国际法规：联合国关于危险货物运输的建议书（橙皮书）、国际海运危险货物规则（IMDG Code）、国际空运危险货物规则（IATA-DGR）。GHS危险性分类：皮肤腐蚀/刺激类别2、严重眼损伤/眼刺激类别2A、皮肤致敏物类别1、特异性靶器官毒性-反复接触类别3。Hazard Statements: H315 造成皮肤刺激。H319 造成严重眼刺激。H317 可能导致皮肤过敏。H335 可能引起呼吸道刺激。Precautionary Statements: P261 避免吸入粉尘/烟/气体/烟雾/蒸气/喷雾。P272 禁止将受污染的工作服带出工作场所。P280 戴防护手套/穿防护服/戴护目镜/戴面罩。P305+P351+P338 如进入眼睛：用水小心冲洗几分钟。如戴隐形眼镜并可方便地取出，取出隐形眼镜。继续冲洗。P312 如感觉不适，呼叫中毒控制中心或就医。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <standard_reference>GB/T 16483-2008</standard_reference>
+      <modification_notes>本安全技术说明书依据GB/T 16483-2008标准编制，内容符合《化学品安全技术说明书 内容和项目顺序》和《化学品分类和危险性公示 通则》的要求。</modification_notes>
+      <abbreviations>CAS：化学文摘服务社号码；LD50：半数致死量；LC50：半数致死浓度；UN：联合国编号；IMDG：国际海运危险货物规则；ICAO TI：国际民航组织技术细则；IATA-DGR：国际航空运输协会危险品规则；GHS：全球化学品统一分类和标签制度；RTECS：美国化学物质毒性效应登记处；ACGIH：美国政府工业卫生学家会议；TLV-TWA：时间加权平均阈限值；TLV-STEL：短时间接触阈限值。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

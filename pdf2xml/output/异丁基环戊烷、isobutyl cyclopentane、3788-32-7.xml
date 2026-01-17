@@ -42,10 +42,10 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>从而增加火势和/或蒸气的浓度。蒸气可能会移动到着火源并回闪。液体和蒸气易燃。加 热时，容器可能爆炸。受热或接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>有害燃烧产物：</fire_risk_classification>
-      <harmful_combustion_products>合适的灭火介质:干粉、二氧化碳或耐醇泡沫。 不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在 安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <hazard_characteristics>液体和蒸气易燃。受热时，容器可能爆炸。受热或接触火焰可能会产生膨胀或爆炸性分解。蒸气可能会移动到着火源并回闪。</hazard_characteristics>
+      <fire_risk_classification>甲</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳。</harmful_combustion_products>
+      <suitable_extinguishing_media>干粉、二氧化碳或耐醇泡沫。避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。灭火时，应佩戴呼吸面具（符合MSHA/NIOSH要求的或相当的）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
@@ -100,17 +100,17 @@
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>在正确的使用和存储条件下是稳定的</stability>
-      <incompatible_substances>无资料</incompatible_substances>
+      <incompatible_substances>强氧化剂、强酸</incompatible_substances>
       <conditions_to_avoid>不相容物质，热、火焰和火花</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物</decomposition_products>
+      <polymerization_hazard>不能出现</polymerization_hazard>
+      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。受热分解产生一氧化碳、二氧化碳。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
       <acute_toxicity>无资料</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤、粘膜和上呼吸道有刺激作用。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -118,7 +118,7 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>对水生生物可能有毒性。</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>

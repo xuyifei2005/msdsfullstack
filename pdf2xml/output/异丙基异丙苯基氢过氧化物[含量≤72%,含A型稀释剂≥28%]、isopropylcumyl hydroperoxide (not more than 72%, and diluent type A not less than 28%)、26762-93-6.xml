@@ -4,30 +4,30 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>26762-93-6</cas_number>
-      <msds_code>MSDS#2275</msds_code>
-      <product_name>异丙基异丙苯基氢过氧化物[含量≤72%</product_name>
+      <msds_code>MSDS-26762-93-6</msds_code>
+      <product_name>异丙基异丙苯基氢过氧化物[含量≤72%,含A型稀释剂≥28%]</product_name>
       <product_alias>过氧化氢二异丙苯</product_alias>
-      <product_english_name>(not more than 72%, and diluent</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_english_name>isopropylcumyl hydroperoxide (not more than 72%, and diluent type A not less than 28%)</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>第5.2类 有机过氧化物</hazard_category>
-      <exposure_routes>吸入 食入</exposure_routes>
+      <hazard_category>第5.2类有机过氧化物</hazard_category>
+      <exposure_routes>吸入、食入</exposure_routes>
       <health_hazards>皮肤接触可引起灼伤，对粘膜有强烈刺激作用。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品易燃、具有爆炸性、具有强刺激性</fire_explosion_hazards>
+      <environmental_hazards>该物质对环境可能有危害，对水体应给予特别注意。</environmental_hazards>
+      <fire_explosion_hazards>本品易燃、具有爆炸性、具有强刺激性。过氧化物，受热、光照、猛烈撞击或遇明火、硫酸，均有引起燃烧爆炸的危险。有氧化性。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
       <components>
         <component>
-          <component_name>过氧化氢二异丙苯；过氧化羟基二异丙苯</component_name>
+          <component_name>过氧化氢二异丙苯</component_name>
           <component_content>100%</component_content>
           <cas_number>26762-93-6</cas_number>
         </component>
@@ -35,108 +35,121 @@
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>脱去污染的衣着，用流动清水冲洗15分钟。若有灼伤，就医治疗。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水冲洗15分钟。就医。</eye_contact>
+      <skin_contact>立即脱去污染的衣着，用流动清水冲洗至少15分钟。若有灼伤，就医治疗。</skin_contact>
+      <eye_contact>立即翻开上下眼睑，用流动清水冲洗至少15分钟。就医。</eye_contact>
       <inhalation>迅速脱离现场至空气新鲜处。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
-      <ingestion>误服者给饮牛奶或蛋清。立即就医。</ingestion>
+      <ingestion>误服者给饮牛奶或蛋清。切勿催吐。立即就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>过氧化物，受热；光照、猛烈撞击或遇明火、硫酸，均有引起燃烧爆炸的危险。有氧化性。</hazard_characteristics>
+      <hazard_characteristics>过氧化物，受热、光照、猛烈撞击或遇明火、硫酸，均有引起燃烧爆炸的危险。有氧化性。</hazard_characteristics>
       <fire_risk_classification>甲</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳。</harmful_combustion_products>
-      <suitable_extinguishing_media>雾状水、泡沫、二氧化碳、1211灭火剂、砂土。</suitable_extinguishing_media>
+      <harmful_combustion_products>一氧化碳、二氧化碳</harmful_combustion_products>
+      <suitable_extinguishing_media>雾状水、泡沫、二氧化碳、1211灭火剂、砂土。灭火时，应佩戴呼吸面具（符合MSHA/NIOSH要求的或相当的）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>切断火源。戴自给式呼吸器，穿一般消防防护服。不要直接接触泄漏物，在确保安全情 况下堵漏。用惰性的、潮湿的、不燃烧的物料吸收。然后收集运至废物处理场所。如大 量泄漏，利用围堤收容，然后收集、转移、回收或无害处理后废弃。</emergency_procedures>
+      <emergency_procedures>切断火源。戴自给式呼吸器，穿一般消防防护服。不要直接接触泄漏物，在确保安全情况下堵漏。用惰性的、潮湿的、不燃烧的物料吸收。然后收集运至废物处理场所。如大量泄漏，利用围堤收容，然后收集、转移、回收或无害处理后废弃。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>火花、明火和热表面。采取措施防止静电积累。 商品通常稀释后储装。专仓专储。远离火种、热源。要充分通风，并保持干燥。避免光 照。夏季应冷藏。应与碱类、酸类、氧化剂、还原剂、易燃、可燃物等分开存放。搬运 时要轻装轻卸，避免碰撞、翻倒，防止包装破损洒漏。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。远离火花、明火和热表面。采取措施防止静电积累。商品通常稀释后储装。专仓专储。要充分通风，并保持干燥。避免光照。搬运时要轻装轻卸，避免碰撞、翻倒，防止包装破损洒漏。</handling_precautions>
+      <storage_precautions>远离火种、热源。专仓专储。要充分通风，并保持干燥。避免光照。夏季应冷藏。应与碱类、酸类、氧化剂、还原剂、易燃、可燃物等分开存放。搬运时要轻装轻卸，避免碰撞、翻倒，防止包装破损洒漏。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
-      <china_mac></china_mac>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
-      <eye_protection></eye_protection>
-      <body_protection></body_protection>
-      <hand_protection></hand_protection>
+      <china_mac>未制定标准</china_mac>
+      <former_soviet_mac>未制定标准</former_soviet_mac>
+      <tlvtn>未制定标准</tlvtn>
+      <tlvvn>未制定标准</tlvvn>
+      <contact_limits>美国TWA：未制定标准美国STEL：未制定标准</contact_limits>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>密闭操作，注意通风。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>可能接触其蒸气时，建议佩戴过滤式防毒面具（半面罩）。紧急事态抢救或撤离时，应该佩戴空气呼吸器。</respiratory_protection>
+      <eye_protection>戴化学安全防护眼镜。</eye_protection>
+      <body_protection>穿防静电工作服。</body_protection>
+      <hand_protection>戴橡胶手套。</hand_protection>
+      <other_protection>工作现场严禁吸烟。工作后，淋浴更衣。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
-      <boiling_point>无资料</boiling_point>
-      <flash_point>无资料</flash_point>
-      <relative_density>无资料</relative_density>
+      <melting_point><-9℃</melting_point>
+      <boiling_point>291.1℃</boiling_point>
+      <flash_point>129.2℃</flash_point>
+      <relative_density>0.935~0.960g/cm³</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>不溶于水，可混溶于苯、异丙苯等有机溶剂</solubility>
       <molecular_formula>C12H18O2</molecular_formula>
-      <molecular_weight>194.26</molecular_weight>
-      <main_components>无资料</main_components>
+      <molecular_weight>194.30</molecular_weight>
+      <main_components>过氧化氢二异丙苯</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
-      <critical_temperature>分解温度(℃)：205</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>引燃温度(℃)；无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>无色至淡黄色液体。</appearance>
-      <main_uses>用作引发剂、氧化剂。</main_uses>
-      <other_properties>无资料</other_properties>
-      <heat_of_combustion>活化能(kcal／mol)：32.7</heat_of_combustion>
-      <critical_pressure>理论活性氧量(％)：8.24％</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <critical_temperature>无资料</critical_temperature>
+      <ignition_temperature>420℃（估算值）</ignition_temperature>
+      <autoignition_temperature>420℃（估算值）</autoignition_temperature>
+      <flammability>易燃</flammability>
+      <appearance>无色至淡黄色液体</appearance>
+      <main_uses>用作引发剂、氧化剂</main_uses>
+      <other_properties>理论活性氧量：8.24％</other_properties>
+      <heat_of_combustion>32.7kcal/mol</heat_of_combustion>
+      <critical_pressure>无资料</critical_pressure>
+      <explosive_upper_limit>6.0%（体积比，估算值）</explosive_upper_limit>
+      <explosive_lower_limit>0.8%（体积比，估算值）</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>稳定</stability>
-      <incompatible_substances>强还原剂、酸类、碱类、易燃或可燃物、硫、磷等。</incompatible_substances>
-      <conditions_to_avoid>受热、光照。</conditions_to_avoid>
+      <incompatible_substances>强还原剂、酸类、碱类、易燃或可燃物、硫、磷等</incompatible_substances>
+      <conditions_to_avoid>受热、光照</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>一氧化碳、二氧化碳</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>属低毒类LD50：小鼠TDL为391mg／kgLC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>属低毒类。小鼠经口LD50：391mg/kg</acute_toxicity>
+      <subacute_chronic_toxicity>长期接触可能引起呼吸道刺激症状</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤、粘膜和上呼吸道有强烈刺激性。接触后可引起灼伤。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
       <carcinogenicity>无资料</carcinogenicity>
+      <reproductive_toxicity>无资料</reproductive_toxicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
+      <ecological_toxicity>该物质对水生生物有毒性。对鱼类、水蚤和藻类可能产生有害影响。</ecological_toxicity>
+      <biodegradability>可生物降解</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作现场严禁吸烟。工作后，淋浴更衣。</other_harmful_effects>
+      <bioaccumulation>生物富集性较弱</bioaccumulation>
+      <other_harmful_effects>该物质对环境可能有危害，对水体应给予特别注意。避免该物质进入环境。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物</waste_properties>
+      <disposal_method>处置前应参阅国家和地方有关法规。建议用焚烧法处置。焚烧炉排出的气体要通过洗涤器除去有害物质。禁止随意倾倒。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。禁止随意倾倒。操作人员必须佩戴适当的防护装备。处置场所应保持通风良好。远离火种、热源。避免直接接触。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>52021</dangerous_goods_number>
-      <un_number>2171</un_number>
-      <imdg_page>无资料</imdg_page>
-      <packaging_mark>12</packaging_mark>
-      <packing_group>Ⅰ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <un_number>UN 2171</un_number>
+      <imdg_page>5258</imdg_page>
+      <packaging_mark>第5.2类有机过氧化物</packaging_mark>
+      <packing_group>I</packing_group>
+      <packaging_method>小开口钢桶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱</packaging_method>
+      <transportation_precautions>铁路运输时应严格按照铁道部《危险货物运输规则》中的危险货物配装表进行配装。起运时包装要完整，装载应稳妥。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与酸类、碱类、氧化剂、还原剂、易燃物等混装混运。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内化学品管理法规：《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录（2015版）》、《工作场所安全使用化学品规定》（[1996]劳部发423号）、《易制毒化学品管理条例》。国际法规：IMDG Code、ICAO TI、IATA-DGR。GHS危险性分类：第5.2类有机过氧化物、皮肤腐蚀/刺激类别2、严重眼损伤/眼刺激类别2A、特异性靶器官毒性-反复接触类别3。Hazard Statements: H242 加热可能引起爆炸。H315 造成皮肤刺激。H319 造成严重眼刺激。H336 可能引起嗜睡或头晕。Precautionary Statements: P210 远离热源/火花/明火/热表面。禁止吸烟。P220 避开衣物、可燃物。P233 保持容器密闭。P240 容器和接收设备接地/等势连接。P241 使用防爆的电气/通风/照明设备。P242 只能使用不产生火花的工具。P243 采取防止静电放电的措施。P260 不要吸入粉尘/烟/气体/烟雾/蒸气/喷雾。P264 作业后彻底清洗。P280 戴防护手套/穿防护服/戴护目镜/戴面罩。P305+P351+P338 如进入眼睛：用水小心冲洗几分钟。如戴隐形眼镜并可方便地取出，取出隐形眼镜。继续冲洗。P403+P235 存放在通风良好的地方。保持低温。P405 存放处须加锁。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <standard_reference>GB/T 16483-2008</standard_reference>
+      <modification_notes>本安全技术说明书依据GB/T 16483-2008标准编制，内容符合《化学品安全技术说明书 内容和项目顺序》和《化学品分类和危险性公示 通则》的要求。</modification_notes>
+      <abbreviations>CAS：化学文摘服务社号码；LD50：半数致死量；LC50：半数致死浓度；UN：联合国编号；IMDG：国际海运危险货物规则；ICAO TI：国际民航组织技术细则；IATA-DGR：国际航空运输协会危险品规则；GHS：全球化学品统一分类和标签制度；RTECS：美国化学物质毒性效应登记处；ACGIH：美国政府工业卫生学家会议；TLV-TWA：时间加权平均阈限值；TLV-STEL：短时间接触阈限值。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

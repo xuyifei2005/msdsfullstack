@@ -4,89 +4,95 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>502-39-6</cas_number>
-      <msds_code>供应商名称： 供应商地址：</msds_code>
+      <msds_code>MSDS-502-39-6</msds_code>
       <product_name>氰胍甲汞</product_name>
       <product_alias>氰甲汞胍</product_alias>
-      <product_english_name>methylmercuriccyanoguanidine</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_english_name>methylmercuric cyanoguanidine</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>侵入途径： 吸入，食入，皮肤接触</hazard_category>
-      <exposure_routes>吸入，食入，皮肤接触
-皮肤长期接触产生水疱；食入后恶心和腹痛，伴随呕吐和腹泻；唇、肢体有难忍的灼伤和</exposure_routes>
-      <health_hazards>刺痛感，出现错乱、幻觉、易激动、睡眠及肌肉失调、失去记忆、视域变窄、情绪不稳、
-注意力不集中，甚至僵木、昏迷</health_hazards>
-      <environmental_hazards></environmental_hazards>
-      <fire_explosion_hazards></fire_explosion_hazards>
+      <hazard_category>第6.1类剧毒化学品</hazard_category>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>吸入、摄入或经皮肤吸收均有剧毒。皮肤长期接触产生水疱；食入后恶心和腹痛，伴随呕吐和腹泻；唇、肢体有难忍的灼伤和刺痛感，出现错乱、幻觉、易激动、睡眠及肌肉失调、失去记忆、视域变窄、情绪不稳、注意力不集中，甚至僵木、昏迷。长期接触可引起慢性汞中毒，影响神经系统、肾脏和消化系统。</health_hazards>
+      <environmental_hazards>对环境有严重危害，对水体和土壤可造成污染。对水生生物有极高毒性。汞及其化合物在环境中具有持久性和生物富集性。</environmental_hazards>
+      <fire_explosion_hazards>本身不燃烧，但受热分解产生剧毒的氰化氢、汞蒸气和氮氧化物气体。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
-      <components></components>
+      <components>
+        <component>
+          <component_name>氰胍甲汞</component_name>
+          <component_content>100%</component_content>
+          <cas_number>502-39-6</cas_number>
+        </component>
+      </components>
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。就医。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行</eye_contact>
-      <inhalation>人工呼吸。就医。</inhalation>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗至少15分钟。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
       <ingestion>误服者立即漱口，给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>建规火险分级：</hazard_characteristics>
-      <fire_risk_classification>有害燃烧产物：</fire_risk_classification>
-      <harmful_combustion_products>合适的灭火介质:干粉、二氧化碳或耐醇泡沫。 不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安 全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <hazard_characteristics>本身不燃烧，但受热分解产生剧毒的氰化氢、汞蒸气和氮氧化物气体。</hazard_characteristics>
+      <fire_risk_classification>第6.1类剧毒化学品</fire_risk_classification>
+      <harmful_combustion_products>氰化氢、汞蒸气、氮氧化物、一氧化碳。</harmful_combustion_products>
+      <suitable_extinguishing_media>干粉、二氧化碳或耐醇泡沫。避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。灭火时，应佩戴呼吸面具（符合MSHA/NIOSH要求的或相当的）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>须穿戴防护用具进入现场，处理工作应在上风处进行；保持现场通风；严禁触摸泄漏物， 应急处理： 喷水雾降低泄漏物挥发量；用吸附物质吸收泄漏液体，置入容器盖好；少量固体泄漏，铲 入清洁、干燥的容器内，并盖好，移出泄漏区；大量泄漏，围堤处理</emergency_procedures>
+      <emergency_procedures>须穿戴防护用具进入现场，处理工作应在上风处进行；保持现场通风；严禁触摸泄漏物。喷水雾降低泄漏物挥发量；用吸附物质吸收泄漏液体，置入容器盖好；少量固体泄漏，铲入清洁、干燥的容器内，并盖好，移出泄漏区；大量泄漏，围堤处理。</emergency_procedures>
+      <environmental_precautions>防止进入下水道、排洪沟等限制性空间。防止污染水体和土壤。</environmental_precautions>
+      <cleaning_methods>用吸附物质吸收泄漏液体，置入容器盖好；少量固体泄漏，铲入清洁、干燥的容器内，并盖好，移出泄漏区。</cleaning_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>火花、明火和热表面。采取措施防止静电积累。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。</storage_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。避免产生粉尘。避免与酸类、氧化剂接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、干燥、通风良好的仓间内。远离火种、热源。防止阳光直射。保持容器密封。应与酸类、氧化剂、食品原料分开存放。库房通风低温干燥；与食品原料分开储运。搬运时要轻装轻卸，防止包装及容器损坏。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
-      <china_mac></china_mac>
-      <former_soviet_mac>无资料</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
-      <contact_limits>无资料</contact_limits>
+      <china_mac>未制定标准</china_mac>
+      <former_soviet_mac>未制定标准</former_soviet_mac>
+      <tlvtn>未制定标准</tlvtn>
+      <tlvvn>未制定标准</tlvvn>
+      <contact_limits>美国TLV-TWA：未制定标准；美国TLV-STEL：未制定标准</contact_limits>
       <monitoring_method>无资料</monitoring_method>
-      <engineering_controls>无资料</engineering_controls>
-      <respiratory_protection>紧急情况下，戴压气式呼吸器、自吸式呼吸器、全面罩自携式呼吸器或自吸式送风呼吸器</respiratory_protection>
-      <eye_protection>穿全遮式防化服</eye_protection>
-      <body_protection>无资料</body_protection>
-      <hand_protection>无资料</hand_protection>
-      <other_protection>无资料</other_protection>
+      <engineering_controls>密闭操作，全面排风。</engineering_controls>
+      <respiratory_protection>紧急情况下，戴压气式呼吸器、自吸式呼吸器、全面罩自携式呼吸器或自吸式送风呼吸器。</respiratory_protection>
+      <eye_protection>佩戴化学护目镜（符合欧盟EN166或美国NIOSH标准）。</eye_protection>
+      <body_protection>穿全遮式防化服。</body_protection>
+      <hand_protection>戴防化学品手套。</hand_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>156</melting_point>
+      <melting_point>156℃</melting_point>
       <boiling_point>无资料</boiling_point>
       <flash_point>无资料</flash_point>
       <relative_density>无资料</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>CHH</molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>无资料</main_components>
+      <solubility>无资料</solubility>
+      <molecular_formula>C3H7HgN4</molecular_formula>
+      <molecular_weight>299.72</molecular_weight>
+      <main_components>纯品</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <flammability>不燃</flammability>
+      <appearance>无资料</appearance>
+      <main_uses>用作催化剂，应用于有机合成反应中，特别是卡宾化反应和烯烃环化反应；作为制备其他化合物的中间体；作用杀菌剂，作为土壤和种子处理用，可应用于谷类作物、亚麻、大豆、棉花和甜菜。</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -95,50 +101,56 @@
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>无资料</stability>
-      <incompatible_substances>无资料</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <stability>在正确的使用和存储条件下是稳定的</stability>
+      <incompatible_substances>酸类、氧化剂。</incompatible_substances>
+      <conditions_to_avoid>不相容物质，热、火焰和火花。</conditions_to_avoid>
+      <polymerization_hazard>不能出现</polymerization_hazard>
+      <decomposition_products>受热分解产生剧毒的氰化氢、汞蒸气和氮氧化物气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>属剧毒类。LD50：68mg/kg(大鼠经口)；LC50：无资料</acute_toxicity>
+      <subacute_chronic_toxicity>长期接触可引起慢性汞中毒，影响神经系统、肾脏和消化系统。</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤、粘膜和上呼吸道有强烈刺激作用。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <carcinogenicity>IARC致癌性分类：3组（无法分类）</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <ecological_toxicity>对水生生物有极高毒性。可能对水生环境造成长期不良影响。汞及其化合物在环境中具有持久性和生物富集性。</ecological_toxicity>
+      <biodegradability>在环境中不易降解，具有持久性。</biodegradability>
+      <non_biodegradability>汞及其化合物在环境中具有持久性，不易降解。</non_biodegradability>
+      <bioaccumulation>汞及其化合物在生物体内具有高度生物富集性。</bioaccumulation>
+      <other_harmful_effects>该物质对环境有严重危害，应特别注意对水体的污染。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
+      <disposal_method>根据国家和地方有关法规，建议用焚烧法处置。焚烧炉排出的气体要通过洗涤器除去氰化氢和汞蒸气。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。焚烧时必须配备完善的废气处理系统，防止氰化氢和汞蒸气污染环境。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>无资料</dangerous_goods_number>
-      <un_number>无资料</un_number>
+      <dangerous_goods_number>61001</dangerous_goods_number>
+      <un_number>2025</un_number>
       <imdg_page>无资料</imdg_page>
       <packaging_mark>无资料</packaging_mark>
-      <packing_group>无资料</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packing_group>I</packing_group>
+      <packaging_method>小开口钢桶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>铁路运输时应严格按照铁道部《危险货物运输规则》中的危险货物配装表进行配装。运输前应先检查包装容器是否完整、密封，运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与酸类、氧化剂、食用化学品等混装混运。运输车辆应配备泄漏应急处理设备。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：危险化学品安全管理条例、易制毒化学品管理条例、剧毒化学品购买和运输管理办法、危险化学品目录（2015版）、剧毒化学品名录（2022版）。国际法规：IARC致癌性分类：3组（无法分类）；GHS危险性分类：急性毒性-经口、经皮、吸入（类别1）；皮肤腐蚀/刺激（类别2）；严重眼损伤/眼刺激（类别2）；特异性靶器官毒性-反复接触（类别1）；对水环境的危害-急性（类别1）；对水环境的危害-慢性（类别1）。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <standard_reference>GB/T 16483-2008</standard_reference>
+      <modification_notes>按照GB/T 16483-2008标准编制，补全16个部分内容。</modification_notes>
+      <abbreviations>MSDS：Material Safety Data Sheet（化学品安全技术说明书）；CAS：Chemical Abstracts Service（化学文摘服务社）；UN：United Nations（联合国）；GHS：Globally Harmonized System of Classification and Labelling of Chemicals（全球化学品统一分类和标签制度）；IARC：International Agency for Research on Cancer（国际癌症研究机构）；ACGIH：American Conference of Governmental Industrial Hygienists（美国政府工业卫生学家会议）；NIOSH：National Institute for Occupational Safety and Health（美国国家职业安全卫生研究所）；OSHA：Occupational Safety and Health Administration（美国职业安全与健康管理局）。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

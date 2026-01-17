@@ -4,7 +4,7 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>2516-33-8</cas_number>
-      <msds_code>MSDS#2029</msds_code>
+      <msds_code>MSDS-2516-33-8</msds_code>
       <product_name>环丙基甲醇</product_name>
       <product_alias>羟甲基环丙烷；Cyclopropanemethanol</product_alias>
       <product_english_name>Cyclopropyl carbinol</product_english_name>
@@ -121,12 +121,13 @@
       <carcinogenicity>无资料</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
-    <ecological_information>
-      <ecotoxicity>无资料</ecotoxicity>
-      <persistence_degradability>无资料</persistence_degradability>
-      <bioaccumulative_potential>无资料</bioaccumulative_potential>
-      <mobility_soil>无资料</mobility_soil>
-    </ecological_information>
+    <ecological>
+      <ecological_toxicity>无资料</ecological_toxicity>
+      <biodegradability>无资料</biodegradability>
+      <non_biodegradability>无资料</non_biodegradability>
+      <bioaccumulation>无资料</bioaccumulation>
+      <other_harmful_effects>无资料</other_harmful_effects>
+    </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>有害废物</waste_properties>
@@ -144,15 +145,16 @@
       <transportation_precautions>无资料</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
-    <regulatory_information>
-      <domestic_regulations>《危险化学品安全管理条例》、《工作场所安全使用化学品规定》、《常用危险化学品的分类及标志》(GB 13690)等法规，针对危险化学品的安全使用、生产、储存、运输、装卸等方面均作了相应规定。</domestic_regulations>
-      <international_regulations>无资料</international_regulations>
-    </regulatory_information>
+    <regulatory>
+      <regulatory_info>国内化学品管理法规：《危险化学品安全管理条例》、《工作场所安全使用化学品规定》、《常用危险化学品的分类及标志》(GB 13690)等法规，针对危险化学品的安全使用、生产、储存、运输、装卸等方面均作了相应规定。国际法规：联合国关于危险货物运输的建议书（TDG）、国际海事组织国际海运危险货物规则（IMDG Code）。</regulatory_info>
+    </regulatory>
     <!-- 第十六部分：其他信息 -->
-    <other_information>
-      <reference_standards>GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》</reference_standards>
+    <other_info>
+      <compilation_standard>GB/T 16483-2008《化学品安全技术说明书内容和项目顺序》</compilation_standard>
       <revision_notes>无资料</revision_notes>
-      <abbreviations_explanations>CAS：化学文摘登记号</abbreviations_explanations>
-    </other_information>
+      <abbreviations>CAS：化学文摘登记号；GHS：全球化学品统一分类和标签制度。</abbreviations>
+      <references>无资料</references>
+      <other_notes>无资料</other_notes>
+    </other_info>
   </msds>
 </msds_list>

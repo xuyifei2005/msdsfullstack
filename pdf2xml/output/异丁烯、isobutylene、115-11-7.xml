@@ -51,7 +51,7 @@
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>迅速撤离泄漏污染区人员至上风处，并进行隔离，严格限制出入。切断火源。建议应急处 理人员戴自给正压式呼吸器，穿防静电工作服。尽可能切断泄漏源。用工业覆盖层或吸附/ 应急处理： 吸收剂盖住泄漏点附近的下水道等地方，防止气体进入。合理通风，加速扩散。喷雾状水</emergency_procedures>
+      <emergency_procedures>迅速撤离泄漏污染区人员至上风处，并进行隔离，严格限制出入。切断火源。建议应急处理人员戴自给正压式呼吸器，穿防静电工作服。尽可能切断泄漏源。用工业覆盖层或吸附/吸收剂盖住泄漏点附近的下水道等地方，防止气体进入。合理通风，加速扩散。喷雾状水。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
@@ -97,9 +97,9 @@
     <stability_reactivity>
       <stability>稳定</stability>
       <incompatible_substances>强氧化剂。</incompatible_substances>
-      <conditions_to_avoid>受热。</conditions_to_avoid>
+      <conditions_to_avoid>受热、明火、强氧化剂</conditions_to_avoid>
       <polymerization_hazard>能发生</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>一氧化碳、二氧化碳。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
@@ -123,22 +123,22 @@
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>用焚烧法处置。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废弃物处置应符合相关法律法规要求。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>21020</dangerous_goods_number>
-      <un_number>1055</un_number>
+      <un_number>UN 1055</un_number>
       <imdg_page>2147</imdg_page>
-      <packaging_mark>4</packaging_mark>
+      <packaging_mark>第2.1类易燃气体</packaging_mark>
       <packing_group>O52</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_method>钢质气瓶；安瓿瓶外普通木箱。</packaging_method>
+      <transportation_precautions>本品铁路运输时限使用耐压液化气企业自备罐车装运，装运前需报有关部门批准。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与氧化剂等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源、高温区。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>危险化学品安全管理条例（国务院令第591号），工作场所安全使用化学品规定（〔1996〕劳部发423号）等法规，针对化学危险品的安全使用、生产、储存、运输、装卸等方面均作了相应规定。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

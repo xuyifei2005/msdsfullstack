@@ -93,6 +93,11 @@ export default [
     path: '/system',
     routes: [
       {
+        name: 'menu',
+        path: '/system/menu',
+        component: './System/Menu',
+      },
+      {
         name: '字典数据',
         path: '/system/dict-data/index/:id',
         component: './System/DictData',
@@ -132,7 +137,12 @@ export default [
     path: '/monitor',
     routes: [
       {
-        name: '任务日志',
+        name: 'menu.monitor.online',
+        path: '/monitor/online',
+        component: './Monitor/Online',
+      },
+      {
+        name: 'menu.monitor.job-log',
         path: '/monitor/job-log/index/:id',
         component: './Monitor/JobLog',
       },

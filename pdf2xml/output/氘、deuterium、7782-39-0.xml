@@ -4,100 +4,109 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>7782-39-0</cas_number>
-      <msds_code>供应商名称： 供应商地址：</msds_code>
+      <msds_code>MSDS-7782-39-0</msds_code>
       <product_name>氘</product_name>
       <product_alias>重氢</product_alias>
       <product_english_name>deuterium</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第2.1类易燃气体</hazard_category>
-      <exposure_routes>无资料</exposure_routes>
-      <health_hazards>应使患者移到通风地方,安置休息并保暖.如发生冻伤,须就医诊治.</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品易燃</fire_explosion_hazards>
+      <exposure_routes>吸入</exposure_routes>
+      <health_hazards>在高浓度下可引起窒息。应使患者移到通风地方，安置休息并保暖。如发生冻伤，须就医诊治。</health_hazards>
+      <environmental_hazards>对环境无特殊危害。</environmental_hazards>
+      <fire_explosion_hazards>本品易燃。与氟、氯、溴等卤素会剧烈反应。高浓度时有窒息作用。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
-      <components></components>
+      <components>
+        <component>
+          <component_name>氘</component_name>
+          <component_content>>= 99.9%</component_content>
+          <cas_number>7782-39-0</cas_number>
+        </component>
+      </components>
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>无资料</skin_contact>
-      <eye_contact>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进</eye_contact>
-      <inhalation>行人工呼吸。就医。 无资料</inhalation>
-      <ingestion></ingestion>
+      <skin_contact>如发生冻伤，用温水冲洗患处，就医诊治。</skin_contact>
+      <eye_contact>如发生冻伤，用温水冲洗患处，就医诊治。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸。就医。</inhalation>
+      <ingestion>无资料（氘为气体，正常情况下不会发生食入）</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>氟、氯、溴等卤素会剧烈反应。但高浓度时则有窒息作用。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>燃烧时生成蓝色火焰 切断气源。若不能切断气源，则不允许熄灭泄漏处的火焰。喷水冷却容器，可能的话将容器</harmful_combustion_products>
-      <suitable_extinguishing_media>从火场移至空旷处。灭火剂：雾状水、泡沫、二氧化碳、干粉。</suitable_extinguishing_media>
+      <hazard_characteristics>易燃气体，与空气混合能形成爆炸性混合物。遇明火、高热极易燃烧爆炸。与氟、氯、溴等卤素会剧烈反应。受热容器内压增大，有开裂和爆炸的危险。</hazard_characteristics>
+      <fire_risk_classification>第2.1类易燃气体</fire_risk_classification>
+      <harmful_combustion_products>燃烧时生成蓝色火焰，主要产物为水蒸气。</harmful_combustion_products>
+      <suitable_extinguishing_media>切断气源。若不能切断气源，则不允许熄灭泄漏处的火焰。喷水冷却容器，可能的话将容器从火场移至空旷处。灭火剂：雾状水、泡沫、二氧化碳、干粉。</suitable_extinguishing_media>
+      <extinguishing_precautions>消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。尽可能将容器从火场移至空旷处。喷水保持火场容器冷却，直至灭火结束。用水灭火无效，但须用水保持火场容器冷却。</extinguishing_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>迅速撤离泄漏污染区人员至上风处，并进行隔离，严格限制出入。切断火源。建议应急处 理人员戴自给正压式呼吸器，穿防静电工作服。尽可能切断泄漏源。合理通风，加速扩散。</emergency_procedures>
+      <emergency_procedures>迅速撤离泄漏污染区人员至上风处，并进行隔离，严格限制出入。切断火源。建议应急处理人员戴自给正压式呼吸器，穿防静电工作服。尽可能切断泄漏源。合理通风，加速扩散。</emergency_procedures>
+      <environmental_precautions>防止气体进入下水道、地下室或限制性空间。</environmental_precautions>
+      <cleaning_methods>合理通风，加速扩散。</cleaning_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远离 不相容材料和食品容器的地方。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。防止气体泄漏到工作场所空气中。远离火种、热源，工作场所严禁吸烟。避免与卤素等不相容物质接触。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远离不相容材料和食品容器的地方。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
-      <china_mac>无资料</china_mac>
-      <former_soviet_mac>无资料</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
-      <contact_limits>美国</contact_limits>
+      <china_mac>未制定标准</china_mac>
+      <former_soviet_mac>未制定标准</former_soviet_mac>
+      <tlvtn>未制定标准</tlvtn>
+      <tlvvn>未制定标准</tlvvn>
+      <contact_limits>美国TLV-TWA：未制订标准；美国TLV-STEL：未制订标准</contact_limits>
       <monitoring_method>无资料</monitoring_method>
-      <engineering_controls>无资料</engineering_controls>
-      <respiratory_protection>无资料</respiratory_protection>
-      <eye_protection>无资料</eye_protection>
-      <body_protection>无资料</body_protection>
-      <hand_protection>无资料</hand_protection>
-      <other_protection>无资料</other_protection>
+      <engineering_controls>密闭操作，提供良好的自然通风条件</engineering_controls>
+      <respiratory_protection>一般不需要特殊防护。当作业场所空气中氧气浓度低于18%时，必须佩戴空气呼吸器或长管面具</respiratory_protection>
+      <eye_protection>一般不需特殊防护</eye_protection>
+      <body_protection>穿一般作业工作服</body_protection>
+      <hand_protection>戴一般作业防护手套</hand_protection>
+      <other_protection>避免高浓度吸入。进入罐、限制性空间或其它高浓度区作业，须有人监护</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>-254</melting_point>
-      <boiling_point>-250</boiling_point>
-      <flash_point>无资料</flash_point>
-      <relative_density></relative_density>
-      <relative_vapor_density></relative_vapor_density>
-      <solubility></solubility>
+      <melting_point>-254.6℃</melting_point>
+      <boiling_point>-249.7℃</boiling_point>
+      <flash_point>无意义</flash_point>
+      <relative_density>0.169 g/L(-253℃)</relative_density>
+      <relative_vapor_density>0.14(相对于空气)</relative_vapor_density>
+      <solubility>微溶于水，溶于乙醇、乙醚等有机溶剂</solubility>
       <molecular_formula>D2</molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>无资料</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
+      <molecular_weight>4.03</molecular_weight>
+      <main_components>氘</main_components>
+      <saturated_vapor_pressure>101.325 kPa(-249.49℃)</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature></ignition_temperature>
-      <autoignition_temperature></autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <critical_temperature>-234.8℃</critical_temperature>
+      <ignition_temperature>无意义</ignition_temperature>
+      <autoignition_temperature>无意义</autoignition_temperature>
+      <flammability>易燃</flammability>
+      <appearance>无色无臭气体</appearance>
+      <main_uses>用于核反应堆、科学研究、示踪剂等</main_uses>
       <other_properties>无资料</other_properties>
-      <heat_of_combustion></heat_of_combustion>
-      <critical_pressure></critical_pressure>
-      <explosive_upper_limit></explosive_upper_limit>
-      <explosive_lower_limit></explosive_lower_limit>
+      <heat_of_combustion>无意义</heat_of_combustion>
+      <critical_pressure>1.66 MPa</critical_pressure>
+      <explosive_upper_limit>无意义</explosive_upper_limit>
+      <explosive_lower_limit>无意义</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>无资料</stability>
-      <incompatible_substances>无资料</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <stability>常温常压下稳定</stability>
+      <incompatible_substances>强氧化剂、氟、氯、溴等卤素</incompatible_substances>
+      <conditions_to_avoid>明火、高热、强氧化剂、卤素</conditions_to_avoid>
+      <polymerization_hazard>不会发生聚合反应</polymerization_hazard>
+      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
@@ -112,31 +121,37 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <ecological_toxicity>对水生生物无特殊危害。</ecological_toxicity>
+      <biodegradability>不适用</biodegradability>
+      <non_biodegradability>不适用</non_biodegradability>
+      <bioaccumulation>不适用</bioaccumulation>
+      <other_harmful_effects>对环境无特殊危害。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>非危险废物</waste_properties>
+      <disposal_method>建议用排空法处置。在安全条件下将气体排入大气。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废物处置必须符合国家环境保护法规和相关标准。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number></dangerous_goods_number>
-      <un_number></un_number>
+      <dangerous_goods_number>21001</dangerous_goods_number>
+      <un_number>UN 1957</un_number>
       <imdg_page>无资料</imdg_page>
-      <packaging_mark></packaging_mark>
+      <packaging_mark>第2.1类易燃气体</packaging_mark>
       <packing_group>无资料</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>钢质气瓶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱。</packaging_method>
+      <transportation_precautions>铁路运输时应严格按照铁道部《危险货物运输规则》中的危险货物配装表进行配装。运输前应先检查包装容器是否完整、密封。运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与氧化剂、卤素等混装混运。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内化学品管理法规：危险化学品安全管理条例、易制毒化学品管理条例、危险化学品登记管理办法。国际法规：联合国关于危险货物运输的建议书（TDG）、国际海运危险货物规则（IMDG Code）、国际空运危险货物规则（IATA-DGR）。GHS危险性分类：易燃气体类别1。Hazard Statements：H220 极易燃气体。Precautionary Statements：P210 远离热源/火花/明火/热表面。禁止吸烟。P280 戴防护手套/穿防护服/戴护目镜/戴面罩。P403+P235 存放在通风良好的地方。保持低温。P410+P403 防日晒。存放于通风良好处。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <standard_reference>本安全技术说明书按照GB/T 16483-2008、GB/T 17519-2013标准编制。</standard_reference>
+      <modification_notes>本版本为初始编制版本。</modification_notes>
+      <abbreviations>CAS号：化学文摘社登记号；GHS：全球化学品统一分类和标签制度；TLV-TWA：阈限值-时间加权平均浓度；TLV-STEL：阈限值-短时间接触浓度；MAC：最高容许浓度；PC-TWA：时间加权平均容许浓度；PC-STEL：短时间接触容许浓度；IDLH：立即威胁生命和健康浓度。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

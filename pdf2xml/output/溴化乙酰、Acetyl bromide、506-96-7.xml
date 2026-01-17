@@ -4,31 +4,30 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>506-96-7</cas_number>
-      <msds_code>MSDS#1031</msds_code>
+      <msds_code>MSDS-506-96-7</msds_code>
       <product_name>溴化乙酰</product_name>
       <product_alias>乙酰溴</product_alias>
       <product_english_name>Acetyl bromide</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>第8.1类 酸性腐蚀品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收
-对眼睛、皮肤和粘膜有明显的刺激作用。吸入可引起呼吸道的明显危害。中毒表现有烧灼感、</exposure_routes>
-      <health_hazards>咳嗽、喘息、喉炎、气短、头痛、恶心和呕吐。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品具有腐蚀性</fire_explosion_hazards>
+      <hazard_category>第8.1类酸性腐蚀品</hazard_category>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>对眼睛、皮肤和粘膜有明显的刺激作用。吸入可引起呼吸道的明显危害。中毒表现有烧灼感、咳嗽、喘息、喉炎、气短、头痛、恶心和呕吐。对眼睛、皮肤、粘膜和上呼吸道有强烈的刺激作用和腐蚀作用。</health_hazards>
+      <environmental_hazards>对水生生物有毒性。对环境有危害，特别是对水体和土壤。</environmental_hazards>
+      <fire_explosion_hazards>本品具有腐蚀性。遇明火、高热易燃。受热或遇水分解放热，放出有毒的腐蚀性烟气。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
       <components>
         <component>
-          <component_name>乙酰溴；溴化乙酰</component_name>
+          <component_name>乙酰溴</component_name>
           <component_content>100%</component_content>
           <cas_number>506-96-7</cas_number>
         </component>
@@ -44,52 +43,54 @@
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>遇明火、高热易燃。受热或遇水分解放热，放出有毒的腐蚀性烟气。有腐蚀性。</hazard_characteristics>
-      <fire_risk_classification>甲</fire_risk_classification>
+      <fire_risk_classification>甲类</fire_risk_classification>
       <harmful_combustion_products>一氧化碳、二氧化碳、溴化氢。</harmful_combustion_products>
       <suitable_extinguishing_media>干粉、砂土、二氧化碳。禁止用水。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，切断火源。建议应急处理人员戴自 给式呼吸器，穿化学防护服。不要直接接触泄漏物，在确保安全情况下堵漏。用沙土、干燥石 应急处理： 灰或苏打灰混合，然后收集运至废物处理场所处置。也可以用不燃性分散剂制成的乳液刷洗， 经稀释的洗水放入废水系统。如大量泄漏，利用围堤收容，然后收集、转移、回收或无害处理 后废弃。</emergency_procedures>
+      <emergency_procedures>疏散泄漏污染区人员至安全区，禁止无关人员进入污染区，切断火源。建议应急处理人员戴自给式呼吸器，穿化学防护服。不要直接接触泄漏物，在确保安全情况下堵漏。用沙土、干燥石灰或苏打灰混合，然后收集运至废物处理场所处置。也可以用不燃性分散剂制成的乳液刷洗，经稀释的洗水放入废水系统。如大量泄漏，利用围堤收容，然后收集、转移、回收或无害处理后废弃。</emergency_procedures>
+      <environmental_precautions>防止进入下水道、排洪沟等限制性空间。防止污染水体和土壤。</environmental_precautions>
+      <cleaning_methods>用沙土、干燥石灰或苏打灰混合，然后收集运至废物处理场所处置。也可以用不燃性分散剂制成的乳液刷洗，经稀释的洗水放入废水系统。如大量泄漏，利用围堤收容。</cleaning_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、干燥、通风处。远离火种、热源。保持容器密封。应与氧化剂分开存放。不可混 储混运。储存间内的照明、通风等设施应采用防爆型，开关设在仓外。配备相应品种和数量的 消防器材。禁止使用易产生火花的机械设备和工具。分装和搬运作业要注意个人防护。搬运时 要轻装轻卸，防止包装及容器损坏。雨天不宜运输。运输按规定路线行驶，中途不得停驶。</storage_precautions>
+      <handling_precautions>远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止蒸气泄漏到工作场所空气中。避免与氧化剂、醇类、碱类接触。充装要控制流速，防止静电积聚。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、干燥、通风处。远离火种、热源。保持容器密封。应与氧化剂分开存放。不可混储混运。储存间内的照明、通风等设施应采用防爆型，开关设在仓外。配备相应品种和数量的消防器材。禁止使用易产生火花的机械设备和工具。分装和搬运作业要注意个人防护。搬运时要轻装轻卸，防止包装及容器损坏。雨天不宜运输。运输按规定路线行驶，中途不得停驶。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
       <china_mac>未制定标准</china_mac>
       <former_soviet_mac>未制定标准</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
-      <contact_limits>美国TWA：未制定标准 美国STEL：未制定标准</contact_limits>
+      <tlvtn>未制定标准</tlvtn>
+      <tlvvn>未制定标准</tlvvn>
+      <contact_limits>美国TLV-TWA：未制订标准；美国TLV-STEL：未制订标准</contact_limits>
       <monitoring_method>无资料</monitoring_method>
       <engineering_controls>密闭操作，局部排风。</engineering_controls>
-      <respiratory_protection>可能接其蒸气或烟雾时，应该佩带防毒面具。紧急事态抢救或逃生时，建议佩带自给式呼吸器。</respiratory_protection>
+      <respiratory_protection>可能接触其蒸气或烟雾时，应该佩带防毒面具。紧急事态抢救或逃生时，建议佩带自给式呼吸器。</respiratory_protection>
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
-      <body_protection>穿工作服(防腐材料制作)。</body_protection>
+      <body_protection>穿工作服（防腐材料制作）。</body_protection>
       <hand_protection>戴橡皮手套。</hand_protection>
-      <other_protection>无资料</other_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>-96.5</melting_point>
-      <boiling_point>76.7</boiling_point>
-      <flash_point>1</flash_point>
+      <melting_point>-96.5℃</melting_point>
+      <boiling_point>76.7℃</boiling_point>
+      <flash_point>>110℃</flash_point>
       <relative_density>1.52</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C2H3B</molecular_formula>
-      <molecular_weight>122.96</molecular_weight>
-      <main_components>无资料</main_components>
+      <solubility>遇水分解放热，溶于乙醇、乙醚等有机溶剂。</solubility>
+      <molecular_formula>C2H3BrO</molecular_formula>
+      <molecular_weight>122.95</molecular_weight>
+      <main_components>纯品</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>易燃</flammability>
       <appearance>无色发烟液体，露置空气中变黄。</appearance>
       <main_uses>用于有机合成、染料制造。</main_uses>
       <other_properties>无资料</other_properties>
@@ -101,35 +102,35 @@
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>稳定</stability>
-      <incompatible_substances>水、醇类、强氧化剂、强碱。</incompatible_substances>
-      <conditions_to_avoid>接触潮湿空气。</conditions_to_avoid>
+      <incompatible_substances>水、醇类、强氧化剂、强碱</incompatible_substances>
+      <conditions_to_avoid>接触潮湿空气、明火、高热</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>受热分解产生一氧化碳、二氧化碳、溴化氢等气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：LC50：</acute_toxicity>
+      <acute_toxicity>无资料</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>AO5955000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤、粘膜有强烈的刺激作用和腐蚀作用。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <carcinogenicity>IARC致癌性分类：无资料</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
+      <ecological_toxicity>对水生生物有毒性。</ecological_toxicity>
+      <biodegradability>在环境中可缓慢降解，但在自然条件下降解速度较慢。</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作后，淋浴更衣</other_harmful_effects>
+      <other_harmful_effects>该物质对环境有危害，应特别注意对水体的污染。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>根据国家和地方有关法规，建议用焚烧法处置。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -137,13 +138,19 @@
       <un_number>1716</un_number>
       <imdg_page>8101</imdg_page>
       <packaging_mark>20</packaging_mark>
-      <packing_group>Ⅱ</packing_group>
+      <packing_group>II</packing_group>
       <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <transportation_precautions>运输前应先检查包装容器是否完整、密封，运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。运输车辆应配备泄漏应急处理设备。严禁与食品、饲料等混装混运。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：危险化学品安全管理条例、危险化学品目录（2015版）。国际法规：IARC致癌性分类：无资料。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <standard_reference>GB/T 16483-2008</standard_reference>
+      <modification_notes>按照GB/T 16483-2008标准编制，补全16个部分内容。</modification_notes>
+      <abbreviations>MSDS：Material Safety Data Sheet（化学品安全技术说明书）；CAS：Chemical Abstracts Service（化学文摘服务社）；UN：United Nations（联合国）；GHS：Globally Harmonized System of Classification and Labelling of Chemicals（全球化学品统一分类和标签制度）；IARC：International Agency for Research on Cancer（国际癌症研究机构）；ACGIH：American Conference of Governmental Industrial Hygienists（美国政府工业卫生学家会议）；NIOSH：National Institute for Occupational Safety and Health（美国国家职业安全卫生研究所）；OSHA：Occupational Safety and Health Administration（美国职业安全与健康管理局）。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

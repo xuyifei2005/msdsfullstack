@@ -4,25 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>75-28-5</cas_number>
-      <msds_code>MSDS#114</msds_code>
+      <msds_code>MSDS-75-28-5</msds_code>
       <product_name>异丁烷</product_name>
       <product_alias>2-甲基丙烷</product_alias>
       <product_english_name>isobutane</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>第2.1类 易燃气体</hazard_category>
-      <exposure_routes>吸入
-具有弱刺激和麻醉作用。急性中毒：主要表现为头痛、头晕、嗜睡、恶心、酒醉状态，严</exposure_routes>
-      <health_hazards>重者可出现昏迷。慢性影响：出现头痛、头晕、睡眠不佳、易疲倦。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品易燃。</fire_explosion_hazards>
+      <hazard_category>第2.1类易燃气体</hazard_category>
+      <exposure_routes>吸入</exposure_routes>
+      <health_hazards>具有弱刺激和麻醉作用。急性中毒：主要表现为头痛、头晕、嗜睡、恶心、酒醉状态，严重者可出现昏迷。慢性影响：出现头痛、头晕、睡眠不佳、易疲倦。</health_hazards>
+      <environmental_hazards>对水生生物可能有毒性。该物质对环境有危害，应特别注意对水体的污染。</environmental_hazards>
+      <fire_explosion_hazards>本品易燃。其蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -36,35 +35,35 @@
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>无资料</skin_contact>
-      <eye_contact>无资料 迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即</eye_contact>
-      <inhalation>进行人工呼吸。就医。</inhalation>
-      <ingestion>无资料</ingestion>
+      <skin_contact>立即脱去污染的衣物。用大量肥皂水和清水冲洗皮肤。如有不适，就医。</skin_contact>
+      <eye_contact>用大量水彻底冲洗至少15分钟。如有不适，就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。如呼吸困难，给输氧。如呼吸停止，立即进行人工呼吸。就医。</inhalation>
+      <ingestion>禁止催吐，切勿给失去知觉者从嘴里喂食任何东西。立即呼叫医生或中毒控制中心。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>接触猛烈反应。其蒸气比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。</hazard_characteristics>
+      <hazard_characteristics>易燃气体。与空气混合能形成爆炸性混合物，遇热源和明火有燃烧爆炸的危险。气体比空气重，能在较低处扩散到相当远的地方，遇火源会着火回燃。若遇高热，容器内压增大，有开裂和爆炸的危险。</hazard_characteristics>
       <fire_risk_classification>甲</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳。 切断气源。若不能切断气源，则不允许熄灭泄漏处的火焰。喷水冷却容器，可能的话将容</harmful_combustion_products>
-      <suitable_extinguishing_media>器从火场移至空旷处。灭火剂：雾状水、泡沫、二氧化碳、干粉。</suitable_extinguishing_media>
+      <harmful_combustion_products>一氧化碳、二氧化碳</harmful_combustion_products>
+      <suitable_extinguishing_media>切断气源。若不能切断气源，则不允许熄灭泄漏处的火焰。喷水冷却容器，可能的话将容器从火场移至空旷处。灭火剂：雾状水、泡沫、二氧化碳、干粉。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>迅速撤离泄漏污染区人员至上风处，并进行隔离，严格限制出入。切断火源。建议应急处 理人员戴自给正压式呼吸器，穿防静电工作服。尽可能切断泄漏源。用工业覆盖层或吸附/ 吸收剂盖住泄漏点附近的下水道等地方，防止气体进入。合理通风，加速扩散。喷雾状水 稀释、溶解。构筑围堤或挖坑收容产生的大量废水。如有可能，将漏出气用排风机送至空</emergency_procedures>
+      <emergency_procedures>迅速撤离泄漏污染区人员至上风处，并进行隔离，严格限制出入。切断火源。建议应急处理人员戴自给正压式呼吸器，穿防静电工作服。尽可能切断泄漏源。用工业覆盖层或吸附/吸收剂盖住泄漏点附近的下水道等地方，防止气体进入。合理通风，加速扩散。喷雾状水稀释、溶解。构筑围堤或挖坑收容产生的大量废水。如有可能，将漏出气用排风机送至空旷处。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>止气体泄漏到工作场所空气中。避免与氧化剂接触。在传送过程中，钢瓶和容器必须接地</handling_precautions>
-      <storage_precautions>防静电工作服。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防 和跨接，防止产生静电。搬运时轻装轻卸，防止钢瓶及附件破损。配备相应品种和数量的 消防器材及泄漏应急处理设备。 储存于阴凉、通风的库房。远离火种、热源。库温不超过30℃，相对湿度不超过80％。应 与氧化剂分开存放，切忌混储。采用防爆型照明、通风设施。禁止使用易产生火花的机械 设备和工具。储区应备有泄漏应急处理设备。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防毒面具（半面罩），戴化学安全防护眼镜，穿防静电工作服，戴橡胶手套。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止气体泄漏到工作场所空气中。避免与氧化剂接触。在传送过程中，钢瓶和容器必须接地和跨接，防止产生静电。搬运时轻装轻卸，防止钢瓶及附件破损。配备相应品种和数量的消防器材及泄漏应急处理设备。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风的库房。远离火种、热源。库温不超过30℃，相对湿度不超过80％。应与氧化剂分开存放，切忌混储。采用防爆型照明、通风设施。禁止使用易产生火花的机械设备和工具。储区应备有泄漏应急处理设备。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
-      <china_mac></china_mac>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
-      <eye_protection></eye_protection>
-      <body_protection></body_protection>
-      <hand_protection></hand_protection>
+      <china_mac>未制定标准</china_mac>
+      <engineering_controls>密闭操作，提供充分的局部排风。提供安全淋浴和洗眼设备。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时，佩戴自吸过滤式防毒面具（半面罩）。紧急事态抢救或撤离时，建议佩戴空气呼吸器。</respiratory_protection>
+      <eye_protection>戴化学安全防护眼镜。</eye_protection>
+      <body_protection>穿防静电工作服。</body_protection>
+      <hand_protection>戴橡胶手套。</hand_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
@@ -74,19 +73,19 @@
       <flash_point>-82.8</flash_point>
       <relative_density>0.56</relative_density>
       <relative_vapor_density>2.01</relative_vapor_density>
-      <solubility></solubility>
+      <solubility>微溶于水</solubility>
       <molecular_formula>C4H10</molecular_formula>
       <molecular_weight>58.12</molecular_weight>
-      <main_components>纯品</main_components>
+      <main_components>异丁烷</main_components>
       <saturated_vapor_pressure>160.09(0℃)</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>135</critical_temperature>
       <ignition_temperature>460</ignition_temperature>
       <autoignition_temperature>460</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>无色、稍有气味的气体。</appearance>
-      <main_uses>用于染料，化学合成致冷剂，合成橡胶，航空汽油，照明。</main_uses>
-      <other_properties>无资料</other_properties>
+      <flammability>易燃</flammability>
+      <appearance>无色、稍有气味的气体</appearance>
+      <main_uses>用于染料，化学合成致冷剂，合成橡胶，航空汽油，照明</main_uses>
+      <other_properties>折射率：1.3576</other_properties>
       <heat_of_combustion>2856.6</heat_of_combustion>
       <critical_pressure>3.65</critical_pressure>
       <explosive_upper_limit>8.5</explosive_upper_limit>
@@ -95,17 +94,17 @@
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>稳定</stability>
-      <incompatible_substances>强氧化剂。</incompatible_substances>
-      <conditions_to_avoid>无资料</conditions_to_avoid>
+      <incompatible_substances>强氧化剂、卤素、强酸</incompatible_substances>
+      <conditions_to_avoid>明火、高热、强氧化剂</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>一氧化碳、二氧化碳</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>属低毒类</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>属低毒类。LD50：大鼠经口>5000mg/kg；兔经皮>5000mg/kg；LC50：大鼠吸入4小时>8000ppm</acute_toxicity>
+      <subacute_chronic_toxicity>长期接触异丁烷工人有头痛、头晕、嗜睡或失眠、易兴奋、易疲倦、全身乏力、记忆力减退，有时有粘膜刺激症状。</subacute_chronic_toxicity>
       <rtecs>TZ4300000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤、粘膜和上呼吸道有刺激作用</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -113,27 +112,37 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity></ecological_toxicity>
+      <ecological_toxicity>该物质对环境有危害，应特别注意对地表水、土壤、大气和饮用水的污染。对水生生物可能有毒性。</ecological_toxicity>
+      <biodegradability>无资料</biodegradability>
+      <non_biodegradability>无资料</non_biodegradability>
+      <bioaccumulation>无资料</bioaccumulation>
+      <other_harmful_effects>无资料</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>用焚烧法处置。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。废弃物处置应符合相关法律法规要求。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>21012</dangerous_goods_number>
-      <un_number>1969</un_number>
+      <dangerous_goods_number>UN 1969</dangerous_goods_number>
+      <un_number>UN 1969</un_number>
       <imdg_page>2147</imdg_page>
-      <packaging_mark>4</packaging_mark>
+      <packaging_mark>第2.1类易燃气体</packaging_mark>
       <packing_group>O52</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_method>钢质气瓶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与氧化剂、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。车辆运输完毕应进行彻底清扫。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>国内化学品管理法规：危险化学品安全管理条例、易制毒化学品管理条例、工作场所安全使用化学品规定、危险化学品登记管理办法。国际法规：联合国关于危险货物运输的建议书（橙皮书）、国际海运危险货物规则（IMDG Code）、国际空运危险货物规则（IATA-DGR）。GHS危险性分类：易燃气体类别1。Hazard Statements: H220 极易燃气体。Precautionary Statements: P210 远离热源/火花/明火/热表面。禁止吸烟。P280 戴防护手套/穿防护服/戴护目镜/戴面罩。P403+P235 存放在通风良好的地方。保持低温。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>本安全技术说明书按照GB/T 16483-2008标准编制</reference_standards>
+      <modification_notes>无</modification_notes>
+      <abbreviations_and_terms>MAC：最高容许浓度；PC-TWA：时间加权平均容许浓度；PC-STEL：短时间接触容许浓度；TLV：阈限值；LD50：半数致死量；LC50：半数致死浓度；IDLH：立即威胁生命和健康浓度</abbreviations_and_terms>
+    </other_info>
   </msds>
 </msds_list>

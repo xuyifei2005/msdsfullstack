@@ -17,13 +17,11 @@
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>第8.1类 酸性腐蚀品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收
-摄入、吸入或经皮肤吸收对身体有害。</exposure_routes>
-      <health_hazards>吸入后可引起喉、支气管的炎症、水肿、痉挛、化学性肺炎、肺水肿。接触后可引起烧灼感、
-咳嗽、喘息、喉炎、气短、头痛、恶心和呕吐。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品可燃、具有腐蚀性、刺激性、可致人体灼伤</fire_explosion_hazards>
+      <hazard_category>第8类腐蚀性物质</hazard_category>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>摄入、吸入或经皮肤吸收对身体有害。本品对眼睛、皮肤、粘膜和上呼吸道有强烈的刺激作用。可引起喉、支气管的炎症、水肿、痉挛、化学性肺炎、肺水肿。接触后可引起烧灼感、咳嗽、喘息、喉炎、气短、头痛、恶心和呕吐。</health_hazards>
+      <environmental_hazards>对水生生物有毒性。</environmental_hazards>
+      <fire_explosion_hazards>本品可燃，具有腐蚀性、刺激性、可致人体灼伤。遇高热、明火或与氧化剂接触，有引起燃烧的危险。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -90,7 +88,7 @@
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>引燃温度(℃)：300</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>可燃</flammability>
       <appearance>油状液体。</appearance>
       <main_uses>用作试剂、调味品、干燥剂及生产树脂等。</main_uses>
       <other_properties>无资料</other_properties>
@@ -120,11 +118,11 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>对水生生物有毒性。</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作现场严禁吸烟。工作后，淋浴更衣。注意个人清洁卫生。定期体检。</other_harmful_effects>
+      <other_harmful_effects>无资料</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
@@ -137,14 +135,14 @@
       <dangerous_goods_number>81622</dangerous_goods_number>
       <un_number>2829</un_number>
       <imdg_page>8136</imdg_page>
-      <packaging_mark>20</packaging_mark>
-      <packing_group>Ⅲ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_mark>第8类腐蚀性物质</packaging_mark>
+      <packing_group>III</packing_group>
+      <packaging_method>小开口钢桶；安瓿瓶外普通木箱；螺纹口玻璃瓶、铁盖压口玻璃瓶、塑料瓶或金属桶（罐）外普通木箱；螺纹口玻璃瓶、塑料瓶或镀锡薄钢板桶（罐）外满底板花格箱、纤维板箱或胶合板箱。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。夏季最好早晚运输。运输时所用的槽（罐）车应有接地链，槽内可设孔隔板以减少震荡产生静电。严禁与氧化剂、碱类、还原剂、食用化学品等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源、高温区。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品安全管理条例（国务院令第591号），工作场所安全使用化学品规定（〔1996〕劳部发423号）等法规，针对化学危险品的安全使用、生产、储存、运输、装卸等方面均作了相应规定。GHS危险性分类：皮肤腐蚀/刺激，类别1；严重眼损伤/眼刺激，类别1；特异性靶器官毒性-一次接触，类别3（呼吸道刺激）；危害水生环境-急性危害，类别3。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

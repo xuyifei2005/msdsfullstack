@@ -4,32 +4,31 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>78-11-5</cas_number>
-      <msds_code>无资料 无资料</msds_code>
-      <product_name>季戊四醇四硝酸酯[含水≥25%或</product_name>
-      <product_alias>泰安、喷梯尔、P.E.T.N.</product_alias>
-      <product_english_name>pentaerythritetetranitrate,wet</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <msds_code>MSDS-78-11-5</msds_code>
+      <product_name>季戊四醇四硝酸酯[含水≥25%或含减敏剂≥15%]</product_name>
+      <product_alias>泰安、喷梯尔、P.E.T.N.、太安</product_alias>
+      <product_english_name>pentaerythritetetranitrate,wetted with not less than 25% water,by mass or pentaerythrite tetranitrate,desensitized with not less than 15% phlegmatizer,by mass</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>爆炸物，类别1.1项。</hazard_category>
-      <exposure_routes>食入、吸入、皮肤接触、眼睛接触
-吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>通过打击、摩擦、火灾或其他着火源有极大爆炸危险。</fire_explosion_hazards>
+      <hazard_category>第1类爆炸品，类别1.1项</hazard_category>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>误服后可引起头痛、无力、血压降低等症状。由于蒸气压和溶解度极低，故目视下暴露风险较低。长期接触可能对心血管系统、神经系统造成影响。</health_hazards>
+      <environmental_hazards>对水生生物有毒性。对环境可能有危害。</environmental_hazards>
+      <fire_explosion_hazards>通过打击、摩擦、火灾或其他着火源有极大爆炸危险。爆炸力TNT当量120%。遇明火、高热极易燃烧爆炸。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
       <components>
         <component>
           <component_name>季戊四醇四硝酸酯</component_name>
-          <component_content>≤85%</component_content>
+          <component_content>≤85%（含水≥25%或含减敏剂≥15%）</component_content>
           <cas_number>78-11-5</cas_number>
         </component>
       </components>
@@ -37,25 +36,25 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。就医。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行</eye_contact>
-      <inhalation>人工呼吸。就医。</inhalation>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处，保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
       <ingestion>误服者立即漱口，给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>无资料</harmful_combustion_products>
-      <suitable_extinguishing_media>合适的灭火介质：使用适合火灾类型的合适的灭火剂。不合适的灭火介质：无特别说明。</suitable_extinguishing_media>
+      <hazard_characteristics>接触火焰可能会产生膨胀或爆炸性分解。受热、撞击或摩擦极易发生爆炸。与氧化剂接触可能发生剧烈反应。</hazard_characteristics>
+      <fire_risk_classification>爆炸物，类别1.1项</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物等有毒气体。</harmful_combustion_products>
+      <suitable_extinguishing_media>合适的灭火介质：使用适合火灾类型的合适的灭火剂。不合适的灭火介质：无特别说明。消防人员须佩戴防毒面具、穿全身消防服，在上风向灭火。尽可能将容器从火场移至空旷处。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上风 应急处理： 措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或惰性吸 附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中， 并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防暴设备。</emergency_procedures>
+      <emergency_procedures>保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上风方向。应急处理：措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或惰性吸附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中，并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防暴设备。处理人员必须经过专门培训，严格遵守操作规程。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>火花、明火和热表面。采取措施防止静电积累。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器的地方。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止粉尘泄漏到工作场所空气中。避免与氧化剂接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。禁止撞击、摩擦或剧烈震动。</handling_precautions>
+      <storage_precautions>储存于阴凉、干燥、通风良好的专用库房。远离火种、热源、火花、明火和热表面。采取措施防止静电积累。保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远离不相容材料和食品容器的地方。应与氧化剂、酸类、碱类、食用化学品分开存放，切忌混储。储区应备有泄漏应急处理设备和合适的收容材料。储存温度一般不应高于40℃，相对湿度一般不应高于80%。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -63,25 +62,25 @@
       <former_soviet_mac>无资料</former_soviet_mac>
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
-      <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
-      <eye_protection>佩戴化学护目镜（符合欧盟EN166或美国NIOSH标准）。</eye_protection>
+      <contact_limits>美国TLV-TWA：未制订标准；美国TLV-STEL：未制订标准</contact_limits>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>密闭操作，提供充分的局部排风。提供安全淋浴和洗眼设备。安装可燃气体检测报警装置。</engineering_controls>
+      <respiratory_protection>空气中粉尘浓度超标时，必须佩戴自吸过滤式防尘口罩（半面罩）或全面罩。紧急事态抢救或撤离时，应该佩戴空气呼吸器或氧气呼吸器。</respiratory_protection>
+      <eye_protection>佩戴化学安全防护眼镜（符合欧盟EN 166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
+      <hand_protection>戴防静电手套。</hand_protection>
       <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point></melting_point>
+      <melting_point>138-140</melting_point>
       <boiling_point>180</boiling_point>
       <flash_point>无资料</flash_point>
-      <relative_density>1.77</relative_density>
+      <relative_density>1.77（20℃）</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula></molecular_formula>
+      <solubility>溶于丙酮，稍溶于水、乙醇和乙醚。</solubility>
+      <molecular_formula>C5H8N4O12</molecular_formula>
       <molecular_weight>316.14</molecular_weight>
       <main_components>季戊四醇四硝酸酯</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
@@ -89,10 +88,10 @@
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>160</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
-      <other_properties>无资料</other_properties>
+      <flammability>可燃</flammability>
+      <appearance>白色结晶性粉末</appearance>
+      <main_uses>用作炸药、雷管装药、导爆索装药等。</main_uses>
+      <other_properties>爆发点225℃（5s），爆速8.30km/s，撞击感度100%（10kg，25cm）。</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
       <explosive_upper_limit>无资料</explosive_upper_limit>
@@ -100,50 +99,56 @@
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>在正确的使用和存储条件下是稳定的。</stability>
-      <incompatible_substances>无资料</incompatible_substances>
-      <conditions_to_avoid>不相容物质，热、火焰和火花。</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。</decomposition_products>
+      <stability>在正确的使用和存储条件下是稳定的</stability>
+      <incompatible_substances>强氧化剂、强酸、强碱、金属粉末、有机过氧化物</incompatible_substances>
+      <conditions_to_avoid>不相容物质，热、火焰和火花、撞击、摩擦、静电</conditions_to_avoid>
+      <polymerization_hazard>不会发生聚合反应</polymerization_hazard>
+      <decomposition_products>受热分解产生一氧化碳、二氧化碳、氮氧化物等有毒气体</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>季戊四醇四硝酸酯：LD50(经口)、1660mg/kg(大鼠)</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50（经口）：1660mg/kg（大鼠）。LC50：无资料。属中等毒性类。</acute_toxicity>
+      <subacute_chronic_toxicity>误服后可引起头痛、无力、血压降低、皮炎等。由于蒸气压和溶解度极低，故目前未见吸入蒸气和粉尘而中毒的事故。长期接触可能对神经系统、心血管系统造成影响。</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤和呼吸道有轻微刺激作用。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <carcinogenicity>IARC未分类。无充分证据表明对人类致癌。</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>季戊四醇四硝酸酯：鱼类、LC50：27000mg/L(96h)(鱼)</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <ecological_toxicity>对水生生物有毒性。鱼类LC50：27000mg/L（96h）。</ecological_toxicity>
+      <biodegradability>在环境中可能缓慢降解。</biodegradability>
+      <non_biodegradability>在环境中可能存在一定时间。</non_biodegradability>
+      <bioaccumulation>生物富集性低，log Kow 1.6。</bioaccumulation>
+      <other_harmful_effects>对环境有危害，对水体可能造成污染。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物，属于HW49其他废物。</waste_properties>
+      <disposal_method>建议用焚烧法处置，焚烧温度需≥1100℃。焚烧炉排出的气体要通过洗涤器除去有害物质。处置前应参阅国家和地方有关法规。禁止随意倾倒。操作人员必须佩戴适当的防护装备。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规，禁止随意倾倒。操作人员必须佩戴适当的防护装备。废弃物应交由有资质的危险废物处理单位处理。处置场所应保持通风良好。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>0150</dangerous_goods_number>
-      <un_number>0150</un_number>
+      <un_number>UN 0150</un_number>
       <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
+      <packaging_mark>爆炸物，类别1.1项</packaging_mark>
       <packing_group>满足Ⅱ类包装要求</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_method>使用符合国际运输规定的包装容器。包装容器应密封、坚固，能防止泄漏。禁止撞击、摩擦或剧烈震动。</packaging_method>
+      <transportation_precautions>运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。严禁与氧化剂、酸类、碱类、食用化学品等混装混运。装运该物品的车辆排气管必须配备阻火装置。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内化学品管理法规：《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录（2015版）》、《民用爆炸物品安全管理条例》、《工作场所安全使用化学品规定》（[1996]劳部发423号）。国际法规：无资料。GHS分类：爆炸物类别1.1项。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <standard_reference>GB/T 16483-2008</standard_reference>
+      <revision_notes>本安全技术说明书依据GB/T 16483-2008标准编制，内容符合《化学品安全技术说明书 内容和项目顺序》的要求。</revision_notes>
+      <abbreviations>CAS：化学文摘社登记号；LD50：半数致死量；LC50：半数致死浓度；MAC：最高容许浓度；PC-TWA：时间加权平均容许浓度；PC-STEL：短时间接触容许浓度；TLV：阈限值；IDLH：立即威胁生命和健康浓度；GHS：全球化学品统一分类和标签制度；IARC：国际癌症研究机构；UN：联合国编号；IMDG：国际海运危险货物规则。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

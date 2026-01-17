@@ -3,25 +3,25 @@
   <msds>
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
-      <msds_code>无资料</msds_code>
+      <cas_number>无资料</cas_number>
+      <msds_code>MSDS-无资料</msds_code>
       <product_name>溴化氢乙酸溶液</product_name>
       <product_alias>溴化氢醋酸溶液</product_alias>
-      <product_english_name>hydrobromic acid</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_english_name>Hydrobromic acid in acetic acid</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>下：皮肤腐蚀/刺激 ， 类别 1；眼损伤/眼刺激 ，类别 1。</hazard_category>
-      <exposure_routes>吸入、食入、皮肤接触、眼睛接触
-吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>无资料</fire_explosion_hazards>
+      <hazard_category>第8.1类酸性腐蚀品</hazard_category>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>对眼睛、皮肤、粘膜和上呼吸道有强烈的刺激作用和腐蚀作用。吸入可引起呼吸道刺激、咳嗽、呼吸困难，严重时可引起肺水肿。高浓度接触可引起喉头水肿、支气管痉挛，甚至窒息死亡。</health_hazards>
+      <environmental_hazards>对水生生物有毒性。对环境有危害，特别是对水体和土壤。</environmental_hazards>
+      <fire_explosion_hazards>遇明火、高热可燃。受热分解产生有毒的溴化物气体。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -29,7 +29,12 @@
         <component>
           <component_name>氢溴酸</component_name>
           <component_content>≥50.0%</component_content>
-          <cas_number></cas_number>
+          <cas_number>10035-10-6</cas_number>
+        </component>
+        <component>
+          <component_name>乙酸</component_name>
+          <component_content>≥50.0%</component_content>
+          <cas_number>64-19-7</cas_number>
         </component>
       </components>
     </component_info>
@@ -37,60 +42,62 @@
     <first_aid>
       <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。就医。</skin_contact>
       <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。</eye_contact>
-      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行 人工呼吸。就医。</inhalation>
+      <inhalation>迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
       <ingestion>误服者立即漱口，给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>能会通过压力安全阀泄漏 出内容物。受热或接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>无资料 合适的灭火介质:干粉、二氧化碳或耐醇泡沫。 不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安 全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <hazard_characteristics>能会通过压力安全阀泄漏出内容物。受热或接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
+      <fire_risk_classification>乙类</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、溴化氢等有毒气体。</harmful_combustion_products>
+      <suitable_extinguishing_media>干粉、二氧化碳或耐醇泡沫。灭火时，应佩戴呼吸面具（符合MSHA/NIOSH要求的或相当的）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上风 应急处理： 措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或惰性吸 附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中， 并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防暴设备。</emergency_procedures>
+      <emergency_procedures>保证充分的通风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上风向。采取措施防止进一步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或惰性吸附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中，并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防爆设备。</emergency_procedures>
+      <environmental_precautions>防止进入下水道、排洪沟等限制性空间。防止污染水体和土壤。</environmental_precautions>
+      <cleaning_methods>少量泄漏时，可采用干砂或惰性吸附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中。</cleaning_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions></handling_precautions>
-      <storage_precautions>火花、明火和热表面。 采取措施防止静电积累。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器 的地方。</storage_precautions>
+      <handling_precautions>远离火花、明火和热表面。采取措施防止静电积累。保持容器密闭。操作人员必须经过专门培训，严格遵守操作规程。避免与氧化剂、金属粉末、醇类、烃类等接触。</handling_precautions>
+      <storage_precautions>储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远离不相容材料和食品容器的地方。储存于阴凉、通风的库房。远离火种、热源。库温不宜超过30℃。保持容器密封。应与氧化剂、金属粉末、醇类、烃类、食用化学品分开存放，切忌混储。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
-      <china_mac>无资料</china_mac>
-      <former_soviet_mac>无资料</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
-      <contact_limits>乙酸：PC-TWA、10 mg/m3；PC-STEL、20 mg/m3</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
-      <eye_protection>佩戴化学护目镜（符合欧盟 EN 166 或美国 NIOSH 标准）。</eye_protection>
+      <china_mac>未制定标准</china_mac>
+      <former_soviet_mac>未制定标准</former_soviet_mac>
+      <tlvtn>未制定标准</tlvtn>
+      <tlvvn>未制定标准</tlvvn>
+      <contact_limits>乙酸：PC-TWA 10mg/m³；PC-STEL 20mg/m³</contact_limits>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>密闭操作，提供充分的局部排风和全面通风。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时，必须佩戴自吸过滤式防毒面具（半面罩）或隔离式呼吸器。紧急事态抢救或逃生时，建议佩戴空气呼吸器。</respiratory_protection>
+      <eye_protection>佩戴化学护目镜（符合欧盟EN 166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
+      <hand_protection>戴防化学品手套。</hand_protection>
       <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
       <melting_point>无资料</melting_point>
-      <boiling_point>&gt;35</boiling_point>
-      <flash_point>无资料</flash_point>
+      <boiling_point>>35℃</boiling_point>
+      <flash_point>65℃</flash_point>
       <relative_density>无资料</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>C2H5B</molecular_formula>
-      <molecular_weight>140.9639</molecular_weight>
-      <main_components>氢溴酸</main_components>
+      <solubility>与水混溶，溶于乙醇、乙醚等有机溶剂。</solubility>
+      <molecular_formula>C2H5BrO2</molecular_formula>
+      <molecular_weight>140.96</molecular_weight>
+      <main_components>氢溴酸、乙酸</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
       <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <flammability>可燃</flammability>
+      <appearance>橙红色透明液体。</appearance>
+      <main_uses>用于有机合成、医药制造、化学试剂等。</main_uses>
       <other_properties>无资料</other_properties>
       <heat_of_combustion>无资料</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
@@ -99,36 +106,36 @@
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>在正确的使用和存储条件下是稳定的。 镁、钠、钾、铜、氧化剂、乙炔金属化合物、醇类、烃类、氢气和水。金属烷氧化物、糠</stability>
-      <incompatible_substances>醇、乙醛、硝酸、硝酸盐、 亚硝酸盐、卤素的含氧酸盐和无机过氧化物。</incompatible_substances>
-      <conditions_to_avoid>不相容物质，热、火焰和火花。 与镁、钠、钾、铜等金属或乙炔金属化合物接触发生着火或燃烧。具有可燃性，其蒸气（或</conditions_to_avoid>
-      <polymerization_hazard>粉末）与空气接触可形 成爆炸性混合物。</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。</decomposition_products>
+      <stability>在正确的使用和存储条件下是稳定的。</stability>
+      <incompatible_substances>镁、钠、钾、铜、氧化剂、乙炔金属化合物、醇类、烃类、氢气和水、金属烷氧化物、糠醇、乙醛、硝酸、硝酸盐、亚硝酸盐、卤素的含氧酸盐和无机过氧化物</incompatible_substances>
+      <conditions_to_avoid>不相容物质、热、火焰和火花。与镁、钠、钾、铜等金属或乙炔金属化合物接触发生着火或燃烧。具有可燃性，其蒸气（或粉末）与空气接触可形成爆炸性混合物。</conditions_to_avoid>
+      <polymerization_hazard>不能出现</polymerization_hazard>
+      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。受热分解产生一氧化碳、二氧化碳、溴化氢等气体。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>乙酸：LD50(经口)、3310mg/kg(大鼠)</acute_toxicity>
+      <acute_toxicity>乙酸：LD50(经口) 3310mg/kg(大鼠)</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>造成严重眼损伤</irritation>
+      <irritation>造成严重眼损伤、造成严重皮肤灼伤和眼损伤、可能造成呼吸道刺激。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
-      <carcinogenicity>无资料</carcinogenicity>
+      <carcinogenicity>IARC致癌性分类：无资料</carcinogenicity>
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>乙酸：鱼类、LC50：88mg/L (96h)(鱼)；甲壳纲动物、EC50：65mg/L (48h)</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
+      <ecological_toxicity>乙酸：鱼类LC50 88mg/L (96h)(鱼)；甲壳纲动物EC50 65mg/L (48h)</ecological_toxicity>
+      <biodegradability>在环境中可缓慢降解。</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <other_harmful_effects>该物质对环境有危害，应特别注意对水体和土壤的污染。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
+      <disposal_method>根据国家和地方有关法规，建议用焚烧法处置。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -136,13 +143,19 @@
       <un_number>3265</un_number>
       <imdg_page>无资料</imdg_page>
       <packaging_mark>无资料</packaging_mark>
-      <packing_group></packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packing_group>II</packing_group>
+      <packaging_method>无资料</packaging_method>
+      <transportation_precautions>运输前应先检查包装容器是否完整、密封，运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。运输车辆应配备泄漏应急处理设备。严禁与食品、饲料等混装混运。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内法规：危险化学品安全管理条例、危险化学品目录（2015版）。国际法规：IARC致癌性分类：无资料。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <standard_reference>GB/T 16483-2008</standard_reference>
+      <modification_notes>按照GB/T 16483-2008标准编制，补全16个部分内容。</modification_notes>
+      <abbreviations>MSDS：Material Safety Data Sheet（化学品安全技术说明书）；CAS：Chemical Abstracts Service（化学文摘服务社）；UN：United Nations（联合国）；GHS：Globally Harmonized System of Classification and Labelling of Chemicals（全球化学品统一分类和标签制度）；IARC：International Agency for Research on Cancer（国际癌症研究机构）；ACGIH：American Conference of Governmental Industrial Hygienists（美国政府工业卫生学家会议）；NIOSH：National Institute for Occupational Safety and Health（美国国家职业安全卫生研究所）；OSHA：Occupational Safety and Health Administration（美国职业安全与健康管理局）。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

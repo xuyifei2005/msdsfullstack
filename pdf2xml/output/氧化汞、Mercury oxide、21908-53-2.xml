@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>21908-53-2</cas_number>
-      <msds_code>MSDS#1606</msds_code>
+      <msds_code>MSDS-21908-53-2</msds_code>
       <product_name>氧化汞</product_name>
       <product_alias>一氧化汞；黄降汞；红降汞</product_alias>
       <product_english_name>Mercury oxide</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>第6.1类 毒害品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品不燃、剧毒</fire_explosion_hazards>
+      <hazard_category>第6.1类毒害品</hazard_category>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>急性中毒：起病急，有头痛、头晕、乏力、失眠、多梦、发热等全身症状。明显的口腔炎及胃肠症状。部分患者出现全身性皮疹。重症者可发生化学性肺炎、肺水肿。慢性影响：主要是以易兴奋及汞性震颤为主的精神神经障碍和口腔炎的症候群。其蒸气可引起接触过敏性皮炎。</health_hazards>
+      <environmental_hazards>对环境有危害，对水体和土壤可造成污染。</environmental_hazards>
+      <fire_explosion_hazards>本品不燃、剧毒。接触有机物有引起燃烧危险。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -35,60 +35,62 @@
     </component_info>
     <!-- 第四部分：急救措施 -->
     <first_aid>
-      <skin_contact>脱去污染的衣着，立即用流动清水彻底冲洗。</skin_contact>
-      <eye_contact>立即提起眼睑，用大量流动清水或生理盐水冲洗。</eye_contact>
+      <skin_contact>脱去污染的衣着，立即用流动清水彻底冲洗。就医。</skin_contact>
+      <eye_contact>立即提起眼睑，用大量流动清水或生理盐水冲洗。就医。</eye_contact>
       <inhalation>迅速脱离现场至空气新鲜处。注意保暖，必要时进行人工呼吸。就医。</inhalation>
       <ingestion>误服者立即漱口，给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>爆炸。接触有机物有引起燃烧危险。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>氧化汞。</harmful_combustion_products>
-      <suitable_extinguishing_media>不燃。火场周围可用的灭火介质。</suitable_extinguishing_media>
+      <hazard_characteristics>接触有机物有引起燃烧危险。受高热会放出剧毒汞蒸气。</hazard_characteristics>
+      <fire_risk_classification>第6.1类毒害品</fire_risk_classification>
+      <harmful_combustion_products>氧化汞、汞蒸气。</harmful_combustion_products>
+      <suitable_extinguishing_media>不燃。火场周围可用的灭火介质：干粉、二氧化碳、砂土。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>隔离泄漏污染区，周围设警告标志，建议应急处理人员戴自给式呼吸器，穿化学防护服。 戴好防毒面具，穿一般消防防护服。不要直接接触泄漏物，避免扬尘，收集于干燥净洁有 盖的容器中，然后收集转移到安全场所。如大量泄漏，收集回收或无害处理后废弃。</emergency_procedures>
+      <emergency_procedures>隔离泄漏污染区，周围设警告标志，建议应急处理人员戴自给式呼吸器，穿化学防护服。不要直接接触泄漏物，避免扬尘，收集于干燥净洁有盖的容器中，然后收集转移到安全场所。如大量泄漏，收集回收或无害处理后废弃。</emergency_procedures>
+      <environmental_precautions>防止进入下水道、排洪沟等限制性空间。</environmental_precautions>
+      <cleaning_methods>收集于干燥净洁有盖的容器中，然后收集转移到安全场所。</cleaning_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。避免光照。应与易燃、可燃物分开存放。搬 运时要轻装轻卸，防止包装及容器损坏。分装和搬运作业要注意个人防护。</storage_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。远离火种、热源。操作现场不得吸烟、饮水、进食。搬运时要轻装轻卸，防止包装及容器损坏。分装和搬运作业要注意个人防护。</handling_precautions>
+      <storage_precautions>储存于阴凉、通风仓间内。远离火种、热源。避免光照。应与易燃、可燃物分开存放。搬运时要轻装轻卸，防止包装及容器损坏。分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
-      <china_mac>无资料</china_mac>
-      <former_soviet_mac>无资料</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
-      <contact_limits>美国TWA：ACGIH 0.1mg[Hg]／m3[皮]美国STEL：未制定标准</contact_limits>
+      <china_mac>未制订标准</china_mac>
+      <former_soviet_mac>未制订标准</former_soviet_mac>
+      <tlvtn>未制订标准</tlvtn>
+      <tlvvn>未制订标准</tlvvn>
+      <contact_limits>美国TWA：ACGIH 0.1mg[Hg]/m3[皮]；美国STEL：未制定标准</contact_limits>
       <monitoring_method>无资料</monitoring_method>
       <engineering_controls>密闭操作，局部排风。</engineering_controls>
       <respiratory_protection>作业工人应该佩带防尘口罩。必要时佩带防毒面具。</respiratory_protection>
       <eye_protection>可采用安全面罩。</eye_protection>
       <body_protection>穿相应的防护服。</body_protection>
       <hand_protection>戴防护手套。</hand_protection>
-      <other_protection>无资料</other_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。保持良好的卫生习惯。实行就业前和定期的体检。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>无资料</melting_point>
+      <melting_point>500℃并分解</melting_point>
       <boiling_point>无资料</boiling_point>
       <flash_point>无意义</flash_point>
       <relative_density>11.10</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>H</molecular_formula>
+      <solubility>不溶于水</solubility>
+      <molecular_formula>HgO</molecular_formula>
       <molecular_weight>216.59</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>氧化汞</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
-      <critical_temperature>分解温度(℃)：500</critical_temperature>
+      <critical_temperature>500℃并分解</critical_temperature>
       <ignition_temperature>无资料</ignition_temperature>
       <autoignition_temperature>无意义</autoignition_temperature>
-      <flammability></flammability>
+      <flammability>不燃</flammability>
       <appearance>亮红色或橙红色重质结晶性粉末，无臭味。</appearance>
       <main_uses>用作分析试剂、防腐剂，用于合成医药及涂料等。</main_uses>
       <other_properties>无资料</other_properties>
@@ -103,15 +105,15 @@
       <incompatible_substances>强氧化剂。</incompatible_substances>
       <conditions_to_avoid>光照。</conditions_to_avoid>
       <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <decomposition_products>汞蒸气、氧化汞。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>属高毒类LD50：18mg／kg(大鼠经口)；315mg／kg(大鼠经皮)LC50：</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>属高毒类。LD50：18mg/kg(大鼠经口)；315mg/kg(大鼠经皮)；LC50：无资料</acute_toxicity>
+      <subacute_chronic_toxicity>慢性影响主要是以易兴奋及汞性震颤为主的精神神经障碍和口腔炎的症候群。</subacute_chronic_toxicity>
       <rtecs>OW8750000</rtecs>
       <irritation>无资料</irritation>
-      <sensitization>无资料</sensitization>
+      <sensitization>其蒸气可引起接触过敏性皮炎。</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
       <carcinogenicity>无资料</carcinogenicity>
@@ -121,14 +123,14 @@
       <ecological_toxicity>无资料</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
-      <other_harmful_effects>再用。保持良好的卫生习惯。</other_harmful_effects>
+      <bioaccumulation>无资料</bioaccumulation>
+      <other_harmful_effects>对环境有危害，对水体和土壤可造成污染。保持良好的卫生习惯。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>建议用焚烧法处置。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。焚烧时必须配备完善的废气处理系统，防止汞蒸气污染环境。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
@@ -137,12 +139,18 @@
       <imdg_page>6184</imdg_page>
       <packaging_mark>14</packaging_mark>
       <packing_group>Ⅱ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_method>密封包装</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。装运本品的车辆排气管须有阻火装置。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与酸类、氧化剂、食品及食品添加剂混运。运输途中应防曝晒、雨淋，防高温。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内化学品管理法规：危险化学品安全管理条例、易制毒化学品管理条例、危险化学品目录（2015版）。国际法规：IARC致癌性分类：3组（无法分类）；GHS危险性分类：急性毒性-经口、经皮、吸入（类别1）；皮肤腐蚀/刺激（类别2）；严重眼损伤/眼刺激（类别2）；特异性靶器官毒性-反复接触（类别2）。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <standard_reference>GB/T 16483-2008</standard_reference>
+      <modification_notes>按照GB/T 16483-2008标准编制，补全16个部分内容。</modification_notes>
+      <abbreviations>MSDS：Material Safety Data Sheet（化学品安全技术说明书）；CAS：Chemical Abstracts Service（化学文摘服务社）；UN：United Nations（联合国）；GHS：Globally Harmonized System of Classification and Labelling of Chemicals（全球化学品统一分类和标签制度）；IARC：International Agency for Research on Cancer（国际癌症研究机构）。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

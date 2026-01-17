@@ -42,10 +42,10 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>危险性的过氧化物。遇高热能发生聚合反应，出现大量放热现象，引起容器破裂或爆炸事 故。</hazard_characteristics>
+      <hazard_characteristics>危险性的过氧化物。遇高热能发生聚合反应，出现大量放热现象，引起容器破裂或爆炸事故。</hazard_characteristics>
       <fire_risk_classification>甲</fire_risk_classification>
-      <harmful_combustion_products>一氧化碳、二氧化碳。 合适的灭火介质:干粉、二氧化碳或耐醇泡沫。 不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安 全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <harmful_combustion_products>一氧化碳、二氧化碳。</harmful_combustion_products>
+      <suitable_extinguishing_media>干粉、二氧化碳或耐醇泡沫。避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。灭火时，应佩戴呼吸面具（符合MSHA/NIOSH要求的或相当的）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
@@ -118,11 +118,11 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>该物质对环境有危害，应特别注意对水体的污染。</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作现场严禁吸烟。工作后，淋浴更衣。保持良好的卫生习惯。</other_harmful_effects>
+      <other_harmful_effects>无资料</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
@@ -142,7 +142,7 @@
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>危险化学品安全管理条例（国务院令第591号），工作场所安全使用化学品规定（〔1996〕劳部发423号）等法规，针对化学危险品的安全使用、生产、储存、运输、装卸等方面均作了相应规定。GHS危险性分类：易燃液体（类别2）；皮肤腐蚀/刺激（类别2）；急性水生毒性（类别3）；慢性水生毒性（类别3）。</regulatory_info>
     </regulatory>
   </msds>
 </msds_list>

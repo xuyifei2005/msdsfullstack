@@ -4,24 +4,24 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>1310-82-3</cas_number>
-      <msds_code>MSDS#2465</msds_code>
+      <msds_code>MSDS-1310-82-3</msds_code>
       <product_name>氢氧化铷</product_name>
       <product_alias>无资料</product_alias>
-      <product_english_name>Rubidium hydroxide</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_english_name>rubidium hydroxide</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
       <hazard_category>第8.2类碱性腐蚀品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards>炎、肺炎及肺水肿等。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>本品不燃、具有强腐蚀性、可致人体灼伤</fire_explosion_hazards>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>可引起呼吸道刺激，伴有咳嗽、呼吸道阻塞和粘膜损伤。吸入该物质可能会引起对健康有害的影响或呼吸道不适。意外食入可造成消化道灼伤，粘膜糜烂、出血和休克。皮肤接触可造成严重灼伤和眼损伤。</health_hazards>
+      <environmental_hazards>对水体可造成污染。</environmental_hazards>
+      <fire_explosion_hazards>本品不燃、具有强腐蚀性、可致人体灼伤。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
@@ -43,59 +43,61 @@
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
       <hazard_characteristics>遇水发热，能引起有机物燃烧。与酸类发生剧烈反应。具有强腐蚀性。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>氧化铷。 合适的灭火介质:干粉、二氧化碳或耐醇泡沫。 不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安全 距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <fire_risk_classification>第8.2类碱性腐蚀品</fire_risk_classification>
+      <harmful_combustion_products>氧化铷。</harmful_combustion_products>
+      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（符合MSHA/NIOSH要求的或相当的）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>隔离泄漏污染区，周围设警告标志，建议应急处理人员戴好防毒面具，穿化学防护服。不 要直接接触泄漏物，禁止向泄漏物直接喷水，更不要让水进入包装容器内。小心扫起，送 至空旷地方，慢慢倒入大量水中，经稀释的污水放入废水系统。如大量泄漏，收集回收或 无害处理后废弃。</emergency_procedures>
+      <emergency_procedures>隔离泄漏污染区，周围设警告标志，建议应急处理人员戴好防毒面具，穿化学防护服。不要直接接触泄漏物，禁止向泄漏物直接喷水，更不要让水进入包装容器内。小心扫起，送至空旷地方，慢慢倒入大量水中，经稀释的污水放入废水系统。如大量泄漏，收集回收或无害处理后废弃。</emergency_procedures>
+      <environmental_precautions>防止进入下水道、地下水和地表水。</environmental_precautions>
+      <cleaning_methods>小心扫起，送至空旷地方，慢慢倒入大量水中，经稀释的污水放入废水系统。</cleaning_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>无资料</handling_precautions>
-      <storage_precautions>储存于高燥清洁的仓间内。保持容器密封。防止受潮和雨淋。应与酸类、易燃物、可燃物 等分开存放。操作现场不得吸烟、饮水、进食。搬运时要轻装轻卸，防止包装及容器损坏。 雨天不宜运输。分装和搬运作业要注意个人防护。</storage_precautions>
+      <handling_precautions>操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴自吸过滤式防尘呼吸器，穿橡胶耐酸碱服，戴橡胶耐酸碱手套。远离易燃、可燃物。避免产生粉尘。避免与酸类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于干燥清洁的仓间内。保持容器密封。防止受潮和雨淋。应与酸类、易燃物、可燃物等分开存放。操作现场不得吸烟、饮水、进食。搬运时要轻装轻卸，防止包装及容器损坏。雨天不宜运输。分装和搬运作业要注意个人防护。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
-      <china_mac>无资料</china_mac>
-      <former_soviet_mac>无资料</former_soviet_mac>
-      <tlvtn>无资料</tlvtn>
-      <tlvvn>无资料</tlvvn>
-      <contact_limits>美国TLV-TWA：未制订标准美国TLV-STEL：未制订标准</contact_limits>
-      <monitoring_method>无资料</monitoring_method>
+      <china_mac>未制订标准</china_mac>
+      <former_soviet_mac>未制订标准</former_soviet_mac>
+      <tlvtn>未制订标准</tlvtn>
+      <tlvvn>未制订标准</tlvvn>
+      <contact_limits>美国TLV-TWA：未制订标准；美国TLV-STEL：未制订标准</contact_limits>
+      <monitoring_method>原子吸收光谱法</monitoring_method>
       <engineering_controls>严加密闭，提供充分的局部排风。</engineering_controls>
       <respiratory_protection>佩戴防毒口罩。紧急事态抢救或逃生时，佩戴自给式呼吸器。</respiratory_protection>
       <eye_protection>戴化学安全防护眼镜。</eye_protection>
       <body_protection>穿防腐工作服。</body_protection>
       <hand_protection>戴橡胶手套。</hand_protection>
-      <other_protection>无资料</other_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>300</melting_point>
+      <melting_point>300℃</melting_point>
       <boiling_point>无资料</boiling_point>
-      <flash_point>无资料</flash_point>
+      <flash_point>无意义</flash_point>
       <relative_density>3.203(11℃)</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>R</molecular_formula>
+      <solubility>易溶于水、乙醇</solubility>
+      <molecular_formula>RbOH</molecular_formula>
       <molecular_weight>102.48</molecular_weight>
-      <main_components>无资料</main_components>
+      <main_components>纯品</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
-      <ignition_temperature>无资料</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
+      <critical_temperature>无意义</critical_temperature>
+      <ignition_temperature>无意义</ignition_temperature>
+      <autoignition_temperature>无意义</autoignition_temperature>
+      <flammability>不燃</flammability>
       <appearance>灰白色易潮解的块状物。</appearance>
       <main_uses>用作分析试剂、低温蓄电池电解质。</main_uses>
       <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
-      <explosive_upper_limit>无资料</explosive_upper_limit>
-      <explosive_lower_limit>无资料</explosive_lower_limit>
+      <heat_of_combustion>无意义</heat_of_combustion>
+      <critical_pressure>无意义</critical_pressure>
+      <explosive_upper_limit>无意义</explosive_upper_limit>
+      <explosive_lower_limit>无意义</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
@@ -107,10 +109,10 @@
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LD50：586mg／kg(大鼠经口)LC50：</acute_toxicity>
+      <acute_toxicity>LD50：586mg/kg(大鼠经口)；LC50：无资料</acute_toxicity>
       <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
       <rtecs>VL8750000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤和呼吸系统有刺激性。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -121,28 +123,34 @@
       <ecological_toxicity>无资料</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation></bioaccumulation>
-      <other_harmful_effects>再用。严禁皮肤直接接触。车间应配备急救设备及药品。</other_harmful_effects>
+      <bioaccumulation>无资料</bioaccumulation>
+      <other_harmful_effects>由于呈碱性，对水体可造成污染，对植物和水生生物应给予特别注意。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
       <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method>无资料</disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <disposal_method>建议用焚烧法处置。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>82004</dangerous_goods_number>
       <un_number>2677</un_number>
       <imdg_page>8219</imdg_page>
-      <packaging_mark>20</packaging_mark>
-      <packing_group>Ⅱ</packing_group>
-      <packaging_method>无资料</packaging_method>
-      <transportation_precautions>无资料</transportation_precautions>
+      <packaging_mark>第8类腐蚀品</packaging_mark>
+      <packing_group>II</packing_group>
+      <packaging_method>铁桶或其他密闭容器包装</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。装运本品的车辆排气管须有阻火装置。运输过程中要确保容器不泄漏、不倒塌、不坠落、不损坏。严禁与酸类、易燃物等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源。公路运输时要按规定路线行驶，勿在居民区和人口稠密区停留。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info>无资料</regulatory_info>
+      <regulatory_info>国内化学品管理法规：危险化学品安全管理条例、易制毒化学品管理条例、危险化学品目录（2015版）。国际法规：UN 2677（氢氧化铷）、GHS危险性分类：皮肤腐蚀/刺激类别1、严重眼损伤/眼刺激类别1。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <standard_reference>GB/T 16483-2008</standard_reference>
+      <modification_notes>按照GB/T 16483-2008标准编制，补全16个部分内容。</modification_notes>
+      <abbreviations>MSDS：Material Safety Data Sheet（化学品安全技术说明书）；CAS：Chemical Abstracts Service（化学文摘服务社）；UN：United Nations（联合国）；GHS：Globally Harmonized System of Classification and Labelling of Chemicals（全球化学品统一分类和标签制度）。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

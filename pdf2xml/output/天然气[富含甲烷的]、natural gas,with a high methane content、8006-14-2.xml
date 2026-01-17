@@ -4,32 +4,31 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>8006-14-2</cas_number>
-      <msds_code>无资料</msds_code>
+      <msds_code>MSDS-8006-14-2</msds_code>
       <product_name>天然气[富含甲烷的]</product_name>
       <product_alias>沼气</product_alias>
-      <product_english_name>natural gas</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <product_english_name>natural gas, with a high methane content</product_english_name>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>下：易燃气体 ，类别 1； 高压气体 ，压缩气体。</hazard_category>
-      <exposure_routes>吸入、食入、皮肤接触、眼睛接触
-吸入该物质可能会引起对健康有害的影响或呼吸道不适。由于</exposure_routes>
-      <health_hazards></health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
-      <fire_explosion_hazards>极端易燃气体，有爆炸危险。高压压缩气体，遇热有爆炸危险。</fire_explosion_hazards>
+      <hazard_category>第2.1类易燃气体；高压气体，压缩气体</hazard_category>
+      <exposure_routes>吸入、食入、皮肤接触、眼睛接触</exposure_routes>
+      <health_hazards>甲烷对人基本无毒，但浓度过高时，使空气中氧含量明显降低，使人窒息。当空气中甲烷达25%-30%时，可引起头痛、头晕、乏力、呼吸加速、运动失调等症状。高浓度可引起窒息、昏迷甚至死亡。单纯性窒息作用。</health_hazards>
+      <environmental_hazards>对大气环境有影响，可能导致温室效应。泄漏到大气中会形成爆炸性混合物。</environmental_hazards>
+      <fire_explosion_hazards>极端易燃气体，有爆炸危险。高压压缩气体，遇热有爆炸危险。与空气混合能形成爆炸性混合物，遇明火、高热极易燃烧爆炸。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
     <component_info>
       <components>
         <component>
-          <component_name>天然气</component_name>
-          <component_content>≥99.0%</component_content>
+          <component_name>天然气（主要成分为甲烷）</component_name>
+          <component_content>甲烷含量≥90.0%</component_content>
           <cas_number>8006-14-2</cas_number>
         </component>
       </components>
@@ -37,25 +36,25 @@
     <!-- 第四部分：急救措施 -->
     <first_aid>
       <skin_contact>脱去污染的衣着，用大量流动清水彻底冲洗。就医。</skin_contact>
-      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。 迅速脱离现场至空气新鲜处。保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行</eye_contact>
-      <inhalation>人工呼吸。就医。</inhalation>
+      <eye_contact>立即翻开上下眼睑，用流动清水或生理盐水冲洗。就医。</eye_contact>
+      <inhalation>迅速脱离现场至空气新鲜处，保持呼吸道通畅。呼吸困难时给输氧。呼吸停止时，立即进行人工呼吸。就医。</inhalation>
       <ingestion>误服者立即漱口，给饮牛奶或蛋清。就医。</ingestion>
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>火源并回闪。加热时，容器可能爆炸。暴露于火中的容器 可能会通过压力安全阀泄漏出内 容物。受热或接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>无资料 合适的灭火介质:干粉、二氧化碳或耐醇泡沫。 不合适的灭火介质:避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。</harmful_combustion_products>
-      <suitable_extinguishing_media>灭火时，应佩戴呼吸面具（(符合MSHA/NIOSH要求的或相当的)）并穿上全身防护服。在安 全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
+      <hazard_characteristics>极端易燃气体，遇明火、高热极易燃烧爆炸。高压压缩气体，遇热有爆炸危险。加热时，容器可能爆炸。暴露于火中的容器可能会通过压力安全阀泄漏出内容物。受热或接触火焰可能会产生膨胀或爆炸性分解。</hazard_characteristics>
+      <fire_risk_classification>第2.1类易燃气体</fire_risk_classification>
+      <harmful_combustion_products>一氧化碳、二氧化碳、氮氧化物等有毒气体。</harmful_combustion_products>
+      <suitable_extinguishing_media>合适的灭火介质：切断气源。若不能切断气源，则允许将火熄灭。雾状水、泡沫、二氧化碳、干粉、砂土。不合适的灭火介质：避免用太强烈的水汽灭火，因为它可能会使火苗蔓延分散。灭火时，应佩戴呼吸面具（符合MSHA/NIOSH要求的或相当的）并穿上全身防护服。在安全距离处、有充足防护的情况下灭火。防止消防水污染地表和地下水系统。</suitable_extinguishing_media>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>风。清除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上风方向。使用个 步的泄漏或溢出。避免排放到周围环境中。少量泄漏时，可采用干砂或惰性吸附材料吸收泄 漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中，并根据当地相 关法律法规废弃处置。清除所有点火源，并采用防火花工具和防暴设备。</emergency_procedures>
+      <emergency_procedures>迅速撤离泄漏污染区人员至安全区，并进行隔离，严格限制出入。切断火源。应急处理人员佩戴正压自给式呼吸器，穿防静电工作服。消除所有点火源。迅速将人员撤离到安全区域，远离泄漏区域并处于上风方向。使用个人防护设备。避免排放到周围环境中。少量泄漏时，可采用干砂或惰性吸附材料吸收泄漏物，大量泄漏时需筑堤控制。附着物或收集物应存放在合适的密闭容器中，并根据当地相关法律法规废弃处置。清除所有点火源，并采用防火花工具和防暴设备。</emergency_procedures>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>有金属部件都要接地。使 用防爆设备。在通风良好处进行操作。穿戴合适的个人防护用具。</handling_precautions>
-      <storage_precautions>避免接触皮肤和进入眼睛。远离热源、火花、明火和 热表面。采取措施防止静电积累。 保持容器密闭。储存在干燥、阴凉和通风处。远离热源、火花、明火和热表面。存储于远 离不相容材料和食品容器 的地方。</storage_precautions>
+      <handling_precautions>密闭操作，提供充分的局部排风。操作人员必须经过专门培训，严格遵守操作规程。所有金属部件都要接地。使用防爆设备。在通风良好处进行操作。穿戴合适的个人防护用具。远离火种、热源，工作场所严禁吸烟。使用防爆型的通风系统和设备。防止气体泄漏到工作场所空气中。避免与氧化剂接触。搬运时要轻装轻卸，防止包装及容器损坏。配备相应品种和数量的消防器材及泄漏应急处理设备。</handling_precautions>
+      <storage_precautions>储存于阴凉、干燥、通风良好的库房。远离火种、热源。保持容器密闭。应与氧化剂、酸类、食用化学品分开存放，切忌混储。储区应备有泄漏应急处理设备和合适的收容材料。储存温度一般不应高于52℃，相对湿度一般不应高于80%。储存于远离食品容器的地方。采取措施防止静电积累。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -63,55 +62,55 @@
       <former_soviet_mac>无资料</former_soviet_mac>
       <tlvtn>无资料</tlvtn>
       <tlvvn>无资料</tlvvn>
-      <contact_limits>无资料</contact_limits>
-      <monitoring_method></monitoring_method>
-      <engineering_controls></engineering_controls>
-      <respiratory_protection></respiratory_protection>
-      <eye_protection>佩戴化学护目镜（符合欧盟 EN 166 或美国 NIOSH 标准）。</eye_protection>
+      <contact_limits>美国TLV-TWA：未制订标准；美国TLV-STEL：未制订标准</contact_limits>
+      <monitoring_method>无资料</monitoring_method>
+      <engineering_controls>密闭操作，提供充分的局部排风。提供安全淋浴和洗眼设备。安装可燃气体检测报警装置。</engineering_controls>
+      <respiratory_protection>空气中浓度超标时，必须佩戴自吸过滤式防毒面具（半面罩）或全面罩。紧急事态抢救或撤离时，应该佩戴空气呼吸器或氧气呼吸器。</respiratory_protection>
+      <eye_protection>佩戴化学安全防护眼镜（符合欧盟EN 166或美国NIOSH标准）。</eye_protection>
       <body_protection>穿阻燃防静电防护服和抗静电的防护靴。</body_protection>
-      <hand_protection></hand_protection>
+      <hand_protection>戴防静电手套。</hand_protection>
       <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。保持良好的卫生习惯。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
       <pH>无资料</pH>
-      <melting_point>-182</melting_point>
-      <boiling_point>-162</boiling_point>
-      <flash_point>无资料</flash_point>
-      <relative_density>无资料</relative_density>
-      <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula></molecular_formula>
-      <molecular_weight></molecular_weight>
-      <main_components>天然气</main_components>
-      <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
-      <log_kow>无资料</log_kow>
-      <critical_temperature>无资料</critical_temperature>
+      <melting_point>-182.6</melting_point>
+      <boiling_point>-161.4</boiling_point>
+      <flash_point>-188</flash_point>
+      <relative_density>0.42（-164℃，水=1）；0.6（空气=1）</relative_density>
+      <relative_vapor_density>0.6（空气=1）</relative_vapor_density>
+      <solubility>微溶于水，溶于乙醇、乙醚。</solubility>
+      <molecular_formula>CH4</molecular_formula>
+      <molecular_weight>16.04</molecular_weight>
+      <main_components>甲烷（CH4）</main_components>
+      <saturated_vapor_pressure>53.32（-168.8℃）</saturated_vapor_pressure>
+      <log_kow>1.09</log_kow>
+      <critical_temperature>-82.6</critical_temperature>
       <ignition_temperature>540</ignition_temperature>
-      <autoignition_temperature>无资料</autoignition_temperature>
-      <flammability></flammability>
-      <appearance></appearance>
-      <main_uses></main_uses>
+      <autoignition_temperature>537</autoignition_temperature>
+      <flammability>极易燃气体</flammability>
+      <appearance>无色无臭气体</appearance>
+      <main_uses>用作燃料、化工原料、用于炭黑生产、合成氨、甲醇等。</main_uses>
       <other_properties>无资料</other_properties>
-      <heat_of_combustion>无资料</heat_of_combustion>
-      <critical_pressure>无资料</critical_pressure>
+      <heat_of_combustion>890.8kJ/mol</heat_of_combustion>
+      <critical_pressure>4.6MPa</critical_pressure>
       <explosive_upper_limit>15.0</explosive_upper_limit>
       <explosive_lower_limit>5.0</explosive_lower_limit>
     </physical_chemical>
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
-      <stability>在正确的使用和存储条件下是稳定的。</stability>
-      <incompatible_substances>无资料</incompatible_substances>
-      <conditions_to_avoid>不相容物质，热、火焰和火花。</conditions_to_avoid>
-      <polymerization_hazard>无资料</polymerization_hazard>
-      <decomposition_products>在正常的储存和使用条件下，不会产生危险的分解产物。</decomposition_products>
+      <stability>在正确的使用和存储条件下是稳定的</stability>
+      <incompatible_substances>强氧化剂、卤素、强酸</incompatible_substances>
+      <conditions_to_avoid>明火、高热、静电、氧化剂</conditions_to_avoid>
+      <polymerization_hazard>不能出现</polymerization_hazard>
+      <decomposition_products>受热分解产生一氧化碳、二氧化碳、水蒸气等</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：无资料；LC50：无资料。天然气本身毒性较低，主要危险在于窒息。高浓度天然气可引起窒息。</acute_toxicity>
+      <subacute_chronic_toxicity>长期接触低浓度天然气对人体影响较小。天然气中可能含有硫化氢等杂质，长期接触可能对呼吸系统、神经系统造成影响。</subacute_chronic_toxicity>
       <rtecs>无资料</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对眼睛、皮肤和呼吸道有轻微刺激作用。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -119,31 +118,37 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
-      <biodegradability>无资料</biodegradability>
-      <non_biodegradability>无资料</non_biodegradability>
-      <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>无资料</other_harmful_effects>
+      <ecological_toxicity>对水生生物有毒性。天然气是温室气体，对大气环境有影响。</ecological_toxicity>
+      <biodegradability>在环境中可被微生物降解，但速度较慢</biodegradability>
+      <non_biodegradability>具有环境持久性，不易降解</non_biodegradability>
+      <bioaccumulation>在生物体内无明显蓄积作用</bioaccumulation>
+      <other_harmful_effects>天然气泄漏可能造成温室效应，对全球气候产生影响。泄漏到土壤中可能对植物生长产生影响。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>无资料</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物，属于HW49其他废物。</waste_properties>
+      <disposal_method>建议用焚烧法处置，焚烧温度需≥1100℃。处置前应参阅国家和地方有关法规，禁止随意倾倒。操作人员必须佩戴适当的防护装备。废弃物应交由有资质的危险废物处理单位处置。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规，禁止随意倾倒。操作人员必须佩戴适当的防护装备。避免污染土壤和地下水。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
-      <dangerous_goods_number>1971</dangerous_goods_number>
-      <un_number>1971</un_number>
+      <dangerous_goods_number>UN 1971</dangerous_goods_number>
+      <un_number>UN 1971</un_number>
       <imdg_page>无资料</imdg_page>
-      <packaging_mark>无资料</packaging_mark>
+      <packaging_mark>天然气，压缩的</packaging_mark>
       <packing_group>无资料</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_method>钢瓶、槽车等压力容器包装。包装容器必须密封。使用符合国际运输规定的包装容器。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。严禁与氧化剂、卤素等混装混运。装运该物品的车辆排气管必须配备阻火装置。运输过程中应远离火源、热源。运输途中应防暴晒、雨淋、高温。中途停留时应远离火种、热源。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>国内化学品管理法规：《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录（2015版）》、《城镇燃气管理条例》、《工作场所安全使用化学品规定》（[1996]劳部发423号）。国际法规：IMDG Code、ICAO TI、IATA-DGR。GHS危险性分类：第2.1类易燃气体。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <standard_reference>GB/T 16483-2008</standard_reference>
+      <revision_notes>本安全技术说明书依据GB/T 16483-2008标准编制，内容符合《化学品安全技术说明书 内容和项目顺序》和《化学品分类和危险性公示 通则》的要求。</revision_notes>
+      <abbreviations>CAS：化学文摘服务社号码；LD50：半数致死量；LC50：半数致死浓度；UN：联合国编号；IMDG：国际海运危险货物规则；ICAO TI：国际民航组织技术细则；IATA-DGR：国际航空运输协会危险品规则；GHS：全球化学品统一分类和标签制度。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>

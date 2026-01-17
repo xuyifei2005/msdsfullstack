@@ -620,6 +620,26 @@ const Login: React.FC = () => {
                     </Col>
                   </Row>
                 </div>
+
+                {/* 备案信息 */}
+                <div
+                  style={{
+                    marginTop: '16px',
+                    paddingTop: '16px',
+                    borderTop: '1px solid #f0f0f0',
+                    textAlign: 'center',
+                  }}
+                >
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', flexWrap: 'wrap', fontSize: '12px' }}>
+                    <a href="https://beian.mps.gov.cn/#/query/webSearch?code=61019602000641" rel="noreferrer" target="_blank" style={{ color: '#8c8c8c', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                      <img src="/beian-icon.png" alt="公安备案" style={{ width: '16px', height: '16px' }} />
+                      陕公网安备61019602000641号
+                    </a>
+                    <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer" style={{ color: '#8c8c8c', textDecoration: 'none' }}>
+                      陕ICP备2025081905号-1
+                    </a>
+                  </div>
+                </div>
               </div>
             </Col>
           </Row>

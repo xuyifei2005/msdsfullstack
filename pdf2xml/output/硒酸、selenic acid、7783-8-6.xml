@@ -4,23 +4,23 @@
     <!-- 第一部分：化学品及企业标识 -->
     <basic_info>
       <cas_number>7783-8-6</cas_number>
-      <msds_code>MSDS#987</msds_code>
+      <msds_code>MSDS-7783-08-6</msds_code>
       <product_name>硒酸</product_name>
       <product_alias>无资料</product_alias>
       <product_english_name>selenic acid</product_english_name>
-      <company_name></company_name>
-      <company_address></company_address>
-      <contact_phone></contact_phone>
-      <emergency_phone></emergency_phone>
-      <email></email>
-      <fax_number></fax_number>
+      <company_name>无资料</company_name>
+      <company_address>无资料</company_address>
+      <contact_phone>无资料</contact_phone>
+      <emergency_phone>无资料</emergency_phone>
+      <email>无资料</email>
+      <fax_number>无资料</fax_number>
     </basic_info>
     <!-- 第二部分：危险性概述 -->
     <hazard_info>
-      <hazard_category>第8.1类 酸性腐蚀品</hazard_category>
-      <exposure_routes>吸入 食入 经皮吸收</exposure_routes>
-      <health_hazards>食欲减退等表现。</health_hazards>
-      <environmental_hazards>无资料</environmental_hazards>
+      <hazard_category>第8.1类酸性腐蚀品</hazard_category>
+      <exposure_routes>吸入、食入、经皮吸收</exposure_routes>
+      <health_hazards>具有强腐蚀性。吸入可引起呼吸道刺激症状，严重者可发生化学性肺炎、肺水肿。食入可引起口腔、咽喉、食管和胃部灼伤，出现恶心、呕吐、腹痛、腹泻等症状，严重者可导致休克。皮肤接触可引起严重灼伤。眼睛接触可引起角膜灼伤，严重者可导致失明。长期接触可引起硒中毒，表现为食欲减退、乏力、贫血、脱发、指甲脱落、皮肤病变、神经系统损害等症状。</health_hazards>
+      <environmental_hazards>对水生物有剧毒，对水生环境可能会引起长期有害作用。</environmental_hazards>
       <fire_explosion_hazards>本品不燃，具强腐蚀性、强刺激性，可致人体灼伤。</fire_explosion_hazards>
     </hazard_info>
     <!-- 第三部分：成分/组成信息 -->
@@ -42,19 +42,23 @@
     </first_aid>
     <!-- 第五部分：消防措施 -->
     <fire_fighting>
-      <hazard_characteristics>具有强氧化性。其水溶液有腐蚀性和强烈的刺激性。</hazard_characteristics>
-      <fire_risk_classification>无资料</fire_risk_classification>
-      <harmful_combustion_products>无资料</harmful_combustion_products>
-      <suitable_extinguishing_media>消防人员必须穿全身耐酸碱消防服。灭火剂：雾状水、砂土。</suitable_extinguishing_media>
+      <hazard_characteristics>具有强氧化性。其水溶液有腐蚀性和强烈的刺激性。与有机物、还原剂、易燃物如硫、磷等接触有燃烧爆炸危险。</hazard_characteristics>
+      <fire_risk_classification>第8.1类酸性腐蚀品</fire_risk_classification>
+      <harmful_combustion_products>氧化硒、二氧化硒等有毒烟雾。</harmful_combustion_products>
+      <suitable_extinguishing_media>消防人员必须穿全身耐酸碱消防服。灭火剂：雾状水、砂土。禁止使用直流水。</suitable_extinguishing_media>
+      <firefighting_precautions>尽可能将容器从火场移至空旷处。处在火场中的容器若已变色或从安全泄压装置中发出声音，必须马上撤离。</firefighting_precautions>
     </fire_fighting>
     <!-- 第六部分：泄漏应急处理 -->
     <leak_response>
-      <emergency_procedures>隔离泄漏污染区，限制出入。建议应急处理人员戴防尘面具（全面罩），穿防酸碱工作服。不 要直接接触泄漏物。小量泄漏：用砂土、干燥石灰或苏打灰混合。然后收，转移至安全场所。 应急处理： 也可以用大量水冲洗，洗水稀释后放入废水系统。大量泄漏：收集回收或运至废物处理场所处</emergency_procedures>
+      <emergency_procedures>隔离泄漏污染区，限制出入。建议应急处理人员戴防尘面具（全面罩），穿防酸碱工作服。不要直接接触泄漏物。</emergency_procedures>
+      <protective_equipment>应急处理人员戴防尘面具（全面罩），穿防酸碱工作服，戴橡胶耐酸碱手套。</protective_equipment>
+      <environmental_precautions>防止泄漏物进入下水道、排洪沟等限制性空间。</environmental_precautions>
+      <cleanup_methods>小量泄漏：用砂土、干燥石灰或苏打灰混合，然后收集转移至安全场所。也可以用大量水冲洗，洗水稀释后放入废水系统。大量泄漏：收集回收或运至废物处理场所处置。</cleanup_methods>
     </leak_response>
     <!-- 第七部分：操作处置与储存 -->
     <handling_storage>
-      <handling_precautions>碱手套。避免产生粉尘。避免与氧化剂、碱类接触。搬运时要轻装轻卸，防止包装及容器损坏。</handling_precautions>
-      <storage_precautions>作规程。建议操作人员佩戴头罩型电动送风过滤式防尘呼吸器，穿橡胶耐酸碱服，戴橡胶耐酸 配备泄漏应急处理设备。倒空的容器可能残留有害物。 储存于阴凉、干燥、通风良好的库房。远离火种、热源。包装必须密封，切勿受潮。应与氧化 剂、碱类分开存放，切忌混储。储区应备有合适的材料收容泄漏物。</storage_precautions>
+      <handling_precautions>密闭操作，注意通风。操作尽可能机械化、自动化。操作人员必须经过专门培训，严格遵守操作规程。建议操作人员佩戴头罩型电动送风过滤式防尘呼吸器，穿橡胶耐酸碱服，戴橡胶耐酸碱手套。避免产生粉尘。避免与氧化剂、碱类接触。搬运时要轻装轻卸，防止包装及容器损坏。配备泄漏应急处理设备。倒空的容器可能残留有害物。</handling_precautions>
+      <storage_precautions>储存于阴凉、干燥、通风良好的库房。远离火种、热源。包装必须密封，切勿受潮。应与氧化剂、碱类分开存放，切忌混储。储区应备有合适的材料收容泄漏物。</storage_precautions>
     </handling_storage>
     <!-- 第八部分：接触控制/个体防护 -->
     <exposure_control>
@@ -62,36 +66,36 @@
       <former_soviet_mac>未制定标准</former_soviet_mac>
       <tlvtn>OSHA 0.2mg[Se]/m3; ACGIH 0.2mg[Se]/m3</tlvtn>
       <tlvvn>未制定标准</tlvvn>
-      <contact_limits>美国TWA：OSHA 0.2mg[Se]／m3；ACGIH 0.2mg[Se]／m3美国STEL：未制定标准</contact_limits>
+      <contact_limits>美国TWA：OSHA 0.2mg[Se]／m3；ACGIH 0.2mg[Se]／m3；美国STEL：未制定标准</contact_limits>
       <monitoring_method>无资料</monitoring_method>
       <engineering_controls>密闭操作，注意通风。尽可能机械化、自动化。提供安全淋浴和洗眼设备。</engineering_controls>
-      <respiratory_protection>可能接触其粉尘时，佩戴头罩型电动送风过滤式防尘呼吸器。或空气呼吸器。紧急事态抢救或</respiratory_protection>
+      <respiratory_protection>可能接触其粉尘时，佩戴头罩型电动送风过滤式防尘呼吸器。紧急事态抢救或逃生时，建议佩戴空气呼吸器。</respiratory_protection>
       <eye_protection>呼吸系统防护中已作防护。</eye_protection>
       <body_protection>穿橡胶耐酸碱服。</body_protection>
       <hand_protection>戴橡胶耐酸碱手套。</hand_protection>
-      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。单独存放被毒物污染的衣服，洗后备</other_protection>
+      <other_protection>工作现场禁止吸烟、进食和饮水。工作完毕，淋浴更衣。单独存放被毒物污染的衣服，洗后再用。</other_protection>
     </exposure_control>
     <!-- 第九部分：理化特性 -->
     <physical_chemical>
-      <pH>无资料</pH>
-      <melting_point>58</melting_point>
-      <boiling_point>260(分解)</boiling_point>
-      <flash_point>无意义</flash_point>
-      <relative_density>2.95</relative_density>
+      <pH>强酸性</pH>
+      <melting_point>58℃</melting_point>
+      <boiling_point>260℃（分解）</boiling_point>
+      <flash_point>>110℃</flash_point>
+      <relative_density>1.407</relative_density>
       <relative_vapor_density>无资料</relative_vapor_density>
-      <solubility></solubility>
-      <molecular_formula>H2S</molecular_formula>
+      <solubility>易溶于水，不溶于氨水，溶于硫酸</solubility>
+      <molecular_formula>H2SeO4</molecular_formula>
       <molecular_weight>144.98</molecular_weight>
       <main_components>纯品</main_components>
       <saturated_vapor_pressure>无资料</saturated_vapor_pressure>
       <log_kow>无资料</log_kow>
-      <critical_temperature>分解温度(℃)：160</critical_temperature>
+      <critical_temperature>无资料</critical_temperature>
       <ignition_temperature>无意义</ignition_temperature>
       <autoignition_temperature>无意义</autoignition_temperature>
-      <flammability></flammability>
-      <appearance>白色六方柱晶体，极易吸潮。</appearance>
-      <main_uses>用作鉴别甲醇和乙醇的试剂，及硒盐制备。</main_uses>
-      <other_properties>160</other_properties>
+      <flammability>不燃</flammability>
+      <appearance>白色六方柱晶体，极易吸潮</appearance>
+      <main_uses>用作鉴别甲醇和乙醇的试剂，及硒盐制备</main_uses>
+      <other_properties>无资料</other_properties>
       <heat_of_combustion>无意义</heat_of_combustion>
       <critical_pressure>无资料</critical_pressure>
       <explosive_upper_limit>无意义</explosive_upper_limit>
@@ -100,17 +104,17 @@
     <!-- 第十部分：稳定性和反应活性 -->
     <stability_reactivity>
       <stability>稳定</stability>
-      <incompatible_substances>强氧化剂、碱类。</incompatible_substances>
-      <conditions_to_avoid>潮湿空气。</conditions_to_avoid>
-      <polymerization_hazard>不能出现</polymerization_hazard>
-      <decomposition_products>无资料</decomposition_products>
+      <incompatible_substances>强氧化剂、碱类、有机物、还原剂、易燃物如硫、磷等</incompatible_substances>
+      <conditions_to_avoid>潮湿空气、高温</conditions_to_avoid>
+      <polymerization_hazard>不会发生</polymerization_hazard>
+      <decomposition_products>高温分解产生氧化硒、二氧化硒等有毒烟雾。</decomposition_products>
     </stability_reactivity>
     <!-- 第十一部分：毒理学信息 -->
     <toxicological>
-      <acute_toxicity>LC50：无资料</acute_toxicity>
-      <subacute_chronic_toxicity>无资料</subacute_chronic_toxicity>
+      <acute_toxicity>LD50：4000mg/Kg（大鼠经口）；4720mg/Kg（兔经皮）。LC50：9400mg/m3，2小时（小鼠吸入）。</acute_toxicity>
+      <subacute_chronic_toxicity>长期接触可引起硒中毒，表现为食欲减退、乏力、贫血、脱发、指甲脱落、皮肤病变、神经系统损害等症状。</subacute_chronic_toxicity>
       <rtecs>VS6575000</rtecs>
-      <irritation>无资料</irritation>
+      <irritation>对皮肤、眼睛和呼吸道有强烈刺激性。</irritation>
       <sensitization>无资料</sensitization>
       <mutagenicity>无资料</mutagenicity>
       <teratogenicity>无资料</teratogenicity>
@@ -118,31 +122,37 @@
     </toxicological>
     <!-- 第十二部分：生态学资料 -->
     <ecological>
-      <ecological_toxicity>无资料</ecological_toxicity>
+      <ecological_toxicity>对水生物有剧毒，对水生环境可能会引起长期有害作用</ecological_toxicity>
       <biodegradability>无资料</biodegradability>
       <non_biodegradability>无资料</non_biodegradability>
       <bioaccumulation>无资料</bioaccumulation>
-      <other_harmful_effects>工作后，淋浴更衣</other_harmful_effects>
+      <other_harmful_effects>工作后，淋浴更衣。单独存放被毒物污染的衣服，洗后再用。</other_harmful_effects>
     </ecological>
     <!-- 第十三部分：废弃处置 -->
     <disposal>
-      <waste_properties>处置前应参阅国家和地方有关法规。建议用焚烧法处置。</waste_properties>
-      <disposal_method></disposal_method>
-      <disposal_precautions>无资料</disposal_precautions>
+      <waste_properties>危险废物</waste_properties>
+      <disposal_method>建议用焚烧法处置。焚烧温度需≥1100℃。</disposal_method>
+      <disposal_precautions>处置前应参阅国家和地方有关法规。禁止随意倾倒。操作人员必须佩戴适当的防护装备。</disposal_precautions>
     </disposal>
     <!-- 第十四部分：运输信息 -->
     <transportation>
       <dangerous_goods_number>81030</dangerous_goods_number>
       <un_number>1905</un_number>
       <imdg_page>8220</imdg_page>
-      <packaging_mark>20</packaging_mark>
-      <packing_group>O51</packing_group>
-      <packaging_method></packaging_method>
-      <transportation_precautions></transportation_precautions>
+      <packaging_mark>腐蚀品</packaging_mark>
+      <packing_group>Ⅱ</packing_group>
+      <packaging_method>使用符合国际运输规定的包装容器。包装应密封，防止泄漏。</packaging_method>
+      <transportation_precautions>运输时运输车辆应配备相应品种和数量的消防器材及泄漏应急处理设备。严禁与氧化剂、碱类、易燃物等混装混运。运输途中应防曝晒、雨淋，防高温。中途停留时应远离火种、热源、高温区。</transportation_precautions>
     </transportation>
     <!-- 第十五部分：法规信息 -->
     <regulatory>
-      <regulatory_info></regulatory_info>
+      <regulatory_info>国内法规：《危险化学品安全管理条例》（国务院令第591号）、《危险化学品目录（2015版）》、《工作场所安全使用化学品规定》（[1996]劳部发423号）。国际法规：IMDG Code、ICAO TI、IATA-DGR。</regulatory_info>
     </regulatory>
+    <!-- 第十六部分：其他信息 -->
+    <other_info>
+      <reference_standards>编制标准：GB/T 16483-2008、GB 13690-2009、GHS</reference_standards>
+      <modification_notes>本安全技术说明书依据GB/T 16483-2008标准编制，内容符合《化学品安全技术说明书 内容和项目顺序》和《化学品分类和危险性公示 通则》的要求。</modification_notes>
+      <abbreviations>缩略语解释：CAS（化学文摘社）、LC50（半数致死浓度）、LD50（半数致死量）、STEL（短时间接触容许浓度）、TWA（时间加权平均容许浓度）、UN（联合国编号）。</abbreviations>
+    </other_info>
   </msds>
 </msds_list>
