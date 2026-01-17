@@ -176,8 +176,8 @@ tmp/
 ####################################
 # 用户上传的文件（需要根据实际情况调整）
 # output/
-# 但保留 pdf2xml/output 目录（PDF转换输出文件需要提交）
-!pdf2xml/output/
+# 排除 pdf2xml/output 目录（文件名过长导致CI/CD失败）
+pdf2xml/output/
 uploads/
 templates/*.xlsx
 templates/*.xls
