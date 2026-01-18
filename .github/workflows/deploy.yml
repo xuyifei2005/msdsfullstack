@@ -152,10 +152,10 @@ jobs:
             
             # 备份数据库
             echo "💾 备份数据库..."
-            docker-compose -f docker-compose.prod.yml exec -T msdsmysql mysqldump -u root -proot_password msds_dev > /tmp/msds-deploy/database-backup.sql || echo "⚠️  数据库备份失败，继续部署"
+            sudo docker-compose -f docker-compose.prod.yml exec -T msdsmysql mysqldump -u root -proot_password msds_dev > /tmp/msds-deploy/database-backup.sql || echo "⚠️  数据库备份失败，继续部署"
             
             echo "📥 停止服务..."
-            docker-compose -f docker-compose.prod.yml stop msdsbackend msdsnginx
+            sudo docker-compose -f docker-compose.prod.yml stop msdsbackend msdsnginx
             
             echo "⏳ 等待服务停止..."
             sleep 10
@@ -191,7 +191,7 @@ jobs:
             cd /opt/msds/msdsdocker
             
             echo "🚀 启动服务..."
-            docker-compose -f docker-compose.prod.yml up -d msdsbackend msdsnginx
+            sudo docker-compose -f docker-compose.prod.yml up -d msdsbackend msdsnginx
             
             echo "⏳ 等待服务启动..."
             sleep 30
@@ -200,7 +200,7 @@ jobs:
             rm -rf /tmp/msds-deploy
             
             echo "📊 查看服务状态..."
-            docker-compose -f docker-compose.prod.yml ps
+            sudo docker-compose -f docker-compose.prod.yml ps
             
             echo "✅ 部署完成！"
       
@@ -277,7 +277,7 @@ jobs:
             fi
             
             echo "📥 停止服务..."
-            docker-compose -f docker-compose.prod.yml stop msdsbackend msdsnginx
+            sudo docker-compose -f docker-compose.prod.yml stop msdsbackend msdsnginx
             
             echo "⏳ 等待服务停止..."
             sleep 10
@@ -313,7 +313,7 @@ jobs:
             cd /opt/msds/msdsdocker
             
             echo "🚀 启动测试服务..."
-            docker-compose -f docker-compose.prod.yml up -d msdsbackend msdsnginx
+            sudo docker-compose -f docker-compose.prod.yml up -d msdsbackend msdsnginx
             
             echo "⏳ 等待服务启动..."
             sleep 30
@@ -322,6 +322,6 @@ jobs:
             rm -rf /tmp/msds-deploy-staging
             
             echo "📊 查看服务状态..."
-            docker-compose -f docker-compose.prod.yml ps
+            sudo docker-compose -f docker-compose.prod.yml ps
             
             echo "✅ 测试环境部署完成！"
