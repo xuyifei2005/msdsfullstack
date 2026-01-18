@@ -9,8 +9,8 @@ WORKDIR /app
 # 复制package文件
 COPY package*.json ./
 
-# 安装依赖（使用npm ci提升速度和可靠性）
-RUN npm ci --only=production && npm cache clean --force
+# 安装依赖（使用npm install避免lockfile同步问题）
+RUN npm install --production && npm cache clean --force
 
 # 复制源代码
 COPY . .
