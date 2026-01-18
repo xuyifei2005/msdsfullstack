@@ -134,6 +134,20 @@ jobs:
             # 进入项目目录
             cd /opt/msds/msdsdocker
             
+            # 检查docker-compose.prod.yml是否存在
+            if [ ! -f docker-compose.prod.yml ]; then
+                echo "❌ 错误：docker-compose.prod.yml文件不存在！"
+                echo ""
+                echo "=== 当前目录结构 ==="
+                ls -la
+                echo ""
+                echo "=== 请先在服务器上初始化项目 ==="
+                echo "1. 创建必要的目录结构"
+                echo "2. 上传docker-compose.prod.yml文件"
+                echo "3. 加载Docker镜像"
+                exit 1
+            fi
+            
             # 诊断Docker环境
             echo "=== 诊断Docker环境 ==="
             echo "Docker版本："
@@ -301,6 +315,20 @@ jobs:
           script: |
             # 进入项目目录
             cd /opt/msds/msdsdocker
+            
+            # 检查docker-compose.prod.yml是否存在
+            if [ ! -f docker-compose.prod.yml ]; then
+                echo "❌ 错误：docker-compose.prod.yml文件不存在！"
+                echo ""
+                echo "=== 当前目录结构 ==="
+                ls -la
+                echo ""
+                echo "=== 请先在服务器上初始化项目 ==="
+                echo "1. 创建必要的目录结构"
+                echo "2. 上传docker-compose.prod.yml文件"
+                echo "3. 加载Docker镜像"
+                exit 1
+            fi
             
             # 诊断Docker环境
             echo "=== 诊断Docker环境 ==="
