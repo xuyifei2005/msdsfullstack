@@ -20,6 +20,10 @@ COPY . .
 # 构建生产版本
 RUN npm run build:prod
 
+# 验证构建产物是否存在
+RUN ls -la /app/dist || (echo "前端构建失败，dist目录不存在！" && exit 1)
+RUN test -f /app/dist/index.html || (echo "index.html不存在，构建失败！" && exit 1)
+
 # ===== 运行阶段 =====
 FROM nginx:alpine
 
@@ -29,6 +33,10 @@ LABEL description="MSDS Frontend Nginx Container"
 
 # 复制构建产物到Nginx目录
 COPY --from=builder /app/dist /usr/share/nginx/html
+
+# 验证文件复制成功
+RUN ls -la /usr/share/nginx/html || (echo "文件复制失败！" && exit 1)
+RUN test -f /usr/share/nginx/html/index.html || (echo "index.html复制失败！" && exit 1)
 
 # 复制Nginx配置文件
 COPY nginx.prod.conf /etc/nginx/conf.d/default.conf

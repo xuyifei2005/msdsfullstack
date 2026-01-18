@@ -24,6 +24,9 @@ COPY . .
 # 执行Maven打包（跳过测试，使用生产环境配置）
 RUN mvn clean package -Pprod -DskipTests -B
 
+# 验证JAR文件是否存在
+RUN ls -lh /build/ruoyi-admin/target/*.jar || (echo "JAR文件不存在，构建失败！" && exit 1)
+
 # ===== 运行阶段 =====
 FROM eclipse-temurin:17-jre
 
@@ -44,6 +47,9 @@ RUN groupadd -r msds && useradd -r -g msds msds
 
 # 从构建阶段复制JAR文件
 COPY --from=builder /build/ruoyi-admin/target/ruoyi-admin.jar app.jar
+
+# 验证JAR文件复制成功
+RUN ls -lh /app/app.jar || (echo "JAR文件复制失败！" && exit 1)
 
 # 创建必要目录
 RUN mkdir -p /app/logs /app/uploadPath && \
