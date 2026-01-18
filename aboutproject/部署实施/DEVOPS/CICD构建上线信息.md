@@ -252,9 +252,8 @@ ssh -i "$env:USERPROFILE\.ssh\msds_github_rsa" -o StrictHostKeyChecking=no -o Us
 
 
 
-
-
-
+📋 国内常用镜像加速器
+镜像源 地址 特点 阿里云 https://<your-id>.mirror.aliyuncs.com 速度快，需要注册获取ID 腾讯云 https://mirror.ccs.tencentyun.com 无需注册，速度快 中科大 https://docker.mirrors.ustc.edu.cn 教育网友好 网易 https://hub-mirror.c.163.com 速度快，稳定 七牛云 https://reg-mirror.qiniu.com 速度快
 
 
 

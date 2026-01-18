@@ -38,6 +38,13 @@ jobs:
           cache: 'npm'
           cache-dependency-path: msdsPC/ruoyi-MsdsPc-react/react-ui/package-lock.json
       
+      - name: 配置npm国内镜像源
+        run: |
+          echo "🔨 配置npm国内镜像源..."
+          npm config set registry https://registry.npmmirror.com
+          echo "✅ npm镜像源配置完成"
+          npm config get registry
+      
       - name: 安装依赖
         working-directory: msdsPC/ruoyi-MsdsPc-react/react-ui
         run: npm ci
@@ -82,6 +89,28 @@ jobs:
           distribution: 'temurin'
           cache: 'maven'
       
+      - name: 配置Maven国内镜像源
+        run: |
+          echo "🔨 配置Maven国内镜像源..."
+          mkdir -p ~/.m2
+          cat > ~/.m2/settings.xml << 'EOF'
+          <?xml version="1.0" encoding="UTF-8"?>
+          <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                  http://maven.apache.org/xsd/settings-1.0.0.xsd">
+            <mirrors>
+              <mirror>
+                <id>aliyun</id>
+                <mirrorOf>central</mirrorOf>
+                <name>Aliyun Maven Mirror</name>
+                <url>https://maven.aliyun.com/repository/public</url>
+              </mirror>
+            </mirrors>
+          </settings>
+          EOF
+          echo "✅ Maven镜像源配置完成"
+      
       - name: Maven构建
         working-directory: msdsPC/ruoyi-MsdsPc-react
         run: mvn clean package -Pprod -DskipTests -B
@@ -114,6 +143,27 @@ jobs:
       - name: 设置Docker Buildx
         uses: docker/setup-buildx-action@v3
       
+      - name: 配置Docker国内镜像加速器
+        run: |
+          echo "🔨 配置Docker国内镜像加速器..."
+          sudo mkdir -p /etc/docker
+          sudo tee /etc/docker/daemon.json > /dev/null << 'EOF'
+          {
+            "registry-mirrors": [
+              "https://hub-mirror.c.163.com",
+              "https://mirror.ccs.tencentyun.com",
+              "https://docker.mirrors.ustc.edu.cn"
+            ],
+            "max-concurrent-downloads": 10,
+            "log-driver": "json-file",
+            "log-level": "warn",
+            "storage-driver": "overlay2"
+          }
+          EOF
+          sudo systemctl restart docker
+          echo "✅ Docker镜像加速器配置完成"
+          docker info | grep -A 10 "Registry Mirrors"
+      
       - name: 构建后端Docker镜像
         run: |
           echo "🔨 构建后端Docker镜像..."
@@ -121,6 +171,22 @@ jobs:
           docker build -f Dockerfile.prod -t msdsbackend:latest .
           docker tag msdsbackend:latest msdsbackend
           echo "✅ 后端镜像构建完成"
+      
+      - name: 拉取并标记MySQL镜像
+        run: |
+          echo "🔨 拉取MySQL镜像（使用国内镜像源）..."
+          # 使用网易镜像源加速
+          docker pull hub-mirror.c.163.com/library/mysql:8.0.42
+          docker tag hub-mirror.c.163.com/library/mysql:8.0.42 msdsmysql
+          echo "✅ MySQL镜像准备完成"
+      
+      - name: 拉取并标记Redis镜像
+        run: |
+          echo "🔨 拉取Redis镜像（使用国内镜像源）..."
+          # 使用网易镜像源加速
+          docker pull hub-mirror.c.163.com/library/redis:latest
+          docker tag hub-mirror.c.163.com/library/redis:latest msdsredis
+          echo "✅ Redis镜像准备完成"
       
       - name: 构建Nginx前端镜像
         run: |
@@ -161,6 +227,14 @@ jobs:
         run: |
           echo "📦 导出Docker镜像为tar文件..."
           mkdir -p docker-images
+          
+          # 导出MySQL镜像
+          docker save msdsmysql -o docker-images/msdsmysql.tar
+          echo "✅ msdsmysql.tar 导出完成"
+          
+          # 导出Redis镜像
+          docker save msdsredis -o docker-images/msdsredis.tar
+          echo "✅ msdsredis.tar 导出完成"
           
           # 导出后端镜像
           docker save msdsbackend:latest -o docker-images/msdsbackend.tar
