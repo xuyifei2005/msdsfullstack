@@ -9,8 +9,8 @@ WORKDIR /app
 # 复制package文件
 COPY package*.json ./
 
-# 删除package-lock.json并使用npm install重新生成
-RUN rm -f package-lock.json && \
+# 创建干净的package.json只包含name和dependencies，避免scripts执行
+RUN node -e "const pkg=require('./package.json'); const clean={name:pkg.name,version:pkg.version,dependencies:pkg.dependencies}; require('fs').writeFileSync('package.json', JSON.stringify(clean, null, 2))" && \
     npm install --production && \
     npm cache clean --force
 
