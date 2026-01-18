@@ -2,7 +2,7 @@
 # 多阶段构建，优化镜像大小
 
 # ===== 构建阶段 =====
-FROM maven:3.8-openjdk-17 AS builder
+FROM maven:3.9-eclipse-temurin-17 AS builder
 
 WORKDIR /build
 
@@ -25,7 +25,7 @@ COPY . .
 RUN mvn clean package -Pprod -DskipTests -B
 
 # ===== 运行阶段 =====
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jre
 
 # 设置工作目录
 WORKDIR /app

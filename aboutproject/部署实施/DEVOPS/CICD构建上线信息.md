@@ -244,7 +244,11 @@ ssh -i "$env:USERPROFILE\.ssh\msds_github_rsa" -o StrictHostKeyChecking=no -o Us
 - 私钥文件 ： C:\Users\xuyif\.ssh\msds_github_rsa
 
 -----------------------------------------------------------------------------------------------------
-
+### 📊 关键改进 
+1. 完整的镜像管理：现在CI/CD流程会自动构建、导出、上传和加载Docker镜像 
+2. 无需外部镜像仓库：直接使用GitHub Actions artifacts传输镜像，无需配置阿里云或其他镜像仓库 
+3. 自动化部署：整个过程完全自动化，无需手动干预
+4. 镜像验证：在服务器上会验证已加载的镜像列表  现在CI/CD应该能够成功构建Docker镜像并完成部署了！不会再出现Docker镜像拉取失败的问题。
 
 
 
