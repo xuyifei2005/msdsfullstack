@@ -109,6 +109,23 @@ jobs:
       - name: 删除pdf2xml目录（避免长文件名问题）
         run: rm -rf pdf2xml || true
       
+      - name: 创建服务器目录
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            echo "=== 创建服务器目录结构 ==="
+            cd /opt/msds
+            mkdir -p msdsdocker
+            cd msdsdocker
+            mkdir -p nginx/conf.d nginx/ssl nginx/logs nginx/html
+            mkdir -p mysql/conf.d
+            mkdir -p msdsfullstatckcompose/msdsdatabaseinitdb
+            echo "✅ 目录结构创建完成"
+            ls -la
+      
       - name: 检查docker-compose.prod.yml文件
         run: |
           echo "=== 检查docker-compose.prod.yml文件 ==="
