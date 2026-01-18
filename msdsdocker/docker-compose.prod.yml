@@ -152,6 +152,8 @@ services:
       - ./msdsfullstatckcompose/msdsdatabaseinitdb:/docker-entrypoint-initdb.d:ro
       # MySQL配置文件
       - ./mysql/conf.d:/etc/mysql/conf.d:ro
+      # 启动脚本（每次启动时执行，确保远程访问权限配置正确）
+      - ./mysql/init-remote-access.sh:/docker-entrypoint-initdb.d/99-init-remote-access.sh:ro
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-proot_password"]
       interval: 10s
