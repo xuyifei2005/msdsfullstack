@@ -134,6 +134,23 @@ jobs:
             # 进入项目目录
             cd /opt/msds/msdsdocker
             
+            # 诊断Docker环境
+            echo "=== 诊断Docker环境 ==="
+            echo "Docker版本："
+            sudo docker --version 2>/dev/null || echo "Docker未安装"
+            echo ""
+            echo "Docker Compose版本："
+            sudo docker-compose --version 2>/dev/null || sudo docker compose version 2>/dev/null || echo "Docker Compose未安装"
+            echo ""
+            echo "Docker服务状态："
+            sudo systemctl status docker --no-pager | head -n 5
+            echo ""
+            echo "当前运行的容器："
+            sudo docker ps
+            echo ""
+            echo "=== 诊断完成 ==="
+            echo ""
+            
             # 创建临时目录用于传输文件
             mkdir -p /tmp/msds-deploy
             
@@ -260,6 +277,23 @@ jobs:
           script: |
             # 进入项目目录
             cd /opt/msds/msdsdocker
+            
+            # 诊断Docker环境
+            echo "=== 诊断Docker环境 ==="
+            echo "Docker版本："
+            sudo docker --version 2>/dev/null || echo "Docker未安装"
+            echo ""
+            echo "Docker Compose版本："
+            sudo docker-compose --version 2>/dev/null || sudo docker compose version 2>/dev/null || echo "Docker Compose未安装"
+            echo ""
+            echo "Docker服务状态："
+            sudo systemctl status docker --no-pager | head -n 5
+            echo ""
+            echo "当前运行的容器："
+            sudo docker ps
+            echo ""
+            echo "=== 诊断完成 ==="
+            echo ""
             
             # 创建临时目录用于传输文件
             mkdir -p /tmp/msds-deploy-staging
