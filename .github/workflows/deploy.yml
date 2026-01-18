@@ -303,6 +303,17 @@ jobs:
           target: "/opt/msds/msdsdocker/"
           rm: false
           strip_components: 1
+
+      - name: 上传数据库SQL到服务器（用于MySQL首次初始化）
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "aboutproject/msdsdatabases/20251117bk/msds_dev.sql"
+          target: "/opt/msds/msdsdocker/msdsfullstatckcompose/msdsdatabaseinitdb/"
+          rm: false
+          strip_components: 3
       
       - name: 验证文件上传
         uses: appleboy/ssh-action@master
@@ -321,6 +332,14 @@ jobs:
               echo "当前目录内容："
               ls -la
               exit 1
+            fi
+
+            if [ -f msdsfullstatckcompose/msdsdatabaseinitdb/msds_dev.sql ]; then
+              echo "✅ msds_dev.sql已上传（用于首次初始化）"
+              ls -lh msdsfullstatckcompose/msdsdatabaseinitdb/msds_dev.sql
+              cp -f msdsfullstatckcompose/msdsdatabaseinitdb/msds_dev.sql msdsfullstatckcompose/msdsdatabaseinitdb/10-msds_dev.sql
+            else
+              echo "⚠️  未发现msds_dev.sql（将使用现有初始化脚本）"
             fi
 
   # ==================== 部署到生产环境 ====================
@@ -481,7 +500,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: "frontend-dist/*"
-          target: "/opt/msds/msdsdocker/msdsPC/ruoyi-MsdsPc-react/react-ui/dist"
+          target: "/opt/msds/msdsdocker/nginx/html"
           rm: true
       
       - name: 上传后端JAR文件到服务器
@@ -715,7 +734,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: "frontend-dist/*"
-          target: "/opt/msds/msdsdocker/msdsPC/ruoyi-MsdsPc-react/react-ui/dist"
+          target: "/opt/msds/msdsdocker/nginx/html"
           rm: true
       
       - name: 上传后端JAR文件到测试服务器
