@@ -10,11 +10,11 @@ on:
       - main
 
 env:
-  # 阿里云容器镜像仓库配置
-  REGISTRY: registry.cn-beijing.aliyuncs.com
-  NAMESPACE: jfkjmsds  # 修改为实际创建的命名空间
-  BACKEND_IMAGE: backend
-  FRONTEND_IMAGE: frontend
+  # 服务器配置
+  PRODUCTION_HOST: ${{ secrets.SSH_HOST }}
+  PRODUCTION_USER: ${{ secrets.SSH_USER }}
+  STAGING_HOST: ${{ secrets.SSH_HOST }}
+  STAGING_USER: ${{ secrets.SSH_USER }}
 
 jobs:
   # ==================== 前端构建 ====================
@@ -54,7 +54,7 @@ jobs:
         working-directory: msdsPC/ruoyi-MsdsPc-react/react-ui
         run: npm run build:prod
       
-      - name: 上传构建产物
+      - name: 上传前端构建产物
         uses: actions/upload-artifact@v4
         with:
           name: frontend-dist
@@ -86,99 +86,17 @@ jobs:
         working-directory: msdsPC/ruoyi-MsdsPc-react
         run: mvn clean package -Pprod -DskipTests -B
       
-      - name: 上传JAR文件
+      - name: 上传后端JAR文件
         uses: actions/upload-artifact@v4
         with:
           name: backend-jar
           path: msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/target/ruoyi-admin.jar
           retention-days: 7
 
-  # ==================== 构建Docker镜像 ====================
-  build-docker:
-    name: 构建并推送Docker镜像
-    needs: [build-frontend, build-backend]
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop'
-    
-    steps:
-      - name: 检出代码
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      
-      - name: 删除pdf2xml目录（避免长文件名问题）
-        run: rm -rf pdf2xml || true
-      
-      - name: 下载前端构建产物
-        uses: actions/download-artifact@v4
-        with:
-          name: frontend-dist
-          path: msdsPC/ruoyi-MsdsPc-react/react-ui/dist
-      
-      - name: 下载后端JAR文件
-        uses: actions/download-artifact@v4
-        with:
-          name: backend-jar
-          path: msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/target
-      
-      - name: 设置Docker Buildx
-        uses: docker/setup-buildx-action@v3
-      
-      - name: 登录阿里云容器镜像服务
-        uses: docker/login-action@v3
-        with:
-          registry: ${{ env.REGISTRY }}
-          username: ${{ secrets.ALIYUN_REGISTRY_USERNAME }}
-          password: ${{ secrets.ALIYUN_REGISTRY_PASSWORD }}
-      
-      - name: 提取元数据（标签、注释）
-        id: meta-backend
-        uses: docker/metadata-action@v5
-        with:
-          images: ${{ env.REGISTRY }}/${{ env.NAMESPACE }}/${{ env.BACKEND_IMAGE }}
-          tags: |
-            type=ref,event=branch
-            type=sha,prefix={{branch}}-
-            type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' }}
-            type=raw,value=develop,enable=${{ github.ref == 'refs/heads/develop' }}
-      
-      - name: 提取前端元数据
-        id: meta-frontend
-        uses: docker/metadata-action@v5
-        with:
-          images: ${{ env.REGISTRY }}/${{ env.NAMESPACE }}/${{ env.FRONTEND_IMAGE }}
-          tags: |
-            type=ref,event=branch
-            type=sha,prefix={{branch}}-
-            type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' }}
-            type=raw,value=develop,enable=${{ github.ref == 'refs/heads/develop' }}
-      
-      - name: 构建并推送后端镜像
-        uses: docker/build-push-action@v5
-        with:
-          context: msdsPC/ruoyi-MsdsPc-react
-          file: msdsPC/ruoyi-MsdsPc-react/Dockerfile.prod
-          push: true
-          tags: ${{ steps.meta-backend.outputs.tags }}
-          labels: ${{ steps.meta-backend.outputs.labels }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
-      
-      - name: 构建并推送前端镜像
-        uses: docker/build-push-action@v5
-        with:
-          context: msdsPC/ruoyi-MsdsPc-react/react-ui
-          file: msdsPC/ruoyi-MsdsPc-react/react-ui/Dockerfile.nginx
-          push: true
-          tags: ${{ steps.meta-frontend.outputs.tags }}
-          labels: ${{ steps.meta-frontend.outputs.labels }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
-
   # ==================== 部署到生产环境 ====================
   deploy-production:
     name: 部署到生产环境
-    needs: build-docker
+    needs: [build-frontend, build-backend]
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     environment:
@@ -194,26 +112,95 @@ jobs:
       - name: 删除pdf2xml目录（避免长文件名问题）
         run: rm -rf pdf2xml || true
       
+      - name: 下载前端构建产物
+        uses: actions/download-artifact@v4
+        with:
+          name: frontend-dist
+          path: frontend-dist
+      
+      - name: 下载后端JAR文件
+        uses: actions/download-artifact@v4
+        with:
+          name: backend-jar
+          path: backend-jar
+      
       - name: 部署到服务器
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.PRODUCTION_HOST }}
-          username: ${{ secrets.PRODUCTION_USER }}
-          key: ${{ secrets.PRODUCTION_SSH_KEY }}
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            # 进入项目目录
+            cd /opt/msds/msdsdocker
+            
+            # 创建临时目录用于传输文件
+            mkdir -p /tmp/msds-deploy
+            
+            echo "📦 开始上传构建产物..."
+            
+            # 备份当前版本
+            if [ -d "msdsPC/ruoyi-MsdsPc-react/react-ui/dist" ]; then
+              echo "💾 备份前端文件..."
+              cp -r msdsPC/ruoyi-MsdsPc-react/react-ui/dist /tmp/msds-deploy/frontend-backup || true
+            fi
+            
+            if [ -f "msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/target/ruoyi-admin.jar" ]; then
+              echo "💾 备份后端JAR文件..."
+              cp msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/target/ruoyi-admin.jar /tmp/msds-deploy/backend-backup.jar || true
+            fi
+            
+            # 备份数据库
+            echo "💾 备份数据库..."
+            docker-compose -f docker-compose.prod.yml exec -T msdsmysql mysqldump -u root -proot_password msds_dev > /tmp/msds-deploy/database-backup.sql || echo "⚠️  数据库备份失败，继续部署"
+            
+            echo "📥 停止服务..."
+            docker-compose -f docker-compose.prod.yml stop msdsbackend msdsnginx
+            
+            echo "⏳ 等待服务停止..."
+            sleep 10
+            
+            echo "✅ 部署完成！"
+      
+      - name: 上传前端文件到服务器
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "frontend-dist/*"
+          target: "/opt/msds/msdsdocker/msdsPC/ruoyi-MsdsPc-react/react-ui/dist"
+          rm: true
+      
+      - name: 上传后端JAR文件到服务器
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "backend-jar/ruoyi-admin.jar"
+          target: "/opt/msds/msdsdocker/msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/target/ruoyi-admin.jar"
+      
+      - name: 重启服务
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /opt/msds/msdsdocker
             
-            echo "📦 拉取最新镜像..."
-            docker-compose -f docker-compose.prod.yml pull msdsbackend msdsnginx
-            
-            echo "💾 备份数据库..."
-            ./backup-restore.sh full || echo "⚠️  备份失败，继续部署"
-            
-            echo "🔄 重新部署服务..."
+            echo "🚀 启动服务..."
             docker-compose -f docker-compose.prod.yml up -d msdsbackend msdsnginx
             
-            echo "🧹 清理旧镜像..."
-            docker image prune -f
+            echo "⏳ 等待服务启动..."
+            sleep 30
+            
+            echo "🧹 清理临时文件..."
+            rm -rf /tmp/msds-deploy
+            
+            echo "📊 查看服务状态..."
+            docker-compose -f docker-compose.prod.yml ps
             
             echo "✅ 部署完成！"
       
@@ -223,11 +210,11 @@ jobs:
           sleep 60
           
           echo "🏥 检查服务健康状态..."
-          curl -f https://flymsds.cn/health || exit 1
+          curl -f https://flymsds.cn/ || exit 1
           
           echo "✅ 健康检查通过！"
       
-      - name: 发送部署通知（可选）
+      - name: 发送部署通知
         if: always()
         run: |
           echo "📢 部署状态: ${{ job.status }}"
@@ -236,20 +223,105 @@ jobs:
   # ==================== 部署到测试环境 ====================
   deploy-staging:
     name: 部署到测试环境
-    needs: build-docker
+    needs: [build-frontend, build-backend]
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/develop'
     environment:
       name: staging
     
     steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: 删除pdf2xml目录（避免长文件名问题）
+        run: rm -rf pdf2xml || true
+      
+      - name: 下载前端构建产物
+        uses: actions/download-artifact@v4
+        with:
+          name: frontend-dist
+          path: frontend-dist
+      
+      - name: 下载后端JAR文件
+        uses: actions/download-artifact@v4
+        with:
+          name: backend-jar
+          path: backend-jar
+      
       - name: 部署到测试服务器
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.STAGING_HOST }}
-          username: ${{ secrets.STAGING_USER }}
-          key: ${{ secrets.STAGING_SSH_KEY }}
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /opt/msds-staging
-            docker-compose pull
-            docker-compose up -d
+            # 进入项目目录
+            cd /opt/msds/msdsdocker
+            
+            # 创建临时目录用于传输文件
+            mkdir -p /tmp/msds-deploy-staging
+            
+            echo "📦 开始上传构建产物到测试环境..."
+            
+            # 备份当前版本
+            if [ -d "msdsPC/ruoyi-MsdsPc-react/react-ui/dist" ]; then
+              echo "💾 备份前端文件..."
+              cp -r msdsPC/ruoyi-MsdsPc-react/react-ui/dist /tmp/msds-deploy-staging/frontend-backup || true
+            fi
+            
+            if [ -f "msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/target/ruoyi-admin.jar" ]; then
+              echo "💾 备份后端JAR文件..."
+              cp msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/target/ruoyi-admin.jar /tmp/msds-deploy-staging/backend-backup.jar || true
+            fi
+            
+            echo "📥 停止服务..."
+            docker-compose -f docker-compose.prod.yml stop msdsbackend msdsnginx
+            
+            echo "⏳ 等待服务停止..."
+            sleep 10
+            
+            echo "✅ 准备完成！"
+      
+      - name: 上传前端文件到测试服务器
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "frontend-dist/*"
+          target: "/opt/msds/msdsdocker/msdsPC/ruoyi-MsdsPc-react/react-ui/dist"
+          rm: true
+      
+      - name: 上传后端JAR文件到测试服务器
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "backend-jar/ruoyi-admin.jar"
+          target: "/opt/msds/msdsdocker/msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/target/ruoyi-admin.jar"
+      
+      - name: 重启测试服务
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /opt/msds/msdsdocker
+            
+            echo "🚀 启动测试服务..."
+            docker-compose -f docker-compose.prod.yml up -d msdsbackend msdsnginx
+            
+            echo "⏳ 等待服务启动..."
+            sleep 30
+            
+            echo "🧹 清理临时文件..."
+            rm -rf /tmp/msds-deploy-staging
+            
+            echo "📊 查看服务状态..."
+            docker-compose -f docker-compose.prod.yml ps
+            
+            echo "✅ 测试环境部署完成！"
