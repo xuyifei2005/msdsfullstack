@@ -501,6 +501,8 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /opt/msds/msdsdocker
+
+            set -e
             
             echo "🚀 启动服务..."
             cd /opt/msds/msdsdocker
@@ -508,10 +510,10 @@ jobs:
             # 检查docker-compose是否可用
             if sudo docker-compose -f docker-compose.prod.yml version &>/dev/null; then
                 echo "使用docker-compose启动所有服务..."
-                sudo docker-compose -f docker-compose.prod.yml up -d
+                sudo docker-compose -f docker-compose.prod.yml up -d --remove-orphans
             elif sudo docker compose version &>/dev/null; then
                 echo "使用docker compose启动所有服务..."
-                sudo docker compose -f docker-compose.prod.yml up -d
+                sudo docker compose -f docker-compose.prod.yml up -d --remove-orphans
             else
                 echo "docker-compose不可用，使用docker启动单个容器..."
                 # 启动基础服务（MySQL和Redis）
@@ -527,7 +529,20 @@ jobs:
             rm -rf /tmp/msds-deploy
             
             echo "📊 查看服务状态..."
-            sudo docker ps | grep -E "msdsbackend|msdsnginx|msdsmysql|msdsredis"
+            sudo docker ps -a | grep -E "msdsbackend|msdsnginx|msdsmysql|msdsredis" || true
+
+            expected_containers=$(sudo docker ps -a --format '{{.Names}}' | grep -E '^(msdsbackend|msdsnginx|msdsmysql|msdsredis)$' | wc -l)
+            if [ "$expected_containers" -lt 4 ]; then
+              echo "❌ 容器未按预期创建/启动，输出compose配置与日志用于诊断"
+              if sudo docker-compose -f docker-compose.prod.yml version &>/dev/null; then
+                sudo docker-compose -f docker-compose.prod.yml ps || true
+                sudo docker-compose -f docker-compose.prod.yml logs --tail=200 || true
+              elif sudo docker compose version &>/dev/null; then
+                sudo docker compose -f docker-compose.prod.yml ps || true
+                sudo docker compose -f docker-compose.prod.yml logs --tail=200 || true
+              fi
+              exit 1
+            fi
             
             echo "✅ 部署完成！"
       
@@ -720,6 +735,8 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /opt/msds/msdsdocker
+
+            set -e
             
             echo "🚀 启动测试服务..."
             cd /opt/msds/msdsdocker
@@ -727,10 +744,10 @@ jobs:
             # 检查docker-compose是否可用
             if sudo docker-compose -f docker-compose.prod.yml version &>/dev/null; then
                 echo "使用docker-compose启动所有服务..."
-                sudo docker-compose -f docker-compose.prod.yml up -d
+                sudo docker-compose -f docker-compose.prod.yml up -d --remove-orphans
             elif sudo docker compose version &>/dev/null; then
                 echo "使用docker compose启动所有服务..."
-                sudo docker compose -f docker-compose.prod.yml up -d
+                sudo docker compose -f docker-compose.prod.yml up -d --remove-orphans
             else
                 echo "docker-compose不可用，使用docker启动单个容器..."
                 # 启动基础服务（MySQL和Redis）
@@ -746,6 +763,19 @@ jobs:
             rm -rf /tmp/msds-deploy-staging
             
             echo "📊 查看服务状态..."
-            sudo docker ps | grep -E "msdsbackend|msdsnginx|msdsmysql|msdsredis"
+            sudo docker ps -a | grep -E "msdsbackend|msdsnginx|msdsmysql|msdsredis" || true
+
+            expected_containers=$(sudo docker ps -a --format '{{.Names}}' | grep -E '^(msdsbackend|msdsnginx|msdsmysql|msdsredis)$' | wc -l)
+            if [ "$expected_containers" -lt 4 ]; then
+              echo "❌ 测试环境容器未按预期创建/启动，输出compose配置与日志用于诊断"
+              if sudo docker-compose -f docker-compose.prod.yml version &>/dev/null; then
+                sudo docker-compose -f docker-compose.prod.yml ps || true
+                sudo docker-compose -f docker-compose.prod.yml logs --tail=200 || true
+              elif sudo docker compose version &>/dev/null; then
+                sudo docker compose -f docker-compose.prod.yml ps || true
+                sudo docker compose -f docker-compose.prod.yml logs --tail=200 || true
+              fi
+              exit 1
+            fi
             
             echo "✅ 测试环境部署完成！"
