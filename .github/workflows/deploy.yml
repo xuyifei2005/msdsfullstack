@@ -268,6 +268,7 @@ jobs:
             echo "=== 创建服务器目录结构 ==="
             cd /opt/msds
             mkdir -p msdsdocker
+            mkdir -p aboutproject/msdsdatabases
             cd msdsdocker
             mkdir -p images
             mkdir -p nginx/conf.d nginx/ssl nginx/logs nginx/html
@@ -310,10 +311,10 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "aboutproject/msdsdatabases/20251117bk/msds_dev.sql"
-          target: "/opt/msds/msdsdocker/msdsfullstatckcompose/msdsdatabaseinitdb/"
+          source: "aboutproject/msdsdatabases/msds_complete_database.sql"
+          target: "/opt/msds/aboutproject/msdsdatabases/"
           rm: false
-          strip_components: 3
+          strip_components: 2
       
       - name: 验证文件上传
         uses: appleboy/ssh-action@master
@@ -334,12 +335,12 @@ jobs:
               exit 1
             fi
 
-            if [ -f msdsfullstatckcompose/msdsdatabaseinitdb/msds_dev.sql ]; then
-              echo "✅ msds_dev.sql已上传（用于首次初始化）"
-              ls -lh msdsfullstatckcompose/msdsdatabaseinitdb/msds_dev.sql
-              cp -f msdsfullstatckcompose/msdsdatabaseinitdb/msds_dev.sql msdsfullstatckcompose/msdsdatabaseinitdb/10-msds_dev.sql
+
+            if [ -f /opt/msds/aboutproject/msdsdatabases/msds_complete_database.sql ]; then
+              echo "✅ msds_complete_database.sql已上传（用于首次初始化）"
+              ls -lh /opt/msds/aboutproject/msdsdatabases/msds_complete_database.sql
             else
-              echo "⚠️  未发现msds_dev.sql（将使用现有初始化脚本）"
+              echo "⚠️  未发现 msds_complete_database.sql（MySQL 可能无法完成初始化）"
             fi
 
   # ==================== 部署到生产环境 ====================
@@ -521,28 +522,22 @@ jobs:
           script: |
             cd /opt/msds/msdsdocker
 
-            set -e
-            
             echo "🚀 启动服务..."
             cd /opt/msds/msdsdocker
-            
-            # 检查docker-compose是否可用
+
+            compose_cmd=""
             if sudo docker-compose -f docker-compose.prod.yml version &>/dev/null; then
-                echo "使用docker-compose启动所有服务..."
-                sudo docker-compose -f docker-compose.prod.yml up -d --remove-orphans
+              compose_cmd="sudo docker-compose -f docker-compose.prod.yml"
             elif sudo docker compose version &>/dev/null; then
-                echo "使用docker compose启动所有服务..."
-                sudo docker compose -f docker-compose.prod.yml up -d --remove-orphans
-            else
-                echo "docker-compose不可用，使用docker启动单个容器..."
-                # 启动基础服务（MySQL和Redis）
-                sudo docker start msdsmysql msdsredis 2>/dev/null || echo "MySQL和Redis容器不存在"
-                # 启动应用服务
-                sudo docker start msdsbackend msdsnginx 2>/dev/null || echo "Backend和Nginx容器不存在"
+              compose_cmd="sudo docker compose -f docker-compose.prod.yml"
             fi
-            
-            echo "⏳ 等待服务启动..."
-            sleep 30
+
+            echo "▶️  启动基础服务（MySQL/Redis）..."
+            if [ -n "$compose_cmd" ]; then
+              $compose_cmd up -d msdsmysql msdsredis --remove-orphans || true
+            else
+              sudo docker start msdsmysql msdsredis 2>/dev/null || true
+            fi
 
             echo "🗄️  等待 MySQL 就绪..."
             for i in $(seq 1 60); do
@@ -563,26 +558,58 @@ jobs:
             sudo docker exec msdsmysql sh -c "mysql -u root -proot_password -e \"CREATE DATABASE IF NOT EXISTS msds_dev DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;\""
             sudo docker exec msdsmysql sh -c "mysql -u root -proot_password -e \"CREATE USER IF NOT EXISTS 'msds_user'@'%' IDENTIFIED BY 'msds_dev_password'; GRANT ALL PRIVILEGES ON msds_dev.* TO 'msds_user'@'%'; FLUSH PRIVILEGES;\""
 
+            has_sys_menu=$(sudo docker exec msdsmysql sh -c "mysql -N -s -u root -proot_password -e \"SELECT COUNT(*) FROM information_schema.tables WHERE table_schema='msds_dev' AND table_name='sys_menu';\"")
             table_count=$(sudo docker exec msdsmysql sh -c "mysql -N -s -u root -proot_password -e \"SELECT COUNT(*) FROM information_schema.tables WHERE table_schema='msds_dev';\"")
-            echo "msds_dev 表数量: ${table_count}"
-            if [ "${table_count}" = "0" ]; then
-              if sudo docker exec msdsmysql test -f /docker-entrypoint-initdb.d/10-msds_dev.sql; then
-                echo "📥 发现 10-msds_dev.sql，开始导入..."
-                sudo docker exec msdsmysql sh -c "mysql -u root -proot_password msds_dev < /docker-entrypoint-initdb.d/10-msds_dev.sql"
-                echo "✅ 导入完成"
-              elif sudo docker exec msdsmysql test -f /docker-entrypoint-initdb.d/msds_dev.sql; then
-                echo "📥 发现 msds_dev.sql，开始导入..."
-                sudo docker exec msdsmysql sh -c "mysql -u root -proot_password msds_dev < /docker-entrypoint-initdb.d/msds_dev.sql"
+            echo "msds_dev 表数量: ${table_count}, sys_menu: ${has_sys_menu}"
+
+            if [ "${has_sys_menu}" = "0" ] && [ "${table_count}" = "0" ]; then
+              if sudo docker exec msdsmysql test -f /docker-entrypoint-initdb.d/00-msds_complete_database.sql; then
+                echo "📥 发现 00-msds_complete_database.sql，开始导入..."
+                sudo docker exec msdsmysql sh -c "mysql -u root -proot_password < /docker-entrypoint-initdb.d/00-msds_complete_database.sql"
                 echo "✅ 导入完成"
               else
-                echo "⚠️  未找到初始化 SQL（/docker-entrypoint-initdb.d 下），跳过导入"
+                echo "❌ 未找到初始化 SQL（/docker-entrypoint-initdb.d/00-msds_complete_database.sql），无法初始化"
+                exit 1
               fi
+            elif [ "${has_sys_menu}" = "0" ] && [ "${table_count}" != "0" ]; then
+              echo "❌ msds_dev 已存在部分表，但缺少 sys_menu（RuoYi 系统表未初始化）。"
+              echo "   为避免覆盖现有数据，流水线不会自动导入完整脚本。"
+              echo "   处理方式：清空 MySQL 数据卷后重新启动，或手工补齐缺失系统表。"
+              exit 1
             else
-              echo "✅ msds_dev 已有数据，跳过导入"
+              echo "✅ 数据库结构已满足后端启动条件"
             fi
 
-            echo "🔁 重启后端以确保读取最新数据库状态..."
-            sudo docker restart msdsbackend || true
+            echo "▶️  启动后端服务..."
+            if [ -n "$compose_cmd" ]; then
+              $compose_cmd up -d msdsbackend || true
+            else
+              sudo docker start msdsbackend 2>/dev/null || true
+            fi
+
+            echo "🏥 等待后端健康..."
+            backend_ok=0
+            for i in $(seq 1 60); do
+              if sudo docker exec msdsbackend sh -c "curl -fsS http://localhost:8080/actuator/health | grep -q '\"status\"\s*:\s*\"UP\"'"; then
+                backend_ok=1
+                echo "✅ 后端已健康"
+                break
+              fi
+              sleep 5
+            done
+
+            if [ "$backend_ok" -ne 1 ]; then
+              echo "❌ 后端未就绪，输出后端日志"
+              sudo docker logs --tail=300 msdsbackend || true
+              exit 1
+            fi
+
+            echo "▶️  启动 Nginx..."
+            if [ -n "$compose_cmd" ]; then
+              $compose_cmd up -d msdsnginx || true
+            else
+              sudo docker start msdsnginx 2>/dev/null || true
+            fi
             
             echo "🧹 清理临时文件..."
             rm -rf /tmp/msds-deploy
@@ -844,28 +871,25 @@ jobs:
           script: |
             cd /opt/msds/msdsdocker
 
-            set -e
-            
             echo "🚀 启动测试服务..."
             cd /opt/msds/msdsdocker
-            
-            # 检查docker-compose是否可用
+
+            compose_cmd=""
             if sudo docker-compose -f docker-compose.prod.yml version &>/dev/null; then
-                echo "使用docker-compose启动所有服务..."
-                sudo docker-compose -f docker-compose.prod.yml up -d --remove-orphans
+              compose_cmd="sudo docker-compose -f docker-compose.prod.yml"
             elif sudo docker compose version &>/dev/null; then
-                echo "使用docker compose启动所有服务..."
-                sudo docker compose -f docker-compose.prod.yml up -d --remove-orphans
-            else
-                echo "docker-compose不可用，使用docker启动单个容器..."
-                # 启动基础服务（MySQL和Redis）
-                sudo docker start msdsmysql msdsredis 2>/dev/null || echo "MySQL和Redis容器不存在"
-                # 启动应用服务
-                sudo docker start msdsbackend msdsnginx 2>/dev/null || echo "Backend和Nginx容器不存在"
+              compose_cmd="sudo docker compose -f docker-compose.prod.yml"
             fi
-            
+
+            echo "▶️  启动基础服务（MySQL/Redis）..."
+            if [ -n "$compose_cmd" ]; then
+              $compose_cmd up -d msdsmysql msdsredis --remove-orphans || true
+            else
+              sudo docker start msdsmysql msdsredis 2>/dev/null || true
+            fi
+
             echo "⏳ 等待服务启动..."
-            sleep 30
+            sleep 10
 
             echo "🗄️  等待 MySQL 就绪..."
             for i in $(seq 1 60); do
@@ -886,39 +910,64 @@ jobs:
             sudo docker exec msdsmysql sh -c "mysql -u root -proot_password -e \"CREATE DATABASE IF NOT EXISTS msds_dev DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;\""
             sudo docker exec msdsmysql sh -c "mysql -u root -proot_password -e \"CREATE USER IF NOT EXISTS 'msds_user'@'%' IDENTIFIED BY 'msds_dev_password'; GRANT ALL PRIVILEGES ON msds_dev.* TO 'msds_user'@'%'; FLUSH PRIVILEGES;\""
 
+            has_sys_menu=$(sudo docker exec msdsmysql sh -c "mysql -N -s -u root -proot_password -e \"SELECT COUNT(*) FROM information_schema.tables WHERE table_schema='msds_dev' AND table_name='sys_menu';\"")
             table_count=$(sudo docker exec msdsmysql sh -c "mysql -N -s -u root -proot_password -e \"SELECT COUNT(*) FROM information_schema.tables WHERE table_schema='msds_dev';\"")
-            echo "msds_dev 表数量: ${table_count}"
-            if [ "${table_count}" = "0" ]; then
-              if sudo docker exec msdsmysql test -f /docker-entrypoint-initdb.d/10-msds_dev.sql; then
-                echo "📥 发现 10-msds_dev.sql，开始导入..."
-                sudo docker exec msdsmysql sh -c "mysql -u root -proot_password msds_dev < /docker-entrypoint-initdb.d/10-msds_dev.sql"
-                echo "✅ 导入完成"
-              elif sudo docker exec msdsmysql test -f /docker-entrypoint-initdb.d/msds_dev.sql; then
-                echo "📥 发现 msds_dev.sql，开始导入..."
-                sudo docker exec msdsmysql sh -c "mysql -u root -proot_password msds_dev < /docker-entrypoint-initdb.d/msds_dev.sql"
+            echo "msds_dev 表数量: ${table_count}, sys_menu: ${has_sys_menu}"
+
+            if [ "${has_sys_menu}" = "0" ] && [ "${table_count}" = "0" ]; then
+              if sudo docker exec msdsmysql test -f /docker-entrypoint-initdb.d/00-msds_complete_database.sql; then
+                echo "📥 发现 00-msds_complete_database.sql，开始导入..."
+                sudo docker exec msdsmysql sh -c "mysql -u root -proot_password < /docker-entrypoint-initdb.d/00-msds_complete_database.sql"
                 echo "✅ 导入完成"
               else
-                echo "⚠️  未找到初始化 SQL（/docker-entrypoint-initdb.d 下），跳过导入"
+                echo "❌ 未找到初始化 SQL（/docker-entrypoint-initdb.d/00-msds_complete_database.sql），无法初始化"
+                exit 1
               fi
+            elif [ "${has_sys_menu}" = "0" ] && [ "${table_count}" != "0" ]; then
+              echo "❌ msds_dev 已存在部分表，但缺少 sys_menu（RuoYi 系统表未初始化）。"
+              echo "   为避免覆盖现有数据，流水线不会自动导入完整脚本。"
+              echo "   处理方式：清空 MySQL 数据卷后重新启动，或手工补齐缺失系统表。"
+              exit 1
             else
-              echo "✅ msds_dev 已有数据，跳过导入"
+              echo "✅ 数据库结构已满足后端启动条件"
             fi
 
-            echo "🔁 重启后端以确保读取最新数据库状态..."
-            sudo docker restart msdsbackend || true
+            echo "▶️  启动后端服务..."
+            if [ -n "$compose_cmd" ]; then
+              $compose_cmd up -d msdsbackend || true
+            else
+              sudo docker start msdsbackend 2>/dev/null || true
+            fi
+
+            echo "🏥 等待后端健康..."
+            backend_ok=0
+            for i in $(seq 1 60); do
+              if sudo docker exec msdsbackend sh -c "curl -fsS http://localhost:8080/actuator/health | grep -q '\"status\"\s*:\s*\"UP\"'"; then
+                backend_ok=1
+                echo "✅ 后端已健康"
+                break
+              fi
+              sleep 5
+            done
+
+            if [ "$backend_ok" -ne 1 ]; then
+              echo "❌ 后端未就绪，输出后端日志"
+              sudo docker logs --tail=300 msdsbackend || true
+              exit 1
+            fi
+
+            echo "▶️  启动 Nginx..."
+            if [ -n "$compose_cmd" ]; then
+              $compose_cmd up -d msdsnginx || true
+            else
+              sudo docker start msdsnginx 2>/dev/null || true
+            fi
             
             echo "🧹 清理临时文件..."
             rm -rf /tmp/msds-deploy-staging
             
             echo "📊 查看服务状态..."
             sudo docker ps -a | grep -E "msdsbackend|msdsnginx|msdsmysql|msdsredis" || true
-
-            echo "🏥 检查后端健康..."
-            if ! sudo docker exec msdsbackend sh -c "curl -fsS http://localhost:8080/actuator/health >/dev/null"; then
-              echo "❌ 后端健康检查失败"
-              sudo docker logs --tail=300 msdsbackend || true
-              exit 1
-            fi
 
             expected_containers=$(sudo docker ps -a --format '{{.Names}}' | grep -E '^(msdsbackend|msdsnginx|msdsmysql|msdsredis)$' | wc -l)
             if [ "$expected_containers" -lt 4 ]; then

@@ -165,9 +165,15 @@ services:
       # 使用命名卷避免VMware共享文件夹权限问题
       - msdsmysql_data:/var/lib/mysql
       # 初始化数据库
-      - ../msdsdocker/msdsfullstatckcompose/msdsdatabaseinitdb:/docker-entrypoint-initdb.d
+      - ../aboutproject/msdsdatabases/msds_complete_database.sql:/docker-entrypoint-initdb.d/00-msds_complete_database.sql:ro
       # MySQL配置文件
       - ./mysql/conf.d:/etc/mysql/conf.d
+    healthcheck:
+      test: ["CMD-SHELL", "mysql -h 127.0.0.1 -uroot -proot_password -e \"SELECT 1 FROM msds_dev.sys_menu LIMIT 1;\" >/dev/null 2>&1"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 300s
 
   # Redis缓存
   msdsredis:

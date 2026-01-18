@@ -70,9 +70,9 @@ services:
       - ./nginx/html:/usr/share/nginx/html:ro
       # 日志
       - ./nginx/logs:/var/log/nginx
-    depends_on:
-      msdsbackend:
-        condition: service_healthy
+    # depends_on:
+    #   msdsbackend:
+    #     condition: service_healthy
     command: ["nginx", "-g", "daemon off;"]
 
 
@@ -85,6 +85,7 @@ services:
     hostname: msdsbackend
     restart: always
     pull_policy: never
+    user: root
     volumes:
       # 应用日志和上传目录
       - backend_logs:/app/logs
@@ -93,7 +94,7 @@ services:
       - msdsmaven_repository:/root/.m2/repository
     working_dir: /app
     # 生产环境启动命令：使用Dockerfile中构建的JAR文件
-    command: ["sh", "-c", "java ${JAVA_OPTS} -jar app.jar --spring.profiles.active=prod"]
+    command: ["sh", "-c", "java $JAVA_OPTS -jar app.jar --spring.profiles.active=prod"]
     ports:
       - "18080:8080"
     environment:
@@ -112,10 +113,12 @@ services:
       # JVM参数
       - JAVA_OPTS=-Xms512m -Xmx2048m -XX:+UseG1GC -XX:+PrintGCDetails
     depends_on:
+      msdsdbinit:
+        condition: service_completed_successfully
       msdsmysql:
         condition: service_healthy
       msdsredis:
-        condition: service_started
+        condition: service_healthy
     healthcheck:
       # 检查应用健康状态
       test: ["CMD-SHELL", "curl -f http://localhost:8080/actuator/health || exit 1"]
@@ -124,7 +127,34 @@ services:
       retries: 5
       start_period: 300s
 
-  
+  msdsdbinit:
+    networks:
+      - msds_network
+    image: msdsmysql
+    container_name: msdsdbinit
+    hostname: msdsdbinit
+    pull_policy: never
+    depends_on:
+      msdsmysql:
+        condition: service_started
+    volumes:
+      - ../aboutproject/msdsdatabases/msds_complete_database.sql:/docker-entrypoint-initdb.d/00-msds_complete_database.sql:ro
+    command:
+      - sh
+      - -c
+      - |
+        set -e
+        until mysqladmin ping -h msdsmysql -uroot -proot_password --silent; do
+          sleep 2
+        done
+        has_sys_menu=$$(mysql -h msdsmysql -uroot -proot_password -N -s -e "SELECT COUNT(*) FROM information_schema.tables WHERE table_schema='msds_dev' AND table_name='sys_menu';")
+        table_count=$$(mysql -h msdsmysql -uroot -proot_password -N -s -e "SELECT COUNT(*) FROM information_schema.tables WHERE table_schema='msds_dev';")
+        if [ "$$has_sys_menu" = "0" ] && [ "$$table_count" = "0" ]; then
+          test -f /docker-entrypoint-initdb.d/00-msds_complete_database.sql
+          mysql -h msdsmysql -uroot -proot_password < /docker-entrypoint-initdb.d/00-msds_complete_database.sql
+        elif [ "$$has_sys_menu" = "0" ] && [ "$$table_count" != "0" ]; then
+          exit 2
+        fi
 
   # MySQL数据库
   msdsmysql:
@@ -149,15 +179,15 @@ services:
       # 使用命名卷避免共享文件夹权限问题
       - msdsmysql_data:/var/lib/mysql
       # 初始化数据库脚本（仅在首次启动时执行）
-      - ./msdsfullstatckcompose/msdsdatabaseinitdb:/docker-entrypoint-initdb.d:ro
+      - ../aboutproject/msdsdatabases/msds_complete_database.sql:/docker-entrypoint-initdb.d/00-msds_complete_database.sql:ro
       # MySQL配置文件
       - ./mysql/conf.d:/etc/mysql/conf.d:ro
     healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-proot_password"]
+      test: ["CMD-SHELL", "mysql -h 127.0.0.1 -uroot -proot_password -e \"SELECT 1 FROM msds_dev.sys_menu LIMIT 1;\" >/dev/null 2>&1"]
       interval: 10s
       timeout: 5s
-      retries: 10
-      start_period: 30s
+      retries: 30
+      start_period: 300s
 
   # Redis缓存
   msdsredis:
