@@ -109,6 +109,23 @@ jobs:
       - name: 删除pdf2xml目录（避免长文件名问题）
         run: rm -rf pdf2xml || true
       
+      - name: 检查docker-compose.prod.yml文件
+        run: |
+          echo "=== 检查docker-compose.prod.yml文件 ==="
+          if [ -f "msdsdocker/docker-compose.prod.yml" ]; then
+            echo "✅ docker-compose.prod.yml文件存在"
+            ls -lh msdsdocker/docker-compose.prod.yml
+          else
+            echo "❌ docker-compose.prod.yml文件不存在"
+            echo "当前目录："
+            pwd
+            echo "当前目录内容："
+            ls -la
+            echo "msdsdocker目录内容："
+            ls -la msdsdocker/ || echo "msdsdocker目录不存在"
+            exit 1
+          fi
+      
       - name: 上传docker-compose.prod.yml到服务器
         uses: appleboy/scp-action@master
         with:
@@ -118,6 +135,26 @@ jobs:
           source: "msdsdocker/docker-compose.prod.yml"
           target: "/opt/msds/msdsdocker/"
           rm: false
+          strip_components: 2
+      
+      - name: 验证文件上传
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            echo "=== 验证文件上传 ==="
+            cd /opt/msds/msdsdocker
+            if [ -f docker-compose.prod.yml ]; then
+              echo "✅ docker-compose.prod.yml已成功上传"
+              ls -lh docker-compose.prod.yml
+            else
+              echo "❌ docker-compose.prod.yml上传失败"
+              echo "当前目录内容："
+              ls -la
+              exit 1
+            fi
 
   # ==================== 部署到生产环境 ====================
   deploy-production:
