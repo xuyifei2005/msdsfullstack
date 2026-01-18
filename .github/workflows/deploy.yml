@@ -269,6 +269,7 @@ jobs:
             cd /opt/msds
             mkdir -p msdsdocker
             cd msdsdocker
+            mkdir -p images
             mkdir -p nginx/conf.d nginx/ssl nginx/logs nginx/html
             mkdir -p mysql/conf.d
             mkdir -p msdsfullstatckcompose/msdsdatabaseinitdb
@@ -367,6 +368,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: "docker-images/*.tar"
           target: "/opt/msds/msdsdocker/images/"
+          strip_components: 1
           rm: false
       
       - name: 部署到服务器
@@ -413,21 +415,23 @@ jobs:
             # 加载Docker镜像
             echo "📦 加载Docker镜像..."
             if [ -d "images" ]; then
-                cd images
-                for image in *.tar; do
-                    if [ -f "$image" ]; then
-                        echo "加载镜像: $image"
-                        sudo docker load -i "$image"
-                    fi
-                done
-                cd ..
-                echo "✅ Docker镜像加载完成"
-                
-                # 验证镜像
-                echo ""
-                echo "=== 已加载的Docker镜像 ==="
-                sudo docker images | grep -E "msdsnginx|msdsbackend|msdsmysql|msdsredis"
-                echo ""
+                echo "查找并加载 images 目录下的 *.tar（兼容 images/ 与 images/docker-images/）"
+                found_tar=0
+                while IFS= read -r -d '' tar_path; do
+                    found_tar=1
+                    echo "加载镜像: $tar_path"
+                    sudo docker load -i "$tar_path"
+                done < <(find images -maxdepth 2 -type f -name "*.tar" -print0)
+
+                if [ "$found_tar" -eq 0 ]; then
+                    echo "⚠️  images 下未找到任何 tar 文件，跳过镜像加载"
+                else
+                    echo "✅ Docker镜像加载完成"
+                    echo ""
+                    echo "=== 已加载的Docker镜像 ==="
+                    sudo docker images | grep -E "msdsnginx|msdsbackend|msdsmysql|msdsredis" || true
+                    echo ""
+                fi
             else
                 echo "⚠️  未找到images目录，跳过镜像加载"
             fi
@@ -587,6 +591,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: "docker-images/*.tar"
           target: "/opt/msds/msdsdocker/images/"
+          strip_components: 1
           rm: false
       
       - name: 部署到测试服务器
@@ -633,21 +638,23 @@ jobs:
             # 加载Docker镜像
             echo "📦 加载Docker镜像..."
             if [ -d "images" ]; then
-                cd images
-                for image in *.tar; do
-                    if [ -f "$image" ]; then
-                        echo "加载镜像: $image"
-                        sudo docker load -i "$image"
-                    fi
-                done
-                cd ..
-                echo "✅ Docker镜像加载完成"
-                
-                # 验证镜像
-                echo ""
-                echo "=== 已加载的Docker镜像 ==="
-                sudo docker images | grep -E "msdsnginx|msdsbackend|msdsmysql|msdsredis"
-                echo ""
+                echo "查找并加载 images 目录下的 *.tar（兼容 images/ 与 images/docker-images/）"
+                found_tar=0
+                while IFS= read -r -d '' tar_path; do
+                    found_tar=1
+                    echo "加载镜像: $tar_path"
+                    sudo docker load -i "$tar_path"
+                done < <(find images -maxdepth 2 -type f -name "*.tar" -print0)
+
+                if [ "$found_tar" -eq 0 ]; then
+                    echo "⚠️  images 下未找到任何 tar 文件，跳过镜像加载"
+                else
+                    echo "✅ Docker镜像加载完成"
+                    echo ""
+                    echo "=== 已加载的Docker镜像 ==="
+                    sudo docker images | grep -E "msdsnginx|msdsbackend|msdsmysql|msdsredis" || true
+                    echo ""
+                fi
             else
                 echo "⚠️  未找到images目录，跳过镜像加载"
             fi
