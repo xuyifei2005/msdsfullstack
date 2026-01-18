@@ -6,6 +6,55 @@
 
 ## 🚀 快速开始
 
+### 方案1：本地预构建镜像（推荐）
+
+**优势**：
+- ✅ 避免CI/CD DNS解析问题
+- ✅ 加快CI/CD构建速度
+- ✅ 减少网络依赖
+- ✅ 提高部署可靠性
+
+#### Windows本地环境
+
+```powershell
+# 1. 构建所有Docker镜像
+cd msdsdocker
+.\build-docker-images.ps1
+
+# 2. 导出镜像为tar文件（可选）
+.\export-docker-images.ps1
+
+# 3. 上传到服务器（可选）
+.\upload-docker-images.ps1
+```
+
+#### Linux本地环境
+
+```bash
+# 1. 构建所有Docker镜像
+cd msdsdocker
+chmod +x build-docker-images.sh
+./build-docker-images.sh
+
+# 2. 导出镜像为tar文件（可选）
+chmod +x export-docker-images.sh
+./export-docker-images.sh
+
+# 3. 上传到服务器（可选）
+# 使用export-and-upload-images.sh
+```
+
+### 方案2：CI/CD自动拉取（备用）
+
+CI/CD工作流已配置为：
+- 优先使用本地镜像
+- 如果本地不存在，从Docker Hub拉取
+- 自动标记镜像为项目需要的名称
+
+**注意**：GitHub Actions可能无法访问国内镜像源，会使用Docker Hub官方源（速度较慢但可靠）。
+
+### 方案3：配置国内镜像加速器（服务器端）
+
 ### 1. 本地开发环境（Windows）
 
 #### 配置Docker镜像加速

@@ -143,27 +143,6 @@ jobs:
       - name: 设置Docker Buildx
         uses: docker/setup-buildx-action@v3
       
-      - name: 配置Docker国内镜像加速器
-        run: |
-          echo "🔨 配置Docker国内镜像加速器..."
-          sudo mkdir -p /etc/docker
-          sudo tee /etc/docker/daemon.json > /dev/null << 'EOF'
-          {
-            "registry-mirrors": [
-              "https://hub-mirror.c.163.com",
-              "https://mirror.ccs.tencentyun.com",
-              "https://docker.mirrors.ustc.edu.cn"
-            ],
-            "max-concurrent-downloads": 10,
-            "log-driver": "json-file",
-            "log-level": "warn",
-            "storage-driver": "overlay2"
-          }
-          EOF
-          sudo systemctl restart docker
-          echo "✅ Docker镜像加速器配置完成"
-          docker info | grep -A 10 "Registry Mirrors"
-      
       - name: 构建后端Docker镜像
         run: |
           echo "🔨 构建后端Docker镜像..."
@@ -174,18 +153,28 @@ jobs:
       
       - name: 拉取并标记MySQL镜像
         run: |
-          echo "🔨 拉取MySQL镜像（使用国内镜像源）..."
-          # 使用网易镜像源加速
-          docker pull hub-mirror.c.163.com/library/mysql:8.0.42
-          docker tag hub-mirror.c.163.com/library/mysql:8.0.42 msdsmysql
+          echo "🔨 拉取MySQL镜像..."
+          # 优先使用本地镜像，不存在则从Docker Hub拉取
+          if ! docker image inspect msdsmysql >/dev/null 2>&1; then
+            echo "本地镜像不存在，从Docker Hub拉取..."
+            docker pull mysql:8.0.42
+            docker tag mysql:8.0.42 msdsmysql
+          else
+            echo "✅ 使用本地镜像: msdsmysql"
+          fi
           echo "✅ MySQL镜像准备完成"
       
       - name: 拉取并标记Redis镜像
         run: |
-          echo "🔨 拉取Redis镜像（使用国内镜像源）..."
-          # 使用网易镜像源加速
-          docker pull hub-mirror.c.163.com/library/redis:latest
-          docker tag hub-mirror.c.163.com/library/redis:latest msdsredis
+          echo "🔨 拉取Redis镜像..."
+          # 优先使用本地镜像，不存在则从Docker Hub拉取
+          if ! docker image inspect msdsredis >/dev/null 2>&1; then
+            echo "本地镜像不存在，从Docker Hub拉取..."
+            docker pull redis:latest
+            docker tag redis:latest msdsredis
+          else
+            echo "✅ 使用本地镜像: msdsredis"
+          fi
           echo "✅ Redis镜像准备完成"
       
       - name: 构建Nginx前端镜像
