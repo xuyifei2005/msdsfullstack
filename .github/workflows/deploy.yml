@@ -93,11 +93,97 @@ jobs:
           path: msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/target/ruoyi-admin.jar
           retention-days: 7
 
+  # ==================== 构建Docker镜像 ====================
+  build-docker-images:
+    name: 构建Docker镜像
+    runs-on: ubuntu-latest
+    needs: [build-frontend, build-backend]
+    
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: 删除pdf2xml目录（避免长文件名问题）
+        run: rm -rf pdf2xml || true
+      
+      - name: 设置QEMU（多架构支持）
+        uses: docker/setup-qemu-action@v3
+      
+      - name: 设置Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      
+      - name: 构建后端Docker镜像
+        run: |
+          echo "🔨 构建后端Docker镜像..."
+          cd msdsPC/ruoyi-MsdsPc-react
+          docker build -f Dockerfile.prod -t msdsbackend:latest .
+          docker tag msdsbackend:latest msdsbackend
+          echo "✅ 后端镜像构建完成"
+      
+      - name: 构建Nginx前端镜像
+        run: |
+          echo "🔨 构建Nginx前端镜像..."
+          cd msdsPC/ruoyi-MsdsPc-react/react-ui
+          
+          # 检查nginx.prod.conf是否存在
+          if [ ! -f "nginx.prod.conf" ]; then
+            echo "⚠️  nginx.prod.conf不存在，创建默认配置"
+            cat > nginx.prod.conf << 'EOF'
+          server {
+              listen 80;
+              server_name localhost;
+              
+              root /usr/share/nginx/html;
+              index index.html index.htm;
+              
+              location / {
+                  try_files $uri $uri/ /index.html;
+              }
+              
+              location /prod-api/ {
+                  proxy_pass http://msdsbackend:8080/;
+                  proxy_set_header Host $host;
+                  proxy_set_header X-Real-IP $remote_addr;
+                  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                  proxy_set_header X-Forwarded-Proto $scheme;
+              }
+          }
+          EOF
+          fi
+          
+          docker build -f Dockerfile.nginx -t msdsnginx:latest .
+          docker tag msdsnginx:latest msdsnginx
+          echo "✅ Nginx镜像构建完成"
+      
+      - name: 导出Docker镜像
+        run: |
+          echo "📦 导出Docker镜像为tar文件..."
+          mkdir -p docker-images
+          
+          # 导出后端镜像
+          docker save msdsbackend:latest -o docker-images/msdsbackend.tar
+          echo "✅ msdsbackend.tar 导出完成"
+          
+          # 导出Nginx镜像
+          docker save msdsnginx:latest -o docker-images/msdsnginx.tar
+          echo "✅ msdsnginx.tar 导出完成"
+          
+          ls -lh docker-images/
+      
+      - name: 上传Docker镜像
+        uses: actions/upload-artifact@v4
+        with:
+          name: docker-images
+          path: docker-images/*.tar
+          retention-days: 7
+
   # ==================== 上传Docker配置文件 ====================
   upload-docker-config:
     name: 上传Docker配置文件
     runs-on: ubuntu-latest
-    needs: [build-frontend, build-backend]
+    needs: [build-docker-images]
     if: github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/main'
     
     steps:
@@ -204,6 +290,22 @@ jobs:
           name: backend-jar
           path: backend-jar
       
+      - name: 下载Docker镜像
+        uses: actions/download-artifact@v4
+        with:
+          name: docker-images
+          path: docker-images
+      
+      - name: 上传Docker镜像到服务器
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "docker-images/*.tar"
+          target: "/opt/msds/msdsdocker/images/"
+          rm: false
+      
       - name: 部署到服务器
         uses: appleboy/ssh-action@master
         with:
@@ -244,6 +346,28 @@ jobs:
             echo ""
             echo "=== 诊断完成 ==="
             echo ""
+            
+            # 加载Docker镜像
+            echo "📦 加载Docker镜像..."
+            if [ -d "images" ]; then
+                cd images
+                for image in *.tar; do
+                    if [ -f "$image" ]; then
+                        echo "加载镜像: $image"
+                        sudo docker load -i "$image"
+                    fi
+                done
+                cd ..
+                echo "✅ Docker镜像加载完成"
+                
+                # 验证镜像
+                echo ""
+                echo "=== 已加载的Docker镜像 ==="
+                sudo docker images | grep -E "msdsnginx|msdsbackend|msdsmysql|msdsredis"
+                echo ""
+            else
+                echo "⚠️  未找到images目录，跳过镜像加载"
+            fi
             
             # 创建临时目录用于传输文件
             mkdir -p /tmp/msds-deploy
@@ -386,6 +510,22 @@ jobs:
           name: backend-jar
           path: backend-jar
       
+      - name: 下载Docker镜像
+        uses: actions/download-artifact@v4
+        with:
+          name: docker-images
+          path: docker-images
+      
+      - name: 上传Docker镜像到测试服务器
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "docker-images/*.tar"
+          target: "/opt/msds/msdsdocker/images/"
+          rm: false
+      
       - name: 部署到测试服务器
         uses: appleboy/ssh-action@master
         with:
@@ -426,6 +566,28 @@ jobs:
             echo ""
             echo "=== 诊断完成 ==="
             echo ""
+            
+            # 加载Docker镜像
+            echo "📦 加载Docker镜像..."
+            if [ -d "images" ]; then
+                cd images
+                for image in *.tar; do
+                    if [ -f "$image" ]; then
+                        echo "加载镜像: $image"
+                        sudo docker load -i "$image"
+                    fi
+                done
+                cd ..
+                echo "✅ Docker镜像加载完成"
+                
+                # 验证镜像
+                echo ""
+                echo "=== 已加载的Docker镜像 ==="
+                sudo docker images | grep -E "msdsnginx|msdsbackend|msdsmysql|msdsredis"
+                echo ""
+            else
+                echo "⚠️  未找到images目录，跳过镜像加载"
+            fi
             
             # 创建临时目录用于传输文件
             mkdir -p /tmp/msds-deploy-staging
