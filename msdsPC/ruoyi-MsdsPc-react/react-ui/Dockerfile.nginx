@@ -9,8 +9,8 @@ WORKDIR /app
 # 复制package文件
 COPY package*.json ./
 
-# 安装依赖（使用npm install避免lockfile同步问题）
-RUN npm install --production && npm cache clean --force
+# 安装依赖（跳过prepare脚本避免husky错误）
+RUN npm install --production --ignore-scripts && npm cache clean --force
 
 # 复制源代码
 COPY . .
