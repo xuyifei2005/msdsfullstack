@@ -9,9 +9,9 @@ WORKDIR /app
 # 复制package文件
 COPY package*.json ./
 
-# 直接修改package.json移除prepare脚本以避免husky错误
-RUN sed -i '/"prepare":/d' package.json && \
-    npm install --production && \
+# 使用环境变量彻底禁用所有npm脚本以避免husky和max setup错误
+ENV npm_config_ignore_scripts=true
+RUN npm install --production && \
     npm cache clean --force
 
 # 复制源代码
