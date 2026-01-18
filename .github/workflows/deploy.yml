@@ -152,7 +152,7 @@ jobs:
           source: "msdsdocker/docker-compose.prod.yml"
           target: "/opt/msds/msdsdocker/"
           rm: false
-          strip_components: 2
+          strip_components: 1
       
       - name: 验证文件上传
         uses: appleboy/ssh-action@master

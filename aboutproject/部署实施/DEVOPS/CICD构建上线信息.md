@@ -8,7 +8,8 @@
 
 ---
 ## github上配置：
-SSH_HOST  39.107.211.72
+SSH_HOST  
+39.107.211.72
 域名 flymsds.cn
 
 SSH_USER
@@ -39,7 +40,7 @@ The key's randomart image is:
 |.oO++            |
 +----[SHA256]-----+
 (TraeAI-7) D:\XUYIFEI\XUPROJECTS\msdsfullstack [0:0] $ Get-Content "$env:USERPROFILE\.ssh\msdsfullstack_github_actions.pub"
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAwwNHBQBuSAc7Tof/W6AG5ghAq3QDgDnfilHZjm9C5q github-actions
+。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
 
 
 
@@ -114,7 +115,7 @@ Secret名称 用途 状态 SSH_HOST 服务器IP地址 ✅ 已配置 SSH_USER SSH
 cat ~/.ssh/authorized_keys
 
 # 2. 如果没有，添加公钥（使用你之前生成的公钥）
-echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAwwNHBQBuSAc7Tof/W6AG5ghAq3QDgDnfilHZjm9C5q github-actions" >> ~/.ssh/authorized_keys
+echo "ssh。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。s" >> ~/.ssh/authorized_keys
 
 # 3. 设置正确的权限
 chmod 700 ~/.ssh
@@ -144,7 +145,7 @@ ssh -i "$env:USERPROFILE\.ssh\msdsfullstack_github_actions" root@39.107.211.72
 #!/bin/bash
 
 # 添加GitHub Actions的SSH公钥
-PUB_KEY="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAwwNHBQBuSAc7Tof/W6AG5ghAq3QDgDnfilHZjm9C5q github-actions"
+PUB_KEY="。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。"
 
 # 确保SSH目录存在
 mkdir -p ~/.ssh
@@ -184,7 +185,7 @@ fi
 
 # 添加新的公钥
 cat > ~/.ssh/authorized_keys << 'EOF'
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC5/mxRHYTFKypMGb+eDPUjxi++GnfJXFDwP/qScRSjh3g7H3geZ6ieSov9IQazc/sr0beA25p7Edoviw1pN9xXi8zNNZXKbafDscCRD4wPAUbyKpT9gk6JI+e1TMnUiXlDhuXqlRfULLIagLjpGy8PXtDvmK8Z+rFSfwRMfXayiTBbWgjhEncaq66CqwraZnxifVVpejdaBl6OKSSBNlKteu9Km5E+/xsGY4BLF2pjo3TO0PhE3XOzQr36X2aPY7m9r3Qij9jOPMJPZJvNqJkCVkV4ws1PPWigJccmCvsGA+Dsp/8oPGoAf+LQZnKDVYEpzoHIt3LtCqNqfwDuhYYcTOAn6zOxcj6axZE35CTqT3IEs4km8sQ3FFyGRPJ1T2AghVaYg2q5RJSmQbVYTJ7ZqRc9xxJFZU+NHUsm2aiRe4HSRCePm47uuXSqTAquns21ORmIY2Ek47wMKaRNpm0WbI8sXTnfUH2GIv82tQ5nQYCxA7IDEQYYWqt8tNwmgGDtSiUf10R/mIKNLp1K5jff1so+PeNK5zRBWSWYPJ6TTsPmWEiMU7PpBjV01CY3YZA0En3CE8tsQ1IBT2z/x3EoVd+qFuoXu0wvUKL/y5N3dNoV8ZXoGCSnlVJ7nGBn2XxdB0IOTgf+JDD0orfMvo5LcM9kXjCbeI+XnHQjuczhnw== github-actions@msds
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC5/mxRHYTFKypMGb+eDPUjxi++GnfJXFDwP/qScRSjh3g7H3geZ6ieSov9IQazc/sr0beA25p7Edoviw1pN9xXi8zNNZXKbafDscCRD4wPAUbyKpT9gk6JI+e1TMnUiXlDhuXqlRfULLIagLjpGy8PXtDvmK8Z+rFSfwRMfXayiTBbWgjhEncaq66CqwraZnxifVVpejdaBl6OKSSBNlKteu9Km5E+/xsGY4BLF2pjo3TO0PhE3XOzQr36X2aPY7m9r3Qij9jOPMJPZJvNqJkCVkV4ws1PPWigJccmCvsGA+Dsp/8oPGoAf。。。。。。。。。。。
 EOF
 
 # 设置正确的权限
@@ -220,51 +221,7 @@ Secret值 （完整复制以下内容，包括BEGIN和END行）：
 ```
 -----BEGIN OPENSSH PRIVATE KEY-----
 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
-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
+。。。。。。。
 4cL3IQqWRd1PAAAAE2dpdGh1Yi1hY3Rpb25zQG1zZHMBAgMEBQYH
 -----END OPENSSH PRIVATE KEY-----
 ```

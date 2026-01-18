@@ -42,8 +42,8 @@ docker save msdsredis:latest -o "$LOCAL_DIR/msdsredis.tar"
 echo "✅ msdsredis.tar 导出完成"
 
 # 导出Backend镜像
-echo -e "${YELLOW}导出 msdsbackend:latest...${NC}"
-docker save msdsbackend:latest -o "$LOCAL_DIR/msdsbackend.tar"
+echo -e "${YELLOW}导出 msdsbackend:prod（生产环境镜像）...${NC}"
+docker save msdsbackend:prod -o "$LOCAL_DIR/msdsbackend.tar"
 echo "✅ msdsbackend.tar 导出完成"
 
 # 导出Nginx镜像
