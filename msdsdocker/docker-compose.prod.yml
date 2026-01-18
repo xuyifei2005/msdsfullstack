@@ -56,8 +56,8 @@ services:
     container_name: msdsnginx
     hostname: msdsnginx
     restart: always
-    # 镜像拉取策略：如果本地没有镜像则拉取，有则优先使用本地
-    pull_policy: if_not_present
+    # 镜像拉取策略：never表示只使用本地镜像，不从远程拉取
+    pull_policy: never
     ports:
       - "80:80"
       - "443:443"
@@ -67,7 +67,7 @@ services:
       # SSL证书
       - ./nginx/ssl:/etc/nginx/ssl:ro
       # 静态资源 - 直接挂载前端编译后的dist目录
-      - ../msdsPC/ruoyi-MsdsPc-react/react-ui/dist:/usr/share/nginx/html:ro
+      - ./nginx/html:/usr/share/nginx/html:ro
       # 日志
       - ./nginx/logs:/var/log/nginx
     depends_on:
@@ -89,25 +89,21 @@ services:
       # 应用日志和上传目录
       - backend_logs:/app/logs
       - backend_upload:/app/uploadPath
-      # 直接挂载已编译的JAR文件到容器
-      - ../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/target/ruoyi-admin.jar:/app/ruoyi-admin.jar:ro
       # Maven本地仓库持久化（如果需要重新编译）
       - msdsmaven_repository:/root/.m2/repository
     working_dir: /app
-    # 生产环境启动命令：直接运行已编译的JAR文件
-    # 使用单行命令避免YAML多行字符串解析问题
-    command: ["/bin/sh", "-c", "if [ -f '/app/ruoyi-admin.jar' ]; then echo 'Starting MSDS Backend Service...' && exec java -Xms512m -Xmx2048m -XX:+UseG1GC -XX:+PrintGCDetails -Djava.security.egd=file:/dev/./urandom -jar /app/ruoyi-admin.jar; else echo 'ERROR: JAR file not found!' && exit 1; fi"]
+    # 生产环境启动命令：使用Dockerfile中构建的JAR文件
+    command: ["sh", "-c", "java ${JAVA_OPTS} -jar app.jar --spring.profiles.active=prod"]
     ports:
       - "18080:8080"
     environment:
-      # 使用dev profile以使用正确的数据库配置（与开发环境一致）
-      - SPRING_PROFILES_ACTIVE=dev
-      # 数据库配置（与开发环境一致）
-      # 注意：characterEncoding应该使用UTF-8（Java编码），而不是utf8mb4（MySQL字符集）
+      # 使用prod profile
+      - SPRING_PROFILES_ACTIVE=prod
+      # 数据库配置
       - SPRING_DATASOURCE_URL=jdbc:mysql://msdsmysql:3306/msds_dev?useUnicode=true&characterEncoding=UTF-8&connectionCollation=utf8mb4_unicode_ci&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
       - SPRING_DATASOURCE_USERNAME=msds_user
       - SPRING_DATASOURCE_PASSWORD=msds_dev_password
-      # Redis配置（与开发环境一致，无密码）
+      # Redis配置
       - SPRING_REDIS_HOST=msdsredis
       - SPRING_REDIS_PORT=6379
       - SPRING_REDIS_DATABASE=0
@@ -121,9 +117,8 @@ services:
       msdsredis:
         condition: service_started
     healthcheck:
-      # 检查应用根路径是否响应（即使返回401/302/404也说明服务在运行）
-      # 使用 -f 会要求HTTP状态码为200，这里改用 -s 只检查连接是否成功
-      test: ["CMD-SHELL", "curl -s http://localhost:8080/ > /dev/null || exit 1"]
+      # 检查应用健康状态
+      test: ["CMD-SHELL", "curl -f http://localhost:8080/actuator/health || exit 1"]
       interval: 30s
       timeout: 10s
       retries: 5
