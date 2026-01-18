@@ -93,10 +93,36 @@ jobs:
           path: msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/target/ruoyi-admin.jar
           retention-days: 7
 
+  # ==================== 上传Docker配置文件 ====================
+  upload-docker-config:
+    name: 上传Docker配置文件
+    runs-on: ubuntu-latest
+    needs: [build-frontend, build-backend]
+    if: github.ref == 'refs/heads/develop' || github.ref == 'refs/heads/main'
+    
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: 删除pdf2xml目录（避免长文件名问题）
+        run: rm -rf pdf2xml || true
+      
+      - name: 上传docker-compose.prod.yml到服务器
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "msdsdocker/docker-compose.prod.yml"
+          target: "/opt/msds/msdsdocker/"
+          rm: false
+
   # ==================== 部署到生产环境 ====================
   deploy-production:
     name: 部署到生产环境
-    needs: [build-frontend, build-backend]
+    needs: [build-frontend, build-backend, upload-docker-config]
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     environment:
@@ -279,7 +305,7 @@ jobs:
   # ==================== 部署到测试环境 ====================
   deploy-staging:
     name: 部署到测试环境
-    needs: [build-frontend, build-backend]
+    needs: [build-frontend, build-backend, upload-docker-config]
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/develop'
     environment:
