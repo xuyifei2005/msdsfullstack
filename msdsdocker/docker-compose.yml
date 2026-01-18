@@ -25,29 +25,29 @@ networks:
 
 services:
 
-  # # Nginx服务
-  # msdsnginx:
-  #   networks:
-  #     - msds_network
-  #   image: nginx:latest
-  #   container_name: msdsnginx
-  #   hostname: msdsnginx
-  #   restart: always
-  #   ports:
-  #     - "80:80"
-  #     - "443:443"
-  #   volumes:
-  #     # Nginx配置文件
-  #     - ./nginx/conf.d:/etc/nginx/conf.d
-  #     # SSL证书
-  #     - ./nginx/ssl:/etc/nginx/ssl
-  #     # 静态资源
-  #     - ./nginx/html:/usr/share/nginx/html
-  #     # 日志
-  #     - ./nginx/logs:/var/log/nginx
-  #   depends_on:
-  #     - msdsbackend
-  #     # - msdsfrontend 不用依赖前端！
+  # Nginx服务
+  msdsnginx:
+    networks:
+      - msds_network
+    image: nginx:latest
+    container_name: msdsnginx
+    hostname: msdsnginx
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      # Nginx配置文件
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      # SSL证书
+      - ./nginx/ssl:/etc/nginx/ssl
+      # 静态资源
+      - ./nginx/html:/usr/share/nginx/html
+      # 日志
+      - ./nginx/logs:/var/log/nginx
+    depends_on:
+      - msdsbackend
+      # - msdsfrontend 不用依赖前端！
 
   # 后端服务
   msdsbackend:
