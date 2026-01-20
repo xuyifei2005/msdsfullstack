@@ -562,7 +562,7 @@ jobs:
             table_count=$(sudo docker exec msdsmysql sh -c "mysql -N -s -u root -proot_password -e \"SELECT COUNT(*) FROM information_schema.tables WHERE table_schema='msds_dev';\"")
             echo "msds_dev 表数量: ${table_count}, sys_menu: ${has_sys_menu}"
 
-            if [ "${has_sys_menu}" = "0" ] && [ "${table_count}" = "0" ]; then
+            if [ "${has_sys_menu}" = "0" ] && [ "${table_count}" -le 1 ]; then
               if sudo docker exec msdsmysql test -f /docker-entrypoint-initdb.d/00-msds_complete_database.sql; then
                 echo "📥 发现 00-msds_complete_database.sql，开始导入..."
                 sudo docker exec msdsmysql sh -c "mysql -u root -proot_password < /docker-entrypoint-initdb.d/00-msds_complete_database.sql"
@@ -914,7 +914,7 @@ jobs:
             table_count=$(sudo docker exec msdsmysql sh -c "mysql -N -s -u root -proot_password -e \"SELECT COUNT(*) FROM information_schema.tables WHERE table_schema='msds_dev';\"")
             echo "msds_dev 表数量: ${table_count}, sys_menu: ${has_sys_menu}"
 
-            if [ "${has_sys_menu}" = "0" ] && [ "${table_count}" = "0" ]; then
+            if [ "${has_sys_menu}" = "0" ] && [ "${table_count}" -le 1 ]; then
               if sudo docker exec msdsmysql test -f /docker-entrypoint-initdb.d/00-msds_complete_database.sql; then
                 echo "📥 发现 00-msds_complete_database.sql，开始导入..."
                 sudo docker exec msdsmysql sh -c "mysql -u root -proot_password < /docker-entrypoint-initdb.d/00-msds_complete_database.sql"
