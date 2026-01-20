@@ -644,7 +644,7 @@ jobs:
           echo "🏥 检查服务健康状态..."
           for i in $(seq 1 18); do
             echo "尝试 $i/18: /health + /prod-api/actuator/health"
-            if curl -fsS https://flymsds.cn/health >/dev/null && curl -fsS https://flymsds.cn/prod-api/actuator/health | grep -q '"status"\s*:\s*"UP"'; then
+            if curl -fsS http://flymsds.cn/health >/dev/null && curl -fsS http://flymsds.cn/prod-api/actuator/health | grep -q '"status"\s*:\s*"UP"'; then
               echo "✅ 健康检查通过！"
               exit 0
             fi
