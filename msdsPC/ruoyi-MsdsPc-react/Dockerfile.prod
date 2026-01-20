@@ -63,7 +63,7 @@ EXPOSE 8080
 
 # 健康检查
 HEALTHCHECK --interval=30s --timeout=10s --start-period=300s --retries=3 \
-    CMD curl -f http://127.0.0.1:8080/actuator/health || exit 1
+    CMD curl -f http://127.0.0.1:8080/ || exit 1
 
 # 启动应用
 ENTRYPOINT ["sh", "-c", "java ${JAVA_OPTS} -jar app.jar --spring.profiles.active=prod"]

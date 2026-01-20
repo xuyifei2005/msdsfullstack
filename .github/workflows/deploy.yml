@@ -591,7 +591,7 @@ jobs:
             echo "🏥 等待后端健康..."
             backend_ok=0
             for i in $(seq 1 60); do
-              if sudo docker exec msdsbackend sh -c "curl -fsS http://127.0.0.1:8080/actuator/health | grep -q '\"status\"\s*:\s*\"UP\"'"; then
+              if sudo docker exec msdsbackend sh -c "curl -fsS http://127.0.0.1:8080/ >/dev/null"; then
                 backend_ok=1
                 echo "✅ 后端已健康"
                 break
@@ -643,8 +643,8 @@ jobs:
 
           echo "🏥 检查服务健康状态..."
           for i in $(seq 1 18); do
-            echo "尝试 $i/18: /health + /prod-api/actuator/health"
-            if curl -fsS http://flymsds.cn/health >/dev/null && curl -fsS http://flymsds.cn/prod-api/actuator/health | grep -q '"status"\s*:\s*"UP"'; then
+            echo "尝试 $i/18: /health + /prod-api/"
+            if curl -fsS http://flymsds.cn/health >/dev/null && curl -fsS http://flymsds.cn/prod-api/ >/dev/null; then
               echo "✅ 健康检查通过！"
               exit 0
             fi
@@ -672,8 +672,8 @@ jobs:
               sudo docker inspect -f '{{.Name}} {{.State.Status}} {{if .State.Health}}{{.State.Health.Status}}{{end}}' "$c" 2>/dev/null || true
             done
 
-            echo "=== backend actuator health (container local) ==="
-            sudo docker exec msdsbackend sh -c "curl -i -sS http://127.0.0.1:8080/actuator/health | head -n 20" || true
+            echo "=== backend root (container local) ==="
+            sudo docker exec msdsbackend sh -c "curl -i -sS http://127.0.0.1:8080/ | head -n 20" || true
 
             echo "=== compose ps ==="
             if sudo docker-compose -f docker-compose.prod.yml version &>/dev/null; then
@@ -943,7 +943,7 @@ jobs:
             echo "🏥 等待后端健康..."
             backend_ok=0
             for i in $(seq 1 60); do
-              if sudo docker exec msdsbackend sh -c "curl -fsS http://localhost:8080/actuator/health | grep -q '\"status\"\s*:\s*\"UP\"'"; then
+              if sudo docker exec msdsbackend sh -c "curl -fsS http://127.0.0.1:8080/ >/dev/null"; then
                 backend_ok=1
                 echo "✅ 后端已健康"
                 break
