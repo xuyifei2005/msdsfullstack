@@ -254,6 +254,21 @@ CREATE TABLE sys_notice (
   primary key (notice_id)
 ) engine=innodb auto_increment=10 comment = '通知公告表';
 
+DROP TABLE IF EXISTS sys_config;
+CREATE TABLE sys_config (
+  config_id         int(5)          not null auto_increment    comment '参数主键',
+  config_name       varchar(100)    default ''                 comment '参数名称',
+  config_key        varchar(100)    default ''                 comment '参数键名',
+  config_value      varchar(500)    default ''                 comment '参数键值',
+  config_type       char(1)         default 'N'                comment '系统内置（Y是 N否）',
+  create_by         varchar(64)     default ''                 comment '创建者',
+  create_time       datetime                                   comment '创建时间',
+  update_by         varchar(64)     default ''                 comment '更新者',
+  update_time       datetime                                   comment '更新时间',
+  remark            varchar(500)    default null               comment '备注',
+  primary key (config_id)
+) engine=innodb auto_increment=100 comment = '参数配置表';
+
 -- 代码生成业务表
 DROP TABLE IF EXISTS gen_table;
 CREATE TABLE gen_table (
@@ -641,12 +656,22 @@ DROP TABLE IF EXISTS msds_other_info;
 CREATE TABLE msds_other_info (
     id BIGINT PRIMARY KEY AUTO_INCREMENT COMMENT '主键',
     msds_id BIGINT NOT NULL COMMENT '关联MSDS主表ID',
-    references TEXT COMMENT '参考文献',
+    reference_list TEXT COMMENT '参考文献',
+    data_sources TEXT COMMENT '数据来源',
     form_fill_time DATE COMMENT '填表时间',
     form_fill_department VARCHAR(100) COMMENT '填表部门',
-    data_review_unit VARCHAR(100) COMMENT '数据审核单位',
-    revision_instructions TEXT COMMENT '修改说明',
-    other_information TEXT COMMENT '其他信息',
+    form_fill_person VARCHAR(100) COMMENT '填表人',
+    data_audit_unit VARCHAR(100) COMMENT '数据审核单位',
+    data_audit_person VARCHAR(100) COMMENT '数据审核人',
+    technical_review_person VARCHAR(100) COMMENT '技术审查人',
+    modification_notes TEXT COMMENT '修改说明',
+    training_requirements TEXT COMMENT '培训要求',
+    additional_information TEXT COMMENT '其他信息',
+    disclaimer TEXT COMMENT '免责声明',
+    create_by VARCHAR(64) DEFAULT '' COMMENT '创建者',
+    create_time DATETIME COMMENT '创建时间',
+    update_by VARCHAR(64) DEFAULT '' COMMENT '更新者',
+    update_time DATETIME COMMENT '更新时间',
     FOREIGN KEY (msds_id) REFERENCES msds_main(id) ON DELETE CASCADE,
     UNIQUE KEY uk_msds_id (msds_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='其他信息表';
@@ -980,6 +1005,13 @@ INSERT INTO ghs_hazard_class (class_code, class_name, category, pictogram, signa
 -- 初始化系统通知
 INSERT INTO sys_notice VALUES('1', 'MSDS系统上线通知', '2', 0x3C703EE7B3BBE7BB9FE7AEA1E79086E59198E5B7B2E4B88AE7BABFEFBC8CE8AFB7E5908CE4BA8BE4BDBFE794A8EFBC813C2F703E, '0', 'admin', NOW(), '', null, 'MSDS实验室管理系统正式上线');
 INSERT INTO sys_notice VALUES('2', '系统维护通知', '1', 0x3C703EE7B3BBE7BB9FE5B086E4BA8EE4BB8AE697A5E6999AE4B88AE7BBB4E68AA4EFBC8CE8AFB7E5A4A7E5AEB6E79FA5E6999EEFBC813C2F703E, '0', 'admin', NOW(), '', null, '系统维护通知');
+
+INSERT INTO sys_config VALUES (1, '主框架页-默认皮肤样式名称', 'sys.index.skinName', 'skin-blue', 'Y', 'admin', NOW(), '', NULL, '蓝色 skin-blue、绿色 skin-green、紫色 skin-purple、红色 skin-red、黄色 skin-yellow');
+INSERT INTO sys_config VALUES (2, '用户管理-账号初始密码', 'sys.user.initPassword', '123456', 'Y', 'admin', NOW(), '', NULL, '初始化密码 123456');
+INSERT INTO sys_config VALUES (3, '主框架页-侧边栏主题', 'sys.index.sideTheme', 'theme-dark', 'Y', 'admin', NOW(), '', NULL, '深色主题theme-dark，浅色主题theme-light');
+INSERT INTO sys_config VALUES (4, '账号自助-验证码开关', 'sys.account.captchaEnabled', 'true', 'Y', 'admin', NOW(), '', NULL, '是否开启验证码功能（true开启，false关闭）');
+INSERT INTO sys_config VALUES (5, '账号自助-是否开启用户注册功能', 'sys.account.registerUser', 'false', 'Y', 'admin', NOW(), '', NULL, '是否开启注册用户功能（true开启，false关闭）');
+INSERT INTO sys_config VALUES (6, '用户登录-黑名单列表', 'sys.login.blackIPList', '', 'Y', 'admin', NOW(), '', NULL, '设置登录IP黑名单限制，多个匹配项以;分隔，支持匹配（*通配、网段）');
 
 -- 初始化定时任务
 INSERT INTO sys_job VALUES(1, 'MSDS数据同步', 'DEFAULT', 'msdsTask.syncData', '0 0 1 * * ?', '3', '1', '1', 'admin', NOW(), '', null, 'MSDS数据同步任务');
