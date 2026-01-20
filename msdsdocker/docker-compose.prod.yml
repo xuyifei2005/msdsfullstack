@@ -120,8 +120,8 @@ services:
       msdsredis:
         condition: service_healthy
     healthcheck:
-      # 检查应用健康状态
-      test: ["CMD-SHELL", "curl -f http://localhost:8080/actuator/health || exit 1"]
+      # 检查应用健康状态（使用IPv4地址避免localhost解析到IPv6导致连接失败）
+      test: ["CMD-SHELL", "curl -f http://127.0.0.1:8080/actuator/health || exit 1"]
       interval: 30s
       timeout: 10s
       retries: 5

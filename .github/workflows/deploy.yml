@@ -591,7 +591,7 @@ jobs:
             echo "🏥 等待后端健康..."
             backend_ok=0
             for i in $(seq 1 60); do
-              if sudo docker exec msdsbackend sh -c "curl -fsS http://localhost:8080/actuator/health | grep -q '\"status\"\s*:\s*\"UP\"'"; then
+              if sudo docker exec msdsbackend sh -c "curl -fsS http://127.0.0.1:8080/actuator/health | grep -q '\"status\"\s*:\s*\"UP\"'"; then
                 backend_ok=1
                 echo "✅ 后端已健康"
                 break
@@ -673,7 +673,7 @@ jobs:
             done
 
             echo "=== backend actuator health (container local) ==="
-            sudo docker exec msdsbackend sh -c "curl -i -sS http://localhost:8080/actuator/health | head -n 20" || true
+            sudo docker exec msdsbackend sh -c "curl -i -sS http://127.0.0.1:8080/actuator/health | head -n 20" || true
 
             echo "=== compose ps ==="
             if sudo docker-compose -f docker-compose.prod.yml version &>/dev/null; then
