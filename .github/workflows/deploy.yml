@@ -270,6 +270,7 @@ jobs:
             mkdir -p msdsdocker
             mkdir -p aboutproject/msdsdatabases
             cd msdsdocker
+            mkdir -p backend
             mkdir -p images
             mkdir -p nginx/conf.d nginx/ssl nginx/logs nginx/html
             mkdir -p mysql/conf.d
@@ -510,8 +511,8 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "backend-jar/ruoyi-admin.jar"
-          target: "/opt/msds/msdsdocker/msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/target/ruoyi-admin.jar"
+          source: "backend-jar/*.jar"
+          target: "/opt/msds/msdsdocker/backend/"
       
       - name: 重启服务
         uses: appleboy/ssh-action@master
@@ -859,8 +860,8 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "backend-jar/ruoyi-admin.jar"
-          target: "/opt/msds/msdsdocker/msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/target/ruoyi-admin.jar"
+          source: "backend-jar/*.jar"
+          target: "/opt/msds/msdsdocker/backend/"
       
       - name: 重启测试服务
         uses: appleboy/ssh-action@master
