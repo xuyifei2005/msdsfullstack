@@ -490,6 +490,9 @@ jobs:
                     echo "=== 已加载的Docker镜像 ==="
                     sudo docker images | grep -E "msdsnginx|msdsbackend|msdsmysql|msdsredis" || true
                     echo ""
+
+                    echo "🧹 清理悬空镜像（<none>）..."
+                    sudo docker image prune -f --filter "dangling=true" >/dev/null 2>&1 || true
                 fi
             else
                 echo "⚠️  未找到images目录，跳过镜像加载"
@@ -543,6 +546,37 @@ jobs:
           target: "/opt/msds/msdsdocker/nginx/html/"
           rm: true
           strip_components: 1
+
+      - name: 扁平化并校验前端静态目录
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            set -e
+            cd /opt/msds/msdsdocker
+            echo "=== 部署后静态目录结构（扁平化前） ==="
+            ls -la nginx/html | head -n 30
+
+            if [ -d nginx/html/frontend-dist ]; then
+              echo "⚠️  检测到 nginx/html/frontend-dist，执行扁平化移动..."
+              sudo find nginx/html -mindepth 1 -maxdepth 1 ! -name frontend-dist -exec rm -rf {} +
+              sudo cp -a nginx/html/frontend-dist/. nginx/html/
+              sudo rm -rf nginx/html/frontend-dist
+            fi
+
+            echo "=== 部署后静态目录结构（扁平化后） ==="
+            ls -la nginx/html | head -n 30
+
+            if [ ! -f nginx/html/index.html ]; then
+              echo "❌ nginx/html/index.html 不存在（前端产物未落到根目录）"
+              exit 1
+            fi
+            if [ -d nginx/html/frontend-dist ]; then
+              echo "❌ nginx/html/frontend-dist 仍存在（扁平化失败）"
+              exit 1
+            fi
 
       - name: 校验前端静态资源与权限
         uses: appleboy/ssh-action@master
@@ -900,6 +934,9 @@ jobs:
                     echo "=== 已加载的Docker镜像 ==="
                     sudo docker images | grep -E "msdsnginx|msdsbackend|msdsmysql|msdsredis" || true
                     echo ""
+
+                    echo "🧹 清理悬空镜像（<none>）..."
+                    sudo docker image prune -f --filter "dangling=true" >/dev/null 2>&1 || true
                 fi
             else
                 echo "⚠️  未找到images目录，跳过镜像加载"
