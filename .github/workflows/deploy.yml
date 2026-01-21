@@ -154,26 +154,32 @@ jobs:
       - name: 拉取并标记MySQL镜像
         run: |
           echo "🔨 拉取MySQL镜像..."
-          # 优先使用本地镜像，不存在则从Docker Hub拉取
-          if ! docker image inspect msdsmysql >/dev/null 2>&1; then
+          # 优先使用本地镜像；若存在官方tag则直接重标记；都不存在才拉取
+          if docker image inspect msdsmysql >/dev/null 2>&1; then
+            echo "✅ 使用本地镜像: msdsmysql"
+          elif docker image inspect mysql:8.0.42 >/dev/null 2>&1; then
+            echo "✅ 使用本地镜像: mysql:8.0.42，正在重标记为 msdsmysql"
+            docker tag mysql:8.0.42 msdsmysql
+          else
             echo "本地镜像不存在，从Docker Hub拉取..."
             docker pull mysql:8.0.42
             docker tag mysql:8.0.42 msdsmysql
-          else
-            echo "✅ 使用本地镜像: msdsmysql"
           fi
           echo "✅ MySQL镜像准备完成"
       
       - name: 拉取并标记Redis镜像
         run: |
           echo "🔨 拉取Redis镜像..."
-          # 优先使用本地镜像，不存在则从Docker Hub拉取
-          if ! docker image inspect msdsredis >/dev/null 2>&1; then
+          # 优先使用本地镜像；若存在官方tag则直接重标记；都不存在才拉取
+          if docker image inspect msdsredis >/dev/null 2>&1; then
+            echo "✅ 使用本地镜像: msdsredis"
+          elif docker image inspect redis:latest >/dev/null 2>&1; then
+            echo "✅ 使用本地镜像: redis:latest，正在重标记为 msdsredis"
+            docker tag redis:latest msdsredis
+          else
             echo "本地镜像不存在，从Docker Hub拉取..."
             docker pull redis:latest
             docker tag redis:latest msdsredis
-          else
-            echo "✅ 使用本地镜像: msdsredis"
           fi
           echo "✅ Redis镜像准备完成"
       
