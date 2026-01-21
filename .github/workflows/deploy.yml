@@ -281,6 +281,10 @@ jobs:
             mkdir -p nginx/conf.d nginx/ssl nginx/logs nginx/html
             mkdir -p mysql/conf.d
             mkdir -p msdsfullstatckcompose/msdsdatabaseinitdb
+            if [ -d nginx/conf.d/default.conf ]; then
+              echo "⚠️  nginx/conf.d/default.conf 是目录，清理后重新上传"
+              rm -rf nginx/conf.d/default.conf
+            fi
             echo "✅ 目录结构创建完成"
             ls -la
       
@@ -318,10 +322,27 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "msdsdocker/nginx/conf.d/*"
+          source: "msdsdocker/nginx/conf.d/default.conf"
           target: "/opt/msds/msdsdocker/nginx/conf.d/"
           rm: false
           strip_components: 3
+
+      - name: 校验Nginx默认配置存在
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /opt/msds/msdsdocker
+            if [ ! -f nginx/conf.d/default.conf ]; then
+              echo "❌ nginx/conf.d/default.conf 不存在，无法启动Nginx"
+              exit 1
+            fi
+            if [ -d nginx/conf.d/default.conf ]; then
+              echo "❌ nginx/conf.d/default.conf 是目录，必须为文件"
+              exit 1
+            fi
 
       - name: 上传数据库SQL到服务器（用于MySQL首次初始化）
         uses: appleboy/scp-action@master
