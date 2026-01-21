@@ -695,6 +695,33 @@ jobs:
             fi
             
             echo "✅ 部署完成！"
+
+      - name: 校验Nginx本地健康与静态文件
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            echo "=== Nginx 容器内健康检查 ==="
+            sudo docker exec msdsnginx sh -c "nginx -t"
+            sudo docker exec msdsnginx sh -c "wget -qO- http://127.0.0.1/health"
+            echo "=== Nginx 静态文件目录 ==="
+            sudo docker exec msdsnginx sh -c "ls -la /usr/share/nginx/html | head -n 20"
+            sudo docker exec msdsnginx sh -c "test -f /usr/share/nginx/html/index.html"
+
+      - name: 校验服务器本机端口访问
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            echo "=== 服务器本机访问 80 端口 ==="
+            curl -fsS http://127.0.0.1/health >/dev/null
+            curl -fsS http://127.0.0.1/ | head -n 5
+            echo "=== 服务器本机访问 443 端口（忽略证书）==="
+            curl -kfsS https://127.0.0.1/health >/dev/null || true
       
       - name: 健康检查
         id: healthcheck
