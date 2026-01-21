@@ -521,6 +521,24 @@ jobs:
           source: "frontend-dist/*"
           target: "/opt/msds/msdsdocker/nginx/html"
           rm: true
+
+      - name: 校验前端静态资源与权限
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /opt/msds/msdsdocker
+            echo "=== 检查静态资源目录 ==="
+            ls -la nginx/html | head -n 20
+            if [ ! -f nginx/html/index.html ]; then
+              echo "❌ 缺少 index.html，Nginx 可能返回 403"
+              exit 1
+            fi
+            echo "=== 修复静态资源权限 ==="
+            sudo chmod -R 755 nginx/html
+            sudo find nginx/html -type f -exec chmod 644 {} \;
       
       - name: 上传后端JAR文件到服务器
         uses: appleboy/scp-action@master
@@ -542,6 +560,13 @@ jobs:
 
             echo "🚀 启动服务..."
             cd /opt/msds/msdsdocker
+
+            echo "=== 检查SSL证书 ==="
+            if [ -d nginx/ssl ]; then
+              ls -la nginx/ssl
+            else
+              echo "⚠️  nginx/ssl 目录不存在，HTTPS 将不可用"
+            fi
 
             compose_cmd=""
             if sudo docker-compose -f docker-compose.prod.yml version &>/dev/null; then
