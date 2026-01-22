@@ -66,8 +66,8 @@ services:
       - ./nginx/conf.d:/etc/nginx/conf.d
       # SSL证书
       - ./nginx/ssl:/etc/nginx/ssl:ro
-      # 静态资源 - 直接挂载前端编译后的dist目录
-      - ./nginx/html:/usr/share/nginx/html:ro
+      # 静态资源 - 直接挂载前端编译后的dist目录,构建frontend-dist路径下的包！
+      - ./nginx/html/frontend-dist:/usr/share/nginx/html:ro
       # 日志
       - ./nginx/logs:/var/log/nginx
     # depends_on:
