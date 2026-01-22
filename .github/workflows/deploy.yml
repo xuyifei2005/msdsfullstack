@@ -327,6 +327,17 @@ jobs:
           rm: false
           strip_components: 3
 
+      - name: 上传SSL证书到服务器
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "msdsdocker/nginx/ssl/*"
+          target: "/opt/msds/msdsdocker/nginx/ssl/"
+          rm: false
+          strip_components: 3
+
       - name: 校验Nginx默认配置存在
         uses: appleboy/ssh-action@master
         with:
@@ -343,6 +354,16 @@ jobs:
               echo "❌ nginx/conf.d/default.conf 是目录，必须为文件"
               exit 1
             fi
+
+            if [ ! -f nginx/ssl/flymsds.cn.pem ] || [ ! -f nginx/ssl/flymsds.cn.key ]; then
+              echo "❌ SSL证书文件缺失：需要 nginx/ssl/flymsds.cn.pem 与 nginx/ssl/flymsds.cn.key"
+              echo "当前 nginx/ssl 目录："
+              ls -la nginx/ssl || true
+              exit 1
+            fi
+
+            sudo chmod 644 nginx/ssl/flymsds.cn.pem || true
+            sudo chmod 600 nginx/ssl/flymsds.cn.key || true
 
       - name: 上传数据库SQL到服务器（用于MySQL首次初始化）
         uses: appleboy/scp-action@master
