@@ -91,13 +91,22 @@ function Test-RedisPerformance {
     
     try {
         Write-Host "Testing Redis connection..." -ForegroundColor Cyan
-        $result = docker exec msdsredis redis-cli ping 2>$null
+        $redisPassword = $env:MSDS_REDIS_PASSWORD
+        if ($redisPassword) {
+            $result = docker exec msdsredis redis-cli -a $redisPassword ping 2>$null
+        } else {
+            $result = docker exec msdsredis redis-cli ping 2>$null
+        }
         if ($result -eq "PONG") {
             Write-Host "[OK] Redis connection successful" -ForegroundColor Green
         }
         
         Write-Host "Checking Redis memory usage..." -ForegroundColor Cyan
-        $memInfo = docker exec msdsredis redis-cli info memory 2>$null
+        if ($redisPassword) {
+            $memInfo = docker exec msdsredis redis-cli -a $redisPassword info memory 2>$null
+        } else {
+            $memInfo = docker exec msdsredis redis-cli info memory 2>$null
+        }
         if ($memInfo) {
             Write-Host "[OK] Redis memory info retrieved" -ForegroundColor Green
         }
@@ -143,8 +152,14 @@ function Apply-BasicOptimizations {
     
     try {
         Write-Host "Optimizing Redis configuration..." -ForegroundColor Cyan
-        docker exec msdsredis redis-cli config set maxmemory 256mb 2>$null
-        docker exec msdsredis redis-cli config set maxmemory-policy allkeys-lru 2>$null
+        $redisPassword = $env:MSDS_REDIS_PASSWORD
+        if ($redisPassword) {
+            docker exec msdsredis redis-cli -a $redisPassword config set maxmemory 256mb 2>$null
+            docker exec msdsredis redis-cli -a $redisPassword config set maxmemory-policy allkeys-lru 2>$null
+        } else {
+            docker exec msdsredis redis-cli config set maxmemory 256mb 2>$null
+            docker exec msdsredis redis-cli config set maxmemory-policy allkeys-lru 2>$null
+        }
         Write-Host "[OK] Redis optimization applied" -ForegroundColor Green
         
         Write-Host "Cleaning up Docker resources..." -ForegroundColor Cyan

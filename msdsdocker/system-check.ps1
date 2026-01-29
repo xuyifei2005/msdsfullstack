@@ -105,7 +105,12 @@ function Test-DatabaseConnectivity {
     
     # Test Redis
     try {
-        $redisResult = docker exec msdsredis redis-cli ping 2>$null
+        $redisPassword = $env:MSDS_REDIS_PASSWORD
+        if ($redisPassword) {
+            $redisResult = docker exec msdsredis redis-cli -a $redisPassword ping 2>$null
+        } else {
+            $redisResult = docker exec msdsredis redis-cli ping 2>$null
+        }
         if ($redisResult -eq "PONG") {
             Write-Status "Redis cache connection is OK" "OK"
             $redisOk = $true

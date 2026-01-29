@@ -111,9 +111,11 @@ services:
       - SPRING_DATASOURCE_USERNAME=msds_user
       - SPRING_DATASOURCE_PASSWORD=msds_dev_password
       # Redis配置
-      - SPRING_REDIS_HOST=msdsredis
-      - SPRING_REDIS_PORT=6379
-      - SPRING_REDIS_DATABASE=0
+      - SPRING_DATA_REDIS_HOST=msdsredis
+      - SPRING_DATA_REDIS_PORT=6379
+      - SPRING_DATA_REDIS_DATABASE=0
+      - SPRING_DATA_REDIS_PASSWORD=${MSDS_REDIS_PASSWORD:-}
+      - MSDS_REDIS_PASSWORD=${MSDS_REDIS_PASSWORD:-}
       # 时区配置
       - TZ=Asia/Shanghai
       # JVM参数
@@ -204,17 +206,18 @@ services:
     hostname: msdsredis
     restart: always
     pull_policy: never
-    ports:
-      - "16379:6379"
     volumes:
       - msdsredis_data:/data
-    # Redis配置（与开发环境一致，无密码）
     healthcheck:
-      test: ["CMD-SHELL", "redis-cli ping | grep PONG || exit 1"]
+      test: ["CMD-SHELL", "if [ -n \"$$MSDS_REDIS_PASSWORD\" ]; then redis-cli -a \"$$MSDS_REDIS_PASSWORD\" ping | grep PONG; else redis-cli ping | grep PONG; fi"]
       interval: 10s
       timeout: 3s
       retries: 5
       start_period: 10s
+    environment:
+      - MSDS_REDIS_PASSWORD=${MSDS_REDIS_PASSWORD:-}
+    command: >
+      sh -c 'if [ -n "$$MSDS_REDIS_PASSWORD" ]; then exec redis-server --appendonly yes --requirepass "$$MSDS_REDIS_PASSWORD"; else exec redis-server --appendonly yes; fi'
 
 volumes:
   # 数据持久化卷

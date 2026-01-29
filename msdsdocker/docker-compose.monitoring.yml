@@ -121,6 +121,7 @@ services:
     container_name: msds-redis-exporter
     environment:
       - REDIS_ADDR=redis://msdsredis:6379
+      - REDIS_PASSWORD=${MSDS_REDIS_PASSWORD:-}
     ports:
       - "9121:9121"
     networks:

@@ -95,7 +95,12 @@ catch {
 
 # 测试Redis连接
 try {
-    $result = docker exec msdsredis redis-cli ping 2>$null
+    $redisPassword = $env:MSDS_REDIS_PASSWORD
+    if ($redisPassword) {
+        $result = docker exec msdsredis redis-cli -a $redisPassword ping 2>$null
+    } else {
+        $result = docker exec msdsredis redis-cli ping 2>$null
+    }
     if ($result -eq "PONG") {
         Write-Host "[OK] Redis cache accessible" -ForegroundColor Green
     }

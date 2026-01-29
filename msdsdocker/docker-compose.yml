@@ -87,6 +87,7 @@ services:
       - SPRING_DATASOURCE_URL=jdbc:mysql://msdsmysql:3306/msds_dev?useUnicode=true&characterEncoding=utf8mb4&connectionCollation=utf8mb4_unicode_ci&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
       - SPRING_DATASOURCE_USERNAME=msds_user
       - SPRING_DATASOURCE_PASSWORD=msds_dev_password
+      - MSDS_REDIS_PASSWORD=${MSDS_REDIS_PASSWORD:-}
       - MAVEN_OPTS=-Xmx2048m -Xms512m -XX:+UseG1GC
     depends_on:
       - msdsmysql
@@ -184,10 +185,12 @@ services:
     hostname: msdsredis
     restart: always
     pull_policy: never
-    ports:
-      - "16379:6379"
     volumes:
       - msdsredis_data:/data
+    environment:
+      - MSDS_REDIS_PASSWORD=${MSDS_REDIS_PASSWORD:-}
+    command: >
+      sh -c 'if [ -n "$$MSDS_REDIS_PASSWORD" ]; then exec redis-server --appendonly yes --requirepass "$$MSDS_REDIS_PASSWORD"; else exec redis-server --appendonly yes; fi'
 
 volumes:
   msdsredis_data:

@@ -300,7 +300,7 @@ health_check() {
     fi
     
     # 检查Redis
-    if docker exec msdsredis-prod redis-cli ping > /dev/null 2>&1; then
+    if docker exec msdsredis-prod sh -lc 'if [ -n "$MSDS_REDIS_PASSWORD" ]; then redis-cli -a "$MSDS_REDIS_PASSWORD" ping; else redis-cli ping; fi' > /dev/null 2>&1; then
         log_info "✓ Redis服务健康检查通过"
     else
         log_warn "Redis服务健康检查失败"
@@ -378,4 +378,3 @@ main() {
 
 # 执行主函数
 main "$@"
-

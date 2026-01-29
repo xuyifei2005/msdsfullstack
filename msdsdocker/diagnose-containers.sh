@@ -92,7 +92,7 @@ fi
 echo ""
 
 echo -e "${BLUE}=== 8. 检查Redis连接 ===${NC}"
-if docker exec msdsbackend redis-cli -h msdsredis ping > /dev/null 2>&1; then
+if docker exec msdsbackend sh -lc 'if [ -n "$MSDS_REDIS_PASSWORD" ]; then redis-cli -h msdsredis -a "$MSDS_REDIS_PASSWORD" ping; else redis-cli -h msdsredis ping; fi' > /dev/null 2>&1; then
     echo -e "${GREEN}✅ 后端可以连接到Redis${NC}"
 else
     echo -e "${RED}❌ 后端无法连接到Redis${NC}"
@@ -101,7 +101,7 @@ echo ""
 
 echo -e "${BLUE}=== 9. 检查端口占用 ===${NC}"
 echo "检查宿主机端口占用..."
-netstat -tuln | grep -E ":(80|443|18080|3306|16379)" || echo "没有发现端口冲突"
+netstat -tuln | grep -E ":(80|443|18080|3306)" || echo "没有发现端口冲突"
 echo ""
 
 echo -e "${BLUE}=== 10. 检查Docker网络 ===${NC}"

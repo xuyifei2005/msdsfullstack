@@ -79,7 +79,7 @@ spring:
       # 数据库索引
       database: 0
       # 密码
-      password:
+      password: ${SPRING_DATA_REDIS_PASSWORD:${MSDS_REDIS_PASSWORD:}}
       # 连接超时时间
       timeout: 10s
       lettuce:
