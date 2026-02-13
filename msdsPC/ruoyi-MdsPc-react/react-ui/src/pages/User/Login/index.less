@@ -1,0 +1,959 @@
+// ========================================
+// MSDS 登录页面样式
+// Chemical Safety Data Management Platform
+// ========================================
+
+// ========== 全局变量 ==========
+@primary-blue: #1890ff;
+@primary-light: #40a9ff;
+@primary-dark: #096dd9;
+@secondary-blue: #0050b3;
+@accent-cyan: #13c2c2;
+@accent-green: #52c41a;
+
+@text-primary: #262626;
+@text-secondary: #595959;
+@text-tertiary: #8c8c8c;
+@text-placeholder: #bfbfbf;
+
+@bg-white: #ffffff;
+@bg-gray-light: #fafafa;
+@bg-gray: #f5f5f5;
+@bg-gray-dark: #e8e8e8;
+
+@border-color: #d9d9d9;
+@border-hover: #1890ff;
+@border-focus: #1890ff;
+
+@shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+@shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+@shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
+@shadow-xl: 0 12px 48px rgba(0, 0, 0, 0.2);
+
+@radius-sm: 4px;
+@radius-md: 8px;
+@radius-lg: 12px;
+@radius-xl: 16px;
+
+@transition-fast: 0.15s;
+@transition-normal: 0.3s;
+@transition-slow: 0.6s;
+
+// ========== 混合工具 ==========
+.gradient-blue-horizontal() {
+  background: linear-gradient(90deg, @primary-blue 0%, @primary-light 100%);
+}
+
+.gradient-blue-vertical() {
+  background: linear-gradient(180deg, @primary-blue 0%, @primary-light 100%);
+}
+
+.gradient-blue-diagonal() {
+  background: linear-gradient(135deg, @primary-blue 0%, @primary-light 100%);
+}
+
+.gradient-ocean() {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.gradient-cyan-blue() {
+  background: linear-gradient(135deg, @primary-blue 0%, @accent-cyan 100%);
+}
+
+.backdrop-blur(@strength: 10px) {
+  backdrop-filter: blur(@strength);
+  -webkit-backdrop-filter: blur(@strength);
+}
+
+// ========== 容器样式 ==========
+.login-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: auto;
+  position: relative;
+  .gradient-ocean();
+
+  // 化学分子六边形网格背景
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+      // 六边形网格图案
+      linear-gradient(30deg, rgba(255, 255, 255, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(255, 255, 255, 0.03) 87.5%, rgba(255, 255, 255, 0.03)),
+      linear-gradient(150deg, rgba(255, 255, 255, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(255, 255, 255, 0.03) 87.5%, rgba(255, 255, 255, 0.03)),
+      linear-gradient(30deg, rgba(255, 255, 255, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(255, 255, 255, 0.03) 87.5%, rgba(255, 255, 255, 0.03)),
+      linear-gradient(150deg, rgba(255, 255, 255, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(255, 255, 255, 0.03) 87.5%, rgba(255, 255, 255, 0.03)),
+      linear-gradient(60deg, rgba(255, 255, 255, 0.05 25%, transparent 25.5%, transparent 75%, rgba(255, 255, 255, 0.05 75%, rgba(255, 255, 255, 0.05)),
+      linear-gradient(60deg, rgba(255, 255, 255, 0.05 25%, transparent 25.5%, transparent 75%, rgba(255, 255, 255, 0.05 75%, rgba(255, 255, 255, 0.05));
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.4;
+  }
+
+  // 分子装饰图案
+  &::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                      radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.08) 0%, transparent 50%),
+                      radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+}
+
+// ========== 浮动装饰元素 ==========
+.floating-element {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: float 6s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+}
+
+.floating-element-1 {
+  .floating-element();
+  top: 80px;
+  left: 80px;
+  width: 128px;
+  height: 128px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.floating-element-2 {
+  .floating-element();
+  top: 160px;
+  right: 128px;
+  width: 96px;
+  height: 96px;
+  background: rgba(255, 255, 255, 0.05);
+  animation-delay: -2s;
+}
+
+.floating-element-3 {
+  .floating-element();
+  bottom: 128px;
+  left: 25%;
+  width: 160px;
+  height: 160px;
+  background: rgba(255, 255, 255, 0.05);
+  animation-delay: -4s;
+}
+
+.floating-element-4 {
+  .floating-element();
+  bottom: 80px;
+  right: 80px;
+  width: 112px;
+  height: 112px;
+  background: rgba(255, 255, 255, 0.1);
+  animation-delay: -1s;
+}
+
+// ========== 左侧内容区 ==========
+.left-content {
+  color: @bg-white;
+  z-index: 1;
+
+  // 入场动画
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: slideInLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s forwards;
+
+  @keyframes slideInLeft {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  // 系统标题
+  .system-title {
+    text-align: center;
+    margin-bottom: 48px;
+
+    .title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+
+      .system-icon {
+        font-size: 48px;
+        margin-right: 16px;
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      @keyframes pulse {
+        0%, 100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(1.05);
+          opacity: 0.9;
+        }
+      }
+
+      h1 {
+        font-size: 36px;
+        font-weight: 700;
+        margin: 0;
+        color: @bg-white;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        letter-spacing: 1px;
+      }
+    }
+
+    .subtitle {
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 8px;
+      font-weight: 400;
+    }
+
+    .description {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.75);
+      font-weight: 300;
+      line-height: 1.6;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+}
+
+// ========== 功能卡片 ==========
+.feature-card {
+  background: rgba(255, 255, 255, 0.1);
+  .backdrop-blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: @radius-lg;
+  padding: 20px;
+  height: 100%;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  transition: all @transition-normal ease;
+  cursor: default;
+  position: relative;
+  overflow: hidden;
+
+  // 光泽效果
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      45deg,
+      transparent 30%,
+      rgba(255, 255, 255, 0.1) 50%,
+      transparent 70%
+    );
+    transform: rotate(45deg);
+    transition: all 0.6s;
+    opacity: 0;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+
+    &::before {
+      opacity: 1;
+      animation: shimmer 1.5s;
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    }
+    100% {
+      transform: translateX(100%) translateY(100%) rotate(45deg);
+    }
+  }
+
+  .feature-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 1;
+
+    .feature-icon {
+      font-size: 24px;
+      margin-right: 12px;
+      color: @bg-white;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 600;
+      color: @bg-white;
+    }
+  }
+
+  .feature-description {
+    margin: 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+// ========== 统计数据区 ==========
+.stats-section {
+  text-align: center;
+  margin-top: 48px;
+
+  .stat-item {
+    .stat-number {
+      font-size: 32px;
+      font-weight: 700;
+      color: @bg-white;
+      margin-bottom: 8px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .stat-label {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.75);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+  }
+}
+
+// ========== 登录卡片 ==========
+.login-card {
+  background: rgba(255, 255, 255, 0.95);
+  .backdrop-blur(10px);
+  border-radius: @radius-xl;
+  padding: 48px;
+  box-shadow: @shadow-lg;
+  max-width: 480px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+
+  // 入场动画
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+
+  @keyframes slideInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  // 卡片光泽效果
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(24, 144, 255, 0.5), transparent);
+  }
+
+  .login-header {
+    text-align: center;
+    margin-bottom: 32px;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: @text-primary;
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: @text-tertiary;
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+
+  // 错误提示
+  .error-alert {
+    margin-bottom: 24px;
+    border-radius: @radius-md;
+    animation: shake 0.5s;
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-10px); }
+      75% { transform: translateX(10px); }
+    }
+  }
+}
+
+// ========== 表单样式 ==========
+.login-form {
+  // 表单项间距
+  .ant-form-item {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // 输入框样式
+  .ant-input-affix-wrapper,
+  .ant-input {
+    border-radius: @radius-md;
+    border: 1px solid @border-color;
+    transition: all @transition-normal ease;
+    font-size: 14px;
+
+    &:hover {
+      border-color: darken(@border-color, 10%);
+    }
+
+    &:focus,
+  &.ant-input-affix-wrapper-focused {
+      border-color: @border-focus;
+      box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.1);
+    }
+  }
+
+  // 输入框前缀图标
+  .ant-input-prefix {
+    color: @text-tertiary;
+    margin-right: 8px;
+    transition: color @transition-normal ease;
+
+    .anticon {
+      font-size: 16px;
+    }
+  }
+
+  // 输入框聚焦时图标颜色
+  .ant-input-affix-wrapper-focused .ant-input-prefix {
+    color: @primary-blue;
+  }
+
+  // 密码输入框
+  .ant-input-password {
+    .ant-input {
+      border-radius: @radius-md;
+    }
+
+    .ant-input-suffix {
+      color: @text-tertiary;
+      transition: color @transition-normal ease;
+
+      &:hover {
+        color: @text-secondary;
+      }
+    }
+  }
+
+  // 记住密码复选框
+  .ant-checkbox-wrapper {
+    .ant-checkbox-checked .ant-checkbox-inner {
+      background-color: @primary-blue;
+      border-color: @primary-blue;
+    }
+
+    .ant-checkbox:hover .ant-checkbox-inner {
+      border-color: @primary-blue;
+    }
+  }
+
+  // 忘记密码链接
+  .forgot-password {
+    color: @primary-blue;
+    text-decoration: none;
+    transition: all @transition-normal ease;
+    font-size: 14px;
+
+    &:hover {
+      color: @primary-light;
+      text-decoration: underline;
+    }
+  }
+}
+
+// ========== 验证码区域 ==========
+.captcha-row {
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+
+  .captcha-input {
+    flex: 1;
+  }
+
+  .captcha-image-wrapper {
+    flex: 0 0 120px;
+    display: flex;
+    align-items: center;
+  }
+
+  .captcha-image {
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid @border-color;
+    border-radius: @radius-md;
+    object-fit: cover;
+    transition: all @transition-normal ease;
+
+    &:hover {
+      border-color: @primary-blue;
+      transform: scale(1.02);
+      box-shadow: @shadow-sm;
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+
+  .captcha-placeholder {
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid @border-color;
+    border-radius: @radius-md;
+    background-color: @bg-gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: @text-tertiary;
+    transition: all @transition-normal ease;
+
+    &:hover {
+      border-color: @primary-blue;
+      color: @primary-blue;
+      background-color: @bg-gray-light;
+    }
+  }
+}
+
+// ========== 登录按钮 ==========
+.login-button {
+  .gradient-blue-diagonal();
+  border: none;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: @radius-md;
+  box-shadow: 0 4px 12px rgba(24, 144, 255, 0.3);
+  transition: all @transition-normal ease;
+  position: relative;
+  overflow: hidden;
+
+  // 按钮光泽效果
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    );
+    transition: left 0.6s;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(24, 144, 255, 0.4) !important;
+
+    &::before {
+      left: 100%;
+    }
+
+    .anticon {
+      transform: translateX(4px);
+    }
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(24, 144, 255, 0.3) !important;
+  }
+
+  // 按钮图标动画
+  .anticon {
+    transition: transform @transition-normal ease;
+  }
+
+  // 加载状态
+  &.ant-btn-loading {
+    background: linear-gradient(135deg, @primary-dark 0%, @primary-blue 100%);
+  }
+
+  // 禁用状态
+  &.ant-btn-disabled {
+    background: @bg-gray-dark;
+    box-shadow: none;
+    cursor: not-allowed;
+
+    &:hover {
+      transform: none;
+      box-shadow: none;
+    }
+  }
+}
+
+// ========== 系统状态区 ==========
+.system-status {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid @bg-gray-dark;
+  font-size: 12px;
+  color: @text-tertiary;
+
+  .status-indicator {
+    display: flex;
+    align-items: center;
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: @accent-green;
+      margin-right: 8px;
+      animation: pulse 2s ease-in-out infinite;
+      box-shadow: 0 0 0 3px rgba(82, 196, 26, 0.2);
+    }
+
+    @keyframes status-pulse {
+      0%, 100% {
+        box-shadow: 0 0 0 0 rgba(82, 196, 26, 0.4);
+      }
+      50% {
+        box-shadow: 0 0 0 6px rgba(82, 196, 26, 0.1);
+      }
+    }
+
+    .status-dot {
+      animation: status-pulse 2s ease-in-out infinite;
+    }
+  }
+
+  .version {
+    color: @text-tertiary;
+  }
+}
+
+// ========== 备案信息区 ==========
+.beian-info {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid @bg-gray-dark;
+  text-align: center;
+
+  .beian-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-size: 12px;
+
+    .beian-link {
+      color: @text-tertiary;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      transition: all @transition-normal ease;
+
+      &:hover {
+        color: @primary-blue;
+        text-decoration: underline;
+      }
+
+      .beian-icon {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+// ========== 语言切换 ==========
+.lang-switcher {
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  position: fixed;
+  right: 16px;
+  top: 16px;
+  border-radius: @radius-sm;
+  background: rgba(255, 255, 255, 0.1);
+  .backdrop-blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all @transition-normal ease;
+  z-index: 10;
+  cursor: pointer;
+  text-align: center;
+  color: @bg-white;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+  }
+}
+
+// ========== 响应式设计 ==========
+@media (max-width: 991px) {
+  .login-card {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 32px;
+  }
+
+  .left-content {
+    margin-bottom: 32px;
+
+    .system-title {
+      margin-bottom: 32px;
+
+      .title-wrapper {
+        h1 {
+          font-size: 28px;
+        }
+      }
+
+      .subtitle {
+        font-size: 18px;
+      }
+
+      .description {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .feature-card {
+    min-height: 100px;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .login-card {
+    padding: 24px;
+
+    .login-header {
+      margin-bottom: 24px;
+
+      h2 {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .login-button {
+    height: 44px;
+    font-size: 15px;
+  }
+
+  .captcha-row {
+    flex-direction: column;
+
+    .captcha-image-wrapper {
+      flex: 1;
+    }
+
+    .captcha-image,
+    .captcha-placeholder {
+      width: 100%;
+      max-width: 200px;
+      margin: 0 auto;
+    }
+  }
+
+  .left-content {
+    .system-title {
+      .title-wrapper {
+        flex-direction: column;
+        gap: 16px;
+
+        .system-icon {
+          margin-right: 0;
+        }
+      }
+
+      .title-wrapper h1 {
+        font-size: 24px;
+      }
+
+      .subtitle {
+        font-size: 16px;
+      }
+
+      .description {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .floating-element {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .login-container {
+    &::before {
+      background-size: 60px 105px;
+    }
+  }
+
+  .login-card {
+    padding: 20px;
+    border-radius: @radius-lg;
+  }
+
+  .feature-card {
+    .feature-header {
+      .feature-icon {
+        font-size: 20px;
+      }
+
+      h3 {
+        font-size: 14px;
+      }
+    }
+
+    .feature-description {
+      font-size: 13px;
+    }
+  }
+
+  .stats-section {
+    .stat-item {
+      .stat-number {
+        font-size: 24px;
+      }
+
+      .stat-label {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+// ========== 打印样式 ==========
+@media print {
+  .login-container {
+    background: white;
+    display: none;
+  }
+
+  .floating-element {
+    display: none;
+  }
+}
+
+// ========== 辅助工具类 ==========
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+// ========== 暗色主题适配 ==========
+@media (prefers-color-scheme: dark) {
+  // 可以在这里添加暗色主题样式
+  // 当前设计主要使用亮色主题，如需暗色主题可在此扩展
+}
+
+// ========== 无障碍支持 ==========
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .floating-element {
+    display: none;
+  }
+}
+
+// ========== 高对比度模式 ==========
+@media (prefers-contrast: high) {
+  .login-card {
+    border: 2px solid @border-color;
+  }
+
+  .login-button {
+    border: 2px solid @primary-dark;
+  }
+
+  .feature-card {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+  }
+}

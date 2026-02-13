@@ -53,30 +53,64 @@ const FeatureCard: React.FC<{
 }> = ({ icon, title, description }) => {
   const cardClassName = useEmotionCss(() => {
     return {
-      background: 'rgba(255, 255, 255, 0.1)',
-      backdropFilter: 'blur(5px)',
-      border: '1px solid rgba(255, 255, 255, 0.2)',
+      background: 'rgba(15, 23, 42, 0.6)',
+      backdropFilter: 'blur(10px)',
+      border: '1px solid rgba(24, 144, 255, 0.2)',
       borderRadius: '12px',
-      padding: '20px',
+      padding: '24px',
       height: '100%',
-      minHeight: '120px',
+      minHeight: '130px',
       display: 'flex',
       flexDirection: 'column',
       transition: 'all 0.3s ease',
+      position: 'relative',
+      overflow: 'hidden',
+      '&:before': {
+        content: '""',
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        right: 0,
+        height: '3px',
+        background: 'linear-gradient(90deg, #1890ff, #43cd80)',
+        opacity: 0,
+        transition: 'opacity 0.3s ease',
+      },
       '&:hover': {
-        background: 'rgba(255, 255, 255, 0.15)',
+        background: 'rgba(15, 23, 42, 0.8)',
+        borderColor: 'rgba(24, 144, 255, 0.4)',
         transform: 'translateY(-5px)',
+        boxShadow: '0 12px 40px rgba(24, 144, 255, 0.15)',
+        '&:before': {
+          opacity: 1,
+        },
       },
     };
   });
 
   return (
     <div className={cardClassName}>
-      <div style={{ display: 'flex', alignItems: 'center', marginBottom: '12px' }}>
-        <span style={{ fontSize: '24px', marginRight: '12px' }}>{icon}</span>
-        <h3 style={{ margin: 0, fontSize: '16px', fontWeight: 600 }}>{title}</h3>
+      <div style={{ display: 'flex', alignItems: 'center', marginBottom: '16px' }}>
+        <span style={{
+          fontSize: '28px',
+          marginRight: '12px',
+          color: '#1890ff',
+          filter: 'drop-shadow(0 0 8px rgba(24, 144, 255, 0.5))'
+        }}>{icon}</span>
+        <h3 style={{
+          margin: 0,
+          fontSize: '17px',
+          fontWeight: 600,
+          color: '#e6f7ff',
+          letterSpacing: '0.5px'
+        }}>{title}</h3>
       </div>
-      <p style={{ margin: 0, fontSize: '14px', color: 'rgba(255, 255, 255, 0.85)', lineHeight: '1.6' }}>
+      <p style={{
+        margin: 0,
+        fontSize: '14px',
+        color: 'rgba(230, 247, 255, 0.7)',
+        lineHeight: '1.7'
+      }}>
         {description}
       </p>
     </div>
@@ -131,8 +165,26 @@ const Login: React.FC = () => {
       flexDirection: 'column',
       minHeight: '100vh',
       overflow: 'auto',
-      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+      background: '#0a1628',
       position: 'relative',
+      '&:before': {
+        content: '""',
+        position: 'absolute',
+        inset: 0,
+        backgroundImage: `
+          linear-gradient(30deg, rgba(24, 144, 255, 0.03) 1px, transparent 1px),
+          linear-gradient(-30deg, rgba(24, 144, 255, 0.03) 1px, transparent 1px)
+        `,
+        backgroundSize: '60px 60px',
+        pointerEvents: 'none',
+      },
+      '&:after': {
+        content: '""',
+        position: 'absolute',
+        inset: 0,
+        background: 'radial-gradient(ellipse at 20% 20%, rgba(24, 144, 255, 0.15) 0%, transparent 50%), radial-gradient(ellipse at 80% 80%, rgba(67, 205, 128, 0.1) 0%, transparent 50%)',
+        pointerEvents: 'none',
+      },
     };
   });
 
@@ -141,55 +193,107 @@ const Login: React.FC = () => {
       position: 'absolute',
       borderRadius: '50%',
       pointerEvents: 'none',
+      background: 'linear-gradient(135deg, rgba(24, 144, 255, 0.15), rgba(67, 205, 128, 0.1))',
+      boxShadow: '0 0 60px rgba(24, 144, 255, 0.3)',
       '@keyframes float': {
-        '0%, 100%': { transform: 'translateY(0px)' },
-        '50%': { transform: 'translateY(-20px)' },
+        '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+        '50%': { transform: 'translateY(-20px) rotate(180deg)' },
       },
-      animation: 'float 6s ease-in-out infinite',
+      animation: 'float 8s ease-in-out infinite',
     };
   });
 
   const loginCardClassName = useEmotionCss(() => {
     return {
-      background: 'rgba(255, 255, 255, 0.95)',
-      backdropFilter: 'blur(10px)',
-      borderRadius: '16px',
+      background: 'rgba(15, 23, 42, 0.85)',
+      backdropFilter: 'blur(20px)',
+      borderRadius: '20px',
       padding: '48px',
-      boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1)',
+      border: '1px solid rgba(24, 144, 255, 0.2)',
+      boxShadow: `
+        0 0 0 1px rgba(24, 144, 255, 0.1),
+        0 20px 60px rgba(0, 0, 0, 0.5),
+        0 0 100px rgba(24, 144, 255, 0.1) inset
+      `,
       maxWidth: '480px',
       width: '100%',
       opacity: mounted ? 1 : 0,
       transform: mounted ? 'translateY(0)' : 'translateY(20px)',
       transition: 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)',
+      position: 'relative',
+      overflow: 'hidden',
+      '&:before': {
+        content: '""',
+        position: 'absolute',
+        top: '-50%',
+        left: '-50%',
+        width: '200%',
+        height: '200%',
+        background: 'conic-gradient(from 0deg at 50% 50%, rgba(24, 144, 255, 0.1) 0deg, transparent 60deg, rgba(67, 205, 128, 0.05) 120deg, transparent 180deg)',
+        animation: 'rotate 20s linear infinite',
+        pointerEvents: 'none',
+      },
+      '&:after': {
+        content: '""',
+        position: 'absolute',
+        inset: '1px',
+        borderRadius: '19px',
+        background: 'rgba(15, 23, 42, 0.95)',
+        zIndex: -1,
+      },
+      '@keyframes rotate': {
+        from: { transform: 'rotate(0deg)' },
+        to: { transform: 'rotate(360deg)' },
+      },
     };
   });
 
   const loginButtonClassName = useEmotionCss(() => {
     return {
-      background: 'linear-gradient(135deg, #1890ff 0%, #40a9ff 100%)',
+      background: 'linear-gradient(135deg, #1890ff 0%, #43cd80 100%)',
       border: 'none',
       height: '48px',
       fontSize: '16px',
-      fontWeight: 500,
-      borderRadius: '8px',
-      boxShadow: '0 4px 12px rgba(24, 144, 255, 0.3)',
+      fontWeight: 600,
+      borderRadius: '10px',
+      color: '#ffffff',
+      letterSpacing: '1px',
+      textTransform: 'uppercase',
+      boxShadow: '0 4px 20px rgba(24, 144, 255, 0.4)',
       transition: 'all 0.3s ease',
+      position: 'relative',
+      overflow: 'hidden',
+      '&:before': {
+        content: '""',
+        position: 'absolute',
+        top: 0,
+        left: '-100%',
+        width: '100%',
+        height: '100%',
+        background: 'linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent)',
+        transition: 'left 0.5s ease',
+      },
       '&:hover': {
-        transform: 'translateY(-2px)',
-        boxShadow: '0 8px 24px rgba(24, 144, 255, 0.4) !important',
+        transform: 'translateY(-2px) scale(1.02)',
+        boxShadow: '0 8px 30px rgba(24, 144, 255, 0.5) !important',
+        '&:before': {
+          left: '100%',
+        },
       },
       '&:active': {
-        transform: 'translateY(0)',
+        transform: 'translateY(0) scale(0.98)',
       },
     };
   });
 
   const leftContentClassName = useEmotionCss(() => {
     return {
-      color: 'white',
+      color: '#e6f7ff',
       opacity: mounted ? 1 : 0,
       transform: mounted ? 'translateX(0)' : 'translateX(-30px)',
       transition: 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s',
+      position: 'relative',
+      zIndex: 1,
     };
   });
 
@@ -330,10 +434,10 @@ const Login: React.FC = () => {
       
       {/* 背景装饰元素 */}
       <div style={{ position: 'fixed', inset: 0, overflow: 'hidden', pointerEvents: 'none' }}>
-        <div className={floatingElementStyle} style={{ top: '80px', left: '80px', width: '128px', height: '128px', background: 'rgba(255, 255, 255, 0.1)' }} />
-        <div className={floatingElementStyle} style={{ top: '160px', right: '128px', width: '96px', height: '96px', background: 'rgba(255, 255, 255, 0.05)', animationDelay: '-2s' }} />
-        <div className={floatingElementStyle} style={{ bottom: '128px', left: '25%', width: '160px', height: '160px', background: 'rgba(255, 255, 255, 0.05)', animationDelay: '-4s' }} />
-        <div className={floatingElementStyle} style={{ bottom: '80px', right: '80px', width: '112px', height: '112px', background: 'rgba(255, 255, 255, 0.1)', animationDelay: '-1s' }} />
+        <div className={floatingElementStyle} style={{ top: '80px', left: '80px', width: '128px', height: '128px', background: 'linear-gradient(135deg, rgba(24, 144, 255, 0.2), rgba(67, 205, 128, 0.15))' }} />
+        <div className={floatingElementStyle} style={{ top: '160px', right: '128px', width: '96px', height: '96px', background: 'linear-gradient(135deg, rgba(67, 205, 128, 0.15), rgba(24, 144, 255, 0.1))', animationDelay: '-2s' }} />
+        <div className={floatingElementStyle} style={{ bottom: '128px', left: '25%', width: '160px', height: '160px', background: 'linear-gradient(135deg, rgba(24, 144, 255, 0.15), rgba(67, 205, 128, 0.1))', animationDelay: '-4s' }} />
+        <div className={floatingElementStyle} style={{ bottom: '80px', right: '80px', width: '112px', height: '112px', background: 'linear-gradient(135deg, rgba(67, 205, 128, 0.2), rgba(24, 144, 255, 0.15))', animationDelay: '-1s' }} />
       </div>
 
       <Lang />
@@ -347,15 +451,27 @@ const Login: React.FC = () => {
                 {/* 系统标题 */}
                 <div style={{ textAlign: 'center', marginBottom: '48px' }}>
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '16px' }}>
-                    <ExperimentOutlined style={{ fontSize: '48px', marginRight: '16px' }} />
-                    <h1 style={{ fontSize: '36px', fontWeight: 'bold', margin: 0, color: 'white' }}>
+                    <ExperimentOutlined style={{
+                      fontSize: '56px',
+                      marginRight: '16px',
+                      color: '#1890ff',
+                      filter: 'drop-shadow(0 0 20px rgba(24, 144, 255, 0.6))'
+                    }} />
+                    <h1 style={{
+                      fontSize: '40px',
+                      fontWeight: 'bold',
+                      margin: 0,
+                      color: '#e6f7ff',
+                      letterSpacing: '2px',
+                      textShadow: '0 0 40px rgba(24, 144, 255, 0.5)'
+                    }}>
                       {intl.formatMessage({ id: 'pages.login.title', defaultMessage: 'MSDS管理系统' })}
                     </h1>
                   </div>
-                  <p style={{ fontSize: '20px', color: 'rgba(255, 255, 255, 0.9)', marginBottom: '8px' }}>
+                  <p style={{ fontSize: '20px', color: 'rgba(230, 247, 255, 0.85)', marginBottom: '8px' }}>
                     {intl.formatMessage({ id: 'pages.login.subtitle', defaultMessage: '专业的化学品安全数据表管理平台' })}
                   </p>
-                  <p style={{ fontSize: '16px', color: 'rgba(255, 255, 255, 0.75)' }}>
+                  <p style={{ fontSize: '16px', color: 'rgba(230, 247, 255, 0.65)' }}>
                     {intl.formatMessage({ id: 'pages.login.description', defaultMessage: '为科研机构和实验室提供安全、高效的MSDS数据管理解决方案' })}
                   </p>
                 </div>
@@ -395,20 +511,20 @@ const Login: React.FC = () => {
                 {/* 统计数据 */}
                 <Row gutter={16} style={{ textAlign: 'center' }}>
                   <Col span={8}>
-                    <div style={{ fontSize: '32px', fontWeight: 'bold' }}>10,000+</div>
-                    <div style={{ fontSize: '14px', color: 'rgba(255, 255, 255, 0.75)' }}>
+                    <div style={{ fontSize: '36px', fontWeight: 'bold', color: '#1890ff', textShadow: '0 0 20px rgba(24, 144, 255, 0.5)' }}>10,000+</div>
+                    <div style={{ fontSize: '14px', color: 'rgba(230, 247, 255, 0.7)' }}>
                       {intl.formatMessage({ id: 'pages.login.stats.documents', defaultMessage: 'MSDS文档' })}
                     </div>
                   </Col>
                   <Col span={8}>
-                    <div style={{ fontSize: '32px', fontWeight: 'bold' }}>500+</div>
-                    <div style={{ fontSize: '14px', color: 'rgba(255, 255, 255, 0.75)' }}>
+                    <div style={{ fontSize: '36px', fontWeight: 'bold', color: '#43cd80', textShadow: '0 0 20px rgba(67, 205, 128, 0.5)' }}>500+</div>
+                    <div style={{ fontSize: '14px', color: 'rgba(230, 247, 255, 0.7)' }}>
                       {intl.formatMessage({ id: 'pages.login.stats.users', defaultMessage: '活跃用户' })}
                     </div>
                   </Col>
                   <Col span={8}>
-                    <div style={{ fontSize: '32px', fontWeight: 'bold' }}>99.9%</div>
-                    <div style={{ fontSize: '14px', color: 'rgba(255, 255, 255, 0.75)' }}>
+                    <div style={{ fontSize: '36px', fontWeight: 'bold', color: '#52c41a', textShadow: '0 0 20px rgba(82, 196, 26, 0.5)' }}>99.9%</div>
+                    <div style={{ fontSize: '14px', color: 'rgba(230, 247, 255, 0.7)' }}>
                       {intl.formatMessage({ id: 'pages.login.stats.availability', defaultMessage: '系统可用性' })}
                     </div>
                   </Col>
@@ -419,11 +535,18 @@ const Login: React.FC = () => {
             {/* 右侧：登录表单 */}
             <Col xs={24} lg={12}>
               <div className={loginCardClassName}>
-                <div style={{ textAlign: 'center', marginBottom: '32px' }}>
-                  <h2 style={{ fontSize: '24px', fontWeight: 'bold', color: '#262626', marginBottom: '8px' }}>
+                <div style={{ textAlign: 'center', marginBottom: '32px', position: 'relative', zIndex: 1 }}>
+                  <h2 style={{
+                    fontSize: '26px',
+                    fontWeight: 'bold',
+                    color: '#e6f7ff',
+                    marginBottom: '8px',
+                    letterSpacing: '1px',
+                    textShadow: '0 0 30px rgba(24, 144, 255, 0.5)'
+                  }}>
                     {intl.formatMessage({ id: 'pages.login.welcome', defaultMessage: '欢迎登录' })}
                   </h2>
-                  <p style={{ color: '#8c8c8c' }}>
+                  <p style={{ color: 'rgba(230, 247, 255, 0.6)', fontSize: '15px' }}>
                     {intl.formatMessage({ id: 'pages.login.welcomeDescription', defaultMessage: '请输入您的账户信息' })}
                   </p>
                 </div>
@@ -463,7 +586,7 @@ const Login: React.FC = () => {
                     <ProFormText
                       fieldProps={{
                         size: 'large',
-                        prefix: <UserOutlined style={{ color: '#8c8c8c' }} />,
+                        prefix: <UserOutlined style={{ color: 'rgba(230, 247, 255, 0.5)' }} />,
                         placeholder: intl.formatMessage({ id: 'pages.login.usernamePlaceholder', defaultMessage: '请输入用户名或邮箱' }),
                       }}
                     />
@@ -482,7 +605,7 @@ const Login: React.FC = () => {
                     <ProFormText.Password
                       fieldProps={{
                         size: 'large',
-                        prefix: <LockOutlined style={{ color: '#8c8c8c' }} />,
+                        prefix: <LockOutlined style={{ color: 'rgba(230, 247, 255, 0.5)' }} />,
                         placeholder: intl.formatMessage({ id: 'pages.login.passwordPlaceholder', defaultMessage: '请输入密码' }),
                       }}
                     />
@@ -502,7 +625,7 @@ const Login: React.FC = () => {
                         <ProFormText
                           fieldProps={{
                             size: 'large',
-                            prefix: <SafetyOutlined style={{ color: '#8c8c8c' }} />,
+                            prefix: <SafetyOutlined style={{ color: 'rgba(230, 247, 255, 0.5)' }} />,
                             placeholder: intl.formatMessage({ id: 'pages.login.captchaPlaceholder', defaultMessage: '请输入验证码' }),
                           }}
                         />
@@ -559,14 +682,14 @@ const Login: React.FC = () => {
                       <Col>
                         <Form.Item name="autoLogin" valuePropName="checked" noStyle>
                           <ProFormCheckbox>
-                            <span style={{ color: '#595959' }}>
+                            <span style={{ color: 'rgba(230, 247, 255, 0.7)' }}>
                               {intl.formatMessage({ id: 'pages.login.rememberStatus', defaultMessage: '记住登录状态' })}
                             </span>
                           </ProFormCheckbox>
                         </Form.Item>
                       </Col>
                       <Col>
-                        <a style={{ color: '#1890ff' }}>
+                        <a style={{ color: '#43cd80', textDecoration: 'none', transition: 'color 0.3s ease', '&:hover': { color: '#1890ff' } }}>
                           {intl.formatMessage({ id: 'pages.login.forgotPassword', defaultMessage: '忘记密码？' })}
                         </a>
                       </Col>
@@ -597,10 +720,10 @@ const Login: React.FC = () => {
                   style={{
                     marginTop: '24px',
                     paddingTop: '24px',
-                    borderTop: '1px solid #f0f0f0',
+                    borderTop: '1px solid rgba(24, 144, 255, 0.15)',
                   }}
                 >
-                  <Row justify="space-between" align="middle" style={{ fontSize: '12px', color: '#8c8c8c' }}>
+                  <Row justify="space-between" align="middle" style={{ fontSize: '12px', color: 'rgba(230, 247, 255, 0.6)' }}>
                     <Col>
                       <div style={{ display: 'flex', alignItems: 'center' }}>
                         <div
@@ -608,8 +731,9 @@ const Login: React.FC = () => {
                             width: '8px',
                             height: '8px',
                             borderRadius: '50%',
-                            backgroundColor: '#52c41a',
+                            backgroundColor: '#43cd80',
                             marginRight: '8px',
+                            boxShadow: '0 0 10px rgba(67, 205, 128, 0.5)',
                           }}
                         />
                         <span>{intl.formatMessage({ id: 'pages.login.systemStatus', defaultMessage: '系统运行正常' })}</span>
@@ -626,16 +750,16 @@ const Login: React.FC = () => {
                   style={{
                     marginTop: '16px',
                     paddingTop: '16px',
-                    borderTop: '1px solid #f0f0f0',
+                    borderTop: '1px solid rgba(24, 144, 255, 0.15)',
                     textAlign: 'center',
                   }}
                 >
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', flexWrap: 'wrap', fontSize: '12px' }}>
-                    <a href="https://beian.mps.gov.cn/#/query/webSearch?code=61019602000641" rel="noreferrer" target="_blank" style={{ color: '#8c8c8c', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                    <a href="https://beian.mps.gov.cn/#/query/webSearch?code=61019602000641" rel="noreferrer" target="_blank" style={{ color: 'rgba(230, 247, 255, 0.6)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '4px', transition: 'color 0.3s ease', '&:hover': { color: '#43cd80' } }}>
                       <img src="/beian-icon.png" alt="公安备案" style={{ width: '16px', height: '16px' }} />
                       陕公网安备61019602000641号
                     </a>
-                    <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer" style={{ color: '#8c8c8c', textDecoration: 'none' }}>
+                    <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer" style={{ color: 'rgba(230, 247, 255, 0.6)', textDecoration: 'none', transition: 'color 0.3s ease', '&:hover': { color: '#43cd80' } }}>
                       陕ICP备2025081905号-1
                     </a>
                   </div>
