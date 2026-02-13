@@ -79,7 +79,7 @@ export default {
   'pages.msds.detail.message.loadError': '加载详情失败',
   
   // 登录页面美化版国际化
-  'pages.login.title': 'MSDS管理系统',
+  'pages.login.title': '安全智库',
   'pages.login.subtitle': '专业的化学品安全数据表管理平台',
   'pages.login.description': '为科研机构和实验室提供安全、高效的MSDS数据管理解决方案',
   'pages.login.feature.search.title': '智能搜索',

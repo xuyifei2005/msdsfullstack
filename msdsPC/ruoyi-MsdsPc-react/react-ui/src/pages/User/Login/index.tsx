@@ -465,7 +465,7 @@ const Login: React.FC = () => {
                       letterSpacing: '2px',
                       textShadow: '0 0 40px rgba(24, 144, 255, 0.5)'
                     }}>
-                      {intl.formatMessage({ id: 'pages.login.title', defaultMessage: 'MSDS管理系统' })}
+                      {intl.formatMessage({ id: 'pages.login.title', defaultMessage: '安全智库' })}
                     </h1>
                   </div>
                   <p style={{ fontSize: '20px', color: 'rgba(230, 247, 255, 0.85)', marginBottom: '8px' }}>
@@ -566,9 +566,7 @@ const Login: React.FC = () => {
                   form={form}
                   name="login"
                   initialValues={{
-                    username: 'admin',
-                    password: 'admin123',
-                    autoLogin: true,
+                    autoLogin: false,
                   }}
                   onFinish={handleSubmit}
                   size="large"

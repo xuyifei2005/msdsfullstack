@@ -81,7 +81,7 @@ redis:
 # 文件上传
 ruoyi:
   # 名称
-  name: MSDS管理系统
+  name: 安全智库
   # 版本
   version: 3.8.8
   # 版权年份
@@ -530,7 +530,7 @@ ruoyi:
 
 # 名称
 
-  name: MSDS管理系统
+  name: 安全智库
 
 # 版本
 

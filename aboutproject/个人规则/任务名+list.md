@@ -2,7 +2,7 @@
 
 > 创建时间：[YYYY-MM-DD HH:mm:ss]  
 > 最后更新：[YYYY-MM-DD HH:mm:ss]  
-> 项目：msdsfullstack - MSDS管理系统（基于RuoYi框架）
+> 项目：msdsfullstack - 安全智库（基于RuoYi框架）
 
 ## 任务名称
 [在此填写任务名称]

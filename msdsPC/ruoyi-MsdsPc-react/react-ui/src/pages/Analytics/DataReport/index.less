@@ -1,71 +1,128 @@
-// 数据分析报告页面样式
+// 数据分析报告页面样式 - 现代明亮风格
 .reportContainer {
-  background: #f5f5f5;
+  background: linear-gradient(180deg, #f8fafc 0%, #e0f2fe 100%);
   min-height: 100vh;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle at 20% 20%, rgba(24, 144, 255, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(67, 205, 128, 0.04) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: -1;
+  }
 
   :global {
     .ant-page-header {
-      background: #fff;
+      background: #ffffff;
       margin-bottom: 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(24, 144, 255, 0.1);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
     }
   }
 }
 
 .statCard {
-  transition: all 0.3s ease;
+  background: #ffffff !important;
+  border: 1px solid rgba(24, 144, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #1890ff, #43cd80);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
 
   &:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(24, 144, 255, 0.15);
+    transform: translateY(-4px);
+    border-color: rgba(24, 144, 255, 0.2);
+
+    &::before {
+      opacity: 1;
+    }
   }
 
   :global {
+    .ant-card-body {
+      padding: 24px;
+    }
+
     .ant-statistic-title {
       font-size: 14px;
-      color: #595959;
-      margin-bottom: 8px;
+      color: #64748b;
+      margin-bottom: 12px;
+      font-weight: 500;
     }
 
     .ant-statistic-content {
-      font-size: 28px;
+      font-size: 32px;
       font-weight: 700;
+      color: #1e293b;
     }
   }
 }
 
 .trendUp {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 4px;
   font-size: 12px;
-  color: #52c41a;
+  color: #43cd80;
   margin-left: 8px;
+  padding: 4px 10px;
+  background: rgba(67, 205, 128, 0.1);
+  border-radius: 20px;
+  font-weight: 600;
 }
 
 .trendDown {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 4px;
   font-size: 12px;
   color: #ff4d4f;
   margin-left: 8px;
+  padding: 4px 10px;
+  background: rgba(255, 77, 79, 0.1);
+  border-radius: 20px;
+  font-weight: 600;
 }
 
 .trendStable {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 4px;
   font-size: 12px;
-  color: #8c8c8c;
+  color: #64748b;
   margin-left: 8px;
+  padding: 4px 10px;
+  background: rgba(100, 116, 139, 0.1);
+  border-radius: 20px;
+  font-weight: 600;
 }
 
 .insightCard {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1890ff 0%, #43cd80 100%) !important;
   border: none;
-  color: #fff;
+  color: #ffffff;
   position: relative;
   overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(24, 144, 255, 0.25);
 
   &::before {
     content: '';
@@ -74,7 +131,7 @@
     right: -50%;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
     transform: rotate(45deg);
   }
 
@@ -82,6 +139,8 @@
     .ant-alert-message,
     .ant-alert-description {
       color: #fff;
+      position: relative;
+      z-index: 1;
     }
 
     .ant-alert-icon {
@@ -96,6 +155,10 @@
   gap: 16px;
   margin-top: 16px;
   justify-content: center;
+  padding: 16px;
+  background: linear-gradient(180deg, #fafbfc 0%, #f8fafc 100%);
+  border-radius: 12px;
+  border: 1px solid rgba(24, 144, 255, 0.08);
 }
 
 .legendItem {
@@ -103,12 +166,124 @@
   align-items: center;
   gap: 8px;
   font-size: 14px;
+  color: #475569;
+  font-weight: 500;
 }
 
 .legendColor {
   width: 12px;
   height: 12px;
-  border-radius: 2px;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+// 全局卡片样式覆盖
+:global {
+  .ant-card {
+    background: #ffffff;
+    border: 1px solid rgba(24, 144, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      box-shadow: 0 8px 28px rgba(24, 144, 255, 0.12);
+      transform: translateY(-2px);
+      border-color: rgba(24, 144, 255, 0.15);
+    }
+
+    .ant-card-head {
+      background: linear-gradient(180deg, #fafbfc 0%, #f8fafc 100%);
+      border-bottom: 1px solid rgba(24, 144, 255, 0.08);
+      color: #1e293b;
+      font-weight: 600;
+
+      .ant-card-head-title {
+        color: #1e293b;
+      }
+    }
+
+    .ant-card-body {
+      color: #475569;
+    }
+
+    .ant-card-extra {
+      color: #64748b;
+    }
+  }
+
+  // Table样式
+  .ant-table {
+    background: transparent;
+
+    .ant-table-thead > tr > th {
+      background: linear-gradient(180deg, #f1f5f9 0%, #e2e8f0 100%);
+      color: #1e293b;
+      font-weight: 600;
+      border-bottom: 2px solid rgba(24, 144, 255, 0.15);
+    }
+
+    .ant-table-tbody > tr {
+      transition: all 0.2s ease;
+
+      &:hover > td {
+        background: rgba(24, 144, 255, 0.04);
+      }
+
+      &.ant-table-row-selected > td {
+        background: rgba(24, 144, 255, 0.08);
+      }
+    }
+
+    .ant-table-tbody > tr > td {
+      border-bottom: 1px solid rgba(24, 144, 255, 0.06);
+      color: #475569;
+    }
+  }
+
+  // Progress样式
+  .ant-progress {
+    .ant-progress-bg {
+      background: linear-gradient(90deg, #1890ff, #43cd80);
+    }
+
+    &.ant-progress-success {
+      .ant-progress-bg {
+        background: linear-gradient(90deg, #43cd80, #6ee7b7);
+      }
+    }
+  }
+
+  // Segmented样式
+  .ant-segmented {
+    background: #f1f5f9;
+    border-radius: 8px;
+
+    .ant-segmented-item {
+      border-radius: 6px;
+      color: #64748b;
+      font-weight: 500;
+      transition: all 0.3s ease;
+
+      &.ant-segmented-item-selected {
+      background: #ffffff;
+      color: #1890ff;
+      box-shadow: 0 2px 8px rgba(24, 144, 255, 0.15);
+      }
+    }
+  }
+
+  // Alert样式（非insightCard）
+  .ant-alert:not(.insightCard) {
+    background: rgba(24, 144, 255, 0.08);
+    border: 1px solid rgba(24, 144, 255, 0.15);
+    border-radius: 12px;
+    color: #0369a1;
+
+    .ant-alert-icon {
+      color: #1890ff;
+    }
+  }
 }
 
 // 响应式设计
@@ -125,5 +300,3 @@
     font-size: 12px;
   }
 }
-
-

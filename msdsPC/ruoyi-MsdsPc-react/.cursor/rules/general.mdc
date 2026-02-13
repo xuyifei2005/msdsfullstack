@@ -4,12 +4,12 @@ globs:
 alwaysApply: true
 ---
 ---
-description: MSDS管理系统项目通用规范和基本信息
+description: 安全智库项目通用规范和基本信息
 globs: ["*"]
 alwaysApply: true
 ---
 
-# MSDS管理系统项目通用规范
+# 安全智库项目通用规范
 
 在理解用户需求、编写代码和解决问题时，你应始终遵循以下原则：
 1.编码调试中de项目前后端都是启动起来的，你在自动执行的时候请勿再给我启动项目;

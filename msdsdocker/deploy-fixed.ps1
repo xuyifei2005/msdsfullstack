@@ -11,7 +11,7 @@ param(
 $ErrorActionPreference = "Stop"
 
 # 配置
-$ProjectName = "MSDS管理系统"
+$ProjectName = "安全智库"
 $ComposeFile = "docker-compose.prod.yml"
 $EnvFile = ".env.prod"
 

@@ -70,11 +70,46 @@ const StatCard: React.FC<{
   const [mounted, setMounted] = useState(false);
 
   const colorMap = {
-    blue: { from: '#1890ff', to: '#40a9ff', light: '#bae7ff' },
-    green: { from: '#52c41a', to: '#73d13d', light: '#d9f7be' },
-    orange: { from: '#faad14', to: '#ffc53d', light: '#ffe58f' },
-    red: { from: '#ff4d4f', to: '#ff7875', light: '#ffccc7' },
-    purple: { from: '#722ed1', to: '#9254de', light: '#efdbff' },
+    blue: {
+      from: '#1890ff',
+      to: '#43cd80',
+      light: '#bae7ff',
+      glow: 'rgba(24, 144, 255, 0.6)',
+      bgStart: 'rgba(24, 144, 255, 0.95)',
+      bgEnd: 'rgba(67, 205, 128, 0.85)'
+    },
+    green: {
+      from: '#43cd80',
+      to: '#6ee7b7',
+      light: '#a7f3d0',
+      glow: 'rgba(67, 205, 128, 0.6)',
+      bgStart: 'rgba(67, 205, 128, 0.95)',
+      bgEnd: 'rgba(110, 231, 183, 0.85)'
+    },
+    orange: {
+      from: '#faad14',
+      to: '#ff7a45',
+      light: '#ffe58f',
+      glow: 'rgba(250, 173, 20, 0.6)',
+      bgStart: 'rgba(250, 173, 20, 0.95)',
+      bgEnd: 'rgba(255, 122, 69, 0.85)'
+    },
+    red: {
+      from: '#ff4d4f',
+      to: '#ff7875',
+      light: '#ffccc7',
+      glow: 'rgba(255, 77, 79, 0.6)',
+      bgStart: 'rgba(255, 77, 79, 0.95)',
+      bgEnd: 'rgba(255, 120, 117, 0.85)'
+    },
+    purple: {
+      from: '#a855f7',
+      to: '#c774eb',
+      light: '#d9b8ff',
+      glow: 'rgba(168, 85, 247, 0.6)',
+      bgStart: 'rgba(168, 85, 247, 0.95)',
+      bgEnd: 'rgba(199, 116, 235, 0.85)'
+    },
   };
 
   // 入场动画
@@ -110,40 +145,80 @@ const StatCard: React.FC<{
   const cardClassName = useEmotionCss(() => {
     const colors = colorMap[color];
     return {
-      background: `linear-gradient(135deg, ${colors.from} 0%, ${colors.to} 100%)`,
-      borderRadius: '12px',
-      padding: '24px',
+      background: `linear-gradient(135deg, ${colors.bgStart} 0%, ${colors.bgEnd} 100%)`,
+      borderRadius: '16px',
+      padding: '28px',
       color: 'white',
-      transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-      border: 'none',
-      boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
+      transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
+      border: '1px solid rgba(255, 255, 255, 0.2)',
+      boxShadow: `
+        0 8px 32px ${colors.glow},
+        0 0 0 1px rgba(255, 255, 255, 0.1) inset
+      `,
       cursor: 'pointer',
       height: '100%',
-      minHeight: '140px',
+      minHeight: '160px',
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
       opacity: mounted ? 1 : 0,
-      transform: mounted ? 'translateY(0) scale(1)' : 'translateY(20px) scale(0.95)',
+      transform: mounted ? 'translateY(0) scale(1)' : 'translateY(30px) scale(0.95)',
+      position: 'relative',
+      overflow: 'hidden',
+      backdropFilter: 'blur(20px)',
+      // 顶部渐变光条
+      '&:before': {
+        content: '""',
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        right: 0,
+        height: '3px',
+        background: `linear-gradient(90deg, ${colors.from}, ${colors.to})`,
+        opacity: 0.8,
+      },
+      // 顶部径向光晕
+      '&:after': {
+        content: '""',
+        position: 'absolute',
+        top: '-50%',
+        left: '-50%',
+        width: '200%',
+        height: '200%',
+        background: 'conic-gradient(from 0deg at 50% 50%, rgba(255, 255, 255, 0.15) 0deg, transparent 60deg)',
+        animation: 'rotate 20s linear infinite',
+        pointerEvents: 'none',
+      },
+      '@keyframes rotate': {
+        from: { transform: 'rotate(0deg)' },
+        to: { transform: 'rotate(360deg)' },
+      },
       '&:hover': {
-        boxShadow: '0 8px 24px rgba(0, 0, 0, 0.15)',
-        transform: 'translateY(-4px) scale(1.02)',
+        boxShadow: `
+          0 16px 48px ${colors.glow},
+          0 0 0 1px rgba(255, 255, 255, 0.2) inset
+        `,
+        transform: 'translateY(-8px) scale(1.02)',
+        border: '1px solid rgba(255, 255, 255, 0.3)',
       },
       '&:active': {
-        transform: 'translateY(-2px) scale(1)',
+        transform: 'translateY(-4px) scale(1)',
       },
     };
   });
 
   const iconClassName = useEmotionCss(() => {
     return {
-      fontSize: '56px',
-      opacity: 0.25,
-      transition: 'all 0.3s ease',
-      filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1))',
+      fontSize: '72px',
+      opacity: 0.4,
+      transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
+      filter: 'drop-shadow(0 8px 24px rgba(255, 255, 255, 0.5))',
+      position: 'relative',
+      zIndex: 1,
       '.ant-card:hover &': {
-        opacity: 0.35,
-        transform: 'scale(1.1) rotate(5deg)',
+        opacity: 0.6,
+        transform: 'scale(1.15) rotate(8deg)',
+        filter: 'drop-shadow(0 12px 32px rgba(255, 255, 255, 0.7))',
       },
     };
   });
@@ -171,39 +246,47 @@ const StatCard: React.FC<{
           justifyContent: 'space-between',
           height: '100%',
         }}>
-          <div style={{ flex: 1 }}>
-            <div style={{ 
-              fontSize: '14px', 
-              opacity: 0.95, 
-              marginBottom: '12px',
-              fontWeight: 500,
-              letterSpacing: '0.5px',
+          <div style={{ flex: 1, position: 'relative', zIndex: 1 }}>
+            <div style={{
+              fontSize: '15px',
+              opacity: 0.95,
+              marginBottom: '20px',
+              fontWeight: 700,
+              letterSpacing: '2px',
+              textTransform: 'uppercase',
+              textShadow: '0 2px 8px rgba(0, 0, 0, 0.3)',
             }}>
               {title}
             </div>
-            <div style={{ 
-              fontSize: '36px', 
-              fontWeight: 'bold', 
-              marginBottom: '8px',
-              lineHeight: '1.2',
-              textShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+            <div style={{
+              fontSize: '52px',
+              fontWeight: 'bold',
+              marginBottom: '16px',
+              lineHeight: '1',
+              textShadow: '0 4px 20px rgba(255, 255, 255, 0.6)',
+              letterSpacing: '1px',
             }}>
               {displayValue.toLocaleString()}
             </div>
             {trend && (
-              <div style={{ 
-                fontSize: '13px', 
-                opacity: 0.9, 
-                display: 'flex', 
+              <div style={{
+                fontSize: '14px',
+                opacity: 0.95,
+                display: 'flex',
                 alignItems: 'center',
-                marginTop: '4px',
+                marginTop: '12px',
+                fontWeight: 600,
               }}>
-                <span style={{ 
-                  display: 'inline-flex', 
+                <span style={{
+                  display: 'inline-flex',
                   alignItems: 'center',
-                  backgroundColor: 'rgba(255, 255, 255, 0.2)',
-                  padding: '4px 10px',
-                  borderRadius: '12px',
+                  backgroundColor: 'rgba(255, 255, 255, 0.3)',
+                  backdropFilter: 'blur(10px)',
+                  padding: '8px 16px',
+                  borderRadius: '20px',
+                  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+                  border: '1px solid rgba(255, 255, 255, 0.2)',
+                  textShadow: '0 1px 2px rgba(0, 0, 0, 0.2)',
                 }}>
                   {trend.value >= 0 ? (
                     <ArrowUpOutlined style={{ marginRight: '4px', fontSize: '12px' }} />
@@ -341,10 +424,64 @@ const Dashboard: React.FC = () => {
   }
 
   return (
-    <PageContainer
-      title="数据仪表板"
-      subTitle="MSDS管理系统数据概览"
-      extra={
+    <div style={{
+      position: 'relative',
+      minHeight: '100vh',
+    }}>
+      {/* 背景装饰元素 */}
+      <div style={{
+        position: 'fixed',
+        inset: 0,
+        overflow: 'hidden',
+        pointerEvents: 'none',
+        zIndex: 0,
+      }}>
+        <div style={{
+          position: 'absolute',
+          borderRadius: '50%',
+          background: 'linear-gradient(135deg, rgba(24, 144, 255, 0.15), rgba(67, 205, 128, 0.1))',
+          boxShadow: '0 0 60px rgba(24, 144, 255, 0.3)',
+          top: '100px',
+          left: '5%',
+          width: '200px',
+          height: '200px',
+          animation: 'float 10s ease-in-out infinite',
+          '@keyframes float': {
+            '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+            '50%': { transform: 'translateY(-30px) rotate(180deg)' },
+          },
+        }} />
+        <div style={{
+          position: 'absolute',
+          borderRadius: '50%',
+          background: 'linear-gradient(135deg, rgba(67, 205, 128, 0.12), rgba(24, 144, 255, 0.08))',
+          boxShadow: '0 0 80px rgba(67, 205, 128, 0.25)',
+          top: '20%',
+          right: '10%',
+          width: '250px',
+          height: '250px',
+          animation: 'float 12s ease-in-out infinite',
+          animationDelay: '-2s',
+        }} />
+        <div style={{
+          position: 'absolute',
+          borderRadius: '50%',
+          background: 'linear-gradient(135deg, rgba(24, 144, 255, 0.1), rgba(67, 205, 128, 0.08))',
+          boxShadow: '0 0 70px rgba(24, 144, 255, 0.25)',
+          bottom: '15%',
+          left: '8%',
+          width: '180px',
+          height: '180px',
+          animation: 'float 14s ease-in-out infinite',
+          animationDelay: '-4s',
+        }} />
+      </div>
+
+      <PageContainer
+        title="数据仪表板"
+        subTitle="安全智库数据概览"
+        style={{ position: 'relative', zIndex: 1 }}
+        extra={
         <Space size="middle">
           <RealtimeStats />
           <DatePicker.RangePicker
@@ -361,7 +498,7 @@ const Dashboard: React.FC = () => {
       }
     >
       {/* 顶部统计卡片区域 - 美化版 */}
-      <Row gutter={[16, 16]} style={{ marginBottom: 24 }} align="stretch">
+      <Row gutter={[24, 24]} style={{ marginBottom: 32 }} align="stretch">
         <Col xs={24} sm={12} lg={6} style={{ display: 'flex' }}>
           <StatCard
             title="文档总数"
@@ -417,7 +554,7 @@ const Dashboard: React.FC = () => {
       </Row>
 
       {/* 主要统计图表区域 */}
-      <Row gutter={[16, 16]} style={{ marginBottom: 24 }}>
+      <Row gutter={[24, 24]} style={{ marginBottom: 32 }}>
         {/* 文档统计卡片 */}
         <Col xs={24} lg={12}>
           <DocumentStatsCard data={overview.documentStats} />
@@ -429,7 +566,7 @@ const Dashboard: React.FC = () => {
         </Col>
       </Row>
 
-      <Row gutter={[16, 16]} style={{ marginBottom: 24 }}>
+      <Row gutter={[24, 24]} style={{ marginBottom: 32 }}>
         {/* 访问趋势图表 */}
         <Col xs={24} lg={16}>
           <AccessTrendChart />
@@ -441,7 +578,7 @@ const Dashboard: React.FC = () => {
         </Col>
       </Row>
 
-      <Row gutter={[16, 16]} style={{ marginBottom: 24 }}>
+      <Row gutter={[24, 24]} style={{ marginBottom: 32 }}>
         {/* 用户活动图表 */}
         <Col xs={24} lg={12}>
           <UserActivityChart />
@@ -453,13 +590,14 @@ const Dashboard: React.FC = () => {
         </Col>
       </Row>
 
-      <Row gutter={[16, 16]}>
+      <Row gutter={[24, 24]}>
         {/* 下载分析图表 */}
         <Col xs={24}>
           <DownloadAnalyticsChart />
         </Col>
       </Row>
     </PageContainer>
+    </div>
   );
 };
 

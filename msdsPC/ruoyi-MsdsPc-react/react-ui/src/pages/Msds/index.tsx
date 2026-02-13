@@ -3,14 +3,15 @@ import { useIntl, FormattedMessage, useAccess } from '@umijs/max';
 import { Button, message, Modal, Space, Tag, Tooltip, Dropdown } from 'antd';
 import { ActionType, FooterToolbar, PageContainer, ProColumns, ProTable } from '@ant-design/pro-components';
 import { PlusOutlined, DeleteOutlined, ExclamationCircleOutlined, EditOutlined, EyeOutlined, ExportOutlined, UploadOutlined, FormOutlined, DownloadOutlined } from '@ant-design/icons';
-import { 
-  getMsdsMainList, 
-  removeMsdsMain, 
-  addMsdsMain, 
-  updateMsdsMain, 
+import { useEmotionCss } from '@ant-design/use-emotion-css';
+import {
+  getMsdsMainList,
+  removeMsdsMain,
+  addMsdsMain,
+  updateMsdsMain,
   exportMsdsMain,
   getMsdsMain,
-  downloadImportTemplate 
+  downloadImportTemplate
 } from '@/services/msds';
 import MsdsForm from './components/MsdsForm';
 import MsdsDetail from './components/MsdsDetail';
@@ -136,7 +137,7 @@ const MsdsMainList: React.FC = () => {
   const [detailModalVisible, setDetailModalVisible] = useState<boolean>(false);
   const [importModalVisible, setImportModalVisible] = useState<boolean>(false);
   const [stepFormVisible, setStepFormVisible] = useState<boolean>(false);
-  
+
   const actionRef = useRef<ActionType>();
   const [currentRow, setCurrentRow] = useState<API.Msds.MsdsMain>();
   const [selectedRows, setSelectedRows] = useState<API.Msds.MsdsMain[]>([]);
@@ -145,6 +146,53 @@ const MsdsMainList: React.FC = () => {
 
   /** 国际化配置 */
   const intl = useIntl();
+
+  // 自定义容器样式
+  const containerClassName = useEmotionCss(() => {
+    return {
+      background: 'linear-gradient(180deg, #f8fafc 0%, #e0f2fe 100%)',
+      minHeight: '100vh',
+      position: 'relative',
+      '&::before': {
+        content: '""',
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        background: 'radial-gradient(circle at 20% 20%, rgba(24, 144, 255, 0.05) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(67, 205, 128, 0.04) 0%, transparent 50%)',
+        pointerEvents: 'none',
+        zIndex: -1,
+      },
+    };
+  });
+
+  // ProTable自定义样式
+  const tableClassName = useEmotionCss(() => {
+    return {
+      background: '#ffffff',
+      borderRadius: '16px',
+      border: '1px solid rgba(24, 144, 255, 0.1)',
+      boxShadow: '0 2px 12px rgba(0, 0, 0, 0.05)',
+      overflow: 'hidden',
+      '.ant-pro-card': {
+        background: 'transparent',
+        boxShadow: 'none',
+      },
+      '.ant-pro-table-list-toolbar-title': {
+        color: '#1e293b',
+        fontWeight: 700,
+        fontSize: '20px',
+      },
+      '.ant-pro-table-search': {
+        background: 'linear-gradient(180deg, #fafbfc 0%, #f8fafc 100%)',
+        margin: '16px',
+        padding: '20px',
+        borderRadius: '12px',
+        border: '1px solid rgba(24, 144, 255, 0.08)',
+      },
+    };
+  });
 
   /** 查看详情 */
   const handleDetail = async (record: API.Msds.MsdsMain) => {
@@ -434,91 +482,117 @@ const MsdsMainList: React.FC = () => {
   ];
 
   return (
-    <PageContainer>
-      {contextHolder}
-      <ProTable<API.Msds.MsdsMain, API.Msds.MsdsMainListParams>
-        headerTitle="MSDS主信息管理"
-        actionRef={actionRef}
-        rowKey="id"
-        search={{
-          labelWidth: 120,
-          collapsed: false,
-          collapseRender: (collapsed) => (collapsed ? '展开' : '收起'),
-          searchText: '搜索',
-          resetText: '重置',
-          optionRender: ({ searchText, resetText }, { form }) => [
+    <div className={containerClassName}>
+      <PageContainer>
+        {contextHolder}
+        <ProTable<API.Msds.MsdsMain, API.Msds.MsdsMainListParams>
+          className={tableClassName}
+          headerTitle="MSDS主信息管理"
+          actionRef={actionRef}
+          rowKey="id"
+          search={{
+            labelWidth: 120,
+            collapsed: false,
+            collapseRender: (collapsed) => (collapsed ? '展开' : '收起'),
+            searchText: '搜索',
+            resetText: '重置',
+            optionRender: ({ searchText, resetText }, { form }) => [
+              <Button
+                key="search"
+                type="primary"
+                onClick={() => {
+                  form?.submit();
+                }}
+              >
+                {searchText}
+              </Button>,
+              <Button
+                key="reset"
+                onClick={() => {
+                  form?.resetFields();
+                  form?.submit();
+                }}
+              >
+                {resetText}
+              </Button>,
+            ],
+          }}
+          toolBarRender={() => [
             <Button
-              key="search"
               type="primary"
+              key="primary"
               onClick={() => {
-                form?.submit();
+                setCurrentRow(undefined);
+                setModalVisible(true);
+              }}
+              style={{
+                background: 'linear-gradient(135deg, #1890ff 0%, #40a9ff 100%)',
+                border: 'none',
+                borderRadius: '8px',
+                fontWeight: 600,
               }}
             >
-              {searchText}
+              <PlusOutlined /> 新建
             </Button>,
             <Button
-              key="reset"
-              onClick={() => {
-                form?.resetFields();
-                form?.submit();
+              type="primary"
+              key="import"
+              style={{
+                background: 'linear-gradient(135deg, #43cd80 0%, #6ee7b7 100%)',
+                border: 'none',
+                borderRadius: '8px',
+                fontWeight: 600,
+              }}
+              onClick={() => setImportModalVisible(true)}
+            >
+              <UploadOutlined /> 批量导入
+            </Button>,
+            <Dropdown
+              key="template"
+              menu={{
+                items: [
+                  {
+                    key: 'basic',
+                    label: '基础模板',
+                    onClick: () => handleDownloadTemplate('basic'),
+                  },
+                  {
+                    key: 'detailed',
+                    label: '详细模板',
+                    onClick: () => handleDownloadTemplate('detailed'),
+                  },
+                  {
+                    key: 'full',
+                    label: '完整模板（多Sheet）',
+                    onClick: () => handleDownloadTemplate('full'),
+                  },
+                ],
               }}
             >
-              {resetText}
+              <Button style={{
+                background: '#ffffff',
+                border: '1px solid rgba(24, 144, 255, 0.2)',
+                borderRadius: '8px',
+                color: '#1e293b',
+                fontWeight: 600,
+              }}>
+                <DownloadOutlined /> 下载模板
+              </Button>
+            </Dropdown>,
+            <Button
+              key="export"
+              onClick={handleExport}
+              style={{
+                background: '#ffffff',
+                border: '1px solid rgba(24, 144, 255, 0.2)',
+                borderRadius: '8px',
+                color: '#1e293b',
+                fontWeight: 600,
+              }}
+            >
+              <ExportOutlined /> 导出
             </Button>,
-          ],
-        }}
-        toolBarRender={() => [
-          <Button
-            type="primary"
-            key="primary"
-            onClick={() => {
-              setCurrentRow(undefined);
-              setModalVisible(true);
-            }}
-          >
-            <PlusOutlined /> 新建
-          </Button>,
-          <Button
-            type="primary"
-            key="import"
-            style={{ backgroundColor: '#52c41a', borderColor: '#52c41a' }}
-            onClick={() => setImportModalVisible(true)}
-          >
-            <UploadOutlined /> 批量导入
-          </Button>,
-          <Dropdown
-            key="template"
-            menu={{
-              items: [
-                {
-                  key: 'basic',
-                  label: '基础模板',
-                  onClick: () => handleDownloadTemplate('basic'),
-                },
-                {
-                  key: 'detailed',
-                  label: '详细模板',
-                  onClick: () => handleDownloadTemplate('detailed'),
-                },
-                {
-                  key: 'full',
-                  label: '完整模板（多Sheet）',
-                  onClick: () => handleDownloadTemplate('full'),
-                },
-              ],
-            }}
-          >
-            <Button>
-              <DownloadOutlined /> 下载模板
-            </Button>
-          </Dropdown>,
-          <Button
-            key="export"
-            onClick={handleExport}
-          >
-            <ExportOutlined /> 导出
-          </Button>,
-        ]}
+          ]}
         request={async (params, sort, filter) => {
           const { current, pageSize, ...searchParams } = params;
           const response = await getMsdsMainList({
@@ -609,15 +683,27 @@ const MsdsMainList: React.FC = () => {
         open={detailModalVisible}
         onCancel={() => setDetailModalVisible(false)}
         footer={[
-          <Button key="close" onClick={() => setDetailModalVisible(false)}>
+          <Button key="close" onClick={() => setDetailModalVisible(false)} style={{
+            background: '#ffffff',
+            border: '1px solid rgba(24, 144, 255, 0.2)',
+            borderRadius: '8px',
+            color: '#1e293b',
+            fontWeight: 600,
+          }}>
             关闭
           </Button>,
-          <Button 
-            key="edit" 
+          <Button
+            key="edit"
             type="primary"
             onClick={() => {
               setDetailModalVisible(false);
               setModalVisible(true);
+            }}
+            style={{
+              background: 'linear-gradient(135deg, #1890ff 0%, #40a9ff 100%)',
+              border: 'none',
+              borderRadius: '8px',
+              fontWeight: 600,
             }}
           >
             编辑
@@ -628,8 +714,8 @@ const MsdsMainList: React.FC = () => {
         bodyStyle={{ padding: '12px' }}
       >
         {currentRow && (
-          <MsdsDetail 
-            msdsId={currentRow.id!} 
+          <MsdsDetail
+            msdsId={currentRow.id!}
             onEdit={(msdsId, section) => {
               setDetailModalVisible(false);
               setModalVisible(true);
@@ -674,6 +760,7 @@ const MsdsMainList: React.FC = () => {
         }}
       />
     </PageContainer>
+    </div>
   );
 };
 

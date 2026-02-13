@@ -441,7 +441,7 @@ git merge feature/user-management
 {
   "versionName": "1.2.0",
   "versionCode": 100,
-  "description": "MSDS管理系统小程序端"
+  "description": "安全智库小程序端"
 }
 ```
 

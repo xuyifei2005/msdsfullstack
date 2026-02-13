@@ -16,7 +16,7 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # 项目配置
-PROJECT_NAME="MSDS管理系统"
+PROJECT_NAME="安全智库"
 PROJECT_DIR="/opt/msds"
 BACKUP_DIR="/opt/msds-backup"
 COMPOSE_FILE="docker-compose.prod.yml"

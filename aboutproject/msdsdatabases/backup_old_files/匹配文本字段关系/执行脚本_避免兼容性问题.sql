@@ -513,4 +513,4 @@ SELECT
     COUNT(*) as record_count
 FROM ghs_hazard_class;
 
-SELECT 'MSDS管理系统数据库创建完成！' as final_message; 
+SELECT '安全智库数据库创建完成！' as final_message; 

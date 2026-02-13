@@ -216,4 +216,4 @@ curl -X GET "http://localhost:8080/system/msds/list?pageNum=1&pageSize=10" -H "C
    - 在后端菜单表中添加MSDS相关菜单项
    - 配置相应的权限控制
 
-您的MSDS管理系统前端核心功能已经完成，可以开始测试和使用了！🎊
+您的安全智库前端核心功能已经完成，可以开始测试和使用了！🎊
