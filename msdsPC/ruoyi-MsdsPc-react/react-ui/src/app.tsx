@@ -1,9 +1,10 @@
 import { Footer, SelectLang, AvatarDropdown, AvatarName } from '@/components';
+import { QuestionCircleOutlined } from '@ant-design/icons';
 import type { Settings as LayoutSettings } from '@ant-design/pro-components';
 import { SettingDrawer } from '@ant-design/pro-components';
 import type { RunTimeLayoutConfig } from '@umijs/max';
 import { history, Link } from '@umijs/max';
-import { App } from 'antd';
+import { App, Tooltip } from 'antd';
 import defaultSettings from '../config/defaultSettings';
 import { errorConfig } from './requestErrorConfig';
 import { clearSessionToken, getAccessToken, getRefreshToken, getTokenExpireTime } from './access';
@@ -12,6 +13,18 @@ import { PageEnum } from './enums/pagesEnums';
 
 
 const isDev = process.env.NODE_ENV === 'development';
+
+const Question = () => (
+  <Tooltip title="使用文档">
+    <a
+      href="https://procomponents.ant.design/components/layout"
+      rel="noreferrer"
+      target="_blank"
+    >
+      <QuestionCircleOutlined style={{ fontSize: 16 }} />
+    </a>
+  </Tooltip>
+);
 
 
 

@@ -4158,26 +4158,26 @@
 2992. ✅ 硫酸-2,4-二氨基甲苯、2,4-diaminotoluene sulfate、65321-67-7.xml
 2993. ✅ 硫酸-2,5-二乙氧基-4-(4-吗啉基)-重氮苯、2,5-diethoxy-4-(4-morpholinyl)-benzenediazonium sulphate、32178-39-5.xml
 2994. ✅ 硫酸-2,5-二氨基甲苯、sulfuric acid-2,5-diamino toluene、615-50-9.xml
-2995. 硫酸-4,4'-二氨基联苯、4,4’-diaminodiphenyl sulfate、531-86-2.xml
-2996. 硫酸-4-氨基-N,N-二甲基苯胺、4-amino-N,N-dimethylaniline sulfate、536-47-0.xml
+2995. ✅ 硫酸-4,4'-二氨基联苯、4,4’-diaminodiphenyl sulfate、531-86-2.xml
+2996. ✅ 硫酸-4-氨基-N,N-二甲基苯胺、4-amino-N,N-dimethylaniline sulfate、536-47-0.xml
 2997. ✅ 硫酸、sulfuric acid、7664-93-9.xml
 2998. ✅ 硫酸三乙基锡、Triethyl tin sulfate、57-52-3.xml
-2999. 硫酸二乙酯、ethyl sulfate、64-67-5.xml
-3000. 硫酸二甲酯、methyl sulfate、77-78-1.xml
-3001. 硫酸亚汞、mercurous sulfate、7783-36-0.xml
-3002. 硫酸对苯二胺、p-phenylene diamine sulfate、16245-77-5.xml
-3003. 硫酸氢-2-(N-乙羰基甲氨基)-4-(3,4-二甲基苯磺酰)重氮苯、2-(N,N-methylaminoethylcarbonyl)-4-(3,4-dimethyl phenylsulphonyl) benzenediazonium hydrogen sulphate、无资料.xml
-3004. 硫酸氢钠、Sodium bisulfate、7681-38-1.xml
-3005. 硫酸氢钠溶液、sodium hydrogen sulfate,solution、7681-38-1.xml
-3006. 硫酸氢钾、Potassium bisulfate、7646-93-7.xml
-3007. 硫酸氢铵、ammonium bisulfate、7803-63-6.xml
-3008. 硫酸氧钒、vanadyl sulfate、27774-13-6.xml
-3009. 硫酸汞、mercury sulphate、7783-35-9.xml
-3010. 硫酸羟胺、Hydroxylamine sulfate、10039-54-0.xml
-3011. 硫酸苯肼、phenylhydrazine sulfate、2545-79-1.xml
-3012. 硫酸苯胺、aniline sulfate、542-16-5.xml
-3013. 硫酸钴、cobalt sulphate、10124-43-3.xml
-3014. 硫酸铅[含游离酸＞3%]、lead sulphate,with more than 3％ free acid、7446-14-2.xml
+2999. ✅ 硫酸二乙酯、ethyl sulfate、64-67-5.xml
+3000. ✅ 硫酸二甲酯、methyl sulfate、77-78-1.xml
+3001. ✅ 硫酸亚汞、mercurous sulfate、7783-36-0.xml
+3002. ✅ 硫酸对苯二胺、p-phenylene diamine sulfate、16245-77-5.xml
+3003. ✅ 硫酸氢-2-(N-乙羰基甲氨基)-4-(3,4-二甲基苯磺酰)重氮苯、2-(N,N-methylaminoethylcarbonyl)-4-(3,4-dimethyl phenylsulphonyl) benzenediazonium hydrogen sulphate、无资料.xml
+3004. ✅ 硫酸氢钠、Sodium bisulfate、7681-38-1.xml
+3005. ✅ 硫酸氢钠溶液、sodium hydrogen sulfate,solution、7681-38-1.xml
+3006. ✅ 硫酸氢钾、Potassium bisulfate、7646-93-7.xml
+3007. ✅ 硫酸氢铵、ammonium bisulfate、7803-63-6.xml
+3008. ✅ 硫酸氧钒、vanadyl sulfate、27774-13-6.xml
+3009. ✅ 硫酸汞、mercury sulphate、7783-35-9.xml
+3010. ✅ 硫酸羟胺、Hydroxylamine sulfate、10039-54-0.xml
+3011. ✅ 硫酸苯肼、phenylhydrazine sulfate、2545-79-1.xml
+3012. ✅ 硫酸苯胺、aniline sulfate、542-16-5.xml
+3013. ✅ 硫酸钴、cobalt sulphate、10124-43-3.xml
+3014. ✅ 硫酸铅[含游离酸＞3%]、lead sulphate,with more than 3％ free acid、7446-14-2.xml
 3015. 硫酸铊、Thallous sulfate、7446-18-6.xml
 3016. 硫酸铍、beryllium sulfate、13510-49-1.xml
 3017. 硫酸铍钾、beryllium potassium sulfate、53684-48-3.xml

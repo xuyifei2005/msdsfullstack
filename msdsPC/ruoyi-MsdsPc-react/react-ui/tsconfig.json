@@ -20,5 +20,6 @@
     }
   },
   "include": ["./**/*.d.ts", "./**/*.ts", "./**/*.tsx"],
+  "exclude": ["node_modules", "dist", "tests"],
   "types": ["jest", "node", "@testing-library/jest-dom"]
 }

@@ -1,0 +1,52 @@
+{
+  "mcpServers": {
+    "mysql": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-mysql"],
+      "env": {
+        "MYSQL_HOST": "msdsmysql",
+        "MYSQL_PORT": "3306",
+        "MYSQL_USER": "msds_user",
+        "MYSQL_PASSWORD": "msds_dev_password",
+        "MYSQL_DATABASE": "msds_dev"
+      }
+    },
+    "redis": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-redis"],
+      "env": {
+        "REDIS_HOST": "msdsredis",
+        "REDIS_PORT": "6379"
+      }
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}"
+      }
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "d:\\XUYIFEI\\XUPROJECTS\\msdsfullstack"]
+    },
+    "docker": {
+      "command": "docker",
+      "args": ["run", "-i", "--rm", "alpine/socat", "STDIO", "TCP:host.docker.internal:2375"]
+    },
+    "nginx": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-nginx"],
+      "env": {
+        "NGINX_CONFIG_PATH": "d:\\XUYIFEI\\XUPROJECTS\\msdsfullstack\\msdsdocker\\nginx\\conf.d"
+      }
+    },
+    "clickup": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-clickup"],
+      "env": {
+        "CLICKUP_API_TOKEN": "${CLICKUP_API_TOKEN}"
+      }
+    }
+  }
+}
