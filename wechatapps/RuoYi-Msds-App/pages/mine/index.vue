@@ -134,7 +134,7 @@
 
       <!-- 版本信息 -->
       <view class="version-info">
-        MSDS安全智库网移动端 v1.2.0<br>
+        安全智库移动端 v1.2.0<br>
         © 2025 All Rights Reserved
       </view>
     </scroll-view>

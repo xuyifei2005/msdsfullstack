@@ -21,7 +21,7 @@ import SystemMonitorCard from './components/SystemMonitorCard';
 import DownloadAnalyticsChart from './components/DownloadAnalyticsChart';
 import HotDocumentsRank from './components/HotDocumentsRank';
 import RealtimeStats from './components/RealtimeStats';
-import { getDashboardOverview, exportDashboardReport } from '@/services/dashboard';
+import { getDashboardOverview, exportDashboardReport, getDocumentStats } from '@/services/dashboard';
 import { getAccessToken } from '@/access';
 import dayjs from 'dayjs';
 
@@ -310,6 +310,7 @@ const StatCard: React.FC<{
 const Dashboard: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [overview, setOverview] = useState<DashboardOverview | null>(null);
+  const [documentStats, setDocumentStats] = useState<DashboardOverview['documentStats'] | null>(null);
   const { initialState } = useModel('@@initialState');
   const [dateRange, setDateRange] = useState([
     dayjs().subtract(30, 'day'),
@@ -331,9 +332,11 @@ const Dashboard: React.FC = () => {
     }
 
     fetchDashboardData();
+    fetchDocumentStats();
     // 设置定时刷新，每30秒更新一次关键数据
     const interval = setInterval(() => {
       fetchDashboardData(false);
+      fetchDocumentStats();
     }, 30000);
 
     return () => clearInterval(interval);
@@ -361,6 +364,18 @@ const Dashboard: React.FC = () => {
       }
     } finally {
       if (showLoading) setLoading(false);
+    }
+  };
+
+  // 单独获取文档统计数据
+  const fetchDocumentStats = async () => {
+    try {
+      const response = await getDocumentStats();
+      if (response.code === 200) {
+        setDocumentStats(response.data);
+      }
+    } catch (error: any) {
+      console.error('Document stats fetch error:', error);
     }
   };
 
@@ -502,7 +517,7 @@ const Dashboard: React.FC = () => {
         <Col xs={24} sm={12} lg={6} style={{ display: 'flex' }}>
           <StatCard
             title="文档总数"
-            value={overview.documentStats.total}
+            value={documentStats?.total || overview?.documentStats?.total || 0}
             trend={{
               value: 12,
               label: '较上月增长 12%'
@@ -557,7 +572,7 @@ const Dashboard: React.FC = () => {
       <Row gutter={[24, 24]} style={{ marginBottom: 32 }}>
         {/* 文档统计卡片 */}
         <Col xs={24} lg={12}>
-          <DocumentStatsCard data={overview.documentStats} />
+          <DocumentStatsCard data={documentStats || overview?.documentStats} />
         </Col>
         
         {/* 系统监控卡片 */}

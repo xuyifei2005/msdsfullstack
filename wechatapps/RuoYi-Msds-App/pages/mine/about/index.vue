@@ -16,7 +16,7 @@
     <view class="content-wrapper">
       <view class="header-section">
         <image class="logo" src="/static/logo200.png" mode="widthFix"></image>
-        <view class="app-name">MSDS安全智库网移动端</view>
+        <view class="app-name">安全智库移动端</view>
         <view class="app-version">Version {{version}}</view>
       </view>
 

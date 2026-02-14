@@ -11,7 +11,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
     <!-- 统计有效文档数 -->
     <select id="countValidDocuments" resultType="int">
-        select count(1) from msds_main where is_active = 1
+        select count(1) from msds_main where is_active = 1 and (expiry_date is null or expiry_date &gt; now())
     </select>
 
     <!-- 统计待审核文档数 -->

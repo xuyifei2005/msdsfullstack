@@ -11,7 +11,7 @@ module.exports = {
   // 应用信息
   appInfo: {
     // 应用名称
-    name: "MSDS安全智库网",
+    name: "安全智库",
     // 应用版本
     version: "1.2.0",
     // 应用logo

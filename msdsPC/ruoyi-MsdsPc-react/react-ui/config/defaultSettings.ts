@@ -19,9 +19,9 @@ const Settings: ProLayoutProps & {
   fixedHeader: false,
   fixSiderbar: true,
   colorWeak: false,
-  title: 'MSDS安全智库网',
+  title: '安全智库',
   pwa: true,
-  logo: 'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg',
+  logo: '',
   iconfontUrl: '',
   collapsed: false, // 强制侧边栏默认展开
   token: {
