@@ -73,7 +73,7 @@ spring:
   data:
     redis:
       # 地址
-      host: msdsredis
+      host: ${SPRING_DATA_REDIS_HOST:${MSDS_REDIS_HOST:msdsredis}}
       # 端口，默认为6379
       port: 6379
       # 数据库索引

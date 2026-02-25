@@ -12,9 +12,9 @@ spring:
 
             # 测试环境数据源
             master:
-                url: jdbc:mysql://msdsmysql:3306/msds_dev?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8&autoReconnect=true&useOldAliasMetadataBehavior=true&createDatabaseIfNotExist=false&allowPublicKeyRetrieval=true
-                username: msds_user
-                password: msds_dev_password
+                url: ${SPRING_DATASOURCE_URL:jdbc:mysql://${MSDS_MYSQL_HOST:127.0.0.1}:3306/msds_dev?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8&autoReconnect=true&useOldAliasMetadataBehavior=true&createDatabaseIfNotExist=false&allowPublicKeyRetrieval=true}
+                username: ${SPRING_DATASOURCE_USERNAME:msds_user}
+                password: ${SPRING_DATASOURCE_PASSWORD:msds_dev_password}
             # 从库数据源
             slave:
                 # 从数据源开关/默认关闭

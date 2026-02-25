@@ -73,18 +73,18 @@ services:
       echo '*msdsbackend* Development environment ready!' && 
       cd /app && 
       echo 'Starting Maven build...' && 
-      mvn clean package -DskipTests && 
+      mvn -DskipTests package && 
       echo 'Maven build completed, starting application...' && 
       java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -jar ruoyi-admin/target/ruoyi-admin.jar && 
       tail -f /dev/null" 
 
     ports:
-      - "18080:8080"
+      - "18081:8080"
       - "5005:5005"
       - "2222:22"
     environment:
       - SPRING_PROFILES_ACTIVE=dev
-      - SPRING_DATASOURCE_URL=jdbc:mysql://msdsmysql:3306/msds_dev?useUnicode=true&characterEncoding=utf8mb4&connectionCollation=utf8mb4_unicode_ci&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      - SPRING_DATASOURCE_URL=jdbc:mysql://msdsmysql:3306/msds_dev?useUnicode=true&characterEncoding=UTF-8&connectionCollation=utf8mb4_unicode_ci&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
       - SPRING_DATASOURCE_USERNAME=msds_user
       - SPRING_DATASOURCE_PASSWORD=msds_dev_password
       - MSDS_REDIS_PASSWORD=${MSDS_REDIS_PASSWORD:-}
