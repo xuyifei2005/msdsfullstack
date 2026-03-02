@@ -1147,10 +1147,15 @@ jobs:
                 exit 1
               fi
             elif [ "${has_sys_menu}" = "0" ] && [ "${table_count}" != "0" ]; then
-              echo "❌ msds_dev 已存在部分表，但缺少 sys_menu（RuoYi 系统表未初始化）。"
-              echo "   为避免覆盖现有数据，流水线不会自动导入完整脚本。"
-              echo "   处理方式：清空 MySQL 数据卷后重新启动，或手工补齐缺失系统表。"
-              exit 1
+              echo "⚠️  msds_dev 已存在部分表，但缺少 sys_menu，测试环境将重建数据库"
+              if sudo docker exec msdsmysql test -f /docker-entrypoint-initdb.d/00-msds_complete_database.sql; then
+                sudo docker exec msdsmysql sh -c "mysql -u root -proot_password -e \"DROP DATABASE IF EXISTS msds_dev; CREATE DATABASE msds_dev DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;\""
+                sudo docker exec msdsmysql sh -c "mysql -u root -proot_password < /docker-entrypoint-initdb.d/00-msds_complete_database.sql"
+                echo "✅ 测试环境数据库已重建"
+              else
+                echo "❌ 未找到初始化 SQL（/docker-entrypoint-initdb.d/00-msds_complete_database.sql），无法重建"
+                exit 1
+              fi
             else
               echo "✅ 数据库结构已满足后端启动条件"
             fi
