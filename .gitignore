@@ -178,6 +178,7 @@ tmp/
 # output/
 # 排除 pdf2xml/output 目录（文件名过长导致CI/CD失败）
 pdf2xml/output/
+pdf2xml/backup/
 uploads/
 templates/*.xlsx
 templates/*.xls
