@@ -309,20 +309,52 @@ jobs:
         run: |
           python - << 'PY'
           import os
+          import shutil
           import zipfile
+          from pathlib import Path
 
-          zip_path = r"aboutproject/上线说明/工信部域名注册信息/SSL认证/20260302免费证书30天使用/23699843_flymsds.cn_nginx.zip"
-          target_dir = r"msdsdocker/nginx/ssl"
-          os.makedirs(target_dir, exist_ok=True)
-          if not os.path.exists(zip_path):
-              raise SystemExit(f"未找到证书压缩包: {zip_path}")
-          with zipfile.ZipFile(zip_path, "r") as zf:
-              names = [n for n in zf.namelist() if n.endswith(".pem") or n.endswith(".key")]
-              if not names:
-                  raise SystemExit("证书压缩包中未找到 .pem 或 .key 文件")
-              for name in names:
-                  zf.extract(name, target_dir)
-          print("✅ 证书文件已解压到", target_dir)
+          target_dir = Path("msdsdocker/nginx/ssl")
+          target_dir.mkdir(parents=True, exist_ok=True)
+
+          def find_zip():
+              candidates = []
+              for root, _, files in os.walk("."):
+                  for name in files:
+                      lower = name.lower()
+                      if lower.endswith(".zip") and "flymsds.cn" in lower and "nginx" in lower:
+                          candidates.append(Path(root) / name)
+              return candidates[0] if candidates else None
+
+          def find_cert_files(base_dir):
+              pem_path = None
+              key_path = None
+              for root, _, files in os.walk(base_dir):
+                  for name in files:
+                      if name.endswith(".pem") and pem_path is None:
+                          pem_path = Path(root) / name
+                      if name.endswith(".key") and key_path is None:
+                          key_path = Path(root) / name
+              return pem_path, key_path
+
+          zip_path = find_zip()
+          if zip_path:
+              temp_dir = target_dir / "_tmp"
+              if temp_dir.exists():
+                  shutil.rmtree(temp_dir)
+              temp_dir.mkdir(parents=True, exist_ok=True)
+              with zipfile.ZipFile(zip_path, "r") as zf:
+                  zf.extractall(temp_dir)
+              pem_path, key_path = find_cert_files(temp_dir)
+              if pem_path and key_path:
+                  shutil.copyfile(pem_path, target_dir / "flymsds.cn.pem")
+                  shutil.copyfile(key_path, target_dir / "flymsds.cn.key")
+              shutil.rmtree(temp_dir, ignore_errors=True)
+
+          pem_file = target_dir / "flymsds.cn.pem"
+          key_file = target_dir / "flymsds.cn.key"
+          if not pem_file.exists() or not key_file.exists():
+              raise SystemExit("未找到可用证书文件，需存在 flymsds.cn.pem 与 flymsds.cn.key")
+          print("✅ 证书文件已就绪:", pem_file, key_file)
           PY
       
       - name: 上传docker-compose.prod.yml到服务器
