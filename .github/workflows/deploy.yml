@@ -304,6 +304,26 @@ jobs:
             ls -la msdsdocker/ || echo "msdsdocker目录不存在"
             exit 1
           fi
+
+      - name: 准备SSL证书
+        run: |
+          python - << 'PY'
+          import os
+          import zipfile
+
+          zip_path = r"aboutproject/上线说明/工信部域名注册信息/SSL认证/20260302免费证书30天使用/23699843_flymsds.cn_nginx.zip"
+          target_dir = r"msdsdocker/nginx/ssl"
+          os.makedirs(target_dir, exist_ok=True)
+          if not os.path.exists(zip_path):
+              raise SystemExit(f"未找到证书压缩包: {zip_path}")
+          with zipfile.ZipFile(zip_path, "r") as zf:
+              names = [n for n in zf.namelist() if n.endswith(".pem") or n.endswith(".key")]
+              if not names:
+                  raise SystemExit("证书压缩包中未找到 .pem 或 .key 文件")
+              for name in names:
+                  zf.extract(name, target_dir)
+          print("✅ 证书文件已解压到", target_dir)
+          PY
       
       - name: 上传docker-compose.prod.yml到服务器
         uses: appleboy/scp-action@master
@@ -708,10 +728,15 @@ jobs:
                 exit 1
               fi
             elif [ "${has_sys_menu}" = "0" ] && [ "${table_count}" != "0" ]; then
-              echo "❌ msds_dev 已存在部分表，但缺少 sys_menu（RuoYi 系统表未初始化）。"
-              echo "   为避免覆盖现有数据，流水线不会自动导入完整脚本。"
-              echo "   处理方式：清空 MySQL 数据卷后重新启动，或手工补齐缺失系统表。"
-              exit 1
+              echo "⚠️  msds_dev 已存在部分表，但缺少 sys_menu，测试环境将重建数据库"
+              if sudo docker exec msdsmysql test -f /docker-entrypoint-initdb.d/00-msds_complete_database.sql; then
+                sudo docker exec msdsmysql sh -c "mysql -u root -proot_password -e \"DROP DATABASE IF EXISTS msds_dev; CREATE DATABASE msds_dev DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;\""
+                sudo docker exec msdsmysql sh -c "mysql -u root -proot_password < /docker-entrypoint-initdb.d/00-msds_complete_database.sql"
+                echo "✅ 测试环境数据库已重建"
+              else
+                echo "❌ 未找到初始化 SQL（/docker-entrypoint-initdb.d/00-msds_complete_database.sql），无法重建"
+                exit 1
+              fi
             else
               echo "✅ 数据库结构已满足后端启动条件"
             fi
