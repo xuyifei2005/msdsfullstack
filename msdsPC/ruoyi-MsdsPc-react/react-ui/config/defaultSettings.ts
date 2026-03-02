@@ -21,7 +21,7 @@ const Settings: ProLayoutProps & {
   colorWeak: false,
   title: '安全智库',
   pwa: true,
-  logo: '',
+  logo: '/msds-logo.svg',
   iconfontUrl: '',
   collapsed: false, // 强制侧边栏默认展开
   token: {

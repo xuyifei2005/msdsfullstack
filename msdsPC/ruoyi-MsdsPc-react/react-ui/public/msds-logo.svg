@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1890ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0050b3;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- 外围六边形 (化学) -->
+  <path d="M100 20 L175 62.5 V137.5 L100 180 L25 137.5 V62.5 Z" fill="none" stroke="#1890ff" stroke-width="8" stroke-linejoin="round" opacity="0.8"/>
+  
+  <!-- 内部盾牌 (安全) -->
+  <path d="M100 50 L145 72.5 V110 C145 140 125 160 100 170 C75 160 55 140 55 110 V72.5 Z" fill="url(#shieldGradient)" filter="url(#shadow)"/>
+  
+  <!-- 中心勾号 (管理/合规) -->
+  <path d="M80 110 L95 125 L125 85" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- 装饰性分子点 -->
+  <circle cx="100" cy="35" r="6" fill="#52c41a"/>
+  <circle cx="175" cy="62.5" r="4" fill="#1890ff"/>
+  <circle cx="25" cy="137.5" r="4" fill="#1890ff"/>
+</svg>
