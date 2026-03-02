@@ -746,6 +746,14 @@ jobs:
             sudo docker exec msdsmysql sh -c "mysql -u root -proot_password -e \"CREATE DATABASE IF NOT EXISTS msds_dev DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;\""
             sudo docker exec msdsmysql sh -c "mysql -u root -proot_password -e \"CREATE USER IF NOT EXISTS 'msds_user'@'%' IDENTIFIED BY 'msds_dev_password'; GRANT ALL PRIVILEGES ON msds_dev.* TO 'msds_user'@'%'; FLUSH PRIVILEGES;\""
 
+            echo "🔍 检查初始化SQL文件..."
+            if ! sudo docker exec msdsmysql test -f /docker-entrypoint-initdb.d/00-msds_complete_database.sql; then
+              echo "❌ 未找到初始化 SQL（/docker-entrypoint-initdb.d/00-msds_complete_database.sql）"
+              echo "宿主机目录检查：/opt/msds/aboutproject/msdsdatabases"
+              ls -la /opt/msds/aboutproject/msdsdatabases || true
+              exit 1
+            fi
+
             has_sys_menu=$(sudo docker exec msdsmysql sh -c "mysql -N -s -u root -proot_password -e \"SELECT COUNT(*) FROM information_schema.tables WHERE table_schema='msds_dev' AND table_name='sys_menu';\"")
             table_count=$(sudo docker exec msdsmysql sh -c "mysql -N -s -u root -proot_password -e \"SELECT COUNT(*) FROM information_schema.tables WHERE table_schema='msds_dev';\"")
             echo "msds_dev 表数量: ${table_count}, sys_menu: ${has_sys_menu}"
@@ -771,6 +779,35 @@ jobs:
               fi
             else
               echo "✅ 数据库结构已满足后端启动条件"
+            fi
+
+            echo "🧹 重置 msdsdbinit 容器并重新执行..."
+            if [ -n "$compose_cmd" ]; then
+              $compose_cmd rm -sf msdsdbinit || true
+              $compose_cmd up -d msdsdbinit || true
+            else
+              sudo docker rm -f msdsdbinit 2>/dev/null || true
+              sudo docker compose -f docker-compose.prod.yml up -d msdsdbinit || true
+            fi
+
+            echo "⏳ 等待 msdsdbinit 结束..."
+            dbinit_ok=0
+            for i in $(seq 1 30); do
+              status=$(sudo docker inspect -f '{{.State.Status}}' msdsdbinit 2>/dev/null || echo "notfound")
+              if [ "$status" = "exited" ]; then
+                exit_code=$(sudo docker inspect -f '{{.State.ExitCode}}' msdsdbinit 2>/dev/null || echo "1")
+                if [ "$exit_code" = "0" ]; then
+                  dbinit_ok=1
+                fi
+                break
+              fi
+              sleep 2
+            done
+
+            if [ "$dbinit_ok" -ne 1 ]; then
+              echo "❌ msdsdbinit 执行失败，输出日志"
+              sudo docker logs --tail=200 msdsdbinit || true
+              exit 1
             fi
 
             echo "▶️  启动后端服务..."
