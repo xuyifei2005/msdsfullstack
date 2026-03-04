@@ -34,7 +34,8 @@ declare namespace API {
 
     /** MSDS列表查询参数 */
     type MsdsMainListParams = {
-      pageNum?: number;
+      current?: number;           // 当前页码
+      pageNum?: number;           // 页码 (兼容旧版本)
       pageSize?: number;
       productName?: string;       // 化学品名称搜索
       casNumber?: string;         // CAS号搜索

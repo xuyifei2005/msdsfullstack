@@ -26,42 +26,42 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
     <!-- 统计今日访问数 -->
     <select id="countTodayViews" resultType="int">
-        select count(1) from sys_oper_log 
-        where date(oper_time) = curdate()
+        select count(1) from msds_document_access_log 
+        where date(access_time) = curdate() and access_type = 'view'
     </select>
 
     <!-- 统计本月访问数 -->
     <select id="countMonthViews" resultType="int">
-        select count(1) from sys_oper_log 
-        where year(oper_time) = year(now()) and month(oper_time) = month(now())
+        select count(1) from msds_document_access_log 
+        where year(access_time) = year(now()) and month(access_time) = month(now()) and access_type = 'view'
     </select>
 
     <!-- 统计总访问数 -->
     <select id="countTotalViews" resultType="int">
-        select count(1) from sys_oper_log
+        select count(1) from msds_document_access_log where access_type = 'view'
     </select>
 
     <!-- 统计活跃用户数 -->
     <select id="countActiveUsers" resultType="int">
-        select count(distinct oper_name) from sys_oper_log 
-        where oper_time >= date_sub(now(), interval 7 day)
+        select count(distinct user_id) from msds_document_access_log 
+        where access_time >= date_sub(now(), interval 7 day)
     </select>
 
     <!-- 统计今日下载数 -->
     <select id="countTodayDownloads" resultType="int">
-        select count(1) from sys_oper_log 
-        where date(oper_time) = curdate() and oper_name like '%下载%'
+        select count(1) from msds_document_access_log 
+        where date(access_time) = curdate() and access_type = 'download'
     </select>
 
     <!-- 统计本月下载数 -->
     <select id="countMonthDownloads" resultType="int">
-        select count(1) from sys_oper_log 
-        where year(oper_time) = year(now()) and month(oper_time) = month(now()) and oper_name like '%下载%'
+        select count(1) from msds_document_access_log 
+        where year(access_time) = year(now()) and month(access_time) = month(now()) and access_type = 'download'
     </select>
 
     <!-- 统计总下载数 -->
     <select id="countTotalDownloads" resultType="int">
-        select count(1) from sys_oper_log where oper_name like '%下载%'
+        select count(1) from msds_document_access_log where access_type = 'download'
     </select>
 
     <!-- 统计化学品总数 -->
@@ -71,7 +71,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
     <!-- 统计危险化学品数 -->
     <select id="countDangerousChemicals" resultType="int">
-        select count(1) from msds_main where is_active = 1
+        select count(distinct m.id) from msds_main m
+        left join msds_hazard h on m.id = h.msds_id
+        where m.is_active = 1
+        and (h.warning_word = 'danger' or h.hazard_category like '%毒害%' or h.hazard_category like '%易燃%' or h.hazard_category like '%腐蚀%')
     </select>
 
     <!-- 统计CAS号数量 -->

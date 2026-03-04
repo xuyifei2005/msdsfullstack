@@ -65,6 +65,8 @@ import org.apache.commons.io.IOUtils;
 import org.springframework.core.io.ClassPathResource;
 import com.ruoyi.common.utils.DateUtils;
 
+import com.ruoyi.common.core.redis.RedisCache;
+
 /**
  * MSDS主信息 服务层实现
  * 
@@ -78,6 +80,9 @@ public class MsdsMainServiceImpl implements IMsdsMainService
     
     @Autowired
     private MsdsMainMapper msdsMainMapper;
+
+    @Autowired
+    private RedisCache redisCache;
     
     @Autowired
     private MsdsHazardMapper msdsHazardMapper;
@@ -180,7 +185,13 @@ public class MsdsMainServiceImpl implements IMsdsMainService
         {
             msdsMain.setIsActive(1);
         }
-        return msdsMainMapper.insertMsdsMain(msdsMain);
+        int result = msdsMainMapper.insertMsdsMain(msdsMain);
+        if (result > 0)
+        {
+            redisCache.deleteObject("dashboard:document:stats");
+            redisCache.deleteObject("dashboard:chemical:stats");
+        }
+        return result;
     }
 
     /**
@@ -192,7 +203,13 @@ public class MsdsMainServiceImpl implements IMsdsMainService
     @Override
     public int updateMsdsMain(MsdsMain msdsMain)
     {
-        return msdsMainMapper.updateMsdsMain(msdsMain);
+        int result = msdsMainMapper.updateMsdsMain(msdsMain);
+        if (result > 0)
+        {
+            redisCache.deleteObject("dashboard:document:stats");
+            redisCache.deleteObject("dashboard:chemical:stats");
+        }
+        return result;
     }
 
     /**
@@ -220,7 +237,13 @@ public class MsdsMainServiceImpl implements IMsdsMainService
     @Override
     public int deleteMsdsMainByIds(Long[] ids)
     {
-        return msdsMainMapper.deleteMsdsMainByIds(ids);
+        int result = msdsMainMapper.deleteMsdsMainByIds(ids);
+        if (result > 0)
+        {
+            redisCache.deleteObject("dashboard:document:stats");
+            redisCache.deleteObject("dashboard:chemical:stats");
+        }
+        return result;
     }
 
     /**
@@ -232,7 +255,13 @@ public class MsdsMainServiceImpl implements IMsdsMainService
     @Override
     public int deleteMsdsMainById(Long id)
     {
-        return msdsMainMapper.deleteMsdsMainById(id);
+        int result = msdsMainMapper.deleteMsdsMainById(id);
+        if (result > 0)
+        {
+            redisCache.deleteObject("dashboard:document:stats");
+            redisCache.deleteObject("dashboard:chemical:stats");
+        }
+        return result;
     }
 
     /**
@@ -285,7 +314,13 @@ public class MsdsMainServiceImpl implements IMsdsMainService
     @Override
     public int changeStatus(MsdsMain msdsMain)
     {
-        return msdsMainMapper.updateMsdsMain(msdsMain);
+        int result = msdsMainMapper.updateMsdsMain(msdsMain);
+        if (result > 0)
+        {
+            redisCache.deleteObject("dashboard:document:stats");
+            redisCache.deleteObject("dashboard:chemical:stats");
+        }
+        return result;
     }
 
     /**

@@ -1,5 +1,4 @@
 import { Footer, SelectLang, AvatarDropdown, AvatarName } from '@/components';
-import { QuestionCircleOutlined } from '@ant-design/icons';
 import type { Settings as LayoutSettings } from '@ant-design/pro-components';
 import { SettingDrawer } from '@ant-design/pro-components';
 import type { RunTimeLayoutConfig } from '@umijs/max';
@@ -13,19 +12,6 @@ import { PageEnum } from './enums/pagesEnums';
 
 
 const isDev = process.env.NODE_ENV === 'development';
-
-const Question = () => (
-  <Tooltip title="使用文档">
-    <a
-      href="https://procomponents.ant.design/components/layout"
-      rel="noreferrer"
-      target="_blank"
-    >
-      <QuestionCircleOutlined style={{ fontSize: 16 }} />
-    </a>
-  </Tooltip>
-);
-
 
 
 /**
@@ -85,7 +71,7 @@ export async function getInitialState(): Promise<{
 // ProLayout 支持的api https://procomponents.ant.design/components/layout
 export const layout: RunTimeLayoutConfig = ({ initialState, setInitialState }) => {
   return {
-    actionsRender: () => [<Question key="doc" />, <SelectLang key="SelectLang" />],
+    actionsRender: () => [<SelectLang key="SelectLang" />],
     avatarProps: {
       src: initialState?.currentUser?.avatar,
       title: <AvatarName />,

@@ -27,6 +27,9 @@ import com.ruoyi.common.utils.poi.ExcelUtil;
 import com.ruoyi.common.utils.poi.ExcelValidationUtil;
 import com.ruoyi.system.domain.MsdsMain;
 import com.ruoyi.system.service.IMsdsMainService;
+import com.ruoyi.system.service.IMsdsAuditLogService;
+import com.ruoyi.common.utils.ip.IpUtils;
+import com.ruoyi.common.utils.ServletUtils;
 // 新增：允许匿名访问注解
 import com.ruoyi.common.annotation.Anonymous;
 
@@ -44,6 +47,9 @@ public class MsdsMainController extends BaseController
     
     @Autowired
     private IMsdsMainService msdsMainService;
+
+    @Autowired
+    private IMsdsAuditLogService msdsAuditLogService;
 
     /**
      * 获取MSDS主信息列表
@@ -77,7 +83,30 @@ public class MsdsMainController extends BaseController
     @GetMapping(value = "/{id}")
     public AjaxResult getInfo(@PathVariable("id") Long id)
     {
-        return success(msdsMainService.selectMsdsMainById(id));
+        MsdsMain msdsMain = msdsMainService.selectMsdsMainById(id);
+        
+        // 记录访问日志
+        try {
+            if (msdsMain != null) {
+                String ip = IpUtils.getIpAddr(ServletUtils.getRequest());
+                String userAgent = ServletUtils.getRequest().getHeader("User-Agent");
+                msdsAuditLogService.recordAuditLog(
+                    id, 
+                    "view", 
+                    "查看MSDS详情", 
+                    null, 
+                    null, 
+                    getUsername(), 
+                    getUserId(), 
+                    ip, 
+                    userAgent
+                );
+            }
+        } catch (Exception e) {
+            logger.warn("记录MSDS访问日志失败: {}", e.getMessage());
+        }
+        
+        return success(msdsMain);
     }
 
     /**

@@ -17,8 +17,10 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const fs = require('fs');
 const isDocker = fs.existsSync('/.dockerenv');
-const DEFAULT_TARGET = isDocker ? 'http://msdsbackend:8080' : 'http://localhost:18080';
-const BACKEND_TARGET = process.env.REACT_APP_API_URL || DEFAULT_TARGET;
+// 默认优先走本机 18080，若显式配置 REACT_APP_API_URL 则覆盖
+// 这样可避免在宿主机开发时解析 msdsbackend 失败导致 ECONNREFUSED
+const DEFAULT_TARGET = 'http://localhost:18080';
+const BACKEND_TARGET = process.env.REACT_APP_API_URL || (isDocker ? 'http://msdsbackend:8080' : DEFAULT_TARGET);
 
 // 打印当前使用的代理目标，便于调试（启动时输出一次）
 // 如需关闭日志，可注释掉下一行

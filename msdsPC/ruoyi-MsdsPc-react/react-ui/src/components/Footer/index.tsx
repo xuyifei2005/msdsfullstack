@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         background: 'none',
       }}
       links={[]}
-      copyright={null}
+      copyright={false}
     />
   );
 };

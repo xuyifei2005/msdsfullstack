@@ -449,8 +449,6 @@ const MsdsMainList: React.FC = () => {
             icon={<FormOutlined />}
             style={{ color: '#1890ff' }}
             onClick={() => {
-              console.log('🔍 [MsdsList] 点击16节编辑按钮，record:', record);
-              console.log('🔍 [MsdsList] record.id:', record.id);
               setCurrentRow(record);
               setStepFormVisible(true);
             }}
@@ -596,7 +594,7 @@ const MsdsMainList: React.FC = () => {
         request={async (params, sort, filter) => {
           const { current, pageSize, ...searchParams } = params;
           const response = await getMsdsMainList({
-            pageNum: current,
+            current,
             pageSize,
             ...searchParams,
           });
@@ -734,12 +732,6 @@ const MsdsMainList: React.FC = () => {
       />
 
       {/* 16节分步编辑表单 */}
-      {stepFormVisible && (
-        <>
-          {console.log('🔍 [MsdsList] 渲染MsdsStepForm, currentRow:', currentRow)}
-          {console.log('🔍 [MsdsList] 传递msdsId:', currentRow?.id)}
-        </>
-      )}
       <MsdsStepForm
         open={stepFormVisible}
         onClose={() => {

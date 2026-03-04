@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { Modal, Upload, Button, message, Alert, Typography, Space, Card, Progress, List, Table, Tabs, Tag, Tooltip, Radio } from 'antd';
-import { InboxOutlined, DownloadOutlined, FileTextOutlined, CheckCircleOutlined, ExclamationCircleOutlined, EyeOutlined, ExportOutlined } from '@ant-design/icons';
-import { importMsdsDocument, importMsdsXml, downloadImportTemplate, previewMsdsDocument, validateExcelFile } from '@/services/msds';
+import React, { useState, useRef } from 'react';
+import { Modal, Upload, Button, message, Alert, Typography, Space, Card, Progress, List, Table, Tabs, Tag, Tooltip, Radio, InputNumber } from 'antd';
+import { InboxOutlined, DownloadOutlined, CheckCircleOutlined, EyeOutlined, ExportOutlined } from '@ant-design/icons';
+import { importMsdsDocument, importMsdsXml, downloadImportTemplate, previewMsdsDocument, validateExcelFile, countActiveMsds } from '@/services/msds';
 import type { MsdsPreviewItem, MsdsSection } from '@/services/msds';
 import type { UploadFile, UploadProps } from 'antd';
 import { useNavigate } from '@umijs/max';
@@ -50,6 +50,11 @@ const ImportModal: React.FC<ImportModalProps> = ({ open, onOpenChange, onSuccess
   const [validationResult, setValidationResult] = useState<any>(null);
   const [validating, setValidating] = useState(false);
   const [showValidation, setShowValidation] = useState(false);
+  const [canceled, setCanceled] = useState(false);
+  const cancelRef = useRef(false);
+  const [batchSize, setBatchSize] = useState(5);
+  const [batchInfo, setBatchInfo] = useState({ current: 0, total: 0 });
+  const showUploadList = fileList.length <= 200;
 
   // 重置状态
   const resetState = () => {
@@ -69,6 +74,10 @@ const ImportModal: React.FC<ImportModalProps> = ({ open, onOpenChange, onSuccess
     setValidationResult(null);
     setValidating(false);
     setShowValidation(false);
+    setCanceled(false);
+    cancelRef.current = false;
+    setBatchSize(5);
+    setBatchInfo({ current: 0, total: 0 });
   };
 
   // 处理模态框关闭
@@ -119,8 +128,34 @@ const ImportModal: React.FC<ImportModalProps> = ({ open, onOpenChange, onSuccess
     }
 
     try {
+      // 大批量导入前确认
+      if (fileList.length >= 500) {
+        const continueImport = await new Promise<boolean>((resolve) => {
+          Modal.confirm({
+            title: '批量导入确认',
+            content: `您选择了 ${fileList.length} 个文件，批量导入耗时较长，建议分批进行。是否继续？`,
+            okText: '继续导入',
+            cancelText: '取消',
+            onOk: () => resolve(true),
+            onCancel: () => resolve(false),
+          });
+        });
+        if (!continueImport) return;
+      }
+
+      // 导入前后端可用性检查，避免代理不可达导致界面卡死
+      try {
+        await countActiveMsds({ timeout: 5000 } as any);
+      } catch (e) {
+        message.error('后端服务不可达或未启动，请检查 msdsbackend (或本地 18080) 是否运行');
+        return;
+      }
+
       setUploading(true);
       setProgress(0);
+      setCanceled(false);
+      cancelRef.current = false;
+      setBatchInfo({ current: 0, total: 0 });
 
       const formData = new FormData();
       
@@ -140,33 +175,94 @@ const ImportModal: React.FC<ImportModalProps> = ({ open, onOpenChange, onSuccess
            return;
         }
 
-        fileList.forEach((file) => {
-          if (file.originFileObj) {
-            formData.append('file', file.originFileObj);
+        // 分批处理配置
+        const totalFiles = fileList.length;
+        const safeBatchSize = Math.min(Math.max(batchSize || 1, 1), 50);
+        const totalBatches = Math.ceil(totalFiles / safeBatchSize);
+        
+        let successCount = 0;
+        let failCount = 0;
+        let allResults: any[] = [];
+        let hasError = false;
+        setBatchInfo({ current: 0, total: totalBatches });
+
+        for (let i = 0; i < totalBatches; i++) {
+          if (cancelRef.current) {
+            message.warning('已停止导入');
+            break;
           }
-        });
-        formData.append('overwriteDuplicates', overwriteDuplicates.toString());
-
-        // 模拟进度
-        const progressInterval = setInterval(() => {
-          setProgress((prev) => {
-            const nextProgress = prev + Math.random() * 30;
-            return nextProgress > 90 ? 90 : nextProgress;
+          const start = i * safeBatchSize;
+          const end = Math.min(start + safeBatchSize, totalFiles);
+          const currentBatch = fileList.slice(start, end);
+          
+          const batchBase = Math.round((i / totalBatches) * 100);
+          const batchSpan = Math.round(100 / totalBatches);
+          setProgress((prev) => Math.max(prev, batchBase));
+          setBatchInfo({ current: i + 1, total: totalBatches });
+          
+          // 构建当前批次的FormData
+          const batchFormData = new FormData();
+          currentBatch.forEach((file) => {
+            if (file.originFileObj) {
+              batchFormData.append('file', file.originFileObj);
+            }
           });
-        }, 500);
+          batchFormData.append('overwriteDuplicates', overwriteDuplicates.toString());
 
-        const result = await importMsdsXml(formData);
+          try {
+            const result = await importMsdsXml(batchFormData, (event: any) => {
+              if (!event?.total) return;
+              const loadedPercent = Math.round((event.loaded / event.total) * batchSpan * 0.9);
+              const nextProgress = Math.min(99, batchBase + loadedPercent);
+              setProgress((prev) => Math.max(prev, nextProgress));
+            });
+            setProgress((prev) => Math.max(prev, batchBase + batchSpan));
+            
+            if (result.code === 200) {
+              // 假设后端返回的数据结构包含成功/失败数量或列表，这里做简单累加
+              // 如果后端返回的是单个结果对象，这里可能需要调整。
+              // 假设 result.data 包含导入详情
+              if (result.data) {
+                 allResults.push(result.data);
+              }
+              successCount += currentBatch.length; // 暂时假设批次内全部成功，除非后端有更细粒度返回
+            } else {
+              failCount += currentBatch.length;
+              hasError = true;
+              console.error(`Batch ${i+1} failed:`, result.msg);
+            }
+          } catch (error) {
+            failCount += currentBatch.length;
+            hasError = true;
+            console.error(`Batch ${i+1} exception:`, error);
+          }
+          
+          // 稍微延迟一下，避免请求太密集，同时让UI有机会刷新
+          await new Promise(resolve => setTimeout(resolve, 200));
+        }
 
-        clearInterval(progressInterval);
         setProgress(100);
 
-        if (result.code === 200) {
-          setImportResult(result.data);
-          message.success('XML导入成功');
+        if (cancelRef.current) {
+          setUploading(false);
+          setBatchInfo({ current: 0, total: totalBatches });
+          return;
+        }
+
+        if (!hasError && failCount === 0) {
+          // 合并结果（如果需要显示详细结果，这里需要合并 allResults）
+          // 简单起见，取最后一个结果或构造一个综合结果
+          setImportResult(allResults.length > 0 ? allResults[allResults.length - 1] : null); 
+          message.success(`XML批量导入完成：成功 ${successCount} 个文件`);
           onSuccess?.();
         } else {
-          message.error(result.msg || 'XML导入失败');
+          message.warning(`XML批量导入完成：成功 ${successCount} 个，失败 ${failCount} 个`);
+          // 如果有部分成功，也可以视为需要刷新列表
+          if (successCount > 0) {
+             onSuccess?.();
+          }
         }
+        setBatchInfo({ current: 0, total: totalBatches });
       } else {
         // 普通文件导入（PDF、DOC、DOCX、XLS、XLSX）
         fileList.forEach((file) => {
@@ -176,18 +272,13 @@ const ImportModal: React.FC<ImportModalProps> = ({ open, onOpenChange, onSuccess
         });
         formData.append('overwriteDuplicates', overwriteDuplicates.toString());
 
-        // 模拟进度
-        const progressInterval = setInterval(() => {
-          setProgress((prev) => {
-            const nextProgress = prev + Math.random() * 30;
-            return nextProgress > 90 ? 90 : nextProgress;
-          });
-        }, 500);
-
-        const result = await importMsdsDocument(formData);
-
-        clearInterval(progressInterval);
+        const result = await importMsdsDocument(formData, (event: any) => {
+          if (!event?.total) return;
+          const nextProgress = Math.min(99, Math.round((event.loaded / event.total) * 100));
+          setProgress((prev) => Math.max(prev, nextProgress));
+        });
         setProgress(100);
+
 
         if (result.code === 200) {
           setImportResult(result.data);
@@ -443,6 +534,7 @@ const ImportModal: React.FC<ImportModalProps> = ({ open, onOpenChange, onSuccess
           onChange={handleChange}
           beforeUpload={beforeUpload}
           disabled={uploading}
+          showUploadList={showUploadList}
           style={{ padding: '20px' }}
         >
           <p className="ant-upload-drag-icon">
@@ -456,6 +548,27 @@ const ImportModal: React.FC<ImportModalProps> = ({ open, onOpenChange, onSuccess
             💡 推荐使用XML格式批量导入：结构化数据、支持16个章节完整信息
           </p>
         </Dragger>
+        {!showUploadList && (
+          <Alert
+            message={`已选择 ${fileList.length} 个文件，为提升性能已隐藏文件列表`}
+            type="info"
+            showIcon
+          />
+        )}
+
+        <Card size="small">
+          <Space align="center" wrap>
+            <Text>XML 批次大小：</Text>
+            <InputNumber
+              min={1}
+              max={50}
+              value={batchSize}
+              onChange={(value) => setBatchSize(Number(value || 1))}
+              disabled={uploading || previewing || validating}
+            />
+            <Text type="secondary">建议 5-20</Text>
+          </Space>
+        </Card>
 
         {/* 上传/预览/校验进度 */}
         {(uploading || previewing || validating) && (
@@ -463,6 +576,11 @@ const ImportModal: React.FC<ImportModalProps> = ({ open, onOpenChange, onSuccess
             <Text>
               {validating ? '正在校验Excel...' : previewing ? '正在预览...' : '正在导入...'}
             </Text>
+            {!validating && !previewing && batchInfo.total > 0 && (
+              <div style={{ marginTop: 4 }}>
+                <Text type="secondary">批次 {batchInfo.current}/{batchInfo.total}</Text>
+              </div>
+            )}
             <Progress 
               percent={Math.round(progress)} 
               status={progress === 100 ? 'success' : 'active'}
@@ -476,6 +594,14 @@ const ImportModal: React.FC<ImportModalProps> = ({ open, onOpenChange, onSuccess
           <Button onClick={handleCancel} disabled={uploading || previewing || validating}>
             取消
           </Button>
+          {uploading && (
+            <Button danger onClick={() => {
+              cancelRef.current = true;
+              setCanceled(true);
+            }}>
+              停止导入
+            </Button>
+          )}
           <Button 
             icon={<CheckCircleOutlined />}
             onClick={handleValidateExcel}
