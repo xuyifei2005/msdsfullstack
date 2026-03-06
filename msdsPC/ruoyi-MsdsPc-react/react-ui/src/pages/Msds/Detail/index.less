@@ -169,6 +169,42 @@
   }
 }
 
+.detailContentCard,
+.sidePanelCard {
+  border: 1px solid rgba(15, 23, 42, 0.08) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06) !important;
+}
+
+.detailDescriptions {
+  :global {
+    .ant-descriptions-item-label {
+      background: #f8fafc !important;
+      color: #334155 !important;
+      font-weight: 700 !important;
+      min-width: 120px;
+    }
+
+    .ant-descriptions-item-content {
+      color: #0f172a !important;
+      font-weight: 500;
+      line-height: 1.8;
+      word-break: break-word;
+      white-space: pre-wrap;
+    }
+
+    .ant-statistic-title {
+      color: #475569 !important;
+      font-weight: 600;
+    }
+
+    .ant-statistic-content {
+      color: #0f172a !important;
+      font-weight: 700;
+    }
+  }
+}
+
 // 打印样式
 @media print {
   .headerCard {

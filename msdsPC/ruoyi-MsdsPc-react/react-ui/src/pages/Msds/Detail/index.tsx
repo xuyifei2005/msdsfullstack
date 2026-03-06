@@ -89,6 +89,20 @@ const MsdsDetail: React.FC = () => {
     }
   };
 
+  const statusTextMap: Record<string, string> = {
+    approved: '已批准',
+    pending: '待审核',
+    draft: '草稿',
+    archived: '已归档',
+  };
+
+  const statusColorMap: Record<string, string> = {
+    approved: 'green',
+    pending: 'orange',
+    draft: 'blue',
+    archived: 'default',
+  };
+
   if (loading) {
     return (
       <PageContainer>
@@ -119,7 +133,7 @@ const MsdsDetail: React.FC = () => {
         breadcrumb: {
           items: [
             { title: '首页', path: '/' },
-            { title: '智能搜索', path: '/intelligent-search' },
+            { title: '智能搜索', path: '/msds/search' },
             { title: msdsData.productName || '详情' },
           ],
         },
@@ -222,10 +236,10 @@ const MsdsDetail: React.FC = () => {
       {/* 详细信息标签页 */}
       <Row gutter={24} style={{ marginTop: 24 }}>
         <Col xs={24} lg={18}>
-          <Card bordered={false}>
+          <Card bordered={false} className={styles.detailContentCard}>
             <Tabs activeKey={activeTab} onChange={setActiveTab} size="large">
               <TabPane tab="基本信息" key="basic">
-                <Descriptions bordered column={2}>
+                <Descriptions bordered column={2} className={styles.detailDescriptions}>
                   <Descriptions.Item label="中文名">
                     {msdsData.productName}
                   </Descriptions.Item>
@@ -271,7 +285,7 @@ const MsdsDetail: React.FC = () => {
               </TabPane>
 
               <TabPane tab="理化性质" key="physical">
-                <Descriptions bordered column={2}>
+                <Descriptions bordered column={2} className={styles.detailDescriptions}>
                   <Descriptions.Item label="外观">
                     {msdsData.appearance || 'N/A'}
                   </Descriptions.Item>
@@ -313,8 +327,8 @@ const MsdsDetail: React.FC = () => {
 
         <Col xs={24} lg={6}>
           {/* 文档信息 */}
-          <Card title="文档信息" bordered={false} style={{ marginBottom: 16 }}>
-            <Descriptions column={1} size="small">
+          <Card title="文档信息" bordered={false} style={{ marginBottom: 16 }} className={styles.sidePanelCard}>
+            <Descriptions column={1} size="small" className={styles.detailDescriptions}>
               <Descriptions.Item label="供应商">
                 {msdsData.companyName || 'N/A'}
               </Descriptions.Item>
@@ -325,8 +339,8 @@ const MsdsDetail: React.FC = () => {
                 {msdsData.updateTime?.split(' ')[0] || msdsData.createTime?.split(' ')[0]}
               </Descriptions.Item>
               <Descriptions.Item label="状态">
-                <Tag color={msdsData.status === '已批准' ? 'green' : 'orange'}>
-                  {msdsData.status || '待审核'}
+                <Tag color={statusColorMap[msdsData.status || ''] || 'orange'}>
+                  {statusTextMap[msdsData.status || ''] || '待审核'}
                 </Tag>
               </Descriptions.Item>
               <Descriptions.Item label="有效性">
@@ -338,7 +352,7 @@ const MsdsDetail: React.FC = () => {
           </Card>
 
           {/* 使用统计 */}
-          <Card title="使用统计" bordered={false}>
+          <Card title="使用统计" bordered={false} className={styles.sidePanelCard}>
             <Space direction="vertical" style={{ width: '100%' }}>
               <Statistic
                 title="查看次数"

@@ -26,9 +26,7 @@ import {
   EyeOutlined,
   DownloadOutlined,
   StarOutlined,
-  StarFilled,
   FilterOutlined,
-  SyncOutlined,
 } from '@ant-design/icons';
 import { PageContainer } from '@ant-design/pro-components';
 import { useRequest, history } from '@umijs/max';
@@ -101,41 +99,26 @@ const IntelligentSearch: React.FC = () => {
     loading: searching,
     run: performSearch,
   } = useRequest(
-    (params: IntelligentSearchParams) => {
-      console.log('[useRequest] 开始调用intelligentSearch, params:', params);
-      return intelligentSearch(params);
-    },
+    (params: IntelligentSearchParams) => intelligentSearch(params),
     {
       manual: true,
       onSuccess: (res) => {
-        console.log('[useRequest] onSuccess 回调');
-        console.log('[useRequest] 搜索响应完整数据:', JSON.stringify(res, null, 2));
-        console.log('[useRequest] res.code:', res?.code);
-        console.log('[useRequest] res.total:', res?.total);
-        console.log('[useRequest] res.rows:', res?.rows);
-        
-        // 兼容RuoYi框架返回格式：code可能是数字200或字符串"200"
         const code = Number(res?.code);
         if (code === 200 || code === 0) {
           const totalCount = res?.total || 0;
           message.success(`找到 ${totalCount} 个相关文档`);
-          if (res.rows && res.rows.length > 0) {
-            console.log('[useRequest] 搜索结果示例:', res.rows[0]);
-          }
         } else {
-          console.warn('[useRequest] 响应码异常:', code, res?.msg);
           message.warning(res?.msg || '搜索失败');
         }
       },
-      onError: (error) => {
-        console.error('[useRequest] onError 回调');
-        console.error('[useRequest] 搜索错误:', error);
-        console.error('[useRequest] 错误详情:', {
-          name: error.name,
-          message: error.message,
-          stack: error.stack,
-        });
-        message.error('搜索失败：' + (error.message || '未知错误'));
+      onError: (error: any) => {
+        const errorMessage =
+          error?.info?.errorMessage ||
+          error?.data?.msg ||
+          error?.response?.data?.msg ||
+          error?.message ||
+          '未知错误';
+        message.error(`搜索失败：${errorMessage}`);
       },
     }
   );
@@ -166,12 +149,6 @@ const IntelligentSearch: React.FC = () => {
       return;
     }
 
-    // 添加调试信息
-    console.log('=== 智能搜索参数 ===');
-    console.log('关键词:', value);
-    console.log('搜索类型:', searchType);
-    console.log('筛选条件:', filters);
-
     const searchParams: IntelligentSearchParams = {
       keyword: value,
       searchType,
@@ -186,8 +163,6 @@ const IntelligentSearch: React.FC = () => {
       searchParams.supplier = filters.supplier;
     }
 
-    console.log('发送给后端的参数:', searchParams);
-    
     performSearch(searchParams);
     setShowSuggestions(false);
   }, [searchType, filters, performSearch]);
@@ -244,8 +219,8 @@ const IntelligentSearch: React.FC = () => {
   return (
     <PageContainer
       header={{
-        title: 'AI智能搜索',
-        subTitle: '基于人工智能的MSDS文档智能检索系统',
+        title: <span className={styles.pageTitle}>AI智能搜索</span>,
+        subTitle: <span className={styles.pageSubTitle}>基于人工智能的MSDS文档智能检索系统</span>,
         extra: [
           <Button key="history" icon={<ClockCircleOutlined />} onClick={refreshHistory}>
             搜索历史

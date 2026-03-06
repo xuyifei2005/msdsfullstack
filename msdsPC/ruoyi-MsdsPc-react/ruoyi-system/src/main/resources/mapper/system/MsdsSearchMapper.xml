@@ -40,7 +40,6 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
             m.revision_date, m.effective_date, m.status, m.approver, m.approval_date,
             m.is_active, m.create_time, m.update_time, m.remark
         from msds_main m
-        left join msds_document_statistics s on m.id = s.msds_id
     </sql>
     
     <select id="intelligentSearch" resultMap="MsdsMainResult">
@@ -84,7 +83,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
                 order by m.product_name asc
             </when>
             <when test="filters != null and filters.sortBy != null and filters.sortBy == 'views'">
-                order by s.view_count desc
+                order by m.update_time desc
             </when>
             <otherwise>
                 order by m.create_time desc
@@ -159,16 +158,15 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     </select>
     
     <select id="getRelatedDocuments" resultMap="MsdsMainResult">
-        SELECT m.*, s.view_count
+        SELECT m.*
         FROM msds_main m
-        LEFT JOIN msds_document_statistics s ON m.id = s.msds_id
         WHERE m.is_active = 1
         AND m.id != #{msdsId}
         AND (
             m.category_id = (SELECT category_id FROM msds_main WHERE id = #{msdsId})
             OR m.company_name = (SELECT company_name FROM msds_main WHERE id = #{msdsId})
         )
-        ORDER BY s.view_count DESC
+        ORDER BY m.update_time DESC
         LIMIT #{limit}
     </select>
 </mapper>

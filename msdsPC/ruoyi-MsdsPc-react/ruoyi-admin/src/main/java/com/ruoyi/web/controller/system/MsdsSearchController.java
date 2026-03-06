@@ -56,37 +56,41 @@ public class MsdsSearchController extends BaseController
     {
         logger.info("收到智能搜索请求 - keyword: {}, searchType: {}, documentType: {}, categoryId: {}, supplier: {}, sortBy: {}",
                    keyword, searchType, documentType, categoryId, supplier, sortBy);
-        
-        // 构建筛选条件
-        Map<String, Object> filters = new HashMap<>();
-        if (StringUtils.isNotEmpty(documentType)) {
-            filters.put("documentType", documentType);
-        }
-        if (categoryId != null) {
-            filters.put("categoryId", categoryId);
-        }
-        if (StringUtils.isNotEmpty(supplier)) {
-            filters.put("supplier", supplier);
-        }
-        filters.put("sortBy", sortBy);
-
-        // 获取当前用户ID
-        Long userId = null;
         try {
-            userId = SecurityUtils.getUserId();
-            logger.debug("当前用户ID: {}", userId);
-        } catch (Exception e) {
-            logger.debug("获取用户ID失败，使用匿名搜索", e);
-        }
+            Map<String, Object> filters = new HashMap<>();
+            if (StringUtils.isNotEmpty(documentType)) {
+                filters.put("documentType", documentType);
+            }
+            if (categoryId != null) {
+                filters.put("categoryId", categoryId);
+            }
+            if (StringUtils.isNotEmpty(supplier)) {
+                filters.put("supplier", supplier);
+            }
+            filters.put("sortBy", sortBy);
 
-        // 执行搜索
-        startPage();
-        List<MsdsMain> list = searchService.intelligentSearch(keyword, searchType, filters, userId);
-        
-        TableDataInfo dataTable = getDataTable(list);
-        logger.info("智能搜索完成 - 返回 {} 条记录，总数: {}", list.size(), dataTable.getTotal());
-        
-        return dataTable;
+            Long userId = null;
+            try {
+                userId = SecurityUtils.getUserId();
+                logger.debug("当前用户ID: {}", userId);
+            } catch (Exception e) {
+                logger.debug("获取用户ID失败，使用匿名搜索", e);
+            }
+
+            startPage();
+            List<MsdsMain> list = searchService.intelligentSearch(keyword, searchType, filters, userId);
+            TableDataInfo dataTable = getDataTable(list);
+            logger.info("智能搜索完成 - 返回 {} 条记录，总数: {}", list.size(), dataTable.getTotal());
+            return dataTable;
+        } catch (Exception e) {
+            logger.error("智能搜索执行失败", e);
+            TableDataInfo failed = new TableDataInfo();
+            failed.setCode(500);
+            failed.setMsg("智能搜索服务异常，请稍后重试");
+            failed.setRows(java.util.Collections.emptyList());
+            failed.setTotal(0);
+            return failed;
+        }
     }
 
     /**
