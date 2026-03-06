@@ -11,57 +11,57 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
     <!-- 统计有效文档数 -->
     <select id="countValidDocuments" resultType="int">
-        select count(1) from msds_main where is_active = 1 and (expiry_date is null or expiry_date &gt; now())
+        select count(1) from msds_main where is_active = 1 and (status is null or status = 'approved')
     </select>
 
     <!-- 统计待审核文档数 -->
     <select id="countPendingDocuments" resultType="int">
-        select count(1) from msds_main where is_active = 0
+        select count(1) from msds_main where status = 'pending'
     </select>
 
     <!-- 统计过期文档数 -->
     <select id="countExpiredDocuments" resultType="int">
-        select count(1) from msds_main where expiry_date is not null and expiry_date &lt; now()
+        select count(1) from msds_main where status = 'archived'
     </select>
 
     <!-- 统计今日访问数 -->
     <select id="countTodayViews" resultType="int">
-        select count(1) from msds_document_access_log 
-        where date(access_time) = curdate() and access_type = 'view'
+        select count(1) from msds_audit_log
+        where date(operation_time) = curdate() and operation_type = 'view'
     </select>
 
     <!-- 统计本月访问数 -->
     <select id="countMonthViews" resultType="int">
-        select count(1) from msds_document_access_log 
-        where year(access_time) = year(now()) and month(access_time) = month(now()) and access_type = 'view'
+        select count(1) from msds_audit_log
+        where year(operation_time) = year(now()) and month(operation_time) = month(now()) and operation_type = 'view'
     </select>
 
     <!-- 统计总访问数 -->
     <select id="countTotalViews" resultType="int">
-        select count(1) from msds_document_access_log where access_type = 'view'
+        select count(1) from msds_audit_log where operation_type = 'view'
     </select>
 
     <!-- 统计活跃用户数 -->
     <select id="countActiveUsers" resultType="int">
-        select count(distinct user_id) from msds_document_access_log 
-        where access_time >= date_sub(now(), interval 7 day)
+        select count(distinct operator_id) from msds_audit_log
+        where operation_time >= date_sub(now(), interval 7 day) and operator_id is not null
     </select>
 
     <!-- 统计今日下载数 -->
     <select id="countTodayDownloads" resultType="int">
-        select count(1) from msds_document_access_log 
-        where date(access_time) = curdate() and access_type = 'download'
+        select count(1) from msds_audit_log
+        where date(operation_time) = curdate() and operation_type = 'download'
     </select>
 
     <!-- 统计本月下载数 -->
     <select id="countMonthDownloads" resultType="int">
-        select count(1) from msds_document_access_log 
-        where year(access_time) = year(now()) and month(access_time) = month(now()) and access_type = 'download'
+        select count(1) from msds_audit_log
+        where year(operation_time) = year(now()) and month(operation_time) = month(now()) and operation_type = 'download'
     </select>
 
     <!-- 统计总下载数 -->
     <select id="countTotalDownloads" resultType="int">
-        select count(1) from msds_document_access_log where access_type = 'download'
+        select count(1) from msds_audit_log where operation_type = 'download'
     </select>
 
     <!-- 统计化学品总数 -->

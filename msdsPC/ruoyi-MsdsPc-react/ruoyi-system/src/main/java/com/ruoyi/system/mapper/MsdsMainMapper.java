@@ -44,6 +44,14 @@ public interface MsdsMainMapper
     public MsdsMain selectMsdsMainByCasNumber(String casNumber);
 
     /**
+     * 根据MSDS编号查询MSDS信息
+     *
+     * @param msdsCode MSDS编号
+     * @return MSDS主信息
+     */
+    public MsdsMain selectMsdsMainByMsdsCode(String msdsCode);
+
+    /**
      * 检查化学品名称是否唯一
      * 
      * @param productName 化学品名称
@@ -90,6 +98,13 @@ public interface MsdsMainMapper
      * @return 结果
      */
     public int deleteMsdsMainByIds(Long[] ids);
+
+    /**
+     * 删除全部MSDS主信息
+     *
+     * @return 结果
+     */
+    public int deleteAllMsdsMain();
 
     /**
      * 根据企业名称查询MSDS列表

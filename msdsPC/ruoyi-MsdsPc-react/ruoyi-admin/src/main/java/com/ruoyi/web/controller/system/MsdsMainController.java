@@ -23,9 +23,11 @@ import com.ruoyi.common.core.controller.BaseController;
 import com.ruoyi.common.core.domain.AjaxResult;
 import com.ruoyi.common.core.page.TableDataInfo;
 import com.ruoyi.common.enums.BusinessType;
+import com.ruoyi.common.utils.SecurityUtils;
 import com.ruoyi.common.utils.poi.ExcelUtil;
 import com.ruoyi.common.utils.poi.ExcelValidationUtil;
 import com.ruoyi.system.domain.MsdsMain;
+import com.ruoyi.common.core.domain.entity.SysUser;
 import com.ruoyi.system.service.IMsdsMainService;
 import com.ruoyi.system.service.IMsdsAuditLogService;
 import com.ruoyi.common.utils.ip.IpUtils;
@@ -148,6 +150,23 @@ public class MsdsMainController extends BaseController
     public AjaxResult remove(@PathVariable Long[] ids)
     {
         return toAjax(msdsMainService.deleteMsdsMainByIds(ids));
+    }
+
+    @PreAuthorize("@ss.hasPermi('system:msds:remove')")
+    @Log(title = "MSDS主信息", businessType = BusinessType.DELETE)
+    @DeleteMapping("/clear")
+    public AjaxResult clearAll(@RequestParam("confirm") String confirmText)
+    {
+        if (!SysUser.isAdmin(SecurityUtils.getUserId()))
+        {
+            return error("仅超级管理员可以执行一键删除");
+        }
+        if (!"DELETE".equals(confirmText))
+        {
+            return error("确认口令错误，请输入 DELETE");
+        }
+        int deleted = msdsMainService.deleteAllMsdsMain();
+        return success(Map.of("deleted", deleted));
     }
 
     /**
@@ -331,6 +350,20 @@ public class MsdsMainController extends BaseController
         try 
         {
             msdsMainService.exportMsdsToPdf(response, id);
+
+            String ip = IpUtils.getIpAddr(ServletUtils.getRequest());
+            String userAgent = ServletUtils.getRequest().getHeader("User-Agent");
+            msdsAuditLogService.recordAuditLog(
+                id,
+                "download",
+                "导出MSDS PDF",
+                null,
+                null,
+                getUsername(),
+                getUserId(),
+                ip,
+                userAgent
+            );
         } 
         catch (Exception e) 
         {
@@ -350,6 +383,30 @@ public class MsdsMainController extends BaseController
         try 
         {
             msdsMainService.batchExportMsdsToPdf(response, ids);
+
+            String ip = IpUtils.getIpAddr(ServletUtils.getRequest());
+            String userAgent = ServletUtils.getRequest().getHeader("User-Agent");
+            if (ids != null)
+            {
+                for (Long id : ids)
+                {
+                    if (id == null)
+                    {
+                        continue;
+                    }
+                    msdsAuditLogService.recordAuditLog(
+                        id,
+                        "download",
+                        "批量导出MSDS PDF",
+                        null,
+                        null,
+                        getUsername(),
+                        getUserId(),
+                        ip,
+                        userAgent
+                    );
+                }
+            }
         } 
         catch (Exception e) 
         {

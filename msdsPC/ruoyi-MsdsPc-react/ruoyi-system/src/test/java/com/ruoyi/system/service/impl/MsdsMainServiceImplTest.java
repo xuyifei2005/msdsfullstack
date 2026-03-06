@@ -33,6 +33,49 @@ public class MsdsMainServiceImplTest {
         MockitoAnnotations.openMocks(this);
     }
 
+    @Test
+    void testFindExistingMsdsForImport_prefersCas() throws Exception {
+        Method method = MsdsMainServiceImpl.class.getDeclaredMethod("findExistingMsdsForImport", MsdsMain.class);
+        method.setAccessible(true);
+
+        MsdsMain input = new MsdsMain();
+        input.setCasNumber("71-43-2");
+        input.setMsdsCode("MSDS-0001");
+        input.setProductName("苯");
+
+        MsdsMain expected = new MsdsMain();
+        expected.setId(1L);
+
+        when(msdsMainMapper.selectMsdsMainByCasNumber("71-43-2")).thenReturn(expected);
+
+        MsdsMain actual = (MsdsMain) method.invoke(msdsMainService, input);
+        assertSame(expected, actual);
+        verify(msdsMainMapper, times(1)).selectMsdsMainByCasNumber("71-43-2");
+        verify(msdsMainMapper, never()).selectMsdsMainByMsdsCode(anyString());
+        verify(msdsMainMapper, never()).selectMsdsMainByProductName(anyString());
+    }
+
+    @Test
+    void testFindExistingMsdsForImport_usesMsdsCodeWhenNoCas() throws Exception {
+        Method method = MsdsMainServiceImpl.class.getDeclaredMethod("findExistingMsdsForImport", MsdsMain.class);
+        method.setAccessible(true);
+
+        MsdsMain input = new MsdsMain();
+        input.setMsdsCode("MSDS-0002");
+        input.setProductName("甲苯");
+
+        MsdsMain expected = new MsdsMain();
+        expected.setId(2L);
+
+        when(msdsMainMapper.selectMsdsMainByMsdsCode("MSDS-0002")).thenReturn(expected);
+
+        MsdsMain actual = (MsdsMain) method.invoke(msdsMainService, input);
+        assertSame(expected, actual);
+        verify(msdsMainMapper, never()).selectMsdsMainByCasNumber(anyString());
+        verify(msdsMainMapper, times(1)).selectMsdsMainByMsdsCode("MSDS-0002");
+        verify(msdsMainMapper, never()).selectMsdsMainByProductName(anyString());
+    }
+
     /**
      * 测试文件名信息提取功能
      * 验证修复后的字段映射是否正确

@@ -1,12 +1,13 @@
 import React, { useState, useRef } from 'react';
-import { useIntl, FormattedMessage, useAccess } from '@umijs/max';
-import { Button, message, Modal, Space, Tag, Tooltip, Dropdown } from 'antd';
+import { useIntl, FormattedMessage, useAccess, useModel } from '@umijs/max';
+import { Button, message, Modal, Space, Tag, Tooltip, Dropdown, Input } from 'antd';
 import { ActionType, FooterToolbar, PageContainer, ProColumns, ProTable } from '@ant-design/pro-components';
 import { PlusOutlined, DeleteOutlined, ExclamationCircleOutlined, EditOutlined, EyeOutlined, ExportOutlined, UploadOutlined, FormOutlined, DownloadOutlined } from '@ant-design/icons';
 import { useEmotionCss } from '@ant-design/use-emotion-css';
 import {
   getMsdsMainList,
   removeMsdsMain,
+  clearAllMsds,
   addMsdsMain,
   updateMsdsMain,
   exportMsdsMain,
@@ -143,6 +144,8 @@ const MsdsMainList: React.FC = () => {
   const [selectedRows, setSelectedRows] = useState<API.Msds.MsdsMain[]>([]);
 
   const access = useAccess();
+  const { initialState } = useModel('@@initialState');
+  const isSuperAdmin = initialState?.currentUser?.userId === 1;
 
   /** 国际化配置 */
   const intl = useIntl();
@@ -205,6 +208,55 @@ const MsdsMainList: React.FC = () => {
     } catch (error) {
       message.error('获取详情失败');
     }
+  };
+
+  const handleClearAll = () => {
+    let confirmText = '';
+    confirm({
+      title: '一键删除全部MSDS（高危操作）',
+      icon: <ExclamationCircleOutlined />,
+      width: 560,
+      content: (
+        <Space direction="vertical" style={{ width: '100%' }} size="middle">
+          <div style={{ color: '#1e293b' }}>
+            此操作将永久删除系统内全部MSDS主信息及其关联数据，且无法恢复。
+          </div>
+          <div style={{ color: '#ff4d4f', fontWeight: 600 }}>
+            请输入 DELETE 确认执行。
+          </div>
+          <Input
+            placeholder="DELETE"
+            onChange={(e) => {
+              confirmText = e.target.value;
+            }}
+          />
+        </Space>
+      ),
+      okText: '删除全部',
+      okButtonProps: { danger: true },
+      cancelText: '取消',
+      onOk: async () => {
+        if (confirmText !== 'DELETE') {
+          message.error('确认口令错误，请输入 DELETE');
+          throw new Error('confirmText_mismatch');
+        }
+        const hide = message.loading('正在删除全部MSDS...');
+        try {
+          const res = await clearAllMsds('DELETE');
+          hide();
+          if (res.code === 200) {
+            message.success(`删除完成：已删除 ${res.data?.deleted ?? 0} 条`);
+            actionRef.current?.reloadAndRest?.();
+            return;
+          }
+          message.error(res.msg || '删除失败');
+          throw new Error('clear_failed');
+        } catch (e) {
+          hide();
+          throw e;
+        }
+      },
+    });
   };
 
   /** 表格列定义 */
@@ -590,6 +642,20 @@ const MsdsMainList: React.FC = () => {
             >
               <ExportOutlined /> 导出
             </Button>,
+            isSuperAdmin ? (
+              <Button
+                key="clearAll"
+                danger
+                icon={<DeleteOutlined />}
+                onClick={handleClearAll}
+                style={{
+                  borderRadius: '8px',
+                  fontWeight: 600,
+                }}
+              >
+                一键删除
+              </Button>
+            ) : null,
           ]}
         request={async (params, sort, filter) => {
           const { current, pageSize, ...searchParams } = params;

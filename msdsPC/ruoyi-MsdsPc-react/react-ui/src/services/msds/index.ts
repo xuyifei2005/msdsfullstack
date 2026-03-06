@@ -103,6 +103,16 @@ export async function removeMsdsMain(ids: string, options?: { [key: string]: any
   });
 }
 
+export async function clearAllMsds(confirmText: string, options?: { [key: string]: any }) {
+  return request<API.Result>(`/api/system/msds/clear`, {
+    method: 'DELETE',
+    params: {
+      confirm: confirmText,
+    },
+    ...(options || {}),
+  });
+}
+
 // 导出MSDS主信息
 export function exportMsdsMain(params?: API.Msds.MsdsMainListParams, options?: { [key: string]: any }) {
   return downLoadXlsx(`/api/system/msds/export`, { params }, `MSDS主信息_${new Date().getTime()}.xlsx`);

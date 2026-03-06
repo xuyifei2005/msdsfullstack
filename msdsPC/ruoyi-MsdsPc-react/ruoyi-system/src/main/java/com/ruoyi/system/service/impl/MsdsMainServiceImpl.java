@@ -246,6 +246,18 @@ public class MsdsMainServiceImpl implements IMsdsMainService
         return result;
     }
 
+    @Override
+    public int deleteAllMsdsMain()
+    {
+        int result = msdsMainMapper.deleteAllMsdsMain();
+        if (result >= 0)
+        {
+            redisCache.deleteObject("dashboard:document:stats");
+            redisCache.deleteObject("dashboard:chemical:stats");
+        }
+        return result;
+    }
+
     /**
      * 删除MSDS主信息信息
      * 
@@ -336,21 +348,24 @@ public class MsdsMainServiceImpl implements IMsdsMainService
     {
         Map<String, Object> result = new HashMap<>();
         List<Map<String, String>> duplicates = new ArrayList<>();
+        List<Map<String, String>> failureItems = new ArrayList<>();
         int successCount = 0;
         int failureCount = 0;
+        int duplicateCount = 0;
+        int totalCount = 1;
         List<String> errorMessages = new ArrayList<>();
+        String fileName = file.getOriginalFilename();
 
         try
         {
             // 验证文件格式
             if (!isValidFileType(file))
             {
-                errorMessages.add(file.getOriginalFilename() + ": 不支持的文件格式");
+                String reason = "不支持的文件格式";
+                errorMessages.add(fileName + ": " + reason);
+                failureItems.add(buildImportIssueItem(fileName, null, null, null, reason));
                 failureCount++;
-                result.put("successCount", successCount);
-                result.put("failureCount", failureCount);
-                result.put("duplicates", duplicates);
-                result.put("errorMessages", errorMessages);
+                putImportResult(result, totalCount, successCount, failureCount, duplicateCount, duplicates, failureItems, errorMessages);
                 return result;
             }
 
@@ -358,12 +373,11 @@ public class MsdsMainServiceImpl implements IMsdsMainService
             String content = extractTextFromFile(file);
             if (StringUtils.isEmpty(content))
             {
-                errorMessages.add(file.getOriginalFilename() + ": 无法提取文档内容");
+                String reason = "无法提取文档内容";
+                errorMessages.add(fileName + ": " + reason);
+                failureItems.add(buildImportIssueItem(fileName, null, null, null, reason));
                 failureCount++;
-                result.put("successCount", successCount);
-                result.put("failureCount", failureCount);
-                result.put("duplicates", duplicates);
-                result.put("errorMessages", errorMessages);
+                putImportResult(result, totalCount, successCount, failureCount, duplicateCount, duplicates, failureItems, errorMessages);
                 return result;
             }
             
@@ -372,7 +386,6 @@ public class MsdsMainServiceImpl implements IMsdsMainService
                        content.length() > 500 ? content.substring(0, 500) + "..." : content);
 
             // 首先从文件名中提取化学品信息（优先级最高）
-            String fileName = file.getOriginalFilename();
             Map<String, String> fileNameInfo = new HashMap<>();
             if (StringUtils.isNotEmpty(fileName)) {
                 fileNameInfo = extractInfoFromFileName(fileName);
@@ -384,12 +397,11 @@ public class MsdsMainServiceImpl implements IMsdsMainService
             
             if (msdsMain == null)
             {
-                errorMessages.add(file.getOriginalFilename() + ": 无法解析文档内容");
+                String reason = "无法解析文档内容";
+                errorMessages.add(fileName + ": " + reason);
+                failureItems.add(buildImportIssueItem(fileName, null, null, null, reason));
                 failureCount++;
-                result.put("successCount", successCount);
-                result.put("failureCount", failureCount);
-                result.put("duplicates", duplicates);
-                result.put("errorMessages", errorMessages);
+                putImportResult(result, totalCount, successCount, failureCount, duplicateCount, duplicates, failureItems, errorMessages);
                 return result;
             }
 
@@ -455,12 +467,11 @@ public class MsdsMainServiceImpl implements IMsdsMainService
             }
             
             if (!hasValidData) {
-                errorMessages.add(file.getOriginalFilename() + ": 无法解析出有效的MSDS信息（缺少化学品名称）");
+                String reason = "无法解析出有效的MSDS信息（缺少化学品名称）";
+                errorMessages.add(fileName + ": " + reason);
+                failureItems.add(buildImportIssueItem(fileName, null, null, null, reason));
                 failureCount++;
-                result.put("successCount", successCount);
-                result.put("failureCount", failureCount);
-                result.put("duplicates", duplicates);
-                result.put("errorMessages", errorMessages);
+                putImportResult(result, totalCount, successCount, failureCount, duplicateCount, duplicates, failureItems, errorMessages);
                 return result;
             }
             
@@ -469,19 +480,12 @@ public class MsdsMainServiceImpl implements IMsdsMainService
                 logger.warn("文件 {} 缺少以下字段：{}", file.getOriginalFilename(), missingFields.toString());
             }
 
-            // 检查重复数据
-            MsdsMain existingMsds = msdsMainMapper.selectMsdsMainByProductName(msdsMain.getProductName());
+            MsdsMain existingMsds = findExistingMsdsForImport(msdsMain);
             if (existingMsds != null && !overwriteDuplicates)
             {
-                Map<String, String> duplicate = new HashMap<>();
-                duplicate.put("fileName", file.getOriginalFilename());
-                duplicate.put("chemicalName", msdsMain.getProductName());
-                duplicate.put("casNumber", msdsMain.getCasNumber() != null ? msdsMain.getCasNumber() : "");
-                duplicates.add(duplicate);
-                result.put("successCount", successCount);
-                result.put("failureCount", failureCount);
-                result.put("duplicates", duplicates);
-                result.put("errorMessages", errorMessages);
+                duplicates.add(buildDuplicateItem(file.getOriginalFilename(), msdsMain));
+                duplicateCount = duplicates.size();
+                putImportResult(result, totalCount, successCount, failureCount, duplicateCount, duplicates, failureItems, errorMessages);
                 return result;
             }
 
@@ -489,19 +493,16 @@ public class MsdsMainServiceImpl implements IMsdsMainService
             msdsMain.setIsActive(1);
 
             // 保存或更新主表数据
-            Long msdsId;
             if (existingMsds != null && overwriteDuplicates)
             {
                 // 覆盖导入：先清理旧的子表数据，再更新主表
                 cleanRelatedMsdsData(existingMsds.getId());
                 msdsMain.setId(existingMsds.getId());
                 msdsMainMapper.updateMsdsMain(msdsMain);
-                msdsId = existingMsds.getId();
             }
             else
             {
                 msdsMainMapper.insertMsdsMain(msdsMain);
-                msdsId = msdsMain.getId();
             }
 
             // 保存其他相关表数据
@@ -511,16 +512,88 @@ public class MsdsMainServiceImpl implements IMsdsMainService
         }
         catch (Exception e)
         {
-            errorMessages.add(file.getOriginalFilename() + ": " + e.getMessage());
+            String reason = e.getMessage();
+            errorMessages.add(fileName + ": " + reason);
+            failureItems.add(buildImportIssueItem(fileName, null, null, null, reason));
             failureCount++;
         }
 
+        duplicateCount = duplicates.size();
+        putImportResult(result, totalCount, successCount, failureCount, duplicateCount, duplicates, failureItems, errorMessages);
+        return result;
+    }
+
+    private MsdsMain findExistingMsdsForImport(MsdsMain msdsMain)
+    {
+        if (msdsMain == null)
+        {
+            return null;
+        }
+        if (StringUtils.isNotBlank(msdsMain.getCasNumber()))
+        {
+            return msdsMainMapper.selectMsdsMainByCasNumber(msdsMain.getCasNumber());
+        }
+        if (StringUtils.isNotBlank(msdsMain.getMsdsCode()))
+        {
+            return msdsMainMapper.selectMsdsMainByMsdsCode(msdsMain.getMsdsCode());
+        }
+        if (StringUtils.isNotBlank(msdsMain.getProductName()))
+        {
+            return msdsMainMapper.selectMsdsMainByProductName(msdsMain.getProductName());
+        }
+        return null;
+    }
+
+    private Map<String, String> buildDuplicateItem(String fileName, MsdsMain msdsMain)
+    {
+        Map<String, String> item = new HashMap<>();
+        item.put("fileName", fileName);
+        item.put("chemicalName", msdsMain != null && msdsMain.getProductName() != null ? msdsMain.getProductName() : "");
+        item.put("casNumber", msdsMain != null && msdsMain.getCasNumber() != null ? msdsMain.getCasNumber() : "");
+        item.put("msdsCode", msdsMain != null && msdsMain.getMsdsCode() != null ? msdsMain.getMsdsCode() : "");
+        String duplicateBy = "product_name";
+        if (msdsMain != null && StringUtils.isNotBlank(msdsMain.getCasNumber()))
+        {
+            duplicateBy = "cas_number";
+        }
+        else if (msdsMain != null && StringUtils.isNotBlank(msdsMain.getMsdsCode()))
+        {
+            duplicateBy = "msds_code";
+        }
+        item.put("duplicateBy", duplicateBy);
+        item.put("reason", "重复数据未覆盖");
+        return item;
+    }
+
+    private Map<String, String> buildImportIssueItem(String fileName, String chemicalName, String casNumber, String msdsCode, String reason)
+    {
+        Map<String, String> item = new HashMap<>();
+        item.put("fileName", fileName);
+        item.put("chemicalName", chemicalName != null ? chemicalName : "");
+        item.put("casNumber", casNumber != null ? casNumber : "");
+        item.put("msdsCode", msdsCode != null ? msdsCode : "");
+        item.put("reason", reason != null ? reason : "");
+        return item;
+    }
+
+    private void putImportResult(
+            Map<String, Object> result,
+            int totalCount,
+            int successCount,
+            int failureCount,
+            int duplicateCount,
+            List<Map<String, String>> duplicates,
+            List<Map<String, String>> failureItems,
+            List<String> errorMessages)
+    {
+        result.put("totalCount", totalCount);
         result.put("successCount", successCount);
         result.put("failureCount", failureCount);
+        result.put("duplicateCount", duplicateCount);
+        result.put("missingCount", Math.max(0, totalCount - successCount - failureCount - duplicateCount));
         result.put("duplicates", duplicates);
+        result.put("failureItems", failureItems);
         result.put("errorMessages", errorMessages);
-
-        return result;
     }
 
     /**
@@ -538,11 +611,14 @@ public class MsdsMainServiceImpl implements IMsdsMainService
         List<String> successList = new ArrayList<>();
         List<String> failureList = new ArrayList<>();
         List<String> duplicateList = new ArrayList<>();
+        List<Map<String, String>> failureItems = new ArrayList<>();
+        List<Map<String, String>> duplicateItems = new ArrayList<>();
         
         int successCount = 0;
         int failureCount = 0;
         int duplicateCount = 0;
         int totalCount = 0;
+        int fileCount = files != null ? files.length : 0;
 
         for (MultipartFile file : files)
         {
@@ -576,20 +652,36 @@ public class MsdsMainServiceImpl implements IMsdsMainService
                 if (singleFailureList != null) {
                     failureList.addAll(singleFailureList);
                 }
+
+                @SuppressWarnings("unchecked")
+                List<Map<String, String>> singleFailureItems = (List<Map<String, String>>) singleResult.get("failureItems");
+                if (singleFailureItems != null) {
+                    failureItems.addAll(singleFailureItems);
+                }
                 
                 @SuppressWarnings("unchecked")
                 List<String> singleDuplicateList = (List<String>) singleResult.get("duplicateList");
                 if (singleDuplicateList != null) {
                     duplicateList.addAll(singleDuplicateList);
                 }
+
+                @SuppressWarnings("unchecked")
+                List<Map<String, String>> singleDuplicateItems = (List<Map<String, String>>) singleResult.get("duplicateItems");
+                if (singleDuplicateItems != null) {
+                    duplicateItems.addAll(singleDuplicateItems);
+                }
             }
             catch (Exception e)
             {
                 failureList.add(file.getOriginalFilename() + ": " + e.getMessage());
                 failureCount++;
+                failureItems.add(buildImportIssueItem(file.getOriginalFilename(), null, null, null, e.getMessage()));
             }
         }
 
+        int missingCount = Math.max(0, totalCount - successCount - failureCount - duplicateCount);
+
+        result.put("fileCount", fileCount);
         result.put("successCount", successCount);
         result.put("failureCount", failureCount);
         result.put("duplicateCount", duplicateCount);
@@ -597,6 +689,9 @@ public class MsdsMainServiceImpl implements IMsdsMainService
         result.put("failureList", failureList);
         result.put("duplicateList", duplicateList);
         result.put("totalCount", totalCount);
+        result.put("missingCount", missingCount);
+        result.put("failureItems", failureItems);
+        result.put("duplicateItems", duplicateItems);
 
         return result;
     }
@@ -861,8 +956,11 @@ public class MsdsMainServiceImpl implements IMsdsMainService
     {
         Map<String, Object> result = new HashMap<>();
         List<Map<String, String>> duplicates = new ArrayList<>();
+        List<Map<String, String>> failureItems = new ArrayList<>();
         int successCount = 0;
         int failureCount = 0;
+        int duplicateCount = 0;
+        int totalCount = files != null ? files.length : 0;
         List<String> errorMessages = new ArrayList<>();
 
         for (MultipartFile file : files)
@@ -887,18 +985,24 @@ public class MsdsMainServiceImpl implements IMsdsMainService
                 {
                     errorMessages.addAll(singleErrorMessages);
                 }
+
+                @SuppressWarnings("unchecked")
+                List<Map<String, String>> singleFailureItems = (List<Map<String, String>>) singleResult.get("failureItems");
+                if (singleFailureItems != null && !singleFailureItems.isEmpty())
+                {
+                    failureItems.addAll(singleFailureItems);
+                }
             }
             catch (Exception e)
             {
                 errorMessages.add(file.getOriginalFilename() + ": " + e.getMessage());
+                failureItems.add(buildImportIssueItem(file.getOriginalFilename(), null, null, null, e.getMessage()));
                 failureCount++;
             }
         }
 
-        result.put("successCount", successCount);
-        result.put("failureCount", failureCount);
-        result.put("duplicates", duplicates);
-        result.put("errorMessages", errorMessages);
+        duplicateCount = duplicates.size();
+        putImportResult(result, totalCount, successCount, failureCount, duplicateCount, duplicates, failureItems, errorMessages);
 
         return result;
     }
@@ -2098,7 +2202,7 @@ public class MsdsMainServiceImpl implements IMsdsMainService
         
         String[] patterns = {
             // 标准格式：化学品中文名称：xxx（保留完整名称，包括可能的逗号）
-            "(?:化学品中文名称?|产品名称|中文名称|商品名|化学品名称)\\s*[：:：]?\\s*([^\\n\\r]+?)(?=\\s*(?:英文名|CAS|分子式|分子量|$))",
+            "(?:化学品中文名称?|产品名称|产品|中文名称|商品名|化学品名称|化学品)\\s*[：:：]?\\s*([^\\n\\r]+?)(?=\\s*(?:英文名|CAS|分子式|分子量|$))",
             // 简化格式：中文名：xxx（更宽松的匹配）
             "(?:中文名|产品名|化学名)\\s*[：:：]\\s*([^\\n\\r]+?)(?=\\s*(?:英文名|CAS|分子式|分子量|$))",
             // 通用格式：名称：xxx（保留完整内容）
@@ -2107,7 +2211,7 @@ public class MsdsMainServiceImpl implements IMsdsMainService
             "第一部分[^\\n]*\\n[^\\n]*名称[^：:：]*[：:：]\\s*([^\\n\\r]+?)(?=\\s*(?:英文名|CAS|分子式|分子量|$))",
             "1\\s*化学品及企业标识[^\\n]*\\n[^\\n]*名称[^：:：]*[：:：]\\s*([^\\n\\r]+?)(?=\\s*(?:英文名|CAS|分子式|分子量|$))",
             // 兜底模式：匹配包含中文字符的完整名称
-            "(?:化学品中文名称?|产品名称|中文名称|商品名|化学品名称)\\s*[：:：]?\\s*([\\u4e00-\\u9fa5][^\\n\\r]*)"
+            "(?:化学品中文名称?|产品名称|产品|中文名称|商品名|化学品名称|化学品)\\s*[：:：]?\\s*([\\u4e00-\\u9fa5][^\\n\\r]*)"
         };
         
         for (int i = 0; i < patterns.length; i++) {
@@ -2812,19 +2916,19 @@ public class MsdsMainServiceImpl implements IMsdsMainService
     private String extractProductAlias(String content) {
         String[] patterns = {
             // 严格匹配中文别名，只提取纯中文内容
-            "(?:化学品别名|中文别名|别名)\\s*[：:：]?\\s*([\\u4e00-\\u9fff；;，,、\\s]+?)(?=\\s*(?:[a-zA-Z]|\\d{2,7}-\\d{2}-\\d|CAS|MSDS|Email|企业|生产|电话|传真|地址|邮编|网址|\\d+\\.|$))",
+            "(?:化学品别名|中文别名|别名)\\s*[：:：]?\\s*([\\u4e00-\\u9fff（）();；;，,、\\s]+?)(?=\\s*(?:[a-zA-Z]|\\d{2,7}-\\d{2}-\\d|CAS|MSDS|Email|企业|生产|电话|传真|地址|邮编|网址|\\d+\\.|$))",
             // 备用模式：匹配别名后的纯中文字符
-            "别名\\s*[：:：]?\\s*([\\u4e00-\\u9fff；;，,、\\s]{2,20})",
+            "别名\\s*[：:：]?\\s*([\\u4e00-\\u9fff（）();；;，,、\\s]{2,20})",
             // 商品名、贸易名等模式
-            "(?:商品名|贸易名|俗名|通用名)\\s*[：:：]?\\s*([\\u4e00-\\u9fff；;，,、\\s]+?)(?=\\s*(?:[a-zA-Z]|\\d{2,7}-\\d{2}-\\d|CAS|MSDS|Email|企业|生产|电话|传真|地址|邮编|网址|\\d+\\.|$))",
+            "(?:商品名|贸易名|俗名|通用名)\\s*[：:：]?\\s*([\\u4e00-\\u9fff（）();；;，,、\\s]+?)(?=\\s*(?:[a-zA-Z]|\\d{2,7}-\\d{2}-\\d|CAS|MSDS|Email|企业|生产|电话|传真|地址|邮编|网址|\\d+\\.|$))",
             // 产品别名、产品名称等模式
-            "(?:产品别名|产品名称|化学名)\\s*[：:：]?\\s*([\\u4e00-\\u9fff；;，,、\\s]+?)(?=\\s*(?:[a-zA-Z]|\\d{2,7}-\\d{2}-\\d|CAS|MSDS|Email|企业|生产|电话|传真|地址|邮编|网址|\\d+\\.|$))",
+            "(?:产品别名|产品名称|化学名)\\s*[：:：]?\\s*([\\u4e00-\\u9fff（）();；;，,、\\s]+?)(?=\\s*(?:[a-zA-Z]|\\d{2,7}-\\d{2}-\\d|CAS|MSDS|Email|企业|生产|电话|传真|地址|邮编|网址|\\d+\\.|$))",
             // 其他名称等模式
-            "(?:其他名称|其它名称|别称)\\s*[：:：]?\\s*([\\u4e00-\\u9fff；;，,、\\s]+?)(?=\\s*(?:[a-zA-Z]|\\d{2,7}-\\d{2}-\\d|CAS|MSDS|Email|企业|生产|电话|传真|地址|邮编|网址|\\d+\\.|$))",
+            "(?:其他名称|其它名称|别称)\\s*[：:：]?\\s*([\\u4e00-\\u9fff（）();；;，,、\\s]+?)(?=\\s*(?:[a-zA-Z]|\\d{2,7}-\\d{2}-\\d|CAS|MSDS|Email|企业|生产|电话|传真|地址|邮编|网址|\\d+\\.|$))",
             // 中文名称后的括号内容（可能包含别名）
             "[\\u4e00-\\u9fff]+\\s*[（(]\\s*([\\u4e00-\\u9fff；;，,、\\s]+)\\s*[）)]",
             // 表格形式的别名提取
-            "名称\\s*[：:：]?\\s*([\\u4e00-\\u9fff；;，,、\\s]+?)(?=\\s*(?:英文|CAS|分子|化学|$))"
+            "名称\\s*[：:：]?\\s*([\\u4e00-\\u9fff（）();；;，,、\\s]+?)(?=\\s*(?:英文|CAS|分子|化学|$))"
         };
         
         String result = extractMultiplePatterns(content, patterns);
@@ -3063,77 +3167,76 @@ public class MsdsMainServiceImpl implements IMsdsMainService
         String nameWithoutExt = fileName.replaceAll("\\.(pdf|doc|docx|txt)$", "");
         logger.debug("移除扩展名后的文件名: {}", nameWithoutExt);
         
-        // 尝试按照不同分隔符分割，支持格式：中文名、英文名、CAS号 或 中文名,英文名,CAS号
-        String[] parts = null;
-        String delimiter = "";
-        
-        // 首先尝试按照中文顿号分割
+        String delimiterChar = null;
         if (nameWithoutExt.contains("、")) {
-            parts = nameWithoutExt.split("、");
-            delimiter = "中文顿号(、)";
-            logger.debug("使用{}分割文件名，分割结果数量: {}", delimiter, parts.length);
+            delimiterChar = "、";
+        } else if (nameWithoutExt.contains(",")) {
+            delimiterChar = ",";
         }
-        // 如果没有中文顿号，尝试按逗号分割
-        else if (nameWithoutExt.contains(",")) {
-            parts = nameWithoutExt.split(",");
-            delimiter = "逗号(,)";
-            logger.debug("使用{}分割文件名，分割结果数量: {}", delimiter, parts.length);
-        }
-        // 如果都没有，将整个文件名作为中文名称
-        else {
-            parts = new String[]{nameWithoutExt};
-            delimiter = "无分隔符";
-            logger.debug("{}，将整个文件名作为中文名称", delimiter);
-        }
-        
-        // 打印分割后的各部分
-        if (parts != null) {
-            for (int i = 0; i < parts.length; i++) {
-                logger.debug("分割部分[{}]: '{}'", i, parts[i].trim());
-            }
-        }
-        
-        if (parts != null && parts.length >= 1) {
-            // 第一部分通常是中文名称
-            String chineseName = parts[0].trim();
-            logger.debug("处理中文名称: '{}', 长度: {}", chineseName, chineseName.length());
-            if (chineseName.length() >= 1 && !chineseName.isEmpty()) { // 允许单个字符的中文名称
+
+        if (StringUtils.isBlank(delimiterChar)) {
+            String chineseName = nameWithoutExt.trim();
+            if (StringUtils.isNotBlank(chineseName)) {
                 result.put("chineseName", chineseName);
-                // 兼容单测与系统其他调用，返回产品名称同义键
                 result.put("productName", chineseName);
-                logger.debug("中文名称验证通过: {}", chineseName);
-            } else {
-                logger.debug("中文名称为空，跳过: {}", chineseName);
             }
+            logger.info("从文件名 {} 提取的信息：中文名={}, 英文名={}, CAS号={}", fileName, result.get("chineseName"), result.get("englishName"), result.get("casNumber"));
+            return result;
         }
-        
-        if (parts != null && parts.length >= 2) {
-            // 第二部分通常是英文名称
-            String englishName = parts[1].trim();
-            logger.debug("处理英文名称: '{}', 长度: {}, 包含字母: {}", 
-                        englishName, englishName.length(), englishName.matches(".*\\p{L}.*"));
-            if (englishName.length() >= 3 && englishName.matches(".*\\p{L}.*")) {
-                result.put("englishName", englishName);
-                // 兼容键名：英文名
-                result.put("productEnglishName", englishName);
-                logger.debug("英文名称验证通过: {}", englishName);
-            } else {
-                logger.debug("英文名称验证失败，长度或格式不符合要求: {}", englishName);
+
+        String base = nameWithoutExt;
+        String casNumber = null;
+        java.util.regex.Matcher casMatcher = java.util.regex.Pattern
+                .compile("^(.*)" + java.util.regex.Pattern.quote(delimiterChar) + "\\s*(\\d{2,7}-\\d{2}-\\d)\\s*$")
+                .matcher(base);
+        if (casMatcher.find()) {
+            base = casMatcher.group(1);
+            casNumber = casMatcher.group(2);
+        }
+
+        int lastDelimiterIndex = base.lastIndexOf(delimiterChar);
+        if (lastDelimiterIndex < 0) {
+            String chineseName = base.trim();
+            if (StringUtils.isNotBlank(chineseName)) {
+                result.put("chineseName", chineseName);
+                result.put("productName", chineseName);
             }
-        }
-        
-        if (parts != null && parts.length >= 3) {
-            // 第三部分通常是CAS号
-            String casNumber = parts[2].trim();
-            boolean casValid = casNumber.matches("\\d{2,7}-\\d{2}-\\d");
-            logger.debug("处理CAS号: '{}', 格式验证: {}", casNumber, casValid);
-            // CAS号格式验证：xxx-xx-x
-            if (casValid) {
+            if (StringUtils.isNotBlank(casNumber)) {
                 result.put("casNumber", casNumber);
-                logger.debug("CAS号验证通过: {}", casNumber);
-            } else {
-                logger.debug("CAS号格式验证失败: {}", casNumber);
             }
+            logger.info("从文件名 {} 提取的信息：中文名={}, 英文名={}, CAS号={}", fileName, result.get("chineseName"), result.get("englishName"), result.get("casNumber"));
+            return result;
+        }
+
+        String left = base.substring(0, lastDelimiterIndex).trim();
+        String right = base.substring(lastDelimiterIndex + delimiterChar.length()).trim();
+
+        java.util.regex.Matcher tailLetterMatcher = java.util.regex.Pattern
+                .compile("^(.*)" + java.util.regex.Pattern.quote(delimiterChar) + "\\s*([A-Za-z])\\s*$")
+                .matcher(left);
+        if (tailLetterMatcher.find() && left.matches(".*[\\u4e00-\\u9fff].*")) {
+            String possibleChinese = tailLetterMatcher.group(1).trim();
+            String tailLetter = tailLetterMatcher.group(2);
+            if (StringUtils.isNotBlank(possibleChinese) && StringUtils.isNotBlank(right) && right.startsWith(tailLetter)) {
+                left = possibleChinese;
+                right = tailLetter + delimiterChar + right;
+            }
+        }
+
+        String chineseName = left.trim();
+        if (StringUtils.isNotBlank(chineseName)) {
+            result.put("chineseName", chineseName);
+            result.put("productName", chineseName);
+        }
+
+        String englishName = right.trim();
+        if (englishName.length() >= 3 && englishName.matches(".*\\p{L}.*")) {
+            result.put("englishName", englishName);
+            result.put("productEnglishName", englishName);
+        }
+
+        if (StringUtils.isNotBlank(casNumber)) {
+            result.put("casNumber", casNumber);
         }
         
         logger.info("从文件名 {} 提取的信息：中文名={}, 英文名={}, CAS号={}", 
@@ -6668,6 +6771,8 @@ public class MsdsMainServiceImpl implements IMsdsMainService
         List<String> successList = new ArrayList<>();
         List<String> failureList = new ArrayList<>();
         List<String> duplicateList = new ArrayList<>();
+        List<Map<String, String>> failureItems = new ArrayList<>();
+        List<Map<String, String>> duplicateItems = new ArrayList<>();
         
         try {
             // 1. 验证文件
@@ -6693,9 +6798,16 @@ Element msdsElement = (Element) msdsList.item(i);
                     Map<String, Object> msdsData = parseXmlMsdsElement(msdsElement);
                     String casNumber = (String) msdsData.get("cas_number");
                     String productName = (String) msdsData.get("product_name");
+                    String msdsCode = (String) msdsData.get("msds_code");
+                    int recordIndex = i + 1;
+                    String fileName = file.getOriginalFilename();
                     
                     if (StringUtils.isBlank(casNumber)) {
-                        failureList.add(String.format("第%d条记录: CAS号不能为空", i + 1));
+                        String reason = "CAS号不能为空";
+                        failureList.add(String.format("%s 第%d条记录: %s", fileName, recordIndex, reason));
+                        Map<String, String> item = buildImportIssueItem(fileName, productName, casNumber, msdsCode, reason);
+                        item.put("recordIndex", String.valueOf(recordIndex));
+                        failureItems.add(item);
                         continue;
                     }
                     
@@ -6703,7 +6815,11 @@ Element msdsElement = (Element) msdsList.item(i);
                     MsdsMain existingMsds = msdsMainMapper.selectMsdsMainByCasNumber(casNumber);
                     if (existingMsds != null) {
                         if (!overwriteDuplicates) {
-                            duplicateList.add(String.format("%s (CAS: %s)", productName, casNumber));
+                            String reason = "重复数据未覆盖";
+                            duplicateList.add(String.format("%s 第%d条记录: %s (CAS: %s)", fileName, recordIndex, productName, casNumber));
+                            Map<String, String> item = buildImportIssueItem(fileName, productName, casNumber, msdsCode, reason);
+                            item.put("recordIndex", String.valueOf(recordIndex));
+                            duplicateItems.add(item);
                             continue;
                         }
                         // 删除旧数据
@@ -6719,7 +6835,13 @@ Element msdsElement = (Element) msdsList.item(i);
                     
                 } catch (Exception e) {
                     logger.error("导入第{}条MSDS记录失败", i + 1, e);
-                    failureList.add(String.format("第%d条记录: %s", i + 1, e.getMessage()));
+                    String fileName = file.getOriginalFilename();
+                    int recordIndex = i + 1;
+                    String reason = e.getMessage();
+                    failureList.add(String.format("%s 第%d条记录: %s", fileName, recordIndex, reason));
+                    Map<String, String> item = buildImportIssueItem(fileName, null, null, null, reason);
+                    item.put("recordIndex", String.valueOf(recordIndex));
+                    failureItems.add(item);
                 }
             }
             
@@ -6730,6 +6852,9 @@ Element msdsElement = (Element) msdsList.item(i);
             result.put("failureList", failureList);
             result.put("duplicateList", duplicateList);
             result.put("totalCount", msdsList.getLength());
+            result.put("missingCount", Math.max(0, msdsList.getLength() - successList.size() - failureList.size() - duplicateList.size()));
+            result.put("failureItems", failureItems);
+            result.put("duplicateItems", duplicateItems);
             
             logger.info("XML导入完成: 成功{}条, 失败{}条, 重复{}条", 
                 successList.size(), failureList.size(), duplicateList.size());

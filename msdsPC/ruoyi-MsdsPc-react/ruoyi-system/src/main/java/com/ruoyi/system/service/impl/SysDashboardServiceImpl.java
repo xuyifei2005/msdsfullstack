@@ -95,7 +95,7 @@ public class SysDashboardServiceImpl implements ISysDashboardService
             stats.put("totalViews", totalViews);
             stats.put("activeUsers", activeUsers);
             
-            redisCache.setCacheObject(cacheKey, stats, 10, TimeUnit.MINUTES);
+            redisCache.setCacheObject(cacheKey, stats, 1, TimeUnit.MINUTES);
         } catch (Exception e) {
             // 如果数据库查询失败，返回0数据
             stats.put("todayViews", 0);
@@ -131,7 +131,7 @@ public class SysDashboardServiceImpl implements ISysDashboardService
             stats.put("monthDownloads", monthDownloads);
             stats.put("totalDownloads", totalDownloads);
             
-            redisCache.setCacheObject(cacheKey, stats, 10, TimeUnit.MINUTES);
+            redisCache.setCacheObject(cacheKey, stats, 1, TimeUnit.MINUTES);
         } catch (Exception e) {
             // 如果数据库查询失败，返回0数据
             stats.put("todayDownloads", 0);

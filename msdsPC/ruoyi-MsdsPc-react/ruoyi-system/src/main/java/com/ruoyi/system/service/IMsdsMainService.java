@@ -71,6 +71,13 @@ public interface IMsdsMainService
     public int deleteMsdsMainByIds(Long[] ids);
 
     /**
+     * 一键删除全部MSDS
+     *
+     * @return 删除数量
+     */
+    public int deleteAllMsdsMain();
+
+    /**
      * 删除MSDS主信息
      * 
      * @param id MSDS主键

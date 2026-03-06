@@ -56,6 +56,116 @@ const ImportModal: React.FC<ImportModalProps> = ({ open, onOpenChange, onSuccess
   const [batchInfo, setBatchInfo] = useState({ current: 0, total: 0 });
   const showUploadList = fileList.length <= 200;
 
+  const normalizeIssueItems = (raw: any, fallbackReason: string) => {
+    if (!raw) return [] as any[];
+    if (Array.isArray(raw)) {
+      return raw.map((item: any, idx: number) => {
+        if (typeof item === 'string') {
+          return {
+            key: `${idx}`,
+            fileName: '',
+            recordIndex: '',
+            chemicalName: '',
+            casNumber: '',
+            msdsCode: '',
+            reason: fallbackReason,
+            message: item,
+          };
+        }
+        return {
+          key: item?.key ?? `${idx}`,
+          fileName: item?.fileName ?? '',
+          recordIndex: item?.recordIndex ?? '',
+          chemicalName: item?.chemicalName ?? item?.productName ?? '',
+          casNumber: item?.casNumber ?? '',
+          msdsCode: item?.msdsCode ?? '',
+          reason: item?.reason ?? fallbackReason,
+          message: item?.message ?? '',
+        };
+      });
+    }
+    return [] as any[];
+  };
+
+  const normalizeImportResult = (data: any) => {
+    const totalCount = Number(data?.totalCount ?? data?.fileCount ?? 0);
+    const successCount = Number(data?.successCount ?? 0);
+    const failureCount = Number(data?.failureCount ?? 0);
+    const duplicateCount = Number(data?.duplicateCount ?? 0);
+    const missingCount = Number(data?.missingCount ?? Math.max(0, totalCount - successCount - failureCount - duplicateCount));
+
+    const duplicates =
+      normalizeIssueItems(data?.duplicateItems, '重复数据未覆盖').length > 0
+        ? normalizeIssueItems(data?.duplicateItems, '重复数据未覆盖')
+        : normalizeIssueItems(data?.duplicates, '重复数据未覆盖').length > 0
+          ? normalizeIssueItems(data?.duplicates, '重复数据未覆盖')
+          : normalizeIssueItems(data?.duplicateList, '重复数据未覆盖');
+
+    const failures =
+      normalizeIssueItems(data?.failureItems, '导入失败').length > 0
+        ? normalizeIssueItems(data?.failureItems, '导入失败')
+        : normalizeIssueItems(data?.failureList, '导入失败').length > 0
+          ? normalizeIssueItems(data?.failureList, '导入失败')
+          : normalizeIssueItems(data?.errorMessages, '导入失败');
+
+    return {
+      totalCount,
+      successCount,
+      failureCount,
+      duplicateCount,
+      missingCount,
+      duplicates,
+      failures,
+      raw: data,
+    };
+  };
+
+  const mergeImportResult = (base: any, next: any) => {
+    const b = base ?? {};
+    const n = next ?? {};
+    return {
+      fileCount: Number(b.fileCount ?? 0) + Number(n.fileCount ?? 0),
+      totalCount: Number(b.totalCount ?? 0) + Number(n.totalCount ?? 0),
+      successCount: Number(b.successCount ?? 0) + Number(n.successCount ?? 0),
+      failureCount: Number(b.failureCount ?? 0) + Number(n.failureCount ?? 0),
+      duplicateCount: Number(b.duplicateCount ?? 0) + Number(n.duplicateCount ?? 0),
+      successList: [...(b.successList ?? []), ...(n.successList ?? [])],
+      failureList: [...(b.failureList ?? []), ...(n.failureList ?? [])],
+      duplicateList: [...(b.duplicateList ?? []), ...(n.duplicateList ?? [])],
+      failureItems: [...(b.failureItems ?? []), ...(n.failureItems ?? [])],
+      duplicateItems: [...(b.duplicateItems ?? []), ...(n.duplicateItems ?? [])],
+      errorMessages: [...(b.errorMessages ?? []), ...(n.errorMessages ?? [])],
+    };
+  };
+
+  const downloadTextFile = (filename: string, content: string, mimeType: string) => {
+    const blob = new Blob([content], { type: mimeType });
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    window.URL.revokeObjectURL(url);
+  };
+
+  const toCsv = (rows: any[]) => {
+    const header = ['fileName', 'recordIndex', 'chemicalName', 'casNumber', 'msdsCode', 'reason', 'message'];
+    const escape = (val: any) => {
+      const s = String(val ?? '');
+      if (/[\n\r,"]/.test(s)) {
+        return '"' + s.replace(/"/g, '""') + '"';
+      }
+      return s;
+    };
+    const lines = [header.join(',')];
+    rows.forEach((r) => {
+      lines.push(header.map((k) => escape(r?.[k])).join(','));
+    });
+    return lines.join('\n');
+  };
+
   // 重置状态
   const resetState = () => {
     setFileList([]);
@@ -180,9 +290,7 @@ const ImportModal: React.FC<ImportModalProps> = ({ open, onOpenChange, onSuccess
         const safeBatchSize = Math.min(Math.max(batchSize || 1, 1), 50);
         const totalBatches = Math.ceil(totalFiles / safeBatchSize);
         
-        let successCount = 0;
-        let failCount = 0;
-        let allResults: any[] = [];
+        let aggregateResult: any = null;
         let hasError = false;
         setBatchInfo({ current: 0, total: totalBatches });
 
@@ -219,20 +327,14 @@ const ImportModal: React.FC<ImportModalProps> = ({ open, onOpenChange, onSuccess
             setProgress((prev) => Math.max(prev, batchBase + batchSpan));
             
             if (result.code === 200) {
-              // 假设后端返回的数据结构包含成功/失败数量或列表，这里做简单累加
-              // 如果后端返回的是单个结果对象，这里可能需要调整。
-              // 假设 result.data 包含导入详情
               if (result.data) {
-                 allResults.push(result.data);
+                aggregateResult = mergeImportResult(aggregateResult, result.data);
               }
-              successCount += currentBatch.length; // 暂时假设批次内全部成功，除非后端有更细粒度返回
             } else {
-              failCount += currentBatch.length;
               hasError = true;
               console.error(`Batch ${i+1} failed:`, result.msg);
             }
           } catch (error) {
-            failCount += currentBatch.length;
             hasError = true;
             console.error(`Batch ${i+1} exception:`, error);
           }
@@ -249,18 +351,32 @@ const ImportModal: React.FC<ImportModalProps> = ({ open, onOpenChange, onSuccess
           return;
         }
 
-        if (!hasError && failCount === 0) {
-          // 合并结果（如果需要显示详细结果，这里需要合并 allResults）
-          // 简单起见，取最后一个结果或构造一个综合结果
-          setImportResult(allResults.length > 0 ? allResults[allResults.length - 1] : null); 
-          message.success(`XML批量导入完成：成功 ${successCount} 个文件`);
-          onSuccess?.();
+        if (aggregateResult) {
+          const total = Number(aggregateResult.totalCount ?? 0);
+          const succ = Number(aggregateResult.successCount ?? 0);
+          const fail = Number(aggregateResult.failureCount ?? 0);
+          const dup = Number(aggregateResult.duplicateCount ?? 0);
+          aggregateResult.missingCount = Math.max(0, total - succ - fail - dup);
+        }
+
+        setImportResult(aggregateResult);
+
+        const summary = aggregateResult ? normalizeImportResult(aggregateResult) : null;
+        if (!hasError) {
+          message.success(
+            summary
+              ? `XML导入完成：总计 ${summary.totalCount}，成功 ${summary.successCount}，重复 ${summary.duplicateCount}，失败 ${summary.failureCount}`
+              : 'XML导入完成'
+          );
         } else {
-          message.warning(`XML批量导入完成：成功 ${successCount} 个，失败 ${failCount} 个`);
-          // 如果有部分成功，也可以视为需要刷新列表
-          if (successCount > 0) {
-             onSuccess?.();
-          }
+          message.warning(
+            summary
+              ? `XML导入完成（部分失败）：总计 ${summary.totalCount}，成功 ${summary.successCount}，重复 ${summary.duplicateCount}，失败 ${summary.failureCount}`
+              : 'XML导入完成（部分失败）'
+          );
+        }
+        if (summary && (summary.successCount > 0 || summary.duplicateCount > 0)) {
+          onSuccess?.();
         }
         setBatchInfo({ current: 0, total: totalBatches });
       } else {
@@ -282,7 +398,8 @@ const ImportModal: React.FC<ImportModalProps> = ({ open, onOpenChange, onSuccess
 
         if (result.code === 200) {
           setImportResult(result.data);
-          message.success('导入任务已提交');
+          const summary = normalizeImportResult(result.data);
+          message.success(`导入完成：总计 ${summary.totalCount}，成功 ${summary.successCount}，重复 ${summary.duplicateCount}，失败 ${summary.failureCount}`);
           onSuccess?.();
         } else {
           message.error(result.msg || '导入失败');
@@ -432,7 +549,7 @@ const ImportModal: React.FC<ImportModalProps> = ({ open, onOpenChange, onSuccess
       maskClosable={!uploading && !previewing && !validating}
       closable={!uploading && !previewing && !validating}
     >
-      <Tabs defaultActiveKey="upload" activeKey={showValidation ? "validation" : showPreview ? "preview" : "upload"}>
+      <Tabs defaultActiveKey="upload" activeKey={showValidation ? "validation" : showPreview ? "preview" : importResult ? "result" : "upload"}>
         <TabPane tab="文件上传" key="upload">
           <Space direction="vertical" style={{ width: '100%' }} size="large">
         {/* 导入说明 */}
@@ -643,6 +760,115 @@ const ImportModal: React.FC<ImportModalProps> = ({ open, onOpenChange, onSuccess
           </Button>
         </Space>
           </Space>
+        </TabPane>
+
+        <TabPane tab="导入结果" key="result" disabled={!importResult}>
+          {importResult ? (() => {
+            const summary = normalizeImportResult(importResult);
+            const hasMismatch = summary.missingCount > 0;
+            return (
+              <Space direction="vertical" style={{ width: '100%' }} size="large">
+                <Alert
+                  message="导入统计"
+                  description={
+                    <div>
+                      <div>总计：{summary.totalCount}</div>
+                      <div>成功：{summary.successCount}</div>
+                      <div>重复（未覆盖）：{summary.duplicateCount}</div>
+                      <div>失败：{summary.failureCount}</div>
+                      {hasMismatch && <div style={{ color: '#ff4d4f' }}>未归类：{summary.missingCount}</div>}
+                    </div>
+                  }
+                  type={hasMismatch || summary.failureCount > 0 ? 'warning' : 'success'}
+                  showIcon
+                />
+
+                <Space wrap>
+                  <Button
+                    onClick={() => {
+                      downloadTextFile(
+                        `msds-import-result-${Date.now()}.json`,
+                        JSON.stringify(summary.raw, null, 2),
+                        'application/json;charset=utf-8'
+                      );
+                    }}
+                  >
+                    下载原始结果(JSON)
+                  </Button>
+                  <Button
+                    disabled={summary.failures.length === 0}
+                    onClick={() => {
+                      downloadTextFile(
+                        `msds-import-failures-${Date.now()}.csv`,
+                        toCsv(summary.failures),
+                        'text/csv;charset=utf-8'
+                      );
+                    }}
+                  >
+                    导出失败明细(CSV)
+                  </Button>
+                  <Button
+                    disabled={summary.duplicates.length === 0}
+                    onClick={() => {
+                      downloadTextFile(
+                        `msds-import-duplicates-${Date.now()}.csv`,
+                        toCsv(summary.duplicates),
+                        'text/csv;charset=utf-8'
+                      );
+                    }}
+                  >
+                    导出重复明细(CSV)
+                  </Button>
+                </Space>
+
+                <Tabs defaultActiveKey="failures">
+                  <TabPane tab={`失败明细(${summary.failures.length})`} key="failures">
+                    <Table
+                      rowKey="key"
+                      size="small"
+                      dataSource={summary.failures}
+                      pagination={{ pageSize: 10, showSizeChanger: true, showQuickJumper: true }}
+                      columns={[
+                        { title: '文件', dataIndex: 'fileName', width: 260, ellipsis: true },
+                        { title: '记录', dataIndex: 'recordIndex', width: 80 },
+                        { title: '化学品', dataIndex: 'chemicalName', width: 200, ellipsis: true },
+                        { title: 'CAS', dataIndex: 'casNumber', width: 140 },
+                        { title: 'MSDS编号', dataIndex: 'msdsCode', width: 160, ellipsis: true },
+                        { title: '原因', dataIndex: 'reason', width: 160, ellipsis: true },
+                        {
+                          title: '详情',
+                          dataIndex: 'message',
+                          render: (val: any) => (val ? <Tooltip title={val}><Text ellipsis style={{ maxWidth: 320, display: 'inline-block' }}>{val}</Text></Tooltip> : null),
+                        },
+                      ]}
+                    />
+                  </TabPane>
+
+                  <TabPane tab={`重复明细(${summary.duplicates.length})`} key="duplicates">
+                    <Table
+                      rowKey="key"
+                      size="small"
+                      dataSource={summary.duplicates}
+                      pagination={{ pageSize: 10, showSizeChanger: true, showQuickJumper: true }}
+                      columns={[
+                        { title: '文件', dataIndex: 'fileName', width: 260, ellipsis: true },
+                        { title: '记录', dataIndex: 'recordIndex', width: 80 },
+                        { title: '化学品', dataIndex: 'chemicalName', width: 200, ellipsis: true },
+                        { title: 'CAS', dataIndex: 'casNumber', width: 140 },
+                        { title: 'MSDS编号', dataIndex: 'msdsCode', width: 160, ellipsis: true },
+                        { title: '原因', dataIndex: 'reason', width: 160, ellipsis: true },
+                        {
+                          title: '详情',
+                          dataIndex: 'message',
+                          render: (val: any) => (val ? <Tooltip title={val}><Text ellipsis style={{ maxWidth: 320, display: 'inline-block' }}>{val}</Text></Tooltip> : null),
+                        },
+                      ]}
+                    />
+                  </TabPane>
+                </Tabs>
+              </Space>
+            );
+          })() : null}
         </TabPane>
         
         {/* Excel校验Tab */}
