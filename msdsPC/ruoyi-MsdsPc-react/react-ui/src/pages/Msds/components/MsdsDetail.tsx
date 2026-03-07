@@ -140,8 +140,8 @@ const MsdsDetail: React.FC<MsdsDetailProps> = ({ msdsId, onEdit }) => {
   const renderStatusTag = (status: string) => {
     const statusMap = {
       draft: { color: 'default', text: '草稿' },
-      pending: { color: 'processing', text: '待审核' },
-      approved: { color: 'success', text: '已批准' },
+      pending: { color: 'processing', text: '待审' },
+      approved: { color: 'success', text: '已审批' },
       archived: { color: 'error', text: '已归档' }
     };
     const config = statusMap[status as keyof typeof statusMap] || statusMap.draft;

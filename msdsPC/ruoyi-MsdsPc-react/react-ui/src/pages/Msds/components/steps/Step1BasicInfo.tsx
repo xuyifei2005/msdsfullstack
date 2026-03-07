@@ -69,8 +69,8 @@ const Step1BasicInfo = forwardRef<any, Step1BasicInfoProps>(({ data, onChange },
   // 状态选项
   const statusOptions = [
     { label: '草稿', value: 'draft', color: 'default' },
-    { label: '待审核', value: 'pending', color: 'processing' },
-    { label: '已批准', value: 'approved', color: 'success' },
+    { label: '待审', value: 'pending', color: 'processing' },
+    { label: '已审批', value: 'approved', color: 'success' },
     { label: '已归档', value: 'archived', color: 'error' }
   ];
 

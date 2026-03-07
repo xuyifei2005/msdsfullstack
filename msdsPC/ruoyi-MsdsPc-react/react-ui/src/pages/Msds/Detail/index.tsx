@@ -90,8 +90,8 @@ const MsdsDetail: React.FC = () => {
   };
 
   const statusTextMap: Record<string, string> = {
-    approved: '已批准',
-    pending: '待审核',
+    approved: '已审批',
+    pending: '待审',
     draft: '草稿',
     archived: '已归档',
   };
@@ -340,7 +340,7 @@ const MsdsDetail: React.FC = () => {
               </Descriptions.Item>
               <Descriptions.Item label="状态">
                 <Tag color={statusColorMap[msdsData.status || ''] || 'orange'}>
-                  {statusTextMap[msdsData.status || ''] || '待审核'}
+                  {statusTextMap[msdsData.status || ''] || '待审'}
                 </Tag>
               </Descriptions.Item>
               <Descriptions.Item label="有效性">

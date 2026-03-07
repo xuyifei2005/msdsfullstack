@@ -399,15 +399,15 @@ const MsdsMainList: React.FC = () => {
       width: 100,
       valueEnum: {
         draft: { text: '草稿', status: 'Default' },
-        pending: { text: '待审核', status: 'Processing' },
-        approved: { text: '已批准', status: 'Success' },
+        pending: { text: '待审', status: 'Processing' },
+        approved: { text: '已审批', status: 'Success' },
         archived: { text: '已归档', status: 'Warning' },
       },
       render: (_, record) => {
         const statusConfig = {
           draft: { color: 'default', text: '草稿' },
-          pending: { color: 'processing', text: '待审核' },
-          approved: { color: 'success', text: '已批准' },
+          pending: { color: 'processing', text: '待审' },
+          approved: { color: 'success', text: '已审批' },
           archived: { color: 'warning', text: '已归档' },
         };
         const config = statusConfig[record.status as keyof typeof statusConfig] || statusConfig.draft;
