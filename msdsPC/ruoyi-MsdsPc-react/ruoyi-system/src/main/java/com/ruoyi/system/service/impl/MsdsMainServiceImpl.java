@@ -55,6 +55,7 @@ import java.net.URLEncoder;
 import java.util.zip.ZipOutputStream;
 import java.util.zip.ZipEntry;
 import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import org.w3c.dom.Document;
@@ -529,13 +530,25 @@ public class MsdsMainServiceImpl implements IMsdsMainService
         {
             return null;
         }
-        if (StringUtils.isNotBlank(msdsMain.getCasNumber()))
+        if (StringUtils.isNotBlank(msdsMain.getCasNumber()) && StringUtils.isNotBlank(msdsMain.getProductName()))
         {
-            return msdsMainMapper.selectMsdsMainByCasNumber(msdsMain.getCasNumber());
+            MsdsMain byCasAndName = msdsMainMapper.selectMsdsMainByCasAndProductName(msdsMain);
+            if (byCasAndName != null)
+            {
+                return byCasAndName;
+            }
         }
         if (StringUtils.isNotBlank(msdsMain.getMsdsCode()))
         {
-            return msdsMainMapper.selectMsdsMainByMsdsCode(msdsMain.getMsdsCode());
+            MsdsMain byMsdsCode = msdsMainMapper.selectMsdsMainByMsdsCode(msdsMain.getMsdsCode());
+            if (byMsdsCode != null)
+            {
+                return byMsdsCode;
+            }
+        }
+        if (StringUtils.isNotBlank(msdsMain.getCasNumber()))
+        {
+            return msdsMainMapper.selectMsdsMainByCasNumber(msdsMain.getCasNumber());
         }
         if (StringUtils.isNotBlank(msdsMain.getProductName()))
         {
@@ -887,7 +900,7 @@ public class MsdsMainServiceImpl implements IMsdsMainService
             }
 
             // 检查重复数据
-            MsdsMain existingMsds = msdsMainMapper.selectMsdsMainByProductName(msdsMain.getProductName());
+            MsdsMain existingMsds = findExistingMsdsForImport(msdsMain);
             if (existingMsds != null && !overwriteDuplicates)
             {
                 Map<String, String> duplicate = new HashMap<>();
@@ -5845,10 +5858,7 @@ public class MsdsMainServiceImpl implements IMsdsMainService
                     msdsMain.setUpdateBy(createBy);
                     
                     // 检查重复数据
-                    MsdsMain existingMsds = null;
-                    if (StringUtils.isNotEmpty(msdsMain.getProductName())) {
-                        existingMsds = msdsMainMapper.selectMsdsMainByProductName(msdsMain.getProductName());
-                    }
+                    MsdsMain existingMsds = findExistingMsdsForImport(msdsMain);
                     
                     if (existingMsds != null) {
                         if (overwriteDuplicates) {
@@ -6779,40 +6789,67 @@ public class MsdsMainServiceImpl implements IMsdsMainService
             validateXmlFile(file);
             logger.info("XML文件验证通过: {}", file.getOriginalFilename());
             
-            // 2. 解析XML文件
-            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-            DocumentBuilder builder = factory.newDocumentBuilder();
-Document doc = builder.parse(file.getInputStream());
-            doc.getDocumentElement().normalize();
-            
-            // 3. 获取所有MSDS节点
-            NodeList msdsList = doc.getElementsByTagName("msds");
-            logger.info("XML文件中包含 {} 个MSDS记录", msdsList.getLength());
-            
-            // 4. 处理每个MSDS
-            for (int i = 0; i < msdsList.getLength(); i++) {
-Element msdsElement = (Element) msdsList.item(i);
+            // 2. 解析XML文件（严格解析失败时，自动回退到宽松解析）
+            List<Map<String, Object>> xmlRecords = new ArrayList<>();
+            try {
+                DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+                DocumentBuilder builder = factory.newDocumentBuilder();
+                Document doc = builder.parse(file.getInputStream());
+                doc.getDocumentElement().normalize();
+
+                NodeList msdsList = doc.getElementsByTagName("msds");
+                logger.info("XML文件中包含 {} 个MSDS记录", msdsList.getLength());
+                for (int i = 0; i < msdsList.getLength(); i++) {
+                    Element msdsElement = (Element) msdsList.item(i);
+                    xmlRecords.add(parseXmlMsdsElement(msdsElement));
+                }
+            } catch (Exception strictParseError) {
+                logger.warn("XML严格解析失败，切换为宽松解析: file={}, reason={}",
+                    file.getOriginalFilename(), strictParseError.getMessage());
+                xmlRecords = parseXmlRecordsLenient(file);
+            }
+
+            if (xmlRecords.isEmpty()) {
+                throw new Exception("XML未解析到有效MSDS记录");
+            }
+
+            // 3. 处理每个MSDS
+            for (int i = 0; i < xmlRecords.size(); i++) {
                 
                 try {
                     // 解析MSDS数据
-                    Map<String, Object> msdsData = parseXmlMsdsElement(msdsElement);
-                    String casNumber = (String) msdsData.get("cas_number");
-                    String productName = (String) msdsData.get("product_name");
-                    String msdsCode = (String) msdsData.get("msds_code");
-                    int recordIndex = i + 1;
+                    Map<String, Object> msdsData = xmlRecords.get(i);
                     String fileName = file.getOriginalFilename();
-                    
-                    if (StringUtils.isBlank(casNumber)) {
-                        String reason = "CAS号不能为空";
+                    int recordIndex = i + 1;
+                    String productName = cleanText((String) msdsData.get("product_name"));
+                    if (StringUtils.isBlank(productName)) {
+                        Map<String, String> fileNameInfo = extractInfoFromFileName(fileName);
+                        productName = fileNameInfo.get("chineseName");
+                    }
+                    if (StringUtils.isBlank(productName)) {
+                        String reason = "化学品名称不能为空";
                         failureList.add(String.format("%s 第%d条记录: %s", fileName, recordIndex, reason));
-                        Map<String, String> item = buildImportIssueItem(fileName, productName, casNumber, msdsCode, reason);
+                        Map<String, String> item = buildImportIssueItem(fileName, null, null, null, reason);
                         item.put("recordIndex", String.valueOf(recordIndex));
                         failureItems.add(item);
                         continue;
                     }
+
+                    String casNumber = resolveCasNumberForXmlRecord((String) msdsData.get("cas_number"), fileName, productName, recordIndex);
+                    String msdsCode = cleanText((String) msdsData.get("msds_code"));
+                    if (StringUtils.isBlank(msdsCode)) {
+                        msdsCode = buildFallbackMsdsCode(casNumber, productName, fileName, recordIndex);
+                    }
+                    msdsData.put("cas_number", casNumber);
+                    msdsData.put("product_name", productName);
+                    msdsData.put("msds_code", msdsCode);
                     
                     // 检查是否重复
-                    MsdsMain existingMsds = msdsMainMapper.selectMsdsMainByCasNumber(casNumber);
+                    MsdsMain duplicateProbe = new MsdsMain();
+                    duplicateProbe.setCasNumber(casNumber);
+                    duplicateProbe.setProductName(productName);
+                    duplicateProbe.setMsdsCode(msdsCode);
+                    MsdsMain existingMsds = findExistingMsdsForImport(duplicateProbe);
                     if (existingMsds != null) {
                         if (!overwriteDuplicates) {
                             String reason = "重复数据未覆盖";
@@ -6851,8 +6888,8 @@ Element msdsElement = (Element) msdsList.item(i);
             result.put("successList", successList);
             result.put("failureList", failureList);
             result.put("duplicateList", duplicateList);
-            result.put("totalCount", msdsList.getLength());
-            result.put("missingCount", Math.max(0, msdsList.getLength() - successList.size() - failureList.size() - duplicateList.size()));
+            result.put("totalCount", xmlRecords.size());
+            result.put("missingCount", Math.max(0, xmlRecords.size() - successList.size() - failureList.size() - duplicateList.size()));
             result.put("failureItems", failureItems);
             result.put("duplicateItems", duplicateItems);
             
@@ -7076,6 +7113,142 @@ Element componentElement = (Element) componentList.item(i);
             return nodeList.item(0).getTextContent().trim();
         }
         return "";
+    }
+
+    private List<Map<String, Object>> parseXmlRecordsLenient(MultipartFile file) throws Exception {
+        List<Map<String, Object>> records = new ArrayList<>();
+        String xml = new String(file.getBytes(), StandardCharsets.UTF_8);
+        List<String> msdsBlocks = extractXmlTagBlocks(xml, "msds");
+        if (msdsBlocks.isEmpty()) {
+            return records;
+        }
+        for (String block : msdsBlocks) {
+            Map<String, Object> msdsData = new HashMap<>();
+            Map<String, String> basic = parseSectionLenient(block, "basic_info");
+            msdsData.putAll(basic);
+            msdsData.put("hazard_info", parseSectionLenient(block, "hazard_info"));
+            msdsData.put("first_aid", parseSectionLenient(block, "first_aid"));
+            msdsData.put("fire_fighting", parseSectionLenient(block, "fire_fighting"));
+            msdsData.put("leak_response", parseSectionLenient(block, "leak_response"));
+            msdsData.put("handling_storage", parseSectionLenient(block, "handling_storage"));
+            msdsData.put("exposure_control", parseSectionLenient(block, "exposure_control"));
+            msdsData.put("physical_chemical", parseSectionLenient(block, "physical_chemical"));
+            msdsData.put("stability_reactivity", parseSectionLenient(block, "stability_reactivity"));
+            msdsData.put("toxicological", parseSectionLenient(block, "toxicological"));
+            msdsData.put("ecological", parseSectionLenient(block, "ecological"));
+            msdsData.put("disposal", parseSectionLenient(block, "disposal"));
+            msdsData.put("transportation", parseSectionLenient(block, "transportation"));
+            msdsData.put("regulatory", parseSectionLenient(block, "regulatory"));
+            msdsData.put("other_info", parseSectionLenient(block, "other_info"));
+            Map<String, Object> componentInfo = new HashMap<>();
+            componentInfo.put("components", new ArrayList<Map<String, String>>());
+            msdsData.put("component_info", componentInfo);
+            records.add(msdsData);
+        }
+        return records;
+    }
+
+    private List<String> extractXmlTagBlocks(String xml, String tagName) {
+        List<String> blocks = new ArrayList<>();
+        if (StringUtils.isBlank(xml)) {
+            return blocks;
+        }
+        Pattern pattern = Pattern.compile("<" + tagName + "\\b[^>]*>([\\s\\S]*?)</" + tagName + ">", Pattern.CASE_INSENSITIVE);
+        Matcher matcher = pattern.matcher(xml);
+        while (matcher.find()) {
+            blocks.add(matcher.group(1));
+        }
+        return blocks;
+    }
+
+    private Map<String, String> parseSectionLenient(String msdsBlock, String sectionTag) {
+        Map<String, String> map = new HashMap<>();
+        Pattern sectionPattern = Pattern.compile("<" + sectionTag + "\\b[^>]*>([\\s\\S]*?)</" + sectionTag + ">", Pattern.CASE_INSENSITIVE);
+        Matcher sectionMatcher = sectionPattern.matcher(msdsBlock);
+        if (!sectionMatcher.find()) {
+            return map;
+        }
+        String sectionContent = sectionMatcher.group(1);
+        Pattern fieldPattern = Pattern.compile("<([a-zA-Z0-9_]+)\\b[^>]*>([\\s\\S]*?)</\\1>");
+        Matcher fieldMatcher = fieldPattern.matcher(sectionContent);
+        while (fieldMatcher.find()) {
+            String key = fieldMatcher.group(1);
+            String value = cleanText(stripXmlTags(fieldMatcher.group(2)));
+            if (StringUtils.isNotBlank(value)) {
+                map.put(key, value);
+            }
+        }
+        return map;
+    }
+
+    private String stripXmlTags(String value) {
+        if (value == null) {
+            return "";
+        }
+        String sanitized = value.replaceAll("<!--([\\s\\S]*?)-->", "");
+        sanitized = sanitized.replaceAll("<!\\[CDATA\\[([\\s\\S]*?)\\]\\]>", "$1");
+        sanitized = sanitized.replaceAll("<[^>]+>", " ");
+        sanitized = sanitized.replace("&lt;", "<").replace("&gt;", ">").replace("&amp;", "&").replace("&quot;", "\"").replace("&apos;", "'");
+        sanitized = sanitized.replaceAll("\\s+", " ").trim();
+        return sanitized;
+    }
+
+    private String resolveCasNumberForXmlRecord(String casNumber, String fileName, String productName, int recordIndex) {
+        String normalizedCas = extractFirstValidCas(casNumber);
+        if (StringUtils.isNotBlank(normalizedCas)) {
+            return normalizedCas;
+        }
+        Map<String, String> fileNameInfo = extractInfoFromFileName(fileName);
+        String fromFileName = extractFirstValidCas(fileNameInfo.get("casNumber"));
+        if (StringUtils.isNotBlank(fromFileName)) {
+            return fromFileName;
+        }
+        return "NOCAS-" + shortStableHash(fileName + "|" + recordIndex + "|" + productName);
+    }
+
+    private String buildFallbackMsdsCode(String casNumber, String productName, String fileName, int recordIndex) {
+        if (StringUtils.isNotBlank(casNumber) && !"NOCAS".equalsIgnoreCase(casNumber)) {
+            return "MSDS-" + casNumber;
+        }
+        return "MSDS-NOCAS-" + shortStableHash(fileName + "|" + recordIndex + "|" + productName);
+    }
+
+    private String extractFirstValidCas(String rawCas) {
+        if (StringUtils.isBlank(rawCas)) {
+            return "";
+        }
+        String normalized = cleanText(rawCas)
+            .replace("（", "(")
+            .replace("）", ")")
+            .replace("，", ",")
+            .replace("；", ";");
+        if (StringUtils.isBlank(normalized)) {
+            return "";
+        }
+        String lower = normalized.toLowerCase();
+        if (lower.contains("无资料") || lower.contains("不适用") || lower.contains("未知")) {
+            return "";
+        }
+        Matcher matcher = Pattern.compile("\\d{2,7}-\\d{2}-\\d").matcher(normalized);
+        if (matcher.find()) {
+            String cas = matcher.group();
+            return isValidCasNumber(cas) ? cas : "";
+        }
+        return "";
+    }
+
+    private String shortStableHash(String input) {
+        try {
+            MessageDigest md = MessageDigest.getInstance("MD5");
+            byte[] digest = md.digest(input.getBytes(StandardCharsets.UTF_8));
+            StringBuilder sb = new StringBuilder();
+            for (byte b : digest) {
+                sb.append(String.format("%02x", b));
+            }
+            return sb.substring(0, 16).toUpperCase();
+        } catch (Exception e) {
+            return String.valueOf(Math.abs(input.hashCode()));
+        }
     }
 
     /**

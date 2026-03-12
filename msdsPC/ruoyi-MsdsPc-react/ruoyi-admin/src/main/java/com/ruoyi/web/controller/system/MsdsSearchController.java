@@ -43,7 +43,7 @@ public class MsdsSearchController extends BaseController
     /**
      * 智能搜索MSDS文档
      */
-    @PreAuthorize("@ss.hasPermi('system:msds:search')")
+    @PreAuthorize("@ss.hasAnyPermi('system:msds:search,system:msds:list,system:msds:query')")
     @GetMapping("/intelligent")
     public TableDataInfo intelligentSearch(
             @RequestParam(value = "keyword", required = false) String keyword,
@@ -96,7 +96,7 @@ public class MsdsSearchController extends BaseController
     /**
      * 高级搜索
      */
-    @PreAuthorize("@ss.hasPermi('system:msds:search')")
+    @PreAuthorize("@ss.hasAnyPermi('system:msds:search,system:msds:list,system:msds:query')")
     @PostMapping("/advanced")
     public TableDataInfo advancedSearch(@RequestBody Map<String, Object> filters)
     {
@@ -131,7 +131,7 @@ public class MsdsSearchController extends BaseController
     /**
      * 获取用户搜索历史
      */
-    @PreAuthorize("@ss.hasPermi('system:msds:search')")
+    @PreAuthorize("@ss.hasAnyPermi('system:msds:search,system:msds:list,system:msds:query')")
     @GetMapping("/history")
     public AjaxResult getUserSearchHistory(
             @RequestParam(value = "limit", required = false, defaultValue = "20") Integer limit)
@@ -144,7 +144,7 @@ public class MsdsSearchController extends BaseController
     /**
      * 清除搜索历史
      */
-    @PreAuthorize("@ss.hasPermi('system:msds:search')")
+    @PreAuthorize("@ss.hasAnyPermi('system:msds:search,system:msds:list,system:msds:query')")
     @Log(title = "搜索历史", businessType = BusinessType.DELETE)
     @DeleteMapping("/history/clear")
     public AjaxResult clearSearchHistory()
@@ -157,7 +157,7 @@ public class MsdsSearchController extends BaseController
     /**
      * 删除搜索历史记录
      */
-    @PreAuthorize("@ss.hasPermi('system:msds:search')")
+    @PreAuthorize("@ss.hasAnyPermi('system:msds:search,system:msds:list,system:msds:query')")
     @Log(title = "搜索历史", businessType = BusinessType.DELETE)
     @DeleteMapping("/history/{searchIds}")
     public AjaxResult deleteSearchHistory(@PathVariable Long[] searchIds)

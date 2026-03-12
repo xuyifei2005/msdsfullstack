@@ -176,6 +176,52 @@
   box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06) !important;
 }
 
+.detailContentCard {
+  :global {
+    .ant-tabs-nav {
+      margin-bottom: 20px !important;
+    }
+
+    .ant-tabs-tab {
+      padding: 10px 14px !important;
+      border-radius: 8px;
+      margin-right: 8px !important;
+      background: #f8fafc;
+      border: 1px solid rgba(15, 23, 42, 0.08);
+    }
+
+    .ant-tabs-tab-btn {
+      color: #1e293b !important;
+      font-weight: 600;
+    }
+
+    .ant-tabs-tab-active {
+      background: #e0f2fe !important;
+      border-color: #7dd3fc !important;
+    }
+
+    .ant-tabs-tab-active .ant-tabs-tab-btn {
+      color: #0369a1 !important;
+      font-weight: 700;
+    }
+
+    .ant-tabs-ink-bar {
+      background: #0ea5e9 !important;
+      height: 3px !important;
+      border-radius: 3px;
+    }
+  }
+}
+
+.sidePanelCard {
+  :global {
+    .ant-card-head-title {
+      color: #0f172a !important;
+      font-weight: 700;
+    }
+  }
+}
+
 .detailDescriptions {
   :global {
     .ant-descriptions-item-label {
@@ -191,6 +237,7 @@
       line-height: 1.8;
       word-break: break-word;
       white-space: pre-wrap;
+      font-size: 14px;
     }
 
     .ant-statistic-title {

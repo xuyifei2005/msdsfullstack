@@ -43,6 +43,8 @@ public interface MsdsMainMapper
      */
     public MsdsMain selectMsdsMainByCasNumber(String casNumber);
 
+    public MsdsMain selectMsdsMainByCasAndProductName(MsdsMain msdsMain);
+
     /**
      * 根据MSDS编号查询MSDS信息
      *

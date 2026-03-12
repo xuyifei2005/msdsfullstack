@@ -79,6 +79,14 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         where cas_number = #{casNumber} and is_active = 1 limit 1
     </select>
 
+    <select id="selectMsdsMainByCasAndProductName" parameterType="MsdsMain" resultMap="MsdsMainResult">
+        <include refid="selectMsdsMainVo"/>
+        where cas_number = #{casNumber}
+          and product_name = #{productName}
+          and is_active = 1
+        limit 1
+    </select>
+
     <select id="selectMsdsMainByMsdsCode" parameterType="String" resultMap="MsdsMainResult">
         <include refid="selectMsdsMainVo"/>
         where msds_code = #{msdsCode} and is_active = 1 limit 1

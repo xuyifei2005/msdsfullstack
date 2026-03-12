@@ -3,6 +3,8 @@ import {
   Card,
   Input,
   Button,
+  Drawer,
+  List,
   Row,
   Col,
   Tag,
@@ -37,8 +39,10 @@ import {
   getHotSearches,
   getUserSearchHistory,
   clearSearchHistory,
+  deleteSearchHistory,
   updateSuggestionStat,
 } from '@/services/msds/search';
+import { getMsdsList } from '@/services/msds';
 import styles from './index.less';
 
 const { Search } = Input;
@@ -59,6 +63,8 @@ const IntelligentSearch: React.FC = () => {
   const [activeFilters, setActiveFilters] = useState<string[]>([]);
   const [suggestions, setSuggestions] = useState<SearchSuggestion[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
+  const [historyVisible, setHistoryVisible] = useState(false);
+  const [fallbackResults, setFallbackResults] = useState<any>(null);
   
   // 高级筛选状态
   const [filters, setFilters] = useState({
@@ -82,14 +88,16 @@ const IntelligentSearch: React.FC = () => {
   );
 
   // 获取搜索历史
-  const { data: searchHistory, loading: historyLoading, refresh: refreshHistory } = useRequest(
+  const { data: searchHistory = [], loading: historyLoading, refresh: refreshHistory } = useRequest(
     () => getUserSearchHistory(10),
     {
       onSuccess: (res) => {
-        if (res?.code === 200) {
-          return res.data;
+        if (res?.code === 200 && Array.isArray(res.data)) {
+          return res.data as SearchHistory[];
         }
+        return [];
       },
+      defaultData: [],
     }
   );
 
@@ -102,22 +110,47 @@ const IntelligentSearch: React.FC = () => {
     (params: IntelligentSearchParams) => intelligentSearch(params),
     {
       manual: true,
-      onSuccess: (res) => {
+      onSuccess: async (res, paramsList) => {
         const code = Number(res?.code);
-        if (code === 200 || code === 0) {
+        if (code === 200 || code === 0 || Array.isArray(res?.rows)) {
+          setFallbackResults(null);
           const totalCount = res?.total || 0;
           message.success(`找到 ${totalCount} 个相关文档`);
         } else {
-          message.warning(res?.msg || '搜索失败');
+          const params = Array.isArray(paramsList) ? paramsList[0] : undefined;
+          const fallback = await getMsdsList({
+            productName: params?.keyword,
+            supplier: params?.supplier,
+            pageNum: 1,
+            pageSize: 20,
+          });
+          if (fallback && Array.isArray((fallback as any).rows)) {
+            setFallbackResults(fallback);
+            message.warning('智能检索异常，已自动切换基础检索结果');
+          } else {
+            message.warning(res?.msg || '搜索失败');
+          }
         }
       },
-      onError: (error: any) => {
+      onError: async (error: any, paramsList) => {
         const errorMessage =
           error?.info?.errorMessage ||
           error?.data?.msg ||
           error?.response?.data?.msg ||
           error?.message ||
           '未知错误';
+        const params = Array.isArray(paramsList) ? paramsList[0] : undefined;
+        const fallback = await getMsdsList({
+          productName: params?.keyword,
+          supplier: params?.supplier,
+          pageNum: 1,
+          pageSize: 20,
+        });
+        if (fallback && Array.isArray((fallback as any).rows)) {
+          setFallbackResults(fallback);
+          message.warning('智能检索请求失败，已自动回退基础检索');
+          return;
+        }
         message.error(`搜索失败：${errorMessage}`);
       },
     }
@@ -164,6 +197,7 @@ const IntelligentSearch: React.FC = () => {
     }
 
     performSearch(searchParams);
+    setFallbackResults(null);
     setShowSuggestions(false);
   }, [searchType, filters, performSearch]);
 
@@ -204,17 +238,57 @@ const IntelligentSearch: React.FC = () => {
       const res = await clearSearchHistory();
       if (res?.code === 200) {
         message.success('搜索历史已清除');
-        refreshHistory();
+        await refreshHistory();
       }
     } catch (error) {
       message.error('清除失败');
     }
   }, [refreshHistory]);
 
+  const handleDeleteHistoryItem = useCallback(
+    async (searchId?: number) => {
+      if (!searchId) {
+        return;
+      }
+      try {
+        const res = await deleteSearchHistory([searchId]);
+        if (res?.code === 200) {
+          message.success('已删除');
+          await refreshHistory();
+        } else {
+          message.warning(res?.msg || '删除失败');
+        }
+      } catch (error) {
+        message.error('删除失败');
+      }
+    },
+    [refreshHistory],
+  );
+
+  const handleOpenHistory = useCallback(async () => {
+    setHistoryVisible(true);
+    await refreshHistory();
+  }, [refreshHistory]);
+
+  const handleHistorySearch = useCallback(
+    (historyItem: SearchHistory) => {
+      const historyKeyword = historyItem.searchKeyword?.trim();
+      if (!historyKeyword) {
+        return;
+      }
+      setKeyword(historyKeyword);
+      handleSearch(historyKeyword);
+      setHistoryVisible(false);
+    },
+    [handleSearch],
+  );
+
   // 查看文档详情
   const handleViewDetail = useCallback((msdsId: number) => {
     history.push(`/msds/detail/${msdsId}`);
   }, []);
+
+  const displayedResults = fallbackResults || searchResults;
 
   return (
     <PageContainer
@@ -222,7 +296,7 @@ const IntelligentSearch: React.FC = () => {
         title: <span className={styles.pageTitle}>AI智能搜索</span>,
         subTitle: <span className={styles.pageSubTitle}>基于人工智能的MSDS文档智能检索系统</span>,
         extra: [
-          <Button key="history" icon={<ClockCircleOutlined />} onClick={refreshHistory}>
+          <Button key="history" icon={<ClockCircleOutlined />} onClick={handleOpenHistory}>
             搜索历史
           </Button>,
         ],
@@ -426,12 +500,12 @@ const IntelligentSearch: React.FC = () => {
         {/* 右侧搜索结果 */}
         <Col xs={24} lg={18}>
           {/* 结果头部 */}
-          {searchResults && (
+          {displayedResults && (
             <div className={styles.resultHeader}>
               <div>
                 <h2>搜索结果</h2>
                 <p>
-                  找到 <span className={styles.resultCount}>{searchResults.total}</span> 个相关MSDS文档
+                  找到 <span className={styles.resultCount}>{displayedResults.total}</span> 个相关MSDS文档
                 </p>
               </div>
               <div>
@@ -452,9 +526,9 @@ const IntelligentSearch: React.FC = () => {
 
           {/* 搜索结果列表 */}
           <Spin spinning={searching}>
-            {searchResults && searchResults.rows && searchResults.rows.length > 0 ? (
+            {displayedResults && displayedResults.rows && displayedResults.rows.length > 0 ? (
               <Space direction="vertical" size="middle" style={{ width: '100%' }}>
-                {searchResults.rows.map((item: API.Msds.MsdsMain) => (
+                {displayedResults.rows.map((item: API.Msds.MsdsMain) => (
                   <Card key={item.id} className={styles.resultCard} hoverable>
                     <Row>
                       <Col flex="auto">
@@ -510,6 +584,57 @@ const IntelligentSearch: React.FC = () => {
           </Spin>
         </Col>
       </Row>
+
+      <Drawer
+        title="搜索历史"
+        placement="right"
+        width={420}
+        open={historyVisible}
+        onClose={() => setHistoryVisible(false)}
+        extra={
+          <Button danger type="text" onClick={handleClearHistory}>
+            清空历史
+          </Button>
+        }
+      >
+        <List
+          loading={historyLoading}
+          dataSource={searchHistory}
+          locale={{ emptyText: '暂无搜索历史' }}
+          className={styles.historyList}
+          renderItem={(item) => (
+            <List.Item
+              key={item.searchId}
+              actions={[
+                <Button
+                  key={`search-${item.searchId}`}
+                  type="link"
+                  onClick={() => handleHistorySearch(item)}
+                >
+                  搜索
+                </Button>,
+                <Button
+                  key={`delete-${item.searchId}`}
+                  type="link"
+                  danger
+                  onClick={() => handleDeleteHistoryItem(item.searchId)}
+                >
+                  删除
+                </Button>,
+              ]}
+            >
+              <div className={styles.historyItem}>
+                <div className={styles.historyKeyword}>{item.searchKeyword || '未命名关键词'}</div>
+                <div className={styles.historyMeta}>
+                  <span>{item.searchType || 'general'}</span>
+                  <span>{item.resultCount ?? 0} 条结果</span>
+                  <span>{item.searchTime || ''}</span>
+                </div>
+              </div>
+            </List.Item>
+          )}
+        />
+      </Drawer>
     </PageContainer>
   );
 };

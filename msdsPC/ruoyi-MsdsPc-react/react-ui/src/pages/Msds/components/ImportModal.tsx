@@ -88,10 +88,11 @@ const ImportModal: React.FC<ImportModalProps> = ({ open, onOpenChange, onSuccess
   };
 
   const normalizeImportResult = (data: any) => {
-    const totalCount = Number(data?.totalCount ?? data?.fileCount ?? 0);
+    const rawTotal = Number(data?.totalCount ?? data?.fileCount ?? 0);
     const successCount = Number(data?.successCount ?? 0);
     const failureCount = Number(data?.failureCount ?? 0);
     const duplicateCount = Number(data?.duplicateCount ?? 0);
+    const totalCount = Math.max(rawTotal, successCount + failureCount + duplicateCount);
     const missingCount = Number(data?.missingCount ?? Math.max(0, totalCount - successCount - failureCount - duplicateCount));
 
     const duplicates =
