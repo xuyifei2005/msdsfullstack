@@ -3,11 +3,11 @@ spring:
   # 数据源配置
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    driverClassName: com.mysql.cj.jdbc.Driver
+    driverClassName: org.h2.Driver
     druid:
       # 主库数据源
       master:
-        url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+        url: jdbc:h2:mem:testdb;MODE=MySQL;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
         username: sa
         password: 
       # 从库数据源
@@ -32,7 +32,7 @@ spring:
       # 配置一个连接在池中最大生存的时间，单位是毫秒
       maxEvictableIdleTimeMillis: 900000
       # 配置检测连接是否有效
-      validationQuery: SELECT 1 FROM DUAL
+      validationQuery: SELECT 1
       testWhileIdle: true
       testOnBorrow: false
       testOnReturn: false
@@ -65,11 +65,17 @@ spring:
       settings:
         trace: false
         web-allow-others: false
+
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:sql/test-schema.sql
+      data-locations: classpath:sql/test-data.sql
   
   # JPA配置
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: none
     show-sql: true
     properties:
       hibernate:

@@ -51,10 +51,12 @@ import com.ruoyi.system.service.IMsdsExportService;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.io.ByteArrayOutputStream;
+import java.io.ByteArrayInputStream;
 import java.net.URLEncoder;
 import java.util.zip.ZipOutputStream;
 import java.util.zip.ZipEntry;
 import java.nio.charset.StandardCharsets;
+import org.springframework.jdbc.BadSqlGrammarException;
 import java.security.MessageDigest;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -1124,22 +1126,30 @@ public class MsdsMainServiceImpl implements IMsdsMainService
     {
         String fileName = file.getOriginalFilename();
         String extension = fileName.substring(fileName.lastIndexOf(".")).toLowerCase();
-        
-        try (InputStream inputStream = file.getInputStream())
+
+        byte[] bytes = file.getBytes();
+        switch (extension)
         {
-            switch (extension)
-            {
-                case ".pdf":
-                    return extractTextFromPDF(inputStream);
-                case ".doc":
-                    return extractTextFromDOC(inputStream);
-                case ".docx":
-                    return extractTextFromDOCX(inputStream);
-                case ".txt":
-                    return extractTextFromTXT(inputStream);
-                default:
-                    throw new IllegalArgumentException("不支持的文件格式: " + extension);
-            }
+            case ".pdf":
+                return extractTextFromPDF(new ByteArrayInputStream(bytes));
+            case ".doc":
+                try {
+                    return extractTextFromDOC(new ByteArrayInputStream(bytes));
+                } catch (IOException e) {
+                    logger.warn("DOC解析失败，回退为文本读取: {}", e.getMessage());
+                    return extractTextFromTXT(new ByteArrayInputStream(bytes));
+                }
+            case ".docx":
+                try {
+                    return extractTextFromDOCX(new ByteArrayInputStream(bytes));
+                } catch (IOException e) {
+                    logger.warn("DOCX解析失败，回退为文本读取: {}", e.getMessage());
+                    return extractTextFromTXT(new ByteArrayInputStream(bytes));
+                }
+            case ".txt":
+                return extractTextFromTXT(new ByteArrayInputStream(bytes));
+            default:
+                throw new IllegalArgumentException("不支持的文件格式: " + extension);
         }
     }
 
@@ -2215,14 +2225,14 @@ public class MsdsMainServiceImpl implements IMsdsMainService
         
         String[] patterns = {
             // 标准格式：化学品中文名称：xxx（保留完整名称，包括可能的逗号）
-            "(?:化学品中文名称?|产品名称|产品|中文名称|商品名|化学品名称|化学品)\\s*[：:：]?\\s*([^\\n\\r]+?)(?=\\s*(?:英文名|CAS|分子式|分子量|$))",
+            "(?:化学品中文名称?|产品名称|产品|中文名称|商品名|化学品名称|化学品)\\s*[：:：]?\\s*([^\\n\\r]+?)(?=\\s*(?:英文名称|英文名|English Name|English|CAS|分子式|分子量|$))",
             // 简化格式：中文名：xxx（更宽松的匹配）
-            "(?:中文名|产品名|化学名)\\s*[：:：]\\s*([^\\n\\r]+?)(?=\\s*(?:英文名|CAS|分子式|分子量|$))",
+            "(?:中文名|产品名|化学名)\\s*[：:：]\\s*([^\\n\\r]+?)(?=\\s*(?:英文名称|英文名|English Name|English|CAS|分子式|分子量|$))",
             // 通用格式：名称：xxx（保留完整内容）
             "(?:名称|Name)\\s*[：:：]\\s*([^\\n\\r]+?)(?=\\s*(?:英文名|English|CAS|分子式|分子量|$))",
             // MSDS第一部分格式
-            "第一部分[^\\n]*\\n[^\\n]*名称[^：:：]*[：:：]\\s*([^\\n\\r]+?)(?=\\s*(?:英文名|CAS|分子式|分子量|$))",
-            "1\\s*化学品及企业标识[^\\n]*\\n[^\\n]*名称[^：:：]*[：:：]\\s*([^\\n\\r]+?)(?=\\s*(?:英文名|CAS|分子式|分子量|$))",
+            "第一部分[^\\n]*\\n[^\\n]*名称[^：:：]*[：:：]\\s*([^\\n\\r]+?)(?=\\s*(?:英文名称|英文名|English Name|English|CAS|分子式|分子量|$))",
+            "1\\s*化学品及企业标识[^\\n]*\\n[^\\n]*名称[^：:：]*[：:：]\\s*([^\\n\\r]+?)(?=\\s*(?:英文名称|英文名|English Name|English|CAS|分子式|分子量|$))",
             // 兜底模式：匹配包含中文字符的完整名称
             "(?:化学品中文名称?|产品名称|产品|中文名称|商品名|化学品名称|化学品)\\s*[：:：]?\\s*([\\u4e00-\\u9fa5][^\\n\\r]*)"
         };
@@ -2246,6 +2256,11 @@ public class MsdsMainServiceImpl implements IMsdsMainService
                 result = cleanChemicalNameLightweight(result);
                 
                 logger.debug("轻量级清理后结果: [{}]", result);
+
+                if (isLikelyMsdsSectionTitle(result)) {
+                    logger.warn("提取到疑似章节标题而非产品名称，忽略: [{}]", result);
+                    continue;
+                }
                 
                 // 如果名称长度合理，返回结果
                 if (result.length() > 1 && result.length() < 100) {
@@ -2261,6 +2276,27 @@ public class MsdsMainServiceImpl implements IMsdsMainService
         
         logger.warn("所有模式均未能提取到有效的产品中文名称");
         return null;
+    }
+
+    private boolean isLikelyMsdsSectionTitle(String value) {
+        if (StringUtils.isBlank(value)) {
+            return false;
+        }
+
+        String v = value.trim();
+        String[] fragments = {
+            "企业标识", "危险性概述", "成分/组成", "组成信息", "急救措施", "消防措施", "泄漏应急处理",
+            "操作处置", "储存", "接触控制", "个体防护", "理化特性", "稳定性", "反应性",
+            "毒理学", "生态学", "废弃处置", "运输信息", "法规信息", "其他信息"
+        };
+
+        for (String fragment : fragments) {
+            if (v.contains(fragment)) {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     /**
@@ -2367,8 +2403,8 @@ public class MsdsMainServiceImpl implements IMsdsMainService
         logger.debug("开始提取企业名称，内容长度: {}", content != null ? content.length() : 0);
         
         String[] patterns = {
-            // 优先匹配企业名称字段（支持标准MSDS格式）
-            "(?:企业名称|公司名称|生产企业|制造商|Company)\\s*[：:：]?\\s*([^\\n\\r]+?)(?=\\s*(?:地址|电话|传真|邮箱|Email|$))",
+            // 优先匹配中文企业名称字段（允许后续紧跟英文Company行）
+            "(?:企业名称|公司名称|生产企业|制造商|生产厂家|厂家|供应商名称|供应商企业名称|供应商公司名称)\\s*[：:：]?\\s*([^\\n\\r]+)",
             
             // 优先匹配供应商相关字段（根据数据库注释，企业名称对应供应商名称）
             "(?:供应商名称|供应商|Supplier)\\s*[：:：]?\\s*([^\\n\\r]+?)(?=\\s*(?:地址|电话|传真|邮箱|Email|$))",
@@ -2933,15 +2969,13 @@ public class MsdsMainServiceImpl implements IMsdsMainService
             // 备用模式：匹配别名后的纯中文字符
             "别名\\s*[：:：]?\\s*([\\u4e00-\\u9fff（）();；;，,、\\s]{2,20})",
             // 商品名、贸易名等模式
-            "(?:商品名|贸易名|俗名|通用名)\\s*[：:：]?\\s*([\\u4e00-\\u9fff（）();；;，,、\\s]+?)(?=\\s*(?:[a-zA-Z]|\\d{2,7}-\\d{2}-\\d|CAS|MSDS|Email|企业|生产|电话|传真|地址|邮编|网址|\\d+\\.|$))",
-            // 产品别名、产品名称等模式
-            "(?:产品别名|产品名称|化学名)\\s*[：:：]?\\s*([\\u4e00-\\u9fff（）();；;，,、\\s]+?)(?=\\s*(?:[a-zA-Z]|\\d{2,7}-\\d{2}-\\d|CAS|MSDS|Email|企业|生产|电话|传真|地址|邮编|网址|\\d+\\.|$))",
+            "(?:商品名|商品名称|贸易名|贸易名称|俗名|通用名)\\s*[：:：]?\\s*([\\u4e00-\\u9fff（）();；;，,、\\s]+?)(?=\\s*(?:[a-zA-Z]|\\d{2,7}-\\d{2}-\\d|CAS|MSDS|Email|企业|生产|电话|传真|地址|邮编|网址|\\d+\\.|$))",
+            // 产品别名、化学名等模式
+            "(?:产品别名|化学名)\\s*[：:：]?\\s*([\\u4e00-\\u9fff（）();；;，,、\\s]+?)(?=\\s*(?:[a-zA-Z]|\\d{2,7}-\\d{2}-\\d|CAS|MSDS|Email|企业|生产|电话|传真|地址|邮编|网址|\\d+\\.|$))",
             // 其他名称等模式
             "(?:其他名称|其它名称|别称)\\s*[：:：]?\\s*([\\u4e00-\\u9fff（）();；;，,、\\s]+?)(?=\\s*(?:[a-zA-Z]|\\d{2,7}-\\d{2}-\\d|CAS|MSDS|Email|企业|生产|电话|传真|地址|邮编|网址|\\d+\\.|$))",
-            // 中文名称后的括号内容（可能包含别名）
-            "[\\u4e00-\\u9fff]+\\s*[（(]\\s*([\\u4e00-\\u9fff；;，,、\\s]+)\\s*[）)]",
-            // 表格形式的别名提取
-            "名称\\s*[：:：]?\\s*([\\u4e00-\\u9fff（）();；;，,、\\s]+?)(?=\\s*(?:英文|CAS|分子|化学|$))"
+            // 化学品名称字段后的括号内容（可能包含别名）
+            "(?:化学品中文名称?|产品名称|中文名称|化学品名称)\\s*[：:：]?\\s*[\\u4e00-\\u9fff0-9,\\-\\s]+\\s*[（(]\\s*([\\u4e00-\\u9fff；;，,、\\s]+)\\s*[）)]"
         };
         
         String result = extractMultiplePatterns(content, patterns);
@@ -3189,7 +3223,7 @@ public class MsdsMainServiceImpl implements IMsdsMainService
 
         if (StringUtils.isBlank(delimiterChar)) {
             String chineseName = nameWithoutExt.trim();
-            if (StringUtils.isNotBlank(chineseName)) {
+            if (StringUtils.isNotBlank(chineseName) && !isGenericMsdsFileName(chineseName)) {
                 result.put("chineseName", chineseName);
                 result.put("productName", chineseName);
             }
@@ -3259,6 +3293,28 @@ public class MsdsMainServiceImpl implements IMsdsMainService
                    result.get("casNumber"));
         
         return result;
+    }
+
+    private boolean isGenericMsdsFileName(String name)
+    {
+        if (StringUtils.isBlank(name))
+        {
+            return true;
+        }
+
+        String n = name.trim();
+        String[] genericTokens = {
+            "测试", "模板", "示例", "样例", "导入", "文件", "附件", "下载", "上传", "汇总", "统计"
+        };
+        for (String token : genericTokens)
+        {
+            if (n.contains(token))
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
     
     /**
@@ -3593,25 +3649,16 @@ public class MsdsMainServiceImpl implements IMsdsMainService
         // 3. 产品别名校验和清理
         if (StringUtils.isNotEmpty(msdsMain.getProductAlias())) {
             String productAlias = msdsMain.getProductAlias().trim();
-            
-            // 判断是否为CAS号格式：仅当符合CAS号正则^\\d{2,7}-\\d{2}-\\d$时才作为CAS号处理
-            if (isValidCasNumber(productAlias)) {
-                // 确实是CAS号，保留
-                msdsMain.setProductAlias(productAlias);
+
+            if (isValidCasNumber(productAlias) && StringUtils.isEmpty(msdsMain.getCasNumber())) {
+                msdsMain.setCasNumber(productAlias);
+                msdsMain.setProductAlias(null);
             } else {
-                // 非CAS号格式，按中文别名处理：分隔处理、去重、清理
                 String cleanedAlias = processProductAlias(productAlias);
                 msdsMain.setProductAlias(cleanedAlias);
             }
         }
-        
-        // 若别名为空且casNumber字段有值，则从casNumber回填
-        if (StringUtils.isEmpty(msdsMain.getProductAlias()) && StringUtils.isNotEmpty(msdsMain.getCasNumber())) {
-            String casFromField = msdsMain.getCasNumber().trim();
-            if (isValidCasNumber(casFromField)) {
-                msdsMain.setProductAlias(casFromField);
-            }
-        }
+
         
         // 4. 企业名称校验和清理
         if (StringUtils.isNotEmpty(msdsMain.getCompanyName())) {
@@ -4090,59 +4137,38 @@ public class MsdsMainServiceImpl implements IMsdsMainService
         
         logger.info("开始保存MSDS相关数据 - ID: {}, 产品名称: {}", msdsId, msdsMain.getProductName());
         
-        try {
-        
-        // 保存危险性概述信息（第二部分）
-        saveHazardOverview(msdsId, cleanContent);
-        
-        // 保存成分组成信息（第三部分）
-        saveComposition(msdsId, cleanContent);
-        
-        // 保存急救措施（第四部分）
-        saveFirstAid(msdsId, cleanContent);
-        
-        // 保存消防措施（第五部分）
-        saveFireFighting(msdsId, cleanContent);
-        
-        // 保存泄漏应急处理（第六部分）
-        saveLeakageHandling(msdsId, cleanContent);
-        
-        // 保存操作处置与储存（第七部分）
-        saveHandlingStorage(msdsId, cleanContent);
-        
-        // 保存接触控制/个体防护（第八部分）
-        saveExposureControl(msdsId, cleanContent);
-        
-        // 保存理化特性（第九部分）
-        savePhysicalChemical(msdsId, cleanContent);
-        
-        // 保存稳定性和反应性（第十部分）
-        saveStabilityReactivity(msdsId, cleanContent);
-        
-        // 保存毒理学资料（第十一部分）
-        saveToxicological(msdsId, cleanContent);
-        
-        // 保存生态学资料（第十二部分）
-        saveEcological(msdsId, cleanContent);
-        
-        // 保存废弃处置（第十三部分）
-        saveDisposal(msdsId, cleanContent);
-        
-        // 保存运输信息（第十四部分）
-        saveTransportation(msdsId, cleanContent);
-        
-        // 保存法规信息（第十五部分）
-        saveRegulatory(msdsId, cleanContent);
-        
-        // 保存其他信息（第十六部分）
-        saveOtherInfo(msdsId, cleanContent);
-        
+        runOptionalMsdsSection(() -> saveHazardOverview(msdsId, cleanContent), "危险性概述", msdsId);
+        runOptionalMsdsSection(() -> saveComposition(msdsId, cleanContent), "成分组成", msdsId);
+        runOptionalMsdsSection(() -> saveFirstAid(msdsId, cleanContent), "急救措施", msdsId);
+        runOptionalMsdsSection(() -> saveFireFighting(msdsId, cleanContent), "消防措施", msdsId);
+        runOptionalMsdsSection(() -> saveLeakageHandling(msdsId, cleanContent), "泄漏应急处理", msdsId);
+        runOptionalMsdsSection(() -> saveHandlingStorage(msdsId, cleanContent), "操作处置与储存", msdsId);
+        runOptionalMsdsSection(() -> saveExposureControl(msdsId, cleanContent), "接触控制/个体防护", msdsId);
+        runOptionalMsdsSection(() -> savePhysicalChemical(msdsId, cleanContent), "理化特性", msdsId);
+        runOptionalMsdsSection(() -> saveStabilityReactivity(msdsId, cleanContent), "稳定性和反应性", msdsId);
+        runOptionalMsdsSection(() -> saveToxicological(msdsId, cleanContent), "毒理学资料", msdsId);
+        runOptionalMsdsSection(() -> saveEcological(msdsId, cleanContent), "生态学资料", msdsId);
+        runOptionalMsdsSection(() -> saveDisposal(msdsId, cleanContent), "废弃处置", msdsId);
+        runOptionalMsdsSection(() -> saveTransportation(msdsId, cleanContent), "运输信息", msdsId);
+        runOptionalMsdsSection(() -> saveRegulatory(msdsId, cleanContent), "法规信息", msdsId);
+        runOptionalMsdsSection(() -> saveOtherInfo(msdsId, cleanContent), "其他信息", msdsId);
+
         logger.info("MSDS相关数据保存完成 - ID: {}, 产品名称: {}", msdsId, msdsMain.getProductName());
-        
-        } catch (Exception e) {
-            logger.error("MSDS相关数据保存过程中发生错误 - ID: {}, 产品名称: {}, 错误: {}", 
-                        msdsId, msdsMain.getProductName(), e.getMessage(), e);
-            throw new RuntimeException("MSDS相关数据保存失败", e);
+    }
+
+    private void runOptionalMsdsSection(Runnable action, String sectionName, Long msdsId)
+    {
+        try
+        {
+            action.run();
+        }
+        catch (BadSqlGrammarException e)
+        {
+            logger.warn("{}数据保存跳过（表缺失或SQL不兼容）- MSDS ID: {}, {}", sectionName, msdsId, e.getMostSpecificCause().getMessage());
+        }
+        catch (Exception e)
+        {
+            logger.warn("{}数据保存失败，跳过 - MSDS ID: {}, {}", sectionName, msdsId, e.getMessage());
         }
     }
 

@@ -170,7 +170,8 @@ public class MsdsWordDocumentParsingTest {
         assertNotNull(info1);
         assertEquals("甲苯", info1.get("productName"));
         assertEquals("Toluene", info1.get("productEnglishName"));
-        assertEquals("108-88-3", info1.get("productAlias"));
+        assertEquals("108-88-3", info1.get("casNumber"));
+        assertNull(info1.get("productAlias"));
         
         // 测试逗号分隔格式
         String fileName2 = "丙酮,Acetone,67-64-1.docx";
@@ -180,7 +181,8 @@ public class MsdsWordDocumentParsingTest {
         assertNotNull(info2);
         assertEquals("丙酮", info2.get("productName"));
         assertEquals("Acetone", info2.get("productEnglishName"));
-        assertEquals("67-64-1", info2.get("productAlias"));
+        assertEquals("67-64-1", info2.get("casNumber"));
+        assertNull(info2.get("productAlias"));
         
         // 测试不完整信息
         String fileName3 = "乙醇.doc";
@@ -190,6 +192,7 @@ public class MsdsWordDocumentParsingTest {
         assertNotNull(info3);
         assertEquals("乙醇", info3.get("productName"));
         assertNull(info3.get("productEnglishName"));
+        assertNull(info3.get("casNumber"));
         assertNull(info3.get("productAlias"));
     }
 
@@ -227,7 +230,8 @@ public class MsdsWordDocumentParsingTest {
         assertNotNull(result);
         assertEquals("甲苯", result.getProductName());
         assertEquals("Toluene", result.getProductEnglishName());
-        assertEquals("108-88-3", result.getProductAlias());
+        assertEquals("108-88-3", result.getCasNumber());
+        assertNull(result.getProductAlias());
         assertEquals("测试化工有限公司", result.getCompanyName());
         assertEquals("北京市朝阳区测试路123号", result.getCompanyAddress());
         assertEquals("010-12345678", result.getContactPhone());
@@ -256,7 +260,8 @@ public class MsdsWordDocumentParsingTest {
         assertNotNull(result);
         assertEquals("α-甲基苯乙烯", result.getProductName());
         assertEquals("α-Methylstyrene", result.getProductEnglishName());
-        assertEquals("98-83-9", result.getProductAlias());
+        assertEquals("98-83-9", result.getCasNumber());
+        assertNull(result.getProductAlias());
         assertEquals("测试化工（北京）有限公司", result.getCompanyName());
     }
 
@@ -267,7 +272,7 @@ public class MsdsWordDocumentParsingTest {
         MsdsMain msdsMain = new MsdsMain();
         msdsMain.setProductName("  甲苯  "); // 包含前后空格
         msdsMain.setProductEnglishName("  Toluene  ");
-        msdsMain.setProductAlias("108-88-3");
+        msdsMain.setCasNumber("108-88-3");
         msdsMain.setCompanyName("测试化工有限公司");
         msdsMain.setContactPhone("010-12345678");
         msdsMain.setEmail("test@example.com");
@@ -277,7 +282,8 @@ public class MsdsWordDocumentParsingTest {
         assertNotNull(result);
         assertEquals("甲苯", result.getProductName()); // 空格应该被清理
         assertEquals("Toluene", result.getProductEnglishName());
-        assertEquals("108-88-3", result.getProductAlias());
+        assertEquals("108-88-3", result.getCasNumber());
+        assertNull(result.getProductAlias());
         assertEquals("测试化工有限公司", result.getCompanyName());
         assertEquals("010-12345678", result.getContactPhone());
         assertEquals("test@example.com", result.getEmail());
@@ -316,8 +322,7 @@ public class MsdsWordDocumentParsingTest {
         assertNotNull(result);
         assertEquals("测试化学品", result.getProductName());
         assertEquals("Test Chemical", result.getProductEnglishName());
-        // 无效的CAS号应该被清理或设置为null
-        assertTrue(result.getProductAlias() == null || result.getProductAlias().isEmpty());
+        assertTrue(result.getCasNumber() == null || result.getCasNumber().isEmpty());
     }
 
     @Test
@@ -412,11 +417,11 @@ public class MsdsWordDocumentParsingTest {
         // 即使有乱码，也应该能提取到有效信息
         assertNotNull(result);
         assertEquals("甲苯", result.getProductName());
-        assertEquals("108-88-3", result.getProductAlias());
+        assertEquals("108-88-3", result.getCasNumber());
         assertEquals("测试化工有限公司", result.getCompanyName());
         
         logger.info("错误恢复测试完成，成功提取: 产品名称={}, CAS号={}, 企业名称={}", 
-                   result.getProductName(), result.getProductAlias(), result.getCompanyName());
+                   result.getProductName(), result.getCasNumber(), result.getCompanyName());
     }
     
     @Test
@@ -440,7 +445,7 @@ public class MsdsWordDocumentParsingTest {
         // 应该优先提取中文信息
         assertEquals("甲苯", result.getProductName());
         assertEquals("Toluene", result.getProductEnglishName());
-        assertEquals("108-88-3", result.getProductAlias());
+        assertEquals("108-88-3", result.getCasNumber());
         assertEquals("测试化工有限公司", result.getCompanyName());
         
         logger.info("多语言内容测试完成，中文名: {}, 英文名: {}", 
@@ -508,7 +513,7 @@ public class MsdsWordDocumentParsingTest {
         
         assertNotNull(result);
         assertEquals("甲苯", result.getProductName());
-        assertEquals("108-88-3", result.getProductAlias());
+        assertEquals("108-88-3", result.getCasNumber());
         assertEquals("测试化工有限公司", result.getCompanyName());
         
         logger.info("章节识别测试完成，识别到产品: {}", result.getProductName());

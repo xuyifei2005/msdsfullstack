@@ -46,11 +46,13 @@ public class MsdsMainServiceImplTest {
         MsdsMain expected = new MsdsMain();
         expected.setId(1L);
 
+        when(msdsMainMapper.selectMsdsMainByCasAndProductName(input)).thenReturn(expected);
         when(msdsMainMapper.selectMsdsMainByCasNumber("71-43-2")).thenReturn(expected);
 
         MsdsMain actual = (MsdsMain) method.invoke(msdsMainService, input);
         assertSame(expected, actual);
-        verify(msdsMainMapper, times(1)).selectMsdsMainByCasNumber("71-43-2");
+        verify(msdsMainMapper, times(1)).selectMsdsMainByCasAndProductName(input);
+        verify(msdsMainMapper, never()).selectMsdsMainByCasNumber(anyString());
         verify(msdsMainMapper, never()).selectMsdsMainByMsdsCode(anyString());
         verify(msdsMainMapper, never()).selectMsdsMainByProductName(anyString());
     }

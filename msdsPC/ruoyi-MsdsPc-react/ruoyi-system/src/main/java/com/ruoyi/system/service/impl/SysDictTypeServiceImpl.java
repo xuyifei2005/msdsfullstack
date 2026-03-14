@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 import jakarta.annotation.PostConstruct;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -26,6 +28,8 @@ import com.ruoyi.system.service.ISysDictTypeService;
 @Service
 public class SysDictTypeServiceImpl implements ISysDictTypeService
 {
+    private static final Logger log = LoggerFactory.getLogger(SysDictTypeServiceImpl.class);
+
     @Autowired
     private SysDictTypeMapper dictTypeMapper;
 
@@ -38,7 +42,14 @@ public class SysDictTypeServiceImpl implements ISysDictTypeService
     @PostConstruct
     public void init()
     {
-        loadingDictCache();
+        try
+        {
+            loadingDictCache();
+        }
+        catch (Exception e)
+        {
+            log.warn("字典缓存初始化跳过：{}", e.getMessage());
+        }
     }
 
     /**

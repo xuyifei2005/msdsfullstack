@@ -64,6 +64,14 @@ public class MsdsHazardServiceImpl implements IMsdsHazardService
     @Override
     public int insertMsdsHazard(MsdsHazard msdsHazard)
     {
+        if (msdsHazard == null)
+        {
+            throw new IllegalArgumentException("msdsHazard不能为空");
+        }
+        if (msdsHazard.getMsdsId() == null)
+        {
+            throw new IllegalArgumentException("msdsId不能为空");
+        }
         return msdsHazardMapper.insertMsdsHazard(msdsHazard);
     }
 
@@ -76,6 +84,14 @@ public class MsdsHazardServiceImpl implements IMsdsHazardService
     @Override
     public int updateMsdsHazard(MsdsHazard msdsHazard)
     {
+        if (msdsHazard == null)
+        {
+            throw new IllegalArgumentException("msdsHazard不能为空");
+        }
+        if (msdsHazard.getId() == null)
+        {
+            throw new IllegalArgumentException("id不能为空");
+        }
         return msdsHazardMapper.updateMsdsHazard(msdsHazard);
     }
 

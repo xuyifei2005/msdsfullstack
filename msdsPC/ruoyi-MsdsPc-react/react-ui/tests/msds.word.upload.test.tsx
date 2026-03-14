@@ -1,41 +1,32 @@
-import React from 'react';
+import { useState } from 'react';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
-import { vi, describe, it, expect, beforeEach } from 'vitest';
 import '@testing-library/jest-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { ConfigProvider } from 'antd';
 import zhCN from 'antd/locale/zh_CN';
 
-// Mock antd components
-vi.mock('antd', async () => {
-  const actual = await vi.importActual('antd');
+jest.mock('antd', () => {
+  const actual = jest.requireActual('antd');
   return {
     ...actual,
     message: {
-      success: vi.fn(),
-      error: vi.fn(),
-      warning: vi.fn(),
-      info: vi.fn(),
+      success: jest.fn(),
+      error: jest.fn(),
+      warning: jest.fn(),
+      info: jest.fn(),
     },
     notification: {
-      success: vi.fn(),
-      error: vi.fn(),
-      warning: vi.fn(),
-      info: vi.fn(),
+      success: jest.fn(),
+      error: jest.fn(),
+      warning: jest.fn(),
+      info: jest.fn(),
     },
   };
 });
 
-// Mock API calls
-vi.mock('../src/api/msds', () => ({
-  uploadMsdsFile: vi.fn(),
-  parseMsdsDocument: vi.fn(),
-  getMsdsList: vi.fn(),
-}));
-
 // Mock file upload component (假设存在)
-const MockMsdsUpload = ({ onUpload, accept, maxSize }: any) => {
-  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+const MockMsdsUpload = ({ onUpload, accept, maxSize }) => {
+  const handleFileChange = (event) => {
     const file = event.target.files?.[0];
     if (file && onUpload) {
       onUpload(file);
@@ -58,12 +49,12 @@ const MockMsdsUpload = ({ onUpload, accept, maxSize }: any) => {
 
 // Mock upload page component
 const MockMsdsUploadPage = () => {
-  const [uploading, setUploading] = React.useState(false);
-  const [uploadProgress, setUploadProgress] = React.useState(0);
-  const [parseResult, setParseResult] = React.useState<any>(null);
-  const [error, setError] = React.useState<string | null>(null);
+  const [uploading, setUploading] = useState(false);
+  const [uploadProgress, setUploadProgress] = useState(0);
+  const [parseResult, setParseResult] = useState(null);
+  const [error, setError] = useState(null);
 
-  const handleUpload = async (file: File) => {
+  const handleUpload = async (file) => {
     setUploading(true);
     setError(null);
     setUploadProgress(0);
@@ -113,7 +104,7 @@ const MockMsdsUploadPage = () => {
     }
   };
 
-  const validateFile = (file: File): string | null => {
+  const validateFile = (file) => {
     // 文件大小验证 (50MB)
     if (file.size > 50 * 1024 * 1024) {
       return '文件大小不能超过50MB';
@@ -132,7 +123,7 @@ const MockMsdsUploadPage = () => {
     return null;
   };
 
-  const handleFileUpload = (file: File) => {
+  const handleFileUpload = (file) => {
     const validationError = validateFile(file);
     if (validationError) {
       setError(validationError);
@@ -183,7 +174,7 @@ const MockMsdsUploadPage = () => {
 };
 
 // Test wrapper component
-const TestWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+const TestWrapper = ({ children }) => {
   return (
     <BrowserRouter>
       <ConfigProvider locale={zhCN}>
@@ -195,7 +186,7 @@ const TestWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
 describe('MSDS Word文档上传功能测试', () => {
   beforeEach(() => {
-    vi.clearAllMocks();
+    jest.clearAllMocks();
   });
 
   it('应该正确渲染上传组件', () => {
@@ -307,10 +298,10 @@ describe('MSDS Word文档上传功能测试', () => {
 
     const fileInput = screen.getByTestId('file-input');
     
-    // 创建超大文件 (模拟51MB)
-    const largeFile = new File(['x'.repeat(51 * 1024 * 1024)], 'large_file.doc', {
+    const largeFile = new File(['x'], 'large_file.doc', {
       type: 'application/msword'
     });
+    Object.defineProperty(largeFile, 'size', { value: 51 * 1024 * 1024, configurable: true });
 
     fireEvent.change(fileInput, { target: { files: [largeFile] } });
 
@@ -455,8 +446,9 @@ describe('MSDS Word文档上传功能测试', () => {
 
     // 验证能够处理空文件（可能显示错误或警告）
     await waitFor(() => {
-      // 根据实际实现，这里可能是错误消息或解析结果
-      expect(screen.getByTestId('parse-result') || screen.getByTestId('error-message')).toBeInTheDocument();
+      const hasResult = !!screen.queryByTestId('parse-result');
+      const hasError = !!screen.queryByTestId('error-message');
+      expect(hasResult || hasError).toBe(true);
     }, { timeout: 2000 });
   });
 });

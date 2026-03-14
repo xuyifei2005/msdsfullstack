@@ -6,6 +6,8 @@ import org.quartz.JobDataMap;
 import org.quartz.JobKey;
 import org.quartz.Scheduler;
 import org.quartz.SchedulerException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -25,6 +27,8 @@ import com.ruoyi.quartz.util.ScheduleUtils;
 @Service
 public class SysJobServiceImpl implements ISysJobService
 {
+    private static final Logger log = LoggerFactory.getLogger(SysJobServiceImpl.class);
+
     @Autowired
     private Scheduler scheduler;
 
@@ -37,11 +41,18 @@ public class SysJobServiceImpl implements ISysJobService
     @PostConstruct
     public void init() throws SchedulerException, TaskException
     {
-        scheduler.clear();
-        List<SysJob> jobList = jobMapper.selectJobAll();
-        for (SysJob job : jobList)
+        try
         {
-            ScheduleUtils.createScheduleJob(scheduler, job);
+            scheduler.clear();
+            List<SysJob> jobList = jobMapper.selectJobAll();
+            for (SysJob job : jobList)
+            {
+                ScheduleUtils.createScheduleJob(scheduler, job);
+            }
+        }
+        catch (Exception e)
+        {
+            log.warn("定时任务初始化跳过：{}", e.getMessage());
         }
     }
 

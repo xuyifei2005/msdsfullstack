@@ -21,6 +21,7 @@ import org.springframework.mock.web.MockMultipartFile;
 import org.mockito.ArgumentCaptor;
 import java.nio.charset.StandardCharsets;
 
+import com.ruoyi.common.core.redis.RedisCache;
 import com.ruoyi.system.domain.*;
 import com.ruoyi.system.mapper.*;
 import com.ruoyi.system.service.IMsdsExportService;
@@ -84,6 +85,9 @@ class MsdsMainServiceImplTest {
     
     @Mock
     private IMsdsExportService msdsExportService;
+
+    @Mock
+    private RedisCache redisCache;
     
     @InjectMocks
     private MsdsMainServiceImpl msdsMainService;
@@ -444,7 +448,6 @@ class MsdsMainServiceImplTest {
 
             // 重置并打桩Mock
             reset(msdsMainMapper);
-            when(msdsMainMapper.selectMsdsMainByProductName("乙醇")).thenReturn(null);
             ArgumentCaptor<MsdsMain> captor = ArgumentCaptor.forClass(MsdsMain.class);
             when(msdsMainMapper.insertMsdsMain(captor.capture())).thenAnswer(invocation -> {
                 MsdsMain arg = invocation.getArgument(0);

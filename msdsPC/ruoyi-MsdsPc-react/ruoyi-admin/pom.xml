@@ -47,6 +47,12 @@
             <artifactId>ruoyi-framework</artifactId>
         </dependency>
 
+        <!-- 系统模块-->
+        <dependency>
+            <groupId>com.ruoyi</groupId>
+            <artifactId>ruoyi-system</artifactId>
+        </dependency>
+
         <!-- 定时任务-->
         <dependency>
             <groupId>com.ruoyi</groupId>

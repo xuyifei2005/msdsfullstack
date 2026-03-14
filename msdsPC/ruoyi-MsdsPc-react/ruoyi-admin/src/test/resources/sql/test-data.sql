@@ -3,40 +3,34 @@
 
 -- 插入测试MSDS主表数据
 INSERT INTO msds_main (
-    msds_number, product_name, product_english_name, product_alias, cas_number,
-    company_name, company_address, company_phone, company_fax, company_email,
-    emergency_phone, msds_version, revision_date, file_name, file_path,
-    file_size, file_type, content_text, parse_status, create_by
+    msds_code, product_name, product_english_name, product_alias, cas_number,
+    company_name, company_address, contact_phone, fax_number, email,
+    emergency_phone, version, revision_date, is_active
 ) VALUES 
 (
     'MSDS-001-2024', '丙酮', 'Acetone', '二甲基甲酮', '67-64-1',
     '测试化工有限公司', '北京市朝阳区测试路123号', '010-12345678', '010-87654321', 'test@chemical.com',
-    '400-123-4567', 'V2.1', '2024-01-15', 'acetone_msds.txt', '/test/files/acetone_msds.txt',
-    2048, 'TXT', '丙酮安全数据表...', 'SUCCESS', 'test'
+    '400-123-4567', 'V2.1', '2024-01-15', 1
 ),
 (
     'MSDS-002-2024', '乙醇', 'Ethanol', '酒精', '64-17-5',
     '测试化工有限公司', '北京市朝阳区测试路123号', '010-12345678', '010-87654321', 'test@chemical.com',
-    '400-123-4567', 'V1.8', '2024-02-10', 'ethanol_msds.docx', '/test/files/ethanol_msds.docx',
-    4096, 'DOCX', '乙醇安全数据表...', 'SUCCESS', 'test'
+    '400-123-4567', 'V1.8', '2024-02-10', 1
 ),
 (
     'MSDS-003-2024', '甲苯', 'Toluene', '甲基苯', '108-88-3',
     '测试化工有限公司', '北京市朝阳区测试路123号', '010-12345678', '010-87654321', 'test@chemical.com',
-    '400-123-4567', 'V3.0', '2024-03-05', 'toluene_msds.doc', '/test/files/toluene_msds.doc',
-    3072, 'DOC', '甲苯安全数据表...', 'PARTIAL', 'test'
+    '400-123-4567', 'V3.0', '2024-03-05', 1
 ),
 (
     'MSDS-004-2024', '苯', 'Benzene', '苯', '71-43-2',
     '测试化工有限公司', '北京市朝阳区测试路123号', '010-12345678', '010-87654321', 'test@chemical.com',
-    '400-123-4567', 'V2.5', '2024-04-01', 'benzene_msds.pdf', '/test/files/benzene_msds.pdf',
-    5120, 'PDF', '苯安全数据表...', 'FAILED', 'test'
+    '400-123-4567', 'V2.5', '2024-04-01', 1
 ),
 (
     'MSDS-005-2024', '氯化钠', 'Sodium Chloride', '食盐', '7647-14-5',
     '测试化工有限公司', '北京市朝阳区测试路123号', '010-12345678', '010-87654321', 'test@chemical.com',
-    '400-123-4567', 'V1.2', '2024-05-15', 'nacl_msds.txt', '/test/files/nacl_msds.txt',
-    1536, 'TXT', '氯化钠安全数据表...', 'SUCCESS', 'test'
+    '400-123-4567', 'V1.2', '2024-05-15', 1
 );
 
 -- 插入MSDS详细信息测试数据

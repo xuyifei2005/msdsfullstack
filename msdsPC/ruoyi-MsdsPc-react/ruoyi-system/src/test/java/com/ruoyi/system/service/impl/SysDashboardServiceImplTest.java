@@ -48,7 +48,7 @@ public class SysDashboardServiceImplTest {
         assertEquals(80, stats.get("valid"));
         assertEquals(15, stats.get("pending"));
         assertEquals(5, stats.get("expired"));
-        verify(redisCache, times(1)).setCacheObject(eq("dashboard:document:stats"), any(Map.class), eq(5L), eq(TimeUnit.MINUTES));
+        verify(redisCache, times(1)).setCacheObject(eq("dashboard:document:stats"), any(Map.class), eq(5), eq(TimeUnit.MINUTES));
     }
 
     @Test
@@ -65,7 +65,6 @@ public class SysDashboardServiceImplTest {
         assertEquals(22, stats.get("monthViews"));
         assertEquals(33, stats.get("totalViews"));
         assertEquals(4, stats.get("activeUsers"));
-        verify(redisCache, times(1)).setCacheObject(eq("dashboard:access:stats"), any(Map.class), eq(1L), eq(TimeUnit.MINUTES));
+        verify(redisCache, times(1)).setCacheObject(eq("dashboard:access:stats"), any(Map.class), eq(1), eq(TimeUnit.MINUTES));
     }
 }
-

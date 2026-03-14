@@ -3,6 +3,9 @@
 
 // 1) 引入 jest-dom 扩展，使得可以使用 toBeInTheDocument 等匹配器
 import '@testing-library/jest-dom';
+import React from 'react';
+
+global.React = React;
 
 // 2) localStorage mock（简化实现）
 if (!global.localStorage) {

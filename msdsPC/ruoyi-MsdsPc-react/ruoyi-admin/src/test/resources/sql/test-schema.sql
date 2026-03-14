@@ -1,43 +1,55 @@
 -- 测试环境数据库初始化脚本
 -- H2数据库兼容MySQL语法
 
--- 创建MSDS主表
-CREATE TABLE IF NOT EXISTS msds_main (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    msds_number VARCHAR(100) COMMENT 'MSDS编号',
-    product_name VARCHAR(200) NOT NULL COMMENT '化学品中文名',
-    product_english_name VARCHAR(200) COMMENT '化学品英文名',
-    product_alias VARCHAR(500) COMMENT '化学品别名/CAS号',
-    cas_number VARCHAR(50) COMMENT 'CAS号',
-    company_name VARCHAR(200) COMMENT '企业名称',
-    company_address VARCHAR(500) COMMENT '企业地址',
-    company_phone VARCHAR(50) COMMENT '企业电话',
-    company_fax VARCHAR(50) COMMENT '企业传真',
-    company_email VARCHAR(100) COMMENT '企业邮箱',
-    emergency_phone VARCHAR(50) COMMENT '应急电话',
-    msds_version VARCHAR(50) COMMENT 'MSDS版本',
-    revision_date DATE COMMENT '修订日期',
-    file_name VARCHAR(255) COMMENT '原始文件名',
-    file_path VARCHAR(500) COMMENT '文件存储路径',
-    file_size BIGINT COMMENT '文件大小（字节）',
-    file_type VARCHAR(20) COMMENT '文件类型',
-    content_text LONGTEXT COMMENT '文档内容文本',
-    parse_status VARCHAR(20) DEFAULT 'SUCCESS' COMMENT '解析状态：SUCCESS/FAILED/PARTIAL',
-    parse_error_msg TEXT COMMENT '解析错误信息',
+-- 创建系统参数配置表
+CREATE TABLE IF NOT EXISTS sys_config (
+    config_id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    config_name VARCHAR(100) DEFAULT '' COMMENT '参数名称',
+    config_key VARCHAR(100) DEFAULT '' COMMENT '参数键名',
+    config_value VARCHAR(500) DEFAULT '' COMMENT '参数键值',
+    config_type CHAR(1) DEFAULT 'N' COMMENT '系统内置（Y是 N否）',
     create_by VARCHAR(64) DEFAULT '' COMMENT '创建者',
     create_time DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
     update_by VARCHAR(64) DEFAULT '' COMMENT '更新者',
-    update_time DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
-    remark VARCHAR(500) DEFAULT NULL COMMENT '备注',
-    del_flag CHAR(1) DEFAULT '0' COMMENT '删除标志（0代表存在 2代表删除）'
+    update_time DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
+    remark VARCHAR(500) DEFAULT NULL COMMENT '备注'
+) COMMENT='参数配置表';
+
+-- 创建MSDS主表（对齐 MyBatis Mapper 字段）
+CREATE TABLE IF NOT EXISTS msds_main (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    cas_number VARCHAR(50) DEFAULT '' COMMENT 'CAS号',
+    msds_code VARCHAR(100) DEFAULT '' COMMENT 'MSDS编号',
+    product_name VARCHAR(200) NOT NULL COMMENT '化学品中文名',
+    product_alias VARCHAR(500) DEFAULT NULL COMMENT '化学品别名',
+    product_english_name VARCHAR(200) DEFAULT NULL COMMENT '化学品英文名',
+    category_id BIGINT DEFAULT NULL COMMENT '类别ID',
+    company_name VARCHAR(200) DEFAULT NULL COMMENT '企业名称',
+    company_address VARCHAR(500) DEFAULT NULL COMMENT '企业地址',
+    zip_code VARCHAR(20) DEFAULT NULL COMMENT '邮编',
+    fax_number VARCHAR(50) DEFAULT NULL COMMENT '传真',
+    contact_phone VARCHAR(50) DEFAULT NULL COMMENT '联系电话',
+    email VARCHAR(100) DEFAULT NULL COMMENT '电子邮件',
+    emergency_phone VARCHAR(50) DEFAULT NULL COMMENT '应急电话',
+    recommended_usage VARCHAR(500) DEFAULT NULL COMMENT '推荐用途',
+    restricted_usage VARCHAR(500) DEFAULT NULL COMMENT '限制用途',
+    version VARCHAR(50) DEFAULT NULL COMMENT '版本',
+    revision_date DATE DEFAULT NULL COMMENT '修订日期',
+    effective_date DATE DEFAULT NULL COMMENT '生效日期',
+    status VARCHAR(20) DEFAULT '0' COMMENT '状态',
+    approver VARCHAR(64) DEFAULT NULL COMMENT '审批人',
+    approval_date DATE DEFAULT NULL COMMENT '审批日期',
+    is_active INT DEFAULT 1 COMMENT '是否启用',
+    create_time DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    update_time DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
+    remark VARCHAR(500) DEFAULT NULL COMMENT '备注'
 ) COMMENT='MSDS主表';
 
 -- 创建索引
 CREATE INDEX idx_msds_main_product_name ON msds_main(product_name);
 CREATE INDEX idx_msds_main_cas_number ON msds_main(cas_number);
-CREATE INDEX idx_msds_main_msds_number ON msds_main(msds_number);
+CREATE INDEX idx_msds_main_msds_code ON msds_main(msds_code);
 CREATE INDEX idx_msds_main_create_time ON msds_main(create_time);
-CREATE INDEX idx_msds_main_parse_status ON msds_main(parse_status);
 
 -- 创建MSDS详细信息表
 CREATE TABLE IF NOT EXISTS msds_detail (
