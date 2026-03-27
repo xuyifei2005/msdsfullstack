@@ -198,6 +198,13 @@ export default [
         component: './Msds/IntelligentSearch',
         icon: 'search',
       },
+      // 新增：AI 智能解析录入
+      {
+        name: 'AI 智能解析',
+        path: '/msds/ai-import',
+        component: './Msds/AiImport',
+        icon: 'robot',
+      },
       // MSDS详情页面路由
       {
         name: 'MSDS详情',

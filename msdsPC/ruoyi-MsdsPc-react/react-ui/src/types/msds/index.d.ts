@@ -373,5 +373,20 @@ declare namespace API {
       regulatory?: MsdsRegulatory;
       otherInfo?: MsdsOtherInfo;
     };
+
+    /** AI 解析结果 VO */
+    type MsdsParseVo = {
+      chemicalNameCn?: string;
+      chemicalNameEn?: string;
+      casNo?: string;
+      supplierName?: string;
+      emergencyPhone?: string;
+      formula?: string;
+      hazardCategories?: string[];
+      hazardStatements?: string[];
+      precautionaryStatements?: string[];
+      confidence?: number;
+      rawTextSummary?: string;
+    };
   }
 } 

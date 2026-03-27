@@ -34,8 +34,8 @@ services:
     hostname: msdsnginx
     restart: always
     ports:
-      - "80:80"
-      - "443:443"
+      - "180:80"
+      - "1443:443"
     volumes:
       # Nginx配置文件
       - ./nginx/conf.d:/etc/nginx/conf.d

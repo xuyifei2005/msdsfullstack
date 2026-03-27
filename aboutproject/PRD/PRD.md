@@ -6,14 +6,17 @@
 | 版本 | 日期       | 作者 | 说明                     |
 |------|------------|------|--------------------------|
 | v1.0 | 2025-01-27 | AI PM | 初稿，基于初始产品构想 |
+| v1.1 | 2026-03-17 | AI PM | 结合当前系统实现状态完成商业化增强与验收矩阵修订 |
+| v1.2 | 2026-03-18 | AI PM | 合并移动端PRD细节，补充小程序演进场景 |
+| v1.3 | 2026-03-18 | AI PM | 补充已实现功能清单与页面/模块索引 |
 
 ### 1.2 文档目的
 本文档旨在详细定义“MSDS (化学品安全技术说明书) 管理文件系统”的产品需求、目标用户、核心功能、非功能性需求及成功衡量指标。它是产品设计、开发、测试和迭代的依据。
 
 ### 1.3 相关文档引用
-- [产品路线图 (PC_Roadmap.md)](PC_Roadmap.md)
-- [用户故事地图 (PC_User_Story_Map.md)](PC_User_Story_Map.md)
-- [产品评估指标框架 (PC_Metrics_Framework.md)](PC_Metrics_Framework.md)
+- [产品路线图 (Roadmap.md)](Roadmap.md)
+- [用户故事地图 (User_Story_Map.md)](User_Story_Map.md)
+- [产品评估指标框架 (Metrics_Framework.md)](Metrics_Framework.md)
 - [技术架构文档 (Technical_Architecture.md)](Technical_Architecture.md)
 
 ## 2. 产品概述
@@ -126,7 +129,7 @@
     *   **需求**: 他需要详细了解丙酮的闪点、爆炸极限、毒性、所需个人防护装备等。
     *   **期望系统支持**: 打开微信小程序，在顶部的搜索框输入“丙酮”或其CAS号，系统快速列出匹配的MSDS。点击查看，在线预览MSDS全文，特别是关注“危险性概述”、“急救措施”、“消防措施”、“泄漏应急处理”和“操作处置与储存”等章节。
 
-2.  **场景二: 实验室管理员更新与分发MSDS**
+3.  **场景三: 实验室管理员更新与分发MSDS**
     *   **用户**: 实验室安全管理员王老师
     *   **情景**: 实验室新采购了一批化学品，同时收到了供应商提供的最新版MSDS文件 (PDF格式)。
     *   **需求**: 王老师需要将这些新的MSDS录入系统，并替换掉系统中可能存在的旧版本，确保所有科研人员都能获取到最新信息。
@@ -475,7 +478,11 @@ stateDiagram-v2
 -   **数据库存储** (MySQL): 预计50GB（3年），使用Docker命名卷持久化
 -   **文件存储**: 预计200GB（MSDS文档），Docker卷挂载
 -   **备份策略**: 
-    -   数据库
+    -   数据库全量备份: 每日凌晨执行1次，保留30天。
+    -   数据库增量备份: 每4小时执行1次，保留7天。
+    -   文档文件备份: 文件卷每日快照，保留15天。
+    -   备份有效性校验: 每周执行1次恢复演练并输出报告。
+    -   备份存放策略: 同机房与异地各保留1份，防止单点灾难。
 
 ### 7.2 安全需求
 
@@ -657,7 +664,7 @@ stateDiagram-v2
   - 依赖: msdsbackend
   - 通信方式: HTTP API调用
 - **后端容器** (msdsbackend):
-  - 端口映射: 18080:8080, 5005:5005 (调试), 2222:22 (SSH)
+  - 端口映射: 18081:8080, 5005:5005 (调试), 2222:22 (SSH)
   - 依赖: msdsmysql, msdsredis
   - 健康检查: HTTP GET /actuator/health
 - **数据库容器** (msdsmysql):
@@ -665,10 +672,10 @@ stateDiagram-v2
   - 数据持久化: msdsmysql_data命名卷
   - 字符集: utf8mb4
 - **缓存容器** (msdsredis):
-  - 端口映射: 16379:6379
+  - 端口映射: 容器内访问为主（默认不对宿主机暴露）
   - 数据持久化: msdsredis_data命名卷
 - **代理容器** (msdsnginx):
-  - 端口映射: 180:80, 11443:443
+  - 端口映射: 180:80, 1443:443
   - SSL证书挂载: /etc/nginx/ssl
   - 静态资源: /usr/share/nginx/html
 
@@ -731,20 +738,20 @@ stateDiagram-v2
 ### 9.1 功能验收标准矩阵
 | 功能模块         | 功能点                     | 优先级 | 验收标准 (简述)                                                                 | 负责人 (占位) | 状态 (占位) |
 |------------------|----------------------------|--------|---------------------------------------------------------------------------------|---------------|-------------|
-| **MSDS数据管理** | MSDS文件上传               | P0     | 支持PDF/DOCX/TXT上传；批量上传；版本提示                                          | 开发团队      | 未开始      |
-|                  | MSDS元数据编辑             | P0     | 编辑名称/CAS/供应商等；CAS校验；自定义分类/标签                                   | 开发团队      | 未开始      |
-|                  | MSDS版本控制               | P0     | 保留历史版本；默认最新；可查历史版本                                              | 开发团队      | 未开始      |
-| **MSDS检索查阅** | 关键词搜索                 | P0     | 按名称/CAS/标签搜索；结果准确；响应快                                             | 开发团队      | 未开始      |
-|                  | MSDS在线预览               | P0     | PDF/DOCX预览；缩放/翻页/内容搜索                                                  | 开发团队      | 未开始      |
-|                  | MSDS文件下载               | P0     | 下载原始文件                                                                    | 开发团队      | 未开始      |
-| **用户与权限**   | 用户账户管理               | P1     | 创建/编辑/禁用用户；密码策略                                                      | 开发团队      | 未开始      |
-|                  | 角色与权限分配             | P1     | 定义角色；为角色分配操作权限；权限控制生效                                        | 开发团队      | 未开始      |
-| **通知与提醒**   | MSDS更新通知               | P2     | 管理员上传新版后，可选择通知相关用户                                              | 开发团队      | 未开始      |
-|                  | MSDS过期提醒               | P2     | 系统能根据设定提醒管理员复审或更新MSDS                                            | 开发团队      | 未开始      |
-| **日志与审计**   | 操作日志记录               | P1     | 记录用户登录、MSDS增删改查等关键操作                                              | 开发团队      | 未开始      |
-| **数据导入导出** | 批量导入MSDS               | P1     | 支持从指定格式（如CSV+文件路径）批量导入MSDS                                      | 开发团队      | 未开始      |
+| **MSDS数据管理** | 多格式导入与预览           | P0     | 支持PDF/DOCX/TXT/CSV/XML导入；支持导入前预览与导入模板下载                          | 开发团队      | 已实现      |
+|                  | MSDS元数据编辑             | P0     | 编辑名称/CAS/供应商等；CAS校验；自定义分类/标签                                   | 开发团队      | 已实现      |
+|                  | MSDS版本控制               | P0     | 保留历史版本；默认最新；可查历史版本                                              | 开发团队      | 已实现      |
+| **MSDS检索查阅** | 智能搜索                   | P0     | 支持搜索建议、热门词、历史记录、相关文档推荐                                       | 开发团队      | 已实现      |
+|                  | 在线预览与下载             | P0     | 支持在线预览、单个/批量PDF导出、下载审计记录                                       | 开发团队      | 已实现      |
+| **数据分析**     | 多维统计看板               | P1     | 提供汇总、趋势、分类、风险、排行、月度新增、用户活跃度、导出报告                    | 开发团队      | 已实现      |
+| **日志与审计**   | 审计日志与审计统计         | P1     | 支持按MSDS追踪、操作类型分布、操作人员活跃度、导出                                 | 开发团队      | 已实现      |
+| **流程协同**     | 工作流看板与任务管理       | P1     | 支持任务创建、分配、状态流转、评论、活动记录                                       | 开发团队      | 已实现      |
+|                  | MSDS审批流程闭环           | P1     | 支持待审批任务、当前审批步骤跟踪、审批历史可追溯                                   | 开发团队      | 进行中      |
+| **导入治理**     | 导入任务进度追踪           | P1     | 支持任务进度、失败原因、超时任务识别、过期记录清理                                 | 开发团队      | 已实现      |
+| **通知与提醒**   | MSDS更新通知               | P2     | 管理员上传新版后，可按角色/部门触达相关人员                                        | 开发团队      | 规划中      |
+|                  | MSDS过期提醒               | P2     | 支持按复审周期生成提醒任务，并纳入工作流闭环                                       | 开发团队      | 规划中      |
 
-*(注: 此处为部分核心功能，完整矩阵应包含所有功能点)*
+状态说明：已实现=代码与页面均可用；进行中=后端能力已具备，前端与流程仍在完善；规划中=需求明确待排期。
 
 ### 9.2 性能验收标准
 -   搜索响应时间: 95% < 2s (10万数据量)
@@ -757,6 +764,19 @@ stateDiagram-v2
 -   **代码覆盖率**: 单元测试覆盖率 > 70%；核心模块 > 80%。
 -   **系统稳定性**: 平均无故障运行时间 (MTBF) > 99.9%。
 -   **文档完整性**: 用户手册、管理员手册、API文档（如适用）齐全准确。
+
+### 9.4 已实现功能清单与页面/模块索引
+
+| 功能域 | 典型入口（路由） | 前端页面 | 后端控制器 | 交付状态 |
+|--------|------------------|----------|------------|----------|
+| MSDS 管理与导入 | /msds/main | [Msds/index.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/Msds/index.tsx), [ImportModal.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/Msds/components/ImportModal.tsx) | [MsdsMainController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/MsdsMainController.java), [MsdsImportProgressController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/MsdsImportProgressController.java) | 已实现 |
+| MSDS 详情与16章编辑 | /msds/detail/:id | [Msds/Detail/index.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/Msds/Detail/index.tsx), [MsdsStepForm.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/Msds/components/MsdsStepForm.tsx) | [MsdsComponentController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/MsdsComponentController.java), [MsdsFirstAidController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/MsdsFirstAidController.java), [MsdsDisposalController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/MsdsDisposalController.java) | 已实现 |
+| MSDS 预览（导入前预览） | /msds/preview | [Msds/Preview/index.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/Msds/Preview/index.tsx) | [MsdsMainController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/MsdsMainController.java) | 已实现 |
+| 智能搜索 | /msds/search | [Msds/IntelligentSearch/index.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/Msds/IntelligentSearch/index.tsx) | [MsdsSearchController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/MsdsSearchController.java) | 已实现 |
+| 数据分析看板 | /msds/analytics | [Analytics/DataReport/index.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/Analytics/DataReport/index.tsx) | [MsdsAnalyticsController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/MsdsAnalyticsController.java), [MsdsReportController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/MsdsReportController.java) | 已实现 |
+| 审计日志与统计 | /system/auditlog, /system/audit-statistics | [System/AuditLog/index.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/System/AuditLog/index.tsx), [System/AuditStatistics/index.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/System/AuditStatistics/index.tsx) | [MsdsAuditLogController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/MsdsAuditLogController.java), [SysOperlogController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/monitor/SysOperlogController.java) | 已实现 |
+| 工作流看板 | /workflow/board | [Workflow/index.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/Workflow/index.tsx) | [WorkflowTaskController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/WorkflowTaskController.java) | 进行中 |
+| AI 智能解析 | /msds/ai-import | [Msds/AiImport/index.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/Msds/AiImport/index.tsx) | [MsdsAiController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/msds/MsdsAiController.java) | 建设中 |
 
 ## 10. 产品成功指标
 
@@ -789,6 +809,148 @@ stateDiagram-v2
     -   用户行为分析: 每周/每双周进行深入分析。
     -   用户满意度: 每季度进行一次调研。
 -   **负责人**: 产品经理、数据分析师 (若有)。
+
+## 11. 商业化与产品亮点增强
+
+### 11.1 分级产品套餐设计
+-   **基础版（合规入门）**: MSDS管理、检索查阅、基础权限、基础日志，面向中小实验室快速上线。
+-   **专业版（效率提升）**: 含智能搜索、数据分析看板、导入治理、批量导出，面向多课题组协作场景。
+-   **旗舰版（治理与审计）**: 含审计中心、审批流程、任务看板、私有化部署、SSO/LDAP集成能力。
+
+### 11.2 可收费亮点能力
+-   **合规审计中心**: 一键导出审计与访问证据包，缩短检查准备周期。
+-   **智能检索引擎**: 搜索建议+热门词+历史+相关文档，降低查找成本。
+-   **运营分析驾驶舱**: 按部门/分类/风险等级输出可视化报告，支撑安全治理决策。
+-   **流程化治理闭环**: 从导入、审批、发布、复审到留痕形成责任链，降低管理风险。
+-   **私有化与集成能力**: 支持容器化交付、统一认证与外部系统集成，提升客单价和续费率。
+
+### 11.3 商业指标与ROI目标
+-   **查阅效率提升**: 查找并打开目标MSDS平均时长降低40%以上。
+-   **合规准备效率提升**: 审计材料准备时长降低50%以上。
+-   **文档时效提升**: 最新版本覆盖率达到95%以上。
+-   **系统粘性提升**: 专业版客户3个月留存率目标>85%。
+
+### 11.4 套餐价格锚点与交付边界（销售口径）
+-   **基础版（合规入门）**: 6-12万元/年（SaaS）或12-18万元一次性（私有化轻交付）；含标准功能、基础培训、标准工单支持。
+-   **专业版（效率提升）**: 18-35万元/年（SaaS）或30-50万元一次性（私有化）；含智能搜索、分析看板、导入治理、季度运营复盘。
+-   **旗舰版（治理与审计）**: 50-120万元/年（私有化优先）；含审批闭环、审计中心、SSO/LDAP、对接服务与驻场支持。
+-   **价格说明**: 价格按实验室数量、并发规模、集成复杂度、是否驻场实施进行上下浮动。
+
+### 11.5 标准交付物分层清单
+-   **基础版交付物**: 系统部署、初始账号权限、MSDS模板、管理员培训、上线验收报告。
+-   **专业版交付物**: 在基础版上增加数据看板配置、智能搜索调优、导入治理方案、月度运营报告模板。
+-   **旗舰版交付物**: 在专业版上增加流程制度映射文档、审计报告模板、统一认证对接文档、接口联调文档、年度优化计划。
+
+## 12. 文档完善与后续更新清单
+
+### 12.1 本次已完成更新
+-   修正核心场景编号错误与文档中断项（备份策略）。
+-   同步容器端口与部署描述到当前运行基线。
+-   将验收矩阵从“未开始”更新为“已实现/进行中/规划中”。
+-   新增商业化分级套餐、亮点能力与ROI指标。
+-   新增已实现功能清单与页面/模块索引。
+
+### 12.2 下一轮建议更新
+-   增加“审批流程闭环”端到端时序图与异常分支处理。
+-   增补“采购决策链路（实验室负责人/安全办/信息中心）”的分角色价值主张页。
+
+### 12.3 更新通知与过期提醒事件流（可直接进入研发）
+| 事件编码 | 触发事件 | 触发条件 | 接收对象 | 通知渠道 | 时效SLA | 失败补偿 |
+|---------|----------|----------|----------|----------|---------|----------|
+| EVT-MSDS-001 | MSDS新版本发布 | 文档状态变更为“已发布” | 相关角色、所属部门用户 | 站内信/邮件/小程序订阅消息 | 5分钟内送达 | 失败重试3次，仍失败转人工任务 |
+| EVT-MSDS-002 | MSDS临期预警 | 距复审到期30/7/1天 | 安全管理员、部门管理员 | 站内信+邮件 | 定时任务触发后10分钟内 | 生成“复审待办”并升级通知 |
+| EVT-MSDS-003 | MSDS已过期 | 当前日期超过有效期 | 安全负责人、实验室负责人 | 站内信+邮件+看板红色告警 | 实时（15分钟内） | 自动创建高优先级工作流任务 |
+| EVT-MSDS-004 | 审批超时提醒 | 流程节点超过SLA未处理 | 当前审批人及其上级 | 站内信 | 每日09:00巡检 | 连续3天超时自动升级 |
+
+| 模板编码 | 标题模板 | 内容关键字段 | 操作按钮 |
+|---------|----------|--------------|----------|
+| TMP-MSDS-UPD | 【MSDS更新】{产品名}已发布新版本V{版本号} | 产品名、CAS号、版本号、生效日期、变更摘要 | 查看详情、确认已读 |
+| TMP-MSDS-EXP-30 | 【MSDS复审提醒】{产品名}将在{剩余天数}天后到期 | 产品名、到期日期、责任部门、责任人 | 去复审、转派任务 |
+| TMP-MSDS-EXP-0 | 【MSDS已过期】{产品名}需立即复审 | 产品名、CAS号、过期时间、风险等级 | 立即处理、升级审批 |
+
+### 12.4 标准实施周期（SOW）与验收条目
+-   **第1周（启动阶段）**: 需求澄清、环境核验、数据清单确认、项目计划冻结。
+-   **第2-3周（实施阶段）**: 部署与权限初始化、历史数据导入、关键流程配置、联调测试。
+-   **第4周（上线阶段）**: 用户培训、试运行、问题闭环、正式切换与验收签字。
+-   **质保期（默认1-3个月）**: 线上问题响应、小版本优化、运营复盘会议。
+
+| 验收域 | 核心验收项 | 验收标准 |
+|--------|------------|----------|
+| 功能验收 | 检索、预览、导入、审计、看板 | 核心用例通过率100%，无P1缺陷 |
+| 性能验收 | 关键接口响应与并发 | 满足第9.2节目标，无持续性超阈值 |
+| 安全验收 | 权限、日志、数据隔离 | 权限矩阵验证通过，审计链路完整 |
+| 交付验收 | 文档、培训、运维移交 | 交付件齐全，管理员完成上手演练 |
+
+### 12.5 竞品价格带与替换话术矩阵（销售实战版）
+| 客户类型 | 常见替代方案 | 典型价格带 | 主要短板 | 我方替换话术（价值锚点） |
+|----------|--------------|------------|----------|-------------------------|
+| 高校实验室 | Excel/共享盘/纸质SOP | 低成本或零成本 | 难审计、难追责、更新不同步 | “不是替代表格，而是建立可审计的安全治理闭环，降低事故与检查风险。” |
+| 科研院所 | 通用文档系统（SharePoint/Confluence） | 5-20万元/年 | 无MSDS语义检索、无复审提醒、流程弱 | “保留原有文档平台不冲突，MSDS专业层补齐检索、提醒、审计能力。” |
+| 企业研发中心 | 海外MSDS平台（Chemwatch/3E等） | 20-100万元/年 | 本地化与定制慢、实施重、成本高 | “以本地化流程和私有化部署实现同等合规能力，交付周期更短、总成本更优。” |
+
+| 竞争维度 | 海外平台 | 通用文档系统 | 本系统（MSDS实验室管理） |
+|----------|----------|--------------|---------------------------|
+| 场景适配度 | 中 | 低 | 高 |
+| 合规审计留痕 | 高 | 低 | 高 |
+| 智能搜索与推荐 | 高 | 低 | 中-高 |
+| 私有化灵活性 | 中 | 中 | 高 |
+| 实施周期 | 中-慢 | 快 | 快-中 |
+| 总体拥有成本（TCO） | 高 | 中 | 中 |
+
+### 12.6 采购答疑FAQ（售前/招投标可复用）
+-   **Q1: 为什么不继续用Excel和共享盘？**  
+    **A**: Excel能存档但无法形成“版本可追溯+责任可归因+审计可导出”的闭环，合规检查成本高且隐性风险大。
+-   **Q2: 你们和海外MSDS平台相比优势是什么？**  
+    **A**: 本地化交付、私有化弹性、流程定制与响应速度更优，整体实施周期和综合成本更可控。
+-   **Q3: 数据是否可私有化与本地部署？**  
+    **A**: 支持容器化私有部署，数据可完全留存在客户环境；可按需对接统一认证与内网安全策略。
+-   **Q4: 是否支持与现有系统集成？**  
+    **A**: 支持通过标准API与LIMS/ELN/统一认证系统集成，减少重复录入并保持主数据一致。
+-   **Q5: 实施周期通常多久？**  
+    **A**: 标准项目4周可上线试运行，复杂集成项目按接口与流程复杂度扩展到6-10周。
+-   **Q6: 上线后怎么保障可用性？**  
+    **A**: 提供标准质保期、问题分级响应机制、月度运营复盘和版本优化计划。
+-   **Q7: 如何证明投入回报（ROI）？**  
+    **A**: 以“查阅效率、合规准备时间、最新版本覆盖率、问题闭环时长”四项指标做季度复盘，量化收益。
+
+## 13. 产品未来演进与高价值功能蓝图 (Roadmap)
+
+为了在竞标中脱颖而出，并大幅提升客单价（解决客户“深层次痛点”），系统未来将向 **AI智能化、物联网(IoT)硬件联动、全生命周期闭环、以及应急与合规生态** 四个维度进行功能扩充。
+
+### 13.1 AI 与自动化深度赋能（降本增效利器）
+-   **AI 智能解析与录入 (AI MSDS Parser)**
+    -   **技术方案**: 详见 [01_AI_MSDS_Parser_Design.md](../技术方案/01_AI_MSDS_Parser_Design.md)
+    -   **痛点**: 传统人工录入或简单OCR需要核对大量复杂的化学字段，耗时且易错。
+    -   **功能**: 上传 PDF 或图片后，利用大模型/NLP技术，自动精准提取 CAS 号、GHS 分类、H/P 声明（危险/防范说明）、理化特性等，自动填充表单。系统高亮置信度低的地方供人工复核。
+-   **智能合规标签生成引擎 (Smart GHS Label Generator)**
+    -   **功能**: 基于录入的 MSDS 数据，一键生成符合国家标准（GB 15258）的化学品安全标签。支持自定义模板、批量导出 PDF、对接主流标签打印机，并支持生成包含 MSDS 详情链接的二维码。
+-   **化学品配伍禁忌智能预警 (Chemical Compatibility Checker)**
+    -   **功能**: 在入库或排库时，系统自动判断库房内已有化学品与新入库化学品是否会发生剧烈反应（如酸碱混放、强氧化剂与还原剂混放），并在界面进行强阻断或红灯预警。
+
+### 13.2 物联网 (IoT) 与硬件联动（软硬一体扩展）
+-   **智能危化品柜/试剂柜对接 (Smart Cabinet Integration)**
+    -   **功能**: 对接市面上的 RFID 智能柜或称重柜。实现“刷脸/指纹开门 -> 领用试剂 -> 关门自动盘点”。系统大屏实时显示柜内化学品状态与库存余量。
+    -   **移动端联动场景**: 科研人员通过小程序扫码完成身份鉴权，柜门自动弹开，并自动记录开门人与时间。
+-   **实验室环境传感器联动 (Environmental Sensor Linkage)**
+    -   **功能**: 对接温湿度、VOC（挥发性有机物）、可燃气体浓度传感器。当传感器报警时，系统自动关联该区域存放的化学品，直接弹出对应化学品的 MSDS 应急处置方案。
+    -   **移动端联动场景**: 小程序首页实时显示温湿度与VOC浓度，触发报警时弹出危险区域化学品清单与处置要点。
+
+### 13.3 业务闭环：从“资料库”走向“全生命周期管理”
+-   **危废处置管理模块 (Hazardous Waste Management)**
+    -   **痛点**: 化学品使用后的废液处理是实验室极大的合规痛点。
+    -   **功能**: 建立废弃物台账，关联原始 MSDS 的废弃处置建议。记录废液桶的成分、满溢状态，并支持对接外部危废处置公司的交接单（联单）打印。
+    -   **移动端联动场景**: 危废处置公司上门回收时，管理员使用小程序扫描废液桶二维码，生成电子联单并完成双方电子签名。
+-   **一物一码全链路追溯 (End-to-End Traceability)**
+    -   **功能**: 从采购申请 -> 供应商发货 -> 扫码入库 -> 扫码领用 -> 归还/报废。通过二维码贯穿化学品的一生，发生事故时可实现秒级溯源。
+    -   **移动端联动场景**: 扫码入库、领用、归还、空瓶报废均在小程序侧完成，库存自动扣减并回写台账。
+
+### 13.4 应急响应与人员赋能（体现安全管理终极价值）
+-   **一键应急响应大屏 (One-Click Emergency Dashboard)**
+    -   **功能**: 发生泄漏或火灾时，安全员点击“一键应急”，系统立刻锁定事故房间，调出该房间内所有高危化学品清单，自动生成并语音播报《灭火与应急泄漏处理指南》（如：切勿用水、使用抗溶性泡沫等），并可通过企微/钉钉群发撤离通知。
+    -   **移动端联动场景**: 小程序提供一键 SOS 与事故上报，自动定位房间号并推送最高级别报警，同时同步撤离路线与处置指南。
+-   **“准入制”安全培训与考试 (Safety Training & Certification)**
+    -   **功能**: 将 MSDS 转化为培训素材。针对剧毒、易制爆等管控化学品，人员必须在系统中阅读其 MSDS 并通过随机生成的安全小测验（如“该试剂泄漏应如何处理？”），考试合格后系统才为其开放该化学品的申领权限。
+    -   **移动端联动场景**: 通过小程序扫码学习3分钟安全微课，完成随机测试后生成电子准入证，才能解锁申领权限。
 
 ---
 **文档结束**
