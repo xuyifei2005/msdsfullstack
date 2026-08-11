@@ -38,17 +38,29 @@
         <text class="input-label">密码</text>
         <view class="input-item" :class="{ 'input-focus': focusedInput === 'password' }">
           <view class="iconfont icon-password icon"></view>
-          <input 
-            v-model="loginForm.password" 
-            :type="showPassword ? 'text' : 'password'"
-            class="input" 
-            placeholder="请输入密码" 
-            maxlength="20" 
+          <input
+            v-if="!showPassword"
+            v-model="loginForm.password"
+            type="password"
+            class="input input-password"
+            placeholder="请输入密码"
+            maxlength="20"
             placeholder-style="color: rgba(255, 255, 255, 0.6)"
             @focus="focusedInput = 'password'"
             @blur="focusedInput = ''"
           />
-          <view class="password-toggle" @click="showPassword = !showPassword">
+          <input
+            v-else
+            v-model="loginForm.password"
+            type="text"
+            class="input input-password"
+            placeholder="请输入密码"
+            maxlength="20"
+            placeholder-style="color: rgba(255, 255, 255, 0.6)"
+            @focus="focusedInput = 'password'"
+            @blur="focusedInput = ''"
+          />
+          <view class="password-toggle" @click="togglePassword">
              <uni-icons :type="showPassword ? 'eye-filled' : 'eye-slash-filled'" color="rgba(255,255,255,0.8)" size="24"></uni-icons>
           </view>
         </view>
@@ -150,6 +162,9 @@
       //#endif
     },
     methods: {
+      togglePassword() {
+        this.showPassword = !this.showPassword
+      },
       handleSocialLogin(type) {
         this.$modal.msgSuccess(type === 'wechat' ? '微信登录' : 'Apple登录')
       },
@@ -330,6 +345,7 @@
     }
 
     .input-item {
+      position: relative;
       background: rgba(255, 255, 255, 0.15);
       border: 2rpx solid rgba(255, 255, 255, 0.2);
       border-radius: 28rpx;
@@ -364,14 +380,22 @@
         height: 100%;
       }
 
+      .input-password {
+        padding-right: 80rpx;
+      }
+
       .password-toggle {
-        padding: 10rpx;
-        margin-right: -10rpx;
+        position: absolute;
+        right: 36rpx;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 16rpx;
         display: flex;
         align-items: center;
         justify-content: center;
         opacity: 0.8;
-        
+        z-index: 10;
+
         &:active {
           opacity: 1;
         }

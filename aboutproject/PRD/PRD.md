@@ -9,6 +9,7 @@
 | v1.1 | 2026-03-17 | AI PM | 结合当前系统实现状态完成商业化增强与验收矩阵修订 |
 | v1.2 | 2026-03-18 | AI PM | 合并移动端PRD细节，补充小程序演进场景 |
 | v1.3 | 2026-03-18 | AI PM | 补充已实现功能清单与页面/模块索引 |
+| v1.4 | 2026-03-27 | AI PM | 补全 Dashboard、AI 智能解析、移动端收藏历史、帮助中心等已实现功能 |
 
 ### 1.2 文档目的
 本文档旨在详细定义“MSDS (化学品安全技术说明书) 管理文件系统”的产品需求、目标用户、核心功能、非功能性需求及成功衡量指标。它是产品设计、开发、测试和迭代的依据。
@@ -304,6 +305,21 @@ graph TD
     2.  系统能正确将最新上传的标记为当前版本。
     3.  用户可以查看并访问该MSDS的所有历史版本。
 
+##### 5.2.1.4 AI 智能解析录入 (Beta)
+-   **用户故事**: 作为实验室管理员，我想要通过上传 PDF 文件，让系统自动识别化学品信息，以便减少手动录入的工作量。
+-   **用户价值**: 大幅提升 MSDS 数据入库效率，降低人工录入错误。
+-   **功能逻辑与规则**: 
+    -   支持标准文本型 PDF 格式解析。
+    -   AI 自动提取：化学品中文名、英文名、CAS 号、分子式、供应商、应急电话、GHS 危险性分类、H/P 声明等。
+    -   提供双栏对比界面：左侧预览原始 PDF，右侧显示 AI 解析结果。
+    -   支持人工核对、修改 AI 解析出的数据后再确认入库。
+    -   计算解析置信度，为人工复核提供参考。
+-   **交互要求**: 实时解析进度提示，直观的对比核对界面。
+-   **验收标准**:
+    1.  上传标准 MSDS PDF 后，系统能正确提取 CAS 号和主要危险性分类。
+    2.  用户能对解析结果进行编辑并成功保存入库。
+    3.  支持 PDF 文件的实时在线预览。
+
 #### 5.2.2 MSDS 检索与查阅模块
 
 ##### 5.2.2.1 关键词搜索
@@ -574,11 +590,18 @@ stateDiagram-v2
     -   定期更新基础镜像安全补丁
 
 ### 7.6 数据统计与分析需求
+-   **实时数据仪表板**: 
+    -   **文档概览**: 总量、有效数、待审核数、已过期数。
+    -   **访问统计**: 今日/本月/累计查阅次数、活跃用户数。
+    -   **下载分析**: 今日/本月/累计下载次数及趋势。
+    -   **系统监测**: 实时 CPU、内存、磁盘使用率，当前在线用户数。
+    -   **化学品分析**: 高风险化学品分布、CAS 号覆盖率、供应商分布。
+    -   **排行看板**: 热点文档查阅排行。
 -   **MSDS查阅统计**: 按化学品、按用户/部门、按时间段统计MSDS的查阅次数、下载次数。
 -   **MSDS库统计**: 统计当前库中MSDS总数、各分类占比、过期MSDS数量等。
 -   **用户行为分析**: 热门搜索词、零结果搜索词、用户平均会话时长、功能使用频率等。
 -   **系统性能监控**: 服务器响应时间、错误率、资源使用率等。
--   **数据导出**: 允许管理员导出统计报告（如CSV, Excel格式）。
+-   **数据导出**: 允许管理员导出统计报告（如CSV, Excel, PDF格式）。
 
 ## 8. 技术架构考量
 
@@ -743,11 +766,14 @@ stateDiagram-v2
 |                  | MSDS版本控制               | P0     | 保留历史版本；默认最新；可查历史版本                                              | 开发团队      | 已实现      |
 | **MSDS检索查阅** | 智能搜索                   | P0     | 支持搜索建议、热门词、历史记录、相关文档推荐                                       | 开发团队      | 已实现      |
 |                  | 在线预览与下载             | P0     | 支持在线预览、单个/批量PDF导出、下载审计记录                                       | 开发团队      | 已实现      |
-| **数据分析**     | 多维统计看板               | P1     | 提供汇总、趋势、分类、风险、排行、月度新增、用户活跃度、导出报告                    | 开发团队      | 已实现      |
+| **数据分析**     | 多维统计看板与实时监测     | P1     | 提供汇总、趋势、分类、风险、排行、月度新增、用户活跃度、导出报告、系统性能实时监测 | 开发团队      | 已实现      |
 | **日志与审计**   | 审计日志与审计统计         | P1     | 支持按MSDS追踪、操作类型分布、操作人员活跃度、导出                                 | 开发团队      | 已实现      |
 | **流程协同**     | 工作流看板与任务管理       | P1     | 支持任务创建、分配、状态流转、评论、活动记录                                       | 开发团队      | 已实现      |
 |                  | MSDS审批流程闭环           | P1     | 支持待审批任务、当前审批步骤跟踪、审批历史可追溯                                   | 开发团队      | 进行中      |
 | **导入治理**     | 导入任务进度追踪           | P1     | 支持任务进度、失败原因、超时任务识别、过期记录清理                                 | 开发团队      | 已实现      |
+| **AI 智能解析**   | AI 智能解析录入 (Beta)     | P1     | 支持上传 PDF 自动提取化学品名称、CAS号、GHS分类、H/P声明等，并支持人工核对入库     | 开发团队      | 已实现      |
+| **帮助中心**     | FAQ、反馈与关于我们         | P2     | 提供系统使用 FAQ、用户意见反馈、关于我们等辅助页面                                 | 开发团队      | 已实现      |
+| **移动端增强**   | 我的收藏与查阅历史         | P1     | 支持用户收藏常用 MSDS，记录查阅历史并支持搜索与筛选                                | 开发团队      | 已实现      |
 | **通知与提醒**   | MSDS更新通知               | P2     | 管理员上传新版后，可按角色/部门触达相关人员                                        | 开发团队      | 规划中      |
 |                  | MSDS过期提醒               | P2     | 支持按复审周期生成提醒任务，并纳入工作流闭环                                       | 开发团队      | 规划中      |
 
@@ -775,8 +801,14 @@ stateDiagram-v2
 | 智能搜索 | /msds/search | [Msds/IntelligentSearch/index.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/Msds/IntelligentSearch/index.tsx) | [MsdsSearchController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/MsdsSearchController.java) | 已实现 |
 | 数据分析看板 | /msds/analytics | [Analytics/DataReport/index.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/Analytics/DataReport/index.tsx) | [MsdsAnalyticsController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/MsdsAnalyticsController.java), [MsdsReportController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/MsdsReportController.java) | 已实现 |
 | 审计日志与统计 | /system/auditlog, /system/audit-statistics | [System/AuditLog/index.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/System/AuditLog/index.tsx), [System/AuditStatistics/index.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/System/AuditStatistics/index.tsx) | [MsdsAuditLogController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/MsdsAuditLogController.java), [SysOperlogController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/monitor/SysOperlogController.java) | 已实现 |
-| 工作流看板 | /workflow/board | [Workflow/index.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/Workflow/index.tsx) | [WorkflowTaskController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/WorkflowTaskController.java) | 进行中 |
-| AI 智能解析 | /msds/ai-import | [Msds/AiImport/index.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/Msds/AiImport/index.tsx) | [MsdsAiController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/msds/MsdsAiController.java) | 建设中 |
+| 数据仪表板 | /dashboard | [Dashboard/index.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/Dashboard/index.tsx) | [SysDashboardController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/SysDashboardController.java) | 已实现 |
+| 帮助与反馈 | /msds/about, /msds/faq, /msds/feedback | [About/index.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/Msds/About/index.tsx), [Faq/index.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/Msds/Faq/index.tsx), [Feedback/index.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/Msds/Feedback/index.tsx) | [MsdsAboutUsController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/MsdsAboutUsController.java), [MsdsFaqController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/MsdsFaqController.java), [MsdsFeedbackController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/MsdsFeedbackController.java) | 已实现 |
+| 个人中心 | /account/center, /account/settings | [User/Center/index.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/User/Center/index.tsx), [User/Settings/index.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/User/Settings/index.tsx) | [SysProfileController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/SysProfileController.java) | 已实现 |
+| 系统监控 | /monitor/* | [Monitor/Server/index.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/Monitor/Server/index.tsx), [Monitor/Online/index.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/Monitor/Online/index.tsx) | [ServerController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/monitor/ServerController.java), [SysUserOnlineController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/monitor/SysUserOnlineController.java) | 已实现 |
+| 系统工具 | /tool/* | [Tool/Gen/index.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/Tool/Gen/index.tsx), [Tool/Swagger/index.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/Tool/Swagger/index.tsx) | [GenController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-generator/src/main/java/com/ruoyi/generator/controller/GenController.java) | 已实现 |
+| 移动端收藏与历史 | pages/favorites/index, pages/mine/history/index | [favorites/index.vue](../../wechatapps/RuoYi-Msds-App/pages/favorites/index.vue), [history/index.vue](../../wechatapps/RuoYi-Msds-App/pages/mine/history/index.vue) | - | 已实现 |
+| 工作流看板 | /workflow/board | [Workflow/index.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/Workflow/index.tsx) | [WorkflowTaskController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/WorkflowTaskController.java) | 已实现 |
+| AI 智能解析 | /msds/ai-import | [Msds/AiImport/index.tsx](../../msdsPC/ruoyi-MsdsPc-react/react-ui/src/pages/Msds/AiImport/index.tsx) | [MsdsAiController.java](../../msdsPC/ruoyi-MsdsPc-react/ruoyi-admin/src/main/java/com/ruoyi/web/controller/msds/MsdsAiController.java) | 已实现 |
 
 ## 10. 产品成功指标
 

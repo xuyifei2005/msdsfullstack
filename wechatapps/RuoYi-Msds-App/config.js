@@ -1,9 +1,9 @@
 // 应用全局配置
 module.exports = {
   baseUrlList: [
-    'http://192.168.1.215:18080',
-    'http://192.168.0.101:18080',
-    'http://localhost:18080'
+    // 'http://192.168.1.215:18080',
+    // 'http://192.168.0.101:18080',
+    'http://localhost:18081'
     
   ],
   baseUrl: '',

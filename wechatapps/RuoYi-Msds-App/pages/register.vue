@@ -38,12 +38,25 @@
         <text class="input-label">密码</text>
         <view class="input-item" :class="{ 'input-focus': focusedInput === 'password' }">
           <view class="iconfont icon-password icon"></view>
-          <input 
-            v-model="registerForm.password" 
-            :type="showPassword ? 'text' : 'password'"
-            class="input" 
-            placeholder="请输入密码" 
-            maxlength="20" 
+          <input
+            v-if="!showPassword"
+            v-model="registerForm.password"
+            type="password"
+            class="input input-password"
+            placeholder="请输入密码"
+            maxlength="20"
+            placeholder-style="color: rgba(255, 255, 255, 0.6)"
+            @focus="focusedInput = 'password'"
+            @blur="focusedInput = ''"
+            @input="checkPasswordStrength"
+          />
+          <input
+            v-else
+            v-model="registerForm.password"
+            type="text"
+            class="input input-password"
+            placeholder="请输入密码"
+            maxlength="20"
             placeholder-style="color: rgba(255, 255, 255, 0.6)"
             @focus="focusedInput = 'password'"
             @blur="focusedInput = ''"
@@ -68,12 +81,24 @@
         <text class="input-label">确认密码</text>
         <view class="input-item" :class="{ 'input-focus': focusedInput === 'confirmPassword' }">
           <view class="iconfont icon-password icon"></view>
-          <input 
-            v-model="registerForm.confirmPassword" 
-            :type="showConfirmPassword ? 'text' : 'password'"
-            class="input" 
-            placeholder="请再次输入密码" 
-            maxlength="20" 
+          <input
+            v-if="!showConfirmPassword"
+            v-model="registerForm.confirmPassword"
+            type="password"
+            class="input input-password"
+            placeholder="请再次输入密码"
+            maxlength="20"
+            placeholder-style="color: rgba(255, 255, 255, 0.6)"
+            @focus="focusedInput = 'confirmPassword'"
+            @blur="focusedInput = ''"
+          />
+          <input
+            v-else
+            v-model="registerForm.confirmPassword"
+            type="text"
+            class="input input-password"
+            placeholder="请再次输入密码"
+            maxlength="20"
             placeholder-style="color: rgba(255, 255, 255, 0.6)"
             @focus="focusedInput = 'confirmPassword'"
             @blur="focusedInput = ''"
@@ -362,14 +387,15 @@
     }
 
     .input-item {
-      background: rgba(255, 255, 255, 0.15);
-      border: 2rpx solid rgba(255, 255, 255, 0.2);
-      border-radius: 28rpx;
-      height: 100rpx;
-      display: flex;
-      align-items: center;
-      padding: 0 30rpx;
-      transition: all 0.3s;
+        position: relative;
+        background: rgba(255, 255, 255, 0.15);
+        border: 2rpx solid rgba(255, 255, 255, 0.2);
+        border-radius: 28rpx;
+        height: 100rpx;
+        display: flex;
+        align-items: center;
+        padding: 0 30rpx;
+        transition: all 0.3s;
 
       &.input-focus {
         background: rgba(255, 255, 255, 0.25);
@@ -388,20 +414,32 @@
       }
 
       .input {
-        flex: 1;
-        font-size: 30rpx;
-        color: white;
-        height: 100%;
-      }
+          flex: 1;
+          font-size: 30rpx;
+          color: white;
+          height: 100%;
+        }
 
-      .password-toggle {
-        padding: 10rpx;
-        margin-right: -10rpx;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0.8;
-      }
+        .input-password {
+          padding-right: 80rpx;
+        }
+
+        .password-toggle {
+          position: absolute;
+          right: 30rpx;
+          top: 50%;
+          transform: translateY(-50%);
+          padding: 16rpx;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 0.8;
+          z-index: 10;
+
+          &:active {
+            opacity: 1;
+          }
+        }
     }
 
     /* 密码强度 */
