@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.MsdsDocumentStatisticsMapper">
+
+    <!-- 查询指定文档的统计计数（无记录时返回全 0） -->
+    <select id="selectStatisticsByMsdsId" resultType="java.util.Map">
+        SELECT
+            COALESCE(s.view_count, 0)     AS viewCount,
+            COALESCE(s.download_count, 0) AS downloadCount,
+            COALESCE(s.favorite_count, 0) AS favoriteCount,
+            COALESCE(s.share_count, 0)     AS shareCount,
+            s.last_view_time     AS lastViewTime,
+            s.last_download_time AS lastDownloadTime,
+            s.last_favorite_time AS lastFavoriteTime
+        FROM msds_document_statistics s
+        WHERE s.msds_id = #{msdsId}
+    </select>
+
+    <!--
+        UPSERT 累加计数：
+        - 无统计行时插入一行，对应 action 的计数初始值即为 1（首次行为也要被计入）
+        - 有统计行时按 action 累加对应字段，并刷新对应的时间戳
+        action 取值：view / download / favorite / share
+    -->
+    <insert id="incrementStatistics">
+        INSERT INTO msds_document_statistics
+            (msds_id, view_count, download_count, favorite_count, share_count, create_time, update_time)
+        VALUES
+            (#{msdsId},
+            <choose>
+                <when test="action == 'view'">1</when>
+                <otherwise>0</otherwise>
+            </choose>,
+            <choose>
+                <when test="action == 'download'">1</when>
+                <otherwise>0</otherwise>
+            </choose>,
+            <choose>
+                <when test="action == 'favorite'">1</when>
+                <otherwise>0</otherwise>
+            </choose>,
+            <choose>
+                <when test="action == 'share'">1</when>
+                <otherwise>0</otherwise>
+            </choose>,
+            NOW(), NOW())
+        ON DUPLICATE KEY UPDATE
+            <choose>
+                <when test="action == 'view'">
+                    view_count = view_count + 1,
+                    last_view_time = NOW()
+                </when>
+                <when test="action == 'download'">
+                    download_count = download_count + 1,
+                    last_download_time = NOW()
+                </when>
+                <when test="action == 'favorite'">
+                    favorite_count = favorite_count + 1,
+                    last_favorite_time = NOW()
+                </when>
+                <when test="action == 'share'">
+                    share_count = share_count + 1
+                </when>
+                <otherwise>
+                    update_time = NOW()
+                </otherwise>
+            </choose>,
+            update_time = NOW()
+    </insert>
+
+    <!--
+        回退计数（取消收藏等撤销场景）：
+        计数不会小于 0，避免取消操作把计数减成负数
+    -->
+    <update id="decrementStatistics">
+        UPDATE msds_document_statistics
+        <choose>
+            <when test="action == 'view'">
+                SET view_count = GREATEST(view_count - 1, 0)
+            </when>
+            <when test="action == 'download'">
+                SET download_count = GREATEST(download_count - 1, 0)
+            </when>
+            <when test="action == 'favorite'">
+                SET favorite_count = GREATEST(favorite_count - 1, 0)
+            </when>
+            <when test="action == 'share'">
+                SET share_count = GREATEST(share_count - 1, 0)
+            </when>
+            <otherwise>
+                SET update_time = NOW()
+            </otherwise>
+        </choose>
+        WHERE msds_id = #{msdsId}
+    </update>
+
+    <!-- 记录访问明细 -->
+    <insert id="insertAccessLog">
+        INSERT INTO msds_document_access_log
+            (msds_id, user_id, user_name, access_type, access_time, ip_address, user_agent, create_time)
+        VALUES
+            (#{msdsId}, #{userId}, #{userName}, #{accessType}, NOW(), #{ipAddress}, #{userAgent}, NOW())
+    </insert>
+
+    <!-- 查询文档的访问明细 -->
+    <select id="selectAccessLogsByMsdsId" resultType="java.util.Map">
+        SELECT
+            a.log_id       AS logId,
+            a.msds_id      AS msdsId,
+            a.user_id      AS userId,
+            a.user_name    AS userName,
+            a.access_type  AS accessType,
+            a.access_time  AS accessTime,
+            a.ip_address   AS ipAddress
+        FROM msds_document_access_log a
+        WHERE a.msds_id = #{msdsId}
+        ORDER BY a.access_time DESC
+        LIMIT #{limit}
+    </select>
+</mapper>

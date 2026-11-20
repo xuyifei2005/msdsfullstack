@@ -30,6 +30,7 @@ import com.ruoyi.system.domain.MsdsMain;
 import com.ruoyi.common.core.domain.entity.SysUser;
 import com.ruoyi.system.service.IMsdsMainService;
 import com.ruoyi.system.service.IMsdsAuditLogService;
+import com.ruoyi.system.service.IMsdsDocumentStatisticsService;
 import com.ruoyi.common.utils.ip.IpUtils;
 import com.ruoyi.common.utils.ServletUtils;
 // 新增：允许匿名访问注解
@@ -52,6 +53,9 @@ public class MsdsMainController extends BaseController
 
     @Autowired
     private IMsdsAuditLogService msdsAuditLogService;
+
+    @Autowired
+    private IMsdsDocumentStatisticsService msdsDocumentStatisticsService;
 
     /**
      * 获取MSDS主信息列表
@@ -364,6 +368,10 @@ public class MsdsMainController extends BaseController
                 ip,
                 userAgent
             );
+
+            // 真实下载行为累加下载计数
+            msdsDocumentStatisticsService.recordAccess(
+                id, "download", getUserId(), getUsername(), ip, userAgent);
         } 
         catch (Exception e) 
         {
@@ -405,6 +413,10 @@ public class MsdsMainController extends BaseController
                         ip,
                         userAgent
                     );
+
+                    // 真实下载行为累加下载计数
+                    msdsDocumentStatisticsService.recordAccess(
+                        id, "download", getUserId(), getUsername(), ip, userAgent);
                 }
             }
         } 

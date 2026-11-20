@@ -35,12 +35,51 @@ public interface IMsdsSearchService
     public List<Map<String, Object>> getSearchSuggestions(String keyword, Integer limit);
 
     /**
+     * 获取危险性分类的真实文档数量（用于高级筛选项计数）
+     *
+     * @return 关键字与文档数量的映射列表
+     */
+    public List<Map<String, Object>> getHazardFacetCounts();
+
+    /**
      * 获取热门搜索
      * 
      * @param limit 数量限制
      * @return 热门搜索列表
      */
     public List<MsdsSearchSuggestion> getHotSearches(Integer limit);
+
+    /**
+     * 查询搜索建议词条列表（供运营维护）
+     *
+     * @param suggestion 查询条件
+     * @return 词条列表
+     */
+    public List<MsdsSearchSuggestion> listSuggestions(MsdsSearchSuggestion suggestion);
+
+    /**
+     * 新增搜索建议词条
+     *
+     * @param suggestion 词条
+     * @return 结果
+     */
+    public int addSuggestion(MsdsSearchSuggestion suggestion);
+
+    /**
+     * 修改搜索建议词条
+     *
+     * @param suggestion 词条
+     * @return 结果
+     */
+    public int editSuggestion(MsdsSearchSuggestion suggestion);
+
+    /**
+     * 删除搜索建议词条
+     *
+     * @param suggestionIds 词条ID数组
+     * @return 结果
+     */
+    public int removeSuggestions(Long[] suggestionIds);
 
     /**
      * 获取用户搜索历史

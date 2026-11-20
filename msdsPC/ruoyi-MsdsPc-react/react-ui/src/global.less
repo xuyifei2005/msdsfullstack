@@ -519,14 +519,21 @@ ol {
 }
 
 // Descriptions增强
+// 全局为「现代明亮风格」（白底），此处必须使用深色文字。
+// 早前遗留的浅青配色（#e6f7ff / rgba(230,247,255,.7)）源自深色主题，
+// 在白底上对比度仅约 1.1:1，会让 MSDS 详情等页面的字段值几乎不可见。
 .ant-descriptions {
   .ant-descriptions-item-label {
-    color: rgba(230, 247, 255, 0.7);
-    font-weight: 500;
+    color: #334155;
+    font-weight: 600;
   }
 
   .ant-descriptions-item-content {
-    color: #e6f7ff;
+    color: #0f172a;
+    font-weight: 500;
+    line-height: 1.8;
+    word-break: break-word;
+    white-space: pre-wrap;
   }
 }
 
@@ -545,7 +552,7 @@ ol {
   }
 
   .ant-timeline-item-content {
-    color: #e6f7ff;
+    color: #1e293b;
   }
 }
 

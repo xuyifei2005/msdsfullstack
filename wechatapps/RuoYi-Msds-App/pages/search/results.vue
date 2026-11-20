@@ -30,8 +30,48 @@
 
     <!-- 主内容区域 -->
     <view class="content">
+      <!-- 监管分类标签：默认全部，数量来自真实名录匹配，手机端也可横向滑动切换 -->
+      <view class="category-section">
+        <view class="category-head">
+          <text class="section-title">监管分类</text>
+          <text class="category-tip">按法规名录 CAS 匹配</text>
+        </view>
+        <scroll-view class="category-scroll" scroll-x enable-flex>
+          <view class="category-list">
+            <view
+              class="category-card"
+              v-for="cat in categories"
+              :key="cat.categoryCode"
+              :class="{ active: currentCategory === cat.categoryCode }"
+              :style="currentCategory === cat.categoryCode ? { borderColor: cat.color, backgroundColor: cat.color + '14' } : {}"
+              @click="onCategoryChange(cat.categoryCode)"
+            >
+              <view class="card-dot" :style="{ backgroundColor: cat.color || '#1677ff' }"></view>
+              <text class="card-name" :style="currentCategory === cat.categoryCode ? { color: cat.color } : {}">{{ cat.shortName }}</text>
+              <text class="card-count">{{ cat.count || 0 }}</text>
+            </view>
+          </view>
+        </scroll-view>
+        <scroll-view v-if="subCategories.length > 0" class="sub-scroll" scroll-x enable-flex>
+          <view class="sub-list">
+            <view
+              class="sub-chip"
+              :class="{ active: !currentSubCategory }"
+              @click="onSubChange('')"
+            >全部</view>
+            <view
+              class="sub-chip"
+              v-for="sub in subCategories"
+              :key="sub"
+              :class="{ active: currentSubCategory === sub }"
+              @click="onSubChange(sub)"
+            >{{ sub }}</view>
+          </view>
+        </scroll-view>
+      </view>
+
       <view class="result-count">
-        <text class="count-text">找到 <text class="count-number">{{ resultList.length }}</text> 条结果</text>
+        <text class="count-text">找到 <text class="count-number">{{ resultTotal }}</text> 条结果</text>
       </view>
 
       <view 
@@ -44,6 +84,13 @@
         <view class="result-subtitle">CAS号: {{ item.cas }}</view>
         
         <view class="tags-container">
+          <view
+            class="result-tag category-tag"
+            v-for="(name, tagIndex) in item.categoryNames"
+            :key="'c' + tagIndex"
+          >
+            {{ name }}
+          </view>
           <view 
             class="result-tag" 
             v-for="(tag, tagIndex) in item.tags" 
@@ -63,15 +110,27 @@
 </template>
 
 <script>
-import { listMsds } from "@/api/msds/msds";
+import { listMsds, listRegulatoryCategories } from "@/api/msds/msds";
 
 export default {
   data() {
     return {
       statusBarHeight: 20, // 默认值，会在onLoad中更新
       keyword: '',
-      resultList: []
+      resultList: [],
+      resultTotal: 0,
+      categories: [],
+      currentCategory: 'ALL',
+      currentSubCategory: ''
     };
+  },
+  computed: {
+    subCategories() {
+      const current = this.categories.find(c => c.categoryCode === this.currentCategory);
+      return current && current.subCategories
+        ? current.subCategories.split(',').map(s => s.trim()).filter(Boolean)
+        : [];
+    }
   },
   onLoad(options) {
     // 获取系统状态栏高度
@@ -81,6 +140,8 @@ export default {
     if (options.keyword) {
       this.keyword = decodeURIComponent(options.keyword);
       this.doSearch();
+    } else {
+      this.loadCategories();
     }
   },
   methods: {
@@ -90,20 +151,54 @@ export default {
     onSearch() {
       this.doSearch();
     },
+    /** 切换监管分类，按真实名录条件重新检索 */
+    onCategoryChange(code) {
+      if (this.currentCategory === code) return;
+      this.currentCategory = code;
+      this.currentSubCategory = '';
+      this.doSearch();
+    },
+    onSubChange(sub) {
+      if (this.currentSubCategory === sub) return;
+      this.currentSubCategory = sub;
+      this.doSearch();
+    },
+    loadCategories() {
+      listRegulatoryCategories({ productName: this.keyword }).then(res => {
+        this.categories = (res && res.data) || [];
+      }).catch(() => {
+        this.categories = [];
+      });
+    },
     doSearch() {
       if (!this.keyword) return;
-      
+
+      const query = {
+        productName: this.keyword,
+        pageSize: 100,
+        regulatoryCategory: this.currentCategory,
+        regulatorySubCategory: this.currentSubCategory || undefined
+      };
+
       uni.showLoading({ title: '搜索中...' });
-      // 尝试使用 productName 进行搜索
-      listMsds({ productName: this.keyword }).then(response => {
+      // 列表与分类数量均来自同一后端真实数据，分类数量随关键词变化
+      Promise.all([
+        listMsds(query),
+        listRegulatoryCategories({ productName: this.keyword }).catch(() => null)
+      ]).then(([response, categoryRes]) => {
         uni.hideLoading();
-        this.resultList = response.rows.map(item => ({
+        this.resultTotal = response.total || 0;
+        this.resultList = (response.rows || []).map(item => ({
           id: item.id,
           name: `${item.productName} ${item.productEnglishName ? '(' + item.productEnglishName + ')' : ''}`,
           cas: item.casNumber,
+          categoryNames: (item.categoryNames || '').split(',').map(s => s.trim()).filter(Boolean),
           tags: item.dangerousGoodsNumber ? ['危险货物'] : [],
           dangerLevel: item.dangerousGoodsNumber ? 'high' : 'low' // 简单逻辑
         }));
+        if (categoryRes && categoryRes.data) {
+          this.categories = categoryRes.data;
+        }
       }).catch(() => {
         uni.hideLoading();
       });
@@ -111,6 +206,8 @@ export default {
     clearKeyword() {
       this.keyword = '';
       this.resultList = [];
+      this.resultTotal = 0;
+      this.loadCategories();
     },
     onItemClick(item) {
       // 跳转到详情页

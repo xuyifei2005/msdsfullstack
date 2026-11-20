@@ -18,6 +18,8 @@ export * from './transport';
 export * from './regulatory';
 export * from './otherInfo';
 export * from './search';
+export * from './suggestion';
+export * from './category';
 
 // 统一对外导出的 MSDS 预览相关类型，供前端模块间复用
 export interface MsdsPreviewItem {
@@ -136,12 +138,18 @@ export async function getMsdsMainByCompany(companyName: string, options?: { [key
   });
 }
 
-// 统计有效MSDS数量
+/**
+ * 统计有效MSDS数量
+ * 说明：后端没有 /count/active 接口，这里改用列表接口的 total 作为真实总数，
+ * 同时兼作导入前的后端连通性探活（网络异常会抛出，由调用方捕获）。
+ */
 export async function countActiveMsds(options?: { [key: string]: any }) {
-  return request<API.Msds.CountResult>(`/api/system/msds/count/active`, {
+  const res = await request<API.Msds.MsdsMainPageResult>(`/api/system/msds/list`, {
     method: 'GET',
+    params: { pageNum: 1, pageSize: 1 },
     ...(options || {})
   });
+  return { code: res?.code ?? 200, msg: res?.msg ?? '查询成功', data: res?.total ?? 0 };
 }
 
 const api = '/api/system/msds';

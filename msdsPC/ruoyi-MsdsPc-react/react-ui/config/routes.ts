@@ -185,6 +185,20 @@ export default [
         component: './Analytics/DataReport',
         icon: 'barChart',
       },
+      // 新增：我的收藏（当前用户收藏的 MSDS 文档）
+      {
+        name: '我的收藏',
+        path: '/msds/favorite',
+        component: './Msds/Favorite',
+        icon: 'star',
+      },
+      // 新增：热门搜索词条维护
+      {
+        name: '搜索词条',
+        path: '/msds/suggestion',
+        component: './Msds/Suggestion',
+        icon: 'profile',
+      },
       // 新增：MSDS 预览页面路由
       {
         name: 'MSDS预览',

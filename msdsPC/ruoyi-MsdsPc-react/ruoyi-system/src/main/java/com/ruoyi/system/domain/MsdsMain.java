@@ -175,6 +175,26 @@ public class MsdsMain extends BaseEntity
     @Excel(name = "是否有效", readConverterExp = "1=有效,0=无效")
     private Integer isActive;
 
+    /** 查看次数（来自 msds_document_statistics 真实统计，无记录为 0） */
+    private Long viewCount;
+
+    /** 下载次数（来自 msds_document_statistics 真实统计，无记录为 0） */
+    private Long downloadCount;
+
+    /** 收藏次数（来自 msds_document_statistics 真实统计，无记录为 0） */
+    private Long favoriteCount;
+
+    /** 监管分类筛选条件（仅用于查询：PRECURSOR/EXPLOSIVE/TOXIC/UNCLASSIFIED，非表字段） */
+    private String regulatoryCategory;
+
+    /** 监管分类子项筛选条件（仅用于查询，如「第一类」「硝酸盐类」，非表字段） */
+    private String regulatorySubCategory;
+
+    /** 该 MSDS 命中的监管分类代码，逗号分隔（由 msds_chemical_category_tag 真实关联生成） */
+    private String categoryCodes;
+
+    /** 该 MSDS 命中的监管分类短名，逗号分隔（用于列表直接展示） */
+    private String categoryNames;
 
 
     public Long getId()
@@ -587,6 +607,76 @@ public class MsdsMain extends BaseEntity
     public void setDangerousGoodsNumber(String dangerousGoodsNumber)
     {
         this.dangerousGoodsNumber = dangerousGoodsNumber;
+    }
+
+    public Long getViewCount()
+    {
+        return viewCount;
+    }
+
+    public void setViewCount(Long viewCount)
+    {
+        this.viewCount = viewCount;
+    }
+
+    public Long getDownloadCount()
+    {
+        return downloadCount;
+    }
+
+    public void setDownloadCount(Long downloadCount)
+    {
+        this.downloadCount = downloadCount;
+    }
+
+    public Long getFavoriteCount()
+    {
+        return favoriteCount;
+    }
+
+    public void setFavoriteCount(Long favoriteCount)
+    {
+        this.favoriteCount = favoriteCount;
+    }
+
+    public String getRegulatoryCategory()
+    {
+        return regulatoryCategory;
+    }
+
+    public void setRegulatoryCategory(String regulatoryCategory)
+    {
+        this.regulatoryCategory = regulatoryCategory;
+    }
+
+    public String getRegulatorySubCategory()
+    {
+        return regulatorySubCategory;
+    }
+
+    public void setRegulatorySubCategory(String regulatorySubCategory)
+    {
+        this.regulatorySubCategory = regulatorySubCategory;
+    }
+
+    public String getCategoryCodes()
+    {
+        return categoryCodes;
+    }
+
+    public void setCategoryCodes(String categoryCodes)
+    {
+        this.categoryCodes = categoryCodes;
+    }
+
+    public String getCategoryNames()
+    {
+        return categoryNames;
+    }
+
+    public void setCategoryNames(String categoryNames)
+    {
+        this.categoryNames = categoryNames;
     }
 
     @Override

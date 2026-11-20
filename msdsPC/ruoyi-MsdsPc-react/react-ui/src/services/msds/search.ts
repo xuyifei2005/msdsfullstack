@@ -7,6 +7,12 @@ export interface IntelligentSearchParams {
   documentType?: string;
   categoryId?: number;
   supplier?: string;
+  /** 危险性分类关键字，多个用逗号分隔 */
+  hazardKeyword?: string;
+  /** 更新时间范围起 */
+  updateTimeFrom?: string;
+  /** 更新时间范围止 */
+  updateTimeTo?: string;
   sortBy?: 'relevance' | 'updated' | 'name' | 'views';
   pageNum?: number;
   pageSize?: number;
@@ -75,6 +81,21 @@ export async function getSearchSuggestions(keyword: string, limit = 10) {
   return request<API.Result<SearchSuggestion[]>>('/api/system/msds/search/suggestions', {
     method: 'GET',
     params: { keyword, limit },
+  });
+}
+
+/** 危险性分类真实数量 */
+export interface HazardFacet {
+  keyword: string;
+  docCount: number;
+}
+
+/**
+ * 获取危险性分类的真实文档数量
+ */
+export async function getHazardFacet() {
+  return request<API.Result<HazardFacet[]>>('/api/system/msds/search/facet/hazard', {
+    method: 'GET',
   });
 }
 
@@ -151,6 +172,109 @@ export async function updateSuggestionStat(keyword: string, clicked = false) {
   return request<API.Result>('/api/system/msds/search/suggestion/stat', {
     method: 'POST',
     params: { keyword, clicked },
+  });
+}
+
+/** 文档真实计数 */
+export interface MsdsStatistics {
+  viewCount: number;
+  downloadCount: number;
+  favoriteCount: number;
+  shareCount: number;
+  lastViewTime?: string;
+  lastDownloadTime?: string;
+  lastFavoriteTime?: string;
+}
+
+/**
+ * 获取文档的真实计数（查看/下载/收藏）
+ */
+export async function getMsdsStatistics(msdsId: number) {
+  return request<API.Result<MsdsStatistics>>(`/api/system/msds/statistics/${msdsId}`, {
+    method: 'GET',
+  });
+}
+
+/**
+ * 记录一次真实访问行为并累加计数
+ *
+ * @param action view / download / favorite / share
+ */
+export async function recordMsdsAccess(msdsId: number, action: 'view' | 'download' | 'favorite' | 'share') {
+  return request<API.Result<MsdsStatistics>>(`/api/system/msds/statistics/${msdsId}/access`, {
+    method: 'POST',
+    params: { action },
+  });
+}
+
+/** 收藏记录项 */
+export interface UserFavorite {
+  favoriteId: number;
+  userId: number;
+  userName?: string;
+  msdsId: number;
+  msdsName?: string;
+  casNumber?: string;
+  folderName?: string;
+  tags?: string;
+  note?: string;
+  createTime?: string;
+}
+
+/**
+ * 获取当前用户的收藏列表
+ */
+export async function getUserFavorites() {
+  return request<API.Result<UserFavorite[]>>('/api/system/msds/favorite/list', {
+    method: 'GET',
+  });
+}
+
+/**
+ * 查询当前用户是否已收藏某文档
+ */
+export async function getFavoriteStatus(msdsId: number) {
+  return request<API.Result<{ favorited: boolean }>>(`/api/system/msds/favorite/${msdsId}/status`, {
+    method: 'GET',
+  });
+}
+
+/**
+ * 收藏文档
+ */
+export async function addFavorite(
+  msdsId: number,
+  params?: { msdsName?: string; casNumber?: string; folderName?: string; tags?: string; note?: string },
+) {
+  return request<API.Result<{ favorited: boolean; statistics: MsdsStatistics }>>(
+    `/api/system/msds/favorite/${msdsId}`,
+    {
+      method: 'POST',
+      params,
+    },
+  );
+}
+
+/**
+ * 取消收藏
+ */
+export async function removeFavorite(msdsId: number) {
+  return request<API.Result<{ favorited: boolean; statistics: MsdsStatistics }>>(
+    `/api/system/msds/favorite/${msdsId}`,
+    {
+      method: 'DELETE',
+    },
+  );
+}
+
+/**
+ * 导出MSDS为PDF（真实下载，由后端生成并统计下载次数）
+ */
+export async function exportMsdsPdf(id: number) {
+  return request<Blob>(`/api/system/msds/exportPdf?id=${id}`, {
+    method: 'POST',
+    responseType: 'blob',
+    getResponse: true,
   });
 }
 

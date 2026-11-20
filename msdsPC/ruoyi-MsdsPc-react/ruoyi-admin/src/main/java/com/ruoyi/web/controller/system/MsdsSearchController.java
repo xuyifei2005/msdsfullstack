@@ -51,11 +51,14 @@ public class MsdsSearchController extends BaseController
             @RequestParam(value = "documentType", required = false) String documentType,
             @RequestParam(value = "categoryId", required = false) Long categoryId,
             @RequestParam(value = "supplier", required = false) String supplier,
+            @RequestParam(value = "hazardKeyword", required = false) String hazardKeyword,
+            @RequestParam(value = "updateTimeFrom", required = false) String updateTimeFrom,
+            @RequestParam(value = "updateTimeTo", required = false) String updateTimeTo,
             @RequestParam(value = "sortBy", required = false, defaultValue = "relevance") String sortBy,
             HttpServletRequest request)
     {
-        logger.info("收到智能搜索请求 - keyword: {}, searchType: {}, documentType: {}, categoryId: {}, supplier: {}, sortBy: {}",
-                   keyword, searchType, documentType, categoryId, supplier, sortBy);
+        logger.info("收到智能搜索请求 - keyword: {}, searchType: {}, documentType: {}, categoryId: {}, supplier: {}, hazardKeyword: {}, sortBy: {}",
+                   keyword, searchType, documentType, categoryId, supplier, hazardKeyword, sortBy);
         try {
             Map<String, Object> filters = new HashMap<>();
             if (StringUtils.isNotEmpty(documentType)) {
@@ -66,6 +69,19 @@ public class MsdsSearchController extends BaseController
             }
             if (StringUtils.isNotEmpty(supplier)) {
                 filters.put("supplier", supplier);
+            }
+            if (StringUtils.isNotEmpty(hazardKeyword)) {
+                filters.put("hazardList", java.util.Arrays.stream(hazardKeyword.split(","))
+                        .map(String::trim)
+                        .filter(StringUtils::isNotEmpty)
+                        .distinct()
+                        .collect(java.util.stream.Collectors.toList()));
+            }
+            if (StringUtils.isNotEmpty(updateTimeFrom)) {
+                filters.put("updateTimeFrom", updateTimeFrom);
+            }
+            if (StringUtils.isNotEmpty(updateTimeTo)) {
+                filters.put("updateTimeTo", updateTimeTo);
             }
             filters.put("sortBy", sortBy);
 
@@ -115,6 +131,15 @@ public class MsdsSearchController extends BaseController
     {
         List<Map<String, Object>> suggestions = searchService.getSearchSuggestions(keyword, limit);
         return success(suggestions);
+    }
+
+    /**
+     * 获取危险性分类的真实文档数量（高级筛选项计数）
+     */
+    @GetMapping("/facet/hazard")
+    public AjaxResult getHazardFacet()
+    {
+        return success(searchService.getHazardFacetCounts());
     }
 
     /**

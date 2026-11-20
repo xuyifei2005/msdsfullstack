@@ -31,6 +31,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         <result property="createTime"           column="create_time"           />
         <result property="updateTime"           column="update_time"           />
         <result property="remark"               column="remark"               />
+        <result property="categoryCodes"        column="category_codes"        />
+        <result property="categoryNames"        column="category_names"        />
     </resultMap>
     
         <sql id="selectMsdsMainVo">
@@ -38,8 +40,55 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
             category_id, company_name, company_address, zip_code, fax_number, contact_phone,
             email, emergency_phone, recommended_usage, restricted_usage, version,
             revision_date, effective_date, status, approver, approval_date,
-            is_active, create_time, update_time, remark
+            is_active, create_time, update_time, remark,
+            (select group_concat(c.category_code order by c.sort_no separator ',')
+               from msds_chemical_category_tag t
+               join msds_regulatory_category c on c.category_code = t.category_code and c.is_active = 1
+              where t.msds_id = msds_main.id) as category_codes,
+            (select group_concat(c.short_name order by c.sort_no separator ',')
+               from msds_chemical_category_tag t
+               join msds_regulatory_category c on c.category_code = t.category_code and c.is_active = 1
+              where t.msds_id = msds_main.id) as category_names
         from msds_main
+    </sql>
+
+    <!-- 列表查询通用条件（与 MsdsRegulatoryCategoryMapper 中的统计条件保持一致） -->
+    <sql id="msdsMainQueryWhere">
+        <if test="productName != null and productName != ''">
+            AND product_name like concat('%', #{productName}, '%')
+        </if>
+        <if test="companyName != null and companyName != ''">
+            AND company_name like concat('%', #{companyName}, '%')
+        </if>
+        <if test="casNumber != null and casNumber != ''">
+            AND cas_number like concat('%', #{casNumber}, '%')
+        </if>
+        <if test="msdsCode != null and msdsCode != ''">
+            AND msds_code like concat('%', #{msdsCode}, '%')
+        </if>
+        <if test="status != null and status != ''">
+            AND status = #{status}
+        </if>
+        <if test="isActive != null">
+            AND is_active = #{isActive}
+        </if>
+        <if test="regulatoryCategory != null and regulatoryCategory != '' and regulatoryCategory != 'ALL'">
+            <choose>
+                <when test="regulatoryCategory == 'UNCLASSIFIED'">
+                    AND not exists (select 1 from msds_chemical_category_tag ct where ct.msds_id = msds_main.id)
+                </when>
+                <otherwise>
+                    AND exists (
+                        select 1 from msds_chemical_category_tag ct
+                        where ct.msds_id = msds_main.id
+                          and ct.category_code = #{regulatoryCategory}
+                        <if test="regulatorySubCategory != null and regulatorySubCategory != ''">
+                          and ct.sub_category = #{regulatorySubCategory}
+                        </if>
+                    )
+                </otherwise>
+            </choose>
+        </if>
     </sql>
     
     <select id="selectMsdsMainById" parameterType="Long" resultMap="MsdsMainResult">
@@ -50,23 +99,41 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     <select id="selectMsdsMainList" parameterType="MsdsMain" resultMap="MsdsMainResult">
         <include refid="selectMsdsMainVo"/>
         <where>
-            <if test="productName != null and productName != ''">
-                AND product_name like concat('%', #{productName}, '%')
-            </if>
-            <if test="companyName != null and companyName != ''">
-                AND company_name like concat('%', #{companyName}, '%')
-            </if>
-            <if test="casNumber != null and casNumber != ''">
-                AND cas_number like concat('%', #{casNumber}, '%')
-            </if>
-            <if test="status != null and status != ''">
-                AND status = #{status}
-            </if>
-            <if test="isActive != null">
-                AND is_active = #{isActive}
-            </if>
+            <include refid="msdsMainQueryWhere"/>
         </where>
-        order by create_time desc
+        <!--
+            排序规则：
+            1. 有「化学品中文名」关键词时按匹配质量排序
+               （名称精确 > 别名精确 > CAS精确 > 英文名精确 > 名称前缀 > 名称包含 > 其余），
+               保证用户输入的化学品本身排在最前；
+            2. 只有 CAS 关键词时，CAS 精确匹配优先；
+            3. 无关键词时保持创建时间倒序（默认列表顺序）。
+        -->
+        <choose>
+            <when test="productName != null and productName != ''">
+                order by
+                    case
+                        when product_name = #{productName} then 0
+                        when product_alias = #{productName} then 1
+                        when cas_number = #{productName} then 2
+                        when product_english_name = #{productName} then 3
+                        when product_name like concat(#{productName}, '%') then 4
+                        when product_alias like concat(#{productName}, '%') then 5
+                        else 6
+                    end,
+                    length(product_name) asc,
+                    id asc
+            </when>
+            <when test="casNumber != null and casNumber != ''">
+                order by
+                    case when cas_number = #{casNumber} then 0 else 1 end,
+                    length(product_name) asc,
+                    id asc
+            </when>
+            <otherwise>
+                order by create_time desc
+            </otherwise>
+        </choose>
     </select>
     
     <select id="selectMsdsMainByProductName" parameterType="String" resultMap="MsdsMainResult">

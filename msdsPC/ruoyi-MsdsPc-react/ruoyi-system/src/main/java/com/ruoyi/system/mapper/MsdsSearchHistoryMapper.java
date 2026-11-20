@@ -62,10 +62,20 @@ public interface MsdsSearchHistoryMapper
 
     /**
      * 获取热门搜索关键词
-     * 
+     *
      * @param limit 数量限制
      * @return 关键词列表
      */
     public List<String> selectHotSearchKeywords(Integer limit);
+
+    /**
+     * 获取热门搜索词条（含真实搜索次数）
+     *
+     * @param days 统计窗口天数
+     * @param limit 数量限制
+     * @return 关键词与次数的映射列表
+     */
+    public List<java.util.Map<String, Object>> selectHotKeywordStats(@org.apache.ibatis.annotations.Param("days") Integer days,
+                                                                     @org.apache.ibatis.annotations.Param("limit") Integer limit);
 }
 

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { useIntl, FormattedMessage, useAccess, useModel } from '@umijs/max';
 import { Button, message, Modal, Space, Tag, Tooltip, Dropdown, Input } from 'antd';
 import { ActionType, FooterToolbar, PageContainer, ProColumns, ProTable } from '@ant-design/pro-components';
@@ -14,6 +14,8 @@ import {
   getMsdsMain,
   downloadImportTemplate
 } from '@/services/msds';
+import { getRegulatoryCategories } from '@/services/msds/category';
+import RegulatoryCategoryTabs from './components/RegulatoryCategoryTabs';
 import MsdsForm from './components/MsdsForm';
 import MsdsDetail from './components/MsdsDetail';
 import ImportModal from './components/ImportModal';
@@ -146,6 +148,42 @@ const MsdsMainList: React.FC = () => {
   const access = useAccess();
   const { initialState } = useModel('@@initialState');
   const isSuperAdmin = initialState?.currentUser?.userId === 1;
+
+  // ===== 监管分类标签：默认全部，标签数量来自真实名录匹配结果 =====
+  const [regulatoryCategory, setRegulatoryCategory] = useState<string>('ALL');
+  const [regulatorySubCategory, setRegulatorySubCategory] = useState<string | undefined>(undefined);
+  // 记录当前搜索条件（不含分类），用于让标签数量随搜索条件实时变化
+  const [searchSnapshot, setSearchSnapshot] = useState<Record<string, any>>({});
+  const [categories, setCategories] = useState<API.Msds.RegulatoryCategory[]>([]);
+  const [categoryLoading, setCategoryLoading] = useState(false);
+  const [categoryError, setCategoryError] = useState<string>();
+
+  const loadCategories = useCallback(async () => {
+    setCategoryLoading(true);
+    try {
+      const res = await getRegulatoryCategories(searchSnapshot);
+      if (res.code === 200) {
+        setCategories(res.data || []);
+        setCategoryError(undefined);
+      } else {
+        setCategoryError(res.msg || '分类数据加载失败');
+      }
+    } catch (e: any) {
+      setCategoryError(e?.message || '网络异常');
+    } finally {
+      setCategoryLoading(false);
+    }
+  }, [searchSnapshot]);
+
+  useEffect(() => {
+    loadCategories();
+  }, [loadCategories]);
+
+  const handleCategoryChange = (code: string, sub?: string) => {
+    setRegulatoryCategory(code);
+    setRegulatorySubCategory(sub);
+    actionRef.current?.reload();
+  };
 
   /** 国际化配置 */
   const intl = useIntl();
@@ -335,6 +373,24 @@ const MsdsMainList: React.FC = () => {
       width: 200,
       ellipsis: true,
       hideInTable: true, // 默认隐藏，可通过列设置显示
+    },
+    {
+      title: '监管分类',
+      dataIndex: 'categoryNames',
+      valueType: 'text',
+      hideInSearch: true,
+      width: 180,
+      render: (_, record) => {
+        const names = (record.categoryNames || '').split(',').map((s) => s.trim()).filter(Boolean);
+        if (names.length === 0) return <Tag>未分类</Tag>;
+        return (
+          <Space size={4} wrap>
+            {names.map((name) => (
+              <Tag key={name} color="blue">{name}</Tag>
+            ))}
+          </Space>
+        );
+      },
     },
     {
       title: '企业名称',
@@ -535,6 +591,15 @@ const MsdsMainList: React.FC = () => {
     <div className={containerClassName}>
       <PageContainer>
         {contextHolder}
+        <RegulatoryCategoryTabs
+          categories={categories}
+          value={regulatoryCategory}
+          subValue={regulatorySubCategory}
+          loading={categoryLoading}
+          error={categoryError}
+          onChange={handleCategoryChange}
+          onRefresh={loadCategories}
+        />
         <ProTable<API.Msds.MsdsMain, API.Msds.MsdsMainListParams>
           className={tableClassName}
           headerTitle="MSDS主信息管理"
@@ -659,10 +724,22 @@ const MsdsMainList: React.FC = () => {
           ]}
         request={async (params, sort, filter) => {
           const { current, pageSize, ...searchParams } = params;
+          // 仅保留真实搜索字段作为标签统计条件，分类由标签栏单独控制
+          const { regulatoryCategory: _rc, regulatorySubCategory: _rsc, ...pureSearch } = searchParams as any;
+          setSearchSnapshot((prev) => {
+            const next = { ...pureSearch };
+            try {
+              return JSON.stringify(prev) === JSON.stringify(next) ? prev : next;
+            } catch {
+              return next;
+            }
+          });
           const response = await getMsdsMainList({
             current,
             pageSize,
-            ...searchParams,
+            ...pureSearch,
+            regulatoryCategory,
+            regulatorySubCategory,
           });
           
           return {

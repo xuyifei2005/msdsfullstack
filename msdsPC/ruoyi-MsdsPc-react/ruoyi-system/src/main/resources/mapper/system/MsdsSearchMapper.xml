@@ -28,6 +28,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         <result property="approver"             column="approver"             />
         <result property="approvalDate"         column="approval_date"         />
         <result property="isActive"             column="is_active"             />
+        <result property="viewCount"            column="viewCount"              />
+        <result property="downloadCount"        column="downloadCount"          />
+        <result property="favoriteCount"        column="favoriteCount"          />
         <result property="createTime"           column="create_time"           />
         <result property="updateTime"           column="update_time"           />
         <result property="remark"               column="remark"               />
@@ -41,9 +44,23 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
             m.is_active, m.create_time, m.update_time, m.remark
         from msds_main m
     </sql>
+
+    <!-- 检索结果专用：关联文档真实统计（查看/下载/收藏次数，无记录为 0） -->
+    <sql id="selectMsdsMainWithStatsVo">
+        select m.id, m.cas_number, m.msds_code, m.product_name, m.product_alias, m.product_english_name,
+            m.category_id, m.company_name, m.company_address, m.zip_code, m.fax_number, m.contact_phone,
+            m.email, m.emergency_phone, m.recommended_usage, m.restricted_usage, m.version,
+            m.revision_date, m.effective_date, m.status, m.approver, m.approval_date,
+            m.is_active, m.create_time, m.update_time, m.remark,
+            coalesce(s.view_count, 0) as viewCount,
+            coalesce(s.download_count, 0) as downloadCount,
+            coalesce(s.favorite_count, 0) as favoriteCount
+        from msds_main m
+        left join msds_document_statistics s on s.msds_id = m.id
+    </sql>
     
     <select id="intelligentSearch" resultMap="MsdsMainResult">
-        <include refid="selectMsdsMainVo"/>
+        <include refid="selectMsdsMainWithStatsVo"/>
         <where>
             m.is_active = 1
             <if test="keyword != null and keyword != ''">
@@ -67,6 +84,20 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
                 <if test="filters.supplier != null and filters.supplier != ''">
                     AND m.company_name like concat('%', #{filters.supplier}, '%')
                 </if>
+                <!-- 危险性分类筛选：按危害性概述/危险性类别/健康危害关键字匹配 -->
+                <if test="filters.hazardList != null and filters.hazardList.size() > 0">
+                    AND EXISTS (
+                        SELECT 1 FROM msds_hazard hz
+                        WHERE hz.msds_id = m.id
+                        AND (
+                        <foreach collection="filters.hazardList" item="hk" separator=" OR ">
+                            hz.hazard_category like concat('%', #{hk}, '%')
+                            OR hz.fire_explosion_hazards like concat('%', #{hk}, '%')
+                            OR hz.health_hazards like concat('%', #{hk}, '%')
+                        </foreach>
+                        )
+                    )
+                </if>
                 <if test="filters.updateTimeFrom != null">
                     AND m.update_time &gt;= #{filters.updateTimeFrom}
                 </if>
@@ -76,6 +107,21 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
             </if>
         </where>
         <choose>
+            <!-- 相关性排序：名称完全匹配 > 别名完全匹配 > CAS号完全匹配 > 英文名完全匹配 > 名称前缀匹配 > 其余 -->
+            <when test="filters != null and filters.sortBy != null and filters.sortBy == 'relevance'">
+                order by
+                    case
+                        when m.product_name = #{keyword} then 0
+                        when m.product_alias = #{keyword} then 1
+                        when m.cas_number = #{keyword} then 2
+                        when m.product_english_name = #{keyword} then 3
+                        when m.product_name like concat(#{keyword}, '%') then 4
+                        when m.product_alias like concat(#{keyword}, '%') then 5
+                        else 6
+                    end,
+                    length(m.product_name) asc,
+                    m.id asc
+            </when>
             <when test="filters != null and filters.sortBy != null and filters.sortBy == 'updated'">
                 order by m.update_time desc
             </when>
@@ -83,7 +129,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
                 order by m.product_name asc
             </when>
             <when test="filters != null and filters.sortBy != null and filters.sortBy == 'views'">
-                order by m.update_time desc
+                order by coalesce(s.view_count, 0) desc, m.id asc
             </when>
             <otherwise>
                 order by m.create_time desc
@@ -92,15 +138,30 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     </select>
     
     <select id="searchByCasNumber" resultMap="MsdsMainResult">
-        <include refid="selectMsdsMainVo"/>
+        <include refid="selectMsdsMainWithStatsVo"/>
         where m.is_active = 1 and m.cas_number like concat('%', #{casNumber}, '%')
-        order by m.create_time desc
+        order by length(m.product_name) asc, m.id asc
     </select>
     
+    <!-- 分子式检索：分子式存放在成分表(msds_component.molecular_formula)，需关联主表 -->
     <select id="searchByFormula" resultMap="MsdsMainResult">
-        <include refid="selectMsdsMainVo"/>
+        select distinct
+            m.id, m.cas_number, m.msds_code, m.product_name, m.product_alias, m.product_english_name,
+            m.category_id, m.company_name, m.company_address, m.zip_code, m.fax_number, m.contact_phone,
+            m.email, m.emergency_phone, m.recommended_usage, m.restricted_usage, m.version,
+            m.revision_date, m.effective_date, m.status, m.approver, m.approval_date,
+            m.is_active, m.create_time, m.update_time, m.remark,
+            coalesce(s.view_count, 0) as viewCount,
+            coalesce(s.download_count, 0) as downloadCount,
+            coalesce(s.favorite_count, 0) as favoriteCount
+        from msds_main m
+        inner join msds_component c on c.msds_id = m.id
+        left join msds_document_statistics s on s.msds_id = m.id
         where m.is_active = 1
-        order by m.create_time desc
+        and c.molecular_formula is not null
+        and c.molecular_formula &lt;&gt; ''
+        and c.molecular_formula like concat('%', #{formula}, '%')
+        order by length(m.product_name) asc, m.id asc
     </select>
     
     <select id="searchByChemicalName" resultMap="MsdsMainResult">
@@ -141,6 +202,25 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         order by m.create_time desc
     </select>
     
+    <!-- 危险性分类真实数量统计（按关键字命中文档去重计数） -->
+    <select id="getHazardFacetCounts" resultType="java.util.Map">
+        select k.kw as keyword,
+            count(distinct case
+                when hz.hazard_category like concat('%', k.kw, '%')
+                  or hz.fire_explosion_hazards like concat('%', k.kw, '%')
+                  or hz.health_hazards like concat('%', k.kw, '%')
+                then m.id end) as docCount
+        from msds_main m
+        join msds_hazard hz on hz.msds_id = m.id
+        join (
+            <foreach collection="keywords" item="kw" separator=" union all ">
+                select #{kw} as kw
+            </foreach>
+        ) k
+        where m.is_active = 1
+        group by k.kw
+    </select>
+
     <select id="getSearchSuggestions" resultType="java.util.Map">
         SELECT DISTINCT
             m.product_name as name,

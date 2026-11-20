@@ -64,19 +64,13 @@ services:
 
       # Maven本地仓库持久化///这个是创建了一个共享卷！！！ 命名卷环境隔离
       - msdsmaven_repository:/root/.m2/repository
+
+      # 后端启动脚本：源码未变时跳过 Maven 编译
+      # （/app 是 Windows 挂载盘，完整编译一次要 40+ 分钟，会导致前端代理 504）
+      - ./backend-start.sh:/usr/local/bin/backend-start.sh:ro
       
     working_dir: /app
-    command: |
-      sh -c "echo 'Starting development environment setup...' && 
-      /usr/sbin/sshd && 
-      echo 'SSH service started successfully' && 
-      echo '*msdsbackend* Development environment ready!' && 
-      cd /app && 
-      echo 'Starting Maven build...' && 
-      mvn -DskipTests package && 
-      echo 'Maven build completed, starting application...' && 
-      java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -jar ruoyi-admin/target/ruoyi-admin.jar && 
-      tail -f /dev/null" 
+    command: sh /usr/local/bin/backend-start.sh 
 
     ports:
       - "18081:8080"

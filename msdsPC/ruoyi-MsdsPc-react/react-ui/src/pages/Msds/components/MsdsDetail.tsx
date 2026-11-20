@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Card, Tabs, Descriptions, Table, Progress, Tag, Space, Button, message } from 'antd';
 import { EditOutlined, CheckCircleOutlined, ExclamationCircleOutlined } from '@ant-design/icons';
 import type { API } from '@/types/msds';
@@ -17,12 +17,101 @@ import { getEcologyByMsdsId } from '@/services/msds/ecology';
 import { getDisposalByMsdsId } from '@/services/msds/disposal';
 import { getTransportByMsdsId } from '@/services/msds/transport';
 import { getRegulatoryByMsdsId } from '@/services/msds/regulatory';
+import { getOtherInfoByMsdsId } from '@/services/msds/otherInfo';
 
 interface MsdsDetailProps {
   msdsId: number;
   onEdit?: (msdsId: number, section?: string) => void;
 }
 
+/**
+ * 各章节在详情页中展示的关键字段，用于按真实数据计算「数据完整度」
+ * 说明：第3章成分/组成为表格数据，单独按记录判断
+ */
+const CHAPTER_FIELDS: Record<string, string[]> = {
+  main: [
+    'casNumber', 'msdsCode', 'productName', 'productEnglishName', 'productAlias',
+    'recommendedUsage', 'restrictedUsage', 'companyName', 'contactPhone', 'companyAddress',
+    'zipCode', 'faxNumber', 'email', 'emergencyPhone', 'version', 'revisionDate',
+    'effectiveDate', 'status', 'approver', 'approvalDate',
+  ],
+  hazard: [
+    'emergencyOverview', 'physicalState', 'odor', 'color', 'warningWord', 'hazardCategory',
+    'exposureRoutes', 'healthHazards', 'environmentalHazards', 'fireExplosionHazards',
+    'preventionMeasures', 'responseMeasures', 'storageMeasures', 'disposalMeasures',
+  ],
+  component: [],
+  firstAid: [
+    'skinContact', 'eyeContact', 'inhalation', 'ingestion',
+    'generalNotes', 'symptomsEffects', 'immediateMedicalAttention', 'antidoteTreatment',
+  ],
+  fireFighting: [
+    'hazardCharacteristics', 'harmfulCombustionProducts', 'suitableExtinguishingMedia',
+    'unsuitableExtinguishingMedia', 'fireFightingEquipment', 'fireFightingProcedures',
+    'flashPoint', 'autoignitionTemperature', 'flammabilityLimits', 'fireRiskClassification',
+  ],
+  leakResponse: [
+    'personalPrecautions', 'environmentalPrecautions', 'containmentCleanup',
+    'emergencyProcedures', 'eliminationMethods', 'equipmentMaterials', 'preventSecondaryHazards',
+  ],
+  handlingStorage: [
+    'handlingPrecautions', 'storagePrecautions', 'optimalTemperature', 'temperatureRange',
+    'humidityRequirements', 'shelfLife', 'storageContainer', 'incompatibleMaterials',
+    'storageAreaRequirements',
+  ],
+  exposureControl: [
+    'occupationalExposureLimit', 'chinaMac', 'usaTlvTwa', 'usaTlvStel', 'formerSovietMac',
+    'tlvTn', 'tlvWn', 'monitoringMethod', 'engineeringControls', 'respiratoryProtection',
+    'eyeProtection', 'bodyProtection', 'handProtection', 'otherProtection', 'hygieneMeasures',
+  ],
+  physicalChemical: [
+    'appearance', 'odor', 'odorThreshold', 'color', 'meltingPoint', 'boilingPoint',
+    'flashPoint', 'ignitionTemperature', 'autoignitionTemperature', 'decompositionTemperature',
+    'criticalTemperature', 'relativeDensity', 'vaporDensity', 'vaporPressure', 'criticalPressure',
+    'solubility', 'waterSolubility', 'phValue', 'viscosity', 'partitionCoefficient',
+    'flammability', 'explosiveLimitLower', 'explosiveLimitUpper', 'molecularFormula',
+    'molecularWeight', 'mainComponents', 'mainUsage', 'otherProperties',
+  ],
+  stabilityReactivity: [
+    'stability', 'reactivity', 'incompatibleSubstances', 'conditionsToAvoid', 'hazardousReactions',
+    'polymerizationHazard', 'polymerizationConditions', 'decompositionProducts',
+    'decompositionConditions',
+  ],
+  toxicological: [
+    'acuteToxicity', 'ld50Oral', 'ld50Dermal', 'lc50Inhalation', 'subacuteChronic',
+    'skinIrritation', 'eyeIrritation', 'respiratoryIrritation', 'sensitization', 'mutagenicity',
+    'teratogenicity', 'reproductiveToxicity', 'carcinogenicity', 'carcinogenClassification',
+    'specificTargetOrgan', 'aspirationHazard', 'rtecs', 'otherToxicity',
+  ],
+  ecological: [
+    'ecologicalToxicity', 'fishToxicity', 'invertebrateToxicity', 'algaeToxicity', 'bacteriaToxicity',
+    'biodegradability', 'biodegradationRate', 'nonBiodegradability', 'photodegradation', 'hydrolysis',
+    'bioaccumulation', 'bioconcentrationFactor', 'mobilityInSoil', 'otherEnvironmentalEffects',
+    'ozoneDepletionPotential', 'globalWarmingPotential',
+  ],
+  disposal: [
+    'wasteProperties', 'disposalMethod', 'recommendedDisposal', 'prohibitedDisposal',
+    'disposalPrecautions', 'disposalRegulations', 'containerDisposal', 'neutralizationMethod',
+  ],
+  transportation: [
+    'dangerousGoodsNumber', 'unNumber', 'properShippingName', 'transportHazardClass',
+    'packingGroup', 'packagingMarks', 'packagingMethod', 'emergencyResponseGuide',
+    'transportInBulk', 'transportationPrecautions', 'imdgRulePage',
+  ],
+  regulatory: [
+    'regulatoryInfo', 'domesticRegulations', 'chinaDangerousChemicals',
+    'chinaControlledChemicals', 'internationalRegulations', 'reachRegistration',
+    'tscaInventory', 'einecsNumber', 'prohibitedRestricted', 'specialProvisions',
+  ],
+  otherInfo: [
+    'formFillTime', 'formFillDepartment', 'formFillPerson', 'dataAuditUnit', 'dataAuditPerson',
+    'technicalReviewPerson', 'references', 'dataSources', 'modificationNotes',
+    'trainingRequirements', 'additionalInformation', 'disclaimer',
+  ],
+};
+
+/** 数据库中代表「无数据」的占位值，计算完整度时按未填写处理 */
+const PLACEHOLDER_VALUES = ['-', '无资料', '暂无', 'N/A', 'null'];
 const MsdsDetail: React.FC<MsdsDetailProps> = ({ msdsId, onEdit }) => {
   const [loading, setLoading] = useState(false);
   const [msdsData, setMsdsData] = useState<API.Msds.MsdsDetail | any>({});
@@ -51,7 +140,8 @@ const MsdsDetail: React.FC<MsdsDetailProps> = ({ msdsId, onEdit }) => {
         ecologyResponse,
         disposalResponse,
         transportResponse,
-        regulatoryResponse
+        regulatoryResponse,
+        otherInfoResponse
       ] = await Promise.all([
         getMsdsDetail(msdsId),
         getToxicologyByMsdsId(msdsId),
@@ -67,7 +157,9 @@ const MsdsDetail: React.FC<MsdsDetailProps> = ({ msdsId, onEdit }) => {
         getEcologyByMsdsId(msdsId),
         getDisposalByMsdsId(msdsId),
         getTransportByMsdsId(msdsId),
-        getRegulatoryByMsdsId(msdsId)
+        getRegulatoryByMsdsId(msdsId),
+        // 第16章「其他信息」可能因权限被拒，单独兜底，不影响其它章节加载
+        getOtherInfoByMsdsId(msdsId).catch(() => null)
       ]);
       
       if (msdsResponse.code === 200) {
@@ -116,6 +208,9 @@ const MsdsDetail: React.FC<MsdsDetailProps> = ({ msdsId, onEdit }) => {
         if (regulatoryResponse.code === 200 && regulatoryResponse.data) {
           msdsData.regulatory = regulatoryResponse.data;
         }
+        if (otherInfoResponse && otherInfoResponse.code === 200 && otherInfoResponse.data) {
+          msdsData.otherInfo = otherInfoResponse.data;
+        }
         
         setMsdsData(msdsData);
       } else {
@@ -129,13 +224,49 @@ const MsdsDetail: React.FC<MsdsDetailProps> = ({ msdsId, onEdit }) => {
     }
   };
 
-  // 计算数据完整度
-  const calculateCompleteness = (data: any, requiredFields: string[]) => {
-    if (!data) return 0;
-    const filledFields = requiredFields.filter(field => data[field] && data[field].trim() !== '');
-    return Math.round((filledFields.length / requiredFields.length) * 100);
-  };
+  /**
+   * 数据完整度：完全依据各章节接口返回的真实字段填充情况计算，不写死任何统计值
+   */
+  const completeness = useMemo(() => {
+    const isFilled = (value: any) => {
+      if (value === undefined || value === null) return false;
+      if (typeof value === 'number' || typeof value === 'boolean') return true;
+      const text = String(value).trim();
+      return text !== '' && !PLACEHOLDER_VALUES.includes(text);
+    };
 
+    let totalFields = 0;
+    let filledFields = 0;
+    let chapterWithData = 0;
+
+    Object.keys(CHAPTER_FIELDS).forEach((chapter) => {
+      // 第3章成分为表格数据，按成分名称是否有值判断
+      if (chapter === 'component') {
+        const list = (msdsData.components || []) as any[];
+        const valid = list.filter((item) => isFilled(item?.componentName)).length;
+        totalFields += 2;
+        filledFields += valid > 0 ? 2 : 0;
+        if (valid > 0) chapterWithData++;
+        return;
+      }
+
+      const fields = CHAPTER_FIELDS[chapter];
+      const source = chapter === 'main' ? msdsData : (msdsData as any)[chapter];
+      const filled = source ? fields.filter((field) => isFilled(source[field])).length : 0;
+      totalFields += fields.length;
+      filledFields += filled;
+      if (filled > 0) chapterWithData++;
+    });
+
+    const chapterTotal = Object.keys(CHAPTER_FIELDS).length;
+    return {
+      percent: totalFields ? Math.round((filledFields / totalFields) * 100) : 0,
+      filledFields,
+      totalFields,
+      chapterWithData,
+      chapterEmpty: chapterTotal - chapterWithData,
+    };
+  }, [msdsData]);
   // 渲染状态标签
   const renderStatusTag = (status: string) => {
     const statusMap = {
@@ -342,8 +473,6 @@ const MsdsDetail: React.FC<MsdsDetailProps> = ({ msdsId, onEdit }) => {
         >
           <Descriptions column={1} bordered>
             <Descriptions.Item label="皮肤接触处理措施">
-              {console.log('急救措施完整数据:', msdsData.firstAid)}
-              {console.log('皮肤接触数据:', msdsData.firstAid?.skinContact)}
               {msdsData.firstAid?.skinContact || '-'}
             </Descriptions.Item>
             <Descriptions.Item label="眼睛接触处理措施">
@@ -1116,26 +1245,29 @@ const MsdsDetail: React.FC<MsdsDetailProps> = ({ msdsId, onEdit }) => {
 
   return (
     <div>
-      {/* 数据完整性进度条 */}
+      {/* 数据完整度（按各章节接口返回的真实数据计算） */}
       <Card style={{ marginBottom: 16 }}>
         <Space direction="vertical" style={{ width: '100%' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <span>数据完整度</span>
-            <span>85%</span>
+            <span>{completeness.percent}%</span>
           </div>
-          <Progress 
-            percent={85} 
+          <Progress
+            percent={completeness.percent}
             status="active"
             strokeColor={{
               '0%': '#108ee9',
               '100%': '#87d068',
             }}
           />
-          <div style={{ fontSize: '12px', color: '#666' }}>
+          <div style={{ fontSize: '12px', color: '#64748b' }}>
             <CheckCircleOutlined style={{ color: '#52c41a', marginRight: 4 }} />
-            12个章节数据完整
+            {completeness.chapterWithData} 个章节有数据
             <ExclamationCircleOutlined style={{ color: '#faad14', marginLeft: 12, marginRight: 4 }} />
-            4个章节数据不完整
+            {completeness.chapterEmpty} 个章节无数据
+            <span style={{ marginLeft: 12 }}>
+              字段填充 {completeness.filledFields}/{completeness.totalFields}
+            </span>
           </div>
         </Space>
       </Card>

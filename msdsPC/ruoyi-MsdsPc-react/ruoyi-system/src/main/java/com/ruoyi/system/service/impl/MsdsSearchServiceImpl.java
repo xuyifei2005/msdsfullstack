@@ -128,7 +128,35 @@ public class MsdsSearchServiceImpl implements IMsdsSearchService
     }
 
     /**
+     * 危险性分类检索关键字（与前端筛选项一一对应）
+     */
+    private static final List<String> HAZARD_KEYWORDS = java.util.Arrays.asList("易燃", "腐蚀", "毒", "氧化");
+
+    /** 热门搜索的统计窗口（天） */
+    private static final int HOT_SEARCH_DAYS = 30;
+
+    /**
+     * 获取危险性分类的真实文档数量
+     *
+     * @return 关键字与文档数量的映射列表
+     */
+    @Override
+    public List<Map<String, Object>> getHazardFacetCounts()
+    {
+        return searchMapper.getHazardFacetCounts(HAZARD_KEYWORDS);
+    }
+
+    /**
      * 获取热门搜索
+     *
+     * <p>数据来源为两个真实来源的合并：
+     * <ol>
+     *   <li><b>实际搜索行为</b>：按 msds_search_history 中用户真实输入过的关键词
+     *       聚合搜索次数（近 30 天），这是热门搜索的主要来源；</li>
+     *   <li><b>运营策展词条</b>：msds_search_suggestion 中 keyword_type='hot' 的词条
+     *       （如安全月推荐的重点品种），按 sort_order 优先展示。</li>
+     * </ol>
+     * 两者按关键词去重：实际搜索次数优先，其次用策展词条的搜索次数。</p>
      *
      * @param limit 数量限制
      * @return 热门搜索列表
@@ -139,8 +167,107 @@ public class MsdsSearchServiceImpl implements IMsdsSearchService
         if (limit == null || limit <= 0) {
             limit = 10;
         }
-        
-        return searchSuggestionMapper.selectActiveByType("hot", limit);
+
+        // 1. 运营策展的热门词条（人工维护，可控顺序）
+        List<MsdsSearchSuggestion> curated = searchSuggestionMapper.selectActiveByType("hot", limit);
+        Map<String, MsdsSearchSuggestion> merged = new java.util.LinkedHashMap<>();
+        if (curated != null) {
+            for (MsdsSearchSuggestion item : curated) {
+                if (item.getKeyword() != null && !item.getKeyword().isEmpty()) {
+                    if (item.getSearchCount() == null) {
+                        item.setSearchCount(0);
+                    }
+                    merged.put(item.getKeyword(), item);
+                }
+            }
+        }
+
+        // 2. 真实搜索历史聚合（近 30 天的实际搜索次数）
+        List<Map<String, Object>> hotStats = searchHistoryMapper.selectHotKeywordStats(HOT_SEARCH_DAYS, limit * 2);
+        if (hotStats != null) {
+            for (Map<String, Object> row : hotStats) {
+                Object keywordObj = row.get("keyword");
+                if (keywordObj == null) {
+                    continue;
+                }
+                String keyword = String.valueOf(keywordObj);
+                if (keyword.isEmpty()) {
+                    continue;
+                }
+                int searchCount = row.get("searchCount") == null
+                        ? 0 : Integer.parseInt(String.valueOf(row.get("searchCount")));
+
+                MsdsSearchSuggestion existing = merged.get(keyword);
+                if (existing != null) {
+                    // 策展词条已存在：累加真实搜索次数，保留策展的展示顺序
+                    existing.setSearchCount((existing.getSearchCount() == null ? 0 : existing.getSearchCount()) + searchCount);
+                }
+                else {
+                    MsdsSearchSuggestion suggestion = new MsdsSearchSuggestion();
+                    suggestion.setKeyword(keyword);
+                    suggestion.setKeywordType("hot");
+                    suggestion.setSearchCount(searchCount);
+                    suggestion.setClickCount(0);
+                    suggestion.setIsActive(1);
+                    merged.put(keyword, suggestion);
+                }
+            }
+        }
+
+        // 3. 按搜索次数倒序输出（次数相同则策展词条在前）
+        List<MsdsSearchSuggestion> result = new java.util.ArrayList<>(merged.values());
+        result.sort((a, b) -> {
+            int ca = a.getSearchCount() == null ? 0 : a.getSearchCount();
+            int cb = b.getSearchCount() == null ? 0 : b.getSearchCount();
+            if (ca != cb) {
+                return Integer.compare(cb, ca);
+            }
+            int sa = a.getSortOrder() == null ? Integer.MAX_VALUE : a.getSortOrder();
+            int sb = b.getSortOrder() == null ? Integer.MAX_VALUE : b.getSortOrder();
+            return Integer.compare(sa, sb);
+        });
+
+        return result.size() > limit ? result.subList(0, limit) : result;
+    }
+
+    /**
+     * 查询搜索建议词条列表（供运营维护）
+     */
+    @Override
+    public List<MsdsSearchSuggestion> listSuggestions(MsdsSearchSuggestion suggestion)
+    {
+        return searchSuggestionMapper.selectMsdsSearchSuggestionList(suggestion);
+    }
+
+    /**
+     * 新增搜索建议词条
+     */
+    @Override
+    public int addSuggestion(MsdsSearchSuggestion suggestion)
+    {
+        if (suggestion.getCreateTime() == null) {
+            suggestion.setCreateTime(new java.util.Date());
+        }
+        return searchSuggestionMapper.insertMsdsSearchSuggestion(suggestion);
+    }
+
+    /**
+     * 修改搜索建议词条
+     */
+    @Override
+    public int editSuggestion(MsdsSearchSuggestion suggestion)
+    {
+        suggestion.setUpdateTime(new java.util.Date());
+        return searchSuggestionMapper.updateMsdsSearchSuggestion(suggestion);
+    }
+
+    /**
+     * 删除搜索建议词条
+     */
+    @Override
+    public int removeSuggestions(Long[] suggestionIds)
+    {
+        return searchSuggestionMapper.deleteMsdsSearchSuggestionBySuggestionIds(suggestionIds);
     }
 
     /**

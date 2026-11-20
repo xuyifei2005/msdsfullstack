@@ -114,5 +114,27 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         order by count(*) desc
         limit #{limit}
     </select>
+
+    <!--
+        热门搜索词条（真实来源：按关键词聚合实际搜索次数）
+        - 只统计 general 类型，避免把 CAS 号 / 分子式 的输入混进热门词
+        - 排除空关键词与 0 结果的无效检索
+        - 返回关键词、搜索次数、最近搜索时间
+    -->
+    <select id="selectHotKeywordStats" resultType="java.util.Map">
+        select h.search_keyword as keyword,
+               count(*) as searchCount,
+               max(h.search_time) as lastSearchTime,
+               sum(case when h.result_count &gt; 0 then 1 else 0 end) as hitCount
+        from msds_search_history h
+        where h.search_keyword is not null
+          and h.search_keyword &lt;&gt; ''
+          and (h.search_type is null or h.search_type = 'general')
+          and h.search_time &gt;= date_sub(now(), interval #{days} day)
+        group by h.search_keyword
+        having count(*) &gt; 0
+        order by count(*) desc, max(h.search_time) desc
+        limit #{limit}
+    </select>
 </mapper>
 

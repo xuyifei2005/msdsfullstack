@@ -7,11 +7,26 @@
 -- 基于: RuoYi框架 + 安全智库
 -- 标准: GB/T 16483-2008、GB/T 17519-2013
 -- =============================================
+--
+-- ⚠️ 警告：本脚本会 DROP 并重建 sys_* 与 msds_* 表，且硬编码 USE msds_dev，
+--    在已有数据的库上执行将清空现有配置与文档数据。
+--    仅在「新建空库 / 容器首次初始化」时执行。
+--    已有数据的环境请改用增量补丁：
+--      aboutproject/msdsdatabases/msds_ext_menu_patch.sql（菜单与权限，幂等）
+--      aboutproject/msdsdatabases/jfkjmsds20260310/msds_dev.sql（完整文档数据，19MB）
+-- =============================================
 
 -- 设置SQL模式，避免兼容性问题
 SET @old_sql_mode = @@sql_mode;
 SET SESSION sql_mode = 'TRADITIONAL,NO_AUTO_VALUE_ON_ZERO';
 SET SESSION sql_mode = REPLACE(@@sql_mode, 'ONLY_FULL_GROUP_BY', '');
+
+-- 关闭外键检查：
+--   本脚本按「先建被引用表、后建引用表」的顺序 DROP/CREATE，
+--   但 chemical_category 早于 msds_main 被删除，而 msds_main 上有指向它的外键，
+--   MySQL 8.0 会直接报 ERROR 3730 导致初始化中断、后续表全部建不出来。
+SET @old_foreign_key_checks = @@FOREIGN_KEY_CHECKS;
+SET FOREIGN_KEY_CHECKS = 0;
 
 -- 创建MSDS数据库
 CREATE DATABASE IF NOT EXISTS msds_dev 
@@ -656,7 +671,7 @@ DROP TABLE IF EXISTS msds_other_info;
 CREATE TABLE msds_other_info (
     id BIGINT PRIMARY KEY AUTO_INCREMENT COMMENT '主键',
     msds_id BIGINT NOT NULL COMMENT '关联MSDS主表ID',
-    reference_list TEXT COMMENT '参考文献',
+    `references` TEXT COMMENT '参考文献',
     data_sources TEXT COMMENT '数据来源',
     form_fill_time DATE COMMENT '填表时间',
     form_fill_department VARCHAR(100) COMMENT '填表部门',
@@ -1259,6 +1274,155 @@ SET SESSION sql_mode = @old_sql_mode;
    - 完整的审计日志功能
    - 支持版本控制和审批流程
 */
+
+-- ============================================================
+-- MSDS 操作审计日志表
+-- 说明：MsdsMainController 的 PDF 导出等接口会写入本表，
+--       缺失该表会导致真实下载/导出功能直接报 500。
+-- ============================================================
+CREATE TABLE IF NOT EXISTS `msds_audit_log` (
+  `log_id` bigint NOT NULL AUTO_INCREMENT COMMENT '日志ID',
+  `msds_id` bigint NOT NULL COMMENT 'MSDS主信息ID',
+  `operation_type` varchar(50) DEFAULT NULL COMMENT '操作类型',
+  `operation_desc` varchar(500) DEFAULT NULL COMMENT '操作描述',
+  `before_data` longtext COMMENT '操作前数据',
+  `after_data` longtext COMMENT '操作后数据',
+  `operator` varchar(100) DEFAULT NULL COMMENT '操作人员',
+  `operator_id` bigint DEFAULT NULL COMMENT '操作人员ID',
+  `operation_time` datetime DEFAULT NULL COMMENT '操作时间',
+  `ip_address` varchar(128) DEFAULT NULL COMMENT '操作IP地址',
+  `user_agent` varchar(500) DEFAULT NULL COMMENT '用户代理',
+  `operation_result` varchar(50) DEFAULT NULL COMMENT '操作结果',
+  `error_message` longtext COMMENT '错误信息',
+  `remark` varchar(500) DEFAULT NULL COMMENT '备注',
+  PRIMARY KEY (`log_id`) USING BTREE,
+  INDEX `idx_msds_id`(`msds_id`) USING BTREE,
+  INDEX `idx_operation_time`(`operation_time`) USING BTREE,
+  INDEX `idx_operator`(`operator`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='MSDS操作审计日志';
+-- ============================================================
+-- MSDS 统计 / 收藏 / 搜索 支撑表
+-- 说明：以下 5 张表原先只存在于全量 dump（jfkjmsds20260310/msds_dev.sql），
+--       初始化脚本里缺失 → 容器重建后统计、收藏、热门搜索全部失效。
+--       其中 msds_audit_log 见上方单独建表说明。
+-- ============================================================
+CREATE TABLE IF NOT EXISTS `msds_document_statistics` (
+  `stat_id` bigint NOT NULL AUTO_INCREMENT COMMENT '统计ID',
+  `msds_id` bigint NOT NULL COMMENT 'MSDS文档ID',
+  `view_count` int DEFAULT '0' COMMENT '查看次数',
+  `download_count` int DEFAULT '0' COMMENT '下载次数',
+  `favorite_count` int DEFAULT '0' COMMENT '收藏次数',
+  `share_count` int DEFAULT '0' COMMENT '分享次数',
+  `last_view_time` datetime DEFAULT NULL COMMENT '最近查看时间',
+  `last_download_time` datetime DEFAULT NULL COMMENT '最近下载时间',
+  `last_favorite_time` datetime DEFAULT NULL COMMENT '最近收藏时间',
+  `total_score` decimal(10,2) DEFAULT '0.00' COMMENT '总评分',
+  `score_count` int DEFAULT '0' COMMENT '评分数',
+  `avg_score` decimal(5,2) DEFAULT '0.00' COMMENT '平均分',
+  `create_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `update_time` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  PRIMARY KEY (`stat_id`),
+  UNIQUE KEY `uk_msds_id` (`msds_id`),
+  KEY `idx_view_count` (`view_count`),
+  KEY `idx_download_count` (`download_count`),
+  KEY `idx_favorite_count` (`favorite_count`),
+  KEY `idx_avg_score` (`avg_score`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='MSDS文档统计';
+
+CREATE TABLE IF NOT EXISTS `msds_document_access_log` (
+  `log_id` bigint NOT NULL AUTO_INCREMENT COMMENT '日志ID',
+  `msds_id` bigint NOT NULL COMMENT 'MSDS文档ID',
+  `user_id` bigint DEFAULT NULL COMMENT '用户ID',
+  `user_name` varchar(64) DEFAULT '' COMMENT '用户名称',
+  `access_type` varchar(20) NOT NULL COMMENT '访问类型: view, download, preview, print',
+  `access_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '访问时间',
+  `ip_address` varchar(128) DEFAULT '' COMMENT 'IP地址',
+  `user_agent` varchar(500) DEFAULT '' COMMENT '用户代理',
+  `device_type` varchar(50) DEFAULT NULL COMMENT '设备类型: pc, mobile, tablet',
+  `browser` varchar(100) DEFAULT NULL COMMENT '浏览器',
+  `duration` int DEFAULT NULL COMMENT '访问时长(秒)',
+  `create_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  PRIMARY KEY (`log_id`),
+  KEY `idx_msds_id` (`msds_id`),
+  KEY `idx_user_id` (`user_id`),
+  KEY `idx_access_type` (`access_type`),
+  KEY `idx_access_time` (`access_time`),
+  KEY `idx_msds_access_time` (`msds_id`,`access_time`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='MSDS文档访问明细';
+
+CREATE TABLE IF NOT EXISTS `msds_user_favorite` (
+  `favorite_id` bigint NOT NULL AUTO_INCREMENT COMMENT '收藏ID',
+  `user_id` bigint NOT NULL COMMENT '用户ID',
+  `user_name` varchar(64) DEFAULT '' COMMENT '用户名称',
+  `msds_id` bigint NOT NULL COMMENT 'MSDS文档ID',
+  `msds_name` varchar(255) DEFAULT '' COMMENT 'MSDS文档名称',
+  `cas_number` varchar(50) DEFAULT NULL COMMENT 'CAS号',
+  `folder_name` varchar(100) DEFAULT '默认收藏夹' COMMENT '收藏夹名称',
+  `tags` varchar(500) DEFAULT NULL COMMENT '标签(逗号分隔)',
+  `note` varchar(1000) DEFAULT NULL COMMENT '备注说明',
+  `create_by` varchar(64) DEFAULT '' COMMENT '创建者',
+  `create_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `update_by` varchar(64) DEFAULT '' COMMENT '更新者',
+  `update_time` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  `remark` varchar(500) DEFAULT NULL COMMENT '备注',
+  PRIMARY KEY (`favorite_id`),
+  UNIQUE KEY `uk_user_msds` (`user_id`,`msds_id`),
+  KEY `idx_user_id` (`user_id`),
+  KEY `idx_msds_id` (`msds_id`),
+  KEY `idx_create_time` (`create_time`),
+  KEY `idx_folder_name` (`folder_name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='MSDS用户收藏';
+
+CREATE TABLE IF NOT EXISTS `msds_search_suggestion` (
+  `suggestion_id` bigint NOT NULL AUTO_INCREMENT COMMENT '建议ID',
+  `keyword` varchar(500) NOT NULL COMMENT '搜索关键词',
+  `keyword_type` varchar(50) DEFAULT 'hot' COMMENT '关键词类型: hot, ai, related, cas, formula',
+  `related_cas` varchar(50) DEFAULT NULL COMMENT '关联CAS号',
+  `related_msds_id` bigint DEFAULT NULL COMMENT '关联MSDS文档ID',
+  `search_count` int DEFAULT '0' COMMENT '搜索次数',
+  `click_count` int DEFAULT '0' COMMENT '点击次数',
+  `sort_order` int DEFAULT '0' COMMENT '排序顺序',
+  `is_active` tinyint(1) DEFAULT '1' COMMENT '是否启用: 0禁用, 1启用',
+  `start_time` datetime DEFAULT NULL COMMENT '生效开始时间',
+  `end_time` datetime DEFAULT NULL COMMENT '生效结束时间',
+  `create_by` varchar(64) DEFAULT '' COMMENT '创建者',
+  `create_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `update_by` varchar(64) DEFAULT '' COMMENT '更新者',
+  `update_time` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  `remark` varchar(500) DEFAULT NULL COMMENT '备注',
+  PRIMARY KEY (`suggestion_id`),
+  UNIQUE KEY `uk_keyword_type` (`keyword`(255),`keyword_type`),
+  KEY `idx_keyword_type` (`keyword_type`),
+  KEY `idx_search_count` (`search_count`),
+  KEY `idx_sort_order` (`sort_order`),
+  KEY `idx_is_active` (`is_active`),
+  KEY `idx_related_msds` (`related_msds_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='MSDS搜索建议词条';
+
+CREATE TABLE IF NOT EXISTS `msds_search_history` (
+  `search_id` bigint NOT NULL AUTO_INCREMENT COMMENT '搜索记录ID',
+  `user_id` bigint NOT NULL COMMENT '用户ID',
+  `user_name` varchar(64) DEFAULT '' COMMENT '用户名称',
+  `search_keyword` varchar(500) NOT NULL COMMENT '搜索关键词',
+  `search_type` varchar(50) DEFAULT 'general' COMMENT '搜索类型: general, semantic, cas, formula',
+  `filter_params` text COMMENT '筛选参数(JSON格式)',
+  `result_count` int DEFAULT '0' COMMENT '搜索结果数量',
+  `search_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '搜索时间',
+  `ip_address` varchar(128) DEFAULT '' COMMENT 'IP地址',
+  `user_agent` varchar(500) DEFAULT '' COMMENT '用户代理',
+  `create_by` varchar(64) DEFAULT '' COMMENT '创建者',
+  `create_time` datetime DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `update_by` varchar(64) DEFAULT '' COMMENT '更新者',
+  `update_time` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  `remark` varchar(500) DEFAULT NULL COMMENT '备注',
+  PRIMARY KEY (`search_id`),
+  KEY `idx_user_id` (`user_id`),
+  KEY `idx_search_time` (`search_time`),
+  KEY `idx_search_keyword` (`search_keyword`(255)),
+  KEY `idx_user_search_time` (`user_id`,`search_time`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='MSDS搜索历史';
+-- 恢复外键检查
+SET FOREIGN_KEY_CHECKS = @old_foreign_key_checks;
 
 -- 数据库初始化完成
 SELECT 'MSDS Database Initialization Completed Successfully!' as message;

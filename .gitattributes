@@ -3,3 +3,6 @@
 
 # XML文件使用LF换行符
 *.xml text eol=lf
+
+# Shell脚本使用LF换行符（容器内由 sh 执行，CRLF 会导致命令找不到）
+*.sh text eol=lf

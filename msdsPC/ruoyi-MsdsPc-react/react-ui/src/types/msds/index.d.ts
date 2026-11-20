@@ -27,9 +27,37 @@ declare namespace API {
       isActive?: number;          // 是否有效(1:有效,0:无效)
       createTime?: string;        // 创建时间
       updateTime?: string;        // 更新时间
+      viewCount?: number;         // 查看次数（真实统计，无记录为0）
+      downloadCount?: number;     // 下载次数（真实统计，无记录为0）
+      favoriteCount?: number;     // 收藏次数（真实统计，无记录为0）
       createdBy?: string;         // 创建人
       updatedBy?: string;         // 更新人
       remark?: string;            // 备注
+      categoryCodes?: string;     // 命中的监管分类代码，逗号分隔（真实名录匹配）
+      categoryNames?: string;     // 命中的监管分类短名，逗号分隔
+    };
+
+    /** MSDS监管分类标签（含真实计数） */
+    type RegulatoryCategory = {
+      categoryCode: string;        // ALL / PRECURSOR / EXPLOSIVE / TOXIC / UNCLASSIFIED
+      categoryName: string;
+      shortName: string;
+      sortNo: number;
+      color: string;
+      description?: string;
+      sourceDocument?: string;    // 依据的法规名录
+      sourceUrl?: string;
+      count: number;              // 当前搜索条件下的真实记录数
+      catalogCount?: number;      // 名录条目数
+      subCategories?: string;     // 细分类，逗号分隔
+    };
+
+    /** 某篇MSDS的监管分类判定依据 */
+    type RegulatoryCategoryItem = RegulatoryCategory & {
+      subCategory?: string;
+      catalogName?: string;
+      matchType?: string;         // CAS / NAME
+      evidence?: string;
     };
 
     /** MSDS列表查询参数 */
@@ -44,6 +72,8 @@ declare namespace API {
       status?: string;            // 状态筛选
       isActive?: number;          // 有效性筛选
       categoryId?: number;        // 分类筛选
+      regulatoryCategory?: string; // 监管分类筛选（全部/易制毒/易制爆/剧毒/未分类）
+      regulatorySubCategory?: string; // 监管分类细项筛选（如易制毒第一类）
       startDate?: string;         // 开始日期
       endDate?: string;           // 结束日期
     };

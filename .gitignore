@@ -353,3 +353,8 @@ test_msds_files/
 
 # 忽略提交超大的数据库结构升级备份文件！
 aboutproject/msdsdatabases/JFKJmsds/20250703准备升级数据库结构前备份/rlc_gissxxacaq.sql
+
+## 忽略同步文件：
+*.baiduyun.*
+*.baiduyun.uploading
+*.baiduyun.downloading

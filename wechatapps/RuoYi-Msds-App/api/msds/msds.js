@@ -9,6 +9,15 @@ export function listMsds(query) {
   })
 }
 
+// 查询监管分类标签及真实数量（与PC端共用同一后端接口）
+export function listRegulatoryCategories(query) {
+  return request({
+    url: '/system/msds/regulatoryCategories',
+    method: 'get',
+    params: query
+  })
+}
+
 // 查询MSDS主信息详细
 export function getMsds(id) {
   return request({

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.MsdsRegulatoryCategoryMapper">
+
+    <resultMap type="MsdsRegulatoryCategory" id="MsdsRegulatoryCategoryResult">
+        <result property="categoryCode"    column="category_code"    />
+        <result property="categoryName"    column="category_name"    />
+        <result property="shortName"       column="short_name"       />
+        <result property="sortNo"          column="sort_no"          />
+        <result property="color"           column="color"            />
+        <result property="description"     column="description"      />
+        <result property="sourceDocument"  column="source_document"  />
+        <result property="sourceUrl"       column="source_url"       />
+        <result property="count"           column="count"            />
+        <result property="catalogCount"    column="catalog_count"    />
+        <result property="subCategories"   column="sub_categories"   />
+        <result property="subCategory"     column="sub_category"     />
+        <result property="catalogName"     column="catalog_name"     />
+        <result property="matchType"       column="match_type"       />
+        <result property="evidence"        column="evidence"         />
+    </resultMap>
+
+    <!-- 与 MsdsMainMapper.msdsMainQueryWhere 保持一致的查询条件（别名 m） -->
+    <sql id="msdsStatsWhere">
+        <if test="productName != null and productName != ''">
+            AND m.product_name like concat('%', #{productName}, '%')
+        </if>
+        <if test="companyName != null and companyName != ''">
+            AND m.company_name like concat('%', #{companyName}, '%')
+        </if>
+        <if test="casNumber != null and casNumber != ''">
+            AND m.cas_number like concat('%', #{casNumber}, '%')
+        </if>
+        <if test="msdsCode != null and msdsCode != ''">
+            AND m.msds_code like concat('%', #{msdsCode}, '%')
+        </if>
+        <if test="status != null and status != ''">
+            AND m.status = #{status}
+        </if>
+        <if test="isActive != null">
+            AND m.is_active = #{isActive}
+        </if>
+        <if test="regulatoryCategory != null and regulatoryCategory != '' and regulatoryCategory != 'ALL'">
+            <choose>
+                <when test="regulatoryCategory == 'UNCLASSIFIED'">
+                    AND not exists (select 1 from msds_chemical_category_tag ct where ct.msds_id = m.id)
+                </when>
+                <otherwise>
+                    AND exists (
+                        select 1 from msds_chemical_category_tag ct
+                        where ct.msds_id = m.id
+                          and ct.category_code = #{regulatoryCategory}
+                        <if test="regulatorySubCategory != null and regulatorySubCategory != ''">
+                          and ct.sub_category = #{regulatorySubCategory}
+                        </if>
+                    )
+                </otherwise>
+            </choose>
+        </if>
+    </sql>
+
+    <!-- 各分类标签的真实数量：按当前搜索条件过滤，不按所选分类过滤自身以外的分类 -->
+    <select id="selectCategoryStats" parameterType="MsdsMain" resultMap="MsdsRegulatoryCategoryResult">
+        select c.category_code, c.category_name, c.short_name, c.sort_no, c.color,
+               c.description, c.source_document, c.source_url,
+               (select count(distinct t.msds_id)
+                  from msds_chemical_category_tag t
+                  join msds_main m on m.id = t.msds_id
+                 <where>
+                     t.category_code = c.category_code
+                     <include refid="msdsStatsWhere"/>
+                 </where>
+               ) as count,
+               (select count(*) from msds_regulatory_catalog k where k.category_code = c.category_code) as catalog_count,
+               (select group_concat(distinct k.sub_category order by k.sub_category separator ',')
+                  from msds_regulatory_catalog k
+                 where k.category_code = c.category_code and k.sub_category is not null) as sub_categories
+        from msds_regulatory_category c
+        where c.is_active = 1
+        order by c.sort_no
+    </select>
+
+    <select id="countMsdsByQuery" parameterType="MsdsMain" resultType="int">
+        select count(*) from msds_main m
+        <where>
+            <include refid="msdsStatsWhere"/>
+        </where>
+    </select>
+
+    <select id="countUnclassifiedByQuery" parameterType="MsdsMain" resultType="int">
+        select count(*) from msds_main m
+        <where>
+            not exists (select 1 from msds_chemical_category_tag ct where ct.msds_id = m.id)
+            <include refid="msdsStatsWhere"/>
+        </where>
+    </select>
+
+    <select id="selectMsdsCategoryItems" parameterType="Long" resultMap="MsdsRegulatoryCategoryResult">
+        select c.category_code, c.category_name, c.short_name, c.sort_no, c.color,
+               c.description, c.source_document, c.source_url,
+               t.sub_category, t.catalog_name, t.match_type, t.evidence
+        from msds_chemical_category_tag t
+        join msds_regulatory_category c on c.category_code = t.category_code and c.is_active = 1
+        where t.msds_id = #{msdsId}
+        order by c.sort_no
+    </select>
+
+</mapper>

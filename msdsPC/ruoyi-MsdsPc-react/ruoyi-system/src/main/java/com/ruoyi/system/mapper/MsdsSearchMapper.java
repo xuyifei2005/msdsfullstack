@@ -75,6 +75,14 @@ public interface MsdsSearchMapper
     public List<Map<String, Object>> getSearchSuggestions(@Param("keyword") String keyword, @Param("limit") Integer limit);
 
     /**
+     * 统计各危险性分类关键字命中的文档数量（用于高级筛选真实计数）
+     *
+     * @param keywords 危险性关键字列表
+     * @return 关键字与文档数量的映射列表
+     */
+    public List<Map<String, Object>> getHazardFacetCounts(@Param("keywords") List<String> keywords);
+
+    /**
      * 获取相关文档
      * 
      * @param msdsId 文档ID

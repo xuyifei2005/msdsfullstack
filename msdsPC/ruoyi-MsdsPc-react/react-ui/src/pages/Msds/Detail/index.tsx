@@ -31,6 +31,16 @@ import {
 import { PageContainer } from '@ant-design/pro-components';
 import { useParams, history } from '@umijs/max';
 import { getMsdsMain } from '@/services/msds';
+import {
+  getMsdsStatistics,
+  recordMsdsAccess,
+  exportMsdsPdf,
+  getFavoriteStatus,
+  addFavorite,
+  removeFavorite,
+  type MsdsStatistics,
+} from '@/services/msds';
+import { resolveBlob } from '@/utils/downloadfile';
 import styles from './index.less';
 
 const { TabPane } = Tabs;
@@ -40,6 +50,15 @@ const MsdsDetail: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [msdsData, setMsdsData] = useState<API.Msds.MsdsMain | null>(null);
   const [activeTab, setActiveTab] = useState('basic');
+  // 真实计数（来自后端统计数据，非写死值）
+  const [statistics, setStatistics] = useState<MsdsStatistics>({
+    viewCount: 0,
+    downloadCount: 0,
+    favoriteCount: 0,
+    shareCount: 0,
+  });
+  const [downloading, setDownloading] = useState(false);
+  const [favorited, setFavorited] = useState(false);
 
   useEffect(() => {
     if (id) {
@@ -63,16 +82,117 @@ const MsdsDetail: React.FC = () => {
     }
   };
 
-  const handleDownload = () => {
-    message.info('下载功能开发中...');
+  /**
+   * 加载真实计数，并在首次进入详情页时记录一次查看
+   */
+  useEffect(() => {
+    const msdsId = Number(id);
+    if (!msdsId) {
+      return;
+    }
+
+    // 先读取已有计数
+    getMsdsStatistics(msdsId)
+      .then((res) => {
+        if (res?.code === 200 && res.data) {
+          setStatistics(res.data);
+        }
+      })
+      .catch(() => {
+        // 统计读取失败不阻断详情展示，计数保持为 0
+      });
+
+    // 本次查看行为计入真实统计
+    recordMsdsAccess(msdsId, 'view')
+      .then((res) => {
+        if (res?.code === 200 && res.data) {
+          setStatistics(res.data);
+        }
+      })
+      .catch(() => {
+        // 忽略计数写入失败
+      });
+
+    // 读取当前用户的收藏状态
+    getFavoriteStatus(msdsId)
+      .then((res) => {
+        if (res?.code === 200 && res.data) {
+          setFavorited(Boolean(res.data.favorited));
+        }
+      })
+      .catch(() => {
+        // 收藏状态读取失败保持未收藏
+      });
+  }, [id]);
+
+  /**
+   * 真实下载：由后端生成 PDF 文件并累加下载次数
+   */
+  const handleDownload = async () => {
+    const msdsId = Number(id);
+    if (!msdsId) {
+      return;
+    }
+    try {
+      setDownloading(true);
+      const res: any = await exportMsdsPdf(msdsId);
+      resolveBlob(res, 'application/pdf');
+      // 下载次数由后端统计写入，此处同步刷新本地展示
+      const statRes = await getMsdsStatistics(msdsId);
+      if (statRes?.code === 200 && statRes.data) {
+        setStatistics(statRes.data);
+      }
+      message.success('MSDS PDF 已开始下载');
+    } catch (error: any) {
+      message.error(`下载失败：${error?.message || '请稍后重试'}`);
+    } finally {
+      setDownloading(false);
+    }
   };
 
   const handlePrint = () => {
     window.print();
   };
 
-  const handleFavorite = () => {
-    message.success('收藏成功');
+  /**
+   * 收藏 / 取消收藏：真实落库到 msds_user_favorite，并联动收藏计数
+   */
+  const handleFavorite = async () => {
+    const msdsId = Number(id);
+    if (!msdsId) {
+      return;
+    }
+    try {
+      if (favorited) {
+        const res = await removeFavorite(msdsId);
+        if (res?.code === 200) {
+          setFavorited(false);
+          if (res.data?.statistics) {
+            setStatistics(res.data.statistics);
+          }
+          message.success('已取消收藏');
+        } else {
+          message.error(res?.msg || '取消收藏失败，请稍后重试');
+        }
+        return;
+      }
+
+      const res = await addFavorite(msdsId, {
+        msdsName: msdsData?.productName,
+        casNumber: msdsData?.casNumber,
+      });
+      if (res?.code === 200) {
+        setFavorited(true);
+        if (res.data?.statistics) {
+          setStatistics(res.data.statistics);
+        }
+        message.success('已收藏');
+      } else {
+        message.error(res?.msg || '收藏失败，请稍后重试');
+      }
+    } catch (error: any) {
+      message.error(`收藏失败：${error?.message || '请稍后重试'}`);
+    }
   };
 
   const handleShare = () => {
@@ -173,12 +293,16 @@ const MsdsDetail: React.FC = () => {
                   </div>
                 </div>
 
-                {/* 危险性标识 */}
+                {/* 危险性标识：仅展示文档中真实存在的危险性字段，无数据时不渲染假标签 */}
                 <div className={styles.hazardTags}>
-                  <Tag icon={<FireOutlined />} color="red">
-                    易燃液体
-                  </Tag>
-                  {/* 根据实际数据添加更多标签 */}
+                  {msdsData.flashPoint ? (
+                    <Tag icon={<FireOutlined />} color="red">
+                      闪点 {msdsData.flashPoint}
+                    </Tag>
+                  ) : null}
+                  {msdsData.unNumber ? (
+                    <Tag color="orange">UN号 {msdsData.unNumber}</Tag>
+                  ) : null}
                 </div>
               </div>
             </div>
@@ -193,6 +317,7 @@ const MsdsDetail: React.FC = () => {
                   size="large"
                   block
                   icon={<DownloadOutlined />}
+                  loading={downloading}
                   onClick={handleDownload}
                 >
                   下载MSDS
@@ -209,9 +334,10 @@ const MsdsDetail: React.FC = () => {
                   size="large"
                   block
                   icon={<StarOutlined />}
+                  type={favorited ? 'default' : undefined}
                   onClick={handleFavorite}
                 >
-                  收藏
+                  {favorited ? '取消收藏' : '收藏'}
                 </Button>
                 <Button
                   size="large"
@@ -351,22 +477,22 @@ const MsdsDetail: React.FC = () => {
             </Descriptions>
           </Card>
 
-          {/* 使用统计 */}
+          {/* 使用统计：全部来自后端真实统计数据 */}
           <Card title="使用统计" bordered={false} className={styles.sidePanelCard}>
             <Space direction="vertical" style={{ width: '100%' }}>
               <Statistic
                 title="查看次数"
-                value={1234}
+                value={statistics.viewCount ?? 0}
                 prefix={<EyeOutlined />}
               />
               <Statistic
                 title="下载次数"
-                value={456}
+                value={statistics.downloadCount ?? 0}
                 prefix={<DownloadOutlined />}
               />
               <Statistic
                 title="收藏次数"
-                value={89}
+                value={statistics.favoriteCount ?? 0}
                 prefix={<StarOutlined />}
               />
             </Space>
